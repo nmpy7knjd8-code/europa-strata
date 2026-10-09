@@ -1,0 +1,2272 @@
+{
+  "meta": {
+    "title": "Europa Strata",
+    "subtitle": "Cultures, empires, and genetic layers from deep time to now",
+    "ancestryKeys": [
+      {
+        "id": "whg",
+        "label": "WHG",
+        "full": "Western Hunter-Gatherer",
+        "color": "#3d7a8c",
+        "detail": "Mesolithic western/central European foragers; a substrate after farming, not a living “people” label later."
+      },
+      {
+        "id": "ehg",
+        "label": "EHG",
+        "full": "Eastern Hunter-Gatherer",
+        "color": "#5a7a9a",
+        "detail": "Forest-steppe/eastern foragers with Ancient North Eurasian affinity; key ingredient of Yamnaya with CHG-related ancestry."
+      },
+      {
+        "id": "eef",
+        "label": "EEF",
+        "full": "Early European Farmer (Anatolian Neolithic-related)",
+        "color": "#c4a035",
+        "detail": "Anatolian Neolithic–related farmers who spread demically into Europe from ~6500 BCE; dominant in Early Neolithic west."
+      },
+      {
+        "id": "steppe",
+        "label": "Steppe",
+        "full": "Western Steppe Herder / Yamnaya-related",
+        "color": "#a05030",
+        "detail": "Yamnaya-related Western Steppe Herder ancestry that spreads widely after ~3000 BCE via Corded Ware and kin."
+      },
+      {
+        "id": "chg",
+        "label": "CHG",
+        "full": "Caucasus Hunter-Gatherer (often within steppe cline)",
+        "color": "#8a6060",
+        "detail": "Caucasus hunter-gatherer–related ancestry; often modeled inside the steppe cline rather than as a free European component."
+      },
+      {
+        "id": "other",
+        "label": "Other",
+        "full": "Later / regional / eastern Mediterranean / uncertain",
+        "color": "#6a6a6a",
+        "detail": "Catch-all for eastern Mediterranean, East Eurasian, North African, or poorly resolved medieval/modern inputs — not a deep Paleolithic cluster."
+      }
+    ],
+    "modeLegend": {
+      "persistence": "Substrate continues with little demographic overturn",
+      "replacement": "Incoming ancestry largely displaces the prior gene pool",
+      "admixture": "Substantial mixing; neither side erased",
+      "absorption": "Incoming elite/culture absorbed into a durable local substrate",
+      "continuity": "Deep ternary (WHG–EEF–steppe) largely stable; polity labels shift",
+      "cultural": "Archaeological or political package spreads faster than genes"
+    },
+    "linguisticDisclaimer": "Languages ≠ genes. Indo-European dispersal is often correlated with steppe-related ancestry in temperate Europe, but archaeological cultures, genomes, and speech can spread independently. Confidence tags: attested (written/epigraphic), reconstructed (comparative linguistics), hypothetical (no direct evidence), mixed.",
+    "confidenceLabels": {
+      "attested": "Historically or epigraphically attested",
+      "reconstructed": "Inferred by comparative linguistics",
+      "hypothetical": "No direct evidence — scenario only",
+      "mixed": "Attested elements + uncertain layers"
+    }
+  },
+  "periods": [
+    {
+      "id": "mesolithic",
+      "label": "Mesolithic",
+      "era": "Forager Europe",
+      "yearLabel": "c. 8000 BCE",
+      "yearApprox": -8000,
+      "narrative": "After the Last Glacial Maximum, Europe is resettled by genetically distinct forager populations. Western Hunter-Gatherers (WHG) dominate west and center; Eastern Hunter-Gatherers (EHG) hold the forest-steppe. Archaeological names (Azilian, Maglemosian, Narva) are tool-and-site traditions, not ethnic states. No farming, no Indo-European, no writing.",
+      "culturesNote": "Azilian, Sauveterrian/Tardenoisian, Maglemosian–Kongemose, Epigravettian Italy, Iron Gates, Narva/Kunda — microlithic forager facies over WHG/EHG genetics.",
+      "regions": {
+        "iberia": {
+          "culture": "Azilian / Iberian Mesolithic foragers",
+          "color": "#2f6a7a",
+          "mode": "persistence",
+          "description": "Late Upper Paleolithic to Mesolithic foragers of Iberia (Azilian and related facies). Small, mobile groups after glacial retreat. Genetically WHG-related; they become a minority substrate once Cardial farmers arrive, not a continuous “Iberian people” into history.",
+          "ancestry": {
+            "whg": 95,
+            "eef": 0,
+            "steppe": 0,
+            "other": 5
+          },
+          "ancestryNote": "Mesolithic Iberia ≈ WHG; local structure exists but not EEF or steppe yet.",
+          "substrate": "Late glacial Iberian foragers",
+          "incoming": "—",
+          "fused": "WHG Iberia",
+          "languageFamily": "Unattested forager languages",
+          "languages": "Unknown (lost)",
+          "linguisticNote": "No writing. Later Iberian (non-IE) and Basque are historically attested millennia later and cannot be projected onto Azilian speech.",
+          "linguisticConfidence": "hypothetical"
+        },
+        "britain": {
+          "culture": "British & Irish Mesolithic foragers",
+          "color": "#356f7f",
+          "mode": "persistence",
+          "description": "Post-Doggerland island foragers with microlithic technologies. Population density low. Their WHG-related ancestry is almost erased first by Neolithic farmers, then again by Beaker-age migrants — a double discontinuity unique in clarity in the aDNA record.",
+          "ancestry": {
+            "whg": 98,
+            "eef": 0,
+            "steppe": 0
+          },
+          "ancestryNote": "~Pure WHG before farming; later turnovers remove most of this lineage.",
+          "substrate": "Paleolithic survivors",
+          "incoming": "—",
+          "fused": "Insular WHG",
+          "languageFamily": "Unattested forager languages",
+          "languages": "Unknown (lost)",
+          "linguisticNote": "Unknown. Not Celtic — Insular Celtic is an Iron Age/historical stage.",
+          "linguisticConfidence": "hypothetical"
+        },
+        "france": {
+          "culture": "Sauveterrian / Tardenoisian foragers",
+          "color": "#3a7585",
+          "mode": "persistence",
+          "description": "Mesolithic traditions of what is now France: microlithic toolkits, forest and riverine economies. WHG genetics dominate. These groups contribute ancestry back into Middle Neolithic farmers but leave no linguistic trace.",
+          "ancestry": {
+            "whg": 96,
+            "eef": 0,
+            "steppe": 0,
+            "other": 4
+          },
+          "substrate": "Magdalenian descendants",
+          "incoming": "—",
+          "fused": "WHG Gaul",
+          "languageFamily": "Unattested (forager)",
+          "languages": "Unknown",
+          "linguisticNote": "Unattested; later Gaulish is Celtic IE and unrelated in any recoverable way.",
+          "linguisticConfidence": "hypothetical",
+          "ancestryNote": "WHG-dominated; EEF arrives with Cardial/LBK streams later."
+        },
+        "central": {
+          "culture": "Central European Mesolithic foragers",
+          "color": "#2c6474",
+          "mode": "persistence",
+          "description": "Foragers of the North European Plain and Alpine foreland after reforestation. Genetically WHG with increasing EHG affinity eastward — the soft western edge of Allentoft’s later “great divide.”",
+          "ancestry": {
+            "whg": 90,
+            "ehg": 8,
+            "eef": 0,
+            "steppe": 0
+          },
+          "substrate": "Late glacial HG",
+          "incoming": "—",
+          "fused": "WHG core",
+          "languageFamily": "Unattested (forager)",
+          "languages": "Unknown",
+          "linguisticNote": "Unknown forager languages; not Germanic or Celtic.",
+          "linguisticConfidence": "hypothetical",
+          "ancestryNote": "WHG-dominated core of the North European Plain; EHG affinity rises eastward toward the forest-steppe divide."
+        },
+        "scandinavia": {
+          "culture": "Maglemosian → Kongemose foragers",
+          "color": "#1e5a6a",
+          "mode": "persistence",
+          "description": "Coastal and inland foragers of southern Scandinavia (Maglemosian, then Kongemose; Ertebølle follows). Rich aquatic economies. Denmark’s aDNA shows this forager world is later twice overturned — by TRB farmers, then by Single Grave steppe-rich groups.",
+          "ancestry": {
+            "whg": 92,
+            "ehg": 5,
+            "eef": 0,
+            "steppe": 0
+          },
+          "substrate": "Post-glacial colonizers",
+          "incoming": "—",
+          "fused": "Nordic Mesolithic",
+          "languageFamily": "Unattested (forager)",
+          "languages": "Unknown",
+          "linguisticNote": "Unknown. Pre-Germanic is associated with much later Battle Axe / Nordic BA stages.",
+          "linguisticConfidence": "hypothetical",
+          "ancestryNote": "WHG-leaning with northern structure; pre-farmer baseline for later turnovers."
+        },
+        "italy": {
+          "culture": "Epigravettian-descended Italian foragers",
+          "color": "#347080",
+          "mode": "persistence",
+          "description": "Peninsula and adjacent foragers after the Late Glacial. Southern refugia matter for WHG diversity. Farming arrives by sea (Impresso/Cardial) and largely replaces this demographic layer.",
+          "ancestry": {
+            "whg": 94,
+            "eef": 0,
+            "steppe": 0,
+            "other": 6
+          },
+          "substrate": "Epigravettian",
+          "incoming": "—",
+          "fused": "Italian WHG",
+          "languageFamily": "Unattested (forager)",
+          "languages": "Unknown",
+          "linguisticNote": "Unknown. Historical Etruscan and Italic are not Mesolithic holdovers in any demonstrated sense.",
+          "linguisticConfidence": "hypothetical",
+          "ancestryNote": "WHG-related; distinctive southern diversity vs northern WHG."
+        },
+        "balkans": {
+          "culture": "Iron Gates & Balkan Mesolithic foragers",
+          "color": "#4a7080",
+          "mode": "persistence",
+          "description": "Danube Iron Gates and related Balkan foragers — archaeologically famous, genetically a distinctive WHG-related node used carefully in admixture models. They interact with and are partly absorbed by earliest European farmers.",
+          "ancestry": {
+            "whg": 85,
+            "ehg": 5,
+            "eef": 0,
+            "steppe": 0,
+            "other": 10
+          },
+          "ancestryNote": "Iron Gates HG ≠ generic western WHG; models treat them as a separate source/proxy.",
+          "substrate": "Late glacial Balkans",
+          "incoming": "—",
+          "fused": "Iron Gates cline",
+          "languageFamily": "Unattested (forager)",
+          "languages": "Unknown (Iron Gates zone)",
+          "linguisticNote": "Unknown. Not Greek, Thracian, or Slavic — all far later.",
+          "linguisticConfidence": "hypothetical"
+        },
+        "eastern": {
+          "culture": "Eastern Hunter-Gatherers (forest-steppe)",
+          "color": "#4a6080",
+          "mode": "persistence",
+          "description": "EHG populations of the Volga–Don–Pontic forest-steppe with Ancient North Eurasian affinity. They are not Yamnaya yet; Yamnaya forms later when EHG-related ancestry mixes with Caucasus/Lower Volga–related groups. Linguistic IE status is not Mesolithic.",
+          "ancestry": {
+            "ehg": 80,
+            "whg": 10,
+            "chg": 5,
+            "eef": 0,
+            "steppe": 0
+          },
+          "ancestryNote": "EHG-dominated; CHG-related and farmer inputs rise in the Eneolithic.",
+          "substrate": "ANE-rich eastern foragers",
+          "incoming": "—",
+          "fused": "EHG zone",
+          "languageFamily": "Unattested (forager)",
+          "languages": "Unknown (EHG zone)",
+          "linguisticNote": "Unknown. Proto-Indo-European is reconstructed for a much later steppe horizon.",
+          "linguisticConfidence": "hypothetical"
+        }
+      },
+      "linguistics": "Speech is entirely unattested. Later farmer and Indo-European languages are not continuous with recoverable Mesolithic tongues. Treat all language labels here as placeholders for lost diversity."
+    },
+    {
+      "id": "early-neolithic",
+      "label": "Early Neolithic",
+      "era": "First Farmers",
+      "yearLabel": "c. 5500 BCE",
+      "yearApprox": -5500,
+      "narrative": "Anatolian Neolithic–related Early European Farmers (EEF) enter via the Balkans and Mediterranean coasts (~6500–5500 BCE). In much of western and central Europe this is near-total demographic replacement of hunter-gatherers; east of a Black Sea–Baltic genomic divide, forager continuity is stronger (Allentoft et al. 2024). Culture names mark ceramic/settlement packages carried by these farmers.",
+      "culturesNote": "Starčevo–Körös–Criș, early Vinča, LBK (Linearbandkeramik), Cardial/Impresso, earliest Funnelbeaker contact — EEF-rich demic expansions.",
+      "regions": {
+        "iberia": {
+          "culture": "Cardial Early Neolithic Iberia",
+          "color": "#c9a84a",
+          "mode": "replacement",
+          "description": "Mediterranean Cardial/Impresso farming reaches Iberia by sea. Settlements, ceramics, and domesticates arrive with people who are genomically Anatolian Neolithic–related (EEF). Early farmer WHG ancestry is low; WHG rises again in later Neolithic admixture.",
+          "ancestry": {
+            "eef": 90,
+            "whg": 8,
+            "steppe": 0
+          },
+          "ancestryNote": "Early Iberian farmers ≈ 85–95% EEF in published models; WHG minority.",
+          "substrate": "Iberian WHG",
+          "incoming": "Cardial EEF",
+          "fused": "Farmer Iberia (WHG low)",
+          "languageFamily": "Unattested early farmer (non-IE?)",
+          "languages": "Unknown Cardial-related",
+          "linguisticNote": "Unknown non-IE farmer language(s). Not ancestral Basque or Iberian by evidence — those are later attestations.",
+          "linguisticConfidence": "hypothetical"
+        },
+        "britain": {
+          "culture": "Earliest Neolithic Britain (EEF arrival)",
+          "color": "#b89840",
+          "mode": "replacement",
+          "description": "Farming reaches Britain after the continental Early Neolithic. When established, Neolithic Britons are strongly EEF-derived — a first major replacement of Mesolithic WHG — until the Beaker-age collapse of this gene pool (~2500 BCE).",
+          "ancestry": {
+            "eef": 75,
+            "whg": 20,
+            "steppe": 0
+          },
+          "ancestryNote": "Neolithic Britain highly EEF (+ some WHG); steppe ≈ 0 until Beaker.",
+          "substrate": "Insular WHG",
+          "incoming": "Continental EEF",
+          "fused": "Neolithic Britain forming",
+          "languageFamily": "Early farmer (non-IE?)",
+          "languages": "Unknown Neolithic",
+          "linguisticNote": "Unknown non-IE. The later Celtic languages are not this Neolithic speech.",
+          "linguisticConfidence": "hypothetical"
+        },
+        "france": {
+          "culture": "Cardial coast & LBK-influenced interior",
+          "color": "#d4b04e",
+          "mode": "replacement",
+          "description": "Dual Neolithic streams: Mediterranean Cardial along the south/west and Danubian LBK influence toward the northeast. Both are EEF-rich demic spreads that replace most local HG ancestry, with later WHG gene flow into farmer groups.",
+          "ancestry": {
+            "eef": 88,
+            "whg": 10,
+            "steppe": 0
+          },
+          "substrate": "WHG Gaul",
+          "incoming": "EEF farmers",
+          "fused": "Neolithic France",
+          "languageFamily": "Early farmer (non-IE?)",
+          "languages": "Unknown LBK/Cardial-related",
+          "linguisticNote": "Unknown farmer languages; Gaulish Celtic is ~4000+ years later.",
+          "linguisticConfidence": "hypothetical",
+          "ancestryNote": "Early farmers ~EEF; WHG admixture increases through Middle Neolithic."
+        },
+        "central": {
+          "culture": "LBK (Linear Pottery Culture)",
+          "color": "#c9a030",
+          "mode": "replacement",
+          "description": "The classic Central European Early Neolithic (~5500–4900 BCE): longhouses, Linearbandkeramik pottery, pioneer farming on loess. Genomes are strongly Anatolian farmer–related; initial HG admixture is limited and rises later. Not “Celtic” or “Germanic.”",
+          "ancestry": {
+            "eef": 92,
+            "whg": 7,
+            "steppe": 0
+          },
+          "ancestryNote": "Early LBK ≈ EEF (often >90% in models); WHG increases Mid–Late Neolithic.",
+          "substrate": "Central WHG",
+          "incoming": "LBK EEF",
+          "fused": "Danubian Neolithic",
+          "languageFamily": "Early farmer (non-IE?)",
+          "languages": "Unknown LBK-related",
+          "linguisticNote": "Unknown; widely assumed non-IE under steppe-IE models.",
+          "linguisticConfidence": "hypothetical"
+        },
+        "scandinavia": {
+          "culture": "Ertebølle foragers → earliest TRB contact",
+          "color": "#8a9a50",
+          "mode": "admixture",
+          "description": "Southern Scandinavia stays forager (Ertebølle) longer than Central Europe. Funnelbeaker (TRB) farming brings the first major Holocene ancestry shift — Denmark’s farmer pulse — before the second, steppe-related Single Grave pulse.",
+          "ancestry": {
+            "whg": 55,
+            "eef": 40,
+            "steppe": 0
+          },
+          "ancestryNote": "Transition samples span WHG-rich foragers to EEF-rich early farmers (Allentoft 2024 Denmark).",
+          "substrate": "Ertebølle WHG",
+          "incoming": "TRB farmers",
+          "fused": "Early Nordic Neolithic",
+          "languageFamily": "Mixed forager/farmer",
+          "languages": "Unknown Ertebølle / early TRB",
+          "linguisticNote": "Language shift likely with farming; details unknowable. Not Old Norse.",
+          "linguisticConfidence": "hypothetical"
+        },
+        "italy": {
+          "culture": "Impresso / Early Neolithic Italy",
+          "color": "#c8a848",
+          "mode": "replacement",
+          "description": "Maritime Early Neolithic along Italian coasts with Impressed Ware. Strong EEF signal replaces most forager ancestry; inland uptake varies. Sets the farmer substrate later overlain by Bronze Age steppe-related ancestry and, historically, Italic/Etruscan languages.",
+          "ancestry": {
+            "eef": 90,
+            "whg": 8,
+            "steppe": 0
+          },
+          "substrate": "Italian WHG",
+          "incoming": "Mediterranean EEF",
+          "fused": "Neolithic Italy",
+          "languageFamily": "Early farmer (non-IE?)",
+          "languages": "Unknown Impresso-related",
+          "linguisticNote": "Unknown Impresso-related farmer speech — not Latin, not Etruscan, and not recoverable from later Italic.",
+          "linguisticConfidence": "hypothetical",
+          "ancestryNote": "Early Italian Impresso farmers are EEF-dominated in published models; WHG is a minority that rises later."
+        },
+        "balkans": {
+          "culture": "Starčevo–Körös–Criș / early Vinča",
+          "color": "#d0b050",
+          "mode": "admixture",
+          "description": "Corridor of Europe’s first farming. Starčevo–Körös–Criș and early Vinča tell settlements carry Anatolian-related farmers who mix more visibly with distinctive local HG (Iron Gates) than some early western LBK groups.",
+          "ancestry": {
+            "eef": 80,
+            "whg": 15,
+            "steppe": 0,
+            "other": 5
+          },
+          "substrate": "Iron Gates HG",
+          "incoming": "Anatolian-related EEF",
+          "fused": "Balkan Early Neolithic",
+          "languageFamily": "Early farmer (non-IE?)",
+          "languages": "Unknown Starčevo/Vinča-related",
+          "linguisticNote": "Unknown Starčevo/Vinča-related languages. Ancient Greek is still far in the future and unrelated by attestation.",
+          "linguisticConfidence": "hypothetical",
+          "ancestryNote": "EEF majority + elevated local HG vs early LBK extremes."
+        },
+        "eastern": {
+          "culture": "Pontic foragers & western Trypillia fringe",
+          "color": "#7a8a60",
+          "mode": "persistence",
+          "description": "East of the Neolithic genomic “great divide,” many forest-steppe groups remain forager-derived while Cucuteni–Trypillia farmers expand on the western edge. Little pan-eastern EEF replacement compared with Germany or Iberia.",
+          "ancestry": {
+            "ehg": 50,
+            "eef": 35,
+            "whg": 10,
+            "chg": 5
+          },
+          "ancestryNote": "Sharp west/east contrast: farmer shift strong in west, weak east (Allentoft 2024).",
+          "substrate": "EHG foragers",
+          "incoming": "Trypillia / farmer fringe",
+          "fused": "Mixed Pontic Neolithic edge",
+          "languageFamily": "Mixed",
+          "languages": "Unknown forager + Trypillia-edge",
+          "linguisticNote": "Unknown mix; not Slavic (medieval) and not yet clearly IE.",
+          "linguisticConfidence": "hypothetical"
+        }
+      },
+      "linguistics": "No texts. Farmer languages are unknown and usually modeled as non-Indo-European. Residual forager languages vanish or leave only undetectable substrates. Do not equate “Neolithic” with any historically named family."
+    },
+    {
+      "id": "middle-neolithic",
+      "label": "Middle–Late Neolithic",
+      "era": "Megaliths & farmer Europe",
+      "yearLabel": "c. 4000–3500 BCE",
+      "yearApprox": -3800,
+      "narrative": "Farmer Europe densifies: Atlantic megaliths, Chasséen/Michelsberg, Funnelbeaker (TRB), Cucuteni–Trypillia mega-sites, and forming Globular Amphora (GAC). WHG ancestry often rises inside farmer communities (resurgence/admixture). North of the Black Sea, Eneolithic steppe groups begin mixtures that will produce Yamnaya — still before the continental steppe flood.",
+      "culturesNote": "TRB, Michelsberg, Chasséen, Atlantic megalithic, GAC, Cucuteni–Trypillia, late Vinča — archaeological cultures on EEF±WHG genetics.",
+      "regions": {
+        "iberia": {
+          "culture": "Megalithic Late Neolithic Iberia",
+          "color": "#b89040",
+          "mode": "admixture",
+          "description": "Passage graves and related monumental traditions across Atlantic/southern Iberia. Still EEF-dominated genetically, but with higher WHG than the earliest Cardial pioneers. Copper appears at the period’s end; steppe ancestry remains essentially absent.",
+          "ancestry": {
+            "eef": 70,
+            "whg": 28,
+            "steppe": 0
+          },
+          "substrate": "Early Cardial EEF",
+          "incoming": "WHG gene flow",
+          "fused": "Iberian Late Neolithic",
+          "languageFamily": "Pre-IE / unknown",
+          "languages": "Megalithic-zone languages (unknown)",
+          "linguisticNote": "Unknown pre-IE. Historical Iberian script languages are Copper/Iron Age attestations, not proven megalithic speech.",
+          "linguisticConfidence": "hypothetical",
+          "ancestryNote": "Roughly ~70% EEF / ~30% WHG order-of-magnitude; steppe ~0."
+        },
+        "britain": {
+          "culture": "British Neolithic megalith builders",
+          "color": "#a88838",
+          "mode": "absorption",
+          "description": "Orkney, Wessex, and related Neolithic societies that build major monuments (including the Stonehenge landscape’s Neolithic phases). Genomically still Anatolian farmer–related + WHG — the population Olalde et al. (2018) show is ~90% replaced in the Beaker age.",
+          "ancestry": {
+            "eef": 75,
+            "whg": 24,
+            "steppe": 0
+          },
+          "ancestryNote": "Neolithic ternary without steppe; the “doomed” gene pool relative to Beaker Britain.",
+          "substrate": "EEF Britain",
+          "incoming": "Limited WHG",
+          "fused": "Insular Neolithic (doomed demographically)",
+          "languageFamily": "Pre-IE / unknown",
+          "languages": "British Neolithic languages",
+          "linguisticNote": "Unknown non-IE; later Celtic is not continuous by default.",
+          "linguisticConfidence": "hypothetical"
+        },
+        "france": {
+          "culture": "Chasséen & Atlantic megalithic France",
+          "color": "#c09842",
+          "mode": "admixture",
+          "description": "Middle Neolithic cultural mosaic (Chasséen and neighbors) with megaliths in the west. Farmer–forager admixture ongoing; steppe ancestry still absent. Sets the substrate that will receive third-millennium steppe-related gene flow.",
+          "ancestry": {
+            "eef": 72,
+            "whg": 26,
+            "steppe": 0
+          },
+          "substrate": "EEF",
+          "incoming": "WHG",
+          "fused": "Late Neolithic Gaul",
+          "languageFamily": "Pre-IE / unknown",
+          "languages": "Unknown",
+          "linguisticNote": "Unknown pre-Celtic farmer languages of Chasséen/megalithic France; Gaulish appears only in the Iron Age record.",
+          "linguisticConfidence": "hypothetical",
+          "ancestryNote": "EEF majority + substantial WHG; steppe ~0."
+        },
+        "central": {
+          "culture": "TRB, Michelsberg & early Globular Amphora",
+          "color": "#b89038",
+          "mode": "admixture",
+          "description": "Funnelbeaker and Michelsberg farming societies; Globular Amphora (GAC) forms toward the Late Neolithic. GAC-like farmer ancestry is the key non-steppe source later mixed into Corded Ware. Still pre-steppe genetically in the core sequence.",
+          "ancestry": {
+            "eef": 75,
+            "whg": 22,
+            "steppe": 0
+          },
+          "substrate": "LBK descendants",
+          "incoming": "WHG / regional farmers",
+          "fused": "GAC-world farmers",
+          "languageFamily": "Pre-IE / unknown",
+          "languages": "TRB/GAC-related unknown",
+          "linguisticNote": "Unknown. CW-linked IE comes next, not yet.",
+          "linguisticConfidence": "hypothetical",
+          "ancestryNote": "EEF+WHG farmer profiles; GAC becomes the modeled farmer side of CW admixture."
+        },
+        "scandinavia": {
+          "culture": "Funnelbeaker (TRB) Scandinavia",
+          "color": "#9a9840",
+          "mode": "replacement",
+          "description": "Established farming in southern Scandinavia after Ertebølle. Ancestry shifts toward EEF with residual WHG. This farmer Scandinavia is the substrate nearly replaced by Single Grave / Battle Axe steppe-rich groups centuries later.",
+          "ancestry": {
+            "eef": 70,
+            "whg": 28,
+            "steppe": 0
+          },
+          "substrate": "Ertebølle",
+          "incoming": "TRB EEF",
+          "fused": "Farmer Scandinavia",
+          "languageFamily": "Pre-IE / unknown",
+          "languages": "TRB-related unknown",
+          "linguisticNote": "Unknown TRB-related speech; pre-Germanic tied to later Battle Axe models.",
+          "linguisticConfidence": "hypothetical",
+          "ancestryNote": "First Danish Holocene turnover (farmer); second (steppe) still ahead."
+        },
+        "italy": {
+          "culture": "Italian Middle–Late Neolithic",
+          "color": "#c0a044",
+          "mode": "admixture",
+          "description": "Regional farmer cultures consolidating domestic economies; copper begins at the edges (toward Remedello/Gaudo). Genetics remain EEF+WHG without meaningful steppe yet.",
+          "ancestry": {
+            "eef": 78,
+            "whg": 20,
+            "steppe": 0
+          },
+          "substrate": "Early Neolithic Italy",
+          "incoming": "WHG",
+          "fused": "Italian Late Neolithic",
+          "languageFamily": "Pre-IE / unknown",
+          "languages": "Unknown",
+          "linguisticNote": "Unknown; pre-Italic / pre-Etruscan deep layers unrecoverable.",
+          "linguisticConfidence": "hypothetical",
+          "ancestryNote": "EEF-led; steppe arrives mainly in the Bronze Age."
+        },
+        "balkans": {
+          "culture": "Vinča & Balkan Late Neolithic / Copper",
+          "color": "#c8a84a",
+          "mode": "admixture",
+          "description": "Dense tell settlements, early copper metallurgy, Vinča and successor facies. Farmer ancestry dominant; steppe contact intensifies on the northeast Black Sea–Danube edge as Eneolithic steppe societies form.",
+          "ancestry": {
+            "eef": 75,
+            "whg": 18,
+            "steppe": 2,
+            "other": 5
+          },
+          "substrate": "Starčevo descendants",
+          "incoming": "Regional HG / early steppe contact",
+          "fused": "Balkan Chalcolithic edge",
+          "languageFamily": "Pre-IE / unknown",
+          "languages": "Unknown Balkan Neolithic",
+          "linguisticNote": "Unknown. Mycenaean Greek is still a millennium+ away.",
+          "linguisticConfidence": "hypothetical",
+          "ancestryNote": "EEF+local HG; early steppe signals appear regionally toward the Copper Age."
+        },
+        "eastern": {
+          "culture": "Cucuteni–Trypillia & Pontic Eneolithic neighbors",
+          "color": "#a09050",
+          "mode": "admixture",
+          "description": "Trypillia mega-settlements meet Eneolithic steppe groups. North Pontic aDNA tracks Caucasus–Lower Volga–related waves into Usatove and Serednii Stih — precursors of Yamnaya — while incorporating farmer and forager outsiders.",
+          "ancestry": {
+            "eef": 45,
+            "ehg": 25,
+            "chg": 15,
+            "whg": 10,
+            "steppe": 5
+          },
+          "ancestryNote": "Schematic mix of EEF, EHG, CHG-related; pre-Yamnaya crucible (Nature North Pontic 2024).",
+          "substrate": "Trypillia farmers + local foragers",
+          "incoming": "CLV / Eneolithic steppe",
+          "fused": "Pontic Eneolithic crucible",
+          "languageFamily": "Contact zone",
+          "languages": "Unknown + early steppe speech?",
+          "linguisticNote": "Unknown. Possible early IE on the steppe side only as hypothesis.",
+          "linguisticConfidence": "hypothetical"
+        }
+      },
+      "linguistics": "Still pre-Indo-European across most of Europe. Megalithic and Trypillia labels are not language families. Possible early IE on the steppe edge only as hypothesis."
+    },
+    {
+      "id": "yamnaya",
+      "label": "Copper / Yamnaya",
+      "era": "Steppe pastoralists rise",
+      "yearLabel": "c. 3000 BCE",
+      "yearApprox": -3000,
+      "narrative": "Yamnaya (Yamna) pastoralists of the Pontic–Caspian steppe form from Eneolithic mixtures (Serednii Stih / Caucasus–Lower Volga–related inputs; North Pontic aDNA 2024) and expand from ~3300 BCE. Their ancestry — Western Steppe Herder (WSH) — is the source later seen across Europe in Corded Ware. Correlation with late Proto-Indo-European is the leading model, not a deciphered Yamnaya lexicon.",
+      "culturesNote": "Yamnaya/Yamna, Afanasievo (eastward), late Trypillia, Usatove contacts, Remedello/Gaudo in Italy, late TRB/Pitted Ware in the north.",
+      "regions": {
+        "iberia": {
+          "culture": "Iberian Copper Age (Los Millares & kin)",
+          "color": "#b88840",
+          "mode": "persistence",
+          "description": "Fortified Copper Age centers (e.g. Los Millares tradition) and related communities. Metallurgy and social hierarchy intensify, but steppe-related ancestry is still minimal. Bell Beaker pottery will spread as a cultural package before/with later, more gradual steppe gene flow — unlike Britain’s cliff-edge replacement.",
+          "ancestry": {
+            "eef": 68,
+            "whg": 30,
+            "steppe": 2
+          },
+          "substrate": "Neolithic Iberia",
+          "incoming": "Metallurgy / early Beaker ideas",
+          "fused": "Chalcolithic Iberia",
+          "languageFamily": "Pre-IE / unknown",
+          "languages": "Copper Age Iberian languages (unknown)",
+          "linguisticNote": "Unknown pre-IE. Do not equate Copper Age cultures with Celtic.",
+          "linguisticConfidence": "hypothetical",
+          "ancestryNote": "Still largely EEF+WHG; steppe ≈ 0–few percent at Copper Age start."
+        },
+        "britain": {
+          "culture": "Late Neolithic Britain (pre-Beaker)",
+          "color": "#a88038",
+          "mode": "persistence",
+          "description": "Final centuries of the Neolithic farmer society before the Beaker demographic break (~2500 BCE). Monumental landscapes continue; genetically still the EEF+WHG island population about to be replaced.",
+          "ancestry": {
+            "eef": 74,
+            "whg": 25,
+            "steppe": 1
+          },
+          "substrate": "British Neolithic",
+          "incoming": "—",
+          "fused": "Pre-Beaker island",
+          "languageFamily": "Pre-IE / unknown",
+          "languages": "Late Neolithic languages",
+          "linguisticNote": "Unknown non-IE Neolithic speech about to be marginalized/replaced in IE-shift models.",
+          "linguisticConfidence": "hypothetical",
+          "ancestryNote": "Steppe still negligible; Beaker turnover imminent."
+        },
+        "france": {
+          "culture": "Late Neolithic France — first steppe pulses",
+          "color": "#b09048",
+          "mode": "admixture",
+          "description": "Northern French Late Neolithic burials capture steppe-related ancestry arriving in real time (~3000–2600 BCE admixture pulses; Science Advances 2024). Not yet a uniform Corded Ware map — patchy early contact into a Neolithic substrate.",
+          "ancestry": {
+            "eef": 65,
+            "whg": 22,
+            "steppe": 13
+          },
+          "ancestryNote": "Site-variable early steppe (order ~10–20% in some modeled groups); not Britain-level replacement.",
+          "substrate": "Neolithic Gaul",
+          "incoming": "Steppe-related",
+          "fused": "First French steppe admixture",
+          "languageFamily": "Transitional",
+          "languages": "Unknown; early IE signals?",
+          "linguisticNote": "Possible early IE speech with steppe gene flow — contested; no texts.",
+          "linguisticConfidence": "hypothetical"
+        },
+        "central": {
+          "culture": "Globular Amphora → Corded Ware dawn",
+          "color": "#a07040",
+          "mode": "admixture",
+          "description": "Central Europe at the hinge: GAC farmers meet expanding steppe-admixed groups. Corded Ware emerges as a new cultural-genetic formation (Yamnaya-related + GAC-like), the engine of much temperate European Indo-Europeanization in standard models.",
+          "ancestry": {
+            "eef": 55,
+            "whg": 15,
+            "steppe": 30
+          },
+          "substrate": "GAC farmers",
+          "incoming": "Yamnaya-related",
+          "fused": "Proto–Corded Ware",
+          "languageFamily": "Transitional → early IE?",
+          "languages": "Pre-Corded + early CW speech",
+          "linguisticNote": "Leading archaeological correlate of early IE expansion into the European plain.",
+          "linguisticConfidence": "hypothetical",
+          "ancestryNote": "Rising steppe fraction; CW often ~half or more steppe-related in early individuals (regionally variable)."
+        },
+        "scandinavia": {
+          "culture": "Late TRB & Pitted Ware",
+          "color": "#8a8860",
+          "mode": "admixture",
+          "description": "Farmer TRB coexists with coastal Pitted Ware (more HG-leaning genetically). The Single Grave Culture (Corded Ware) takeover — Denmark’s second near-total turnover — follows in the next centuries.",
+          "ancestry": {
+            "eef": 55,
+            "whg": 40,
+            "steppe": 5
+          },
+          "substrate": "TRB + Pitted Ware",
+          "incoming": "Early steppe signals",
+          "fused": "Pre–Single Grave north",
+          "languageFamily": "Pre-IE / transitional",
+          "languages": "TRB/Pitted Ware languages",
+          "linguisticNote": "Pre-IE/transitional; pre-Germanic linked to ensuing Battle Axe/SGC.",
+          "linguisticConfidence": "hypothetical",
+          "ancestryNote": "Still mostly pre-steppe; SGC steppe pulse comes next (~60–85% steppe in Denmark LNBA)."
+        },
+        "italy": {
+          "culture": "Remedello & Gaudo Copper Age",
+          "color": "#b89850",
+          "mode": "persistence",
+          "description": "Northern and peninsular Copper Age cultures with distinctive burial rites and early metal. Steppe ancestry appears later and more moderately than in the Corded Ware north — Italy’s BA path is not a clone of Poland or Denmark.",
+          "ancestry": {
+            "eef": 75,
+            "whg": 20,
+            "steppe": 5
+          },
+          "substrate": "Italian Neolithic",
+          "incoming": "Limited early steppe",
+          "fused": "Italian Chalcolithic",
+          "languageFamily": "Pre-IE / unknown",
+          "languages": "Remedello-era unknown",
+          "linguisticNote": "Unknown. Historical Italic and Etruscan are still ahead.",
+          "linguisticConfidence": "hypothetical",
+          "ancestryNote": "Mostly EEF+WHG; limited early steppe vs CW heartland."
+        },
+        "balkans": {
+          "culture": "Balkan Eneolithic — Danube–steppe contact",
+          "color": "#a88848",
+          "mode": "admixture",
+          "description": "Lower Danube and Black Sea–adjacent communities enter contact with expanding Yamnaya horizons. Early steppe-related ancestry is patchy; Aegean farmer substrates remain important further south.",
+          "ancestry": {
+            "eef": 55,
+            "whg": 15,
+            "steppe": 25,
+            "other": 5
+          },
+          "substrate": "Balkan farmers",
+          "incoming": "Yamnaya horizons",
+          "fused": "Danube–steppe contact",
+          "languageFamily": "Contact",
+          "languages": "Unknown + early IE on Danube?",
+          "linguisticNote": "Contact zone; Greek ancestor speech not yet Mycenaean-attested.",
+          "linguisticConfidence": "hypothetical",
+          "ancestryNote": "Variable steppe on EEF-rich bases; not uniform Yamnaya replacement."
+        },
+        "eastern": {
+          "culture": "Yamnaya (Yamna) Western Steppe Herders",
+          "color": "#a05030",
+          "mode": "admixture",
+          "description": "Mobile pastoralists of the Pontic–Caspian steppe (~3300–2600 BCE), kurgan burial rite, wagon/horse pastoral economy. Formed from Eneolithic steppe mixtures (Serednii Stih–related; CLV contributions). Expanding Yamnaya-related ancestry is the source labeled “steppe” across European BA aDNA. Archaeological Yamnaya ≠ identical genomes in every kurgan.",
+          "ancestry": {
+            "steppe": 70,
+            "ehg": 10,
+            "chg": 15,
+            "eef": 5
+          },
+          "ancestryNote": "Classically EHG + CHG-related; refined Middle Don / CLV models (Allentoft 2024; North Pontic 2024). Farmer ancestry usually low in “core” Yamnaya.",
+          "substrate": "Eneolithic steppe (Serednii Stih etc.)",
+          "incoming": "CLV / Caucasus-related",
+          "fused": "Western Steppe Herders",
+          "languageFamily": "Indo-European (late PIE / early IE — reconstructed)",
+          "languages": "Unattested steppe IE (reconstructed)",
+          "linguisticNote": "Best archaeological match for late Proto-Indo-European (or a sister) in the steppe hypothesis — reconstructed lexicon, not Yamnaya inscriptions.",
+          "linguisticConfidence": "reconstructed"
+        }
+      },
+      "linguistics": "Steppe speech is reconstructed only via Indo-European comparative method. Yamnaya ≈ late PIE (or a close sister) is mainstream but unprovable from inscriptions. Western Europe still largely non-IE."
+    },
+    {
+      "id": "beaker-corded",
+      "label": "Corded Ware & Bell Beaker",
+      "era": "Third-millennium transformations",
+      "yearLabel": "c. 2500 BCE",
+      "yearApprox": -2500,
+      "narrative": "Two archaeological packages reshape the third millennium: Corded Ware (high steppe ancestry, often after Globular Amphora admixture) across northern/central Europe, and Bell Beaker (genetically heterogeneous). In Britain, Beaker-associated migrants replace ~90% of Neolithic ancestry (Olalde 2018). Iberian Beakers often remain Neolithic-like while steppe ancestry rises more gradually (Olalde 2019). Burial rites and genes are not always synchronized.",
+      "culturesNote": "Corded Ware, Single Grave, Battle Axe, Bell Beaker (Iberian vs Dutch/central), late Yamnaya/Catacomb — culture ≠ single genotype.",
+      "regions": {
+        "iberia": {
+          "culture": "Bell Beaker Iberia",
+          "color": "#b87333",
+          "mode": "admixture",
+          "description": "Beaker pottery, graves, and metallurgical networks spread widely in Iberia. Genetically, many early Iberian Beaker-associated individuals remain largely Neolithic-like; steppe-related ancestry increases through the Bronze Age more gradually and often male-biased (Olalde 2019). Classic lesson: Beaker culture package ≠ single genetic population.",
+          "ancestry": {
+            "eef": 55,
+            "whg": 25,
+            "steppe": 20
+          },
+          "ancestryNote": "Steppe rises over centuries (very roughly toward ~20–40% in later BA models by region); not Britain’s ~90% Neolithic replacement.",
+          "substrate": "Copper Age Iberia",
+          "incoming": "Steppe-related (uneven)",
+          "fused": "Bronze Age Iberian cline",
+          "languageFamily": "Mixed: non-IE + incoming IE?",
+          "languages": "Pre-IE Iberian substrates; early IE uncertain",
+          "linguisticNote": "Culture≠language. IE (later Celtic/Italic-related?) is not automatic with Beaker pots; non-IE Iberian is attested in the Iron Age.",
+          "linguisticConfidence": "mixed"
+        },
+        "britain": {
+          "culture": "Bell Beaker Britain (genomic transformation)",
+          "color": "#9a5a28",
+          "mode": "replacement",
+          "description": "Within a few centuries after ~2500 BCE, migrants related to central/northern European Beaker groups replace ~90% of Britain’s Neolithic gene pool (Olalde et al. 2018). The archaeological Beaker label on the continent is genetically diverse — Britain’s pulse is specifically the steppe-rich Beaker-related stream. Foundational for later British BA/IA ancestry.",
+          "ancestry": {
+            "steppe": 50,
+            "eef": 35,
+            "whg": 15
+          },
+          "ancestryNote": "~90% turnover of prior Neolithic ancestry; resulting mix ≈ steppe + EEF + WHG ternary.",
+          "substrate": "British Neolithic (~wiped)",
+          "incoming": "Steppe-rich Beaker groups",
+          "fused": "Beaker Britain",
+          "languageFamily": "Indo-Europeanizing",
+          "languages": "Early Celtic or pre-Celtic IE?",
+          "linguisticNote": "Often paired with IE language shift models (early Celtic or pre-Celtic IE). Exact branch and timing remain debated; no contemporary texts.",
+          "linguisticConfidence": "hypothetical"
+        },
+        "france": {
+          "culture": "Bell Beaker & late Corded Ware France",
+          "color": "#a86830",
+          "mode": "admixture",
+          "description": "Northern France shows admixture pulses tying steppe ancestry to CW/Beaker-era dynamics (~3000/2900 and ~2600 BCE). Paris Basin collective burials capture Neolithic substrates meeting incoming steppe-related ancestry in “real time.”",
+          "ancestry": {
+            "eef": 45,
+            "whg": 18,
+            "steppe": 37
+          },
+          "substrate": "Late Neolithic France",
+          "incoming": "CW / Beaker steppe-rich",
+          "fused": "Bronze Age France forming",
+          "languageFamily": "Indo-Europeanizing",
+          "languages": "Early IE dialects (pre-Celtic?)",
+          "linguisticNote": "Early IE dialects hypothesized with CW/Beaker gene flow; Gaulish attested only much later.",
+          "linguisticConfidence": "hypothetical",
+          "ancestryNote": "Regionally variable; steppe often tens of percent by EBA — less extreme than Britain or Denmark SGC."
+        },
+        "central": {
+          "culture": "Corded Ware",
+          "color": "#8b4513",
+          "mode": "replacement",
+          "description": "Corded Ware (c. 2900–2300 BCE): cord-decorated pottery, single graves, battle-axes. Genetically high Yamnaya-related ancestry mixed with GAC-like European farmers — not pure Yamnaya clones. Haak (2015) and successors treat CW as the main conduit of steppe ancestry (and likely IE speech) into northern/central Europe.",
+          "ancestry": {
+            "steppe": 55,
+            "eef": 35,
+            "whg": 10
+          },
+          "ancestryNote": "Often modeled ~50–75% steppe-related + farmer remainder (site-dependent).",
+          "substrate": "GAC / TRB",
+          "incoming": "Steppe pastoralist-related",
+          "fused": "Corded Ware",
+          "languageFamily": "Indo-European",
+          "languages": "Corded Ware–linked early IE",
+          "linguisticNote": "Core correlate of temperate European Indo-Europeanization in steppe models.",
+          "linguisticConfidence": "reconstructed"
+        },
+        "scandinavia": {
+          "culture": "Single Grave / Battle Axe Culture",
+          "color": "#7a4020",
+          "mode": "replacement",
+          "description": "Scandinavian Corded Ware: Single Grave Culture in Jutland and Battle Axe in Sweden. Denmark aDNA shows ~60–85% steppe-related ancestry and limited local TRB farmer contribution — a second near-complete Holocene turnover after the farmer pulse (Allentoft et al. 2024).",
+          "ancestry": {
+            "steppe": 70,
+            "eef": 18,
+            "whg": 12
+          },
+          "ancestryNote": "~60–85% steppe-related in Danish SGC/LNBA models.",
+          "substrate": "TRB Scandinavia",
+          "incoming": "Corded Ware / Single Grave",
+          "fused": "Battle Axe north",
+          "languageFamily": "Indo-European",
+          "languages": "Pre-Germanic (Battle Axe–linked)",
+          "linguisticNote": "Standard archaeological correlate of pre-Germanic on the northern arc.",
+          "linguisticConfidence": "reconstructed"
+        },
+        "italy": {
+          "culture": "Italian Bell Beaker → Early Bronze",
+          "color": "#a87840",
+          "mode": "admixture",
+          "description": "Beaker and early Bronze influences enter a Copper Age peninsula. Steppe-related ancestry appears but generally at lower/later intensity than in the CW heartland; Italy keeps more Neolithic substrate into the BA.",
+          "ancestry": {
+            "eef": 55,
+            "whg": 20,
+            "steppe": 25
+          },
+          "substrate": "Italian Copper Age",
+          "incoming": "Beaker / CW-related",
+          "fused": "Early Bronze Italy",
+          "languageFamily": "Mixed",
+          "languages": "Early IE + non-IE substrates",
+          "linguisticNote": "IE (toward Italic) and non-IE (toward Etruscan) lineages both still ahead historically.",
+          "linguisticConfidence": "mixed",
+          "ancestryNote": "Moderate steppe on EEF+WHG base; not Danish SGC extremes."
+        },
+        "balkans": {
+          "culture": "Early Bronze Age Balkans",
+          "color": "#9a6838",
+          "mode": "admixture",
+          "description": "Patchwork of steppe-admixed and more farmer-persistent communities along the Danube and toward the Aegean. Sets divergent paths: Mycenaean Greece will show moderate steppe on an Aegean base; northern Balkans track Carpathian–steppe networks.",
+          "ancestry": {
+            "eef": 50,
+            "steppe": 35,
+            "whg": 10,
+            "other": 5
+          },
+          "substrate": "Balkan Eneolithic",
+          "incoming": "Steppe / CW-related",
+          "fused": "EBA Balkans",
+          "languageFamily": "Mixed IE / non-IE",
+          "languages": "Early IE dialects + substrates",
+          "linguisticNote": "Early IE dialects + substrates; Greek becomes visible with Linear B later.",
+          "linguisticConfidence": "mixed",
+          "ancestryNote": "Steppe present but typically lower than CW Poland/Germany averages."
+        },
+        "eastern": {
+          "culture": "Late Yamnaya / Catacomb steppe",
+          "color": "#8b3a20",
+          "mode": "continuity",
+          "description": "Post-Yamnaya steppe sequence (Catacomb and related). While CW carries steppe ancestry into Europe, the steppe itself continues pastoralist cultural change. Still the reservoir of steppe-related genetic profiles.",
+          "ancestry": {
+            "steppe": 75,
+            "eef": 10,
+            "chg": 10,
+            "whg": 5
+          },
+          "substrate": "Yamnaya",
+          "incoming": "Regional steppe facies",
+          "fused": "Catacomb world",
+          "languageFamily": "Indo-European (steppe)",
+          "languages": "Late Yamnaya / early satemizing IE?",
+          "linguisticNote": "Continuing steppe IE continuum (details of dialect geography unknown).",
+          "linguisticConfidence": "reconstructed",
+          "ancestryNote": "Steppe-rich; farmer ancestry remains minority vs European CW admixed groups."
+        }
+      },
+      "linguistics": "Primary window hypothesized for Indo-Europeanization of temperate Europe. Pre-Germanic and other early IE lineages are often tied to CW/Battle Axe; Celtic/Italic pathways more debated. Iberian Beaker material culture does not imply IE speech."
+    },
+    {
+      "id": "nordic-bronze",
+      "label": "Nordic & European Bronze",
+      "era": "Bronze Age worlds",
+      "yearLabel": "c. 1400 BCE",
+      "yearApprox": -1400,
+      "narrative": "The Nordic Bronze Age (c. 1700–500 BCE) is a Scandinavian cultural climax — rock art, prestige bronzes, amber routes — on a gene pool already reset by Single Grave/Battle Axe. Southward: Tumulus then Urnfield, Atlantic Bronze, El Argar, Terramare, Mycenaean Greece (Linear B = early Greek). Deep ancestry is the WHG–EEF–steppe ternary in regional proportions; culture names proliferate faster than genetic turnovers.",
+      "culturesNote": "Nordic Bronze Age, Wessex, El Argar, Tumulus, Urnfield, Terramare/Apennine, Mycenaean, Srubnaya — BA facies on post-3000 BCE mixes.",
+      "regions": {
+        "iberia": {
+          "culture": "El Argar & Atlantic Bronze Iberia",
+          "color": "#8b6914",
+          "mode": "admixture",
+          "description": "El Argar (southeast) is an early complex Bronze Age society with fortified settlements; Atlantic Bronze networks link the west. Steppe-related ancestry is established but the Neolithic substrate remains substantial compared with post-Beaker Britain — continuity-with-admixture, not a second island-style replacement.",
+          "ancestry": {
+            "eef": 50,
+            "whg": 22,
+            "steppe": 28
+          },
+          "substrate": "Beaker-age Iberia",
+          "incoming": "Bronze networks",
+          "fused": "Iberian Bronze Age",
+          "languageFamily": "Mixed",
+          "languages": "Pre-Celtic IE? + non-IE (ancestral Iberian/Vasconic?)",
+          "linguisticNote": "Likely mosaic of early IE and non-IE; Iberian (non-IE) and Celtic appear in later written record.",
+          "linguisticConfidence": "hypothetical",
+          "ancestryNote": "Ternary mix with higher EEF retention than Britain; rough schematic ~50/20/30 EEF/WHG/steppe varies by site."
+        },
+        "britain": {
+          "culture": "Wessex & British Bronze Age",
+          "color": "#7a5a20",
+          "mode": "continuity",
+          "description": "Post-Beaker Bronze Age Britain (Wessex culture and successors). Rich barrow burial and continental metal links. Ancestry remains the Beaker-set WHG–EEF–steppe ternary; archaeological facies change without another 90% turnover.",
+          "ancestry": {
+            "steppe": 48,
+            "eef": 38,
+            "whg": 14
+          },
+          "substrate": "Beaker Britain",
+          "incoming": "Limited continental gene flow",
+          "fused": "British Bronze Age",
+          "languageFamily": "Indo-European",
+          "languages": "Early Celtic or Celtic-adjacent IE",
+          "linguisticNote": "On the path hypothesized toward Insular Celtic; absolute Celtic chronology debated.",
+          "linguisticConfidence": "reconstructed",
+          "ancestryNote": "Continuous with Beaker Britain; steppe typically near ~half in many models."
+        },
+        "france": {
+          "culture": "Tumulus & Atlantic Bronze France",
+          "color": "#8a6828",
+          "mode": "continuity",
+          "description": "Bronze Age cultural provinces over the third-millennium genetic settlement. Tumulus burial traditions and Atlantic exchange; ancestry stable relative to CW/Beaker formation.",
+          "ancestry": {
+            "eef": 42,
+            "steppe": 40,
+            "whg": 18
+          },
+          "substrate": "EBA France",
+          "incoming": "—",
+          "fused": "MBA France",
+          "languageFamily": "Indo-European",
+          "languages": "Pre-Celtic / early Celtic",
+          "linguisticNote": "Toward early Celtic; Gaulish attested only in the Iron Age.",
+          "linguisticConfidence": "reconstructed",
+          "ancestryNote": "Established ternary; no Denmark-scale new pulse."
+        },
+        "central": {
+          "culture": "Tumulus Culture → Urnfield",
+          "color": "#6b4423",
+          "mode": "continuity",
+          "description": "Central European Middle–Late Bronze Age sequence: Tumulus Culture into Urnfield cremation complexes. Likely connected (debated) to later Celtic ethnolinguistic formations. Genetics largely stabilize the Corded Ware–derived mix.",
+          "ancestry": {
+            "steppe": 45,
+            "eef": 40,
+            "whg": 15
+          },
+          "substrate": "Corded Ware descendants",
+          "incoming": "Regional BA mobility",
+          "fused": "Urnfield-forming Central Europe",
+          "languageFamily": "Indo-European",
+          "languages": "Pre-Celtic / other early IE",
+          "linguisticNote": "Pre-Celtic / early Celtic hypotheses for Urnfield–Hallstatt arc — debated.",
+          "linguisticConfidence": "reconstructed",
+          "ancestryNote": "CW-descended ternary; cultural change ≫ genetic replacement."
+        },
+        "scandinavia": {
+          "culture": "Nordic Bronze Age",
+          "color": "#c4a035",
+          "mode": "continuity",
+          "description": "c. 1700–500 BCE cultural fluorescence: figurative rock art, longhouse farms, ostentatious bronzes, amber export. Genetically continuous with Late Neolithic/Battle Axe steppe-rich ancestry — a cultural peak, not a third total population replacement after TRB and SGC.",
+          "ancestry": {
+            "steppe": 50,
+            "eef": 30,
+            "whg": 20
+          },
+          "ancestryNote": "Post–Single Grave ternary; WHG residual higher than in some southern BA zones.",
+          "substrate": "Battle Axe / LNBA",
+          "incoming": "European metal networks",
+          "fused": "Nordic Bronze Age peoples",
+          "languageFamily": "Indo-European (pre-Germanic)",
+          "languages": "Pre-Germanic (unattested)",
+          "linguisticNote": "Mainstream view: pre-Germanic speakers in a Nordic BA cultural frame — reconstructed, not attested.",
+          "linguisticConfidence": "reconstructed"
+        },
+        "italy": {
+          "culture": "Terramare & Apennine Bronze Age",
+          "color": "#8b7355",
+          "mode": "admixture",
+          "description": "Po Valley Terramare pile-dwelling/settlement systems and Apennine cultures further south. Ancestry mixes Italian Neolithic substrate with moderate BA steppe-related input — foundation for later Iron Age Italic/Etruscan genetic landscape.",
+          "ancestry": {
+            "eef": 50,
+            "steppe": 30,
+            "whg": 15,
+            "other": 5
+          },
+          "substrate": "Italian EBA",
+          "incoming": "Central European BA contacts",
+          "fused": "Italian MBA",
+          "languageFamily": "Mixed IE / non-IE",
+          "languages": "Proto-Italic? + non-IE (later Etruscan line?)",
+          "linguisticNote": "Toward Proto-Italic and non-IE (Etruscan) lines — historical split still ahead.",
+          "linguisticConfidence": "mixed",
+          "ancestryNote": "EEF-heavier than CW north; steppe present but moderate."
+        },
+        "balkans": {
+          "culture": "Mycenaean Greece & Balkan Bronze Age",
+          "color": "#9a7028",
+          "mode": "admixture",
+          "description": "Mycenaean palace societies (Linear B tablets = early Greek). Genetically, Mycenaeans show steppe-related ancestry on an Aegean/Anatolian-farmer-rich base — typically less steppe than Corded Ware north. Northern Balkans participate in Carpathian–Danube BA networks.",
+          "ancestry": {
+            "eef": 55,
+            "steppe": 25,
+            "whg": 10,
+            "other": 10
+          },
+          "ancestryNote": "Mycenaean steppe fraction model-dependent, generally moderate (<< CW Denmark).",
+          "substrate": "Aegean/Balkan BA",
+          "incoming": "Steppe-related (moderate)",
+          "fused": "Mycenaean / Balkan BA",
+          "languageFamily": "Indo-European (Greek + other)",
+          "languages": "Mycenaean Greek (attested); other IE/substrates",
+          "linguisticNote": "Mycenaean Greek is attested. Other Balkan IE (later Thracian/Illyrian) poorly documented.",
+          "linguisticConfidence": "attested"
+        },
+        "eastern": {
+          "culture": "Srubnaya (Timber-grave) & forest-steppe BA",
+          "color": "#8b4513",
+          "mode": "continuity",
+          "description": "Late Bronze Age steppe/forest-steppe pastoralist cultures (Srubnaya and kin). Maintain steppe-rich ancestry and sit on hypothesized pathways toward Indo-Iranian — parallel to European BA diversification further west.",
+          "ancestry": {
+            "steppe": 65,
+            "eef": 15,
+            "whg": 10,
+            "other": 10
+          },
+          "substrate": "Catacomb / MBA steppe",
+          "incoming": "Srubnaya facies",
+          "fused": "East European BA",
+          "languageFamily": "Indo-European (steppe/Iranian line?)",
+          "languages": "Early Indo-Iranian–related / other IE",
+          "linguisticNote": "Often linked toward early Indo-Iranian; details contested.",
+          "linguisticConfidence": "reconstructed",
+          "ancestryNote": "Steppe-dominated vs European ternary averages."
+        }
+      },
+      "linguistics": "Indo-European branches diversifying. Mycenaean Greek is attested (Linear B). Pre-Germanic in the north and Celtic-adjacent IE in the west are reconstructed. Non-IE substrates (later Iberian/Basque lines, Etruscan line) persist as hypotheses or later attestations."
+    },
+    {
+      "id": "iron-age",
+      "label": "Iron Age",
+      "era": "Hallstatt, La Tène, Classical dawn",
+      "yearLabel": "c. 700–300 BCE",
+      "yearApprox": -500,
+      "narrative": "Iron metallurgy and oppida/city-states. Hallstatt then La Tène define Celtic material Europe; Jastorf-related groups mark Germanic ethnogenesis; Classical Greece and early Rome/Etruria write history; Scythian Iranian-speakers hold the steppe; Iberia mixes non-IE Iberian with Celtiberian. Genetics mostly continue Bronze Age mixes — “Celtic” and “Germanic” are linguistic-cultural, not new deep ancestry components.",
+      "culturesNote": "Hallstatt, La Tène, Jastorf, Classical Greek poleis, Etruscan/early Rome, Iberian/Celtiberian, Scythian — first dense linguistic attestation.",
+      "regions": {
+        "iberia": {
+          "culture": "Iberians & Celtiberians",
+          "color": "#6b8e4e",
+          "mode": "continuity",
+          "description": "Iron Age Iberia splits linguistically and culturally: non-Indo-European Iberian societies on the Mediterranean/east (with scripts) versus Celtic-speaking Celtiberians and related IE groups inland/west, plus the Aquitanian/Basque line in the north. Deep ancestry remains the BA ternary; polity names are not new genetic components.",
+          "ancestry": {
+            "eef": 48,
+            "steppe": 30,
+            "whg": 20,
+            "other": 2
+          },
+          "ancestryNote": "Schematic continuity with BA Iberia (~EEF-rich ternary). No separate “Iberian race” component in aDNA terms.",
+          "substrate": "Bronze Age Iberia",
+          "incoming": "Celtic cultural packages (+ Mediterranean contacts)",
+          "fused": "Iron Age Iberian mosaic",
+          "languageFamily": "Mixed IE (Celtic) & non-IE (Iberian, Aquitanian)",
+          "languages": "Iberian (non-IE); Celtiberian (Celtic); Aquitanian/Basque line",
+          "linguisticNote": "Among Europe’s clearest Iron Age language mosaics: written Iberian alongside Celtic IE; Basque/Aquitanian is the long-lived non-IE western outlier.",
+          "linguisticConfidence": "attested"
+        },
+        "britain": {
+          "culture": "British Iron Age (Celtic-speaking)",
+          "color": "#5a7a48",
+          "mode": "continuity",
+          "description": "Hillfort-dominated later Iron Age Britain with La Tène–influenced material culture. Speakers of Brittonic Celtic. No Beaker-scale genetic replacement; ancestry continuous with Bronze Age Britain until early medieval North Sea influxes.",
+          "ancestry": {
+            "steppe": 45,
+            "eef": 40,
+            "whg": 15
+          },
+          "substrate": "British BA",
+          "incoming": "Limited continental Celtic contacts",
+          "fused": "Iron Age Britons",
+          "languageFamily": "Celtic (Indo-European)",
+          "languages": "Brittonic Celtic (ancestral to Welsh/Cornish/Breton lines)",
+          "linguisticNote": "Insular Celtic stage; Latin arrives only with Rome.",
+          "linguisticConfidence": "attested",
+          "ancestryNote": "BA ternary continuity; steppe typically substantial; “Celtic” ≠ new ancestry component."
+        },
+        "france": {
+          "culture": "La Tène Gaul",
+          "color": "#4a7c59",
+          "mode": "continuity",
+          "description": "Celtic-speaking Gaul of oppida, coinage, and La Tène art before and during early Roman contact. Tribal polities (Aedui, Arverni, etc. in historical sources). Genetic continuity from BA with mobility; ethnolinguistic “Celtic” is not a WHG/EEF/steppe relabel.",
+          "ancestry": {
+            "eef": 40,
+            "steppe": 42,
+            "whg": 18
+          },
+          "substrate": "BA Gaul",
+          "incoming": "La Tène networks",
+          "fused": "Gallic Iron Age",
+          "languageFamily": "Celtic (Indo-European)",
+          "languages": "Gaulish (Continental Celtic)",
+          "linguisticNote": "Gaulish is attested in inscriptions; later replaced by Latin→French.",
+          "linguisticConfidence": "attested",
+          "ancestryNote": "BA-derived ternary; urban/military Roman gene flow still limited pre-conquest."
+        },
+        "central": {
+          "culture": "Hallstatt → La Tène Celtic core",
+          "color": "#3d6b4f",
+          "mode": "continuity",
+          "description": "Hallstatt elite centers (early Iron Age) develop into the La Tène cultural expansion often treated as the archaeological face of Continental Celtic Europe. Ancestry remains BA-derived; the shift is cultural-linguistic organization, not a Yamnaya-scale migration visible as a new deep component.",
+          "ancestry": {
+            "steppe": 44,
+            "eef": 40,
+            "whg": 16
+          },
+          "substrate": "Urnfield descendants",
+          "incoming": "Hallstatt/La Tène cultural sphere",
+          "fused": "Celtic Central Europe",
+          "languageFamily": "Celtic (Indo-European)",
+          "languages": "Continental Celtic (Gaulish-related varieties)",
+          "linguisticNote": "Core zone of attested/continental Celtic before Romanization.",
+          "linguisticConfidence": "attested",
+          "ancestryNote": "Urnfield/BA continuity; Celtic label is linguistic-cultural."
+        },
+        "scandinavia": {
+          "culture": "Pre-Roman Iron Age Scandinavia",
+          "color": "#5a6a50",
+          "mode": "continuity",
+          "description": "Post–Nordic Bronze Age societies with simpler visible elites at first, then renewed complexity. Jastorf-related Germanic ethnogenesis is clearer archaeologically to the south; Scandinavia remains in the North Germanic trajectory. Ancestry continuous with BA.",
+          "ancestry": {
+            "steppe": 48,
+            "eef": 28,
+            "whg": 24
+          },
+          "substrate": "Nordic BA",
+          "incoming": "—",
+          "fused": "Nordic Iron Age",
+          "languageFamily": "Germanic (Indo-European)",
+          "languages": "Pre-/Proto-Germanic (toward Proto-Norse)",
+          "linguisticNote": "Reconstructed stage before Elder Futhark Proto-Norse inscriptions.",
+          "linguisticConfidence": "reconstructed",
+          "ancestryNote": "Nordic BA ternary persists; no new continental replacement pulse."
+        },
+        "italy": {
+          "culture": "Etruscans, Italic peoples & early Rome",
+          "color": "#8b2942",
+          "mode": "admixture",
+          "description": "Literate Iron Age Italy: Etruscan cities (non-IE language isolate/family), Latin and other Italic IE speakers, Greek colonies in the south. Rome rises among Latin speakers. Antonio et al. (2019): Iron Age central Italians already a West Eurasian mix — distinct from later Imperial Rome’s eastern Mediterranean pulse.",
+          "ancestry": {
+            "eef": 45,
+            "steppe": 30,
+            "whg": 15,
+            "other": 10
+          },
+          "ancestryNote": "IA Italy ≈ local BA + Mediterranean contacts; Imperial eastern Med influx comes later.",
+          "substrate": "Italian BA",
+          "incoming": "Mediterranean contacts",
+          "fused": "Archaic Italy",
+          "languageFamily": "Italic IE + Etruscan (non-IE) + Greek",
+          "languages": "Latin/other Italic; Etruscan; Greek in Magna Graecia",
+          "linguisticNote": "Best-documented early Italian multilingualism; Etruscan proves non-IE survival beside IE.",
+          "linguisticConfidence": "attested"
+        },
+        "balkans": {
+          "culture": "Classical Greece, Thracians & Illyrians",
+          "color": "#6a5a40",
+          "mode": "continuity",
+          "description": "City-state Greece produces the classical literary corpus; Thracian and Illyrian societies to the north/west are IE but poorly attested. Genetic profiles continue BA Aegean/Balkan patterns — classical glory is cultural, not a genomic reset.",
+          "ancestry": {
+            "eef": 52,
+            "steppe": 22,
+            "whg": 12,
+            "other": 14
+          },
+          "substrate": "BA Balkans/Aegean",
+          "incoming": "Classical-era mobility",
+          "fused": "Iron Age Balkans",
+          "languageFamily": "Greek & Paleo-Balkan IE",
+          "languages": "Ancient Greek (attested); Thracian; Illyrian (fragmentary)",
+          "linguisticNote": "Greek richly attested; Thracian/Illyrian known mainly from names/glosses.",
+          "linguisticConfidence": "attested",
+          "ancestryNote": "BA Aegean/Balkan continuity + local structure; “Classical” is not a genetic cluster."
+        },
+        "eastern": {
+          "culture": "Scythian & related steppe nomads",
+          "color": "#8b4513",
+          "mode": "admixture",
+          "description": "Iranian-speaking steppe confederations (Scythians and kin) across the Pontic steppe. Mounted nomadism, kurgan elites. Genetically steppe-rich with variable East Eurasian admixture — important regionally, not a pan-European replacement.",
+          "ancestry": {
+            "steppe": 55,
+            "other": 25,
+            "eef": 10,
+            "whg": 10
+          },
+          "ancestryNote": "West–east cline; eastern groups often higher East Eurasian (“other” in UI).",
+          "substrate": "BA steppe",
+          "incoming": "East Eurasian gene flow",
+          "fused": "Scythian-era steppe",
+          "languageFamily": "Iranian (Indo-European)",
+          "languages": "Scythian / related Iranian varieties",
+          "linguisticNote": "Iranian steppe languages attested indirectly (names, Greek ethnography) and by comparative IE.",
+          "linguisticConfidence": "attested"
+        }
+      },
+      "linguistics": "Attested map: Gaulish and other Celtic; Italic (Latin emerging); Greek; early Germanic (runes begin later); Iberian (non-IE) and Aquitanian/Basque line; Thracian/Illyrian fragmentary; Scythian Iranian."
+    },
+    {
+      "id": "classical",
+      "label": "Classical / Roman Republic–early Empire",
+      "era": "Mediterranean hegemony",
+      "yearLabel": "c. 100 BCE – 100 CE",
+      "yearApprox": 1,
+      "narrative": "Rome conquers the Mediterranean and much of Western Europe (Republic into early Principate). Greek remains the eastern prestige language; Celtic and Germanic societies press the frontiers. Empires redraw politics and urban demography faster than they erase provincial BA ancestry — though Imperial Rome itself shows a clear eastern Mediterranean genetic pulse (Antonio et al. 2019).",
+      "culturesNote": "Roman Empire (west/east), residual Gallic tribes, Britannia, Germanic societies beyond the limes, Sarmatians, Greek East.",
+      "regions": {
+        "iberia": {
+          "culture": "Roman Hispania",
+          "color": "#8b2942",
+          "mode": "absorption",
+          "description": "Rome organizes Iberia into provinces after centuries of conquest. Urbanism, law, and Latin spread over Iberian, Celtic, and Basque-line populations. Genetic change is mainly Mediterranean urban admixture into a durable local BA/IA substrate — absorption/romanization, not settler replacement of the whole peninsula.",
+          "ancestry": {
+            "eef": 45,
+            "steppe": 28,
+            "whg": 18,
+            "other": 9
+          },
+          "ancestryNote": "Local IA continuity + urban Mediterranean gene flow; no precise single “Roman %.”",
+          "substrate": "Iron Age Iberia",
+          "incoming": "Roman/Mediterranean mobility",
+          "fused": "Hispano-Roman",
+          "languageFamily": "Latinizing Romance trajectory + substrates",
+          "languages": "Latin (spreading); residual Celtic/Iberian; Basque/Aquitanian north",
+          "linguisticNote": "Latin → Hispano-Romance; Basque survives Romanization — key non-IE continuity.",
+          "linguisticConfidence": "attested"
+        },
+        "britain": {
+          "culture": "Roman Britannia",
+          "color": "#7a2438",
+          "mode": "absorption",
+          "description": "Claudian conquest (43 CE) creates a frontier province. Towns, army, and administration are cosmopolitan; rural majority remains Brittonic-speaking longer. Genetically, rural continuity with Iron Age Britain dominates until early medieval North Sea migrations — Roman rule ≠ Italian settler replacement.",
+          "ancestry": {
+            "steppe": 43,
+            "eef": 38,
+            "whg": 14,
+            "other": 5
+          },
+          "substrate": "Iron Age Britons",
+          "incoming": "Roman army / traders",
+          "fused": "Romano-British",
+          "languageFamily": "Brittonic Celtic + Latin (elite/army)",
+          "languages": "Brittonic; Latin in army, towns, inscriptions",
+          "linguisticNote": "Bilingual province; Latin does not fully replace Celtic as in Gaul.",
+          "linguisticConfidence": "attested",
+          "ancestryNote": "Mostly IA British ternary; military/urban samples can look more cosmopolitan."
+        },
+        "france": {
+          "culture": "Roman Gaul",
+          "color": "#8b3050",
+          "mode": "absorption",
+          "description": "From Caesar to the Principate, Gaul becomes Roman provinces. Intensive cultural Latinization produces Gallo-Romance. Demographically an absorption pattern: Roman institutions and settlers mix into a Celtic IA majority rather than erasing it genetically.",
+          "ancestry": {
+            "eef": 38,
+            "steppe": 40,
+            "whg": 16,
+            "other": 6
+          },
+          "substrate": "Gallic IA",
+          "incoming": "Roman Mediterranean",
+          "fused": "Gallo-Roman",
+          "languageFamily": "Latin → Gallo-Romance",
+          "languages": "Vulgar Latin (spreading); residual Gaulish; Greek in ports",
+          "linguisticNote": "One of history’s clearest elite/administrative language shifts ending in Romance.",
+          "linguisticConfidence": "attested",
+          "ancestryNote": "Gallic IA substrate + Mediterranean/Roman mobility; not a blank-slate colony."
+        },
+        "central": {
+          "culture": "Roman limes & Magna Germania edge",
+          "color": "#5a4a48",
+          "mode": "continuity",
+          "description": "Roman provinces south of the Danube/Rhine face Germanic societies beyond. The frontier is military, commercial, and bilingual. Ancestry on both sides continues Iron Age profiles with army mobility — “Roman” and “Germanic” are political-linguistic identities on shared deep BA foundations.",
+          "ancestry": {
+            "steppe": 42,
+            "eef": 38,
+            "whg": 15,
+            "other": 5
+          },
+          "substrate": "La Tène / Jastorf worlds",
+          "incoming": "Roman frontier traffic",
+          "fused": "Frontier Central Europe",
+          "languageFamily": "Latin (provinces) / early Germanic (beyond)",
+          "languages": "Latin; early Germanic dialects; residual Celtic in places",
+          "linguisticNote": "Limes as a language frontier, not a genetic species boundary.",
+          "linguisticConfidence": "attested",
+          "ancestryNote": "IA continuity; castra towns enrich Mediterranean links."
+        },
+        "scandinavia": {
+          "culture": "Roman Iron Age Scandinavia",
+          "color": "#4a5a58",
+          "mode": "continuity",
+          "description": "Outside the Empire but tied by trade: Roman goods in elite graves, political awareness of the south. Ancestry continuous with Nordic Iron Age; linguistically early North Germanic.",
+          "ancestry": {
+            "steppe": 47,
+            "eef": 28,
+            "whg": 23,
+            "other": 2
+          },
+          "substrate": "Nordic IA",
+          "incoming": "Trade contacts",
+          "fused": "Roman Iron Age north",
+          "languageFamily": "North Germanic",
+          "languages": "Early North Germanic → Proto-Norse",
+          "linguisticNote": "Early North Germanic continuum outside the Empire; Proto-Norse runes follow in the later Roman Iron Age / Migration Period.",
+          "linguisticConfidence": "reconstructed",
+          "ancestryNote": "Local continuity; exotic grave goods ≠ mass Roman migration."
+        },
+        "italy": {
+          "culture": "Imperial Roman Italy",
+          "color": "#9b1b30",
+          "mode": "admixture",
+          "description": "Italy as imperial core. Antonio et al. (2019): Rome’s Imperial-period populations show elevated eastern Mediterranean / Near Eastern–related ancestry versus Iron Age — a real urban demographic pull — with later medieval samples shifting westward again. Rural Italy remains more local.",
+          "ancestry": {
+            "eef": 35,
+            "steppe": 25,
+            "whg": 10,
+            "other": 30
+          },
+          "ancestryNote": "Urban imperial “other” can reach tens of percent; not uniform across the peninsula.",
+          "substrate": "Iron Age Italians",
+          "incoming": "Eastern Mediterranean",
+          "fused": "Imperial Roman Italy",
+          "languageFamily": "Latin (+ Greek)",
+          "languages": "Latin; Greek (south/east, educated bilingualism)",
+          "linguisticNote": "Latin standard of empire; Greek prestige in the East and among elites.",
+          "linguisticConfidence": "attested"
+        },
+        "balkans": {
+          "culture": "Roman Balkans & Greek East",
+          "color": "#7a3a48",
+          "mode": "admixture",
+          "description": "Heavily provincialized Balkans and Greek-speaking East under Rome. Latin in the military/Danube provinces; Greek dominates the Aegean cultural sphere. Ancestry = BA Balkan/Aegean base + imperial Mediterranean mobility.",
+          "ancestry": {
+            "eef": 45,
+            "steppe": 20,
+            "whg": 10,
+            "other": 25
+          },
+          "substrate": "IA Balkans",
+          "incoming": "Imperial Mediterranean",
+          "fused": "Roman Balkans",
+          "languageFamily": "Greek & Latin bilingual zone",
+          "languages": "Greek; Latin (provinces/army); local IE remnants",
+          "linguisticNote": "Foundation of later Byzantine Greek continuity in the south.",
+          "linguisticConfidence": "attested",
+          "ancestryNote": "Elevated eastern Med/imperial admixture in cities vs hinterlands."
+        },
+        "eastern": {
+          "culture": "Sarmatians & Pontic Roman edge",
+          "color": "#6b4423",
+          "mode": "admixture",
+          "description": "Iranian-speaking Sarmatian confederations on the steppe; Greek cities and Roman clients on the Black Sea littoral. Steppe ancestry with eastern admixture persists. Rome touches the edge; it does not Romanize the open steppe.",
+          "ancestry": {
+            "steppe": 50,
+            "other": 30,
+            "eef": 12,
+            "whg": 8
+          },
+          "substrate": "Scythian-era steppe",
+          "incoming": "Sarmatian / eastern",
+          "fused": "Sarmatian world",
+          "languageFamily": "Iranian + Greek coastal",
+          "languages": "Sarmatian/Iranian; Greek (colonies); Latin (limited)",
+          "linguisticNote": "Multilingual Pontic rim; Iranian nomads ≠ Slavic yet.",
+          "linguisticConfidence": "attested",
+          "ancestryNote": "Steppe + East Eurasian variable; coastal towns more Mediterranean."
+        }
+      },
+      "linguistics": "Latin and Greek dominate administration and literature. Vulgar Latin begins Romance. Celtic and Germanic persist outside/at edges; Basque/Aquitanian survives; Iranian on the steppe; bilingualism is normal in cities."
+    },
+    {
+      "id": "migration",
+      "label": "Migration Period",
+      "era": "Wielbark, Goths, collapse & remaking",
+      "yearLabel": "c. 300–550 CE",
+      "yearApprox": 400,
+      "narrative": "Western Roman order fragments. Wielbark culture in Poland is the archaeological horizon standardly linked to early Gothic traditions before south-east movements. Hunnic pressure, Gothic kingdoms, Frankish growth, and Anglo-Saxon settlement in Britain remake politics. Genetics show real mobility (e.g. North Sea influx in eastern England) without Beaker-scale pan-European replacement; elite Germanic layers often sit on Roman provincial majorities.",
+      "culturesNote": "Wielbark, Chernyakhov, Hunnic horizon, Visigoths/Ostrogoths, early Franks, Anglo-Saxons, early Byzantium — migration-era polities.",
+      "regions": {
+        "iberia": {
+          "culture": "Visigothic Kingdom of Hispania",
+          "color": "#4a5a6a",
+          "mode": "absorption",
+          "description": "After imperial collapse, the Visigothic kingdom rules a Hispano-Roman majority. Arian then Catholic Christian politics; legal codes blending Roman and Gothic traditions. Demographically an elite Germanic layer over Romance-shifting provincials — political Goths, not a Gothic-majority genome.",
+          "ancestry": {
+            "eef": 44,
+            "steppe": 28,
+            "whg": 18,
+            "other": 10
+          },
+          "ancestryNote": "Hispano-Roman continuity dominates; Gothic genetic input limited relative to political power.",
+          "substrate": "Hispano-Roman",
+          "incoming": "Visigothic elite",
+          "fused": "Visigothic Spain",
+          "languageFamily": "Early Romance + Gothic elite",
+          "languages": "Early Hispano-Romance; Gothic (elite, receding); Latin literacy",
+          "linguisticNote": "Gothic language fades; Romance and Latin win — classic elite dominance without language replacement permanence.",
+          "linguisticConfidence": "attested"
+        },
+        "britain": {
+          "culture": "Anglo-Saxon settlement Britain",
+          "color": "#5a6a58",
+          "mode": "admixture",
+          "description": "Post-Roman Britain sees Angles, Saxons, and Jutes establish kingdoms. Ancient DNA (e.g. Gretzinger et al. 2022 and related) supports substantial continental northern European influx especially in eastern England, mixing with Romano-British substrate — admixture with regional variation, not uniform wipeout in the west.",
+          "ancestry": {
+            "steppe": 45,
+            "eef": 35,
+            "whg": 15,
+            "other": 5
+          },
+          "ancestryNote": "Higher “continental NW” in east; west/north more Romano-British/Celtic continuity. Still WHG–EEF–steppe structured.",
+          "substrate": "Romano-British",
+          "incoming": "North Sea Germanic",
+          "fused": "Early Anglo-Saxon England",
+          "languageFamily": "West Germanic + Brittonic",
+          "languages": "Old English forming; Brittonic (west/north); Latin residual",
+          "linguisticNote": "Language shift to Old English in much of what becomes England; Celtic continues in Wales/Scotland/west.",
+          "linguisticConfidence": "attested"
+        },
+        "france": {
+          "culture": "Early Franks & Gallo-Romans",
+          "color": "#3d4a5c",
+          "mode": "absorption",
+          "description": "Frankish power grows in northern Gaul over a Gallo-Roman majority (Merovingian age). “Frank” becomes a political identity uniting Germanic elites and Romance provincials. Genetic absorption pattern; Romance speech wins in the long run with Frankish superstrate loanwords.",
+          "ancestry": {
+            "eef": 38,
+            "steppe": 40,
+            "whg": 16,
+            "other": 6
+          },
+          "substrate": "Gallo-Roman",
+          "incoming": "Frankish / Germanic",
+          "fused": "Early Merovingian Gaul",
+          "languageFamily": "Gallo-Romance + Frankish",
+          "languages": "Gallo-Romance; Frankish (Germanic elite); Latin Church",
+          "linguisticNote": "Ethnogenesis of France: Germanic ethnonym, Romance language.",
+          "linguisticConfidence": "attested",
+          "ancestryNote": "Gallo-Roman substrate + Germanic elite mobility — not Beaker-scale replacement."
+        },
+        "central": {
+          "culture": "Wielbark culture & Gothic world",
+          "color": "#2f4a6a",
+          "mode": "admixture",
+          "description": "Wielbark (c. 1st–5th c. CE) in Pomerania and Poland: cemeteries with changing rites, often linked in archaeology and historiography to early Gothic traditions before movements toward the Black Sea (Chernyakhov) and beyond. Treat as a cultural-archaeological complex — aDNA sampling is thinner than Neolithic corpora. Neighboring regions hold other Germanic and late Roman provincial societies.",
+          "ancestry": {
+            "steppe": 42,
+            "eef": 36,
+            "whg": 16,
+            "other": 6
+          },
+          "ancestryNote": "Plausible east-central IA–early medieval European mix (BA ternary + mobility). Not a unique “Wielbark genetic component.”",
+          "substrate": "East-Central Iron Age",
+          "incoming": "Gothic-related mobility / cultural package",
+          "fused": "Wielbark horizon",
+          "languageFamily": "East Germanic (+ neighbors)",
+          "languages": "Gothic (in standard Wielbark↔Gothic narrative); other Germanic; residual local",
+          "linguisticNote": "Gothic is attested (Wulfila Bible) further along the migration path; Wielbark itself is archaeological, not a text corpus.",
+          "linguisticConfidence": "mixed"
+        },
+        "scandinavia": {
+          "culture": "Late Germanic Iron Age (Vendel prelude)",
+          "color": "#3a4a50",
+          "mode": "continuity",
+          "description": "Scandinavia as a demographic and cultural source region for some migration-era movements, with rich boat graves and long-distance ties approaching the Vendel era. Local ancestry continuous; elite networks span the Baltic and North Sea.",
+          "ancestry": {
+            "steppe": 46,
+            "eef": 28,
+            "whg": 24,
+            "other": 2
+          },
+          "substrate": "Roman IA Scandinavia",
+          "incoming": "Baltic/North Sea ties",
+          "fused": "Late Germanic Iron Age",
+          "languageFamily": "North Germanic",
+          "languages": "Proto-Norse (Elder Futhark)",
+          "linguisticNote": "Proto-Norse attested in Elder Futhark inscriptions; Scandinavia exports people and speech into the migration-era world.",
+          "linguisticConfidence": "attested",
+          "ancestryNote": "Iron Age Nordic continuity; export of people/culture more than import replacement."
+        },
+        "italy": {
+          "culture": "Ostrogothic & late antique Italy",
+          "color": "#5a3048",
+          "mode": "admixture",
+          "description": "Odovacer, Theodoric’s Ostrogoths, then Justinianic wars remake Italy. Antonio et al.: medieval Italian ancestry shifts from Imperial eastern Mediterranean peaks back toward more western European affinity — politics and migration both matter.",
+          "ancestry": {
+            "eef": 38,
+            "steppe": 28,
+            "whg": 12,
+            "other": 22
+          },
+          "substrate": "Imperial Italy",
+          "incoming": "Germanic + Byzantine",
+          "fused": "Late antique Italy",
+          "languageFamily": "Late Latin/Romance + Gothic + Greek",
+          "languages": "Late Latin/early Romance; Gothic; Byzantine Greek",
+          "linguisticNote": "Gothic rule temporary; Romance and Latin continuity prevail.",
+          "linguisticConfidence": "attested",
+          "ancestryNote": "Rebalancing from imperial eastern Med enrichment; Germanic layers present but not majority-defining."
+        },
+        "balkans": {
+          "culture": "Early Byzantine Balkans & migrations",
+          "color": "#4a3a58",
+          "mode": "admixture",
+          "description": "East Roman (Byzantine) continuity plus Goths, Huns, Avars, and the onset of Slavic settlement. The linguistic map is rewritten toward South Slavic in many zones while Greek holds the Aegean/administrative core. Genetics: BA Balkan base + diverse early medieval inputs — high microregional uncertainty.",
+          "ancestry": {
+            "eef": 40,
+            "steppe": 22,
+            "whg": 10,
+            "other": 28
+          },
+          "ancestryNote": "“Other” elevated to capture Slavic/steppe/diverse inputs; avoid false precision.",
+          "substrate": "Roman Balkans",
+          "incoming": "Steppe + early Slavic",
+          "fused": "Early medieval Balkans",
+          "languageFamily": "Greek + early South Slavic + others",
+          "languages": "Byzantine Greek; early South Slavic; residual Latin/Romance; steppe languages",
+          "linguisticNote": "Major linguistic turnover (Slavic) with incomplete genetic replacement — languages ≠ genes.",
+          "linguisticConfidence": "attested"
+        },
+        "eastern": {
+          "culture": "Hunnic & post-Hunnic steppe",
+          "color": "#5a4030",
+          "mode": "admixture",
+          "description": "Huns and successor confederations pressure Europe. Elite contexts can show East Eurasian ancestry spikes; populations are heterogeneous. Linguistic attestation is poor (Hunnic unclassified/obscure). Clears space for later Bulgar, Avar, Magyar, and Slavic dynamics.",
+          "ancestry": {
+            "steppe": 40,
+            "other": 40,
+            "eef": 12,
+            "whg": 8
+          },
+          "substrate": "Sarmatian steppe",
+          "incoming": "Hunnic / East Eurasian",
+          "fused": "Migration-era steppe",
+          "languageFamily": "Obscure steppe + Iranian remnants + early Slavic",
+          "languages": "Hunnic (obscure); Iranian remnants; early Slavic expanding",
+          "linguisticNote": "Do not invent a Hunnic grammar from graves.",
+          "linguisticConfidence": "mixed",
+          "ancestryNote": "Highly variable; East Eurasian “other” can be high in some elite burials."
+        }
+      },
+      "linguistics": "East Germanic (Gothic), West Germanic (Frankish, Old English forming), North Germanic (Proto-Norse), Romance emerging from Latin, Greek in the East, early Slavic expansions beginning, Hunnic poorly attested."
+    },
+    {
+      "id": "frankish",
+      "label": "Frankish & Early Medieval",
+      "era": "Carolingians, Vikings, Slavs",
+      "yearLabel": "c. 800 CE",
+      "yearApprox": 800,
+      "narrative": "Charlemagne’s Frankish/Carolingian Empire (c. 800) politically unites much of Western and Central Europe under Christian Latin literacy, then divides (Verdun 843). Concurrently: Viking diaspora, Al-Andalus, Byzantium, First Bulgarian Empire, early Rus’. Demographically this is elite and institutional change on early medieval ancestries — not a new Paleolithic component.",
+      "culturesNote": "Carolingian Frankish Empire, Anglo-Saxon/Viking Britain, Al-Andalus, East Francia–Slavic frontier, Byzantium & Bulgaria, Kievan Rus’ beginnings.",
+      "regions": {
+        "iberia": {
+          "culture": "Al-Andalus & Christian northern kingdoms",
+          "color": "#2a5a4a",
+          "mode": "admixture",
+          "description": "Umayyad then successor Islamic states transform southern/central Iberia (Arabic prestige culture, cities, agriculture); Asturias/León/Navarre/etc. hold the Christian north. Medieval aDNA shows North African/Near Eastern–related gene flow in some Andalusian Muslim contexts while the north stays closer to earlier Hispania — a split peninsula, not one average.",
+          "ancestry": {
+            "eef": 42,
+            "steppe": 25,
+            "whg": 16,
+            "other": 17
+          },
+          "ancestryNote": "Regional contrast: Andalusian samples can show elevated “other”; Christian north more continuous. Avoid a single Spain number.",
+          "substrate": "Visigothic/Hispano-Roman",
+          "incoming": "North African / Near Eastern",
+          "fused": "Medieval Iberia split",
+          "languageFamily": "Arabic + Romance + Basque",
+          "languages": "Arabic; Mozarabic; early Castilian/Catalan/Portuguese lines; Basque",
+          "linguisticNote": "Arabic prestige south; Romance consolidation north — bilingual and multi-faith for centuries.",
+          "linguisticConfidence": "attested"
+        },
+        "britain": {
+          "culture": "Anglo-Saxon kingdoms & Viking Age",
+          "color": "#3a4a5a",
+          "mode": "admixture",
+          "description": "Heptarchy then West Saxon consolidation; Norse settlement creates the Danelaw and reshapes islands and coasts. Additional Scandinavian admixture overlays Anglo-Saxon–Brittonic mixes. Linguistically: Old English ± Old Norse contact, Celtic in the west and north.",
+          "ancestry": {
+            "steppe": 44,
+            "eef": 34,
+            "whg": 16,
+            "other": 6
+          },
+          "substrate": "Anglo-Saxon England",
+          "incoming": "Norse",
+          "fused": "Late Anglo-Saxon / Danelaw",
+          "languageFamily": "Old English + Old Norse + Celtic",
+          "languages": "Old English; Old Norse; Welsh/Gaelic/Cornish/etc.",
+          "linguisticNote": "Heavy Old Norse lexical impact on English in contact zones.",
+          "linguisticConfidence": "attested",
+          "ancestryNote": "North Sea Germanic base + Norse input in Danelaw/isles; regional Celtic continuity."
+        },
+        "france": {
+          "culture": "Frankish Empire (Carolingian heartland)",
+          "color": "#1a1a1a",
+          "mode": "continuity",
+          "description": "Under Charlemagne (crowned 800), the Frankish Empire unites much of Western and Central Europe in a Christian Latin imperial project — then fragments (Verdun 843). The “empire” is a political-ecclesiastical order over Gallo-Roman and Germanic populations. Deep ancestry stays the early medieval ternary; Frankish rule is not a genomic Beaker event.",
+          "ancestry": {
+            "eef": 37,
+            "steppe": 40,
+            "whg": 16,
+            "other": 7
+          },
+          "ancestryNote": "Continuity with Merovingian-era Gaul + elite circulation across the empire.",
+          "substrate": "Merovingian Gallo-Roman world",
+          "incoming": "Carolingian imperial institutions & elite mobility",
+          "fused": "Carolingian West",
+          "languageFamily": "Gallo-Romance + Frankish legacy + Latin",
+          "languages": "Old French forming; Latin (church/chancery); Germanic dialects in east",
+          "linguisticNote": "Imperial lingua franca is Latin; vernaculars are Romance/Germanic — bilingual elite world.",
+          "linguisticConfidence": "attested"
+        },
+        "central": {
+          "culture": "East Francia & Slavic frontier",
+          "color": "#2a3a4a",
+          "mode": "admixture",
+          "description": "Carolingian/East Frankish authority meets expanding West Slavic-speaking populations along the Elbe–Oder world. Later German stem duchies and Slavic polities form from this contact. Medieval aDNA in Central Europe shows Slavic-related shifts in some regions atop earlier ancestry — language frontier with real demographic movement, variable by microregion.",
+          "ancestry": {
+            "steppe": 38,
+            "eef": 36,
+            "whg": 14,
+            "other": 12
+          },
+          "substrate": "Post-Wielbark / late antique CE",
+          "incoming": "Slavic medieval expansions",
+          "fused": "East Frankish–Slavic contact",
+          "languageFamily": "Germanic + West Slavic",
+          "languages": "Old High German; West Slavic languages; Latin literacy",
+          "linguisticNote": "Enduring German–Slavic linguistic frontier begins here.",
+          "linguisticConfidence": "attested",
+          "ancestryNote": "BA/IA base + early medieval Slavic-related admixture in parts of the east-central zone."
+        },
+        "scandinavia": {
+          "culture": "Viking Age Scandinavia",
+          "color": "#2a4a5a",
+          "mode": "continuity",
+          "description": "Raid, trade, and settlement diaspora (British Isles, Normandy, Rus’, North Atlantic). Homelands remain genetically continuous with Iron Age Scandinavia, with some British Isles and southern gene flow into ports. Cultural export exceeds homeland replacement.",
+          "ancestry": {
+            "steppe": 45,
+            "eef": 28,
+            "whg": 22,
+            "other": 5
+          },
+          "substrate": "Germanic IA",
+          "incoming": "Raid/trade returnees",
+          "fused": "Viking Age Scandinavia",
+          "languageFamily": "North Germanic",
+          "languages": "Old Norse (runes & poetry)",
+          "linguisticNote": "Old Norse relatively unified yet dialectally spreading overseas.",
+          "linguisticConfidence": "attested",
+          "ancestryNote": "Nordic IA continuity; diaspora admixed abroad more than at home."
+        },
+        "italy": {
+          "culture": "Carolingian Italy & Byzantine south",
+          "color": "#4a2a3a",
+          "mode": "admixture",
+          "description": "Lombard then Carolingian north; Byzantine themes and, later, Islamic Sicily in the south. Politically fragmented, linguistically Italo-Romance with Greek south and transitional Arabic in Sicily. Ancestry layered accordingly.",
+          "ancestry": {
+            "eef": 40,
+            "steppe": 26,
+            "whg": 12,
+            "other": 22
+          },
+          "substrate": "Lombard Italy",
+          "incoming": "Frankish / Byzantine / Islamic",
+          "fused": "Early medieval Italy",
+          "languageFamily": "Italo-Romance + Greek + Arabic (Sicily phases)",
+          "languages": "Italian vernaculars; Latin; Greek; Arabic in Sicily",
+          "linguisticNote": "Long-lasting north/south linguistic and cultural split.",
+          "linguisticConfidence": "attested",
+          "ancestryNote": "North–south contrast; Mediterranean “other” higher in south/ports."
+        },
+        "balkans": {
+          "culture": "Byzantium & First Bulgarian Empire",
+          "color": "#3a2a4a",
+          "mode": "admixture",
+          "description": "Byzantine state continuity versus the First Bulgarian Empire (Slavic population, Bulgar elite traditions). Christianization and Slavic liturgy reshape identity. Genetics: Balkan BA base + Slavic-related ancestry + steppe Bulgar signals in varying doses — do not invent one “Bulgarian %.”",
+          "ancestry": {
+            "eef": 38,
+            "steppe": 24,
+            "whg": 10,
+            "other": 28
+          },
+          "ancestryNote": "High uncertainty by valley/coast; schematic elevated “other.”",
+          "substrate": "Byzantine Balkans",
+          "incoming": "Slavic + Bulgar",
+          "fused": "Early medieval Balkans",
+          "languageFamily": "South Slavic + Greek + Bulgar legacy",
+          "languages": "Old Church Slavonic/South Slavic; Byzantine Greek; Bulgar Turkic elite layer (receding)",
+          "linguisticNote": "Slavic language establishment with complex elite ethnogenesis.",
+          "linguisticConfidence": "attested"
+        },
+        "eastern": {
+          "culture": "Early Rus’ & steppe neighbors",
+          "color": "#3a3028",
+          "mode": "admixture",
+          "description": "Varangian (Norse) elites, Slavic populations, and Turkic steppe polities (e.g. Khazar sphere) interact along river routes forming Kievan Rus’. Multi-origin ruling traditions over East Slavic demographic cores.",
+          "ancestry": {
+            "steppe": 35,
+            "eef": 25,
+            "whg": 15,
+            "other": 25
+          },
+          "substrate": "Forest-steppe medieval",
+          "incoming": "Norse + Turkic steppe",
+          "fused": "Early Rus’ world",
+          "languageFamily": "East Slavic + Norse + Turkic",
+          "languages": "Old East Slavic; Old Norse (Varangians); Turkic steppe languages",
+          "linguisticNote": "Rus’ name and elite links Norse; language of the land becomes East Slavic.",
+          "linguisticConfidence": "attested",
+          "ancestryNote": "Forest-steppe mix; Norse signal limited relative to Slavic majority demography in most models."
+        }
+      },
+      "linguistics": "Old French/Gallo-Romance under Latin clergy; Old High German; Old Norse; Old English ± Old Norse; Arabic in Al-Andalus; Greek; South Slavic + Bulgar elite layer; Old East Slavic with Varangian Norse."
+    },
+    {
+      "id": "high-medieval",
+      "label": "High Medieval",
+      "era": "Kingdoms & Christendom",
+      "yearLabel": "c. 1200 CE",
+      "yearApprox": 1200,
+      "narrative": "High Medieval Christendom: Capetians, Plantagenets, Holy Roman Empire, Italian communes, Reconquista vs Nasrid Granada, Byzantine twilight and Balkan kingdoms, Rus’ under Golden Horde pressure. Vernacular literatures mature. Genetic geography is largely set; mobility and colonization (Ostsiedlung, crusading, trade) tweak edges.",
+      "culturesNote": "HRE, Capetian France, Plantagenet realms, communal Italy, Iberian kingdoms/Granada, Balkan states, Rus’ principalities/Golden Horde.",
+      "regions": {
+        "iberia": {
+          "culture": "Reconquista kingdoms & Nasrid Granada",
+          "color": "#4a6a40",
+          "mode": "admixture",
+          "description": "Christian kingdoms expand south; Nasrid Granada remains the last Muslim polity until 1492. Resettlement, conversion, and expulsion politics reshape local ancestry and language clines — Castilian, Portuguese, Catalan expand as Arabic retreats.",
+          "ancestry": {
+            "eef": 43,
+            "steppe": 26,
+            "whg": 17,
+            "other": 14
+          },
+          "substrate": "Medieval split Iberia",
+          "incoming": "Reconquista resettlement",
+          "fused": "Late medieval Iberia",
+          "languageFamily": "Ibero-Romance + Arabic + Basque",
+          "languages": "Castilian, Portuguese, Catalan, etc.; Andalusi Arabic; Basque; Latin/Hebrew in domains",
+          "linguisticNote": "Romance victory narrative with lasting Arabic loanwords and toponyms.",
+          "linguisticConfidence": "attested",
+          "ancestryNote": "Shifting clines from medieval contact; post-conquest homogenization incomplete."
+        },
+        "britain": {
+          "culture": "Plantagenet England & Celtic fringes",
+          "color": "#3a5a48",
+          "mode": "continuity",
+          "description": "Norman conquest (1066) installs a French-speaking elite; Plantagenet realm spans England and parts of France. Gene pool remains mostly Anglo-Scandinavian–Brittonic; Norman input is elite-layered. Welsh, Gaelic, and related languages persist on the fringes.",
+          "ancestry": {
+            "steppe": 43,
+            "eef": 35,
+            "whg": 16,
+            "other": 6
+          },
+          "substrate": "Anglo-Norman England",
+          "incoming": "Limited elite Norman",
+          "fused": "High medieval Britain",
+          "languageFamily": "English + Anglo-Norman French + Celtic",
+          "languages": "Middle English; Anglo-Norman French; Welsh/Gaelic/Scots/etc.; Latin",
+          "linguisticNote": "Trilingual elite culture; English re-emerges as state language later.",
+          "linguisticConfidence": "attested",
+          "ancestryNote": "Elite Norman layer; majority continuity from early medieval England."
+        },
+        "france": {
+          "culture": "Capetian Kingdom of France",
+          "color": "#2a2a2a",
+          "mode": "continuity",
+          "description": "Capetians consolidate a kingdom around the Île-de-France while regional identities (Occitan south, Breton, Basque edge) endure. Deep ancestry stable; French vernacular prestige rises beside Latin.",
+          "ancestry": {
+            "eef": 38,
+            "steppe": 39,
+            "whg": 16,
+            "other": 7
+          },
+          "substrate": "Frankish/medieval France",
+          "incoming": "—",
+          "fused": "Capetian realm",
+          "languageFamily": "Oïl French + Oc + minorities",
+          "languages": "Old/Middle French; Occitan; Breton; Basque edge; Latin",
+          "linguisticNote": "Langue d’oïl vs oc is a major internal linguistic divide.",
+          "linguisticConfidence": "attested",
+          "ancestryNote": "Medieval France continuity; north/south structure persists."
+        },
+        "central": {
+          "culture": "Holy Roman Empire",
+          "color": "#3a3a4a",
+          "mode": "continuity",
+          "description": "The HRE is a political canopy over German, Bohemian, Italian, and other lands — not a genetic unit. Ostsiedlung moves German speakers eastward into Slavic-inhabited regions. Map color marks the Central European imperial core, not uniform ancestry.",
+          "ancestry": {
+            "steppe": 40,
+            "eef": 38,
+            "whg": 14,
+            "other": 8
+          },
+          "substrate": "Ottonian/Salian world",
+          "incoming": "Eastward settlement (Ostsiedlung)",
+          "fused": "HRE Central Europe",
+          "languageFamily": "Germanic + Slavic + Romance (Italy) + Latin",
+          "languages": "Middle High German; Czech/Polish/etc.; Italian vernaculars; Latin; Hungarian in the basin",
+          "linguisticNote": "Empire ≠ one language; Latin and German as linking codes.",
+          "linguisticConfidence": "attested",
+          "ancestryNote": "German–Slavic contact zones show admixture; alpine/italian lands differ."
+        },
+        "scandinavia": {
+          "culture": "Medieval Nordic kingdoms",
+          "color": "#2a4a58",
+          "mode": "continuity",
+          "description": "Norwegian, Danish, and Swedish Christian kingdoms (Kalmar Union later unites crowns). Ancestry continuous with Viking Age; vernacular laws and sagas mark mature North Germanic languages.",
+          "ancestry": {
+            "steppe": 44,
+            "eef": 28,
+            "whg": 22,
+            "other": 6
+          },
+          "substrate": "Viking Age",
+          "incoming": "—",
+          "fused": "Medieval Norden",
+          "languageFamily": "North Germanic",
+          "languages": "Old Swedish/Danish/Norwegian (diverging); Latin literacy",
+          "linguisticNote": "From Old Norse relative unity to separate medieval standards.",
+          "linguisticConfidence": "attested",
+          "ancestryNote": "Continuous with Viking Age Nordic ternary; Christian medieval kingdoms are political-cultural, not a new genetic pulse."
+        },
+        "italy": {
+          "culture": "Communal Italy & southern dynasties",
+          "color": "#5a2a3a",
+          "mode": "admixture",
+          "description": "Wealthy north-central communes (Venice, Florence, Genoa, Milan…) versus Norman then Hohenstaufen/Angevin south. Genetic diversity high in ports; linguistic volgare rises toward literary Italian (Tuscan prestige).",
+          "ancestry": {
+            "eef": 40,
+            "steppe": 25,
+            "whg": 12,
+            "other": 23
+          },
+          "substrate": "Early medieval Italy",
+          "incoming": "Mediterranean commerce",
+          "fused": "High medieval Italy",
+          "languageFamily": "Italo-Romance",
+          "languages": "Italian dialects/volgare; Latin; Greek remnants in south",
+          "linguisticNote": "Dante’s era crystallizes literary Italian on a dialect continuum.",
+          "linguisticConfidence": "attested",
+          "ancestryNote": "Ports cosmopolitan; hinterlands more local medieval Italian."
+        },
+        "balkans": {
+          "culture": "Byzantine twilight & Balkan kingdoms",
+          "color": "#4a3a50",
+          "mode": "admixture",
+          "description": "Serbian and Bulgarian kingdoms, Byzantine remnant states, Latin conquest fragments after 1204. Orthodoxy and Slavic literacy shape identity. Ancestry remains a Balkan BA base with Slavic and other medieval layers — religion/language borders imperfectly match genes.",
+          "ancestry": {
+            "eef": 38,
+            "steppe": 24,
+            "whg": 10,
+            "other": 28
+          },
+          "substrate": "Early medieval Balkans",
+          "incoming": "Regional medieval mobility",
+          "fused": "High medieval Balkans",
+          "languageFamily": "South Slavic + Greek + Albanian (emerging in record)",
+          "languages": "Serbian/Bulgarian/etc.; Greek; Albanian; Romance islands; Latin in Catholic zones",
+          "linguisticNote": "Medieval Balkan multilingualism before Ottoman overlay.",
+          "linguisticConfidence": "attested",
+          "ancestryNote": "Microregional mosaics; schematic continuity with early medieval Balkans."
+        },
+        "eastern": {
+          "culture": "Rus’ principalities under Golden Horde pressure",
+          "color": "#4a3828",
+          "mode": "admixture",
+          "description": "Fragmented Rus’ lands under Mongol/Golden Horde suzerainty in much of the east. Tribute politics and steppe rule add gene flow in some zones without homogenizing the forest populations. East Slavic varieties continue.",
+          "ancestry": {
+            "steppe": 32,
+            "eef": 28,
+            "whg": 14,
+            "other": 26
+          },
+          "substrate": "Kievan Rus’ descendants",
+          "incoming": "Mongol-era steppe",
+          "fused": "Medieval Eastern Europe",
+          "languageFamily": "East Slavic + Turkic/Mongol courts",
+          "languages": "Old East Slavic varieties; Turkic; Mongol administration languages",
+          "linguisticNote": "Court multilingualism over East Slavic countryside.",
+          "linguisticConfidence": "attested",
+          "ancestryNote": "Medieval East Slavic base + variable steppe/Mongol-era input."
+        }
+      },
+      "linguistics": "Medieval vernaculars (French, Middle English, MHG, Italian volgare, Castilian, etc.) plus Latin as learned lingua franca; Greek east; Arabic/Hebrew in Iberia; Turkic/Mongol court languages on the steppe edge."
+    },
+    {
+      "id": "early-modern",
+      "label": "Early Modern",
+      "era": "Empires & Reformation",
+      "yearLabel": "c. 1600 CE",
+      "yearApprox": 1600,
+      "narrative": "Print, Reformation, and composite monarchies: Spanish/Portuguese global empires, France, England→Britain, Habsburgs, Ottoman Europe, Poland–Lithuania, Sweden’s great-power age, rising Russia. Sovereignty and confession redraw maps; deep autosomal structure still echoes Neolithic and Bronze Age pulses, with Ottoman, imperial, and port-city admixture in specific corridors.",
+      "culturesNote": "Spanish & Portuguese empires, France, England/Britain, Habsburg Mitteleuropa, Ottoman Rumelia, PLC, Sweden, Muscovy/Russia.",
+      "regions": {
+        "iberia": {
+          "culture": "Spanish & Portuguese imperial metropoles",
+          "color": "#5a1a1a",
+          "mode": "admixture",
+          "description": "Unified Spanish monarchy and Portugal run the first global European empires. Metropole ancestry remains European ternary plus historical North African/Sephardic/other edges; massive colonial admixture happens mainly overseas, with limited return gene flow into ports.",
+          "ancestry": {
+            "eef": 44,
+            "steppe": 26,
+            "whg": 17,
+            "other": 13
+          },
+          "substrate": "Late medieval Iberia",
+          "incoming": "Limited global return gene flow",
+          "fused": "Early modern Iberia",
+          "languageFamily": "Ibero-Romance",
+          "languages": "Spanish, Portuguese (+ Catalan, Galician, Basque)",
+          "linguisticNote": "Castilian and Portuguese become world languages from these metropoles.",
+          "linguisticConfidence": "attested",
+          "ancestryNote": "Early modern Iberia ≈ late medieval clines + port diversity; empires transform the Americas more than Iberian deep ancestry."
+        },
+        "britain": {
+          "culture": "England → Britain (composite monarchy)",
+          "color": "#1a2a3a",
+          "mode": "continuity",
+          "description": "Tudor/Stuart state, union of crowns, overseas expansion. Deep ancestry stable; Irish and Scottish structure persist. English becomes a bureaucratic and imperial language.",
+          "ancestry": {
+            "steppe": 42,
+            "eef": 36,
+            "whg": 16,
+            "other": 6
+          },
+          "substrate": "Medieval Britain",
+          "incoming": "—",
+          "fused": "Early modern Britain",
+          "languageFamily": "English (Germanic) + Celtic minorities",
+          "languages": "Early Modern English; Welsh, Irish, Scottish Gaelic, Scots…",
+          "linguisticNote": "English standardization (print, Bible, administration).",
+          "linguisticConfidence": "attested",
+          "ancestryNote": "Early modern continuity with medieval Britain; later empire-era migration still limited vs 20th c."
+        },
+        "france": {
+          "culture": "Kingdom of France (Ancien Régime)",
+          "color": "#1a1a28",
+          "mode": "continuity",
+          "description": "Centralizing monarchy over persistent regional diversity (Occitan, Breton, Basque, Germanic Alsace). Genetic north/south structure endures beneath political unity.",
+          "ancestry": {
+            "eef": 38,
+            "steppe": 38,
+            "whg": 16,
+            "other": 8
+          },
+          "substrate": "Medieval France",
+          "incoming": "—",
+          "fused": "Ancien Régime France",
+          "languageFamily": "French (Romance) + regional languages",
+          "languages": "Classical French standardizing; Occitan, Breton, Basque, German dialects, etc.",
+          "linguisticNote": "State language policy begins long pressure on regional langues.",
+          "linguisticConfidence": "attested",
+          "ancestryNote": "Regional deep structure under one polity label."
+        },
+        "central": {
+          "culture": "Habsburg Central Europe & German states",
+          "color": "#2a2a38",
+          "mode": "continuity",
+          "description": "Habsburg composite monarchy and fragmented German states after the Reformation. Multilingual courts (German, Czech, Hungarian, Italian, South Slavic…). Ancestry continuous; confessional borders ≠ genetic walls.",
+          "ancestry": {
+            "steppe": 40,
+            "eef": 37,
+            "whg": 14,
+            "other": 9
+          },
+          "substrate": "Medieval HRE",
+          "incoming": "Ottoman-war displacements",
+          "fused": "Early modern Mitteleuropa",
+          "languageFamily": "German + many Central European languages",
+          "languages": "Early New High German; Czech; Hungarian; Polish; Yiddish; Italian; etc.",
+          "linguisticNote": "Habsburg multilingualism as governance reality.",
+          "linguisticConfidence": "attested",
+          "ancestryNote": "Early modern Mitteleuropa continuity + war displacements."
+        },
+        "scandinavia": {
+          "culture": "Swedish great-power age & Denmark–Norway",
+          "color": "#1a3a4a",
+          "mode": "continuity",
+          "description": "Sweden as a Baltic empire; Denmark–Norway as the western Nordic composite. Genetics continuous with medieval Norden; political power projects language and law abroad more than it reshuffles homeland ancestry.",
+          "ancestry": {
+            "steppe": 44,
+            "eef": 28,
+            "whg": 22,
+            "other": 6
+          },
+          "substrate": "Medieval Scandinavia",
+          "incoming": "Baltic imperial mobility",
+          "fused": "Early modern Norden",
+          "languageFamily": "North Germanic",
+          "languages": "Swedish, Danish, Norwegian (standards emerging)",
+          "linguisticNote": "Bible translations and chanceries fix standards.",
+          "linguisticConfidence": "attested",
+          "ancestryNote": "Continuous with medieval Norden; great-power wars move armies more than they reset homeland ancestry."
+        },
+        "italy": {
+          "culture": "Spanish/Austrian Italy & independent states",
+          "color": "#4a1a28",
+          "mode": "continuity",
+          "description": "Fragmented Italy under foreign hegemonies (Spanish, then Austrian in the north) plus Venice, Papal States, Savoy, etc. Renaissance/early modern urban culture; genetic north–south cline already old.",
+          "ancestry": {
+            "eef": 40,
+            "steppe": 25,
+            "whg": 12,
+            "other": 23
+          },
+          "substrate": "Renaissance Italy",
+          "incoming": "—",
+          "fused": "Early modern Italy",
+          "languageFamily": "Italo-Romance",
+          "languages": "Italian (Tuscan prestige); dialects; Latin learned",
+          "linguisticNote": "Literary Italian without political unity yet.",
+          "linguisticConfidence": "attested",
+          "ancestryNote": "Stable north–south structure; ports remain diverse."
+        },
+        "balkans": {
+          "culture": "Ottoman Europe (Rumelia)",
+          "color": "#1a3a30",
+          "mode": "admixture",
+          "description": "Ottoman rule across much of the Balkans for centuries. Millet system organizes communities by religion. Anatolian/Turkic and other gene flow appears in some populations alongside durable South Slavic, Greek, Albanian, and Romance substrates — extremely local. Do not invent a uniform “Ottoman genetic %.”",
+          "ancestry": {
+            "eef": 36,
+            "steppe": 22,
+            "whg": 10,
+            "other": 32
+          },
+          "ancestryNote": "Elevated “other” as uncertainty band for Ottoman-era inputs; microregional.",
+          "substrate": "Medieval Balkans",
+          "incoming": "Ottoman-era Anatolian/diverse",
+          "fused": "Ottoman Balkans",
+          "languageFamily": "Ottoman multilingual",
+          "languages": "Ottoman Turkish; South Slavic; Greek; Albanian; Romance (e.g. Vlach); others",
+          "linguisticNote": "Imperial Turkish + local vernaculars; religion often structures language domains.",
+          "linguisticConfidence": "attested"
+        },
+        "eastern": {
+          "culture": "Poland–Lithuania & rising Russia",
+          "color": "#2a2820",
+          "mode": "admixture",
+          "description": "The Polish–Lithuanian Commonwealth is a multi-ethnic republic (Polish, Lithuanian, Ruthenian, Jewish, German…); Muscovy/Russia expands as an autocratic empire. Forest-steppe ancestries with diverse minorities; language politics follow nobility and church.",
+          "ancestry": {
+            "steppe": 34,
+            "eef": 30,
+            "whg": 14,
+            "other": 22
+          },
+          "substrate": "Medieval Eastern Europe",
+          "incoming": "Imperial expansions",
+          "fused": "Early modern East",
+          "languageFamily": "West/East Slavic + Baltic + others",
+          "languages": "Polish; Ruthenian/Ukrainian; Russian; Lithuanian; Yiddish; German; Tatar…",
+          "linguisticNote": "PLC nested multilingualism vs Russian imperial centralization later.",
+          "linguisticConfidence": "attested",
+          "ancestryNote": "Slavic-majority demography with Baltic, Finnic, Turkic, and other minorities."
+        }
+      },
+      "linguistics": "Standardizing national languages; Latin retreats from administration; Ottoman Turkish as imperial language in the Balkans; colonial Spanish/Portuguese/English/French radiate overseas."
+    },
+    {
+      "id": "modern",
+      "label": "Modern",
+      "era": "Nations to present",
+      "yearLabel": "c. 1900 – present",
+      "yearApprox": 2000,
+      "narrative": "Nation-states, industrial demography, world wars, EU integration, and global migration. Present-day Europeans still largely occupy the WHG–EEF–steppe ternary forged before 1000 BCE, with medieval overlays and recent cosmopolitan urban ancestry. Political identity and standard languages change faster than deep genetic clusters — yet fine-scale ancestry remains geographically structured.",
+      "culturesNote": "European nation-states, post-imperial/post-Soviet east, EU — political map over deep genetic and older linguistic families.",
+      "regions": {
+        "iberia": {
+          "culture": "Spain & Portugal",
+          "color": "#2a4a3a",
+          "mode": "continuity",
+          "description": "Modern nation-states on Iberian deep history. Autosomal structure still shows north–south and west–east historical clines (including Basque distinctiveness). 20th–21st century immigration diversifies cities without erasing those clines.",
+          "ancestry": {
+            "eef": 43,
+            "steppe": 27,
+            "whg": 17,
+            "other": 13
+          },
+          "ancestryNote": "Present-day averages schematic; urban samples more globally diverse than hinterlands.",
+          "substrate": "Early modern Iberia",
+          "incoming": "Global modern migration",
+          "fused": "Contemporary Iberia",
+          "languageFamily": "Ibero-Romance + co-official languages",
+          "languages": "Spanish, Portuguese, Catalan, Galician, Basque, etc.",
+          "linguisticNote": "Co-official multilingualism after centralist centuries.",
+          "linguisticConfidence": "attested"
+        },
+        "britain": {
+          "culture": "United Kingdom & Ireland",
+          "color": "#1a2a28",
+          "mode": "continuity",
+          "description": "UK and Ireland. Fine-scale genetic structure (e.g. People of the British Isles) often echoes early medieval kingdoms more than Victorian counties. English globally dominant; Celtic languages in minority/revitalization contexts; recent global immigration overlays cities.",
+          "ancestry": {
+            "steppe": 41,
+            "eef": 36,
+            "whg": 16,
+            "other": 7
+          },
+          "substrate": "Early modern Britain/Ireland",
+          "incoming": "Post-imperial / global",
+          "fused": "Contemporary Isles",
+          "languageFamily": "English + Celtic",
+          "languages": "English; Welsh, Irish, Scottish Gaelic, Scots…",
+          "linguisticNote": "English as global language from this islands’ modern history.",
+          "linguisticConfidence": "attested",
+          "ancestryNote": "Early medieval structure still readable; urban cosmopolitanism recent."
+        },
+        "france": {
+          "culture": "French Republic",
+          "color": "#1a1a1a",
+          "mode": "continuity",
+          "description": "Centralized republic with persistent regional deep structure and languages under pressure from French. 20th–21st c. immigration diversifies metros. Genetics still track older north/south and peripheral patterns beneath national identity.",
+          "ancestry": {
+            "eef": 37,
+            "steppe": 38,
+            "whg": 15,
+            "other": 10
+          },
+          "substrate": "Early modern France",
+          "incoming": "Modern migration",
+          "fused": "Contemporary France",
+          "languageFamily": "French + regional & immigrant languages",
+          "languages": "French; Breton, Basque, Occitan, Alsatian…; immigrant languages",
+          "linguisticNote": "Strong standard-language ideology; regional revitalization movements.",
+          "linguisticConfidence": "attested",
+          "ancestryNote": "Regional structure + modern migration in cities."
+        },
+        "central": {
+          "culture": "Germany, Alpine states & Visegrád core",
+          "color": "#2a2a2a",
+          "mode": "continuity",
+          "description": "Modern Central European states after empires and 20th-century border violence. Ancestry continuous with early modern Mitteleuropa plus displacements and recent migration. National labels sit on older German–Slavic–Uralic (Hungarian) mosaics.",
+          "ancestry": {
+            "steppe": 39,
+            "eef": 37,
+            "whg": 14,
+            "other": 10
+          },
+          "substrate": "Early modern Central Europe",
+          "incoming": "20th–21st c. movements",
+          "fused": "Contemporary Central Europe",
+          "languageFamily": "Germanic / Slavic / Uralic (Hungarian)",
+          "languages": "German, Polish, Czech, Slovak, Hungarian, etc.",
+          "linguisticNote": "Nation-state languages after Habsburg/German/Russian imperial frames.",
+          "linguisticConfidence": "attested",
+          "ancestryNote": "Post-imperial continuity + 20th c. forced migrations + recent immigration."
+        },
+        "scandinavia": {
+          "culture": "Nordic countries",
+          "color": "#1a3a40",
+          "mode": "continuity",
+          "description": "Denmark, Norway, Sweden, Iceland (and Finland as Uralic neighbor in the wider north). Deep continuity from Iron/Viking Age in Germanic Scandinavia; recent international migration in cities. Finland’s Finnish language is Uralic, not IE — important map-edge exception.",
+          "ancestry": {
+            "steppe": 43,
+            "eef": 28,
+            "whg": 21,
+            "other": 8
+          },
+          "substrate": "Early modern Norden",
+          "incoming": "Modern migration",
+          "fused": "Contemporary Scandinavia",
+          "languageFamily": "North Germanic (+ Finnish Uralic)",
+          "languages": "Swedish, Danish, Norwegian, Icelandic; Finnish (Uralic)",
+          "linguisticNote": "IE North Germanic bloc beside Uralic Finnish.",
+          "linguisticConfidence": "attested",
+          "ancestryNote": "Nordic continuity + modern urban immigration."
+        },
+        "italy": {
+          "culture": "Italy (unified 1861+)",
+          "color": "#3a1a28",
+          "mode": "continuity",
+          "description": "Political unification overlays a deep north–south genetic and dialect continuum that still structures variation more than the modern state alone. Italian standard from Tuscan; dialects remain strong. Recent immigration adds urban diversity.",
+          "ancestry": {
+            "eef": 40,
+            "steppe": 24,
+            "whg": 12,
+            "other": 24
+          },
+          "substrate": "Early modern Italy",
+          "incoming": "Modern migration",
+          "fused": "Contemporary Italy",
+          "languageFamily": "Italian (Romance)",
+          "languages": "Italian; recognized minorities; dialects",
+          "linguisticNote": "Standard Italian over a dialect continuum.",
+          "linguisticConfidence": "attested",
+          "ancestryNote": "Strong north–south cline (ancient/medieval); modern migration in cities."
+        },
+        "balkans": {
+          "culture": "Balkan nation-states",
+          "color": "#2a2a30",
+          "mode": "continuity",
+          "description": "Post-Ottoman and post-Yugoslav nations. Genetic structure is finely regional; religion and standard languages imperfectly match ancestry. South Slavic, Greek, Albanian, Romance (Romanian), and Turkish-speaking communities intertwine.",
+          "ancestry": {
+            "eef": 36,
+            "steppe": 23,
+            "whg": 10,
+            "other": 31
+          },
+          "substrate": "Ottoman/medieval Balkans",
+          "incoming": "Modern nation-era mobility",
+          "fused": "Contemporary Balkans",
+          "languageFamily": "South Slavic + Greek + Albanian + Romance + Turkish",
+          "languages": "Greek, Bulgarian, BCMS, Albanian, Romanian, Turkish, etc.",
+          "linguisticNote": "A shatterbelt of national standards after Ottoman and Yugoslav frames; language and religion borders only loosely track ancestry.",
+          "linguisticConfidence": "attested",
+          "ancestryNote": "Local mosaics; nation averages hide village-scale history."
+        },
+        "eastern": {
+          "culture": "Eastern Europe & western Russia",
+          "color": "#2a2828",
+          "mode": "continuity",
+          "description": "Poland, Baltics, Belarus, Ukraine, western Russia, and neighbors. Broad east–west genetic clines; steppe and forest histories still readable. 20th-century wars, deportations, and border changes move people; deep ternary ancestry remains the backdrop to modern politics.",
+          "ancestry": {
+            "steppe": 33,
+            "eef": 30,
+            "whg": 14,
+            "other": 23
+          },
+          "substrate": "Early modern East",
+          "incoming": "20th–21st c. upheavals",
+          "fused": "Contemporary Eastern Europe",
+          "languageFamily": "East Slavic + Baltic + West Slavic + others",
+          "languages": "Russian, Ukrainian, Belarusian, Polish, Baltic languages, etc.",
+          "linguisticNote": "Imperial and Soviet language politics still shape the map.",
+          "linguisticConfidence": "attested",
+          "ancestryNote": "East Slavic/Baltic/West Slavic structure + historical minorities; modern upheavals."
+        }
+      },
+      "linguistics": "State standards (and co-official minorities), immigrant languages in cities, English as European lingua franca. Families remain Indo-European almost everywhere, with Basque and Uralic (Finnish/Hungarian/Estonian) as major non-IE exceptions in this map’s frame."
+    }
+  ]
+}

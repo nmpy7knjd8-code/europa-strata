@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Europa Strata — European deep-time atlas</title>
+    <meta
+      name="description"
+      content="Interactive map of European cultures, empires, and archaeogenetic ancestry from the Mesolithic to the present."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Sora:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="site">
+      <header class="hero" id="top">
+        <div class="hero-map" aria-hidden="false">
+          <svg
+            viewBox="0 0 900 720"
+            role="img"
+            aria-label="Interactive map of Europe. Click a region for culture and ancestry detail."
+            preserveAspectRatio="xMidYMid slice"
+          >
+            <defs>
+              <linearGradient id="seaGrad" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#0a0a0a" />
+                <stop offset="55%" stop-color="#101010" />
+                <stop offset="100%" stop-color="#0c0c0c" />
+              </linearGradient>
+              <filter id="soft" x="-10%" y="-10%" width="120%" height="120%">
+                <feDropShadow dx="0" dy="1" stdDeviation="1.2" flood-color="#000" flood-opacity="0.45" />
+              </filter>
+            </defs>
+            <rect class="map-sea-bg" width="900" height="720" fill="url(#seaGrad)" />
+            <!-- faint grid -->
+            <g class="map-grid" opacity="0.9">
+              <path d="M0 120 H900 M0 240 H900 M0 360 H900 M0 480 H900 M0 600 H900" />
+              <path d="M120 0 V720 M240 0 V720 M360 0 V720 M480 0 V720 M600 0 V720 M720 0 V720 M840 0 V720" />
+            </g>
+
+            <!-- Simplified Europe regions (schematic geography for interaction) -->
+            <g filter="url(#soft)">
+              <!-- Scandinavia -->
+              <path
+                id="region-scandinavia"
+                class="region"
+                tabindex="0"
+                role="button"
+                aria-label="Scandinavia"
+                d="M430 28 L470 22 L520 40 L555 95 L548 150 L520 195 L500 210 L475 200 L455 165 L440 130 L425 95 L418 55 Z
+                   M505 55 L545 48 L580 70 L595 110 L575 145 L550 130 L530 95 Z
+                   M560 155 L590 160 L610 200 L600 240 L575 255 L555 230 L550 190 Z"
+              />
+              <text class="region-label" x="500" y="130" text-anchor="middle">Scandinavia</text>
+
+              <!-- Britain & Ireland -->
+              <path
+                id="region-britain"
+                class="region"
+                tabindex="0"
+                role="button"
+                aria-label="Britain and Ireland"
+                d="M250 145 L295 130 L325 155 L340 210 L325 265 L295 285 L270 270 L255 230 L248 185 Z
+                   M215 175 L245 165 L255 200 L240 235 L215 245 L200 215 Z"
+              />
+              <text class="region-label" x="285" y="210" text-anchor="middle">Britain</text>
+
+              <!-- France -->
+              <path
+                id="region-france"
+                class="region"
+                tabindex="0"
+                role="button"
+                aria-label="France"
+                d="M300 300 L360 285 L395 310 L400 360 L375 410 L330 430 L290 410 L275 360 L280 320 Z"
+              />
+              <text class="region-label" x="340" y="360" text-anchor="middle">France</text>
+
+              <!-- Iberia -->
+              <path
+                id="region-iberia"
+                class="region"
+                tabindex="0"
+                role="button"
+                aria-label="Iberia"
+                d="M250 430 L320 420 L350 455 L340 520 L300 555 L255 545 L230 500 L235 455 Z"
+              />
+              <text class="region-label" x="290" y="490" text-anchor="middle">Iberia</text>
+
+              <!-- Central Europe -->
+              <path
+                id="region-central"
+                class="region"
+                tabindex="0"
+                role="button"
+                aria-label="Central Europe"
+                d="M400 250 L480 235 L530 260 L545 320 L520 370 L460 385 L410 365 L390 310 Z"
+              />
+              <text class="region-label" x="465" y="310" text-anchor="middle">Central</text>
+
+              <!-- Italy -->
+              <path
+                id="region-italy"
+                class="region"
+                tabindex="0"
+                role="button"
+                aria-label="Italy"
+                d="M420 390 L460 385 L475 420 L465 470 L450 530 L435 560 L420 545 L425 500 L415 450 Z
+                   M400 430 L418 425 L422 455 L405 460 Z"
+              />
+              <text class="region-label" x="448" y="475" text-anchor="middle">Italy</text>
+
+              <!-- Balkans -->
+              <path
+                id="region-balkans"
+                class="region"
+                tabindex="0"
+                role="button"
+                aria-label="Balkans"
+                d="M480 390 L540 375 L575 410 L570 470 L540 520 L500 535 L475 500 L470 440 Z"
+              />
+              <text class="region-label" x="525" y="455" text-anchor="middle">Balkans</text>
+
+              <!-- Eastern Europe / Pontic steppe -->
+              <path
+                id="region-eastern"
+                class="region"
+                tabindex="0"
+                role="button"
+                aria-label="Eastern Europe and Pontic steppe"
+                d="M545 220 L640 200 L720 230 L755 300 L740 380 L690 430 L600 440 L555 400 L535 340 L540 270 Z"
+              />
+              <text class="region-label" x="640" y="320" text-anchor="middle">East / Steppe</text>
+            </g>
+
+            <!-- Coast hint line -->
+            <path
+              d="M200 300 Q240 280 280 290 Q320 250 360 270"
+              fill="none"
+              stroke="rgba(255,255,255,0.08)"
+              stroke-width="1"
+              pointer-events="none"
+            />
+          </svg>
+        </div>
+
+        <div class="hero-overlay">
+          <div class="brand-block">
+            <h1 class="brand"><span>Deep-time atlas</span>Europa Strata</h1>
+            <p class="tagline">
+              Cultures, empires, and genetic layers from Mesolithic foragers to modern nations — replacement,
+              absorption, and continuity made visible.
+            </p>
+          </div>
+
+          <div class="hero-controls">
+            <div class="period-meta">
+              <h2 class="period-label" id="period-label">Loading…</h2>
+              <span class="period-year" id="period-year"></span>
+              <p class="period-era" id="period-era"></p>
+            </div>
+            <p class="period-copy" id="period-copy">Loading timeline…</p>
+            <p class="period-ling" id="period-ling" hidden></p>
+
+            <div class="slider-row">
+              <button type="button" class="slider-btn" id="btn-prev" aria-label="Previous period">‹</button>
+              <input
+                type="range"
+                class="time-slider"
+                id="time-slider"
+                min="0"
+                max="12"
+                value="0"
+                step="1"
+                aria-label="Time period"
+              />
+              <button type="button" class="slider-btn" id="btn-next" aria-label="Next period">›</button>
+            </div>
+            <div class="tick-labels" id="tick-labels"></div>
+
+            <div class="hero-actions">
+              <a class="cta" href="#detail">Explore region</a>
+              <a class="cta ghost" href="#language">Languages</a>
+              <a class="cta ghost" href="#sources">Sources</a>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <section class="detail-dock" id="detail">
+        <div class="detail-grid">
+          <div>
+            <p class="panel-kicker" id="detail-kicker">Select a region</p>
+            <h2 class="culture-title" id="culture-title">—</h2>
+            <span class="mode-pill" id="mode-pill" data-mode="continuity">—</span>
+            <p class="culture-desc" id="culture-desc">Click a colored region on the map.</p>
+            <p class="ancestry-note" id="ancestry-note" hidden></p>
+
+            <div class="ling-panel" id="language" aria-label="Linguistic context">
+              <p class="panel-kicker">Languages</p>
+              <div class="ling-row">
+                <div>
+                  <h4>Family / situation</h4>
+                  <p id="ling-family">—</p>
+                </div>
+                <div>
+                  <h4>Languages</h4>
+                  <p id="ling-languages">—</p>
+                </div>
+                <div>
+                  <h4>Evidence</h4>
+                  <p><span class="conf-pill" id="ling-confidence" data-conf="hypothetical">—</span></p>
+                </div>
+              </div>
+              <p class="ling-note" id="ling-note"></p>
+            </div>
+
+            <div class="absorb-strip" aria-label="Substrate to incoming to fused">
+              <div class="absorb-cell">
+                <h4>Substrate</h4>
+                <p id="absorb-substrate">—</p>
+              </div>
+              <div class="absorb-arrow" aria-hidden="true">→</div>
+              <div class="absorb-cell">
+                <h4>Incoming</h4>
+                <p id="absorb-incoming">—</p>
+              </div>
+              <div class="absorb-arrow" aria-hidden="true">→</div>
+              <div class="absorb-cell">
+                <h4>Fused / result</h4>
+                <p id="absorb-fused">—</p>
+              </div>
+            </div>
+            <p class="hint" id="mode-explain"></p>
+          </div>
+
+          <div class="ancestry-panel">
+            <h3>Genetic ancestry mix</h3>
+            <div class="stack-bar" id="stack-bar" role="img" aria-label="Ancestry stacked bar"></div>
+            <div class="legend" id="ancestry-legend"></div>
+            <div class="pie-wrap">
+              <div class="pie" id="pie" role="img" aria-label="Ancestry pie chart"></div>
+              <ul class="pie-list" id="pie-list"></ul>
+            </div>
+            <p class="hint">
+              Percentages are approximate consensus ranges from archaeogenetic literature — not sample-level
+              precision. Archaeological culture names are not genetic clusters. For later empires, charts show
+              continuity/admixture context rather than invented polity-specific components.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="cultures">
+        <h2>Named cultures this period</h2>
+        <p id="cultures-blurb">
+          Every slider stop fills the map with period-specific cultures and polities — from LBK and Yamnaya through
+          Nordic Bronze Age, Wielbark, and the Frankish Empire to modern nations. Click a name to jump to its region.
+        </p>
+        <div class="cultures-rail" id="cultures-rail"></div>
+      </section>
+
+      <section class="section" id="ling-about">
+        <h2>Languages ≠ genes</h2>
+        <p id="ling-disclaimer">
+          Each region click shows family/situation, named languages when known, and an evidence tag (attested,
+          reconstructed, hypothetical, or mixed). Yamnaya/Corded Ware expansions are often correlated with
+          Indo-European dispersal — but pots, genomes, and speech can move separately (e.g. Iberian Beaker culture
+          without automatic IE speech; CW/BB burial rites vs ancestry timing).
+        </p>
+      </section>
+
+      <section class="section" id="sources">
+        <h2>Sources &amp; honesty</h2>
+        <p>
+          Deep ancestry components follow post-2015 genome-wide consensus (WHG, EEF/Anatolian Neolithic-related,
+          Western Steppe Herders). Famous cases encoded include Beaker Britain (~90% Neolithic replacement), Denmark’s
+          dual Holocene turnovers, and Iberia’s more gradual steppe admixture. Linguistic layer uses historical
+          attestation where available and comparative reconstruction for deeper stages. Full bibliography:
+          <a href="./archaeogenetic-sources.md">archaeogenetic-sources.md</a>.
+        </p>
+        <ul class="sources-list">
+          <li>
+            <strong>Haak et al. 2015 · Allentoft et al. 2015</strong> — Steppe migration into Bronze Age Europe; Corded
+            Ware as steppe-rich.
+          </li>
+          <li>
+            <strong>Olalde et al. 2018</strong> — Beaker Britain ~90% turnover; continental Beaker genetic diversity.
+          </li>
+          <li>
+            <strong>Olalde et al. 2019</strong> — Iberia: gradual, often male-biased steppe influx.
+          </li>
+          <li>
+            <strong>Allentoft et al. 2024</strong> — Post-glacial western Eurasia “great divide”; Denmark turnovers
+            ~60–85% steppe in Single Grave.
+          </li>
+          <li>
+            <strong>Antonio et al. 2019</strong> — Imperial Rome eastern Mediterranean pulse; later rebalancing.
+          </li>
+          <li>
+            <strong>North Pontic genomic history (Nature 2024/25)</strong> — Yamna formation waves on the steppe.
+          </li>
+        </ul>
+      </section>
+
+      <footer class="footer">
+        <span>Europa Strata · static atlas · arrow keys nudge time</span>
+        <span>Map regions are schematic pulse-points, not political borders</span>
+      </footer>
+    </div>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
