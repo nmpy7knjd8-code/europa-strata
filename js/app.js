@@ -223,10 +223,26 @@ function clipFeatureToEurope(feature) {
   return feature;
 }
 
-function initMap() {
+function initMap({ preserveZoom = true } = {}) {
   const el = $("#map");
   const w = Math.max(el.clientWidth || 900, 320);
   const h = Math.max(el.clientHeight || 700, 280);
+
+  // Keep user zoom across remaps (mobile URL-bar resize must not yank zoom out)
+  let savedZoom = null;
+  if (preserveZoom && state.svg?.node) {
+    try {
+      const t = d3.zoomTransform(state.svg.node());
+      if (t && (Math.abs(t.k - 1) > 0.001 || Math.abs(t.x) > 0.5 || Math.abs(t.y) > 0.5)) {
+        savedZoom = { k: t.k, x: t.x, y: t.y };
+      }
+    } catch (_) {
+      /* ignore */
+    }
+  }
+  if (!savedZoom && preserveZoom && state.savedZoom) {
+    savedZoom = state.savedZoom;
+  }
 
   el.innerHTML = "";
   state.tip = d3
@@ -242,6 +258,7 @@ function initMap() {
     .attr("preserveAspectRatio", "xMidYMid meet");
 
   state.svg = svg;
+  state.mapPixelSize = { w, h };
 
   const mobile = isMobileLayout();
   const projection = d3.geoAzimuthalEqualArea();
@@ -387,37 +404,68 @@ function initMap() {
       if (t && t.closest && t.closest(".layout-toggle, .map-tools, .map-chrome")) {
         return false;
       }
-      // Keep ctrl/meta+wheel for browser page zoom; map uses plain wheel + pinch
-      if (event.type === "wheel") return !event.ctrlKey && !event.metaKey;
+      // Never steal wheel — page scroll must not zoom the map in or out.
+      // Zoom only via pinch, ± buttons, or Reset.
+      if (event.type === "wheel") return false;
+      // Pinch (2+ touches) zooms the map, even from default framing
+      const touches = event.touches || event.targetTouches;
+      if (touches && touches.length >= 2) return true;
+      // Single-finger / mouse drag: only pan once already zoomed/panned in
+      if (!mapGestureEngaged()) return false;
       return !event.button;
     })
     .on("zoom", (event) => {
       zoomLayer.attr("transform", event.transform);
-      syncZoomReset(event.transform);
+      const t = event.transform;
+      state.savedZoom =
+        Math.abs(t.k - 1) > 0.001 || Math.abs(t.x) > 0.5 || Math.abs(t.y) > 0.5
+          ? { k: t.k, x: t.x, y: t.y }
+          : null;
+      syncZoomReset(t);
     });
 
   state.zoom = zoom;
   svg.call(zoom);
   // Double-click zoom fights accidental country taps on phones
   svg.on("dblclick.zoom", null);
-  svg.call(zoom.transform, d3.zoomIdentity);
-  syncZoomReset(d3.zoomIdentity);
+
+  const restore =
+    savedZoom != null
+      ? d3.zoomIdentity.translate(savedZoom.x, savedZoom.y).scale(savedZoom.k)
+      : d3.zoomIdentity;
+  svg.call(zoom.transform, restore);
+  state.savedZoom =
+    restore.k !== 1 || restore.x || restore.y
+      ? { k: restore.k, x: restore.x, y: restore.y }
+      : null;
+  syncZoomReset(restore);
 
   paintMap(false);
+}
+
+/** True when the map is zoomed/panned away from the default framing. */
+function mapGestureEngaged(transform) {
+  const t = transform || (state.svg ? d3.zoomTransform(state.svg.node()) : null);
+  if (!t) return false;
+  return (
+    Math.abs(t.k - 1) > 0.03 || Math.abs(t.x) > 4 || Math.abs(t.y) > 4
+  );
 }
 
 function syncZoomReset(transform) {
   const btn = $("#btn-zoom-reset");
   if (!btn || !transform) return;
-  const zoomed =
-    Math.abs(transform.k - 1) > 0.03 ||
-    Math.abs(transform.x) > 4 ||
-    Math.abs(transform.y) > 4;
+  const zoomed = mapGestureEngaged(transform);
   btn.hidden = !zoomed;
+  // At default framing, allow page scroll through the map; once engaged,
+  // capture pan/pinch/wheel so the map moves instead of the page.
+  const mapEl = $("#map");
+  if (mapEl) mapEl.classList.toggle("is-map-engaged", zoomed);
 }
 
 function resetMapZoom() {
   if (!state.svg || !state.zoom) return;
+  state.savedZoom = null;
   state.svg
     .transition()
     .duration(320)
@@ -663,10 +711,12 @@ function renderGlossary() {
   if (!grid) return;
   const items = state.data.meta.glossary || [];
   grid.innerHTML = items
-    .map(
-      (g) =>
-        `<dl class="glossary-item"><dt><a class="glossary-link" href="ancestry.html#${escapeHtml(g.id)}">${escapeHtml(g.term)}</a> <span>· ${escapeHtml(g.name)}</span></dt><dd>${escapeHtml(g.text)}</dd></dl>`
-    )
+    .map((g) => {
+      const tip = g.phenotype
+        ? ` title="${escapeHtml(g.phenotype)}"`
+        : "";
+      return `<dl class="glossary-item"${tip}><dt><a class="glossary-link" href="ancestry.html#${escapeHtml(g.id)}">${escapeHtml(g.term)}</a> <span>· ${escapeHtml(g.name)}</span></dt><dd>${escapeHtml(g.text)}</dd></dl>`;
+    })
     .join("");
 }
 
@@ -975,13 +1025,30 @@ function bindUI() {
     });
   }
 
+  // Mobile browser chrome show/hide fires resize and used to rebuild the map
+  // at identity zoom. Only remap when the map *width* meaningfully changes;
+  // always preserve zoom if a rebuild does run.
   window.addEventListener("resize", () => {
     if (!state.geo) return;
     clearTimeout(window.__strataResize);
     window.__strataResize = setTimeout(() => {
-      initMap();
+      const el = $("#map");
+      if (!el) return;
+      const w = el.clientWidth || 0;
+      const h = el.clientHeight || 0;
+      const prev = state.mapPixelSize || { w: 0, h: 0 };
+      const widthChanged = Math.abs(w - prev.w) > 24;
+      const heightChangedALot = Math.abs(h - prev.h) > 80;
+      // Ignore small height-only changes (URL bar / scroll UI)
+      if (!widthChanged && !heightChangedALot) return;
+      initMap({ preserveZoom: true });
       updateLegend();
-    }, 180);
+      if (state.selectedIso) {
+        state.svg
+          ?.selectAll("path.country")
+          .classed("is-active", (d) => d.properties.iso === state.selectedIso);
+      }
+    }, 220);
   });
 }
 

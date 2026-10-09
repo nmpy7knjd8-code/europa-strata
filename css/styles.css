@@ -104,10 +104,16 @@ button {
   z-index: 1;
   width: 100%;
   height: 100%;
-  /* Pinch/drag zoom stays inside the map — does not scale the page */
+  /* Default (full zoom-out): vertical page scroll can pass through the map.
+     Pinch still works via JS (2-finger). Once zoomed/panned, lock gestures. */
+  touch-action: pan-y;
+  overscroll-behavior: auto;
+  cursor: grab;
+}
+
+.map.is-map-engaged {
   touch-action: none;
   overscroll-behavior: none;
-  cursor: grab;
 }
 
 .map:active {
@@ -1533,6 +1539,15 @@ html[data-layout="mobile"] #cultures-blurb {
 
 /* ——— Ancestry deep-dive page ——— */
 
+html.ancestry-page,
+html.ancestry-page body,
+body.page-ancestry {
+  overflow: auto !important;
+  height: auto !important;
+  min-height: 100%;
+  overscroll-behavior: auto;
+}
+
 .page-ancestry {
   background: var(--bg);
   color: var(--ink);
@@ -1672,6 +1687,15 @@ html[data-layout="mobile"] #cultures-blurb {
   font-weight: 400;
 }
 
+.anc-years {
+  margin: 0.15rem 0 0.35rem;
+  font-family: var(--font-ui);
+  font-size: 0.95rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: var(--ink);
+}
+
 .anc-horizon {
   margin: 0 0 0.85rem;
   font-family: var(--font-ui);
@@ -1679,6 +1703,23 @@ html[data-layout="mobile"] #cultures-blurb {
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: var(--ink-mute);
+}
+
+.anc-phenotype {
+  margin: 0 0 1.15rem;
+  padding: 0.85rem 0 0.15rem;
+  border-top: 1px solid var(--line);
+}
+
+.anc-phenotype .kicker {
+  margin-bottom: 0.35rem;
+}
+
+.anc-phenotype p {
+  margin: 0;
+  font-size: 0.92rem;
+  line-height: 1.55;
+  color: var(--ink-dim);
 }
 
 .anc-summary {
