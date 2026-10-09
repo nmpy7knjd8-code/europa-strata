@@ -900,12 +900,10 @@ function renderGlossary() {
   if (!grid) return;
   const items = state.data.meta.glossary || [];
   grid.innerHTML = items
-    .map((g) => {
-      const tip = g.phenotype
-        ? ` title="${escapeHtml(g.phenotype)}"`
-        : "";
-      return `<dl class="glossary-item"${tip}><dt><a class="glossary-link" href="ancestry.html#${escapeHtml(g.id)}">${escapeHtml(g.term)}</a> <span>· ${escapeHtml(g.name)}</span></dt><dd>${escapeHtml(g.text)}</dd></dl>`;
-    })
+    .map(
+      (g) =>
+        `<dl class="glossary-item"><dt><a class="glossary-link" href="ancestry.html#${escapeHtml(g.id)}">${escapeHtml(g.term)}</a> <span>· ${escapeHtml(g.name)}</span></dt><dd>${escapeHtml(g.text)}</dd></dl>`
+    )
     .join("");
 }
 

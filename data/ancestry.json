@@ -1,6 +1,6 @@
 {
   "title": "Ancestry components",
-  "intro": "These labels are qpAdm-style deep ancestral strands used in post-2015 European archaeogenetics—not tribes, languages, or modern nations. Ranges on the maps are schematic consensus cores for teaching; real clines are continuous and models differ by reference panel. Phenotype notes below are population-level SNP inferences from published aDNA—approximate, uncertain, and not descriptions of living people.",
+  "intro": "These labels are qpAdm-style deep ancestral strands used in post-2015 European archaeogenetics—not tribes, languages, or modern nations. Map ranges are schematic consensus cores for teaching; real clines are continuous.",
   "components": [
     {
       "id": "whg",
@@ -10,7 +10,8 @@
       "years": "c. 14,000–5,000 BCE",
       "horizon": "Late Upper Paleolithic–Mesolithic peak; residual after farming",
       "summary": "Post-glacial foragers of western and central Europe—the western pole of Europe’s Mesolithic genetic landscape.",
-      "phenotype": "Ancient DNA pigmentation SNPs often infer relatively dark skin and dark hair with a higher frequency of light-eye alleles in some western Mesolithic individuals (e.g. Loschbour, La Braña, Cheddar Man debates). These are genotype probabilities, not photographs: coverage is sparse, models disagree, and variation within WHG was real. Stature inferences are limited; treat any “look” as a cautious average, not a type.",
+      "phenotype": "Light eyes (blue/light-eye alleles common in western Mesolithic genomes). Dark hair. Shorter stature than later steppe-admixed groups.",
+      "diet": "Hunting, fishing, and gathering. Seasonal mobility along coasts, rivers, and forest edges; no domestic crops or herds.",
       "body": [
         "After the Last Glacial Maximum, Europe was resettled by genetically structured hunter-gatherer groups. Western Hunter-Gatherers (WHG) describe the cluster that dominates much of western and central Europe in the Mesolithic: Iberia, France, Britain & Ireland, the North European Plain, and parts of Italy and the Balkans (with important local nodes such as the Iron Gates).",
         "WHG is not an archaeological culture name. Azilian, Maglemosian, Tardenoisian, and related facies are tool-and-site traditions that often sit on WHG-related ancestry. Genetically, WHG forms one corner of the later European ternary (WHG–EEF–steppe) that still structures much of temperate Europe today as a minority substrate.",
@@ -29,7 +30,7 @@
       "years": "c. 10,000–3,500 BCE",
       "horizon": "Mesolithic–Eneolithic forest-steppe; key Yamnaya source",
       "summary": "Forest-steppe foragers east of the Black Sea–Baltic zone, rich in Ancient North Eurasian (ANE) affinity.",
-      "phenotype": "Fewer high-coverage pigmentation panels than for WHG; published EHG/related genomes often show mixed light/dark allele combinations rather than a single “look.” ANE-linked ancestry is sometimes associated with a shift toward lighter skin alleles in later steppe mixtures, but EHG themselves should not be stereotyped from modern northern Europeans. Within-group diversity and sparse sampling dominate the uncertainty.",
+      "diet": "Forest-steppe hunting and fishing along the Volga–Don–Pontic rivers; mobile forager bands before and beside early Eneolithic herding.",
       "body": [
         "Eastern Hunter-Gatherers occupy the Volga–Don–Pontic forest-steppe world in contrast to western WHG. They carry substantial Ancient North Eurasian-related ancestry—the deep Siberian-linked strand that also appears (diluted) in later Europeans via the steppe.",
         "EHG are not yet Yamnaya. Yamnaya / Western Steppe Herder ancestry forms when EHG-related groups mix with Caucasus / Lower Volga–related populations (CHG-related and related Eneolithic steppe mixtures). Allentoft et al. (2024) and North Pontic aDNA refine this as a multi-step Eneolithic process, not a single overnight ethnogenesis.",
@@ -48,7 +49,8 @@
       "years": "c. 9,500–4,000 BCE",
       "horizon": "Mesolithic–Early Neolithic Scandinavia",
       "summary": "Northern foragers of Scandinavia—WHG-related with elevated EHG affinity—before Funnelbeaker and Single Grave turnovers.",
-      "phenotype": "SHG sit genetically between WHG and EHG, and pigmentation inferences are correspondingly mixed: some individuals carry light-eye and/or light-skin alleles earlier than many continental WHG samples, others do not. Do not read modern Scandinavian phenotypes back onto Mesolithic foragers—later farmer and steppe pulses reshape the north.",
+      "phenotype": "Light eyes. Dark hair.",
+      "diet": "Coastal and inland foraging—fish, seals, shellfish, and terrestrial game; seasonal camps on Scandinavian shores and lakes.",
       "body": [
         "Scandinavian Hunter-Gatherers (SHG) describe Mesolithic and early coastal/inland foragers of southern and western Scandinavia (Maglemosian, Kongemose, Fosna–Hensbacka and related). Genetically they sit between western WHG and eastern EHG: often modeled as WHG-like with extra EHG-related affinity.",
         "SHG matter because Denmark and southern Scandinavia show two Holocene demographic turnovers in high-resolution aDNA: first toward Early European Farmer / Funnelbeaker ancestry, then a second near-complete pulse with Single Grave / Battle Axe steppe-rich groups (~60–85% steppe-related in Danish Late Neolithic models).",
@@ -67,7 +69,8 @@
       "years": "c. 6,500–3,000 BCE",
       "horizon": "Anatolian Neolithic–related; Neolithic demographic core of the west",
       "summary": "Anatolian Neolithic–related farming populations who brought domesticates, ceramics, and a new gene pool into Europe.",
-      "phenotype": "Early farmer genomes are often inferred to have brown eyes, dark hair, and intermediate skin pigmentation relative to some WHG individuals—closer to Anatolian/Near Eastern Neolithic references than to later northern Europeans. Again these are SNP-based averages: EEF communities varied, and later WHG and steppe admixture change the picture region by region.",
+      "phenotype": "Brown eyes. Dark hair.",
+      "diet": "Mixed farming—cereals and livestock (cattle, sheep/goat, pig)—in settled villages along Balkan, Mediterranean, and Danubian corridors.",
       "body": [
         "Early European Farmers (EEF) are the European expression of Anatolian Neolithic–related ancestry. They enter via the Balkans and Mediterranean coasts and expand as Cardial/Impresso along the west Mediterranean and as Linearbandkeramik (LBK) across the Danubian corridor into central Europe.",
         "In much of western and central Europe this is near-total demographic replacement of Mesolithic hunter-gatherers. East of a Black Sea–Baltic genomic divide, forager continuity remains stronger (Allentoft et al. 2024). Culture names—Starčevo–Körös–Criș, Vinča, LBK, Cardial, TRB—are archaeological packages carried largely by these farmer populations.",
@@ -86,7 +89,8 @@
       "years": "c. 3,300–2,000 BCE",
       "horizon": "Yamnaya from ~3300 BCE; continental spread in the 3rd millennium",
       "summary": "Yamnaya-related steppe pastoralist ancestry—the third deep strand that remakes temperate Europe after ~3000 BCE.",
-      "phenotype": "Yamnaya and early steppe-admixed groups often show rising frequencies of derived light-skin alleles relative to earlier European farmers, with variable eye and hair color genotypes. Some bioarchaeological series also suggest relatively tall stature among steppe pastoralists, but stature is polygenic and environment-sensitive. None of this licenses reading Corded Ware or Yamnaya as uniform “blond northern” types—admixture and local farmer ancestry quickly diversify descendant populations.",
+      "phenotype": "Tall stature. Light skin. Brown to light eyes. Dark to light hair.",
+      "diet": "Pastoral herding (cattle, sheep, horse) with dairy; high mobility across open steppe, then into temperate Europe with Corded Ware / Beaker expansions.",
       "body": [
         "Western Steppe Herder (WSH) ancestry is the Yamnaya-related component that appears across Europe in the third millennium BCE. It is classically modeled as a mixture of EHG-related and Caucasus hunter-gatherer–related (CHG) ancestry, refined by Eneolithic North Pontic and Middle Don results rather than a cartoon two-source blend.",
         "Corded Ware groups of central and northern Europe are heavily steppe-admixed (often with Globular Amphora farmer admixture on the way). Bell Beaker Britain shows ~90% turnover of the prior Neolithic gene pool. Denmark’s Single Grave pulse is a second Holocene replacement with very high steppe fractions. Iberia’s steppe influx is more gradual and often male-biased—same strand, different demographic mode.",
@@ -105,7 +109,8 @@
       "years": "c. 13,000–5,000 BCE",
       "horizon": "Caucasus foragers; enters steppe mixtures in the Eneolithic",
       "summary": "Caucasus forager-related ancestry—usually modeled inside Yamnaya / WSH rather than as a free European ternary corner.",
-      "phenotype": "Direct CHG phenotype panels are fewer than for European Mesolithic genomes. Available Caucasus forager data generally point toward darker hair/eye genotypes and intermediate-to-darker skin relative to later northern Europeans—broadly West Asian forager–like, not a separate “European” stereotype. In most atlas pies CHG is folded into WSH, so a free CHG phenotype rarely applies to a clicked modern country.",
+      "phenotype": "Brown eyes. Dark hair.",
+      "diet": "Mountain and foothill foraging in the Caucasus—game, plant foods, and highland seasonal rounds—before CHG-related ancestry enters Eneolithic steppe mixtures.",
       "body": [
         "Caucasus Hunter-Gatherers (CHG) are a genetically distinct forager cluster of the Caucasus. In European archaeogenetic storytelling they matter less as a standalone map color and more as a source that enters the Pontic–Caspian steppe mixtures producing Yamnaya.",
         "Most continental European qpAdm setups therefore fold CHG-related ancestry into the steppe (WSH) edge of the WHG–EEF–steppe ternary. When the atlas pie charts show “steppe,” they typically already include the CHG-related fraction that traveled with Yamnaya-related gene flow.",

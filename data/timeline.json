@@ -145,43 +145,37 @@
         "id": "whg",
         "term": "WHG",
         "name": "Western Hunter-Gatherers",
-        "text": "c. 14,000–5,000 BCE. Mesolithic foragers of western/central Europe. SNP inferences often suggest darker skin/hair with some light-eye alleles—uncertain, varies within group.",
-        "phenotype": "Often inferred darker skin/hair; some light-eye alleles (sparse aDNA)."
+        "text": "c. 14,000–5,000 BCE. Mesolithic foragers of western and central Europe; later a minority substrate in farmer and Bronze Age populations."
       },
       {
         "id": "ehg",
         "term": "EHG",
         "name": "Eastern Hunter-Gatherers",
-        "text": "c. 10,000–3,500 BCE. Forest-steppe foragers with ANE affinity; Yamnaya source with CHG. Pigmentation mixed in sparse panels—not a modern stereotype.",
-        "phenotype": "Mixed pigmentation alleles in sparse samples; not a modern type."
+        "text": "c. 10,000–3,500 BCE. Forest-steppe foragers with Ancient North Eurasian affinity; a primary ingredient (with CHG) of Yamnaya / WSH."
       },
       {
         "id": "shg",
         "term": "SHG",
         "name": "Scandinavian Hunter-Gatherers",
-        "text": "c. 9,500–4,000 BCE. Northern foragers (WHG-like + EHG). Phenotype inferences mixed; later farmer/steppe pulses reshape the north.",
-        "phenotype": "Mixed WHG/EHG-like pigmentation inferences."
+        "text": "c. 9,500–4,000 BCE. Northern foragers of Scandinavia—WHG-like with elevated EHG affinity—before Funnelbeaker and Single Grave turnovers."
       },
       {
         "id": "eef",
         "term": "EEF",
         "name": "Early European Farmers",
-        "text": "c. 6,500–3,000 BCE. Anatolian Neolithic–related farmers (Cardial, LBK). Often inferred brown eyes/dark hair, intermediate skin—population averages only.",
-        "phenotype": "Often brown eyes/dark hair; intermediate skin (SNP averages)."
+        "text": "c. 6,500–3,000 BCE. Anatolian Neolithic–related farming populations (Cardial, LBK, and related) who spread into Europe with crops and herds."
       },
       {
         "id": "wsh",
         "term": "WSH",
         "name": "Western Steppe Herders",
-        "text": "c. 3,300–2,000 BCE. Yamnaya-related steppe ancestry via Corded Ware etc. Light-skin alleles often rise; eye/hair variable—not uniform “blond northern.”",
-        "phenotype": "Rising light-skin alleles; variable eye/hair; not uniform."
+        "text": "c. 3,300–2,000 BCE. Yamnaya-related steppe pastoralist ancestry that remakes temperate Europe in the third millennium BCE (Corded Ware, Beaker, and related)."
       },
       {
         "id": "chg",
         "term": "CHG",
         "name": "Caucasus Hunter-Gatherers",
-        "text": "c. 13,000–5,000 BCE. Caucasus foragers; usually inside WSH for Europe. Generally darker hair/eye genotypes in limited panels.",
-        "phenotype": "Limited panels: darker hair/eyes; folded into WSH in atlas pies."
+        "text": "c. 13,000–5,000 BCE. Caucasus forager-related ancestry; usually modeled inside the steppe (WSH) cline rather than as a free European component."
       }
     ],
     "linkAliases": [

@@ -174,7 +174,12 @@ function renderPage(data, geo) {
             <p class="anc-summary">${escapeHtml(c.summary)}</p>
             ${
               c.phenotype
-                ? `<div class="anc-phenotype"><p class="kicker">Inferred phenotype</p><p>${escapeHtml(c.phenotype)}</p></div>`
+                ? `<div class="anc-phenotype"><p class="kicker">Phenotype</p><p>${escapeHtml(c.phenotype)}</p></div>`
+                : ""
+            }
+            ${
+              c.diet
+                ? `<div class="anc-diet"><p class="kicker">Diet &amp; lifestyle</p><p>${escapeHtml(c.diet)}</p></div>`
                 : ""
             }
             ${c.body.map((p) => `<p>${escapeHtml(p)}</p>`).join("")}
