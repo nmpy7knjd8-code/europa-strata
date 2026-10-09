@@ -514,110 +514,66 @@ function initMap({ preserveZoom = true } = {}) {
   state.svg = svg;
   state.mapPixelSize = { w, h };
 
-  const mobile = isMobileLayout();
   const projection = d3.geoAzimuthalEqualArea();
 
-  // Mobile open/Reset: fit clipped European land (+ east-of-Moscow & N. Africa
-  // anchors) so Iceland→Black Sea / Scandinavia→Maghreb fills the stage —
-  // matching the reference phone screenshot. Desktop uses a simple bbox.
-  let fitMeta;
-  if (mobile) {
-    const MOBILE_ROTATE = [-10.5, -52];
-    const MOBILE_PAD = [5, 12, 5, 6]; // L,T,R,B
-    const MOBILE_BOOST = 1.03;
-    const MOBILE_ISOS = [
-      "ISL", "IRL", "GBR", "PRT", "ESP", "FRA", "AND", "BEL", "NLD", "LUX",
-      "DEU", "CHE", "AUT", "ITA", "DNK", "NOR", "SWE", "FIN", "POL", "CZE",
-      "SVK", "HUN", "SVN", "HRV", "BIH", "SRB", "MNE", "ALB", "MKD", "KOS",
-      "ROU", "BGR", "GRC", "MDA", "UKR", "BLR", "LTU", "LVA", "EST", "TUR",
-    ];
-    const mainland = state.geo.features
-      .filter((f) => MOBILE_ISOS.includes(f.properties.iso))
-      .map(clipFeatureToEurope)
-      .filter(Boolean);
-    const land = {
-      type: "FeatureCollection",
-      features: [
-        ...mainland,
-        // East-of-Moscow / Black Sea / Maghreb anchors (RUS polygon is too huge)
-        {
-          type: "Feature",
-          properties: { iso: "_anchor_moscow_e" },
-          geometry: { type: "Point", coordinates: [40.5, 55.8] },
-        },
-        {
-          type: "Feature",
-          properties: { iso: "_anchor_black_sea_e" },
-          geometry: { type: "Point", coordinates: [41.5, 42.5] },
-        },
-        {
-          type: "Feature",
-          properties: { iso: "_anchor_maghreb" },
-          geometry: { type: "Point", coordinates: [-5.8, 35.4] },
-        },
-      ],
-    };
-    projection.rotate(MOBILE_ROTATE).fitExtent(
-      [
-        [MOBILE_PAD[0], MOBILE_PAD[1]],
-        [w - MOBILE_PAD[2], h - MOBILE_PAD[3]],
-      ],
-      land
-    );
-    const baseScale = projection.scale();
-    projection.scale(baseScale * MOBILE_BOOST);
-    const t0 = projection.translate();
-    projection.translate([t0[0], t0[1] + 2]);
-    fitMeta = {
-      mode: "mobile-land",
-      rotate: MOBILE_ROTATE,
-      pad: MOBILE_PAD,
-      boost: MOBILE_BOOST,
-      baseScale,
-      scale: projection.scale(),
-      translate: projection.translate(),
-      stage: [w, h],
-    };
-  } else {
-    const DESKTOP_ROTATE = [-14.5, -52];
-    const DESKTOP_BOOST = 1.22;
-    const europeFrame = {
-      type: "Feature",
-      geometry: {
-        type: "Polygon",
-        coordinates: [
-          [
-            [-12, 35.5],
-            [40, 35.5],
-            [40, 62],
-            [-12, 62],
-            [-12, 35.5],
-          ],
-        ],
+  // Open/Reset: fit clipped European land (+ east-of-Moscow & N. Africa
+  // anchors) so Iceland→Black Sea / Scandinavia→Maghreb fills the stage.
+  const LAND_ROTATE = [-10.5, -52];
+  const LAND_PAD = [5, 12, 5, 6]; // L,T,R,B
+  const LAND_BOOST = 1.03;
+  const LAND_ISOS = [
+    "ISL", "IRL", "GBR", "PRT", "ESP", "FRA", "AND", "BEL", "NLD", "LUX",
+    "DEU", "CHE", "AUT", "ITA", "DNK", "NOR", "SWE", "FIN", "POL", "CZE",
+    "SVK", "HUN", "SVN", "HRV", "BIH", "SRB", "MNE", "ALB", "MKD", "KOS",
+    "ROU", "BGR", "GRC", "MDA", "UKR", "BLR", "LTU", "LVA", "EST", "TUR",
+  ];
+  const mainland = state.geo.features
+    .filter((f) => LAND_ISOS.includes(f.properties.iso))
+    .map(clipFeatureToEurope)
+    .filter(Boolean);
+  const land = {
+    type: "FeatureCollection",
+    features: [
+      ...mainland,
+      // East-of-Moscow / Black Sea / Maghreb anchors (RUS polygon is too huge)
+      {
+        type: "Feature",
+        properties: { iso: "_anchor_moscow_e" },
+        geometry: { type: "Point", coordinates: [40.5, 55.8] },
       },
-    };
-    projection.rotate(DESKTOP_ROTATE).fitExtent(
-      [
-        [16, 14],
-        [w - 16, h - 14],
-      ],
-      europeFrame
-    );
-    const baseScale = projection.scale();
-    projection.scale(baseScale * DESKTOP_BOOST);
-    const t0 = projection.translate();
-    projection.translate([t0[0] - w * 0.01, t0[1] + h * 0.015]);
-    fitMeta = {
-      mode: "desktop-bbox",
-      rotate: DESKTOP_ROTATE,
-      boost: DESKTOP_BOOST,
-      baseScale,
-      scale: projection.scale(),
-      translate: projection.translate(),
-      stage: [w, h],
-    };
-  }
-  state.mapFit = fitMeta;
+      {
+        type: "Feature",
+        properties: { iso: "_anchor_black_sea_e" },
+        geometry: { type: "Point", coordinates: [41.5, 42.5] },
+      },
+      {
+        type: "Feature",
+        properties: { iso: "_anchor_maghreb" },
+        geometry: { type: "Point", coordinates: [-5.8, 35.4] },
+      },
+    ],
+  };
+  projection.rotate(LAND_ROTATE).fitExtent(
+    [
+      [LAND_PAD[0], LAND_PAD[1]],
+      [w - LAND_PAD[2], h - LAND_PAD[3]],
+    ],
+    land
+  );
+  const baseScale = projection.scale();
+  projection.scale(baseScale * LAND_BOOST);
+  const t0 = projection.translate();
+  projection.translate([t0[0], t0[1] + 2]);
+  state.mapFit = {
+    mode: "land-fit",
+    rotate: LAND_ROTATE,
+    pad: LAND_PAD,
+    boost: LAND_BOOST,
+    baseScale,
+    scale: projection.scale(),
+    translate: projection.translate(),
+    stage: [w, h],
+  };
 
   state.path = d3.geoPath(projection);
   state.mapSize = { w, h };
@@ -653,9 +609,9 @@ function initMap({ preserveZoom = true } = {}) {
       [w * 1.45, h * 1.45],
     ])
     .filter((event) => {
-      // Never steal taps from layout / zoom chrome
+      // Never steal taps from zoom chrome
       const t = event.target;
-      if (t && t.closest && t.closest(".layout-toggle, .map-tools, .map-chrome")) {
+      if (t && t.closest && t.closest(".map-tools, .map-chrome")) {
         return false;
       }
       // Never steal wheel — page scroll must not zoom the map in or out.
@@ -861,88 +817,13 @@ function renderPeriodText() {
   }
 }
 
-const LAYOUT_MQ = "(max-width: 960px)";
-const LAYOUT_OVERRIDE_KEY = "europa-strata-layout-override";
-
-function isNarrowViewport() {
-  return window.matchMedia(LAYOUT_MQ).matches;
-}
-
-function deviceLayout() {
-  return isNarrowViewport() ? "mobile" : "desktop";
-}
-
-function layoutOverride() {
-  const o = localStorage.getItem(LAYOUT_OVERRIDE_KEY);
-  return o === "mobile" || o === "desktop" ? o : null;
-}
-
-/** True when phone layout is active (override or viewport). */
-function isMobileLayout() {
-  return document.documentElement.getAttribute("data-layout") === "mobile";
-}
-
-function syncLayoutToggle() {
-  const btn = $("#layout-toggle");
-  if (!btn) return;
-  const mobile = isMobileLayout();
-  const overridden = !!layoutOverride();
-  btn.setAttribute("aria-pressed", mobile ? "true" : "false");
-  // Quiet label: offer the other mode
-  btn.textContent = mobile ? "Desktop" : "Mobile";
-  btn.title = overridden
-    ? `Using ${mobile ? "mobile" : "desktop"} layout (tap to switch; clears when you choose the other). First visits follow your screen size.`
-    : `Layout follows this device (${mobile ? "mobile" : "desktop"}). Tap for ${mobile ? "desktop" : "mobile"}.`;
-  btn.dataset.override = overridden ? "1" : "0";
-}
-
-function applyLayout(mode, { remap = true } = {}) {
-  const next = mode === "mobile" ? "mobile" : "desktop";
-  document.documentElement.setAttribute("data-layout", next);
-  document.body.classList.toggle("is-mobile-layout", next === "mobile");
-  document.body.classList.toggle("is-desktop-layout", next === "desktop");
-  syncLayoutToggle();
-  if (remap && state.geo) {
-    requestAnimationFrame(() => {
-      requestAnimationFrame(() => {
-        try {
-          initMap();
-          updateLegend();
-          if (state.selectedIso) {
-            state.svg
-              ?.selectAll("path.country")
-              .classed(
-                "is-active",
-                (d) => d.properties.iso === state.selectedIso
-              );
-          }
-          if (state.mapFit) {
-            console.info("[europa-strata] map fit", state.mapFit);
-          }
-        } catch (err) {
-          console.error("layout remap failed", err);
-        }
-      });
-    });
-  }
-}
-
-function initLayoutPreference() {
-  // Drop legacy forced key so returning users get normal responsive behavior
+function clearLegacyLayoutStorage() {
   try {
+    localStorage.removeItem("europa-strata-layout-override");
     localStorage.removeItem("europa-strata-layout");
   } catch (_) {
     /* ignore */
   }
-  applyLayout(layoutOverride() || deviceLayout(), { remap: false });
-
-  const mq = window.matchMedia(LAYOUT_MQ);
-  const onViewport = () => {
-    if (layoutOverride()) return; // manual override wins until changed
-    applyLayout(deviceLayout(), { remap: !!state.geo });
-  };
-  if (mq.addEventListener) mq.addEventListener("change", onViewport);
-  else if (mq.addListener) mq.addListener(onViewport);
 }
 
 function updateLegend() {
@@ -1368,28 +1249,7 @@ function bindUI() {
     if (periodId && iso) goToAtlasTarget({ periodId, iso });
   });
 
-  const layoutBtn = $("#layout-toggle");
-  if (layoutBtn) {
-    let lastToggle = 0;
-    layoutBtn.addEventListener("click", (event) => {
-      event.preventDefault();
-      event.stopPropagation();
-      const now = Date.now();
-      if (now - lastToggle < 400) return;
-      lastToggle = now;
-      const next = isMobileLayout() ? "desktop" : "mobile";
-      try {
-        // Persist only an explicit override; choosing the device default clears it
-        if (next === deviceLayout()) localStorage.removeItem(LAYOUT_OVERRIDE_KEY);
-        else localStorage.setItem(LAYOUT_OVERRIDE_KEY, next);
-      } catch (_) {
-        /* ignore */
-      }
-      applyLayout(next, { remap: true });
-    });
-  }
-
-  // Mobile browser chrome show/hide fires resize and used to rebuild the map
+  // Browser chrome show/hide fires resize and used to rebuild the map
   // at identity zoom. Only remap when the map *width* meaningfully changes;
   // always preserve zoom if a rebuild does run.
   window.addEventListener("resize", () => {
@@ -1421,7 +1281,7 @@ async function init() {
   if (saved === "dark" || saved === "light") {
     document.documentElement.setAttribute("data-theme", saved);
   }
-  initLayoutPreference();
+  clearLegacyLayoutStorage();
 
   try {
     const [timeline, geo] = await Promise.all([

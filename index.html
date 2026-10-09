@@ -16,29 +16,11 @@
     />
     <link rel="stylesheet" href="css/styles.css" />
     <script>
-      /* Apply layout before paint: device default, override only if stored */
-      (function () {
-        try {
-          var o = localStorage.getItem("europa-strata-layout-override");
-          try {
-            localStorage.removeItem("europa-strata-layout");
-          } catch (_) {}
-          var mode =
-            o === "mobile" || o === "desktop"
-              ? o
-              : window.matchMedia("(max-width: 960px)").matches
-                ? "mobile"
-                : "desktop";
-          document.documentElement.setAttribute("data-layout", mode);
-        } catch (_) {
-          document.documentElement.setAttribute(
-            "data-layout",
-            window.matchMedia("(max-width: 960px)").matches
-              ? "mobile"
-              : "desktop"
-          );
-        }
-      })();
+      /* Clear legacy layout-override keys from older builds */
+      try {
+        localStorage.removeItem("europa-strata-layout-override");
+        localStorage.removeItem("europa-strata-layout");
+      } catch (_) {}
     </script>
     <script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js" defer></script>
     <script src="js/app.js" defer></script>
@@ -50,24 +32,6 @@
           <h1 class="brand">Europa <em>Strata</em></h1>
           <p class="brand-sub">Deep-time atlas</p>
         </div>
-        <button
-          type="button"
-          class="layout-toggle"
-          id="layout-toggle"
-          title="Layout follows your screen; tap to override"
-          aria-pressed="false"
-        ></button>
-        <script>
-          (function () {
-            var m =
-              document.documentElement.getAttribute("data-layout") === "mobile";
-            var b = document.getElementById("layout-toggle");
-            if (b) {
-              b.textContent = m ? "Desktop" : "Mobile";
-              b.setAttribute("aria-pressed", m ? "true" : "false");
-            }
-          })();
-        </script>
         <div class="map-tools">
           <button type="button" class="map-tool-btn" id="btn-zoom-in" aria-label="Zoom in">+</button>
           <button type="button" class="map-tool-btn" id="btn-zoom-out" aria-label="Zoom out">−</button>
