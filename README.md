@@ -6,9 +6,7 @@ Interactive atlas of European cultures, empires, archaeogenetic ancestry, and la
 
 ## Live site
 
-After GitHub Pages is enabled on this repo (Settings → Pages → Deploy from branch `main` / root), the site will be at:
-
-`https://<your-user>.github.io/europa-strata/`
+**Live:** `https://nmpy7knjd8-code.github.io/europa-strata/`
 
 ## Run locally
 
