@@ -527,28 +527,63 @@ function setPolityField(key, value) {
   el.textContent = text;
 }
 
-function renderPolityGallery(images) {
-  const block = $("#polity-images-block");
-  const gallery = $("#polity-gallery");
-  if (!block || !gallery) return;
+function figureHtml(img) {
+  const alt = escapeHtml(img.alt || img.caption || "Historical image");
+  const caption = escapeHtml(img.caption || "");
+  const src = escapeHtml(img.src);
+  return `<figure class="polity-figure">
+    <img src="${src}" alt="${alt}" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.closest('figure')?.remove()" />
+    <figcaption>${caption}</figcaption>
+  </figure>`;
+}
+
+function isLiteraryImage(img) {
+  const t = `${img.caption || ""} ${img.alt || ""} ${img.src || ""}`.toLowerCase();
+  return /book|kells|manuscript|folio|bible|thes|print|tapestry|chronicle|poem|poetry|saga|gospel|psalter|text|letter|codex|quill|dante|shakespeare|cervantes|luther|monet|night watch|meninas|venus|rublev|icon|pantocrator|fresco|miniature|joan/.test(
+    t
+  );
+}
+
+function fillInlineGallery(el, images) {
+  if (!el) return;
+  const list = (images || []).filter((img) => img && img.src);
+  el.innerHTML = list.map(figureHtml).join("");
+  el.hidden = !list.length;
+}
+
+/** Split images into literature vs art sections — no separate gallery heading */
+function renderPolityGalleries(images) {
+  const litGal = $("#polity-literature-gallery");
+  const artGal = $("#polity-art-gallery");
   const list = Array.isArray(images) ? images.filter((img) => img && img.src) : [];
   if (!list.length) {
-    block.hidden = true;
-    gallery.innerHTML = "";
+    fillInlineGallery(litGal, []);
+    fillInlineGallery(artGal, []);
     return;
   }
-  block.hidden = false;
-  gallery.innerHTML = list
-    .map((img) => {
-      const alt = escapeHtml(img.alt || img.caption || "Historical image");
-      const caption = escapeHtml(img.caption || "");
-      const src = escapeHtml(img.src);
-      return `<figure class="polity-figure">
-        <img src="${src}" alt="${alt}" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.closest('figure')?.remove()" />
-        <figcaption>${caption}</figcaption>
-      </figure>`;
-    })
-    .join("");
+  const literary = [];
+  const material = [];
+  list.forEach((img) => {
+    if (isLiteraryImage(img)) literary.push(img);
+    else material.push(img);
+  });
+  // Keep at least one image under art when everything looked "literary"
+  if (!material.length && literary.length > 1) {
+    material.push(literary.pop());
+  }
+  if (!material.length && literary.length === 1 && !($("#polity-art")?.textContent || "").trim()) {
+    // art section empty — leave image with literature
+  } else if (!material.length && literary.length) {
+    material.push(literary.pop());
+  }
+  fillInlineGallery(litGal, literary);
+  fillInlineGallery(artGal, material);
+
+  // If a section has images but no text, still show the block
+  const litBlock = $("#polity-literature-block");
+  const artBlock = $("#polity-art-block");
+  if (litBlock && literary.length) litBlock.hidden = false;
+  if (artBlock && material.length) artBlock.hidden = false;
 }
 
 function renderDetail() {
@@ -614,10 +649,10 @@ function renderDetail() {
       setPolityField("story", polity.story);
       setPolityField("literature", polity.literature);
       setPolityField("art", polity.art);
-      renderPolityGallery(polity.images);
+      renderPolityGalleries(polity.images);
     } else {
       polityPanel.hidden = true;
-      renderPolityGallery(null);
+      renderPolityGalleries(null);
     }
   }
 

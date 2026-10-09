@@ -50,16 +50,18 @@
             </div>
             <button type="button" class="nav-btn" id="btn-next" aria-label="Next period">›</button>
           </div>
-          <input
-            type="range"
-            class="time-slider"
-            id="time-slider"
-            min="0"
-            max="1000"
-            value="0"
-            step="1"
-            aria-label="Time"
-          />
+          <div class="slider-hit">
+            <input
+              type="range"
+              class="time-slider"
+              id="time-slider"
+              min="0"
+              max="1000"
+              value="0"
+              step="1"
+              aria-label="Time"
+            />
+          </div>
           <div class="ticks" id="tick-labels"></div>
           <p class="tick-caption" id="tick-caption" aria-live="polite"></p>
         </div>
@@ -110,17 +112,12 @@
             <div class="polity-block" id="polity-literature-block" hidden>
               <p class="kicker">Literature &amp; poetry</p>
               <p class="polity-literature" id="polity-literature"></p>
+              <div class="polity-inline-gallery" id="polity-literature-gallery"></div>
             </div>
             <div class="polity-block" id="polity-art-block" hidden>
               <p class="kicker">Art, dress &amp; material culture</p>
               <p class="polity-art" id="polity-art"></p>
-            </div>
-            <div class="polity-block" id="polity-images-block" hidden>
-              <p class="kicker">Objects &amp; images</p>
-              <div class="polity-gallery" id="polity-gallery"></div>
-              <p class="polity-gallery-note">
-                Illustrative museum / historic images (Wikimedia). Not excavation photos of this exact click.
-              </p>
+              <div class="polity-inline-gallery" id="polity-art-gallery"></div>
             </div>
             <p class="kicker polity-conflict-label">Conflicts &amp; neighbors</p>
             <p class="polity-conflicts" id="polity-conflicts"></p>
