@@ -959,9 +959,83 @@ function figureHtml(img) {
   const caption = escapeHtml(img.caption || "");
   const src = escapeHtml(img.src);
   return `<figure class="polity-figure">
-    <img src="${src}" alt="${alt}" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.closest('figure')?.remove()" />
+    <button type="button" class="polity-figure-open" data-full-src="${src}" data-caption="${caption}" data-alt="${alt}" aria-label="View larger: ${alt}">
+      <img src="${src}" alt="${alt}" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.closest('figure')?.remove()" />
+    </button>
     <figcaption>${caption}</figcaption>
   </figure>`;
+}
+
+function ensureLightbox() {
+  let root = $("#image-lightbox");
+  if (root) return root;
+  root = document.createElement("div");
+  root.id = "image-lightbox";
+  root.className = "image-lightbox";
+  root.hidden = true;
+  root.setAttribute("role", "dialog");
+  root.setAttribute("aria-modal", "true");
+  root.setAttribute("aria-label", "Image viewer");
+  root.innerHTML = `
+    <button type="button" class="image-lightbox-backdrop" aria-label="Close image"></button>
+    <div class="image-lightbox-panel">
+      <button type="button" class="image-lightbox-close" aria-label="Close">×</button>
+      <img class="image-lightbox-img" alt="" />
+      <p class="image-lightbox-caption"></p>
+    </div>`;
+  document.body.appendChild(root);
+
+  const close = () => closeLightbox();
+  root.querySelector(".image-lightbox-backdrop")?.addEventListener("click", close);
+  root.querySelector(".image-lightbox-close")?.addEventListener("click", close);
+  root.addEventListener("click", (e) => {
+    if (e.target === root) close();
+  });
+  return root;
+}
+
+function openLightbox({ src, caption, alt }) {
+  if (!src) return;
+  const root = ensureLightbox();
+  const img = root.querySelector(".image-lightbox-img");
+  const cap = root.querySelector(".image-lightbox-caption");
+  if (img) {
+    img.src = src;
+    img.alt = alt || caption || "Historical image";
+  }
+  if (cap) {
+    cap.textContent = caption || alt || "";
+    cap.hidden = !cap.textContent;
+  }
+  root.hidden = false;
+  document.body.classList.add("lightbox-open");
+  root.querySelector(".image-lightbox-close")?.focus?.();
+}
+
+function closeLightbox() {
+  const root = $("#image-lightbox");
+  if (!root || root.hidden) return;
+  root.hidden = true;
+  document.body.classList.remove("lightbox-open");
+  const img = root.querySelector(".image-lightbox-img");
+  if (img) img.removeAttribute("src");
+}
+
+function bindLightboxUi() {
+  document.addEventListener("click", (e) => {
+    const btn = e.target?.closest?.(".polity-figure-open");
+    if (!btn) return;
+    e.preventDefault();
+    e.stopPropagation();
+    openLightbox({
+      src: btn.getAttribute("data-full-src"),
+      caption: btn.getAttribute("data-caption") || "",
+      alt: btn.getAttribute("data-alt") || "",
+    });
+  });
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape") closeLightbox();
+  });
 }
 
 function inferImageRole(img) {
