@@ -184,6 +184,45 @@ function shortPeriodName(p) {
 
 /* ——— Map ——— */
 
+/** Drop overseas rings (Canaries, Caribbean, Reunion, Svalbard, …) so fitExtent
+ *  frames continental Europe + Iceland, not the full colonial footprint. */
+function clipFeatureToEurope(feature) {
+  const g = feature.geometry;
+  if (!g) return null;
+  const ringInEurope = (ring) => {
+    let lon = 0;
+    let lat = 0;
+    const n = ring.length;
+    for (let i = 0; i < n; i++) {
+      lon += ring[i][0];
+      lat += ring[i][1];
+    }
+    lon /= n;
+    lat /= n;
+    return lon >= -25 && lon <= 45 && lat >= 34.2 && lat <= 72.2;
+  };
+  if (g.type === "Polygon") {
+    return ringInEurope(g.coordinates[0]) ? feature : null;
+  }
+  if (g.type === "MultiPolygon") {
+    const parts = g.coordinates.filter((poly) => ringInEurope(poly[0]));
+    if (!parts.length) return null;
+    if (parts.length === 1) {
+      return {
+        type: "Feature",
+        properties: feature.properties,
+        geometry: { type: "Polygon", coordinates: parts[0] },
+      };
+    }
+    return {
+      type: "Feature",
+      properties: feature.properties,
+      geometry: { type: "MultiPolygon", coordinates: parts },
+    };
+  }
+  return feature;
+}
+
 function initMap() {
   const el = $("#map");
   const w = Math.max(el.clientWidth || 900, 320);
@@ -204,55 +243,110 @@ function initMap() {
 
   state.svg = svg;
 
-  // Mobile default matches the filled Spain→Moscow phone framing;
-  // desktop keeps a slightly wider core Europe.
   const mobile = isMobileLayout();
-  const europeFrame = {
-    type: "Feature",
-    geometry: {
-      type: "Polygon",
-      coordinates: [
-        mobile
-          ? [
-              [-11.5, 36.2],
-              [38.2, 36.2],
-              [38.2, 60.6],
-              [-11.5, 60.6],
-              [-11.5, 36.2],
-            ]
-          : [
-              [-12, 35.5],
-              [40, 35.5],
-              [40, 62],
-              [-12, 62],
-              [-12, 35.5],
-            ],
-      ],
-    },
-  };
+  const projection = d3.geoAzimuthalEqualArea();
 
-  const padX = mobile ? 2 : 16;
-  const padTop = mobile ? 20 : 14;
-  const padBot = mobile ? 2 : 14;
-  const projection = d3
-    .geoAzimuthalEqualArea()
-    .rotate([mobile ? -13.5 : -14.5, mobile ? -51.2 : -52])
-    .fitExtent(
+  // Mobile open/Reset: fit clipped European land (+ east-of-Moscow & N. Africa
+  // anchors) so Iceland→Black Sea / Scandinavia→Maghreb fills the stage —
+  // matching the reference phone screenshot. Desktop uses a simple bbox.
+  let fitMeta;
+  if (mobile) {
+    const MOBILE_ROTATE = [-10.5, -52];
+    const MOBILE_PAD = [5, 12, 5, 6]; // L,T,R,B
+    const MOBILE_BOOST = 1.03;
+    const MOBILE_ISOS = [
+      "ISL", "IRL", "GBR", "PRT", "ESP", "FRA", "AND", "BEL", "NLD", "LUX",
+      "DEU", "CHE", "AUT", "ITA", "DNK", "NOR", "SWE", "FIN", "POL", "CZE",
+      "SVK", "HUN", "SVN", "HRV", "BIH", "SRB", "MNE", "ALB", "MKD", "KOS",
+      "ROU", "BGR", "GRC", "MDA", "UKR", "BLR", "LTU", "LVA", "EST", "TUR",
+    ];
+    const mainland = state.geo.features
+      .filter((f) => MOBILE_ISOS.includes(f.properties.iso))
+      .map(clipFeatureToEurope)
+      .filter(Boolean);
+    const land = {
+      type: "FeatureCollection",
+      features: [
+        ...mainland,
+        // East-of-Moscow / Black Sea / Maghreb anchors (RUS polygon is too huge)
+        {
+          type: "Feature",
+          properties: { iso: "_anchor_moscow_e" },
+          geometry: { type: "Point", coordinates: [40.5, 55.8] },
+        },
+        {
+          type: "Feature",
+          properties: { iso: "_anchor_black_sea_e" },
+          geometry: { type: "Point", coordinates: [41.5, 42.5] },
+        },
+        {
+          type: "Feature",
+          properties: { iso: "_anchor_maghreb" },
+          geometry: { type: "Point", coordinates: [-5.8, 35.4] },
+        },
+      ],
+    };
+    projection.rotate(MOBILE_ROTATE).fitExtent(
       [
-        [padX, padTop],
-        [w - padX, h - padBot],
+        [MOBILE_PAD[0], MOBILE_PAD[1]],
+        [w - MOBILE_PAD[2], h - MOBILE_PAD[3]],
+      ],
+      land
+    );
+    const baseScale = projection.scale();
+    projection.scale(baseScale * MOBILE_BOOST);
+    const t0 = projection.translate();
+    projection.translate([t0[0], t0[1] + 2]);
+    fitMeta = {
+      mode: "mobile-land",
+      rotate: MOBILE_ROTATE,
+      pad: MOBILE_PAD,
+      boost: MOBILE_BOOST,
+      baseScale,
+      scale: projection.scale(),
+      translate: projection.translate(),
+      stage: [w, h],
+    };
+  } else {
+    const DESKTOP_ROTATE = [-14.5, -52];
+    const DESKTOP_BOOST = 1.22;
+    const europeFrame = {
+      type: "Feature",
+      geometry: {
+        type: "Polygon",
+        coordinates: [
+          [
+            [-12, 35.5],
+            [40, 35.5],
+            [40, 62],
+            [-12, 62],
+            [-12, 35.5],
+          ],
+        ],
+      },
+    };
+    projection.rotate(DESKTOP_ROTATE).fitExtent(
+      [
+        [16, 14],
+        [w - 16, h - 14],
       ],
       europeFrame
     );
-
-  // Mobile boost tuned to the screenshot “this zoomed in” fill
-  const boost = mobile ? 1.62 : 1.24;
-  projection.scale(projection.scale() * boost);
-  const t0 = projection.translate();
-  projection.translate([
-    t0[0] + w * (mobile ? 0.01 : -0.01),
-    t0[1] + h * (mobile ? 0.01 : 0.015),
-  ]);
+    const baseScale = projection.scale();
+    projection.scale(baseScale * DESKTOP_BOOST);
+    const t0 = projection.translate();
+    projection.translate([t0[0] - w * 0.01, t0[1] + h * 0.015]);
+    fitMeta = {
+      mode: "desktop-bbox",
+      rotate: DESKTOP_ROTATE,
+      boost: DESKTOP_BOOST,
+      baseScale,
+      scale: projection.scale(),
+      translate: projection.translate(),
+      stage: [w, h],
+    };
+  }
+  state.mapFit = fitMeta;
 
   state.path = d3.geoPath(projection);
   state.mapSize = { w, h };
@@ -465,11 +559,23 @@ function renderPeriodText() {
   }
 }
 
+const LAYOUT_MQ = "(max-width: 960px)";
+const LAYOUT_OVERRIDE_KEY = "europa-strata-layout-override";
+
 function isNarrowViewport() {
-  return window.matchMedia("(max-width: 960px)").matches;
+  return window.matchMedia(LAYOUT_MQ).matches;
 }
 
-/** True when phone layout is active (manual toggle or narrow default). */
+function deviceLayout() {
+  return isNarrowViewport() ? "mobile" : "desktop";
+}
+
+function layoutOverride() {
+  const o = localStorage.getItem(LAYOUT_OVERRIDE_KEY);
+  return o === "mobile" || o === "desktop" ? o : null;
+}
+
+/** True when phone layout is active (override or viewport). */
 function isMobileLayout() {
   return document.documentElement.getAttribute("data-layout") === "mobile";
 }
@@ -478,19 +584,23 @@ function syncLayoutToggle() {
   const btn = $("#layout-toggle");
   if (!btn) return;
   const mobile = isMobileLayout();
+  const overridden = !!layoutOverride();
   btn.setAttribute("aria-pressed", mobile ? "true" : "false");
-  btn.textContent = mobile ? "Desktop view" : "Mobile view";
+  // Quiet label: offer the other mode
+  btn.textContent = mobile ? "Desktop" : "Mobile";
+  btn.title = overridden
+    ? `Using ${mobile ? "mobile" : "desktop"} layout (tap to switch; clears when you choose the other). First visits follow your screen size.`
+    : `Layout follows this device (${mobile ? "mobile" : "desktop"}). Tap for ${mobile ? "desktop" : "mobile"}.`;
+  btn.dataset.override = overridden ? "1" : "0";
 }
 
-function applyLayout(mode, { persist = true, remap = true } = {}) {
+function applyLayout(mode, { remap = true } = {}) {
   const next = mode === "mobile" ? "mobile" : "desktop";
   document.documentElement.setAttribute("data-layout", next);
   document.body.classList.toggle("is-mobile-layout", next === "mobile");
   document.body.classList.toggle("is-desktop-layout", next === "desktop");
-  if (persist) localStorage.setItem("europa-strata-layout", next);
   syncLayoutToggle();
   if (remap && state.geo) {
-    // Remap after layout CSS has applied (map stage size changes)
     requestAnimationFrame(() => {
       requestAnimationFrame(() => {
         try {
@@ -504,6 +614,9 @@ function applyLayout(mode, { persist = true, remap = true } = {}) {
                 (d) => d.properties.iso === state.selectedIso
               );
           }
+          if (state.mapFit) {
+            console.info("[europa-strata] map fit", state.mapFit);
+          }
         } catch (err) {
           console.error("layout remap failed", err);
         }
@@ -513,16 +626,21 @@ function applyLayout(mode, { persist = true, remap = true } = {}) {
 }
 
 function initLayoutPreference() {
-  const saved = localStorage.getItem("europa-strata-layout");
-  if (saved === "mobile" || saved === "desktop") {
-    applyLayout(saved, { persist: false, remap: false });
-    return;
+  // Drop legacy forced key so returning users get normal responsive behavior
+  try {
+    localStorage.removeItem("europa-strata-layout");
+  } catch (_) {
+    /* ignore */
   }
-  // First visit: phones get mobile layout; wide screens stay desktop
-  applyLayout(isNarrowViewport() ? "mobile" : "desktop", {
-    persist: false,
-    remap: false,
-  });
+  applyLayout(layoutOverride() || deviceLayout(), { remap: false });
+
+  const mq = window.matchMedia(LAYOUT_MQ);
+  const onViewport = () => {
+    if (layoutOverride()) return; // manual override wins until changed
+    applyLayout(deviceLayout(), { remap: !!state.geo });
+  };
+  if (mq.addEventListener) mq.addEventListener("change", onViewport);
+  else if (mq.addListener) mq.addListener(onViewport);
 }
 
 function updateLegend() {
@@ -839,15 +957,22 @@ function bindUI() {
   const layoutBtn = $("#layout-toggle");
   if (layoutBtn) {
     let lastToggle = 0;
-    const toggleLayout = (event) => {
+    layoutBtn.addEventListener("click", (event) => {
       event.preventDefault();
       event.stopPropagation();
       const now = Date.now();
-      if (now - lastToggle < 400) return; // ignore click+touch double fire
+      if (now - lastToggle < 400) return;
       lastToggle = now;
-      applyLayout(isMobileLayout() ? "desktop" : "mobile");
-    };
-    layoutBtn.addEventListener("click", toggleLayout);
+      const next = isMobileLayout() ? "desktop" : "mobile";
+      try {
+        // Persist only an explicit override; choosing the device default clears it
+        if (next === deviceLayout()) localStorage.removeItem(LAYOUT_OVERRIDE_KEY);
+        else localStorage.setItem(LAYOUT_OVERRIDE_KEY, next);
+      } catch (_) {
+        /* ignore */
+      }
+      applyLayout(next, { remap: true });
+    });
   }
 
   window.addEventListener("resize", () => {

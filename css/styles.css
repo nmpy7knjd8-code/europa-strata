@@ -216,34 +216,45 @@ button {
   font-weight: 400;
 }
 
-/* Outside .map-chrome so taps are never blocked by the map SVG */
+/* Quiet text control — outside .map-chrome so taps aren’t blocked */
 .layout-toggle {
   position: absolute;
-  top: 4.35rem;
+  top: 4.15rem;
   left: 1.5rem;
   z-index: 30;
   display: inline-block;
   margin: 0;
-  padding: 0.45rem 0.65rem;
-  border: 1px solid var(--line-strong);
-  background: rgba(255, 255, 255, 0.96);
-  color: var(--ink);
+  padding: 0.15rem 0.1rem;
+  border: none;
+  background: transparent;
+  color: var(--ink-mute);
   font-family: var(--font-ui);
-  font-size: 0.62rem;
-  letter-spacing: 0.08em;
+  font-size: 0.58rem;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
-  backdrop-filter: blur(6px);
+  opacity: 0.45;
   pointer-events: auto;
   touch-action: manipulation;
   -webkit-tap-highlight-color: transparent;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  text-decoration-thickness: 1px;
 }
 
-.layout-toggle[aria-pressed="true"] {
-  border-color: var(--ink);
+.layout-toggle:hover,
+.layout-toggle:focus-visible {
+  opacity: 0.75;
+  color: var(--ink-dim);
+  outline: none;
+}
+
+.layout-toggle[data-override="1"] {
+  opacity: 0.55;
 }
 
 [data-theme="dark"] .layout-toggle {
-  background: rgba(20, 20, 20, 0.92);
+  background: transparent;
+  color: var(--ink-mute);
 }
 
 /* Narrow phones in “desktop” layout: keep a usable stacked page, desktop map framing */
@@ -1100,10 +1111,11 @@ html[data-layout="mobile"] .map-chrome {
 }
 
 html[data-layout="mobile"] .layout-toggle {
-  top: 3.85rem;
-  left: 0.75rem;
-  padding: 0.5rem 0.7rem;
-  font-size: 0.72rem;
+  top: 3.7rem;
+  left: 0.85rem;
+  padding: 0.15rem 0.05rem;
+  font-size: 0.62rem;
+  opacity: 0.4;
 }
 
 html[data-layout="mobile"] .map-tools {
