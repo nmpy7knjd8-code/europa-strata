@@ -1003,8 +1003,8 @@
       "era": "First Farmers",
       "yearLabel": "c. 5500 BC",
       "yearApprox": -5500,
-      "narrative": "Anatolian Neolithic–related Early European Farmers (EEF) enter via the Balkans and Mediterranean coasts (~6500–5500 BCE). In much of western and central Europe this is near-total demographic replacement of hunter-gatherers; east of a Black Sea–Baltic genomic divide, forager continuity is stronger (Allentoft et al. 2024). Culture names mark ceramic/settlement packages carried by these farmers.",
-      "culturesNote": "Starčevo–Körös–Criș, early Vinča, LBK (Linearbandkeramik), Cardial/Impresso, earliest Funnelbeaker contact — EEF-rich demic expansions.",
+      "narrative": "Farming spreads demically along Cardial/Impresso coasts and the LBK Danube corridor. Hunter-gatherer holdouts remain: Ertebølle in southern Scandinavia/south Baltic, Narva–Comb Ware in the east Baltic, and EHG forest-steppe groups east of the farmer line. Early farmer Europe is already clinal — WHG share higher toward Atlantic and northern contact zones than in LBK cores.",
+      "culturesNote": "Cardial, Impresso, LBK, Starčevo–Vinča + HG holdouts (Ertebølle, Narva/Comb Ware, EHG persistence).",
       "regions": {
         "iberia": {
           "culture": "Cardial Early Neolithic Iberia",
@@ -1031,18 +1031,52 @@
           "mode": "replacement",
           "description": "Farming reaches Britain after the continental Early Neolithic. When established, Neolithic Britons are strongly EEF-derived — a first major replacement of Mesolithic WHG — until the Beaker-age collapse of this gene pool (~2500 BCE).",
           "ancestry": {
-            "eef": 75,
+            "eef": 78,
             "whg": 20,
             "steppe": 0
           },
-          "ancestryNote": "Neolithic Britain highly EEF (+ some WHG); steppe ≈ 0 until Beaker.",
+          "ancestryNote": "Earliest farming Britain: EEF-led; WHG higher at Atlantic edges than in pioneer cores.",
           "substrate": "Insular WHG",
           "incoming": "Continental EEF",
           "fused": "Neolithic Britain forming",
           "languageFamily": "Early farmer (non-IE?)",
           "languages": "Unknown Neolithic",
           "linguisticNote": "Unknown non-IE. The later Celtic languages are not this Neolithic speech.",
-          "linguisticConfidence": "hypothetical"
+          "linguisticConfidence": "hypothetical",
+          "ancestryRange": {
+            "eef": [
+              70,
+              88
+            ],
+            "whg": [
+              10,
+              28
+            ]
+          },
+          "ancestryCline": {
+            "label": "Core pioneer → Atlantic edge",
+            "note": "WHG% higher where farmers meet residual foragers; EEF highest in early pioneer packages.",
+            "ends": [
+              {
+                "id": "core",
+                "label": "Pioneer core",
+                "ancestry": {
+                  "eef": 88,
+                  "whg": 10,
+                  "steppe": 0
+                }
+              },
+              {
+                "id": "edge",
+                "label": "Atlantic edge",
+                "ancestry": {
+                  "eef": 70,
+                  "whg": 28,
+                  "steppe": 0
+                }
+              }
+            ]
+          }
         },
         "france": {
           "culture": "Cardial coast & LBK-influenced interior",
@@ -1069,39 +1103,109 @@
           "mode": "replacement",
           "description": "The classic Central European Early Neolithic (~5500–4900 BCE): longhouses, Linearbandkeramik pottery, pioneer farming on loess. Genomes are strongly Anatolian farmer–related; initial HG admixture is limited and rises later. Not “Celtic” or “Germanic.”",
           "ancestry": {
-            "eef": 92,
-            "whg": 7,
+            "eef": 90,
+            "whg": 8,
             "steppe": 0
           },
-          "ancestryNote": "Early LBK ≈ EEF (often >90% in models); WHG increases Mid–Late Neolithic.",
+          "ancestryNote": "Early LBK cores often >85% EEF; WHG rises later in Mid–Late Neolithic.",
           "substrate": "Central WHG",
           "incoming": "LBK EEF",
           "fused": "Danubian Neolithic",
           "languageFamily": "Early farmer (non-IE?)",
           "languages": "Unknown LBK-related",
           "linguisticNote": "Unknown; widely assumed non-IE under steppe-IE models.",
-          "linguisticConfidence": "hypothetical"
+          "linguisticConfidence": "hypothetical",
+          "ancestryRange": {
+            "eef": [
+              85,
+              95
+            ],
+            "whg": [
+              3,
+              14
+            ]
+          },
+          "ancestryCline": {
+            "label": "LBK core → northern contact",
+            "note": "WHG higher toward northern/forest contact; EEF highest in loess LBK heartland.",
+            "ends": [
+              {
+                "id": "core",
+                "label": "LBK loess core",
+                "ancestry": {
+                  "eef": 94,
+                  "whg": 5,
+                  "steppe": 0
+                }
+              },
+              {
+                "id": "north",
+                "label": "Northern contact",
+                "ancestry": {
+                  "eef": 82,
+                  "whg": 16,
+                  "steppe": 0
+                }
+              }
+            ]
+          }
         },
         "scandinavia": {
           "culture": "Ertebølle foragers → earliest TRB contact",
           "color": "#8a9a50",
           "mode": "admixture",
-          "description": "Southern Scandinavia stays forager (Ertebølle) longer than Central Europe. Funnelbeaker (TRB) farming brings the first major Holocene ancestry shift — Denmark’s farmer pulse — before the second, steppe-related Single Grave pulse.",
+          "description": "Ertebølle foragers remain the demographic majority along Danish and south Swedish coasts while earliest Funnelbeaker farming appears in the south. Genetics: SHG/WHG holdouts beside rising EEF — the first Holocene turnover is beginning, not finished.",
           "ancestry": {
-            "shg": 40,
-            "whg": 15,
-            "eef": 40,
-            "ehg": 5,
+            "shg": 55,
+            "eef": 30,
+            "whg": 12,
+            "ehg": 3,
             "steppe": 0
           },
-          "ancestryNote": "Ertebølle SHG persistence meeting earliest TRB/EEF farmers — first Holocene turnover begins.",
+          "ancestryNote": "Ertebølle holdout still strong; earliest TRB farmers only beginning the first Holocene turnover.",
           "substrate": "Ertebølle WHG",
           "incoming": "TRB farmers",
           "fused": "Early Nordic Neolithic",
           "languageFamily": "Mixed forager/farmer",
           "languages": "Unknown Ertebølle / early TRB",
           "linguisticNote": "Language shift likely with farming; details unknowable. Not Old Norse.",
-          "linguisticConfidence": "hypothetical"
+          "linguisticConfidence": "hypothetical",
+          "ancestryRange": {
+            "shg": [
+              40,
+              75
+            ],
+            "eef": [
+              15,
+              45
+            ]
+          },
+          "ancestryCline": {
+            "label": "Forager coast → earliest TRB farms",
+            "note": "SHG/WHG dominate Ertebølle coasts; EEF rises where earliest Funnelbeaker farming sticks.",
+            "ends": [
+              {
+                "id": "hg",
+                "label": "Ertebølle coasts",
+                "ancestry": {
+                  "shg": 70,
+                  "whg": 18,
+                  "eef": 10,
+                  "steppe": 0
+                }
+              },
+              {
+                "id": "farm",
+                "label": "Earliest TRB farms",
+                "ancestry": {
+                  "eef": 55,
+                  "shg": 25,
+                  "whg": 18,
+                  "steppe": 0
+                }
+              }
+            ]
+          }
         },
         "italy": {
           "culture": "Impresso / Early Neolithic Italy",
@@ -1148,19 +1252,56 @@
           "mode": "persistence",
           "description": "East of the Neolithic genomic “great divide,” many forest-steppe groups remain forager-derived while Cucuteni–Trypillia farmers expand on the western edge. Little pan-eastern EEF replacement compared with Germany or Iberia.",
           "ancestry": {
-            "ehg": 50,
-            "eef": 35,
+            "ehg": 55,
+            "eef": 20,
             "whg": 10,
-            "chg": 5
+            "chg": 10,
+            "steppe": 5
           },
-          "ancestryNote": "Sharp west/east contrast: farmer shift strong in west, weak east (Allentoft 2024).",
+          "ancestryNote": "EHG forest-steppe persistence; farmer fringe only on the southwest edge.",
           "substrate": "EHG foragers",
           "incoming": "Trypillia / farmer fringe",
           "fused": "Mixed Pontic Neolithic edge",
           "languageFamily": "Mixed",
           "languages": "Unknown forager + Trypillia-edge",
           "linguisticNote": "Unknown mix; not Slavic (medieval) and not yet clearly IE.",
-          "linguisticConfidence": "hypothetical"
+          "linguisticConfidence": "hypothetical",
+          "ancestryRange": {
+            "ehg": [
+              40,
+              70
+            ],
+            "eef": [
+              10,
+              35
+            ]
+          },
+          "ancestryCline": {
+            "label": "Forest-steppe HG → farmer fringe",
+            "note": "EHG dominates east of the Neolithic divide; EEF rises only on Bug–Dniester / western contact.",
+            "ends": [
+              {
+                "id": "hg",
+                "label": "Forest-steppe EHG",
+                "ancestry": {
+                  "ehg": 75,
+                  "whg": 10,
+                  "eef": 8,
+                  "chg": 7
+                }
+              },
+              {
+                "id": "fringe",
+                "label": "Farmer fringe",
+                "ancestry": {
+                  "eef": 40,
+                  "ehg": 35,
+                  "whg": 15,
+                  "chg": 10
+                }
+              }
+            ]
+          }
         }
       },
       "linguistics": "No texts. Farmer languages are unknown and usually modeled as non-Indo-European. Residual forager languages vanish or leave only undetectable substrates. Do not equate “Neolithic” with any historically named family.",
@@ -1255,15 +1396,15 @@
         },
         {
           "id": "ertebolle",
-          "label": "Ertebølle foragers",
-          "color": "#3d7a8c",
+          "label": "Ertebølle foragers (HG holdout)",
+          "color": "#4a6a68",
           "countries": [
             "DNK",
             "DEU",
             "SWE"
           ],
           "role": "substrate",
-          "opacity": 0.45,
+          "opacity": 0.7,
           "note": ""
         },
         {
@@ -1301,11 +1442,10 @@
             "BLR",
             "LTU",
             "LVA",
-            "EST",
-            "FIN"
+            "EST"
           ],
           "role": "substrate",
-          "opacity": 0.4,
+          "opacity": 0.65,
           "note": ""
         },
         {
@@ -1319,6 +1459,20 @@
           "role": "fringe",
           "opacity": 0.55,
           "note": ""
+        },
+        {
+          "id": "narva-comb",
+          "label": "Narva / Comb Ware foragers",
+          "role": "substrate",
+          "color": "#3f5f6a",
+          "opacity": 0.68,
+          "countries": [
+            "EST",
+            "LVA",
+            "LTU",
+            "FIN",
+            "BLR"
+          ]
         }
       ],
       "tickYear": "5500 BC",
@@ -1573,17 +1727,17 @@
       "era": "Megaliths & farmer Europe",
       "yearLabel": "c. 4000–3500 BC",
       "yearApprox": -3800,
-      "narrative": "Farmer Europe densifies: Atlantic megaliths, Chasséen/Michelsberg, Funnelbeaker (TRB), Cucuteni–Trypillia mega-sites, and forming Globular Amphora (GAC). WHG ancestry often rises inside farmer communities (resurgence/admixture). North of the Black Sea, Eneolithic steppe groups begin mixtures that will produce Yamnaya — still before the continental steppe flood.",
-      "culturesNote": "TRB, Michelsberg, Chasséen, Atlantic megalithic, GAC, Cucuteni–Trypillia, late Vinča — archaeological cultures on EEF±WHG genetics.",
+      "narrative": "Farmer Europe densifies: Atlantic megaliths, Chasséen/Michelsberg, Funnelbeaker (TRB), Cucuteni–Trypillia, early Globular Amphora. Hunter-gatherer holdouts persist beside farmers — Pitted Ware on Scandinavian coasts, Narva–Comb Ware in the east Baltic. Within TRB and other farmer packages, WHG% is clinal: higher north and west, lower in southern/central agricultural cores.",
+      "culturesNote": "TRB, Michelsberg, Chasséen, megalithic Atlantic, GAC, Trypillia + HG holdouts (Pitted Ware, Narva/Comb Ware).",
       "regions": {
         "iberia": {
           "culture": "Megalithic Late Neolithic Iberia",
           "color": "#b89040",
           "mode": "admixture",
-          "description": "Passage graves and related monumental traditions across Atlantic/southern Iberia. Still EEF-dominated genetically, but with higher WHG than the earliest Cardial pioneers. Copper appears at the period’s end; steppe ancestry remains essentially absent.",
+          "description": "Passage graves and related monuments along Atlantic and southern Iberia. Still EEF-dominated, but WHG is higher on the Atlantic façade than in inland cores — a within-culture farmer cline, not a uniform Neolithic mix. Steppe still ~0.",
           "ancestry": {
-            "eef": 70,
-            "whg": 28,
+            "eef": 68,
+            "whg": 30,
             "steppe": 0
           },
           "substrate": "Early Cardial EEF",
@@ -1593,26 +1747,94 @@
           "languages": "Megalithic-zone languages (unknown)",
           "linguisticNote": "Unknown pre-IE. Historical Iberian script languages are Copper/Iron Age attestations, not proven megalithic speech.",
           "linguisticConfidence": "hypothetical",
-          "ancestryNote": "Roughly ~70% EEF / ~30% WHG order-of-magnitude; steppe ~0."
+          "ancestryNote": "EEF majority; WHG higher on Atlantic megalithic façades than in southern inland cores.",
+          "ancestryRange": {
+            "eef": [
+              60,
+              78
+            ],
+            "whg": [
+              20,
+              38
+            ]
+          },
+          "ancestryCline": {
+            "label": "Atlantic façade → inland south",
+            "note": "WHG% rises toward Atlantic megalithic zones; EEF higher inland/south.",
+            "ends": [
+              {
+                "id": "atlantic",
+                "label": "Atlantic megalithic",
+                "ancestry": {
+                  "eef": 60,
+                  "whg": 38,
+                  "steppe": 0
+                }
+              },
+              {
+                "id": "inland",
+                "label": "Inland / south",
+                "ancestry": {
+                  "eef": 78,
+                  "whg": 20,
+                  "steppe": 0
+                }
+              }
+            ]
+          }
         },
         "britain": {
           "culture": "British Neolithic megalith builders",
           "color": "#a88838",
           "mode": "absorption",
-          "description": "Orkney, Wessex, and related Neolithic societies that build major monuments (including the Stonehenge landscape’s Neolithic phases). Genomically still Anatolian farmer–related + WHG — the population Olalde et al. (2018) show is ~90% replaced in the Beaker age.",
+          "description": "Orkney, Wessex, and related Neolithic monument societies. Genomically Anatolian farmer–related + WHG, with a north/west vs south cline in WHG share — not one uniform Neolithic percentage across Britain. This is the gene pool later replaced in the Beaker age.",
           "ancestry": {
-            "eef": 75,
-            "whg": 24,
+            "eef": 72,
+            "whg": 26,
             "steppe": 0
           },
-          "ancestryNote": "Neolithic ternary without steppe; the “doomed” gene pool relative to Beaker Britain.",
+          "ancestryNote": "Neolithic Britain without steppe; WHG higher in north/west monument zones than in denser southern farming.",
           "substrate": "EEF Britain",
           "incoming": "Limited WHG",
           "fused": "Insular Neolithic (doomed demographically)",
           "languageFamily": "Pre-IE / unknown",
           "languages": "British Neolithic languages",
           "linguisticNote": "Unknown non-IE; later Celtic is not continuous by default.",
-          "linguisticConfidence": "hypothetical"
+          "linguisticConfidence": "hypothetical",
+          "ancestryRange": {
+            "eef": [
+              65,
+              82
+            ],
+            "whg": [
+              16,
+              34
+            ]
+          },
+          "ancestryCline": {
+            "label": "North/west → southern farming",
+            "note": "WHG% higher in northern/western Neolithic landscapes; EEF higher in denser southern farming.",
+            "ends": [
+              {
+                "id": "nw",
+                "label": "North / west",
+                "ancestry": {
+                  "eef": 64,
+                  "whg": 34,
+                  "steppe": 0
+                }
+              },
+              {
+                "id": "se",
+                "label": "Southern farming",
+                "ancestry": {
+                  "eef": 82,
+                  "whg": 16,
+                  "steppe": 0
+                }
+              }
+            ]
+          }
         },
         "france": {
           "culture": "Chasséen & Atlantic megalithic France",
@@ -1620,8 +1842,8 @@
           "mode": "admixture",
           "description": "Middle Neolithic cultural mosaic (Chasséen and neighbors) with megaliths in the west. Farmer–forager admixture ongoing; steppe ancestry still absent. Sets the substrate that will receive third-millennium steppe-related gene flow.",
           "ancestry": {
-            "eef": 72,
-            "whg": 26,
+            "eef": 70,
+            "whg": 28,
             "steppe": 0
           },
           "substrate": "EEF",
@@ -1631,16 +1853,50 @@
           "languages": "Unknown",
           "linguisticNote": "Unknown pre-Celtic farmer languages of Chasséen/megalithic France; Gaulish appears only in the Iron Age record.",
           "linguisticConfidence": "hypothetical",
-          "ancestryNote": "EEF majority + substantial WHG; steppe ~0."
+          "ancestryNote": "EEF majority + WHG; WHG higher on Atlantic megalithic west than in eastern Chasséen cores.",
+          "ancestryRange": {
+            "eef": [
+              62,
+              80
+            ],
+            "whg": [
+              18,
+              36
+            ]
+          },
+          "ancestryCline": {
+            "label": "Atlantic west → eastern Chasséen",
+            "note": "WHG% higher on the megalithic Atlantic façade; EEF higher in eastern Chasséen farming.",
+            "ends": [
+              {
+                "id": "west",
+                "label": "Atlantic west",
+                "ancestry": {
+                  "eef": 62,
+                  "whg": 36,
+                  "steppe": 0
+                }
+              },
+              {
+                "id": "east",
+                "label": "Eastern Chasséen",
+                "ancestry": {
+                  "eef": 80,
+                  "whg": 18,
+                  "steppe": 0
+                }
+              }
+            ]
+          }
         },
         "central": {
           "culture": "TRB, Michelsberg & early Globular Amphora",
           "color": "#b89038",
           "mode": "admixture",
-          "description": "Funnelbeaker and Michelsberg farming societies; Globular Amphora (GAC) forms toward the Late Neolithic. GAC-like farmer ancestry is the key non-steppe source later mixed into Corded Ware. Still pre-steppe genetically in the core sequence.",
+          "description": "Funnelbeaker and Michelsberg farming societies; Globular Amphora forms toward the Late Neolithic. TRB is not genetically uniform — WHG ancestry is higher in northern TRB and lower in southern/central cores. Still pre-steppe.",
           "ancestry": {
-            "eef": 75,
-            "whg": 22,
+            "eef": 72,
+            "whg": 26,
             "steppe": 0
           },
           "substrate": "LBK descendants",
@@ -1650,17 +1906,51 @@
           "languages": "TRB/GAC-related unknown",
           "linguisticNote": "Unknown. CW-linked IE comes next, not yet.",
           "linguisticConfidence": "hypothetical",
-          "ancestryNote": "EEF+WHG farmer profiles; GAC becomes the modeled farmer side of CW admixture."
+          "ancestryNote": "TRB/Michelsberg farmers: WHG higher in northern TRB; EEF higher in southern/central agricultural cores. GAC forms as the farmer side later mixed into Corded Ware.",
+          "ancestryRange": {
+            "eef": [
+              60,
+              85
+            ],
+            "whg": [
+              12,
+              38
+            ]
+          },
+          "ancestryCline": {
+            "label": "Northern TRB → central/south core",
+            "note": "WHG% rises north (and toward forager contact); EEF highest in Michelsberg / southern TRB cores.",
+            "ends": [
+              {
+                "id": "north",
+                "label": "Northern TRB",
+                "ancestry": {
+                  "eef": 58,
+                  "whg": 38,
+                  "steppe": 0
+                }
+              },
+              {
+                "id": "core",
+                "label": "Central / south core",
+                "ancestry": {
+                  "eef": 84,
+                  "whg": 14,
+                  "steppe": 0
+                }
+              }
+            ]
+          }
         },
         "scandinavia": {
           "culture": "Funnelbeaker (TRB) Scandinavia",
           "color": "#9a9840",
           "mode": "replacement",
-          "description": "Established farming in southern Scandinavia after Ertebølle. Ancestry shifts toward EEF with residual WHG. This farmer Scandinavia is the substrate nearly replaced by Single Grave / Battle Axe steppe-rich groups centuries later.",
+          "description": "Southern Scandinavia hosts both Funnelbeaker farmers and Pitted Ware coastal foragers. Genetics split with that geography: EEF-led TRB inland/south vs SHG/WHG-rich Pitted Ware holdouts on the coasts — not a single Scandinavian Neolithic mix.",
           "ancestry": {
-            "eef": 70,
-            "shg": 14,
-            "whg": 14,
+            "eef": 55,
+            "shg": 22,
+            "whg": 20,
             "steppe": 0
           },
           "substrate": "Ertebølle",
@@ -1670,7 +1960,47 @@
           "languages": "TRB-related unknown",
           "linguisticNote": "Unknown TRB-related speech; pre-Germanic tied to later Battle Axe models.",
           "linguisticConfidence": "hypothetical",
-          "ancestryNote": "First Danish Holocene turnover (farmer); second (steppe) still ahead. Residual SHG within TRB farmer Scandinavia."
+          "ancestryNote": "TRB farmers inland/south vs Pitted Ware forager holdouts on coasts — two genetic regimes under one map period.",
+          "ancestryRange": {
+            "eef": [
+              35,
+              75
+            ],
+            "shg": [
+              8,
+              40
+            ],
+            "whg": [
+              10,
+              30
+            ]
+          },
+          "ancestryCline": {
+            "label": "Pitted Ware coasts → TRB farms",
+            "note": "Coastal Pitted Ware keeps high SHG/WHG; southern/inland TRB is EEF-led with residual HG.",
+            "ends": [
+              {
+                "id": "pitted",
+                "label": "Pitted Ware coasts",
+                "ancestry": {
+                  "shg": 45,
+                  "whg": 30,
+                  "eef": 25,
+                  "steppe": 0
+                }
+              },
+              {
+                "id": "trb",
+                "label": "TRB farming south",
+                "ancestry": {
+                  "eef": 75,
+                  "whg": 14,
+                  "shg": 10,
+                  "steppe": 0
+                }
+              }
+            ]
+          }
         },
         "italy": {
           "culture": "Italian Middle–Late Neolithic",
@@ -1717,20 +2047,58 @@
           "mode": "admixture",
           "description": "Trypillia mega-settlements meet Eneolithic steppe groups. North Pontic aDNA tracks Caucasus–Lower Volga–related waves into Usatove and Serednii Stih — precursors of Yamnaya — while incorporating farmer and forager outsiders.",
           "ancestry": {
-            "eef": 45,
-            "ehg": 25,
-            "chg": 15,
+            "eef": 42,
+            "ehg": 28,
+            "chg": 14,
             "whg": 10,
-            "steppe": 5
+            "steppe": 6
           },
-          "ancestryNote": "Schematic mix of EEF, EHG, CHG-related; pre-Yamnaya crucible (Nature North Pontic 2024).",
+          "ancestryNote": "Trypillia farmer cores vs Pontic Eneolithic steppe-adjacent groups — clinal before Yamnaya.",
           "substrate": "Trypillia farmers + local foragers",
           "incoming": "CLV / Eneolithic steppe",
           "fused": "Pontic Eneolithic crucible",
           "languageFamily": "Contact zone",
           "languages": "Unknown + early steppe speech?",
           "linguisticNote": "Unknown. Possible early IE on the steppe side only as hypothesis.",
-          "linguisticConfidence": "hypothetical"
+          "linguisticConfidence": "hypothetical",
+          "ancestryRange": {
+            "eef": [
+              30,
+              55
+            ],
+            "ehg": [
+              18,
+              40
+            ]
+          },
+          "ancestryCline": {
+            "label": "Trypillia farms → Pontic steppe edge",
+            "note": "EEF higher in Trypillia; EHG/CHG-related rise toward Usatove / Serednii Stih contact.",
+            "ends": [
+              {
+                "id": "tryp",
+                "label": "Trypillia core",
+                "ancestry": {
+                  "eef": 58,
+                  "whg": 14,
+                  "ehg": 16,
+                  "chg": 8,
+                  "steppe": 4
+                }
+              },
+              {
+                "id": "pontic",
+                "label": "Pontic edge",
+                "ancestry": {
+                  "eef": 28,
+                  "ehg": 38,
+                  "chg": 20,
+                  "whg": 6,
+                  "steppe": 8
+                }
+              }
+            ]
+          }
         }
       },
       "linguistics": "Still pre-Indo-European across most of Europe. Megalithic and Trypillia labels are not language families. Possible early IE on the steppe edge only as hypothesis.",
@@ -1835,15 +2203,15 @@
         },
         {
           "id": "pitted-ware",
-          "label": "Pitted Ware",
-          "color": "#5a7a70",
+          "label": "Pitted Ware foragers (HG holdout)",
+          "color": "#4a6a62",
           "countries": [
             "SWE",
             "DNK",
             "NOR"
           ],
           "role": "substrate",
-          "opacity": 0.5,
+          "opacity": 0.72,
           "note": ""
         },
         {
@@ -1880,6 +2248,19 @@
           "role": "dominant",
           "opacity": 0.7,
           "note": ""
+        },
+        {
+          "id": "narva-comb-mn",
+          "label": "Narva / Comb Ware foragers",
+          "role": "substrate",
+          "color": "#3f5f6a",
+          "opacity": 0.7,
+          "countries": [
+            "EST",
+            "LVA",
+            "LTU",
+            "FIN"
+          ]
         }
       ],
       "tickYear": "3800 BC",
@@ -2114,7 +2495,7 @@
       "era": "Steppe pastoralists rise",
       "yearLabel": "c. 3000 BC",
       "yearApprox": -3000,
-      "narrative": "Yamnaya (Yamna) pastoralists of the Pontic–Caspian steppe form from Eneolithic mixtures (Serednii Stih / Caucasus–Lower Volga–related inputs; North Pontic aDNA 2024) and expand from ~3300 BCE. Their ancestry — Western Steppe Herder (WSH) — is the source later seen across Europe in Corded Ware. Correlation with late Proto-Indo-European is the leading model, not a deciphered Yamnaya lexicon.",
+      "narrative": "Yamnaya pastoralists expand on the Pontic–Caspian steppe while Late Neolithic farmer Europe (TRB, GAC, Iberian Copper Age, British Late Neolithic) continues west of the steppe. Scandinavian/Baltic forager holdouts (Pitted Ware, late Narva–Comb) still mark the map. Steppe ancestry is high on the core steppe and falls off west/north — a gradient, not an instant uniform coat.",
       "culturesNote": "Yamnaya/Yamna, Afanasievo (eastward), late Trypillia, Usatove contacts, Remedello/Gaudo in Italy, late TRB/Pitted Ware in the north.",
       "regions": {
         "iberia": {
@@ -2142,9 +2523,9 @@
           "mode": "persistence",
           "description": "Final centuries of the Neolithic farmer society before the Beaker demographic break (~2500 BCE). Monumental landscapes continue; genetically still the EEF+WHG island population about to be replaced.",
           "ancestry": {
-            "eef": 74,
-            "whg": 25,
-            "steppe": 1
+            "eef": 72,
+            "whg": 26,
+            "steppe": 2
           },
           "substrate": "British Neolithic",
           "incoming": "—",
@@ -2153,7 +2534,41 @@
           "languages": "Late Neolithic languages",
           "linguisticNote": "Unknown non-IE Neolithic speech about to be marginalized/replaced in IE-shift models.",
           "linguisticConfidence": "hypothetical",
-          "ancestryNote": "Steppe still negligible; Beaker turnover imminent."
+          "ancestryNote": "Still Neolithic Britain — steppe negligible until Beaker.",
+          "ancestryRange": {
+            "eef": [
+              65,
+              80
+            ],
+            "whg": [
+              18,
+              32
+            ]
+          },
+          "ancestryCline": {
+            "label": "North/west → south",
+            "note": "Residual WHG cline within Late Neolithic Britain; steppe still ~0–few %.",
+            "ends": [
+              {
+                "id": "nw",
+                "label": "North / west",
+                "ancestry": {
+                  "eef": 66,
+                  "whg": 32,
+                  "steppe": 2
+                }
+              },
+              {
+                "id": "s",
+                "label": "South",
+                "ancestry": {
+                  "eef": 80,
+                  "whg": 18,
+                  "steppe": 2
+                }
+              }
+            ]
+          }
         },
         "france": {
           "culture": "Late Neolithic France — first steppe pulses",
@@ -2180,8 +2595,8 @@
           "mode": "admixture",
           "description": "Central Europe at the hinge: GAC farmers meet expanding steppe-admixed groups. Corded Ware emerges as a new cultural-genetic formation (Yamnaya-related + GAC-like), the engine of much temperate European Indo-Europeanization in standard models.",
           "ancestry": {
-            "eef": 55,
-            "whg": 15,
+            "eef": 52,
+            "whg": 18,
             "steppe": 30
           },
           "substrate": "GAC farmers",
@@ -2191,7 +2606,41 @@
           "languages": "Pre-Corded + early CW speech",
           "linguisticNote": "Leading archaeological correlate of early IE expansion into the European plain.",
           "linguisticConfidence": "hypothetical",
-          "ancestryNote": "Rising steppe fraction; CW often ~half or more steppe-related in early individuals (regionally variable)."
+          "ancestryNote": "Late TRB/GAC still farmer-led; early steppe signals uneven — higher toward the east.",
+          "ancestryRange": {
+            "steppe": [
+              15,
+              45
+            ],
+            "eef": [
+              40,
+              65
+            ]
+          },
+          "ancestryCline": {
+            "label": "West GAC/TRB → eastern contact",
+            "note": "Steppe% rises east toward Pontic contact; western Late Neolithic stays more EEF+WHG.",
+            "ends": [
+              {
+                "id": "west",
+                "label": "West Late Neo",
+                "ancestry": {
+                  "eef": 65,
+                  "whg": 22,
+                  "steppe": 13
+                }
+              },
+              {
+                "id": "east",
+                "label": "Eastern contact",
+                "ancestry": {
+                  "eef": 40,
+                  "whg": 14,
+                  "steppe": 46
+                }
+              }
+            ]
+          }
         },
         "scandinavia": {
           "culture": "Late TRB & Pitted Ware",
@@ -2199,9 +2648,10 @@
           "mode": "admixture",
           "description": "Farmer TRB coexists with coastal Pitted Ware (more HG-leaning genetically). The Single Grave Culture (Corded Ware) takeover — Denmark’s second near-total turnover — follows in the next centuries.",
           "ancestry": {
-            "eef": 55,
-            "whg": 40,
-            "steppe": 5
+            "eef": 50,
+            "whg": 28,
+            "shg": 14,
+            "steppe": 8
           },
           "substrate": "TRB + Pitted Ware",
           "incoming": "Early steppe signals",
@@ -2210,7 +2660,43 @@
           "languages": "TRB/Pitted Ware languages",
           "linguisticNote": "Pre-IE/transitional; pre-Germanic linked to ensuing Battle Axe/SGC.",
           "linguisticConfidence": "hypothetical",
-          "ancestryNote": "Still mostly pre-steppe; SGC steppe pulse comes next (~60–85% steppe in Denmark LNBA). SHG/TRB substrate ahead of Single Grave replacement."
+          "ancestryNote": "Mostly pre–Single Grave; Pitted Ware coasts keep HG-rich profiles beside TRB farms.",
+          "ancestryRange": {
+            "eef": [
+              30,
+              70
+            ],
+            "steppe": [
+              0,
+              20
+            ]
+          },
+          "ancestryCline": {
+            "label": "Pitted Ware → late TRB",
+            "note": "Coastal holdouts stay HG-rich; southern TRB is EEF-led with only slight early steppe.",
+            "ends": [
+              {
+                "id": "pw",
+                "label": "Pitted Ware",
+                "ancestry": {
+                  "shg": 40,
+                  "whg": 30,
+                  "eef": 28,
+                  "steppe": 2
+                }
+              },
+              {
+                "id": "trb",
+                "label": "Late TRB south",
+                "ancestry": {
+                  "eef": 68,
+                  "whg": 20,
+                  "shg": 6,
+                  "steppe": 6
+                }
+              }
+            ]
+          }
         },
         "italy": {
           "culture": "Remedello & Gaudo Copper Age",
@@ -2257,19 +2743,58 @@
           "mode": "admixture",
           "description": "Mobile pastoralists of the Pontic–Caspian steppe (~3300–2600 BCE), kurgan burial rite, wagon/horse pastoral economy. Formed from Eneolithic steppe mixtures (Serednii Stih–related; CLV contributions). Expanding Yamnaya-related ancestry is the source labeled “steppe” across European BA aDNA. Archaeological Yamnaya ≠ identical genomes in every kurgan.",
           "ancestry": {
-            "steppe": 70,
-            "ehg": 10,
-            "chg": 15,
-            "eef": 5
+            "steppe": 55,
+            "ehg": 15,
+            "chg": 12,
+            "eef": 12,
+            "whg": 6
           },
-          "ancestryNote": "Classically EHG + CHG-related; refined Middle Don / CLV models (Allentoft 2024; North Pontic 2024). Farmer ancestry usually low in “core” Yamnaya.",
+          "ancestryNote": "Yamnaya core high steppe; farmer/Trypillia edges keep more EEF.",
           "substrate": "Eneolithic steppe (Serednii Stih etc.)",
           "incoming": "CLV / Caucasus-related",
           "fused": "Western Steppe Herders",
           "languageFamily": "Indo-European (late PIE / early IE — reconstructed)",
           "languages": "Unattested steppe IE (reconstructed)",
           "linguisticNote": "Best archaeological match for late Proto-Indo-European (or a sister) in the steppe hypothesis — reconstructed lexicon, not Yamnaya inscriptions.",
-          "linguisticConfidence": "reconstructed"
+          "linguisticConfidence": "reconstructed",
+          "ancestryRange": {
+            "steppe": [
+              35,
+              80
+            ],
+            "eef": [
+              5,
+              25
+            ]
+          },
+          "ancestryCline": {
+            "label": "Yamnaya core → farmer edge",
+            "note": "Steppe% highest on Yamnaya core steppe; EEF rises toward late Trypillia / western contact.",
+            "ends": [
+              {
+                "id": "core",
+                "label": "Yamnaya core",
+                "ancestry": {
+                  "steppe": 78,
+                  "ehg": 8,
+                  "chg": 10,
+                  "eef": 3,
+                  "whg": 1
+                }
+              },
+              {
+                "id": "edge",
+                "label": "Farmer / west edge",
+                "ancestry": {
+                  "steppe": 35,
+                  "eef": 35,
+                  "ehg": 15,
+                  "chg": 10,
+                  "whg": 5
+                }
+              }
+            ]
+          }
         }
       },
       "linguistics": "Steppe speech is reconstructed only via Indo-European comparative method. Yamnaya ≈ late PIE (or a close sister) is mainstream but unprovable from inscriptions. Western Europe still largely non-IE.",
@@ -2341,14 +2866,14 @@
         },
         {
           "id": "pitted-ware2",
-          "label": "Pitted Ware",
-          "color": "#5a7a70",
+          "label": "Pitted Ware foragers (HG holdout)",
+          "color": "#4a6a62",
           "countries": [
             "SWE",
             "DNK"
           ],
           "role": "substrate",
-          "opacity": 0.4,
+          "opacity": 0.7,
           "note": ""
         },
         {
@@ -2421,6 +2946,19 @@
           "role": "substrate",
           "opacity": 0.4,
           "note": ""
+        },
+        {
+          "id": "narva-late",
+          "label": "Late Narva / Comb Ware foragers",
+          "role": "substrate",
+          "color": "#3f5f6a",
+          "opacity": 0.65,
+          "countries": [
+            "EST",
+            "LVA",
+            "LTU",
+            "FIN"
+          ]
         }
       ],
       "tickYear": "3000 BC",
@@ -2658,46 +3196,118 @@
       "era": "Third-millennium transformations",
       "yearLabel": "c. 2500 BC",
       "yearApprox": -2500,
-      "narrative": "Two archaeological packages reshape the third millennium: Corded Ware (high steppe ancestry, often after Globular Amphora admixture) across northern/central Europe, and Bell Beaker (genetically heterogeneous). In Britain, Beaker-associated migrants replace ~90% of Neolithic ancestry (Olalde 2018). Iberian Beakers often remain Neolithic-like while steppe ancestry rises more gradually (Olalde 2019). Burial rites and genes are not always synchronized.",
-      "culturesNote": "Corded Ware, Single Grave, Battle Axe, Bell Beaker (Iberian vs Dutch/central), late Yamnaya/Catacomb — culture ≠ single genotype.",
+      "narrative": "Corded Ware and Bell Beaker remake temperate Europe with Yamnaya-related steppe ancestry — but not uniformly. Steppe% is typically higher in northern/central Corded Ware and Single Grave Denmark than in Iberian Beaker; British Beaker shows near-total turnover of the prior Neolithic pool. Residual farmer/HG clines persist under the new packages.",
+      "culturesNote": "Corded Ware, Single Grave, Battle Axe, Bell Beaker (Britain high-turnover; Iberia more gradual) — steppe gradients, not one %.",
       "regions": {
         "iberia": {
           "culture": "Bell Beaker Iberia",
           "color": "#b87333",
           "mode": "admixture",
-          "description": "Beaker pottery, graves, and metallurgical networks spread widely in Iberia. Genetically, many early Iberian Beaker-associated individuals remain largely Neolithic-like; steppe-related ancestry increases through the Bronze Age more gradually and often male-biased (Olalde 2019). Classic lesson: Beaker culture package ≠ single genetic population.",
+          "description": "Bell Beaker Iberia keeps a strong EEF base. Steppe ancestry enters more gradually (and often male-biased) than in Britain — a west Mediterranean cline of lower steppe%, not a copy of the British turnover.",
           "ancestry": {
             "eef": 55,
-            "whg": 25,
-            "steppe": 20
+            "steppe": 25,
+            "whg": 20
           },
-          "ancestryNote": "Steppe rises over centuries (very roughly toward ~20–40% in later BA models by region); not Britain’s ~90% Neolithic replacement.",
+          "ancestryNote": "Beaker Iberia: more gradual, often male-biased steppe intake — lower steppe% than Britain/SGC.",
           "substrate": "Copper Age Iberia",
           "incoming": "Steppe-related (uneven)",
           "fused": "Bronze Age Iberian cline",
           "languageFamily": "Mixed: non-IE + incoming IE?",
           "languages": "Pre-IE Iberian substrates; early IE uncertain",
           "linguisticNote": "Culture≠language. IE (later Celtic/Italic-related?) is not automatic with Beaker pots; non-IE Iberian is attested in the Iron Age.",
-          "linguisticConfidence": "mixed"
+          "linguisticConfidence": "mixed",
+          "ancestryRange": {
+            "steppe": [
+              10,
+              40
+            ],
+            "eef": [
+              45,
+              70
+            ]
+          },
+          "ancestryCline": {
+            "label": "Beaker steppe intake → EEF base",
+            "note": "Steppe rises with Beaker-associated lineages but usually stays below British/Danish levels; EEF remains the base.",
+            "ends": [
+              {
+                "id": "beaker",
+                "label": "Beaker-enriched",
+                "ancestry": {
+                  "eef": 48,
+                  "steppe": 38,
+                  "whg": 14
+                }
+              },
+              {
+                "id": "base",
+                "label": "EEF-heavy base",
+                "ancestry": {
+                  "eef": 68,
+                  "steppe": 12,
+                  "whg": 20
+                }
+              }
+            ]
+          }
         },
         "britain": {
           "culture": "Bell Beaker Britain (genomic transformation)",
           "color": "#9a5a28",
           "mode": "replacement",
-          "description": "Within a few centuries after ~2500 BCE, migrants related to central/northern European Beaker groups replace ~90% of Britain’s Neolithic gene pool (Olalde et al. 2018). The archaeological Beaker label on the continent is genetically diverse — Britain’s pulse is specifically the steppe-rich Beaker-related stream. Foundational for later British BA/IA ancestry.",
+          "description": "Bell Beaker Britain: genomic turnover of the Neolithic population. The new mix is steppe + EEF + WHG, with steppe typically highest in the early Beaker pulse and a bit more farmer/HG in some later local profiles — not a single flat percentage.",
           "ancestry": {
             "steppe": 50,
             "eef": 35,
             "whg": 15
           },
-          "ancestryNote": "~90% turnover of prior Neolithic ancestry; resulting mix ≈ steppe + EEF + WHG ternary.",
+          "ancestryNote": "~90% turnover of prior Neolithic ancestry; resulting ternary still varies site-to-site.",
           "substrate": "British Neolithic (~wiped)",
           "incoming": "Steppe-rich Beaker groups",
           "fused": "Beaker Britain",
           "languageFamily": "Indo-Europeanizing",
           "languages": "Early Celtic or pre-Celtic IE?",
           "linguisticNote": "Often paired with IE language shift models (early Celtic or pre-Celtic IE). Exact branch and timing remain debated; no contemporary texts.",
-          "linguisticConfidence": "hypothetical"
+          "linguisticConfidence": "hypothetical",
+          "ancestryRange": {
+            "steppe": [
+              40,
+              60
+            ],
+            "eef": [
+              25,
+              45
+            ],
+            "whg": [
+              8,
+              22
+            ]
+          },
+          "ancestryCline": {
+            "label": "Early Beaker pulse → later mix",
+            "note": "Steppe-rich Beaker immigrants vs slightly more EEF/WHG in some later/local mixes — Britain stays high-steppe overall.",
+            "ends": [
+              {
+                "id": "pulse",
+                "label": "Beaker pulse",
+                "ancestry": {
+                  "steppe": 60,
+                  "eef": 28,
+                  "whg": 12
+                }
+              },
+              {
+                "id": "local",
+                "label": "Later local mix",
+                "ancestry": {
+                  "steppe": 42,
+                  "eef": 42,
+                  "whg": 16
+                }
+              }
+            ]
+          }
         },
         "france": {
           "culture": "Bell Beaker & late Corded Ware France",
@@ -2705,9 +3315,9 @@
           "mode": "admixture",
           "description": "Northern France shows admixture pulses tying steppe ancestry to CW/Beaker-era dynamics (~3000/2900 and ~2600 BCE). Paris Basin collective burials capture Neolithic substrates meeting incoming steppe-related ancestry in “real time.”",
           "ancestry": {
-            "eef": 45,
-            "whg": 18,
-            "steppe": 37
+            "steppe": 40,
+            "eef": 42,
+            "whg": 18
           },
           "substrate": "Late Neolithic France",
           "incoming": "CW / Beaker steppe-rich",
@@ -2716,26 +3326,94 @@
           "languages": "Early IE dialects (pre-Celtic?)",
           "linguisticNote": "Early IE dialects hypothesized with CW/Beaker gene flow; Gaulish attested only much later.",
           "linguisticConfidence": "hypothetical",
-          "ancestryNote": "Regionally variable; steppe often tens of percent by EBA — less extreme than Britain or Denmark SGC."
+          "ancestryNote": "Beaker/CW France intermediate — higher steppe northeast, more EEF southwest.",
+          "ancestryRange": {
+            "steppe": [
+              25,
+              55
+            ],
+            "eef": [
+              30,
+              55
+            ]
+          },
+          "ancestryCline": {
+            "label": "Northeast → southwest",
+            "note": "Steppe% higher toward Rhine/CW contact; southwest keeps more Neolithic EEF+WHG.",
+            "ends": [
+              {
+                "id": "ne",
+                "label": "Northeast",
+                "ancestry": {
+                  "steppe": 55,
+                  "eef": 32,
+                  "whg": 13
+                }
+              },
+              {
+                "id": "sw",
+                "label": "Southwest",
+                "ancestry": {
+                  "steppe": 25,
+                  "eef": 55,
+                  "whg": 20
+                }
+              }
+            ]
+          }
         },
         "central": {
           "culture": "Corded Ware",
           "color": "#8b4513",
           "mode": "replacement",
-          "description": "Corded Ware (c. 2900–2300 BCE): cord-decorated pottery, single graves, battle-axes. Genetically high Yamnaya-related ancestry mixed with GAC-like European farmers — not pure Yamnaya clones. Haak (2015) and successors treat CW as the main conduit of steppe ancestry (and likely IE speech) into northern/central Europe.",
+          "description": "Corded Ware across Germany–Bohemia–Poland with Globular Amphora farmer admixture. Steppe ancestry is clinal: higher in early/eastern CW, lower where GAC-like farmer ancestry persists in the west — not one Corded Ware percentage.",
           "ancestry": {
             "steppe": 55,
             "eef": 35,
             "whg": 10
           },
-          "ancestryNote": "Often modeled ~50–75% steppe-related + farmer remainder (site-dependent).",
+          "ancestryNote": "Corded Ware steppe% higher early/east; more GAC-like farmer ancestry persists west/south.",
           "substrate": "GAC / TRB",
           "incoming": "Steppe pastoralist-related",
           "fused": "Corded Ware",
           "languageFamily": "Indo-European",
           "languages": "Corded Ware–linked early IE",
           "linguisticNote": "Core correlate of temperate European Indo-Europeanization in steppe models.",
-          "linguisticConfidence": "reconstructed"
+          "linguisticConfidence": "reconstructed",
+          "ancestryRange": {
+            "steppe": [
+              40,
+              75
+            ],
+            "eef": [
+              20,
+              50
+            ]
+          },
+          "ancestryCline": {
+            "label": "Early/east CW → west farmer mix",
+            "note": "Steppe highest in early Corded Ware; western/southern profiles keep more Globular Amphora–like EEF.",
+            "ends": [
+              {
+                "id": "east",
+                "label": "Early / east CW",
+                "ancestry": {
+                  "steppe": 72,
+                  "eef": 20,
+                  "whg": 8
+                }
+              },
+              {
+                "id": "west",
+                "label": "West farmer mix",
+                "ancestry": {
+                  "steppe": 40,
+                  "eef": 48,
+                  "whg": 12
+                }
+              }
+            ]
+          }
         },
         "scandinavia": {
           "culture": "Single Grave / Battle Axe Culture",
@@ -2747,14 +3425,48 @@
             "eef": 18,
             "whg": 12
           },
-          "ancestryNote": "~60–85% steppe-related in Danish SGC/LNBA models.",
+          "ancestryNote": "Single Grave / Battle Axe: often ~60–85% steppe-related; southern SGC higher steppe than some inland mixes.",
           "substrate": "TRB Scandinavia",
           "incoming": "Corded Ware / Single Grave",
           "fused": "Battle Axe north",
           "languageFamily": "Indo-European",
           "languages": "Pre-Germanic (Battle Axe–linked)",
           "linguisticNote": "Standard archaeological correlate of pre-Germanic on the northern arc.",
-          "linguisticConfidence": "reconstructed"
+          "linguisticConfidence": "reconstructed",
+          "ancestryRange": {
+            "steppe": [
+              55,
+              85
+            ],
+            "eef": [
+              8,
+              30
+            ]
+          },
+          "ancestryCline": {
+            "label": "Single Grave south → inland mix",
+            "note": "Danish Single Grave often at the high end of steppe%; some inland/northern mixes keep more farmer/HG.",
+            "ends": [
+              {
+                "id": "sgc",
+                "label": "SGC Denmark",
+                "ancestry": {
+                  "steppe": 82,
+                  "eef": 10,
+                  "whg": 8
+                }
+              },
+              {
+                "id": "inland",
+                "label": "Inland / north mix",
+                "ancestry": {
+                  "steppe": 55,
+                  "eef": 28,
+                  "whg": 17
+                }
+              }
+            ]
+          }
         },
         "italy": {
           "culture": "Italian Bell Beaker → Early Bronze",
@@ -2801,10 +3513,11 @@
           "mode": "continuity",
           "description": "Post-Yamnaya steppe sequence (Catacomb and related). While CW carries steppe ancestry into Europe, the steppe itself continues pastoralist cultural change. Still the reservoir of steppe-related genetic profiles.",
           "ancestry": {
-            "steppe": 75,
-            "eef": 10,
-            "chg": 10,
-            "whg": 5
+            "steppe": 60,
+            "eef": 15,
+            "ehg": 10,
+            "whg": 8,
+            "chg": 7
           },
           "substrate": "Yamnaya",
           "incoming": "Regional steppe facies",
@@ -2813,7 +3526,41 @@
           "languages": "Late Yamnaya / early satemizing IE?",
           "linguisticNote": "Continuing steppe IE continuum (details of dialect geography unknown).",
           "linguisticConfidence": "reconstructed",
-          "ancestryNote": "Steppe-rich; farmer ancestry remains minority vs European CW admixed groups."
+          "ancestryNote": "Catacomb / steppe-contact Ukraine stays steppe-rich vs farmer-west edges.",
+          "ancestryRange": {
+            "steppe": [
+              45,
+              75
+            ]
+          },
+          "ancestryCline": {
+            "label": "Steppe/Catacomb → western contact",
+            "note": "Steppe highest on Catacomb/steppe; EEF rises toward western Corded Ware contact.",
+            "ends": [
+              {
+                "id": "steppe",
+                "label": "Catacomb / steppe",
+                "ancestry": {
+                  "steppe": 75,
+                  "ehg": 8,
+                  "chg": 8,
+                  "eef": 5,
+                  "whg": 4
+                }
+              },
+              {
+                "id": "west",
+                "label": "Western contact",
+                "ancestry": {
+                  "steppe": 48,
+                  "eef": 30,
+                  "whg": 12,
+                  "ehg": 5,
+                  "chg": 5
+                }
+              }
+            ]
+          }
         }
       },
       "linguistics": "Primary window hypothesized for Indo-Europeanization of temperate Europe. Pre-Germanic and other early IE lineages are often tied to CW/Battle Axe; Celtic/Italic pathways more debated. Iberian Beaker material culture does not imply IE speech.",
@@ -2821,7 +3568,7 @@
         {
           "id": "cw-germany",
           "label": "Corded Ware (Germany–Bohemia)",
-          "color": "#8b4513",
+          "color": "#a05030",
           "countries": [
             "DEU",
             "CZE",

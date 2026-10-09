@@ -1004,6 +1004,73 @@ html[data-layout="mobile"] .image-lightbox-caption {
   border-top: 1px solid var(--line);
 }
 
+.ancestry-mid-label {
+  margin: 0 0 0.15rem;
+  font-size: 0.58rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-mute);
+}
+
+.ancestry-mid-label[hidden] {
+  display: none !important;
+}
+
+.ancestry-cline {
+  margin-top: 1rem;
+  padding-top: 0.85rem;
+  border-top: 1px solid var(--line);
+}
+
+.ancestry-cline[hidden] {
+  display: none !important;
+}
+
+.cline-note {
+  margin: 0.25rem 0 0.65rem;
+  font-size: 0.78rem;
+  line-height: 1.45;
+  color: var(--ink-dim);
+}
+
+.cline-ends {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.cline-end-label {
+  margin: 0 0 0.25rem;
+  font-size: 0.72rem;
+  font-weight: 500;
+  color: var(--ink);
+}
+
+.cline-bar {
+  height: 8px;
+  margin-top: 0;
+}
+
+.cline-end-legend {
+  margin: 0.3rem 0 0;
+  font-size: 0.68rem;
+  line-height: 1.4;
+  color: var(--ink-mute);
+}
+
+html[data-layout="mobile"] .cline-note {
+  font-size: var(--read-size, 17px);
+  line-height: var(--read-leading, 1.65);
+}
+
+html[data-layout="mobile"] .cline-end-label {
+  font-size: 0.95rem;
+}
+
+html[data-layout="mobile"] .cline-end-legend {
+  font-size: 0.9rem;
+}
+
 .stack-bar {
   display: flex;
   height: 6px;

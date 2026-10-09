@@ -328,15 +328,80 @@ function interpolatedCountryStyle(iso, pos) {
   };
 }
 
-function ancestryEntries(region, keys) {
-  const a = region.ancestry || {};
+/** Normalize ancestry map; support midpoints and [min,max] ranges. */
+function ancestryMap(source) {
+  const a = source || {};
+  const out = {};
+  for (const [id, v] of Object.entries(a)) {
+    if (Array.isArray(v) && v.length >= 2) {
+      out[id] = (Number(v[0]) + Number(v[1])) / 2;
+    } else {
+      out[id] = Number(v) || 0;
+    }
+  }
+  return out;
+}
+
+function ancestryEntries(region, keys, source) {
+  const a = ancestryMap(source || region.ancestry);
+  const ranges = region.ancestryRange || {};
   return keys
-    .map((k) => ({
-      ...k,
-      value: Number(a[k.id]) || 0,
-      detail: k.detail || k.full,
-    }))
-    .filter((k) => k.value > 0);
+    .map((k) => {
+      const value = Number(a[k.id]) || 0;
+      const range = ranges[k.id];
+      let rangeLabel = null;
+      if (Array.isArray(range) && range.length >= 2) {
+        rangeLabel = `${Math.round(range[0])}–${Math.round(range[1])}%`;
+      }
+      return {
+        ...k,
+        value,
+        rangeLabel,
+        detail: k.detail || k.full,
+      };
+    })
+    .filter((k) => k.value > 0 || k.rangeLabel);
+}
+
+function renderAncestryCline(region, keys) {
+  const box = $("#ancestry-cline");
+  const endsEl = $("#cline-ends");
+  const noteEl = $("#cline-note");
+  const labelEl = $("#cline-label");
+  const midLabel = $("#ancestry-mid-label");
+  const cline = region.ancestryCline;
+  if (!box || !endsEl) return;
+  if (!cline?.ends?.length) {
+    box.hidden = true;
+    endsEl.innerHTML = "";
+    if (noteEl) noteEl.textContent = "";
+    if (midLabel) midLabel.hidden = true;
+    return;
+  }
+  box.hidden = false;
+  if (midLabel) midLabel.hidden = false;
+  if (labelEl) labelEl.textContent = cline.label || "Geographic cline";
+  if (noteEl) noteEl.textContent = cline.note || "";
+  endsEl.innerHTML = cline.ends
+    .map((end) => {
+      const entries = ancestryEntries(region, keys, end.ancestry);
+      const total = entries.reduce((s, e) => s + e.value, 0) || 1;
+      const segs = entries
+        .map((e) => {
+          const w = (e.value / total) * 100;
+          return `<div class="stack-seg" style="width:${w}%;background:${e.color}" title="${escapeHtml(e.label)}: ~${Math.round(e.value)}%"></div>`;
+        })
+        .join("");
+      const legend = entries
+        .map((e) => `${escapeHtml(e.label)} ~${Math.round(e.value)}%`)
+        .join(" · ");
+      return `<div class="cline-end">
+        <p class="cline-end-label">${escapeHtml(end.label || end.id)}</p>
+        <div class="stack-bar cline-bar">${segs}</div>
+        <p class="cline-end-legend">${legend}</p>
+      </div>`;
+    })
+    .join("");
 }
 
 function conicGradient(entries) {
@@ -1204,27 +1269,30 @@ function renderDetail() {
   $("#ling-note").textContent = region.linguisticNote || "";
 
   $("#stack-bar").innerHTML = entries
-    .map(
-      (e) =>
-        `<div class="stack-seg" style="width:${e.value}%;background:${e.color}" title="${escapeHtml(e.detail)}: ~${e.value}%"></div>`
-    )
+    .map((e) => {
+      const tip = e.rangeLabel
+        ? `${e.detail}: ${e.rangeLabel} (mid ~${Math.round(e.value)}%)`
+        : `${e.detail}: ~${Math.round(e.value)}%`;
+      return `<div class="stack-seg" style="width:${e.value}%;background:${e.color}" title="${escapeHtml(tip)}"></div>`;
+    })
     .join("");
 
   $("#ancestry-legend").innerHTML = entries
-    .map(
-      (e) =>
-        `<div class="legend-item" title="${escapeHtml(e.detail)}"><span class="swatch" style="background:${e.color}"></span>${e.label} · ~${e.value}%</div>`
-    )
+    .map((e) => {
+      const pct = e.rangeLabel || `~${Math.round(e.value)}%`;
+      return `<div class="legend-item" title="${escapeHtml(e.detail)}"><span class="swatch" style="background:${e.color}"></span>${e.label} · ${escapeHtml(pct)}</div>`;
+    })
     .join("");
 
   $("#pie").style.background = conicGradient(entries);
   $("#pie-list").innerHTML = entries
-    .map(
-      (e) =>
-        `<li title="${escapeHtml(e.detail)}"><span><strong>${escapeHtml(e.label)}</strong></span><span class="pct">~${e.value}%</span></li>`
-    )
+    .map((e) => {
+      const pct = e.rangeLabel || `~${Math.round(e.value)}%`;
+      return `<li title="${escapeHtml(e.detail)}"><span><strong>${escapeHtml(e.label)}</strong></span><span class="pct">${escapeHtml(pct)}</span></li>`;
+    })
     .join("");
 
+  renderAncestryCline(region, keys);
   highlightCultureChips();
 }
 
