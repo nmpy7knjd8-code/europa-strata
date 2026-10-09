@@ -339,21 +339,54 @@ function renderPeriodText() {
   }
 }
 
+function isMobile() {
+  return window.matchMedia("(max-width: 960px)").matches;
+}
+
 function updateLegend() {
   const period = currentPeriod();
   const layers = period.mapLayers || [];
   const box = $("#map-legend");
+  const toggle = $("#legend-toggle");
+  // Show all layers — extreme detail; scrollable list
   box.innerHTML = layers
-    .slice(0, 7)
     .map(
       (l) =>
         `<div class="legend-row"><span class="legend-swatch" style="background:${l.color}"></span>${escapeHtml(l.label)}</div>`
     )
     .join("");
 
+  if (isMobile()) {
+    // Collapsed by default on phones so the map stays clear
+    if (!toggle.dataset.userOpened) {
+      box.hidden = true;
+      toggle.setAttribute("aria-expanded", "false");
+      toggle.textContent = `Map key (${layers.length})`;
+    } else {
+      box.hidden = false;
+      toggle.setAttribute("aria-expanded", "true");
+      toggle.textContent = "Hide map key";
+    }
+  } else {
+    box.hidden = false;
+    if (toggle) toggle.setAttribute("aria-expanded", "true");
+  }
+
   const roles = [...new Set(layers.map((l) => l.role))];
   $("#mode-row").innerHTML = roles
     .map((r) => `<span class="role-chip" data-role="${r}">${r}</span>`)
+    .join("");
+}
+
+function renderGlossary() {
+  const grid = $("#glossary-grid");
+  if (!grid) return;
+  const items = state.data.meta.glossary || [];
+  grid.innerHTML = items
+    .map(
+      (g) =>
+        `<dl class="glossary-item"><dt>${escapeHtml(g.term)} <span>· ${escapeHtml(g.name)}</span></dt><dd>${escapeHtml(g.text)}</dd></dl>`
+    )
     .join("");
 }
 
@@ -528,10 +561,26 @@ function bindUI() {
     localStorage.setItem("europa-strata-theme", next);
   });
 
+  const legendToggle = $("#legend-toggle");
+  if (legendToggle) {
+    legendToggle.addEventListener("click", () => {
+      const box = $("#map-legend");
+      const open = box.hidden;
+      box.hidden = !open;
+      legendToggle.dataset.userOpened = open ? "1" : "";
+      legendToggle.setAttribute("aria-expanded", open ? "true" : "false");
+      const n = (currentPeriod().mapLayers || []).length;
+      legendToggle.textContent = open ? "Hide map key" : `Map key (${n})`;
+    });
+  }
+
   window.addEventListener("resize", () => {
     if (!state.geo) return;
     clearTimeout(window.__strataResize);
-    window.__strataResize = setTimeout(() => initMap(), 180);
+    window.__strataResize = setTimeout(() => {
+      initMap();
+      updateLegend();
+    }, 180);
   });
 }
 
@@ -562,6 +611,7 @@ async function init() {
   }
 
   $("#map-attr").textContent = state.data.meta.mapAttribution || "";
+  renderGlossary();
 
   buildTicks();
   bindUI();

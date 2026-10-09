@@ -77,7 +77,7 @@ button {
 .app {
   display: grid;
   grid-template-columns: 1fr var(--side-w);
-  grid-template-rows: 1fr auto;
+  grid-template-rows: 1fr auto auto;
   height: 100vh;
   height: 100dvh;
 }
@@ -156,19 +156,32 @@ button {
   font-weight: 400;
 }
 
-.map-legend {
+.map-legend-wrap {
   position: absolute;
   left: 1.5rem;
-  bottom: 1.75rem;
+  bottom: 1.25rem;
   z-index: 3;
+  max-width: min(220px, 28vw);
+}
+
+.legend-toggle {
+  display: none;
+}
+
+.map-legend {
   display: flex;
   flex-direction: column;
-  gap: 0.28rem;
-  max-width: 200px;
+  gap: 0.22rem;
+  max-height: min(42vh, 320px);
+  overflow: auto;
   padding: 0;
   background: transparent;
   border: none;
   box-shadow: none;
+}
+
+.map-legend[hidden] {
+  display: none !important;
 }
 
 .legend-row {
@@ -194,15 +207,9 @@ button {
 }
 
 .map-attr {
-  position: absolute;
-  right: 1rem;
-  bottom: 0.5rem;
-  z-index: 2;
-  margin: 0;
-  max-width: 38%;
+  margin: 0.45rem 0 0;
   font-size: 0.55rem;
   color: var(--ink-mute);
-  text-align: right;
   line-height: 1.35;
 }
 
@@ -577,6 +584,57 @@ button {
   max-height: 96px;
 }
 
+.glossary {
+  grid-column: 1 / -1;
+  grid-row: 3;
+  border-top: 1px solid var(--line);
+  background: var(--bg);
+  max-height: 140px;
+  overflow: auto;
+}
+
+.glossary-inner {
+  padding: 0.75rem 1.35rem 1rem;
+}
+
+.glossary-title {
+  margin: 0 0 0.55rem;
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 400;
+  color: var(--ink);
+}
+
+.glossary-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 0.55rem 1.25rem;
+}
+
+.glossary-item {
+  margin: 0;
+}
+
+.glossary-item dt {
+  margin: 0;
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  color: var(--ink);
+}
+
+.glossary-item dt span {
+  color: var(--ink-mute);
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.glossary-item dd {
+  margin: 0.15rem 0 0;
+  font-size: 0.65rem;
+  color: var(--ink-dim);
+  line-height: 1.4;
+}
+
 .below-inner {
   display: grid;
   grid-template-columns: 1.5fr 1fr;
@@ -662,11 +720,12 @@ button {
 @media (max-width: 960px) {
   body {
     overflow: auto;
+    padding-bottom: env(safe-area-inset-bottom, 0);
   }
 
   .app {
     grid-template-columns: 1fr;
-    grid-template-rows: min(56vh, 480px) auto auto;
+    grid-template-rows: auto auto auto auto;
     height: auto;
     min-height: 100vh;
   }
@@ -674,6 +733,60 @@ button {
   .map-stage {
     grid-column: 1;
     grid-row: 1;
+    display: flex;
+    flex-direction: column;
+    min-height: min(52vh, 420px);
+    height: min(52vh, 420px);
+  }
+
+  .map {
+    flex: 1;
+    min-height: 0;
+  }
+
+  .map-chrome {
+    top: 0.85rem;
+    left: 1rem;
+  }
+
+  /* Legend OFF the map on phones — no overlay covering Europe */
+  .map-legend-wrap {
+    position: static;
+    max-width: none;
+    padding: 0.65rem 1rem 0.75rem;
+    background: var(--bg);
+    border-top: 1px solid var(--line);
+    flex-shrink: 0;
+  }
+
+  .legend-toggle {
+    display: inline-block;
+    border: none;
+    background: none;
+    padding: 0;
+    margin: 0 0 0.4rem;
+    font-family: var(--font-ui);
+    font-size: 0.65rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--ink);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+
+  .map-legend {
+    max-height: 140px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.35rem 0.85rem;
+  }
+
+  .map-legend:not([hidden]) {
+    display: flex;
+  }
+
+  .map-attr {
+    margin-top: 0.5rem;
   }
 
   .side {
@@ -683,10 +796,27 @@ button {
     border-top: 1px solid var(--line);
   }
 
+  .slider-block {
+    position: sticky;
+    bottom: 0;
+    background: var(--bg-elev);
+    padding-bottom: 0.25rem;
+    z-index: 2;
+  }
+
   .below {
     grid-column: 1;
     grid-row: 3;
     max-height: none;
+  }
+
+  .glossary {
+    display: block;
+    grid-column: 1;
+    grid-row: 4;
+    border-top: 1px solid var(--line);
+    max-height: none;
+    padding-bottom: calc(1rem + env(safe-area-inset-bottom, 0px));
   }
 
   .below-inner {
@@ -695,5 +825,9 @@ button {
 
   .period-copy {
     max-height: none;
+  }
+
+  .cultures-rail {
+    max-height: 88px;
   }
 }

@@ -4,6 +4,15 @@ Short working bibliography for the interactive map. Prefer post-2015 genome-wide
 
 The atlas covers **Mesolithic → present**, including Nordic Bronze Age, Wielbark, Frankish/Carolingian, and later empires. For historical polities after ~500 BCE, genetics usually means **continuity of the WHG–EEF–steppe ternary** plus documented medieval/imperial admixture — not invented empire-specific components.
 
+## Genetic component glossary (UI)
+
+- **WHG** — Western Hunter-Gatherers  
+- **EHG** — Eastern Hunter-Gatherers (ANE-rich forest-steppe)  
+- **SHG** — Scandinavian Hunter-Gatherers (WHG + elevated EHG-related affinity in the north)  
+- **EEF** — Early European Farmers (Anatolian Neolithic–related)  
+- **WSH** — Western Steppe Herders (Yamnaya-related; UI “Steppe”)  
+- **CHG** — Caucasus Hunter-Gatherers (usually inside the steppe cline)
+
 ## Foundational turnovers (Europe)
 
 - **Haak et al. (2015)** — *Nature*. Massive migration from the steppe was a source for Indo-European languages in Europe. Yamnaya-related ancestry into Middle Neolithic Europe; Corded Ware as heavily steppe-admixed.
@@ -52,6 +61,10 @@ The atlas covers **Mesolithic → present**, including Nordic Bronze Age, Wielba
 - Empires (Habsburg, Ottoman, PLC, Russia, Atlantic empires) redraw sovereignty and move people; they rarely reset the continental ternary outside specific corridors (ports, Ottoman Balkans, imperial capitals).
 - Present-day fine-scale structure (e.g. People of the British Isles; European POPRES/related) often echoes early medieval and deeper landscapes more than 19th-century borders.
 - Modern global migration diversifies cities — flagged in UI as rising “other,” not Paleo-components.
+
+## Map extents
+
+The live site paints **schematic culture/polity extents** onto a Natural Earth country basemap (public domain). Overlaps use roles (`incoming` / `dominant` / `substrate` / `fringe`) to show expansion and absorption. These are consensus best-guesses aligned with standard distribution maps (e.g. Corded Ware Rhine–Volga, Yamnaya Pontic–Caspian, Bell Beaker west/central, Roman provinces, Carolingian core, Ottoman Rumelia) — **not** excavation-point GIS layers. Modern borders are a cartographic convenience.
 
 ## Linguistic layer (languages ≠ genes)
 
