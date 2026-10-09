@@ -55,6 +55,195 @@ function escapeHtml(s) {
     .replace(/"/g, "&quot;");
 }
 
+/** Build searchable atlas targets for inline links + chain navigation. */
+function buildLinkIndex() {
+  const entries = [];
+  const periods = state.data?.periods || [];
+  for (const period of periods) {
+    for (const [iso, pol] of Object.entries(period.polities || {})) {
+      if (!pol?.name) continue;
+      const base = {
+        periodId: period.id,
+        iso,
+        name: pol.name,
+        year: period.yearApprox ?? 0,
+      };
+      entries.push({ ...base, key: pol.name });
+      (pol.aliases || []).forEach((a) => {
+        if (a && a.length >= 5) entries.push({ ...base, key: a });
+      });
+    }
+    for (const layer of period.mapLayers || []) {
+      if (!layer?.label || layer.label.length < 5) continue;
+      const iso =
+        (layer.countries || []).find((c) => isoToRegion(c)) ||
+        (layer.countries || [])[0];
+      if (!iso) continue;
+      entries.push({
+        periodId: period.id,
+        iso,
+        name: layer.label,
+        year: period.yearApprox ?? 0,
+        key: layer.label,
+      });
+    }
+  }
+  for (const a of state.data?.meta?.linkAliases || []) {
+    if (!a?.alias || !a.periodId || !a.iso) continue;
+    const period = periods.find((p) => p.id === a.periodId);
+    entries.push({
+      periodId: a.periodId,
+      iso: a.iso,
+      name:
+        period?.polities?.[a.iso]?.name ||
+        a.alias,
+      year: period?.yearApprox ?? 0,
+      key: a.alias,
+    });
+  }
+  // Longest keys first so “Holy Roman Empire” wins over “Roman”
+  entries.sort((a, b) => b.key.length - a.key.length);
+  state.linkIndex = entries;
+}
+
+function resolveChainRef(ref) {
+  if (!ref) return null;
+  if (typeof ref === "string") {
+    const [periodId, iso] = ref.split(":");
+    if (!periodId || !iso) return null;
+    const period = state.data.periods.find((p) => p.id === periodId);
+    return {
+      periodId,
+      iso,
+      name: period?.polities?.[iso]?.name || `${iso} · ${periodId}`,
+    };
+  }
+  if (ref.periodId && ref.iso) {
+    return {
+      periodId: ref.periodId,
+      iso: ref.iso,
+      name:
+        ref.name ||
+        state.data.periods.find((p) => p.id === ref.periodId)?.polities?.[
+          ref.iso
+        ]?.name ||
+        ref.iso,
+    };
+  }
+  return null;
+}
+
+function goToAtlasTarget(ref) {
+  const target = resolveChainRef(ref);
+  if (!target) return;
+  const idx = state.data.periods.findIndex((p) => p.id === target.periodId);
+  if (idx < 0) return;
+  state.selectedIso = target.iso;
+  const rid = isoToRegion(target.iso);
+  if (rid) state.selectedRegion = rid;
+  snapToPeriod(idx);
+  state.svg
+    ?.selectAll("path.country")
+    .classed("is-active", (d) => d.properties.iso === target.iso);
+  // Bring the detail panel into view on stacked mobile layout
+  requestAnimationFrame(() => {
+    $("#detail")?.scrollIntoView({ behavior: "smooth", block: "start" });
+  });
+}
+
+function atlasLinkHtml(ref, label) {
+  const t = resolveChainRef(ref);
+  if (!t) return escapeHtml(label || "");
+  const text = label || t.name;
+  return `<button type="button" class="atlas-link" data-period="${escapeHtml(t.periodId)}" data-iso="${escapeHtml(t.iso)}" title="Go to ${escapeHtml(t.name)}">${escapeHtml(text)}</button>`;
+}
+
+/** Auto-link known polity/culture names in plain text (skips current target). */
+function linkifyAtlasText(text, { skipIso, skipPeriodId } = {}) {
+  if (!text) return "";
+  const index = state.linkIndex || [];
+  if (!index.length) return escapeHtml(text);
+
+  const src = String(text);
+  const hits = [];
+  for (const entry of index) {
+    if (entry.iso === skipIso && entry.periodId === skipPeriodId) continue;
+    if (entry.key.length < 5) continue;
+    const key = entry.key;
+    let from = 0;
+    while (from < src.length) {
+      const i = src.toLowerCase().indexOf(key.toLowerCase(), from);
+      if (i < 0) break;
+      // Prefer word-ish boundaries
+      const before = i === 0 ? " " : src[i - 1];
+      const after = i + key.length >= src.length ? " " : src[i + key.length];
+      if (/[A-Za-z0-9]/.test(before) || /[A-Za-z0-9]/.test(after)) {
+        from = i + 1;
+        continue;
+      }
+      const overlaps = hits.some(
+        (h) => !(i + key.length <= h.start || i >= h.end)
+      );
+      if (!overlaps) {
+        hits.push({
+          start: i,
+          end: i + key.length,
+          periodId: entry.periodId,
+          iso: entry.iso,
+          label: src.slice(i, i + key.length),
+        });
+      }
+      from = i + key.length;
+    }
+  }
+  hits.sort((a, b) => a.start - b.start);
+  if (!hits.length) return escapeHtml(src);
+
+  let out = "";
+  let cursor = 0;
+  for (const h of hits) {
+    if (h.start < cursor) continue;
+    out += escapeHtml(src.slice(cursor, h.start));
+    out += atlasLinkHtml(
+      { periodId: h.periodId, iso: h.iso },
+      h.label
+    );
+    cursor = h.end;
+  }
+  out += escapeHtml(src.slice(cursor));
+  return out;
+}
+
+function setLinkedHtml(el, text, skip) {
+  if (!el) return;
+  el.innerHTML = linkifyAtlasText(text || "", skip);
+}
+
+function renderPolityChain(polity) {
+  const row = $("#polity-chain");
+  if (!row) return;
+  const prev = resolveChainRef(polity?.precededBy);
+  const next = resolveChainRef(polity?.succeededBy);
+  if (!prev && !next) {
+    row.hidden = true;
+    row.innerHTML = "";
+    return;
+  }
+  row.hidden = false;
+  const parts = [];
+  if (prev) {
+    parts.push(
+      `<span class="polity-chain-item"><span class="polity-chain-label">Preceded by</span> ${atlasLinkHtml(prev)}</span>`
+    );
+  }
+  if (next) {
+    parts.push(
+      `<span class="polity-chain-item"><span class="polity-chain-label">Succeeded by</span> ${atlasLinkHtml(next)}</span>`
+    );
+  }
+  row.innerHTML = parts.join('<span class="polity-chain-sep" aria-hidden="true">·</span>');
+}
+
 function currentPeriod() {
   return state.data.periods[state.periodIndex];
 }
@@ -758,13 +947,13 @@ function highlightCultureChips() {
   });
 }
 
-function setPolityField(key, value) {
+function setPolityField(key, value, skip) {
   const block = $(`#polity-${key}-block`);
   const el = $(`#polity-${key}`);
   if (!block || !el) return;
   const text = (value || "").trim();
   block.hidden = !text;
-  el.textContent = text;
+  setLinkedHtml(el, text, skip);
 }
 
 function figureHtml(img) {
@@ -777,11 +966,31 @@ function figureHtml(img) {
   </figure>`;
 }
 
-function isLiteraryImage(img) {
-  const t = `${img.caption || ""} ${img.alt || ""} ${img.src || ""}`.toLowerCase();
-  return /book|kells|manuscript|folio|bible|thes|print|tapestry|chronicle|poem|poetry|saga|gospel|psalter|text|letter|codex|quill|dante|shakespeare|cervantes|luther|monet|night watch|meninas|venus|rublev|icon|pantocrator|fresco|miniature|joan/.test(
-    t
-  );
+function inferImageRole(img) {
+  if (img?.role) return img.role;
+  const t = `${img?.caption || ""} ${img?.alt || ""} ${img?.src || ""}`.toLowerCase();
+  if (
+    /augustus|charlemagne|theodoric|sutton hoo|helmet|portrait|statue|bust|emperor|king|queen|caesar|napoleon|elizabeth|luther|cnut|alfred|justinian|constantine|pericles|alexander|vladimir|suleiman|philip ii|charles v|gustav|vasa|prima porta/.test(
+      t
+    )
+  ) {
+    return "leader";
+  }
+  if (
+    /altar|icon|temple|pantocrator|cathedral|mosque|church|gospel|kells|bible|psalter|ritual|grave good|kurgan|sun chariot|megalith|stonehenge|reliquar|cross|mosque|hagia|chartres|alhambra|sacrifice|idol|votive|chalice|censer|torc.*ritual|solar/.test(
+      t
+    )
+  ) {
+    return "religion";
+  }
+  if (
+    /book|manuscript|folio|thes|print|tapestry|chronicle|poem|poetry|saga|text|letter|codex|quill|dante|shakespeare|cervantes|monet|meninas|venus|fresco|miniature|joan/.test(
+      t
+    )
+  ) {
+    return "literature";
+  }
+  return "art";
 }
 
 function fillInlineGallery(el, images) {
@@ -791,39 +1000,36 @@ function fillInlineGallery(el, images) {
   el.hidden = !list.length;
 }
 
-/** Split images into literature vs art sections — no separate gallery heading */
+/** Route images into leaders / religion / literature / art galleries */
 function renderPolityGalleries(images) {
-  const litGal = $("#polity-literature-gallery");
-  const artGal = $("#polity-art-gallery");
+  const buckets = {
+    leader: [],
+    religion: [],
+    literature: [],
+    art: [],
+  };
   const list = Array.isArray(images) ? images.filter((img) => img && img.src) : [];
-  if (!list.length) {
-    fillInlineGallery(litGal, []);
-    fillInlineGallery(artGal, []);
-    return;
-  }
-  const literary = [];
-  const material = [];
   list.forEach((img) => {
-    if (isLiteraryImage(img)) literary.push(img);
-    else material.push(img);
+    const role = inferImageRole(img);
+    (buckets[role] || buckets.art).push(img);
   });
-  // Keep at least one image under art when everything looked "literary"
-  if (!material.length && literary.length > 1) {
-    material.push(literary.pop());
-  }
-  if (!material.length && literary.length === 1 && !($("#polity-art")?.textContent || "").trim()) {
-    // art section empty — leave image with literature
-  } else if (!material.length && literary.length) {
-    material.push(literary.pop());
-  }
-  fillInlineGallery(litGal, literary);
-  fillInlineGallery(artGal, material);
 
-  // If a section has images but no text, still show the block
-  const litBlock = $("#polity-literature-block");
-  const artBlock = $("#polity-art-block");
-  if (litBlock && literary.length) litBlock.hidden = false;
-  if (artBlock && material.length) artBlock.hidden = false;
+  fillInlineGallery($("#polity-leaders-gallery"), buckets.leader);
+  fillInlineGallery($("#polity-religion-gallery"), buckets.religion);
+  fillInlineGallery($("#polity-literature-gallery"), buckets.literature);
+  fillInlineGallery($("#polity-art-gallery"), buckets.art);
+
+  const show = (id, has) => {
+    const block = $(id);
+    if (!block) return;
+    const textEl = block.querySelector("p:not(.kicker)");
+    const hasText = !!(textEl?.textContent || "").trim();
+    block.hidden = !(has || hasText);
+  };
+  show("#polity-leaders-block", buckets.leader.length > 0);
+  show("#polity-religion-block", buckets.religion.length > 0);
+  show("#polity-literature-block", buckets.literature.length > 0);
+  show("#polity-art-block", buckets.art.length > 0);
 }
 
 function renderDetail() {
@@ -861,6 +1067,11 @@ function renderDetail() {
   modeEl.dataset.mode = region.mode;
   modeEl.title = modeLegend[region.mode] || "";
 
+  const skip = {
+    skipIso: state.selectedIso || undefined,
+    skipPeriodId: period.id,
+  };
+
   let desc = region.description;
   if (state.selectedIso) {
     const cov = countryStyleForPeriod(period, state.selectedIso);
@@ -869,7 +1080,7 @@ function renderDetail() {
       desc = `Map layers here: ${layerBits}. ${region.description}`;
     }
   }
-  $("#culture-desc").textContent = desc;
+  setLinkedHtml($("#culture-desc"), desc, skip);
 
   // Polity-specific panel
   const polityPanel = $("#polity-panel");
@@ -881,17 +1092,19 @@ function renderDetail() {
     if (polity) {
       polityPanel.hidden = false;
       $("#polity-name").textContent = polity.name || "—";
-      $("#polity-summary").textContent = polity.summary || "";
-      $("#polity-conflicts").textContent = polity.conflicts || "";
-      setPolityField("leaders", polity.leaders);
-      setPolityField("religion", polity.religion);
-      setPolityField("culture", polity.culture);
-      setPolityField("story", polity.story);
-      setPolityField("literature", polity.literature);
-      setPolityField("art", polity.art);
+      setLinkedHtml($("#polity-summary"), polity.summary || "", skip);
+      setLinkedHtml($("#polity-conflicts"), polity.conflicts || "", skip);
+      setPolityField("leaders", polity.leaders, skip);
+      setPolityField("religion", polity.religion, skip);
+      setPolityField("culture", polity.culture, skip);
+      setPolityField("story", polity.story, skip);
+      setPolityField("literature", polity.literature, skip);
+      setPolityField("art", polity.art, skip);
+      renderPolityChain(polity);
       renderPolityGalleries(polity.images);
     } else {
       polityPanel.hidden = true;
+      renderPolityChain(null);
       renderPolityGalleries(null);
     }
   }
@@ -899,7 +1112,7 @@ function renderDetail() {
   const note = $("#ancestry-note");
   if (region.ancestryNote) {
     note.hidden = false;
-    note.textContent = region.ancestryNote;
+    setLinkedHtml(note, region.ancestryNote, skip);
   } else {
     note.hidden = true;
   }
@@ -1004,6 +1217,17 @@ function bindUI() {
   $("#btn-zoom-out")?.addEventListener("click", () => bumpMapZoom(1 / 1.35));
   $("#btn-zoom-reset")?.addEventListener("click", () => resetMapZoom());
 
+  // Inline / chain atlas links (event delegation)
+  document.addEventListener("click", (e) => {
+    const link = e.target?.closest?.(".atlas-link");
+    if (!link) return;
+    e.preventDefault();
+    e.stopPropagation();
+    const periodId = link.getAttribute("data-period");
+    const iso = link.getAttribute("data-iso");
+    if (periodId && iso) goToAtlasTarget({ periodId, iso });
+  });
+
   const layoutBtn = $("#layout-toggle");
   if (layoutBtn) {
     let lastToggle = 0;
@@ -1080,6 +1304,7 @@ async function init() {
   }
 
   $("#map-attr").textContent = state.data.meta.mapAttribution || "";
+  buildLinkIndex();
   renderGlossary();
 
   buildTicks();

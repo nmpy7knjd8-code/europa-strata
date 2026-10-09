@@ -620,6 +620,59 @@ html[data-layout="desktop"] body {
   border-top: 1px solid var(--line);
 }
 
+.polity-chain {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.45rem 0.65rem;
+  margin: 0.45rem 0 0.7rem;
+  padding: 0.45rem 0 0.55rem;
+  border-bottom: 1px solid var(--line);
+  font-size: 0.78rem;
+  line-height: 1.4;
+}
+
+.polity-chain[hidden] {
+  display: none !important;
+}
+
+.polity-chain-label {
+  display: inline-block;
+  margin-right: 0.3rem;
+  font-size: 0.62rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-mute);
+}
+
+.polity-chain-sep {
+  color: var(--ink-mute);
+  opacity: 0.5;
+}
+
+.atlas-link {
+  display: inline;
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-bottom: 1px solid var(--line-strong);
+  background: transparent;
+  color: var(--ink);
+  font: inherit;
+  font-weight: 500;
+  text-align: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  touch-action: manipulation;
+}
+
+.atlas-link:hover,
+.atlas-link:focus-visible {
+  border-bottom-color: var(--ink);
+  color: var(--ink);
+  outline: none;
+}
+
 .polity-panel .polity-name {
   margin: 0.15rem 0 0.4rem;
   font-family: var(--font-display);
@@ -662,7 +715,7 @@ html[data-layout="desktop"] body {
 }
 
 .polity-figure {
-  flex: 1 1 140px;
+  flex: 1 1 160px;
   max-width: 100%;
   margin: 0;
   background: var(--sea);
@@ -672,9 +725,10 @@ html[data-layout="desktop"] body {
 .polity-figure img {
   display: block;
   width: 100%;
-  height: 130px;
-  object-fit: cover;
-  background: #ddd;
+  height: 220px;
+  object-fit: contain; /* full photo — no face/object crops */
+  object-position: center;
+  background: #eee;
 }
 
 .polity-figure figcaption {
@@ -1340,6 +1394,28 @@ html[data-layout="mobile"] .polity-panel {
   padding-top: 1.35rem;
 }
 
+html[data-layout="mobile"] .polity-chain {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.55rem;
+  margin: 0.65rem 0 1rem;
+  font-size: 0.95rem;
+}
+
+html[data-layout="mobile"] .polity-chain-sep {
+  display: none;
+}
+
+html[data-layout="mobile"] .polity-chain-label {
+  font-size: 0.68rem;
+  display: block;
+  margin: 0 0 0.15rem;
+}
+
+html[data-layout="mobile"] .atlas-link {
+  border-bottom-width: 1.5px;
+}
+
 html[data-layout="mobile"] .polity-panel .polity-name,
 html[data-layout="mobile"] .polity-name {
   font-size: 1.5rem;
@@ -1387,7 +1463,8 @@ html[data-layout="mobile"] .polity-figure figcaption {
 }
 
 html[data-layout="mobile"] .polity-figure img {
-  height: 190px;
+  height: 240px;
+  object-fit: contain;
 }
 
 html[data-layout="mobile"] .polity-inline-gallery {
