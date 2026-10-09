@@ -524,6 +524,15 @@ function highlightCultureChips() {
   });
 }
 
+function setPolityField(key, value) {
+  const block = $(`#polity-${key}-block`);
+  const el = $(`#polity-${key}`);
+  if (!block || !el) return;
+  const text = (value || "").trim();
+  block.hidden = !text;
+  el.textContent = text;
+}
+
 function renderDetail() {
   const period = currentPeriod();
   const rid = state.selectedRegion;
@@ -578,9 +587,13 @@ function renderDetail() {
   if (polityPanel) {
     if (polity) {
       polityPanel.hidden = false;
-      $("#polity-name").textContent = polity.name;
-      $("#polity-summary").textContent = polity.summary;
-      $("#polity-conflicts").textContent = polity.conflicts;
+      $("#polity-name").textContent = polity.name || "—";
+      $("#polity-summary").textContent = polity.summary || "";
+      $("#polity-conflicts").textContent = polity.conflicts || "";
+      setPolityField("leaders", polity.leaders);
+      setPolityField("religion", polity.religion);
+      setPolityField("culture", polity.culture);
+      setPolityField("story", polity.story);
     } else {
       polityPanel.hidden = true;
     }

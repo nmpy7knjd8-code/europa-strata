@@ -3284,7 +3284,7 @@
           "culture": "Visigothic Kingdom of Hispania",
           "color": "#4a5a6a",
           "mode": "absorption",
-          "description": "After imperial collapse, the Visigothic kingdom rules a Hispano-Roman majority. Arian then Catholic Christian politics; legal codes blending Roman and Gothic traditions. Demographically an elite Germanic layer over Romance-shifting provincials — political Goths, not a Gothic-majority genome.",
+          "description": "Visigothic kings rule a Romanized peninsula from Toledo after earlier Vandal/Alani passage. Arian then Catholic confession politics; harshening Jewish policy. Genetics: Hispano-Roman continua with Gothic elite overlays — the kingdom Islam will shatter in 711.",
           "ancestry": {
             "eef": 44,
             "steppe": 28,
@@ -3304,7 +3304,7 @@
           "culture": "Anglo-Saxon settlement Britain",
           "color": "#5a6a58",
           "mode": "admixture",
-          "description": "Post-Roman Britain sees Angles, Saxons, and Jutes establish kingdoms. Ancient DNA (e.g. Gretzinger et al. 2022 and related) supports substantial continental northern European influx especially in eastern England, mixing with Romano-British substrate — admixture with regional variation, not uniform wipeout in the west.",
+          "description": "Post-Roman Britain fragments into Brittonic kingdoms and incoming Anglo-Saxon polities of the east and south. Archaeology shows new burial rites and material culture; genetics and isotopes argue for substantial but regionally variable migration — neither empty-land replacement nor pure elite fashion. Christianity survives in the west; pagan English convert around the turn of the 7th century. The Arthurian legend later romanticizes this collapse-and-making.",
           "ancestry": {
             "steppe": 45,
             "eef": 35,
@@ -3324,7 +3324,7 @@
           "culture": "Early Franks & Gallo-Romans",
           "color": "#3d4a5c",
           "mode": "absorption",
-          "description": "Frankish power grows in northern Gaul over a Gallo-Roman majority (Merovingian age). “Frank” becomes a political identity uniting Germanic elites and Romance provincials. Genetic absorption pattern; Romance speech wins in the long run with Frankish superstrate loanwords.",
+          "description": "Clovis’s Franks conquer rival kingdoms and choose Catholic baptism, aligning with Gallo-Roman bishops. Merovingian rule overlays Roman cities and law with warrior kingship. Ancestry: late Roman Gallic mix plus northern Frankish input — political transformation with demographic layers.",
           "ancestry": {
             "eef": 38,
             "steppe": 40,
@@ -3344,7 +3344,7 @@
           "culture": "Wielbark culture & Gothic world",
           "color": "#2f4a6a",
           "mode": "admixture",
-          "description": "Wielbark (c. 1st–5th c. CE) in Pomerania and Poland: cemeteries with changing rites, often linked in archaeology and historiography to early Gothic traditions before movements toward the Black Sea (Chernyakhov) and beyond. Treat as a cultural-archaeological complex — aDNA sampling is thinner than Neolithic corpora. Neighboring regions hold other Germanic and late Roman provincial societies.",
+          "description": "East of the Rhine and along the upper Danube: Alamanni, Bavarians, Thuringians, and other peoples enter Frankish hegemony in pulses. Pagan belts remain. Genetics: northern/central European Iron Age–late antique continua under Migration-era mobility.",
           "ancestry": {
             "steppe": 42,
             "eef": 36,
@@ -3364,7 +3364,7 @@
           "culture": "Late Germanic Iron Age (Vendel prelude)",
           "color": "#3a4a50",
           "mode": "continuity",
-          "description": "Scandinavia as a demographic and cultural source region for some migration-era movements, with rich boat graves and long-distance ties approaching the Vendel era. Local ancestry continuous; elite networks span the Baltic and North Sea.",
+          "description": "Germanic Iron Age Scandinavia — the world that will export Vikings — with bog offerings, weapon graves, and proto-kingships. Not yet Christian states. Genetics: deep Nordic continuity from earlier BA/IA.",
           "ancestry": {
             "steppe": 46,
             "eef": 28,
@@ -3384,7 +3384,7 @@
           "culture": "Ostrogothic & late antique Italy",
           "color": "#5a3048",
           "mode": "admixture",
-          "description": "Odovacer, Theodoric’s Ostrogoths, then Justinianic wars remake Italy. Antonio et al.: medieval Italian ancestry shifts from Imperial eastern Mediterranean peaks back toward more western European affinity — politics and migration both matter.",
+          "description": "Odovacer and then Theodoric’s Ostrogoths rule Italy with Roman administration; Justinian’s Gothic War devastates the peninsula. Lombards take the north (568). Ancestry: late antique Italian continua under successive military elites.",
           "ancestry": {
             "eef": 38,
             "steppe": 28,
@@ -3404,7 +3404,7 @@
           "culture": "Early Byzantine Balkans & migrations",
           "color": "#4a3a58",
           "mode": "admixture",
-          "description": "East Roman (Byzantine) continuity plus Goths, Huns, Avars, and the onset of Slavic settlement. The linguistic map is rewritten toward South Slavic in many zones while Greek holds the Aegean/administrative core. Genetics: BA Balkan base + diverse early medieval inputs — high microregional uncertainty.",
+          "description": "Eastern Rome holds Constantinople and fights Goths, Huns, Avars, and Slavic settlement. Balkan provinces transform demographically with Slavicization uneven by valley. Genetics: late Roman + Slavic-associated mobility — debated proportions, real cultural change.",
           "ancestry": {
             "eef": 40,
             "steppe": 22,
@@ -3424,7 +3424,7 @@
           "culture": "Hunnic & post-Hunnic steppe",
           "color": "#5a4030",
           "mode": "admixture",
-          "description": "Huns and successor confederations pressure Europe. Elite contexts can show East Eurasian ancestry spikes; populations are heterogeneous. Linguistic attestation is poor (Hunnic unclassified/obscure). Clears space for later Bulgar, Avar, Magyar, and Slavic dynamics.",
+          "description": "Hunnic empire then collapse; Gothic and other peoples move; steppe politics dominate the Pontic edge. Chernyakhov and related horizons. Genetics: steppe–farmer mixes under extreme elite mobility.",
           "ancestry": {
             "steppe": 40,
             "other": 40,
@@ -3615,47 +3615,83 @@
         "POL": {
           "name": "Wielbark culture",
           "summary": "Gothic-linked archaeological horizon in Pomerania/Poland.",
-          "conflicts": "Movements toward Black Sea (Chernyakhov); pressure from and on neighbors."
+          "conflicts": "Movements toward Black Sea (Chernyakhov); pressure from and on neighbors.",
+          "leaders": "Archaeological cultures more than named kings (Wielbark).",
+          "religion": "Pagan; Christianity centuries away.",
+          "culture": "Wielbark burial rite changes; amber and trade.",
+          "story": "Wielbark’s link to Gothic migrations is archaeology’s great detective story — cemeteries hinting at peoples later famous on the Black Sea and in Italy."
         },
         "UKR": {
           "name": "Chernyakhov / Gothic steppe edge",
           "summary": "Multi-ethnic horizon with Gothic elites.",
-          "conflicts": "Hunnic shock; collapse and westward Gothic migrations."
+          "conflicts": "Hunnic shock; collapse and westward Gothic migrations.",
+          "leaders": "Gothic and steppe elites in Chernyakhov horizons; Hunnic overlords.",
+          "religion": "Diverse; Christian missions limited; steppe cults.",
+          "culture": "Multi-ethnic Chernyakhov villages; Hunnic shock mobility.",
+          "story": "The Hunnic storm empties and remakes the Pontic edge — Attila’s Europe begins in these grasslands."
         },
         "ITA": {
           "name": "Ostrogothic Italy",
           "summary": "Theodoric’s kingdom after Odovacer.",
-          "conflicts": "Gothic–Byzantine wars (Justinian) devastate Italy."
+          "conflicts": "Gothic–Byzantine wars (Justinian) devastate Italy.",
+          "leaders": "Odoacer; Theodoric the Great; Justinian’s generals (Belisarius, Narses).",
+          "religion": "Arian Gothic elites over Catholic Romans; Byzantine Orthodoxy in reconquest.",
+          "culture": "Senatorial Roman continuity under Gothic rule; Ravenna mosaics.",
+          "story": "Theodoric’s long peace and the Gothic War’s devastation bookend Italy’s transformation from Western Empire to early medieval patchwork."
         },
         "ESP": {
           "name": "Visigothic Hispania",
           "summary": "Kingdom over Hispano-Romans.",
-          "conflicts": "Wars with Suebi, Byzantines in south; internal faction."
+          "conflicts": "Wars with Suebi, Byzantines in south; internal faction.",
+          "leaders": "Visigothic kings at Toledo; earlier Vandal passage memory.",
+          "religion": "Visigothic Arianism then conversion to Catholicism (Reccared); Jewish policy harshening.",
+          "culture": "Toledo councils; fusion law codes; Roman infrastructure reuse.",
+          "story": "Visigothic Spain’s unity-under-Toledo is later remembered as the Christian kingdom Islam will overrun in 711 — an origin told backward from al-Andalus."
         },
         "FRA": {
           "name": "Frankish Gaul",
           "summary": "Merovingian expansion.",
-          "conflicts": "Wars with Visigoths (Vouillé), Alamanni, Burgundians."
+          "conflicts": "Wars with Visigoths (Vouillé), Alamanni, Burgundians.",
+          "leaders": "Clovis; Merovingian kings; early mayors of the palace.",
+          "religion": "Clovis’s Catholic baptism allies Franks with Gallo-Roman bishops against Arian rivals.",
+          "culture": "Lex Salica; warrior retinues; Gallo-Roman villa afterlives.",
+          "story": "Clovis’s baptism is France’s oldest royal conversion story — a pagan warlord choosing Catholic Rome’s prestige."
         },
         "GBR": {
           "name": "Anglo-Saxon kingdoms forming",
           "summary": "Angles/Saxons/Jutes in the east.",
-          "conflicts": "Conflict with Brittonic west; North Sea migration politics."
+          "conflicts": "Conflict with Brittonic west; North Sea migration politics.",
+          "leaders": "Traditional heptarchy kings; later narrative figures (Vortigern, Arthur as legend — not documentary).",
+          "religion": "British Christianity in the west; incoming Anglo-Saxon paganism then conversion (Augustine 597 still near this horizon).",
+          "culture": "Post-Roman material simplicity; epic memory forming; Irish missions.",
+          "story": "The Adventus Saxonum — migration, war, and settlement — becomes England’s origin debate: invasion myth vs gradual cultural change."
         },
         "HUN": {
-          "name": "Hunnic core",
-          "summary": "Attila’s confederation center of gravity.",
-          "conflicts": "Campaigns into Gaul/Italy; collapse after Nedao."
+          "name": "Sarmatian / early Magyar prelude zone",
+          "summary": "Carpathian basin peoples before the later Magyar conquest of the 9th–10th centuries.",
+          "conflicts": "Hunnic then Gepid/Avar-era upheavals in the wider Middle Danube memory.",
+          "leaders": "Named kings scarce; Avar khagans dominate the wider basin’s politics in this era.",
+          "religion": "Pagan steppe and local cults; Christian missions limited.",
+          "culture": "Steppe–agrarian frontier material cultures.",
+          "story": "The basin is a highway of peoples — the stage on which Magyars will later found Hungary."
         },
         "TUR": {
-          "name": "Eastern Roman / Byzantine",
-          "summary": "Constantinople’s empire.",
-          "conflicts": "Persian wars; Balkan losses to Slavs/Avars."
+          "name": "Eastern Roman Anatolia (edge)",
+          "summary": "Anatolian heartland of the Eastern Roman Empire beyond the Balkan focus of this map tick.",
+          "conflicts": "Persian wars on the eastern front; Balkan crises pulling imperial attention.",
+          "leaders": "Eastern Roman emperors (Arcadius to Justinian’s eve).",
+          "religion": "Imperial Christianity.",
+          "culture": "Greek Roman cities of Asia Minor.",
+          "story": "While Europe’s west fragments, Anatolia taxes and prays for an empire that still calls itself Roman."
         },
         "DEU": {
           "name": "Alamanni / frontier Germans",
           "summary": "Post-Roman Germanics.",
-          "conflicts": "Conflict with Franks; shifting Rhine politics."
+          "conflicts": "Conflict with Franks; shifting Rhine politics.",
+          "leaders": "Merovingian frontier kings; Alamannic and Bavarian dukes; Thuringian rulers.",
+          "religion": "Pagan districts beside Christian Frankish power; Irish/Anglo-Saxon missions coming.",
+          "culture": "Row-grave horizons; warrior burials; forest-agrarian society.",
+          "story": "East of the Rhine is not ‘Germany’ yet — a mosaic of peoples being pulled into Frankish Christianity."
         }
       }
     },
@@ -3672,7 +3708,7 @@
           "culture": "Al-Andalus & Christian northern kingdoms",
           "color": "#2a5a4a",
           "mode": "admixture",
-          "description": "Umayyad then successor Islamic states transform southern/central Iberia (Arabic prestige culture, cities, agriculture); Asturias/León/Navarre/etc. hold the Christian north. Medieval aDNA shows North African/Near Eastern–related gene flow in some Andalusian Muslim contexts while the north stays closer to earlier Hispania — a split peninsula, not one average.",
+          "description": "Asturias–León and other northern Christian polities resist and raid south; Al-Andalus under the Emirate/Caliphate of Córdoba is western Europe’s richest court culture — Arabic letters, science, and agriculture. Jews and Mozarabs mediate. Genetics: Iberian early medieval mixes with North African gene flow in the south.",
           "ancestry": {
             "eef": 42,
             "steppe": 25,
@@ -3692,7 +3728,7 @@
           "culture": "Anglo-Saxon kingdoms & Viking Age",
           "color": "#3a4a5a",
           "mode": "admixture",
-          "description": "Heptarchy then West Saxon consolidation; Norse settlement creates the Danelaw and reshapes islands and coasts. Additional Scandinavian admixture overlays Anglo-Saxon–Brittonic mixes. Linguistically: Old English ± Old Norse contact, Celtic in the west and north.",
+          "description": "Heptarchy consolidation under Wessex meets the Viking Great Army: Danelaw settlement, Alfred’s burhs and learning program, then Æthelstan’s brief wide kingship. Norse-Gaelic Dublin and Scottish/Pictish politics frame the islands. Old English ± Old Norse contact reshapes speech. Genetics: Anglo-Saxon–Brittonic base with Scandinavian admixture in the east and north — a real migration pulse on a smaller scale than Beaker, not a Mesolithic reset.",
           "ancestry": {
             "steppe": 44,
             "eef": 34,
@@ -3712,7 +3748,7 @@
           "culture": "Frankish Empire (Carolingian heartland)",
           "color": "#1a1a1a",
           "mode": "continuity",
-          "description": "Under Charlemagne (crowned 800), the Frankish Empire unites much of Western and Central Europe in a Christian Latin imperial project — then fragments (Verdun 843). The “empire” is a political-ecclesiastical order over Gallo-Roman and Germanic populations. Deep ancestry stays the early medieval ternary; Frankish rule is not a genomic Beaker event.",
+          "description": "Carolingian West Francia after Verdun becomes a landscape of great principalities under a weakening king; Viking Seine and Loire raids force fortification and eventually Normandy’s grant (911). Monasteries keep Latin learning; Romance speech diverges from Latin. Ancestry: late antique Gallo-Roman–Frankish continua under elite and raider mobility.",
           "ancestry": {
             "eef": 37,
             "steppe": 40,
@@ -3732,7 +3768,7 @@
           "culture": "East Francia & Slavic frontier",
           "color": "#2a3a4a",
           "mode": "admixture",
-          "description": "Carolingian/East Frankish authority meets expanding West Slavic-speaking populations along the Elbe–Oder world. Later German stem duchies and Slavic polities form from this contact. Medieval aDNA in Central Europe shows Slavic-related shifts in some regions atop earlier ancestry — language frontier with real demographic movement, variable by microregion.",
+          "description": "East Francia and the stem duchies face Viking, Magyar, and Slavic frontiers; Carolingian structures give way to ducal power that Ottonians will later reforge into empire. Missionaries move east. Genetics: central European early medieval continua.",
           "ancestry": {
             "steppe": 38,
             "eef": 36,
@@ -3752,7 +3788,7 @@
           "culture": "Viking Age Scandinavia",
           "color": "#2a4a5a",
           "mode": "continuity",
-          "description": "Raid, trade, and settlement diaspora (British Isles, Normandy, Rus’, North Atlantic). Homelands remain genetically continuous with Iron Age Scandinavia, with some British Isles and southern gene flow into ports. Cultural export exceeds homeland replacement.",
+          "description": "Late Iron Age societies launch the Viking diaspora: trade, raid, and settlement from Newfoundland’s fringe to the Caspian routes. Kings begin to centralize as conversion politics appear. Material culture: ships, silver hoards, proto-towns (Hedeby, Birka, Kaupang). Genetics: Nordic Iron Age continuity with mobility outward more than replacement inward.",
           "ancestry": {
             "steppe": 45,
             "eef": 28,
@@ -3772,7 +3808,7 @@
           "culture": "Carolingian Italy & Byzantine south",
           "color": "#4a2a3a",
           "mode": "admixture",
-          "description": "Lombard then Carolingian north; Byzantine themes and, later, Islamic Sicily in the south. Politically fragmented, linguistically Italo-Romance with Greek south and transitional Arabic in Sicily. Ancestry layered accordingly.",
+          "description": "Carolingian and late Lombard north; papal Rome; Byzantine south; Muslim conquest of Sicily (9th c.). A peninsula of three civilizations. Ancestry: late antique Italian continua with Mediterranean mobility.",
           "ancestry": {
             "eef": 40,
             "steppe": 26,
@@ -3792,7 +3828,7 @@
           "culture": "Byzantium & First Bulgarian Empire",
           "color": "#3a2a4a",
           "mode": "admixture",
-          "description": "Byzantine state continuity versus the First Bulgarian Empire (Slavic population, Bulgar elite traditions). Christianization and Slavic liturgy reshape identity. Genetics: Balkan BA base + Slavic-related ancestry + steppe Bulgar signals in varying doses — do not invent one “Bulgarian %.”",
+          "description": "Byzantium survives and reforms; First Bulgarian Empire Christianizes in Slavic Orthodoxy; Avars fade. The Balkans remain imperial and Slavicizing. Genetics: early medieval Balkan mixes.",
           "ancestry": {
             "eef": 38,
             "steppe": 24,
@@ -3812,7 +3848,7 @@
           "culture": "Early Rus’ & steppe neighbors",
           "color": "#3a3028",
           "mode": "admixture",
-          "description": "Varangian (Norse) elites, Slavic populations, and Turkic steppe polities (e.g. Khazar sphere) interact along river routes forming Kievan Rus’. Multi-origin ruling traditions over East Slavic demographic cores.",
+          "description": "Khazar sphere, Magyars moving west, and Scandinavian–Slavic networks forming early Rus’ along the river roads. Steppe–forest exchange defines the age. Genetics: eastern continua with Turkic and Norse elite layers.",
           "ancestry": {
             "steppe": 35,
             "eef": 25,
@@ -4043,62 +4079,635 @@
         "FRA": {
           "name": "Carolingian Frankish core",
           "summary": "Charlemagne’s heartland.",
-          "conflicts": "Saxon wars; Lombard Italy; Muslim Spain marches; civil wars after 843."
+          "conflicts": "Saxon wars; Lombard Italy; Muslim Spain marches; civil wars after 843.",
+          "leaders": "Charlemagne; Louis the Pious; later Charles the Bald (West Francia).",
+          "religion": "Latin Christian empire; forced Saxon conversion; alliance and tension with the papacy.",
+          "culture": "Carolingian Renaissance — palace school, minuscule script, liturgical reform.",
+          "story": "The imperial crowning at Rome (800) and the Saxon Wars define Carolingian power: sacred empire built with the sword. Verdun (843) then splits the dream among grandsons."
         },
         "DEU": {
           "name": "East Francia",
           "summary": "Carolingian east / stem duchies forming.",
-          "conflicts": "Slavic frontier wars; Viking raids on coasts/rivers."
+          "conflicts": "Slavic frontier wars; Viking raids on coasts/rivers.",
+          "leaders": "Louis the German; Arnulf; early stem-duke politics after Verdun.",
+          "religion": "Latin Christianity; missionary pushes east.",
+          "culture": "East Frankish lordship; monastic centers; frontier marches.",
+          "story": "East Francia becomes the kernel of the later Holy Roman Empire — a kingdom born from treaty lines at Verdun."
         },
         "ITA": {
           "name": "Carolingian / Lombard Italy",
           "summary": "Frankish rule in north; Byzantine south.",
-          "conflicts": "Fragmentation; Arab raids on Sicily/south."
+          "conflicts": "Fragmentation; Arab raids on Sicily/south.",
+          "leaders": "Charlemagne as Lombard king; popes; Byzantine officials in the south.",
+          "religion": "Latin papacy vs Greek south; Islamic Sicily rising in the 9th c.",
+          "culture": "Lombard law memory; Roman ceremonial; Mediterranean trade seeds.",
+          "story": "The Donation ideology and papal–Frankish alliance remake Italy into the empire’s sacred theater."
         },
         "ESP": {
           "name": "Asturias vs Al-Andalus",
           "summary": "Christian north vs Umayyad south.",
-          "conflicts": "Reconquista frontier raids both ways."
+          "conflicts": "Reconquista frontier raids both ways.",
+          "leaders": "Emirs/caliphs of Córdoba; Alfonso II of Asturias; counts of Barcelona.",
+          "religion": "Islam in Al-Andalus; northern Christian kingdoms; Jewish communities.",
+          "culture": "Córdoba’s libraries and mosques; Asturian churches; frontier raid culture (razzias).",
+          "story": "Almanzor’s raids (late 10th c. still ahead of this tick’s heart) haunt Christian memory — Córdoba as both civilization and threat."
         },
         "GBR": {
           "name": "Wessex vs Danelaw",
           "summary": "Alfredian England and Norse zones.",
-          "conflicts": "Viking wars; reconquest of the Danelaw."
+          "conflicts": "Viking wars; reconquest of the Danelaw.",
+          "leaders": "Alfred the Great; Edward the Elder; Æthelstan; Norse kings in York/Dublin orbit.",
+          "religion": "Latin Christian Anglo-Saxon kingdoms; pagan Norse arrivals converting unevenly.",
+          "culture": "Alfredian translation program; burhs; epic and chronicle (Anglo-Saxon Chronicle).",
+          "story": "Alfred’s refuge in the marshes and reconquest become England’s founding resistance story against the Great Heathen Army."
         },
         "IRL": {
-          "name": "Gaelic kings & Norse towns",
-          "summary": "Irish overkingships vs Dublin Norse.",
-          "conflicts": "Clontarf-era conflicts; mixed Norse-Gaelic politics."
+          "name": "Irish kingdoms & Norse-Gaelic beginnings",
+          "summary": "Gaelic over-kingships with early Viking bases appearing on coasts late in the century.",
+          "conflicts": "Inter-dynastic cattle politics; first Norse raids (from 795 in annals).",
+          "leaders": "Uí Néill over-kings; Munster rivals; early Norse chieftains in camps.",
+          "religion": "Christian monastic Ireland; pagan Norse newcomers.",
+          "culture": "High-cross monastic art; learning that exports missionaries.",
+          "story": "The Annals’ first Viking raid notices begin Ireland’s long Norse chapter — monasteries as both treasure and target."
         },
         "DNK": {
           "name": "Danish kingdom",
           "summary": "Viking Age Denmark.",
-          "conflicts": "Raids/settlement abroad; rivalry with neighbors."
+          "conflicts": "Raids/settlement abroad; rivalry with neighbors.",
+          "leaders": "Early historically foggy kings culminating toward Bluetooth’s line.",
+          "religion": "Pagan with Christian missions (Ansgar’s memory).",
+          "culture": "Trading towns (Hedeby); ship levies.",
+          "story": "Denmark sits at the mouth of Baltic–North Sea violence and trade — the workshop of the Viking Age."
         },
         "NOR": {
           "name": "Norwegian kingdom forming",
           "summary": "Harald Fairhair traditions / coastal power.",
-          "conflicts": "British Isles ventures; Danish rivalry."
+          "conflicts": "British Isles ventures; Danish rivalry.",
+          "leaders": "Sea-kings and local petty kings before Harald Fairhair’s unification traditions.",
+          "religion": "Norse paganism dominant; Christian contact via raid and trade.",
+          "culture": "Shipburial elite display; skaldic praise; thing assemblies.",
+          "story": "The Viking launch from fjords toward Ireland, Francia, and beyond begins Norway’s global hour."
         },
         "SWE": {
           "name": "Swedish / Varangian world",
           "summary": "Mälaren power and eastern routes.",
-          "conflicts": "Rus’ ventures; Baltic competition."
+          "conflicts": "Rus’ ventures; Baltic competition.",
+          "leaders": "Uppsala kings in later tradition; Rus’ expedition leaders.",
+          "religion": "Pagan cults; eastern contact religions along trade routes.",
+          "culture": "Eastern river routes; proto-urban Birka.",
+          "story": "Swedish Vikings as ‘Rus’’ in eastern sources link the Mälaren to the Black Sea."
         },
         "TUR": {
-          "name": "Byzantine Empire",
-          "summary": "Macedonian-era recovery beginning.",
-          "conflicts": "Wars with Bulgars, Arabs; Balkan Slavic settlement."
+          "name": "Byzantine Anatolia",
+          "summary": "Themes of Asia Minor as the empire’s military reservoir.",
+          "conflicts": "Arab frontier warfare; iconoclasm politics earlier/around the era.",
+          "leaders": "Byzantine emperors (Irene, Nikephoros, later Macedonians still ahead).",
+          "religion": "Greek Orthodoxy; icon controversies.",
+          "culture": "Theme armies; Constantinopolitan pull.",
+          "story": "Anatolia’s soldiers keep Byzantium alive while the west invents new kingdoms."
         },
         "BGR": {
           "name": "First Bulgarian Empire",
-          "summary": "Krum/Omurtag to Christianization era.",
-          "conflicts": "Major wars with Byzantium."
+          "summary": "Khan then Christian rulers south of the Danube balancing Byzantium.",
+          "conflicts": "Byzantine wars; conversion politics under Boris I (later 9th c.).",
+          "leaders": "Krum (memory); Boris I; early Bulgarian khans/princes.",
+          "religion": "Pagan Bulgar elite then Slavic Orthodoxy after conversion.",
+          "culture": "Pliska/Preslav; Slavic liturgy developing.",
+          "story": "Boris’s conversion is the Balkans’ state-baptism parallel to northern Europe’s royal conversions."
         },
         "UKR": {
-          "name": "Kievan Rus’ forming",
-          "summary": "Varangian–Slavic polity on the Dnieper.",
-          "conflicts": "Khazar steppe; Byzantine trade and war; Pecheneg pressure."
+          "name": "Early Rus’ river road",
+          "summary": "Scandinavian–Slavic networks forming along the Dnieper before Vladimir’s baptism.",
+          "conflicts": "Khazar tribute politics; steppe raiders; Byzantine trade diplomacy.",
+          "leaders": "Semi-legendary Varangian princes of the Primary Chronicle tradition.",
+          "religion": "Pagan; Christian contact via Byzantium and missions.",
+          "culture": "River trade; mixed retinues.",
+          "story": "Askold, Dir, and Oleg in chronicle memory — the origin tales of a polity that will choose Orthodoxy."
+        }
+      }
+    },
+    {
+      "id": "vikings",
+      "label": "Viking Age & Millennium Kingdoms",
+      "era": "North Sea, Capetians, Ottonians",
+      "yearLabel": "c. 1000 AD",
+      "yearApprox": 1000,
+      "narrative": "Around the year 1000, Europe’s map is a patchwork of consolidating Christian kingdoms and still-pagan or newly converted frontiers. The Viking Age peaks and turns toward settlement and royal conversion (Denmark, Norway, Sweden; Danelaw memory in England; Normandy; Dublin). West Francia is Capetian; East Francia is Ottonian/Salian Holy Roman Empire; Cordoba’s caliphate fragments into taifas; Byzantium under the Macedonian dynasty is a high medieval power; Piast Poland and Árpád Hungary enter Latin Christendom; Kievan Rus’ Christianizes under Vladimir. Genetics remain early-medieval continua — the drama is kingship, conversion, and saga, not a new deep ancestry component.",
+      "culturesNote": "Cnut’s North Sea empire forming; Capetian France; Ottonian–Salian Reich; taifa Iberia; Macedonian Byzantium; Piast Poland; Kievan Rus’; Normandy.",
+      "regions": {
+        "iberia": {
+          "culture": "Al-Andalus & Christian northern kingdoms",
+          "color": "#2a5a4a",
+          "mode": "admixture",
+          "description": "The Umayyad Caliphate of Córdoba collapses after 1031 into rival taifa kingdoms while northern Christian realms — León–Castile, Navarre, Catalonia/Aragon, Portugal’s County — press the frontier of the Reconquista. Arabic learning, Hebrew poetry, and Romance speech interleave in cities; Mozarabic Christians and Jewish communities mediate culture. Demographically still an early-medieval mix with North African layers in the south — politics and confession, not a new Paleolithic strand, define the age.",
+          "ancestry": {
+            "eef": 42,
+            "steppe": 25,
+            "whg": 16,
+            "other": 17
+          },
+          "ancestryNote": "Regional contrast: Andalusian samples can show elevated “other”; Christian north more continuous. Avoid a single Spain number.",
+          "substrate": "Visigothic/Hispano-Roman",
+          "incoming": "North African / Near Eastern",
+          "fused": "Medieval Iberia split",
+          "languageFamily": "Arabic + Romance + Basque",
+          "languages": "Arabic; Mozarabic; early Castilian/Catalan/Portuguese lines; Basque",
+          "linguisticNote": "Arabic prestige south; Romance consolidation north — bilingual and multi-faith for centuries.",
+          "linguisticConfidence": "attested"
+        },
+        "britain": {
+          "culture": "Anglo-Saxon kingdoms & Viking Age",
+          "color": "#3a4a5a",
+          "mode": "admixture",
+          "description": "England after Alfred’s heirs faces renewed Norse pressure; Æthelred’s failures set the stage for Swein and Cnut. The Danelaw’s legal and linguistic imprint persists even as West Saxon kingship claims the island. Scotland’s Alba, Welsh kingdoms, and Irish polities (with Norse towns like Dublin) form a North Atlantic chessboard of raid, ransom, and royal baptism. Stories of Olaf Tryggvason, Brian Boru (Clontarf 1014), and English martyr-kings sit atop an Anglo-Saxon–Brittonic–Norse gene pool already in place.",
+          "ancestry": {
+            "steppe": 44,
+            "eef": 34,
+            "whg": 16,
+            "other": 6
+          },
+          "substrate": "Anglo-Saxon England",
+          "incoming": "Norse",
+          "fused": "Late Anglo-Saxon / Danelaw",
+          "languageFamily": "Old English + Old Norse + Celtic",
+          "languages": "Old English; Old Norse; Welsh/Gaelic/Cornish/etc.",
+          "linguisticNote": "Heavy Old Norse lexical impact on English in contact zones.",
+          "linguisticConfidence": "attested",
+          "ancestryNote": "North Sea Germanic base + Norse input in Danelaw/isles; regional Celtic continuity."
+        },
+        "france": {
+          "culture": "Frankish Empire (Carolingian heartland)",
+          "color": "#1a1a1a",
+          "mode": "continuity",
+          "description": "Hugh Capet’s dynasty (from 987) holds a modest royal demesne around Paris while great princes — Normandy, Flanders, Aquitaine, Toulouse, Anjou — dwarf the crown in practice. Viking Normandy has become a Latin-Christian duchy launching energy into England and the Mediterranean. Monasteries (Cluny’s reform orbit) reshape piety; Romance speech hardens toward Old French. Ancestry is Frankish-era continuity; the novelty is Capetian sacral kingship and feudal fragmentation.",
+          "ancestry": {
+            "eef": 37,
+            "steppe": 40,
+            "whg": 16,
+            "other": 7
+          },
+          "ancestryNote": "Continuity with Merovingian-era Gaul + elite circulation across the empire.",
+          "substrate": "Merovingian Gallo-Roman world",
+          "incoming": "Carolingian imperial institutions & elite mobility",
+          "fused": "Carolingian West",
+          "languageFamily": "Gallo-Romance + Frankish legacy + Latin",
+          "languages": "Old French forming; Latin (church/chancery); Germanic dialects in east",
+          "linguisticNote": "Imperial lingua franca is Latin; vernaculars are Romance/Germanic — bilingual elite world.",
+          "linguisticConfidence": "attested"
+        },
+        "central": {
+          "culture": "East Francia & Slavic frontier",
+          "color": "#2a3a4a",
+          "mode": "admixture",
+          "description": "The Ottonian and early Salian emperors claim Rome and the Reich: stem duchies, Italian expeditions, and Slavic marches (Billungs, early eastward pressure). Bohemia under the Přemyslids and Poland under Bolesław Chrobry negotiate baptism, imperial recognition, and frontier war. Magyars, settled since the 10th century, become a Christian kingdom under Stephen I (crowned 1000/1001). Latin Christendom’s eastern edge is being drawn in real time.",
+          "ancestry": {
+            "steppe": 38,
+            "eef": 36,
+            "whg": 14,
+            "other": 12
+          },
+          "substrate": "Post-Wielbark / late antique CE",
+          "incoming": "Slavic medieval expansions",
+          "fused": "East Frankish–Slavic contact",
+          "languageFamily": "Germanic + West Slavic",
+          "languages": "Old High German; West Slavic languages; Latin literacy",
+          "linguisticNote": "Enduring German–Slavic linguistic frontier begins here.",
+          "linguisticConfidence": "attested",
+          "ancestryNote": "BA/IA base + early medieval Slavic-related admixture in parts of the east-central zone."
+        },
+        "scandinavia": {
+          "culture": "Viking Age Scandinavia",
+          "color": "#2a4a5a",
+          "mode": "continuity",
+          "description": "Denmark, Norway, and Sweden crystallize as kingdoms amid late Viking expeditions. Conversion from above (Harold Bluetooth’s claim; Olaf Tryggvason; Olaf Haraldsson / St Olaf) collides with local cults and jarl power. Longships still reach the British Isles, Normandy’s kin, and the eastern rivers toward Rus’. Sagas later remember this as the heroic age — archaeogenetics sees continuity from earlier Nordic Iron/Viking samples, not a continent-wide replacement.",
+          "ancestry": {
+            "steppe": 45,
+            "eef": 28,
+            "whg": 22,
+            "other": 5
+          },
+          "substrate": "Germanic IA",
+          "incoming": "Raid/trade returnees",
+          "fused": "Viking Age Scandinavia",
+          "languageFamily": "North Germanic",
+          "languages": "Old Norse (runes & poetry)",
+          "linguisticNote": "Old Norse relatively unified yet dialectally spreading overseas.",
+          "linguisticConfidence": "attested",
+          "ancestryNote": "Nordic IA continuity; diaspora admixed abroad more than at home."
+        },
+        "italy": {
+          "culture": "Carolingian Italy & Byzantine south",
+          "color": "#4a2a3a",
+          "mode": "admixture",
+          "description": "Northern Italy is a mosaic of imperial cities, marches, and Lombard memory under Ottonian oversight; Rome’s papacy is a prize in imperial politics; the south remains Byzantine and, in Sicily, under Islamic rule heading toward Norman conquest in the next century. Trade revival begins in Venetian and Amalfitan circuits. Latin, Greek, and Arabic zones overlap; ancestry is late antique–early medieval Italian continua.",
+          "ancestry": {
+            "eef": 40,
+            "steppe": 26,
+            "whg": 12,
+            "other": 22
+          },
+          "substrate": "Lombard Italy",
+          "incoming": "Frankish / Byzantine / Islamic",
+          "fused": "Early medieval Italy",
+          "languageFamily": "Italo-Romance + Greek + Arabic (Sicily phases)",
+          "languages": "Italian vernaculars; Latin; Greek; Arabic in Sicily",
+          "linguisticNote": "Long-lasting north/south linguistic and cultural split.",
+          "linguisticConfidence": "attested",
+          "ancestryNote": "North–south contrast; Mediterranean “other” higher in south/ports."
+        },
+        "balkans": {
+          "culture": "Byzantium & First Bulgarian Empire",
+          "color": "#3a2a4a",
+          "mode": "admixture",
+          "description": "Byzantium under Basil II (the ‘Bulgar-slayer’) breaks the First Bulgarian Empire and briefly reasserts Balkan hegemony, even as Slavic and Albanian-speaking countrysides persist beneath Greek administration. Croatia and other west Balkan polities navigate papacy, Byzantium, and Hungary. Orthodox liturgy and Church Slavonic shape Slavic Christian culture. Genetics track Balkan early-medieval mixes; the story is imperial reconquest and conversion.",
+          "ancestry": {
+            "eef": 38,
+            "steppe": 24,
+            "whg": 10,
+            "other": 28
+          },
+          "ancestryNote": "High uncertainty by valley/coast; schematic elevated “other.”",
+          "substrate": "Byzantine Balkans",
+          "incoming": "Slavic + Bulgar",
+          "fused": "Early medieval Balkans",
+          "languageFamily": "South Slavic + Greek + Bulgar legacy",
+          "languages": "Old Church Slavonic/South Slavic; Byzantine Greek; Bulgar Turkic elite layer (receding)",
+          "linguisticNote": "Slavic language establishment with complex elite ethnogenesis.",
+          "linguisticConfidence": "attested"
+        },
+        "eastern": {
+          "culture": "Early Rus’ & steppe neighbors",
+          "color": "#3a3028",
+          "mode": "admixture",
+          "description": "Kievan Rus’ under Vladimir the Great adopts Byzantine Christianity (c. 988), tying the Dnieper route to Constantinople’s prestige. Pechenegs and steppe neighbors press the forest-steppe edge; Varangian legends still color elite identity. Further east and south, Khazar afterlives and Turkic steppe politics continue. Deep ancestry remains steppe–farmer–forager ternary with eastern mobility — the millennium’s change is baptism and princely federation.",
+          "ancestry": {
+            "steppe": 35,
+            "eef": 25,
+            "whg": 15,
+            "other": 25
+          },
+          "substrate": "Forest-steppe medieval",
+          "incoming": "Norse + Turkic steppe",
+          "fused": "Early Rus’ world",
+          "languageFamily": "East Slavic + Norse + Turkic",
+          "languages": "Old East Slavic; Old Norse (Varangians); Turkic steppe languages",
+          "linguisticNote": "Rus’ name and elite links Norse; language of the land becomes East Slavic.",
+          "linguisticConfidence": "attested",
+          "ancestryNote": "Forest-steppe mix; Norse signal limited relative to Slavic majority demography in most models."
+        }
+      },
+      "linguistics": "Old Norse / emerging Scandinavian vernaculars; Old English late West Saxon; Old French; Old High German / Latin chancery; Arabic & Romance in Iberia; Greek; Church Slavonic & Old East Slavic; Latin liturgy across the west.",
+      "mapLayers": [
+        {
+          "id": "england-late-as",
+          "label": "Late Anglo-Saxon England",
+          "color": "#3a4a5a",
+          "countries": [
+            "GBR"
+          ],
+          "role": "dominant",
+          "opacity": 0.82,
+          "note": ""
+        },
+        {
+          "id": "celtic-fringe-v",
+          "label": "Celtic kingdoms",
+          "color": "#5a6a4a",
+          "countries": [
+            "IRL",
+            "GBR"
+          ],
+          "role": "fringe",
+          "opacity": 0.45,
+          "note": ""
+        },
+        {
+          "id": "normandy",
+          "label": "Normandy",
+          "color": "#2a3a4a",
+          "countries": [
+            "FRA"
+          ],
+          "role": "incoming",
+          "opacity": 0.55,
+          "note": ""
+        },
+        {
+          "id": "capetian-v",
+          "label": "Capetian royal France",
+          "color": "#1a1a1a",
+          "countries": [
+            "FRA",
+            "BEL"
+          ],
+          "role": "dominant",
+          "opacity": 0.7,
+          "note": ""
+        },
+        {
+          "id": "ottonian",
+          "label": "Ottonian–Salian Reich",
+          "color": "#4a3a2a",
+          "countries": [
+            "DEU",
+            "AUT",
+            "CHE",
+            "NLD",
+            "BEL",
+            "LUX",
+            "CZE"
+          ],
+          "role": "dominant",
+          "opacity": 0.82,
+          "note": ""
+        },
+        {
+          "id": "piast",
+          "label": "Piast Poland",
+          "color": "#6a4a3a",
+          "countries": [
+            "POL"
+          ],
+          "role": "dominant",
+          "opacity": 0.82,
+          "note": ""
+        },
+        {
+          "id": "hungary-stephen",
+          "label": "Árpád Hungary",
+          "color": "#7a5a3a",
+          "countries": [
+            "HUN",
+            "SVK"
+          ],
+          "role": "dominant",
+          "opacity": 0.82,
+          "note": ""
+        },
+        {
+          "id": "denmark-v",
+          "label": "Kingdom of Denmark",
+          "color": "#3f5a6a",
+          "countries": [
+            "DNK"
+          ],
+          "role": "dominant",
+          "opacity": 0.82,
+          "note": ""
+        },
+        {
+          "id": "norway-v",
+          "label": "Kingdom of Norway",
+          "color": "#2f4a5a",
+          "countries": [
+            "NOR"
+          ],
+          "role": "dominant",
+          "opacity": 0.82,
+          "note": ""
+        },
+        {
+          "id": "sweden-v",
+          "label": "Kingdom of Sweden",
+          "color": "#4f6a7a",
+          "countries": [
+            "SWE"
+          ],
+          "role": "dominant",
+          "opacity": 0.82,
+          "note": ""
+        },
+        {
+          "id": "taifa",
+          "label": "Andalusi taifas",
+          "color": "#5a4a2a",
+          "countries": [
+            "ESP"
+          ],
+          "role": "dominant",
+          "opacity": 0.75,
+          "note": ""
+        },
+        {
+          "id": "christian-north",
+          "label": "Christian northern Iberia",
+          "color": "#4a5a3a",
+          "countries": [
+            "ESP",
+            "PRT"
+          ],
+          "role": "incoming",
+          "opacity": 0.55,
+          "note": ""
+        },
+        {
+          "id": "byz-macedonian",
+          "label": "Macedonian Byzantium",
+          "color": "#5a2a3a",
+          "countries": [
+            "GRC",
+            "BGR",
+            "MKD",
+            "ALB",
+            "TUR"
+          ],
+          "role": "dominant",
+          "opacity": 0.82,
+          "note": ""
+        },
+        {
+          "id": "kievan",
+          "label": "Kievan Rus’",
+          "color": "#6a3a3a",
+          "countries": [
+            "UKR",
+            "BLR",
+            "RUS"
+          ],
+          "role": "dominant",
+          "opacity": 0.82,
+          "note": ""
+        },
+        {
+          "id": "croatia-v",
+          "label": "Croatian realm",
+          "color": "#5a4a4a",
+          "countries": [
+            "HRV",
+            "BIH"
+          ],
+          "role": "dominant",
+          "opacity": 0.7,
+          "note": ""
+        },
+        {
+          "id": "italy-imperial",
+          "label": "Imperial & communal Italy",
+          "color": "#4a4a4a",
+          "countries": [
+            "ITA"
+          ],
+          "role": "dominant",
+          "opacity": 0.65,
+          "note": ""
+        },
+        {
+          "id": "sicily-islamic",
+          "label": "Islamic Sicily (late)",
+          "color": "#5a4a3a",
+          "countries": [
+            "ITA"
+          ],
+          "role": "fringe",
+          "opacity": 0.4,
+          "note": ""
+        }
+      ],
+      "tickYear": "1000 AD",
+      "polities": {
+        "GBR": {
+          "name": "England under Æthelred → Cnut",
+          "summary": "Late West Saxon kingship strained by renewed Viking armies; by the 1010s Denmark’s Cnut rules a North Sea empire including England.",
+          "conflicts": "Norse invasions; Welsh and Scottish frontier wars; succession crises after Edgar and Edward the Martyr.",
+          "leaders": "Æthelred II (‘Unready’); Edmund Ironside; Swein Forkbeard; Cnut the Great; Emma of Normandy.",
+          "religion": "Latin Christian kingdom with lingering pagan Norse arrivals converting under royal pressure; cult of local saints.",
+          "culture": "Old English law codes, monastic reform memory (Benedictine), burh towns, and skaldic/Norse contact culture in the Danelaw.",
+          "story": "Danegeld paid to buy off armies becomes a moral tale of weak kingship; Cnut’s empire briefly joins England to Denmark and Norway — remembered in chronicle and later legend as both conquest and ordered Christian rule."
+        },
+        "IRL": {
+          "name": "Irish over-kingships & Norse towns",
+          "summary": "Gaelic túatha and great dynasties (Uí Néill, Dál Cais) compete while Norse-Gaelic ports (Dublin, Waterford) trade and raid.",
+          "conflicts": "Brian Boru’s coalition vs Norse-Dublin and Leinster rivals; endless cattle-tribute politics.",
+          "leaders": "Brian Boru; Máel Sechnaill; Sitric Silkbeard of Dublin.",
+          "religion": "Christian Ireland with powerful monasteries; Norse towns gradually Christianized.",
+          "culture": "Filid poetry, high crosses, illuminated manuscripts; hybrid Norse-Gaelic urban culture.",
+          "story": "Clontarf (1014) becomes Ireland’s great battle-myth: Brian falls at the moment of victory over a Dublin-Norse–Leinster alliance — less ‘national liberation’ than dynastic epic, but endlessly retold."
+        },
+        "FRA": {
+          "name": "Capetian France & Normandy",
+          "summary": "Hugh Capet’s heirs hold Îée-de-France prestige more than territory; dukes of Normandy are Europe’s most dynamic princes.",
+          "conflicts": "Feudal private war; Viking memory along rivers; southern principalities nearly independent.",
+          "leaders": "Hugh Capet; Robert II; Richard II of Normandy; later William the Bastard (still a child/young duke by century’s turn).",
+          "religion": "Latin Christianity reformed by Cluniac monasticism; royal sacral anointing.",
+          "culture": "Emerging Old French epic world; castle-building; monastic schools.",
+          "story": "The Capetians survive by hereditary sacral kingship while Normandy invents the disciplined cavalry duchy that will conquer England in 1066 — a millennium hinge between Viking settlement and high medieval statecraft."
+        },
+        "DEU": {
+          "name": "Ottonian–Salian Holy Roman Empire",
+          "summary": "German kings claim imperial coronation at Rome, rule through stem duchies, and push missions and marches east.",
+          "conflicts": "Slavic frontier wars; Italian campaigns; Magyar wars earlier in the century give way to Hungarian Christian monarchy as neighbor.",
+          "leaders": "Otto III; Henry II; Conrad II (Salian).",
+          "religion": "Imperial Christianity: emperor as protector of the Church, soon colliding with reforming papacy.",
+          "culture": "Ottonian art and illuminated gospels; Latin literacy; palace-chapel ideology (Aachen memory).",
+          "story": "Otto III’s Roman-imperial dream and Henry II’s saintly kingship frame a Reich that is neither nation-state nor mere fiction — elective, sacral, and permanently entangled with Italy."
+        },
+        "DNK": {
+          "name": "Kingdom of Denmark",
+          "summary": "Bluetooth’s Christian claim matures into a kingdom projecting power into England and the Baltic.",
+          "conflicts": "Rivalry with Norway/Sweden; Wendish coasts; English conquest politics.",
+          "leaders": "Harold Bluetooth (memory); Swein Forkbeard; Cnut; Estridsson dynasty beginnings.",
+          "religion": "Royal conversion to Latin Christianity; pagan holdouts in places.",
+          "culture": "Jelling stones as dynasty-and-conversion monuments; ship levies; runic and Latin transition.",
+          "story": "The Jelling inscription’s boast — ‘made the Danes Christian’ — is political theology in stone; Cnut’s English crown makes Denmark briefly a North Sea imperial center."
+        },
+        "NOR": {
+          "name": "Kingdom of Norway",
+          "summary": "Coastal kingship forged by force and baptism; Iceland and Atlantic isles in Norwegian orbit.",
+          "conflicts": "Civil wars among claimants; English and Danish entanglement.",
+          "leaders": "Olaf Tryggvason; Olaf Haraldsson (St Olaf); Cnut’s overlorship phases.",
+          "religion": "Aggressive royal Christianization against local cults.",
+          "culture": "Skaldic verse; later saga memory; fjord levies and merchant farmers.",
+          "story": "St Olaf’s fall at Stiklestad (1030) turns a hard king into Norway’s eternal martyr — conversion sealed by death-story as much as by law."
+        },
+        "SWE": {
+          "name": "Kingdom of Sweden",
+          "summary": "Uppsala kings and regional assemblies inch toward Christian monarchy later than Denmark/Norway.",
+          "conflicts": "Eastern Viking routes; Finnish coasts; Danish rivalry.",
+          "leaders": "Olof Skötkonung (traditionally first Christian king); regional jarls.",
+          "religion": "Pagan cult center at Uppsala persists in memory as baptism spreads unevenly.",
+          "culture": "Mälaren valley power; runestones; trade toward Rus’.",
+          "story": "Sweden’s conversion is slower and more regional — a reminder that ‘Viking Age’ is not one synchronized baptism."
+        },
+        "ESP": {
+          "name": "Andalusi taifas & northern Christian kingdoms",
+          "summary": "After Córdoba’s caliphal collapse, taifa courts glitter while León–Castile, Navarre, and Catalan counts advance.",
+          "conflicts": "Fitna civil wars; Christian tribute systems (parias); shifting frontiers.",
+          "leaders": "Almanzor (late caliphal memory); taifa kings of Seville/Toledo; Alfonso V of León; Sancho of Navarre.",
+          "religion": "Islam in the south; Latin Christianity in the north; Jews as cultural brokers in both.",
+          "culture": "Arabic poetry and science; Mozarabic Christians; Romanesque beginnings in the north.",
+          "story": "The fall of the caliphate turns one of Europe’s richest courts into competing city-kingdoms — brilliance and vulnerability that Christian kings exploit through parias and siege."
+        },
+        "PRT": {
+          "name": "County of Portugal",
+          "summary": "A frontier county of León on the Atlantic edge of the Reconquista, not yet a fully independent kingdom (that crystallizes in the 12th century).",
+          "conflicts": "Raids vs Andalusi neighbors; loyalty politics toward León.",
+          "leaders": "Counts of Portugal under León’s shadow (e.g. Menendo González era memory; later Henry of Burgundy still ahead).",
+          "religion": "Latin Christian frontier society.",
+          "culture": "Atlantic agrarian frontier; pilgrimage roads beginning to matter.",
+          "story": "Portugal’s later independence is seeded in this county’s frontier identity — a small Christian lordship facing the taifa world."
+        },
+        "ITA": {
+          "name": "Imperial Italy, Rome, Byzantine & Islamic south",
+          "summary": "North and center: emperors, popes, and cities; south: Byzantines and Muslim Sicily before Norman conquest.",
+          "conflicts": "Crescentii/ Tusculani Roman factions; imperial–papal tension; Arab raids.",
+          "leaders": "Ottonian emperors in Italy; popes of the age; Byzantine catepans; Kalbid emirs in Sicily.",
+          "religion": "Latin Christianity vs Greek Orthodoxy vs Islam on one peninsula.",
+          "culture": "Manuscript centers; early communal stirrings; Mediterranean trade of Amalfi/Venice.",
+          "story": "Italy at the millennium is Europe’s religious crossroads — three civilizations on one boot — soon to be remade by Norman adventurers."
+        },
+        "POL": {
+          "name": "Piast Poland",
+          "summary": "Mieszko I’s baptism (966) and Bolesław Chrobry’s kingship place Poland inside Latin Christendom’s political club.",
+          "conflicts": "Wars with the Reich, Bohemia, and Kievan Rus’; pagan reaction crises.",
+          "leaders": "Mieszko I; Bolesław I the Brave; early Piast bishops.",
+          "religion": "Latin Christianity newly established; pagan uprisings still possible.",
+          "culture": "Gniezno as sacral center; warrior-duke retinues; missionary politics.",
+          "story": "The Gniezno meeting (1000) with Otto III becomes Poland’s foundational European recognition scene — crown, relics, and imperial friendship as statecraft."
+        },
+        "HUN": {
+          "name": "Árpád Hungary under Stephen I",
+          "summary": "Magyar dukes become a Christian kingdom; Stephen’s crown binds the Carpathian basin to Latin Europe.",
+          "conflicts": "Internal conversion conflicts; German and Polish neighbor politics; steppe remnant pressures.",
+          "leaders": "Géza; Stephen I (St Stephen); early queens and German alliances.",
+          "religion": "Forced and negotiated Christianization; dioceses founded; pagan revolts later in the century.",
+          "culture": "Nomad-origin elite adopting European kingship; Latin clergy; county administration beginnings.",
+          "story": "Stephen’s crown (sent from the pope in tradition) is Hungary’s origin myth of Christian statehood — a steppe people choosing Latin Europe."
+        },
+        "UKR": {
+          "name": "Kievan Rus’",
+          "summary": "Vladimir’s baptism aligns Rus’ with Byzantine Orthodoxy; Kiev sits on the Dnieper trade route ‘from the Varangians to the Greeks.’",
+          "conflicts": "Pecheneg wars; succession among Rurikid princes; Byzantine alliance and friction.",
+          "leaders": "Vladimir the Great; Yaroslav the Wise (rising); Varangian retinues.",
+          "religion": "Byzantine Orthodox conversion; earlier pagan and diverse faiths among elites.",
+          "culture": "Church Slavonic literacy; Scandinavian-Slavic elite fusion; iconic church building.",
+          "story": "The Primary Chronicle’s tale of choosing a faith — testing Islam, Judaism, Western and Eastern Christianity — is literary statecraft: Orthodoxy as civilizational choice."
+        },
+        "RUS": {
+          "name": "Northern Rus’ & Novgorod orbit",
+          "summary": "Forest towns and river routes of northern Rus’ linked to Kiev’s federation and Scandinavian trade.",
+          "conflicts": "Tribute politics among tribes and princes; eastern Finnish/Uralic neighbors.",
+          "leaders": "Local Rurikid princes; Novgorod posadnik traditions forming.",
+          "religion": "Christianization spreading north from Kiev unevenly.",
+          "culture": "Fur trade; wooden towns; bilingual contact zones.",
+          "story": "Novgorod’s later republican myth has roots in this river-road world where merchants and princes bargain under loose Kievan suzerainty."
+        },
+        "GRC": {
+          "name": "Byzantine Empire (Macedonian apex)",
+          "summary": "Basil II’s Byzantium is a military and fiscal superpower reclaiming the Balkans and projecting into the Caucasus and Italy.",
+          "conflicts": "Bulgarian wars; Fatimid frontier; internal court factions.",
+          "leaders": "Basil II; Constantine VIII; military aristocracy.",
+          "religion": "Greek Orthodoxy as imperial ideology; missionary work among Slavs.",
+          "culture": "Macedonian Renaissance learning; Constantinople’s ceremonial majesty.",
+          "story": "Basil’s blinding of Bulgarian captives (as told) is the dark legend of reconquest — empire restored by terror and administration."
+        },
+        "BGR": {
+          "name": "First Bulgarian Empire (final phase)",
+          "summary": "Samuel’s Bulgaria fights Basil II until catastrophic defeat and Byzantine annexation.",
+          "conflicts": "Existential war with Byzantium; shifting capitals and mountain resistance.",
+          "leaders": "Samuel of Bulgaria; last Cometopuli.",
+          "religion": "Slavic Orthodoxy with Bulgarian patriarchal memory.",
+          "culture": "Slavic liturgy; fortress warfare in the western Balkans.",
+          "story": "The end of the First Empire becomes a national epic of resistance — historically a Byzantine reconquest that remaps the Balkans for generations."
         }
       }
     },
@@ -4115,7 +4724,7 @@
           "culture": "Reconquista kingdoms & Nasrid Granada",
           "color": "#4a6a40",
           "mode": "admixture",
-          "description": "Christian kingdoms expand south; Nasrid Granada remains the last Muslim polity until 1492. Resettlement, conversion, and expulsion politics reshape local ancestry and language clines — Castilian, Portuguese, Catalan expand as Arabic retreats.",
+          "description": "Las Navas de Tolosa breaks Almohad hegemony; Castile and Aragon expand; Portugal consolidates Atlantic independence; Granada endures as Islam’s last peninsula foothold. Toledo’s translation culture, military orders, and convivencia under strain shape society. Demography mixes Christian northerners, Andalusi Muslims, and Jews — politics of conquest and confession on medieval Iberian ancestries.",
           "ancestry": {
             "eef": 43,
             "steppe": 26,
@@ -4135,7 +4744,7 @@
           "culture": "Plantagenet England & Celtic fringes",
           "color": "#3a5a48",
           "mode": "continuity",
-          "description": "Norman conquest (1066) installs a French-speaking elite; Plantagenet realm spans England and parts of France. Gene pool remains mostly Anglo-Scandinavian–Brittonic; Norman input is elite-layered. Welsh, Gaelic, and related languages persist on the fringes.",
+          "description": "Norman conquest installs a French-speaking military elite atop an English population; by 1200 the Angevin/Plantagenet realm ties England to half of France until Capetian reconquest. Magna Carta politics, common-law growth, Gothic cathedrals, and crusading culture define the age. Wales faces Edwardian conquest later in the century; Scotland fights for independence; Ireland’s lordship remains incomplete. Genetics: elite Norman input on an early medieval English majority — institutions and language contact change faster than deep ancestry.",
           "ancestry": {
             "steppe": 43,
             "eef": 35,
@@ -4155,7 +4764,7 @@
           "culture": "Capetian Kingdom of France",
           "color": "#2a2a2a",
           "mode": "continuity",
-          "description": "Capetians consolidate a kingdom around the Île-de-France while regional identities (Occitan south, Breton, Basque edge) endure. Deep ancestry stable; French vernacular prestige rises beside Latin.",
+          "description": "Capetian kings from Philip Augustus onward turn a sacred demesne into a territorial state: Normandy seized, Languedoc crushed in the Albigensian Crusade, Louis IX’s holy monarchy, Paris university theology. Gothic architecture radiates from Île-de-France. Occitan culture suffers political defeat without total demographic replacement. Ancestry remains medieval French continua under intensifying royal fiscal-military power.",
           "ancestry": {
             "eef": 38,
             "steppe": 39,
@@ -4175,7 +4784,7 @@
           "culture": "Holy Roman Empire",
           "color": "#3a3a4a",
           "mode": "continuity",
-          "description": "The HRE is a political canopy over German, Bohemian, Italian, and other lands — not a genetic unit. Ostsiedlung moves German speakers eastward into Slavic-inhabited regions. Map color marks the Central European imperial core, not uniform ancestry.",
+          "description": "The Hohenstaufen drama, elective empire, eastward German settlement (Ostsiedlung), Přemyslid/Luxemburg Bohemia, and Piast Poland’s fragmentation-and-reunion fill Central Europe. Towns under Magdeburg law, Minnesang, and crusading orders on the Baltic define culture. Genetics track medieval German, Slavic, and Magyar continua with settler mobility — not a new deep component.",
           "ancestry": {
             "steppe": 40,
             "eef": 38,
@@ -4195,7 +4804,7 @@
           "culture": "Medieval Nordic kingdoms",
           "color": "#2a4a58",
           "mode": "continuity",
-          "description": "Norwegian, Danish, and Swedish Christian kingdoms (Kalmar Union later unites crowns). Ancestry continuous with Viking Age; vernacular laws and sagas mark mature North Germanic languages.",
+          "description": "Christian kingdoms of Denmark, Norway, and Sweden integrate into Latin Europe: archbishoprics, written laws, crusades toward Finland and the eastern Baltic. Old Norse literary culture flowers in Icelandic manuscripts. Ancestry is Nordic medieval continuity after Viking-Age consolidations.",
           "ancestry": {
             "steppe": 44,
             "eef": 28,
@@ -4215,7 +4824,7 @@
           "culture": "Communal Italy & southern dynasties",
           "color": "#5a2a3a",
           "mode": "admixture",
-          "description": "Wealthy north-central communes (Venice, Florence, Genoa, Milan…) versus Norman then Hohenstaufen/Angevin south. Genetic diversity high in ports; linguistic volgare rises toward literary Italian (Tuscan prestige).",
+          "description": "Communal cities, papal monarchy, Frederick II’s Sicilian state, and maritime republics (Venice, Genoa) make Italy Europe’s political laboratory. Mendicant orders remake piety; universities and vernacular poetry rise toward Dante. Ancestry: Italian medieval urban–rural mixes with Mediterranean trade contacts.",
           "ancestry": {
             "eef": 40,
             "steppe": 25,
@@ -4235,7 +4844,7 @@
           "culture": "Byzantine twilight & Balkan kingdoms",
           "color": "#4a3a50",
           "mode": "admixture",
-          "description": "Serbian and Bulgarian kingdoms, Byzantine remnant states, Latin conquest fragments after 1204. Orthodoxy and Slavic literacy shape identity. Ancestry remains a Balkan BA base with Slavic and other medieval layers — religion/language borders imperfectly match genes.",
+          "description": "Byzantium’s Komnenian then Palaiologan struggles; Second Bulgarian Empire; Serbian rise under Nemanjići; Hungarian oversight in Croatia. Orthodox and Catholic frontiers harden. Genetics: Balkan medieval continua; the story is empire, schism, and Slavic kingship.",
           "ancestry": {
             "eef": 38,
             "steppe": 24,
@@ -4255,7 +4864,7 @@
           "culture": "Rus’ principalities under Golden Horde pressure",
           "color": "#4a3828",
           "mode": "admixture",
-          "description": "Fragmented Rus’ lands under Mongol/Golden Horde suzerainty in much of the east. Tribute politics and steppe rule add gene flow in some zones without homogenizing the forest populations. East Slavic varieties continue.",
+          "description": "Kievan Rus’ fragments under princely feuds then Mongol conquest (1237–40); successor principalities and the Golden Horde reorders the east; Lithuania expands into Ruthenian lands. Church Slavonic culture persists under steppe suzerainty. Deep ancestry unchanged in kind; political gravity shifts toward Moscow and Vilnius later.",
           "ancestry": {
             "steppe": 32,
             "eef": 28,
@@ -4595,139 +5204,841 @@
         "FIN": {
           "name": "Swedish realm in Finland",
           "summary": "Swedish crusades/colonization into Finnish lands; local Finnish societies under expanding Swedish rule.",
-          "conflicts": "Conflict with Novgorod for Karelia/eastern Finland; internal incorporation of Finnish tribes into Swedish law and Church."
+          "conflicts": "Conflict with Novgorod for Karelia/eastern Finland; internal incorporation of Finnish tribes into Swedish law and Church.",
+          "leaders": "Swedish regents and bishops directing Finnish crusades/colonization.",
+          "religion": "Latin Christianity spreading among Finnish societies under Swedish rule.",
+          "culture": "Coastal Swedish law towns; inland Finnish agrarian societies.",
+          "story": "The ‘Finnish crusades’ are conquest-and-conversion stories — Sweden’s eastern realm built by cross and castle."
         },
         "SWE": {
           "name": "Kingdom of Sweden",
           "summary": "Christian Swedish kingdom (Folksunga era approaching).",
-          "conflicts": "Rivalry with Denmark and Norway; eastern wars vs Novgorod; Finnish expansion."
+          "conflicts": "Rivalry with Denmark and Norway; eastern wars vs Novgorod; Finnish expansion.",
+          "leaders": "Eric dynasty / Folkung kings (e.g. Birger Jarl’s era in the long 13th c.).",
+          "religion": "Latin Christian kingdom; Uppsala archbishopric.",
+          "culture": "Landscape laws; castle building; Finnish expansion.",
+          "story": "Birger Jarl becomes the realm-builder of later Swedish memory — Stockholm’s founding legend and eastern crusade politics."
         },
         "DNK": {
           "name": "Kingdom of Denmark",
           "summary": "Valdemar-age Danish power in the Baltic.",
-          "conflicts": "Wars with Wends, Holstein, Norway/Sweden; Baltic crusading politics."
+          "conflicts": "Wars with Wends, Holstein, Norway/Sweden; Baltic crusading politics.",
+          "leaders": "Valdemar I; Absalon; Valdemar II.",
+          "religion": "Latin Christian monarchy with strong episcopal partners.",
+          "culture": "Baltic crusading; brick Romanesque/Gothic; Law of Jutland.",
+          "story": "Absalon and the Valdemars turn Denmark into a Baltic crusader kingdom — priest and king as twin founders."
         },
         "NOR": {
           "name": "Kingdom of Norway",
           "summary": "Sverre/Birkebeiner aftermath consolidating monarchy.",
-          "conflicts": "Civil wars earlier; interest in Isles; Danish rivalry."
+          "conflicts": "Civil wars earlier; interest in Isles; Danish rivalry.",
+          "leaders": "Sverre; Håkon IV.",
+          "religion": "Latin Christianity; church–crown civil wars earlier in the century.",
+          "culture": "King’s sagas; coastal trade; North Atlantic isles.",
+          "story": "The civil-war age ends in Håkon’s European-style kingship — Norway briefly looks like a high-medieval state among peers."
         },
         "ISL": {
           "name": "Icelandic Commonwealth",
-          "summary": "Goðar-led Free State before Norwegian submission (1262).",
-          "conflicts": "Internal feuds (Sturlunga); pressure toward Norwegian overlordship."
+          "summary": "Godar chieftaincy republic with Althing; Norwegian royal pressure rising by the 13th c.",
+          "conflicts": "Sturlung Age feuds; later submission to Norway (1262).",
+          "leaders": "Goðar chieftains; Snorri Sturluson in the Sturlung arc.",
+          "religion": "Latin Christianity after 1000 conversion.",
+          "culture": "Saga writing — Europe’s great vernacular prose laboratory.",
+          "story": "The sagas invent a nation’s memory in prose while the commonwealth kills itself into Norwegian rule."
         },
         "GBR": {
           "name": "Plantagenet England",
           "summary": "Angevin/Plantagenet monarchy.",
-          "conflicts": "Wars in France (Angevin lands); Welsh/Scottish wars; baronial conflict."
+          "conflicts": "Wars in France (Angevin lands); Welsh/Scottish wars; baronial conflict.",
+          "leaders": "Henry II; Eleanor of Aquitaine; Richard I; John; Edward I (later in the long high-medieval arc).",
+          "religion": "Latin Christianity; Becket conflict as church-vs-crown archetype; Jewish communities until 1290 expulsion.",
+          "culture": "Angevin law (common law beginnings); Gothic cathedrals; Arthurian romance fashion; Magna Carta politics.",
+          "story": "Becket’s murder in Canterbury (1170) and Magna Carta (1215) become England’s twin stories of sacred blood and baronial bridle on kings."
         },
         "IRL": {
           "name": "Lordship of Ireland / Gaelic Ireland",
           "summary": "English lordship in Pale vs Gaelic kingdoms.",
-          "conflicts": "Continual frontier war between Anglo-Norman lords and Gaelic polities."
+          "conflicts": "Continual frontier war between Anglo-Norman lords and Gaelic polities.",
+          "leaders": "English justiciars; Gaelic kings; Anglo-Norman lords (de Burgh, Fitzgerald beginnings).",
+          "religion": "Latin Christian; reforming church under English and papal pressure.",
+          "culture": "Hybrid marcher culture; bardic learning; castle and tower houses.",
+          "story": "Strongbow’s century-old invasion settles into unfinished conquest — England’s oldest overseas entanglement."
         },
         "FRA": {
           "name": "Capetian France",
           "summary": "Philip Augustus consolidating the domaine royal.",
-          "conflicts": "Wars with Plantagenets/England; Albigensian Crusade in the south; Flemish conflicts."
+          "conflicts": "Wars with Plantagenets/England; Albigensian Crusade in the south; Flemish conflicts.",
+          "leaders": "Philip II Augustus; Louis IX (St Louis); Philip IV the Fair.",
+          "religion": "Catholic monarchy; Albigensian Crusade in the south; university theology in Paris.",
+          "culture": "Gothic invention (Saint-Denis to Chartres); troubadour/trouvère song; royal bureaucracy.",
+          "story": "Philip Augustus wins Bouvines (1214) and takes Normandy — Capetian France becomes a real territorial kingdom, not only a sacred title."
         },
         "DEU": {
           "name": "Holy Roman Empire (German lands)",
           "summary": "Hohenstaufen imperial politics; princes and cities.",
-          "conflicts": "Investiture aftershocks; Italian campaigns; Slavic eastern frontier (Ostsiedlung)."
+          "conflicts": "Investiture aftershocks; Italian campaigns; Slavic eastern frontier (Ostsiedlung).",
+          "leaders": "Frederick Barbarossa; Frederick II; elective princes.",
+          "religion": "Catholic empire; investiture aftershocks; crusading emperors.",
+          "culture": "Minnesang; Kaiser myth; Italian–German political double life.",
+          "story": "Barbarossa’s legend — drowned on crusade, sleeping in a mountain in folklore — outlives the political failure to fully master Italy."
         },
         "CZE": {
-          "name": "Kingdom of Bohemia",
-          "summary": "Přemyslid Bohemia within HRE.",
-          "conflicts": "Imperial politics; Hungarian and Polish rivalries."
+          "name": "Přemyslid Bohemia",
+          "summary": "Kingdom within the Empire; Prague as a rising central European capital.",
+          "conflicts": "Imperial politics; Hungarian and Polish wars; Ottokar’s later expansion and fall.",
+          "leaders": "Přemyslid kings; Ottokar II ('Iron and Gold') in the 13th c. climax.",
+          "religion": "Latin Christianity; rich monastic landscape.",
+          "culture": "Courtly culture; German settlement in towns; Gothic beginnings.",
+          "story": "Ottokar’s rise and Rudolf of Habsburg’s victory (1278) shift Central Europe’s crown toward Habsburg destiny."
         },
         "POL": {
           "name": "Fragmented Poland",
           "summary": "Post-Bolesław fragmentation toward reunification.",
-          "conflicts": "Teutonic Knights on the Baltic; Bohemian/Hungarian neighbors; Mongol invasion (1241)."
+          "conflicts": "Teutonic Knights on the Baltic; Bohemian/Hungarian neighbors; Mongol invasion (1241).",
+          "leaders": "High medieval Piasts; fragmentation among duchies then reunification under Władysław Łokietek / Casimir the Great (long arc).",
+          "religion": "Latin Christianity; monastic orders; Jewish settlement invited in law (Casimir tradition).",
+          "culture": "Knightly culture; Magdeburg law towns.",
+          "story": "Casimir the Great’s later reputation — ‘found Poland of wood, left it of stone’ — crowns the high-medieval Polish arc."
         },
         "LTU": {
           "name": "Grand Duchy of Lithuania",
           "summary": "Pagan Lithuanian expansion under early Gediminids’ precursors.",
-          "conflicts": "Wars with Teutonic/Livonian Orders; Ruthenian expansion; Polish entanglement later."
+          "conflicts": "Wars with Teutonic/Livonian Orders; Ruthenian expansion; Polish entanglement later.",
+          "leaders": "Mindaugas (crowned king 1253); early Gediminid predecessors later.",
+          "religion": "Pagan Lithuania resisting Teutonic baptism-by-sword — conversion still ahead.",
+          "culture": "Baltic warrior dukedom expanding into Rus’ lands.",
+          "story": "Mindaugas’s brief crown is Lithuania’s paradoxical debut: a pagan power baptized for politics, then murdered back into myth."
         },
         "HUN": {
           "name": "Kingdom of Hungary",
           "summary": "Árpád Hungary as a major Central European power.",
-          "conflicts": "Mongol devastation (1241); Balkan and Austrian frontier wars."
+          "conflicts": "Mongol devastation (1241); Balkan and Austrian frontier wars.",
+          "leaders": "Béla III; Andrew II (Golden Bull 1222); Béla IV after the Mongol invasion.",
+          "religion": "Latin Christian realm; Orthodox and steppe minorities.",
+          "culture": "Castle rebuilding after 1241; multiethnic nobility.",
+          "story": "The Mongol invasion (1241) burns the kingdom; Béla IV’s stone-castle program is Hungary’s rebirth story."
         },
         "ESP": {
           "name": "Castile & Aragon",
           "summary": "Christian kingdoms of the Reconquista.",
-          "conflicts": "Wars with Almohads/Nasrids; rivalry between Castile and Aragon; Portuguese independence path."
+          "conflicts": "Wars with Almohads/Nasrids; rivalry between Castile and Aragon; Portuguese independence path.",
+          "leaders": "Alfonso VIII of Castile; James I of Aragon; Ferdinand III; Nasrid founders in Granada.",
+          "religion": "Reconquista Catholicism; Islam in Al-Andalus; Jewish Golden Age fading under pressure.",
+          "culture": "Toledo translation networks; Cantigas; military orders (Santiago, Calatrava).",
+          "story": "Las Navas de Tolosa (1212) breaks Almohad power — the hinge battle of the Iberian Middle Ages."
         },
         "PRT": {
           "name": "Kingdom of Portugal",
           "summary": "Afonsine Portugal after recognition of sovereignty.",
-          "conflicts": "Wars with Castile and Muslim south; Atlantic orientation beginning."
+          "conflicts": "Wars with Castile and Muslim south; Atlantic orientation beginning.",
+          "leaders": "Afonso I; Sancho I; Afonso II/III in the long Reconquista arc.",
+          "religion": "Crusading Catholicism; military orders.",
+          "culture": "Atlantic frontier kingdom; Burgundian dynasty founding myths.",
+          "story": "Ourique and papal recognition stories invent Portugal as a crusader kingdom distinct from León–Castile."
         },
         "ITA": {
           "name": "Communal Italy / southern kingdoms",
           "summary": "Lombard/Tuscan communes; Norman–Hohenstaufen south.",
-          "conflicts": "Guelf–Ghibelline wars; imperial–papal conflict; Venetian–Byzantine rivalry."
+          "conflicts": "Guelf–Ghibelline wars; imperial–papal conflict; Venetian–Byzantine rivalry.",
+          "leaders": "Frederick II in the south; papal rivals; Venetian doges; communal podestà.",
+          "religion": "Papacy at the height of claims; mendicant orders (Francis, Dominic).",
+          "culture": "Communal towers; early universities; vernacular poetry toward Dante.",
+          "story": "Francis of Assisi’s renunciation and the mendicant revolution remake popular piety from Umbrian roads to European cities."
         },
         "GRC": {
           "name": "Frankish Greece / Byzantine remnant",
           "summary": "Latin states after 1204 vs Nicaea/Epirus.",
-          "conflicts": "Fragmentation wars; later Palaiologan recovery."
+          "conflicts": "Fragmentation wars; later Palaiologan recovery.",
+          "leaders": "Byzantine emperors of Nicaea then restored Palaiologoi; Latin emperors in the interlude.",
+          "religion": "Orthodoxy vs Latin occupation after 1204.",
+          "culture": "Exile courts; fragmented Greek lordships; Venetian ports.",
+          "story": "The Fourth Crusade’s sack of Constantinople (1204) is Byzantium’s trauma — Christian conquest of the Christian capital."
         },
         "BGR": {
           "name": "Second Bulgarian Empire",
           "summary": "Asenid Bulgaria.",
-          "conflicts": "Wars with Byzantium/Latins; Hungarian and Serbian neighbors."
+          "conflicts": "Wars with Byzantium/Latins; Hungarian and Serbian neighbors.",
+          "leaders": "Asen dynasty of the Second Bulgarian Empire; Kaloyan; Ivan Asen II.",
+          "religion": "Bulgarian Orthodoxy; temporary union politics with Rome.",
+          "culture": "Tarnovo as ‘third Rome’ claim; fortress churches.",
+          "story": "The uprising of the Asens restores Bulgarian empire between Byzantium and Hungary — a Balkan renaissance of arms."
         },
         "SRB": {
           "name": "Serbian lands",
           "summary": "Nemanjić Serbia rising.",
-          "conflicts": "Expansion vs Byzantium/Bulgaria; later empire under Dušan (13th–14th c. arc)."
+          "conflicts": "Expansion vs Byzantium/Bulgaria; later empire under Dušan (13th–14th c. arc).",
+          "leaders": "Stefan Nemanja; St Sava; Stefan Dušan (14th c. culmination of the arc).",
+          "religion": "Autocephalous Serbian Orthodoxy forged by Sava.",
+          "culture": "Hilandar monastery; law codes; hill-fort capitals.",
+          "story": "St Sava — prince turned archbishop — is Serbia’s culture hero of church and letters."
         },
         "TUR": {
-          "name": "Byzantine / Turkic Anatolia",
-          "summary": "Shrinking Byzantium; rising Turkish beyliks post-Manzikert long arc.",
-          "conflicts": "Frontier war in Anatolia; Crusader complications."
+          "name": "Byzantine / Turkish Anatolia",
+          "summary": "After Manzikert (1071) Anatolia becomes a Seljuk–Byzantine contest; crusaders cut through.",
+          "conflicts": "Seljuk sultanate of Rum; crusader corridors; Byzantine recovery attempts.",
+          "leaders": "Komnenian emperors; Seljuk sultans of Konya.",
+          "religion": "Greek Orthodoxy vs advancing Islam in Anatolia.",
+          "culture": "Frontier emirates; still-Byzantine coasts and cities.",
+          "story": "Manzikert is Byzantium’s Asian undoing — the battle that turns Anatolia into Turkey’s future."
         },
         "RUS": {
           "name": "Vladimir–Suzdal / Novgorod",
           "summary": "Successor Rus’ polities under steppe pressure.",
-          "conflicts": "Mongol/Golden Horde suzerainty; Novgorod–Sweden/Teutonic clashes in the north."
+          "conflicts": "Mongol/Golden Horde suzerainty; Novgorod–Sweden/Teutonic clashes in the north.",
+          "leaders": "Alexander Nevsky; Moscow’s early Daniilovichi rising under Horde oversight.",
+          "religion": "Orthodoxy under Mongol census and tribute.",
+          "culture": "Prince–Horde diplomacy; monastic north; icon tradition.",
+          "story": "Nevsky’s victories over Swedes/Teutonic knights and his Horde pragmatism become Russia’s double lesson: resist the West, bargain with the East."
         },
         "UKR": {
           "name": "Galicia–Volhynia",
           "summary": "Western Rus’ kingdom.",
-          "conflicts": "Mongol pressure; Polish and Hungarian intervention."
+          "conflicts": "Mongol pressure; Polish and Hungarian intervention.",
+          "leaders": "Galicia–Volhynia princes; later Lithuanian overlords as the century turns.",
+          "religion": "Orthodoxy; Mongol political suzerainty after Kiev’s fall.",
+          "culture": "Ruthenian principalities; chronicle writing.",
+          "story": "Kiev’s sack (1240) ends an era; western Rus’ principalities become the bridge to Lithuanian rule."
         },
         "CHE": {
           "name": "Swiss forest cantons",
           "summary": "Early confederation forming (late 13th c. edge).",
-          "conflicts": "Habsburg conflicts define Swiss identity."
+          "conflicts": "Habsburg conflicts define Swiss identity.",
+          "leaders": "Cantonal elites; Habsburg bailiffs as antagonists in legend.",
+          "religion": "Latin Christian alpine communities.",
+          "culture": "Communal oaths; mountain infantry.",
+          "story": "The Rütli oath of later chronicle is Switzerland’s invented founding picnic — the real glue is victory over knights."
         },
         "NLD": {
           "name": "Low Countries principalities",
           "summary": "Flanders, Holland, Brabant etc.",
-          "conflicts": "French/English/Flemish wars; urban revolts."
+          "conflicts": "French/English/Flemish wars; urban revolts.",
+          "leaders": "Counts of Holland/Flanders; prince-bishops; urban magistrates.",
+          "religion": "Latin Christian; dense parish network.",
+          "culture": "Cloth towns; early polder management; trade fairs.",
+          "story": "Flemish cloth and communal power make the Low Countries rich before they are a country."
         }
       }
     },
     {
-      "id": "early-modern",
-      "label": "Early Modern",
-      "era": "Empires & Reformation",
-      "yearLabel": "c. 1600 AD",
-      "yearApprox": 1600,
-      "narrative": "Print, Reformation, and composite monarchies: Spanish/Portuguese global empires, France, England→Britain, Habsburgs, Ottoman Europe, Poland–Lithuania, Sweden’s great-power age, rising Russia. Sovereignty and confession redraw maps; deep autosomal structure still echoes Neolithic and Bronze Age pulses, with Ottoman, imperial, and port-city admixture in specific corridors.",
-      "culturesNote": "Spanish & Portuguese empires, France, England/Britain, Habsburg Mitteleuropa, Ottoman Rumelia, PLC, Sweden, Muscovy/Russia.",
+      "id": "late-medieval",
+      "label": "Late Medieval",
+      "era": "Plague, dynasties, Ottomans",
+      "yearLabel": "c. 1400 AD",
+      "yearApprox": 1400,
+      "narrative": "The later Middle Ages open under the shadow of the Black Death (from 1347) and close toward gunpowder states and Renaissance courts. England and France bleed through the Hundred Years’ War; the Avignon papacy and Schism fracture Latin Christendom’s prestige; Burgundy flowers as a princely superpower; Iberian crowns push Granada; the Ottomans cross into Europe and crush Serbian and Byzantine power toward 1453; Poland and Lithuania join in personal union against the Teutonic Order and the steppe; Muscovy gathers Russian lands after the Golden Horde’s weakening. Culture: Gothic perpendicular and Flamboyant, vernacular literature (Chaucer, Dante’s afterlife, chivalric orders), and intensified devotional religion. Genetics: plague kills on a vast scale but does not invent new deep components — regional continua persist with mobility along war and trade.",
+      "culturesNote": "Hundred Years’ War realms; Burgundy; Crown of Aragon & Castile; Holy Roman mosaic; Jagiellon Poland–Lithuania; Ottoman Rumelia; Muscovy; Italian city-states.",
+      "regions": {
+        "iberia": {
+          "culture": "Reconquista kingdoms & Nasrid Granada",
+          "color": "#4a6a40",
+          "mode": "admixture",
+          "description": "Castile and Aragon (with Catalonia and Valencia) dominate Christian Iberia; Portugal is an Atlantic kingdom; Nasrid Granada survives as Islam’s last Iberian foothold under tribute and raid. Courtly culture mixes crusading ideology with Mediterranean commerce. Jewish and Muslim minorities remain crucial — and increasingly precarious — to urban economies. Ancestry is medieval Iberian continua with North African and earlier layers; politics is dynastic union building toward the Catholic Monarchs.",
+          "ancestry": {
+            "eef": 43,
+            "steppe": 26,
+            "whg": 17,
+            "other": 14
+          },
+          "substrate": "Medieval split Iberia",
+          "incoming": "Reconquista resettlement",
+          "fused": "Late medieval Iberia",
+          "languageFamily": "Ibero-Romance + Arabic + Basque",
+          "languages": "Castilian, Portuguese, Catalan, etc.; Andalusi Arabic; Basque; Latin/Hebrew in domains",
+          "linguisticNote": "Romance victory narrative with lasting Arabic loanwords and toponyms.",
+          "linguisticConfidence": "attested",
+          "ancestryNote": "Shifting clines from medieval contact; post-conquest homogenization incomplete."
+        },
+        "britain": {
+          "culture": "Plantagenet England & Celtic fringes",
+          "color": "#3a5a48",
+          "mode": "continuity",
+          "description": "Plantagenet and then Lancastrian England fights for the French crown while Welsh revolt (Owain Glyndŵr) and Scottish wars flare. The Black Death empties manors and raises labor’s price; vernacular English (Chaucer) claims literary prestige beside French and Latin. Ireland remains a patchwork of English pale and Gaelic lordships. Genetics: plague mortality and mobility, not a new ancestral strand — continuity from high medieval Britain with aristocratic French ties.",
+          "ancestry": {
+            "steppe": 43,
+            "eef": 35,
+            "whg": 16,
+            "other": 6
+          },
+          "substrate": "Anglo-Norman England",
+          "incoming": "Limited elite Norman",
+          "fused": "High medieval Britain",
+          "languageFamily": "English + Anglo-Norman French + Celtic",
+          "languages": "Middle English; Anglo-Norman French; Welsh/Gaelic/Scots/etc.; Latin",
+          "linguisticNote": "Trilingual elite culture; English re-emerges as state language later.",
+          "linguisticConfidence": "attested",
+          "ancestryNote": "Elite Norman layer; majority continuity from early medieval England."
+        },
+        "france": {
+          "culture": "Capetian Kingdom of France",
+          "color": "#2a2a2a",
+          "mode": "continuity",
+          "description": "Valois France fractures under English occupation, civil war (Armagnac–Burgundian), and Jacquerie social revolt, then slowly reconsolidates with gunpowder, taxes, and Joan of Arc’s mythic campaign. Burgundy’s dukes build a glittering state from Flanders to the Jura. Cathedrals, mystery plays, and royal sacral ideology define culture. Demography rebounds unevenly after plague on a Frankish–medieval French gene pool.",
+          "ancestry": {
+            "eef": 38,
+            "steppe": 39,
+            "whg": 16,
+            "other": 7
+          },
+          "substrate": "Frankish/medieval France",
+          "incoming": "—",
+          "fused": "Capetian realm",
+          "languageFamily": "Oïl French + Oc + minorities",
+          "languages": "Old/Middle French; Occitan; Breton; Basque edge; Latin",
+          "linguisticNote": "Langue d’oïl vs oc is a major internal linguistic divide.",
+          "linguisticConfidence": "attested",
+          "ancestryNote": "Medieval France continuity; north/south structure persists."
+        },
+        "central": {
+          "culture": "Holy Roman Empire",
+          "color": "#3a3a4a",
+          "mode": "continuity",
+          "description": "The Holy Roman Empire is elective and plural: Luxemburg and early Habsburg emperors, Bohemian crown lands heading toward Hussite revolution, Swiss confederate victories, Teutonic Order vs Poland–Lithuania (Grünwald/Tannenberg 1410). German towns of the Hansa knit the Baltic. Latin and German law, Gothic art, and university theology (Prague, Vienna) shape elite culture. Ancestry: central European medieval continua.",
+          "ancestry": {
+            "steppe": 40,
+            "eef": 38,
+            "whg": 14,
+            "other": 8
+          },
+          "substrate": "Ottonian/Salian world",
+          "incoming": "Eastward settlement (Ostsiedlung)",
+          "fused": "HRE Central Europe",
+          "languageFamily": "Germanic + Slavic + Romance (Italy) + Latin",
+          "languages": "Middle High German; Czech/Polish/etc.; Italian vernaculars; Latin; Hungarian in the basin",
+          "linguisticNote": "Empire ≠ one language; Latin and German as linking codes.",
+          "linguisticConfidence": "attested",
+          "ancestryNote": "German–Slavic contact zones show admixture; alpine/italian lands differ."
+        },
+        "scandinavia": {
+          "culture": "Medieval Nordic kingdoms",
+          "color": "#2a4a58",
+          "mode": "continuity",
+          "description": "The Kalmar Union (from 1397) binds Denmark, Norway, and Sweden under one monarch in theory, with Swedish resistance never far away. Hanseatic merchants dominate Bergen and Baltic trade; Norwegian royal power wanes. Christianity is firmly Latin; vernacular laws and sagas persist in manuscript. Genetics track Nordic medieval populations — union is political, not a population replacement.",
+          "ancestry": {
+            "steppe": 44,
+            "eef": 28,
+            "whg": 22,
+            "other": 6
+          },
+          "substrate": "Viking Age",
+          "incoming": "—",
+          "fused": "Medieval Norden",
+          "languageFamily": "North Germanic",
+          "languages": "Old Swedish/Danish/Norwegian (diverging); Latin literacy",
+          "linguisticNote": "From Old Norse relative unity to separate medieval standards.",
+          "linguisticConfidence": "attested",
+          "ancestryNote": "Continuous with Viking Age Nordic ternary; Christian medieval kingdoms are political-cultural, not a new genetic pulse."
+        },
+        "italy": {
+          "culture": "Communal Italy & southern dynasties",
+          "color": "#5a2a3a",
+          "mode": "admixture",
+          "description": "Visconti Milan, republican Florence, papal states, Naples, and maritime Venice/Genoa invent Renaissance patronage even before 1400’s end — humanism, vernacular epic, and mercenary condottieri. The south remains an Angevin then Aragonese prize. Urban density and plague shape demography; ancestry is Italian medieval continua with eastern Mediterranean trade contacts.",
+          "ancestry": {
+            "eef": 40,
+            "steppe": 25,
+            "whg": 12,
+            "other": 23
+          },
+          "substrate": "Early medieval Italy",
+          "incoming": "Mediterranean commerce",
+          "fused": "High medieval Italy",
+          "languageFamily": "Italo-Romance",
+          "languages": "Italian dialects/volgare; Latin; Greek remnants in south",
+          "linguisticNote": "Dante’s era crystallizes literary Italian on a dialect continuum.",
+          "linguisticConfidence": "attested",
+          "ancestryNote": "Ports cosmopolitan; hinterlands more local medieval Italian."
+        },
+        "balkans": {
+          "culture": "Byzantine twilight & Balkan kingdoms",
+          "color": "#4a3a50",
+          "mode": "admixture",
+          "description": "Serbian power peaks then falters (Kosovo 1389 in memory and politics); Bulgaria fragments; Byzantium is a rump around Constantinople; Ottoman beys and sultans take Gallipoli, Adrianople, and push north. Orthodox churches keep Slavic and Greek literacy under rising Islamic rule. This is conquest and conversion pressure on Balkan medieval ancestries — a political–religious transformation with gene flow along armies and slave routes, not a Mesolithic reset.",
+          "ancestry": {
+            "eef": 38,
+            "steppe": 24,
+            "whg": 10,
+            "other": 28
+          },
+          "substrate": "Early medieval Balkans",
+          "incoming": "Regional medieval mobility",
+          "fused": "High medieval Balkans",
+          "languageFamily": "South Slavic + Greek + Albanian (emerging in record)",
+          "languages": "Serbian/Bulgarian/etc.; Greek; Albanian; Romance islands; Latin in Catholic zones",
+          "linguisticNote": "Medieval Balkan multilingualism before Ottoman overlay.",
+          "linguisticConfidence": "attested",
+          "ancestryNote": "Microregional mosaics; schematic continuity with early medieval Balkans."
+        },
+        "eastern": {
+          "culture": "Rus’ principalities under Golden Horde pressure",
+          "color": "#4a3828",
+          "mode": "admixture",
+          "description": "The Golden Horde’s grip loosens; Moscow’s princes collect lands ‘of Rus’’ while Lithuania rules vast Ruthenian Orthodox populations under a pagan-then-Catholic elite. Jogaila’s union with Poland (1386) creates a dual realm facing Teutonic and Muscovite rivals. Steppe politics still matter; deep genetics remain eastern European continua with Turkic–Mongol elite layers.",
+          "ancestry": {
+            "steppe": 32,
+            "eef": 28,
+            "whg": 14,
+            "other": 26
+          },
+          "substrate": "Kievan Rus’ descendants",
+          "incoming": "Mongol-era steppe",
+          "fused": "Medieval Eastern Europe",
+          "languageFamily": "East Slavic + Turkic/Mongol courts",
+          "languages": "Old East Slavic varieties; Turkic; Mongol administration languages",
+          "linguisticNote": "Court multilingualism over East Slavic countryside.",
+          "linguisticConfidence": "attested",
+          "ancestryNote": "Medieval East Slavic base + variable steppe/Mongol-era input."
+        }
+      },
+      "linguistics": "Middle English rising in state use; Middle French; Early New High German; Italian vernaculars vs Latin; Castilian/Catalan/Portuguese; Church Slavonic & Ruthenian; Ottoman Turkish administration over Greek/Slavic/Albanian speakers.",
+      "mapLayers": [
+        {
+          "id": "england-hyw",
+          "label": "Lancastrian / late Plantagenet England",
+          "color": "#3a5a48",
+          "countries": [
+            "GBR"
+          ],
+          "role": "dominant",
+          "opacity": 0.82,
+          "note": ""
+        },
+        {
+          "id": "scotland-lm",
+          "label": "Kingdom of Scotland",
+          "color": "#4a6a58",
+          "countries": [
+            "GBR"
+          ],
+          "role": "fringe",
+          "opacity": 0.45,
+          "note": ""
+        },
+        {
+          "id": "ireland-lm",
+          "label": "Gaelic & English Ireland",
+          "color": "#5a6a4a",
+          "countries": [
+            "IRL"
+          ],
+          "role": "dominant",
+          "opacity": 0.7,
+          "note": ""
+        },
+        {
+          "id": "france-valois",
+          "label": "Valois France",
+          "color": "#2a2a2a",
+          "countries": [
+            "FRA",
+            "BEL"
+          ],
+          "role": "dominant",
+          "opacity": 0.75,
+          "note": ""
+        },
+        {
+          "id": "burgundy",
+          "label": "Burgundian lands",
+          "color": "#4a2a3a",
+          "countries": [
+            "FRA",
+            "BEL",
+            "NLD",
+            "LUX"
+          ],
+          "role": "incoming",
+          "opacity": 0.55,
+          "note": ""
+        },
+        {
+          "id": "hre-lm",
+          "label": "Holy Roman Empire",
+          "color": "#5a4a3a",
+          "countries": [
+            "DEU",
+            "AUT",
+            "CHE",
+            "CZE",
+            "NLD",
+            "BEL"
+          ],
+          "role": "dominant",
+          "opacity": 0.7,
+          "note": ""
+        },
+        {
+          "id": "poland-lith",
+          "label": "Poland–Lithuania (union)",
+          "color": "#6a4a2a",
+          "countries": [
+            "POL",
+            "LTU",
+            "BLR",
+            "UKR"
+          ],
+          "role": "dominant",
+          "opacity": 0.75,
+          "note": ""
+        },
+        {
+          "id": "kalmar",
+          "label": "Kalmar Union Scandinavia",
+          "color": "#3f5a6a",
+          "countries": [
+            "DNK",
+            "NOR",
+            "SWE"
+          ],
+          "role": "dominant",
+          "opacity": 0.8,
+          "note": ""
+        },
+        {
+          "id": "castile-lm",
+          "label": "Crown of Castile",
+          "color": "#7a5a2a",
+          "countries": [
+            "ESP"
+          ],
+          "role": "dominant",
+          "opacity": 0.7,
+          "note": ""
+        },
+        {
+          "id": "aragon-lm",
+          "label": "Crown of Aragon",
+          "color": "#6a4a3a",
+          "countries": [
+            "ESP",
+            "ITA"
+          ],
+          "role": "incoming",
+          "opacity": 0.5,
+          "note": ""
+        },
+        {
+          "id": "portugal-lm",
+          "label": "Kingdom of Portugal",
+          "color": "#5a6a3a",
+          "countries": [
+            "PRT"
+          ],
+          "role": "dominant",
+          "opacity": 0.82,
+          "note": ""
+        },
+        {
+          "id": "granada-lm",
+          "label": "Nasrid Granada",
+          "color": "#5a4a2a",
+          "countries": [
+            "ESP"
+          ],
+          "role": "fringe",
+          "opacity": 0.4,
+          "note": ""
+        },
+        {
+          "id": "italy-states",
+          "label": "Italian powers",
+          "color": "#4a4a4a",
+          "countries": [
+            "ITA"
+          ],
+          "role": "dominant",
+          "opacity": 0.7,
+          "note": ""
+        },
+        {
+          "id": "ottoman-lm",
+          "label": "Ottoman advance",
+          "color": "#5a2a2a",
+          "countries": [
+            "GRC",
+            "BGR",
+            "MKD",
+            "ALB",
+            "SRB",
+            "TUR"
+          ],
+          "role": "incoming",
+          "opacity": 0.75,
+          "note": ""
+        },
+        {
+          "id": "byz-rump",
+          "label": "Byzantine rump",
+          "color": "#6a3a4a",
+          "countries": [
+            "GRC",
+            "TUR"
+          ],
+          "role": "substrate",
+          "opacity": 0.4,
+          "note": ""
+        },
+        {
+          "id": "muscovy",
+          "label": "Muscovy",
+          "color": "#6a3a3a",
+          "countries": [
+            "RUS"
+          ],
+          "role": "dominant",
+          "opacity": 0.75,
+          "note": ""
+        },
+        {
+          "id": "hungary-lm",
+          "label": "Kingdom of Hungary",
+          "color": "#7a5a3a",
+          "countries": [
+            "HUN",
+            "SVK",
+            "HRV"
+          ],
+          "role": "dominant",
+          "opacity": 0.7,
+          "note": ""
+        },
+        {
+          "id": "teutonic",
+          "label": "Teutonic Order Prussia",
+          "color": "#4a3a2a",
+          "countries": [
+            "POL",
+            "LTU"
+          ],
+          "role": "fringe",
+          "opacity": 0.35,
+          "note": ""
+        }
+      ],
+      "tickYear": "1400 AD",
+      "polities": {
+        "GBR": {
+          "name": "Kingdom of England (Hundred Years’ War)",
+          "summary": "English kings claim the French crown; longbow armies win Crécy and Agincourt; domestic politics slide toward the Wars of the Roses.",
+          "conflicts": "Hundred Years’ War vs France; Scottish wars; Owain Glyndŵr’s Welsh revolt; later York–Lancaster civil war.",
+          "leaders": "Edward III; the Black Prince; Richard II; Henry IV; Henry V; Henry VI.",
+          "religion": "Latin Christianity under strain of papal Schism; Lollard dissent around Wycliffe’s Bible.",
+          "culture": "Chaucer’s English; chivalric orders (Garter); perpendicular Gothic; growing parliamentary bargaining.",
+          "story": "Agincourt (1415) becomes England’s mud-and-longbow miracle story — a outnumbered army’s victory that Tudor memory later wraps in nation-myth, even as the French war is eventually lost."
+        },
+        "IRL": {
+          "name": "Lordship of Ireland & Gaelic polities",
+          "summary": "English royal lordship holds a pale around Dublin while Gaelic and gaelicized Anglo-Irish lords dominate much of the island.",
+          "conflicts": "Bruce invasion memory; local succession wars; crown neglect during French campaigns.",
+          "leaders": "English lieutenants; great earls (Ormond, Desmond, Kildare rising); Gaelic kings of Tyrone/Thomond etc.",
+          "religion": "Latin Christian; distinctive Gaelic church customs under reforming pressure.",
+          "culture": "Bardic poetry; Brehon law zones; hybrid marcher culture.",
+          "story": "Ireland’s late medieval story is unfinished conquest — enough English law to claim the island, not enough state to hold it."
+        },
+        "FRA": {
+          "name": "Valois France & Burgundy",
+          "summary": "France nearly disintegrates under English invasion and civil war, then reconquers with artillery, taxes, and Joan’s charismatic campaign.",
+          "conflicts": "Hundred Years’ War; Armagnac–Burgundian feud; urban and peasant revolts.",
+          "leaders": "Charles V; Charles VI; Charles VII; Joan of Arc; Philip the Good of Burgundy.",
+          "religion": "Catholic kingdom; Gallican tensions with papacy; popular saint-cult around Joan.",
+          "culture": "Flamboyant Gothic; courtly romance; emerging royal standing army.",
+          "story": "Joan of Arc — peasant visionary who lifts the siege of Orléans and crowns Charles VII — is burned by the English then rehabilitated; France’s sacred rescue narrative."
+        },
+        "DEU": {
+          "name": "Holy Roman Empire (late medieval)",
+          "summary": "Elective emperors, imperial cities, and princely territories; Golden Bull order; Hussite wars shake Bohemia.",
+          "conflicts": "Hussite crusades; Swiss victories vs Habsburgs; princely feuds; Ottoman pressure on the southeast later.",
+          "leaders": "Charles IV; Wenceslaus; Sigismund; early Habsburgs (Albert II, Frederick III).",
+          "religion": "Catholic mainstream; Hussite reform in Bohemia (Utraquists/Taborites); conciliar movement.",
+          "culture": "Hansa trade; Gothic town halls; universities; vernacular German mysticism.",
+          "story": "Jan Hus’s burning at Constance (1415) ignites Bohemia — a proto-Reformation of communion in both kinds, wagon-fort war, and Czech vernacular faith."
+        },
+        "CZE": {
+          "name": "Lands of the Bohemian Crown",
+          "summary": "Luxemburg emperors make Prague a capital of empire; Hussite revolution then reshapes Bohemian politics and confession.",
+          "conflicts": "Hussite wars vs crusading Europe; internal Utraquist–Catholic settlement struggles.",
+          "leaders": "Charles IV; Wenceslaus IV; Jan Hus; Jan Žižka; George of Poděbrady (later).",
+          "religion": "Hussitism as national-religious movement inside/against Latin Christendom.",
+          "culture": "Czech vernacular liturgy and song; Prague university; Gothic St Vitus.",
+          "story": "Žižka’s blind generalship and wagon forts become Czech martial legend — peasants and townsmen beating knightly crusades."
+        },
+        "POL": {
+          "name": "Kingdom of Poland (Jagiellon union)",
+          "summary": "Jogaila’s marriage union with Lithuania creates a dual power that breaks Teutonic expansion at Grünwald (1410).",
+          "conflicts": "Teutonic wars; Muscovite and Tatar frontiers via Lithuania; noble liberty rising.",
+          "leaders": "Władysław II Jagiełło; Vytautas the Great; later Jagiellon kings.",
+          "religion": "Catholic Poland with vast Orthodox Ruthenian populations under Lithuanian rule; pagan Lithuania’s conversion.",
+          "culture": "Latin and Ruthenian chanceries; knightly culture; growing szlachta identity.",
+          "story": "Grünwald/Tannenberg — a multinational Polish–Lithuanian–Ruthenian victory over the Teutonic Order — becomes Central Europe’s great anti-crusader epic."
+        },
+        "LTU": {
+          "name": "Grand Duchy of Lithuania",
+          "summary": "Europe’s last great pagan polity converts via Polish union yet rules mostly Orthodox Ruthenian lands from Vilnius.",
+          "conflicts": "Teutonic crusades; rivalry and cooperation with Muscovy; Tatar alliances/wars.",
+          "leaders": "Jogaila (Władysław II); Vytautas; earlier Gediminids.",
+          "religion": "Catholic conversion of the elite; Orthodox majority in Ruthenian lands; residual pagan memory.",
+          "culture": "Multiethnic duchy; Lithuanian dynasty over Slavic law codes; forest-and-steppe geopolitics.",
+          "story": "Vytautas at the height of his power almost builds a Lithuanian empire from Baltic to Black Sea — a briefly plausible alternate Eastern Europe."
+        },
+        "DNK": {
+          "name": "Kalmar Union (Danish center)",
+          "summary": "Margaret I’s architecture unites Denmark, Norway, and Sweden under one monarch — Danish-led in practice.",
+          "conflicts": "Swedish rebellions; Hanseatic wars; Norwegian dependency.",
+          "leaders": "Margaret I; Eric of Pomerania; later Christian I.",
+          "religion": "Latin Christian monarchies under Roman obedience.",
+          "culture": "Baltic trade; royal castles; German merchant influence in towns.",
+          "story": "Margaret I — ‘lady king’ of the North — engineers Scandinavia’s only durable medieval union, remembered as both peace project and Danish domination."
+        },
+        "SWE": {
+          "name": "Sweden under / against Kalmar",
+          "summary": "Swedish councils accept union then repeatedly rebel; Sture party later champions autonomy.",
+          "conflicts": "Danish royal power; Hanseatic Stockholm politics; Finnish eastern frontier vs Novgorod/Muscovy.",
+          "leaders": "Swedish regents (Sture line later); Engelbrekt’s revolt memory (1430s).",
+          "religion": "Catholic; vernacular piety.",
+          "culture": "Mining (Bergslagen); freeholding farmers; national chronicle beginnings.",
+          "story": "Engelbrekt’s uprising becomes Sweden’s folk-hero revolt against union taxes and foreign bailiffs — a rehearsal of Vasa independence."
+        },
+        "NOR": {
+          "name": "Norway in the Kalmar Union",
+          "summary": "Norwegian royalty fades; the kingdom is the weaker partner under Danish monarchs and Hanseatic Bergen.",
+          "conflicts": "Hansa dominance; black-death demographic shock earlier; loss of Atlantic vigor.",
+          "leaders": "Danish-Norwegian union kings; local magnates.",
+          "religion": "Catholic archbishopric of Nidaros still prestigious.",
+          "culture": "Saga manuscript culture persists; stockfish trade.",
+          "story": "Norway’s late medieval arc is quiet tragedy: from independent sea kingdom to junior union partner — reversed only centuries later."
+        },
+        "ESP": {
+          "name": "Castile & Aragon; Nasrid Granada",
+          "summary": "Trastámara dynasties rule Castile and Aragon; Granada survives as a tributary Islamic emirate.",
+          "conflicts": "Civil wars in Castile; Mediterranean expansion of Aragon (Sicily, Sardinia, Naples ambitions); frontier war with Granada.",
+          "leaders": "John I / Henry III of Castile; Ferdinand I of Aragon; Yusuf/Nasrid emirs.",
+          "religion": "Catholic majorities; Jewish communities under rising pressure; Islam in Granada.",
+          "culture": "Alhambra’s late flowering; Castilian chivalric chronicle; Catalan commercial empire.",
+          "story": "The Alhambra’s lyric courts exist beside a shrinking Islamic polity — beauty as the last act before 1492’s conquest."
+        },
+        "PRT": {
+          "name": "Kingdom of Portugal (Aviz)",
+          "summary": "After the 1385 crisis, Aviz kings secure independence from Castile and look toward Africa (Ceuta 1415).",
+          "conflicts": "Castilian claims; Moroccan raids; Atlantic exploration beginnings under Henry the Navigator’s generation.",
+          "leaders": "John I; Prince Henry the Navigator; Duarte.",
+          "religion": "Crusading Catholicism turned toward Africa.",
+          "culture": "Atlantic seamanship; Gothic Batalha monastery as dynasty monument.",
+          "story": "Aljubarrota (1385) saves Portuguese independence; Ceuta opens the African door that becomes the Age of Discovery."
+        },
+        "ITA": {
+          "name": "Italian regional states",
+          "summary": "Milan, Florence, Venice, the Papacy, and Naples balance in the ‘Italic League’ pattern — brilliant, fragile, mercenary.",
+          "conflicts": "Condottieri wars; Ottoman naval pressure on Venice; Angevin/Aragonese fight for Naples.",
+          "leaders": "Gian Galeazzo Visconti; Cosimo de’ Medici (rising); Venetian doges; rival popes in Schism’s wake.",
+          "religion": "Catholic; conciliar crisis; popular confraternities.",
+          "culture": "Early humanism; Dante/Petrarch/Boccaccio’s legacy; civic patronage.",
+          "story": "Italian cities invent Renaissance modernity while failing to invent a durable Italian state — culture without unification."
+        },
+        "GRC": {
+          "name": "Byzantine rump & Latin leftovers → Ottoman conquest",
+          "summary": "Constantinople’s empire is a shadow waiting for 1453; Frankish and Venetian remnants linger in islands and ports.",
+          "conflicts": "Ottoman siege pressure; civil wars; Western union diplomacy (Florence 1439) that divides Orthodox opinion.",
+          "leaders": "Manuel II; John VIII; Constantine XI (mid-century); Ottoman Murad II / Mehmed II.",
+          "religion": "Orthodoxy under existential threat; bitter debate over union with Rome.",
+          "culture": "Late Byzantine scholarship fleeing westward; monastic Hesychasm.",
+          "story": "The fall of Constantinople (1453) — Mehmed’s cannon vs Constantine XI’s last stand — ends the Roman imperial story in Greek dress and becomes Christendom’s great lament."
+        },
+        "SRB": {
+          "name": "Serbian lands after the empire",
+          "summary": "Post-Dušan fragmentation; Kosovo battle memory; eventual Ottoman subjugation of Serbian despots.",
+          "conflicts": "Ottoman advance; Hungarian alliances; internal magnate splits.",
+          "leaders": "Prince Lazar (memory of Kosovo); despot Stefan Lazarević; later Durad Branković.",
+          "religion": "Serbian Orthodoxy as identity under pressure.",
+          "culture": "Epic poetry cycle of Kosovo; monastery patronage (Morava school).",
+          "story": "Kosovo Polje (1389) becomes Serbia’s central martyrdom epic — historically messy, culturally absolute."
+        },
+        "BGR": {
+          "name": "Bulgarian lands under Ottoman conquest",
+          "summary": "Second Bulgarian Empire’s fragments fall to Ottoman campaigns in the late 14th century.",
+          "conflicts": "Ottoman conquest; resistance and boyar accommodation.",
+          "leaders": "Last Shishmanids; local notables under early Ottoman rule.",
+          "religion": "Orthodoxy under the millet-to-be; Islamization limited at first.",
+          "culture": "Tarnovo literary memory; then Ottoman provincial order.",
+          "story": "The end of medieval Bulgarian statehood is told as nightfall before centuries of foreign rule — a national narrative forged later, rooted in real conquest."
+        },
+        "RUS": {
+          "name": "Grand Principality of Moscow",
+          "summary": "Moscow ‘gathers the Russian lands,’ contests Novgorod, and maneuvers between Horde overlords and Lithuania.",
+          "conflicts": "Wars with Novgorod, Tver, Lithuania; tribute and rebellion vs the Horde (Ugra 1480 still ahead as symbolic end).",
+          "leaders": "Dmitry Donskoy; Vasily I; Vasily II; Ivan III (later in century).",
+          "religion": "Orthodox metropolitanate shifting toward Moscow; monastic colonization of the north.",
+          "culture": "Icon painting; chronicle writing; fortress kremlins.",
+          "story": "Kulikovo (1380) — Dmitry’s victory over a Horde commander — becomes Russia’s first great liberation myth, even though Horde power returns afterward."
+        },
+        "UKR": {
+          "name": "Ruthenian lands under Lithuania",
+          "summary": "Former Kievan territories largely ruled from Vilnius; Orthodox boyars under Lithuanian/Polish union politics.",
+          "conflicts": "Tatar raids; Muscovite claims on ‘Rus’ heritage’; local princely remnants.",
+          "leaders": "Lithuanian grand dukes; Ruthenian princes (Ostroski later prominence).",
+          "religion": "Orthodoxy majority; Catholic elite conversion pressures after Krewo/Horodło.",
+          "culture": "Ruthenian chancery language; fortress towns; steppe border life.",
+          "story": "Who inherits Kiev’s legacy — Moscow or Lithuania’s Rus’ — is the ideological war of the late medieval east."
+        },
+        "HUN": {
+          "name": "Kingdom of Hungary (Anjou → Luxemburg/Habsburg claims)",
+          "summary": "A major Central European kingdom facing Ottoman pressure on its southern frontier after Serbian collapse.",
+          "conflicts": "Ottoman raids; succession crises; baron leagues.",
+          "leaders": "Louis I the Great (memory); Sigismund of Luxemburg; later Hunyadi (mid-century).",
+          "religion": "Catholic realm with Orthodox minorities in the south/east.",
+          "culture": "Chivalric court; Gothic Buda; multiethnic nobility.",
+          "story": "Hungary casts itself as Christendom’s shield; the 15th-century Hunyadi wars turn that claim into cannon-smoke reality."
+        },
+        "NLD": {
+          "name": "Burgundian Netherlands",
+          "summary": "Flanders and the Low Countries under Burgundian dukes become Europe’s richest urban–textile zone.",
+          "conflicts": "Urban revolts; French/English war entanglement; later Habsburg inheritance.",
+          "leaders": "Philip the Bold; John the Fearless; Philip the Good.",
+          "religion": "Dense parish Catholicism; early reform currents still underground.",
+          "culture": "Early Netherlandish painting; cloth towns; pragmatic urban liberties.",
+          "story": "Burgundy’s court — Order of the Golden Fleece, dazzling chronicles — makes the Low Countries a capital of European splendor without being a ‘nation’ yet."
+        },
+        "CHE": {
+          "name": "Swiss Confederation",
+          "summary": "Alpine cantons defeat Habsburg knights and become a fact of European military life.",
+          "conflicts": "Habsburg wars; Burgundian wars (later 15th c.); internal canton politics.",
+          "leaders": "Cantonal elites; legendary William Tell as later national myth layered on real battles (Morgarten, Sempach).",
+          "religion": "Catholic; local saints and fierce communal autonomy.",
+          "culture": "Peasant-soldier reputation; chronicles of liberty.",
+          "story": "Sempach and Morgarten are Switzerland’s founding battle-stories: infantry and terrain beating aristocratic cavalry."
+        },
+        "AUT": {
+          "name": "Habsburg Austrian lands",
+          "summary": "Habsburgs consolidate Alpine duchies and begin their long game for empire and Burgundian inheritance.",
+          "conflicts": "Swiss losses; Bohemian/Hungarian dynastic contests; Ottoman shadow later.",
+          "leaders": "Rudolf IV (memory); Albert II; Frederick III (‘AEIOU’).",
+          "religion": "Catholic dynastic piety.",
+          "culture": "Vienna as rising residence; dynastic marriage strategy elevated to art.",
+          "story": "Frederick III’s cryptic AEIOU and Maximilian’s later Burgundian wedding embody Habsburg doctrine: marry, inherit, outlast."
+        },
+        "TUR": {
+          "name": "Ottoman Sultanate in Europe",
+          "summary": "From Rumelian bases the Ottomans become a European great power before taking Constantinople.",
+          "conflicts": "Wars with Serbia, Bulgaria, Hungary, Byzantium, Venice; Anatolian rivals.",
+          "leaders": "Bayezid I; Mehmed I; Murad II; Mehmed II.",
+          "religion": "Sunni Islam as state; dhimmi system for Christians and Jews.",
+          "culture": "Ghazi warrior ethos evolving into imperial bureaucracy; endowment (waqf) cities.",
+          "story": "The lightning rise from frontier beylik to breaker of Constantinople reorders Europe’s mental map — Islam as a Central European neighbor."
+        }
+      }
+    },
+    {
+      "id": "reformation",
+      "label": "Reformation & Renaissance",
+      "era": "Confessions, empires, print",
+      "yearLabel": "c. 1550 AD",
+      "yearApprox": 1550,
+      "narrative": "By the mid-16th century Europe is split by confession and stitched by dynastic empire. Luther, Calvin, and the Catholic Council of Trent redraw belief; print multiplies argument; Habsburgs claim Spain’s global monarchy and the imperial title; Valois then early Bourbon France fights Habsburg encirclement and its own Wars of Religion; Tudor England breaks with Rome; the Ottomans under Süleyman dominate the Balkans and menace Vienna; Ivan IV’s Muscovy becomes an autocratic Orthodox empire; the Polish–Lithuanian Commonwealth is a noble republic of many faiths; Dutch revolt against Philip II is beginning. Overseas Iberian empires pull silver and souls into European politics. Genetics still sit on medieval continua — conversion and empire move people, but WHG–EEF–steppe deep structure remains.",
+      "culturesNote": "Habsburg Spain & Austria; Valois France; Tudor England; Lutheran North; Ottoman Rumelia; Muscovy; PLC; Italian Mannerism; Portuguese & Spanish oceans.",
       "regions": {
         "iberia": {
           "culture": "Spanish & Portuguese imperial metropoles",
           "color": "#5a1a1a",
           "mode": "admixture",
-          "description": "Unified Spanish monarchy and Portugal run the first global European empires. Metropole ancestry remains European ternary plus historical North African/Sephardic/other edges; massive colonial admixture happens mainly overseas, with limited return gene flow into ports.",
+          "description": "Spain under Charles V and Philip II is a composite global monarchy: Castile’s silver fleets, Aragon’s Mediterranean inheritance, Portuguese dynastic entanglement (Iberian Union from 1580). Catholic reform, Inquisition, and expulsion/forced conversion of Muslims and Jews reshape society after Granada’s fall (1492). Culture: Golden Age letters and severe Habsburg piety. Ancestry: medieval Iberia plus Atlantic/imperial contacts — not a new ternary corner.",
           "ancestry": {
             "eef": 44,
             "steppe": 26,
@@ -4747,7 +6058,7 @@
           "culture": "England → Britain (composite monarchy)",
           "color": "#1a2a3a",
           "mode": "continuity",
-          "description": "Tudor/Stuart state, union of crowns, overseas expansion. Deep ancestry stable; Irish and Scottish structure persist. English becomes a bureaucratic and imperial language.",
+          "description": "Tudor England — Henry VIII’s break with Rome, Edwardine Protestantism, Mary’s Catholic restoration, Elizabeth’s settlement — invents a national church and fights Spain’s Armada decade. Scotland’s Reformation (Knox) and Ireland’s Tudor conquest wars create three different confessional trajectories on closely related islands. Print, Bible English, and Renaissance humanism redefine elite culture on a late medieval English gene pool.",
           "ancestry": {
             "steppe": 42,
             "eef": 36,
@@ -4767,7 +6078,7 @@
           "culture": "Kingdom of France (Ancien Régime)",
           "color": "#1a1a28",
           "mode": "continuity",
-          "description": "Centralizing monarchy over persistent regional diversity (Occitan, Breton, Basque, Germanic Alsace). Genetic north/south structure endures beneath political unity.",
+          "description": "Valois France oscillates between Italian Wars glory and catastrophic Wars of Religion (Catholic League vs Huguenots) after the 1560s. Royal sacral power meets Calvinist nobles and Parisian radicalism; St Bartholomew’s Day becomes a European trauma story. Art and chateaux of the Renaissance coexist with confessional massacre. Demography is French medieval continuity under extreme political violence.",
           "ancestry": {
             "eef": 38,
             "steppe": 38,
@@ -4787,7 +6098,7 @@
           "culture": "Habsburg Central Europe & German states",
           "color": "#2a2a38",
           "mode": "continuity",
-          "description": "Habsburg composite monarchy and fragmented German states after the Reformation. Multilingual courts (German, Czech, Hungarian, Italian, South Slavic…). Ancestry continuous; confessional borders ≠ genetic walls.",
+          "description": "The Holy Roman Empire after the Peace of Augsburg (1555) legalizes cuius regio, eius religio for Lutheran and Catholic princes — a truce before the Thirty Years’ War. Habsburgs hold Austria, Bohemia, Hungary’s remnant against Ottomans; German towns print pamphlets; Swiss cantons host Zwingli/Calvin’s orbits. Culture: confessional schooling, vernacular Bible, and Mannerist courts. Ancestry: central European continua.",
           "ancestry": {
             "steppe": 40,
             "eef": 37,
@@ -4807,7 +6118,7 @@
           "culture": "Swedish great-power age & Denmark–Norway",
           "color": "#1a3a4a",
           "mode": "continuity",
-          "description": "Sweden as a Baltic empire; Denmark–Norway as the western Nordic composite. Genetics continuous with medieval Norden; political power projects language and law abroad more than it reshuffles homeland ancestry.",
+          "description": "Denmark–Norway and Sweden become Lutheran monarchies; Gustav Vasa’s Sweden breaks Kalmar dependency and builds a fiscal-military state. Church lands fund kings; vernacular Bibles standardize speech. Baltic rivalry with Poland and Muscovy replaces union politics. Genetics: Nordic continuity through Reformation institutional change.",
           "ancestry": {
             "steppe": 44,
             "eef": 28,
@@ -4827,7 +6138,7 @@
           "culture": "Spanish/Austrian Italy & independent states",
           "color": "#4a1a28",
           "mode": "continuity",
-          "description": "Fragmented Italy under foreign hegemonies (Spanish, then Austrian in the north) plus Venice, Papal States, Savoy, etc. Renaissance/early modern urban culture; genetic north–south cline already old.",
+          "description": "Italian wars make the peninsula a Habsburg–Valois battlefield; Spanish Naples and Milan, papal Rome’s Counter-Reformation, Venetian maritime republic, and Tuscan ducal courts define politics. High Renaissance and Mannerism radiate artistic norms across Europe even as political independence wanes. Ancestry: Italian urban–rural medieval mixes with Spanish/Imperial elite overlays.",
           "ancestry": {
             "eef": 40,
             "steppe": 25,
@@ -4847,7 +6158,7 @@
           "culture": "Ottoman Europe (Rumelia)",
           "color": "#1a3a30",
           "mode": "admixture",
-          "description": "Ottoman rule across much of the Balkans for centuries. Millet system organizes communities by religion. Anatolian/Turkic and other gene flow appears in some populations alongside durable South Slavic, Greek, Albanian, and Romance substrates — extremely local. Do not invent a uniform “Ottoman genetic %.”",
+          "description": "Ottoman rule is entrenched across much of the Balkans: timar cavalry, millet confessional autonomy for Orthodox Christians and Jews, Islamization uneven by region (stronger in parts of Bosnia, Albania). Hungarian kingdom is split among Habsburg, Ottoman, and Transylvanian pieces after Mohács (1526). Culture: Orthodox monasteries, Sufi orders, and frontier epics. Genetics: Balkan continua plus Ottoman-era mobility.",
           "ancestry": {
             "eef": 36,
             "steppe": 22,
@@ -4867,7 +6178,591 @@
           "culture": "Poland–Lithuania & rising Russia",
           "color": "#2a2820",
           "mode": "admixture",
-          "description": "The Polish–Lithuanian Commonwealth is a multi-ethnic republic (Polish, Lithuanian, Ruthenian, Jewish, German…); Muscovy/Russia expands as an autocratic empire. Forest-steppe ancestries with diverse minorities; language politics follow nobility and church.",
+          "description": "Ivan IV (‘the Terrible’) crowns a tsardom, conquers Kazan and Astrakhan, and opens a violent chapter of autocracy and expansion. The Polish–Lithuanian Commonwealth (Union of Lublin 1569) is a vast elective noble republic tolerating multiple faiths at elite level while binding Ruthenian lands. Cossack frontiers and Tatar raids frame the steppe edge. Deep ancestry remains eastern European; the novelty is tsarist and Commonwealth institutions.",
+          "ancestry": {
+            "steppe": 34,
+            "eef": 30,
+            "whg": 14,
+            "other": 22
+          },
+          "substrate": "Medieval Eastern Europe",
+          "incoming": "Imperial expansions",
+          "fused": "Early modern East",
+          "languageFamily": "West/East Slavic + Baltic + others",
+          "languages": "Polish; Ruthenian/Ukrainian; Russian; Lithuanian; Yiddish; German; Tatar…",
+          "linguisticNote": "PLC nested multilingualism vs Russian imperial centralization later.",
+          "linguisticConfidence": "attested",
+          "ancestryNote": "Slavic-majority demography with Baltic, Finnic, Turkic, and other minorities."
+        }
+      },
+      "linguistics": "Early Modern English; Middle/early modern French; Early New High German; Castilian imperial standard; Italian literary language; Polish & Ruthenian; Church Slavonic/Russian chancery; Ottoman Turkish; Latin still scholarly.",
+      "mapLayers": [
+        {
+          "id": "spain-hab",
+          "label": "Spanish Habsburg monarchy",
+          "color": "#6a3a2a",
+          "countries": [
+            "ESP",
+            "BEL",
+            "NLD",
+            "ITA"
+          ],
+          "role": "dominant",
+          "opacity": 0.75,
+          "note": ""
+        },
+        {
+          "id": "portugal-ref",
+          "label": "Portuguese empire",
+          "color": "#5a6a3a",
+          "countries": [
+            "PRT"
+          ],
+          "role": "dominant",
+          "opacity": 0.82,
+          "note": ""
+        },
+        {
+          "id": "france-valois-r",
+          "label": "Valois France",
+          "color": "#2a2a2a",
+          "countries": [
+            "FRA"
+          ],
+          "role": "dominant",
+          "opacity": 0.82,
+          "note": ""
+        },
+        {
+          "id": "england-tudor",
+          "label": "Tudor England",
+          "color": "#3a5a48",
+          "countries": [
+            "GBR"
+          ],
+          "role": "dominant",
+          "opacity": 0.82,
+          "note": ""
+        },
+        {
+          "id": "ireland-tudor",
+          "label": "Tudor Ireland conquest",
+          "color": "#5a6a4a",
+          "countries": [
+            "IRL"
+          ],
+          "role": "incoming",
+          "opacity": 0.55,
+          "note": ""
+        },
+        {
+          "id": "scotland-ref",
+          "label": "Kingdom of Scotland",
+          "color": "#4a6a58",
+          "countries": [
+            "GBR"
+          ],
+          "role": "fringe",
+          "opacity": 0.4,
+          "note": ""
+        },
+        {
+          "id": "hre-confessional",
+          "label": "Confessional HRE",
+          "color": "#5a4a3a",
+          "countries": [
+            "DEU",
+            "AUT",
+            "CHE",
+            "CZE"
+          ],
+          "role": "dominant",
+          "opacity": 0.7,
+          "note": ""
+        },
+        {
+          "id": "dutch-revolt",
+          "label": "Low Countries (revolt beginning)",
+          "color": "#4a3a5a",
+          "countries": [
+            "NLD",
+            "BEL"
+          ],
+          "role": "incoming",
+          "opacity": 0.5,
+          "note": ""
+        },
+        {
+          "id": "sweden-vasa",
+          "label": "Vasa Sweden",
+          "color": "#3f5a6a",
+          "countries": [
+            "SWE",
+            "FIN"
+          ],
+          "role": "dominant",
+          "opacity": 0.82,
+          "note": ""
+        },
+        {
+          "id": "denmark-nor-r",
+          "label": "Denmark–Norway",
+          "color": "#2f4a5a",
+          "countries": [
+            "DNK",
+            "NOR"
+          ],
+          "role": "dominant",
+          "opacity": 0.82,
+          "note": ""
+        },
+        {
+          "id": "plc-ref",
+          "label": "Polish–Lithuanian Commonwealth",
+          "color": "#6a4a2a",
+          "countries": [
+            "POL",
+            "LTU",
+            "BLR",
+            "UKR"
+          ],
+          "role": "dominant",
+          "opacity": 0.82,
+          "note": ""
+        },
+        {
+          "id": "muscovy-ivan",
+          "label": "Tsardom of Muscovy",
+          "color": "#6a3a3a",
+          "countries": [
+            "RUS"
+          ],
+          "role": "dominant",
+          "opacity": 0.82,
+          "note": ""
+        },
+        {
+          "id": "ottoman-peak",
+          "label": "Ottoman Empire",
+          "color": "#5a2a2a",
+          "countries": [
+            "GRC",
+            "BGR",
+            "MKD",
+            "ALB",
+            "SRB",
+            "ROU",
+            "HUN",
+            "TUR",
+            "HRV"
+          ],
+          "role": "dominant",
+          "opacity": 0.8,
+          "note": ""
+        },
+        {
+          "id": "habsburg-east",
+          "label": "Austrian Habsburgs",
+          "color": "#5a3a3a",
+          "countries": [
+            "AUT",
+            "HUN",
+            "CZE",
+            "SVK",
+            "HRV"
+          ],
+          "role": "incoming",
+          "opacity": 0.55,
+          "note": ""
+        },
+        {
+          "id": "italy-spanish",
+          "label": "Spanish Italy & Papal States",
+          "color": "#4a4a4a",
+          "countries": [
+            "ITA"
+          ],
+          "role": "dominant",
+          "opacity": 0.7,
+          "note": ""
+        },
+        {
+          "id": "switzerland-r",
+          "label": "Swiss Confederation",
+          "color": "#5a4a4a",
+          "countries": [
+            "CHE"
+          ],
+          "role": "dominant",
+          "opacity": 0.65,
+          "note": ""
+        }
+      ],
+      "tickYear": "1550 AD",
+      "polities": {
+        "GBR": {
+          "name": "Tudor England (& Reformation Scotland)",
+          "summary": "Henry VIII’s royal supremacy, Edward’s Protestant turn, Mary’s Catholic restoration, and Elizabeth’s settlement create a confessional rollercoaster; Scotland adopts a Calvinist kirk.",
+          "conflicts": "Rough Wooing vs Scotland; Irish Tudor conquest wars; rivalry with Spain culminating in the Armada (1588).",
+          "leaders": "Henry VIII; Edward VI; Mary I; Elizabeth I; Mary Queen of Scots; John Knox.",
+          "religion": "Church of England via statute; Catholic underground; Puritan pressure; Scottish Presbyterianism.",
+          "culture": "Vernacular Bible and Book of Common Prayer; emerging public theatre (Elizabethan); humanist schools.",
+          "story": "The Armada — storm, fireships, and propaganda — becomes Protestant England’s deliverance myth; Mary Queen of Scots’ scaffold is the tragic counter-story of Catholic royalty."
+        },
+        "IRL": {
+          "name": "Tudor Ireland",
+          "summary": "Surrender-and-regrant and plantation beginnings aim to anglicize Gaelic lordships; resistance culminates later in the Nine Years’ War.",
+          "conflicts": "Desmond rebellions; Shane O’Neill; crown vs Gaelic alliances.",
+          "leaders": "Tudor deputies; Shane O’Neill; earls of Desmond; Hugh O’Neill (later).",
+          "religion": "Catholic population under a Protestant state church newly claimed.",
+          "culture": "Gaelic learned orders under pressure; Pale Englishness vs Gaelic polarity hardening.",
+          "story": "Ireland becomes England’s first long colonial laboratory — Reformation plus conquest, with consequences lasting centuries."
+        },
+        "FRA": {
+          "name": "Valois France in the Wars of Religion",
+          "summary": "Italian Wars prestige collapses into Catholic–Huguenot civil wars; monarchy nearly dissolves before Bourbon recovery.",
+          "conflicts": "Habsburg wars; eight Wars of Religion; St Bartholomew’s Massacre; Catholic League vs Henry of Navarre.",
+          "leaders": "Francis I; Henry II; Catherine de’ Medici; Henry III; Henry IV (Navarre).",
+          "religion": "Catholic majority; Calvinist Huguenot minority with noble leadership; politiques seeking peace.",
+          "culture": "Renaissance chateaux; Rabelais/Montaigne; militant confessional print.",
+          "story": "St Bartholomew’s Day (1572) — wedding turned massacre — scars Europe; Henry IV’s later ‘Paris is worth a mass’ pragmatism ends the nightmare (Edict of Nantes 1598)."
+        },
+        "ESP": {
+          "name": "Spanish Habsburg world monarchy",
+          "summary": "Charles V and Philip II rule Spain, much of Italy, the Low Countries, and American silver — Catholic champion and bankrupt giant.",
+          "conflicts": "Dutch Revolt; Ottoman Mediterranean war (Lepanto 1571); English war; French Habsburg rivalry; Morisco revolt.",
+          "leaders": "Charles V; Philip II; Duke of Alba; Don John of Austria.",
+          "religion": "Tridentine Catholicism; Inquisition; missionary empire.",
+          "culture": "Golden Age literature beginnings; Escorial austerity; global bureaucracy.",
+          "story": "Lepanto is sung as Christian naval triumph; the Dutch Revolt and Armada failure show the limits of Spanish universal monarchy."
+        },
+        "PRT": {
+          "name": "Portuguese Empire (& Iberian Union ahead)",
+          "summary": "Portugal’s Asian and Brazilian routes still enrich the crown; dynastic crisis will hand the realm to Philip II in 1580.",
+          "conflicts": "Ottoman and local Asian rivals; French/English interlopers; Moroccan disaster at Alcácer Quibir (1578).",
+          "leaders": "John III; Sebastian I; Cardinal-King Henry.",
+          "religion": "Catholic missionary orders (Jesuits) as empire’s soft power.",
+          "culture": "Camões’ epic of discovery (Os Lusíadas, 1572); Atlantic Creole ports.",
+          "story": "Sebastian’s death in Morocco becomes the sebastianismo myth — a lost king who will return — while Spain absorbs the Portuguese crown."
+        },
+        "DEU": {
+          "name": "Confessional Holy Roman Empire",
+          "summary": "Augsburg’s peace freezes Lutheran and Catholic princely choice; Calvinists remain legally awkward; print culture never freezes.",
+          "conflicts": "Princely rivalries; Ottoman wars on Habsburg borders; prelude tensions to 1618.",
+          "leaders": "Charles V (earlier); Ferdinand I; Lutheran princes (Saxon/Electorates); Protestant Union / Catholic League seeds.",
+          "religion": "Lutheran / Catholic official duality; Calvinist expansion; Anabaptist memory of persecution.",
+          "culture": "Vernacular Bible; Lutheran chorale; university confessionalization; Dürer’s legacy into Mannerism.",
+          "story": "Luther at Worms (‘here I stand’ in later wording) remains the origin scene; Augsburg 1555 is the exhausted compromise that only postpones a continental war."
+        },
+        "NLD": {
+          "name": "Habsburg Netherlands → Dutch Revolt",
+          "summary": "Rich urban provinces revolt against Philip II’s taxes, troops, and heresy laws; a republic is being born.",
+          "conflicts": "Iconoclastic Fury; Alba’s Council of Blood; siege warfare; William of Orange’s leadership.",
+          "leaders": "William the Silent; Philip II’s governors (Alba, Requesens, Parma); Beggars (Geuzen).",
+          "religion": "Calvinist revolt core; large Catholic populations; radical tolerance experiments in places.",
+          "culture": "Early capitalist trade; print and pamphlets; art before the Golden Age bloom.",
+          "story": "The Sea Beggars’ capture of Brielle (1572) is the revolt’s spark-story — a ragged naval rebel act that unravels Spanish authority in Holland and Zeeland."
+        },
+        "CHE": {
+          "name": "Swiss Confederation (Reformation)",
+          "summary": "Zwingli’s Zurich and Calvin’s Geneva make Switzerland a laboratory of Reformed religion beside Catholic cantons.",
+          "conflicts": "Kappel wars between confessions; mercenary export continues.",
+          "leaders": "Ulrich Zwingli; John Calvin; Catholic Waldstätten elites.",
+          "religion": "Reformed vs Catholic cantonal split — a miniature Europe.",
+          "culture": "Disciplined consistory religion; citizen-soldier myth; printing.",
+          "story": "Calvin’s Geneva — refuge for exiles and exporter of pastors — punches far above its Alpine weight in Atlantic Protestantism."
+        },
+        "ITA": {
+          "name": "Italian states under Habsburg hegemony",
+          "summary": "Spanish Milan and Naples, papal Counter-Reformation Rome, Tuscan dukes, and Venice define a politically subordinated, culturally radiant Italy.",
+          "conflicts": "French residual wars; Ottoman–Venetian sea war; heresy trials.",
+          "leaders": "Cosimo I de’ Medici; papal reformers (Paul III →); Spanish viceroys; Venetian doges.",
+          "religion": "Tridentine Catholicism; Index and Inquisition; Jewish ghettos formalized in places.",
+          "culture": "Late Renaissance/Mannerism; early scientific circles; opera’s eve.",
+          "story": "Rome rebrands as Caput Mundi of Catholic reform while Machiavelli’s earlier mirror of princes teaches Europe a colder politics than the popes prefer."
+        },
+        "SWE": {
+          "name": "Vasa Sweden",
+          "summary": "Gustav Vasa’s hereditary Lutheran monarchy breaks Kalmar and builds a resource state from church lands and copper.",
+          "conflicts": "Danish wars; peasant risings (Dacke); Baltic competition with Russia/Poland.",
+          "leaders": "Gustav Vasa; Eric XIV; John III.",
+          "religion": "Lutheran state church; residual Catholic liturgy fights under John III.",
+          "culture": "National chronicle; fortress modernisation; Finnish eastern marches.",
+          "story": "Gustav’s rebellion against Kristian II (Stockholm Bloodbath memory) is Sweden’s independence epic — blood, tax, and Bible."
+        },
+        "DNK": {
+          "name": "Denmark–Norway (Lutheran)",
+          "summary": "Oldenburg kings run a Lutheran dual monarchy controlling the Øresund toll — Europe’s choke point to the Baltic.",
+          "conflicts": "Swedish independence wars; Baltic rivalry; Norwegian incorporation.",
+          "leaders": "Christian III; Frederick II.",
+          "religion": "Lutheran Reformation imposed after civil war (Count’s Feud).",
+          "culture": "Sound Toll wealth; Renaissance Kronborg; Norwegian dependency.",
+          "story": "Whoever holds the Sound Toll taxes half of northern Europe’s grain and naval stores — Denmark’s geopolitical superpower trick."
+        },
+        "NOR": {
+          "name": "Norway under Denmark",
+          "summary": "A kingdom without its own resident dynasty; Reformation arrives via Copenhagen.",
+          "conflicts": "Danish governors; trade under Hansa then Danish control.",
+          "leaders": "Danish viceroys; local nobles diminished.",
+          "religion": "Lutheran reform from above.",
+          "culture": "Continuing vernacular life; loss of archbishopric independence.",
+          "story": "Norway’s Reformation is an email from Copenhagen — institutional change without a local Luther."
+        },
+        "POL": {
+          "name": "Polish–Lithuanian Commonwealth",
+          "summary": "Union of Lublin (1569) creates a vast elective republic of nobles, multiethnic and (at elite level) multi-confessional.",
+          "conflicts": "Muscovite wars; Baltic contests with Sweden; Ottoman/Tatar south; noble liberty vs royal power.",
+          "leaders": "Sigismund II Augustus; later Henry Valois / Stephen Báthory (election politics).",
+          "religion": "Catholic, Orthodox, Protestant, and Jewish communities under the Warsaw Confederation’s famous tolerance act (1573).",
+          "culture": "Szlachta golden liberty; Latin and Polish Renaissance; Ruthenian borders.",
+          "story": "The Commonwealth’s noble democracy — liberum ideas before the word — is Europe’s alternate modernity: huge, tolerant, and hard to mobilize."
+        },
+        "LTU": {
+          "name": "Lithuania within the Commonwealth",
+          "summary": "The Grand Duchy retains law and identity inside the Lublin union while sharing foreign policy and elective kingship with Poland.",
+          "conflicts": "Muscovite pressure; internal integration with Polish institutions.",
+          "leaders": "Sigismund Augustus as both; Lithuanian magnate families (Radziwiłł).",
+          "religion": "Catholicizing elites; Orthodox and Protestant magnates; Jewish towns.",
+          "culture": "Lithuanian Statutes; bilingual elite world.",
+          "story": "Lublin is both marriage and partial erasure — Lithuanian statehood persists in law while European maps increasingly say ‘Poland.’"
+        },
+        "RUS": {
+          "name": "Tsardom of Russia (Ivan IV)",
+          "summary": "Ivan IV crowns himself tsar, conquers Muslim khanates on the Volga, then unleashes the Oprichnina’s terror.",
+          "conflicts": "Livonian War vs Poland/Sweden; Crimean Tatar sack of Moscow (1571); internal blood purge.",
+          "leaders": "Ivan IV (‘the Terrible’); advisers then victims of the Oprichnina; Yermak’s Cossack Siberia beginnings.",
+          "religion": "Orthodox autocracy; Moscow as ‘Third Rome’ ideology rising.",
+          "culture": "Onion-dome votive architecture; chronicle and terror; eastward conquest.",
+          "story": "Ivan’s killing of his own son (in later tradition) and the Oprichnina make him Europe’s archetype of sacred tyranny — expansion and self-devouring power."
+        },
+        "UKR": {
+          "name": "Ukrainian lands: Commonwealth borderland",
+          "summary": "Ruthenian provinces of the Commonwealth; Cossack militarized frontiers against Tatars and as royal/noble instruments.",
+          "conflicts": "Tatar slave raids; magnate estates; emerging Cossack political identity (rebellions later in the 17th c.).",
+          "leaders": "Wisniowiecki and other magnates; Cossack starshyna forming; Crimean khans as raid-neighbors.",
+          "religion": "Orthodoxy under pressure of Catholic/Uniate projects (Brest 1596 just ahead/around this horizon).",
+          "culture": "Steppe frontier epic; church brotherhoods; bilingual Polish–Ruthenian elite zone.",
+          "story": "The Cossack — freeman warrior of the Dnieper cataracts — becomes Ukraine’s lasting social myth, born on this violent border."
+        },
+        "HUN": {
+          "name": "Hungary divided (Ottoman / Habsburg / Transylvania)",
+          "summary": "After Mohács, the medieval kingdom splits into Habsburg Royal Hungary, Ottoman central occupation, and the Principality of Transylvania.",
+          "conflicts": "Ottoman–Habsburg wars; Transylvanian diplomacy between sultans and emperors.",
+          "leaders": "Ferdinand I Habsburg; János Szapolyai’s line; Ottoman pashas of Buda; Transylvanian princes.",
+          "religion": "Catholic Habsburg west; Protestant strength in Transylvania’s famous tolerance diet; Orthodox Romanians; Islam in Ottoman zones.",
+          "culture": "Frontier fortress warfare; multi-confessional Transylvania as outlier.",
+          "story": "Mohács (1526) — two hours that kill a king and shatter a kingdom — is Hungary’s national catastrophe date."
+        },
+        "AUT": {
+          "name": "Austrian Habsburg core",
+          "summary": "Vienna’s Habsburgs defend and administer the Danube frontier while claiming the imperial title and Spanish kinship.",
+          "conflicts": "Ottoman sieges (1529 memory); German princely politics; Bohemian crown lands.",
+          "leaders": "Ferdinand I; Maximilian II; Spanish kin Philip II.",
+          "religion": "Catholic dynasty with temporarily tolerant Maximilian; Jesuit education rising.",
+          "culture": "Danubian court; defensive military frontier (Grenze).",
+          "story": "The 1529 Ottoman siege of Vienna teaches Europe that the Turk can reach the heart of the Reich — fear as policy."
+        },
+        "GRC": {
+          "name": "Ottoman Greece",
+          "summary": "Greek lands under Ottoman provinces; Orthodox Patriarchate in Constantinople as millet head; islands partly Venetian.",
+          "conflicts": "Venetian–Ottoman wars; local bandit/klepht beginnings; tax and conversion pressures.",
+          "leaders": "Ecumenical Patriarchs; Ottoman governors; Venetian captains in the islands.",
+          "religion": "Greek Orthodoxy under Islamic sovereignty; crypto-Christianity debates in places.",
+          "culture": "Post-Byzantine painting; folk song; diaspora merchants.",
+          "story": "The ‘secret school’ legend of keeping Greek letters alive under Ottoman rule is later nation-myth — literacy and liturgy did persist, unevenly, through church structures."
+        },
+        "BGR": {
+          "name": "Ottoman Bulgaria",
+          "summary": "Bulgarian lands as Ottoman provinces; Orthodox church life continues under the Patriarchate.",
+          "conflicts": "Local uprisings occasional; integration into Ottoman fiscal systems.",
+          "leaders": "Ottoman officials; Orthodox bishops; local çorbacı notables.",
+          "religion": "Orthodoxy; gradual Islamization in some regions.",
+          "culture": "Village Christian culture; Ottoman townscapes.",
+          "story": "Bulgarian national revival is centuries away; this is the long Ottoman night of later historiography — daily life more continuous than the metaphor suggests."
+        },
+        "SRB": {
+          "name": "Ottoman Serbia (& Habsburg fringe)",
+          "summary": "Serbian lands largely Ottoman; patriarchate of Peć sometimes restored as communal focus; migrations north toward Habsburg lands begin in pulses.",
+          "conflicts": "Ottoman–Habsburg wars; local knez autonomy pockets.",
+          "leaders": "Ottoman pashas; Serbian patriarchs; hajduk outlaw-heroes in folk song.",
+          "religion": "Southern Slavic Orthodoxy under millet structures.",
+          "culture": "Epic gusle poetry; monastery refuges.",
+          "story": "The hajduk — outlaw resistance figure — becomes the folk counter-state when there is no Serbian kingdom on the map."
+        },
+        "TUR": {
+          "name": "Ottoman imperial center",
+          "summary": "Süleyman’s empire straddles three continents; Istanbul is a world capital of law, architecture, and war.",
+          "conflicts": "Safavid wars; Habsburg frontier; Mediterranean rivalry with Spain/Venice; Indian Ocean contests with Portugal.",
+          "leaders": "Süleyman the Magnificent; grand viziers (e.g. Rüstem, Sokollu); Hürrem Sultan in court politics.",
+          "religion": "Sunni Islam (Hanafi law); protected Christian and Jewish millets; Sufi orders.",
+          "culture": "Sinan’s mosques; kanun law beside sharia; multilingual palace.",
+          "story": "Süleyman before Vienna and at Mohács makes the sultan Europe’s indispensable villain and diplomat — the ‘Magnificent’ as mirror to Charles V."
+        },
+        "BEL": {
+          "name": "Southern Netherlands (Spanish)",
+          "summary": "The Catholic southern provinces reconquered by Parma remain under Spanish Habsburgs as Antwerp’s golden age wanes.",
+          "conflicts": "Dutch Revolt warfare; religious cleansing northward migration of Protestants.",
+          "leaders": "Duke of Parma (Alexander Farnese); Spanish governors.",
+          "religion": "Tridentine Catholic restoration.",
+          "culture": "Flemish painting still luminous; commercial shift toward Amsterdam.",
+          "story": "Antwerp’s fall and Protestant exodus help invent Amsterdam’s boom — a tale of two Low Countries."
+        }
+      }
+    },
+    {
+      "id": "early-modern",
+      "label": "Early Modern",
+      "era": "Empires & Reformation",
+      "yearLabel": "c. 1600 AD",
+      "yearApprox": 1600,
+      "narrative": "Print, Reformation, and composite monarchies: Spanish/Portuguese global empires, France, England→Britain, Habsburgs, Ottoman Europe, Poland–Lithuania, Sweden’s great-power age, rising Russia. Sovereignty and confession redraw maps; deep autosomal structure still echoes Neolithic and Bronze Age pulses, with Ottoman, imperial, and port-city admixture in specific corridors.",
+      "culturesNote": "Spanish & Portuguese empires, France, England/Britain, Habsburg Mitteleuropa, Ottoman Rumelia, PLC, Sweden, Muscovy/Russia.",
+      "regions": {
+        "iberia": {
+          "culture": "Spanish & Portuguese imperial metropoles",
+          "color": "#5a1a1a",
+          "mode": "admixture",
+          "description": "Spanish Habsburgs preside over a global monarchy already feeling overstretch: Dutch war, Catalan and Portuguese revolts, literary Golden Age, and American silver. Portugal restores independence in 1640 after Iberian Union. Demography: plague, emigration to empire, and Morisco expulsions earlier reshape society on medieval Iberian ancestries.",
+          "ancestry": {
+            "eef": 44,
+            "steppe": 26,
+            "whg": 17,
+            "other": 13
+          },
+          "substrate": "Late medieval Iberia",
+          "incoming": "Limited global return gene flow",
+          "fused": "Early modern Iberia",
+          "languageFamily": "Ibero-Romance",
+          "languages": "Spanish, Portuguese (+ Catalan, Galician, Basque)",
+          "linguisticNote": "Castilian and Portuguese become world languages from these metropoles.",
+          "linguisticConfidence": "attested",
+          "ancestryNote": "Early modern Iberia ≈ late medieval clines + port diversity; empires transform the Americas more than Iberian deep ancestry."
+        },
+        "britain": {
+          "culture": "England → Britain (composite monarchy)",
+          "color": "#1a2a3a",
+          "mode": "continuity",
+          "description": "Union of Crowns (1603) joins Scotland and England under one monarch while Ireland’s conquest and plantation deepen. Civil war, regicide, republic, and Restoration rewrite the meaning of kingship; Navigation Acts and colonies pull the islands into Atlantic empire. Confessional conflict (Anglican, Puritan, Presbyterian, Catholic) is the political language of the century. Genetics: early modern British continua with Irish war demography and growing colonial entanglement — still the medieval ternary at depth.",
+          "ancestry": {
+            "steppe": 42,
+            "eef": 36,
+            "whg": 16,
+            "other": 6
+          },
+          "substrate": "Medieval Britain",
+          "incoming": "—",
+          "fused": "Early modern Britain",
+          "languageFamily": "English (Germanic) + Celtic minorities",
+          "languages": "Early Modern English; Welsh, Irish, Scottish Gaelic, Scots…",
+          "linguisticNote": "English standardization (print, Bible, administration).",
+          "linguisticConfidence": "attested",
+          "ancestryNote": "Early modern continuity with medieval Britain; later empire-era migration still limited vs 20th c."
+        },
+        "france": {
+          "culture": "Kingdom of France (Ancien Régime)",
+          "color": "#1a1a28",
+          "mode": "continuity",
+          "description": "From Henry IV’s reconstruction through Richelieu and toward Louis XIV, France invents fiscal-military absolutism, tames Huguenot military power, and enters the Thirty Years’ War as a great power. Classical French culture and Versailles politics (later in the century) radiate norms. Ancestry: French medieval continuity under state centralization and war mortality.",
+          "ancestry": {
+            "eef": 38,
+            "steppe": 38,
+            "whg": 16,
+            "other": 8
+          },
+          "substrate": "Medieval France",
+          "incoming": "—",
+          "fused": "Ancien Régime France",
+          "languageFamily": "French (Romance) + regional languages",
+          "languages": "Classical French standardizing; Occitan, Breton, Basque, German dialects, etc.",
+          "linguisticNote": "State language policy begins long pressure on regional langues.",
+          "linguisticConfidence": "attested",
+          "ancestryNote": "Regional deep structure under one polity label."
+        },
+        "central": {
+          "culture": "Habsburg Central Europe & German states",
+          "color": "#2a2a38",
+          "mode": "continuity",
+          "description": "The Thirty Years’ War guts the Holy Roman Empire; Westphalia (1648) legalizes confessional plurality and strengthens princes. Habsburgs refocus on Austria/Bohemia/Hungary and the Ottoman frontier; Brandenburg rises. Culture: baroque rebuilding on demographic ruin. Genetics: war losses and mobility without a new deep ancestral strand.",
+          "ancestry": {
+            "steppe": 40,
+            "eef": 37,
+            "whg": 14,
+            "other": 9
+          },
+          "substrate": "Medieval HRE",
+          "incoming": "Ottoman-war displacements",
+          "fused": "Early modern Mitteleuropa",
+          "languageFamily": "German + many Central European languages",
+          "languages": "Early New High German; Czech; Hungarian; Polish; Yiddish; Italian; etc.",
+          "linguisticNote": "Habsburg multilingualism as governance reality.",
+          "linguisticConfidence": "attested",
+          "ancestryNote": "Early modern Mitteleuropa continuity + war displacements."
+        },
+        "scandinavia": {
+          "culture": "Swedish great-power age & Denmark–Norway",
+          "color": "#1a3a4a",
+          "mode": "continuity",
+          "description": "Sweden’s great-power century (Gustavus Adolphus to Charles XII’s eve) dominates the Baltic; Denmark–Norway defends the Sound; Finland is Sweden’s eastern wing. Lutheran orthodoxy and military conscription define society. Ancestry: Nordic continua under imperial Swedish extraction of men and copper.",
+          "ancestry": {
+            "steppe": 44,
+            "eef": 28,
+            "whg": 22,
+            "other": 6
+          },
+          "substrate": "Medieval Scandinavia",
+          "incoming": "Baltic imperial mobility",
+          "fused": "Early modern Norden",
+          "languageFamily": "North Germanic",
+          "languages": "Swedish, Danish, Norwegian (standards emerging)",
+          "linguisticNote": "Bible translations and chanceries fix standards.",
+          "linguisticConfidence": "attested",
+          "ancestryNote": "Continuous with medieval Norden; great-power wars move armies more than they reset homeland ancestry."
+        },
+        "italy": {
+          "culture": "Spanish/Austrian Italy & independent states",
+          "color": "#4a1a28",
+          "mode": "continuity",
+          "description": "Spanish Habsburg hegemony over Milan and Naples; papal baroque Rome; Venetian twilight; Savoy’s slow rise. Galileo’s trial and baroque art make Italy Europe’s cultural exporter and political dependent. Ancestry: Italian early modern continua with Spanish elite overlays.",
+          "ancestry": {
+            "eef": 40,
+            "steppe": 25,
+            "whg": 12,
+            "other": 23
+          },
+          "substrate": "Renaissance Italy",
+          "incoming": "—",
+          "fused": "Early modern Italy",
+          "languageFamily": "Italo-Romance",
+          "languages": "Italian (Tuscan prestige); dialects; Latin learned",
+          "linguisticNote": "Literary Italian without political unity yet.",
+          "linguisticConfidence": "attested",
+          "ancestryNote": "Stable north–south structure; ports remain diverse."
+        },
+        "balkans": {
+          "culture": "Ottoman Europe (Rumelia)",
+          "color": "#1a3a30",
+          "mode": "admixture",
+          "description": "Ottoman rule remains the political frame for much of the Balkans; Habsburg–Ottoman wars pulse along the Military Frontier; Orthodox millets organize Christian life. Islamization varies by region. Genetics: Balkan continua plus frontier resettlements.",
+          "ancestry": {
+            "eef": 36,
+            "steppe": 22,
+            "whg": 10,
+            "other": 32
+          },
+          "ancestryNote": "Elevated “other” as uncertainty band for Ottoman-era inputs; microregional.",
+          "substrate": "Medieval Balkans",
+          "incoming": "Ottoman-era Anatolian/diverse",
+          "fused": "Ottoman Balkans",
+          "languageFamily": "Ottoman multilingual",
+          "languages": "Ottoman Turkish; South Slavic; Greek; Albanian; Romance (e.g. Vlach); others",
+          "linguisticNote": "Imperial Turkish + local vernaculars; religion often structures language domains.",
+          "linguisticConfidence": "attested"
+        },
+        "eastern": {
+          "culture": "Poland–Lithuania & rising Russia",
+          "color": "#2a2820",
+          "mode": "admixture",
+          "description": "Russia exits the Time of Troubles into Romanov consolidation and begins to press Poland and Siberia; the Commonwealth enters the Deluge’s disasters; Cossack uprisings remake Ukraine’s politics. Deep ancestry unchanged in kind; the story is serfdom, autocracy, and noble republic in collision.",
           "ancestry": {
             "steppe": 34,
             "eef": 30,
@@ -5107,67 +7002,173 @@
         "ESP": {
           "name": "Spanish Habsburg monarchy",
           "summary": "Global empire from Iberian core.",
-          "conflicts": "Dutch Revolt; wars with France/England; Ottoman Mediterranean war."
+          "conflicts": "Dutch Revolt; wars with France/England; Ottoman Mediterranean war.",
+          "leaders": "Philip III; Philip IV; Olivares; continuing Habsburg line.",
+          "religion": "Baroque Catholicism; Inquisition still active.",
+          "culture": "Cervantes; Velázquez; imperial overstretch.",
+          "story": "Don Quixote (1605) laughs a tired empire into world literature while silver fleets and bankruptcies continue offstage."
         },
         "PRT": {
           "name": "Portuguese Empire",
           "summary": "Atlantic/Indian Ocean empire; Iberian Union 1580–1640.",
-          "conflicts": "Dutch conflicts overseas; Spanish dynastic entanglement."
+          "conflicts": "Dutch conflicts overseas; Spanish dynastic entanglement.",
+          "leaders": "Philip III of Spain during Iberian Union phases; Portuguese restoration leaders later (1640).",
+          "religion": "Catholic empire; Inquisition.",
+          "culture": "Atlantic/Indian Ocean colonial administration.",
+          "story": "The 1640 restoration against Spain becomes Portugal’s second independence epic."
         },
         "FRA": {
           "name": "Kingdom of France",
           "summary": "Wars of Religion into Bourbon consolidation.",
-          "conflicts": "Habsburg encirclement wars; later Thirty Years’ involvement."
+          "conflicts": "Habsburg encirclement wars; later Thirty Years’ involvement.",
+          "leaders": "Henry IV; Richelieu; Louis XIV (later flowering from mid-century).",
+          "religion": "Edict of Nantes coexistence then later revocation trajectory; Catholic reform.",
+          "culture": "Classical French taste forming; absolutist administration.",
+          "story": "Richelieu’s state-within-the-state and the siege of La Rochelle dramatize the taming of armed faith for royal sovereignty."
         },
         "GBR": {
           "name": "England → Britain",
           "summary": "Tudor/Stuart state; union of crowns 1603.",
-          "conflicts": "Anglo-Spanish war; Irish conquest; civil wars mid-century."
+          "conflicts": "Anglo-Spanish war; Irish conquest; civil wars mid-century.",
+          "leaders": "Elizabeth I (late); James VI & I; Charles I; Cromwell; William & Mary (long 17th-c. arc around the 1600 tick).",
+          "religion": "Protestant settlements; Puritan revolution; Catholic minorities; Scottish kirk conflicts.",
+          "culture": "Shakespearean stage; scientific circles toward the Royal Society; Atlantic colonization.",
+          "story": "The Civil War and regicide of Charles I shock Europe — a king tried by his people — before Restoration and Glorious Revolution redefine monarchy."
         },
         "NLD": {
           "name": "Dutch Republic",
           "summary": "Independent after revolt from Spain.",
-          "conflicts": "Eighty Years’ War; Anglo-Dutch wars; colonial rivalry."
+          "conflicts": "Eighty Years’ War; Anglo-Dutch wars; colonial rivalry.",
+          "leaders": "Oldenbarnevelt; Maurice of Nassau; later Johan de Witt / William III arc.",
+          "religion": "Public Calvinism with notable practical tolerance in cities.",
+          "culture": "Dutch Golden Age art (Rembrandt, Vermeer); global VOC capitalism.",
+          "story": "A republic of US merchants defeats Spain and paints light onto canvas — Europe’s miracle of bourgeois power."
         },
         "DEU": {
           "name": "German states / Thirty Years’ War arena",
           "summary": "Fragmented HRE principalities.",
-          "conflicts": "Catastrophic confessional wars 1618–1648."
+          "conflicts": "Catastrophic confessional wars 1618–1648.",
+          "leaders": "Ferdinand II; Gustavus Adolphus (as intervention); Wallenstein; Peace of Westphalia princes.",
+          "religion": "Catholic, Lutheran, Calvinist legally recognized after 1648; enormous war trauma.",
+          "culture": "Devastation and rebuilding; early Pietism seeds; territorial absolutisms.",
+          "story": "The Thirty Years’ War — Europe’s dress rehearsal for total war — ends in Westphalia’s patchwork peace that teaches cuius regio on a ruined map."
         },
         "AUT": {
           "name": "Habsburg Austria",
           "summary": "Danubian Habsburg power.",
-          "conflicts": "Ottoman wars (Vienna 1683 arc); rivalry with France."
+          "conflicts": "Ottoman wars (Vienna 1683 arc); rivalry with France.",
+          "leaders": "Ferdinand II/III; Leopold I.",
+          "religion": "Catholic Reform; Jesuit baroque.",
+          "culture": "Court at Vienna; Ottoman wars (1683 still ahead of/around long 17th c.).",
+          "story": "The 1683 relief of Vienna becomes Habsburg Christendom’s last great cavalry epic."
         },
         "SWE": {
           "name": "Swedish Empire",
           "summary": "Great-power Sweden (Gustavus Adolphus).",
-          "conflicts": "Wars in Germany, Poland, Russia; Baltic dominance struggle."
+          "conflicts": "Wars in Germany, Poland, Russia; Baltic dominance struggle.",
+          "leaders": "Gustavus Adolphus; Christina; Charles X/XI beginnings.",
+          "religion": "Lutheran great power.",
+          "culture": "Military innovation; Baltic empire; Uppsala learning.",
+          "story": "Gustavus Adolphus — ‘Lion of the North’ — dies at Lützen as Sweden briefly decides Germany’s fate."
         },
         "DNK": {
           "name": "Denmark–Norway",
           "summary": "Kalmar aftermath; Danish composite state.",
-          "conflicts": "Wars with Sweden for Baltic supremacy."
+          "conflicts": "Wars with Sweden for Baltic supremacy.",
+          "leaders": "Christian IV; Frederick III (absolutism after 1660).",
+          "religion": "Lutheran monarchy.",
+          "culture": "Øresund wealth; wars with Sweden.",
+          "story": "Christian IV’s wars and building spree — ambition that overreaches against rising Sweden."
         },
         "POL": {
           "name": "Poland–Lithuania (PLC)",
           "summary": "Elective monarchy, multi-ethnic republic.",
-          "conflicts": "Wars with Sweden, Russia, Ottomans; mid-century Deluge."
+          "conflicts": "Wars with Sweden, Russia, Ottomans; mid-century Deluge.",
+          "leaders": "Sigismund III Vasa; Władysław IV; John II Casimir (Deluge era).",
+          "religion": "Catholic Counter-Reformation strengthening; Orthodox and Protestant nobles under pressure.",
+          "culture": "Sarmatian noble ideology; elected monarchy; huge multiethnic realm.",
+          "story": "The mid-17th-century Deluge — Swedish invasion devastating the Commonwealth — marks the turn from golden liberty to long decline."
         },
         "RUS": {
           "name": "Tsardom of Russia",
           "summary": "Muscovy to early empire.",
-          "conflicts": "Polish wars; conquest of khanates; Baltic ambitions."
+          "conflicts": "Polish wars; conquest of khanates; Baltic ambitions.",
+          "leaders": "Boris Godunov; Time of Troubles claimants; Romanov founding (Michael).",
+          "religion": "Orthodox; patriarchal institution; Uniate conflict to the west.",
+          "culture": "After Troubles consolidation; icons and bells; serfdom hardening.",
+          "story": "The Time of Troubles — famine, false Dmitrys, Polish occupation of Moscow — ends with a new Romanov dynasty elected from desperation."
         },
         "TUR": {
           "name": "Ottoman Empire",
           "summary": "Peak/early stagnation Ottoman power.",
-          "conflicts": "Wars with Habsburgs, Safavids, Venice; Mediterranean & Balkan control."
+          "conflicts": "Wars with Habsburgs, Safavids, Venice; Mediterranean & Balkan control.",
+          "leaders": "Ahmed I; Köprülü viziers later; sultans of the post-Süleyman plateau.",
+          "religion": "Sunni imperial Islam; millet continuities.",
+          "culture": "Tulip-era still ahead; classical Ottoman architecture’s afterglow; Mediterranean and Central European war rhythm.",
+          "story": "Ottoman pressure and Habsburg defense set the tempo of southeastern European life long after Süleyman’s death."
         },
         "ITA": {
           "name": "Spanish/Austrian Italy & states",
           "summary": "Fragmented Italy under foreign hegemony.",
-          "conflicts": "Dynastic wars; Savoy rising."
+          "conflicts": "Dynastic wars; Savoy rising.",
+          "leaders": "Spanish viceroys; popes; Savoy dukes; Venetian doges.",
+          "religion": "Baroque Catholicism; scientific trials (Galileo).",
+          "culture": "Baroque art and music; Galilean science under constraint.",
+          "story": "Galileo’s trial becomes modernity’s parable of science vs authority — more complicated historically, irresistible as story."
+        },
+        "IRL": {
+          "name": "Tudor Ireland",
+          "summary": "Surrender-and-regrant and plantation beginnings aim to anglicize Gaelic lordships; resistance culminates later in the Nine Years’ War.",
+          "conflicts": "Desmond rebellions; Shane O’Neill; crown vs Gaelic alliances.",
+          "leaders": "Tudor deputies; Shane O’Neill; earls of Desmond; Hugh O’Neill (later).",
+          "religion": "Catholic population under a Protestant state church newly claimed.",
+          "culture": "Gaelic learned orders under pressure; Pale Englishness vs Gaelic polarity hardening.",
+          "story": "Ireland becomes England’s first long colonial laboratory — Reformation plus conquest, with consequences lasting centuries."
+        },
+        "NOR": {
+          "name": "Norway under Denmark",
+          "summary": "A kingdom without its own resident dynasty; Reformation arrives via Copenhagen.",
+          "conflicts": "Danish governors; trade under Hansa then Danish control.",
+          "leaders": "Danish viceroys; local nobles diminished.",
+          "religion": "Lutheran reform from above.",
+          "culture": "Continuing vernacular life; loss of archbishopric independence.",
+          "story": "Norway’s Reformation is an email from Copenhagen — institutional change without a local Luther."
+        },
+        "BEL": {
+          "name": "Southern Netherlands (Spanish)",
+          "summary": "The Catholic southern provinces reconquered by Parma remain under Spanish Habsburgs as Antwerp’s golden age wanes.",
+          "conflicts": "Dutch Revolt warfare; religious cleansing northward migration of Protestants.",
+          "leaders": "Duke of Parma (Alexander Farnese); Spanish governors.",
+          "religion": "Tridentine Catholic restoration.",
+          "culture": "Flemish painting still luminous; commercial shift toward Amsterdam.",
+          "story": "Antwerp’s fall and Protestant exodus help invent Amsterdam’s boom — a tale of two Low Countries."
+        },
+        "CHE": {
+          "name": "Swiss Confederation (Reformation)",
+          "summary": "Zwingli’s Zurich and Calvin’s Geneva make Switzerland a laboratory of Reformed religion beside Catholic cantons.",
+          "conflicts": "Kappel wars between confessions; mercenary export continues.",
+          "leaders": "Ulrich Zwingli; John Calvin; Catholic Waldstätten elites.",
+          "religion": "Reformed vs Catholic cantonal split — a miniature Europe.",
+          "culture": "Disciplined consistory religion; citizen-soldier myth; printing.",
+          "story": "Calvin’s Geneva — refuge for exiles and exporter of pastors — punches far above its Alpine weight in Atlantic Protestantism."
+        },
+        "HUN": {
+          "name": "Hungary divided (Ottoman / Habsburg / Transylvania)",
+          "summary": "After Mohács, the medieval kingdom splits into Habsburg Royal Hungary, Ottoman central occupation, and the Principality of Transylvania.",
+          "conflicts": "Ottoman–Habsburg wars; Transylvanian diplomacy between sultans and emperors.",
+          "leaders": "Ferdinand I Habsburg; János Szapolyai’s line; Ottoman pashas of Buda; Transylvanian princes.",
+          "religion": "Catholic Habsburg west; Protestant strength in Transylvania’s famous tolerance diet; Orthodox Romanians; Islam in Ottoman zones.",
+          "culture": "Frontier fortress warfare; multi-confessional Transylvania as outlier.",
+          "story": "Mohács (1526) — two hours that kill a king and shatter a kingdom — is Hungary’s national catastrophe date."
+        },
+        "GRC": {
+          "name": "Ottoman Greece",
+          "summary": "Greek lands under Ottoman provinces; Orthodox Patriarchate in Constantinople as millet head; islands partly Venetian.",
+          "conflicts": "Venetian–Ottoman wars; local bandit/klepht beginnings; tax and conversion pressures.",
+          "leaders": "Ecumenical Patriarchs; Ottoman governors; Venetian captains in the islands.",
+          "religion": "Greek Orthodoxy under Islamic sovereignty; crypto-Christianity debates in places.",
+          "culture": "Post-Byzantine painting; folk song; diaspora merchants.",
+          "story": "The ‘secret school’ legend of keeping Greek letters alive under Ottoman rule is later nation-myth — literacy and liturgy did persist, unevenly, through church structures."
         }
       }
     },
@@ -5626,83 +7627,147 @@
       "polities": {
         "FIN": {
           "name": "Republic of Finland",
-          "summary": "Independent since 1917 (after Russian Grand Duchy).",
-          "conflicts": "Winter War and Continuation War vs USSR; later neutrality/EU path."
+          "summary": "Independent since 1917; Nordic democracy beside Russia.",
+          "conflicts": "Winter War and Continuation War memory; EU/NATO era security politics.",
+          "leaders": "Mannerheim in founding memory; post-war presidents; contemporary cabinets.",
+          "religion": "Lutheran majority; secular society.",
+          "culture": "Sisu myth; design; bilingual Finnish/Swedish legacy.",
+          "story": "The Winter War — tiny Finland holding the Red Army — remains the national epic of survival."
         },
         "SWE": {
           "name": "Kingdom of Sweden",
           "summary": "Constitutional monarchy, non-aligned long arc.",
-          "conflicts": "No war since 1814; regional diplomacy with Russia/NATO neighbors."
+          "conflicts": "No war since 1814; regional diplomacy with Russia/NATO neighbors.",
+          "leaders": "Constitutional monarchs; Social Democratic architects of the folkhem; contemporary coalition politics.",
+          "religion": "Lutheran heritage under deep secularization; new religious diversity.",
+          "culture": "Welfare model; design; non-alignment tradition under pressure.",
+          "story": "The folkhem — ‘people’s home’ — is Sweden’s modern founding myth of equality, now debated in an age of migration and insecurity."
         },
         "DNK": {
           "name": "Kingdom of Denmark",
-          "summary": "Constitutional monarchy; lost Norway 1814, Schleswig wars.",
-          "conflicts": "19th-c. wars with Prussia/Austria; WWII occupation."
+          "summary": "Constitutional monarchy; EU member; Greenland/Faroes autonomy questions.",
+          "conflicts": "WW2 occupation memory; contemporary Arctic and migration politics.",
+          "leaders": "Constitutional monarchs; Social Democratic and liberal PMs.",
+          "religion": "Lutheran folk church under secularization.",
+          "culture": "Flexicurity welfare; design; agricultural modernity.",
+          "story": "From absolute Sound Toll power to small-state humanitarian branding — Denmark’s modern art is reinvention."
         },
         "NOR": {
           "name": "Kingdom of Norway",
-          "summary": "Independent 1905 from Sweden.",
-          "conflicts": "WWII occupation; NATO founding member."
+          "summary": "Independent from Sweden since 1905; oil-funded democracy.",
+          "conflicts": "WW2 occupation; resource and NATO politics.",
+          "leaders": "Haakon VII’s resistance symbolism; post-war Labor architects; contemporary cabinets.",
+          "religion": "Lutheran heritage; secularization.",
+          "culture": "Oil fund ethics; outdoor life; oil-to-climate tension.",
+          "story": "1905’s peaceful secession and WWII’s heavy-water/resistance stories frame Norway’s modern self-image."
         },
         "GBR": {
           "name": "United Kingdom",
           "summary": "Constitutional monarchy; post-imperial state.",
-          "conflicts": "World wars; Ireland partition; EU exit politics."
+          "conflicts": "World wars; Ireland partition; EU exit politics.",
+          "leaders": "Victoria to present constitutional monarchs; PMs from Gladstone/Disraeli memory to contemporary cabinets.",
+          "religion": "Plural: Anglican establishment legacy, free churches, Catholic and non-Christian communities, widespread secularization.",
+          "culture": "Industrial then post-industrial society; global English; welfare state and its critics.",
+          "story": "From workshop of the world and empire to Brexit-era European renegotiation — continuity of parliamentary myth under radical economic change."
         },
         "IRL": {
           "name": "Republic of Ireland",
-          "summary": "Independent after 1922 Free State.",
-          "conflicts": "War of Independence/Civil War; Troubles in Northern Ireland."
+          "summary": "Independent after revolution and civil war; EU success story with partition’s open wound in the North.",
+          "conflicts": "War of Independence; Civil War; Troubles in Northern Ireland; Brexit border politics.",
+          "leaders": "Collins/de Valera founding rivalry; modern Taoisigh; Northern peace-process figures.",
+          "religion": "Catholic society secularizing rapidly after scandals; pluralism rising.",
+          "culture": "Literary revival legacy; tech multinationals; diaspora.",
+          "story": "Easter 1916’s ‘triumph of failure’ and the Good Friday Agreement are twin modern Irish stories — revolution and hard peace."
         },
         "FRA": {
           "name": "French Republic",
           "summary": "Republican state after revolutions/empires.",
-          "conflicts": "World wars; colonial wars; EU core."
+          "conflicts": "World wars; colonial wars; EU core.",
+          "leaders": "Republican presidents and earlier revolutionary/Napoleonic memory still structuring politics.",
+          "religion": "Laïcité as state doctrine over Catholic heritage; growing religious pluralism.",
+          "culture": "Republican school; universalist claims; global art/philosophy prestige.",
+          "story": "1789’s legacy — rights and terror alike — remains France’s master story, replayed in every crisis of the republic."
         },
         "DEU": {
           "name": "Germany",
           "summary": "Unified 1871; divided 1949–1990; reunified.",
-          "conflicts": "World wars; Cold War split; EU/NATO central power."
+          "conflicts": "World wars; Cold War split; EU/NATO central power.",
+          "leaders": "Post-1945 democratic leadership in FRG/Berlin Republic; memory of Bismarck, Weimar, and Nazi criminality as negative foundation.",
+          "religion": "Catholic/Protestant inheritances; large secular and immigrant communities.",
+          "culture": "Social market economy; Vergangenheitsbewältigung; European integration engine.",
+          "story": "Auschwitz and division, then Ostpolitik and reunification (1990): Germany’s modern identity is responsibility before glory."
         },
         "ESP": {
           "name": "Kingdom of Spain",
           "summary": "Post-Franco democracy.",
-          "conflicts": "Civil War 1936–39; colonial losses earlier; Basque/Catalan tensions."
+          "conflicts": "Civil War 1936–39; colonial losses earlier; Basque/Catalan tensions.",
+          "leaders": "From Franco’s dictatorship to parliamentary monarchy (Juan Carlos → Felipe VI) and democratic parties.",
+          "religion": "Catholic culture under rapid secularization; regional identities.",
+          "culture": "Transition culture; autonomous communities; EU membership remaking economy.",
+          "story": "The Pact of Forgetting and its unraveling — how a democracy buries and then reopens civil-war memory."
         },
         "PRT": {
           "name": "Portuguese Republic",
-          "summary": "Republic since 1910; democracy after 1974.",
-          "conflicts": "Colonial wars; EU integration."
+          "summary": "From authoritarian Estado Novo to Carnation Revolution democracy and EU membership.",
+          "conflicts": "Colonial wars; 1974 revolution; austerity years.",
+          "leaders": "Salazar as negative founding memory; post-1974 democratic leaders.",
+          "religion": "Catholic culture under secularization.",
+          "culture": "Fado; Atlantic orientation; Lusophone world ties.",
+          "story": "The Carnation Revolution (1974) — almost bloodless end to dictatorship — is Portugal’s gentle modern myth."
         },
         "ITA": {
           "name": "Italian Republic",
           "summary": "Unified 1861; republic after fascism.",
-          "conflicts": "World wars; fascist period; EU founding."
+          "conflicts": "World wars; fascist period; EU founding.",
+          "leaders": "Post-war republican politics; earlier Mussolini as negative founding memory; EU-era premiers.",
+          "religion": "Catholic society and Vatican neighbor; secularization.",
+          "culture": "Design, film, regional cuisines as soft power; industrial north / agrarian south historic split.",
+          "story": "From Fascism’s fall and resistance myth to ‘il sorpasso’ and recurring political instability — creativity beside fragile parties."
         },
         "POL": {
           "name": "Republic of Poland",
           "summary": "Reborn 1918; post-communist democracy.",
-          "conflicts": "Partitions memory; WWII; Soviet domination; NATO/EU."
+          "conflicts": "Partitions memory; WWII; Soviet domination; NATO/EU.",
+          "leaders": "Solidarność generation; post-1989 democratic leaders; EU-era politics.",
+          "religion": "Catholicism as resistance identity under communism, contested in pluralism since.",
+          "culture": "Romantic independence tradition; EU mobility; war memory (WW2).",
+          "story": "Shipyard strikes in Gdańsk (1980) begin the crack in the Eastern Bloc — a trade union that helped end an empire."
         },
         "RUS": {
           "name": "Russian Federation",
           "summary": "Successor to USSR/Russian Empire.",
-          "conflicts": "Chechen wars; Georgia 2008; Ukraine wars — ongoing regional conflict."
+          "conflicts": "Chechen wars; Georgia 2008; Ukraine wars — ongoing regional conflict.",
+          "leaders": "Soviet general secretaries in memory; Yeltsin; Putin-era presidency.",
+          "religion": "Orthodox revival after Soviet atheism; minorities of many faiths.",
+          "culture": "High literary canon; petro-state geopolitics; Soviet memory wars.",
+          "story": "1991’s flag over the Kremlin ends the USSR; the post-Soviet story is unresolved empire, oligarchy, and war — still rewriting Europe’s map."
         },
         "UKR": {
           "name": "Ukraine",
           "summary": "Independent 1991.",
-          "conflicts": "Russian annexation Crimea 2014; full-scale invasion 2022–."
+          "conflicts": "Russian annexation Crimea 2014; full-scale invasion 2022–.",
+          "leaders": "Post-1991 presidents; Maidan-era civic leadership; wartime presidency.",
+          "religion": "Orthodox jurisdictions in flux; Greek Catholic west; pluralism.",
+          "culture": "Language politics; Cossack memory; European aspiration.",
+          "story": "Maidan (2014) and full-scale invasion (2022) make Ukraine’s sovereignty the defining European story of the early 21st century."
         },
         "TUR": {
           "name": "Republic of Turkey",
           "summary": "Nation-state after Ottoman collapse.",
-          "conflicts": "Greco-Turkish war; Cyprus; Kurdish conflict; regional interventions."
+          "conflicts": "Greco-Turkish war; Cyprus; Kurdish conflict; regional interventions.",
+          "leaders": "Atatürk’s republican founding memory; elected governments; Erdoğan-era presidency.",
+          "religion": "Secular republic over Muslim society; contested laicism.",
+          "culture": "Between Europe and Middle East; Ottoman nostalgia vs republican modernity.",
+          "story": "Gallipoli and the War of Independence found the republic; EU accession’s stall and Middle Eastern wars keep Turkey’s European question open."
         },
         "GRC": {
           "name": "Hellenic Republic",
           "summary": "Independent after Ottoman rule.",
-          "conflicts": "Balkan wars; Cyprus; tensions with Turkey."
+          "conflicts": "Balkan wars; Cyprus; tensions with Turkey.",
+          "leaders": "Post-junta democratic leaders; EU-era premiers through debt crisis.",
+          "religion": "Greek Orthodoxy as cultural establishment; secular youth.",
+          "culture": "Classical heritage tourism; shipping; crisis cinema and politics.",
+          "story": "The 2010s debt crisis — austerity, protest, near-Grexit — tests whether European solidarity is real."
         }
       }
     }

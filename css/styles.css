@@ -512,6 +512,33 @@ button {
   border-top: 1px solid var(--line);
 }
 
+.polity-panel .polity-name {
+  margin: 0.15rem 0 0.4rem;
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 400;
+}
+
+.polity-panel .polity-summary,
+.polity-panel .polity-conflicts,
+.polity-panel .polity-leaders,
+.polity-panel .polity-religion,
+.polity-panel .polity-culture,
+.polity-panel .polity-story {
+  margin: 0.2rem 0 0.65rem;
+  font-size: 0.82rem;
+  line-height: 1.45;
+  color: var(--ink-dim);
+}
+
+.polity-block {
+  margin-top: 0.35rem;
+}
+
+.polity-block .kicker {
+  margin-bottom: 0.15rem;
+}
+
 .polity-name {
   margin: 0.15rem 0 0;
   font-family: var(--font-display);
