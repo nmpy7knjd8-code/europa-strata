@@ -524,7 +524,9 @@ button {
 .polity-panel .polity-leaders,
 .polity-panel .polity-religion,
 .polity-panel .polity-culture,
-.polity-panel .polity-story {
+.polity-panel .polity-story,
+.polity-panel .polity-literature,
+.polity-panel .polity-art {
   margin: 0.2rem 0 0.65rem;
   font-size: 0.82rem;
   line-height: 1.45;
@@ -537,6 +539,49 @@ button {
 
 .polity-block .kicker {
   margin-bottom: 0.15rem;
+}
+
+.polity-gallery {
+  display: flex;
+  gap: 0.65rem;
+  overflow-x: auto;
+  padding: 0.15rem 0 0.35rem;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+.polity-figure {
+  flex: 0 0 min(72%, 220px);
+  margin: 0;
+  scroll-snap-align: start;
+  background: var(--sea);
+  border: 1px solid var(--line);
+}
+
+.polity-figure img {
+  display: block;
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  background: #ddd;
+}
+
+.polity-figure figcaption {
+  padding: 0.4rem 0.45rem 0.5rem;
+  font-size: 0.68rem;
+  line-height: 1.35;
+  color: var(--ink-mute);
+}
+
+.polity-gallery-note {
+  margin: 0.15rem 0 0.55rem;
+  font-size: 0.62rem;
+  line-height: 1.35;
+  color: var(--ink-mute);
+}
+
+[data-theme="dark"] .polity-figure img {
+  background: #222;
 }
 
 .polity-name {

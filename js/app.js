@@ -527,6 +527,30 @@ function setPolityField(key, value) {
   el.textContent = text;
 }
 
+function renderPolityGallery(images) {
+  const block = $("#polity-images-block");
+  const gallery = $("#polity-gallery");
+  if (!block || !gallery) return;
+  const list = Array.isArray(images) ? images.filter((img) => img && img.src) : [];
+  if (!list.length) {
+    block.hidden = true;
+    gallery.innerHTML = "";
+    return;
+  }
+  block.hidden = false;
+  gallery.innerHTML = list
+    .map((img) => {
+      const alt = escapeHtml(img.alt || img.caption || "Historical image");
+      const caption = escapeHtml(img.caption || "");
+      const src = escapeHtml(img.src);
+      return `<figure class="polity-figure">
+        <img src="${src}" alt="${alt}" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.closest('figure')?.remove()" />
+        <figcaption>${caption}</figcaption>
+      </figure>`;
+    })
+    .join("");
+}
+
 function renderDetail() {
   const period = currentPeriod();
   const rid = state.selectedRegion;
@@ -588,8 +612,12 @@ function renderDetail() {
       setPolityField("religion", polity.religion);
       setPolityField("culture", polity.culture);
       setPolityField("story", polity.story);
+      setPolityField("literature", polity.literature);
+      setPolityField("art", polity.art);
+      renderPolityGallery(polity.images);
     } else {
       polityPanel.hidden = true;
+      renderPolityGallery(null);
     }
   }
 
