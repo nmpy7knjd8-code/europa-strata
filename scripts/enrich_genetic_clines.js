@@ -102,15 +102,16 @@ function patchRegion(p, rid, patch) {
       "Ertebølle foragers remain the demographic majority along Danish and south Swedish coasts while earliest Funnelbeaker farming appears in the south. Genetics: SHG/WHG holdouts beside rising EEF — the first Holocene turnover is beginning, not finished.",
   });
   patchRegion(p, "eastern", {
-    ancestry: { ehg: 55, eef: 20, whg: 10, chg: 10, steppe: 5 },
-    ancestryRange: { ehg: [40, 70], eef: [10, 35] },
-    ancestryNote: "EHG forest-steppe persistence; farmer fringe only on the southwest edge.",
+    ancestry: { ehg: 58, eef: 20, whg: 12, chg: 10 },
+    ancestryRange: { ehg: [45, 70], eef: [10, 35] },
+    ancestryNote:
+      "Pre-Yamnaya: EHG + CHG-related kept separate (not yet fused as WSH). Farmer fringe only on the southwest edge.",
     ancestryCline: {
       label: "Forest-steppe HG → farmer fringe",
-      note: "EHG dominates east of the Neolithic divide; EEF rises only on Bug–Dniester / western contact.",
+      note: "EHG (+ some CHG-related) east of the Neolithic divide; EEF rises on Bug–Dniester contact — not WSH yet.",
       ends: [
-        { id: "hg", label: "Forest-steppe EHG", ancestry: { ehg: 75, whg: 10, eef: 8, chg: 7 } },
-        { id: "fringe", label: "Farmer fringe", ancestry: { eef: 40, ehg: 35, whg: 15, chg: 10 } },
+        { id: "hg", label: "Forest-steppe EHG", ancestry: { ehg: 78, whg: 10, chg: 8, eef: 4 } },
+        { id: "fringe", label: "Farmer fringe", ancestry: { eef: 42, ehg: 32, whg: 14, chg: 12 } },
       ],
     },
   });
