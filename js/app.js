@@ -344,10 +344,10 @@ function updateLegend() {
   const layers = period.mapLayers || [];
   const box = $("#map-legend");
   box.innerHTML = layers
-    .slice(0, 8)
+    .slice(0, 7)
     .map(
       (l) =>
-        `<div class="legend-row"><span class="legend-swatch" style="background:${l.color};opacity:${l.opacity}"></span>${escapeHtml(l.label)} <span style="opacity:.55">(${l.role})</span></div>`
+        `<div class="legend-row"><span class="legend-swatch" style="background:${l.color}"></span>${escapeHtml(l.label)}</div>`
     )
     .join("");
 
@@ -364,7 +364,7 @@ function updateCulturesRail() {
   rail.innerHTML = layers
     .map(
       (l) =>
-        `<button type="button" class="culture-chip" data-layer="${escapeHtml(l.id)}" style="border-left:3px solid ${l.color}">${escapeHtml(l.label)}</button>`
+        `<button type="button" class="culture-chip" data-layer="${escapeHtml(l.id)}">${escapeHtml(l.label)}</button>`
     )
     .join("");
   rail.querySelectorAll(".culture-chip").forEach((btn) => {
