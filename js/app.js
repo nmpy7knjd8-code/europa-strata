@@ -204,31 +204,31 @@ function initMap() {
 
   state.svg = svg;
 
-  // Default frame ≈ Iceland→Anatolia, continent filling the stage (matches
-  // the usual phone “zoomed in this far” view; Reset returns here).
-  const mobile = isMobile();
+  // Core Europe: Iberia / Spain → Moscow, Med → southern Scandinavia.
+  // Big on the stage; Reset returns here.
+  const mobile = isMobileLayout();
   const europeFrame = {
     type: "Feature",
     geometry: {
       type: "Polygon",
       coordinates: [
         [
-          [-24, 34.5],
-          [44, 34.5],
-          [44, 71.2],
-          [-24, 71.2],
-          [-24, 34.5],
+          [-10.5, 35.8],
+          [39.5, 35.8],
+          [39.5, 61.8],
+          [-10.5, 61.8],
+          [-10.5, 35.8],
         ],
       ],
     },
   };
 
-  const padX = mobile ? 2 : 14;
-  const padTop = mobile ? 22 : 10;
-  const padBot = mobile ? 2 : 12;
+  const padX = mobile ? 4 : 16;
+  const padTop = mobile ? 26 : 14;
+  const padBot = mobile ? 6 : 14;
   const projection = d3
     .geoAzimuthalEqualArea()
-    .rotate([-10, -52])
+    .rotate([-14.5, -52])
     .fitExtent(
       [
         [padX, padTop],
@@ -237,11 +237,11 @@ function initMap() {
       europeFrame
     );
 
-  // Bake the preferred closer framing into the base projection
-  const boost = mobile ? 1.52 : 1.22;
+  // Pull in so Spain→Moscow fills the window without tiny-continent feel
+  const boost = mobile ? 1.38 : 1.26;
   projection.scale(projection.scale() * boost);
   const t0 = projection.translate();
-  projection.translate([t0[0], t0[1] + h * (mobile ? 0.015 : 0.01)]);
+  projection.translate([t0[0] - w * 0.01, t0[1] + h * (mobile ? 0.02 : 0.015)]);
 
   state.path = d3.geoPath(projection);
   state.mapSize = { w, h };
@@ -449,8 +449,52 @@ function renderPeriodText() {
   }
 }
 
-function isMobile() {
+function isNarrowViewport() {
   return window.matchMedia("(max-width: 960px)").matches;
+}
+
+/** True when phone layout is active (manual toggle or narrow default). */
+function isMobileLayout() {
+  return document.documentElement.getAttribute("data-layout") === "mobile";
+}
+
+function syncLayoutToggle() {
+  const btn = $("#layout-toggle");
+  if (!btn) return;
+  const mobile = isMobileLayout();
+  btn.setAttribute("aria-pressed", mobile ? "true" : "false");
+  btn.textContent = mobile ? "Desktop view" : "Mobile view";
+}
+
+function applyLayout(mode, { persist = true, remap = true } = {}) {
+  const next = mode === "mobile" ? "mobile" : "desktop";
+  document.documentElement.setAttribute("data-layout", next);
+  if (persist) localStorage.setItem("europa-strata-layout", next);
+  syncLayoutToggle();
+  if (remap && state.geo) {
+    requestAnimationFrame(() => {
+      initMap();
+      updateLegend();
+      if (state.selectedIso) {
+        state.svg
+          ?.selectAll("path.country")
+          .classed("is-active", (d) => d.properties.iso === state.selectedIso);
+      }
+    });
+  }
+}
+
+function initLayoutPreference() {
+  const saved = localStorage.getItem("europa-strata-layout");
+  if (saved === "mobile" || saved === "desktop") {
+    applyLayout(saved, { persist: false, remap: false });
+    return;
+  }
+  // First visit: phones get mobile layout; wide screens stay desktop
+  applyLayout(isNarrowViewport() ? "mobile" : "desktop", {
+    persist: false,
+    remap: false,
+  });
 }
 
 function updateLegend() {
@@ -764,6 +808,10 @@ function bindUI() {
   $("#btn-zoom-out")?.addEventListener("click", () => bumpMapZoom(1 / 1.35));
   $("#btn-zoom-reset")?.addEventListener("click", () => resetMapZoom());
 
+  $("#layout-toggle")?.addEventListener("click", () => {
+    applyLayout(isMobileLayout() ? "desktop" : "mobile");
+  });
+
   window.addEventListener("resize", () => {
     if (!state.geo) return;
     clearTimeout(window.__strataResize);
@@ -779,6 +827,7 @@ async function init() {
   if (saved === "dark" || saved === "light") {
     document.documentElement.setAttribute("data-theme", saved);
   }
+  initLayoutPreference();
 
   try {
     const [timeline, geo] = await Promise.all([
