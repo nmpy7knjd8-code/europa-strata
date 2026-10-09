@@ -53,7 +53,7 @@ body {
 body {
   color: var(--ink);
   font-family: var(--font-ui);
-  font-size: 15px;
+  font-size: 16.5px;
   font-weight: 400;
   line-height: 1.55;
   background: var(--bg);
@@ -163,7 +163,7 @@ button {
 }
 
 .map-tool-reset {
-  font-size: 0.62rem;
+  font-size: 0.78rem;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   height: auto;
@@ -221,7 +221,7 @@ button {
 
 .brand-sub {
   margin: 0.3rem 0 0;
-  font-size: 0.65rem;
+  font-size: 0.8rem;
   letter-spacing: 0.18em;
   text-transform: uppercase;
   color: var(--ink-mute);
@@ -248,7 +248,7 @@ button {
 }
 
 .slider-year {
-  font-size: 0.72rem;
+  font-size: 0.88rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--ink);
@@ -290,7 +290,7 @@ button {
   display: flex;
   align-items: center;
   gap: 0.4rem;
-  font-size: 0.65rem;
+  font-size: 0.8rem;
   color: var(--ink);
   letter-spacing: 0.01em;
 }
@@ -310,7 +310,7 @@ button {
 
 .map-attr {
   margin: 0.4rem 0 0;
-  font-size: 0.55rem;
+  font-size: 0.7rem;
   color: var(--ink-mute);
   line-height: 1.35;
 }
@@ -339,8 +339,8 @@ button {
 
 .kicker {
   margin: 0 0 0.15rem;
-  font-size: 0.6rem;
-  letter-spacing: 0.16em;
+  font-size: 0.78rem;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--ink-mute);
   font-weight: 400;
@@ -349,7 +349,7 @@ button {
 .period-copy {
   margin: 0.35rem 0 0;
   color: var(--ink-dim);
-  font-size: 0.78rem;
+  font-size: 0.95rem;
   line-height: 1.5;
 }
 
@@ -374,7 +374,7 @@ button {
 }
 
 .slider-hint {
-  font-size: 0.58rem;
+  font-size: 0.74rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--ink-mute);
@@ -499,7 +499,7 @@ button {
 
 .tick .tick-num {
   display: block;
-  font-size: 0.68rem;
+  font-size: 0.84rem;
   font-weight: 500;
   letter-spacing: 0.02em;
   color: var(--ink-dim);
@@ -509,7 +509,7 @@ button {
 
 .tick .tick-era {
   display: block;
-  font-size: 0.55rem;
+  font-size: 0.7rem;
   letter-spacing: 0.08em;
   color: var(--ink-mute);
   line-height: 1.2;
@@ -543,7 +543,7 @@ button {
 
 .culture-horizon {
   margin: 0.2rem 0 0;
-  font-size: 0.72rem;
+  font-size: 0.88rem;
   color: var(--ink-mute);
 }
 
@@ -561,7 +561,7 @@ button {
   margin: 0.45rem 0 0.7rem;
   padding: 0.45rem 0 0.55rem;
   border-bottom: 1px solid var(--line);
-  font-size: 0.78rem;
+  font-size: 0.95rem;
   line-height: 1.4;
 }
 
@@ -572,7 +572,7 @@ button {
 .polity-chain-label {
   display: inline-block;
   margin-right: 0.3rem;
-  font-size: 0.62rem;
+  font-size: 0.78rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--ink-mute);
@@ -658,7 +658,7 @@ button {
 .polity-panel .polity-literature,
 .polity-panel .polity-art {
   margin: 0.2rem 0 0.65rem;
-  font-size: 0.82rem;
+  font-size: 1rem;
   line-height: 1.45;
   color: var(--ink-dim);
 }
@@ -740,7 +740,7 @@ button {
 
 .polity-figure figcaption {
   padding: 0.4rem 0.45rem 0.5rem;
-  font-size: 0.68rem;
+  font-size: 0.84rem;
   line-height: 1.35;
   color: var(--ink-mute);
 }
@@ -857,7 +857,7 @@ body.lightbox-open {
 
 .polity-summary {
   margin: 0.4rem 0 0;
-  font-size: 0.76rem;
+  font-size: 1.05rem;
   color: var(--ink-dim);
   line-height: 1.45;
 }
@@ -868,7 +868,7 @@ body.lightbox-open {
 
 .polity-conflicts {
   margin: 0.25rem 0 0;
-  font-size: 0.74rem;
+  font-size: 0.9rem;
   color: var(--ink);
   line-height: 1.45;
 }
@@ -896,8 +896,8 @@ body.lightbox-open {
   margin-top: 0.4rem;
   padding: 0;
   border: none;
-  font-size: 0.6rem;
-  letter-spacing: 0.14em;
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--ink-mute);
   background: none;
@@ -912,13 +912,13 @@ body.lightbox-open {
 .culture-desc {
   margin: 0.55rem 0 0;
   color: var(--ink-dim);
-  font-size: 0.78rem;
+  font-size: 0.95rem;
   line-height: 1.5;
 }
 
 .ancestry-note {
   margin: 0.4rem 0 0;
-  font-size: 0.68rem;
+  font-size: 0.84rem;
   color: var(--ink-mute);
   font-style: normal;
 }
@@ -937,12 +937,12 @@ body.lightbox-open {
 
 .ling-line.dim {
   color: var(--ink-dim);
-  font-size: 0.72rem;
+  font-size: 0.88rem;
 }
 
 .ling-note {
   margin: 0.4rem 0 0;
-  font-size: 0.68rem;
+  font-size: 0.84rem;
   color: var(--ink-mute);
 }
 
@@ -957,7 +957,7 @@ body.lightbox-open {
 
 .absorb-strip h4 {
   margin: 0 0 0.2rem;
-  font-size: 0.55rem;
+  font-size: 0.7rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--ink-mute);
@@ -966,7 +966,7 @@ body.lightbox-open {
 
 .absorb-strip p {
   margin: 0;
-  font-size: 0.68rem;
+  font-size: 0.84rem;
   color: var(--ink);
   line-height: 1.35;
 }
@@ -974,7 +974,7 @@ body.lightbox-open {
 .absorb-strip .arrow {
   color: var(--ink-mute);
   padding-top: 0.85rem;
-  font-size: 0.75rem;
+  font-size: 0.9rem;
 }
 
 .ancestry-panel {
@@ -985,7 +985,7 @@ body.lightbox-open {
 
 .ancestry-mid-label {
   margin: 0 0 0.15rem;
-  font-size: 0.58rem;
+  font-size: 0.74rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--ink-mute);
@@ -1007,7 +1007,7 @@ body.lightbox-open {
 
 .cline-note {
   margin: 0.25rem 0 0.65rem;
-  font-size: 0.78rem;
+  font-size: 0.95rem;
   line-height: 1.45;
   color: var(--ink-dim);
 }
@@ -1020,7 +1020,7 @@ body.lightbox-open {
 
 .cline-end-label {
   margin: 0 0 0.25rem;
-  font-size: 0.72rem;
+  font-size: 0.88rem;
   font-weight: 500;
   color: var(--ink);
 }
@@ -1032,13 +1032,13 @@ body.lightbox-open {
 
 .cline-end-legend {
   margin: 0.3rem 0 0;
-  font-size: 0.68rem;
+  font-size: 0.84rem;
   line-height: 1.4;
   color: var(--ink-mute);
 }
 
 .cline-note {
-  font-size: var(--read-size, 17px);
+  font-size: var(--read-size, 19px);
   line-height: var(--read-leading, 1.65);
 }
 
@@ -1075,7 +1075,7 @@ body.lightbox-open {
   display: flex;
   align-items: center;
   gap: 0.3rem;
-  font-size: 0.65rem;
+  font-size: 0.8rem;
   color: var(--ink-dim);
 }
 
@@ -1115,7 +1115,7 @@ body.lightbox-open {
   gap: 0.35em;
   padding: 0.08rem 0;
   border-bottom: none;
-  font-size: 0.92rem;
+  font-size: 1.12rem;
   line-height: 1.35;
   color: var(--ink-dim);
 }
@@ -1178,7 +1178,7 @@ body.lightbox-open {
 
 .glossary-more {
   font-family: var(--font-ui);
-  font-size: 0.68rem;
+  font-size: 0.84rem;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: var(--ink-dim);
@@ -1213,7 +1213,7 @@ body.lightbox-open {
 
 .glossary-item dt {
   margin: 0;
-  font-size: 0.72rem;
+  font-size: 0.88rem;
   letter-spacing: 0.06em;
   color: var(--ink);
 }
@@ -1226,7 +1226,7 @@ body.lightbox-open {
 
 .glossary-item dd {
   margin: 0.15rem 0 0;
-  font-size: 0.65rem;
+  font-size: 0.8rem;
   color: var(--ink-dim);
   line-height: 1.4;
 }
@@ -1252,7 +1252,7 @@ body.lightbox-open {
   padding: 0;
   border: none;
   border-bottom: 1px solid transparent;
-  font-size: 0.65rem;
+  font-size: 0.8rem;
   color: var(--ink-dim);
   background: transparent;
   transition: color 0.2s, border-color 0.2s;
@@ -1266,13 +1266,13 @@ body.lightbox-open {
 
 .below-note p {
   margin: 0.15rem 0 0;
-  font-size: 0.65rem;
+  font-size: 0.8rem;
   color: var(--ink-mute);
   line-height: 1.4;
 }
 
 .tiny {
-  font-size: 0.58rem !important;
+  font-size: 0.74rem !important;
 }
 
 .theme-toggle {
@@ -1299,7 +1299,7 @@ body.lightbox-open {
   background: var(--bg);
   border: 1px solid var(--line);
   box-shadow: none;
-  font-size: 0.68rem;
+  font-size: 0.84rem;
   color: var(--ink);
   max-width: 200px;
   transform: translate(12px, 12px);
@@ -1316,9 +1316,8 @@ body.lightbox-open {
 /* ——— App layout (stacked: map → slider → content) ——— */
 
 html {
-  /* Narrative/polity reading: ~17px (standard phone body band).
-     UI chrome stays a step smaller so map-key chips don’t bloat. */
-  --read-size: 17px;
+  /* Narrative/polity reading + slightly larger UI chrome. */
+  --read-size: 19px;
   --read-leading: 1.65;
 }
 
@@ -1349,7 +1348,7 @@ html {
 }
 
 .brand-sub {
-  font-size: 0.62rem;
+  font-size: 0.78rem;
 }
 
 /* Tight phone gutters (~16px), single reading column */
@@ -1437,11 +1436,11 @@ html {
 }
 
 .tick .tick-num {
-  font-size: 0.72rem;
+  font-size: 0.88rem;
 }
 
 .tick .tick-era {
-  font-size: 0.58rem;
+  font-size: 0.74rem;
   margin-top: 0.15rem;
 }
 
@@ -1459,7 +1458,7 @@ html {
 }
 
 .legend-bar .kicker {
-  font-size: 0.72rem;
+  font-size: 0.88rem;
 }
 
 .map-legend {
@@ -1474,7 +1473,7 @@ html {
 }
 
 .map-attr {
-  font-size: 0.75rem;
+  font-size: 0.9rem;
   line-height: 1.4;
 }
 
@@ -1490,7 +1489,7 @@ html {
 }
 
 .kicker {
-  font-size: 0.72rem;
+  font-size: 0.88rem;
   letter-spacing: 0.12em;
   margin-bottom: 0.4rem;
 }
@@ -1501,12 +1500,12 @@ html {
 }
 
 .period-ling {
-  font-size: 15px;
+  font-size: 17px;
   line-height: 1.6;
 }
 
 #detail-kicker {
-  font-size: 0.75rem;
+  font-size: 0.9rem;
 }
 
 .culture-title {
@@ -1516,13 +1515,13 @@ html {
 }
 
 .culture-horizon {
-  font-size: 15px;
+  font-size: 17px;
   margin-bottom: 0.2rem;
 }
 
 .mode-pill,
 .conf-pill {
-  font-size: 0.72rem;
+  font-size: 0.88rem;
   padding: 0.25rem 0.5rem;
   margin-top: 0.55rem;
   margin-bottom: 0.15rem;
@@ -1554,7 +1553,7 @@ html {
 }
 
 .polity-chain-label {
-  font-size: 0.68rem;
+  font-size: 0.84rem;
   display: block;
   margin: 0 0 0.15rem;
 }
@@ -1681,7 +1680,7 @@ html {
 }
 
 .absorb-strip h4 {
-  font-size: 0.72rem;
+  font-size: 0.88rem;
   margin-bottom: 0.35rem;
 }
 
@@ -1696,7 +1695,7 @@ html {
 }
 
 .ancestry-panel .kicker {
-  font-size: 0.72rem;
+  font-size: 0.88rem;
   margin-bottom: 0.5rem;
 }
 
@@ -1767,7 +1766,7 @@ html {
 }
 
 .glossary-more {
-  font-size: 0.78rem;
+  font-size: 0.95rem;
 }
 
 .glossary-grid {
@@ -1844,7 +1843,7 @@ body.page-ancestry {
   align-items: center;
   gap: 0.9rem;
   font-family: var(--font-ui);
-  font-size: 0.72rem;
+  font-size: 0.88rem;
   letter-spacing: 0.05em;
   text-transform: uppercase;
 }
@@ -1908,13 +1907,13 @@ body.page-ancestry {
 }
 
 .anc-toc-link span {
-  font-size: 0.78rem;
+  font-size: 0.95rem;
   font-weight: 600;
   letter-spacing: 0.06em;
 }
 
 .anc-toc-link {
-  font-size: 0.68rem;
+  font-size: 0.84rem;
   color: var(--ink-dim);
 }
 
@@ -1955,7 +1954,7 @@ body.page-ancestry {
 .anc-horizon {
   margin: 0 0 0.85rem;
   font-family: var(--font-ui);
-  font-size: 0.72rem;
+  font-size: 0.88rem;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: var(--ink-mute);
@@ -1976,7 +1975,7 @@ body.page-ancestry {
 .anc-phenotype p,
 .anc-diet p {
   margin: 0;
-  font-size: 0.92rem;
+  font-size: 1.05rem;
   line-height: 1.55;
   color: var(--ink-dim);
 }
@@ -2051,7 +2050,7 @@ body.page-ancestry {
 
 .anc-map-fig figcaption {
   margin-top: 0.55rem;
-  font-size: 0.72rem;
+  font-size: 0.88rem;
   line-height: 1.4;
   color: var(--ink-mute);
 }
