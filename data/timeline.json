@@ -184,7 +184,7 @@
       "id": "mesolithic",
       "label": "Mesolithic",
       "era": "Forager Europe",
-      "yearLabel": "c. 8000 BCE",
+      "yearLabel": "c. 8000 BC",
       "yearApprox": -8000,
       "narrative": "After the Last Glacial Maximum, Europe is resettled by genetically distinct forager populations. Western Hunter-Gatherers (WHG) dominate west and center; Eastern Hunter-Gatherers (EHG) hold the forest-steppe. Archaeological names (Azilian, Maglemosian, Narva) are tool-and-site traditions, not ethnic states. No farming, no Indo-European, no writing.",
       "culturesNote": "Azilian, Sauveterrian/Tardenoisian, Maglemosian–Kongemose, Epigravettian Italy, Iron Gates, Narva/Kunda — microlithic forager facies over WHG/EHG genetics.",
@@ -527,7 +527,7 @@
           "note": ""
         }
       ],
-      "tickYear": "8000 BCE",
+      "tickYear": "8000 BC",
       "polities": {
         "ESP": {
           "name": "Iberian Mesolithic bands",
@@ -590,7 +590,7 @@
       "id": "early-neolithic",
       "label": "Early Neolithic",
       "era": "First Farmers",
-      "yearLabel": "c. 5500 BCE",
+      "yearLabel": "c. 5500 BC",
       "yearApprox": -5500,
       "narrative": "Anatolian Neolithic–related Early European Farmers (EEF) enter via the Balkans and Mediterranean coasts (~6500–5500 BCE). In much of western and central Europe this is near-total demographic replacement of hunter-gatherers; east of a Black Sea–Baltic genomic divide, forager continuity is stronger (Allentoft et al. 2024). Culture names mark ceramic/settlement packages carried by these farmers.",
       "culturesNote": "Starčevo–Körös–Criș, early Vinča, LBK (Linearbandkeramik), Cardial/Impresso, earliest Funnelbeaker contact — EEF-rich demic expansions.",
@@ -910,7 +910,7 @@
           "note": ""
         }
       ],
-      "tickYear": "5500 BCE",
+      "tickYear": "5500 BC",
       "polities": {
         "DEU": {
           "name": "LBK pioneer villages",
@@ -958,7 +958,7 @@
       "id": "middle-neolithic",
       "label": "Middle–Late Neolithic",
       "era": "Megaliths & farmer Europe",
-      "yearLabel": "c. 4000–3500 BCE",
+      "yearLabel": "c. 4000–3500 BC",
       "yearApprox": -3800,
       "narrative": "Farmer Europe densifies: Atlantic megaliths, Chasséen/Michelsberg, Funnelbeaker (TRB), Cucuteni–Trypillia mega-sites, and forming Globular Amphora (GAC). WHG ancestry often rises inside farmer communities (resurgence/admixture). North of the Black Sea, Eneolithic steppe groups begin mixtures that will produce Yamnaya — still before the continental steppe flood.",
       "culturesNote": "TRB, Michelsberg, Chasséen, Atlantic megalithic, GAC, Cucuteni–Trypillia, late Vinča — archaeological cultures on EEF±WHG genetics.",
@@ -1269,7 +1269,7 @@
           "note": ""
         }
       ],
-      "tickYear": "3800 BCE",
+      "tickYear": "3800 BC",
       "polities": {
         "GBR": {
           "name": "British megalith builders",
@@ -1312,7 +1312,7 @@
       "id": "yamnaya",
       "label": "Copper / Yamnaya",
       "era": "Steppe pastoralists rise",
-      "yearLabel": "c. 3000 BCE",
+      "yearLabel": "c. 3000 BC",
       "yearApprox": -3000,
       "narrative": "Yamnaya (Yamna) pastoralists of the Pontic–Caspian steppe form from Eneolithic mixtures (Serednii Stih / Caucasus–Lower Volga–related inputs; North Pontic aDNA 2024) and expand from ~3300 BCE. Their ancestry — Western Steppe Herder (WSH) — is the source later seen across Europe in Corded Ware. Correlation with late Proto-Indo-European is the leading model, not a deciphered Yamnaya lexicon.",
       "culturesNote": "Yamnaya/Yamna, Afanasievo (eastward), late Trypillia, Usatove contacts, Remedello/Gaudo in Italy, late TRB/Pitted Ware in the north.",
@@ -1623,7 +1623,7 @@
           "note": ""
         }
       ],
-      "tickYear": "3000 BCE",
+      "tickYear": "3000 BC",
       "polities": {
         "UKR": {
           "name": "Yamnaya pastoralists",
@@ -1666,7 +1666,7 @@
       "id": "beaker-corded",
       "label": "Corded Ware & Bell Beaker",
       "era": "Third-millennium transformations",
-      "yearLabel": "c. 2500 BCE",
+      "yearLabel": "c. 2500 BC",
       "yearApprox": -2500,
       "narrative": "Two archaeological packages reshape the third millennium: Corded Ware (high steppe ancestry, often after Globular Amphora admixture) across northern/central Europe, and Bell Beaker (genetically heterogeneous). In Britain, Beaker-associated migrants replace ~90% of Neolithic ancestry (Olalde 2018). Iberian Beakers often remain Neolithic-like while steppe ancestry rises more gradually (Olalde 2019). Burial rites and genes are not always synchronized.",
       "culturesNote": "Corded Ware, Single Grave, Battle Axe, Bell Beaker (Iberian vs Dutch/central), late Yamnaya/Catacomb — culture ≠ single genotype.",
@@ -2005,7 +2005,7 @@
           "note": ""
         }
       ],
-      "tickYear": "2500 BCE",
+      "tickYear": "2500 BC",
       "polities": {
         "DEU": {
           "name": "Corded Ware Germany",
@@ -2063,7 +2063,7 @@
       "id": "nordic-bronze",
       "label": "Nordic & European Bronze",
       "era": "Bronze Age worlds",
-      "yearLabel": "c. 1400 BCE",
+      "yearLabel": "c. 1400 BC",
       "yearApprox": -1400,
       "narrative": "The Nordic Bronze Age (c. 1700–500 BCE) is a Scandinavian cultural climax — rock art, prestige bronzes, amber routes — on a gene pool already reset by Single Grave/Battle Axe. Southward: Tumulus then Urnfield, Atlantic Bronze, El Argar, Terramare, Mycenaean Greece (Linear B = early Greek). Deep ancestry is the WHG–EEF–steppe ternary in regional proportions; culture names proliferate faster than genetic turnovers.",
       "culturesNote": "Nordic Bronze Age, Wessex, El Argar, Tumulus, Urnfield, Terramare/Apennine, Mycenaean, Srubnaya — BA facies on post-3000 BCE mixes.",
@@ -2397,7 +2397,7 @@
           "note": ""
         }
       ],
-      "tickYear": "1400 BCE",
+      "tickYear": "1400 BC",
       "polities": {
         "DNK": {
           "name": "Nordic Bronze Age Denmark",
@@ -2450,7 +2450,7 @@
       "id": "iron-age",
       "label": "Iron Age",
       "era": "Hallstatt, La Tène, Classical dawn",
-      "yearLabel": "c. 700–300 BCE",
+      "yearLabel": "c. 700–300 BC",
       "yearApprox": -500,
       "narrative": "Iron metallurgy and oppida/city-states. Hallstatt then La Tène define Celtic material Europe; Jastorf-related groups mark Germanic ethnogenesis; Classical Greece and early Rome/Etruria write history; Scythian Iranian-speakers hold the steppe; Iberia mixes non-IE Iberian with Celtiberian. Genetics mostly continue Bronze Age mixes — “Celtic” and “Germanic” are linguistic-cultural, not new deep ancestry components.",
       "culturesNote": "Hallstatt, La Tène, Jastorf, Classical Greek poleis, Etruscan/early Rome, Iberian/Celtiberian, Scythian — first dense linguistic attestation.",
@@ -2826,7 +2826,7 @@
           "note": ""
         }
       ],
-      "tickYear": "500 BCE",
+      "tickYear": "500 BC",
       "polities": {
         "FRA": {
           "name": "Gallic tribes (La Tène)",
@@ -2884,7 +2884,7 @@
       "id": "classical",
       "label": "Classical / Roman Republic–early Empire",
       "era": "Mediterranean hegemony",
-      "yearLabel": "c. 100 BCE – 100 CE",
+      "yearLabel": "c. 100 BC – 100 AD",
       "yearApprox": 1,
       "narrative": "Rome conquers the Mediterranean and much of Western Europe (Republic into early Principate). Greek remains the eastern prestige language; Celtic and Germanic societies press the frontiers. Empires redraw politics and urban demography faster than they erase provincial BA ancestry — though Imperial Rome itself shows a clear eastern Mediterranean genetic pulse (Antonio et al. 2019).",
       "culturesNote": "Roman Empire (west/east), residual Gallic tribes, Britannia, Germanic societies beyond the limes, Sarmatians, Greek East.",
@@ -3217,7 +3217,7 @@
           "note": ""
         }
       ],
-      "tickYear": "1 CE",
+      "tickYear": "1 AD",
       "polities": {
         "ITA": {
           "name": "Roman Italy / early Empire",
@@ -3275,7 +3275,7 @@
       "id": "migration",
       "label": "Migration Period",
       "era": "Wielbark, Goths, collapse & remaking",
-      "yearLabel": "c. 300–550 CE",
+      "yearLabel": "c. 300–550 AD",
       "yearApprox": 400,
       "narrative": "Western Roman order fragments. Wielbark culture in Poland is the archaeological horizon standardly linked to early Gothic traditions before south-east movements. Hunnic pressure, Gothic kingdoms, Frankish growth, and Anglo-Saxon settlement in Britain remake politics. Genetics show real mobility (e.g. North Sea influx in eastern England) without Beaker-scale pan-European replacement; elite Germanic layers often sit on Roman provincial majorities.",
       "culturesNote": "Wielbark, Chernyakhov, Hunnic horizon, Visigoths/Ostrogoths, early Franks, Anglo-Saxons, early Byzantium — migration-era polities.",
@@ -3610,7 +3610,7 @@
           "note": ""
         }
       ],
-      "tickYear": "400 CE",
+      "tickYear": "400 AD",
       "polities": {
         "POL": {
           "name": "Wielbark culture",
@@ -3663,7 +3663,7 @@
       "id": "frankish",
       "label": "Frankish & Early Medieval",
       "era": "Carolingians, Vikings, Slavs",
-      "yearLabel": "c. 800 CE",
+      "yearLabel": "c. 800 AD",
       "yearApprox": 800,
       "narrative": "Charlemagne’s Frankish/Carolingian Empire (c. 800) politically unites much of Western and Central Europe under Christian Latin literacy, then divides (Verdun 843). Concurrently: Viking diaspora, Al-Andalus, Byzantium, First Bulgarian Empire, early Rus’. Demographically this is elite and institutional change on early medieval ancestries — not a new Paleolithic component.",
       "culturesNote": "Carolingian Frankish Empire, Anglo-Saxon/Viking Britain, Al-Andalus, East Francia–Slavic frontier, Byzantium & Bulgaria, Kievan Rus’ beginnings.",
@@ -4038,7 +4038,7 @@
           "note": ""
         }
       ],
-      "tickYear": "800 CE",
+      "tickYear": "800 AD",
       "polities": {
         "FRA": {
           "name": "Carolingian Frankish core",
@@ -4106,7 +4106,7 @@
       "id": "high-medieval",
       "label": "High Medieval",
       "era": "Kingdoms & Christendom",
-      "yearLabel": "c. 1200 CE",
+      "yearLabel": "c. 1200 AD",
       "yearApprox": 1200,
       "narrative": "High Medieval Christendom: Capetians, Plantagenets, Holy Roman Empire, Italian communes, Reconquista vs Nasrid Granada, Byzantine twilight and Balkan kingdoms, Rus’ under Golden Horde pressure. Vernacular literatures mature. Genetic geography is largely set; mobility and colonization (Ostsiedlung, crusading, trade) tweak edges.",
       "culturesNote": "HRE, Capetian France, Plantagenet realms, communal Italy, Iberian kingdoms/Granada, Balkan states, Rus’ principalities/Golden Horde.",
@@ -4590,7 +4590,7 @@
           "note": ""
         }
       ],
-      "tickYear": "1200 CE",
+      "tickYear": "1200 AD",
       "polities": {
         "FIN": {
           "name": "Swedish realm in Finland",
@@ -4718,7 +4718,7 @@
       "id": "early-modern",
       "label": "Early Modern",
       "era": "Empires & Reformation",
-      "yearLabel": "c. 1600 CE",
+      "yearLabel": "c. 1600 AD",
       "yearApprox": 1600,
       "narrative": "Print, Reformation, and composite monarchies: Spanish/Portuguese global empires, France, England→Britain, Habsburgs, Ottoman Europe, Poland–Lithuania, Sweden’s great-power age, rising Russia. Sovereignty and confession redraw maps; deep autosomal structure still echoes Neolithic and Bronze Age pulses, with Ottoman, imperial, and port-city admixture in specific corridors.",
       "culturesNote": "Spanish & Portuguese empires, France, England/Britain, Habsburg Mitteleuropa, Ottoman Rumelia, PLC, Sweden, Muscovy/Russia.",
@@ -5102,7 +5102,7 @@
           "note": ""
         }
       ],
-      "tickYear": "1600 CE",
+      "tickYear": "1600 AD",
       "polities": {
         "ESP": {
           "name": "Spanish Habsburg monarchy",
@@ -5622,7 +5622,7 @@
           "note": ""
         }
       ],
-      "tickYear": "2000 CE",
+      "tickYear": "2000 AD",
       "polities": {
         "FIN": {
           "name": "Republic of Finland",

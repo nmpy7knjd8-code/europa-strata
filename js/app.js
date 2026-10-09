@@ -431,11 +431,18 @@ function snapToPeriod(index) {
   setSliderPos(pos);
 }
 
+function formatYearUi(s) {
+  // Prefer BC / AD in the UI (data may still say BCE / CE)
+  return String(s || "")
+    .replace(/\bBCE\b/g, "BC")
+    .replace(/\bCE\b/g, "AD");
+}
+
 function renderPeriodText() {
   const period = currentPeriod();
   const yearEl = $("#period-year");
   const labelEl = $("#period-label");
-  if (yearEl) yearEl.textContent = period.tickYear || period.yearLabel;
+  if (yearEl) yearEl.textContent = formatYearUi(period.tickYear || period.yearLabel);
   if (labelEl) labelEl.textContent = period.label;
   $("#period-era").textContent = period.era || "";
   $("#period-copy").textContent = period.narrative;
@@ -532,7 +539,7 @@ function renderDetail() {
     : null;
 
   const place = isoName || REGION_LABELS[rid];
-  $("#detail-kicker").textContent = `${place} · ${period.yearLabel}`;
+  $("#detail-kicker").textContent = `${place} · ${formatYearUi(period.yearLabel)}`;
 
   // Overall culture horizon from map layer
   let horizon = region.culture;
@@ -627,12 +634,11 @@ function renderDetail() {
 }
 
 function splitTickYear(yearStr) {
-  // "2500 BCE" → { num: "2500", era: "BCE" }; "2000 CE" → { num: "2000", era: "CE" }
-  const m = String(yearStr).trim().match(/^(\d+)\s*(BCE|CE|BC|AD)?$/i);
-  if (!m) return { num: yearStr, era: "" };
-  let era = (m[2] || "").toUpperCase();
-  if (era === "BC") era = "BCE";
-  if (era === "AD") era = "CE";
+  // "2500 BCE" / "2500 BC" → { num: "2500", era: "BC" }; CE/AD → "AD"
+  const cleaned = formatYearUi(yearStr).trim();
+  const m = cleaned.match(/^(\d+)\s*(BC|AD)?$/i);
+  if (!m) return { num: cleaned, era: "" };
+  const era = (m[2] || "").toUpperCase();
   return { num: m[1], era };
 }
 
@@ -640,10 +646,11 @@ function buildTicks() {
   const wrap = $("#tick-labels");
   wrap.innerHTML = state.data.periods
     .map((p, i) => {
-      const year = p.tickYear || p.yearLabel;
+      const year = formatYearUi(p.tickYear || p.yearLabel);
       const { num, era } = splitTickYear(year);
       const name = shortPeriodName(p);
-      return `<button type="button" class="tick" data-i="${i}" title="${escapeHtml(p.yearLabel)} — ${escapeHtml(name)}"><span class="tick-num">${escapeHtml(num)}</span><span class="tick-era">${escapeHtml(era)}</span></button>`;
+      const title = `${formatYearUi(p.yearLabel)} — ${name}`;
+      return `<button type="button" class="tick" data-i="${i}" title="${escapeHtml(title)}"><span class="tick-num">${escapeHtml(num)}</span><span class="tick-era">${escapeHtml(era)}</span></button>`;
     })
     .join("");
   wrap.querySelectorAll(".tick").forEach((el) => {
