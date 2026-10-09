@@ -204,35 +204,28 @@ function initMap() {
 
   state.svg = svg;
 
-  // Tight Europe frame so the continent fills the stage (esp. on phones)
+  // Default frame ≈ Iceland→Anatolia, continent filling the stage (matches
+  // the usual phone “zoomed in this far” view; Reset returns here).
   const mobile = isMobile();
   const europeFrame = {
     type: "Feature",
     geometry: {
       type: "Polygon",
       coordinates: [
-        mobile
-          ? [
-              [-12, 36.5],
-              [32, 36.5],
-              [32, 70],
-              [-12, 70],
-              [-12, 36.5],
-            ]
-          : [
-              [-20, 35],
-              [40, 35],
-              [40, 71],
-              [-20, 71],
-              [-20, 35],
-            ],
+        [
+          [-24, 34.5],
+          [44, 34.5],
+          [44, 71.2],
+          [-24, 71.2],
+          [-24, 34.5],
+        ],
       ],
     },
   };
 
-  const padX = mobile ? 4 : 18;
-  const padTop = mobile ? 28 : 12;
-  const padBot = mobile ? 4 : 16;
+  const padX = mobile ? 2 : 14;
+  const padTop = mobile ? 22 : 10;
+  const padBot = mobile ? 2 : 12;
   const projection = d3
     .geoAzimuthalEqualArea()
     .rotate([-10, -52])
@@ -244,12 +237,11 @@ function initMap() {
       europeFrame
     );
 
-  // Pull in closer on mobile — fitExtent alone leaves too much empty sea
-  if (mobile) {
-    projection.scale(projection.scale() * 1.22);
-    const t = projection.translate();
-    projection.translate([t[0], t[1] + h * 0.02]);
-  }
+  // Bake the preferred closer framing into the base projection
+  const boost = mobile ? 1.52 : 1.22;
+  projection.scale(projection.scale() * boost);
+  const t0 = projection.translate();
+  projection.translate([t0[0], t0[1] + h * (mobile ? 0.015 : 0.01)]);
 
   state.path = d3.geoPath(projection);
   state.mapSize = { w, h };
@@ -274,14 +266,15 @@ function initMap() {
 
   const zoom = d3
     .zoom()
-    .scaleExtent([1, 7])
+    // Allow a little zoom-out from the baked-in default; Reset = identity
+    .scaleExtent([0.7, 8])
     .extent([
       [0, 0],
       [w, h],
     ])
     .translateExtent([
-      [-w * 0.35, -h * 0.35],
-      [w * 1.35, h * 1.35],
+      [-w * 0.45, -h * 0.45],
+      [w * 1.45, h * 1.45],
     ])
     .filter((event) => {
       // Keep ctrl/meta+wheel for browser page zoom; map uses plain wheel + pinch
@@ -297,6 +290,7 @@ function initMap() {
   svg.call(zoom);
   // Double-click zoom fights accidental country taps on phones
   svg.on("dblclick.zoom", null);
+  svg.call(zoom.transform, d3.zoomIdentity);
   syncZoomReset(d3.zoomIdentity);
 
   paintMap(false);
