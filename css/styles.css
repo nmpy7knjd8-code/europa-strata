@@ -1613,8 +1613,8 @@ html[data-layout="mobile"] .glossary-item dt {
 }
 
 html[data-layout="mobile"] .glossary-item dd {
-  font-size: 0.95rem;
-  line-height: 1.45;
+  font-size: var(--read-size);
+  line-height: var(--read-leading);
 }
 
 html[data-layout="mobile"] .tiny {
@@ -1622,8 +1622,8 @@ html[data-layout="mobile"] .tiny {
 }
 
 html[data-layout="mobile"] #cultures-blurb {
-  font-size: 0.95rem;
-  line-height: 1.5;
+  font-size: var(--read-size);
+  line-height: var(--read-leading);
 }
 
 /* ——— Ancestry deep-dive page ——— */
