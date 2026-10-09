@@ -655,21 +655,31 @@ html[data-layout="desktop"] body {
   margin: 0;
   padding: 0;
   border: none;
+  border-radius: 0;
   border-bottom: 1px solid var(--line-strong);
   background: transparent;
-  color: var(--ink);
-  font: inherit;
-  font-weight: 500;
+  color: inherit;
+  /* Match surrounding narrative/polity copy exactly — no font swap */
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+  font-variant: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
   text-align: inherit;
+  text-transform: none;
   text-decoration: none;
   cursor: pointer;
   touch-action: manipulation;
+  -webkit-appearance: none;
+  appearance: none;
 }
 
 .atlas-link:hover,
 .atlas-link:focus-visible {
   border-bottom-color: var(--ink);
-  color: var(--ink);
+  color: inherit;
   outline: none;
 }
 
