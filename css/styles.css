@@ -1310,6 +1310,7 @@ html[data-layout="mobile"] .culture-title {
 
 html[data-layout="mobile"] .culture-horizon {
   font-size: 0.95rem;
+  margin-bottom: 0.2rem;
 }
 
 html[data-layout="mobile"] .mode-pill,
@@ -1318,10 +1319,6 @@ html[data-layout="mobile"] .conf-pill {
   padding: 0.25rem 0.5rem;
   margin-top: 0.55rem;
   margin-bottom: 0.15rem;
-}
-
-html[data-layout="mobile"] .culture-horizon {
-  margin-bottom: 0.2rem;
 }
 
 html[data-layout="mobile"] .culture-desc {
