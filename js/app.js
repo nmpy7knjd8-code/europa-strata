@@ -201,34 +201,52 @@ function initMap() {
 
   state.svg = svg;
 
-  // Fit to a Europe bbox (not all of Russia) so the continent fills the stage
+  // Tight Europe frame so the continent fills the stage (esp. on phones)
+  const mobile = isMobile();
   const europeFrame = {
     type: "Feature",
     geometry: {
       type: "Polygon",
       coordinates: [
-        [
-          [-24, 35],
-          [42, 35],
-          [42, 71.5],
-          [-24, 71.5],
-          [-24, 35],
-        ],
+        mobile
+          ? [
+              [-12, 36.5],
+              [32, 36.5],
+              [32, 70],
+              [-12, 70],
+              [-12, 36.5],
+            ]
+          : [
+              [-20, 35],
+              [40, 35],
+              [40, 71],
+              [-20, 71],
+              [-20, 35],
+            ],
       ],
     },
   };
 
-  const pad = isMobile() ? 8 : 20;
+  const padX = mobile ? 4 : 18;
+  const padTop = mobile ? 28 : 12;
+  const padBot = mobile ? 4 : 16;
   const projection = d3
     .geoAzimuthalEqualArea()
     .rotate([-10, -52])
     .fitExtent(
       [
-        [pad, pad + (isMobile() ? 36 : 8)],
-        [w - pad, h - pad],
+        [padX, padTop],
+        [w - padX, h - padBot],
       ],
       europeFrame
     );
+
+  // Pull in closer on mobile — fitExtent alone leaves too much empty sea
+  if (mobile) {
+    projection.scale(projection.scale() * 1.22);
+    const t = projection.translate();
+    projection.translate([t[0], t[1] + h * 0.02]);
+  }
 
   state.path = d3.geoPath(projection);
 
@@ -334,6 +352,14 @@ function setSliderPos(pos, { fromSlider = false } = {}) {
   $$(".ticks .tick").forEach((el, i) => {
     el.classList.toggle("active", i === state.periodIndex);
   });
+  updateTickCaption();
+}
+
+function updateTickCaption() {
+  const el = $("#tick-caption");
+  if (!el) return;
+  const period = currentPeriod();
+  el.textContent = shortPeriodName(period);
 }
 
 function snapToPeriod(index) {
@@ -537,18 +563,30 @@ function renderDetail() {
   highlightCultureChips();
 }
 
+function splitTickYear(yearStr) {
+  // "2500 BCE" → { num: "2500", era: "BCE" }; "2000 CE" → { num: "2000", era: "CE" }
+  const m = String(yearStr).trim().match(/^(\d+)\s*(BCE|CE|BC|AD)?$/i);
+  if (!m) return { num: yearStr, era: "" };
+  let era = (m[2] || "").toUpperCase();
+  if (era === "BC") era = "BCE";
+  if (era === "AD") era = "CE";
+  return { num: m[1], era };
+}
+
 function buildTicks() {
   const wrap = $("#tick-labels");
   wrap.innerHTML = state.data.periods
     .map((p, i) => {
       const year = p.tickYear || p.yearLabel;
+      const { num, era } = splitTickYear(year);
       const name = shortPeriodName(p);
-      return `<button type="button" class="tick" data-i="${i}" title="${escapeHtml(p.yearLabel)} — ${escapeHtml(name)}"><span class="tick-year">${escapeHtml(year)}</span><span class="tick-name">${escapeHtml(name)}</span></button>`;
+      return `<button type="button" class="tick" data-i="${i}" title="${escapeHtml(p.yearLabel)} — ${escapeHtml(name)}"><span class="tick-num">${escapeHtml(num)}</span><span class="tick-era">${escapeHtml(era)}</span></button>`;
     })
     .join("");
   wrap.querySelectorAll(".tick").forEach((el) => {
     el.addEventListener("click", () => snapToPeriod(Number(el.dataset.i)));
   });
+  updateTickCaption();
 }
 
 function bindUI() {
