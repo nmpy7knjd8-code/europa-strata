@@ -751,6 +751,35 @@ button {
   font-size: 1.15rem;
   font-weight: 400;
   color: var(--ink);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.55rem 1rem;
+}
+
+.glossary-more {
+  font-family: var(--font-ui);
+  font-size: 0.68rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--ink-dim);
+  text-decoration: none;
+  border-bottom: 1px solid var(--line);
+}
+
+.glossary-more:hover {
+  color: var(--ink);
+  border-color: var(--ink-mute);
+}
+
+.glossary-link {
+  color: inherit;
+  text-decoration: none;
+  border-bottom: 1px solid var(--line);
+}
+
+.glossary-link:hover {
+  border-color: var(--ink);
 }
 
 .glossary-grid {
@@ -980,5 +1009,257 @@ button {
 
   .cultures-rail {
     max-height: 88px;
+  }
+}
+
+/* ——— Ancestry deep-dive page ——— */
+
+.page-ancestry {
+  background: var(--bg);
+  color: var(--ink);
+  min-height: 100vh;
+}
+
+.page-ancestry .anc-top {
+  border-bottom: 1px solid var(--line);
+  background: var(--bg);
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+
+.anc-top-inner {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0.85rem 1.25rem;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.anc-brand {
+  font-family: var(--font-display);
+  font-size: 1.45rem;
+  color: var(--ink);
+  text-decoration: none;
+}
+
+.anc-brand em {
+  font-style: italic;
+}
+
+.anc-nav {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  font-family: var(--font-ui);
+  font-size: 0.72rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.anc-nav a {
+  color: var(--ink-dim);
+  text-decoration: none;
+}
+
+.anc-nav a:hover {
+  color: var(--ink);
+}
+
+.anc-main {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 2rem 1.25rem 3.5rem;
+}
+
+.anc-hero {
+  margin-bottom: 1.75rem;
+}
+
+.anc-title {
+  margin: 0.2rem 0 0.75rem;
+  font-family: var(--font-display);
+  font-size: clamp(2.2rem, 5vw, 3.2rem);
+  font-weight: 400;
+  line-height: 1.05;
+}
+
+.anc-lead {
+  margin: 0;
+  max-width: 42rem;
+  font-size: 1rem;
+  line-height: 1.55;
+  color: var(--ink-dim);
+}
+
+.anc-toc {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin: 0 0 2.5rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.anc-toc-link {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  padding: 0.45rem 0.7rem;
+  border: 1px solid var(--line);
+  text-decoration: none;
+  color: var(--ink);
+  font-family: var(--font-ui);
+  min-width: 7.5rem;
+  background:
+    linear-gradient(90deg, var(--swatch, #888) 0 3px, transparent 3px);
+}
+
+.anc-toc-link span {
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+}
+
+.anc-toc-link {
+  font-size: 0.68rem;
+  color: var(--ink-dim);
+}
+
+.anc-toc-link:hover {
+  border-color: var(--ink-mute);
+  color: var(--ink);
+}
+
+.anc-section {
+  padding: 2rem 0;
+  border-bottom: 1px solid var(--line);
+  scroll-margin-top: 4.5rem;
+}
+
+.anc-section-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 1.75rem 2rem;
+  align-items: start;
+}
+
+.anc-h2 {
+  margin: 0.15rem 0 0.35rem;
+  font-family: var(--font-display);
+  font-size: clamp(1.6rem, 3vw, 2.1rem);
+  font-weight: 400;
+}
+
+.anc-horizon {
+  margin: 0 0 0.85rem;
+  font-family: var(--font-ui);
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--ink-mute);
+}
+
+.anc-summary {
+  margin: 0 0 1rem;
+  font-size: 1.05rem;
+  line-height: 1.45;
+}
+
+.anc-copy p {
+  margin: 0 0 0.85rem;
+  line-height: 1.55;
+  color: var(--ink-dim);
+}
+
+.anc-copy .anc-summary {
+  color: var(--ink);
+}
+
+.anc-meta {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-top: 1.25rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--line);
+}
+
+.anc-meta ul {
+  margin: 0.35rem 0 0;
+  padding-left: 1.1rem;
+  font-size: 0.85rem;
+  color: var(--ink-dim);
+  line-height: 1.45;
+}
+
+.anc-meta p {
+  margin: 0.35rem 0 0;
+  font-size: 0.85rem;
+}
+
+.anc-map-fig {
+  margin: 0;
+  position: sticky;
+  top: 4.25rem;
+}
+
+.anc-map {
+  width: 100%;
+  background: var(--sea);
+  border: 1px solid var(--line);
+  overflow: hidden;
+}
+
+.anc-map svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.anc-land {
+  stroke: var(--land-stroke);
+  stroke-width: 0.4;
+  stroke-opacity: 0.4;
+}
+
+.anc-land.is-hot {
+  stroke-opacity: 0.7;
+  stroke-width: 0.55;
+}
+
+.anc-map-fig figcaption {
+  margin-top: 0.55rem;
+  font-size: 0.72rem;
+  line-height: 1.4;
+  color: var(--ink-mute);
+}
+
+.anc-foot {
+  margin-top: 2.5rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--line);
+  font-size: 0.9rem;
+  color: var(--ink-dim);
+}
+
+.anc-foot a {
+  color: var(--ink);
+}
+
+@media (max-width: 860px) {
+  .anc-section-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .anc-map-fig {
+    position: static;
+    order: -1;
+  }
+
+  .anc-meta {
+    grid-template-columns: 1fr;
   }
 }

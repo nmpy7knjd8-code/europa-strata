@@ -474,7 +474,7 @@ function renderGlossary() {
   grid.innerHTML = items
     .map(
       (g) =>
-        `<dl class="glossary-item"><dt>${escapeHtml(g.term)} <span>· ${escapeHtml(g.name)}</span></dt><dd>${escapeHtml(g.text)}</dd></dl>`
+        `<dl class="glossary-item"><dt><a class="glossary-link" href="ancestry.html#${escapeHtml(g.id)}">${escapeHtml(g.term)}</a> <span>· ${escapeHtml(g.name)}</span></dt><dd>${escapeHtml(g.text)}</dd></dl>`
     )
     .join("");
 }

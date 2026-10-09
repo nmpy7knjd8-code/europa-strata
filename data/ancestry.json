@@ -1,0 +1,108 @@
+{
+  "title": "Ancestry components",
+  "intro": "These labels are qpAdm-style deep ancestral strands used in post-2015 European archaeogenetics—not tribes, languages, or modern nations. Ranges on the maps are schematic consensus cores for teaching; real clines are continuous and models differ by reference panel.",
+  "components": [
+    {
+      "id": "whg",
+      "term": "WHG",
+      "name": "Western Hunter-Gatherers",
+      "color": "#5c6b4a",
+      "horizon": "Peak visibility c. 14,000–5,000 BCE; residual thereafter",
+      "summary": "Post-glacial foragers of western and central Europe—the western pole of Europe’s Mesolithic genetic landscape.",
+      "body": [
+        "After the Last Glacial Maximum, Europe was resettled by genetically structured hunter-gatherer groups. Western Hunter-Gatherers (WHG) describe the cluster that dominates much of western and central Europe in the Mesolithic: Iberia, France, Britain & Ireland, the North European Plain, and parts of Italy and the Balkans (with important local nodes such as the Iron Gates).",
+        "WHG is not an archaeological culture name. Azilian, Maglemosian, Tardenoisian, and related facies are tool-and-site traditions that often sit on WHG-related ancestry. Genetically, WHG forms one corner of the later European ternary (WHG–EEF–steppe) that still structures much of temperate Europe today as a minority substrate.",
+        "When Early European Farmers arrive, WHG ancestry collapses in many western regions—sometimes to a few percent—then often rises again inside Middle–Late Neolithic farmer communities (hunter-gatherer resurgence / gene flow). Later Corded Ware and Bell Beaker expansions remix WHG again inside steppe-admixed populations rather than restoring a pure WHG world."
+      ],
+      "proxies": ["Loschbour (Luxembourg)", "La Braña (Iberia)", "Cheddar Man / British Mesolithic", "Villabruna-related western cluster"],
+      "role": "Substrate absorbed into Neolithic farmers, then into Bronze Age steppe-admixed populations; rarely a free majority after the Neolithic.",
+      "mapNote": "Schematic Mesolithic core of WHG-related foragers. Iron Gates and eastern edges grade toward other HG clusters.",
+      "isos": ["IRL", "GBR", "FRA", "BEL", "NLD", "LUX", "DEU", "CHE", "AUT", "ESP", "PRT", "ITA", "DNK", "CZE", "POL", "SVN", "HRV", "BIH", "SRB", "HUN", "SVK"]
+    },
+    {
+      "id": "ehg",
+      "term": "EHG",
+      "name": "Eastern Hunter-Gatherers",
+      "color": "#7a5c3e",
+      "horizon": "Mesolithic–Eneolithic forest-steppe; key Yamnaya source",
+      "summary": "Forest-steppe foragers east of the Black Sea–Baltic zone, rich in Ancient North Eurasian (ANE) affinity.",
+      "body": [
+        "Eastern Hunter-Gatherers occupy the Volga–Don–Pontic forest-steppe world in contrast to western WHG. They carry substantial Ancient North Eurasian-related ancestry—the deep Siberian-linked strand that also appears (diluted) in later Europeans via the steppe.",
+        "EHG are not yet Yamnaya. Yamnaya / Western Steppe Herder ancestry forms when EHG-related groups mix with Caucasus / Lower Volga–related populations (CHG-related and related Eneolithic steppe mixtures). Allentoft et al. (2024) and North Pontic aDNA refine this as a multi-step Eneolithic process, not a single overnight ethnogenesis.",
+        "East of the Neolithic “great divide,” EHG-related forager continuity is stronger while Anatolian farmer ancestry replaces most foragers farther west. That asymmetry shapes later Corded Ware geography: the steppe-derived strand that floods temperate Europe is built on an eastern forager foundation Europe’s west never fully shared."
+      ],
+      "proxies": ["Sidelkino / Samara HG", "Karelia / Yuzhny Oleni Ostrov–related", "Middle Don hunter-gatherers (Allentoft 2024)"],
+      "role": "Primary eastern ingredient of Yamnaya (with CHG-related ancestry); forest-steppe baseline before and beside early farmers.",
+      "mapNote": "Schematic EHG forest-steppe sphere. Modern borders are a cartographic convenience for the Volga–Don–Pontic zone.",
+      "isos": ["RUS", "UKR", "BLR", "MDA", "LTU", "LVA", "EST", "FIN"]
+    },
+    {
+      "id": "shg",
+      "term": "SHG",
+      "name": "Scandinavian Hunter-Gatherers",
+      "color": "#3f6f7a",
+      "horizon": "Mesolithic–Early Neolithic Scandinavia",
+      "summary": "Northern foragers of Scandinavia—WHG-related with elevated EHG affinity—before Funnelbeaker and Single Grave turnovers.",
+      "body": [
+        "Scandinavian Hunter-Gatherers (SHG) describe Mesolithic and early coastal/inland foragers of southern and western Scandinavia (Maglemosian, Kongemose, Fosna–Hensbacka and related). Genetically they sit between western WHG and eastern EHG: often modeled as WHG-like with extra EHG-related affinity.",
+        "SHG matter because Denmark and southern Scandinavia show two Holocene demographic turnovers in high-resolution aDNA: first toward Early European Farmer / Funnelbeaker ancestry, then a second near-complete pulse with Single Grave / Battle Axe steppe-rich groups (~60–85% steppe-related in Danish Late Neolithic models).",
+        "After those turnovers, “SHG” is no longer a free majority component; residual northern forager ancestry is folded into farmer and then Corded Ware–related Scandinavians who underwrite the Nordic Bronze Age."
+      ],
+      "proxies": ["Swedish/Norwegian Mesolithic genomes", "Ertebølle-associated individuals", "Pre-TRB Scandinavian foragers"],
+      "role": "Northern Mesolithic baseline; largely overwritten by TRB farmers, then again by Single Grave / Battle Axe.",
+      "mapNote": "Schematic SHG range in southern and western Scandinavia / adjacent coasts.",
+      "isos": ["SWE", "NOR", "DNK"]
+    },
+    {
+      "id": "eef",
+      "term": "EEF",
+      "name": "Early European Farmers",
+      "color": "#c4a35a",
+      "horizon": "From ~6500 BCE; Neolithic demographic core of the west",
+      "summary": "Anatolian Neolithic–related farming populations who brought domesticates, ceramics, and a new gene pool into Europe.",
+      "body": [
+        "Early European Farmers (EEF) are the European expression of Anatolian Neolithic–related ancestry. They enter via the Balkans and Mediterranean coasts and expand as Cardial/Impresso along the west Mediterranean and as Linearbandkeramik (LBK) across the Danubian corridor into central Europe.",
+        "In much of western and central Europe this is near-total demographic replacement of Mesolithic hunter-gatherers. East of a Black Sea–Baltic genomic divide, forager continuity remains stronger (Allentoft et al. 2024). Culture names—Starčevo–Körös–Criș, Vinča, LBK, Cardial, TRB—are archaeological packages carried largely by these farmer populations.",
+        "EEF becomes the farmer corner of Europe’s deep ternary. Britain’s Neolithic population is highly EEF-derived before ~90% replacement in the Beaker age (Olalde et al. 2018). Iberia keeps more gradual later steppe admixture on an EEF-rich base (Olalde et al. 2019). WHG ancestry often rises inside Middle Neolithic farmers without restoring a forager economy."
+      ],
+      "proxies": ["Anatolian Neolithic reference clusters", "Early LBK Germany", "Cardial/Impresso Iberia & Italy", "Starčevo–Körös farmers"],
+      "role": "Major Holocene replacement of WHG/SHG in the west; substrate for later steppe admixture everywhere farming stuck.",
+      "mapNote": "Schematic Early–Middle Neolithic farmer footprint (Cardial + LBK worlds). Density and timing vary by corridor.",
+      "isos": ["GRC", "BGR", "MKD", "ALB", "SRB", "ROU", "HUN", "SVK", "CZE", "AUT", "DEU", "POL", "CHE", "FRA", "BEL", "NLD", "ITA", "ESP", "PRT", "GBR", "IRL", "DNK", "SWE", "HRV", "BIH", "SVN", "MDA", "UKR"]
+    },
+    {
+      "id": "wsh",
+      "term": "WSH",
+      "name": "Western Steppe Herders",
+      "color": "#8b3a3a",
+      "horizon": "Yamnaya from ~3300 BCE; continental spread in the 3rd millennium",
+      "summary": "Yamnaya-related steppe pastoralist ancestry—the third deep strand that remakes temperate Europe after ~3000 BCE.",
+      "body": [
+        "Western Steppe Herder (WSH) ancestry is the Yamnaya-related component that appears across Europe in the third millennium BCE. It is classically modeled as a mixture of EHG-related and Caucasus hunter-gatherer–related (CHG) ancestry, refined by Eneolithic North Pontic and Middle Don results rather than a cartoon two-source blend.",
+        "Corded Ware groups of central and northern Europe are heavily steppe-admixed (often with Globular Amphora farmer admixture on the way). Bell Beaker Britain shows ~90% turnover of the prior Neolithic gene pool. Denmark’s Single Grave pulse is a second Holocene replacement with very high steppe fractions. Iberia’s steppe influx is more gradual and often male-biased—same strand, different demographic mode.",
+        "WSH is strongly correlated with Indo-European dispersal models in temperate Europe (Haak et al. 2015 and successors), but languages are not genes: Iberian Beaker genetics, rite–ancestry decoupling in some CW/BB contexts, and non-IE survivals (Basque, historical Iberian, Etruscan) warn against one-to-one equations."
+      ],
+      "proxies": ["Yamnaya (Kalmykia / Ukraine steppe)", "Corded Ware Germany–Bohemia–Poland", "Single Grave Denmark", "Steppe-rich Bell Beaker Britain"],
+      "role": "Incoming third deep component; dominant or plurality in many LNBA northern/central models; diluted cline toward the Mediterranean.",
+      "mapNote": "Schematic Yamnaya homeland plus early Corded Ware / steppe-admixed temperate Europe (not every later IE region).",
+      "isos": ["RUS", "UKR", "MDA", "ROU", "BGR", "HUN", "SVK", "CZE", "POL", "DEU", "AUT", "CHE", "NLD", "BEL", "DNK", "SWE", "NOR", "LTU", "LVA", "EST", "BLR", "GBR", "IRL", "FRA"]
+    },
+    {
+      "id": "chg",
+      "term": "CHG",
+      "name": "Caucasus Hunter-Gatherers",
+      "color": "#6b4f7a",
+      "horizon": "Caucasus foragers; inside the steppe cline for Europe",
+      "summary": "Caucasus forager-related ancestry—usually modeled inside Yamnaya / WSH rather than as a free European ternary corner.",
+      "body": [
+        "Caucasus Hunter-Gatherers (CHG) are a genetically distinct forager cluster of the Caucasus. In European archaeogenetic storytelling they matter less as a standalone map color and more as a source that enters the Pontic–Caspian steppe mixtures producing Yamnaya.",
+        "Most continental European qpAdm setups therefore fold CHG-related ancestry into the steppe (WSH) edge of the WHG–EEF–steppe ternary. When the atlas pie charts show “steppe,” they typically already include the CHG-related fraction that traveled with Yamnaya-related gene flow.",
+        "Separating CHG only becomes essential when discussing steppe formation, Caucasus–Lower Volga Eneolithic groups, or West Asian connections. For most clicked European countries after 2500 BCE, CHG is not an independent slider—it is part of why WSH looks the way it does."
+      ],
+      "proxies": ["Kotias / Satsurblia (Caucasus HG)", "CHG-related ancestry inside Yamnaya", "Eneolithic Caucasus–Lower Volga mixtures"],
+      "role": "Ingredient of WSH; rarely scored as a free component across Europe in this atlas.",
+      "mapNote": "Schematic Caucasus focus plus the Pontic–Caspian zone where CHG-related ancestry enters steppe formation.",
+      "isos": ["GEO", "ARM", "AZE", "RUS", "UKR", "TUR"]
+    }
+  ]
+}

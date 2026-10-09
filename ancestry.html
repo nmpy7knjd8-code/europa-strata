@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>Ancestry components — Europa Strata</title>
+    <meta
+      name="description"
+      content="In-depth guides and schematic maps for WHG, EHG, SHG, EEF, WSH, and CHG — the deep ancestry strands used in Europa Strata."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Sora:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js" defer></script>
+    <script src="js/ancestry.js" defer></script>
+  </head>
+  <body class="page-ancestry">
+    <header class="anc-top">
+      <div class="anc-top-inner">
+        <a class="anc-brand" href="./index.html">Europa <em>Strata</em></a>
+        <nav class="anc-nav">
+          <a href="./index.html">Atlas</a>
+          <a href="./archaeogenetic-sources.md">Sources</a>
+          <button type="button" class="theme-toggle" id="theme-toggle" title="Toggle color theme">Theme</button>
+        </nav>
+      </div>
+    </header>
+
+    <main class="anc-main">
+      <header class="anc-hero">
+        <p class="kicker">Deep-time genetics</p>
+        <h1 class="anc-title">Ancestry components</h1>
+        <p class="anc-lead" id="anc-intro">Loading…</p>
+      </header>
+
+      <nav class="anc-toc" id="anc-toc" aria-label="Components"></nav>
+
+      <div id="anc-sections"></div>
+
+      <footer class="anc-foot">
+        <p>
+          Return to the
+          <a href="./index.html">interactive atlas</a>
+          ·
+          <a href="./archaeogenetic-sources.md">Bibliography</a>
+        </p>
+        <p class="tiny">
+          Schematic Natural Earth extents for teaching. Percentages and borders are not excavation GIS.
+        </p>
+      </footer>
+    </main>
+  </body>
+</html>
