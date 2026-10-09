@@ -101,6 +101,7 @@ button {
 .map {
   position: absolute;
   inset: 0;
+  z-index: 1;
   width: 100%;
   height: 100%;
   /* Pinch/drag zoom stays inside the map — does not scale the page */
@@ -123,7 +124,7 @@ button {
   position: absolute;
   top: 1.15rem;
   right: 1.15rem;
-  z-index: 4;
+  z-index: 20;
   display: flex;
   flex-direction: column;
   align-items: stretch;
@@ -187,13 +188,9 @@ button {
   position: absolute;
   top: 1.25rem;
   left: 1.5rem;
-  z-index: 3;
+  z-index: 15;
   pointer-events: none;
   max-width: min(52vw, 16rem);
-}
-
-.map-chrome .layout-toggle {
-  pointer-events: auto;
 }
 
 .brand {
@@ -219,18 +216,26 @@ button {
   font-weight: 400;
 }
 
+/* Outside .map-chrome so taps are never blocked by the map SVG */
 .layout-toggle {
+  position: absolute;
+  top: 4.35rem;
+  left: 1.5rem;
+  z-index: 30;
   display: inline-block;
-  margin-top: 0.55rem;
-  padding: 0.35rem 0.55rem;
+  margin: 0;
+  padding: 0.45rem 0.65rem;
   border: 1px solid var(--line-strong);
-  background: rgba(255, 255, 255, 0.92);
+  background: rgba(255, 255, 255, 0.96);
   color: var(--ink);
   font-family: var(--font-ui);
   font-size: 0.62rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   backdrop-filter: blur(6px);
+  pointer-events: auto;
+  touch-action: manipulation;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .layout-toggle[aria-pressed="true"] {
@@ -238,7 +243,39 @@ button {
 }
 
 [data-theme="dark"] .layout-toggle {
-  background: rgba(20, 20, 20, 0.88);
+  background: rgba(20, 20, 20, 0.92);
+}
+
+/* Narrow phones in “desktop” layout: keep a usable stacked page, desktop map framing */
+html[data-layout="desktop"] body {
+  overflow: auto;
+}
+
+@media (max-width: 960px) {
+  html[data-layout="desktop"] .app {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "map"
+      "time"
+      "legend"
+      "side"
+      "below"
+      "gloss";
+    height: auto;
+    min-height: 100dvh;
+  }
+
+  html[data-layout="desktop"] .map-stage {
+    width: 100%;
+    height: 48dvh;
+    min-height: 280px;
+  }
+
+  html[data-layout="desktop"] .side {
+    border-left: none;
+    border-top: 1px solid var(--line);
+  }
 }
 
 .time-bar {
@@ -1059,6 +1096,13 @@ html[data-layout="mobile"] .map-chrome {
   max-width: min(58vw, 14rem);
 }
 
+html[data-layout="mobile"] .layout-toggle {
+  top: 3.85rem;
+  left: 0.75rem;
+  padding: 0.45rem 0.65rem;
+  font-size: 0.64rem;
+}
+
 html[data-layout="mobile"] .map-tools {
   top: 0.6rem;
   right: 0.6rem;
@@ -1077,12 +1121,6 @@ html[data-layout="mobile"] .brand {
 
 html[data-layout="mobile"] .brand-sub {
   font-size: 0.55rem;
-}
-
-html[data-layout="mobile"] .layout-toggle {
-  margin-top: 0.45rem;
-  padding: 0.4rem 0.6rem;
-  font-size: 0.64rem;
 }
 
 html[data-layout="mobile"] .time-bar {

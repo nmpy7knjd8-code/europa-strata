@@ -204,31 +204,39 @@ function initMap() {
 
   state.svg = svg;
 
-  // Core Europe: Iberia / Spain → Moscow, Med → southern Scandinavia.
-  // Big on the stage; Reset returns here.
+  // Mobile default matches the filled Spain→Moscow phone framing;
+  // desktop keeps a slightly wider core Europe.
   const mobile = isMobileLayout();
   const europeFrame = {
     type: "Feature",
     geometry: {
       type: "Polygon",
       coordinates: [
-        [
-          [-10.5, 35.8],
-          [39.5, 35.8],
-          [39.5, 61.8],
-          [-10.5, 61.8],
-          [-10.5, 35.8],
-        ],
+        mobile
+          ? [
+              [-11.5, 36.2],
+              [38.2, 36.2],
+              [38.2, 60.6],
+              [-11.5, 60.6],
+              [-11.5, 36.2],
+            ]
+          : [
+              [-12, 35.5],
+              [40, 35.5],
+              [40, 62],
+              [-12, 62],
+              [-12, 35.5],
+            ],
       ],
     },
   };
 
-  const padX = mobile ? 4 : 16;
-  const padTop = mobile ? 26 : 14;
-  const padBot = mobile ? 6 : 14;
+  const padX = mobile ? 2 : 16;
+  const padTop = mobile ? 20 : 14;
+  const padBot = mobile ? 2 : 14;
   const projection = d3
     .geoAzimuthalEqualArea()
-    .rotate([-14.5, -52])
+    .rotate([mobile ? -13.5 : -14.5, mobile ? -51.2 : -52])
     .fitExtent(
       [
         [padX, padTop],
@@ -237,11 +245,14 @@ function initMap() {
       europeFrame
     );
 
-  // Pull in so Spain→Moscow fills the window without tiny-continent feel
-  const boost = mobile ? 1.38 : 1.26;
+  // Mobile boost tuned to the screenshot “this zoomed in” fill
+  const boost = mobile ? 1.62 : 1.24;
   projection.scale(projection.scale() * boost);
   const t0 = projection.translate();
-  projection.translate([t0[0] - w * 0.01, t0[1] + h * (mobile ? 0.02 : 0.015)]);
+  projection.translate([
+    t0[0] + w * (mobile ? 0.01 : -0.01),
+    t0[1] + h * (mobile ? 0.01 : 0.015),
+  ]);
 
   state.path = d3.geoPath(projection);
   state.mapSize = { w, h };
@@ -277,6 +288,11 @@ function initMap() {
       [w * 1.45, h * 1.45],
     ])
     .filter((event) => {
+      // Never steal taps from layout / zoom chrome
+      const t = event.target;
+      if (t && t.closest && t.closest(".layout-toggle, .map-tools, .map-chrome")) {
+        return false;
+      }
       // Keep ctrl/meta+wheel for browser page zoom; map uses plain wheel + pinch
       if (event.type === "wheel") return !event.ctrlKey && !event.metaKey;
       return !event.button;
@@ -469,17 +485,29 @@ function syncLayoutToggle() {
 function applyLayout(mode, { persist = true, remap = true } = {}) {
   const next = mode === "mobile" ? "mobile" : "desktop";
   document.documentElement.setAttribute("data-layout", next);
+  document.body.classList.toggle("is-mobile-layout", next === "mobile");
+  document.body.classList.toggle("is-desktop-layout", next === "desktop");
   if (persist) localStorage.setItem("europa-strata-layout", next);
   syncLayoutToggle();
   if (remap && state.geo) {
+    // Remap after layout CSS has applied (map stage size changes)
     requestAnimationFrame(() => {
-      initMap();
-      updateLegend();
-      if (state.selectedIso) {
-        state.svg
-          ?.selectAll("path.country")
-          .classed("is-active", (d) => d.properties.iso === state.selectedIso);
-      }
+      requestAnimationFrame(() => {
+        try {
+          initMap();
+          updateLegend();
+          if (state.selectedIso) {
+            state.svg
+              ?.selectAll("path.country")
+              .classed(
+                "is-active",
+                (d) => d.properties.iso === state.selectedIso
+              );
+          }
+        } catch (err) {
+          console.error("layout remap failed", err);
+        }
+      });
     });
   }
 }
@@ -808,9 +836,19 @@ function bindUI() {
   $("#btn-zoom-out")?.addEventListener("click", () => bumpMapZoom(1 / 1.35));
   $("#btn-zoom-reset")?.addEventListener("click", () => resetMapZoom());
 
-  $("#layout-toggle")?.addEventListener("click", () => {
-    applyLayout(isMobileLayout() ? "desktop" : "mobile");
-  });
+  const layoutBtn = $("#layout-toggle");
+  if (layoutBtn) {
+    let lastToggle = 0;
+    const toggleLayout = (event) => {
+      event.preventDefault();
+      event.stopPropagation();
+      const now = Date.now();
+      if (now - lastToggle < 400) return; // ignore click+touch double fire
+      lastToggle = now;
+      applyLayout(isMobileLayout() ? "desktop" : "mobile");
+    };
+    layoutBtn.addEventListener("click", toggleLayout);
+  }
 
   window.addEventListener("resize", () => {
     if (!state.geo) return;
