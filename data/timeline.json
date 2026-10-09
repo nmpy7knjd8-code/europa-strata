@@ -645,7 +645,8 @@
             "periodId": "early-neolithic",
             "iso": "ESP",
             "name": "Cardial Iberia"
-          }
+          },
+          "religion": "Belief systems unrecoverable in detail. Ritual archaeology: ochre-stained and curated burials, rare structured deposits, and landscape reuse of Paleolithic art places."
         },
         "GBR": {
           "name": "British Mesolithic foragers",
@@ -677,7 +678,8 @@
             "periodId": "early-neolithic",
             "iso": "GBR",
             "name": "Earliest Neolithic arrival"
-          }
+          },
+          "religion": "No recoverable pantheon. Shell-midden and cave burials, ochre, and curated human bone suggest ancestor/body rites; cosmology itself stays opaque."
         },
         "FRA": {
           "name": "Sauveterrian / Tardenoisian groups",
@@ -713,7 +715,8 @@
           "aliases": [
             "Sauveterrian",
             "Tardenoisian groups"
-          ]
+          ],
+          "religion": "Forager ritual poorly named. Archaeology shows careful burials, ochre, and occasional animal deposits — practice without readable myths."
         },
         "DEU": {
           "name": "Central European Mesolithic",
@@ -745,7 +748,8 @@
             "periodId": "early-neolithic",
             "iso": "DEU",
             "name": "LBK pioneer villages"
-          }
+          },
+          "religion": "Mesolithic belief content is lost. Scattered burials and structured faunal deposits hint at rites around death and animals, not temples or texts."
         },
         "DNK": {
           "name": "Maglemosian / Kongemose",
@@ -781,7 +785,8 @@
           "aliases": [
             "Maglemosian",
             "Kongemose"
-          ]
+          ],
+          "religion": "Maglemosian–Kongemose ritual known mainly from graves and bog finds. No named gods; body treatment and wetland deposition are the evidence."
         },
         "SWE": {
           "name": "Scandinavian coastal foragers",
@@ -813,7 +818,8 @@
             "periodId": "middle-neolithic",
             "iso": "SWE",
             "name": "TRB & Pitted Ware"
-          }
+          },
+          "religion": "Coastal forager ritual inferred from burials and later northern sacred landscapes. Deities and myths are not recoverable for this horizon."
         },
         "NOR": {
           "name": "Fosna–Hensbacka / Komsa",
@@ -849,7 +855,8 @@
           "aliases": [
             "Fosna–Hensbacka",
             "Komsa"
-          ]
+          ],
+          "religion": "Fosna–Hensbacka / Komsa ritual is thinly attested: coastal camps, rare burials, and later rock-art traditions still far in the future."
         },
         "ITA": {
           "name": "Epigravettian-descended foragers",
@@ -881,7 +888,8 @@
             "periodId": "early-neolithic",
             "iso": "ITA",
             "name": "Impresso Italy"
-          }
+          },
+          "religion": "Epigravettian-descended foragers leave burial and ornament evidence; Mediterranean rock shelters hold ritual deposits without readable theology."
         },
         "SRB": {
           "name": "Iron Gates foragers",
@@ -913,7 +921,8 @@
             "periodId": "high-medieval",
             "iso": "SRB",
             "name": "Serbian lands"
-          }
+          },
+          "religion": "Iron Gates cemeteries show elaborate body treatment, sculptures, and house–burial links — unusually rich ritual archaeology for Mesolithic Europe."
         },
         "UKR": {
           "name": "Ukrainian Mesolithic",
@@ -945,7 +954,8 @@
             "periodId": "early-neolithic",
             "iso": "UKR",
             "name": "Bug–Dniester / farmer fringe"
-          }
+          },
+          "religion": "Forest-steppe forager ritual: burials with ochre and grave goods. Named gods and afterlife doctrines are not recoverable."
         },
         "RUS": {
           "name": "Eastern forest HG",
@@ -977,7 +987,8 @@
             "periodId": "yamnaya",
             "iso": "RUS",
             "name": "Yamnaya / steppe clans"
-          }
+          },
+          "religion": "Eastern forest HG ritual mainly visible in burials and later forest sacred-place traditions; avoid projecting historic Finno-Ugric pantheons backward wholesale."
         }
       }
     },
@@ -1475,7 +1486,8 @@
             "periodId": "middle-neolithic",
             "iso": "DEU",
             "name": "TRB / Michelsberg"
-          }
+          },
+          "religion": "LBK farmers practiced domestic and enclosure ritual: foundation deposits, cattle offerings, and cemetery rows. Ancestor care and fertility rites are inferred; named gods are not."
         },
         "HUN": {
           "name": "Starčevo–Körös farmers",
@@ -1501,7 +1513,8 @@
             "periodId": "yamnaya",
             "iso": "HUN",
             "name": "Yamnaya in the Carpathian Basin"
-          }
+          },
+          "religion": "Starčevo–Körös villages show figurines, house rituals, and formal burials. Beliefs center on household and fertility cult practice more than temples."
         },
         "ESP": {
           "name": "Cardial Iberia",
@@ -1532,7 +1545,8 @@
             "periodId": "yamnaya",
             "iso": "ESP",
             "name": "Los Millares & Copper Age Iberia"
-          }
+          },
+          "religion": "Cardial communities combine cave/open-air ritual with early megalithic experiments. Burial and ceramic deposits mark ancestor and place cults."
         },
         "ITA": {
           "name": "Impresso Italy",
@@ -1563,7 +1577,8 @@
             "periodId": "yamnaya",
             "iso": "ITA",
             "name": "Remedello / Gaudo"
-          }
+          },
+          "religion": "Impresso/Cardial Italy: household figurines, cave rites, and emerging formal cemeteries — agrarian ritual without written pantheons."
         },
         "GRC": {
           "name": "Early Greek Neolithic",
@@ -1589,7 +1604,8 @@
             "periodId": "nordic-bronze",
             "iso": "GRC",
             "name": "Mycenaean palaces"
-          }
+          },
+          "religion": "Early Greek Neolithic villages use figurines, hearth/house deposits, and cemetery rites. Later Olympian names must not be read back into this phase."
         },
         "DNK": {
           "name": "Ertebølle vs earliest TRB",
@@ -1620,7 +1636,8 @@
             "periodId": "middle-neolithic",
             "iso": "DNK",
             "name": "TRB Scandinavia"
-          }
+          },
+          "religion": "Ertebølle holdouts keep forager burial/wetland rites beside earliest TRB farmer ceremonies — two ritual regimes in contact, not one creed."
         },
         "GBR": {
           "name": "Earliest Neolithic arrival",
@@ -1651,7 +1668,8 @@
             "periodId": "middle-neolithic",
             "iso": "GBR",
             "name": "British megalith builders"
-          }
+          },
+          "religion": "Earliest Neolithic Britain imports chambered-tomb and causewayed-enclosure rites: collective burial, feasting debris, and seasonal gathering places."
         },
         "UKR": {
           "name": "Bug–Dniester / farmer fringe",
@@ -1686,7 +1704,8 @@
           "aliases": [
             "Bug–Dniester",
             "farmer fringe"
-          ]
+          ],
+          "religion": "Bug–Dniester / farmer-fringe ritual mixes forager burial habits with incoming agrarian figurines and domestic deposits along the contact zone."
         }
       }
     },
@@ -2244,7 +2263,8 @@
             "periodId": "yamnaya",
             "iso": "GBR",
             "name": "Late Neolithic Britain"
-          }
+          },
+          "religion": "Atlantic megalithic religion: collective tombs, ancestor bone circulation, and solar-aligned monuments (e.g. Stonehenge landscape). Ritual feasting at causewayed enclosures."
         },
         "FRA": {
           "name": "Chasséen / megalithic France",
@@ -2279,7 +2299,8 @@
           "aliases": [
             "Chasséen",
             "megalithic France"
-          ]
+          ],
+          "religion": "Chasséen / Breton–Atlantic megaliths: passage graves, menhirs, and enclosure ceremonies. Ancestor veneration and landscape sacralization dominate the evidence."
         },
         "DEU": {
           "name": "TRB / Michelsberg",
@@ -2313,7 +2334,8 @@
           },
           "aliases": [
             "Michelsberg"
-          ]
+          ],
+          "religion": "TRB / Michelsberg: enclosure rituals, cattle offerings, and early megalithic tombs. Community ancestor cult more visible than individual named deities."
         },
         "UKR": {
           "name": "Cucuteni–Trypillia",
@@ -2344,7 +2366,8 @@
             "periodId": "yamnaya",
             "iso": "UKR",
             "name": "Yamnaya pastoralists"
-          }
+          },
+          "religion": "Cucuteni–Trypillia: house figurines, intentional house burning, and cemetery rites — domestic and settlement-scale cult practice at huge agrarian sites."
         },
         "DNK": {
           "name": "TRB Scandinavia",
@@ -2375,7 +2398,8 @@
             "periodId": "beaker-corded",
             "iso": "DNK",
             "name": "Single Grave Culture"
-          }
+          },
+          "religion": "TRB Scandinavia: megalithic tombs, amber offerings, and wetland deposits. Ancestor burial architecture is the clearest ritual signature."
         },
         "SWE": {
           "name": "TRB & Pitted Ware",
@@ -2406,7 +2430,8 @@
             "periodId": "beaker-corded",
             "iso": "SWE",
             "name": "Battle Axe Culture"
-          }
+          },
+          "religion": "TRB farmers build megalithic tombs while Pitted Ware coasts keep forager ritual. Two sacral geographies — chambered ancestors vs marine/forager deposits."
         },
         "POL": {
           "name": "TRB / early GAC Poland",
@@ -2435,7 +2460,8 @@
           },
           "aliases": [
             "early GAC Poland"
-          ]
+          ],
+          "religion": "TRB / early GAC: megalithic and flat cemeteries, animal offerings, and enclosure rites. GAC cattle-and-amber ritual intensifies toward the steppe contact zone."
         }
       }
     },
@@ -2936,7 +2962,8 @@
             "periodId": "beaker-corded",
             "iso": "UKR",
             "name": "Catacomb steppe"
-          }
+          },
+          "religion": "Yamnaya steppe religion is read from kurgans: ochre-covered flexed burials, wagons/animal offerings, and stelae. Sky/ancestor pastoral cult inferred; no native texts."
         },
         "RUS": {
           "name": "Yamnaya / steppe clans",
@@ -2971,7 +2998,8 @@
           "aliases": [
             "Yamnaya",
             "steppe clans"
-          ]
+          ],
+          "religion": "Pontic–Caspian kurgan rite: single elite graves under mounds, ochre, weapons, and sacrificed animals — status afterlife and pastoral cosmology in earth and herd."
         },
         "HUN": {
           "name": "Yamnaya in the Carpathian Basin",
@@ -3002,7 +3030,8 @@
             "periodId": "migration",
             "iso": "HUN",
             "name": "Sarmatian / early Magyar prelude zone"
-          }
+          },
+          "religion": "Yamnaya-related Carpathian Basin graves import kurgan burial grammar (ochre, mounds, pastoral goods) into farmer Europe’s ritual map."
         },
         "ESP": {
           "name": "Los Millares & Copper Age Iberia",
@@ -3033,7 +3062,8 @@
             "periodId": "beaker-corded",
             "iso": "ESP",
             "name": "Bell Beaker Iberia"
-          }
+          },
+          "religion": "Los Millares / Copper Age Iberia: fortified ritual centers, collective and emerging individual tombs, idol plaques — not Yamnaya kurgans, but parallel sacral intensification."
         },
         "GBR": {
           "name": "Late Neolithic Britain",
@@ -3064,7 +3094,8 @@
             "periodId": "beaker-corded",
             "iso": "GBR",
             "name": "Bell Beaker Britain"
-          }
+          },
+          "religion": "Late Neolithic Britain: continuing megalithic and henge rites (Stonehenge landscape) before Beaker individual graves rewrite burial fashion."
         },
         "ITA": {
           "name": "Remedello / Gaudo",
@@ -3099,7 +3130,8 @@
           "aliases": [
             "Remedello",
             "Gaudo"
-          ]
+          ],
+          "religion": "Remedello / Gaudo: Copper Age cemeteries with weapon graves and formal rite — Italian paths to status burial without steppe kurgans."
         },
         "DEU": {
           "name": "GAC → Corded Ware dawn",
@@ -3130,7 +3162,8 @@
             "periodId": "beaker-corded",
             "iso": "DEU",
             "name": "Corded Ware Germany"
-          }
+          },
+          "religion": "GAC → Corded Ware dawn: cattle-centered offerings and changing grave rites as steppe-related practices approach temperate Europe."
         }
       }
     },
@@ -3727,7 +3760,8 @@
             "periodId": "nordic-bronze",
             "iso": "DEU",
             "name": "Tumulus Culture"
-          }
+          },
+          "religion": "Corded Ware: gendered single graves (battle-axe male package), amphora/beaker offerings, and ancestral mound reuse. Steppe-linked burial ideology over older megalithic collectivity."
         },
         "POL": {
           "name": "Corded Ware Poland",
@@ -3770,7 +3804,8 @@
             "periodId": "migration",
             "iso": "POL",
             "name": "Wielbark culture"
-          }
+          },
+          "religion": "Corded Ware Poland: flexed single inhumations with axes and ceramics; ritual individuality and martial male symbolism dominate cemetery evidence."
         },
         "DNK": {
           "name": "Single Grave Culture",
@@ -3813,7 +3848,8 @@
             "periodId": "nordic-bronze",
             "iso": "DNK",
             "name": "Nordic Bronze Age Denmark"
-          }
+          },
+          "religion": "Single Grave: barrow burials with corded beaker and battle-axe kits. New funerary grammar replacing TRB megalithic collective rites."
         },
         "SWE": {
           "name": "Battle Axe Culture",
@@ -3856,7 +3892,8 @@
             "periodId": "nordic-bronze",
             "iso": "SWE",
             "name": "Nordic Bronze Age Sweden"
-          }
+          },
+          "religion": "Battle Axe Culture: boat-axe graves and beaker offerings — northern Corded Ware ritual package with strong male martial display."
         },
         "GBR": {
           "name": "Bell Beaker Britain",
@@ -3893,7 +3930,8 @@
             "periodId": "nordic-bronze",
             "iso": "GBR",
             "name": "Wessex / British BA"
-          }
+          },
+          "religion": "Bell Beaker Britain: individual graves with beaker, copper/bronze, and archer kits; henge landscapes still used. Beaker rite overlays older monumental religion."
         },
         "ESP": {
           "name": "Bell Beaker Iberia",
@@ -3930,7 +3968,8 @@
             "periodId": "nordic-bronze",
             "iso": "ESP",
             "name": "El Argar"
-          }
+          },
+          "religion": "Bell Beaker Iberia: beaker graves and prestige metal beside older Copper Age idol/tomb traditions — mixed ritual landscape, not pure steppe copy."
         },
         "FRA": {
           "name": "Beaker / late CW France",
@@ -3971,7 +4010,8 @@
           "aliases": [
             "Beaker",
             "late CW France"
-          ]
+          ],
+          "religion": "Beaker / late CW France: beaker inhumations and residual megalithic reuse. Atlantic and continental ritual packages meet in cemeteries."
         },
         "NLD": {
           "name": "Dutch / Rhine Beakers",
@@ -4007,7 +4047,8 @@
           "aliases": [
             "Dutch",
             "Rhine Beakers"
-          ]
+          ],
+          "religion": "Dutch/Rhine Beakers: single graves with beaker sets along river corridors — classic western Beaker funerary package."
         },
         "UKR": {
           "name": "Catacomb steppe",
@@ -4044,7 +4085,8 @@
             "periodId": "nordic-bronze",
             "iso": "UKR",
             "name": "Srubnaya"
-          }
+          },
+          "religion": "Catacomb steppe: niche graves under kurgans, ochre, and weapon offerings — evolved Yamnaya-related funerary religion on the Pontic plain."
         },
         "ITA": {
           "name": "Italian Beaker / EBA",
@@ -4084,7 +4126,8 @@
           },
           "aliases": [
             "Italian Beaker"
-          ]
+          ],
+          "religion": "Italian Beaker / EBA: beaker graves and local Copper Age cemetery continuity; Mediterranean ritual vocabularies absorb the beaker fashion selectively."
         }
       }
     },
@@ -4463,7 +4506,8 @@
             "periodId": "frankish",
             "iso": "DNK",
             "name": "Danish kingdom"
-          }
+          },
+          "religion": "Nordic Bronze Age: sun-cult imagery (Trundholm chariot), rock-art processions, weapon/ornament hoards in bogs, and rich barrow burials — cosmology performed with metal and water."
         },
         "SWE": {
           "name": "Nordic Bronze Age Sweden",
@@ -4506,7 +4550,8 @@
             "periodId": "frankish",
             "iso": "SWE",
             "name": "Swedish / Varangian world"
-          }
+          },
+          "religion": "Bohuslän-type rock art, ship and sun motifs, and wetland hoards. Elite barrows and offering lakes structure a solar/maritime ritual world."
         },
         "NOR": {
           "name": "Nordic Bronze Age Norway",
@@ -4543,7 +4588,8 @@
             "periodId": "frankish",
             "iso": "NOR",
             "name": "Norwegian kingdom forming"
-          }
+          },
+          "religion": "Coastal rock art, cairns, and metal hoards. Ritual emphasizes seascape, boats, and deposited wealth more than temples."
         },
         "GBR": {
           "name": "Wessex / British BA",
@@ -4584,7 +4630,8 @@
           "aliases": [
             "Wessex",
             "British BA"
-          ]
+          ],
+          "religion": "Wessex / British BA: rich barrow burials, ceremonial landscapes around older henges, and prestige metal deposition — ancestor and status cult in chalk country."
         },
         "ESP": {
           "name": "El Argar",
@@ -4621,7 +4668,8 @@
             "periodId": "iron-age",
             "iso": "ESP",
             "name": "Iberians & Celtiberians"
-          }
+          },
+          "religion": "El Argar: intramural and cemetery burials with sharp status grading; Argaric ritual is household/tomb-focused rather than Nordic sun-chariot religion."
         },
         "DEU": {
           "name": "Tumulus Culture",
@@ -4664,7 +4712,8 @@
             "periodId": "iron-age",
             "iso": "DEU",
             "name": "Jastorf / La Tène frontier"
-          }
+          },
+          "religion": "Tumulus Culture: barrow cemeteries, weapon graves, and bronze hoards. Central European BA religion visible mainly as funerary and deposition rites."
         },
         "ITA": {
           "name": "Terramare",
@@ -4701,7 +4750,8 @@
             "periodId": "iron-age",
             "iso": "ITA",
             "name": "Rome vs Etruscans / Samnites"
-          }
+          },
+          "religion": "Terramare: settlement rituals, structured deposits, and cemetery practice in embanked villages — Po-plain civic-sacral order without Nordic rock-art cosmology."
         },
         "GRC": {
           "name": "Mycenaean palaces",
@@ -4738,7 +4788,8 @@
             "periodId": "iron-age",
             "iso": "GRC",
             "name": "Greek poleis"
-          }
+          },
+          "religion": "Mycenaean palaces: named gods appear in Linear B (e.g. Poseidon, Potnia); palace sacrifice, libation, and tholos/chamber tombs. First European written pantheon fragments."
         },
         "UKR": {
           "name": "Srubnaya",
@@ -4775,7 +4826,8 @@
             "periodId": "iron-age",
             "iso": "UKR",
             "name": "Scythian nomads"
-          }
+          },
+          "religion": "Srubnaya: timber-grave steppe rite under kurgans with weapons and animal offerings — continuing Pontic funerary religion into the Late Bronze Age."
         }
       }
     },
@@ -5199,7 +5251,8 @@
           },
           "aliases": [
             "Gallic tribes"
-          ]
+          ],
+          "religion": "La Tène Gallic religion: polytheism later named by Romans (e.g. syncretized Mercury/Teutates types); rituals include sanctuary deposits, weapon offerings, and funerary feasting. Druids as learned ritual specialists in classical reports."
         },
         "GBR": {
           "name": "British Iron Age tribes",
@@ -5242,7 +5295,8 @@
             "periodId": "classical",
             "iso": "GBR",
             "name": "Roman Britannia"
-          }
+          },
+          "religion": "British Iron Age: shrine deposits, bog/river offerings, chariot burials in the east, and hillfort ceremonial spaces. Local gods later equated with Roman deities after conquest."
         },
         "IRL": {
           "name": "Irish Iron Age",
@@ -5274,7 +5328,8 @@
             "periodId": "classical",
             "iso": "IRL",
             "name": "Hibernia"
-          }
+          },
+          "religion": "Irish Iron Age ritual: royal sites (Tara, Emain), bog deposits, and later mythic cycles that must be used cautiously as Iron Age evidence. Sovereignty and otherworld themes dominate later texts."
         },
         "DEU": {
           "name": "Jastorf / La Tène frontier",
@@ -5321,7 +5376,8 @@
           "aliases": [
             "Jastorf",
             "La Tène frontier"
-          ]
+          ],
+          "religion": "Jastorf / La Tène frontier: weapon and bog offerings, cremation cemeteries, and sacred enclosures. Germanic and Celtic ritual zones meet without a single pantheon list."
         },
         "ESP": {
           "name": "Iberians & Celtiberians",
@@ -5358,7 +5414,8 @@
             "periodId": "classical",
             "iso": "ESP",
             "name": "Roman Hispania"
-          }
+          },
+          "religion": "Iberian & Celtiberian cults: sanctuaries, inscribed deity names in places, warrior/funerary stelae, and cave or high-place rites — local pantheons, not a uniform Celtic church."
         },
         "ITA": {
           "name": "Rome vs Etruscans / Samnites",
@@ -5405,7 +5462,8 @@
           "aliases": [
             "Rome vs Etruscans",
             "Samnites"
-          ]
+          ],
+          "religion": "Rome vs Etruscans/Samnites: Roman state cult (Jupiter, Mars, Vesta) with augury and sacrifice; Etruscan haruspicy and tomb ritual; Italian peoples keep distinct sanctuary traditions."
         },
         "GRC": {
           "name": "Greek poleis",
@@ -5454,7 +5512,8 @@
             "periodId": "classical",
             "iso": "GRC",
             "name": "Roman Greece"
-          }
+          },
+          "religion": "Greek poleis: Olympian pantheon, civic temples, blood sacrifice, festivals (Panathenaia, Dionysia), oracles, and mystery cults (Eleusis). Religion is public liturgy as much as private piety."
         },
         "BGR": {
           "name": "Thracian kingdoms",
@@ -5486,7 +5545,8 @@
             "periodId": "frankish",
             "iso": "BGR",
             "name": "First Bulgarian Empire"
-          }
+          },
+          "religion": "Thracian kingdoms: royal burials with rich grave goods, rock sanctuaries, and later Greek reports of Zalmoxis/immortality ideas — elite funerary religion at the core."
         },
         "UKR": {
           "name": "Scythian nomads",
@@ -5523,7 +5583,8 @@
             "periodId": "classical",
             "iso": "UKR",
             "name": "Sarmatian steppe"
-          }
+          },
+          "religion": "Scythian nomads: kurgan elites, horse sacrifice, cannabis/vapor rites in Herodotus, and golden ritual gear. Ancestor and sky/animal cult inferred from graves and art."
         },
         "AUT": {
           "name": "Hallstatt / early La Tène elites",
@@ -5559,7 +5620,8 @@
           "aliases": [
             "Hallstatt",
             "early La Tène elites"
-          ]
+          ],
+          "religion": "Hallstatt / early La Tène elites: princely graves, banqueting ritual, and sanctuary deposits in the Alpine foreland — status afterlife and feasting ideology."
         }
       }
     },
@@ -5947,7 +6009,8 @@
           "aliases": [
             "Roman Italy",
             "early Empire"
-          ]
+          ],
+          "religion": "Roman civic polytheism: Jupiter–Juno–Minerva and household Lares/Penates; blood sacrifice, augury, and calendrical festivals. Rising imperial cult, plus mystery religions (Isis, Mithras) in the army and cities."
         },
         "FRA": {
           "name": "Roman Gaul",
@@ -5990,7 +6053,8 @@
             "periodId": "migration",
             "iso": "FRA",
             "name": "Frankish Gaul"
-          }
+          },
+          "religion": "Roman Gaul: interpretatio Romana of Celtic gods, imperial cult centers (Lugdunum), and Gallo-Roman temples. Native deposition rites continue beside Roman sacrifice and priesthoods."
         },
         "ESP": {
           "name": "Roman Hispania",
@@ -6033,7 +6097,8 @@
             "periodId": "migration",
             "iso": "ESP",
             "name": "Visigothic Hispania"
-          }
+          },
+          "religion": "Roman Hispania: imperial and civic cults, Iberian/Celtiberian survivals in rural sanctuaries, and mystery cults in towns. Sacrifice, vows (ex-votos), and emperor worship structure public religion."
         },
         "GBR": {
           "name": "Roman Britannia",
@@ -6076,7 +6141,8 @@
             "periodId": "migration",
             "iso": "GBR",
             "name": "Anglo-Saxon kingdoms forming"
-          }
+          },
+          "religion": "Roman Britannia: classical temples and imperial cult in towns; Mithraea on the frontier; local deities syncretized (e.g. Sulis Minerva). Rural shrines and votive deposits persist."
         },
         "DEU": {
           "name": "Roman frontier / Magna Germania",
@@ -6123,7 +6189,8 @@
           "aliases": [
             "Roman frontier",
             "Magna Germania"
-          ]
+          ],
+          "religion": "Limes religion: Roman camps host Jupiter, standards-cult, and Mithras; Magna Germania beyond the Rhine keeps Germanic votive and funerary rites outside imperial liturgy."
         },
         "GRC": {
           "name": "Roman Greece",
@@ -6166,7 +6233,8 @@
             "periodId": "vikings",
             "iso": "GRC",
             "name": "Byzantine Empire (Macedonian apex)"
-          }
+          },
+          "religion": "Roman Greece: classical temples and festivals continue under Roman rule; imperial cult joins civic polytheism. Philosophical schools debate gods while sacrifice still defines public piety."
         },
         "TUR": {
           "name": "Roman Asia Minor",
@@ -6204,7 +6272,8 @@
             "periodId": "migration",
             "iso": "TUR",
             "name": "Eastern Roman Anatolia (edge)"
-          }
+          },
+          "religion": "Roman Asia Minor: dense temple cities, imperial cult, Greek civic gods, and mystery/healing sanctuaries (e.g. Asclepius). Processions and benefactor religion animate urban life."
         },
         "ROU": {
           "name": "Dacia (contested)",
@@ -6234,7 +6303,8 @@
           ],
           "aliases": [
             "Dacia"
-          ]
+          ],
+          "religion": "Dacia contested: Geto-Dacian sacral kingship and sanctuary traditions meet Roman military cult after conquest — imperial religion imposed on a resistant ritual landscape."
         },
         "IRL": {
           "name": "Hibernia",
@@ -6271,7 +6341,8 @@
             "periodId": "frankish",
             "iso": "IRL",
             "name": "Irish kingdoms & Norse-Gaelic beginnings"
-          }
+          },
+          "religion": "Hibernia outside the Empire: Iron Age–style royal sites, bog deposits, and local gods. No Roman civic cult; later Christian conversion still centuries away."
         },
         "UKR": {
           "name": "Sarmatian steppe",
@@ -6308,7 +6379,8 @@
             "periodId": "migration",
             "iso": "UKR",
             "name": "Chernyakhov / Gothic steppe edge"
-          }
+          },
+          "religion": "Sarmatian steppe: kurgan burial, horse gear, and nomadic cult practice. Greek cities of the coast keep Hellenic temples at the edge of the pastoral world."
         }
       }
     },
@@ -6658,7 +6730,7 @@
           "summary": "Gothic-linked archaeological horizon in Pomerania/Poland.",
           "conflicts": "Movements toward Black Sea (Chernyakhov); pressure from and on neighbors.",
           "leaders": "Archaeological cultures more than named kings (Wielbark).",
-          "religion": "Pagan; Christianity centuries away.",
+          "religion": "Wielbark communities practice cremation and inhumation with Scandinavian links; gods unnamed in texts. Christianity is still a distant Roman/Byzantine horizon, not a local church yet.",
           "culture": "Wielbark burial rite changes; amber and trade.",
           "story": "Wielbark’s link to Gothic migrations is archaeology’s great detective story — cemeteries hinting at peoples later famous on the Black Sea and in Italy.",
           "literature": "Latin letters continue in bishops’ cities; Gothic and other tongues carry oral epic. Later Beowulf and continental hero legends preserve a Migration-Age mood of hall, feud, and gold — composed afterward, remembering this world of warbands. Polish–Lithuanian and later Polish culture specializes in noble liberty myths and romantic survival art.",
@@ -6693,7 +6765,7 @@
           "summary": "Multi-ethnic horizon with Gothic elites.",
           "conflicts": "Hunnic shock; collapse and westward Gothic migrations.",
           "leaders": "Gothic and steppe elites in Chernyakhov horizons; Hunnic overlords.",
-          "religion": "Diverse; Christian missions limited; steppe cults.",
+          "religion": "Chernyakhov / Gothic steppe edge mixes Germanic, Sarmatian, and local rites — kurgans, weapon graves, and limited Christian contact. Steppe cults and household offerings outrank organized churches.",
           "culture": "Multi-ethnic Chernyakhov villages; Hunnic shock mobility.",
           "story": "The Hunnic storm empties and remakes the Pontic edge — Attila’s Europe begins in these grasslands.",
           "literature": "Latin letters continue in bishops’ cities; Gothic and other tongues carry oral epic. Later Beowulf and continental hero legends preserve a Migration-Age mood of hall, feud, and gold — composed afterward, remembering this world of warbands. Borderland creativity — Cossack, Ruthenian, and European currents braided under dangerous skies.",
@@ -6914,7 +6986,7 @@
           "summary": "Carpathian basin peoples before the later Magyar conquest of the 9th–10th centuries.",
           "conflicts": "Hunnic then Gepid/Avar-era upheavals in the wider Middle Danube memory.",
           "leaders": "Named kings scarce; Avar khagans dominate the wider basin’s politics in this era.",
-          "religion": "Pagan steppe and local cults; Christian missions limited.",
+          "religion": "Sarmatian and early steppe groups keep horse-and-kurgan funerary religion; Roman Christian missions are peripheral. Local cult practice, not dioceses, structures the sacred.",
           "culture": "Steppe–agrarian frontier material cultures.",
           "story": "The basin is a highway of peoples — the stage on which Magyars will later found Hungary.",
           "literature": "Latin letters continue in bishops’ cities; Gothic and other tongues carry oral epic. Later Beowulf and continental hero legends preserve a Migration-Age mood of hall, feud, and gold — composed afterward, remembering this world of warbands. Hungarian culture keeps a steppe-origin memory inside a Latin-Christian and later Habsburg frame.",
@@ -6953,7 +7025,7 @@
           "summary": "Anatolian heartland of the Eastern Roman Empire beyond the Balkan focus of this map tick.",
           "conflicts": "Persian wars on the eastern front; Balkan crises pulling imperial attention.",
           "leaders": "Eastern Roman emperors (Arcadius to Justinian’s eve).",
-          "religion": "Imperial Christianity.",
+          "religion": "Imperial Christianity of the Eastern Roman world: episcopal cities, liturgy, relics, and Christological debate. Monasteries and pilgrimage already shape Anatolian sacred geography.",
           "culture": "Greek Roman cities of Asia Minor.",
           "story": "While Europe’s west fragments, Anatolia taxes and prays for an empire that still calls itself Roman.",
           "literature": "Latin letters continue in bishops’ cities; Gothic and other tongues carry oral epic. Later Beowulf and continental hero legends preserve a Migration-Age mood of hall, feud, and gold — composed afterward, remembering this world of warbands. Ottoman and Anatolian layers make this edge of the map a second classical continuum for Europe to face.",
@@ -7478,7 +7550,7 @@
           "summary": "Carolingian east / stem duchies forming.",
           "conflicts": "Slavic frontier wars; Viking raids on coasts/rivers.",
           "leaders": "Louis the German; Arnulf; early stem-duke politics after Verdun.",
-          "religion": "Latin Christianity; missionary pushes east.",
+          "religion": "Latin Christianity with royal and episcopal sponsorship; baptism, Mass, and saints’ cults structure public life. Missionary pushes east plant churches among Saxons and neighbors, often with political force.",
           "culture": "East Frankish lordship; monastic centers; frontier marches.",
           "story": "East Francia becomes the kernel of the later Holy Roman Empire — a kingdom born from treaty lines at Verdun.",
           "literature": "Carolingian Latin renewal (Alcuin, Einhard’s Life of Charlemagne), vernacular beginnings, and in the isles the flowering of Old English and Insular Latin. Annals invent yearly time; hagiography invents holy celebrities. German lands often host the workshop — print, metal, and later industrial form — for Europe’s ideas.",
@@ -7531,7 +7603,7 @@
           "summary": "Frankish rule in north; Byzantine south.",
           "conflicts": "Fragmentation; Arab raids on Sicily/south.",
           "leaders": "Charlemagne as Lombard king; popes; Byzantine officials in the south.",
-          "religion": "Latin papacy vs Greek south; Islamic Sicily rising in the 9th c.",
+          "religion": "Rome’s Latin papacy, Greek Orthodoxy in the south, and rising Islam in Sicily create a three-way ritual map — Mass, Byzantine liturgy, and congregational prayer on one peninsula.",
           "culture": "Lombard law memory; Roman ceremonial; Mediterranean trade seeds.",
           "story": "The Donation ideology and papal–Frankish alliance remake Italy into the empire’s sacred theater.",
           "literature": "Carolingian Latin renewal (Alcuin, Einhard’s Life of Charlemagne), vernacular beginnings, and in the isles the flowering of Old English and Insular Latin. Annals invent yearly time; hagiography invents holy celebrities. Italian cities teach prestige: from Roman monumentality to Renaissance brand management of beauty.",
@@ -7588,7 +7660,7 @@
           "summary": "Christian north vs Umayyad south.",
           "conflicts": "Reconquista frontier raids both ways.",
           "leaders": "Emirs/caliphs of Córdoba; Alfonso II of Asturias; counts of Barcelona.",
-          "religion": "Islam in Al-Andalus; northern Christian kingdoms; Jewish communities.",
+          "religion": "Al-Andalus: Islamic prayer, Qur’anic law, and mosque life; northern Christian kingdoms keep Mass and saints; Jewish communities maintain synagogue and law. Three ritual civilizations in one peninsula.",
           "culture": "Córdoba’s libraries and mosques; Asturian churches; frontier raid culture (razzias).",
           "story": "Almanzor’s raids (late 10th c. still ahead of this tick’s heart) haunt Christian memory — Córdoba as both civilization and threat.",
           "literature": "Carolingian Latin renewal (Alcuin, Einhard’s Life of Charlemagne), vernacular beginnings, and in the isles the flowering of Old English and Insular Latin. Annals invent yearly time; hagiography invents holy celebrities. Iberia’s art of contact — Christian, Jewish, Islamic — keeps Europe from pretending it was ever only Latin.",
@@ -7688,7 +7760,7 @@
           "summary": "Gaelic over-kingships with early Viking bases appearing on coasts late in the century.",
           "conflicts": "Inter-dynastic cattle politics; first Norse raids (from 795 in annals).",
           "leaders": "Uí Néill over-kings; Munster rivals; early Norse chieftains in camps.",
-          "religion": "Christian monastic Ireland; pagan Norse newcomers.",
+          "religion": "Christian monastic Ireland (Mass, reliquaries, high crosses) meets pagan Norse newcomers whose gods and ship-burial rites convert unevenly in the towns.",
           "culture": "High-cross monastic art; learning that exports missionaries.",
           "story": "The Annals’ first Viking raid notices begin Ireland’s long Norse chapter — monasteries as both treasure and target.",
           "literature": "Carolingian Latin renewal (Alcuin, Einhard’s Life of Charlemagne), vernacular beginnings, and in the isles the flowering of Old English and Insular Latin. Annals invent yearly time; hagiography invents holy celebrities. Irish monastic and later Gaelic learned traditions punch above demographic weight in Europe’s imagination.",
@@ -7729,7 +7801,7 @@
           "summary": "Viking Age Denmark.",
           "conflicts": "Raids/settlement abroad; rivalry with neighbors.",
           "leaders": "Early historically foggy kings culminating toward Bluetooth’s line.",
-          "religion": "Pagan with Christian missions (Ansgar’s memory).",
+          "religion": "Norse pagan sacrifice and hall cult dominate; Ansgar-style missions plant fragile churches. Baptism is still a royal/port phenomenon, not a finished conversion.",
           "culture": "Trading towns (Hedeby); ship levies.",
           "story": "Denmark sits at the mouth of Baltic–North Sea violence and trade — the workshop of the Viking Age.",
           "literature": "Carolingian Latin renewal (Alcuin, Einhard’s Life of Charlemagne), vernacular beginnings, and in the isles the flowering of Old English and Insular Latin. Annals invent yearly time; hagiography invents holy celebrities. Danish gatekeeping of the Baltic Sound makes culture a toll-booth as well as a stage.",
@@ -7782,7 +7854,7 @@
           "summary": "Harald Fairhair traditions / coastal power.",
           "conflicts": "British Isles ventures; Danish rivalry.",
           "leaders": "Sea-kings and local petty kings before Harald Fairhair’s unification traditions.",
-          "religion": "Norse paganism dominant; Christian contact via raid and trade.",
+          "religion": "Norse paganism — blót, burial mounds, and sacred groves — remains dominant. Christian contact arrives via trade and raid; forced conversion is still ahead.",
           "culture": "Shipburial elite display; skaldic praise; thing assemblies.",
           "story": "The Viking launch from fjords toward Ireland, Francia, and beyond begins Norway’s global hour.",
           "literature": "Carolingian Latin renewal (Alcuin, Einhard’s Life of Charlemagne), vernacular beginnings, and in the isles the flowering of Old English and Insular Latin. Annals invent yearly time; hagiography invents holy celebrities. Norwegian arts remember ships first — keel as national metaphor from Oseberg to oil platforms.",
@@ -7829,7 +7901,7 @@
           "summary": "Mälaren power and eastern routes.",
           "conflicts": "Rus’ ventures; Baltic competition.",
           "leaders": "Uppsala kings in later tradition; Rus’ expedition leaders.",
-          "religion": "Pagan cults; eastern contact religions along trade routes.",
+          "religion": "Uppsala-centered pagan cult memory, local blót, and mound burial persist while Varangian routes bring Byzantine and Latin Christian contact religions east and west.",
           "culture": "Eastern river routes; proto-urban Birka.",
           "story": "Swedish Vikings as ‘Rus’’ in eastern sources link the Mälaren to the Black Sea.",
           "literature": "Carolingian Latin renewal (Alcuin, Einhard’s Life of Charlemagne), vernacular beginnings, and in the isles the flowering of Old English and Insular Latin. Annals invent yearly time; hagiography invents holy celebrities. Swedish culture often exports northern clarity — from rock art to modern design temperaments.",
@@ -7886,7 +7958,7 @@
           "summary": "Themes of Asia Minor as the empire’s military reservoir.",
           "conflicts": "Arab frontier warfare; iconoclasm politics earlier/around the era.",
           "leaders": "Byzantine emperors (Irene, Nikephoros, later Macedonians still ahead).",
-          "religion": "Greek Orthodoxy; icon controversies.",
+          "religion": "Greek Orthodoxy: Divine Liturgy, icons, and monasticism under iconoclast/iconophile controversy. Imperial church and holy images are political as well as sacred.",
           "culture": "Theme armies; Constantinopolitan pull.",
           "story": "Anatolia’s soldiers keep Byzantium alive while the west invents new kingdoms.",
           "literature": "Carolingian Latin renewal (Alcuin, Einhard’s Life of Charlemagne), vernacular beginnings, and in the isles the flowering of Old English and Insular Latin. Annals invent yearly time; hagiography invents holy celebrities. Ottoman and Anatolian layers make this edge of the map a second classical continuum for Europe to face.",
@@ -7927,7 +7999,7 @@
           "summary": "Khan then Christian rulers south of the Danube balancing Byzantium.",
           "conflicts": "Byzantine wars; conversion politics under Boris I (later 9th c.).",
           "leaders": "Krum (memory); Boris I; early Bulgarian khans/princes.",
-          "religion": "Pagan Bulgar elite then Slavic Orthodoxy after conversion.",
+          "religion": "Bulgar elite paganism gives way to Slavic Orthodoxy after conversion: baptism, liturgy in Slavic, and a new patriarchal church tying rule to rite.",
           "culture": "Pliska/Preslav; Slavic liturgy developing.",
           "story": "Boris’s conversion is the Balkans’ state-baptism parallel to northern Europe’s royal conversions.",
           "literature": "Carolingian Latin renewal (Alcuin, Einhard’s Life of Charlemagne), vernacular beginnings, and in the isles the flowering of Old English and Insular Latin. Annals invent yearly time; hagiography invents holy celebrities. Bulgarian letters pioneer Slavic Christian literacy — a soft empire of books south of the Danube.",
@@ -7968,7 +8040,7 @@
           "summary": "Scandinavian–Slavic networks forming along the Dnieper before Vladimir’s baptism.",
           "conflicts": "Khazar tribute politics; steppe raiders; Byzantine trade diplomacy.",
           "leaders": "Semi-legendary Varangian princes of the Primary Chronicle tradition.",
-          "religion": "Pagan; Christian contact via Byzantium and missions.",
+          "religion": "Rus’ river road remains largely pagan (Perun and related cults in later memory) while Byzantine and missionary Christianity arrive along trade — baptism still episodic.",
           "culture": "River trade; mixed retinues.",
           "story": "Askold, Dir, and Oleg in chronicle memory — the origin tales of a polity that will choose Orthodoxy.",
           "literature": "Carolingian Latin renewal (Alcuin, Einhard’s Life of Charlemagne), vernacular beginnings, and in the isles the flowering of Old English and Insular Latin. Annals invent yearly time; hagiography invents holy celebrities. Borderland creativity — Cossack, Ruthenian, and European currents braided under dangerous skies.",
@@ -8596,7 +8668,7 @@
           "summary": "Bluetooth’s Christian claim matures into a kingdom projecting power into England and the Baltic.",
           "conflicts": "Rivalry with Norway/Sweden; Wendish coasts; English conquest politics.",
           "leaders": "Harold Bluetooth (memory); Swein Forkbeard; Cnut; Estridsson dynasty beginnings.",
-          "religion": "Royal conversion to Latin Christianity; pagan holdouts in places.",
+          "religion": "Royal conversion to Latin Christianity: baptism, church-building, and Jelling-style monuments. Pagan blót and mound rites survive in places as the kingdom’s public religion flips.",
           "culture": "Jelling stones as dynasty-and-conversion monuments; ship levies; runic and Latin transition.",
           "story": "The Jelling inscription’s boast — ‘made the Danes Christian’ — is political theology in stone; Cnut’s English crown makes Denmark briefly a North Sea imperial center.",
           "literature": "Jelling stones are literature in runes — public theology of conquest and conversion. Skaldic networks tie Denmark to England’s courts under Cnut.",
@@ -8649,7 +8721,7 @@
           "summary": "Coastal kingship forged by force and baptism; Iceland and Atlantic isles in Norwegian orbit.",
           "conflicts": "Civil wars among claimants; English and Danish entanglement.",
           "leaders": "Olaf Tryggvason; Olaf Haraldsson (St Olaf); Cnut’s overlorship phases.",
-          "religion": "Aggressive royal Christianization against local cults.",
+          "religion": "Aggressive royal Christianization suppresses local blót and temple cults; baptism and parish foundations remake the ritual map, not without resistance.",
           "culture": "Skaldic verse; later saga memory; fjord levies and merchant farmers.",
           "story": "St Olaf’s fall at Stiklestad (1030) turns a hard king into Norway’s eternal martyr — conversion sealed by death-story as much as by law.",
           "literature": "Skalds mint kennings like jewelry; kings buy stanzas with rings. Later kings’ sagas will novelize this century — here the live form is praise screamed over mead.",
@@ -8808,7 +8880,7 @@
           "summary": "A frontier county of León on the Atlantic edge of the Reconquista, not yet a fully independent kingdom (that crystallizes in the 12th century).",
           "conflicts": "Raids vs Andalusi neighbors; loyalty politics toward León.",
           "leaders": "Counts of Portugal under León’s shadow (e.g. Menendo González era memory; later Henry of Burgundy still ahead).",
-          "religion": "Latin Christian frontier society.",
+          "religion": "Latin Christian frontier: Mass, saints, and military-religious pressure against Islam to the south. Parish and monastery structure a crusading society in formation.",
           "culture": "Atlantic agrarian frontier; pilgrimage roads beginning to matter.",
           "story": "Portugal’s later independence is seeded in this county’s frontier identity — a small Christian lordship facing the taifa world.",
           "literature": "Skaldic praise poetry, eddic myth in oral form, Anglo-Saxon chronicle prose, Arabic travel notices of the northmen, and Slavic Primary Chronicle seeds. This is an age of named poets and infamous nicknames — literature as reputation management. Portugal’s Atlantic gaze turns European art toward oceans and return cargoes of style.",
@@ -8844,7 +8916,7 @@
           "summary": "North and center: emperors, popes, and cities; south: Byzantines and Muslim Sicily before Norman conquest.",
           "conflicts": "Crescentii/ Tusculani Roman factions; imperial–papal tension; Arab raids.",
           "leaders": "Ottonian emperors in Italy; popes of the age; Byzantine catepans; Kalbid emirs in Sicily.",
-          "religion": "Latin Christianity vs Greek Orthodoxy vs Islam on one peninsula.",
+          "religion": "Latin Mass in the north/center, Greek liturgy in Byzantine zones, and Islamic prayer in the south — three ritual systems sharing markets and frontiers.",
           "culture": "Manuscript centers; early communal stirrings; Mediterranean trade of Amalfi/Venice.",
           "story": "Italy at the millennium is Europe’s religious crossroads — three civilizations on one boot — soon to be remade by Norman adventurers.",
           "literature": "Skaldic praise poetry, eddic myth in oral form, Anglo-Saxon chronicle prose, Arabic travel notices of the northmen, and Slavic Primary Chronicle seeds. This is an age of named poets and infamous nicknames — literature as reputation management. Italian cities teach prestige: from Roman monumentality to Renaissance brand management of beauty.",
@@ -8897,7 +8969,7 @@
           "summary": "Mieszko I’s baptism (966) and Bolesław Chrobry’s kingship place Poland inside Latin Christendom’s political club.",
           "conflicts": "Wars with the Reich, Bohemia, and Kievan Rus’; pagan reaction crises.",
           "leaders": "Mieszko I; Bolesław I the Brave; early Piast bishops.",
-          "religion": "Latin Christianity newly established; pagan uprisings still possible.",
+          "religion": "Newly Latin Christian Piast realm: baptism of elites, church tithes, and saints’ cults. Pagan uprisings show conversion is still unfinished social work.",
           "culture": "Gniezno as sacral center; warrior-duke retinues; missionary politics.",
           "story": "The Gniezno meeting (1000) with Otto III becomes Poland’s foundational European recognition scene — crown, relics, and imperial friendship as statecraft.",
           "literature": "Skaldic praise poetry, eddic myth in oral form, Anglo-Saxon chronicle prose, Arabic travel notices of the northmen, and Slavic Primary Chronicle seeds. This is an age of named poets and infamous nicknames — literature as reputation management. Polish–Lithuanian and later Polish culture specializes in noble liberty myths and romantic survival art.",
@@ -9032,7 +9104,7 @@
           "summary": "Forest towns and river routes of northern Rus’ linked to Kiev’s federation and Scandinavian trade.",
           "conflicts": "Tribute politics among tribes and princes; eastern Finnish/Uralic neighbors.",
           "leaders": "Local Rurikid princes; Novgorod posadnik traditions forming.",
-          "religion": "Christianization spreading north from Kiev unevenly.",
+          "religion": "Orthodox Christianization spreads north from Kiev unevenly: liturgy, baptism, and icons in towns; rural pagan practice persists in forest zones.",
           "culture": "Fur trade; wooden towns; bilingual contact zones.",
           "story": "Novgorod’s later republican myth has roots in this river-road world where merchants and princes bargain under loose Kievan suzerainty.",
           "literature": "Skaldic praise poetry, eddic myth in oral form, Anglo-Saxon chronicle prose, Arabic travel notices of the northmen, and Slavic Primary Chronicle seeds. This is an age of named poets and infamous nicknames — literature as reputation management. Russian and wider Rus’ cultures translate Byzantine inheritance into forest and empire scales.",
@@ -9073,7 +9145,7 @@
           "summary": "Basil II’s Byzantium is a military and fiscal superpower reclaiming the Balkans and projecting into the Caucasus and Italy.",
           "conflicts": "Bulgarian wars; Fatimid frontier; internal court factions.",
           "leaders": "Basil II; Constantine VIII; military aristocracy.",
-          "religion": "Greek Orthodoxy as imperial ideology; missionary work among Slavs.",
+          "religion": "Byzantine Orthodoxy as imperial ideology — liturgy, icons, and missionary baptism among Slavs. The emperor and patriarch frame sacred politics.",
           "culture": "Macedonian Renaissance learning; Constantinople’s ceremonial majesty.",
           "story": "Basil’s blinding of Bulgarian captives (as told) is the dark legend of reconquest — empire restored by terror and administration.",
           "literature": "Skaldic praise poetry, eddic myth in oral form, Anglo-Saxon chronicle prose, Arabic travel notices of the northmen, and Slavic Primary Chronicle seeds. This is an age of named poets and infamous nicknames — literature as reputation management. Greek language and forms remain a reusable antiquity — quarried by every later age for prestige.",
@@ -9129,7 +9201,7 @@
           "summary": "Samuel’s Bulgaria fights Basil II until catastrophic defeat and Byzantine annexation.",
           "conflicts": "Existential war with Byzantium; shifting capitals and mountain resistance.",
           "leaders": "Samuel of Bulgaria; last Cometopuli.",
-          "religion": "Slavic Orthodoxy with Bulgarian patriarchal memory.",
+          "religion": "Slavic Orthodoxy with Bulgarian patriarchal memory: liturgy, monasticism, and autocephalous pride after conversion from Bulgar paganism.",
           "culture": "Slavic liturgy; fortress warfare in the western Balkans.",
           "story": "The end of the First Empire becomes a national epic of resistance — historically a Byzantine reconquest that remaps the Balkans for generations.",
           "literature": "Skaldic praise poetry, eddic myth in oral form, Anglo-Saxon chronicle prose, Arabic travel notices of the northmen, and Slavic Primary Chronicle seeds. This is an age of named poets and infamous nicknames — literature as reputation management. Bulgarian letters pioneer Slavic Christian literacy — a soft empire of books south of the Danube.",
@@ -9701,7 +9773,7 @@
           "summary": "Christian Swedish kingdom (Folksunga era approaching).",
           "conflicts": "Rivalry with Denmark and Norway; eastern wars vs Novgorod; Finnish expansion.",
           "leaders": "Eric dynasty / Folkung kings (e.g. Birger Jarl’s era in the long 13th c.).",
-          "religion": "Latin Christian kingdom; Uppsala archbishopric.",
+          "religion": "Latin Christian kingdom with Uppsala archbishopric: parish Mass, saints, and pilgrimage. Older pagan cult sites are remembered as the church plants a full diocesan map.",
           "culture": "Landscape laws; castle building; Finnish expansion.",
           "story": "Birger Jarl becomes the realm-builder of later Swedish memory — Stockholm’s founding legend and eastern crusade politics.",
           "literature": "Troubadour and minnesang lyric, chansons de geste, Arthurian romance, Norse kings’ sagas, Slavic and Byzantine court letters, Arabic Andalusi poetry. Universities invent the scholastic sentence; vernaculars invent the love song and the crusade boast. Swedish culture often exports northern clarity — from rock art to modern design temperaments.",
@@ -9748,7 +9820,7 @@
           "summary": "Valdemar-age Danish power in the Baltic.",
           "conflicts": "Wars with Wends, Holstein, Norway/Sweden; Baltic crusading politics.",
           "leaders": "Valdemar I; Absalon; Valdemar II.",
-          "religion": "Latin Christian monarchy with strong episcopal partners.",
+          "religion": "Latin Christian monarchy partnered with bishops: Mass, confession, crusading vows, and monastic houses structure belief and politics together.",
           "culture": "Baltic crusading; brick Romanesque/Gothic; Law of Jutland.",
           "story": "Absalon and the Valdemars turn Denmark into a Baltic crusader kingdom — priest and king as twin founders.",
           "literature": "Troubadour and minnesang lyric, chansons de geste, Arthurian romance, Norse kings’ sagas, Slavic and Byzantine court letters, Arabic Andalusi poetry. Universities invent the scholastic sentence; vernaculars invent the love song and the crusade boast. Danish gatekeeping of the Baltic Sound makes culture a toll-booth as well as a stage.",
@@ -9795,7 +9867,7 @@
           "summary": "Sverre/Birkebeiner aftermath consolidating monarchy.",
           "conflicts": "Civil wars earlier; interest in Isles; Danish rivalry.",
           "leaders": "Sverre; Håkon IV.",
-          "religion": "Latin Christianity; church–crown civil wars earlier in the century.",
+          "religion": "Latin Christianity after civil wars of church and crown: parish system, pilgrimage to Nidaros, and royal sacral ideology.",
           "culture": "King’s sagas; coastal trade; North Atlantic isles.",
           "story": "The civil-war age ends in Håkon’s European-style kingship — Norway briefly looks like a high-medieval state among peers.",
           "literature": "Troubadour and minnesang lyric, chansons de geste, Arthurian romance, Norse kings’ sagas, Slavic and Byzantine court letters, Arabic Andalusi poetry. Universities invent the scholastic sentence; vernaculars invent the love song and the crusade boast. Norwegian arts remember ships first — keel as national metaphor from Oseberg to oil platforms.",
@@ -9836,7 +9908,7 @@
           "summary": "Godar chieftaincy republic with Althing; Norwegian royal pressure rising by the 13th c.",
           "conflicts": "Sturlung Age feuds; later submission to Norway (1262).",
           "leaders": "Goðar chieftains; Snorri Sturluson in the Sturlung arc.",
-          "religion": "Latin Christianity after 1000 conversion.",
+          "religion": "Latin Christianity after the 1000 conversion: farmstead churches, quiet pagan residues in saga memory, and law tied to Christian public order.",
           "culture": "Saga writing — Europe’s great vernacular prose laboratory.",
           "story": "The sagas invent a nation’s memory in prose while the commonwealth kills itself into Norwegian rule.",
           "literature": "Troubadour and minnesang lyric, chansons de geste, Arthurian romance, Norse kings’ sagas, Slavic and Byzantine court letters, Arabic Andalusi poetry. Universities invent the scholastic sentence; vernaculars invent the love song and the crusade boast. Iceland’s medieval republic writes Europe’s greatest vernacular prose museum — the sagas.",
@@ -9920,7 +9992,7 @@
           "summary": "English lordship in Pale vs Gaelic kingdoms.",
           "conflicts": "Continual frontier war between Anglo-Norman lords and Gaelic polities.",
           "leaders": "English justiciars; Gaelic kings; Anglo-Norman lords (de Burgh, Fitzgerald beginnings).",
-          "religion": "Latin Christian; reforming church under English and papal pressure.",
+          "religion": "Latin Christian Ireland under reforming bishops and English pressure: Mass, saints, and monastic learning; Gaelic church customs slowly standardized.",
           "culture": "Hybrid marcher culture; bardic learning; castle and tower houses.",
           "story": "Strongbow’s century-old invasion settles into unfinished conquest — England’s oldest overseas entanglement.",
           "literature": "Troubadour and minnesang lyric, chansons de geste, Arthurian romance, Norse kings’ sagas, Slavic and Byzantine court letters, Arabic Andalusi poetry. Universities invent the scholastic sentence; vernaculars invent the love song and the crusade boast. Irish monastic and later Gaelic learned traditions punch above demographic weight in Europe’s imagination.",
@@ -10018,7 +10090,7 @@
           "summary": "Hohenstaufen imperial politics; princes and cities.",
           "conflicts": "Investiture aftershocks; Italian campaigns; Slavic eastern frontier (Ostsiedlung).",
           "leaders": "Frederick Barbarossa; Frederick II; elective princes.",
-          "religion": "Catholic empire; investiture aftershocks; crusading emperors.",
+          "religion": "Catholic Holy Roman Empire: Mass, relics, and crusading emperors after Investiture conflicts. Monasteries and cathedral chapters are ritual and political engines.",
           "culture": "Minnesang; Kaiser myth; Italian–German political double life.",
           "story": "Barbarossa’s legend — drowned on crusade, sleeping in a mountain in folklore — outlives the political failure to fully master Italy.",
           "literature": "Troubadour and minnesang lyric, chansons de geste, Arthurian romance, Norse kings’ sagas, Slavic and Byzantine court letters, Arabic Andalusi poetry. Universities invent the scholastic sentence; vernaculars invent the love song and the crusade boast. German lands often host the workshop — print, metal, and later industrial form — for Europe’s ideas.",
@@ -10074,7 +10146,7 @@
           "summary": "Kingdom within the Empire; Prague as a rising central European capital.",
           "conflicts": "Imperial politics; Hungarian and Polish wars; Ottokar’s later expansion and fall.",
           "leaders": "Přemyslid kings; Ottokar II ('Iron and Gold') in the 13th c. climax.",
-          "religion": "Latin Christianity; rich monastic landscape.",
+          "religion": "Latin Christianity with dense monasteries: Mass, saints, and Premyslid sacral kingship. Bohemia becomes a rich liturgical landscape inside the Empire’s orbit.",
           "culture": "Courtly culture; German settlement in towns; Gothic beginnings.",
           "story": "Ottokar’s rise and Rudolf of Habsburg’s victory (1278) shift Central Europe’s crown toward Habsburg destiny.",
           "literature": "Troubadour and minnesang lyric, chansons de geste, Arthurian romance, Norse kings’ sagas, Slavic and Byzantine court letters, Arabic Andalusi poetry. Universities invent the scholastic sentence; vernaculars invent the love song and the crusade boast. Bohemian lands repeatedly host Europe’s heresies and modernisms a few years early.",
@@ -10193,7 +10265,7 @@
           "summary": "Árpád Hungary as a major Central European power.",
           "conflicts": "Mongol devastation (1241); Balkan and Austrian frontier wars.",
           "leaders": "Béla III; Andrew II (Golden Bull 1222); Béla IV after the Mongol invasion.",
-          "religion": "Latin Christian realm; Orthodox and steppe minorities.",
+          "religion": "Latin Christian realm with Orthodox and steppe minorities: coronation liturgy, dioceses, and border confessions sharing one kingdom.",
           "culture": "Castle rebuilding after 1241; multiethnic nobility.",
           "story": "The Mongol invasion (1241) burns the kingdom; Béla IV’s stone-castle program is Hungary’s rebirth story.",
           "literature": "Troubadour and minnesang lyric, chansons de geste, Arthurian romance, Norse kings’ sagas, Slavic and Byzantine court letters, Arabic Andalusi poetry. Universities invent the scholastic sentence; vernaculars invent the love song and the crusade boast. Hungarian culture keeps a steppe-origin memory inside a Latin-Christian and later Habsburg frame.",
@@ -10287,7 +10359,7 @@
           "summary": "Afonsine Portugal after recognition of sovereignty.",
           "conflicts": "Wars with Castile and Muslim south; Atlantic orientation beginning.",
           "leaders": "Afonso I; Sancho I; Afonso II/III in the long Reconquista arc.",
-          "religion": "Crusading Catholicism; military orders.",
+          "religion": "Crusading Catholicism: Mass, military orders, and Reconquista ideology. Knighthood and monastic vow blur in frontier war.",
           "culture": "Atlantic frontier kingdom; Burgundian dynasty founding myths.",
           "story": "Ourique and papal recognition stories invent Portugal as a crusader kingdom distinct from León–Castile.",
           "literature": "Troubadour and minnesang lyric, chansons de geste, Arthurian romance, Norse kings’ sagas, Slavic and Byzantine court letters, Arabic Andalusi poetry. Universities invent the scholastic sentence; vernaculars invent the love song and the crusade boast. Portugal’s Atlantic gaze turns European art toward oceans and return cargoes of style.",
@@ -10328,7 +10400,7 @@
           "summary": "Lombard/Tuscan communes; Norman–Hohenstaufen south.",
           "conflicts": "Guelf–Ghibelline wars; imperial–papal conflict; Venetian–Byzantine rivalry.",
           "leaders": "Frederick II in the south; papal rivals; Venetian doges; communal podestà.",
-          "religion": "Papacy at the height of claims; mendicant orders (Francis, Dominic).",
+          "religion": "Papal monarchy at full claim; Franciscan and Dominican preaching remakes urban piety. Communion, confession, and confraternities intensify lay ritual life.",
           "culture": "Communal towers; early universities; vernacular poetry toward Dante.",
           "story": "Francis of Assisi’s renunciation and the mendicant revolution remake popular piety from Umbrian roads to European cities.",
           "literature": "Toward Dante’s century: civic chronicles, Franciscan song, Provençal fashion in Sicilian schools. Italy rehearses the vernacular cosmos.",
@@ -10385,7 +10457,7 @@
           "summary": "Latin states after 1204 vs Nicaea/Epirus.",
           "conflicts": "Fragmentation wars; later Palaiologan recovery.",
           "leaders": "Byzantine emperors of Nicaea then restored Palaiologoi; Latin emperors in the interlude.",
-          "religion": "Orthodoxy vs Latin occupation after 1204.",
+          "religion": "Greek Orthodoxy under/against Latin occupation after 1204: Byzantine liturgy vs Frankish Latin rites — schism lived parish by parish.",
           "culture": "Exile courts; fragmented Greek lordships; Venetian ports.",
           "story": "The Fourth Crusade’s sack of Constantinople (1204) is Byzantium’s trauma — Christian conquest of the Christian capital.",
           "literature": "Byzantine historiography and hymnography; court rhetoric as weapon. After 1204, exile literature mourns and schemes in Greek.",
@@ -10436,7 +10508,7 @@
           "summary": "Asenid Bulgaria.",
           "conflicts": "Wars with Byzantium/Latins; Hungarian and Serbian neighbors.",
           "leaders": "Asen dynasty of the Second Bulgarian Empire; Kaloyan; Ivan Asen II.",
-          "religion": "Bulgarian Orthodoxy; temporary union politics with Rome.",
+          "religion": "Bulgarian Orthodoxy with episodic union politics toward Rome: Slavic liturgy, monasteries, and contested ecclesiastical loyalty.",
           "culture": "Tarnovo as ‘third Rome’ claim; fortress churches.",
           "story": "The uprising of the Asens restores Bulgarian empire between Byzantium and Hungary — a Balkan renaissance of arms.",
           "literature": "Troubadour and minnesang lyric, chansons de geste, Arthurian romance, Norse kings’ sagas, Slavic and Byzantine court letters, Arabic Andalusi poetry. Universities invent the scholastic sentence; vernaculars invent the love song and the crusade boast. Bulgarian letters pioneer Slavic Christian literacy — a soft empire of books south of the Danube.",
@@ -10477,7 +10549,7 @@
           "summary": "Nemanjić Serbia rising.",
           "conflicts": "Expansion vs Byzantium/Bulgaria; later empire under Dušan (13th–14th c. arc).",
           "leaders": "Stefan Nemanja; St Sava; Stefan Dušan (14th c. culmination of the arc).",
-          "religion": "Autocephalous Serbian Orthodoxy forged by Sava.",
+          "religion": "Autocephalous Serbian Orthodoxy (Sava): national church, liturgy, and monastic centers binding dynasty to rite.",
           "culture": "Hilandar monastery; law codes; hill-fort capitals.",
           "story": "St Sava — prince turned archbishop — is Serbia’s culture hero of church and letters.",
           "literature": "Troubadour and minnesang lyric, chansons de geste, Arthurian romance, Norse kings’ sagas, Slavic and Byzantine court letters, Arabic Andalusi poetry. Universities invent the scholastic sentence; vernaculars invent the love song and the crusade boast. Serbian epic song turns defeat into repertoire; the gusle outlasts many maps.",
@@ -10518,7 +10590,7 @@
           "summary": "After Manzikert (1071) Anatolia becomes a Seljuk–Byzantine contest; crusaders cut through.",
           "conflicts": "Seljuk sultanate of Rum; crusader corridors; Byzantine recovery attempts.",
           "leaders": "Komnenian emperors; Seljuk sultans of Konya.",
-          "religion": "Greek Orthodoxy vs advancing Islam in Anatolia.",
+          "religion": "Greek Orthodoxy retreats as Turkish Islam advances in Anatolia — mosque and medrese replace many churches; conversion and coexistence both occur.",
           "culture": "Frontier emirates; still-Byzantine coasts and cities.",
           "story": "Manzikert is Byzantium’s Asian undoing — the battle that turns Anatolia into Turkey’s future.",
           "literature": "Troubadour and minnesang lyric, chansons de geste, Arthurian romance, Norse kings’ sagas, Slavic and Byzantine court letters, Arabic Andalusi poetry. Universities invent the scholastic sentence; vernaculars invent the love song and the crusade boast. Ottoman and Anatolian layers make this edge of the map a second classical continuum for Europe to face.",
@@ -10569,7 +10641,7 @@
           "summary": "Successor Rus’ polities under steppe pressure.",
           "conflicts": "Mongol/Golden Horde suzerainty; Novgorod–Sweden/Teutonic clashes in the north.",
           "leaders": "Alexander Nevsky; Moscow’s early Daniilovichi rising under Horde oversight.",
-          "religion": "Orthodoxy under Mongol census and tribute.",
+          "religion": "Orthodoxy under Mongol census: liturgy and monasteries continue while princes collect tribute. Sacred authority shifts with political centers.",
           "culture": "Prince–Horde diplomacy; monastic north; icon tradition.",
           "story": "Nevsky’s victories over Swedes/Teutonic knights and his Horde pragmatism become Russia’s double lesson: resist the West, bargain with the East.",
           "literature": "Troubadour and minnesang lyric, chansons de geste, Arthurian romance, Norse kings’ sagas, Slavic and Byzantine court letters, Arabic Andalusi poetry. Universities invent the scholastic sentence; vernaculars invent the love song and the crusade boast. Russian and wider Rus’ cultures translate Byzantine inheritance into forest and empire scales.",
@@ -10614,7 +10686,7 @@
           "summary": "Western Rus’ kingdom.",
           "conflicts": "Mongol pressure; Polish and Hungarian intervention.",
           "leaders": "Galicia–Volhynia princes; later Lithuanian overlords as the century turns.",
-          "religion": "Orthodoxy; Mongol political suzerainty after Kiev’s fall.",
+          "religion": "Galicia–Volhynia Orthodoxy under Mongol pressure: episcopal continuity, monasticism, and princely patronage amid political fragmentation.",
           "culture": "Ruthenian principalities; chronicle writing.",
           "story": "Kiev’s sack (1240) ends an era; western Rus’ principalities become the bridge to Lithuanian rule.",
           "literature": "Troubadour and minnesang lyric, chansons de geste, Arthurian romance, Norse kings’ sagas, Slavic and Byzantine court letters, Arabic Andalusi poetry. Universities invent the scholastic sentence; vernaculars invent the love song and the crusade boast. Borderland creativity — Cossack, Ruthenian, and European currents braided under dangerous skies.",
@@ -10667,7 +10739,7 @@
           "summary": "Early confederation forming (late 13th c. edge).",
           "conflicts": "Habsburg conflicts define Swiss identity.",
           "leaders": "Cantonal elites; Habsburg bailiffs as antagonists in legend.",
-          "religion": "Latin Christian alpine communities.",
+          "religion": "Latin Christian alpine communities: parish Mass, local saints, and communal vows. Mountain autonomy includes control of local church life.",
           "culture": "Communal oaths; mountain infantry.",
           "story": "The Rütli oath of later chronicle is Switzerland’s invented founding picnic — the real glue is victory over knights.",
           "literature": "Troubadour and minnesang lyric, chansons de geste, Arthurian romance, Norse kings’ sagas, Slavic and Byzantine court letters, Arabic Andalusi poetry. Universities invent the scholastic sentence; vernaculars invent the love song and the crusade boast. Alpine republican myths and mercenary fame produce a spare, stubborn aesthetic of autonomy.",
@@ -10703,7 +10775,7 @@
           "summary": "Flanders, Holland, Brabant etc.",
           "conflicts": "French/English/Flemish wars; urban revolts.",
           "leaders": "Counts of Holland/Flanders; prince-bishops; urban magistrates.",
-          "religion": "Latin Christian; dense parish network.",
+          "religion": "Dense parish Latin Christianity: Mass, guild piety, and early urban mysticism. The Low Countries become a laboratory of lay devotion.",
           "culture": "Cloth towns; early polder management; trade fairs.",
           "story": "Flemish cloth and communal power make the Low Countries rich before they are a country.",
           "literature": "Troubadour and minnesang lyric, chansons de geste, Arthurian romance, Norse kings’ sagas, Slavic and Byzantine court letters, Arabic Andalusi poetry. Universities invent the scholastic sentence; vernaculars invent the love song and the crusade boast. Low Countries urbanism turns painting, print, and cloth into a civic theology of detail.",
@@ -11500,7 +11572,7 @@
           "summary": "Margaret I’s architecture unites Denmark, Norway, and Sweden under one monarch — Danish-led in practice.",
           "conflicts": "Swedish rebellions; Hanseatic wars; Norwegian dependency.",
           "leaders": "Margaret I; Eric of Pomerania; later Christian I.",
-          "religion": "Latin Christian monarchies under Roman obedience.",
+          "religion": "Kalmar Catholic monarchies under Rome: Mass, saints, and royal church patronage across the union. Vernacular piety grows beside Latin liturgy.",
           "culture": "Baltic trade; royal castles; German merchant influence in towns.",
           "story": "Margaret I — ‘lady king’ of the North — engineers Scandinavia’s only durable medieval union, remembered as both peace project and Danish domination.",
           "literature": "Dante, Chaucer, Froissart’s chronicles, husite songs, Balkan epic cycles forming around Kosovo, humanist Latin returning in Italian cities. Vernaculars now carry philosophy, insult, and nation-feeling. Danish gatekeeping of the Baltic Sound makes culture a toll-booth as well as a stage.",
@@ -11550,7 +11622,7 @@
           "summary": "Swedish councils accept union then repeatedly rebel; Sture party later champions autonomy.",
           "conflicts": "Danish royal power; Hanseatic Stockholm politics; Finnish eastern frontier vs Novgorod/Muscovy.",
           "leaders": "Swedish regents (Sture line later); Engelbrekt’s revolt memory (1430s).",
-          "religion": "Catholic; vernacular piety.",
+          "religion": "Catholic Sweden with strong vernacular devotion: parish Mass, guilds, and saint cults under/against Kalmar politics.",
           "culture": "Mining (Bergslagen); freeholding farmers; national chronicle beginnings.",
           "story": "Engelbrekt’s uprising becomes Sweden’s folk-hero revolt against union taxes and foreign bailiffs — a rehearsal of Vasa independence.",
           "literature": "Dante, Chaucer, Froissart’s chronicles, husite songs, Balkan epic cycles forming around Kosovo, humanist Latin returning in Italian cities. Vernaculars now carry philosophy, insult, and nation-feeling. Swedish culture often exports northern clarity — from rock art to modern design temperaments.",
@@ -11601,7 +11673,7 @@
           "summary": "Norwegian royalty fades; the kingdom is the weaker partner under Danish monarchs and Hanseatic Bergen.",
           "conflicts": "Hansa dominance; black-death demographic shock earlier; loss of Atlantic vigor.",
           "leaders": "Danish-Norwegian union kings; local magnates.",
-          "religion": "Catholic archbishopric of Nidaros still prestigious.",
+          "religion": "Catholic Nidaros archbishopric remains prestigious: pilgrimage, Mass, and saintly kingship memory even as Kalmar politics weaken the realm.",
           "culture": "Saga manuscript culture persists; stockfish trade.",
           "story": "Norway’s late medieval arc is quiet tragedy: from independent sea kingdom to junior union partner — reversed only centuries later.",
           "literature": "Dante, Chaucer, Froissart’s chronicles, husite songs, Balkan epic cycles forming around Kosovo, humanist Latin returning in Italian cities. Vernaculars now carry philosophy, insult, and nation-feeling. Norwegian arts remember ships first — keel as national metaphor from Oseberg to oil platforms.",
@@ -11695,7 +11767,7 @@
           "summary": "After the 1385 crisis, Aviz kings secure independence from Castile and look toward Africa (Ceuta 1415).",
           "conflicts": "Castilian claims; Moroccan raids; Atlantic exploration beginnings under Henry the Navigator’s generation.",
           "leaders": "John I; Prince Henry the Navigator; Duarte.",
-          "religion": "Crusading Catholicism turned toward Africa.",
+          "religion": "Aviz crusading Catholicism pivots toward Africa: military orders, Mass, and missionary conquest ideology.",
           "culture": "Atlantic seamanship; Gothic Batalha monastery as dynasty monument.",
           "story": "Aljubarrota (1385) saves Portuguese independence; Ceuta opens the African door that becomes the Age of Discovery.",
           "literature": "Dante, Chaucer, Froissart’s chronicles, husite songs, Balkan epic cycles forming around Kosovo, humanist Latin returning in Italian cities. Vernaculars now carry philosophy, insult, and nation-feeling. Portugal’s Atlantic gaze turns European art toward oceans and return cargoes of style.",
@@ -11745,7 +11817,7 @@
           "summary": "Milan, Florence, Venice, the Papacy, and Naples balance in the ‘Italic League’ pattern — brilliant, fragile, mercenary.",
           "conflicts": "Condottieri wars; Ottoman naval pressure on Venice; Angevin/Aragonese fight for Naples.",
           "leaders": "Gian Galeazzo Visconti; Cosimo de’ Medici (rising); Venetian doges; rival popes in Schism’s wake.",
-          "religion": "Catholic; conciliar crisis; popular confraternities.",
+          "religion": "Catholic Italy in conciliar crisis: Mass, confraternities, preaching, and civic saint cults while popes and councils fight for authority.",
           "culture": "Early humanism; Dante/Petrarch/Boccaccio’s legacy; civic patronage.",
           "story": "Italian cities invent Renaissance modernity while failing to invent a durable Italian state — culture without unification.",
           "literature": "Dante’s cosmos, Petrarch’s inwardness, Boccaccio’s human comedy — the Italian trecento rewires European imagination before oil paint finishes the job.",
@@ -11845,7 +11917,7 @@
           "summary": "Post-Dušan fragmentation; Kosovo battle memory; eventual Ottoman subjugation of Serbian despots.",
           "conflicts": "Ottoman advance; Hungarian alliances; internal magnate splits.",
           "leaders": "Prince Lazar (memory of Kosovo); despot Stefan Lazarević; later Durad Branković.",
-          "religion": "Serbian Orthodoxy as identity under pressure.",
+          "religion": "Serbian Orthodoxy as identity under Ottoman pressure: liturgy, memory of empire, and monastic refuges.",
           "culture": "Epic poetry cycle of Kosovo; monastery patronage (Morava school).",
           "story": "Kosovo Polje (1389) becomes Serbia’s central martyrdom epic — historically messy, culturally absolute.",
           "literature": "Dante, Chaucer, Froissart’s chronicles, husite songs, Balkan epic cycles forming around Kosovo, humanist Latin returning in Italian cities. Vernaculars now carry philosophy, insult, and nation-feeling. Serbian epic song turns defeat into repertoire; the gusle outlasts many maps.",
@@ -11892,7 +11964,7 @@
           "summary": "Second Bulgarian Empire’s fragments fall to Ottoman campaigns in the late 14th century.",
           "conflicts": "Ottoman conquest; resistance and boyar accommodation.",
           "leaders": "Last Shishmanids; local notables under early Ottoman rule.",
-          "religion": "Orthodoxy under the millet-to-be; Islamization limited at first.",
+          "religion": "Bulgarian Orthodoxy entering millet structures: liturgy under Islamic sovereignty; Islamization limited at first, church life constrained but continuous.",
           "culture": "Tarnovo literary memory; then Ottoman provincial order.",
           "story": "The end of medieval Bulgarian statehood is told as nightfall before centuries of foreign rule — a national narrative forged later, rooted in real conquest.",
           "literature": "Dante, Chaucer, Froissart’s chronicles, husite songs, Balkan epic cycles forming around Kosovo, humanist Latin returning in Italian cities. Vernaculars now carry philosophy, insult, and nation-feeling. Bulgarian letters pioneer Slavic Christian literacy — a soft empire of books south of the Danube.",
@@ -12039,7 +12111,7 @@
           "summary": "A major Central European kingdom facing Ottoman pressure on its southern frontier after Serbian collapse.",
           "conflicts": "Ottoman raids; succession crises; baron leagues.",
           "leaders": "Louis I the Great (memory); Sigismund of Luxemburg; later Hunyadi (mid-century).",
-          "religion": "Catholic realm with Orthodox minorities in the south/east.",
+          "religion": "Catholic kingdom with Orthodox minorities: Latin liturgy at court, mixed border rites, and crusading ideology against Ottomans.",
           "culture": "Chivalric court; Gothic Buda; multiethnic nobility.",
           "story": "Hungary casts itself as Christendom’s shield; the 15th-century Hunyadi wars turn that claim into cannon-smoke reality.",
           "literature": "Dante, Chaucer, Froissart’s chronicles, husite songs, Balkan epic cycles forming around Kosovo, humanist Latin returning in Italian cities. Vernaculars now carry philosophy, insult, and nation-feeling. Hungarian culture keeps a steppe-origin memory inside a Latin-Christian and later Habsburg frame.",
@@ -12091,7 +12163,7 @@
           "summary": "Flanders and the Low Countries under Burgundian dukes become Europe’s richest urban–textile zone.",
           "conflicts": "Urban revolts; French/English war entanglement; later Habsburg inheritance.",
           "leaders": "Philip the Bold; John the Fearless; Philip the Good.",
-          "religion": "Dense parish Catholicism; early reform currents still underground.",
+          "religion": "Burgundian Netherlands: intense parish Catholicism, processions, and guild chapels; underground reform currents before Luther.",
           "culture": "Early Netherlandish painting; cloth towns; pragmatic urban liberties.",
           "story": "Burgundy’s court — Order of the Golden Fleece, dazzling chronicles — makes the Low Countries a capital of European splendor without being a ‘nation’ yet.",
           "literature": "Dante, Chaucer, Froissart’s chronicles, husite songs, Balkan epic cycles forming around Kosovo, humanist Latin returning in Italian cities. Vernaculars now carry philosophy, insult, and nation-feeling. Low Countries urbanism turns painting, print, and cloth into a civic theology of detail.",
@@ -12138,7 +12210,7 @@
           "summary": "Alpine cantons defeat Habsburg knights and become a fact of European military life.",
           "conflicts": "Habsburg wars; Burgundian wars (later 15th c.); internal canton politics.",
           "leaders": "Cantonal elites; legendary William Tell as later national myth layered on real battles (Morgarten, Sempach).",
-          "religion": "Catholic; local saints and fierce communal autonomy.",
+          "religion": "Catholic Swiss communes: local saints, parish autonomy, and armed piety — religion as communal identity.",
           "culture": "Peasant-soldier reputation; chronicles of liberty.",
           "story": "Sempach and Morgarten are Switzerland’s founding battle-stories: infantry and terrain beating aristocratic cavalry.",
           "literature": "Dante, Chaucer, Froissart’s chronicles, husite songs, Balkan epic cycles forming around Kosovo, humanist Latin returning in Italian cities. Vernaculars now carry philosophy, insult, and nation-feeling. Alpine republican myths and mercenary fame produce a spare, stubborn aesthetic of autonomy.",
@@ -12185,7 +12257,7 @@
           "summary": "Habsburgs consolidate Alpine duchies and begin their long game for empire and Burgundian inheritance.",
           "conflicts": "Swiss losses; Bohemian/Hungarian dynastic contests; Ottoman shadow later.",
           "leaders": "Rudolf IV (memory); Albert II; Frederick III (‘AEIOU’).",
-          "religion": "Catholic dynastic piety.",
+          "religion": "Habsburg Catholic dynastic piety: court liturgy, relics, and emerging dynastic sainthood politics.",
           "culture": "Vienna as rising residence; dynastic marriage strategy elevated to art.",
           "story": "Frederick III’s cryptic AEIOU and Maximilian’s later Burgundian wedding embody Habsburg doctrine: marry, inherit, outlast.",
           "literature": "Dante, Chaucer, Froissart’s chronicles, husite songs, Balkan epic cycles forming around Kosovo, humanist Latin returning in Italian cities. Vernaculars now carry philosophy, insult, and nation-feeling. Habsburg capitals stage empire as opera — multilingual, ceremonial, slightly melancholic.",
@@ -12232,7 +12304,7 @@
           "summary": "From Rumelian bases the Ottomans become a European great power before taking Constantinople.",
           "conflicts": "Wars with Serbia, Bulgaria, Hungary, Byzantium, Venice; Anatolian rivals.",
           "leaders": "Bayezid I; Mehmed I; Murad II; Mehmed II.",
-          "religion": "Sunni Islam as state; dhimmi system for Christians and Jews.",
+          "religion": "Ottoman Sunni Islam as state religion: Friday prayer, sharia courts, and Sufi orders; Christian and Jewish dhimmi communities keep their own rites under restriction.",
           "culture": "Ghazi warrior ethos evolving into imperial bureaucracy; endowment (waqf) cities.",
           "story": "The lightning rise from frontier beylik to breaker of Constantinople reorders Europe’s mental map — Islam as a Central European neighbor.",
           "literature": "Dante, Chaucer, Froissart’s chronicles, husite songs, Balkan epic cycles forming around Kosovo, humanist Latin returning in Italian cities. Vernaculars now carry philosophy, insult, and nation-feeling. Ottoman and Anatolian layers make this edge of the map a second classical continuum for Europe to face.",
@@ -12724,7 +12796,7 @@
           "summary": "Surrender-and-regrant and plantation beginnings aim to anglicize Gaelic lordships; resistance culminates later in the Nine Years’ War.",
           "conflicts": "Desmond rebellions; Shane O’Neill; crown vs Gaelic alliances.",
           "leaders": "Tudor deputies; Shane O’Neill; earls of Desmond; Hugh O’Neill (later).",
-          "religion": "Catholic population under a Protestant state church newly claimed.",
+          "religion": "Catholic majority under a newly claimed Protestant state church: Mass goes underground or contested; conformity laws reshape public ritual.",
           "culture": "Gaelic learned orders under pressure; Pale Englishness vs Gaelic polarity hardening.",
           "story": "Ireland becomes England’s first long colonial laboratory — Reformation plus conquest, with consequences lasting centuries.",
           "literature": "Print multiplies argument: Luther’s German Bible, Calvin’s Institutes, Tudor scripture politics, Rabelaisian laughter, early essay and sonnet cultures. Pamphlets are the period’s missile type. Irish monastic and later Gaelic learned traditions punch above demographic weight in Europe’s imagination.",
@@ -12818,7 +12890,7 @@
           "summary": "Charles V and Philip II rule Spain, much of Italy, the Low Countries, and American silver — Catholic champion and bankrupt giant.",
           "conflicts": "Dutch Revolt; Ottoman Mediterranean war (Lepanto 1571); English war; French Habsburg rivalry; Morisco revolt.",
           "leaders": "Charles V; Philip II; Duke of Alba; Don John of Austria.",
-          "religion": "Tridentine Catholicism; Inquisition; missionary empire.",
+          "religion": "Tridentine Catholicism: reformed Mass, Inquisition discipline, and global missionary orders. Baroque piety and orthodoxy as imperial project.",
           "culture": "Golden Age literature beginnings; Escorial austerity; global bureaucracy.",
           "story": "Lepanto is sung as Christian naval triumph; the Dutch Revolt and Armada failure show the limits of Spanish universal monarchy.",
           "literature": "Mystics (Teresa, John of the Cross), picaresque beginnings, imperial chronicle, censorship as co-author. Spanish prose learns to confess and to conquer in the same century.",
@@ -12877,7 +12949,7 @@
           "summary": "Portugal’s Asian and Brazilian routes still enrich the crown; dynastic crisis will hand the realm to Philip II in 1580.",
           "conflicts": "Ottoman and local Asian rivals; French/English interlopers; Moroccan disaster at Alcácer Quibir (1578).",
           "leaders": "John III; Sebastian I; Cardinal-King Henry.",
-          "religion": "Catholic missionary orders (Jesuits) as empire’s soft power.",
+          "religion": "Catholic empire with Jesuit and other orders as soft power: confession, missions, and Inquisition courts tying belief to overseas rule.",
           "culture": "Camões’ epic of discovery (Os Lusíadas, 1572); Atlantic Creole ports.",
           "story": "Sebastian’s death in Morocco becomes the sebastianismo myth — a lost king who will return — while Spain absorbs the Portuguese crown.",
           "literature": "Print multiplies argument: Luther’s German Bible, Calvin’s Institutes, Tudor scripture politics, Rabelaisian laughter, early essay and sonnet cultures. Pamphlets are the period’s missile type. Portugal’s Atlantic gaze turns European art toward oceans and return cargoes of style.",
@@ -13015,7 +13087,7 @@
           "summary": "Zwingli’s Zurich and Calvin’s Geneva make Switzerland a laboratory of Reformed religion beside Catholic cantons.",
           "conflicts": "Kappel wars between confessions; mercenary export continues.",
           "leaders": "Ulrich Zwingli; John Calvin; Catholic Waldstätten elites.",
-          "religion": "Reformed vs Catholic cantonal split — a miniature Europe.",
+          "religion": "Reformed vs Catholic cantons: Zwinglian/Calvinist preaching, psalms, and disciplined consistories beside continuing Mass in Catholic valleys.",
           "culture": "Disciplined consistory religion; citizen-soldier myth; printing.",
           "story": "Calvin’s Geneva — refuge for exiles and exporter of pastors — punches far above its Alpine weight in Atlantic Protestantism.",
           "literature": "Print multiplies argument: Luther’s German Bible, Calvin’s Institutes, Tudor scripture politics, Rabelaisian laughter, early essay and sonnet cultures. Pamphlets are the period’s missile type. Alpine republican myths and mercenary fame produce a spare, stubborn aesthetic of autonomy.",
@@ -13159,7 +13231,7 @@
           "summary": "Oldenburg kings run a Lutheran dual monarchy controlling the Øresund toll — Europe’s choke point to the Baltic.",
           "conflicts": "Swedish independence wars; Baltic rivalry; Norwegian incorporation.",
           "leaders": "Christian III; Frederick II.",
-          "religion": "Lutheran Reformation imposed after civil war (Count’s Feud).",
+          "religion": "Lutheran Reformation after civil war: vernacular liturgy, married clergy, and crown control of the church; Catholic rite suppressed.",
           "culture": "Sound Toll wealth; Renaissance Kronborg; Norwegian dependency.",
           "story": "Whoever holds the Sound Toll taxes half of northern Europe’s grain and naval stores — Denmark’s geopolitical superpower trick.",
           "literature": "Print multiplies argument: Luther’s German Bible, Calvin’s Institutes, Tudor scripture politics, Rabelaisian laughter, early essay and sonnet cultures. Pamphlets are the period’s missile type. Danish gatekeeping of the Baltic Sound makes culture a toll-booth as well as a stage.",
@@ -13215,7 +13287,7 @@
           "summary": "A kingdom without its own resident dynasty; Reformation arrives via Copenhagen.",
           "conflicts": "Danish governors; trade under Hansa then Danish control.",
           "leaders": "Danish viceroys; local nobles diminished.",
-          "religion": "Lutheran reform from above.",
+          "religion": "Lutheran reform from above via Denmark: new church order, vernacular services, and closure of Catholic monastic ritual life.",
           "culture": "Continuing vernacular life; loss of archbishopric independence.",
           "story": "Norway’s Reformation is an email from Copenhagen — institutional change without a local Luther.",
           "literature": "Print multiplies argument: Luther’s German Bible, Calvin’s Institutes, Tudor scripture politics, Rabelaisian laughter, early essay and sonnet cultures. Pamphlets are the period’s missile type. Norwegian arts remember ships first — keel as national metaphor from Oseberg to oil platforms.",
@@ -13321,7 +13393,7 @@
           "summary": "The Grand Duchy retains law and identity inside the Lublin union while sharing foreign policy and elective kingship with Poland.",
           "conflicts": "Muscovite pressure; internal integration with Polish institutions.",
           "leaders": "Sigismund Augustus as both; Lithuanian magnate families (Radziwiłł).",
-          "religion": "Catholicizing elites; Orthodox and Protestant magnates; Jewish towns.",
+          "religion": "Commonwealth borderland of Catholicizing elites, Orthodox majorities in places, Protestant nobles, and Jewish towns — plural ritual under one republic.",
           "culture": "Lithuanian Statutes; bilingual elite world.",
           "story": "Lublin is both marriage and partial erasure — Lithuanian statehood persists in law while European maps increasingly say ‘Poland.’",
           "literature": "Print multiplies argument: Luther’s German Bible, Calvin’s Institutes, Tudor scripture politics, Rabelaisian laughter, early essay and sonnet cultures. Pamphlets are the period’s missile type. Lithuanian culture remembers being Europe’s last great pagan power — then a bilingual republic of letters.",
@@ -13357,7 +13429,7 @@
           "summary": "Ivan IV crowns himself tsar, conquers Muslim khanates on the Volga, then unleashes the Oprichnina’s terror.",
           "conflicts": "Livonian War vs Poland/Sweden; Crimean Tatar sack of Moscow (1571); internal blood purge.",
           "leaders": "Ivan IV (‘the Terrible’); advisers then victims of the Oprichnina; Yermak’s Cossack Siberia beginnings.",
-          "religion": "Orthodox autocracy; Moscow as ‘Third Rome’ ideology rising.",
+          "religion": "Orthodox autocracy with rising Third Rome ideology: liturgy, tsar as sacred protector, and tight control of heresy and ritual dissent.",
           "culture": "Onion-dome votive architecture; chronicle and terror; eastward conquest.",
           "story": "Ivan’s killing of his own son (in later tradition) and the Oprichnina make him Europe’s archetype of sacred tyranny — expansion and self-devouring power.",
           "literature": "Print multiplies argument: Luther’s German Bible, Calvin’s Institutes, Tudor scripture politics, Rabelaisian laughter, early essay and sonnet cultures. Pamphlets are the period’s missile type. Russian and wider Rus’ cultures translate Byzantine inheritance into forest and empire scales.",
@@ -13583,7 +13655,7 @@
           "summary": "Bulgarian lands as Ottoman provinces; Orthodox church life continues under the Patriarchate.",
           "conflicts": "Local uprisings occasional; integration into Ottoman fiscal systems.",
           "leaders": "Ottoman officials; Orthodox bishops; local çorbacı notables.",
-          "religion": "Orthodoxy; gradual Islamization in some regions.",
+          "religion": "Orthodoxy under Ottoman rule with gradual Islamization in some regions: church tax, restricted building, and village feast continuity.",
           "culture": "Village Christian culture; Ottoman townscapes.",
           "story": "Bulgarian national revival is centuries away; this is the long Ottoman night of later historiography — daily life more continuous than the metaphor suggests.",
           "literature": "Print multiplies argument: Luther’s German Bible, Calvin’s Institutes, Tudor scripture politics, Rabelaisian laughter, early essay and sonnet cultures. Pamphlets are the period’s missile type. Bulgarian letters pioneer Slavic Christian literacy — a soft empire of books south of the Danube.",
@@ -13619,7 +13691,7 @@
           "summary": "Serbian lands largely Ottoman; patriarchate of Peć sometimes restored as communal focus; migrations north toward Habsburg lands begin in pulses.",
           "conflicts": "Ottoman–Habsburg wars; local knez autonomy pockets.",
           "leaders": "Ottoman pashas; Serbian patriarchs; hajduk outlaw-heroes in folk song.",
-          "religion": "Southern Slavic Orthodoxy under millet structures.",
+          "religion": "Southern Slavic Orthodoxy in millet structures: patriarchate politics, liturgy, and identity under Islamic sovereignty (Habsburg fringe differs).",
           "culture": "Epic gusle poetry; monastery refuges.",
           "story": "The hajduk — outlaw resistance figure — becomes the folk counter-state when there is no Serbian kingdom on the map.",
           "literature": "Print multiplies argument: Luther’s German Bible, Calvin’s Institutes, Tudor scripture politics, Rabelaisian laughter, early essay and sonnet cultures. Pamphlets are the period’s missile type. Serbian epic song turns defeat into repertoire; the gusle outlasts many maps.",
@@ -13705,7 +13777,7 @@
           "summary": "The Catholic southern provinces reconquered by Parma remain under Spanish Habsburgs as Antwerp’s golden age wanes.",
           "conflicts": "Dutch Revolt warfare; religious cleansing northward migration of Protestants.",
           "leaders": "Duke of Parma (Alexander Farnese); Spanish governors.",
-          "religion": "Tridentine Catholic restoration.",
+          "religion": "Tridentine Catholic restoration under Spain: Baroque churches, Jesuit schooling, and suppressed Calvinism after revolt violence.",
           "culture": "Flemish painting still luminous; commercial shift toward Amsterdam.",
           "story": "Antwerp’s fall and Protestant exodus help invent Amsterdam’s boom — a tale of two Low Countries.",
           "literature": "Print multiplies argument: Luther’s German Bible, Calvin’s Institutes, Tudor scripture politics, Rabelaisian laughter, early essay and sonnet cultures. Pamphlets are the period’s missile type. Flemish workshops paint Europe’s devotion and cloth trade in the same luminous oil.",
@@ -14136,7 +14208,7 @@
           "summary": "Global empire from Iberian core.",
           "conflicts": "Dutch Revolt; wars with France/England; Ottoman Mediterranean war.",
           "leaders": "Philip III; Philip IV; Olivares; continuing Habsburg line.",
-          "religion": "Baroque Catholicism; Inquisition still active.",
+          "religion": "Baroque Catholicism: ornate Mass, confraternities, and an Inquisition still policing belief. Saints, processions, and imperial mission theology saturate public life.",
           "culture": "Cervantes; Velázquez; imperial overstretch.",
           "story": "Don Quixote (1605) laughs a tired empire into world literature while silver fleets and bankruptcies continue offstage.",
           "literature": "Cervantes invents the modern novel’s self-awareness; Lope’s theatre ocean; Quevedo’s barbs. An empire declining in cash still rich in sentences.",
@@ -14183,7 +14255,7 @@
           "summary": "Atlantic/Indian Ocean empire; Iberian Union 1580–1640.",
           "conflicts": "Dutch conflicts overseas; Spanish dynastic entanglement.",
           "leaders": "Philip III of Spain during Iberian Union phases; Portuguese restoration leaders later (1640).",
-          "religion": "Catholic empire; Inquisition.",
+          "religion": "Catholic empire with Inquisition and missionary orders: sacramental conformity at home, conversion projects abroad.",
           "culture": "Atlantic/Indian Ocean colonial administration.",
           "story": "The 1640 restoration against Spain becomes Portugal’s second independence epic.",
           "literature": "Shakespearean theatre, Cervantes, classical French drama, Dutch and Spanish Golden Age prose, scientific letters. Europe invents the modern author-celebrity and the global report. Portugal’s Atlantic gaze turns European art toward oceans and return cargoes of style.",
@@ -14330,7 +14402,7 @@
           "summary": "Independent after revolt from Spain.",
           "conflicts": "Eighty Years’ War; Anglo-Dutch wars; colonial rivalry.",
           "leaders": "Oldenbarnevelt; Maurice of Nassau; later Johan de Witt / William III arc.",
-          "religion": "Public Calvinism with notable practical tolerance in cities.",
+          "religion": "Public Calvinism (preaching, psalms, consistory discipline) with pragmatic urban tolerance — synagogues and Catholic house-churches in a carefully managed pluralism.",
           "culture": "Dutch Golden Age art (Rembrandt, Vermeer); global VOC capitalism.",
           "story": "A republic of US merchants defeats Spain and paints light onto canvas — Europe’s miracle of bourgeois power.",
           "literature": "Dutch Golden Age poetry and pamphlet storm, Spinoza’s dangerous clarity, travel writing from a planet-spanning VOC. A republic talks in print like a continuous town meeting.",
@@ -14423,7 +14495,7 @@
           "summary": "Danubian Habsburg power.",
           "conflicts": "Ottoman wars (Vienna 1683 arc); rivalry with France.",
           "leaders": "Ferdinand II/III; Leopold I.",
-          "religion": "Catholic Reform; Jesuit baroque.",
+          "religion": "Catholic Reform and Jesuit baroque: renewed Mass, confession, pilgrimage, and education as Habsburg confessional statecraft.",
           "culture": "Court at Vienna; Ottoman wars (1683 still ahead of/around long 17th c.).",
           "story": "The 1683 relief of Vienna becomes Habsburg Christendom’s last great cavalry epic.",
           "literature": "Shakespearean theatre, Cervantes, classical French drama, Dutch and Spanish Golden Age prose, scientific letters. Europe invents the modern author-celebrity and the global report. Habsburg capitals stage empire as opera — multilingual, ceremonial, slightly melancholic.",
@@ -14465,7 +14537,7 @@
           "summary": "Great-power Sweden (Gustavus Adolphus).",
           "conflicts": "Wars in Germany, Poland, Russia; Baltic dominance struggle.",
           "leaders": "Gustavus Adolphus; Christina; Charles X/XI beginnings.",
-          "religion": "Lutheran great power.",
+          "religion": "Lutheran great-power church: state liturgy, catechism, and clerical loyalty to the crown; Catholic and Calvinist minorities tightly limited.",
           "culture": "Military innovation; Baltic empire; Uppsala learning.",
           "story": "Gustavus Adolphus — ‘Lion of the North’ — dies at Lützen as Sweden briefly decides Germany’s fate.",
           "literature": "Shakespearean theatre, Cervantes, classical French drama, Dutch and Spanish Golden Age prose, scientific letters. Europe invents the modern author-celebrity and the global report. Swedish culture often exports northern clarity — from rock art to modern design temperaments.",
@@ -14524,7 +14596,7 @@
           "summary": "Kalmar aftermath; Danish composite state.",
           "conflicts": "Wars with Sweden for Baltic supremacy.",
           "leaders": "Christian IV; Frederick III (absolutism after 1660).",
-          "religion": "Lutheran monarchy.",
+          "religion": "Lutheran monarchy: folk-church baptism, catechism, and parish discipline under royal supremacy.",
           "culture": "Øresund wealth; wars with Sweden.",
           "story": "Christian IV’s wars and building spree — ambition that overreaches against rising Sweden.",
           "literature": "Shakespearean theatre, Cervantes, classical French drama, Dutch and Spanish Golden Age prose, scientific letters. Europe invents the modern author-celebrity and the global report. Danish gatekeeping of the Baltic Sound makes culture a toll-booth as well as a stage.",
@@ -14627,7 +14699,7 @@
           "summary": "Muscovy to early empire.",
           "conflicts": "Polish wars; conquest of khanates; Baltic ambitions.",
           "leaders": "Boris Godunov; Time of Troubles claimants; Romanov founding (Michael).",
-          "religion": "Orthodox; patriarchal institution; Uniate conflict to the west.",
+          "religion": "Orthodox tsardom with patriarchate: liturgy and ritual uniformity, plus Uniate conflict on the western edge over rite and loyalty.",
           "culture": "After Troubles consolidation; icons and bells; serfdom hardening.",
           "story": "The Time of Troubles — famine, false Dmitrys, Polish occupation of Moscow — ends with a new Romanov dynasty elected from desperation.",
           "literature": "Chronographs, saint’s lives, Avvakum’s raw autobiography of schism — Russian prose learning to burn. Oral bylina epics still carry bogatyr heroes beside church books.",
@@ -14662,7 +14734,7 @@
           "summary": "Peak/early stagnation Ottoman power.",
           "conflicts": "Wars with Habsburgs, Safavids, Venice; Mediterranean & Balkan control.",
           "leaders": "Ahmed I; Köprülü viziers later; sultans of the post-Süleyman plateau.",
-          "religion": "Sunni imperial Islam; millet continuities.",
+          "religion": "Sunni imperial Islam with millet continuities: mosque, sharia, Sufi brotherhoods; Christian and Jewish communities keep bounded ritual autonomy.",
           "culture": "Tulip-era still ahead; classical Ottoman architecture’s afterglow; Mediterranean and Central European war rhythm.",
           "story": "Ottoman pressure and Habsburg defense set the tempo of southeastern European life long after Süleyman’s death.",
           "literature": "Shakespearean theatre, Cervantes, classical French drama, Dutch and Spanish Golden Age prose, scientific letters. Europe invents the modern author-celebrity and the global report. Ottoman and Anatolian layers make this edge of the map a second classical continuum for Europe to face.",
@@ -14721,7 +14793,7 @@
           "summary": "Fragmented Italy under foreign hegemony.",
           "conflicts": "Dynastic wars; Savoy rising.",
           "leaders": "Spanish viceroys; popes; Savoy dukes; Venetian doges.",
-          "religion": "Baroque Catholicism; scientific trials (Galileo).",
+          "religion": "Baroque Catholicism and scientific trials (Galileo): ornate liturgy and confraternities beside tighter doctrinal policing after Trent.",
           "culture": "Baroque art and music; Galilean science under constraint.",
           "story": "Galileo’s trial becomes modernity’s parable of science vs authority — more complicated historically, irresistible as story.",
           "literature": "Shakespearean theatre, Cervantes, classical French drama, Dutch and Spanish Golden Age prose, scientific letters. Europe invents the modern author-celebrity and the global report. Italian cities teach prestige: from Roman monumentality to Renaissance brand management of beauty.",
@@ -14778,7 +14850,7 @@
           "summary": "Surrender-and-regrant and plantation beginnings aim to anglicize Gaelic lordships; resistance culminates later in the Nine Years’ War.",
           "conflicts": "Desmond rebellions; Shane O’Neill; crown vs Gaelic alliances.",
           "leaders": "Tudor deputies; Shane O’Neill; earls of Desmond; Hugh O’Neill (later).",
-          "religion": "Catholic population under a Protestant state church newly claimed.",
+          "religion": "Catholic population under Protestant state church claims: clandestine Mass, pilgrimage, and penal constraints shape ritual life.",
           "culture": "Gaelic learned orders under pressure; Pale Englishness vs Gaelic polarity hardening.",
           "story": "Ireland becomes England’s first long colonial laboratory — Reformation plus conquest, with consequences lasting centuries.",
           "literature": "Shakespearean theatre, Cervantes, classical French drama, Dutch and Spanish Golden Age prose, scientific letters. Europe invents the modern author-celebrity and the global report. Irish monastic and later Gaelic learned traditions punch above demographic weight in Europe’s imagination.",
@@ -14825,7 +14897,7 @@
           "summary": "A kingdom without its own resident dynasty; Reformation arrives via Copenhagen.",
           "conflicts": "Danish governors; trade under Hansa then Danish control.",
           "leaders": "Danish viceroys; local nobles diminished.",
-          "religion": "Lutheran reform from above.",
+          "religion": "Lutheran reform from above continues: vernacular liturgy and parish schooling under Danish church law.",
           "culture": "Continuing vernacular life; loss of archbishopric independence.",
           "story": "Norway’s Reformation is an email from Copenhagen — institutional change without a local Luther.",
           "literature": "Shakespearean theatre, Cervantes, classical French drama, Dutch and Spanish Golden Age prose, scientific letters. Europe invents the modern author-celebrity and the global report. Norwegian arts remember ships first — keel as national metaphor from Oseberg to oil platforms.",
@@ -14872,7 +14944,7 @@
           "summary": "The Catholic southern provinces reconquered by Parma remain under Spanish Habsburgs as Antwerp’s golden age wanes.",
           "conflicts": "Dutch Revolt warfare; religious cleansing northward migration of Protestants.",
           "leaders": "Duke of Parma (Alexander Farnese); Spanish governors.",
-          "religion": "Tridentine Catholic restoration.",
+          "religion": "Tridentine Catholic restoration: Baroque churches, processions, and confessional schooling after the revolt’s religious split.",
           "culture": "Flemish painting still luminous; commercial shift toward Amsterdam.",
           "story": "Antwerp’s fall and Protestant exodus help invent Amsterdam’s boom — a tale of two Low Countries.",
           "literature": "Shakespearean theatre, Cervantes, classical French drama, Dutch and Spanish Golden Age prose, scientific letters. Europe invents the modern author-celebrity and the global report. Flemish workshops paint Europe’s devotion and cloth trade in the same luminous oil.",
@@ -14917,7 +14989,7 @@
           "summary": "Zwingli’s Zurich and Calvin’s Geneva make Switzerland a laboratory of Reformed religion beside Catholic cantons.",
           "conflicts": "Kappel wars between confessions; mercenary export continues.",
           "leaders": "Ulrich Zwingli; John Calvin; Catholic Waldstätten elites.",
-          "religion": "Reformed vs Catholic cantonal split — a miniature Europe.",
+          "religion": "Standing Reformed/Catholic cantonal split: sermon-centered worship vs Mass — a miniature confessional Europe in the Alps.",
           "culture": "Disciplined consistory religion; citizen-soldier myth; printing.",
           "story": "Calvin’s Geneva — refuge for exiles and exporter of pastors — punches far above its Alpine weight in Atlantic Protestantism.",
           "literature": "Shakespearean theatre, Cervantes, classical French drama, Dutch and Spanish Golden Age prose, scientific letters. Europe invents the modern author-celebrity and the global report. Alpine republican myths and mercenary fame produce a spare, stubborn aesthetic of autonomy.",
@@ -15524,7 +15596,7 @@
           "summary": "Independent since 1917; Nordic democracy beside Russia.",
           "conflicts": "Winter War and Continuation War memory; EU/NATO era security politics.",
           "leaders": "Mannerheim in founding memory; post-war presidents; contemporary cabinets.",
-          "religion": "Lutheran majority; secular society.",
+          "religion": "Lutheran majority church with strong secularization: baptism and church tax persist while belief privatizes; new minorities grow.",
           "culture": "Sisu myth; design; bilingual Finnish/Swedish legacy.",
           "story": "The Winter War — tiny Finland holding the Red Army — remains the national epic of survival.",
           "literature": "National canons, modernist fracture, postcolonial argument, EU multilingual culture industries. Poetry and novels become the museum of feelings nations tell about themselves — and argue with. Finnish oral epic (later Kalevala) and modern design both treat forest silence as a material.",
@@ -15560,7 +15632,7 @@
           "summary": "Constitutional monarchy, non-aligned long arc.",
           "conflicts": "No war since 1814; regional diplomacy with Russia/NATO neighbors.",
           "leaders": "Constitutional monarchs; Social Democratic architects of the folkhem; contemporary coalition politics.",
-          "religion": "Lutheran heritage under deep secularization; new religious diversity.",
+          "religion": "Lutheran heritage under deep secularization; church rites as culture more than compulsion, plus rising religious diversity.",
           "culture": "Welfare model; design; non-alignment tradition under pressure.",
           "story": "The folkhem — ‘people’s home’ — is Sweden’s modern founding myth of equality, now debated in an age of migration and insecurity.",
           "literature": "National canons, modernist fracture, postcolonial argument, EU multilingual culture industries. Poetry and novels become the museum of feelings nations tell about themselves — and argue with. Swedish culture often exports northern clarity — from rock art to modern design temperaments.",
@@ -15596,7 +15668,7 @@
           "summary": "Constitutional monarchy; EU member; Greenland/Faroes autonomy questions.",
           "conflicts": "WW2 occupation memory; contemporary Arctic and migration politics.",
           "leaders": "Constitutional monarchs; Social Democratic and liberal PMs.",
-          "religion": "Lutheran folk church under secularization.",
+          "religion": "Lutheran folk church under secularization: life-cycle rituals (baptism, confirmation, funeral) outlast weekly practice for many.",
           "culture": "Flexicurity welfare; design; agricultural modernity.",
           "story": "From absolute Sound Toll power to small-state humanitarian branding — Denmark’s modern art is reinvention.",
           "literature": "National canons, modernist fracture, postcolonial argument, EU multilingual culture industries. Poetry and novels become the museum of feelings nations tell about themselves — and argue with. Danish gatekeeping of the Baltic Sound makes culture a toll-booth as well as a stage.",
@@ -15632,7 +15704,7 @@
           "summary": "Independent from Sweden since 1905; oil-funded democracy.",
           "conflicts": "WW2 occupation; resource and NATO politics.",
           "leaders": "Haakon VII’s resistance symbolism; post-war Labor architects; contemporary cabinets.",
-          "religion": "Lutheran heritage; secularization.",
+          "religion": "Lutheran heritage with rapid secularization; state–church untying and plural immigration reshape the ritual field.",
           "culture": "Oil fund ethics; outdoor life; oil-to-climate tension.",
           "story": "1905’s peaceful secession and WWII’s heavy-water/resistance stories frame Norway’s modern self-image.",
           "literature": "National canons, modernist fracture, postcolonial argument, EU multilingual culture industries. Poetry and novels become the museum of feelings nations tell about themselves — and argue with. Norwegian arts remember ships first — keel as national metaphor from Oseberg to oil platforms.",
@@ -15818,7 +15890,7 @@
           "summary": "Post-Franco democracy.",
           "conflicts": "Civil War 1936–39; colonial losses earlier; Basque/Catalan tensions.",
           "leaders": "From Franco’s dictatorship to parliamentary monarchy (Juan Carlos → Felipe VI) and democratic parties.",
-          "religion": "Catholic culture under rapid secularization; regional identities.",
+          "religion": "Catholic culture under rapid secularization after Franco-era confessionalism; regional identities and new pluralism reframe practice.",
           "culture": "Transition culture; autonomous communities; EU membership remaking economy.",
           "story": "The Pact of Forgetting and its unraveling — how a democracy buries and then reopens civil-war memory.",
           "literature": "Generation of ’98 wounds, Lorca’s lyric, Civil War poetry, and democratic boom novels — Spain writing itself out of silence.",
@@ -15848,7 +15920,7 @@
           "summary": "From authoritarian Estado Novo to Carnation Revolution democracy and EU membership.",
           "conflicts": "Colonial wars; 1974 revolution; austerity years.",
           "leaders": "Salazar as negative founding memory; post-1974 democratic leaders.",
-          "religion": "Catholic culture under secularization.",
+          "religion": "Catholic culture under secularization: feast days and parish memory endure beside declining weekly Mass.",
           "culture": "Fado; Atlantic orientation; Lusophone world ties.",
           "story": "The Carnation Revolution (1974) — almost bloodless end to dictatorship — is Portugal’s gentle modern myth.",
           "literature": "National canons, modernist fracture, postcolonial argument, EU multilingual culture industries. Poetry and novels become the museum of feelings nations tell about themselves — and argue with. Portugal’s Atlantic gaze turns European art toward oceans and return cargoes of style.",
@@ -15884,7 +15956,7 @@
           "summary": "Unified 1861; republic after fascism.",
           "conflicts": "World wars; fascist period; EU founding.",
           "leaders": "Post-war republican politics; earlier Mussolini as negative founding memory; EU-era premiers.",
-          "religion": "Catholic society and Vatican neighbor; secularization.",
+          "religion": "Catholic society beside the Vatican: parish and papal ritual still public, while secularization and immigration diversify belief.",
           "culture": "Design, film, regional cuisines as soft power; industrial north / agrarian south historic split.",
           "story": "From Fascism’s fall and resistance myth to ‘il sorpasso’ and recurring political instability — creativity beside fragile parties.",
           "literature": "Leopardi to Ferrante — Italian prose of beauty and fracture; film scripts as national literature with better lighting.",
@@ -15956,7 +16028,7 @@
           "summary": "Successor to USSR/Russian Empire.",
           "conflicts": "Chechen wars; Georgia 2008; Ukraine wars — ongoing regional conflict.",
           "leaders": "Soviet general secretaries in memory; Yeltsin; Putin-era presidency.",
-          "religion": "Orthodox revival after Soviet atheism; minorities of many faiths.",
+          "religion": "Orthodox revival after Soviet atheism: rebuilt churches, public liturgy, and state-adjacent piety alongside Muslim, Buddhist, and secular populations.",
           "culture": "High literary canon; petro-state geopolitics; Soviet memory wars.",
           "story": "1991’s flag over the Kremlin ends the USSR; the post-Soviet story is unresolved empire, oligarchy, and war — still rewriting Europe’s map.",
           "literature": "Pushkin to Tolstoy to Soviet and post-Soviet argument — a literature that treats the soul as a public utility and a crime scene.",
@@ -15986,7 +16058,7 @@
           "summary": "Independent 1991.",
           "conflicts": "Russian annexation Crimea 2014; full-scale invasion 2022–.",
           "leaders": "Post-1991 presidents; Maidan-era civic leadership; wartime presidency.",
-          "religion": "Orthodox jurisdictions in flux; Greek Catholic west; pluralism.",
+          "religion": "Orthodox jurisdictions in flux plus Greek Catholic west: liturgy as identity under war and politics; pluralism and secular strata coexist.",
           "culture": "Language politics; Cossack memory; European aspiration.",
           "story": "Maidan (2014) and full-scale invasion (2022) make Ukraine’s sovereignty the defining European story of the early 21st century.",
           "literature": "National canons, modernist fracture, postcolonial argument, EU multilingual culture industries. Poetry and novels become the museum of feelings nations tell about themselves — and argue with. Borderland creativity — Cossack, Ruthenian, and European currents braided under dangerous skies.",
@@ -16022,7 +16094,7 @@
           "summary": "Nation-state after Ottoman collapse.",
           "conflicts": "Greco-Turkish war; Cyprus; Kurdish conflict; regional interventions.",
           "leaders": "Atatürk’s republican founding memory; elected governments; Erdoğan-era presidency.",
-          "religion": "Secular republic over Muslim society; contested laicism.",
+          "religion": "Secular republic over a Muslim-majority society: contested laicism, mosque life, and political Islam debates redefine public ritual.",
           "culture": "Between Europe and Middle East; Ottoman nostalgia vs republican modernity.",
           "story": "Gallipoli and the War of Independence found the republic; EU accession’s stall and Middle Eastern wars keep Turkey’s European question open.",
           "literature": "National canons, modernist fracture, postcolonial argument, EU multilingual culture industries. Poetry and novels become the museum of feelings nations tell about themselves — and argue with. Ottoman and Anatolian layers make this edge of the map a second classical continuum for Europe to face.",
@@ -16064,7 +16136,7 @@
           "summary": "Independent after Ottoman rule.",
           "conflicts": "Balkan wars; Cyprus; tensions with Turkey.",
           "leaders": "Post-junta democratic leaders; EU-era premiers through debt crisis.",
-          "religion": "Greek Orthodoxy as cultural establishment; secular youth.",
+          "religion": "Greek Orthodoxy as cultural establishment: liturgy and feast calendar still mark public time while youth secularization rises.",
           "culture": "Classical heritage tourism; shipping; crisis cinema and politics.",
           "story": "The 2010s debt crisis — austerity, protest, near-Grexit — tests whether European solidarity is real.",
           "literature": "National canons, modernist fracture, postcolonial argument, EU multilingual culture industries. Poetry and novels become the museum of feelings nations tell about themselves — and argue with. Greek language and forms remain a reusable antiquity — quarried by every later age for prestige.",

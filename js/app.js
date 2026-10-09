@@ -1135,6 +1135,7 @@ function fillInlineGallery(el, images) {
   const list = (images || []).filter((img) => img && img.src);
   el.innerHTML = list.map(figureHtml).join("");
   el.hidden = !list.length;
+  el.classList.toggle("is-single", list.length === 1);
 }
 
 /** Route images into leaders / religion / literature / art galleries */
@@ -1277,18 +1278,15 @@ function renderDetail() {
     })
     .join("");
 
-  $("#ancestry-legend").innerHTML = entries
-    .map((e) => {
-      const pct = e.rangeLabel || `~${Math.round(e.value)}%`;
-      return `<div class="legend-item" title="${escapeHtml(e.detail)}"><span class="swatch" style="background:${e.color}"></span>${e.label} · ${escapeHtml(pct)}</div>`;
-    })
-    .join("");
+  // Legend omitted — pie-list shows label + % tightly (no triple display)
+  const legendEl = $("#ancestry-legend");
+  if (legendEl) legendEl.innerHTML = "";
 
   $("#pie").style.background = conicGradient(entries);
   $("#pie-list").innerHTML = entries
     .map((e) => {
       const pct = e.rangeLabel || `~${Math.round(e.value)}%`;
-      return `<li title="${escapeHtml(e.detail)}"><span><strong>${escapeHtml(e.label)}</strong></span><span class="pct">${escapeHtml(pct)}</span></li>`;
+      return `<li title="${escapeHtml(e.detail)}" style="--swatch:${escapeHtml(e.color)}"><strong>${escapeHtml(e.label)}</strong><span class="pct">${escapeHtml(pct)}</span></li>`;
     })
     .join("");
 

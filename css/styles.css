@@ -70,7 +70,8 @@ a {
 }
 
 button {
-  font-family: inherit;
+  font: inherit; /* full shorthand — UA button metrics otherwise leak */
+  color: inherit;
   cursor: pointer;
 }
 
@@ -659,9 +660,10 @@ html[data-layout="desktop"] body {
   border-bottom: 1px solid var(--line-strong);
   background: transparent;
   color: inherit;
-  /* Match surrounding narrative/polity copy exactly — no font swap */
+  /* Match surrounding body copy — 1em beats UA <button> font metrics */
+  font: inherit;
   font-family: inherit;
-  font-size: inherit;
+  font-size: 1em;
   font-weight: inherit;
   font-style: inherit;
   font-variant: inherit;
@@ -681,6 +683,31 @@ html[data-layout="desktop"] body {
   border-bottom-color: var(--ink);
   color: inherit;
   outline: none;
+}
+
+/* Narrative / polity panels: every inline atlas link tracks adjacent copy */
+.culture-desc .atlas-link,
+.ancestry-note .atlas-link,
+.polity-panel .atlas-link,
+.polity-chain .atlas-link,
+.polity-summary .atlas-link,
+.polity-conflicts .atlas-link,
+.polity-leaders .atlas-link,
+.polity-religion .atlas-link,
+.polity-culture .atlas-link,
+.polity-story .atlas-link,
+.polity-literature .atlas-link,
+.polity-art .atlas-link,
+.side-detail .atlas-link,
+.side-detail a {
+  font: inherit;
+  font-family: inherit;
+  font-size: 1em;
+  font-weight: inherit;
+  font-style: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+  color: inherit;
 }
 
 .polity-panel .polity-name {
@@ -716,20 +743,32 @@ html[data-layout="desktop"] body {
 .polity-inline-gallery {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.55rem;
+  gap: 0.65rem;
   margin: 0.35rem 0 0.55rem;
+  align-items: flex-start;
 }
 
 .polity-inline-gallery[hidden] {
   display: none !important;
 }
 
+/* All galleries (Leaders / Religion / Literature / Art): taller frames,
+   capped width so portraits/objects aren’t tiny in wide grey slabs. */
 .polity-figure {
-  flex: 1 1 160px;
+  flex: 0 1 auto;
+  width: min(100%, 22rem);
   max-width: 100%;
   margin: 0;
   background: var(--sea);
   border: 1px solid var(--line);
+}
+
+.polity-inline-gallery.is-single .polity-figure {
+  width: min(100%, 24rem);
+}
+
+.polity-inline-gallery:has(.polity-figure + .polity-figure) .polity-figure {
+  width: min(100%, 18.5rem);
 }
 
 .polity-figure-open {
@@ -752,11 +791,19 @@ html[data-layout="desktop"] body {
 .polity-figure img {
   display: block;
   width: 100%;
-  height: 220px;
+  height: min(52vh, 26rem); /* taller frame so images fill the box */
   object-fit: contain; /* full photo — no face/object crops */
   object-position: center;
   background: #eee;
   pointer-events: none;
+}
+
+.polity-inline-gallery.is-single .polity-figure img {
+  height: min(56vh, 28rem);
+}
+
+.polity-inline-gallery:has(.polity-figure + .polity-figure) .polity-figure img {
+  height: min(48vh, 22rem);
 }
 
 .polity-figure figcaption {
@@ -1073,12 +1120,12 @@ html[data-layout="mobile"] .cline-end-legend {
 
 .stack-bar {
   display: flex;
-  height: 6px;
+  height: 4px;
   width: 100%;
   background: var(--line);
   border: none;
   overflow: hidden;
-  margin-top: 0.45rem;
+  margin: 0.3rem 0 0;
   border-radius: 999px;
 }
 
@@ -1087,11 +1134,9 @@ html[data-layout="mobile"] .cline-end-legend {
   transition: width 0.5s var(--ease);
 }
 
+/* Swatch legend removed — pie-list carries label + % (avoid triple display) */
 .legend {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.3rem 0.75rem;
-  margin-top: 0.55rem;
+  display: none;
 }
 
 .legend-item {
@@ -1109,16 +1154,16 @@ html[data-layout="mobile"] .cline-end-legend {
 }
 
 .pie-wrap {
-  margin-top: 0.75rem;
+  margin-top: 0.4rem;
   display: grid;
-  grid-template-columns: 64px 1fr;
-  gap: 0.75rem;
-  align-items: center;
+  grid-template-columns: 48px 1fr;
+  gap: 0.55rem;
+  align-items: start;
 }
 
 .pie {
-  width: 64px;
-  height: 64px;
+  width: 48px;
+  height: 48px;
   border-radius: 50%;
   border: 1px solid var(--line);
   transition: background 0.5s var(--ease);
@@ -1132,22 +1177,38 @@ html[data-layout="mobile"] .cline-end-legend {
 
 .pie-list li {
   display: flex;
-  justify-content: space-between;
-  gap: 0.5rem;
-  padding: 0.22rem 0;
-  border-bottom: 1px solid var(--line);
-  font-size: 0.65rem;
+  justify-content: flex-start;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.35em;
+  padding: 0.08rem 0;
+  border-bottom: none;
+  font-size: 0.92rem;
+  line-height: 1.35;
   color: var(--ink-dim);
+}
+
+.pie-list li::before {
+  content: "";
+  width: 0.45em;
+  height: 0.45em;
+  border-radius: 50%;
+  background: var(--swatch, var(--ink-mute));
+  flex: 0 0 auto;
+  align-self: center;
 }
 
 .pie-list strong {
   color: var(--ink);
-  font-weight: 400;
+  font-weight: 600;
+  font-size: 1em;
 }
 
 .pct {
   font-variant-numeric: tabular-nums;
   color: var(--ink);
+  font-size: 1em;
+  font-weight: 500;
 }
 
 /* ——— Below ——— */
@@ -1611,8 +1672,20 @@ html[data-layout="mobile"] .polity-chain-label {
   margin: 0 0 0.15rem;
 }
 
-html[data-layout="mobile"] .atlas-link {
+html[data-layout="mobile"] .atlas-link,
+html[data-layout="mobile"] .culture-desc .atlas-link,
+html[data-layout="mobile"] .polity-panel .atlas-link,
+html[data-layout="mobile"] .polity-chain .atlas-link,
+html[data-layout="mobile"] .side-detail .atlas-link,
+html[data-layout="mobile"] .side-detail a {
   border-bottom-width: 1.5px;
+  font: inherit;
+  font-size: 1em;
+  font-family: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+  color: inherit;
 }
 
 html[data-layout="mobile"] .polity-panel .polity-name,
@@ -1661,9 +1734,19 @@ html[data-layout="mobile"] .polity-figure figcaption {
   padding: 0.5rem 0.55rem 0.6rem;
 }
 
+html[data-layout="mobile"] .polity-figure,
+html[data-layout="mobile"] .polity-inline-gallery.is-single .polity-figure,
+html[data-layout="mobile"] .polity-inline-gallery:has(.polity-figure + .polity-figure) .polity-figure {
+  width: 100%;
+}
+
 html[data-layout="mobile"] .polity-figure img {
-  height: 240px;
+  height: min(58vh, 28rem);
   object-fit: contain;
+}
+
+html[data-layout="mobile"] .polity-inline-gallery.is-single .polity-figure img {
+  height: min(62vh, 30rem);
 }
 
 html[data-layout="mobile"] .polity-inline-gallery {
@@ -1731,25 +1814,30 @@ html[data-layout="mobile"] .ancestry-panel .kicker {
 }
 
 html[data-layout="mobile"] .stack-bar {
-  margin-top: 0.65rem;
-  margin-bottom: 0.75rem;
-  height: 14px;
+  margin-top: 0.35rem;
+  margin-bottom: 0;
+  height: 4px;
 }
 
 html[data-layout="mobile"] .pie-wrap {
-  margin-top: 1rem;
-  gap: 0.85rem;
+  margin-top: 0.45rem;
+  gap: 0.55rem;
+  grid-template-columns: 44px 1fr;
 }
 
-html[data-layout="mobile"] .pie-list {
-  font-size: var(--read-size);
-  line-height: var(--read-leading);
+html[data-layout="mobile"] .pie {
+  width: 44px;
+  height: 44px;
 }
 
-/* Ancestry swatch legend — keep a touch under body reading */
+html[data-layout="mobile"] .pie-list li {
+  font-size: 1.05rem;
+  line-height: 1.35;
+  padding: 0.1rem 0;
+}
+
 html[data-layout="mobile"] .legend {
-  font-size: 15px;
-  line-height: 1.5;
+  display: none;
 }
 
 html[data-layout="mobile"] .below {
