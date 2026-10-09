@@ -230,15 +230,16 @@ function patchRegion(p, rid, patch) {
       "Southern Scandinavia hosts both Funnelbeaker farmers and Pitted Ware coastal foragers. Genetics split with that geography: EEF-led TRB inland/south vs SHG/WHG-rich Pitted Ware holdouts on the coasts — not a single Scandinavian Neolithic mix.",
   });
   patchRegion(p, "eastern", {
-    ancestry: { eef: 42, ehg: 28, chg: 14, whg: 10, steppe: 6 },
+    ancestry: { eef: 44, ehg: 28, chg: 16, whg: 12 },
     ancestryRange: { eef: [30, 55], ehg: [18, 40] },
-    ancestryNote: "Trypillia farmer cores vs Pontic Eneolithic steppe-adjacent groups — clinal before Yamnaya.",
+    ancestryNote:
+      "Pre-Yamnaya Pontic: EHG + CHG-related as separate ingredients beside Trypillia EEF — forming steppe package, not scored as WSH yet.",
     ancestryCline: {
       label: "Trypillia farms → Pontic steppe edge",
-      note: "EEF higher in Trypillia; EHG/CHG-related rise toward Usatove / Serednii Stih contact.",
+      note: "EEF higher in Trypillia; EHG/CHG-related rise toward Usatove / Serednii Stih (pre-WSH fusion).",
       ends: [
-        { id: "tryp", label: "Trypillia core", ancestry: { eef: 58, whg: 14, ehg: 16, chg: 8, steppe: 4 } },
-        { id: "pontic", label: "Pontic edge", ancestry: { eef: 28, ehg: 38, chg: 20, whg: 6, steppe: 8 } },
+        { id: "tryp", label: "Trypillia core", ancestry: { eef: 60, whg: 14, ehg: 16, chg: 10 } },
+        { id: "pontic", label: "Pontic edge", ancestry: { ehg: 40, chg: 24, eef: 28, whg: 8 } },
       ],
     },
   });
@@ -267,15 +268,16 @@ function patchRegion(p, rid, patch) {
     "Yamnaya pastoralists expand on the Pontic–Caspian steppe while Late Neolithic farmer Europe (TRB, GAC, Iberian Copper Age, British Late Neolithic) continues west of the steppe. Scandinavian/Baltic forager holdouts (Pitted Ware, late Narva–Comb) still mark the map. Steppe ancestry is high on the core steppe and falls off west/north — a gradient, not an instant uniform coat.";
 
   patchRegion(p, "eastern", {
-    ancestry: { steppe: 55, ehg: 15, chg: 12, eef: 12, whg: 6 },
-    ancestryRange: { steppe: [35, 80], eef: [5, 25] },
-    ancestryNote: "Yamnaya core high steppe; farmer/Trypillia edges keep more EEF.",
+    ancestry: { steppe: 78, eef: 14, whg: 8 },
+    ancestryRange: { steppe: [55, 90], eef: [5, 25] },
+    ancestryNote:
+      "Yamnaya = WSH package (EHG+CHG already fused). Shown as WSH, not re-split into EHG and CHG.",
     ancestryCline: {
       label: "Yamnaya core → farmer edge",
-      note: "Steppe% highest on Yamnaya core steppe; EEF rises toward late Trypillia / western contact.",
+      note: "WSH% highest on Yamnaya core steppe; EEF rises toward late Trypillia / western contact.",
       ends: [
-        { id: "core", label: "Yamnaya core", ancestry: { steppe: 78, ehg: 8, chg: 10, eef: 3, whg: 1 } },
-        { id: "edge", label: "Farmer / west edge", ancestry: { steppe: 35, eef: 35, ehg: 15, chg: 10, whg: 5 } },
+        { id: "core", label: "Yamnaya core", ancestry: { steppe: 90, eef: 6, whg: 4 } },
+        { id: "edge", label: "Farmer / west edge", ancestry: { steppe: 48, eef: 38, whg: 14 } },
       ],
     },
   });
@@ -407,15 +409,16 @@ function patchRegion(p, rid, patch) {
     },
   });
   patchRegion(p, "eastern", {
-    ancestry: { steppe: 60, eef: 15, ehg: 10, whg: 8, chg: 7 },
-    ancestryRange: { steppe: [45, 75] },
-    ancestryNote: "Catacomb / steppe-contact Ukraine stays steppe-rich vs farmer-west edges.",
+    ancestry: { steppe: 72, eef: 18, whg: 10 },
+    ancestryRange: { steppe: [55, 85], eef: [10, 30] },
+    ancestryNote:
+      "Catacomb / steppe-contact as WSH package + farmer remainder — no separate EHG/CHG slices.",
     ancestryCline: {
       label: "Steppe/Catacomb → western contact",
-      note: "Steppe highest on Catacomb/steppe; EEF rises toward western Corded Ware contact.",
+      note: "WSH highest on Catacomb/steppe; EEF rises toward western Corded Ware contact.",
       ends: [
-        { id: "steppe", label: "Catacomb / steppe", ancestry: { steppe: 75, ehg: 8, chg: 8, eef: 5, whg: 4 } },
-        { id: "west", label: "Western contact", ancestry: { steppe: 48, eef: 30, whg: 12, ehg: 5, chg: 5 } },
+        { id: "steppe", label: "Catacomb / steppe", ancestry: { steppe: 85, eef: 8, whg: 7 } },
+        { id: "west", label: "Western contact", ancestry: { steppe: 55, eef: 32, whg: 13 } },
       ],
     },
   });
