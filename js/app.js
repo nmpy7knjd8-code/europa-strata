@@ -1289,6 +1289,8 @@ function bindUI() {
   $("#btn-zoom-out")?.addEventListener("click", () => bumpMapZoom(1 / 1.35));
   $("#btn-zoom-reset")?.addEventListener("click", () => resetMapZoom());
 
+  bindLightboxUi();
+
   // Inline / chain atlas links (event delegation)
   document.addEventListener("click", (e) => {
     const link = e.target?.closest?.(".atlas-link");
