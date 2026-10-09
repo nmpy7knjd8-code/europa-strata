@@ -61,15 +61,23 @@
             />
             <div class="ticks" id="tick-labels"></div>
           </div>
-
-          <div class="mode-row" id="mode-row"></div>
         </div>
 
         <div class="side-detail" id="detail">
           <p class="kicker" id="detail-kicker">Click a country</p>
           <h3 class="culture-title" id="culture-title">—</h3>
+          <p class="culture-horizon" id="culture-horizon"></p>
           <span class="mode-pill" id="mode-pill" data-mode="continuity">—</span>
           <p class="culture-desc" id="culture-desc">Select a place on the map to see culture, ancestry, and language for this period.</p>
+
+          <div class="polity-panel" id="polity-panel" hidden>
+            <p class="kicker">Polity</p>
+            <h4 class="polity-name" id="polity-name">—</h4>
+            <p class="polity-summary" id="polity-summary"></p>
+            <p class="kicker polity-conflict-label">Conflicts &amp; neighbors</p>
+            <p class="polity-conflicts" id="polity-conflicts"></p>
+          </div>
+
           <p class="ancestry-note" id="ancestry-note" hidden></p>
 
           <div class="ling-panel" id="language">

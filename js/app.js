@@ -159,23 +159,24 @@ function conicGradient(entries) {
   return `conic-gradient(${parts.join(", ")})`;
 }
 
-function shortTick(p) {
+function shortPeriodName(p) {
+  // Compact but full words for the secondary tick line
   const map = {
-    mesolithic: "Meso",
-    "early-neolithic": "EN",
-    "middle-neolithic": "MN",
-    yamnaya: "Yam",
-    "beaker-corded": "CW",
-    "nordic-bronze": "NBA",
-    "iron-age": "Iron",
-    classical: "Rome",
-    migration: "Migr",
-    frankish: "Frank",
-    "high-medieval": "Med",
-    "early-modern": "EM",
-    modern: "Now",
+    mesolithic: "Mesolithic",
+    "early-neolithic": "Early Neolithic",
+    "middle-neolithic": "Middle Neolithic",
+    yamnaya: "Yamnaya",
+    "beaker-corded": "Corded Ware / Beaker",
+    "nordic-bronze": "Bronze Age",
+    "iron-age": "Iron Age",
+    classical: "Classical / Roman",
+    migration: "Migration Period",
+    frankish: "Frankish / Viking",
+    "high-medieval": "High Medieval",
+    "early-modern": "Early Modern",
+    modern: "Modern",
   };
-  return map[p.id] || p.label.slice(0, 4);
+  return map[p.id] || p.label;
 }
 
 /* ——— Map ——— */
@@ -313,7 +314,7 @@ function setSliderPos(pos, { fromSlider = false } = {}) {
     renderPeriodText();
   }
 
-  $$(".ticks span").forEach((el, i) => {
+  $$(".ticks .tick").forEach((el, i) => {
     el.classList.toggle("active", i === state.periodIndex);
   });
 }
@@ -372,10 +373,6 @@ function updateLegend() {
     if (toggle) toggle.setAttribute("aria-expanded", "true");
   }
 
-  const roles = [...new Set(layers.map((l) => l.role))];
-  $("#mode-row").innerHTML = roles
-    .map((r) => `<span class="role-chip" data-role="${r}">${r}</span>`)
-    .join("");
 }
 
 function renderGlossary() {
@@ -444,16 +441,18 @@ function renderDetail() {
 
   const place = isoName || REGION_LABELS[rid];
   $("#detail-kicker").textContent = `${place} · ${period.yearLabel}`;
-  $("#culture-title").textContent = region.culture;
 
-  // Map layers covering selection
+  // Overall culture horizon from map layer
+  let horizon = region.culture;
   if (state.selectedIso) {
     const cov = countryStyleForPeriod(period, state.selectedIso);
-    if (cov.labels?.length) {
-      const top = cov.labels[0];
-      $("#culture-title").textContent = `${top.label}`;
-      // Keep regional culture as secondary context in description head
-    }
+    if (cov.labels?.length) horizon = cov.labels[0].label;
+  }
+  $("#culture-title").textContent = horizon;
+  const horizonEl = $("#culture-horizon");
+  if (horizonEl) {
+    horizonEl.textContent =
+      horizon !== region.culture ? `Regional horizon · ${region.culture}` : "Cultural horizon";
   }
 
   const modeEl = $("#mode-pill");
@@ -464,14 +463,29 @@ function renderDetail() {
   let desc = region.description;
   if (state.selectedIso) {
     const cov = countryStyleForPeriod(period, state.selectedIso);
-    const layerBits = (cov.labels || [])
-      .map((l) => `${l.label} (${l.role})`)
-      .join("; ");
+    const layerBits = (cov.labels || []).map((l) => l.label).join(" · ");
     if (layerBits) {
-      desc = `On the map here: ${layerBits}. ${region.description}`;
+      desc = `Map layers here: ${layerBits}. ${region.description}`;
     }
   }
   $("#culture-desc").textContent = desc;
+
+  // Polity-specific panel
+  const polityPanel = $("#polity-panel");
+  const polity =
+    state.selectedIso && period.polities
+      ? period.polities[state.selectedIso]
+      : null;
+  if (polityPanel) {
+    if (polity) {
+      polityPanel.hidden = false;
+      $("#polity-name").textContent = polity.name;
+      $("#polity-summary").textContent = polity.summary;
+      $("#polity-conflicts").textContent = polity.conflicts;
+    } else {
+      polityPanel.hidden = true;
+    }
+  }
 
   const note = $("#ancestry-note");
   if (region.ancestryNote) {
@@ -523,9 +537,13 @@ function renderDetail() {
 function buildTicks() {
   const wrap = $("#tick-labels");
   wrap.innerHTML = state.data.periods
-    .map((p, i) => `<span data-i="${i}" title="${p.yearLabel}">${shortTick(p)}</span>`)
+    .map((p, i) => {
+      const year = p.tickYear || p.yearLabel;
+      const name = shortPeriodName(p);
+      return `<button type="button" class="tick" data-i="${i}" title="${escapeHtml(p.yearLabel)} — ${escapeHtml(name)}"><span class="tick-year">${escapeHtml(year)}</span><span class="tick-name">${escapeHtml(name)}</span></button>`;
+    })
     .join("");
-  wrap.querySelectorAll("span").forEach((el) => {
+  wrap.querySelectorAll(".tick").forEach((el) => {
     el.addEventListener("click", () => snapToPeriod(Number(el.dataset.i)));
   });
 }

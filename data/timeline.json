@@ -526,7 +526,65 @@
           "opacity": 0.7,
           "note": ""
         }
-      ]
+      ],
+      "tickYear": "8000 BCE",
+      "polities": {
+        "ESP": {
+          "name": "Iberian Mesolithic bands",
+          "summary": "Azilian and related forager groups along Atlantic and Mediterranean Iberia after glacial retreat.",
+          "conflicts": "Local territorial foraging ranges; no states. Later replaced demographically by Cardial farmers."
+        },
+        "GBR": {
+          "name": "British Mesolithic foragers",
+          "summary": "Sparse island forager communities after Doggerland’s drowning.",
+          "conflicts": "Competition for coastal/river resources among small bands; later erased genetically by farmers then Beaker migrants."
+        },
+        "FRA": {
+          "name": "Sauveterrian / Tardenoisian groups",
+          "summary": "Microlithic foragers across post-glacial Gaul.",
+          "conflicts": "Band-level territoriality only."
+        },
+        "DEU": {
+          "name": "Central European Mesolithic",
+          "summary": "Forest foragers of the North European Plain.",
+          "conflicts": "No polities; later LBK farmers expand into these landscapes."
+        },
+        "DNK": {
+          "name": "Maglemosian / Kongemose",
+          "summary": "Rich coastal/lacustrine foragers of southern Scandinavia.",
+          "conflicts": "Local resource competition; Ertebølle follows."
+        },
+        "SWE": {
+          "name": "Scandinavian coastal foragers",
+          "summary": "SHG communities along coasts and inland waterways.",
+          "conflicts": "Overlap with Fosna–Hensbacka further west/north."
+        },
+        "NOR": {
+          "name": "Fosna–Hensbacka / Komsa",
+          "summary": "Western and northern Norwegian forager traditions.",
+          "conflicts": "Sparse arctic/coastal territories."
+        },
+        "ITA": {
+          "name": "Epigravettian-descended foragers",
+          "summary": "Peninsula foragers after Late Glacial.",
+          "conflicts": "Southern refugia matter for later WHG diversity."
+        },
+        "SRB": {
+          "name": "Iron Gates foragers",
+          "summary": "Dense Danube gorge forager settlements (e.g. Lepenski-related world).",
+          "conflicts": "Distinctive local identity before Starčevo farmers; contact and absorption follow."
+        },
+        "UKR": {
+          "name": "Ukrainian Mesolithic",
+          "summary": "Steppe/forest-steppe foragers.",
+          "conflicts": "East of later Neolithic “great divide”; EHG-related."
+        },
+        "RUS": {
+          "name": "Eastern forest HG",
+          "summary": "Veretye and related EHG-zone groups.",
+          "conflicts": "Localized forager territories; long persistence vs western farmer replacement."
+        }
+      }
     },
     {
       "id": "early-neolithic",
@@ -851,7 +909,50 @@
           "opacity": 0.55,
           "note": ""
         }
-      ]
+      ],
+      "tickYear": "5500 BCE",
+      "polities": {
+        "DEU": {
+          "name": "LBK pioneer villages",
+          "summary": "Linearbandkeramik longhouse farming on loess.",
+          "conflicts": "Expansion into forager landscapes; limited early conflict archaeologically visible as pioneer frontier."
+        },
+        "HUN": {
+          "name": "Starčevo–Körös farmers",
+          "summary": "Early farming in the Carpathian Basin.",
+          "conflicts": "Contact with residual HG and neighboring Balkan farmers."
+        },
+        "ESP": {
+          "name": "Cardial Iberia",
+          "summary": "Mediterranean farming colonies and spreads.",
+          "conflicts": "Rapid coastal advance; WHG substrate remains minority."
+        },
+        "ITA": {
+          "name": "Impresso Italy",
+          "summary": "Maritime Early Neolithic along coasts.",
+          "conflicts": "Coastal farmer expansion vs inland foragers."
+        },
+        "GRC": {
+          "name": "Early Greek Neolithic",
+          "summary": "Farming villages in Thessaly and beyond.",
+          "conflicts": "Corridor from Anatolia; local HG admixture varies."
+        },
+        "DNK": {
+          "name": "Ertebølle vs earliest TRB",
+          "summary": "Forager Ertebølle meeting first farmers.",
+          "conflicts": "Classic contact frontier before farmer dominance."
+        },
+        "GBR": {
+          "name": "Earliest Neolithic arrival",
+          "summary": "Farming enters after continental EN.",
+          "conflicts": "First major replacement of Mesolithic WHG."
+        },
+        "UKR": {
+          "name": "Bug–Dniester / farmer fringe",
+          "summary": "Western Pontic edge of farming.",
+          "conflicts": "Forager persistence eastward; Trypillia later."
+        }
+      }
     },
     {
       "id": "middle-neolithic",
@@ -1167,7 +1268,45 @@
           "opacity": 0.7,
           "note": ""
         }
-      ]
+      ],
+      "tickYear": "3800 BCE",
+      "polities": {
+        "GBR": {
+          "name": "British megalith builders",
+          "summary": "Orkney, Wessex, and related Neolithic societies.",
+          "conflicts": "Regional monument competition; gene pool later collapses in Beaker age."
+        },
+        "FRA": {
+          "name": "Chasséen / megalithic France",
+          "summary": "Middle Neolithic cultural mosaic.",
+          "conflicts": "Regional farmer identities; steppe still absent."
+        },
+        "DEU": {
+          "name": "TRB / Michelsberg",
+          "summary": "Funnelbeaker and Michelsberg farming worlds.",
+          "conflicts": "GAC forms toward Late Neolithic; pressure from east later."
+        },
+        "UKR": {
+          "name": "Cucuteni–Trypillia",
+          "summary": "Mega-settlements of the forest-steppe.",
+          "conflicts": "Contact and conflict/exchange with Pontic Eneolithic steppe groups (Usatove, Serednii Stih)."
+        },
+        "DNK": {
+          "name": "TRB Scandinavia",
+          "summary": "Funnelbeaker farming established.",
+          "conflicts": "Residual forager (Pitted Ware) coexistence on coasts."
+        },
+        "SWE": {
+          "name": "TRB & Pitted Ware",
+          "summary": "Farmer inland/south vs coastal Pitted Ware.",
+          "conflicts": "Dual economies; steppe pulse still ahead."
+        },
+        "POL": {
+          "name": "TRB / early GAC Poland",
+          "summary": "Farmer Poland before Corded Ware.",
+          "conflicts": "Eastern contacts intensify."
+        }
+      }
     },
     {
       "id": "yamnaya",
@@ -1483,7 +1622,45 @@
           "opacity": 0.4,
           "note": ""
         }
-      ]
+      ],
+      "tickYear": "3000 BCE",
+      "polities": {
+        "UKR": {
+          "name": "Yamnaya pastoralists",
+          "summary": "Kurgan steppe societies of the Pontic–Caspian zone.",
+          "conflicts": "Expansion into Danube/Carpathian Basin; pressure on Trypillia and GAC worlds."
+        },
+        "RUS": {
+          "name": "Yamnaya / steppe clans",
+          "summary": "Volga–Don–Caspian pastoralist horizon.",
+          "conflicts": "Formation zone of WSH ancestry; later Catacomb succeeds."
+        },
+        "HUN": {
+          "name": "Yamnaya in the Carpathian Basin",
+          "summary": "Steppe groups enter the plain.",
+          "conflicts": "Contact/conflict with local Late Neolithic/Copper communities."
+        },
+        "ESP": {
+          "name": "Los Millares & Copper Age Iberia",
+          "summary": "Fortified Copper Age centers.",
+          "conflicts": "Internal hierarchy; Beaker package arrives before major steppe ancestry."
+        },
+        "GBR": {
+          "name": "Late Neolithic Britain",
+          "summary": "Pre-Beaker farmer society.",
+          "conflicts": "Monumental landscapes; demographic break imminent."
+        },
+        "ITA": {
+          "name": "Remedello / Gaudo",
+          "summary": "Copper Age burial cultures.",
+          "conflicts": "Limited early steppe vs CW north."
+        },
+        "DEU": {
+          "name": "GAC → Corded Ware dawn",
+          "summary": "Globular Amphora farmers at the hinge.",
+          "conflicts": "Meeting expanding steppe-admixed groups."
+        }
+      }
     },
     {
       "id": "beaker-corded",
@@ -1827,7 +2004,60 @@
           "opacity": 0.6,
           "note": ""
         }
-      ]
+      ],
+      "tickYear": "2500 BCE",
+      "polities": {
+        "DEU": {
+          "name": "Corded Ware Germany",
+          "summary": "Single-grave CW communities.",
+          "conflicts": "Overlaps and succession with Bell Beaker in the west; GAC substrate absorbed."
+        },
+        "POL": {
+          "name": "Corded Ware Poland",
+          "summary": "CW on the North European Plain.",
+          "conflicts": "Major steppe-ancestry vehicle; borders Battle Axe/Single Grave north."
+        },
+        "DNK": {
+          "name": "Single Grave Culture",
+          "summary": "Jutland Corded Ware.",
+          "conflicts": "Near-complete turnover vs TRB; ~60–85% steppe-related ancestry."
+        },
+        "SWE": {
+          "name": "Battle Axe Culture",
+          "summary": "Swedish Corded Ware.",
+          "conflicts": "Expansion across farmer/forager north; pre-Germanic correlate."
+        },
+        "GBR": {
+          "name": "Bell Beaker Britain",
+          "summary": "Steppe-rich Beaker migrants.",
+          "conflicts": "~90% Neolithic replacement (Olalde 2018); transforms island ancestry."
+        },
+        "ESP": {
+          "name": "Bell Beaker Iberia",
+          "summary": "Beaker package on Neolithic-like genomes early on.",
+          "conflicts": "Gradual steppe influx (often male-biased) vs Britain’s cliff replacement."
+        },
+        "FRA": {
+          "name": "Beaker / late CW France",
+          "summary": "Northern admixture pulses ~3000–2600 BCE.",
+          "conflicts": "Neolithic substrates meeting steppe-rich incomers."
+        },
+        "NLD": {
+          "name": "Dutch / Rhine Beakers",
+          "summary": "Key Beaker node for northwest Europe.",
+          "conflicts": "Link between CW world and British Beaker stream."
+        },
+        "UKR": {
+          "name": "Catacomb steppe",
+          "summary": "Post-Yamnaya steppe facies.",
+          "conflicts": "Continues pastoralist steppe while CW remakes temperate Europe."
+        },
+        "ITA": {
+          "name": "Italian Beaker / EBA",
+          "summary": "Beaker and early Bronze influences.",
+          "conflicts": "Moderate steppe vs CW heartland."
+        }
+      }
     },
     {
       "id": "nordic-bronze",
@@ -2166,7 +2396,55 @@
           "opacity": 0.4,
           "note": ""
         }
-      ]
+      ],
+      "tickYear": "1400 BCE",
+      "polities": {
+        "DNK": {
+          "name": "Nordic Bronze Age Denmark",
+          "summary": "Prestige bronzes, longhouses, amber export.",
+          "conflicts": "Rival chiefly networks across south Scandinavia; links to Tumulus Europe."
+        },
+        "SWE": {
+          "name": "Nordic Bronze Age Sweden",
+          "summary": "Rock-art zones and metal imports.",
+          "conflicts": "Competition among chiefly polities; Battle Axe genetic continuity."
+        },
+        "NOR": {
+          "name": "Nordic Bronze Age Norway",
+          "summary": "Coastal NBA communities.",
+          "conflicts": "Peripheral to Danish metal centers; maritime links."
+        },
+        "GBR": {
+          "name": "Wessex / British BA",
+          "summary": "Barrow elites and continental metal.",
+          "conflicts": "Regional chiefdom competition; Irish BA exchange."
+        },
+        "ESP": {
+          "name": "El Argar",
+          "summary": "Southeast Iberian BA complex.",
+          "conflicts": "Fortified centers; rivalry with Atlantic Bronze networks."
+        },
+        "DEU": {
+          "name": "Tumulus Culture",
+          "summary": "Central European MBA barrow world.",
+          "conflicts": "Transitions toward Urnfield; metal-route politics."
+        },
+        "ITA": {
+          "name": "Terramare",
+          "summary": "Po Valley settlement systems.",
+          "conflicts": "Internal collapse debates; Apennine neighbors south."
+        },
+        "GRC": {
+          "name": "Mycenaean palaces",
+          "summary": "Palace states with Linear B Greek.",
+          "conflicts": "Rivalry among palaces; Aegean–Anatolian conflicts culminating in LBA crises."
+        },
+        "UKR": {
+          "name": "Srubnaya",
+          "summary": "Timber-grave steppe.",
+          "conflicts": "Pastoralist confederations; Indo-Iranian-related hypotheses."
+        }
+      }
     },
     {
       "id": "iron-age",
@@ -2547,7 +2825,60 @@
           "opacity": 0.5,
           "note": ""
         }
-      ]
+      ],
+      "tickYear": "500 BCE",
+      "polities": {
+        "FRA": {
+          "name": "Gallic tribes (La Tène)",
+          "summary": "Oppida polities (Aedui, Arverni, etc.).",
+          "conflicts": "Inter-tribal war; later Roman conquest (Caesar)."
+        },
+        "GBR": {
+          "name": "British Iron Age tribes",
+          "summary": "Hillfort societies, Brittonic Celtic.",
+          "conflicts": "Tribal warfare; Belgic contacts; Rome imminent."
+        },
+        "IRL": {
+          "name": "Irish Iron Age",
+          "summary": "Protohistoric Gaelic societies.",
+          "conflicts": "Cattle-raiding politics; outside Rome."
+        },
+        "DEU": {
+          "name": "Jastorf / La Tène frontier",
+          "summary": "Germanic Jastorf north, Celtic south.",
+          "conflicts": "Cultural frontier; later Roman wars in Germania."
+        },
+        "ESP": {
+          "name": "Iberians & Celtiberians",
+          "summary": "Non-IE Iberian coasts; Celtic inland.",
+          "conflicts": "Iberian–Celtiberian rivalry; Carthaginian then Roman wars."
+        },
+        "ITA": {
+          "name": "Rome vs Etruscans / Samnites",
+          "summary": "City-state Italy before empire.",
+          "conflicts": "Roman expansion wars across the peninsula."
+        },
+        "GRC": {
+          "name": "Greek poleis",
+          "summary": "Athens, Sparta, Thebes, etc.",
+          "conflicts": "Persian Wars; Peloponnesian War; Macedonian rise."
+        },
+        "BGR": {
+          "name": "Thracian kingdoms",
+          "summary": "Odrysian and related thracian polities.",
+          "conflicts": "Conflict with Macedon, Greeks, later Rome."
+        },
+        "UKR": {
+          "name": "Scythian nomads",
+          "summary": "Iranian-speaking steppe confederations.",
+          "conflicts": "Raids and alliances with Greek colonies; Sarmatian pressure."
+        },
+        "AUT": {
+          "name": "Hallstatt / early La Tène elites",
+          "summary": "Alpine elite centers.",
+          "conflicts": "Trade and rivalry across Celtic Europe."
+        }
+      }
     },
     {
       "id": "classical",
@@ -2885,7 +3216,60 @@
           "opacity": 0.7,
           "note": ""
         }
-      ]
+      ],
+      "tickYear": "1 CE",
+      "polities": {
+        "ITA": {
+          "name": "Roman Italy / early Empire",
+          "summary": "Imperial core under Augustus and successors.",
+          "conflicts": "Civil wars behind; frontier wars in Germania, Balkans, East."
+        },
+        "FRA": {
+          "name": "Roman Gaul",
+          "summary": "Provinces after Caesar.",
+          "conflicts": "Pacification of tribes; later limes pressure from Germanic groups."
+        },
+        "ESP": {
+          "name": "Roman Hispania",
+          "summary": "Provinces over Iberian/Celtiberian peoples.",
+          "conflicts": "Cantabrian wars earlier; integration into empire."
+        },
+        "GBR": {
+          "name": "Roman Britannia",
+          "summary": "Province from 43 CE.",
+          "conflicts": "Conquest of tribes; Caledonian resistance; Irish unconquered."
+        },
+        "DEU": {
+          "name": "Roman frontier / Magna Germania",
+          "summary": "Limes vs free Germania.",
+          "conflicts": "Teutoburg legacy; ongoing frontier wars."
+        },
+        "GRC": {
+          "name": "Roman Greece",
+          "summary": "Achaea under Rome.",
+          "conflicts": "Cultural prestige under political subordination."
+        },
+        "TUR": {
+          "name": "Roman Asia Minor",
+          "summary": "Eastern provinces.",
+          "conflicts": "Parthian frontier further east."
+        },
+        "ROU": {
+          "name": "Dacia (contested)",
+          "summary": "Trajanic conquest later in the century.",
+          "conflicts": "Dacian wars with Rome."
+        },
+        "IRL": {
+          "name": "Hibernia",
+          "summary": "Outside the Empire.",
+          "conflicts": "Trade with Britannia; no conquest."
+        },
+        "UKR": {
+          "name": "Sarmatian steppe",
+          "summary": "Iranian nomads beyond Rome.",
+          "conflicts": "Pressure on Danube provinces; Black Sea politics."
+        }
+      }
     },
     {
       "id": "migration",
@@ -3225,7 +3609,55 @@
           "opacity": 0.7,
           "note": ""
         }
-      ]
+      ],
+      "tickYear": "400 CE",
+      "polities": {
+        "POL": {
+          "name": "Wielbark culture",
+          "summary": "Gothic-linked archaeological horizon in Pomerania/Poland.",
+          "conflicts": "Movements toward Black Sea (Chernyakhov); pressure from and on neighbors."
+        },
+        "UKR": {
+          "name": "Chernyakhov / Gothic steppe edge",
+          "summary": "Multi-ethnic horizon with Gothic elites.",
+          "conflicts": "Hunnic shock; collapse and westward Gothic migrations."
+        },
+        "ITA": {
+          "name": "Ostrogothic Italy",
+          "summary": "Theodoric’s kingdom after Odovacer.",
+          "conflicts": "Gothic–Byzantine wars (Justinian) devastate Italy."
+        },
+        "ESP": {
+          "name": "Visigothic Hispania",
+          "summary": "Kingdom over Hispano-Romans.",
+          "conflicts": "Wars with Suebi, Byzantines in south; internal faction."
+        },
+        "FRA": {
+          "name": "Frankish Gaul",
+          "summary": "Merovingian expansion.",
+          "conflicts": "Wars with Visigoths (Vouillé), Alamanni, Burgundians."
+        },
+        "GBR": {
+          "name": "Anglo-Saxon kingdoms forming",
+          "summary": "Angles/Saxons/Jutes in the east.",
+          "conflicts": "Conflict with Brittonic west; North Sea migration politics."
+        },
+        "HUN": {
+          "name": "Hunnic core",
+          "summary": "Attila’s confederation center of gravity.",
+          "conflicts": "Campaigns into Gaul/Italy; collapse after Nedao."
+        },
+        "TUR": {
+          "name": "Eastern Roman / Byzantine",
+          "summary": "Constantinople’s empire.",
+          "conflicts": "Persian wars; Balkan losses to Slavs/Avars."
+        },
+        "DEU": {
+          "name": "Alamanni / frontier Germans",
+          "summary": "Post-Roman Germanics.",
+          "conflicts": "Conflict with Franks; shifting Rhine politics."
+        }
+      }
     },
     {
       "id": "frankish",
@@ -3605,7 +4037,70 @@
           "opacity": 0.55,
           "note": ""
         }
-      ]
+      ],
+      "tickYear": "800 CE",
+      "polities": {
+        "FRA": {
+          "name": "Carolingian Frankish core",
+          "summary": "Charlemagne’s heartland.",
+          "conflicts": "Saxon wars; Lombard Italy; Muslim Spain marches; civil wars after 843."
+        },
+        "DEU": {
+          "name": "East Francia",
+          "summary": "Carolingian east / stem duchies forming.",
+          "conflicts": "Slavic frontier wars; Viking raids on coasts/rivers."
+        },
+        "ITA": {
+          "name": "Carolingian / Lombard Italy",
+          "summary": "Frankish rule in north; Byzantine south.",
+          "conflicts": "Fragmentation; Arab raids on Sicily/south."
+        },
+        "ESP": {
+          "name": "Asturias vs Al-Andalus",
+          "summary": "Christian north vs Umayyad south.",
+          "conflicts": "Reconquista frontier raids both ways."
+        },
+        "GBR": {
+          "name": "Wessex vs Danelaw",
+          "summary": "Alfredian England and Norse zones.",
+          "conflicts": "Viking wars; reconquest of the Danelaw."
+        },
+        "IRL": {
+          "name": "Gaelic kings & Norse towns",
+          "summary": "Irish overkingships vs Dublin Norse.",
+          "conflicts": "Clontarf-era conflicts; mixed Norse-Gaelic politics."
+        },
+        "DNK": {
+          "name": "Danish kingdom",
+          "summary": "Viking Age Denmark.",
+          "conflicts": "Raids/settlement abroad; rivalry with neighbors."
+        },
+        "NOR": {
+          "name": "Norwegian kingdom forming",
+          "summary": "Harald Fairhair traditions / coastal power.",
+          "conflicts": "British Isles ventures; Danish rivalry."
+        },
+        "SWE": {
+          "name": "Swedish / Varangian world",
+          "summary": "Mälaren power and eastern routes.",
+          "conflicts": "Rus’ ventures; Baltic competition."
+        },
+        "TUR": {
+          "name": "Byzantine Empire",
+          "summary": "Macedonian-era recovery beginning.",
+          "conflicts": "Wars with Bulgars, Arabs; Balkan Slavic settlement."
+        },
+        "BGR": {
+          "name": "First Bulgarian Empire",
+          "summary": "Krum/Omurtag to Christianization era.",
+          "conflicts": "Major wars with Byzantium."
+        },
+        "UKR": {
+          "name": "Kievan Rus’ forming",
+          "summary": "Varangian–Slavic polity on the Dnieper.",
+          "conflicts": "Khazar steppe; Byzantine trade and war; Pecheneg pressure."
+        }
+      }
     },
     {
       "id": "high-medieval",
@@ -4094,7 +4589,130 @@
           "opacity": 0.65,
           "note": ""
         }
-      ]
+      ],
+      "tickYear": "1200 CE",
+      "polities": {
+        "FIN": {
+          "name": "Swedish realm in Finland",
+          "summary": "Swedish crusades/colonization into Finnish lands; local Finnish societies under expanding Swedish rule.",
+          "conflicts": "Conflict with Novgorod for Karelia/eastern Finland; internal incorporation of Finnish tribes into Swedish law and Church."
+        },
+        "SWE": {
+          "name": "Kingdom of Sweden",
+          "summary": "Christian Swedish kingdom (Folksunga era approaching).",
+          "conflicts": "Rivalry with Denmark and Norway; eastern wars vs Novgorod; Finnish expansion."
+        },
+        "DNK": {
+          "name": "Kingdom of Denmark",
+          "summary": "Valdemar-age Danish power in the Baltic.",
+          "conflicts": "Wars with Wends, Holstein, Norway/Sweden; Baltic crusading politics."
+        },
+        "NOR": {
+          "name": "Kingdom of Norway",
+          "summary": "Sverre/Birkebeiner aftermath consolidating monarchy.",
+          "conflicts": "Civil wars earlier; interest in Isles; Danish rivalry."
+        },
+        "ISL": {
+          "name": "Icelandic Commonwealth",
+          "summary": "Goðar-led Free State before Norwegian submission (1262).",
+          "conflicts": "Internal feuds (Sturlunga); pressure toward Norwegian overlordship."
+        },
+        "GBR": {
+          "name": "Plantagenet England",
+          "summary": "Angevin/Plantagenet monarchy.",
+          "conflicts": "Wars in France (Angevin lands); Welsh/Scottish wars; baronial conflict."
+        },
+        "IRL": {
+          "name": "Lordship of Ireland / Gaelic Ireland",
+          "summary": "English lordship in Pale vs Gaelic kingdoms.",
+          "conflicts": "Continual frontier war between Anglo-Norman lords and Gaelic polities."
+        },
+        "FRA": {
+          "name": "Capetian France",
+          "summary": "Philip Augustus consolidating the domaine royal.",
+          "conflicts": "Wars with Plantagenets/England; Albigensian Crusade in the south; Flemish conflicts."
+        },
+        "DEU": {
+          "name": "Holy Roman Empire (German lands)",
+          "summary": "Hohenstaufen imperial politics; princes and cities.",
+          "conflicts": "Investiture aftershocks; Italian campaigns; Slavic eastern frontier (Ostsiedlung)."
+        },
+        "CZE": {
+          "name": "Kingdom of Bohemia",
+          "summary": "Přemyslid Bohemia within HRE.",
+          "conflicts": "Imperial politics; Hungarian and Polish rivalries."
+        },
+        "POL": {
+          "name": "Fragmented Poland",
+          "summary": "Post-Bolesław fragmentation toward reunification.",
+          "conflicts": "Teutonic Knights on the Baltic; Bohemian/Hungarian neighbors; Mongol invasion (1241)."
+        },
+        "LTU": {
+          "name": "Grand Duchy of Lithuania",
+          "summary": "Pagan Lithuanian expansion under early Gediminids’ precursors.",
+          "conflicts": "Wars with Teutonic/Livonian Orders; Ruthenian expansion; Polish entanglement later."
+        },
+        "HUN": {
+          "name": "Kingdom of Hungary",
+          "summary": "Árpád Hungary as a major Central European power.",
+          "conflicts": "Mongol devastation (1241); Balkan and Austrian frontier wars."
+        },
+        "ESP": {
+          "name": "Castile & Aragon",
+          "summary": "Christian kingdoms of the Reconquista.",
+          "conflicts": "Wars with Almohads/Nasrids; rivalry between Castile and Aragon; Portuguese independence path."
+        },
+        "PRT": {
+          "name": "Kingdom of Portugal",
+          "summary": "Afonsine Portugal after recognition of sovereignty.",
+          "conflicts": "Wars with Castile and Muslim south; Atlantic orientation beginning."
+        },
+        "ITA": {
+          "name": "Communal Italy / southern kingdoms",
+          "summary": "Lombard/Tuscan communes; Norman–Hohenstaufen south.",
+          "conflicts": "Guelf–Ghibelline wars; imperial–papal conflict; Venetian–Byzantine rivalry."
+        },
+        "GRC": {
+          "name": "Frankish Greece / Byzantine remnant",
+          "summary": "Latin states after 1204 vs Nicaea/Epirus.",
+          "conflicts": "Fragmentation wars; later Palaiologan recovery."
+        },
+        "BGR": {
+          "name": "Second Bulgarian Empire",
+          "summary": "Asenid Bulgaria.",
+          "conflicts": "Wars with Byzantium/Latins; Hungarian and Serbian neighbors."
+        },
+        "SRB": {
+          "name": "Serbian lands",
+          "summary": "Nemanjić Serbia rising.",
+          "conflicts": "Expansion vs Byzantium/Bulgaria; later empire under Dušan (13th–14th c. arc)."
+        },
+        "TUR": {
+          "name": "Byzantine / Turkic Anatolia",
+          "summary": "Shrinking Byzantium; rising Turkish beyliks post-Manzikert long arc.",
+          "conflicts": "Frontier war in Anatolia; Crusader complications."
+        },
+        "RUS": {
+          "name": "Vladimir–Suzdal / Novgorod",
+          "summary": "Successor Rus’ polities under steppe pressure.",
+          "conflicts": "Mongol/Golden Horde suzerainty; Novgorod–Sweden/Teutonic clashes in the north."
+        },
+        "UKR": {
+          "name": "Galicia–Volhynia",
+          "summary": "Western Rus’ kingdom.",
+          "conflicts": "Mongol pressure; Polish and Hungarian intervention."
+        },
+        "CHE": {
+          "name": "Swiss forest cantons",
+          "summary": "Early confederation forming (late 13th c. edge).",
+          "conflicts": "Habsburg conflicts define Swiss identity."
+        },
+        "NLD": {
+          "name": "Low Countries principalities",
+          "summary": "Flanders, Holland, Brabant etc.",
+          "conflicts": "French/English/Flemish wars; urban revolts."
+        }
+      }
     },
     {
       "id": "early-modern",
@@ -4483,7 +5101,75 @@
           "opacity": 0.35,
           "note": ""
         }
-      ]
+      ],
+      "tickYear": "1600 CE",
+      "polities": {
+        "ESP": {
+          "name": "Spanish Habsburg monarchy",
+          "summary": "Global empire from Iberian core.",
+          "conflicts": "Dutch Revolt; wars with France/England; Ottoman Mediterranean war."
+        },
+        "PRT": {
+          "name": "Portuguese Empire",
+          "summary": "Atlantic/Indian Ocean empire; Iberian Union 1580–1640.",
+          "conflicts": "Dutch conflicts overseas; Spanish dynastic entanglement."
+        },
+        "FRA": {
+          "name": "Kingdom of France",
+          "summary": "Wars of Religion into Bourbon consolidation.",
+          "conflicts": "Habsburg encirclement wars; later Thirty Years’ involvement."
+        },
+        "GBR": {
+          "name": "England → Britain",
+          "summary": "Tudor/Stuart state; union of crowns 1603.",
+          "conflicts": "Anglo-Spanish war; Irish conquest; civil wars mid-century."
+        },
+        "NLD": {
+          "name": "Dutch Republic",
+          "summary": "Independent after revolt from Spain.",
+          "conflicts": "Eighty Years’ War; Anglo-Dutch wars; colonial rivalry."
+        },
+        "DEU": {
+          "name": "German states / Thirty Years’ War arena",
+          "summary": "Fragmented HRE principalities.",
+          "conflicts": "Catastrophic confessional wars 1618–1648."
+        },
+        "AUT": {
+          "name": "Habsburg Austria",
+          "summary": "Danubian Habsburg power.",
+          "conflicts": "Ottoman wars (Vienna 1683 arc); rivalry with France."
+        },
+        "SWE": {
+          "name": "Swedish Empire",
+          "summary": "Great-power Sweden (Gustavus Adolphus).",
+          "conflicts": "Wars in Germany, Poland, Russia; Baltic dominance struggle."
+        },
+        "DNK": {
+          "name": "Denmark–Norway",
+          "summary": "Kalmar aftermath; Danish composite state.",
+          "conflicts": "Wars with Sweden for Baltic supremacy."
+        },
+        "POL": {
+          "name": "Poland–Lithuania (PLC)",
+          "summary": "Elective monarchy, multi-ethnic republic.",
+          "conflicts": "Wars with Sweden, Russia, Ottomans; mid-century Deluge."
+        },
+        "RUS": {
+          "name": "Tsardom of Russia",
+          "summary": "Muscovy to early empire.",
+          "conflicts": "Polish wars; conquest of khanates; Baltic ambitions."
+        },
+        "TUR": {
+          "name": "Ottoman Empire",
+          "summary": "Peak/early stagnation Ottoman power.",
+          "conflicts": "Wars with Habsburgs, Safavids, Venice; Mediterranean & Balkan control."
+        },
+        "ITA": {
+          "name": "Spanish/Austrian Italy & states",
+          "summary": "Fragmented Italy under foreign hegemony.",
+          "conflicts": "Dynastic wars; Savoy rising."
+        }
+      }
     },
     {
       "id": "modern",
@@ -4935,7 +5621,90 @@
           "opacity": 0.65,
           "note": ""
         }
-      ]
+      ],
+      "tickYear": "2000 CE",
+      "polities": {
+        "FIN": {
+          "name": "Republic of Finland",
+          "summary": "Independent since 1917 (after Russian Grand Duchy).",
+          "conflicts": "Winter War and Continuation War vs USSR; later neutrality/EU path."
+        },
+        "SWE": {
+          "name": "Kingdom of Sweden",
+          "summary": "Constitutional monarchy, non-aligned long arc.",
+          "conflicts": "No war since 1814; regional diplomacy with Russia/NATO neighbors."
+        },
+        "DNK": {
+          "name": "Kingdom of Denmark",
+          "summary": "Constitutional monarchy; lost Norway 1814, Schleswig wars.",
+          "conflicts": "19th-c. wars with Prussia/Austria; WWII occupation."
+        },
+        "NOR": {
+          "name": "Kingdom of Norway",
+          "summary": "Independent 1905 from Sweden.",
+          "conflicts": "WWII occupation; NATO founding member."
+        },
+        "GBR": {
+          "name": "United Kingdom",
+          "summary": "Constitutional monarchy; post-imperial state.",
+          "conflicts": "World wars; Ireland partition; EU exit politics."
+        },
+        "IRL": {
+          "name": "Republic of Ireland",
+          "summary": "Independent after 1922 Free State.",
+          "conflicts": "War of Independence/Civil War; Troubles in Northern Ireland."
+        },
+        "FRA": {
+          "name": "French Republic",
+          "summary": "Republican state after revolutions/empires.",
+          "conflicts": "World wars; colonial wars; EU core."
+        },
+        "DEU": {
+          "name": "Germany",
+          "summary": "Unified 1871; divided 1949–1990; reunified.",
+          "conflicts": "World wars; Cold War split; EU/NATO central power."
+        },
+        "ESP": {
+          "name": "Kingdom of Spain",
+          "summary": "Post-Franco democracy.",
+          "conflicts": "Civil War 1936–39; colonial losses earlier; Basque/Catalan tensions."
+        },
+        "PRT": {
+          "name": "Portuguese Republic",
+          "summary": "Republic since 1910; democracy after 1974.",
+          "conflicts": "Colonial wars; EU integration."
+        },
+        "ITA": {
+          "name": "Italian Republic",
+          "summary": "Unified 1861; republic after fascism.",
+          "conflicts": "World wars; fascist period; EU founding."
+        },
+        "POL": {
+          "name": "Republic of Poland",
+          "summary": "Reborn 1918; post-communist democracy.",
+          "conflicts": "Partitions memory; WWII; Soviet domination; NATO/EU."
+        },
+        "RUS": {
+          "name": "Russian Federation",
+          "summary": "Successor to USSR/Russian Empire.",
+          "conflicts": "Chechen wars; Georgia 2008; Ukraine wars — ongoing regional conflict."
+        },
+        "UKR": {
+          "name": "Ukraine",
+          "summary": "Independent 1991.",
+          "conflicts": "Russian annexation Crimea 2014; full-scale invasion 2022–."
+        },
+        "TUR": {
+          "name": "Republic of Turkey",
+          "summary": "Nation-state after Ottoman collapse.",
+          "conflicts": "Greco-Turkish war; Cyprus; Kurdish conflict; regional interventions."
+        },
+        "GRC": {
+          "name": "Hellenic Republic",
+          "summary": "Independent after Ottoman rule.",
+          "conflicts": "Balkan wars; Cyprus; tensions with Turkey."
+        }
+      }
     }
   ]
 }

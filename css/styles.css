@@ -361,28 +361,92 @@ button {
 .ticks {
   display: flex;
   justify-content: space-between;
-  margin-top: 0.45rem;
-  gap: 0.1rem;
+  margin-top: 0.55rem;
+  gap: 0.12rem;
 }
 
-.ticks span {
+.tick {
   flex: 1;
+  min-width: 0;
   text-align: center;
-  font-size: 0.52rem;
-  letter-spacing: 0.03em;
-  color: var(--ink-mute);
   cursor: pointer;
+  padding: 0;
+  border: none;
+  background: none;
+  font-family: inherit;
+  color: var(--ink-mute);
+}
+
+.tick .tick-year {
+  display: block;
+  font-size: 0.58rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: var(--ink-dim);
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
-.ticks span.active {
+.tick .tick-name {
+  display: block;
+  margin-top: 0.12rem;
+  font-size: 0.48rem;
+  letter-spacing: 0.01em;
+  line-height: 1.15;
+  color: var(--ink-mute);
+  white-space: normal;
+}
+
+.tick.active .tick-year {
   color: var(--ink);
 }
 
+.tick.active .tick-name {
+  color: var(--ink-dim);
+}
+
 .mode-row {
-  display: none; /* quieter UI — roles live in map legend */
+  display: none !important;
+}
+
+.culture-horizon {
+  margin: 0.2rem 0 0;
+  font-size: 0.72rem;
+  color: var(--ink-mute);
+}
+
+.polity-panel {
+  margin-top: 0.9rem;
+  padding-top: 0.8rem;
+  border-top: 1px solid var(--line);
+}
+
+.polity-name {
+  margin: 0.15rem 0 0;
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 400;
+  color: var(--ink);
+  letter-spacing: -0.01em;
+}
+
+.polity-summary {
+  margin: 0.4rem 0 0;
+  font-size: 0.76rem;
+  color: var(--ink-dim);
+  line-height: 1.45;
+}
+
+.polity-conflict-label {
+  margin-top: 0.65rem !important;
+}
+
+.polity-conflicts {
+  margin: 0.25rem 0 0;
+  font-size: 0.74rem;
+  color: var(--ink);
+  line-height: 1.45;
 }
 
 .side-detail {
@@ -829,5 +893,22 @@ button {
 
   .cultures-rail {
     max-height: 88px;
+  }
+
+  .tick .tick-year {
+    font-size: 0.52rem;
+  }
+
+  .tick .tick-name {
+    font-size: 0.42rem;
+  }
+
+  /* On narrow screens show fewer tick names to avoid clutter — years stay */
+  .tick .tick-name {
+    display: none;
+  }
+
+  .tick.active .tick-name {
+    display: block;
   }
 }
