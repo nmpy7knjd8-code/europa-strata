@@ -1130,11 +1130,18 @@ html[data-layout="desktop"] body {
 
 /* ——— Mobile-optimized layout (toggle or phone default) ——— */
 
+html[data-layout="mobile"] {
+  /* Narrative/polity reading: ~17px (standard phone body band).
+     UI chrome stays a step smaller so map-key chips don’t bloat. */
+  --read-size: 17px;
+  --read-leading: 1.65;
+}
+
 html[data-layout="mobile"] body {
   overflow: auto;
   padding-bottom: env(safe-area-inset-bottom, 0);
-  /* Phone reading size — desktop stays at 12.5px */
-  font-size: 17px;
+  /* UI chrome a shade under reading size; desktop stays at 12.5px */
+  font-size: 15px;
   line-height: 1.55;
 }
 
@@ -1349,13 +1356,13 @@ html[data-layout="mobile"] .kicker {
 }
 
 html[data-layout="mobile"] .period-copy {
-  font-size: 1.05rem;
-  line-height: 1.55;
+  font-size: var(--read-size);
+  line-height: var(--read-leading);
 }
 
 html[data-layout="mobile"] .period-ling {
-  font-size: 0.92rem;
-  line-height: 1.5;
+  font-size: 15px;
+  line-height: 1.6;
 }
 
 html[data-layout="mobile"] #detail-kicker {
@@ -1369,7 +1376,7 @@ html[data-layout="mobile"] .culture-title {
 }
 
 html[data-layout="mobile"] .culture-horizon {
-  font-size: 0.95rem;
+  font-size: 15px;
   margin-bottom: 0.2rem;
 }
 
@@ -1382,8 +1389,8 @@ html[data-layout="mobile"] .conf-pill {
 }
 
 html[data-layout="mobile"] .culture-desc {
-  font-size: 1.05rem;
-  line-height: 1.6;
+  font-size: var(--read-size);
+  line-height: var(--read-leading);
   margin-top: 0.7rem;
   margin-bottom: 0.35rem;
 }
@@ -1447,8 +1454,8 @@ html[data-layout="mobile"] .polity-panel .polity-literature,
 html[data-layout="mobile"] .polity-panel .polity-art,
 html[data-layout="mobile"] .polity-summary,
 html[data-layout="mobile"] .polity-conflicts {
-  font-size: 1.05rem;
-  line-height: 1.65;
+  font-size: var(--read-size);
+  line-height: var(--read-leading);
   margin: 0.15rem 0 0;
   max-height: none;
   overflow: visible;
@@ -1478,15 +1485,15 @@ html[data-layout="mobile"] .ling-panel {
 }
 
 html[data-layout="mobile"] .ling-line {
-  font-size: 1.05rem;
-  line-height: 1.55;
+  font-size: var(--read-size);
+  line-height: var(--read-leading);
   margin: 0.2rem 0;
 }
 
 html[data-layout="mobile"] .ling-note,
 html[data-layout="mobile"] .ancestry-note {
-  font-size: 1rem;
-  line-height: 1.6;
+  font-size: var(--read-size);
+  line-height: var(--read-leading);
   margin-top: 0.55rem;
   max-height: none;
   overflow: visible;
@@ -1517,8 +1524,8 @@ html[data-layout="mobile"] .absorb-strip h4 {
 }
 
 html[data-layout="mobile"] .absorb-strip p {
-  font-size: 1.02rem;
-  line-height: 1.55;
+  font-size: var(--read-size);
+  line-height: var(--read-leading);
 }
 
 html[data-layout="mobile"] .ancestry-panel {
@@ -1542,9 +1549,14 @@ html[data-layout="mobile"] .pie-wrap {
   gap: 0.85rem;
 }
 
-html[data-layout="mobile"] .pie-list,
+html[data-layout="mobile"] .pie-list {
+  font-size: var(--read-size);
+  line-height: var(--read-leading);
+}
+
+/* Ancestry swatch legend — keep a touch under body reading */
 html[data-layout="mobile"] .legend {
-  font-size: 0.98rem;
+  font-size: 15px;
   line-height: 1.5;
 }
 
