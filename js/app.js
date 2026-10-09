@@ -34,6 +34,9 @@ const state = {
   path: null,
   svg: null,
   tip: null,
+  zoom: null,
+  zoomLayer: null,
+  mapSize: { w: 900, h: 700 },
 };
 
 function $(sel) {
@@ -249,8 +252,13 @@ function initMap() {
   }
 
   state.path = d3.geoPath(projection);
+  state.mapSize = { w, h };
 
-  const g = svg.append("g").attr("class", "countries");
+  // Zoom/pan layer — transforms the map only; page chrome stays put
+  const zoomLayer = svg.append("g").attr("class", "map-zoom");
+  state.zoomLayer = zoomLayer;
+
+  const g = zoomLayer.append("g").attr("class", "countries");
 
   g.selectAll("path")
     .data(state.geo.features)
@@ -264,7 +272,62 @@ function initMap() {
     .on("mouseleave", onCountryLeave)
     .on("click", onCountryClick);
 
+  const zoom = d3
+    .zoom()
+    .scaleExtent([1, 7])
+    .extent([
+      [0, 0],
+      [w, h],
+    ])
+    .translateExtent([
+      [-w * 0.35, -h * 0.35],
+      [w * 1.35, h * 1.35],
+    ])
+    .filter((event) => {
+      // Keep ctrl/meta+wheel for browser page zoom; map uses plain wheel + pinch
+      if (event.type === "wheel") return !event.ctrlKey && !event.metaKey;
+      return !event.button;
+    })
+    .on("zoom", (event) => {
+      zoomLayer.attr("transform", event.transform);
+      syncZoomReset(event.transform);
+    });
+
+  state.zoom = zoom;
+  svg.call(zoom);
+  // Double-click zoom fights accidental country taps on phones
+  svg.on("dblclick.zoom", null);
+  syncZoomReset(d3.zoomIdentity);
+
   paintMap(false);
+}
+
+function syncZoomReset(transform) {
+  const btn = $("#btn-zoom-reset");
+  if (!btn || !transform) return;
+  const zoomed =
+    Math.abs(transform.k - 1) > 0.03 ||
+    Math.abs(transform.x) > 4 ||
+    Math.abs(transform.y) > 4;
+  btn.hidden = !zoomed;
+}
+
+function resetMapZoom() {
+  if (!state.svg || !state.zoom) return;
+  state.svg
+    .transition()
+    .duration(320)
+    .ease(d3.easeCubicOut)
+    .call(state.zoom.transform, d3.zoomIdentity);
+}
+
+function bumpMapZoom(factor) {
+  if (!state.svg || !state.zoom) return;
+  state.svg
+    .transition()
+    .duration(220)
+    .ease(d3.easeCubicOut)
+    .call(state.zoom.scaleBy, factor);
 }
 
 function paintMap(animate = true) {
@@ -619,6 +682,10 @@ function bindUI() {
     html.setAttribute("data-theme", next);
     localStorage.setItem("europa-strata-theme", next);
   });
+
+  $("#btn-zoom-in")?.addEventListener("click", () => bumpMapZoom(1.35));
+  $("#btn-zoom-out")?.addEventListener("click", () => bumpMapZoom(1 / 1.35));
+  $("#btn-zoom-reset")?.addEventListener("click", () => resetMapZoom());
 
   window.addEventListener("resize", () => {
     if (!state.geo) return;

@@ -25,7 +25,19 @@
           <h1 class="brand">Europa <em>Strata</em></h1>
           <p class="brand-sub">Deep-time atlas</p>
         </div>
-        <div id="map" class="map" role="img" aria-label="Map of Europe with culture extents"></div>
+        <div class="map-tools">
+          <button type="button" class="map-tool-btn" id="btn-zoom-in" aria-label="Zoom in">+</button>
+          <button type="button" class="map-tool-btn" id="btn-zoom-out" aria-label="Zoom out">−</button>
+          <button type="button" class="map-tool-btn map-tool-reset" id="btn-zoom-reset" hidden>
+            Reset
+          </button>
+        </div>
+        <div
+          id="map"
+          class="map"
+          role="img"
+          aria-label="Map of Europe with culture extents. Pinch or scroll to zoom inside the map."
+        ></div>
       </main>
 
       <div class="time-bar" id="time-bar">
