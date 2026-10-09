@@ -60,7 +60,79 @@
       "reconstructed": "Inferred by comparative linguistics",
       "hypothetical": "No direct evidence — scenario only",
       "mixed": "Attested elements + uncertain layers"
-    }
+    },
+    "regionCountries": {
+      "iberia": [
+        "ESP",
+        "PRT",
+        "AND"
+      ],
+      "britain": [
+        "GBR",
+        "IRL",
+        "IMN"
+      ],
+      "france": [
+        "FRA",
+        "MCO"
+      ],
+      "central": [
+        "DEU",
+        "POL",
+        "CZE",
+        "SVK",
+        "AUT",
+        "CHE",
+        "HUN",
+        "LIE",
+        "LUX",
+        "NLD",
+        "BEL"
+      ],
+      "scandinavia": [
+        "NOR",
+        "SWE",
+        "FIN",
+        "DNK",
+        "ISL",
+        "FRO",
+        "ALA"
+      ],
+      "italy": [
+        "ITA",
+        "SMR",
+        "VAT",
+        "MLT"
+      ],
+      "balkans": [
+        "GRC",
+        "BGR",
+        "ROU",
+        "ALB",
+        "MKD",
+        "SRB",
+        "MNE",
+        "BIH",
+        "HRV",
+        "SVN",
+        "KOS"
+      ],
+      "eastern": [
+        "UKR",
+        "BLR",
+        "MDA",
+        "LTU",
+        "LVA",
+        "EST",
+        "RUS",
+        "GEO",
+        "ARM",
+        "AZE",
+        "TUR",
+        "CYP"
+      ]
+    },
+    "mapAttribution": "Base map: Natural Earth (public domain). Culture extents are schematic best-guess consensus overlays on modern borders — not precise archaeological site distributions."
   },
   "periods": [
     {
@@ -234,7 +306,68 @@
           "linguisticConfidence": "hypothetical"
         }
       },
-      "linguistics": "Speech is entirely unattested. Later farmer and Indo-European languages are not continuous with recoverable Mesolithic tongues. Treat all language labels here as placeholders for lost diversity."
+      "linguistics": "Speech is entirely unattested. Later farmer and Indo-European languages are not continuous with recoverable Mesolithic tongues. Treat all language labels here as placeholders for lost diversity.",
+      "mapLayers": [
+        {
+          "id": "whg-west",
+          "label": "WHG foragers",
+          "color": "#3d7a8c",
+          "countries": [
+            "IRL",
+            "GBR",
+            "FRA",
+            "ESP",
+            "PRT",
+            "BEL",
+            "NLD",
+            "LUX",
+            "DEU",
+            "DNK",
+            "POL",
+            "CZE",
+            "AUT",
+            "CHE",
+            "ITA",
+            "HUN",
+            "NOR",
+            "SWE"
+          ],
+          "role": "dominant",
+          "opacity": 0.7,
+          "note": ""
+        },
+        {
+          "id": "ehg-east",
+          "label": "EHG foragers",
+          "color": "#5a7a9a",
+          "countries": [
+            "RUS",
+            "UKR",
+            "BLR",
+            "LTU",
+            "LVA",
+            "EST",
+            "MDA",
+            "FIN"
+          ],
+          "role": "dominant",
+          "opacity": 0.72,
+          "note": ""
+        },
+        {
+          "id": "iron-gates",
+          "label": "Iron Gates HG",
+          "color": "#4a7080",
+          "countries": [
+            "SRB",
+            "ROU",
+            "BGR"
+          ],
+          "role": "fringe",
+          "opacity": 0.55,
+          "note": ""
+        }
+      ]
     },
     {
       "id": "early-neolithic",
@@ -400,7 +533,85 @@
           "linguisticConfidence": "hypothetical"
         }
       },
-      "linguistics": "No texts. Farmer languages are unknown and usually modeled as non-Indo-European. Residual forager languages vanish or leave only undetectable substrates. Do not equate “Neolithic” with any historically named family."
+      "linguistics": "No texts. Farmer languages are unknown and usually modeled as non-Indo-European. Residual forager languages vanish or leave only undetectable substrates. Do not equate “Neolithic” with any historically named family.",
+      "mapLayers": [
+        {
+          "id": "cardial",
+          "label": "Cardial / Impresso EEF",
+          "color": "#c9a84a",
+          "countries": [
+            "ESP",
+            "PRT",
+            "FRA",
+            "ITA",
+            "GRC",
+            "HRV",
+            "ALB",
+            "MNE"
+          ],
+          "role": "incoming",
+          "opacity": 0.8,
+          "note": "Mediterranean farming stream"
+        },
+        {
+          "id": "lbk",
+          "label": "LBK EEF",
+          "color": "#c9a030",
+          "countries": [
+            "DEU",
+            "POL",
+            "CZE",
+            "SVK",
+            "AUT",
+            "HUN",
+            "ROU",
+            "NLD",
+            "BEL",
+            "FRA",
+            "UKR"
+          ],
+          "role": "incoming",
+          "opacity": 0.82,
+          "note": "Danubian farming stream"
+        },
+        {
+          "id": "hg-residual",
+          "label": "Residual foragers",
+          "color": "#3d7a8c",
+          "countries": [
+            "NOR",
+            "SWE",
+            "FIN",
+            "IRL",
+            "GBR",
+            "RUS",
+            "BLR",
+            "LTU",
+            "LVA",
+            "EST",
+            "UKR"
+          ],
+          "role": "substrate",
+          "opacity": 0.35,
+          "note": ""
+        },
+        {
+          "id": "starcevo",
+          "label": "Starčevo–Körös",
+          "color": "#d0b050",
+          "countries": [
+            "SRB",
+            "HUN",
+            "ROU",
+            "BGR",
+            "HRV",
+            "BIH"
+          ],
+          "role": "dominant",
+          "opacity": 0.75,
+          "note": ""
+        }
+      ]
     },
     {
       "id": "middle-neolithic",
@@ -567,7 +778,84 @@
           "linguisticConfidence": "hypothetical"
         }
       },
-      "linguistics": "Still pre-Indo-European across most of Europe. Megalithic and Trypillia labels are not language families. Possible early IE on the steppe edge only as hypothesis."
+      "linguistics": "Still pre-Indo-European across most of Europe. Megalithic and Trypillia labels are not language families. Possible early IE on the steppe edge only as hypothesis.",
+      "mapLayers": [
+        {
+          "id": "megalith",
+          "label": "Atlantic megalithic",
+          "color": "#b89040",
+          "countries": [
+            "ESP",
+            "PRT",
+            "FRA",
+            "IRL",
+            "GBR",
+            "DNK",
+            "SWE"
+          ],
+          "role": "dominant",
+          "opacity": 0.75,
+          "note": ""
+        },
+        {
+          "id": "trb",
+          "label": "TRB / Michelsberg",
+          "color": "#b89038",
+          "countries": [
+            "DEU",
+            "POL",
+            "DNK",
+            "SWE",
+            "NLD",
+            "CZE",
+            "AUT"
+          ],
+          "role": "dominant",
+          "opacity": 0.78,
+          "note": ""
+        },
+        {
+          "id": "trypillia",
+          "label": "Cucuteni–Trypillia",
+          "color": "#a09050",
+          "countries": [
+            "UKR",
+            "MDA",
+            "ROU"
+          ],
+          "role": "dominant",
+          "opacity": 0.8,
+          "note": ""
+        },
+        {
+          "id": "gac",
+          "label": "Globular Amphora",
+          "color": "#a88838",
+          "countries": [
+            "POL",
+            "DEU",
+            "CZE",
+            "UKR",
+            "BLR"
+          ],
+          "role": "fringe",
+          "opacity": 0.55,
+          "note": ""
+        },
+        {
+          "id": "steppe-eneolithic",
+          "label": "Pontic Eneolithic",
+          "color": "#a05030",
+          "countries": [
+            "UKR",
+            "RUS",
+            "MDA"
+          ],
+          "role": "incoming",
+          "opacity": 0.45,
+          "note": ""
+        }
+      ]
     },
     {
       "id": "yamnaya",
@@ -733,7 +1021,80 @@
           "linguisticConfidence": "reconstructed"
         }
       },
-      "linguistics": "Steppe speech is reconstructed only via Indo-European comparative method. Yamnaya ≈ late PIE (or a close sister) is mainstream but unprovable from inscriptions. Western Europe still largely non-IE."
+      "linguistics": "Steppe speech is reconstructed only via Indo-European comparative method. Yamnaya ≈ late PIE (or a close sister) is mainstream but unprovable from inscriptions. Western Europe still largely non-IE.",
+      "mapLayers": [
+        {
+          "id": "yamnaya",
+          "label": "Yamnaya",
+          "color": "#a05030",
+          "countries": [
+            "UKR",
+            "RUS",
+            "MDA",
+            "ROU",
+            "BGR",
+            "HUN",
+            "GEO"
+          ],
+          "role": "incoming",
+          "opacity": 0.85,
+          "note": "Steppe pastoralist expansion"
+        },
+        {
+          "id": "late-neolithic-west",
+          "label": "Late Neolithic west",
+          "color": "#b88840",
+          "countries": [
+            "IRL",
+            "GBR",
+            "FRA",
+            "ESP",
+            "PRT",
+            "BEL",
+            "NLD",
+            "LUX",
+            "ITA",
+            "DEU",
+            "DNK",
+            "SWE",
+            "NOR",
+            "CHE",
+            "AUT",
+            "CZE",
+            "POL"
+          ],
+          "role": "substrate",
+          "opacity": 0.45,
+          "note": ""
+        },
+        {
+          "id": "gac2",
+          "label": "Globular Amphora",
+          "color": "#a88838",
+          "countries": [
+            "POL",
+            "DEU",
+            "CZE",
+            "UKR"
+          ],
+          "role": "substrate",
+          "opacity": 0.5,
+          "note": ""
+        },
+        {
+          "id": "trypillia-late",
+          "label": "Late Trypillia",
+          "color": "#a09050",
+          "countries": [
+            "UKR",
+            "MDA",
+            "ROU"
+          ],
+          "role": "substrate",
+          "opacity": 0.4,
+          "note": ""
+        }
+      ]
     },
     {
       "id": "beaker-corded",
@@ -899,7 +1260,89 @@
           "ancestryNote": "Steppe-rich; farmer ancestry remains minority vs European CW admixed groups."
         }
       },
-      "linguistics": "Primary window hypothesized for Indo-Europeanization of temperate Europe. Pre-Germanic and other early IE lineages are often tied to CW/Battle Axe; Celtic/Italic pathways more debated. Iberian Beaker material culture does not imply IE speech."
+      "linguistics": "Primary window hypothesized for Indo-Europeanization of temperate Europe. Pre-Germanic and other early IE lineages are often tied to CW/Battle Axe; Celtic/Italic pathways more debated. Iberian Beaker material culture does not imply IE speech.",
+      "mapLayers": [
+        {
+          "id": "corded-ware",
+          "label": "Corded Ware",
+          "color": "#8b4513",
+          "countries": [
+            "DEU",
+            "POL",
+            "CZE",
+            "SVK",
+            "AUT",
+            "HUN",
+            "NLD",
+            "DNK",
+            "SWE",
+            "NOR",
+            "LTU",
+            "LVA",
+            "EST",
+            "BLR",
+            "UKR",
+            "CHE",
+            "ROU"
+          ],
+          "role": "incoming",
+          "opacity": 0.82,
+          "note": "High steppe ancestry horizon"
+        },
+        {
+          "id": "bell-beaker",
+          "label": "Bell Beaker",
+          "color": "#b87333",
+          "countries": [
+            "GBR",
+            "IRL",
+            "FRA",
+            "ESP",
+            "PRT",
+            "BEL",
+            "NLD",
+            "DEU",
+            "ITA",
+            "CZE",
+            "AUT",
+            "CHE",
+            "DNK",
+            "HUN",
+            "POL"
+          ],
+          "role": "incoming",
+          "opacity": 0.7,
+          "note": "Genetically diverse package"
+        },
+        {
+          "id": "late-yamnaya",
+          "label": "Late Yamnaya / Catacomb",
+          "color": "#8b3a20",
+          "countries": [
+            "UKR",
+            "RUS",
+            "MDA"
+          ],
+          "role": "dominant",
+          "opacity": 0.65,
+          "note": ""
+        },
+        {
+          "id": "neolithic-residual",
+          "label": "Neolithic residual",
+          "color": "#c4a035",
+          "countries": [
+            "ESP",
+            "PRT",
+            "ITA",
+            "GRC",
+            "ALB"
+          ],
+          "role": "substrate",
+          "opacity": 0.35,
+          "note": ""
+        }
+      ]
     },
     {
       "id": "nordic-bronze",
@@ -1066,7 +1509,86 @@
           "ancestryNote": "Steppe-dominated vs European ternary averages."
         }
       },
-      "linguistics": "Indo-European branches diversifying. Mycenaean Greek is attested (Linear B). Pre-Germanic in the north and Celtic-adjacent IE in the west are reconstructed. Non-IE substrates (later Iberian/Basque lines, Etruscan line) persist as hypotheses or later attestations."
+      "linguistics": "Indo-European branches diversifying. Mycenaean Greek is attested (Linear B). Pre-Germanic in the north and Celtic-adjacent IE in the west are reconstructed. Non-IE substrates (later Iberian/Basque lines, Etruscan line) persist as hypotheses or later attestations.",
+      "mapLayers": [
+        {
+          "id": "nordic-ba",
+          "label": "Nordic Bronze Age",
+          "color": "#c4a035",
+          "countries": [
+            "DNK",
+            "SWE",
+            "NOR",
+            "DEU"
+          ],
+          "role": "dominant",
+          "opacity": 0.85,
+          "note": ""
+        },
+        {
+          "id": "urnfield",
+          "label": "Tumulus / Urnfield",
+          "color": "#6b4423",
+          "countries": [
+            "DEU",
+            "POL",
+            "CZE",
+            "AUT",
+            "HUN",
+            "SVK",
+            "CHE",
+            "FRA",
+            "ITA",
+            "ROU"
+          ],
+          "role": "dominant",
+          "opacity": 0.75,
+          "note": ""
+        },
+        {
+          "id": "atlantic-ba",
+          "label": "Atlantic Bronze",
+          "color": "#8b6914",
+          "countries": [
+            "ESP",
+            "PRT",
+            "FRA",
+            "GBR",
+            "IRL",
+            "BEL"
+          ],
+          "role": "dominant",
+          "opacity": 0.7,
+          "note": ""
+        },
+        {
+          "id": "mycenaean",
+          "label": "Mycenaean sphere",
+          "color": "#9a7028",
+          "countries": [
+            "GRC",
+            "ALB",
+            "MKD",
+            "BGR"
+          ],
+          "role": "dominant",
+          "opacity": 0.72,
+          "note": ""
+        },
+        {
+          "id": "srubnaya",
+          "label": "Srubnaya steppe",
+          "color": "#8b4513",
+          "countries": [
+            "UKR",
+            "RUS",
+            "MDA"
+          ],
+          "role": "dominant",
+          "opacity": 0.7,
+          "note": ""
+        }
+      ]
     },
     {
       "id": "iron-age",
@@ -1234,7 +1756,119 @@
           "linguisticConfidence": "attested"
         }
       },
-      "linguistics": "Attested map: Gaulish and other Celtic; Italic (Latin emerging); Greek; early Germanic (runes begin later); Iberian (non-IE) and Aquitanian/Basque line; Thracian/Illyrian fragmentary; Scythian Iranian."
+      "linguistics": "Attested map: Gaulish and other Celtic; Italic (Latin emerging); Greek; early Germanic (runes begin later); Iberian (non-IE) and Aquitanian/Basque line; Thracian/Illyrian fragmentary; Scythian Iranian.",
+      "mapLayers": [
+        {
+          "id": "latene",
+          "label": "La Tène / Celtic",
+          "color": "#4a7c59",
+          "countries": [
+            "FRA",
+            "BEL",
+            "NLD",
+            "LUX",
+            "DEU",
+            "CHE",
+            "AUT",
+            "CZE",
+            "GBR",
+            "IRL",
+            "ESP",
+            "HUN",
+            "SVK",
+            "ITA",
+            "SVN"
+          ],
+          "role": "dominant",
+          "opacity": 0.78,
+          "note": ""
+        },
+        {
+          "id": "hallstatt-core",
+          "label": "Hallstatt legacy",
+          "color": "#3d6b4f",
+          "countries": [
+            "DEU",
+            "AUT",
+            "CHE",
+            "CZE",
+            "SVK",
+            "HUN",
+            "FRA",
+            "SVN",
+            "HRV",
+            "ITA"
+          ],
+          "role": "substrate",
+          "opacity": 0.4,
+          "note": ""
+        },
+        {
+          "id": "jastorf",
+          "label": "Jastorf / early Germanic",
+          "color": "#5a6a50",
+          "countries": [
+            "DEU",
+            "DNK",
+            "SWE",
+            "NOR",
+            "NLD",
+            "POL"
+          ],
+          "role": "incoming",
+          "opacity": 0.65,
+          "note": ""
+        },
+        {
+          "id": "iberian",
+          "label": "Iberian (non-IE)",
+          "color": "#6b8e4e",
+          "countries": [
+            "ESP"
+          ],
+          "role": "dominant",
+          "opacity": 0.55,
+          "note": ""
+        },
+        {
+          "id": "classical-greece",
+          "label": "Classical Greece",
+          "color": "#6a5a40",
+          "countries": [
+            "GRC",
+            "CYP"
+          ],
+          "role": "dominant",
+          "opacity": 0.8,
+          "note": ""
+        },
+        {
+          "id": "etruscan-italic",
+          "label": "Etruscan & Italic",
+          "color": "#8b2942",
+          "countries": [
+            "ITA"
+          ],
+          "role": "dominant",
+          "opacity": 0.75,
+          "note": ""
+        },
+        {
+          "id": "scythian",
+          "label": "Scythian steppe",
+          "color": "#8b4513",
+          "countries": [
+            "UKR",
+            "RUS",
+            "MDA",
+            "ROU",
+            "BGR"
+          ],
+          "role": "dominant",
+          "opacity": 0.7,
+          "note": ""
+        }
+      ]
     },
     {
       "id": "classical",
@@ -1406,7 +2040,83 @@
           "ancestryNote": "Steppe + East Eurasian variable; coastal towns more Mediterranean."
         }
       },
-      "linguistics": "Latin and Greek dominate administration and literature. Vulgar Latin begins Romance. Celtic and Germanic persist outside/at edges; Basque/Aquitanian survives; Iranian on the steppe; bilingualism is normal in cities."
+      "linguistics": "Latin and Greek dominate administration and literature. Vulgar Latin begins Romance. Celtic and Germanic persist outside/at edges; Basque/Aquitanian survives; Iranian on the steppe; bilingualism is normal in cities.",
+      "mapLayers": [
+        {
+          "id": "roman",
+          "label": "Roman Empire",
+          "color": "#9b1b30",
+          "countries": [
+            "ITA",
+            "ESP",
+            "PRT",
+            "FRA",
+            "BEL",
+            "NLD",
+            "GBR",
+            "DEU",
+            "AUT",
+            "CHE",
+            "SVN",
+            "HRV",
+            "GRC",
+            "BGR",
+            "ROU",
+            "HUN",
+            "ALB",
+            "MKD",
+            "BIH",
+            "SRB",
+            "MNE",
+            "LUX",
+            "MLT",
+            "CYP",
+            "TUR"
+          ],
+          "role": "dominant",
+          "opacity": 0.8,
+          "note": "Political control / provinces"
+        },
+        {
+          "id": "germanic-barbaricum",
+          "label": "Germanic Magna Germania",
+          "color": "#5a4a48",
+          "countries": [
+            "DEU",
+            "DNK",
+            "SWE",
+            "NOR",
+            "POL"
+          ],
+          "role": "substrate",
+          "opacity": 0.45,
+          "note": ""
+        },
+        {
+          "id": "sarmatian",
+          "label": "Sarmatian steppe",
+          "color": "#6b4423",
+          "countries": [
+            "UKR",
+            "RUS",
+            "MDA"
+          ],
+          "role": "dominant",
+          "opacity": 0.65,
+          "note": ""
+        },
+        {
+          "id": "hibernia",
+          "label": "Unconquered Hibernia",
+          "color": "#5a7a48",
+          "countries": [
+            "IRL"
+          ],
+          "role": "fringe",
+          "opacity": 0.5,
+          "note": ""
+        }
+      ]
     },
     {
       "id": "migration",
@@ -1578,7 +2288,107 @@
           "ancestryNote": "Highly variable; East Eurasian “other” can be high in some elite burials."
         }
       },
-      "linguistics": "East Germanic (Gothic), West Germanic (Frankish, Old English forming), North Germanic (Proto-Norse), Romance emerging from Latin, Greek in the East, early Slavic expansions beginning, Hunnic poorly attested."
+      "linguistics": "East Germanic (Gothic), West Germanic (Frankish, Old English forming), North Germanic (Proto-Norse), Romance emerging from Latin, Greek in the East, early Slavic expansions beginning, Hunnic poorly attested.",
+      "mapLayers": [
+        {
+          "id": "roman-remnant",
+          "label": "Late Roman / Byzantine",
+          "color": "#7a3a48",
+          "countries": [
+            "ITA",
+            "GRC",
+            "TUR",
+            "CYP",
+            "ALB",
+            "MKD",
+            "BGR",
+            "ESP",
+            "FRA"
+          ],
+          "role": "substrate",
+          "opacity": 0.4,
+          "note": ""
+        },
+        {
+          "id": "wielbark",
+          "label": "Wielbark",
+          "color": "#2f4a6a",
+          "countries": [
+            "POL",
+            "UKR",
+            "BLR"
+          ],
+          "role": "incoming",
+          "opacity": 0.8,
+          "note": "Gothic-linked archaeological horizon"
+        },
+        {
+          "id": "frankish",
+          "label": "Early Franks",
+          "color": "#3d4a5c",
+          "countries": [
+            "FRA",
+            "BEL",
+            "NLD",
+            "DEU",
+            "LUX"
+          ],
+          "role": "incoming",
+          "opacity": 0.75,
+          "note": ""
+        },
+        {
+          "id": "anglo-saxon",
+          "label": "Anglo-Saxon",
+          "color": "#5a6a58",
+          "countries": [
+            "GBR"
+          ],
+          "role": "incoming",
+          "opacity": 0.8,
+          "note": ""
+        },
+        {
+          "id": "visigoth",
+          "label": "Visigothic Hispania",
+          "color": "#4a5a6a",
+          "countries": [
+            "ESP",
+            "PRT"
+          ],
+          "role": "incoming",
+          "opacity": 0.7,
+          "note": ""
+        },
+        {
+          "id": "hunnic",
+          "label": "Hunnic / steppe",
+          "color": "#5a4030",
+          "countries": [
+            "HUN",
+            "ROU",
+            "UKR",
+            "RUS",
+            "MDA",
+            "BGR"
+          ],
+          "role": "incoming",
+          "opacity": 0.55,
+          "note": ""
+        },
+        {
+          "id": "celtic-fringe",
+          "label": "Brittonic / Celtic fringe",
+          "color": "#5a7a48",
+          "countries": [
+            "IRL",
+            "GBR"
+          ],
+          "role": "substrate",
+          "opacity": 0.35,
+          "note": ""
+        }
+      ]
     },
     {
       "id": "frankish",
@@ -1750,7 +2560,127 @@
           "ancestryNote": "Forest-steppe mix; Norse signal limited relative to Slavic majority demography in most models."
         }
       },
-      "linguistics": "Old French/Gallo-Romance under Latin clergy; Old High German; Old Norse; Old English ± Old Norse; Arabic in Al-Andalus; Greek; South Slavic + Bulgar elite layer; Old East Slavic with Varangian Norse."
+      "linguistics": "Old French/Gallo-Romance under Latin clergy; Old High German; Old Norse; Old English ± Old Norse; Arabic in Al-Andalus; Greek; South Slavic + Bulgar elite layer; Old East Slavic with Varangian Norse.",
+      "mapLayers": [
+        {
+          "id": "carolingian",
+          "label": "Frankish / Carolingian Empire",
+          "color": "#1a1a1a",
+          "countries": [
+            "FRA",
+            "BEL",
+            "NLD",
+            "LUX",
+            "DEU",
+            "CHE",
+            "AUT",
+            "ITA",
+            "ESP"
+          ],
+          "role": "dominant",
+          "opacity": 0.75,
+          "note": "Political canopy c. 800"
+        },
+        {
+          "id": "anglo-viking",
+          "label": "Anglo-Saxon / Danelaw",
+          "color": "#3a4a5a",
+          "countries": [
+            "GBR",
+            "IRL"
+          ],
+          "role": "dominant",
+          "opacity": 0.7,
+          "note": ""
+        },
+        {
+          "id": "al-andalus",
+          "label": "Al-Andalus",
+          "color": "#2a5a4a",
+          "countries": [
+            "ESP",
+            "PRT"
+          ],
+          "role": "dominant",
+          "opacity": 0.65,
+          "note": ""
+        },
+        {
+          "id": "byzantine",
+          "label": "Byzantine Empire",
+          "color": "#3a2a4a",
+          "countries": [
+            "TUR",
+            "GRC",
+            "CYP",
+            "ALB",
+            "MKD",
+            "BGR",
+            "ITA"
+          ],
+          "role": "dominant",
+          "opacity": 0.7,
+          "note": ""
+        },
+        {
+          "id": "bulgaria",
+          "label": "First Bulgarian Empire",
+          "color": "#4a3a58",
+          "countries": [
+            "BGR",
+            "ROU",
+            "SRB",
+            "MKD"
+          ],
+          "role": "incoming",
+          "opacity": 0.6,
+          "note": ""
+        },
+        {
+          "id": "viking",
+          "label": "Viking Age Scandinavia",
+          "color": "#2a4a5a",
+          "countries": [
+            "NOR",
+            "SWE",
+            "DNK",
+            "ISL"
+          ],
+          "role": "dominant",
+          "opacity": 0.8,
+          "note": ""
+        },
+        {
+          "id": "rus",
+          "label": "Early Rus’",
+          "color": "#3a3028",
+          "countries": [
+            "UKR",
+            "BLR",
+            "RUS"
+          ],
+          "role": "incoming",
+          "opacity": 0.65,
+          "note": ""
+        },
+        {
+          "id": "slavic",
+          "label": "Slavic expansion zone",
+          "color": "#2a3a4a",
+          "countries": [
+            "POL",
+            "CZE",
+            "SVK",
+            "HRV",
+            "BIH",
+            "SRB",
+            "SVN"
+          ],
+          "role": "incoming",
+          "opacity": 0.55,
+          "note": ""
+        }
+      ]
     },
     {
       "id": "high-medieval",
@@ -1922,7 +2852,129 @@
           "ancestryNote": "Medieval East Slavic base + variable steppe/Mongol-era input."
         }
       },
-      "linguistics": "Medieval vernaculars (French, Middle English, MHG, Italian volgare, Castilian, etc.) plus Latin as learned lingua franca; Greek east; Arabic/Hebrew in Iberia; Turkic/Mongol court languages on the steppe edge."
+      "linguistics": "Medieval vernaculars (French, Middle English, MHG, Italian volgare, Castilian, etc.) plus Latin as learned lingua franca; Greek east; Arabic/Hebrew in Iberia; Turkic/Mongol court languages on the steppe edge.",
+      "mapLayers": [
+        {
+          "id": "hre",
+          "label": "Holy Roman Empire",
+          "color": "#3a3a4a",
+          "countries": [
+            "DEU",
+            "AUT",
+            "CHE",
+            "CZE",
+            "NLD",
+            "BEL",
+            "ITA",
+            "SVN"
+          ],
+          "role": "dominant",
+          "opacity": 0.72,
+          "note": ""
+        },
+        {
+          "id": "france",
+          "label": "Capetian France",
+          "color": "#2a2a2a",
+          "countries": [
+            "FRA"
+          ],
+          "role": "dominant",
+          "opacity": 0.8,
+          "note": ""
+        },
+        {
+          "id": "england",
+          "label": "Plantagenet England",
+          "color": "#3a5a48",
+          "countries": [
+            "GBR"
+          ],
+          "role": "dominant",
+          "opacity": 0.78,
+          "note": ""
+        },
+        {
+          "id": "iberia-x",
+          "label": "Reconquista Iberia",
+          "color": "#4a6a40",
+          "countries": [
+            "ESP",
+            "PRT"
+          ],
+          "role": "dominant",
+          "opacity": 0.75,
+          "note": ""
+        },
+        {
+          "id": "granada",
+          "label": "Nasrid Granada",
+          "color": "#2a5a4a",
+          "countries": [
+            "ESP"
+          ],
+          "role": "fringe",
+          "opacity": 0.35,
+          "note": ""
+        },
+        {
+          "id": "byz-balkan",
+          "label": "Byzantine / Balkan kingdoms",
+          "color": "#4a3a50",
+          "countries": [
+            "GRC",
+            "BGR",
+            "SRB",
+            "ALB",
+            "MKD",
+            "TUR",
+            "CYP"
+          ],
+          "role": "dominant",
+          "opacity": 0.7,
+          "note": ""
+        },
+        {
+          "id": "nordic",
+          "label": "Nordic kingdoms",
+          "color": "#2a4a58",
+          "countries": [
+            "NOR",
+            "SWE",
+            "DNK",
+            "ISL",
+            "FIN"
+          ],
+          "role": "dominant",
+          "opacity": 0.75,
+          "note": ""
+        },
+        {
+          "id": "rus-horde",
+          "label": "Rus’ / Golden Horde pressure",
+          "color": "#4a3828",
+          "countries": [
+            "UKR",
+            "RUS",
+            "BLR"
+          ],
+          "role": "dominant",
+          "opacity": 0.7,
+          "note": ""
+        },
+        {
+          "id": "plc-pre",
+          "label": "Poland–Lithuania forming",
+          "color": "#3a3a4a",
+          "countries": [
+            "POL",
+            "LTU"
+          ],
+          "role": "fringe",
+          "opacity": 0.5,
+          "note": ""
+        }
+      ]
     },
     {
       "id": "early-modern",
@@ -2094,7 +3146,147 @@
           "ancestryNote": "Slavic-majority demography with Baltic, Finnic, Turkic, and other minorities."
         }
       },
-      "linguistics": "Standardizing national languages; Latin retreats from administration; Ottoman Turkish as imperial language in the Balkans; colonial Spanish/Portuguese/English/French radiate overseas."
+      "linguistics": "Standardizing national languages; Latin retreats from administration; Ottoman Turkish as imperial language in the Balkans; colonial Spanish/Portuguese/English/French radiate overseas.",
+      "mapLayers": [
+        {
+          "id": "spain",
+          "label": "Spanish monarchy",
+          "color": "#5a1a1a",
+          "countries": [
+            "ESP"
+          ],
+          "role": "dominant",
+          "opacity": 0.8,
+          "note": ""
+        },
+        {
+          "id": "portugal",
+          "label": "Portugal",
+          "color": "#5a1a1a",
+          "countries": [
+            "PRT"
+          ],
+          "role": "dominant",
+          "opacity": 0.75,
+          "note": ""
+        },
+        {
+          "id": "france-em",
+          "label": "France",
+          "color": "#1a1a28",
+          "countries": [
+            "FRA"
+          ],
+          "role": "dominant",
+          "opacity": 0.8,
+          "note": ""
+        },
+        {
+          "id": "britain-em",
+          "label": "England / Britain",
+          "color": "#1a2a3a",
+          "countries": [
+            "GBR",
+            "IRL"
+          ],
+          "role": "dominant",
+          "opacity": 0.78,
+          "note": ""
+        },
+        {
+          "id": "habsburg",
+          "label": "Habsburg Central Europe",
+          "color": "#2a2a38",
+          "countries": [
+            "AUT",
+            "HUN",
+            "CZE",
+            "SVK",
+            "HRV",
+            "BEL",
+            "NLD",
+            "ITA"
+          ],
+          "role": "dominant",
+          "opacity": 0.7,
+          "note": ""
+        },
+        {
+          "id": "hrg",
+          "label": "German states / HRE remnant",
+          "color": "#2a2a2a",
+          "countries": [
+            "DEU",
+            "CHE"
+          ],
+          "role": "dominant",
+          "opacity": 0.65,
+          "note": ""
+        },
+        {
+          "id": "sweden",
+          "label": "Swedish Empire",
+          "color": "#1a3a4a",
+          "countries": [
+            "SWE",
+            "FIN",
+            "EST",
+            "LVA"
+          ],
+          "role": "dominant",
+          "opacity": 0.7,
+          "note": ""
+        },
+        {
+          "id": "ottoman",
+          "label": "Ottoman Europe",
+          "color": "#1a3a30",
+          "countries": [
+            "TUR",
+            "GRC",
+            "BGR",
+            "ALB",
+            "MKD",
+            "SRB",
+            "BIH",
+            "MNE",
+            "ROU",
+            "HUN",
+            "HRV",
+            "CYP"
+          ],
+          "role": "dominant",
+          "opacity": 0.78,
+          "note": ""
+        },
+        {
+          "id": "plc",
+          "label": "Poland–Lithuania",
+          "color": "#2a2820",
+          "countries": [
+            "POL",
+            "LTU",
+            "BLR",
+            "UKR",
+            "LVA"
+          ],
+          "role": "dominant",
+          "opacity": 0.75,
+          "note": ""
+        },
+        {
+          "id": "russia",
+          "label": "Tsardom of Russia",
+          "color": "#2a2828",
+          "countries": [
+            "RUS",
+            "UKR"
+          ],
+          "role": "incoming",
+          "opacity": 0.7,
+          "note": ""
+        }
+      ]
     },
     {
       "id": "modern",
@@ -2266,7 +3458,110 @@
           "ancestryNote": "East Slavic/Baltic/West Slavic structure + historical minorities; modern upheavals."
         }
       },
-      "linguistics": "State standards (and co-official minorities), immigrant languages in cities, English as European lingua franca. Families remain Indo-European almost everywhere, with Basque and Uralic (Finnish/Hungarian/Estonian) as major non-IE exceptions in this map’s frame."
+      "linguistics": "State standards (and co-official minorities), immigrant languages in cities, English as European lingua franca. Families remain Indo-European almost everywhere, with Basque and Uralic (Finnish/Hungarian/Estonian) as major non-IE exceptions in this map’s frame.",
+      "mapLayers": [
+        {
+          "id": "west-eu",
+          "label": "Western Europe states",
+          "color": "#2a4a3a",
+          "countries": [
+            "ESP",
+            "PRT",
+            "FRA",
+            "BEL",
+            "NLD",
+            "LUX",
+            "GBR",
+            "IRL",
+            "DEU",
+            "AUT",
+            "CHE",
+            "ITA"
+          ],
+          "role": "dominant",
+          "opacity": 0.55,
+          "note": ""
+        },
+        {
+          "id": "nordic-m",
+          "label": "Nordic states",
+          "color": "#1a3a40",
+          "countries": [
+            "NOR",
+            "SWE",
+            "DNK",
+            "FIN",
+            "ISL"
+          ],
+          "role": "dominant",
+          "opacity": 0.6,
+          "note": ""
+        },
+        {
+          "id": "cee",
+          "label": "Central / Eastern EU",
+          "color": "#2a2a2a",
+          "countries": [
+            "POL",
+            "CZE",
+            "SVK",
+            "HUN",
+            "LTU",
+            "LVA",
+            "EST",
+            "ROU",
+            "BGR",
+            "HRV",
+            "SVN"
+          ],
+          "role": "dominant",
+          "opacity": 0.55,
+          "note": ""
+        },
+        {
+          "id": "balkans-m",
+          "label": "Balkan states",
+          "color": "#2a2a30",
+          "countries": [
+            "GRC",
+            "ALB",
+            "MKD",
+            "SRB",
+            "BIH",
+            "MNE",
+            "KOS"
+          ],
+          "role": "dominant",
+          "opacity": 0.6,
+          "note": ""
+        },
+        {
+          "id": "east-m",
+          "label": "Eastern Europe / Russia",
+          "color": "#2a2828",
+          "countries": [
+            "UKR",
+            "BLR",
+            "MDA",
+            "RUS"
+          ],
+          "role": "dominant",
+          "opacity": 0.6,
+          "note": ""
+        },
+        {
+          "id": "turkey",
+          "label": "Turkey",
+          "color": "#1a3a30",
+          "countries": [
+            "TUR",
+            "CYP"
+          ],
+          "role": "dominant",
+          "opacity": 0.55,
+          "note": ""
+        }
+      ]
     }
   ]
 }
