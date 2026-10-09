@@ -183,8 +183,8 @@ function shortPeriodName(p) {
 
 function initMap() {
   const el = $("#map");
-  const w = el.clientWidth || 900;
-  const h = el.clientHeight || 700;
+  const w = Math.max(el.clientWidth || 900, 320);
+  const h = Math.max(el.clientHeight || 700, 280);
 
   el.innerHTML = "";
   state.tip = d3
@@ -201,16 +201,33 @@ function initMap() {
 
   state.svg = svg;
 
-  // Europe-focused projection
+  // Fit to a Europe bbox (not all of Russia) so the continent fills the stage
+  const europeFrame = {
+    type: "Feature",
+    geometry: {
+      type: "Polygon",
+      coordinates: [
+        [
+          [-24, 35],
+          [42, 35],
+          [42, 71.5],
+          [-24, 71.5],
+          [-24, 35],
+        ],
+      ],
+    },
+  };
+
+  const pad = isMobile() ? 8 : 20;
   const projection = d3
     .geoAzimuthalEqualArea()
     .rotate([-10, -52])
     .fitExtent(
       [
-        [24, 28],
-        [w - 16, h - 20],
+        [pad, pad + (isMobile() ? 36 : 8)],
+        [w - pad, h - pad],
       ],
-      state.geo
+      europeFrame
     );
 
   state.path = d3.geoPath(projection);
@@ -327,8 +344,10 @@ function snapToPeriod(index) {
 
 function renderPeriodText() {
   const period = currentPeriod();
-  $("#period-label").textContent = period.label;
-  $("#period-year").textContent = period.yearLabel;
+  const yearEl = $("#period-year");
+  const labelEl = $("#period-label");
+  if (yearEl) yearEl.textContent = period.tickYear || period.yearLabel;
+  if (labelEl) labelEl.textContent = period.label;
   $("#period-era").textContent = period.era || "";
   $("#period-copy").textContent = period.narrative;
   const ling = $("#period-ling");
@@ -348,31 +367,15 @@ function updateLegend() {
   const period = currentPeriod();
   const layers = period.mapLayers || [];
   const box = $("#map-legend");
-  const toggle = $("#legend-toggle");
-  // Show all layers — extreme detail; scrollable list
+  if (!box) return;
+  // Always visible under the slider — never overlays the map
+  box.hidden = false;
   box.innerHTML = layers
     .map(
       (l) =>
         `<div class="legend-row"><span class="legend-swatch" style="background:${l.color}"></span>${escapeHtml(l.label)}</div>`
     )
     .join("");
-
-  if (isMobile()) {
-    // Collapsed by default on phones so the map stays clear
-    if (!toggle.dataset.userOpened) {
-      box.hidden = true;
-      toggle.setAttribute("aria-expanded", "false");
-      toggle.textContent = `Map key (${layers.length})`;
-    } else {
-      box.hidden = false;
-      toggle.setAttribute("aria-expanded", "true");
-      toggle.textContent = "Hide map key";
-    }
-  } else {
-    box.hidden = false;
-    if (toggle) toggle.setAttribute("aria-expanded", "true");
-  }
-
 }
 
 function renderGlossary() {
@@ -578,19 +581,6 @@ function bindUI() {
     html.setAttribute("data-theme", next);
     localStorage.setItem("europa-strata-theme", next);
   });
-
-  const legendToggle = $("#legend-toggle");
-  if (legendToggle) {
-    legendToggle.addEventListener("click", () => {
-      const box = $("#map-legend");
-      const open = box.hidden;
-      box.hidden = !open;
-      legendToggle.dataset.userOpened = open ? "1" : "";
-      legendToggle.setAttribute("aria-expanded", open ? "true" : "false");
-      const n = (currentPeriod().mapLayers || []).length;
-      legendToggle.textContent = open ? "Hide map key" : `Map key (${n})`;
-    });
-  }
 
   window.addEventListener("resize", () => {
     if (!state.geo) return;

@@ -26,41 +26,43 @@
           <p class="brand-sub">Deep-time atlas</p>
         </div>
         <div id="map" class="map" role="img" aria-label="Map of Europe with culture extents"></div>
-        <div class="map-legend-wrap">
-          <button type="button" class="legend-toggle" id="legend-toggle" aria-expanded="false">
-            Map key
-          </button>
-          <div class="map-legend" id="map-legend" hidden></div>
-          <p class="map-attr" id="map-attr"></p>
-        </div>
       </main>
+
+      <div class="time-bar" id="time-bar">
+        <div class="slider-block">
+          <div class="slider-head">
+            <button type="button" class="nav-btn" id="btn-prev" aria-label="Previous period">‹</button>
+            <div class="slider-period">
+              <span class="slider-year" id="period-year">—</span>
+              <span class="slider-label" id="period-label">Loading…</span>
+            </div>
+            <button type="button" class="nav-btn" id="btn-next" aria-label="Next period">›</button>
+          </div>
+          <input
+            type="range"
+            class="time-slider"
+            id="time-slider"
+            min="0"
+            max="1000"
+            value="0"
+            step="1"
+            aria-label="Time"
+          />
+          <div class="ticks" id="tick-labels"></div>
+        </div>
+      </div>
+
+      <div class="legend-bar" id="legend-bar">
+        <p class="kicker">Map key</p>
+        <div class="map-legend" id="map-legend"></div>
+        <p class="map-attr" id="map-attr"></p>
+      </div>
 
       <aside class="side">
         <div class="side-top">
           <p class="kicker" id="period-era">—</p>
-          <h2 class="period-label" id="period-label">Loading…</h2>
-          <p class="period-year" id="period-year"></p>
           <p class="period-copy" id="period-copy"></p>
           <p class="period-ling" id="period-ling" hidden></p>
-
-          <div class="slider-block">
-            <div class="slider-head">
-              <button type="button" class="nav-btn" id="btn-prev" aria-label="Previous period">‹</button>
-              <span class="slider-hint">Drag through time</span>
-              <button type="button" class="nav-btn" id="btn-next" aria-label="Next period">›</button>
-            </div>
-            <input
-              type="range"
-              class="time-slider"
-              id="time-slider"
-              min="0"
-              max="1000"
-              value="0"
-              step="1"
-              aria-label="Time"
-            />
-            <div class="ticks" id="tick-labels"></div>
-          </div>
         </div>
 
         <div class="side-detail" id="detail">
@@ -68,7 +70,9 @@
           <h3 class="culture-title" id="culture-title">—</h3>
           <p class="culture-horizon" id="culture-horizon"></p>
           <span class="mode-pill" id="mode-pill" data-mode="continuity">—</span>
-          <p class="culture-desc" id="culture-desc">Select a place on the map to see culture, ancestry, and language for this period.</p>
+          <p class="culture-desc" id="culture-desc">
+            Select a place on the map to see culture, ancestry, and language for this period.
+          </p>
 
           <div class="polity-panel" id="polity-panel" hidden>
             <p class="kicker">Polity</p>

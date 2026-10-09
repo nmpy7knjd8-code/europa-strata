@@ -77,7 +77,13 @@ button {
 .app {
   display: grid;
   grid-template-columns: 1fr var(--side-w);
-  grid-template-rows: 1fr auto auto;
+  grid-template-rows: 1fr auto auto auto auto;
+  grid-template-areas:
+    "map side"
+    "time side"
+    "legend side"
+    "below below"
+    "gloss gloss";
   height: 100vh;
   height: 100dvh;
 }
@@ -86,14 +92,15 @@ button {
 
 .map-stage {
   position: relative;
-  grid-column: 1;
-  grid-row: 1;
+  grid-area: map;
   background: var(--sea);
   overflow: hidden;
   min-height: 0;
 }
 
 .map {
+  position: absolute;
+  inset: 0;
   width: 100%;
   height: 100%;
 }
@@ -156,32 +163,62 @@ button {
   font-weight: 400;
 }
 
-.map-legend-wrap {
-  position: absolute;
-  left: 1.5rem;
-  bottom: 1.25rem;
-  z-index: 3;
-  max-width: min(220px, 28vw);
+.time-bar {
+  grid-area: time;
+  border-top: 1px solid var(--line);
+  background: var(--bg);
+  padding: 0.65rem 1.1rem 0.7rem;
 }
 
-.legend-toggle {
-  display: none;
+.time-bar .slider-block {
+  margin-top: 0;
+}
+
+.slider-period {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.1rem;
+  min-width: 0;
+}
+
+.slider-year {
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink);
+  font-weight: 500;
+}
+
+.slider-label {
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  color: var(--ink-dim);
+  text-align: center;
+  line-height: 1.1;
+}
+
+.legend-bar {
+  grid-area: legend;
+  border-top: 1px solid var(--line);
+  background: var(--bg);
+  padding: 0.55rem 1.1rem 0.65rem;
+  max-height: 120px;
+  overflow: auto;
+}
+
+.legend-bar .kicker {
+  margin-bottom: 0.35rem;
 }
 
 .map-legend {
   display: flex;
-  flex-direction: column;
-  gap: 0.22rem;
-  max-height: min(42vh, 320px);
-  overflow: auto;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0.3rem 0.85rem;
   padding: 0;
   background: transparent;
   border: none;
-  box-shadow: none;
-}
-
-.map-legend[hidden] {
-  display: none !important;
 }
 
 .legend-row {
@@ -207,7 +244,7 @@ button {
 }
 
 .map-attr {
-  margin: 0.45rem 0 0;
+  margin: 0.4rem 0 0;
   font-size: 0.55rem;
   color: var(--ink-mute);
   line-height: 1.35;
@@ -216,8 +253,7 @@ button {
 /* ——— Sidebar ——— */
 
 .side {
-  grid-column: 2;
-  grid-row: 1;
+  grid-area: side;
   display: flex;
   flex-direction: column;
   min-height: 0;
@@ -232,6 +268,10 @@ button {
   flex-shrink: 0;
 }
 
+.side-top .period-copy {
+  max-height: none;
+}
+
 .kicker {
   margin: 0 0 0.15rem;
   font-size: 0.6rem;
@@ -241,31 +281,11 @@ button {
   font-weight: 400;
 }
 
-.period-label {
-  margin: 0;
-  font-family: var(--font-display);
-  font-size: 1.65rem;
-  font-weight: 400;
-  line-height: 1.05;
-  color: var(--ink);
-  letter-spacing: -0.02em;
-}
-
-.period-year {
-  margin: 0.25rem 0 0;
-  font-size: 0.7rem;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--ink);
-}
-
 .period-copy {
-  margin: 0.65rem 0 0;
+  margin: 0.35rem 0 0;
   color: var(--ink-dim);
   font-size: 0.78rem;
   line-height: 1.5;
-  max-height: 5.8em;
-  overflow: auto;
 }
 
 .period-ling {
@@ -278,7 +298,7 @@ button {
 }
 
 .slider-block {
-  margin-top: 1.1rem;
+  margin-top: 0;
 }
 
 .slider-head {
@@ -641,16 +661,14 @@ button {
 /* ——— Below ——— */
 
 .below {
-  grid-column: 1 / -1;
-  grid-row: 2;
+  grid-area: below;
   border-top: 1px solid var(--line);
   background: var(--bg);
   max-height: 96px;
 }
 
 .glossary {
-  grid-column: 1 / -1;
-  grid-row: 3;
+  grid-area: gloss;
   border-top: 1px solid var(--line);
   background: var(--bg);
   max-height: 140px;
@@ -789,96 +807,64 @@ button {
 
   .app {
     grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "map"
+      "time"
+      "legend"
+      "side"
+      "below"
+      "gloss";
     height: auto;
     min-height: 100vh;
   }
 
+  /* Large map — main focus on phone */
   .map-stage {
-    grid-column: 1;
-    grid-row: 1;
-    display: flex;
-    flex-direction: column;
-    min-height: min(52vh, 420px);
-    height: min(52vh, 420px);
-  }
-
-  .map {
-    flex: 1;
-    min-height: 0;
+    width: 100%;
+    height: 62vh;
+    min-height: 360px;
+    max-height: 560px;
   }
 
   .map-chrome {
-    top: 0.85rem;
-    left: 1rem;
+    top: 0.75rem;
+    left: 0.85rem;
   }
 
-  /* Legend OFF the map on phones — no overlay covering Europe */
-  .map-legend-wrap {
-    position: static;
-    max-width: none;
-    padding: 0.65rem 1rem 0.75rem;
-    background: var(--bg);
-    border-top: 1px solid var(--line);
-    flex-shrink: 0;
+  .brand {
+    font-size: 1.55rem;
+    text-shadow: 0 0 12px rgba(255, 255, 255, 0.9);
   }
 
-  .legend-toggle {
-    display: inline-block;
-    border: none;
-    background: none;
-    padding: 0;
-    margin: 0 0 0.4rem;
-    font-family: var(--font-ui);
-    font-size: 0.65rem;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    color: var(--ink);
-    text-decoration: underline;
-    text-underline-offset: 2px;
+  .brand-sub {
+    font-size: 0.58rem;
+  }
+
+  .time-bar {
+    padding: 0.7rem 0.9rem 0.75rem;
+  }
+
+  .legend-bar {
+    max-height: none;
+    padding: 0.6rem 0.9rem 0.75rem;
   }
 
   .map-legend {
-    max-height: 140px;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 0.35rem 0.85rem;
-  }
-
-  .map-legend:not([hidden]) {
-    display: flex;
-  }
-
-  .map-attr {
-    margin-top: 0.5rem;
+    max-height: 110px;
+    overflow: auto;
   }
 
   .side {
-    grid-column: 1;
-    grid-row: 2;
     border-left: none;
     border-top: 1px solid var(--line);
   }
 
-  .slider-block {
-    position: sticky;
-    bottom: 0;
-    background: var(--bg-elev);
-    padding-bottom: 0.25rem;
-    z-index: 2;
-  }
-
   .below {
-    grid-column: 1;
-    grid-row: 3;
     max-height: none;
   }
 
   .glossary {
-    display: block;
-    grid-column: 1;
-    grid-row: 4;
-    border-top: 1px solid var(--line);
     max-height: none;
     padding-bottom: calc(1rem + env(safe-area-inset-bottom, 0px));
   }
@@ -887,28 +873,20 @@ button {
     grid-template-columns: 1fr;
   }
 
-  .period-copy {
-    max-height: none;
-  }
-
   .cultures-rail {
     max-height: 88px;
   }
 
   .tick .tick-year {
-    font-size: 0.52rem;
+    font-size: 0.5rem;
   }
 
-  .tick .tick-name {
-    font-size: 0.42rem;
-  }
-
-  /* On narrow screens show fewer tick names to avoid clutter — years stay */
   .tick .tick-name {
     display: none;
   }
 
   .tick.active .tick-name {
     display: block;
+    font-size: 0.42rem;
   }
 }
