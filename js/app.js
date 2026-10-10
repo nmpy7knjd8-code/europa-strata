@@ -1595,9 +1595,9 @@ function updateCulturesRail() {
   const rail = $("#cultures-rail");
   const blurb = $("#cultures-blurb");
   if (blurb) {
-    blurb.textContent = isKingdomMode()
-      ? "Schematic kingdoms, empires, and major duchies — not modern country borders. Tap a polity on the map or below."
-      : "Schematic culture extents on a Natural Earth basemap. Overlaps mark expansion and absorption.";
+    // Drop large schematic-disclaimer callouts; keep Sources/.tiny footnotes only
+    blurb.textContent = "";
+    blurb.hidden = true;
   }
   if (!rail) return;
   rail.innerHTML = layers
@@ -1865,9 +1865,7 @@ function renderKingdomDetail() {
 
   setPlainText(
     $("#culture-desc"),
-    polity
-      ? polity.summary || ""
-      : "Select a kingdom, empire, or major duchy on the map. Modern country borders are not used as fills in this tab."
+    polity ? polity.summary || "" : "Select a polity on the map or in the list below."
   );
 
   const polityPanel = $("#polity-panel");
@@ -2231,7 +2229,7 @@ function bindUI() {
 async function loadKingdomPack(id) {
   try {
     // Cache-bust so refined research geometry packs reload after deploy
-    const r = await fetch(`data/kingdom-eras/${id}.json?v=era-ui-12`);
+    const r = await fetch(`data/kingdom-eras/${id}.json?v=era-ui-13`);
     if (!r.ok) return null;
     const raw = await r.json();
     return normalizeKingdomPack(raw);

@@ -228,16 +228,17 @@ button {
   flex: 1 1 0;
   min-width: 0;
   margin: 0;
-  padding: 0.48rem 0.2rem;
+  padding: 0.55rem 0.22rem;
   border: 0;
   border-right: 1px solid var(--line);
   background: transparent;
   color: var(--ink-mute);
   font-family: var(--font-ui);
-  font-size: clamp(0.68rem, 2.15vw, 0.8rem);
+  /* Fixed size in every atlas mode — Deep-time must match kingdom tabs */
+  font-size: 0.8rem;
   font-weight: 500;
   letter-spacing: 0.01em;
-  line-height: 1.15;
+  line-height: 1.2;
   white-space: nowrap;
   text-align: center;
   cursor: pointer;
@@ -270,7 +271,8 @@ button {
 .atlas-tab[aria-selected="true"] {
   color: var(--ink);
   background: rgba(0, 0, 0, 0.055);
-  font-weight: 600;
+  /* Keep weight stable so Deep-time vs kingdom tabs don’t change size */
+  font-weight: 500;
 }
 
 [data-theme="dark"] .atlas-tab.is-active,
@@ -1660,9 +1662,17 @@ html {
 }
 
 .atlas-tab {
-  padding: 0.42rem 0.12rem;
-  font-size: clamp(0.64rem, 2.5vw, 0.76rem);
-  letter-spacing: 0;
+  padding: 0.52rem 0.14rem;
+  font-size: 0.78rem;
+  letter-spacing: 0.01em;
+  font-weight: 500;
+}
+
+.app[data-atlas-mode="deep-time"] .atlas-tab,
+.app:not([data-atlas-mode="deep-time"]) .atlas-tab {
+  font-size: 0.78rem;
+  font-weight: 500;
+  padding: 0.52rem 0.14rem;
 }
 
 
@@ -2220,8 +2230,7 @@ html {
 }
 
 #cultures-blurb {
-  font-size: var(--read-size);
-  line-height: var(--read-leading);
+  display: none !important;
 }
 
 /* ——— Ancestry deep-dive page ——— */
