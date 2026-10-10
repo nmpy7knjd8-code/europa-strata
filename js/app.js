@@ -830,37 +830,56 @@ function eventsForPeriod(periodId, { iso = null, region = null, placeOnly = fals
   });
 }
 
+function keyEventTeaser(ev) {
+  if (ev.teaser) return String(ev.teaser);
+  if (ev.title) return String(ev.title);
+  const raw = String(ev.text || ev.detail || "");
+  const cut = raw.split(/(?<=[.!?])\s+/)[0] || raw;
+  return cut.length > 140 ? cut.slice(0, 137).trimEnd() + "…" : cut;
+}
+
+function keyEventDetail(ev) {
+  return String(ev.detail || ev.text || "").trim();
+}
+
 function renderKeyEventsList(listEl, events) {
   if (!listEl) return;
   listEl.replaceChildren();
   for (const ev of events) {
     const li = document.createElement("li");
-    const head = document.createElement("div");
-    head.className = "key-events-head";
+    li.className = "key-events-item";
+    const details = document.createElement("details");
+    details.className = "key-events-disclosure";
+
+    const summary = document.createElement("summary");
+    summary.className = "key-events-summary";
     if (ev.date) {
       const when = document.createElement("time");
       when.className = "key-events-date";
       when.textContent = formatYearUi(ev.date);
-      head.appendChild(when);
+      summary.appendChild(when);
+      summary.appendChild(document.createTextNode(" — "));
     }
-    if (ev.title) {
-      if (ev.date) head.appendChild(document.createTextNode(" — "));
-      const strong = document.createElement("strong");
-      strong.className = "key-events-title";
-      strong.textContent = ev.title;
-      head.appendChild(strong);
-      li.appendChild(head);
-      if (ev.text && ev.text !== ev.title) {
-        const body = document.createElement("p");
-        body.className = "key-events-body";
-        body.textContent = ev.text;
-        li.appendChild(body);
+    const teaser = document.createElement("span");
+    teaser.className = "key-events-teaser";
+    teaser.textContent = keyEventTeaser(ev);
+    summary.appendChild(teaser);
+    details.appendChild(summary);
+
+    const detailText = keyEventDetail(ev);
+    if (detailText) {
+      const body = document.createElement("div");
+      body.className = "key-events-body";
+      // Preserve paragraph breaks from enriched detail
+      for (const para of detailText.split(/\n\n+/)) {
+        const p = document.createElement("p");
+        p.textContent = para.trim();
+        if (p.textContent) body.appendChild(p);
       }
-    } else {
-      if (ev.date) head.appendChild(document.createTextNode(" — "));
-      head.appendChild(document.createTextNode(ev.text || ""));
-      li.appendChild(head);
+      details.appendChild(body);
     }
+
+    li.appendChild(details);
     listEl.appendChild(li);
   }
 }

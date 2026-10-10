@@ -77,18 +77,28 @@ function normalizeEvent(e) {
   const title = String(e.title || "").trim();
   const summary = String(e.summary || "").trim();
   const plain = String(e.text || e.event || e.note || "").trim();
+  const detail = String(e.detail || "").trim();
+  const teaserIn = String(e.teaser || "").trim();
   // Prefer summary body; fall back to plain text field
-  const text = summary || plain;
+  const text = summary || plain || detail;
   if (!text && !title) return null;
   const date = String(e.date || e.when || e.year || "").trim() || null;
   const regions = normalizeRegions(e);
   const themes = asList(e.themes)
     .map((t) => String(t || "").trim())
     .filter(Boolean);
+  // Prefer enrich_key_events_detail.py for teaser/detail; pass through if present
+  const teaser =
+    teaserIn ||
+    title ||
+    (text.length > 140 ? text.slice(0, 137).trimEnd() + "…" : text);
+  const full = detail || text || title;
   return {
     date,
     title: title || null,
-    text: text || title,
+    teaser,
+    detail: full,
+    text: full,
     iso: e.iso ? String(e.iso).toUpperCase() : null,
     region: regions[0] || null,
     regions,
