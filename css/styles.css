@@ -2234,11 +2234,11 @@ html {
 }
 
 .glossary-title {
-  font-size: 1.95rem;
+  font-size: 1.45rem;
   line-height: 1.15;
   flex-direction: column;
   align-items: flex-start;
-  gap: 0.35rem;
+  gap: 0.3rem;
 }
 
 .glossary-more {
