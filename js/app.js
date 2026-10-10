@@ -252,6 +252,71 @@ function kingdomGeoForPeriod(period) {
   return period?.geo || activePack()?.geo || null;
 }
 
+/** Chaikin corner-cutting — softer polity outlines without angular rings. */
+function chaikinRing(ring, iterations = 2) {
+  if (!ring?.length || ring.length < 4) return ring;
+  let pts = ring.slice();
+  const closed =
+    pts.length > 1 &&
+    pts[0][0] === pts[pts.length - 1][0] &&
+    pts[0][1] === pts[pts.length - 1][1];
+  if (closed) pts = pts.slice(0, -1);
+  for (let iter = 0; iter < iterations; iter++) {
+    const next = [];
+    const n = pts.length;
+    for (let i = 0; i < n; i++) {
+      const a = pts[i];
+      const b = pts[(i + 1) % n];
+      next.push([0.75 * a[0] + 0.25 * b[0], 0.75 * a[1] + 0.25 * b[1]]);
+      next.push([0.25 * a[0] + 0.75 * b[0], 0.25 * a[1] + 0.75 * b[1]]);
+    }
+    pts = next;
+  }
+  if (closed || pts.length) pts = pts.concat([pts[0]]);
+  return pts;
+}
+
+function smoothGeometry(geom) {
+  if (!geom) return geom;
+  if (geom.type === "Polygon") {
+    return {
+      type: "Polygon",
+      coordinates: geom.coordinates.map((r) => chaikinRing(r, 2)),
+    };
+  }
+  if (geom.type === "MultiPolygon") {
+    return {
+      type: "MultiPolygon",
+      coordinates: geom.coordinates.map((poly) =>
+        poly.map((r) => chaikinRing(r, 2))
+      ),
+    };
+  }
+  return geom;
+}
+
+function smoothFeatureCollection(fc) {
+  if (!fc?.features) return fc;
+  return {
+    type: "FeatureCollection",
+    features: fc.features.map((f) => ({
+      ...f,
+      geometry: smoothGeometry(f.geometry),
+    })),
+  };
+}
+
+function kingdomGeoSmoothed(period) {
+  const key = period?.id || "";
+  if (!key) return null;
+  if (!state._smoothGeoCache) state._smoothGeoCache = new Map();
+  if (state._smoothGeoCache.has(key)) return state._smoothGeoCache.get(key);
+  const raw = kingdomGeoForPeriod(period);
+  const smoothed = smoothFeatureCollection(raw);
+  state._smoothGeoCache.set(key, smoothed);
+  return smoothed;
+}
+
 function $(sel) {
   return document.querySelector(sel);
 }
@@ -791,7 +856,7 @@ function initMap({ preserveZoom = true } = {}) {
     .on("mouseleave", onCountryLeave)
     .on("click", onCountryClick);
 
-  // Kingdom / empire extents — clipped to land (High Medieval + Renaissance)
+  // Kingdom / empire extents — clipped to land
   zoomLayer
     .append("g")
     .attr("class", "polities")
@@ -806,7 +871,8 @@ function initMap({ preserveZoom = true } = {}) {
     .attr("class", "coastline")
     .attr("d", state.path);
 
-  if (isKingdomMode()) syncKingdomPolityLayer();
+  state._kingdomGeoPeriodId = null;
+  if (isKingdomMode()) syncKingdomPolityLayer({ force: true });
 
   const zoom = d3
     .zoom()
@@ -905,11 +971,18 @@ function bumpMapZoom(factor) {
     .call(state.zoom.scaleBy, factor);
 }
 
-/** Bind / update polity paths for the nearest kingdom tick (extents vary by year). */
-function syncKingdomPolityLayer() {
+/** Bind / update polity paths only when the kingdom tick changes. */
+function syncKingdomPolityLayer({ force = false } = {}) {
   if (!state.svg || !state.path || !isKingdomMode()) return;
   const period = currentPeriod();
-  const polityGeo = kingdomGeoForPeriod(period);
+  const periodId = period?.id || "";
+  if (!force && state._kingdomGeoPeriodId === periodId) {
+    applyPolitySelectionClass();
+    return;
+  }
+  state._kingdomGeoPeriodId = periodId;
+
+  const polityGeo = kingdomGeoSmoothed(period);
   const features = polityGeo?.features || [];
   const pg = state.svg.select("g.polities");
   if (pg.empty()) return;
@@ -924,10 +997,11 @@ function syncKingdomPolityLayer() {
           .attr("d", state.path)
           .attr("data-polity", (d) => d.properties.polityId)
           .attr("data-name", (d) => d.properties.name)
-          .on("mouseenter", onPolityEnter)
-          .on("mousemove", onPolityMove)
-          .on("mouseleave", onPolityLeave)
-          .on("click", onPolityClick),
+          .on("pointerenter", onPolityEnter)
+          .on("pointermove", onPolityMove)
+          .on("pointerleave", onPolityLeave)
+          .on("click", onPolityClick)
+          .on("pointerup", onPolityPointerUp),
       (update) =>
         update
           .attr("d", state.path)
@@ -936,19 +1010,48 @@ function syncKingdomPolityLayer() {
       (exit) => exit.remove()
     );
 
+  // Drop selection only when the polity is gone from this tick entirely
   if (state.selectedPolityId) {
-    const still =
-      features.some((f) => f.properties.polityId === state.selectedPolityId) ||
-      false;
-    if (!still) {
-      // Keep selection for panel text if polity has a record this tick; else clear highlight
-      const hasPanel = Boolean(period?.polities?.[state.selectedPolityId]);
-      if (!hasPanel) state.selectedPolityId = null;
-    }
-    pg.selectAll("path.polity").classed(
-      "is-active",
-      (d) => d.properties.polityId === state.selectedPolityId
+    const hasGeom = features.some(
+      (f) => f.properties.polityId === state.selectedPolityId
     );
+    const hasPanel = Boolean(period?.polities?.[state.selectedPolityId]);
+    if (!hasGeom && !hasPanel) state.selectedPolityId = null;
+  }
+  applyPolitySelectionClass();
+}
+
+function applyPolitySelectionClass() {
+  if (!state.svg) return;
+  const pg = state.svg.select("g.polities");
+  if (pg.empty()) return;
+  pg.selectAll("path.polity").classed(
+    "is-active",
+    (d) => d.properties.polityId === state.selectedPolityId
+  );
+  // Keep selected stroke above neighbors
+  if (state.selectedPolityId) {
+    pg.selectAll("path.polity")
+      .filter((d) => d.properties.polityId === state.selectedPolityId)
+      .raise();
+  }
+}
+
+function selectPolity(polityId, { scrollDetail = false } = {}) {
+  if (!polityId) return;
+  state.selectedPolityId = polityId;
+  state.selectedIso = null;
+  state.svg?.selectAll("path.country").classed("is-active", false);
+  // Interrupt fill transitions so selection isn't eaten mid-tween
+  state.svg?.selectAll("path.polity").interrupt();
+  applyPolitySelectionClass();
+  renderDetail();
+  highlightCultureChips();
+  updateSelectionTip();
+  if (scrollDetail) {
+    requestAnimationFrame(() => {
+      $("#detail")?.scrollIntoView({ behavior: "smooth", block: "start" });
+    });
   }
 }
 
@@ -959,10 +1062,11 @@ function paintMap(animate = true) {
     // Modern country basemap stays land-colored; polities carry fills.
     state.svg
       .selectAll("path.country")
-      .style("fill", "var(--land-base)")
+      .style("fill", null)
       .style("fill-opacity", 1);
 
-    syncKingdomPolityLayer();
+    // Geometry only when tick changes — avoids selection flicker on slider drag
+    syncKingdomPolityLayer({ force: false });
 
     state.svg.selectAll("path.polity").each(function (d) {
       const polityId = d.properties.polityId;
@@ -970,13 +1074,15 @@ function paintMap(animate = true) {
       const node = d3.select(this);
       const fill = style.fill || "transparent";
       // Keep fills translucent so Natural Earth coasts read through
-      const opacity = style.fill ? Math.min(0.62, Math.max(0.32, style.opacity * 0.78)) : 0;
+      const opacity = style.fill
+        ? Math.min(0.62, Math.max(0.32, style.opacity * 0.78))
+        : 0;
       const visible = Boolean(style.fill);
       node.style("pointer-events", visible ? "all" : "none");
       if (animate) {
         node
           .transition()
-          .duration(420)
+          .duration(280)
           .ease(d3.easeCubicOut)
           .style("fill", fill)
           .style("fill-opacity", opacity)
@@ -988,6 +1094,7 @@ function paintMap(animate = true) {
           .style("stroke-opacity", visible ? null : 0);
       }
     });
+    applyPolitySelectionClass();
     return;
   }
 
@@ -1042,7 +1149,7 @@ function updateSelectionTip() {
       state.tip.style("opacity", 0);
       return;
     }
-    const feat = kingdomGeoForPeriod(currentPeriod())?.features?.find(
+    const feat = kingdomGeoSmoothed(currentPeriod())?.features?.find(
       (f) => f.properties.polityId === state.selectedPolityId
     );
     if (!feat) {
@@ -1163,16 +1270,19 @@ function onPolityLeave() {
   else state.tip.style("opacity", 0).classed("is-pinned", false);
 }
 
+function onPolityPointerUp(event, d) {
+  // Prefer pointerup on touch — click can be lost after pan/zoom filters
+  if (event.pointerType === "touch" || event.pointerType === "pen") {
+    event.preventDefault();
+    event.stopPropagation();
+    selectPolity(d.properties.polityId);
+  }
+}
+
 function onPolityClick(event, d) {
-  const polityId = d.properties.polityId;
-  state.selectedPolityId = polityId;
-  state.selectedIso = null;
-  state.svg.selectAll("path.polity").classed("is-active", false);
-  state.svg.selectAll("path.country").classed("is-active", false);
-  d3.select(this).classed("is-active", true);
-  renderDetail();
-  highlightCultureChips();
-  updateSelectionTip();
+  event.preventDefault();
+  event.stopPropagation();
+  selectPolity(d.properties.polityId);
 }
 
 function onCountryEnter(event, d) {
@@ -1480,15 +1590,7 @@ function updateCulturesRail() {
       if (isKingdomMode()) {
         const polityId = layerPolityId(layer);
         if (!polityId) return;
-        state.selectedPolityId = polityId;
-        state.selectedIso = null;
-        state.svg
-          ?.selectAll("path.polity")
-          .classed("is-active", (d) => d.properties.polityId === polityId);
-        state.svg?.selectAll("path.country").classed("is-active", false);
-        renderDetail();
-        highlightCultureChips();
-        updateSelectionTip();
+        selectPolity(polityId, { scrollDetail: true });
         return;
       }
 
@@ -1707,7 +1809,7 @@ function renderKingdomDetail() {
   const polityId = state.selectedPolityId;
   const polity = polityId && period.polities ? period.polities[polityId] : null;
   const layer = (period.mapLayers || []).find((l) => layerPolityId(l) === polityId);
-  const packFeat = kingdomGeoForPeriod(period)?.features?.find(
+  const packFeat = kingdomGeoSmoothed(period)?.features?.find(
     (f) => f.properties.polityId === polityId
   );
   const place =
@@ -1970,6 +2072,8 @@ function setAtlasMode(mode) {
   }
 
   state.atlasMode = mode;
+  state._kingdomGeoPeriodId = null;
+  state._smoothGeoCache = new Map();
   syncAtlasTabs();
 
   state.selectedPolityId = null;
@@ -1984,6 +2088,7 @@ function setAtlasMode(mode) {
 
   buildTicks();
   initMap({ preserveZoom: false });
+  if (isKingdomMode()) syncKingdomPolityLayer({ force: true });
   updateLegend();
   updateCulturesRail();
   renderGlossary();
@@ -2080,15 +2185,12 @@ function bindUI() {
       const heightChangedALot = Math.abs(h - prev.h) > 80;
       // Ignore small height-only changes (URL bar / scroll UI)
       if (!widthChanged && !heightChangedALot) return;
+      state._kingdomGeoPeriodId = null;
       initMap({ preserveZoom: true });
+      if (isKingdomMode()) syncKingdomPolityLayer({ force: true });
       updateLegend();
       if (isKingdomMode() && state.selectedPolityId) {
-        state.svg
-          ?.selectAll("path.polity")
-          .classed(
-            "is-active",
-            (d) => d.properties.polityId === state.selectedPolityId
-          );
+        applyPolitySelectionClass();
       } else if (state.selectedIso) {
         state.svg
           ?.selectAll("path.country")
@@ -2101,7 +2203,7 @@ function bindUI() {
 async function loadKingdomPack(id) {
   try {
     // Cache-bust so refined research geometry packs reload after deploy
-    const r = await fetch(`data/kingdom-eras/${id}.json?v=era-land-8`);
+    const r = await fetch(`data/kingdom-eras/${id}.json?v=era-ui-9`);
     if (!r.ok) return null;
     const raw = await r.json();
     return normalizeKingdomPack(raw);
