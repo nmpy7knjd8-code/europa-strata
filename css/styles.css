@@ -248,7 +248,7 @@ button {
 }
 
 .slider-year {
-  font-size: 0.88rem;
+  font-size: 1rem;
   letter-spacing: 0.08em;
   text-transform: uppercase;
   color: var(--ink);
@@ -257,10 +257,10 @@ button {
 
 .slider-label {
   font-family: var(--font-display);
-  font-size: 0.95rem;
+  font-size: 1.15rem;
   color: var(--ink-dim);
   text-align: center;
-  line-height: 1.1;
+  line-height: 1.2;
 }
 
 .legend-bar {
@@ -483,7 +483,7 @@ button {
   gap: 0.45rem;
   padding: 0.15rem 0.2rem 0.25rem;
   /* Fixed height so selecting a period never shifts years */
-  min-height: 2.45rem;
+  min-height: 2.75rem;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
   scrollbar-width: thin;
@@ -499,12 +499,12 @@ button {
   background: none;
   font-family: inherit;
   color: var(--ink-mute);
-  height: 2.45rem;
+  height: 2.75rem;
 }
 
 .tick .tick-num {
   display: block;
-  font-size: 0.84rem;
+  font-size: 0.95rem;
   font-weight: 500;
   letter-spacing: 0.02em;
   color: var(--ink-dim);
@@ -514,7 +514,7 @@ button {
 
 .tick .tick-era {
   display: block;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   letter-spacing: 0.08em;
   color: var(--ink-mute);
   line-height: 1.2;
@@ -532,9 +532,9 @@ button {
 /* Full period name — own row, never inside ticks (so years don't jump) */
 .tick-caption {
   margin: 0.45rem 0 0;
-  min-height: 2.4em;
+  min-height: 2.6em;
   font-family: var(--font-display);
-  font-size: 0.95rem;
+  font-size: 1.2rem;
   line-height: 1.25;
   text-align: center;
   color: var(--ink);
@@ -1446,21 +1446,25 @@ html {
   height: 32px;
 }
 
+/* Hierarchy: year header > period name > tick caption > tick years */
 .slider-year {
-  font-size: 1.35rem;
+  font-size: 1.5rem;
+  letter-spacing: 0.06em;
 }
 
 .slider-label {
-  font-size: 1rem;
+  font-size: 1.35rem;
   white-space: normal;
-  max-width: 72vw;
+  max-width: 78vw;
   line-height: 1.3;
+  color: var(--ink);
+  font-weight: 400;
 }
 
 .slider-head {
   gap: 0.65rem;
   margin-bottom: 0.75rem;
-  min-height: 3.25rem;
+  min-height: 3.6rem;
 }
 
 .slider-period {
@@ -1483,32 +1487,33 @@ html {
 }
 
 .ticks {
-  min-height: 2.55rem;
+  min-height: 2.9rem;
   gap: 0.35rem;
   margin-top: 0.55rem;
   padding: 0.1rem 0 0.2rem;
 }
 
 .tick {
-  height: 2.55rem;
-  min-width: 2.85rem;
+  height: 2.9rem;
+  min-width: 3rem;
   padding: 0 0.1rem;
 }
 
 .tick .tick-num {
-  font-size: 0.88rem;
+  font-size: 1.02rem;
 }
 
 .tick .tick-era {
-  font-size: 0.82rem;
+  font-size: 0.9rem;
   margin-top: 0.15rem;
 }
 
 .tick-caption {
-  min-height: 2.2em;
-  font-size: 1.15rem;
+  min-height: 2.5em;
+  font-size: 1.4rem;
   padding: 0;
-  margin-top: 0.45rem;
+  margin-top: 0.5rem;
+  line-height: 1.3;
 }
 
 .legend-bar {
