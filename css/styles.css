@@ -1069,15 +1069,17 @@ body.lightbox-open {
   font-size: 0.9rem;
 }
 
+/* Thin summary strip — pie + list dominate the Ancestry Mix block */
 .stack-bar {
   display: flex;
-  height: 4px;
+  height: 3px;
   width: 100%;
   background: var(--line);
   border: none;
   overflow: hidden;
-  margin: 0.3rem 0 0;
+  margin: 0.2rem 0 0.1rem;
   border-radius: 999px;
+  opacity: 0.85;
 }
 
 .stack-seg {
@@ -1085,9 +1087,9 @@ body.lightbox-open {
   transition: width 0.5s var(--ease);
 }
 
-/* Swatch legend removed — pie-list carries label + % (avoid triple display) */
+/* Swatch legend removed — pie-list carries label + % */
 .legend {
-  display: none;
+  display: none !important;
 }
 
 .legend-item {
@@ -1105,16 +1107,16 @@ body.lightbox-open {
 }
 
 .pie-wrap {
-  margin-top: 0.45rem;
+  margin-top: 0.7rem;
   display: grid;
-  grid-template-columns: 96px minmax(0, 1fr);
-  gap: 0.75rem;
+  grid-template-columns: 132px minmax(0, 1fr);
+  gap: 1rem 1.15rem;
   align-items: center;
 }
 
 .pie {
-  width: 96px;
-  height: 96px;
+  width: 132px;
+  height: 132px;
   border-radius: 50%;
   border: 1px solid var(--line);
   transition: background 0.5s var(--ease);
@@ -1126,45 +1128,49 @@ body.lightbox-open {
   list-style: none;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  gap: 0.2rem;
+  align-items: stretch;
+  gap: 0.35rem;
+  width: 100%;
+  min-width: 0;
 }
 
+/* Classic rows: swatch + label left, % right */
 .pie-list li {
-  display: inline-flex;
-  justify-content: flex-start;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  column-gap: 0.5rem;
   align-items: baseline;
-  width: fit-content;
-  max-width: 100%;
-  gap: 0.35em;
-  padding: 0;
+  width: 100%;
+  padding: 0.12rem 0;
   border-bottom: none;
-  font-size: 1.2rem;
-  line-height: 1.3;
+  font-size: 1.4rem;
+  line-height: 1.35;
   color: var(--ink-dim);
 }
 
 .pie-list li::before {
   content: "";
-  width: 0.5em;
-  height: 0.5em;
+  width: 0.55em;
+  height: 0.55em;
   border-radius: 50%;
   background: var(--swatch, var(--ink-mute));
-  flex: 0 0 auto;
   align-self: center;
 }
 
 .pie-list strong {
   color: var(--ink);
   font-weight: 600;
-  font-size: 1em;
+  font-size: 1.05em;
+  justify-self: start;
 }
 
 .pct {
   font-variant-numeric: tabular-nums;
   color: var(--ink);
-  font-size: 1em;
-  font-weight: 500;
+  font-size: 1.05em;
+  font-weight: 600;
+  justify-self: end;
+  text-align: right;
   margin-left: 0;
 }
 
@@ -1753,34 +1759,45 @@ html {
 
 .ancestry-panel .kicker {
   font-size: 0.88rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.4rem;
 }
 
 .stack-bar {
-  margin-top: 0.35rem;
-  margin-bottom: 0;
-  height: 4px;
+  margin-top: 0.2rem;
+  margin-bottom: 0.05rem;
+  height: 3px;
 }
 
 .pie-wrap {
-  margin-top: 0.45rem;
-  gap: 0.85rem;
-  grid-template-columns: 108px minmax(0, 1fr);
+  margin-top: 0.75rem;
+  gap: 1rem 1.2rem;
+  grid-template-columns: 140px minmax(0, 1fr);
   align-items: center;
 }
 
 .pie {
-  width: 108px;
-  height: 108px;
+  width: 140px;
+  height: 140px;
+}
+
+.pie-list {
+  gap: 0.4rem;
 }
 
 .pie-list li {
-  display: inline-flex;
-  width: fit-content;
-  font-size: 1.25rem;
-  line-height: 1.3;
-  padding: 0.05rem 0;
-  gap: 0.35em;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  width: 100%;
+  font-size: 1.45rem;
+  line-height: 1.35;
+  padding: 0.18rem 0;
+  column-gap: 0.55rem;
+}
+
+.pie-list strong,
+.pct {
+  font-size: 1.05em;
+  font-weight: 600;
 }
 
 .legend {
