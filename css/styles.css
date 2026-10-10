@@ -589,9 +589,9 @@ button {
   opacity: 0.5;
 }
 
-/* Inline atlas links — match surrounding body glyph-for-glyph (never smaller) */
-a.atlas-link,
-.atlas-link {
+/* Preceded by / Succeeded by chain jumps only — not used in body copy */
+.polity-chain a.atlas-link,
+.polity-chain .atlas-link {
   display: inline;
   margin: 0;
   padding: 0;
@@ -600,16 +600,11 @@ a.atlas-link,
   background: none;
   color: inherit;
   font: inherit;
-  font-family: inherit;
   font-size: 1em;
   font-weight: inherit;
-  font-style: inherit;
-  font-variant: inherit;
   line-height: inherit;
   letter-spacing: inherit;
   vertical-align: baseline;
-  text-align: inherit;
-  text-transform: none;
   text-decoration: underline;
   text-decoration-skip-ink: auto;
   text-decoration-color: color-mix(in srgb, currentColor 26%, transparent);
@@ -618,44 +613,15 @@ a.atlas-link,
   cursor: pointer;
   touch-action: manipulation;
   -webkit-tap-highlight-color: transparent;
-  -webkit-text-size-adjust: 100%;
 }
 
-a.atlas-link:hover,
-a.atlas-link:focus-visible,
-.atlas-link:hover,
-.atlas-link:focus-visible {
+.polity-chain a.atlas-link:hover,
+.polity-chain a.atlas-link:focus-visible,
+.polity-chain .atlas-link:hover,
+.polity-chain .atlas-link:focus-visible {
   color: inherit;
   text-decoration-color: color-mix(in srgb, currentColor 48%, transparent);
   outline: none;
-}
-
-.culture-desc .atlas-link,
-.ancestry-note .atlas-link,
-.polity-panel .atlas-link,
-.polity-chain .atlas-link,
-.polity-summary .atlas-link,
-.polity-conflicts .atlas-link,
-.polity-leaders .atlas-link,
-.polity-religion .atlas-link,
-.polity-culture .atlas-link,
-.polity-story .atlas-link,
-.polity-literature .atlas-link,
-.polity-art .atlas-link,
-.side-detail .atlas-link,
-.side-detail a,
-.period-copy .atlas-link {
-  font: inherit;
-  font-size: 1em;
-  font-family: inherit;
-  font-weight: inherit;
-  font-style: inherit;
-  line-height: inherit;
-  letter-spacing: inherit;
-  color: inherit;
-  vertical-align: baseline;
-  text-decoration-thickness: 0.05em;
-  text-underline-offset: 0.28em;
 }
 
 .polity-panel .polity-name {
@@ -1615,20 +1581,13 @@ html {
   margin: 0 0 0.15rem;
 }
 
-a.atlas-link,
-.atlas-link,
-.culture-desc .atlas-link,
-.polity-panel .atlas-link,
-.polity-chain .atlas-link,
-.side-detail .atlas-link,
-.side-detail a {
+.polity-chain a.atlas-link,
+.polity-chain .atlas-link {
   border-bottom: none;
   font: inherit;
   font-size: 1em;
-  font-family: inherit;
   font-weight: inherit;
   line-height: inherit;
-  letter-spacing: inherit;
   color: inherit;
   vertical-align: baseline;
   text-decoration: underline;

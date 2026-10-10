@@ -55,57 +55,6 @@ function escapeHtml(s) {
     .replace(/"/g, "&quot;");
 }
 
-/** Build searchable atlas targets for inline links + chain navigation. */
-function buildLinkIndex() {
-  const entries = [];
-  const periods = state.data?.periods || [];
-  for (const period of periods) {
-    for (const [iso, pol] of Object.entries(period.polities || {})) {
-      if (!pol?.name) continue;
-      const base = {
-        periodId: period.id,
-        iso,
-        name: pol.name,
-        year: period.yearApprox ?? 0,
-      };
-      entries.push({ ...base, key: pol.name });
-      (pol.aliases || []).forEach((a) => {
-        if (a && a.length >= 5) entries.push({ ...base, key: a });
-      });
-    }
-    for (const layer of period.mapLayers || []) {
-      if (!layer?.label || layer.label.length < 5) continue;
-      const iso =
-        (layer.countries || []).find((c) => isoToRegion(c)) ||
-        (layer.countries || [])[0];
-      if (!iso) continue;
-      entries.push({
-        periodId: period.id,
-        iso,
-        name: layer.label,
-        year: period.yearApprox ?? 0,
-        key: layer.label,
-      });
-    }
-  }
-  for (const a of state.data?.meta?.linkAliases || []) {
-    if (!a?.alias || !a.periodId || !a.iso) continue;
-    const period = periods.find((p) => p.id === a.periodId);
-    entries.push({
-      periodId: a.periodId,
-      iso: a.iso,
-      name:
-        period?.polities?.[a.iso]?.name ||
-        a.alias,
-      year: period?.yearApprox ?? 0,
-      key: a.alias,
-    });
-  }
-  // Longest keys first so “Holy Roman Empire” wins over “Roman”
-  entries.sort((a, b) => b.key.length - a.key.length);
-  state.linkIndex = entries;
-}
-
 function resolveChainRef(ref) {
   if (!ref) return null;
   if (typeof ref === "string") {
@@ -159,65 +108,10 @@ function atlasLinkHtml(ref, label) {
   return `<a href="#${escapeHtml(t.periodId)}/${escapeHtml(t.iso)}" class="atlas-link" data-period="${escapeHtml(t.periodId)}" data-iso="${escapeHtml(t.iso)}" title="Go to ${escapeHtml(t.name)}">${escapeHtml(text)}</a>`;
 }
 
-/** Auto-link known polity/culture names in plain text (skips current target). */
-function linkifyAtlasText(text, { skipIso, skipPeriodId } = {}) {
-  if (!text) return "";
-  const index = state.linkIndex || [];
-  if (!index.length) return escapeHtml(text);
-
-  const src = String(text);
-  const hits = [];
-  for (const entry of index) {
-    if (entry.iso === skipIso && entry.periodId === skipPeriodId) continue;
-    if (entry.key.length < 5) continue;
-    const key = entry.key;
-    let from = 0;
-    while (from < src.length) {
-      const i = src.toLowerCase().indexOf(key.toLowerCase(), from);
-      if (i < 0) break;
-      // Prefer word-ish boundaries
-      const before = i === 0 ? " " : src[i - 1];
-      const after = i + key.length >= src.length ? " " : src[i + key.length];
-      if (/[A-Za-z0-9]/.test(before) || /[A-Za-z0-9]/.test(after)) {
-        from = i + 1;
-        continue;
-      }
-      const overlaps = hits.some(
-        (h) => !(i + key.length <= h.start || i >= h.end)
-      );
-      if (!overlaps) {
-        hits.push({
-          start: i,
-          end: i + key.length,
-          periodId: entry.periodId,
-          iso: entry.iso,
-          label: src.slice(i, i + key.length),
-        });
-      }
-      from = i + key.length;
-    }
-  }
-  hits.sort((a, b) => a.start - b.start);
-  if (!hits.length) return escapeHtml(src);
-
-  let out = "";
-  let cursor = 0;
-  for (const h of hits) {
-    if (h.start < cursor) continue;
-    out += escapeHtml(src.slice(cursor, h.start));
-    out += atlasLinkHtml(
-      { periodId: h.periodId, iso: h.iso },
-      h.label
-    );
-    cursor = h.end;
-  }
-  out += escapeHtml(src.slice(cursor));
-  return out;
-}
-
-function setLinkedHtml(el, text, skip) {
+/** Body/description copy — plain text only (no inline culture auto-links). */
+function setPlainText(el, text) {
   if (!el) return;
-  el.innerHTML = linkifyAtlasText(text || "", skip);
+  el.textContent = text || "";
 }
 
 function renderPolityChain(polity) {
@@ -974,13 +868,13 @@ function highlightCultureChips() {
   });
 }
 
-function setPolityField(key, value, skip) {
+function setPolityField(key, value) {
   const block = $(`#polity-${key}-block`);
   const el = $(`#polity-${key}`);
   if (!block || !el) return;
   const text = (value || "").trim();
   block.hidden = !text;
-  setLinkedHtml(el, text, skip);
+  setPlainText(el, text);
 }
 
 function figureHtml(img) {
@@ -1192,11 +1086,6 @@ function renderDetail() {
   modeEl.dataset.mode = region.mode;
   modeEl.title = modeLegend[region.mode] || "";
 
-  const skip = {
-    skipIso: state.selectedIso || undefined,
-    skipPeriodId: period.id,
-  };
-
   let desc = region.description;
   if (state.selectedIso) {
     const cov = countryStyleForPeriod(period, state.selectedIso);
@@ -1205,7 +1094,7 @@ function renderDetail() {
       desc = `Map layers here: ${layerBits}. ${region.description}`;
     }
   }
-  setLinkedHtml($("#culture-desc"), desc, skip);
+  setPlainText($("#culture-desc"), desc);
 
   // Polity-specific panel
   const polityPanel = $("#polity-panel");
@@ -1217,14 +1106,14 @@ function renderDetail() {
     if (polity) {
       polityPanel.hidden = false;
       $("#polity-name").textContent = polity.name || "—";
-      setLinkedHtml($("#polity-summary"), polity.summary || "", skip);
-      setLinkedHtml($("#polity-conflicts"), polity.conflicts || "", skip);
-      setPolityField("leaders", polity.leaders, skip);
-      setPolityField("religion", polity.religion, skip);
-      setPolityField("culture", polity.culture, skip);
-      setPolityField("story", polity.story, skip);
-      setPolityField("literature", polity.literature, skip);
-      setPolityField("art", polity.art, skip);
+      setPlainText($("#polity-summary"), polity.summary || "");
+      setPlainText($("#polity-conflicts"), polity.conflicts || "");
+      setPolityField("leaders", polity.leaders);
+      setPolityField("religion", polity.religion);
+      setPolityField("culture", polity.culture);
+      setPolityField("story", polity.story);
+      setPolityField("literature", polity.literature);
+      setPolityField("art", polity.art);
       renderPolityChain(polity);
       renderPolityGalleries(polity.images);
     } else {
@@ -1237,7 +1126,7 @@ function renderDetail() {
   const note = $("#ancestry-note");
   if (region.ancestryNote) {
     note.hidden = false;
-    setLinkedHtml(note, region.ancestryNote, skip);
+    setPlainText(note, region.ancestryNote);
   } else {
     note.hidden = true;
   }
@@ -1349,7 +1238,7 @@ function bindUI() {
 
   bindLightboxUi();
 
-  // Inline / chain atlas links (event delegation)
+  // Preceded by / Succeeded by chain jumps only (no inline body auto-links)
   document.addEventListener("click", (e) => {
     const link = e.target?.closest?.(".atlas-link");
     if (!link) return;
@@ -1415,7 +1304,6 @@ async function init() {
   }
 
   $("#map-attr").textContent = state.data.meta.mapAttribution || "";
-  buildLinkIndex();
   renderGlossary();
 
   buildTicks();
