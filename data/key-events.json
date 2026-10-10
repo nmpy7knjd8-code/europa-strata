@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-10T00:39:16.313Z",
+  "updatedAt": "2026-10-10T00:40:53.632Z",
   "periods": {
     "yamnaya": {
       "periodId": "yamnaya",
@@ -747,6 +747,356 @@
       ],
       "sourceFile": "bronze-age.json"
     },
+    "early-modern": {
+      "periodId": "early-modern",
+      "label": "Early Modern",
+      "approxYears": null,
+      "keyEvents": [
+        {
+          "date": "1598",
+          "title": null,
+          "text": "Henry IV's Edict of Nantes ends the French Wars of Religion by granting limited Huguenot worship and civil rights inside a Catholic kingdom—an uneasy confessional settlement that becomes the baseline for seventeenth-century France.",
+          "iso": "FRA",
+          "region": "france",
+          "regions": [
+            "france"
+          ],
+          "themes": []
+        },
+        {
+          "date": "1618–1648",
+          "title": null,
+          "text": "The Thirty Years' War wrecks Central Europe after the Defenestration of Prague: Bohemian revolt, Swedish and French intervention, and mass famine/disease empty German lands while Habsburg, Swedish, and Bourbon power collide.",
+          "iso": "DEU",
+          "region": "central",
+          "regions": [
+            "central"
+          ],
+          "themes": []
+        },
+        {
+          "date": "1648",
+          "title": null,
+          "text": "Peace of Westphalia (Münster & Osnabrück; Spanish–Dutch peace earlier that year) ends the German war, confirms Dutch and Swiss independence, extends Calvinist toleration, and hardens territorial sovereignty inside the Holy Roman Empire.",
+          "iso": "DEU",
+          "region": "central",
+          "regions": [
+            "central"
+          ],
+          "themes": []
+        },
+        {
+          "date": "1685",
+          "title": null,
+          "text": "Louis XIV's Edict of Fontainebleau revokes Nantes; dragonnades and forced conversions drive roughly 150,000–200,000 Huguenots into exile toward the Dutch Republic, England, Brandenburg, and Switzerland—redrawing skilled Protestant diasporas across the map.",
+          "iso": "FRA",
+          "region": "france",
+          "regions": [
+            "france"
+          ],
+          "themes": []
+        },
+        {
+          "date": "1688–1689",
+          "title": null,
+          "text": "England's Glorious Revolution replaces James II with William III & Mary II; the 1689 Bill of Rights limits the crown and locks a Protestant succession that underpins later British parliamentary monarchy and Atlantic power.",
+          "iso": "GBR",
+          "region": "britain",
+          "regions": [
+            "britain"
+          ],
+          "themes": []
+        },
+        {
+          "date": "1700–1721",
+          "title": null,
+          "text": "The Great Northern War ends Swedish Baltic hegemony: after Poltava (1709) and the Treaty of Nystad (1721), Russia under Peter I gains Ingria, Estonia, and Livonia and becomes a European great power on the eastern map.",
+          "iso": "RUS",
+          "region": "eastern",
+          "regions": [
+            "eastern"
+          ],
+          "themes": []
+        },
+        {
+          "date": "mid-18th c.",
+          "title": null,
+          "text": "The Enlightenment peaks in salons, academies, and print from Paris, Edinburgh, and German universities—Lockean rights, Voltairean critique, and encyclopedism challenge confessional absolutism without yet overturning Europe's dynastic map.",
+          "iso": "FRA",
+          "region": "france",
+          "regions": [
+            "france"
+          ],
+          "themes": []
+        },
+        {
+          "date": "1789–1799",
+          "title": null,
+          "text": "The French Revolution abolishes the Ancien Régime: Estates-General to National Assembly, rights declarations, republic, Terror, and Directory—exporting popular sovereignty and anti-feudal reform that unsettle every neighboring monarchy.",
+          "iso": "FRA",
+          "region": "france",
+          "regions": [
+            "france"
+          ],
+          "themes": []
+        },
+        {
+          "date": "1814–1815",
+          "title": null,
+          "text": "The Congress of Vienna (Final Act 9 June 1815) resettles Napoleonic Europe: France trimmed, a German Confederation under Austrian lead, Russian Poland, and a conservative balance of power meant to freeze borders for decades.",
+          "iso": "AUT",
+          "region": "central",
+          "regions": [
+            "central"
+          ],
+          "themes": []
+        }
+      ],
+      "interestingElements": [
+        {
+          "title": "Composite monarchies & confessional maps",
+          "text": "Spanish Habsburg, French Bourbon, Stuart/Hanoverian British, and Polish–Lithuanian Commonwealth polities rule multi-faith territories; Westphalia freezes cuius regio while ports and diasporas keep mixing people.",
+          "iso": null
+        },
+        {
+          "title": "Print, coffeehouses, Republic of Letters",
+          "text": "Cheap print, gazettes, and learned correspondence knit an elite Europe-wide public sphere that carries Reformation controversy into Enlightenment science and politics.",
+          "iso": null
+        },
+        {
+          "title": "Swedish stormaktstiden then Russian Baltic",
+          "text": "Atlas Scandinavia/east flips from Swedish imperial peak (Gustavus Adolphus to Charles XII) toward Petrine Russia's Baltic window after Nystad.",
+          "iso": "SWE"
+        },
+        {
+          "title": "Ottoman Rumelia still European",
+          "text": "Ottoman rule remains the Balkan frame through early modernity—Vienna 1683 and the long Habsburg–Ottoman frontier shape southeast European borders into the nineteenth century.",
+          "iso": null
+        },
+        {
+          "title": "Napoleonic legal & metric export",
+          "text": "Civil codes, conscription states, and abolished feudal remnants outlast Napoleon's map, priming later nation-state administrations.",
+          "iso": "FRA"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Edict of Nantes",
+          "detail": "Encyclopaedia Britannica — 13 Apr 1598 settlement ending French Wars of Religion",
+          "url": "https://www.britannica.com/event/Edict-of-Nantes"
+        },
+        {
+          "title": "Peace of Westphalia",
+          "detail": "Encyclopaedia Britannica — 1648 Münster/Osnabrück settlements; Dutch–Spanish peace; sovereignty & Calvinist toleration",
+          "url": "https://www.britannica.com/event/Peace-of-Westphalia"
+        },
+        {
+          "title": "Peace Treaties of Westphalia (GHDI excerpt)",
+          "detail": "German History in Documents and Images — Oct 1648 Osnabrück/Münster instruments; Imperial estates' limited treaty rights",
+          "url": "https://germanhistorydocs.org/en/from-the-reformations-to-the-thirty-years-war-1500-1648/peace-treaties-of-westphalia-october-14-24-1648.pdf"
+        },
+        {
+          "title": "Huguenot / Revocation of Nantes",
+          "detail": "Britannica Huguenot entry + scholarship on Fontainebleau 1685 exile (~150k–200k)",
+          "url": "https://www.britannica.com/topic/Huguenot"
+        },
+        {
+          "title": "Glorious Revolution",
+          "detail": "Standard narrative of 1688–89 settlement and 1689 Bill of Rights limiting the crown",
+          "url": "https://www.britannica.com/event/Glorious-Revolution"
+        },
+        {
+          "title": "Great Northern War / Treaty of Nystad",
+          "detail": "Russian Baltic gains 1721 ending Swedish great-power age",
+          "url": "https://www.britannica.com/event/Great-Northern-War"
+        },
+        {
+          "title": "French Revolution",
+          "detail": "Encyclopaedia Britannica overview 1789–99",
+          "url": "https://www.britannica.com/event/French-Revolution"
+        },
+        {
+          "title": "Congress of Vienna",
+          "detail": "Encyclopaedia Britannica — 1814–15; Final Act 9 June 1815; German Confederation & balance of power",
+          "url": "https://www.britannica.com/event/Congress-of-Vienna"
+        }
+      ],
+      "sourceFile": "early-modern-modern.json"
+    },
+    "modern": {
+      "periodId": "modern",
+      "label": "Modern",
+      "approxYears": null,
+      "keyEvents": [
+        {
+          "date": "c. 1760–1850",
+          "title": null,
+          "text": "Industrialization begins in Britain (steam, textiles, coal/iron) then spreads to Belgium, the Rhineland, and northern France—urban factories, railways, and demographic surge remake Europe's economic geography before politics catches up.",
+          "iso": "GBR",
+          "region": "britain",
+          "regions": [
+            "britain"
+          ],
+          "themes": []
+        },
+        {
+          "date": "1848–1871",
+          "title": null,
+          "text": "Nation-state consolidations crest: 1848 revolutions shake Habsburg and German lands; Italy unifies (1861; Rome 1870); Prussia's wars forge the German Empire (1871), replacing Vienna's German Confederation with a Berlin-centered map.",
+          "iso": "DEU",
+          "region": "central",
+          "regions": [
+            "central"
+          ],
+          "themes": []
+        },
+        {
+          "date": "1914–1918",
+          "title": null,
+          "text": "World War I shatters the continental empires: after 1918, Austria-Hungary, German, Russian, and Ottoman realms collapse into successor nation-states under Versailles and related settlements—Europe's political map is redrawn in a few years.",
+          "iso": null,
+          "region": "central",
+          "regions": [
+            "central"
+          ],
+          "themes": []
+        },
+        {
+          "date": "1939–1945",
+          "title": null,
+          "text": "World War II and the Holocaust devastate the continent; Nazi Germany's conquest and defeat, followed by Soviet advance in the east, leave Europe occupied, partitioned, and demographically scarred on a scale unmatched in modern history.",
+          "iso": "DEU",
+          "region": "central",
+          "regions": [
+            "central"
+          ],
+          "themes": []
+        },
+        {
+          "date": "1945–1949",
+          "title": null,
+          "text": "Cold War division hardens: Iron Curtain, occupation zones, and the 1949 birth of two German states (FRG/GDR) split Central Europe into NATO/Western and Soviet-bloc systems for four decades.",
+          "iso": "DEU",
+          "region": "central",
+          "regions": [
+            "central"
+          ],
+          "themes": []
+        },
+        {
+          "date": "1957",
+          "title": null,
+          "text": "Treaties of Rome (25 Mar 1957; in force 1958) create the European Economic Community among Belgium, France, West Germany, Italy, Luxembourg, and the Netherlands—the institutional core of later EU integration.",
+          "iso": "ITA",
+          "region": "italy",
+          "regions": [
+            "italy"
+          ],
+          "themes": []
+        },
+        {
+          "date": "1989–1991",
+          "title": null,
+          "text": "1989 revolutions open the Berlin Wall (9 Nov); German reunification follows (3 Oct 1990); the Soviet Union dissolves (1991)—Eastern Europe's communist map collapses into independent nation-states oriented toward markets and, soon, EU/NATO.",
+          "iso": "DEU",
+          "region": "central",
+          "regions": [
+            "central"
+          ],
+          "themes": []
+        },
+        {
+          "date": "1992–1993",
+          "title": null,
+          "text": "Maastricht Treaty (signed 7 Feb 1992; in force 1 Nov 1993) founds the European Union, EU citizenship, and the path to Economic and Monetary Union—renaming and deepening the Communities into today's political frame.",
+          "iso": "NLD",
+          "region": "central",
+          "regions": [
+            "central"
+          ],
+          "themes": []
+        },
+        {
+          "date": "2002–2004",
+          "title": null,
+          "text": "Euro notes and coins circulate (2002); the 2004 enlargement brings much of Central and Eastern Europe into the EU, aligning the political atlas with post-Cold War democracies from the Baltics to the Balkans' northern edge.",
+          "iso": null,
+          "region": null,
+          "regions": [],
+          "themes": []
+        }
+      ],
+      "interestingElements": [
+        {
+          "title": "Nation-state over deep ancestry",
+          "text": "Modern political identity and standard languages change faster than WHG–EEF–steppe genetic structure; fine-scale ancestry still tracks older geography beneath EU borders.",
+          "iso": null
+        },
+        {
+          "title": "Railways, coal basins, urban magnets",
+          "text": "Industrial corridors (Midlands, Ruhr, Silesia, northern Italy) concentrate population and later migration, visible as urban ancestry overlays on the atlas.",
+          "iso": null
+        },
+        {
+          "title": "Iron Curtain demography",
+          "text": "Post-1945 expulsions, borders, and blocked east–west mobility freeze gene-flow patterns that only reopen after 1989.",
+          "iso": null
+        },
+        {
+          "title": "EU free movement vs Brexit",
+          "text": "Schengen/free movement thicken western interconnectivity; the UK's 2016–20 exit is a rare reverse integration signal on the modern map.",
+          "iso": "GBR"
+        },
+        {
+          "title": "Post-imperial & global cities",
+          "text": "Late twentieth–twenty-first-century immigration diversifies capitals without erasing regional genetic clines the atlas still shows hinterland-to-hinterland.",
+          "iso": null
+        }
+      ],
+      "sources": [
+        {
+          "title": "Industrial Revolution",
+          "detail": "Encyclopaedia Britannica — British origins and continental spread of industrial economies",
+          "url": "https://www.britannica.com/event/Industrial-Revolution"
+        },
+        {
+          "title": "Unification of Germany / Italy",
+          "detail": "Standard 1861–1871 nation-state consolidations replacing post-Vienna German Confederation map",
+          "url": "https://www.britannica.com/event/unification-of-Germany"
+        },
+        {
+          "title": "World War I / World War II",
+          "detail": "Encyclopaedia Britannica overviews of 1914–18 and 1939–45 European theatres and settlements",
+          "url": "https://www.britannica.com/event/World-War-I"
+        },
+        {
+          "title": "Treaty of Rome",
+          "detail": "Encyclopaedia Britannica / EUR-Lex — signed 25 Mar 1957; EEC six; effect 1 Jan 1958",
+          "url": "https://www.britannica.com/event/Treaty-of-Rome"
+        },
+        {
+          "title": "EUR-Lex Treaty establishing the EEC",
+          "detail": "Official text metadata — signature Rome 25/03/1957; effect 01/01/1958",
+          "url": "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX%3A11957E%2FTXT"
+        },
+        {
+          "title": "German reunification / Berlin Wall",
+          "detail": "Britannica Germany reunification; Berlin.de on 9 Nov 1989 opening; Day of German Unity 3 Oct 1990",
+          "url": "https://www.britannica.com/place/Germany/The-reunification-of-Germany"
+        },
+        {
+          "title": "Maastricht Treaty",
+          "detail": "European Parliament / Council — signed 7 Feb 1992; in force 1 Nov 1993; founds EU",
+          "url": "https://www.europarl.europa.eu/about-parliament/en/in-the-past/the-parliament-and-the-treaties/maastricht-treaty"
+        },
+        {
+          "title": "EU 2004 enlargement",
+          "detail": "Official EU history of the 'big bang' Central/Eastern European accession",
+          "url": "https://european-union.europa.eu/principles-countries-history/history-eu_en"
+        }
+      ],
+      "sourceFile": "early-modern-modern.json"
+    },
     "iron-age": {
       "periodId": "iron-age",
       "label": "Iron Age",
@@ -1085,6 +1435,1023 @@
         }
       ],
       "sourceFile": "iron-classical.json"
+    },
+    "migration": {
+      "periodId": "migration",
+      "label": "Migration Period",
+      "approxYears": null,
+      "keyEvents": [
+        {
+          "date": "c. 150–230 AD",
+          "title": null,
+          "text": "Wielbark culture expands from Pomerania south and east along the Vistula–Bug, absorbing Przeworsk zones—the archaeological horizon standardly linked to early Gothic traditions before Pontic moves.",
+          "iso": "POL",
+          "region": "central",
+          "regions": [
+            "central"
+          ],
+          "themes": []
+        },
+        {
+          "date": "late 3rd–4th c. AD",
+          "title": null,
+          "text": "Chernyakhov (Sântana de Mureș) culture crystallizes north of the Black Sea as a multiethnic Gothic-dominated horizon built on Wielbark traits plus Sarmatian and local elements.",
+          "iso": "UKR",
+          "region": "eastern",
+          "regions": [
+            "eastern"
+          ],
+          "themes": []
+        },
+        {
+          "date": "376–378 AD",
+          "title": null,
+          "text": "Hunnic pressure drives Goths across the Danube; at Adrianople (9 Aug 378) Fritigern’s Goths kill Emperor Valens—the worst Roman field defeat since Cannae and a hinge of late Roman crisis.",
+          "iso": "TUR",
+          "region": "balkans",
+          "regions": [
+            "balkans"
+          ],
+          "themes": []
+        },
+        {
+          "date": "410 AD",
+          "title": null,
+          "text": "Alaric’s Visigoths sack Rome (24 Aug)—the first sack of the city in eight centuries—shocking Mediterranean opinion and hastening Gothic settlement politics in Gaul and Spain.",
+          "iso": "ITA",
+          "region": "italy",
+          "regions": [
+            "italy"
+          ],
+          "themes": []
+        },
+        {
+          "date": "trad. 449 AD",
+          "title": null,
+          "text": "The Anglo-Saxon Chronicle’s Adventus Saxonum: Hengest and Horsa invited into Britain; Angles, Saxons, and Jutes begin the North Sea settlement that remakes eastern England’s language and ancestry.",
+          "iso": "GBR",
+          "region": "britain",
+          "regions": [
+            "britain"
+          ],
+          "themes": []
+        },
+        {
+          "date": "451 AD",
+          "title": null,
+          "text": "At the Catalaunian Plains, Aëtius’s Romano-Visigothic coalition checks Attila’s Hunnic invasion of Gaul—one of the West’s last great coalition battles before Attila’s death (453).",
+          "iso": "FRA",
+          "region": "france",
+          "regions": [
+            "france"
+          ],
+          "themes": []
+        },
+        {
+          "date": "476 AD",
+          "title": null,
+          "text": "Odoacer deposes Romulus Augustulus in Italy, conventionally ending the Western Roman Empire as a separate imperial court while Eastern Rome continues from Constantinople.",
+          "iso": "ITA",
+          "region": "italy",
+          "regions": [
+            "italy"
+          ],
+          "themes": []
+        },
+        {
+          "date": "493–526 AD",
+          "title": null,
+          "text": "Theodoric the Great’s Ostrogothic kingdom rules Italy from Ravenna under nominal imperial grant—Roman administration with a Gothic warrior elite until Justinian’s later reconquest wars.",
+          "iso": "ITA",
+          "region": "italy",
+          "regions": [
+            "italy"
+          ],
+          "themes": []
+        },
+        {
+          "date": "c. mid-5th c. AD",
+          "title": null,
+          "text": "Wielbark settlement networks in Poland collapse archaeologically as Migration-Period upheaval empties much of the Odra–Vistula Germanic landscape before early Slavic expansion.",
+          "iso": "POL",
+          "region": "central",
+          "regions": [
+            "central"
+          ],
+          "themes": []
+        }
+      ],
+      "interestingElements": [
+        {
+          "title": "Wielbark weaponless burials",
+          "text": "Bi-ritual cemeteries (inhumation and cremation) typically without weapons, plus distinctive female dress sets, mark Wielbark identity from the lower Vistula to Mazovia.",
+          "iso": "POL"
+        },
+        {
+          "title": "Gothic Bible (Wulfila)",
+          "text": "4th-century bishop Wulfila’s Gothic translation of scripture is the earliest extensive Germanic text, produced among Danubian Goths.",
+          "iso": null
+        },
+        {
+          "title": "Hunnic gold & polychrome style",
+          "text": "Cloisonné garnet jewellery and steppe prestige goods signal Hunnic-period elite networks from the Carpathian Basin across foederati courts.",
+          "iso": "HUN"
+        },
+        {
+          "title": "North Sea genome pulse",
+          "text": "Early medieval English aDNA (e.g. Gretzinger et al. 2022) shows substantial continental northern European influx in the east with Romano-British continuity elsewhere—mobility without Beaker-scale wipeout.",
+          "iso": "GBR"
+        },
+        {
+          "title": "Ravenna mosaics",
+          "text": "Late antique and Ostrogothic Ravenna (Baptisteries, Sant’Apollinare) freeze the visual politics of a Gothic king ruling a still-Roman Italy.",
+          "iso": "ITA"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Wielbark Culture (Migration Period between Odra and Vistula)",
+          "detail": "University of Warsaw MPOV thesaurus — Lubowidz/Cecele phases; mid-5th c. decline",
+          "url": "http://www.mpov.uw.edu.pl/en/thesaurus/archaeological-cultures/wielbark-culture-"
+        },
+        {
+          "title": "Wielbark culture",
+          "detail": "Expansion chronology; Chernyakhov links; Marcomannic Wars context",
+          "url": "https://en.wikipedia.org/wiki/Wielbark_culture"
+        },
+        {
+          "title": "Chernyakhov culture",
+          "detail": "Multiethnic Pontic horizon; Gothic elite; Hunnic-era disruption",
+          "url": "https://en.wikipedia.org/wiki/Chernyakhov_culture"
+        },
+        {
+          "title": "Adrianople, battle of",
+          "detail": "Lee in Wiley Encyclopedia of Ancient History — 9 Aug 378; Valens killed",
+          "url": "https://onlinelibrary.wiley.com/doi/10.1002/9781444338386.wbeah19003"
+        },
+        {
+          "title": "Sack of Rome (410)",
+          "detail": "Alaric’s Visigoths; 24 August 410; three-day sack",
+          "url": "https://en.wikipedia.org/wiki/Sack_of_Rome_(410)"
+        },
+        {
+          "title": "Battle of the Catalaunian Plains",
+          "detail": "Aëtius–Theodoric I vs Attila, 20 June 451",
+          "url": "https://en.wikipedia.org/wiki/Battle_of_the_Catalaunian_Plains"
+        },
+        {
+          "title": "Anglo-Saxon Chronicle: Fifth Century",
+          "detail": "Avalon Project — Adventus entry under A.D. 449; Hengest and Horsa",
+          "url": "https://avalon.law.yale.edu/medieval/ang05.asp"
+        },
+        {
+          "title": "Gretzinger et al. 2022 — The Anglo-Saxon migration and the formation of the early English gene pool",
+          "detail": "Nature — continental northern European influx in early medieval England",
+          "url": "https://www.nature.com/articles/s41586-022-05247-2"
+        }
+      ],
+      "sourceFile": "migration-medieval.json"
+    },
+    "frankish": {
+      "periodId": "frankish",
+      "label": "Frankish & Early Medieval",
+      "approxYears": null,
+      "keyEvents": [
+        {
+          "date": "486 AD",
+          "title": null,
+          "text": "Clovis defeats Syagrius at Soissons, ending the last Roman rump in northern Gaul and founding Merovingian Frankish kingship over a Gallo-Roman majority.",
+          "iso": "FRA",
+          "region": "france",
+          "regions": [
+            "france"
+          ],
+          "themes": []
+        },
+        {
+          "date": "c. 496–508 AD",
+          "title": null,
+          "text": "Clovis’s baptism into Nicene Christianity (traditionally by Remigius at Reims) aligns the Franks with Gallo-Roman bishops—unlike Arian Gothic kingdoms—and becomes Merovingian origin myth.",
+          "iso": "FRA",
+          "region": "france",
+          "regions": [
+            "france"
+          ],
+          "themes": []
+        },
+        {
+          "date": "732 AD",
+          "title": null,
+          "text": "Charles Martel’s victory near Tours/Poitiers checks a major Umayyad raid from al-Andalus and cements Carolingian military prestige inside the Frankish realm.",
+          "iso": "FRA",
+          "region": "france",
+          "regions": [
+            "france"
+          ],
+          "themes": []
+        },
+        {
+          "date": "751 AD",
+          "title": null,
+          "text": "Pepin the Short is anointed king of the Franks with papal backing, deposing the last Merovingian and launching the Carolingian dynasty.",
+          "iso": "FRA",
+          "region": "france",
+          "regions": [
+            "france"
+          ],
+          "themes": []
+        },
+        {
+          "date": "772–804 AD",
+          "title": null,
+          "text": "Charlemagne’s Saxon Wars forcibly integrate Saxony: mass baptisms, the Capitulatio de partibus Saxoniae, and the 782 Verdun massacre mark brutal Christianization of the north.",
+          "iso": "DEU",
+          "region": "central",
+          "regions": [
+            "central"
+          ],
+          "themes": []
+        },
+        {
+          "date": "25 Dec 800 AD",
+          "title": null,
+          "text": "Pope Leo III crowns Charlemagne emperor in Rome, inventing a Western imperial title that claims parity with Byzantium and frames Latin Christendom’s political theology.",
+          "iso": "ITA",
+          "region": "italy",
+          "regions": [
+            "italy"
+          ],
+          "themes": []
+        },
+        {
+          "date": "843 AD",
+          "title": null,
+          "text": "Treaty of Verdun partitions Louis the Pious’s empire among Lothar I, Louis the German, and Charles the Bald—West, Middle, and East Francia as durable templates for France and Germany.",
+          "iso": "FRA",
+          "region": "france",
+          "regions": [
+            "france"
+          ],
+          "themes": []
+        },
+        {
+          "date": "793–840s AD",
+          "title": null,
+          "text": "Viking raids escalate from Lindisfarne (793) into overwintering armies and assaults on Frankish riverine towns (e.g. Paris 845), forcing fortification and tribute politics across the North Sea world.",
+          "iso": "GBR",
+          "region": "britain",
+          "regions": [
+            "britain"
+          ],
+          "themes": []
+        },
+        {
+          "date": "c. 860s–880s AD",
+          "title": null,
+          "text": "Cyril and Methodius’s Slavic mission and Bulgaria’s conversion under Boris I pull Southeast Europe into Byzantine Christian literacy while Carolingian and papal spheres compete for the Slavs.",
+          "iso": "BGR",
+          "region": "balkans",
+          "regions": [
+            "balkans"
+          ],
+          "themes": []
+        }
+      ],
+      "interestingElements": [
+        {
+          "title": "Carolingian minuscule",
+          "text": "Aachen-scriptorium reforms standardize a clear Latin book hand that becomes the ancestor of modern lowercase type—the intellectual tool of the Carolingian Renaissance.",
+          "iso": null
+        },
+        {
+          "title": "Palace chapel at Aachen",
+          "text": "Charlemagne’s Palatine Chapel (consecrated 805) models Roman/Byzantine imperial sacred space in stone at the Frankish political centre.",
+          "iso": "DEU"
+        },
+        {
+          "title": "Missi dominici",
+          "text": "Paired royal envoys touring counties enforced capitularies—an administrative nervous system for a vast, thinly literate empire.",
+          "iso": null
+        },
+        {
+          "title": "Strasbourg Oaths (842)",
+          "text": "Louis the German and Charles the Bald swear mutual support in early Romance and Old High German—famous early vernacular political texts just before Verdun.",
+          "iso": "FRA"
+        },
+        {
+          "title": "Al-Andalus & Córdoba",
+          "text": "While Franks consolidate the north, Umayyad Córdoba is a rival Mediterranean high culture of Arabic learning, trade, and urban density.",
+          "iso": "ESP"
+        }
+      ],
+      "sources": [
+        {
+          "title": "France, 500–1000 A.D. (Heilbrunn Timeline)",
+          "detail": "Metropolitan Museum — Clovis, Pepin, Charlemagne’s crowning, Verdun 843",
+          "url": "https://www.metmuseum.org/toah/ht/06/euwf"
+        },
+        {
+          "title": "Chronology of the Late Antique and Early Medieval World",
+          "detail": "Clovis baptism traditions; Charlemagne 800; Verdun 843",
+          "url": "https://barbarian_europe.en-academic.com/1/Chronology_of_the_Late_Antique_and_Early_Medieval_World"
+        },
+        {
+          "title": "Treaty of Verdun",
+          "detail": "843 partition into West, Middle, and East Francia",
+          "url": "https://en.wikipedia.org/wiki/Treaty_of_Verdun"
+        },
+        {
+          "title": "The Viking Raid on Lindisfarne",
+          "detail": "English Heritage — 793 assault on St Cuthbert’s church; Anglo-Saxon Chronicle shock",
+          "url": "https://www.english-heritage.org.uk/visit/places/lindisfarne-priory/History/viking-raid/"
+        },
+        {
+          "title": "Charlemagne",
+          "detail": "Encyclopaedia Britannica — Saxon Wars, imperial coronation, Aachen",
+          "url": "https://www.britannica.com/biography/Charlemagne"
+        },
+        {
+          "title": "Clovis I",
+          "detail": "Soissons 486; Catholic conversion; Merovingian foundation",
+          "url": "https://en.wikipedia.org/wiki/Clovis_I"
+        }
+      ],
+      "sourceFile": "migration-medieval.json"
+    },
+    "vikings": {
+      "periodId": "vikings",
+      "label": "Viking Age & Millennium Kingdoms",
+      "approxYears": null,
+      "keyEvents": [
+        {
+          "date": "911 AD",
+          "title": null,
+          "text": "Charles the Simple grants Rollo land around the lower Seine (Treaty of Saint-Clair-sur-Epte), founding Normandy—a Norse duchy that will latinize yet keep North Sea martial habits.",
+          "iso": "FRA",
+          "region": "france",
+          "regions": [
+            "france"
+          ],
+          "themes": []
+        },
+        {
+          "date": "955 AD",
+          "title": null,
+          "text": "Otto I’s victory over the Magyars at the Lechfeld secures East Frankish/Ottonian hegemony and clears the path to his imperial coronation (962).",
+          "iso": "DEU",
+          "region": "central",
+          "regions": [
+            "central"
+          ],
+          "themes": []
+        },
+        {
+          "date": "c. 966–1000 AD",
+          "title": null,
+          "text": "Piast Poland (Mieszko I’s baptism c. 966), Árpád Hungary (Stephen I crowned 1000/1001), and Vladimir’s Rus’ (988) enter Latin or Byzantine Christendom—millennium state formation on the European frontier.",
+          "iso": "POL",
+          "region": "central",
+          "regions": [
+            "central"
+          ],
+          "themes": []
+        },
+        {
+          "date": "987 AD",
+          "title": null,
+          "text": "Hugh Capet is elected king of West Francia, opening the Capetian dynasty that slowly recentralizes France from the Île-de-France outward.",
+          "iso": "FRA",
+          "region": "france",
+          "regions": [
+            "france"
+          ],
+          "themes": []
+        },
+        {
+          "date": "1000 AD",
+          "title": null,
+          "text": "Iceland’s Althing accepts Christianity by law; around the same years Norse voyages reach Greenland and Vinland—the farthest Atlantic edge of the Viking world.",
+          "iso": "ISL",
+          "region": "scandinavia",
+          "regions": [
+            "scandinavia"
+          ],
+          "themes": []
+        },
+        {
+          "date": "1014 AD",
+          "title": null,
+          "text": "Battle of Clontarf: Brian Boru’s forces defeat a Dublin–Leinster–Norse coalition; Norse towns remain, but Irish high-kingship politics shift after Brian’s death in the aftermath.",
+          "iso": "IRL",
+          "region": "britain",
+          "regions": [
+            "britain"
+          ],
+          "themes": []
+        },
+        {
+          "date": "1016–1035 AD",
+          "title": null,
+          "text": "Cnut the Great rules a North Sea empire linking England, Denmark, and (for a time) Norway—the high-water mark of Scandinavian royal power in the British Isles.",
+          "iso": "GBR",
+          "region": "britain",
+          "regions": [
+            "britain"
+          ],
+          "themes": []
+        },
+        {
+          "date": "1030 AD",
+          "title": null,
+          "text": "Olaf Haraldsson falls at Stiklestad; his rapid cult as St Olaf becomes Norway’s conversion emblem and a royal-saint model for the north.",
+          "iso": "NOR",
+          "region": "scandinavia",
+          "regions": [
+            "scandinavia"
+          ],
+          "themes": []
+        },
+        {
+          "date": "1066 AD",
+          "title": null,
+          "text": "Harald Hardrada dies at Stamford Bridge; weeks later William of Normandy wins at Hastings—ending Anglo-Saxon rule and conventionally closing the Viking Age in England.",
+          "iso": "GBR",
+          "region": "britain",
+          "regions": [
+            "britain"
+          ],
+          "themes": []
+        }
+      ],
+      "interestingElements": [
+        {
+          "title": "Longships & ship burials",
+          "text": "Clinker-built longships enable raid, trade, and colonization; elite ship graves (Oseberg, Gokstad) stage power in wood, textile, and sacrifice.",
+          "iso": "NOR"
+        },
+        {
+          "title": "Danelaw place-names",
+          "text": "-by, -thorpe, and Scandinavian personal names across eastern England map settlement after the Great Heathen Army, surviving Cnut’s later kingdom.",
+          "iso": "GBR"
+        },
+        {
+          "title": "Varangian Guard",
+          "text": "Norse and later Anglo-Saxon warriors serve as the Byzantine emperor’s elite guard—linking Kiev, Constantinople, and the North Sea labour market.",
+          "iso": "TUR"
+        },
+        {
+          "title": "Thing assemblies",
+          "text": "Local and national things (Iceland’s Althing from 930) are open-air law courts—the political technology of Norse freeholding societies.",
+          "iso": "ISL"
+        },
+        {
+          "title": "Córdoba to taifas",
+          "text": "The Umayyad caliphate of Córdoba fragments after 1031 into taifa kingdoms, remaking Iberia’s map as Christian northern realms press the Reconquista.",
+          "iso": "ESP"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Viking Age",
+          "detail": "Lindisfarne 793 opener; Cnut’s empire; Stamford Bridge/Hastings 1066 end conventions",
+          "url": "https://en.wikipedia.org/wiki/Viking_Age"
+        },
+        {
+          "title": "Viking Adventures timeline (British Museum / LGfL)",
+          "detail": "Portland 789; Lindisfarne 793; Cnut 1016; Clontarf 1014; 1066 battles",
+          "url": "https://vikings.lgfl.org.uk/timeline.html"
+        },
+        {
+          "title": "Battle of Lechfeld",
+          "detail": "Otto I vs Magyars, 955; Ottonian consolidation",
+          "url": "https://en.wikipedia.org/wiki/Battle_of_Lechfeld"
+        },
+        {
+          "title": "Christianization of Scandinavia",
+          "detail": "Royal conversions; Olaf cult; Icelandic conversion c. 1000",
+          "url": "https://en.wikipedia.org/wiki/Christianization_of_Scandinavia"
+        },
+        {
+          "title": "Cnut",
+          "detail": "Encyclopaedia Britannica — king of England 1016; North Sea hegemony to 1035",
+          "url": "https://www.britannica.com/biography/Canute-I"
+        },
+        {
+          "title": "Normandy",
+          "detail": "Rollo’s grant 911; duchy to William the Conqueror",
+          "url": "https://en.wikipedia.org/wiki/Normandy"
+        }
+      ],
+      "sourceFile": "migration-medieval.json"
+    },
+    "high-medieval": {
+      "periodId": "high-medieval",
+      "label": "High Medieval",
+      "approxYears": null,
+      "keyEvents": [
+        {
+          "date": "1095–1099 AD",
+          "title": null,
+          "text": "Pope Urban II’s call at Clermont (1095) launches the First Crusade; Jerusalem falls in 1099 and Latin crusader states appear in the Levant.",
+          "iso": null,
+          "region": null,
+          "regions": [],
+          "themes": []
+        },
+        {
+          "date": "1076–1077 AD",
+          "title": null,
+          "text": "Investiture Contest climax: Gregory VII excommunicates Henry IV; the emperor’s penance at Canossa dramatizes the struggle over who names bishops in Latin Europe.",
+          "iso": "ITA",
+          "region": "italy",
+          "regions": [
+            "italy"
+          ],
+          "themes": []
+        },
+        {
+          "date": "1152–1190 AD",
+          "title": null,
+          "text": "Frederick I Barbarossa rebuilds imperial authority in Germany and Italy and dies leading the Third Crusade (1190)—emblem of Hohenstaufen ambition.",
+          "iso": "DEU",
+          "region": "central",
+          "regions": [
+            "central"
+          ],
+          "themes": []
+        },
+        {
+          "date": "1204 AD",
+          "title": null,
+          "text": "The Fourth Crusade sacks Constantinople, founding the Latin Empire and permanently weakening Byzantium—a self-inflicted wound of Latin Christendom.",
+          "iso": "TUR",
+          "region": "balkans",
+          "regions": [
+            "balkans"
+          ],
+          "themes": []
+        },
+        {
+          "date": "1212 AD",
+          "title": null,
+          "text": "Christian Iberian kings crush the Almohads at Las Navas de Tolosa, opening the later 13th-century collapse of Muslim power in Iberia outside Granada.",
+          "iso": "ESP",
+          "region": "iberia",
+          "regions": [
+            "iberia"
+          ],
+          "themes": []
+        },
+        {
+          "date": "1215 AD",
+          "title": null,
+          "text": "English barons force King John to seal Magna Carta at Runnymede—a feudal peace charter that later generations remade into a liberty myth.",
+          "iso": "GBR",
+          "region": "britain",
+          "regions": [
+            "britain"
+          ],
+          "themes": []
+        },
+        {
+          "date": "1209–1229 AD",
+          "title": null,
+          "text": "The Albigensian Crusade devastates Cathar Languedoc and extends Capetian power into the south, tying heresy repression to French state-building.",
+          "iso": "FRA",
+          "region": "france",
+          "regions": [
+            "france"
+          ],
+          "themes": []
+        },
+        {
+          "date": "1237–1242 AD",
+          "title": null,
+          "text": "Mongol armies smash Rus’ principalities and raid Poland and Hungary (Legnica and Mohi, 1241), imposing the Golden Horde’s long shadow on Eastern Europe.",
+          "iso": "POL",
+          "region": "eastern",
+          "regions": [
+            "eastern"
+          ],
+          "themes": []
+        },
+        {
+          "date": "12th–13th c. AD",
+          "title": null,
+          "text": "Universities (Bologna, Paris, Oxford) and Gothic cathedrals institutionalize scholastic learning and urban piety across High Medieval Christendom.",
+          "iso": "FRA",
+          "region": "france",
+          "regions": [
+            "france"
+          ],
+          "themes": []
+        }
+      ],
+      "interestingElements": [
+        {
+          "title": "Military orders",
+          "text": "Templars, Hospitallers, and Teutonic Knights fuse monastic vows with permanent war—banking, castles, and Baltic crusading included.",
+          "iso": null
+        },
+        {
+          "title": "Ostsiedlung",
+          "text": "German-law towns and rural colonization push east into Slavic lands, remapping demography and legal culture without a single conquest narrative.",
+          "iso": "POL"
+        },
+        {
+          "title": "Troubadours & vernacular epic",
+          "text": "Occitan lyric, chansons de geste, and Arthurian romance make vernacular literature a High Medieval prestige medium beside Latin.",
+          "iso": "FRA"
+        },
+        {
+          "title": "Italian communes",
+          "text": "Self-governing city republics (Venice, Genoa, Milan, Florence) invent commercial empires and factional politics inside the imperial–papal map.",
+          "iso": "ITA"
+        },
+        {
+          "title": "Shrine of the Three Kings (Cologne)",
+          "text": "Nicholas of Verdun’s c. 1200 reliquary for Cologne Cathedral concentrates High Medieval goldsmith virtuosity and pilgrimage magnetism.",
+          "iso": "DEU"
+        }
+      ],
+      "sources": [
+        {
+          "title": "First Crusade",
+          "detail": "Encyclopaedia Britannica — Urban II at Clermont 1095; Jerusalem 1099",
+          "url": "https://www.britannica.com/topic/First-Crusade"
+        },
+        {
+          "title": "Fourth Crusade",
+          "detail": "Sack of Constantinople April 1204; Latin Empire; Byzantine weakening",
+          "url": "https://en.wikipedia.org/wiki/Fourth_Crusade"
+        },
+        {
+          "title": "Central Europe, 1000–1400 A.D. (Heilbrunn Timeline)",
+          "detail": "Metropolitan Museum — Canossa 1076/77; Barbarossa; Charles IV context",
+          "url": "https://www.metmuseum.org/toah/ht/07/euwc"
+        },
+        {
+          "title": "Magna Carta",
+          "detail": "British Library / standard accounts — Runnymede 1215",
+          "url": "https://en.wikipedia.org/wiki/Magna_Carta"
+        },
+        {
+          "title": "Battle of Las Navas de Tolosa",
+          "detail": "1212 Christian victory over Almohads",
+          "url": "https://en.wikipedia.org/wiki/Battle_of_Las_Navas_de_Tolosa"
+        },
+        {
+          "title": "Mongol invasion of Europe",
+          "detail": "1241 Legnica and Mohi; Golden Horde over Rus’",
+          "url": "https://en.wikipedia.org/wiki/Mongol_invasion_of_Europe"
+        },
+        {
+          "title": "Crusades detailed timeline (University of Michigan)",
+          "detail": "Clermont to Fourth Crusade and Albigensian dates",
+          "url": "https://public.websites.umich.edu/~marcons/Crusades/timeline/detailedtimeline.html"
+        }
+      ],
+      "sourceFile": "migration-medieval.json"
+    },
+    "late-medieval": {
+      "periodId": "late-medieval",
+      "label": "Late Medieval",
+      "approxYears": null,
+      "keyEvents": [
+        {
+          "date": "1337–1453 AD",
+          "title": null,
+          "text": "The Hundred Years’ War between England and France—intermittent but transformative—produces Crécy, Poitiers, Agincourt, Joan of Arc, and the eventual French reconquest of Gascony.",
+          "iso": "FRA",
+          "region": "france",
+          "regions": [
+            "france"
+          ],
+          "themes": []
+        },
+        {
+          "date": "1347–1353 AD",
+          "title": null,
+          "text": "The Black Death enters Europe via Black Sea and Mediterranean shipping (often tied to Caffa/Crimea) and kills roughly one-third to one-half of the population in the first pandemic wave.",
+          "iso": null,
+          "region": null,
+          "regions": [],
+          "themes": []
+        },
+        {
+          "date": "1378–1417 AD",
+          "title": null,
+          "text": "The Western Schism splits Latin Christendom between rival popes at Rome and Avignon (later a third line), shattering papal prestige until the Council of Constance.",
+          "iso": "ITA",
+          "region": "italy",
+          "regions": [
+            "italy"
+          ],
+          "themes": []
+        },
+        {
+          "date": "1389 AD",
+          "title": null,
+          "text": "Ottoman victory at Kosovo consolidates Turkish power in the Balkans and becomes a long Serbian historical memory of loss and martyrdom.",
+          "iso": "SRB",
+          "region": "balkans",
+          "regions": [
+            "balkans"
+          ],
+          "themes": []
+        },
+        {
+          "date": "1410 AD",
+          "title": null,
+          "text": "Poland–Lithuania under Jogaila and Vytautas crush the Teutonic Order at Grunwald (Tannenberg), checking crusader-state power on the Baltic.",
+          "iso": "POL",
+          "region": "central",
+          "regions": [
+            "central"
+          ],
+          "themes": []
+        },
+        {
+          "date": "1415–1431 AD",
+          "title": null,
+          "text": "Agincourt (1415) briefly resurrects English hopes; Joan of Arc’s 1429 Loire campaign and 1431 martyrdom reverse French morale toward eventual Valois victory.",
+          "iso": "FRA",
+          "region": "france",
+          "regions": [
+            "france"
+          ],
+          "themes": []
+        },
+        {
+          "date": "1453 AD",
+          "title": null,
+          "text": "Mehmed II takes Constantinople with gunpowder artillery, ending the Byzantine Empire; the same year Castillon ends the Hundred Years’ War in France’s favour.",
+          "iso": "TUR",
+          "region": "balkans",
+          "regions": [
+            "balkans"
+          ],
+          "themes": []
+        },
+        {
+          "date": "c. 1450–1455 AD",
+          "title": null,
+          "text": "Gutenberg’s movable-type press at Mainz begins European print culture—Bibles, indulgences, and soon Reformation pamphlets will travel at new speed.",
+          "iso": "DEU",
+          "region": "central",
+          "regions": [
+            "central"
+          ],
+          "themes": []
+        },
+        {
+          "date": "1356 AD",
+          "title": null,
+          "text": "Charles IV’s Golden Bull fixes the seven electors who choose the Holy Roman Emperor, constitutionalizing the Empire’s princely electoral order until 1806.",
+          "iso": "CZE",
+          "region": "central",
+          "regions": [
+            "central"
+          ],
+          "themes": []
+        }
+      ],
+      "interestingElements": [
+        {
+          "title": "Burgundian court culture",
+          "text": "Valois Burgundy’s Low Countries court (Tournai, Bruges, Dijon) stages chivalric theatre, Netherlandish painting, and a princely ‘middle kingdom’ between France and the Empire.",
+          "iso": "BEL"
+        },
+        {
+          "title": "Flagellant & danse macabre imagery",
+          "text": "Plague-era piety and art fixate on sudden death, collective penance, and the equality of corpses—visual theology of demographic collapse.",
+          "iso": null
+        },
+        {
+          "title": "Hanseatic League",
+          "text": "Baltic–North Sea merchant towns (Lübeck, Bergen, London Steelyard) run a commercial commonwealth of kontors and diets.",
+          "iso": "DEU"
+        },
+        {
+          "title": "Condottieri Italy",
+          "text": "Mercenary captains and rival city-states invent Renaissance warfare and diplomacy decades before High Renaissance art peaks.",
+          "iso": "ITA"
+        },
+        {
+          "title": "Nasrid Granada",
+          "text": "The last Muslim polity in Iberia survives as a tributary jewel (Alhambra) until 1492—Late Medieval Europe’s Islamic holdout.",
+          "iso": "ESP"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Black Death",
+          "detail": "1347 European entry via Crimean/Genoese routes; demographic impact synthesis",
+          "url": "https://en.wikipedia.org/wiki/Black_Death"
+        },
+        {
+          "title": "Hundred Years’ War",
+          "detail": "1337–1453 Anglo-French conflict; key battles and Joan of Arc phase",
+          "url": "https://en.wikipedia.org/wiki/Hundred_Years%27_War"
+        },
+        {
+          "title": "Western Schism",
+          "detail": "1378–1417 dual/triple papacy; Constance resolution",
+          "url": "https://en.wikipedia.org/wiki/Western_Schism"
+        },
+        {
+          "title": "Battle of Grunwald",
+          "detail": "1410 Polish–Lithuanian victory over Teutonic Knights",
+          "url": "https://en.wikipedia.org/wiki/Battle_of_Grunwald"
+        },
+        {
+          "title": "Fall of Constantinople",
+          "detail": "29 May 1453; Mehmed II; end of Byzantine Empire",
+          "url": "https://en.wikipedia.org/wiki/Fall_of_Constantinople"
+        },
+        {
+          "title": "Central Europe, 1000–1400 A.D. (Heilbrunn Timeline)",
+          "detail": "Metropolitan Museum — Golden Bull 1356; Charles IV’s Prague",
+          "url": "https://www.metmuseum.org/toah/ht/07/euwc"
+        },
+        {
+          "title": "Johannes Gutenberg",
+          "detail": "Movable-type printing at Mainz c. mid-1450s",
+          "url": "https://en.wikipedia.org/wiki/Johannes_Gutenberg"
+        }
+      ],
+      "sourceFile": "migration-medieval.json"
+    },
+    "reformation": {
+      "periodId": "reformation",
+      "label": "Reformation & Renaissance",
+      "approxYears": null,
+      "keyEvents": [
+        {
+          "date": "1517 AD",
+          "title": null,
+          "text": "Martin Luther posts the Ninety-Five Theses at Wittenberg against indulgence abuses—the conventional spark of the Protestant Reformation in the Empire.",
+          "iso": "DEU",
+          "region": "central",
+          "regions": [
+            "central"
+          ],
+          "themes": []
+        },
+        {
+          "date": "1521 AD",
+          "title": null,
+          "text": "At the Diet of Worms, Luther refuses to recant before Charles V; the Edict of Worms outlaw him while print and princely shelter spread his cause.",
+          "iso": "DEU",
+          "region": "central",
+          "regions": [
+            "central"
+          ],
+          "themes": []
+        },
+        {
+          "date": "1524–1525 AD",
+          "title": null,
+          "text": "The German Peasants’ War couples evangelical rhetoric with agrarian revolt; its crushing clarifies that magisterial Reform would ally with princes, not rural revolution.",
+          "iso": "DEU",
+          "region": "central",
+          "regions": [
+            "central"
+          ],
+          "themes": []
+        },
+        {
+          "date": "1534 AD",
+          "title": null,
+          "text": "Henry VIII’s Act of Supremacy makes the English monarch head of the Church of England, breaking Rome’s jurisdiction without yet fully Lutheranizing doctrine.",
+          "iso": "GBR",
+          "region": "britain",
+          "regions": [
+            "britain"
+          ],
+          "themes": []
+        },
+        {
+          "date": "1536–1564 AD",
+          "title": null,
+          "text": "John Calvin’s Geneva becomes the disciplined model of Reformed Protestantism; the Institutes and consistory discipline export a second Reformation to France, Scotland, and the Netherlands.",
+          "iso": "CHE",
+          "region": "central",
+          "regions": [
+            "central"
+          ],
+          "themes": []
+        },
+        {
+          "date": "1545–1563 AD",
+          "title": null,
+          "text": "The Council of Trent defines Catholic doctrine, reform, and discipline—the institutional spine of the Counter-Reformation against Protestant confessions.",
+          "iso": "ITA",
+          "region": "italy",
+          "regions": [
+            "italy"
+          ],
+          "themes": []
+        },
+        {
+          "date": "1547 AD",
+          "title": null,
+          "text": "Ivan IV is crowned first Tsar of Russia, asserting Orthodox autocracy just as Western Europe splinters by confession.",
+          "iso": "RUS",
+          "region": "eastern",
+          "regions": [
+            "eastern"
+          ],
+          "themes": []
+        },
+        {
+          "date": "1555 AD",
+          "title": null,
+          "text": "Peace of Augsburg settles cuius regio, eius religio for Catholic and Lutheran estates in the Empire—freezing a bi-confessional map that excludes Calvinists until later wars.",
+          "iso": "DEU",
+          "region": "central",
+          "regions": [
+            "central"
+          ],
+          "themes": []
+        },
+        {
+          "date": "1556 AD",
+          "title": null,
+          "text": "Charles V abdicates, splitting Habsburg power between Philip II’s Spanish-global monarchy and Ferdinand’s Austrian imperial line—Europe’s defining dynastic geometry at mid-century.",
+          "iso": "ESP",
+          "region": "iberia",
+          "regions": [
+            "iberia"
+          ],
+          "themes": []
+        }
+      ],
+      "interestingElements": [
+        {
+          "title": "Print & pamphlets",
+          "text": "Cheap woodcuts and vernacular flysheets make theological argument a mass medium; Luther’s German Bible shapes both piety and language.",
+          "iso": "DEU"
+        },
+        {
+          "title": "Jesuits (Society of Jesus)",
+          "text": "Founded 1540, Ignatius of Loyola’s order becomes the Catholic education and mission engine of the Counter-Reformation.",
+          "iso": "ITA"
+        },
+        {
+          "title": "Ottoman frontier under Süleyman",
+          "text": "Mohács (1526) and the 1529 Siege of Vienna fix the Ottoman–Habsburg military frontier across Hungary for generations.",
+          "iso": "HUN"
+        },
+        {
+          "title": "Mannerism & High Renaissance afterglow",
+          "text": "Italian courts after Raphael and Michelangelo export elongated elegance while Northern painters negotiate sacred images under iconoclast pressure.",
+          "iso": "ITA"
+        },
+        {
+          "title": "Spanish global monarchy",
+          "text": "American silver, Portuguese oceanic routes, and Mediterranean galleys make mid-century Habsburg Spain a world monarchy with a European confessional mission under Philip II.",
+          "iso": "ESP"
+        }
+      ],
+      "sources": [
+        {
+          "title": "European Timeline (Galileo Project / Rice)",
+          "detail": "1517 Theses; Council of Trent from 1545; Peace of Augsburg 1555",
+          "url": "https://galileo.library.rice.edu/chron/europe.html"
+        },
+        {
+          "title": "Reformation",
+          "detail": "Encyclopaedia Britannica overview — Luther, magisterial Reform, Catholic response",
+          "url": "https://www.britannica.com/event/Reformation"
+        },
+        {
+          "title": "Peace of Augsburg",
+          "detail": "1555 settlement; cuius regio, eius religio for Lutherans and Catholics",
+          "url": "https://en.wikipedia.org/wiki/Peace_of_Augsburg"
+        },
+        {
+          "title": "Council of Trent",
+          "detail": "1545–1563 sessions; Catholic doctrinal and disciplinary reform",
+          "url": "https://en.wikipedia.org/wiki/Council_of_Trent"
+        },
+        {
+          "title": "Diet of Worms",
+          "detail": "1521 confrontation of Luther and Charles V",
+          "url": "https://en.wikipedia.org/wiki/Diet_of_Worms"
+        },
+        {
+          "title": "Act of Supremacy 1534",
+          "detail": "Henry VIII as Supreme Head of the Church of England",
+          "url": "https://en.wikipedia.org/wiki/Act_of_Supremacy_1534"
+        },
+        {
+          "title": "Ivan the Terrible",
+          "detail": "Crowned tsar 1547; Muscovite autocracy",
+          "url": "https://en.wikipedia.org/wiki/Ivan_the_Terrible"
+        }
+      ],
+      "sourceFile": "migration-medieval.json"
     },
     "mesolithic": {
       "periodId": "mesolithic",
