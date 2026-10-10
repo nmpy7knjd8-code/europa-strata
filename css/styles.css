@@ -404,7 +404,7 @@ button {
 /* Fat invisible hit area; thin visible track via runnable-track */
 .slider-hit {
   position: relative;
-  margin: 0.15rem 0 0.1rem;
+  margin: 0.2rem 0 0.15rem;
   touch-action: none;
 }
 
@@ -412,7 +412,7 @@ button {
   -webkit-appearance: none;
   appearance: none;
   width: 100%;
-  height: 44px;
+  height: 52px;
   margin: 0;
   padding: 0;
   border-radius: 0;
@@ -437,9 +437,9 @@ button {
 
 .time-slider::-webkit-slider-thumb {
   -webkit-appearance: none;
-  width: 28px;
-  height: 28px;
-  margin-top: -12px;
+  width: 34px;
+  height: 34px;
+  margin-top: -15px;
   border-radius: 50%;
   background: var(--bg);
   border: 2px solid var(--ink);
@@ -467,8 +467,8 @@ button {
 }
 
 .time-slider::-moz-range-thumb {
-  width: 28px;
-  height: 28px;
+  width: 34px;
+  height: 34px;
   border-radius: 50%;
   background: var(--bg);
   border: 2px solid var(--ink);
@@ -1214,7 +1214,7 @@ body.lightbox-open {
 .glossary-title {
   margin: 0 0 0.55rem;
   font-family: var(--font-display);
-  font-size: 1.15rem;
+  font-size: 1.45rem;
   font-weight: 400;
   color: var(--ink);
   display: flex;
@@ -1299,7 +1299,7 @@ body.lightbox-open {
   padding: 0;
   border: none;
   border-bottom: 1px solid transparent;
-  font-size: 1rem;
+  font-size: 1.15rem;
   color: var(--ink-dim);
   background: transparent;
   transition: color 0.2s, border-color 0.2s;
@@ -1428,22 +1428,23 @@ html {
 }
 
 .slider-hit {
-  margin: 0.15rem 0 0.1rem;
+  margin: 0.25rem 0 0.2rem;
+  min-height: 56px;
 }
 
 .time-slider {
-  height: 48px;
+  height: 56px;
 }
 
 .time-slider::-webkit-slider-thumb {
-  width: 32px;
-  height: 32px;
-  margin-top: -14px;
+  width: 40px;
+  height: 40px;
+  margin-top: -18px;
 }
 
 .time-slider::-moz-range-thumb {
-  width: 32px;
-  height: 32px;
+  width: 40px;
+  height: 40px;
 }
 
 /* Hierarchy: year header > period name > tick caption > tick years */
@@ -1472,14 +1473,14 @@ html {
   min-width: 0;
 }
 
-/* Era step controls — large phone tap targets (~50px) */
+/* Era step controls — larger phone tap targets (~60px) */
 .nav-btn {
   flex: 0 0 auto;
-  width: 3.15rem;
-  height: 3.15rem;
-  min-width: 3.15rem;
-  min-height: 3.15rem;
-  font-size: 1.85rem;
+  width: 3.75rem;
+  height: 3.75rem;
+  min-width: 3.75rem;
+  min-height: 3.75rem;
+  font-size: 2.25rem;
   border-width: 1.5px;
   line-height: 1;
   touch-action: manipulation;
@@ -1843,8 +1844,9 @@ html {
 }
 
 .culture-chip {
-  font-size: 1rem;
-  padding: 0.35rem 0.55rem;
+  font-size: 1.25rem;
+  padding: 0.4rem 0.2rem;
+  line-height: 1.35;
 }
 
 .glossary {
@@ -1858,7 +1860,8 @@ html {
 }
 
 .glossary-title {
-  font-size: 1.45rem;
+  font-size: 1.95rem;
+  line-height: 1.15;
   flex-direction: column;
   align-items: flex-start;
   gap: 0.35rem;
