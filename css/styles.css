@@ -561,8 +561,9 @@ button {
   margin: 0.45rem 0 0.7rem;
   padding: 0.45rem 0 0.55rem;
   border-bottom: 1px solid var(--line);
-  font-size: 0.95rem;
-  line-height: 1.4;
+  font-size: var(--read-size, 19px);
+  line-height: var(--read-leading, 1.65);
+  font-family: var(--font-ui);
 }
 
 .polity-chain[hidden] {
@@ -589,21 +590,25 @@ button {
   padding: 0;
   border: none;
   border-radius: 0;
-  border-bottom: 1px solid var(--line-strong);
+  border-bottom: none;
   background: transparent;
   color: inherit;
-  /* Match surrounding body copy — 1em beats UA <button> font metrics */
-  font: inherit;
-  font-family: inherit;
-  font-size: 1em;
-  font-weight: inherit;
-  font-style: inherit;
-  font-variant: inherit;
-  line-height: inherit;
-  letter-spacing: inherit;
+  /* Beat UA <button> metrics — must match adjacent body exactly */
+  font: inherit !important;
+  font-family: inherit !important;
+  font-size: inherit !important;
+  font-weight: inherit !important;
+  font-style: inherit !important;
+  font-variant: inherit !important;
+  line-height: inherit !important;
+  letter-spacing: inherit !important;
   text-align: inherit;
   text-transform: none;
-  text-decoration: none;
+  /* Soft cue — same ink color, quiet underline */
+  text-decoration: underline;
+  text-decoration-color: color-mix(in srgb, currentColor 32%, transparent);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.14em;
   cursor: pointer;
   touch-action: manipulation;
   -webkit-appearance: none;
@@ -612,8 +617,8 @@ button {
 
 .atlas-link:hover,
 .atlas-link:focus-visible {
-  border-bottom-color: var(--ink);
   color: inherit;
+  text-decoration-color: color-mix(in srgb, currentColor 55%, transparent);
   outline: none;
 }
 
@@ -631,15 +636,17 @@ button {
 .polity-literature .atlas-link,
 .polity-art .atlas-link,
 .side-detail .atlas-link,
-.side-detail a {
-  font: inherit;
-  font-family: inherit;
-  font-size: 1em;
-  font-weight: inherit;
-  font-style: inherit;
-  line-height: inherit;
-  letter-spacing: inherit;
+.side-detail a,
+.period-copy .atlas-link {
+  font: inherit !important;
+  font-family: inherit !important;
+  font-size: inherit !important;
+  font-weight: inherit !important;
+  font-style: inherit !important;
+  line-height: inherit !important;
+  letter-spacing: inherit !important;
   color: inherit;
+  text-decoration-color: color-mix(in srgb, currentColor 32%, transparent);
 }
 
 .polity-panel .polity-name {
@@ -671,11 +678,11 @@ button {
   margin-bottom: 0.15rem;
 }
 
-/* Images sit under literature / art copy — no separate gallery heading */
+/* Images sit under literature / art copy — shrink-wrap, no wide grey slabs */
 .polity-inline-gallery {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.65rem;
+  gap: 0.75rem 1rem;
   margin: 0.35rem 0 0.55rem;
   align-items: flex-start;
 }
@@ -684,28 +691,19 @@ button {
   display: none !important;
 }
 
-/* All galleries (Leaders / Religion / Literature / Art): taller frames,
-   capped width so portraits/objects aren’t tiny in wide grey slabs. */
 .polity-figure {
-  flex: 0 1 auto;
-  width: min(100%, 22rem);
+  flex: 0 0 auto;
+  width: fit-content;
   max-width: 100%;
   margin: 0;
-  background: var(--sea);
-  border: 1px solid var(--line);
-}
-
-.polity-inline-gallery.is-single .polity-figure {
-  width: min(100%, 24rem);
-}
-
-.polity-inline-gallery:has(.polity-figure + .polity-figure) .polity-figure {
-  width: min(100%, 18.5rem);
+  background: transparent;
+  border: none;
 }
 
 .polity-figure-open {
   display: block;
-  width: 100%;
+  width: fit-content;
+  max-width: 100%;
   margin: 0;
   padding: 0;
   border: none;
@@ -720,26 +718,43 @@ button {
   outline-offset: 2px;
 }
 
+/* Intrinsic size + max bounds — grey only behind the photo itself */
 .polity-figure img {
   display: block;
-  width: 100%;
-  height: min(52vh, 26rem); /* taller frame so images fill the box */
-  object-fit: contain; /* full photo — no face/object crops */
+  width: auto;
+  height: auto;
+  max-width: min(100%, 26rem);
+  max-height: min(68vh, 32rem);
+  object-fit: contain;
   object-position: center;
   background: #eee;
   pointer-events: none;
 }
 
-.polity-inline-gallery.is-single .polity-figure img {
-  height: min(56vh, 28rem);
+.polity-figure[data-orient="portrait"] img {
+  max-width: min(100%, 17.5rem);
+  max-height: min(72vh, 36rem);
 }
 
-.polity-inline-gallery:has(.polity-figure + .polity-figure) .polity-figure img {
-  height: min(48vh, 22rem);
+.polity-figure[data-orient="landscape"] img {
+  max-width: min(100%, 100%);
+  max-height: min(52vh, 24rem);
+}
+
+.polity-inline-gallery.is-single .polity-figure[data-orient="portrait"] img {
+  max-width: min(100%, 20rem);
+  max-height: min(74vh, 38rem);
+}
+
+.polity-inline-gallery.is-single .polity-figure[data-orient="landscape"] img,
+#polity-literature-gallery .polity-figure img {
+  max-width: 100%;
+  max-height: min(56vh, 26rem);
 }
 
 .polity-figure figcaption {
-  padding: 0.4rem 0.45rem 0.5rem;
+  padding: 0.35rem 0 0;
+  max-width: 26rem;
   font-size: 0.84rem;
   line-height: 1.35;
   color: var(--ink-mute);
@@ -1086,16 +1101,16 @@ body.lightbox-open {
 }
 
 .pie-wrap {
-  margin-top: 0.4rem;
+  margin-top: 0.45rem;
   display: grid;
-  grid-template-columns: 48px 1fr;
-  gap: 0.55rem;
-  align-items: start;
+  grid-template-columns: 96px minmax(0, 1fr);
+  gap: 0.75rem;
+  align-items: center;
 }
 
 .pie {
-  width: 48px;
-  height: 48px;
+  width: 96px;
+  height: 96px;
   border-radius: 50%;
   border: 1px solid var(--line);
   transition: background 0.5s var(--ease);
@@ -1105,25 +1120,30 @@ body.lightbox-open {
   margin: 0;
   padding: 0;
   list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.2rem;
 }
 
 .pie-list li {
-  display: flex;
+  display: inline-flex;
   justify-content: flex-start;
   align-items: baseline;
-  flex-wrap: wrap;
+  width: fit-content;
+  max-width: 100%;
   gap: 0.35em;
-  padding: 0.08rem 0;
+  padding: 0;
   border-bottom: none;
-  font-size: 1.12rem;
-  line-height: 1.35;
+  font-size: 1.2rem;
+  line-height: 1.3;
   color: var(--ink-dim);
 }
 
 .pie-list li::before {
   content: "";
-  width: 0.45em;
-  height: 0.45em;
+  width: 0.5em;
+  height: 0.5em;
   border-radius: 50%;
   background: var(--swatch, var(--ink-mute));
   flex: 0 0 auto;
@@ -1141,6 +1161,7 @@ body.lightbox-open {
   color: var(--ink);
   font-size: 1em;
   font-weight: 500;
+  margin-left: 0;
 }
 
 /* ——— Below ——— */
@@ -1546,7 +1567,8 @@ html {
   align-items: flex-start;
   gap: 0.55rem;
   margin: 0.65rem 0 1rem;
-  font-size: 0.95rem;
+  font-size: var(--read-size);
+  line-height: var(--read-leading);
 }
 
 .polity-chain-sep {
@@ -1565,14 +1587,18 @@ html {
 .polity-chain .atlas-link,
 .side-detail .atlas-link,
 .side-detail a {
-  border-bottom-width: 1.5px;
-  font: inherit;
-  font-size: 1em;
-  font-family: inherit;
-  font-weight: inherit;
-  line-height: inherit;
-  letter-spacing: inherit;
+  border-bottom: none;
+  font: inherit !important;
+  font-size: inherit !important;
+  font-family: inherit !important;
+  font-weight: inherit !important;
+  line-height: inherit !important;
+  letter-spacing: inherit !important;
   color: inherit;
+  text-decoration: underline;
+  text-decoration-color: color-mix(in srgb, currentColor 32%, transparent);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.14em;
 }
 
 .polity-panel .polity-name,
@@ -1616,28 +1642,40 @@ html {
 }
 
 .polity-figure figcaption {
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   line-height: 1.4;
-  padding: 0.5rem 0.55rem 0.6rem;
+  padding: 0.4rem 0 0;
 }
 
 .polity-figure,
 .polity-inline-gallery.is-single .polity-figure,
 .polity-inline-gallery:has(.polity-figure + .polity-figure) .polity-figure {
-  width: 100%;
+  width: fit-content;
+  max-width: 100%;
 }
 
 .polity-figure img {
-  height: min(58vh, 28rem);
+  width: auto;
+  height: auto;
+  max-width: min(100%, 22rem);
+  max-height: min(70vh, 34rem);
   object-fit: contain;
 }
 
-.polity-inline-gallery.is-single .polity-figure img {
-  height: min(62vh, 30rem);
+.polity-figure[data-orient="portrait"] img,
+.polity-inline-gallery.is-single .polity-figure[data-orient="portrait"] img {
+  max-width: min(100%, 19rem);
+  max-height: min(74vh, 40rem);
+}
+
+.polity-figure[data-orient="landscape"] img,
+.polity-inline-gallery.is-single .polity-figure[data-orient="landscape"] img {
+  max-width: 100%;
+  max-height: min(54vh, 26rem);
 }
 
 .polity-inline-gallery {
-  gap: 0.75rem;
+  gap: 0.85rem;
   margin: 0.65rem 0 0.25rem;
 }
 
@@ -1708,23 +1746,27 @@ html {
 
 .pie-wrap {
   margin-top: 0.45rem;
-  gap: 0.55rem;
-  grid-template-columns: 44px 1fr;
+  gap: 0.85rem;
+  grid-template-columns: 108px minmax(0, 1fr);
+  align-items: center;
 }
 
 .pie {
-  width: 44px;
-  height: 44px;
+  width: 108px;
+  height: 108px;
 }
 
 .pie-list li {
-  font-size: 1.05rem;
-  line-height: 1.35;
-  padding: 0.1rem 0;
+  display: inline-flex;
+  width: fit-content;
+  font-size: 1.25rem;
+  line-height: 1.3;
+  padding: 0.05rem 0;
+  gap: 0.35em;
 }
 
 .legend {
-  display: none;
+  display: none !important;
 }
 
 .below {
