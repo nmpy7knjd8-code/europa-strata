@@ -108,10 +108,44 @@ function atlasLinkHtml(ref, label) {
   return `<a href="#${escapeHtml(t.periodId)}/${escapeHtml(t.iso)}" class="atlas-link" data-period="${escapeHtml(t.periodId)}" data-iso="${escapeHtml(t.iso)}" title="Go to ${escapeHtml(t.name)}">${escapeHtml(text)}</a>`;
 }
 
-/** Body/description copy — plain text only (no inline culture auto-links). */
+/** Body/description copy — plain text only (no <a>/buttons/pills). */
 function setPlainText(el, text) {
   if (!el) return;
-  el.textContent = text || "";
+  // Wipe any prior markup nodes, then set text (never innerHTML).
+  while (el.firstChild) el.removeChild(el.firstChild);
+  el.textContent = String(text ?? "");
+}
+
+/** Strip accidental interactive markup if anything else wrote HTML into body fields. */
+function scrubBodyCopyMarkup(root = document) {
+  const fields = root.querySelectorAll(
+    [
+      "#culture-desc",
+      "#ancestry-note",
+      "#polity-summary",
+      "#polity-conflicts",
+      "#polity-leaders",
+      "#polity-religion",
+      "#polity-culture",
+      "#polity-story",
+      "#polity-literature",
+      "#polity-art",
+      "#period-copy",
+      "#period-ling",
+      "#ling-note",
+      "#absorb-substrate",
+      "#absorb-incoming",
+      "#absorb-fused",
+      "#cultures-blurb",
+    ].join(",")
+  );
+  fields.forEach((el) => {
+    if (!el) return;
+    // Flatten any nested <a>/<button>/<span class=atlas-link> to plain text
+    const junk = el.querySelectorAll("a, button, .atlas-link");
+    if (!junk.length) return;
+    el.textContent = el.textContent;
+  });
 }
 
 function renderPolityChain(polity) {
@@ -1068,7 +1102,7 @@ function renderDetail() {
     const names = (cov.labels || []).map((l) => l.label).filter(Boolean);
     if (names.length) horizon = names.join(" · ");
   }
-  $("#culture-title").textContent = horizon;
+  setPlainText($("#culture-title"), horizon);
   const horizonEl = $("#culture-horizon");
   if (horizonEl) {
     const first = horizon.split(" · ")[0];
@@ -1105,7 +1139,7 @@ function renderDetail() {
   if (polityPanel) {
     if (polity) {
       polityPanel.hidden = false;
-      $("#polity-name").textContent = polity.name || "—";
+      setPlainText($("#polity-name"), polity.name || "—");
       setPlainText($("#polity-summary"), polity.summary || "");
       setPlainText($("#polity-conflicts"), polity.conflicts || "");
       setPolityField("leaders", polity.leaders);
@@ -1131,9 +1165,10 @@ function renderDetail() {
     note.hidden = true;
   }
 
-  $("#absorb-substrate").textContent = region.substrate || "—";
-  $("#absorb-incoming").textContent = region.incoming || "—";
-  $("#absorb-fused").textContent = region.fused || "—";
+  setPlainText($("#absorb-substrate"), region.substrate || "—");
+  setPlainText($("#absorb-incoming"), region.incoming || "—");
+  setPlainText($("#absorb-fused"), region.fused || "—");
+  scrubBodyCopyMarkup();
 
   const confLabels = state.data.meta.confidenceLabels || {};
   const conf = region.linguisticConfidence || "hypothetical";

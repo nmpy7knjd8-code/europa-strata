@@ -589,6 +589,51 @@ button {
   opacity: 0.5;
 }
 
+/* Body fields: never look like links/pills (chain jumps are .polity-chain only) */
+.culture-desc a,
+.culture-desc button,
+.ancestry-note a,
+.ancestry-note button,
+.polity-summary a,
+.polity-summary button,
+.polity-conflicts a,
+.polity-conflicts button,
+.polity-leaders a,
+.polity-leaders button,
+.polity-religion a,
+.polity-religion button,
+.polity-culture a,
+.polity-culture button,
+.polity-story a,
+.polity-story button,
+.polity-literature a,
+.polity-literature button,
+.polity-art a,
+.polity-art button,
+.period-copy a,
+.period-copy button,
+.absorb-strip a,
+.absorb-strip button,
+.ling-note a,
+.ling-note button {
+  all: unset;
+  display: inline;
+  color: inherit;
+  font: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  letter-spacing: inherit;
+  text-decoration: none;
+  cursor: inherit;
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
 /* Preceded by / Succeeded by chain jumps only — not used in body copy */
 .polity-chain a.atlas-link,
 .polity-chain .atlas-link {
@@ -627,7 +672,7 @@ button {
 .polity-panel .polity-name {
   margin: 0.15rem 0 0.4rem;
   font-family: var(--font-display);
-  font-size: 1.15rem;
+  font-size: 1.45rem;
   font-weight: 400;
 }
 
@@ -839,7 +884,7 @@ body.lightbox-open {
 .polity-name {
   margin: 0.15rem 0 0;
   font-family: var(--font-display);
-  font-size: 1.05rem;
+  font-size: 1.4rem;
   font-weight: 400;
   color: var(--ink);
   letter-spacing: -0.01em;
@@ -873,9 +918,9 @@ body.lightbox-open {
 .culture-title {
   margin: 0;
   font-family: var(--font-display);
-  font-size: 1.3rem;
+  font-size: 1.65rem;
   font-weight: 400;
-  line-height: 1.15;
+  line-height: 1.12;
   color: var(--ink);
   letter-spacing: -0.02em;
 }
@@ -1531,8 +1576,8 @@ html {
 }
 
 .culture-title {
-  font-size: 1.75rem;
-  line-height: 1.15;
+  font-size: 2.2rem;
+  line-height: 1.12;
   margin: 0.2rem 0 0.35rem;
 }
 
@@ -1598,7 +1643,7 @@ html {
 
 .polity-panel .polity-name,
 .polity-name {
-  font-size: 1.5rem;
+  font-size: 1.95rem;
   margin: 0.25rem 0 0.55rem;
 }
 
