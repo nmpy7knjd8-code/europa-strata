@@ -376,7 +376,7 @@ button {
 
 .key-events .kicker {
   margin-bottom: 0.35rem;
-  font-size: 0.78rem;
+  font-size: 0.72rem;
 }
 
 .key-events-list {
@@ -384,7 +384,7 @@ button {
   padding: 0;
   list-style: none;
   color: var(--ink-dim);
-  font-size: 0.82rem;
+  font-size: 0.74rem;
   line-height: 1.4;
 }
 
