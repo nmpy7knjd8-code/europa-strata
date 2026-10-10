@@ -53,7 +53,7 @@ body {
 body {
   color: var(--ink);
   font-family: var(--font-ui);
-  font-size: 17.5px;
+  font-size: 18px;
   font-weight: 400;
   line-height: 1.55;
   background: var(--bg);
@@ -65,8 +65,8 @@ body {
 a {
   color: var(--ink);
   text-decoration: underline;
-  text-underline-offset: 0.2em;
-  text-decoration-thickness: 0.06em;
+  text-underline-offset: 0.28em;
+  text-decoration-thickness: 0.05em;
 }
 
 button {
@@ -292,10 +292,10 @@ button {
   display: flex;
   align-items: center;
   gap: 0.3rem;
-  font-size: 0.95rem;
+  font-size: 1.05rem;
   color: var(--ink);
   letter-spacing: 0.01em;
-  line-height: 1.3;
+  line-height: 1.35;
   padding: 0;
 }
 
@@ -314,10 +314,10 @@ button {
 
 .map-attr {
   margin: 0.4rem 0 0;
-  font-size: 0.72rem;
+  font-size: 0.78rem;
   color: var(--ink-mute);
   line-height: 1.35;
-  opacity: 0.85;
+  opacity: 0.8;
 }
 
 /* ——— Content column (below map + slider) ——— */
@@ -344,7 +344,7 @@ button {
 
 .kicker {
   margin: 0 0 0.15rem;
-  font-size: 0.78rem;
+  font-size: 0.82rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--ink-mute);
@@ -566,7 +566,7 @@ button {
   margin: 0.45rem 0 0.7rem;
   padding: 0.45rem 0 0.55rem;
   border-bottom: 1px solid var(--line);
-  font-size: var(--read-size, 21px);
+  font-size: var(--read-size, 22px);
   line-height: var(--read-leading, 1.65);
   font-family: var(--font-ui);
 }
@@ -589,7 +589,7 @@ button {
   opacity: 0.5;
 }
 
-/* Inline atlas links — must match surrounding body glyph-for-glyph */
+/* Inline atlas links — match surrounding body glyph-for-glyph (never smaller) */
 a.atlas-link,
 .atlas-link {
   display: inline;
@@ -601,7 +601,7 @@ a.atlas-link,
   color: inherit;
   font: inherit;
   font-family: inherit;
-  font-size: 1em; /* of parent copy — never a smaller rem */
+  font-size: 1em;
   font-weight: inherit;
   font-style: inherit;
   font-variant: inherit;
@@ -612,12 +612,13 @@ a.atlas-link,
   text-transform: none;
   text-decoration: underline;
   text-decoration-skip-ink: auto;
-  text-decoration-color: color-mix(in srgb, currentColor 28%, transparent);
-  text-decoration-thickness: 0.06em;
-  text-underline-offset: 0.22em;
+  text-decoration-color: color-mix(in srgb, currentColor 26%, transparent);
+  text-decoration-thickness: 0.05em;
+  text-underline-offset: 0.28em;
   cursor: pointer;
   touch-action: manipulation;
   -webkit-tap-highlight-color: transparent;
+  -webkit-text-size-adjust: 100%;
 }
 
 a.atlas-link:hover,
@@ -625,7 +626,7 @@ a.atlas-link:focus-visible,
 .atlas-link:hover,
 .atlas-link:focus-visible {
   color: inherit;
-  text-decoration-color: color-mix(in srgb, currentColor 50%, transparent);
+  text-decoration-color: color-mix(in srgb, currentColor 48%, transparent);
   outline: none;
 }
 
@@ -653,6 +654,8 @@ a.atlas-link:focus-visible,
   letter-spacing: inherit;
   color: inherit;
   vertical-align: baseline;
+  text-decoration-thickness: 0.05em;
+  text-underline-offset: 0.28em;
 }
 
 .polity-panel .polity-name {
@@ -1059,7 +1062,7 @@ body.lightbox-open {
 }
 
 .cline-note {
-  font-size: var(--read-size, 21px);
+  font-size: var(--read-size, 22px);
   line-height: var(--read-leading, 1.65);
 }
 
@@ -1285,7 +1288,7 @@ body.lightbox-open {
   padding: 0;
   border: none;
   border-bottom: 1px solid transparent;
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: var(--ink-dim);
   background: transparent;
   transition: color 0.2s, border-color 0.2s;
@@ -1305,7 +1308,7 @@ body.lightbox-open {
 }
 
 .tiny {
-  font-size: 0.74rem !important;
+  font-size: 0.85rem !important;
 }
 
 .theme-toggle {
@@ -1361,9 +1364,9 @@ body.lightbox-open {
 
 html {
   /* Narrative/polity reading + raised chrome floor. */
-  --read-size: 21px;
+  --read-size: 22px;
   --read-leading: 1.62;
-  --chrome-size: 16px;
+  --chrome-size: 16.5px;
 }
 
 
@@ -1486,7 +1489,7 @@ html {
 }
 
 .tick .tick-era {
-  font-size: 0.74rem;
+  font-size: 0.82rem;
   margin-top: 0.15rem;
 }
 
@@ -1505,7 +1508,7 @@ html {
 }
 
 .legend-bar .kicker {
-  font-size: 0.85rem;
+  font-size: 0.9rem;
   margin-bottom: 0.25rem;
 }
 
@@ -1517,16 +1520,17 @@ html {
 
 /* Culture chips primary — larger than Base map disclaimer */
 .legend-row {
-  font-size: 1.05rem;
-  line-height: 1.3;
-  padding: 0.02rem 0;
+  font-size: 1.1rem;
+  line-height: 1.35;
+  padding: 0.04rem 0;
   font-weight: 500;
 }
 
 .map-attr {
-  font-size: 0.78rem;
+  font-size: 0.8rem;
   line-height: 1.35;
-  opacity: 0.8;
+  opacity: 0.75;
+  font-weight: 400;
 }
 
 .side-top {
@@ -1541,7 +1545,7 @@ html {
 }
 
 .kicker {
-  font-size: 0.88rem;
+  font-size: 0.92rem;
   letter-spacing: 0.12em;
   margin-bottom: 0.4rem;
 }
@@ -1628,9 +1632,9 @@ a.atlas-link,
   color: inherit;
   vertical-align: baseline;
   text-decoration: underline;
-  text-decoration-color: color-mix(in srgb, currentColor 28%, transparent);
-  text-decoration-thickness: 0.06em;
-  text-underline-offset: 0.22em;
+  text-decoration-color: color-mix(in srgb, currentColor 26%, transparent);
+  text-decoration-thickness: 0.05em;
+  text-underline-offset: 0.28em;
 }
 
 .polity-panel .polity-name,
@@ -1830,7 +1834,7 @@ a.atlas-link,
 }
 
 .culture-chip {
-  font-size: 0.88rem;
+  font-size: 1rem;
   padding: 0.35rem 0.55rem;
 }
 
@@ -1870,7 +1874,7 @@ a.atlas-link,
 }
 
 .tiny {
-  font-size: 0.85rem;
+  font-size: 0.9rem;
 }
 
 #cultures-blurb {
