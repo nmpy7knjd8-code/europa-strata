@@ -208,10 +208,10 @@ button {
 
 .atlas-tabs {
   grid-area: tabs;
-  display: flex;
-  justify-content: stretch;
+  display: grid;
+  /* Wrap to 2 rows on phone rather than crush/overlap titles */
+  grid-template-columns: repeat(auto-fit, minmax(7.25rem, 1fr));
   align-items: stretch;
-  flex-wrap: wrap;
   gap: 0;
   width: 100%;
   max-width: 100%;
@@ -225,21 +225,24 @@ button {
 }
 
 .atlas-tab {
-  flex: 1 1 0;
-  min-width: 0;
   margin: 0;
-  padding: 0.55rem 0.22rem;
+  min-width: 0;
+  padding: 0.72rem 0.55rem;
   border: 0;
   border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
   background: transparent;
   color: var(--ink-mute);
   font-family: var(--font-ui);
-  /* Fixed size in every atlas mode — Deep-time must match kingdom tabs */
-  font-size: 0.8rem;
+  /* Readable in every mode — Deep-time matches kingdom selected size */
+  font-size: 0.98rem;
   font-weight: 500;
   letter-spacing: 0.01em;
-  line-height: 1.2;
-  white-space: nowrap;
+  line-height: 1.25;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  word-break: normal;
+  hyphens: none;
   text-align: center;
   cursor: pointer;
   transition: color 0.18s var(--ease), background 0.18s var(--ease);
@@ -254,10 +257,6 @@ button {
   cursor: not-allowed;
 }
 
-.atlas-tab:last-child {
-  border-right: 0;
-}
-
 .atlas-tab:hover {
   color: var(--ink);
   background: rgba(0, 0, 0, 0.03);
@@ -270,9 +269,10 @@ button {
 .atlas-tab.is-active,
 .atlas-tab[aria-selected="true"] {
   color: var(--ink);
-  background: rgba(0, 0, 0, 0.055);
-  /* Keep weight stable so Deep-time vs kingdom tabs don’t change size */
-  font-weight: 500;
+  background: rgba(0, 0, 0, 0.06);
+  font-weight: 600;
+  font-size: 1.02rem;
+  box-shadow: inset 0 -2.5px 0 var(--ink);
 }
 
 [data-theme="dark"] .atlas-tab.is-active,
@@ -1659,20 +1659,36 @@ html {
   margin-bottom: 0.15rem;
   max-width: 100%;
   overflow: visible;
+  grid-template-columns: repeat(auto-fit, minmax(7.5rem, 1fr));
 }
 
 .atlas-tab {
-  padding: 0.52rem 0.14rem;
-  font-size: 0.78rem;
+  padding: 0.78rem 0.5rem;
+  font-size: 1rem;
   letter-spacing: 0.01em;
   font-weight: 500;
 }
 
+.atlas-tab.is-active,
+.atlas-tab[aria-selected="true"] {
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+/* Same tab metrics in Deep-time and kingdom modes */
 .app[data-atlas-mode="deep-time"] .atlas-tab,
 .app:not([data-atlas-mode="deep-time"]) .atlas-tab {
-  font-size: 0.78rem;
+  font-size: 1rem;
   font-weight: 500;
-  padding: 0.52rem 0.14rem;
+  padding: 0.78rem 0.5rem;
+}
+
+.app[data-atlas-mode="deep-time"] .atlas-tab.is-active,
+.app[data-atlas-mode="deep-time"] .atlas-tab[aria-selected="true"],
+.app:not([data-atlas-mode="deep-time"]) .atlas-tab.is-active,
+.app:not([data-atlas-mode="deep-time"]) .atlas-tab[aria-selected="true"] {
+  font-size: 1.05rem;
+  font-weight: 600;
 }
 
 

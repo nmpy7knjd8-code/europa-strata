@@ -763,41 +763,41 @@ function initMap({ preserveZoom = true } = {}) {
 
   const projection = d3.geoAzimuthalEqualArea();
 
-  // Open/Reset: fit clipped European land (+ east-of-Moscow & N. Africa
-  // anchors) so Iceland→Black Sea / Scandinavia→Maghreb fills the stage.
+  // Open/Reset: Spain–Moscow continental framing (same for Deep-time + kingdom).
+  // Iceland stays drawn but out of the fit so it doesn’t pull the view west.
   const LAND_ROTATE = [-10.5, -52];
-  const LAND_PAD = [5, 12, 5, 6]; // L,T,R,B
-  const LAND_BOOST = 1.03;
-  const LAND_ISOS = [
+  const LAND_PAD = [8, 14, 8, 10]; // L,T,R,B
+  const LAND_BOOST = 1.14;
+  const LAND_DRAW_ISOS = [
     "ISL", "IRL", "GBR", "PRT", "ESP", "FRA", "AND", "BEL", "NLD", "LUX",
     "DEU", "CHE", "AUT", "ITA", "DNK", "NOR", "SWE", "FIN", "POL", "CZE",
     "SVK", "HUN", "SVN", "HRV", "BIH", "SRB", "MNE", "ALB", "MKD", "KOS",
     "ROU", "BGR", "GRC", "MDA", "UKR", "BLR", "LTU", "LVA", "EST", "TUR",
   ];
+  // Fit on Iberia→Baltic→Balkans (+ Moscow / Black Sea anchors). Skip ISL.
+  const LAND_FIT_ISOS = LAND_DRAW_ISOS.filter((iso) => iso !== "ISL");
   const mainland = state.geo.features
-    .filter((f) => LAND_ISOS.includes(f.properties.iso))
+    .filter((f) => LAND_DRAW_ISOS.includes(f.properties.iso))
     .map(clipFeatureToEurope)
     .filter(Boolean);
   state.landFeatures = mainland;
+  const fitFeatures = mainland.filter((f) =>
+    LAND_FIT_ISOS.includes(f.properties.iso)
+  );
   const land = {
     type: "FeatureCollection",
     features: [
-      ...mainland,
-      // East-of-Moscow / Black Sea / Maghreb anchors (RUS polygon is too huge)
+      ...fitFeatures,
+      // East-of-Moscow / Black Sea anchors (RUS polygon is too huge)
       {
         type: "Feature",
         properties: { iso: "_anchor_moscow_e" },
-        geometry: { type: "Point", coordinates: [40.5, 55.8] },
+        geometry: { type: "Point", coordinates: [37.6, 55.8] },
       },
       {
         type: "Feature",
         properties: { iso: "_anchor_black_sea_e" },
-        geometry: { type: "Point", coordinates: [41.5, 42.5] },
-      },
-      {
-        type: "Feature",
-        properties: { iso: "_anchor_maghreb" },
-        geometry: { type: "Point", coordinates: [-5.8, 35.4] },
+        geometry: { type: "Point", coordinates: [39.5, 43.5] },
       },
     ],
   };
@@ -811,7 +811,7 @@ function initMap({ preserveZoom = true } = {}) {
   const baseScale = projection.scale();
   projection.scale(baseScale * LAND_BOOST);
   const t0 = projection.translate();
-  projection.translate([t0[0], t0[1] + 2]);
+  projection.translate([t0[0], t0[1] + 4]);
   state.mapFit = {
     mode: "land-fit",
     rotate: LAND_ROTATE,
