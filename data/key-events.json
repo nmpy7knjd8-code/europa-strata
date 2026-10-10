@@ -1,7 +1,752 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-10T00:38:12.173Z",
+  "updatedAt": "2026-10-10T00:39:16.313Z",
   "periods": {
+    "yamnaya": {
+      "periodId": "yamnaya",
+      "label": "Copper / Yamnaya",
+      "approxYears": "3300–2600 BC",
+      "keyEvents": [
+        {
+          "date": "c. 4400–4000 BC",
+          "title": "CLV cline and proto-Indo-Anatolian homeland",
+          "text": "Caucasus–Lower Volga (CLV) populations form a genetic cline mixing Caucasus hunter-gatherer–related, West Asian Neolithic, and steppe forager ancestries. 2025 Nature syntheses place the last shared speech community ancestral to Anatolian and core Indo-European among CLV people in this window. Bidirectional gene flow with Maikop-related Caucasus groups and Remontnoye-type steppe intermediates wires the pre-Yamnaya map. This is deep prehistory of language candidates—not Yamnaya inscriptions.",
+          "iso": null,
+          "region": "eastern",
+          "regions": [
+            "eastern",
+            "balkans"
+          ],
+          "themes": [
+            "ancestry",
+            "migration",
+            "language"
+          ]
+        },
+        {
+          "date": "c. 4000–3350 BC",
+          "title": "Yamnaya form from Serednii Stih on the Dnipro–Don",
+          "text": "Core Yamnaya crystallise as late Serednii Stih descendants after CLV migrants mix with Ukraine Neolithic hunter-gatherer groups along the Dnipro–Don. Nikitin et al. 2025 highlight a genetically Yamnaya individual at Mykhailivka (3635–3383 BC) bridging the Eneolithic–Bronze Age gap at a likely formation epicentre. Explosive demographic growth follows after ~3750–3350 BC. Archaeological Yamnaya (~3300 BC) is the visible package of an older genetic fusion.",
+          "iso": null,
+          "region": "eastern",
+          "regions": [
+            "eastern"
+          ],
+          "themes": [
+            "ancestry",
+            "migration",
+            "social"
+          ]
+        },
+        {
+          "date": "c. 4500–3300 BC",
+          "title": "Usatove contact and late Trypillia megasites fade",
+          "text": "A parallel CLV wave mixes ~50/50 with Trypillian farmers to form Usatove near the northwest Black Sea, while classic Cucuteni–Trypillia megasites of the forest-steppe wind down. North Pontic foragers, farmers, and steppe pastoralists meet in overlapping pulses rather than one invasion. These contact societies foreshadow Yamnaya’s westward reach into the Danube corridor. House-burning rites and dense agrarian settlements give way to more mobile steppe horizons.",
+          "iso": null,
+          "region": "eastern",
+          "regions": [
+            "eastern",
+            "balkans"
+          ],
+          "themes": [
+            "migration",
+            "ancestry",
+            "ritual",
+            "social"
+          ]
+        },
+        {
+          "date": "c. 3300–3000 BC",
+          "title": "Kurgan pastoralism, wagons, and dairying take off",
+          "text": "Yamnaya groups bury under kurgans with ochre, weapons, and often wheeled vehicles—four-wheeled wagons as mobile pastoral gear on the Pontic–Caspian grass sea. Wilkin et al. 2021 show ruminant dairying becomes ubiquitous in dental-calculus proteomes at the Early Bronze Age onset, with horse-milk proteins in some individuals. Secondary products, not just meat, underwrite long-range mobility. The package links herds, milk, and wagon transport into an expansion engine.",
+          "iso": null,
+          "region": "eastern",
+          "regions": [
+            "eastern",
+            "balkans",
+            "central"
+          ],
+          "themes": [
+            "technology",
+            "subsistence",
+            "migration",
+            "ritual"
+          ]
+        },
+        {
+          "date": "c. 3300–2600 BC",
+          "title": "Yamnaya expand Rhineward and Danube-ward",
+          "text": "By ~3000 BC Yamnaya-related horizons stretch from the Carpathian Basin and Hungary to Kazakhstan, with Danube–Hungary kurgans marking the western pastoral spearhead. Haak/Allentoft 2015 established this as the source of the later temperate-European ‘steppe’ ancestry pulse. Local farmer substrates (late Trypillia, GAC, Balkan Eneolithic) persist beside and under the expansion. The map is a gradient of contact, not an instant uniform coat.",
+          "iso": null,
+          "region": "eastern",
+          "regions": [
+            "eastern",
+            "balkans",
+            "central"
+          ],
+          "themes": [
+            "migration",
+            "ancestry",
+            "conflict"
+          ]
+        },
+        {
+          "date": "c. 3300–2500 BC",
+          "title": "Afanasievo leap to the Altai and Mongolia",
+          "text": "A genetically Yamnaya-related population appears far east in the Altai–Yenisei and even central Mongolia (Shatar Chuluu), carrying kurgan rites and early ruminant dairying. Afanasievo is the eastern twin of the Pontic expansion—same WSH package, different archaeology. It seeds later Inner Asian steppe histories and possible Tocharian-related linguistic models. Distance underscores how mobile Early Bronze Age pastoralism had become.",
+          "iso": null,
+          "region": "eastern",
+          "regions": [
+            "eastern"
+          ],
+          "themes": [
+            "migration",
+            "ancestry",
+            "subsistence",
+            "language"
+          ]
+        },
+        {
+          "date": "c. 3000–2600 BC",
+          "title": "Globular Amphora hinge before Corded Ware",
+          "text": "West of the core steppe, Globular Amphora and late TRB farmer societies still dominate Central Europe while early steppe signals arrive patchily. GAC cattle-rich economies and distinctive amphorae sit on the hinge that will produce Corded Ware through Yamnaya-related admixture. France’s Late Neolithic already records early steppe pulses (~3000–2900 BC) ahead of full CW maps. The Copper Age west is still largely EEF+WHG when Yamnaya peaks on the steppe.",
+          "iso": null,
+          "region": "central",
+          "regions": [
+            "central",
+            "france",
+            "scandinavia"
+          ],
+          "themes": [
+            "ancestry",
+            "migration",
+            "social"
+          ]
+        },
+        {
+          "date": "c. 3300–2600 BC",
+          "title": "Horse and herd redefine steppe wealth",
+          "text": "Horse remains, milk proteins, and later chariots (still ahead at Sintashta) place the horse inside Yamnaya-era economies even if true riding vs traction is debated. Herd size, dairy stores, and wagon mobility become status and survival. Male-biased Y-chromosome patterns in later expansions hint at social structures that amplify certain lineages. Ritual deposits of animals and weapons in kurgans make wealth visible in death.",
+          "iso": null,
+          "region": "eastern",
+          "regions": [
+            "eastern",
+            "central"
+          ],
+          "themes": [
+            "technology",
+            "subsistence",
+            "social",
+            "ritual"
+          ]
+        }
+      ],
+      "interestingElements": [
+        {
+          "title": "Mykhailivka (Ukraine) — Yamnaya formation epicentre candidate",
+          "text": null,
+          "iso": null
+        },
+        {
+          "title": "Kurgan burials with ochre, weapons, and wagon fittings",
+          "text": null,
+          "iso": null
+        },
+        {
+          "title": "Four-wheeled disc-wheel wagons as mobile pastoral homes",
+          "text": null,
+          "iso": null
+        },
+        {
+          "title": "Dental-calculus dairy proteins (ruminant + rare horse milk)",
+          "text": null,
+          "iso": null
+        },
+        {
+          "title": "Usatove hybrid farmer–steppe cemeteries near the Black Sea",
+          "text": null,
+          "iso": null
+        },
+        {
+          "title": "Cucuteni–Trypillia megasite decline and house-burning rites",
+          "text": null,
+          "iso": null
+        },
+        {
+          "title": "Afanasievo kurgans of the Altai / early Mongolian outliers",
+          "text": null,
+          "iso": null
+        },
+        {
+          "title": "Khvalynsk and Remontnoye Eneolithic intermediates on CLV clines",
+          "text": null,
+          "iso": null
+        },
+        {
+          "title": "Yamnaya Danube / Hungary western kurgan corridor",
+          "text": null,
+          "iso": null
+        }
+      ],
+      "sources": [
+        {
+          "title": "Lazaridis et al. 2025 — The genetic origin of the Indo-Europeans (Nature)",
+          "detail": null,
+          "url": null
+        },
+        {
+          "title": "Nikitin et al. 2025 — Genomic history of the North Pontic Region (Nature)",
+          "detail": null,
+          "url": null
+        },
+        {
+          "title": "Wilkin et al. 2021 — Dairying enabled Early Bronze Age Yamnaya expansions (Nature)",
+          "detail": null,
+          "url": null
+        },
+        {
+          "title": "Haak et al. 2015 — Massive migration from the steppe (Nature)",
+          "detail": null,
+          "url": null
+        },
+        {
+          "title": "Allentoft et al. 2015 — Population genomics of Bronze Age Eurasia (Nature)",
+          "detail": null,
+          "url": null
+        },
+        {
+          "title": "Wang / Jeong et al. — Eastern Steppe Afanasievo Mongolia genomes (Cell / related)",
+          "detail": null,
+          "url": null
+        },
+        {
+          "title": "Anthony — Yamnaya pastoralism and wagon mobility syntheses",
+          "detail": null,
+          "url": null
+        },
+        {
+          "title": "Science Advances 2024 — Bréviandes / Paris Basin early steppe admixture pulses",
+          "detail": null,
+          "url": null
+        }
+      ],
+      "sourceFile": "bronze-age.json"
+    },
+    "beaker-corded": {
+      "periodId": "beaker-corded",
+      "label": "Corded Ware & Bell Beaker",
+      "approxYears": "2900–2000 BC",
+      "keyEvents": [
+        {
+          "date": "c. 2900–2600 BC",
+          "title": "Corded Ware explodes across the North European Plain",
+          "text": "Corded Ware appears by ~2900 BC (Bohemia and beyond) as a new cultural-genetic formation: Yamnaya-related steppe ancestry mixed with Globular Amphora–like farmers, not a pure Yamnaya clone. Single graves, cord-impressed beakers, and battle-axes replace many collective Neolithic rites. Papac et al. 2021 show early CW genetic diversity then sharp Y-chromosome bottlenecks toward R1a-M417. This is the main engine of temperate European Indo-Europeanization in standard models.",
+          "iso": null,
+          "region": "central",
+          "regions": [
+            "central",
+            "eastern",
+            "scandinavia",
+            "france"
+          ],
+          "themes": [
+            "migration",
+            "ancestry",
+            "ritual",
+            "language"
+          ]
+        },
+        {
+          "date": "c. 2850–2350 BC",
+          "title": "Single Grave Culture remakes Denmark",
+          "text": "Denmark’s second near-total Holocene turnover: Funnelbeaker farmers give way to Single Grave (Corded Ware) immigrants with high steppe ancestry. Allentoft et al. 2024 (100 Danish genomes) show parallel shifts in genotype, diet, and land use—SGC profiles already closer to present-day Danes. Earlier Gjerrild SGC genomes had previewed Yamnaya-derived ancestry. Pitted Ware coastal holdouts shrink as the new package spreads.",
+          "iso": null,
+          "region": "scandinavia",
+          "regions": [
+            "scandinavia",
+            "central"
+          ],
+          "themes": [
+            "migration",
+            "ancestry",
+            "subsistence",
+            "replacement"
+          ]
+        },
+        {
+          "date": "c. 2800–2300 BC",
+          "title": "Battle Axe Culture enters Sweden",
+          "text": "Swedish Battle Axe (boat-axe) groups are the Scandinavian Corded Ware sister facies—steppe-rich, distinct from Funnelbeaker and Pitted Ware. Malmström et al. 2019 place BAC within the wider CW horizon, with more Neolithic farmer admixture than some early Baltic CW samples. Bergsgraven and related graves show new burial grammar: individual inhumations with polished stone battle-axes. Pre-Germanic speech models often start from this LNBA north.",
+          "iso": null,
+          "region": "scandinavia",
+          "regions": [
+            "scandinavia"
+          ],
+          "themes": [
+            "migration",
+            "ancestry",
+            "ritual",
+            "language"
+          ]
+        },
+        {
+          "date": "c. 3000–2600 BC",
+          "title": "Two steppe pulses into Late Neolithic France",
+          "text": "Paris Basin collective burials (e.g. Bréviandes-les-Pointes) capture steppe ancestry arriving in real time: a Neolithic mother, a steppe-admixed son, and a reconstructed high-steppe grandfather. Science Advances 2024 models major admixture pulses ~3000/2900 BC (CW-linked) and ~2600 BC (Beaker-linked). France is a contact mosaic, not Britain’s cliff-edge replacement. Haplotypes show how families knit the new ancestry into local tombs.",
+          "iso": null,
+          "region": "france",
+          "regions": [
+            "france",
+            "central"
+          ],
+          "themes": [
+            "ancestry",
+            "migration",
+            "ritual",
+            "social"
+          ]
+        },
+        {
+          "date": "c. 2750–2200 BC",
+          "title": "Bell Beaker package spans western Europe",
+          "text": "Maritime and continental Bell Beaker pottery, wristguards, copper daggers, and archery kits spread from Iberia to Central Europe and the North Sea. Olalde et al. 2018 show Iberian and Central European Beaker people are genetically dissimilar—pots travel farther than people between those regions. Further north and west, migration matters more. Beaker is a prestige package riding different demographic engines.",
+          "iso": null,
+          "region": "iberia",
+          "regions": [
+            "iberia",
+            "france",
+            "central",
+            "britain",
+            "italy"
+          ],
+          "themes": [
+            "technology",
+            "migration",
+            "social",
+            "trade"
+          ]
+        },
+        {
+          "date": "c. 2500–2000 BC",
+          "title": "Beaker Britain: ~90% population replacement",
+          "text": "The Beaker complex introduces high steppe-related ancestry and replaces ~90% of Britain’s Neolithic gene pool within a few centuries (Olalde et al. 2018). Y-haplogroup R1b rises from absent in Neolithic samples to >90% in Copper/Bronze Age Britain; new mtDNA lineages show women moved too. Continuity of monuments (e.g. Stonehenge landscapes) masks a demographic break. Island Britain becomes genetically closer to continental Beaker than to its own Neolithic farmers.",
+          "iso": null,
+          "region": "britain",
+          "regions": [
+            "britain"
+          ],
+          "themes": [
+            "migration",
+            "ancestry",
+            "replacement",
+            "ritual"
+          ]
+        },
+        {
+          "date": "c. 2600–2200 BC",
+          "title": "Iberian Beaker keeps a stronger farmer base",
+          "text": "Unlike Britain, Iberian Beaker communities retain substantial EEF ancestry; steppe intake is more gradual and often male-biased. The same pottery fashion therefore maps opposite demographic stories on Atlantic vs North Sea shores. Later Iberian Bronze Age still sits on a higher-EEF ternary than post-Beaker Britain. Culture labels alone cannot predict replacement intensity.",
+          "iso": null,
+          "region": "iberia",
+          "regions": [
+            "iberia"
+          ],
+          "themes": [
+            "ancestry",
+            "migration",
+            "admixture"
+          ]
+        },
+        {
+          "date": "c. 2600–2400 BC",
+          "title": "Y-chromosome bottlenecks in CW and Beaker",
+          "text": "Bohemian aDNA shows Corded Ware Y-diversity collapsing to a dominant R1a lineage by ~2600 BC, then Bell Beaker Y-turnover around ~2400 BC with rising Neolithic-like ancestry. Social selection, patrilineal houses, or conquest demography—not neutral drift—best explain the simulations. Uniparental markers amplify a male-line story that autosomal ancestry only partly mirrors. Third-millennium Europe remakes kinship as well as pots.",
+          "iso": null,
+          "region": "central",
+          "regions": [
+            "central",
+            "britain",
+            "france"
+          ],
+          "themes": [
+            "social",
+            "ancestry",
+            "migration"
+          ]
+        },
+        {
+          "date": "c. 2500–2000 BC",
+          "title": "Steppe ancestry gradients lock in",
+          "text": "By the end of the millennium, northern/central CW and Beaker zones often carry ~40–70% steppe-related ancestry, while Mediterranean and Iberian zones keep lower fractions. Residual WHG/EEF clines persist under the new packages. Linguistic hypotheses (pre-Germanic, Italo-Celtic, etc.) track these gradients imperfectly. The WHG–EEF–WSH ternary that still structures much of Europe is largely set.",
+          "iso": null,
+          "region": "central",
+          "regions": [
+            "central",
+            "scandinavia",
+            "britain",
+            "france",
+            "iberia",
+            "italy",
+            "balkans"
+          ],
+          "themes": [
+            "ancestry",
+            "language",
+            "admixture"
+          ]
+        }
+      ],
+      "interestingElements": [
+        {
+          "title": "Cord-impressed beakers and stone battle-axes in single graves",
+          "text": null,
+          "iso": null
+        },
+        {
+          "title": "Danish Single Grave barrows cutting Funnelbeaker landscapes",
+          "text": null,
+          "iso": null
+        },
+        {
+          "title": "Swedish boat-shaped battle-axes (Battle Axe Culture)",
+          "text": null,
+          "iso": null
+        },
+        {
+          "title": "Bell Beaker archery kits, wristguards, and copper daggers",
+          "text": null,
+          "iso": null
+        },
+        {
+          "title": "Amesbury Archer and early Beaker burials near Stonehenge",
+          "text": null,
+          "iso": null
+        },
+        {
+          "title": "Bréviandes-les-Pointes collective tomb (Paris Basin steppe admixture)",
+          "text": null,
+          "iso": null
+        },
+        {
+          "title": "Bohemian CW/Beaker cemeteries with Y-lineage turnover",
+          "text": null,
+          "iso": null
+        },
+        {
+          "title": "Iberian Beaker maritime packages vs Central European steppe Beaker",
+          "text": null,
+          "iso": null
+        },
+        {
+          "title": "R1a (CW) vs R1b (Beaker Britain) paternal signatures",
+          "text": null,
+          "iso": null
+        }
+      ],
+      "sources": [
+        {
+          "title": "Olalde et al. 2018 — Beaker phenomenon & genomic transformation of NW Europe (Nature)",
+          "detail": null,
+          "url": null
+        },
+        {
+          "title": "Papac et al. 2021 — Dynamic genomic/social changes in 3rd-millennium Bohemia (Sci. Adv.)",
+          "detail": null,
+          "url": null
+        },
+        {
+          "title": "Allentoft et al. 2024 — 100 genomes: repeated turnovers in Neolithic Denmark (Nature)",
+          "detail": null,
+          "url": null
+        },
+        {
+          "title": "Malmström et al. 2019 — Scandinavian Battle Axe & Corded Ware horizon (Proc. R. Soc. B)",
+          "detail": null,
+          "url": null
+        },
+        {
+          "title": "Egfjord et al. 2021 — Genomic steppe ancestry in Danish Single Grave (PLOS ONE)",
+          "detail": null,
+          "url": null
+        },
+        {
+          "title": "Rivollat / Geigl et al. 2024 — Bréviandes Late Neolithic admixture dynamics (Sci. Adv.)",
+          "detail": null,
+          "url": null
+        },
+        {
+          "title": "Haak et al. 2015; Allentoft et al. 2015 — Steppe migration foundational papers (Nature)",
+          "detail": null,
+          "url": null
+        },
+        {
+          "title": "Kristiansen et al. — Corded Ware mobility and language re-theorising (Antiquity)",
+          "detail": null,
+          "url": null
+        }
+      ],
+      "sourceFile": "bronze-age.json"
+    },
+    "nordic-bronze": {
+      "periodId": "nordic-bronze",
+      "label": "Nordic & European Bronze",
+      "approxYears": "1700–500 BC",
+      "keyEvents": [
+        {
+          "date": "c. 2100–1700 BC",
+          "title": "Metal flood founds the Nordic Bronze Age",
+          "text": "Southern Scandinavia has little local copper; NBA wealth is imported. Nørgaard et al. 2021 track shifting ore sources: early British tin-bronze and Únětice-linked Alpine/Slovak copper, then Carpathian and later northern Italian metal after ~1500 BC. Continuous metal flow from ~2100–2000 BC fuels elite competition visible in weapons and ornaments. The NBA is a network society before it is a ‘local’ metallurgy.",
+          "iso": null,
+          "region": "scandinavia",
+          "regions": [
+            "scandinavia",
+            "central",
+            "britain"
+          ],
+          "themes": [
+            "trade",
+            "technology",
+            "social"
+          ]
+        },
+        {
+          "date": "c. 2000–1800 BC",
+          "title": "Sintashta chariots and steppe war-tech",
+          "text": "In the southern Urals, Sintashta–Petrovka cemeteries bury the earliest clear horse-drawn spoked-wheel chariots beside fortified settlements and advanced bronze weaponry. Bayesian dating puts light chariots in the early 2nd millennium BC, transforming earlier Yamnaya wagon traditions. Related steppe ancestries and horse lineages feed later European and Near Eastern chariotry. Rock-art chariots farther west echo this pan-Eurasian prestige tech.",
+          "iso": null,
+          "region": "eastern",
+          "regions": [
+            "eastern",
+            "central"
+          ],
+          "themes": [
+            "technology",
+            "conflict",
+            "migration",
+            "ritual"
+          ]
+        },
+        {
+          "date": "c. 1700–500 BC",
+          "title": "Nordic Bronze Age cultural climax",
+          "text": "Longhouse farms, thousands of burial mounds, ostentatious swords and lurs, and figurative rock art define a Scandinavian fluorescence on a gene pool already reset by Single Grave/Battle Axe. Genetically this is continuity, not a third total replacement after TRB and SGC. Amber exports and metal imports wire chiefs into European exchange. Pre-Germanic speech is the mainstream linguistic frame—reconstructed, not written.",
+          "iso": null,
+          "region": "scandinavia",
+          "regions": [
+            "scandinavia"
+          ],
+          "themes": [
+            "ritual",
+            "trade",
+            "social",
+            "language"
+          ]
+        },
+        {
+          "date": "c. 1600–1100 BC",
+          "title": "Amber routes reach the Aegean",
+          "text": "Baltic amber travels south and east toward Mycenaean Greece while metal and ideas move north—Kristiansen & Suchowska-Ducke’s ‘connected histories.’ After Únětice’s decline ~1600 BC, Nordic access to Carpathian copper and eastern routes intensifies. Elite graves and hoards track the same corridors as isotope-provenanced metal. The NBA is a northern node of a Bronze Age world-system, not an isolate.",
+          "iso": null,
+          "region": "scandinavia",
+          "regions": [
+            "scandinavia",
+            "central",
+            "balkans",
+            "eastern"
+          ],
+          "themes": [
+            "trade",
+            "social",
+            "technology"
+          ]
+        },
+        {
+          "date": "c. 1500–500 BC",
+          "title": "Rock art ships, sun discs, and ritual landscapes",
+          "text": "Bohuslän, Østfold, Tanum, and inland Swedish panels carve fleets, warriors, ploughs, and sun symbols into coastal bedrock—visual ideology of a seafaring metal age. Ling, Kristiansen, and others link shoreline ship imagery to long-distance exchange; inland panels may mark aggregation and handover sites. The Trundholm sun chariot (Denmark) materialises the same solar cosmology in bronze. Ritual and trade share one iconography.",
+          "iso": null,
+          "region": "scandinavia",
+          "regions": [
+            "scandinavia"
+          ],
+          "themes": [
+            "ritual",
+            "trade",
+            "art",
+            "technology"
+          ]
+        },
+        {
+          "date": "c. 1600–1200 BC",
+          "title": "Tumulus to Urnfield in Central Europe",
+          "text": "Middle Bronze Tumulus burial traditions give way to Late Bronze Urnfield cremation complexes across much of Central Europe. Ancestry largely stabilises the Corded Ware–derived ternary; culture names proliferate faster than genetic turnovers. Urnfield–Hallstatt arcs are often linked (debated) toward early Celtic ethnolinguistic formations. Cremation urnfields rewrite how communities remember the dead.",
+          "iso": null,
+          "region": "central",
+          "regions": [
+            "central",
+            "france",
+            "italy"
+          ],
+          "themes": [
+            "ritual",
+            "social",
+            "language",
+            "continuity"
+          ]
+        },
+        {
+          "date": "c. 2200–1500 BC",
+          "title": "El Argar, Terramare, and Wessex regional BA",
+          "text": "Southeast Iberia’s El Argar builds fortified hill settlements and stark social hierarchy; Po Valley Terramare embank settlements; Britain’s Wessex culture raises rich barrows with continental metal links. Each rides the post-3000 BC ancestry mix with different EEF/steppe balances—Iberia keeps more farmer substrate than Britain. Regional Bronze Ages are parallel experiments, not one Nordic script.",
+          "iso": null,
+          "region": "iberia",
+          "regions": [
+            "iberia",
+            "italy",
+            "britain",
+            "france"
+          ],
+          "themes": [
+            "social",
+            "technology",
+            "trade",
+            "ancestry"
+          ]
+        },
+        {
+          "date": "c. 1600–1200 BC",
+          "title": "Mycenaean palaces and Linear B Greek",
+          "text": "Mycenaean palace societies write early Greek in Linear B—the first securely attested Indo-European language in Europe. Genomes show moderate steppe-related ancestry on an Aegean/Anatolian-farmer-rich base, far less steppe than Corded Ware Denmark. Northern Balkans join Carpathian–Danube BA networks while the Aegean runs a palace economy. Language here is epigraphic fact; steppe correlation remains model-dependent.",
+          "iso": null,
+          "region": "balkans",
+          "regions": [
+            "balkans"
+          ],
+          "themes": [
+            "language",
+            "social",
+            "ancestry",
+            "trade"
+          ]
+        },
+        {
+          "date": "c. 1700–1200 BC",
+          "title": "Srubnaya and eastern steppe BA continuity",
+          "text": "Timber-grave (Srubnaya) and related forest-steppe cultures maintain steppe-rich ancestry east of the Carpathians, on pathways often linked toward early Indo-Iranian. They parallel European BA diversification farther west without the Nordic rock-art package. Chariot and horse ideologies circulate across this continuum. Eastern Europe’s Bronze Age stays pastoral-steppe in flavour while temperate Europe farms and trades metal.",
+          "iso": null,
+          "region": "eastern",
+          "regions": [
+            "eastern"
+          ],
+          "themes": [
+            "ancestry",
+            "language",
+            "technology",
+            "continuity"
+          ]
+        }
+      ],
+      "interestingElements": [
+        {
+          "title": "Trundholm sun chariot (Denmark)",
+          "text": null,
+          "iso": null
+        },
+        {
+          "title": "Tanum / Bohuslän / Østfold figurative rock-art fleets",
+          "text": null,
+          "iso": null
+        },
+        {
+          "title": "Viksø horned helmets and bronze lurs",
+          "text": null,
+          "iso": null
+        },
+        {
+          "title": "Thousands of Scandinavian barrows and longhouse farms",
+          "text": null,
+          "iso": null
+        },
+        {
+          "title": "Baltic amber in Mycenaean contexts",
+          "text": null,
+          "iso": null
+        },
+        {
+          "title": "Sintashta chariot burials (southern Urals)",
+          "text": null,
+          "iso": null
+        },
+        {
+          "title": "El Argar fortified hilltop centres (southeast Iberia)",
+          "text": null,
+          "iso": null
+        },
+        {
+          "title": "Terramare embanked settlements of the Po plain",
+          "text": null,
+          "iso": null
+        },
+        {
+          "title": "Wessex barrow gold and continental metalwork (Britain)",
+          "text": null,
+          "iso": null
+        },
+        {
+          "title": "Linear B tablets — earliest Greek",
+          "text": null,
+          "iso": null
+        },
+        {
+          "title": "Urnfield cremation cemeteries of Central Europe",
+          "text": null,
+          "iso": null
+        }
+      ],
+      "sources": [
+        {
+          "title": "Nørgaard, Pernicka & Vandkilde 2021 — Shifting metal trade routes to Scandinavia (PLOS ONE)",
+          "detail": null,
+          "url": null
+        },
+        {
+          "title": "Kristiansen & Suchowska-Ducke 2015 — Connected histories: BA interaction 1500–1100 BC (PPS)",
+          "detail": null,
+          "url": null
+        },
+        {
+          "title": "Nimura, Skoglund et al. — Nordic rock art & stranger meetings (PPS / related)",
+          "detail": null,
+          "url": null
+        },
+        {
+          "title": "Ling, Earle & Kristiansen — Maritime mode of production / rock art and metal trade",
+          "detail": null,
+          "url": null
+        },
+        {
+          "title": "Lindner 2020 — Chariots in the Eurasian Steppe, Bayesian dating (Antiquity)",
+          "detail": null,
+          "url": null
+        },
+        {
+          "title": "Lazaridis et al. — Mycenaean/Minoan genomes & steppe ancestry (Nature 2017 and follow-ups)",
+          "detail": null,
+          "url": null
+        },
+        {
+          "title": "Allentoft et al. 2024 — Danish LNBA continuity after Single Grave (Nature)",
+          "detail": null,
+          "url": null
+        },
+        {
+          "title": "Kaul — Bronze Age religion and the Trundholm sun chariot syntheses",
+          "detail": null,
+          "url": null
+        }
+      ],
+      "sourceFile": "bronze-age.json"
+    },
     "iron-age": {
       "periodId": "iron-age",
       "label": "Iron Age",
