@@ -14,7 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Sora:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/styles.css?v=key-events-arrow-3" />
+    <link rel="stylesheet" href="css/styles.css?v=era-tabs-2" />
     <script>
       /* Clear legacy layout-override keys from older builds */
       try {
@@ -23,10 +23,36 @@
       } catch (_) {}
     </script>
     <script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js" defer></script>
-    <script src="js/app.js?v=key-events-arrow-3" defer></script>
+    <script src="js/app.js?v=era-tabs-2" defer></script>
   </head>
   <body>
-    <div class="app">
+    <div class="app" data-atlas-mode="deep-time">
+      <nav class="atlas-tabs" id="atlas-tabs" aria-label="Atlas era">
+        <button
+          type="button"
+          class="atlas-tab"
+          data-mode="high-medieval"
+          aria-selected="false"
+        >
+          High Medieval
+        </button>
+        <button
+          type="button"
+          class="atlas-tab is-active"
+          data-mode="deep-time"
+          aria-selected="true"
+        >
+          Deep-time
+        </button>
+        <button
+          type="button"
+          class="atlas-tab"
+          data-mode="renaissance"
+          aria-selected="false"
+        >
+          Renaissance
+        </button>
+      </nav>
       <main class="map-stage" id="map-stage">
         <div class="map-chrome">
           <h1 class="brand">Europa <em>Strata</em></h1>

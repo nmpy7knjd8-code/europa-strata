@@ -80,6 +80,7 @@ button {
   grid-template-columns: 1fr;
   grid-template-rows: auto;
   grid-template-areas:
+    "tabs"
     "map"
     "time"
     "legend"
@@ -205,6 +206,63 @@ button {
   max-width: min(78vw, 20rem);
 }
 
+.atlas-tabs {
+  grid-area: tabs;
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 0;
+  width: fit-content;
+  max-width: min(96vw, 38rem);
+  margin: 0.55rem auto 0.35rem;
+  border: 1px solid var(--line);
+  background: var(--bg);
+  z-index: 5;
+}
+
+.atlas-tab {
+  flex: 1 1 auto;
+  margin: 0;
+  padding: 0.68rem 1.1rem;
+  border: 0;
+  border-right: 1px solid var(--line);
+  background: transparent;
+  color: var(--ink-mute);
+  font-family: var(--font-ui);
+  font-size: 1.02rem;
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  line-height: 1.2;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: color 0.18s var(--ease), background 0.18s var(--ease);
+}
+
+.atlas-tab:last-child {
+  border-right: 0;
+}
+
+.atlas-tab:hover {
+  color: var(--ink);
+  background: rgba(0, 0, 0, 0.03);
+}
+
+[data-theme="dark"] .atlas-tab:hover {
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.atlas-tab.is-active,
+.atlas-tab[aria-selected="true"] {
+  color: var(--ink);
+  background: rgba(0, 0, 0, 0.055);
+  font-weight: 600;
+}
+
+[data-theme="dark"] .atlas-tab.is-active,
+[data-theme="dark"] .atlas-tab[aria-selected="true"] {
+  background: rgba(255, 255, 255, 0.08);
+}
+
 .brand {
   margin: 0;
   font-family: var(--font-display);
@@ -226,6 +284,53 @@ button {
   text-transform: uppercase;
   color: var(--ink-mute);
   font-weight: 400;
+}
+
+/* Kingdom modes: polity fills (not modern country culture fills) */
+.polity {
+  fill: transparent;
+  stroke: var(--ink);
+  stroke-width: 0.55;
+  stroke-opacity: 0.35;
+  cursor: pointer;
+  vector-effect: non-scaling-stroke;
+  transition: fill 0.45s var(--ease), fill-opacity 0.4s var(--ease),
+    stroke-opacity 0.2s;
+}
+
+.polity:hover,
+.polity.is-hover {
+  stroke-opacity: 0.95;
+  stroke-width: 1.05;
+}
+
+.polity.is-active {
+  stroke-opacity: 1;
+  stroke-width: 1.35;
+}
+
+.app:not([data-atlas-mode="deep-time"]) .country {
+  pointer-events: none;
+  fill: var(--land-base) !important;
+  fill-opacity: 1 !important;
+  stroke-opacity: 0.28;
+  cursor: default;
+}
+
+.app:not([data-atlas-mode="deep-time"]) .country.is-active,
+.app:not([data-atlas-mode="deep-time"]) .country.is-hover {
+  stroke-width: 0.35;
+  stroke-opacity: 0.28;
+}
+
+.app:not([data-atlas-mode="deep-time"]) .mode-pill,
+.app:not([data-atlas-mode="deep-time"]) .ling-panel,
+.app:not([data-atlas-mode="deep-time"]) .absorb-strip,
+.app:not([data-atlas-mode="deep-time"]) .ancestry-panel,
+.app:not([data-atlas-mode="deep-time"]) .glossary,
+.app:not([data-atlas-mode="deep-time"]) #period-key-events,
+.app:not([data-atlas-mode="deep-time"]) #place-key-events {
+  display: none !important;
 }
 
 .time-bar {
@@ -1489,6 +1594,19 @@ html {
   top: 0.65rem;
   left: 0.75rem;
   max-width: min(82vw, 22rem);
+}
+
+
+.atlas-tabs {
+  margin-top: 0.45rem;
+  margin-bottom: 0.25rem;
+  max-width: min(96vw, 36rem);
+}
+
+.atlas-tab {
+  padding: 0.62rem 0.78rem;
+  font-size: 0.96rem;
+  letter-spacing: 0.035em;
 }
 
 
