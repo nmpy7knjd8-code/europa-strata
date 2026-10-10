@@ -48,6 +48,8 @@ html,
 body {
   margin: 0;
   height: 100%;
+  max-width: 100%;
+  overflow-x: clip;
 }
 
 body {
@@ -57,7 +59,8 @@ body {
   font-weight: 400;
   line-height: 1.55;
   background: var(--bg);
-  overflow: auto;
+  overflow-x: clip;
+  overflow-y: auto;
   padding-bottom: env(safe-area-inset-bottom, 0);
   -webkit-font-smoothing: antialiased;
 }
@@ -77,7 +80,7 @@ button {
 
 .app {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: minmax(0, 1fr);
   grid-template-rows: auto;
   grid-template-areas:
     "tabs"
@@ -87,9 +90,13 @@ button {
     "side"
     "below"
     "gloss";
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
   height: auto;
   min-height: 100vh;
   min-height: 100dvh;
+  overflow-x: clip;
 }
 
 /* ——— Map ——— */
@@ -100,9 +107,13 @@ button {
   background: var(--sea);
   overflow: hidden;
   width: 100%;
+  max-width: 100%;
+  min-width: 0;
   height: 60dvh;
   min-height: 35dvh;
   max-height: none;
+  /* SVG land paths must not widen the page / break tab wrap + map fit */
+  contain: paint;
 }
 
 .map {
@@ -209,25 +220,33 @@ button {
 .atlas-tabs {
   grid-area: tabs;
   display: grid;
-  /* Wrap to 2 rows on phone rather than crush/overlap titles */
-  grid-template-columns: repeat(auto-fit, minmax(7.25rem, 1fr));
+  /* Phone: 2 cols so titles never crush; wider: auto-fit */
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   align-items: stretch;
   gap: 0;
   width: 100%;
   max-width: 100%;
+  min-width: 0;
   margin: 0.4rem 0 0.25rem;
   border: 1px solid var(--line);
   border-left: 0;
   border-right: 0;
   background: var(--bg);
   z-index: 5;
-  overflow: visible;
+  overflow: hidden;
+}
+
+@media (min-width: 560px) {
+  .atlas-tabs {
+    grid-template-columns: repeat(auto-fit, minmax(7.5rem, 1fr));
+  }
 }
 
 .atlas-tab {
   margin: 0;
   min-width: 0;
-  padding: 0.72rem 0.55rem;
+  max-width: 100%;
+  padding: 0.72rem 0.45rem;
   border: 0;
   border-right: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
@@ -240,7 +259,8 @@ button {
   letter-spacing: 0.01em;
   line-height: 1.25;
   white-space: normal;
-  overflow-wrap: anywhere;
+  overflow: hidden;
+  overflow-wrap: break-word;
   word-break: normal;
   hyphens: none;
   text-align: center;
@@ -1658,8 +1678,7 @@ html {
   margin-top: 0.3rem;
   margin-bottom: 0.15rem;
   max-width: 100%;
-  overflow: visible;
-  grid-template-columns: repeat(auto-fit, minmax(7.5rem, 1fr));
+  overflow: hidden;
 }
 
 .atlas-tab {
