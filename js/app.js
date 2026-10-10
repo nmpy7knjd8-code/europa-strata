@@ -155,7 +155,8 @@ function atlasLinkHtml(ref, label) {
   const t = resolveChainRef(ref);
   if (!t) return escapeHtml(label || "");
   const text = label || t.name;
-  return `<button type="button" class="atlas-link" data-period="${escapeHtml(t.periodId)}" data-iso="${escapeHtml(t.iso)}" title="Go to ${escapeHtml(t.name)}">${escapeHtml(text)}</button>`;
+  // Use <a> (not <button>) so iOS/WebKit inherits parent body metrics reliably
+  return `<a href="#${escapeHtml(t.periodId)}/${escapeHtml(t.iso)}" class="atlas-link" data-period="${escapeHtml(t.periodId)}" data-iso="${escapeHtml(t.iso)}" title="Go to ${escapeHtml(t.name)}">${escapeHtml(text)}</a>`;
 }
 
 /** Auto-link known polity/culture names in plain text (skips current target). */
