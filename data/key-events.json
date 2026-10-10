@@ -1,5 +1,1134 @@
 {
   "version": 1,
-  "updatedAt": "2026-10-10T00:36:30.406Z",
-  "periods": {}
+  "updatedAt": "2026-10-10T00:38:12.173Z",
+  "periods": {
+    "iron-age": {
+      "periodId": "iron-age",
+      "label": "Iron Age",
+      "approxYears": null,
+      "keyEvents": [
+        {
+          "date": "c. 800–750 BC",
+          "title": null,
+          "text": "Hallstatt C opens temperate Europe’s Iron Age: iron weapons and tools spread from Alpine/central workshops while elite tumulus burials revive warrior display.",
+          "iso": "AUT",
+          "region": "central",
+          "regions": [
+            "central"
+          ],
+          "themes": []
+        },
+        {
+          "date": "c. 600 BC",
+          "title": null,
+          "text": "Phocaean Greeks found Massalia (Marseille), anchoring Mediterranean wine, olive, and prestige-goods trade up the Rhône into Hallstatt elite networks.",
+          "iso": "FRA",
+          "region": "france",
+          "regions": [
+            "france"
+          ],
+          "themes": []
+        },
+        {
+          "date": "c. 650–500 BC",
+          "title": null,
+          "text": "Jastorf urnfield communities crystallize across northern Germany and Jutland—the main archaeological backdrop usually tied to early Germanic ethnolinguistic formation.",
+          "iso": "DEU",
+          "region": "central",
+          "regions": [
+            "central"
+          ],
+          "themes": []
+        },
+        {
+          "date": "c. 560–500 BC",
+          "title": null,
+          "text": "Late Hallstatt princely seats (Fürstensitze) peak: Hochdorf, Vix/Mont Lassois, and peers bury Mediterranean imports that advertise alpine–Greek contact.",
+          "iso": "DEU",
+          "region": "central",
+          "regions": [
+            "central"
+          ],
+          "themes": []
+        },
+        {
+          "date": "trad. 509 BC",
+          "title": null,
+          "text": "Roman tradition dates the expulsion of the Tarquin kings and the birth of the Republic—later annalistic memory for a late-sixth-century shift away from Etruscan kingship.",
+          "iso": "ITA",
+          "region": "italy",
+          "regions": [
+            "italy"
+          ],
+          "themes": []
+        },
+        {
+          "date": "c. 480–450 BC",
+          "title": null,
+          "text": "Western Hallstatt hillfort elites collapse (Heuneburg destruction; Mont Lassois abandoned) as La Tène art and new warrior rites take over Celtic Europe.",
+          "iso": "DEU",
+          "region": "central",
+          "regions": [
+            "central"
+          ],
+          "themes": []
+        },
+        {
+          "date": "5th c. BC",
+          "title": null,
+          "text": "Herodotus’s Scythian ethnography fixes Iranian-speaking steppe nomads as the Greek world’s northern foil, matching rich kurgan horizons north of the Black Sea.",
+          "iso": "UKR",
+          "region": "eastern",
+          "regions": [
+            "eastern"
+          ],
+          "themes": []
+        },
+        {
+          "date": "c. 390/387 BC",
+          "title": null,
+          "text": "Senone Gauls defeat Rome at the Allia and sack the city—trauma that later Roman writers used to define the Celtic ‘barbarian’ threat.",
+          "iso": "ITA",
+          "region": "italy",
+          "regions": [
+            "italy"
+          ],
+          "themes": []
+        },
+        {
+          "date": "279 BC",
+          "title": null,
+          "text": "Brennus’s Galatians invade Macedonia and Greece and fail at Delphi, spawning the Soteria festival and locking Celts into Hellenistic sacred memory.",
+          "iso": "GRC",
+          "region": "balkans",
+          "regions": [
+            "balkans"
+          ],
+          "themes": []
+        }
+      ],
+      "interestingElements": [
+        {
+          "title": "Hallstatt salt & princely graves",
+          "text": "The Hallstatt salt-mining complex and wagon/chamber tombs (Magdalenenberg, Hochdorf) show early Iron Age wealth built on alpine resources plus southern imports.",
+          "iso": "AUT"
+        },
+        {
+          "title": "La Tène art style",
+          "text": "From c. 450 BC, curvilinear vegetal and fantastic-animal ornament on weapons, torcs, and flagons becomes the visual signature of Continental Celtic elites.",
+          "iso": null
+        },
+        {
+          "title": "Oppida & coinage",
+          "text": "Later La Tène fortified oppida and local coin issues mark denser political economies in Gaul and Central Europe before Roman conquest.",
+          "iso": "FRA"
+        },
+        {
+          "title": "Druidic learned class",
+          "text": "Classical ethnographers (Poseidonius, Caesar) describe druids, bards, and vates as oral specialists of law, ritual, and memory in Celtic societies.",
+          "iso": null
+        },
+        {
+          "title": "Greek colonial religion in the West",
+          "text": "Massalia and Emporion transplant Artemis, Apollo, and civic Greek cults onto Ligurian/Iberian coasts, reshaping local sanctuary practice.",
+          "iso": "FRA"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Hallstatt Culture Research Project — Chronology",
+          "detail": "Reinecke Ha C–D absolute ranges; Ha A–B as Late Bronze Urnfield, not Iron Age Hallstatt culture",
+          "url": "https://maptism.github.io/Hallstatt/hallstatt_research/01_chronology.html"
+        },
+        {
+          "title": "Hallstatt Culture Research Project — La Tène Transition",
+          "detail": "Fürstensitze abandonment c. 480–430 BC; Ha D3/Lt A overlap",
+          "url": "https://maptism.github.io/Hallstatt/hallstatt_research/11_la_tene_transition.html"
+        },
+        {
+          "title": "Hallstatt culture",
+          "detail": "Encyclopaedia Britannica overview of Hallstatt–La Tène sequence and Mediterranean reorientation",
+          "url": "https://www.britannica.com/topic/Hallstatt-culture"
+        },
+        {
+          "title": "Massalia",
+          "detail": "Oxford Classical Dictionary — Phocaean foundation c. 600 BC; Rhône trade into Celtic Europe",
+          "url": "https://academic.oup.com/edited-volume/61673/chapter/549654496"
+        },
+        {
+          "title": "The cemetery of Mühlen Eichsen and the Jastorf Culture of Northern Germany",
+          "detail": "University of Jena overview — Jastorf c. 650 BC–0 AD core in northern Germany",
+          "url": "https://www.gw.uni-jena.de/phifakmedia/29735/iron-age-in-northern-germany.pdf"
+        },
+        {
+          "title": "Herodotus and the Scythians",
+          "detail": "Penn Museum Expedition — Herodotus Book IV ethnography vs Black Sea kurgan archaeology",
+          "url": "https://www.penn.museum/sites/expedition/herodotus-and-the-scythians/"
+        },
+        {
+          "title": "Sack of Rome (390 BC)",
+          "detail": "Modern discussion of Varronian 390 vs Polybian 387/6; Senone Gauls after Allia",
+          "url": "https://en.wikipedia.org/wiki/Sack_of_Rome_(390_BC)"
+        },
+        {
+          "title": "Pausanias on the invasion of the Gauls",
+          "detail": "Livius.org translation/commentary — Brennus, Thermopylae, Delphi 279 BC",
+          "url": "https://www.livius.org/sources/content/pausanias-periegete/the-invasion-of-the-gauls/"
+        },
+        {
+          "title": "Overthrow of the Roman monarchy",
+          "detail": "Varronian 509 BC tradition and scholarly caution on early Republic chronology",
+          "url": "https://en.wikipedia.org/wiki/Overthrow_of_the_Roman_monarchy"
+        }
+      ],
+      "sourceFile": "iron-classical.json"
+    },
+    "classical": {
+      "periodId": "classical",
+      "label": "Classical / Roman Republic–early Empire",
+      "approxYears": null,
+      "keyEvents": [
+        {
+          "date": "264–241 BC",
+          "title": null,
+          "text": "First Punic War ends with Sicily as Rome’s first overseas province, launching Republican Mediterranean imperialism that soon engulfs Corsica, Sardinia, and Iberia.",
+          "iso": "ITA",
+          "region": "italy",
+          "regions": [
+            "italy"
+          ],
+          "themes": []
+        },
+        {
+          "date": "218–201 BC",
+          "title": null,
+          "text": "Second Punic War: Hannibal’s Alpine invasion and Roman counter-conquest shatter Carthaginian power in Spain and Italy and make Rome western Mediterranean hegemon.",
+          "iso": "ITA",
+          "region": "italy",
+          "regions": [
+            "italy"
+          ],
+          "themes": []
+        },
+        {
+          "date": "146 BC",
+          "title": null,
+          "text": "Rome destroys Carthage and Corinth in the same year, annexing Africa and tightening grip on Greece—a brutal marker of mid-Republican expansion.",
+          "iso": "GRC",
+          "region": "balkans",
+          "regions": [
+            "balkans"
+          ],
+          "themes": []
+        },
+        {
+          "date": "58–50 BC",
+          "title": null,
+          "text": "Julius Caesar’s Gallic Wars conquer the La Tène polities of Gaul; Vercingetorix’s revolt ends at Alesia (52 BC), opening mass Latinization of western Europe.",
+          "iso": "FRA",
+          "region": "france",
+          "regions": [
+            "france"
+          ],
+          "themes": []
+        },
+        {
+          "date": "31–27 BC",
+          "title": null,
+          "text": "Actium (31) and Octavian’s settlement as Augustus (27) end the Republic’s civil wars and create the Principate that administers Europe’s Roman provinces.",
+          "iso": "GRC",
+          "region": "balkans",
+          "regions": [
+            "balkans"
+          ],
+          "themes": []
+        },
+        {
+          "date": "9 AD",
+          "title": null,
+          "text": "Arminius destroys three legions under Varus in the Teutoburg Forest, freezing the Rhine as Rome’s practical northern limit in Germania.",
+          "iso": "DEU",
+          "region": "central",
+          "regions": [
+            "central"
+          ],
+          "themes": []
+        },
+        {
+          "date": "43 AD",
+          "title": null,
+          "text": "Claudius invades Britain under Aulus Plautius; Colchester falls and Britannia becomes a frontier province with towns, roads, and army bases.",
+          "iso": "GBR",
+          "region": "britain",
+          "regions": [
+            "britain"
+          ],
+          "themes": []
+        },
+        {
+          "date": "1st c. AD",
+          "title": null,
+          "text": "Imperial cult (Roma et Augustus), civic polytheism, and eastern mystery religions (including early Mithraism) remake public piety across the European provinces.",
+          "iso": null,
+          "region": null,
+          "regions": [],
+          "themes": []
+        }
+      ],
+      "interestingElements": [
+        {
+          "title": "Roman roads & oppida successors",
+          "text": "Legionary highways and new coloniae overwrite many Iron Age centres, knitting Gaul, Hispania, and the Balkans into one fiscal-military space.",
+          "iso": null
+        },
+        {
+          "title": "Latin vs Greek bilingual empire",
+          "text": "Latin dominates the west while Greek remains the eastern prestige tongue—Europe’s first durable administrative diglossia.",
+          "iso": null
+        },
+        {
+          "title": "Vercingetorix",
+          "text": "Arvernian leader of the pan-Gallic revolt (52 BC); his defeat becomes the emblematic end of independent La Tène Gaul.",
+          "iso": "FRA"
+        },
+        {
+          "title": "Augustus and temple restoration",
+          "text": "Res Gestae boasts of restoring dozens of temples; Augustan religion couples ancestral cult repair with ruler ideology.",
+          "iso": "ITA"
+        },
+        {
+          "title": "Frontier religions",
+          "text": "Mithraea on military frontiers and Romano-Celtic syncretic shrines (e.g. Sulis Minerva) show how conquest rewires local sacred landscapes.",
+          "iso": "GBR"
+        }
+      ],
+      "sources": [
+        {
+          "title": "Punic Wars",
+          "detail": "Overview of 264–146 BC conflicts; Sicily as first province after 241 BC",
+          "url": "https://en.wikipedia.org/wiki/Punic_Wars"
+        },
+        {
+          "title": "Roman Republic timeline",
+          "detail": "World History Encyclopedia — Caesar in Gaul 58–51/50 BC; Rubicon 49 BC",
+          "url": "https://www.worldhistory.org/timeline/Roman_Republic/"
+        },
+        {
+          "title": "The Roman Invasion of Britain",
+          "detail": "English Heritage — Claudian invasion AD 43; Plautius, Colchester, early province",
+          "url": "https://www.english-heritage.org.uk/learn/story-of-england/romans/invasion/"
+        },
+        {
+          "title": "Battle of the Teutoburg Forest",
+          "detail": "Encyclopaedia Britannica — Autumn 9 CE; Arminius vs Varus; Rhine limit",
+          "url": "https://www.britannica.com/event/Battle-of-the-Teutoburg-Forest"
+        },
+        {
+          "title": "Augustus",
+          "detail": "Principate from 27 BC; imperial cult and Pax Romana framing",
+          "url": "https://en.wikipedia.org/wiki/Augustus"
+        },
+        {
+          "title": "Augustan Religion and the Reshaping of Roman Memory",
+          "detail": "Eric Orlin 2014 — temple restoration program and Augustan sacred politics",
+          "url": "https://roosevelt.ucsd.edu/_files/mmw/mmw12/OrlinAugustanReligion2014.pdf"
+        },
+        {
+          "title": "Massalia (Princeton Encyclopedia of Classical Sites)",
+          "detail": "Perseus — Greek colony to Caesarian siege 49 BC; Artemis/Apollo cults",
+          "url": "https://www.perseus.tufts.edu/hopper/text?doc=Perseus%3Atext%3A1999.04.0006%3Aentry%3Dmassalia"
+        }
+      ],
+      "sourceFile": "iron-classical.json"
+    },
+    "mesolithic": {
+      "periodId": "mesolithic",
+      "label": "Mesolithic",
+      "approxYears": "8000–5500 BC",
+      "keyEvents": [
+        {
+          "date": "c. 8000–7000 BC",
+          "title": "Post-glacial Maglemosian wetlands boom",
+          "text": "As ice sheets retreated and deciduous forest spread, Maglemosian and related foragers densified around lakes, rivers, and coastal wetlands from Britain to southern Scandinavia and the North European Plain. Bone and antler leister points, dugout canoes, and microlithic toolkits mark a watery economy of fish, waterbirds, and red deer. Sites such as Star Carr (North Yorkshire) preserve timber platforms and ritualised deer-skull headdresses that show social display, not just subsistence. These WHG-related groups are the western baseline before farming.",
+          "iso": null,
+          "region": "britain",
+          "regions": [
+            "britain",
+            "scandinavia",
+            "central",
+            "france"
+          ],
+          "themes": [
+            "climate",
+            "technology",
+            "ritual",
+            "subsistence"
+          ]
+        },
+        {
+          "date": "c. 7500–6200 BC",
+          "title": "Doggerland shrinks into North Sea islands",
+          "text": "Relative sea-level rise after the last glaciation gradually drowned the southern North Sea plain—Doggerland—fragmenting a once-continuous forager landscape into marshes, islands, and tidal flats. Mesolithic people tracked shifting coasts; submerged palaeolandscapes still yield flint and seismic river valleys under modern waters. By the late 7th millennium BC only remnant archipelagos remained. Britain’s separation from the continent was a multi-century drowning, not a single catastrophe.",
+          "iso": null,
+          "region": "britain",
+          "regions": [
+            "britain",
+            "scandinavia",
+            "central",
+            "france"
+          ],
+          "themes": [
+            "climate",
+            "migration",
+            "landscape"
+          ]
+        },
+        {
+          "date": "c. 6200 BC",
+          "title": "8.2 ka cold pulse hits Holocene foragers",
+          "text": "The 8.2 ka event—the sharpest Holocene cooling recorded in Greenland ice—brought decades of colder, often drier conditions across Atlantic and northern Europe. High-resolution shell middens such as El Mazo (Asturias) show seasonal sea-surface cooling and shifts in harvested shellfish. Northwest European radiocarbon syntheses argue for resilience and reorganization rather than continent-wide population collapse. The pulse likely intensified mobility just as farming approached the southeast.",
+          "iso": null,
+          "region": "iberia",
+          "regions": [
+            "iberia",
+            "britain",
+            "france",
+            "scandinavia",
+            "central"
+          ],
+          "themes": [
+            "climate",
+            "subsistence",
+            "migration"
+          ]
+        },
+        {
+          "date": "c. 6200 BC",
+          "title": "Storegga tsunami slams North Sea coasts",
+          "text": "A massive submarine landslide off Norway triggered the Storegga tsunami (~8150 cal BP), sending multi-metre run-ups onto coasts from Norway and Scotland to the southern North Sea. Sediment sheets and a confirmed submarine deposit in Doggerland’s ‘Southern River’ valley prove the wave struck both land and drowned lowlands. It was probably not the final drowning of Doggerland—much was already underwater—but it was a sudden, lethal shock for coastal Mesolithic communities. Archaeological traces of human impact remain scarce relative to the geological signal.",
+          "iso": null,
+          "region": "britain",
+          "regions": [
+            "britain",
+            "scandinavia",
+            "central"
+          ],
+          "themes": [
+            "climate",
+            "catastrophe",
+            "landscape"
+          ]
+        },
+        {
+          "date": "c. 6200–5500 BC",
+          "title": "WHG–EHG forager networks intensify",
+          "text": "Genome-wide data show that after ~8000 BC admixture between western Oberkassel/WHG-related and eastern Sidelkino/EHG-related foragers increased across temperate Europe. The cemetery of Yuzhniy Oleniy Ostrov (Karelia) samples a large EHG-related community with rich grave goods; western sites remain WHG-dominated. Scandinavian hunter-gatherers (SHG) sit on this cline with elevated eastern affinity. Climate stress and the approaching farmer frontier both likely drove forager mobility.",
+          "iso": null,
+          "region": "eastern",
+          "regions": [
+            "eastern",
+            "scandinavia",
+            "central",
+            "balkans"
+          ],
+          "themes": [
+            "migration",
+            "ancestry",
+            "ritual"
+          ]
+        },
+        {
+          "date": "c. 7000–5500 BC",
+          "title": "Iron Gates foragers thrive on the Danube",
+          "text": "At the Iron Gates gorges (Lepenski Vir, Vlasac, Schela Cladovei), Mesolithic groups built trapezoidal riverside houses and buried people with elaborate rituals beside a fishery of migratory sturgeon and other fish. Their genomes sit on a WHG–EHG cline with distinctive local structure. Contact with incoming Anatolian-related farmers begins in the 7th–6th millennia BC, producing some of Europe’s earliest farmer–forager genetic mixtures. The gorge was a corridor, not a sealed refuge.",
+          "iso": null,
+          "region": "balkans",
+          "regions": [
+            "balkans",
+            "eastern"
+          ],
+          "themes": [
+            "ritual",
+            "subsistence",
+            "migration",
+            "ancestry"
+          ]
+        },
+        {
+          "date": "c. 6500–5500 BC",
+          "title": "Atlantic and Baltic shell-midden economies",
+          "text": "Along Iberia’s Cantabrian coast, Brittany, and the future Ertebølle zone of southern Scandinavia, foragers piled shell middens that record intensive marine and estuarine harvesting. Stable isotopes often show heavy aquatic diets compared with inland forest hunters. These coastal packages persist as farmer frontiers advance, becoming classic ‘last forager’ holdouts in the north. Material culture stays microlithic and ceramic-free until contact zones introduce pottery.",
+          "iso": null,
+          "region": "iberia",
+          "regions": [
+            "iberia",
+            "france",
+            "scandinavia",
+            "britain"
+          ],
+          "themes": [
+            "subsistence",
+            "technology",
+            "climate"
+          ]
+        },
+        {
+          "date": "c. 6000–5500 BC",
+          "title": "Eastern pottery foragers without farming",
+          "text": "East of the early farmer line, Narva, Comb Ware, and related groups adopt ceramics while remaining genetically hunter-gatherer for millennia. In Ukraine and the forest-steppe, ‘Neolithic’ often means pottery, not crops—genomes stay WHG–EHG without Anatolian farmer ancestry until much later. This ‘great divide’ between farmer west and forager east structures Europe until steppe expansions after ~3000 BC. It warns against equating pottery horizons with demic farming.",
+          "iso": null,
+          "region": "eastern",
+          "regions": [
+            "eastern",
+            "scandinavia",
+            "balkans"
+          ],
+          "themes": [
+            "technology",
+            "ancestry",
+            "subsistence"
+          ]
+        }
+      ],
+      "interestingElements": [
+        {
+          "title": "Star Carr timber platforms and red-deer frontlets (Britain)",
+          "text": null,
+          "iso": null
+        },
+        {
+          "title": "Maglemosian bone/antler leisters and dugout canoes",
+          "text": null,
+          "iso": null
+        },
+        {
+          "title": "El Mazo shell midden seasonal SST record (Asturias)",
+          "text": null,
+          "iso": null
+        },
+        {
+          "title": "Doggerland submerged river valleys and tsunami core ELF001A",
+          "text": null,
+          "iso": null
+        },
+        {
+          "title": "Yuzhniy Oleniy Ostrov cemetery (Karelia)",
+          "text": null,
+          "iso": null
+        },
+        {
+          "title": "Lepenski Vir trapezoidal houses and fish-focused diet",
+          "text": null,
+          "iso": null
+        },
+        {
+          "title": "Loschbour / Bichon / Oberkassel WHG reference genomes",
+          "text": null,
+          "iso": null
+        },
+        {
+          "title": "Narva–Comb Ware pottery among non-farming foragers",
+          "text": null,
+          "iso": null
+        }
+      ],
+      "sources": [
+        {
+          "title": "Posth et al. 2023 — Palaeogenomics of UP–Neolithic European hunter-gatherers (Nature)",
+          "detail": null,
+          "url": null
+        },
+        {
+          "title": "García-Escárzaga et al. 2022 — Forager response to 8.2 ka at El Mazo (Sci. Rep.)",
+          "detail": null,
+          "url": null
+        },
+        {
+          "title": "Griffiths et al. / Frontiers 2021 — Storegga tsunami archaeological review",
+          "detail": null,
+          "url": null
+        },
+        {
+          "title": "Gaffney et al. 2020 — Storegga deposit in southern North Sea Doggerland",
+          "detail": null,
+          "url": null
+        },
+        {
+          "title": "Walker et al. / Antiquity — Storegga tsunami and the end of Doggerland?",
+          "detail": null,
+          "url": null
+        },
+        {
+          "title": "Mathieson et al. 2018 — Genomic history of southeastern Europe (Nature)",
+          "detail": null,
+          "url": null
+        },
+        {
+          "title": "Allentoft et al. 2024 — Population genomics of post-glacial western Eurasia (Nature)",
+          "detail": null,
+          "url": null
+        },
+        {
+          "title": "Waddington / Conneller et al. — Star Carr Mesolithic research syntheses",
+          "detail": null,
+          "url": null
+        }
+      ],
+      "sourceFile": "neolithic.json"
+    },
+    "early-neolithic": {
+      "periodId": "early-neolithic",
+      "label": "Early Neolithic",
+      "approxYears": "6200–4500 BC",
+      "keyEvents": [
+        {
+          "date": "c. 6500–6000 BC",
+          "title": "Anatolian-related farmers enter the Balkans",
+          "text": "Farming villages with domestic cereals, sheep/goat, and pottery appear in Greece and the central Balkans, carrying ancestry tightly related to northwest Anatolian Neolithic populations (EEF). Starčevo–Körös–Criș communities push into the Carpathian Basin by the early 6th millennium BC. Local hunter-gatherer admixture is initially limited in pioneer cores. This demic wave sets the genetic template for almost all later European farmers.",
+          "iso": null,
+          "region": "balkans",
+          "regions": [
+            "balkans",
+            "eastern",
+            "central"
+          ],
+          "themes": [
+            "migration",
+            "technology",
+            "ancestry",
+            "agriculture"
+          ]
+        },
+        {
+          "date": "c. 6000–5500 BC",
+          "title": "Two routes: Cardial coast vs LBK Danube",
+          "text": "From a shared Balkan-era farmer source, Neolithic packages split. Impressa/Cardial pioneers leapfrog the northern Mediterranean by sea, reaching Iberia by ~5500 BC with cockle-shell stamped pottery. In parallel, Linearbandkeramik (LBK) crystallises in Transdanubia and races up the Danube–loess corridor into Central Europe. Ancient genomes show both streams share Anatolian-related ancestry despite different pottery styles. Culture labels track routes; the people are cousins from one meta-population.",
+          "iso": null,
+          "region": "italy",
+          "regions": [
+            "italy",
+            "iberia",
+            "france",
+            "balkans",
+            "central"
+          ],
+          "themes": [
+            "migration",
+            "technology",
+            "ancestry"
+          ]
+        },
+        {
+          "date": "c. 5500–5000 BC",
+          "title": "LBK longhouses carpet Central Europe",
+          "text": "LBK settlements of timber longhouses, cattle-rich economies, and banded pottery spread from the Paris Basin to Ukraine within a few centuries. Cemetery-scale aDNA (Polgár, Nitra, Asparn-Schletz and others) shows patrilocality—more male than female within-site relatives—and systematically higher WHG ancestry in eastern than western LBK. Pioneer farmers were socially structured, not a genetic monolith. Loess soils and river corridors structured the map.",
+          "iso": null,
+          "region": "central",
+          "regions": [
+            "central",
+            "france",
+            "eastern"
+          ],
+          "themes": [
+            "migration",
+            "technology",
+            "ancestry",
+            "social"
+          ]
+        },
+        {
+          "date": "c. 5500–5000 BC",
+          "title": "Cardial maritime pioneers reach Iberia",
+          "text": "Cardial groups establish littoral farming enclaves from Liguria and Provence to Catalonia, Valencia, and Atlantic Portugal. The Cova Bonica (Barcelona) Cardial genome clusters with other early European farmers and Sardinians, with a forager signature not simply local Iberian WHG. Rapid coastal radiocarbon patterns fit maritime pioneer colonisation better than slow land diffusion. Inland Mesolithic foragers persist beside the littoral farmer wedge for generations.",
+          "iso": null,
+          "region": "iberia",
+          "regions": [
+            "iberia",
+            "france",
+            "italy"
+          ],
+          "themes": [
+            "migration",
+            "technology",
+            "ancestry"
+          ]
+        },
+        {
+          "date": "c. 5400–4500 BC",
+          "title": "Farmer–forager contact west of the Rhine",
+          "text": "Genome-wide data from France show higher local Loschbour-like WHG ancestry in early Neolithic groups west of the Rhine than in classic Central European LBK. Admixture timing often precedes the archaeological ‘contact’ phase by many generations, implying prolonged, uneven mixing. Sites such as those near the Paris Basin and Mediterranean hinterland record pottery and burial diversity at the frontier. Farming advanced as a porous frontier, not a clean replacement everywhere.",
+          "iso": null,
+          "region": "france",
+          "regions": [
+            "france",
+            "central",
+            "iberia"
+          ],
+          "themes": [
+            "ancestry",
+            "migration",
+            "social"
+          ]
+        },
+        {
+          "date": "c. 5400–4000 BC",
+          "title": "Ertebølle and northern forager holdouts",
+          "text": "While LBK farmers occupy loess belts, Ertebølle communities of southern Scandinavia and the southwest Baltic keep a coastal hunting–fishing–gathering life with pointed-base pottery and rich middens. Genetically they remain SHG/WHG-related until Funnelbeaker farming centuries later. Similar holdouts (Narva, Comb Ware) persist farther east. The Early Neolithic map is a farmer core ringed by durable forager arcs.",
+          "iso": null,
+          "region": "scandinavia",
+          "regions": [
+            "scandinavia",
+            "central",
+            "eastern"
+          ],
+          "themes": [
+            "subsistence",
+            "technology",
+            "ancestry"
+          ]
+        },
+        {
+          "date": "c. 5200–4900 BC",
+          "title": "Late LBK massacres: Talheim to Schletz",
+          "text": "At Talheim (Germany), Asparn-Schletz (Austria), and Schöneck-Kilianstädten (Germany), mass graves document blunt-force and arrow killings of whole communities near the end of the LBK. Kilianstädten adds systematic lower-limb breakage suggesting torture or mutilation; young adult women are underrepresented at some sites, hinting at capture. aDNA from Schletz shows victims drawn from a large population, not a tiny kin band. Collective violence was a repeated late-LBK feature, not a one-off myth.",
+          "iso": null,
+          "region": "central",
+          "regions": [
+            "central"
+          ],
+          "themes": [
+            "conflict",
+            "social",
+            "ritual"
+          ]
+        },
+        {
+          "date": "c. 5000–4800 BC",
+          "title": "Herxheim: ritual destruction of bodies",
+          "text": "The double-ditched enclosure at Herxheim (Rhineland-Palatinate) received the carefully smashed remains of hundreds of people—skull caps, defleshed bone, destroyed pots and tools—over a relatively short late-LBK window. Consensus has shifted from a single massacre toward repeated, highly standardised ritual processing, possibly including cannibalism. Strontium hints that many victims were non-local. It is a crisis of rite and meaning as much as of warfare.",
+          "iso": null,
+          "region": "central",
+          "regions": [
+            "central",
+            "france"
+          ],
+          "themes": [
+            "ritual",
+            "conflict",
+            "social"
+          ]
+        },
+        {
+          "date": "c. 5400–4500 BC",
+          "title": "Vinča tells and Balkan village florescence",
+          "text": "Across the central Balkans, Vinča and related tell settlements accumulate deep strata of houses, fine dark pottery, and early copper ornaments. Population packing on tells contrasts with the dispersed LBK longhouse pattern farther north. These communities remain EEF-dominated genetically while experimenting with metallurgy and long-distance exchange. They anchor the southeast while Central Europe’s first farmers reorganise after the LBK.",
+          "iso": null,
+          "region": "balkans",
+          "regions": [
+            "balkans",
+            "eastern"
+          ],
+          "themes": [
+            "technology",
+            "trade",
+            "social"
+          ]
+        }
+      ],
+      "interestingElements": [
+        {
+          "title": "LBK timber longhouses and banded pottery",
+          "text": null,
+          "iso": null
+        },
+        {
+          "title": "Cardial cockle-shell impressed ceramics",
+          "text": null,
+          "iso": null
+        },
+        {
+          "title": "Cova Bonica Cardial genome (Catalonia)",
+          "text": null,
+          "iso": null
+        },
+        {
+          "title": "Starčevo–Körös–Criș village package",
+          "text": null,
+          "iso": null
+        },
+        {
+          "title": "Talheim and Asparn-Schletz massacre deposits",
+          "text": null,
+          "iso": null
+        },
+        {
+          "title": "Schöneck-Kilianstädten mass grave with limb breakage",
+          "text": null,
+          "iso": null
+        },
+        {
+          "title": "Herxheim skull-cap ritual deposits",
+          "text": null,
+          "iso": null
+        },
+        {
+          "title": "Ertebølle pointed-base pottery and shell middens",
+          "text": null,
+          "iso": null
+        },
+        {
+          "title": "Vinča anthropomorphic figurines and early copper",
+          "text": null,
+          "iso": null
+        }
+      ],
+      "sources": [
+        {
+          "title": "Olalde et al. 2015 — Common genetic origin of Cardial and LBK farmers (Mol. Biol. Evol.)",
+          "detail": null,
+          "url": null
+        },
+        {
+          "title": "Hofmanová / Szécsényi-Nagy et al. 2015 — Genetic origin of Europe’s first farmers (Proc. R. Soc. B)",
+          "detail": null,
+          "url": null
+        },
+        {
+          "title": "Lipson et al. 2017 — Parallel palaeogenomic transects of early farmers (Nature)",
+          "detail": null,
+          "url": null
+        },
+        {
+          "title": "Rivollat et al. 2020 — Ancient DNA from France, farmer–HG interactions (Sci. Adv.)",
+          "detail": null,
+          "url": null
+        },
+        {
+          "title": "Chirons et al. / Gelabert et al. 2024 — Social and genetic diversity in LBK first farmers (Nat. Hum. Behav.)",
+          "detail": null,
+          "url": null
+        },
+        {
+          "title": "Meyer et al. 2015 — Schöneck-Kilianstädten LBK massacre (PNAS)",
+          "detail": null,
+          "url": null
+        },
+        {
+          "title": "Teschler-Nicola et al. — Asparn-Schletz violence and dating studies",
+          "detail": null,
+          "url": null
+        },
+        {
+          "title": "Boulestin / Zeeb-Lanz et al. — Herxheim ritual and cannibalism debate",
+          "detail": null,
+          "url": null
+        },
+        {
+          "title": "Zilhão 2001 — Maritime pioneer colonisation model for Iberian Neolithic",
+          "detail": null,
+          "url": null
+        },
+        {
+          "title": "Haak / Lazaridis / Mathieson 2015–2018 — Foundational EEF–WHG framework",
+          "detail": null,
+          "url": null
+        }
+      ],
+      "sourceFile": "neolithic.json"
+    },
+    "middle-neolithic": {
+      "periodId": "middle-neolithic",
+      "label": "Middle–Late Neolithic",
+      "approxYears": "4500–3000 BC",
+      "keyEvents": [
+        {
+          "date": "c. 4800–4000 BC",
+          "title": "WHG ancestry resurges inside farmer Europe",
+          "text": "After centuries of EEF dominance, Middle Neolithic genomes from Iberia, France, Germany (e.g. Baalberge), and elsewhere show rising hunter-gatherer ancestry—often toward ~15–30% regionally, higher on Atlantic façades. Y-chromosome lineages of Mesolithic I2 type become common in farmer men, implying male-mediated forager gene flow. Britain is a noted exception with little post-arrival WHG rebound. Culture stayed ‘Neolithic’ while the gene pool quietly re-indigenised.",
+          "iso": null,
+          "region": "iberia",
+          "regions": [
+            "iberia",
+            "france",
+            "central",
+            "italy",
+            "balkans"
+          ],
+          "themes": [
+            "ancestry",
+            "migration",
+            "social"
+          ]
+        },
+        {
+          "date": "c. 4700–4000 BC",
+          "title": "Atlantic megaliths ignite in northwest France",
+          "text": "Passage graves, cairns, and standing-stone alignments emerge in Brittany and Normandy (Barnenez, early Carnac landscapes) before spreading along Atlantic and western Mediterranean façades. Northern France sits at the genetic and cultural hinge of Cardial-related and Danubian farmer traditions. Later work links megalith spread to regions touched by Cardial-related ancestry and to trade networks that outlasted the founding migrations. Monumentality becomes the period’s signature architecture.",
+          "iso": null,
+          "region": "france",
+          "regions": [
+            "france",
+            "iberia",
+            "britain",
+            "scandinavia"
+          ],
+          "themes": [
+            "ritual",
+            "technology",
+            "migration",
+            "trade"
+          ]
+        },
+        {
+          "date": "c. 4300–3500 BC",
+          "title": "Funnelbeaker opens the northern frontier",
+          "text": "The Funnelbeaker/TRB complex brings agriculture, megalithic tombs, and new pottery into southern Scandinavia and the north European plain, absorbing and displacing Ertebølle foragers unevenly. Early TRB farmers are still mostly EEF-derived but with elevated northern HG ancestry. Causewayed enclosures and flint mines (e.g. Belgium–Denmark axis) signal regional aggregation. The north finally joins farmer Europe—centuries after the loess belt.",
+          "iso": null,
+          "region": "scandinavia",
+          "regions": [
+            "scandinavia",
+            "central"
+          ],
+          "themes": [
+            "migration",
+            "agriculture",
+            "ritual",
+            "technology"
+          ]
+        },
+        {
+          "date": "c. 4000–3700 BC",
+          "title": "Farming crosses to Britain and Ireland",
+          "text": "Continental farmers introduce cereals, cattle, rectangular houses, and funerary monuments to Britain and Ireland around the turn of the 4th millennium BC; secure Irish house-and-cereal horizons cluster ~3720–3680 BC. aDNA shows a first near-replacement of insular Mesolithic WHG by EEF-related newcomers. Causewayed enclosures, portal tombs, and early passage graves follow within generations. This is the islands’ first great genetic turnover—Beaker will be the second.",
+          "iso": null,
+          "region": "britain",
+          "regions": [
+            "britain",
+            "france"
+          ],
+          "themes": [
+            "migration",
+            "agriculture",
+            "ancestry",
+            "ritual"
+          ]
+        },
+        {
+          "date": "c. 4200–3500 BC",
+          "title": "Carnac, Morbihan, and Breton stone theatres",
+          "text": "The Morbihan and Carnac regions host extraordinary densities of menhir alignments, tumuli, and jadeitite ceremonial axes exchanged from Alpine sources. Elite tumulus burials and broken axe deposits point to competitive ritual economies, not anonymous peasant religion. Armorica becomes a western magnet for exotic stone and maritime contacts. These landscapes remain among Europe’s densest prehistoric monument fields.",
+          "iso": null,
+          "region": "france",
+          "regions": [
+            "france",
+            "italy"
+          ],
+          "themes": [
+            "ritual",
+            "trade",
+            "social"
+          ]
+        },
+        {
+          "date": "c. 4700–4000 BC",
+          "title": "Early Trypillia expands across the forest-steppe",
+          "text": "Precucuteni–Early Trypillia groups push rapidly through Moldovan and Ukrainian forest-steppe in the 47th–45th centuries BC, founding painted-pottery villages between the Prut and Dnieper. AMS chronologies show fast dispersal with overlapping stylistic phases rather than a slow ripple. Genetically these farmers remain in the EEF world while neighbouring steppe and forest foragers stay distinct. Eastern Europe gains a dense village belt facing the Pontic steppe.",
+          "iso": null,
+          "region": "eastern",
+          "regions": [
+            "eastern",
+            "balkans"
+          ],
+          "themes": [
+            "migration",
+            "agriculture",
+            "technology"
+          ]
+        },
+        {
+          "date": "c. 4150–3650 BC",
+          "title": "Trypillia megasites: Europe’s first mega-towns",
+          "text": "Aggregated settlements over 100 ha—and megasites up to ~320 ha with perhaps 10–15,000 people—appear northwest of the Black Sea (Nebelivka, Maidanetske, Talianki and peers). Isotope food-webs show pulse-heavy, heavily manured cropping plus fenced cattle pastures that supplied dung—an integrated ‘mega-economy.’ Decline after ~3650 BC looks social and political more than purely ecological. These were the world’s largest settlements before Mesopotamia’s fame.",
+          "iso": null,
+          "region": "eastern",
+          "regions": [
+            "eastern"
+          ],
+          "themes": [
+            "social",
+            "agriculture",
+            "technology",
+            "urbanism"
+          ]
+        },
+        {
+          "date": "c. 3500–2800 BC",
+          "title": "Pitted Ware foragers beside TRB farmers",
+          "text": "On Scandinavian coasts, Pitted Ware groups renew a marine-mammal and fish-focused hunting life with distinctive pottery while Funnelbeaker farmers occupy inland soils. Their genomes retain high HG ancestry relative to neighbouring farmers—an archaeological culture that is also a genetic holdout. Seal hunting and island cemeteries (e.g. Ajvide, Gotland) define the package. Farmer Europe still had forager neighbours at its northern edge.",
+          "iso": null,
+          "region": "scandinavia",
+          "regions": [
+            "scandinavia"
+          ],
+          "themes": [
+            "subsistence",
+            "ancestry",
+            "technology"
+          ]
+        },
+        {
+          "date": "c. 4400–3500 BC",
+          "title": "Michelsberg, Chasséen, and enclosure Europe",
+          "text": "Michelsberg (Central Europe) and Chasséen (France) reorganise post-LBK landscapes with ditched enclosures, new flint extraction, and broader exchange. WHG ancestry continues to climb in many of these Middle Neolithic farmer groups compared with Early Neolithic pioneers. Regional identities multiply even as monumental and enclosure practices rhyme across western Europe. The loess world after LBK was plural, not a single successor culture.",
+          "iso": null,
+          "region": "central",
+          "regions": [
+            "central",
+            "france"
+          ],
+          "themes": [
+            "social",
+            "technology",
+            "ancestry",
+            "ritual"
+          ]
+        },
+        {
+          "date": "c. 3500–3000 BC",
+          "title": "Orkney, Boyne, and Atlantic tomb florescence",
+          "text": "Maeshowe-type tombs and settlements such as Skara Brae in Orkney, and the Boyne Valley passage tombs (Newgrange, Knowth, Dowth) in Ireland, push megalithic architecture and astronomical alignments to a Late Neolithic climax. Communities remain EEF-rich with regionally variable WHG; steppe ancestry has not yet arrived. Grooved Ware networks tie the Irish Sea and northern Britain into a shared ceremonial world. Monument time peaks just before the Corded Ware–Beaker genetic storm.",
+          "iso": null,
+          "region": "britain",
+          "regions": [
+            "britain"
+          ],
+          "themes": [
+            "ritual",
+            "technology",
+            "social"
+          ]
+        }
+      ],
+      "interestingElements": [
+        {
+          "title": "Carnac alignments and Morbihan tumuli",
+          "text": null,
+          "iso": null
+        },
+        {
+          "title": "Barnenez and early Breton passage graves",
+          "text": null,
+          "iso": null
+        },
+        {
+          "title": "Alpine jadeitite ceremonial axe exchange",
+          "text": null,
+          "iso": null
+        },
+        {
+          "title": "Funnelbeaker megalithic tombs and flint mines",
+          "text": null,
+          "iso": null
+        },
+        {
+          "title": "Irish court/portal tombs and Boyne Valley passage graves",
+          "text": null,
+          "iso": null
+        },
+        {
+          "title": "Orkney villages (Skara Brae) and Maeshowe tombs",
+          "text": null,
+          "iso": null
+        },
+        {
+          "title": "Trypillia megasite plans (Nebelivka, Maidanetske)",
+          "text": null,
+          "iso": null
+        },
+        {
+          "title": "Pulse–dung agricultural food webs of Cucuteni–Trypillia",
+          "text": null,
+          "iso": null
+        },
+        {
+          "title": "Pitted Ware seal-hunter cemeteries (Gotland)",
+          "text": null,
+          "iso": null
+        },
+        {
+          "title": "Michelsberg/Chasséen causewayed enclosures",
+          "text": null,
+          "iso": null
+        },
+        {
+          "title": "I2 Y-chromosome resurgence in Middle Neolithic men",
+          "text": null,
+          "iso": null
+        }
+      ],
+      "sources": [
+        {
+          "title": "Allentoft et al. 2024 — Post-glacial western Eurasia; HG resurgence & great divide (Nature)",
+          "detail": null,
+          "url": null
+        },
+        {
+          "title": "Lipson et al. 2017 — Farmer time transects; rising HG ancestry (Nature)",
+          "detail": null,
+          "url": null
+        },
+        {
+          "title": "Rivollat et al. 2020 — French Neolithic HG admixture patterns (Sci. Adv.)",
+          "detail": null,
+          "url": null
+        },
+        {
+          "title": "Sánchez-Quinto / Sánchez-Quinto et al. / Cassidy et al. — Megalithic kindred aDNA (PNAS 2019 and related)",
+          "detail": null,
+          "url": null
+        },
+        {
+          "title": "Hofmann / Müller / Dal Corso et al. 2024 — Trypillia mega-site isotopes (PNAS)",
+          "detail": null,
+          "url": null
+        },
+        {
+          "title": "Videiko / Chapman / Gaydarska — Trypillia megasite archaeology syntheses",
+          "detail": null,
+          "url": null
+        },
+        {
+          "title": "Tkachuk et al. 2024 — Chronology of Early Trypillian expansion (Radiocarbon)",
+          "detail": null,
+          "url": null
+        },
+        {
+          "title": "Whittle, Healy & Bayliss 2011 — Gathering Time (British Early Neolithic chronology)",
+          "detail": null,
+          "url": null
+        },
+        {
+          "title": "Whitehouse et al. 2014 — Irish Neolithic cereals and houses chronology",
+          "detail": null,
+          "url": null
+        },
+        {
+          "title": "Cassidy et al. 2016 — Neolithic/Bronze Age Ireland genomes (PNAS)",
+          "detail": null,
+          "url": null
+        },
+        {
+          "title": "Malmström / Skoglund / Allentoft — Pitted Ware vs TRB genetic contrasts",
+          "detail": null,
+          "url": null
+        },
+        {
+          "title": "Cassen / Scarre / Bradley — Carnac and Atlantic megalith research",
+          "detail": null,
+          "url": null
+        }
+      ],
+      "sourceFile": "neolithic.json"
+    }
+  }
 }

@@ -815,17 +815,19 @@ function periodKeyEventsPack(periodId) {
   return state.keyEvents?.periods?.[periodId] || null;
 }
 
-/** Period-wide events (no iso) + optional place-specific when iso selected. */
-function eventsForPeriod(periodId, { iso = null, placeOnly = false } = {}) {
+/** All key events for a period, or place-filtered by ISO / atlas region. */
+function eventsForPeriod(periodId, { iso = null, region = null, placeOnly = false } = {}) {
   const pack = periodKeyEventsPack(periodId);
   const list = pack?.keyEvents || [];
   if (!list.length) return [];
-  if (placeOnly) {
-    if (!iso) return [];
-    return list.filter((e) => e.iso && e.iso === iso);
-  }
-  // Period panel: show period-wide bullets (iso null/empty)
-  return list.filter((e) => !e.iso);
+  if (!placeOnly) return list;
+  if (!iso && !region) return [];
+  return list.filter((e) => {
+    if (iso && e.iso && e.iso === iso) return true;
+    const regs = e.regions || (e.region ? [e.region] : []);
+    if (region && regs.includes(region)) return true;
+    return false;
+  });
 }
 
 function renderKeyEventsList(listEl, events) {
@@ -833,14 +835,32 @@ function renderKeyEventsList(listEl, events) {
   listEl.replaceChildren();
   for (const ev of events) {
     const li = document.createElement("li");
+    const head = document.createElement("div");
+    head.className = "key-events-head";
     if (ev.date) {
       const when = document.createElement("time");
       when.className = "key-events-date";
       when.textContent = formatYearUi(ev.date);
-      li.appendChild(when);
-      li.appendChild(document.createTextNode(" — "));
+      head.appendChild(when);
     }
-    li.appendChild(document.createTextNode(ev.text || ""));
+    if (ev.title) {
+      if (ev.date) head.appendChild(document.createTextNode(" — "));
+      const strong = document.createElement("strong");
+      strong.className = "key-events-title";
+      strong.textContent = ev.title;
+      head.appendChild(strong);
+      li.appendChild(head);
+      if (ev.text && ev.text !== ev.title) {
+        const body = document.createElement("p");
+        body.className = "key-events-body";
+        body.textContent = ev.text;
+        li.appendChild(body);
+      }
+    } else {
+      if (ev.date) head.appendChild(document.createTextNode(" — "));
+      head.appendChild(document.createTextNode(ev.text || ""));
+      li.appendChild(head);
+    }
     listEl.appendChild(li);
   }
 }
@@ -865,8 +885,12 @@ function renderPlaceKeyEvents() {
   const section = $("#place-key-events");
   const listEl = $("#place-key-events-list");
   if (!section || !listEl) return;
+  const region =
+    state.selectedRegion ||
+    (state.selectedIso ? isoToRegion(state.selectedIso) : null);
   const events = eventsForPeriod(period.id, {
     iso: state.selectedIso,
+    region,
     placeOnly: true,
   });
   if (!events.length) {
