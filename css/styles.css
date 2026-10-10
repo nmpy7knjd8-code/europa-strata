@@ -350,6 +350,14 @@ html[data-theme="dark"] .polity {
   vector-effect: non-scaling-stroke;
 }
 
+.polities {
+  pointer-events: auto;
+}
+
+.polities .polity {
+  pointer-events: all;
+}
+
 .app[data-atlas-mode="deep-time"] .coasts {
   display: none;
 }

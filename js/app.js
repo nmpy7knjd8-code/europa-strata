@@ -856,13 +856,7 @@ function initMap({ preserveZoom = true } = {}) {
     .on("mouseleave", onCountryLeave)
     .on("click", onCountryClick);
 
-  // Kingdom / empire extents — clipped to land
-  zoomLayer
-    .append("g")
-    .attr("class", "polities")
-    .attr("clip-path", "url(#land-clip)");
-
-  // Coastline overlay on top so shores stay readable under fills
+  // Coastlines under polities so fills stay clickable
   const coasts = zoomLayer.append("g").attr("class", "coasts");
   coasts
     .selectAll("path")
@@ -870,6 +864,12 @@ function initMap({ preserveZoom = true } = {}) {
     .join("path")
     .attr("class", "coastline")
     .attr("d", state.path);
+
+  // Kingdom / empire extents — clipped to land; above coasts for hit-testing
+  zoomLayer
+    .append("g")
+    .attr("class", "polities")
+    .attr("clip-path", "url(#land-clip)");
 
   state._kingdomGeoPeriodId = null;
   if (isKingdomMode()) syncKingdomPolityLayer({ force: true });
@@ -997,16 +997,19 @@ function syncKingdomPolityLayer({ force = false } = {}) {
           .attr("d", state.path)
           .attr("data-polity", (d) => d.properties.polityId)
           .attr("data-name", (d) => d.properties.name)
+          .style("pointer-events", "all")
           .on("pointerenter", onPolityEnter)
           .on("pointermove", onPolityMove)
           .on("pointerleave", onPolityLeave)
-          .on("click", onPolityClick)
-          .on("pointerup", onPolityPointerUp),
+          .on("pointerdown", onPolityPointerDown)
+          .on("pointerup", onPolityPointerUp)
+          .on("click", onPolityClick),
       (update) =>
         update
           .attr("d", state.path)
           .attr("data-polity", (d) => d.properties.polityId)
-          .attr("data-name", (d) => d.properties.name),
+          .attr("data-name", (d) => d.properties.name)
+          .style("pointer-events", "all"),
       (exit) => exit.remove()
     );
 
@@ -1078,7 +1081,8 @@ function paintMap(animate = true) {
         ? Math.min(0.62, Math.max(0.32, style.opacity * 0.78))
         : 0;
       const visible = Boolean(style.fill);
-      node.style("pointer-events", visible ? "all" : "none");
+      // Keep hit targets even while fill tweens between ticks
+      node.style("pointer-events", "all");
       if (animate) {
         node
           .transition()
@@ -1270,18 +1274,38 @@ function onPolityLeave() {
   else state.tip.style("opacity", 0).classed("is-pinned", false);
 }
 
+function onPolityPointerDown(event, d) {
+  if (event.button != null && event.button !== 0) return;
+  d3.select(this).interrupt();
+  state._polityPointerDown = {
+    id: d.properties.polityId,
+    x: event.clientX,
+    y: event.clientY,
+  };
+}
+
 function onPolityPointerUp(event, d) {
-  // Prefer pointerup on touch — click can be lost after pan/zoom filters
-  if (event.pointerType === "touch" || event.pointerType === "pen") {
-    event.preventDefault();
-    event.stopPropagation();
-    selectPolity(d.properties.polityId);
-  }
+  const down = state._polityPointerDown;
+  state._polityPointerDown = null;
+  if (!down || down.id !== d.properties.polityId) return;
+  if (event.button != null && event.button !== 0) return;
+  const dx = Math.abs((event.clientX || 0) - down.x);
+  const dy = Math.abs((event.clientY || 0) - down.y);
+  if (dx > 10 || dy > 10) return; // treat as pan/drag
+  event.preventDefault();
+  event.stopPropagation();
+  selectPolity(d.properties.polityId);
 }
 
 function onPolityClick(event, d) {
+  // Fallback when pointerup didn't fire (some desktop paths)
   event.preventDefault();
   event.stopPropagation();
+  if (state.selectedPolityId === d.properties.polityId) {
+    applyPolitySelectionClass();
+    updateSelectionTip();
+    return;
+  }
   selectPolity(d.properties.polityId);
 }
 
@@ -2203,7 +2227,7 @@ function bindUI() {
 async function loadKingdomPack(id) {
   try {
     // Cache-bust so refined research geometry packs reload after deploy
-    const r = await fetch(`data/kingdom-eras/${id}.json?v=era-ui-9`);
+    const r = await fetch(`data/kingdom-eras/${id}.json?v=era-ui-10`);
     if (!r.ok) return null;
     const raw = await r.json();
     return normalizeKingdomPack(raw);
