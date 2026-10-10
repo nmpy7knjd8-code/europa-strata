@@ -14,7 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Sora:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/styles.css?v=era-tabs-2" />
+    <link rel="stylesheet" href="css/styles.css?v=era-land-2" />
     <script>
       /* Clear legacy layout-override keys from older builds */
       try {
@@ -23,7 +23,7 @@
       } catch (_) {}
     </script>
     <script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js" defer></script>
-    <script src="js/app.js?v=era-tabs-2" defer></script>
+    <script src="js/app.js?v=era-land-2" defer></script>
   </head>
   <body>
     <div class="app" data-atlas-mode="deep-time">
@@ -38,6 +38,14 @@
         </button>
         <button
           type="button"
+          class="atlas-tab"
+          data-mode="renaissance"
+          aria-selected="false"
+        >
+          Renaissance
+        </button>
+        <button
+          type="button"
           class="atlas-tab is-active"
           data-mode="deep-time"
           aria-selected="true"
@@ -47,10 +55,24 @@
         <button
           type="button"
           class="atlas-tab"
-          data-mode="renaissance"
+          data-mode="early-modern"
           aria-selected="false"
+          hidden
+          disabled
+          title="Pack loading…"
         >
-          Renaissance
+          Early Modern
+        </button>
+        <button
+          type="button"
+          class="atlas-tab"
+          data-mode="modern"
+          aria-selected="false"
+          hidden
+          disabled
+          title="Pack loading…"
+        >
+          Modern
         </button>
       </nav>
       <main class="map-stage" id="map-stage">

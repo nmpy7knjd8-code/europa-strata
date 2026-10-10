@@ -211,31 +211,43 @@ button {
   display: flex;
   justify-content: center;
   align-items: stretch;
+  flex-wrap: nowrap;
   gap: 0;
   width: fit-content;
-  max-width: min(96vw, 38rem);
+  max-width: min(98vw, 52rem);
   margin: 0.55rem auto 0.35rem;
   border: 1px solid var(--line);
   background: var(--bg);
   z-index: 5;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 .atlas-tab {
   flex: 1 1 auto;
   margin: 0;
-  padding: 0.68rem 1.1rem;
+  padding: 0.62rem 0.78rem;
   border: 0;
   border-right: 1px solid var(--line);
   background: transparent;
   color: var(--ink-mute);
   font-family: var(--font-ui);
-  font-size: 1.02rem;
+  font-size: 0.92rem;
   font-weight: 500;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.03em;
   line-height: 1.2;
   white-space: nowrap;
   cursor: pointer;
   transition: color 0.18s var(--ease), background 0.18s var(--ease);
+}
+
+.atlas-tab[hidden] {
+  display: none !important;
+}
+
+.atlas-tab:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
 }
 
 .atlas-tab:last-child {
@@ -286,41 +298,70 @@ button {
   font-weight: 400;
 }
 
-/* Kingdom modes: polity fills (not modern country culture fills) */
+/* Kingdom modes: Natural Earth land under clipped polity fills */
+.app:not([data-atlas-mode="deep-time"]) {
+  --kingdom-land: #e8e4dc;
+  --kingdom-coast: #2c2c2c;
+}
+
+html[data-theme="dark"] .app:not([data-atlas-mode="deep-time"]) {
+  --kingdom-land: #2a2a2a;
+  --kingdom-coast: #d0d0d0;
+}
+
 .polity {
   fill: transparent;
-  stroke: var(--ink);
-  stroke-width: 0.55;
-  stroke-opacity: 0.35;
+  stroke: rgba(0, 0, 0, 0.22);
+  stroke-width: 0.4;
+  stroke-opacity: 0.55;
   cursor: pointer;
   vector-effect: non-scaling-stroke;
   transition: fill 0.45s var(--ease), fill-opacity 0.4s var(--ease),
     stroke-opacity 0.2s;
 }
 
+html[data-theme="dark"] .polity {
+  stroke: rgba(255, 255, 255, 0.28);
+}
+
 .polity:hover,
 .polity.is-hover {
   stroke-opacity: 0.95;
-  stroke-width: 1.05;
+  stroke-width: 0.85;
 }
 
 .polity.is-active {
   stroke-opacity: 1;
-  stroke-width: 1.35;
+  stroke-width: 1.15;
+}
+
+.coastline {
+  fill: none;
+  stroke: var(--kingdom-coast, var(--land-stroke));
+  stroke-width: 0.55;
+  stroke-opacity: 0.85;
+  pointer-events: none;
+  vector-effect: non-scaling-stroke;
+}
+
+.app[data-atlas-mode="deep-time"] .coasts {
+  display: none;
 }
 
 .app:not([data-atlas-mode="deep-time"]) .country {
   pointer-events: none;
-  fill: var(--land-base) !important;
+  fill: var(--kingdom-land) !important;
   fill-opacity: 1 !important;
-  stroke-opacity: 0.28;
+  stroke: var(--kingdom-coast) !important;
+  stroke-width: 0.45;
+  stroke-opacity: 0.7;
   cursor: default;
 }
 
 .app:not([data-atlas-mode="deep-time"]) .country.is-active,
 .app:not([data-atlas-mode="deep-time"]) .country.is-hover {
-  stroke-width: 0.35;
-  stroke-opacity: 0.28;
+  stroke-width: 0.45;
+  stroke-opacity: 0.7;
 }
 
 .app:not([data-atlas-mode="deep-time"]) .mode-pill,
@@ -1600,13 +1641,13 @@ html {
 .atlas-tabs {
   margin-top: 0.45rem;
   margin-bottom: 0.25rem;
-  max-width: min(96vw, 36rem);
+  max-width: min(98vw, 48rem);
 }
 
 .atlas-tab {
-  padding: 0.62rem 0.78rem;
-  font-size: 0.96rem;
-  letter-spacing: 0.035em;
+  padding: 0.55rem 0.55rem;
+  font-size: 0.84rem;
+  letter-spacing: 0.02em;
 }
 
 
@@ -2439,4 +2480,60 @@ body.page-ancestry {
   .anc-meta {
     grid-template-columns: 1fr;
   }
+}
+
+/* Kingdom tabs: match Deep-time type scale (override later mobile bumps) */
+.app:not([data-atlas-mode="deep-time"]) .culture-title {
+  font-size: 1.55rem;
+  line-height: 1.2;
+  margin: 0.15rem 0 0.25rem;
+}
+
+.app:not([data-atlas-mode="deep-time"]) .polity-panel .polity-name,
+.app:not([data-atlas-mode="deep-time"]) .polity-name {
+  font-size: 1.35rem;
+  line-height: 1.2;
+  margin: 0.15rem 0 0.4rem;
+}
+
+.app:not([data-atlas-mode="deep-time"]) .slider-year {
+  font-size: 1.25rem;
+}
+
+.app:not([data-atlas-mode="deep-time"]) .slider-label {
+  font-size: 1.1rem;
+}
+
+.app:not([data-atlas-mode="deep-time"]) .tick-caption {
+  font-size: 1.05rem;
+  min-height: 1.6em;
+}
+
+.app:not([data-atlas-mode="deep-time"]) .tick .tick-num {
+  font-size: 0.92rem;
+}
+
+.app:not([data-atlas-mode="deep-time"]) .tick .tick-era {
+  font-size: 0.78rem;
+}
+
+.app:not([data-atlas-mode="deep-time"]) .legend-row {
+  font-size: 0.86rem;
+  line-height: 1.3;
+  font-weight: 400;
+  padding: 0.02rem 0;
+}
+
+.app:not([data-atlas-mode="deep-time"]) .legend-bar .kicker,
+.app:not([data-atlas-mode="deep-time"]) .side .kicker,
+.app:not([data-atlas-mode="deep-time"]) #detail-kicker {
+  font-size: 0.78rem;
+}
+
+.app:not([data-atlas-mode="deep-time"]) .nav-btn {
+  width: 2.85rem;
+  height: 2.85rem;
+  min-width: 2.85rem;
+  min-height: 2.85rem;
+  font-size: 1.55rem;
 }

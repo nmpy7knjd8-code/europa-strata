@@ -24,8 +24,31 @@ const REGION_LABELS = {
 
 const SLIDER_MAX = 1000;
 
-/** Top-center era tabs — Deep-time stays center / default. */
-const ATLAS_TAB_ORDER = ["high-medieval", "deep-time", "renaissance"];
+/**
+ * Top-center era tabs — Deep-time stays center / default.
+ * Older eras left; newer (Early Modern, Modern) right.
+ */
+const ATLAS_TAB_ORDER = [
+  "high-medieval",
+  "renaissance",
+  "deep-time",
+  "early-modern",
+  "modern",
+];
+
+const KINGDOM_PACK_IDS = [
+  "high-medieval",
+  "renaissance",
+  "early-modern",
+  "modern",
+];
+
+const KINGDOM_TAB_LABELS = {
+  "high-medieval": "High Medieval",
+  renaissance: "Renaissance",
+  "early-modern": "Early Modern",
+  modern: "Modern",
+};
 
 const state = {
   data: null,
@@ -47,7 +70,7 @@ const state = {
 };
 
 function isKingdomMode(mode = state.atlasMode) {
-  return mode === "high-medieval" || mode === "renaissance";
+  return mode !== "deep-time" && KINGDOM_PACK_IDS.includes(mode);
 }
 
 function activePack() {
@@ -136,7 +159,16 @@ function normalizeKingdomPack(raw) {
   const periods = raw.ticks.map((tick) => {
     const year = tick.year ?? tick.yearApprox;
     const yearKey = String(year);
-    const yearLabel = tick.label || `c. ${year} AD`;
+    const tickLabel = tick.label || `${year} AD`;
+    // Avoid stacking identical "1200 AD" in slider year + period label
+    const yearOnly = String(year);
+    const labelBare = String(tickLabel)
+      .replace(/\s*(AD|BC|CE|BCE)\s*/gi, "")
+      .trim();
+    const periodName =
+      tick.name ||
+      tick.periodLabel ||
+      (labelBare === yearOnly ? label : tickLabel);
     const mapLayers = [];
     const polities = {};
     const features = [];
@@ -183,8 +215,8 @@ function normalizeKingdomPack(raw) {
     return {
       id: `${id}-${year}`,
       yearApprox: year,
-      yearLabel: /AD|BC|CE|BCE/i.test(yearLabel) ? yearLabel : `${yearLabel}`,
-      label: yearLabel,
+      yearLabel: `${year} AD`,
+      label: periodName,
       tickYear: `${year} AD`,
       era: label,
       narrative:
@@ -681,6 +713,7 @@ function initMap({ preserveZoom = true } = {}) {
     .filter((f) => LAND_ISOS.includes(f.properties.iso))
     .map(clipFeatureToEurope)
     .filter(Boolean);
+  state.landFeatures = mainland;
   const land = {
     type: "FeatureCollection",
     features: [
@@ -732,6 +765,18 @@ function initMap({ preserveZoom = true } = {}) {
   const zoomLayer = svg.append("g").attr("class", "map-zoom");
   state.zoomLayer = zoomLayer;
 
+  // Clip polity fills to Natural Earth land so oceans stay clear
+  const defs = zoomLayer.append("defs");
+  const landClip = defs
+    .append("clipPath")
+    .attr("id", "land-clip")
+    .attr("clipPathUnits", "userSpaceOnUse");
+  landClip
+    .selectAll("path")
+    .data(mainland)
+    .join("path")
+    .attr("d", state.path);
+
   const g = zoomLayer.append("g").attr("class", "countries");
 
   g.selectAll("path")
@@ -746,8 +791,21 @@ function initMap({ preserveZoom = true } = {}) {
     .on("mouseleave", onCountryLeave)
     .on("click", onCountryClick);
 
-  // Kingdom / empire schematic extents (High Medieval + Renaissance tabs)
-  zoomLayer.append("g").attr("class", "polities");
+  // Kingdom / empire extents — clipped to land (High Medieval + Renaissance)
+  zoomLayer
+    .append("g")
+    .attr("class", "polities")
+    .attr("clip-path", "url(#land-clip)");
+
+  // Coastline overlay on top so shores stay readable under fills
+  const coasts = zoomLayer.append("g").attr("class", "coasts");
+  coasts
+    .selectAll("path")
+    .data(mainland)
+    .join("path")
+    .attr("class", "coastline")
+    .attr("d", state.path);
+
   if (isKingdomMode()) syncKingdomPolityLayer();
 
   const zoom = d3
@@ -786,7 +844,7 @@ function initMap({ preserveZoom = true } = {}) {
           ? { k: t.k, x: t.x, y: t.y }
           : null;
       syncZoomReset(t);
-      if (state.selectedIso) updateSelectionTip();
+      if (state.selectedIso || state.selectedPolityId) updateSelectionTip();
     });
 
   state.zoom = zoom;
@@ -911,7 +969,8 @@ function paintMap(animate = true) {
       const style = interpolatedPolityStyle(polityId, state.sliderPos);
       const node = d3.select(this);
       const fill = style.fill || "transparent";
-      const opacity = style.fill ? Math.max(0.28, style.opacity) : 0;
+      // Keep fills translucent so Natural Earth coasts read through
+      const opacity = style.fill ? Math.min(0.62, Math.max(0.32, style.opacity * 0.78)) : 0;
       const visible = Boolean(style.fill);
       node.style("pointer-events", visible ? "all" : "none");
       if (animate) {
@@ -964,7 +1023,13 @@ function culturesForPolity(polityId) {
 }
 
 function tipHtml(name, cultures) {
-  const line = cultures.length ? cultures.join(" · ") : "—";
+  const filtered = (cultures || []).filter(
+    (c) => c && c.toLowerCase() !== String(name || "").toLowerCase()
+  );
+  const line = filtered.length ? filtered.join(" · ") : "";
+  if (!line) {
+    return `<strong>${escapeHtml(name)}</strong>`;
+  }
   return `<strong>${escapeHtml(name)}</strong><span class="map-tip-cultures">${escapeHtml(line)}</span>`;
 }
 
@@ -1875,9 +1940,24 @@ function buildTicks() {
 
 function syncAtlasTabs() {
   $$("#atlas-tabs .atlas-tab").forEach((btn) => {
-    const on = btn.dataset.mode === state.atlasMode;
+    const mode = btn.dataset.mode;
+    const on = mode === state.atlasMode;
     btn.classList.toggle("is-active", on);
     btn.setAttribute("aria-selected", on ? "true" : "false");
+
+    if (mode === "deep-time") {
+      btn.hidden = false;
+      btn.disabled = false;
+      return;
+    }
+    if (KINGDOM_PACK_IDS.includes(mode)) {
+      const ready = Boolean(state.kingdomPacks[mode]);
+      btn.hidden = !ready;
+      btn.disabled = !ready;
+      btn.title = ready
+        ? KINGDOM_TAB_LABELS[mode] || mode
+        : "Kingdom pack not loaded yet";
+    }
   });
   document.querySelector(".app")?.setAttribute("data-atlas-mode", state.atlasMode);
 }
@@ -2020,7 +2100,8 @@ function bindUI() {
 
 async function loadKingdomPack(id) {
   try {
-    const r = await fetch(`data/kingdom-eras/${id}.json`);
+    // Cache-bust so refined research geometry packs reload after deploy
+    const r = await fetch(`data/kingdom-eras/${id}.json?v=era-land-2`);
     if (!r.ok) return null;
     const raw = await r.json();
     return normalizeKingdomPack(raw);
@@ -2037,30 +2118,32 @@ async function init() {
   clearLegacyLayoutStorage();
 
   try {
-    const [timeline, geo, keyEvents, highMedieval, renaissance] =
-      await Promise.all([
-        fetch("data/timeline.json").then((r) => {
-          if (!r.ok) throw new Error("timeline");
-          return r.json();
-        }),
-        fetch("data/europe.geojson").then((r) => {
-          if (!r.ok) throw new Error("geo");
-          return r.json();
-        }),
-        fetch("data/key-events.json")
-          .then((r) => (r.ok ? r.json() : { version: 1, periods: {} }))
-          .catch(() => ({ version: 1, periods: {} })),
-        loadKingdomPack("high-medieval"),
-        loadKingdomPack("renaissance"),
-      ]);
+    const packLoads = KINGDOM_PACK_IDS.map((id) =>
+      loadKingdomPack(id).then((pack) => [id, pack])
+    );
+    const [timeline, geo, keyEvents, packEntries] = await Promise.all([
+      fetch("data/timeline.json").then((r) => {
+        if (!r.ok) throw new Error("timeline");
+        return r.json();
+      }),
+      fetch("data/europe.geojson").then((r) => {
+        if (!r.ok) throw new Error("geo");
+        return r.json();
+      }),
+      fetch("data/key-events.json")
+        .then((r) => (r.ok ? r.json() : { version: 1, periods: {} }))
+        .catch(() => ({ version: 1, periods: {} })),
+      Promise.all(packLoads),
+    ]);
     state.data = timeline;
     state.geo = geo;
     state.keyEvents = keyEvents?.periods
       ? keyEvents
       : { version: 1, periods: {} };
     state.kingdomPacks = {};
-    if (highMedieval) state.kingdomPacks["high-medieval"] = highMedieval;
-    if (renaissance) state.kingdomPacks.renaissance = renaissance;
+    for (const [id, pack] of packEntries) {
+      if (pack?.periods?.length) state.kingdomPacks[id] = pack;
+    }
   } catch (err) {
     console.error(err);
     $("#period-copy").textContent =
