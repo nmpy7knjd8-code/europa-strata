@@ -254,8 +254,8 @@ button {
   line-height: 1.2;
   white-space: normal;
   overflow: hidden;
-  overflow-wrap: break-word;
-  word-break: normal;
+  overflow-wrap: normal;
+  word-break: keep-all;
   hyphens: none;
   text-align: center;
   cursor: pointer;
