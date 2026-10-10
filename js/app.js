@@ -912,6 +912,21 @@ function figureHtml(img) {
   </figure>`;
 }
 
+/** Tag portrait vs landscape so CSS can shrink-wrap without wide grey slabs */
+function bindFigureOrientation(root) {
+  if (!root) return;
+  root.querySelectorAll("figure.polity-figure img").forEach((img) => {
+    const apply = () => {
+      const fig = img.closest("figure.polity-figure");
+      if (!fig || !img.naturalWidth) return;
+      fig.dataset.orient =
+        img.naturalWidth >= img.naturalHeight * 1.05 ? "landscape" : "portrait";
+    };
+    if (img.complete && img.naturalWidth) apply();
+    else img.addEventListener("load", apply, { once: true });
+  });
+}
+
 function ensureLightbox() {
   let root = $("#image-lightbox");
   if (root) return root;
@@ -1017,6 +1032,7 @@ function fillInlineGallery(el, images) {
   el.innerHTML = list.map(figureHtml).join("");
   el.hidden = !list.length;
   el.classList.toggle("is-single", list.length === 1);
+  bindFigureOrientation(el);
 }
 
 /** Route images into leaders / religion / literature / art galleries */
@@ -1170,6 +1186,11 @@ function renderDetail() {
       return `<li title="${escapeHtml(e.detail)}" style="--swatch:${escapeHtml(e.color)}"><strong>${escapeHtml(e.label)}</strong><span class="pct">${escapeHtml(pct)}</span></li>`;
     })
     .join("");
+  // Ensure legend stays empty / hidden
+  if (legendEl) {
+    legendEl.hidden = true;
+    legendEl.setAttribute("aria-hidden", "true");
+  }
 
   renderAncestryCline(region, keys);
   highlightCultureChips();
