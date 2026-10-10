@@ -632,6 +632,7 @@ function initMap({ preserveZoom = true } = {}) {
           ? { k: t.k, x: t.x, y: t.y }
           : null;
       syncZoomReset(t);
+      if (state.selectedIso) updateSelectionTip();
     });
 
   state.zoom = zoom;
@@ -714,20 +715,91 @@ function paintMap(animate = true) {
   });
 }
 
+function culturesForIso(iso) {
+  const style = interpolatedCountryStyle(iso, state.sliderPos);
+  const labels = (style.labels || []).map((l) => l.label).filter(Boolean);
+  return labels;
+}
+
+function tipHtml(name, cultures) {
+  const line = cultures.length ? cultures.join(" · ") : "—";
+  return `<strong>${escapeHtml(name)}</strong><span class="map-tip-cultures">${escapeHtml(line)}</span>`;
+}
+
+/** Pin tip on selected country; culture line follows the slider. */
+function updateSelectionTip() {
+  if (!state.tip || !state.svg || !state.selectedIso || !state.geo) return;
+  const feat = state.geo.features.find(
+    (f) => f.properties.iso === state.selectedIso
+  );
+  if (!feat) {
+    state.tip.style("opacity", 0);
+    return;
+  }
+  const cultures = culturesForIso(state.selectedIso);
+  state.tip
+    .style("opacity", 1)
+    .classed("is-pinned", true)
+    .html(tipHtml(feat.properties.name, cultures));
+
+  if (state.path) {
+    try {
+      const c = state.path.centroid(feat);
+      if (Number.isFinite(c[0]) && Number.isFinite(c[1])) {
+        const t = d3.zoomTransform(state.svg.node());
+        const [x, y] = t.apply(c);
+        state.tip.style("left", `${x}px`).style("top", `${y}px`);
+      }
+    } catch (_) {
+      /* centroid can fail on empty clips */
+    }
+  }
+}
+
+/** Keep detail horizon in sync while the slider moves (selected country). */
+function updateSelectedHorizonLive() {
+  if (!state.selectedIso) return;
+  const cultures = culturesForIso(state.selectedIso);
+  const title = $("#culture-title");
+  if (title && cultures.length) {
+    title.textContent = cultures.join(" · ");
+  }
+  const horizonEl = $("#culture-horizon");
+  if (horizonEl) {
+    const period = currentPeriod();
+    const region = state.selectedRegion
+      ? regionData(period, state.selectedRegion)
+      : null;
+    const base = region?.culture || "";
+    horizonEl.textContent =
+      cultures.length && base && cultures[0] !== base
+        ? `Regional horizon · ${base}`
+        : cultures.length
+          ? "Map layers here"
+          : "Cultural horizon";
+  }
+}
+
 function onCountryEnter(event, d) {
   d3.select(this).classed("is-hover", true);
   const iso = d.properties.iso;
-  const style = interpolatedCountryStyle(iso, state.sliderPos);
-  const cultures = (style.labels || []).map((l) => l.label).join(" · ") || "—";
+  // Hovering another country: temporary tip; selected tip resumes on leave
+  const cultures = culturesForIso(iso);
   state.tip
     .style("opacity", 1)
-    .html(
-      `<strong>${escapeHtml(d.properties.name)}</strong>${escapeHtml(cultures)}`
-    );
+    .classed("is-pinned", iso === state.selectedIso)
+    .html(tipHtml(d.properties.name, cultures));
 }
 
 function onCountryMove(event) {
-  const stage = $("#map-stage").getBoundingClientRect();
+  if (state.selectedIso && d3.select(this).datum()?.properties?.iso === state.selectedIso) {
+    // Keep pinned tip on the selected country's centroid while sliding/zooming
+    updateSelectionTip();
+    return;
+  }
+  const mapEl = $("#map");
+  if (!mapEl) return;
+  const stage = mapEl.getBoundingClientRect();
   state.tip
     .style("left", `${event.clientX - stage.left}px`)
     .style("top", `${event.clientY - stage.top}px`);
@@ -735,7 +807,8 @@ function onCountryMove(event) {
 
 function onCountryLeave() {
   d3.select(this).classed("is-hover", false);
-  state.tip.style("opacity", 0);
+  if (state.selectedIso) updateSelectionTip();
+  else state.tip.style("opacity", 0).classed("is-pinned", false);
 }
 
 function onCountryClick(event, d) {
@@ -749,6 +822,7 @@ function onCountryClick(event, d) {
 
   renderDetail();
   highlightCultureChips();
+  updateSelectionTip();
 }
 
 /* ——— UI ——— */
@@ -769,9 +843,16 @@ function setSliderPos(pos, { fromSlider = false } = {}) {
     updateLegend();
     updateCulturesRail();
     renderDetail();
+    highlightCultureChips();
   } else {
     // soft update year blend feel — still show nearest period text
     renderPeriodText();
+  }
+
+  // Selected country's groups follow the slider continuously
+  if (state.selectedIso) {
+    updateSelectionTip();
+    updateSelectedHorizonLive();
   }
 
   $$(".ticks .tick").forEach((el, i) => {
@@ -877,6 +958,7 @@ function updateCulturesRail() {
         .classed("is-active", (d) => d.properties.iso === iso);
       renderDetail();
       highlightCultureChips();
+      updateSelectionTip();
     });
   });
 }
@@ -1084,18 +1166,25 @@ function renderDetail() {
   const place = isoName || REGION_LABELS[rid];
   $("#detail-kicker").textContent = `${place} · ${formatYearUi(period.yearLabel)}`;
 
-  // Overall culture horizon from map layer
+  // Overall culture horizon from map layers covering this country
   let horizon = region.culture;
   if (state.selectedIso) {
     const cov = countryStyleForPeriod(period, state.selectedIso);
-    if (cov.labels?.length) horizon = cov.labels[0].label;
+    const names = (cov.labels || []).map((l) => l.label).filter(Boolean);
+    if (names.length) horizon = names.join(" · ");
   }
   $("#culture-title").textContent = horizon;
   const horizonEl = $("#culture-horizon");
   if (horizonEl) {
+    const first = horizon.split(" · ")[0];
     horizonEl.textContent =
-      horizon !== region.culture ? `Regional horizon · ${region.culture}` : "Cultural horizon";
+      first && first !== region.culture
+        ? `Regional horizon · ${region.culture}`
+        : state.selectedIso && horizon !== region.culture
+          ? "Map layers here"
+          : "Cultural horizon";
   }
+  updateSelectionTip();
 
   const modeEl = $("#mode-pill");
   modeEl.textContent = region.mode;
@@ -1342,6 +1431,8 @@ async function init() {
     ?.selectAll("path.country")
     .classed("is-active", (d) => d.properties.iso === "GBR");
   renderDetail();
+  highlightCultureChips();
+  updateSelectionTip();
 }
 
 init();
