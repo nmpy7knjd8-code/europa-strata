@@ -27,6 +27,7 @@ const SLIDER_MAX = 1000;
 const state = {
   data: null,
   geo: null,
+  keyEvents: { version: 1, periods: {} },
   periodIndex: 0,
   sliderPos: 0, // 0..1 continuous
   selectedIso: null,
@@ -810,6 +811,73 @@ function formatYearUi(s) {
     .replace(/\bCE\b/g, "AD");
 }
 
+function periodKeyEventsPack(periodId) {
+  return state.keyEvents?.periods?.[periodId] || null;
+}
+
+/** Period-wide events (no iso) + optional place-specific when iso selected. */
+function eventsForPeriod(periodId, { iso = null, placeOnly = false } = {}) {
+  const pack = periodKeyEventsPack(periodId);
+  const list = pack?.keyEvents || [];
+  if (!list.length) return [];
+  if (placeOnly) {
+    if (!iso) return [];
+    return list.filter((e) => e.iso && e.iso === iso);
+  }
+  // Period panel: show period-wide bullets (iso null/empty)
+  return list.filter((e) => !e.iso);
+}
+
+function renderKeyEventsList(listEl, events) {
+  if (!listEl) return;
+  listEl.replaceChildren();
+  for (const ev of events) {
+    const li = document.createElement("li");
+    if (ev.date) {
+      const when = document.createElement("time");
+      when.className = "key-events-date";
+      when.textContent = formatYearUi(ev.date);
+      li.appendChild(when);
+      li.appendChild(document.createTextNode(" — "));
+    }
+    li.appendChild(document.createTextNode(ev.text || ""));
+    listEl.appendChild(li);
+  }
+}
+
+function renderPeriodKeyEvents() {
+  const period = currentPeriod();
+  const section = $("#period-key-events");
+  const listEl = $("#period-key-events-list");
+  if (!section || !listEl) return;
+  const events = eventsForPeriod(period.id, { placeOnly: false });
+  if (!events.length) {
+    section.hidden = true;
+    listEl.replaceChildren();
+    return;
+  }
+  renderKeyEventsList(listEl, events);
+  section.hidden = false;
+}
+
+function renderPlaceKeyEvents() {
+  const period = currentPeriod();
+  const section = $("#place-key-events");
+  const listEl = $("#place-key-events-list");
+  if (!section || !listEl) return;
+  const events = eventsForPeriod(period.id, {
+    iso: state.selectedIso,
+    placeOnly: true,
+  });
+  if (!events.length) {
+    section.hidden = true;
+    listEl.replaceChildren();
+    return;
+  }
+  renderKeyEventsList(listEl, events);
+  section.hidden = false;
+}
+
 function renderPeriodText() {
   const period = currentPeriod();
   const yearEl = $("#period-year");
@@ -825,6 +893,7 @@ function renderPeriodText() {
   } else {
     ling.hidden = true;
   }
+  renderPeriodKeyEvents();
 }
 
 function clearLegacyLayoutStorage() {
@@ -1169,6 +1238,8 @@ function renderDetail() {
   setPlainText($("#absorb-incoming"), region.incoming || "—");
   setPlainText($("#absorb-fused"), region.fused || "—");
   scrubBodyCopyMarkup();
+  renderPlaceKeyEvents();
+  renderPeriodKeyEvents();
 
   const confLabels = state.data.meta.confidenceLabels || {};
   const conf = region.linguisticConfidence || "hypothetical";
@@ -1319,7 +1390,7 @@ async function init() {
   clearLegacyLayoutStorage();
 
   try {
-    const [timeline, geo] = await Promise.all([
+    const [timeline, geo, keyEvents] = await Promise.all([
       fetch("data/timeline.json").then((r) => {
         if (!r.ok) throw new Error("timeline");
         return r.json();
@@ -1328,9 +1399,15 @@ async function init() {
         if (!r.ok) throw new Error("geo");
         return r.json();
       }),
+      fetch("data/key-events.json")
+        .then((r) => (r.ok ? r.json() : { version: 1, periods: {} }))
+        .catch(() => ({ version: 1, periods: {} })),
     ]);
     state.data = timeline;
     state.geo = geo;
+    state.keyEvents = keyEvents?.periods
+      ? keyEvents
+      : { version: 1, periods: {} };
   } catch (err) {
     console.error(err);
     $("#period-copy").textContent =

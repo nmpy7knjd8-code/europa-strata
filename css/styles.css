@@ -367,6 +367,39 @@ button {
   line-height: 1.45;
 }
 
+/* Key events — hidden until research JSON is merged into data/key-events.json */
+.key-events {
+  margin: 0.85rem 0 0;
+  padding: 0.7rem 0 0;
+  border-top: 1px solid var(--line);
+}
+
+.key-events .kicker {
+  margin-bottom: 0.4rem;
+}
+
+.key-events-list {
+  margin: 0;
+  padding: 0 0 0 1.1rem;
+  color: var(--ink-dim);
+  font-size: 0.95rem;
+  line-height: 1.45;
+}
+
+.key-events-list li {
+  margin: 0.35rem 0 0;
+}
+
+.key-events-list li:first-child {
+  margin-top: 0;
+}
+
+.key-events-date {
+  font-weight: 500;
+  color: var(--ink);
+  font-style: normal;
+}
+
 .slider-block {
   margin-top: 0;
 }
@@ -1575,6 +1608,22 @@ html {
 .period-ling {
   font-size: 18px;
   line-height: 1.6;
+}
+
+.key-events {
+  margin-top: 1rem;
+  padding-top: 0.85rem;
+}
+
+.key-events-list {
+  font-size: var(--read-size);
+  line-height: var(--read-leading);
+  padding-left: 1.2rem;
+}
+
+.key-events--place {
+  margin-top: 0.85rem;
+  margin-bottom: 0.35rem;
 }
 
 #detail-kicker {

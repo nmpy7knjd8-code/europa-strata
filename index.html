@@ -14,7 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Sora:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/styles.css?v=controls-type-3" />
+    <link rel="stylesheet" href="css/styles.css?v=key-events-stub-1" />
     <script>
       /* Clear legacy layout-override keys from older builds */
       try {
@@ -23,7 +23,7 @@
       } catch (_) {}
     </script>
     <script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js" defer></script>
-    <script src="js/app.js?v=controls-type-3" defer></script>
+    <script src="js/app.js?v=key-events-stub-1" defer></script>
   </head>
   <body>
     <div class="app">
@@ -85,6 +85,10 @@
           <p class="kicker" id="period-era">—</p>
           <p class="period-copy" id="period-copy"></p>
           <p class="period-ling" id="period-ling" hidden></p>
+          <section class="key-events" id="period-key-events" hidden>
+            <p class="kicker">Key events</p>
+            <ul class="key-events-list" id="period-key-events-list"></ul>
+          </section>
         </div>
 
         <div class="side-detail" id="detail">
@@ -95,6 +99,11 @@
           <p class="culture-desc" id="culture-desc">
             Select a place on the map to see culture, ancestry, and language for this period.
           </p>
+
+          <section class="key-events key-events--place" id="place-key-events" hidden>
+            <p class="kicker">Key events here</p>
+            <ul class="key-events-list" id="place-key-events-list"></ul>
+          </section>
 
           <div class="polity-panel" id="polity-panel" hidden>
             <p class="kicker">Polity</p>
