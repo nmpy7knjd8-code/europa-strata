@@ -2165,8 +2165,12 @@ function bindUI() {
       snapToPeriod(Math.min(activePeriods().length - 1, state.periodIndex + 1));
   });
 
-  $$("#atlas-tabs .atlas-tab").forEach((btn) => {
-    btn.addEventListener("click", () => setAtlasMode(btn.dataset.mode));
+  // Event delegation — reliable taps even when tabs reflow/wrap
+  $("#atlas-tabs")?.addEventListener("click", (e) => {
+    const btn = e.target?.closest?.(".atlas-tab");
+    if (!btn || btn.disabled || btn.hidden) return;
+    e.preventDefault();
+    setAtlasMode(btn.dataset.mode);
   });
 
   $("#theme-toggle").addEventListener("click", () => {
@@ -2227,7 +2231,7 @@ function bindUI() {
 async function loadKingdomPack(id) {
   try {
     // Cache-bust so refined research geometry packs reload after deploy
-    const r = await fetch(`data/kingdom-eras/${id}.json?v=era-ui-10`);
+    const r = await fetch(`data/kingdom-eras/${id}.json?v=era-ui-11`);
     if (!r.ok) return null;
     const raw = await r.json();
     return normalizeKingdomPack(raw);
