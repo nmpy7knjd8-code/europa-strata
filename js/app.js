@@ -971,6 +971,61 @@ function bumpMapZoom(factor) {
     .call(state.zoom.scaleBy, factor);
 }
 
+/** Approximate spherical area — used to stack small polities above empires. */
+function featureArea(f) {
+  try {
+    return Math.abs(d3.geoArea(f));
+  } catch (_) {
+    return 0;
+  }
+}
+
+/** Large first in DOM (behind); small last (on top / clickable). */
+function sortFeaturesSmallOnTop(features) {
+  return [...features].sort((a, b) => featureArea(b) - featureArea(a));
+}
+
+/**
+ * Pick polity under a pointer: smallest containing geometry wins.
+ * Repeat-click cycles through overlapping stack (small → larger → …).
+ */
+function pickPolityAtEvent(event, fallbackId = null) {
+  if (!state.path || !state.zoomLayer) return fallbackId;
+  const layer = state.zoomLayer.node();
+  if (!layer) return fallbackId;
+  const proj = state.path.projection?.();
+  if (!proj?.invert) return fallbackId;
+
+  const [x, y] = d3.pointer(event, layer);
+  const lonlat = proj.invert([x, y]);
+  if (!lonlat || !Number.isFinite(lonlat[0]) || !Number.isFinite(lonlat[1])) {
+    return fallbackId;
+  }
+
+  const period = currentPeriod();
+  const features = kingdomGeoSmoothed(period)?.features || [];
+  const hits = features.filter((f) => {
+    try {
+      return d3.geoContains(f, lonlat);
+    } catch (_) {
+      return false;
+    }
+  });
+  if (!hits.length) return fallbackId;
+
+  hits.sort((a, b) => featureArea(a) - featureArea(b)); // smallest first
+
+  if (hits.length > 1 && state.selectedPolityId) {
+    const idx = hits.findIndex(
+      (h) => h.properties.polityId === state.selectedPolityId
+    );
+    if (idx >= 0) {
+      return hits[(idx + 1) % hits.length].properties.polityId;
+    }
+  }
+  return hits[0].properties.polityId;
+}
+
 /** Bind / update polity paths only when the kingdom tick changes. */
 function syncKingdomPolityLayer({ force = false } = {}) {
   if (!state.svg || !state.path || !isKingdomMode()) return;
@@ -983,7 +1038,7 @@ function syncKingdomPolityLayer({ force = false } = {}) {
   state._kingdomGeoPeriodId = periodId;
 
   const polityGeo = kingdomGeoSmoothed(period);
-  const features = polityGeo?.features || [];
+  const features = sortFeaturesSmallOnTop(polityGeo?.features || []);
   const pg = state.svg.select("g.polities");
   if (pg.empty()) return;
 
@@ -1013,6 +1068,11 @@ function syncKingdomPolityLayer({ force = false } = {}) {
       (exit) => exit.remove()
     );
 
+  // Re-assert paint order: empires under duchies (selection must not steal z-order)
+  pg.selectAll("path.polity")
+    .datum((d) => d)
+    .sort((a, b) => featureArea(b) - featureArea(a));
+
   // Drop selection only when the polity is gone from this tick entirely
   if (state.selectedPolityId) {
     const hasGeom = features.some(
@@ -1032,12 +1092,7 @@ function applyPolitySelectionClass() {
     "is-active",
     (d) => d.properties.polityId === state.selectedPolityId
   );
-  // Keep selected stroke above neighbors
-  if (state.selectedPolityId) {
-    pg.selectAll("path.polity")
-      .filter((d) => d.properties.polityId === state.selectedPolityId)
-      .raise();
-  }
+  // Do NOT raise selected — that buried smaller kingdoms under HRE/etc.
 }
 
 function selectPolity(polityId, { scrollDetail = false } = {}) {
@@ -1287,26 +1342,23 @@ function onPolityPointerDown(event, d) {
 function onPolityPointerUp(event, d) {
   const down = state._polityPointerDown;
   state._polityPointerDown = null;
-  if (!down || down.id !== d.properties.polityId) return;
+  if (!down) return;
   if (event.button != null && event.button !== 0) return;
   const dx = Math.abs((event.clientX || 0) - down.x);
   const dy = Math.abs((event.clientY || 0) - down.y);
   if (dx > 10 || dy > 10) return; // treat as pan/drag
   event.preventDefault();
   event.stopPropagation();
-  selectPolity(d.properties.polityId);
+  const id = pickPolityAtEvent(event, d.properties.polityId);
+  selectPolity(id);
 }
 
 function onPolityClick(event, d) {
   // Fallback when pointerup didn't fire (some desktop paths)
   event.preventDefault();
   event.stopPropagation();
-  if (state.selectedPolityId === d.properties.polityId) {
-    applyPolitySelectionClass();
-    updateSelectionTip();
-    return;
-  }
-  selectPolity(d.properties.polityId);
+  const id = pickPolityAtEvent(event, d.properties.polityId);
+  selectPolity(id);
 }
 
 function onCountryEnter(event, d) {
@@ -2229,7 +2281,7 @@ function bindUI() {
 async function loadKingdomPack(id) {
   try {
     // Cache-bust so refined research geometry packs reload after deploy
-    const r = await fetch(`data/kingdom-eras/${id}.json?v=era-ui-13`);
+    const r = await fetch(`data/kingdom-eras/${id}.json?v=era-ui-14`);
     if (!r.ok) return null;
     const raw = await r.json();
     return normalizeKingdomPack(raw);
