@@ -2539,9 +2539,9 @@ body.page-ancestry {
   }
 }
 
-/* Kingdom tabs: sit under Deep-time reading scale */
+/* Kingdom tabs: normal mobile reading size (not Deep-time 22px narrative) */
 .app:not([data-atlas-mode="deep-time"]) {
-  --read-size: 17px;
+  --read-size: 15px;
   --read-leading: 1.5;
 }
 
@@ -2553,13 +2553,13 @@ body.page-ancestry {
 
 .app:not([data-atlas-mode="deep-time"]) .polity-panel .polity-name,
 .app:not([data-atlas-mode="deep-time"]) .polity-name {
-  font-size: 1.1rem;
+  font-size: 1.15rem;
   line-height: 1.2;
   margin: 0.1rem 0 0.3rem;
 }
 
 .app:not([data-atlas-mode="deep-time"]) .culture-horizon {
-  font-size: 0.82rem;
+  font-size: 0.8rem;
 }
 
 .app:not([data-atlas-mode="deep-time"]) .slider-year {
@@ -2592,12 +2592,25 @@ body.page-ancestry {
 
 .app:not([data-atlas-mode="deep-time"]) .legend-bar .kicker,
 .app:not([data-atlas-mode="deep-time"]) .side .kicker,
+.app:not([data-atlas-mode="deep-time"]) .polity-block .kicker,
+.app:not([data-atlas-mode="deep-time"]) .polity-conflict-label,
+.app:not([data-atlas-mode="deep-time"]) .polity-chain-label,
 .app:not([data-atlas-mode="deep-time"]) #detail-kicker {
-  font-size: 0.7rem;
+  font-size: 0.68rem;
 }
 
+/* Beat stacked var(--read-size) rules — body must stay ~15px on phone */
 .app:not([data-atlas-mode="deep-time"]) .period-copy,
 .app:not([data-atlas-mode="deep-time"]) .culture-desc,
+.app:not([data-atlas-mode="deep-time"]) .polity-chain,
+.app:not([data-atlas-mode="deep-time"]) .polity-panel .polity-summary,
+.app:not([data-atlas-mode="deep-time"]) .polity-panel .polity-conflicts,
+.app:not([data-atlas-mode="deep-time"]) .polity-panel .polity-leaders,
+.app:not([data-atlas-mode="deep-time"]) .polity-panel .polity-religion,
+.app:not([data-atlas-mode="deep-time"]) .polity-panel .polity-culture,
+.app:not([data-atlas-mode="deep-time"]) .polity-panel .polity-story,
+.app:not([data-atlas-mode="deep-time"]) .polity-panel .polity-literature,
+.app:not([data-atlas-mode="deep-time"]) .polity-panel .polity-art,
 .app:not([data-atlas-mode="deep-time"]) .polity-summary,
 .app:not([data-atlas-mode="deep-time"]) .polity-conflicts,
 .app:not([data-atlas-mode="deep-time"]) .polity-leaders,
@@ -2606,8 +2619,13 @@ body.page-ancestry {
 .app:not([data-atlas-mode="deep-time"]) .polity-story,
 .app:not([data-atlas-mode="deep-time"]) .polity-literature,
 .app:not([data-atlas-mode="deep-time"]) .polity-art {
-  font-size: 0.95rem;
+  font-size: 15px;
   line-height: 1.5;
+}
+
+.app:not([data-atlas-mode="deep-time"]) .polity-figure figcaption {
+  font-size: 0.78rem;
+  line-height: 1.35;
 }
 
 .app:not([data-atlas-mode="deep-time"]) .nav-btn {
