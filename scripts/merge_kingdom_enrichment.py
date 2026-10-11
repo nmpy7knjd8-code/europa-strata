@@ -56,6 +56,7 @@ FIELD_ALIASES = {
     "philosophy": ("philosophy", "thought", "ideasPhilosophy"),
     "science": ("science", "scienceAndMedicine", "science_medicine", "naturalPhilosophy"),
     "art": ("art", "artAndMaterialCulture", "materialCulture"),
+    "story": ("story", "stories"),
 }
 
 HEADING_RE = re.compile(
@@ -185,7 +186,16 @@ def merge_polity(base: dict, *alts: dict) -> dict:
     # Prefer description into summary alias if summary empty
     if not out.get("summary") and out.get("description"):
         out["summary"] = out["description"]
-    out["images"] = merge_images(*(s.get("images") for s in sources))
+    out["images"] = merge_images(
+        *(s.get("images") for s in sources),
+        *(s.get("photos") for s in sources),
+    )
+    # stories alias → story
+    out["story"] = pick_text(
+        out.get("story"),
+        *(s.get("stories") for s in sources),
+        *(s.get("story") for s in sources),
+    )
     # Keep structural fields from base; allow name/type/years/color upgrades if base empty
     for field in ("name", "type", "yearsActive", "color"):
         if not out.get(field):
