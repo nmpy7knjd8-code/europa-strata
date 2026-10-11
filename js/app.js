@@ -2398,7 +2398,7 @@ function bindUI() {
 async function loadKingdomPack(id) {
   try {
     // Cache-bust so refined research geometry packs reload after deploy
-    const r = await fetch(`data/kingdom-eras/${id}.json?v=era-ui-14`);
+    const r = await fetch(`data/kingdom-eras/${id}.json?v=era-ui-30`);
     if (!r.ok) return null;
     const raw = await r.json();
     return normalizeKingdomPack(raw);
