@@ -37,7 +37,7 @@
       "type": "kingdom",
       "yearsActive": "c. 987–1792 (Bourbon early modern arc 1600–1789)",
       "color": "#2c3e6b",
-      "description": "From Henry IV’s peacemaking after the Wars of Religion to Louis XIV’s Versailles machine, Bourbon France forges the template early modern state: intendants, standing army, mercantilist navy, and a sacral kingship that claims Gallican control of the church. Treaties of Westphalia, the Pyrenees, Nijmegen, and Utrecht push the frontier toward a recognizable hexagon; Lorraine (1766) and Corsica (1768) close the pre-revolutionary outline. By 1789 the Old Regime still rules a nearly modern territorial kingdom—rich, centralized, and fiscally brittle—on the eve of revolution.",
+      "description": "From Henry IV’s peacemaking after the Wars of Religion to Louis XIV’s Versailles machine, Bourbon France forges the template early modern state: intendants, standing army, mercantilist navy, and a sacral kingship that claims Gallican control of the church. Treaties of Westphalia, the Pyrenees, Nijmegen, and Utrecht push the frontier toward a recognizable hexagon; Lorraine (1766) and Corsica (1768) close the pre-revolutionary outline. By 1789 the Old Regime still rules a nearly modern territorial kingdom—rich, centralized, and fiscally brittle—on the eve of revolution. Henry IV’s ‘chicken in every pot’ peace gives way to Richelieu’s state reason; Louis XIV’s sun-king theatre of power peaks at Nijmegen then overreaches into endless coalition war.",
       "conflicts": "Richelieu’s interventions in the Thirty Years’ War; Franco-Spanish War (1635–59); Dutch War (1672–78); Nine Years’ War / War of the League of Augsburg; War of the Spanish Succession; War of the Polish Succession; War of the Austrian Succession; Seven Years’ War (global defeat); American Revolutionary War alliance (1780s). Domestic hinges: sieges of La Rochelle, the Fronde, dragonnades after the Revocation of Nantes.",
       "leaders": "Henry IV; Louis XIII with Cardinal Richelieu; Anne of Austria & Mazarin; Louis XIV with Colbert and Louvois; Louis XV with Fleury and Choiseul; Louis XVI. Military and diplomatic foils: Condé, Turenne, Vauban, Vergennes.",
       "religion": "Catholic monarchy with a Gallican church claiming liberties against Rome. Edict of Nantes (1598) licenses Huguenot coexistence until Louis XIV’s Revocation (Fontainebleau, 1685) drives a skilled Protestant diaspora to the Dutch Republic, England, Brandenburg, and Switzerland. Jansenist controversies and later philosophe anticlericalism erode confessional certainties without yet ending the sacral kingship of the Most Christian King.",
@@ -1565,7 +1565,7 @@
       "summary": "Bourbon absolutist kingdom that sets Europe’s court language, fiscal-military model, and Enlightenment quarrel with itself.",
       "story": "Richelieu’s siege of La Rochelle (1627–28) breaks armed Huguenot autonomy and announces that sovereignty will no longer share forts with confessions. A generation later, Louis XIV’s personal rule after 1661 turns that lesson into architecture: the Hall of Mirrors, the war ministry, and the Revocation’s refugees. The Seven Years’ War strips overseas primacy to Britain; debt and privilege then carry the crisis into 1789, when the Estates-General open and the kingdom’s map still looks ‘complete’ while its politics implode.",
       "literature": "Corneille and Racine refine classical tragedy; Molière anatomizes hypocrisy; La Fontaine’s fables and Pascal’s Pensées braid wit with Augustinian dread. The eighteenth century shifts to Voltaire’s pamphlets, Montesquieu’s Spirit of the Laws, Rousseau’s Social Contract and Confessions, Diderot’s Encyclopédie, and Laclos’s dangerous drawing rooms—letters as weapons against privilege.",
-      "art": "Poussin and Claude invent a French classical landscape of reason; Le Brun and the Gobelins manufacture Louis XIV’s visual ideology; Watteau’s fêtes galantes and later Boucher/Fragonard rococo soften the court. David’s oath-taking neoclassicism (1780s) already paints republican virtue under a still-reigning king. Dress—justaucorps, powdered wigs, later simpler anglomanie—broadcasts rank before words do.\n\nDescartes’s method and dualism, then Malebranche and Bayle’s critical dictionary, set a French path from scholasticism to systematic doubt. Montesquieu’s separation of powers and Voltaire’s anticlerical campaign export a reform vocabulary across Europe; Rousseau’s general will and inequality discourses radicalize it. Physiocrats (Quesnay) theorize land as wealth while Colbertist habits still run the ministries.",
+      "art": "Poussin and Claude invent a French classical landscape of reason; Le Brun and the Gobelins manufacture Louis XIV’s visual ideology; Watteau’s fêtes galantes and later Boucher/Fragonard rococo soften the court. David’s oath-taking neoclassicism (1780s) already paints republican virtue under a still-reigning king. Dress—justaucorps, powdered wigs, later simpler anglomanie—broadcasts rank before words do.",
       "ideas": "Descartes’s method and dualism, then Malebranche and Bayle’s critical dictionary, set a French path from scholasticism to systematic doubt. Montesquieu’s separation of powers and Voltaire’s anticlerical campaign export a reform vocabulary across Europe; Rousseau’s general will and inequality discourses radicalize it. Physiocrats (Quesnay) theorize land as wealth while Colbertist habits still run the ministries.",
       "artIdeas": "Poussin and Claude invent a French classical landscape of reason; Le Brun and the Gobelins manufacture Louis XIV’s visual ideology; Watteau’s fêtes galantes and later Boucher/Fragonard rococo soften the court. David’s oath-taking neoclassicism (1780s) already paints republican virtue under a still-reigning king. Dress—justaucorps, powdered wigs, later simpler anglomanie—broadcasts rank before words do.\n\nDescartes’s method and dualism, then Malebranche and Bayle’s critical dictionary, set a French path from scholasticism to systematic doubt. Montesquieu’s separation of powers and Voltaire’s anticlerical campaign export a reform vocabulary across Europe; Rousseau’s general will and inequality discourses radicalize it. Physiocrats (Quesnay) theorize land as wealth while Colbertist habits still run the ministries.",
       "science": "Académie des Sciences (1666) under Colbert; Picard and Cassini map France; Pascal’s barometer and probability; Fermat’s number theory; Lavoisier’s chemical revolution and metric impulses on the eve of 1789; Buffon’s Histoire naturelle cataloguing life for a curious public. Military engineering (Vauban) and observatories make measurement a tool of the state.",
@@ -1660,7 +1660,8 @@
           "alt": "Lavoisier and Marie-Anne — chemistry as courtly modern science",
           "role": "culture"
         }
-      ]
+      ],
+      "philosophy": "Cartesian method and dualism; Pascal’s wager against pure geometry of salvation; Bossuet’s throne-and-altar providence; then Montesquieu’s Spirit of the Laws, Voltairean deism, and Rousseau’s general will—philosophy as a national export industry."
     },
     {
       "id": "england",
@@ -1668,7 +1669,7 @@
       "type": "kingdom",
       "yearsActive": "927–1707 (mapped to Act of Union)",
       "color": "#8b1e2d",
-      "description": "England enters the century in personal union with Scotland (1603) yet keeps its own parliament, law, and church. Civil wars, regicide, Commonwealth, and Restoration remake the constitution; the Glorious Revolution and Bill of Rights (1689) bind the crown to Protestant parliamentary consent. Mapped separately until the 1707 union folds it into Great Britain. Overseas, chartered companies and Navigation Acts hitch domestic politics to Atlantic and Asian trade.",
+      "description": "England enters the century in personal union with Scotland (1603) yet keeps its own parliament, law, and church. Civil wars, regicide, Commonwealth, and Restoration remake the constitution; the Glorious Revolution and Bill of Rights (1689) bind the crown to Protestant parliamentary consent. Mapped separately until the 1707 union folds it into Great Britain. Overseas, chartered companies and Navigation Acts hitch domestic politics to Atlantic and Asian trade. A king who believes in divine right meets a Parliament that controls the purse—civil war follows, a king is tried and executed (1649), and a republic briefly rules.",
       "conflicts": "Aid to the Dutch Revolt; Bishops’ Wars with Scotland; Wars of the Three Kingdoms / Civil Wars (1642–51); Anglo-Dutch Wars; Nine Years’ War; opening of the War of the Spanish Succession. Domestic violence includes the Irish campaigns under Cromwell and Monmouth’s rebellion (1685).",
       "leaders": "Elizabeth I (century’s edge); James I; Charles I; Oliver Cromwell & the Protectorate; Charles II; James II; William III & Mary II; Anne. Thinkers-in-power: Shaftesbury’s Whigs, Clarendon, Godolphin, Marlborough.",
       "religion": "Established Church of England under royal supremacy, pressed by Puritan reform and Catholic fear. Civil War sects (Independents, Baptists, Quakers) explode under the Commonwealth; Restoration reimposes Anglican uniformity; Toleration Act (1689) eases Trinitarian Protestant dissenters while Catholics and Unitarians stay disabled.",
@@ -2575,10 +2576,10 @@
           "notes": "Kind fixed polygon→multi (island/exclave parts)."
         }
       },
-      "summary": "Stuart kingdom whose civil wars and 1688 settlement invent a limited monarchy with a global commercial reach.",
+      "summary": "Stuart England wrestles crown and parliament into civil war, Commonwealth, Restoration, and the 1688 settlement before the 1707 union.",
       "story": "Charles I’s scaffold (1649) proves a European king can be tried by his subjects; Cromwell’s Protectorate then shows how hard it is to invent a republic without an army. 1660 restores the crown but not divine-right ease; 1688–89 settles the fight by importing William of Orange and writing limits into statute. Newton’s Principia (1687) lands in the same decade as the Bill of Rights—order in cosmos and constitution.",
       "literature": "Shakespeare’s late afterglow; Donne and the metaphysical poets; Milton’s Paradise Lost after regicide; Bunyan’s Pilgrim’s Progress from a dissenting jail; Dryden’s public verse; Aphra Behn’s stage and novels; early periodical essays that teach a reading public how to argue politics in prose.",
-      "art": "Van Dyck’s courtly Stuart portraits; Puritan distrust of images in churches; Wren’s rebuilt London skyline after the 1666 Fire; Lely and Kneller’s Restoration and Williamite faces. Costume moves from ruff and doublet toward periwig and justaucorps under French influence, then English practicality.\n\nHobbes’s Leviathan answers civil war with absolute sovereignty; Locke’s Two Treatises and Letter on Toleration answer 1688 with consent, property, and limited government. Harrington, the Levellers, and later Commonwealthmen keep republican arguments alive in pamphlets even when kings return.",
+      "art": "Van Dyck’s courtly Stuart portraits; Puritan distrust of images in churches; Wren’s rebuilt London skyline after the 1666 Fire; Lely and Kneller’s Restoration and Williamite faces. Costume moves from ruff and doublet toward periwig and justaucorps under French influence, then English practicality.",
       "ideas": "Hobbes’s Leviathan answers civil war with absolute sovereignty; Locke’s Two Treatises and Letter on Toleration answer 1688 with consent, property, and limited government. Harrington, the Levellers, and later Commonwealthmen keep republican arguments alive in pamphlets even when kings return.",
       "artIdeas": "Van Dyck’s courtly Stuart portraits; Puritan distrust of images in churches; Wren’s rebuilt London skyline after the 1666 Fire; Lely and Kneller’s Restoration and Williamite faces. Costume moves from ruff and doublet toward periwig and justaucorps under French influence, then English practicality.\n\nHobbes’s Leviathan answers civil war with absolute sovereignty; Locke’s Two Treatises and Letter on Toleration answer 1688 with consent, property, and limited government. Harrington, the Levellers, and later Commonwealthmen keep republican arguments alive in pamphlets even when kings return.",
       "science": "Francis Bacon’s inductive program; Harvey’s circulation of the blood; the Royal Society (1660) as a new institution of experiment; Hooke’s Micrographia; Boyle’s chemistry; Newton’s optics and universal gravitation; Halley’s cometary prediction. Greenwich Observatory ties astronomy to navigation and empire.",
@@ -2685,7 +2686,8 @@
           "alt": "Hooke’s flea — Micrographia and the Royal Society’s eye",
           "role": "culture"
         }
-      ]
+      ],
+      "philosophy": "Baconian induction and Hobbes’s mortal god of sovereignty answer civil war; Locke’s empiricism and toleration justify 1688; Cambridge Platonists and later Newtonian natural theology stitch faith to mechanism."
     },
     {
       "id": "scotland",
@@ -2693,7 +2695,7 @@
       "type": "kingdom",
       "yearsActive": "c. 843–1707",
       "color": "#1a4d6e",
-      "description": "Scotland keeps separate law, kirk, and parliament after James VI inherits England (1603). Covenanting resistance to Charles I’s prayer book detonates the Wars of the Three Kingdoms; later Stuart restorations and Williamite settlement leave a Presbyterian establishment uneasy with Jacobite Highlands. The 1707 Act of Union ends separate statehood on this map while preserving Scots law and the Kirk.",
+      "description": "Scotland keeps separate law, kirk, and parliament after James VI inherits England (1603). Covenanting resistance to Charles I’s prayer book detonates the Wars of the Three Kingdoms; later Stuart restorations and Williamite settlement leave a Presbyterian establishment uneasy with Jacobite Highlands. The 1707 Act of Union ends separate statehood on this map while preserving Scots law and the Kirk. James VI leaves for London in 1603 wearing two crowns; Scotland keeps its parliament and kirk until bishops and prayer books light the Covenant.",
       "conflicts": "Bishops’ Wars (1639–40); Wars of the Three Kingdoms; Cromwellian occupation; Glencoe (1692) as Williamite coercion; Jacobite risings of 1715 and 1745 fall after the map’s Scottish layer ends. Darien Scheme’s failure (1690s) softens elite resistance to union.",
       "leaders": "James VI/I; Charles I; Covenanter regimes and Argyll; Charles II; James VII/II; William II (III of England); Anne. Union negotiators and Darien backers frame the endgame.",
       "religion": "Presbyterian Kirk dominant after Reformation; episcopal experiments under Charles I and after Restoration provoke revolt and the Killing Time. Post-1689 Presbyterian settlement; Episcopalians and Catholics persist as minorities, especially in the northeast and Highlands.",
@@ -3168,10 +3170,10 @@
           "notes": "Kind fixed polygon→multi (island/exclave parts)."
         }
       },
-      "summary": "Presbyterian kingdom in personal union with England until the 1707 parliamentary merger.",
+      "summary": "Presbyterian kingdom in personal union with England until the 1707 parliamentary merger ends separate statehood.",
       "story": "The National Covenant (1638) turns a prayer-book quarrel into a constitutional revolution: subjects bind themselves against royal liturgy. Montrose’s royalist campaigns and Cromwell’s victory show Scotland cannot settle its church without English armies. Darien’s collapse and English trade exclusion then push many Lowland elites toward incorporating union—less romance than balance-sheet.",
       "literature": "Older makar tradition remembered; ballads and Gaelic song; Sir Thomas Urquhart’s exuberant prose; religious controversy as Scotland’s dominant printed genre; early newspapers and university disputation that will flower into the Scottish Enlightenment after union.",
-      "art": "Plain kirk interiors reject Catholic images; tower houses and Edinburgh’s vertical Old Town define the built face of the realm; portraiture of Covenanting and Jacobite nobles; Highland dress as identity marker long before romantic tourism.\n\nGeorge Buchanan’s resistance theory still shadows Stuart kingship; Samuel Rutherford’s Lex, Rex argues law over monarch; Covenanting federal theology shapes political obligation. University Aristotelianism slowly yields to Cartesian and Newtonian curricula by century’s end.",
+      "art": "Plain kirk interiors reject Catholic images; tower houses and Edinburgh’s vertical Old Town define the built face of the realm; portraiture of Covenanting and Jacobite nobles; Highland dress as identity marker long before romantic tourism.",
       "ideas": "George Buchanan’s resistance theory still shadows Stuart kingship; Samuel Rutherford’s Lex, Rex argues law over monarch; Covenanting federal theology shapes political obligation. University Aristotelianism slowly yields to Cartesian and Newtonian curricula by century’s end.",
       "artIdeas": "Plain kirk interiors reject Catholic images; tower houses and Edinburgh’s vertical Old Town define the built face of the realm; portraiture of Covenanting and Jacobite nobles; Highland dress as identity marker long before romantic tourism.\n\nGeorge Buchanan’s resistance theory still shadows Stuart kingship; Samuel Rutherford’s Lex, Rex argues law over monarch; Covenanting federal theology shapes political obligation. University Aristotelianism slowly yields to Cartesian and Newtonian curricula by century’s end.",
       "science": "Napier’s logarithms (just before the map) remain a Scottish mathematical signature; Gregory’s reflecting telescope and Edinburgh/Glasgow chairs in mathematics and medicine build a northern scientific network tied to Leiden and London. Practical surveying and navigation matter to a kingdom of coasts and emigrants.",
@@ -3260,7 +3262,8 @@
           "alt": "John Napier — logarithms from a Scottish mathematical mind",
           "role": "story"
         }
-      ]
+      ],
+      "philosophy": "Melville’s two-kingdoms ecclesiology and Buchanan’s resistance theory; Hutcheson’s moral sense at Glasgow prepares Reid’s common-sense realism and the Scottish Enlightenment’s philosophy of mind and morals."
     },
     {
       "id": "britain",
@@ -3268,7 +3271,7 @@
       "type": "kingdom",
       "yearsActive": "1707–1801 (then United Kingdom with Ireland)",
       "color": "#6b0f1a",
-      "description": "The 1707 Act of Union creates the Kingdom of Great Britain: one parliament at Westminster, Scots law and Kirk preserved, a shared fiscal-military state. Hanoverian succession (1714) ties the crown to Germany; Walpole’s peace and the Pitts’ wars alternate. By mid-century Britain wins a global duel with France (Seven Years’ War); American independence (1783) wounds but does not end naval and commercial primacy. Mapped 1750–1789 as the island polity facing revolutionary France.",
+      "description": "The 1707 Act of Union creates the Kingdom of Great Britain: one parliament at Westminster, Scots law and Kirk preserved, a shared fiscal-military state. Hanoverian succession (1714) ties the crown to Germany; Walpole’s peace and the Pitts’ wars alternate. By mid-century Britain wins a global duel with France (Seven Years’ War); American independence (1783) wounds but does not end naval and commercial primacy. Mapped 1750–1789 as the island polity facing revolutionary France. Union creates a single parliament at Westminster just as Britain enters the Spanish Succession endgame.",
       "conflicts": "Closing phase of the War of the Spanish Succession; War of Jenkins’ Ear / Austrian Succession; Seven Years’ War (annus mirabilis 1759); American Revolutionary War; opening French Revolutionary Wars from 1792. Jacobite threats inland until Culloden (1746).",
       "leaders": "Anne; Georges I–III; ministers Walpole, Pelhams, Pitt the Elder, Bute, North, Rockingham, Pitt the Younger. Military names: Marlborough (early), Wolfe, Clive, Rodney, Cornwallis.",
       "religion": "Anglican establishment in England and Wales; Presbyterian Scotland; Penal Laws and later relief debates for Catholics; Methodist revival under Wesley reshapes popular piety without disestablishing the church. Toleration remains Protestant-tilted.",
@@ -4207,10 +4210,10 @@
           "notes": "Kind fixed polygon→multi (island/exclave parts)."
         }
       },
-      "summary": "United Hanoverian kingdom—naval-fiscal superpower of the eighteenth-century Atlantic world.",
+      "summary": "Hanoverian naval-commercial great power forged by the 1707 union, coalition wars with France, and parliamentary finance.",
       "story": "Union sells itself as access to English markets after Darien; within decades the same fiscal state funds global war. Pitt’s annus mirabilis (1759) makes Britain the winner of the mid-century world war; loss of the thirteen colonies then proves that settler assemblies can exit the system. Adam Smith’s Wealth of Nations (1776) arrives in the same year as the American Declaration—commerce theorizing itself while empire cracks.",
       "literature": "Pope’s couplets and Swift’s satire; Defoe and Richardson invent novelistic realism; Fielding and Sterne play with form; Johnson’s Dictionary and club; Burns’s Scots lyrics; early Romantic signals in Gray and Cowper. Political economy and periodical essays rival poetry as prestige genres.",
-      "art": "Hogarth’s moral modern moral subjects; Reynolds and the Royal Academy; Gainsborough’s landscapes and society portraits; Canaletto’s London views for Grand Tour taste; Wedgwood’s industrial neoclassical china. Military and naval painting sell victories to a ticket-buying public.\n\nScottish and English Enlightenments converge: Hume’s skepticism, Smith’s moral sentiments and markets, Burke’s party and later counter-revolutionary writings, Paine’s radical Rights of Man (1791, just off-tick). Whig constitutionalism becomes a portable ideology of balanced government.",
+      "art": "Hogarth’s moral modern moral subjects; Reynolds and the Royal Academy; Gainsborough’s landscapes and society portraits; Canaletto’s London views for Grand Tour taste; Wedgwood’s industrial neoclassical china. Military and naval painting sell victories to a ticket-buying public.",
       "ideas": "Scottish and English Enlightenments converge: Hume’s skepticism, Smith’s moral sentiments and markets, Burke’s party and later counter-revolutionary writings, Paine’s radical Rights of Man (1791, just off-tick). Whig constitutionalism becomes a portable ideology of balanced government.",
       "artIdeas": "Hogarth’s moral modern moral subjects; Reynolds and the Royal Academy; Gainsborough’s landscapes and society portraits; Canaletto’s London views for Grand Tour taste; Wedgwood’s industrial neoclassical china. Military and naval painting sell victories to a ticket-buying public.\n\nScottish and English Enlightenments converge: Hume’s skepticism, Smith’s moral sentiments and markets, Burke’s party and later counter-revolutionary writings, Paine’s radical Rights of Man (1791, just off-tick). Whig constitutionalism becomes a portable ideology of balanced government.",
       "science": "Newtonian inheritance institutionalized; Harrison’s longitude chronometers; Priestley’s gases; Cavendish; Black and Hutton in Scotland; Watt’s separate condenser and the industrial partnership with Boulton; Banks and Cook’s Pacific voyages as state-science. The Lunar Society networks Midlands industry with inquiry.",
@@ -4317,7 +4320,8 @@
           "alt": "Captain Cook — Pacific voyages as British state science",
           "role": "literature"
         }
-      ]
+      ],
+      "philosophy": "Hume’s empiricism and history of England; Reid’s common-sense school; Smith’s Theory of Moral Sentiments beside Wealth of Nations; Benthamite utility nascent by the 1780s."
     },
     {
       "id": "ireland",
@@ -4325,7 +4329,7 @@
       "type": "kingdom",
       "yearsActive": "1542–1801 (under English/British crown)",
       "color": "#40916c",
-      "description": "Ireland is a separate kingdom with its own parliament under the English/British crown. Tudor and Stuart conquest, Ulster and other plantations, the 1641 rising, Cromwellian reconquest, and the Williamite War produce a land settlement favoring Protestants. Eighteenth-century Penal Laws structure a Catholic majority under Ascendancy rule; Grattan’s Patriot Parliament asserts legislative dignity within empire. Mapped across all ticks to 1789; the 1798 Rebellion lies just beyond.",
+      "description": "Ireland is a separate kingdom with its own parliament under the English/British crown. Tudor and Stuart conquest, Ulster and other plantations, the 1641 rising, Cromwellian reconquest, and the Williamite War produce a land settlement favoring Protestants. Eighteenth-century Penal Laws structure a Catholic majority under Ascendancy rule; Grattan’s Patriot Parliament asserts legislative dignity within empire. Mapped across all ticks to 1789; the 1798 Rebellion lies just beyond. Flight of the Earls (1607) opens Ulster plantation; 1641’s blood and rumour justify Cromwell’s devastation; the Boyne (1690) decides the Williamite war and seals Penal-era Ascendancy.",
       "conflicts": "Nine Years’ War / Tyrone’s rebellion (ending 1603); 1641 rising and Confederate Wars; Cromwellian conquest (1649–53); Williamite War (1689–91) culminating at the Boyne and Limerick; agrarian Whiteboy/Defender violence; 1798 Rebellion just after the 1789 tick.",
       "leaders": "Lord Deputies and Lieutenants; Hugh O’Neill (century’s edge); Confederate Catholics; Cromwell as conqueror; James II’s Irish campaign; Williamite commanders; Henry Grattan and Patriot opposition in Dublin.",
       "religion": "Church of Ireland as established Protestant church; Catholic majority under Penal restrictions on land, arms, and office; Presbyterian Ulster with its own disabilities and emigration to America. Mass houses, hedge schools, and later relief acts slowly renegotiate confessional hierarchy.",
@@ -5007,10 +5011,10 @@
           ]
         }
       },
-      "summary": "Kingdom in personal union with England/Britain, remade by plantation, conquest, and Protestant Ascendancy.",
+      "summary": "Kingdom under the English/British crown where plantations, conquest, and Penal Laws entrench a Protestant Ascendancy.",
       "story": "The Flight of the Earls (1607) opens Ulster to plantation; 1641’s violence and Cromwell’s response etch sectarian memory for centuries. At the Boyne (1690) a European war over James II is fought on Irish soil and settles Protestant ascendancy. A century later Grattan’s volunteers win legislative independence (1782) without Catholic emancipation—reform without majority inclusion, a fuse for the 1790s.",
       "literature": "Gaelic poetry of loss and aisling vision; Anglo-Irish satire and sermon; Swift’s Drapier’s Letters and Modest Proposal as colonial rage in English; Farquhar and later Sheridan from Irish stages; antiquarian collecting of bardic remnants by Ascendancy scholars.",
-      "art": "Georgian Dublin’s Wide Streets Commissioners and great squares; country-house Palladianism; penal-era Mass houses as vernacular sacred architecture; portraiture of Patriot volunteers; harpers’ gatherings that later feed romantic nationalism.\n\nCatholic casuistry and continental seminary training (Louvain, Salamanca) sustain a counter-elite; Patriot constitutionalism invokes Molyneux and later American examples; United Irishmen (1790s) will fuse Enlightenment republicanism with confessional grievance just off this map’s edge.",
+      "art": "Georgian Dublin’s Wide Streets Commissioners and great squares; country-house Palladianism; penal-era Mass houses as vernacular sacred architecture; portraiture of Patriot volunteers; harpers’ gatherings that later feed romantic nationalism.",
       "ideas": "Catholic casuistry and continental seminary training (Louvain, Salamanca) sustain a counter-elite; Patriot constitutionalism invokes Molyneux and later American examples; United Irishmen (1790s) will fuse Enlightenment republicanism with confessional grievance just off this map’s edge.",
       "artIdeas": "Georgian Dublin’s Wide Streets Commissioners and great squares; country-house Palladianism; penal-era Mass houses as vernacular sacred architecture; portraiture of Patriot volunteers; harpers’ gatherings that later feed romantic nationalism.\n\nCatholic casuistry and continental seminary training (Louvain, Salamanca) sustain a counter-elite; Patriot constitutionalism invokes Molyneux and later American examples; United Irishmen (1790s) will fuse Enlightenment republicanism with confessional grievance just off this map’s edge.",
       "science": "Trinity College Dublin as a scientific node (Molyneux, later Berkeley’s immaterialism with optical essays); surveying for plantation and estate improvement; botanical and agricultural improvement literature on a colonized landscape. Practical astronomy and navigation serve Atlantic emigration routes.",
@@ -5093,7 +5097,8 @@
           "alt": "Trinity College Dublin — Ascendancy learning and science",
           "role": "culture"
         }
-      ]
+      ],
+      "philosophy": "Berkeley’s immaterialism (Trinity Dublin to Cloyne); Swift’s satiric moral philosophy; Ascendancy constitutional argument and United Irishmen’s later rights language under Penal shadow."
     },
     {
       "id": "spain",
@@ -5101,7 +5106,7 @@
       "type": "composite-monarchy",
       "yearsActive": "Habsburg composite to 1700; Bourbon Spain thereafter",
       "color": "#b8860b",
-      "description": "Philip III and IV still rule a European composite—Castile–Aragon, Portugal (to 1640), Italian realms, Franche-Comté, Spanish Netherlands—financed by American silver and asiento debts. Olivares’s Union of Arms strains the system; Catalonia and Portugal revolt (1640). The childless Charles II bequeaths a succession war; Bourbon Philip V keeps the peninsula and empire but surrenders the European outer rings at Utrecht (1713–14). Eighteenth-century ilustrado reform recenters Spain on Madrid and the Atlantic.",
+      "description": "Philip III and IV still rule a European composite—Castile–Aragon, Portugal (to 1640), Italian realms, Franche-Comté, Spanish Netherlands—financed by American silver and asiento debts. Olivares’s Union of Arms strains the system; Catalonia and Portugal revolt (1640). The childless Charles II bequeaths a succession war; Bourbon Philip V keeps the peninsula and empire but surrenders the European outer rings at Utrecht (1713–14). Eighteenth-century ilustrado reform recenters Spain on Madrid and the Atlantic. Olivares tries to make the composite monarchy fight as one machine—and Catalonia and Portugal crack (1640).",
       "conflicts": "Eighty Years’ War to 1648; Thirty Years’ War; Franco-Spanish War; Catalan and Portuguese revolts; War of the Spanish Succession; later Italian dynastic wars; Seven Years’ War and American Revolutionary intervention under Charles III.",
       "leaders": "Philip III; Philip IV with Olivares; Charles II; Philip V; Ferdinand VI; Charles III; Charles IV. Reform ministers: Ensenada, Floridablanca, Aranda, Campomanes.",
       "religion": "Baroque Catholicism: ornate Mass, confraternities, Inquisition still policing belief. Jesuit missions and then expulsion (1767) under Charles III’s regalism. Saints, processions, and imperial mission theology saturate public life even as ilustrados critique scholastic monopoly.",
@@ -6348,10 +6353,10 @@
           "notes": "Overlap-cleaned (container carve / priority yield)."
         }
       },
-      "summary": "Composite Hispanic monarchy from Habsburg overstretch to Bourbon reform, losing Europe’s outer rings at Utrecht.",
+      "summary": "Habsburg composite monarchy that yields to Bourbon Spain after Utrecht, keeping the peninsula and empire but losing European outer rings.",
       "story": "Don Quixote (1605/1615) laughs a tired empire into world literature while silver fleets and bankruptcies continue offstage. Rocroi (1643) signals tercios’ fading aura; Utrecht then amputates the European composite. Charles III’s enlightened absolutism—roads, canals, botanical gardens, colonial intendancies—tries to make a modern peninsular-Atlantic state from Habsburg ruins.",
       "literature": "Cervantes’s novelistic self-awareness; Lope de Vega and Calderón’s theatrical ocean; Quevedo and Góngora’s dueling styles; María de Zayas; later Feijóo’s Teatro crítico and ilustrado essays that import European science into Spanish prose.",
-      "art": "Velázquez’s mirror games at court; Zurbarán’s stark saints; Murillo’s soft Seville devotion; Ribera in Naples; later Goya emerging under Charles IV with a darker eye on reason and war. Court dress and armor in portraits keep claiming a world already slipping.\n\nScholastic second scholasticism (Suárez) still frames law and international right; arbitristas diagnose decline; Bourbon regalism and Campomanes’s economic societies push utilitarian reform. American debates on indigenous rights echo Las Casas into new colonial codes.",
+      "art": "Velázquez’s mirror games at court; Zurbarán’s stark saints; Murillo’s soft Seville devotion; Ribera in Naples; later Goya emerging under Charles IV with a darker eye on reason and war. Court dress and armor in portraits keep claiming a world already slipping.",
       "ideas": "Scholastic second scholasticism (Suárez) still frames law and international right; arbitristas diagnose decline; Bourbon regalism and Campomanes’s economic societies push utilitarian reform. American debates on indigenous rights echo Las Casas into new colonial codes.",
       "artIdeas": "Velázquez’s mirror games at court; Zurbarán’s stark saints; Murillo’s soft Seville devotion; Ribera in Naples; later Goya emerging under Charles IV with a darker eye on reason and war. Court dress and armor in portraits keep claiming a world already slipping.\n\nScholastic second scholasticism (Suárez) still frames law and international right; arbitristas diagnose decline; Bourbon regalism and Campomanes’s economic societies push utilitarian reform. American debates on indigenous rights echo Las Casas into new colonial codes.",
       "science": "Naval and cartographic science for convoy routes; botanical expeditions under Charles III (Mutis in New Granada, Malaspina later); medical and hydraulic projects in Madrid and Aranjuez; resistance and gradual uptake of Newtonian physics in colleges after Jesuit expulsion opens curricula.",
@@ -6434,7 +6439,8 @@
           "alt": "Charles III — Bourbon reformer of peninsular-Atlantic Spain",
           "role": "story"
         }
-      ]
+      ],
+      "philosophy": "Second Scholastic afterlife (Suárez’s political ontology still taught); arbitrista moral economy of decline; Feijóo’s critical empiricism; ilustrado regalism debating utility versus custom."
     },
     {
       "id": "portugal",
@@ -6442,7 +6448,7 @@
       "type": "kingdom",
       "yearsActive": "1139–1910 (Iberian Union 1580–1640 under Spanish Habsburgs)",
       "color": "#006666",
-      "description": "Portugal appears throughout the ticks as a distinct realm. Dynastic union with Spain (1580–1640) ends in the Restoration War; the House of Braganza rebuilds sovereignty while Dutch and English rivals bite at Asian and Brazilian empires. Brazilian gold and diamonds fund John V’s baroque display; Pombal’s dictatorial reform after the 1755 earthquake recenters the state on enlightened absolutism and British alliance.",
+      "description": "Portugal appears throughout the ticks as a distinct realm. Dynastic union with Spain (1580–1640) ends in the Restoration War; the House of Braganza rebuilds sovereignty while Dutch and English rivals bite at Asian and Brazilian empires. Brazilian gold and diamonds fund John V’s baroque display; Pombal’s dictatorial reform after the 1755 earthquake recenters the state on enlightened absolutism and British alliance. The 1640 restoration against Spain becomes Portugal’s second independence epic.",
       "conflicts": "Dutch–Portuguese colonial wars in Asia, Africa, and Brazil; Restoration War vs Spain (1640–68); Spanish Succession entanglement; Seven Years’ War Iberian campaign (1762); French Revolutionary/Napoleonic crisis ahead. Overseas: struggles over the praças of Morocco and the Indian Ocean.",
       "leaders": "Philips of Spain during union; John IV of Braganza; Afonso VI; Peter II; John V; Joseph I with Marquis of Pombal; Maria I. Military restorer António Vieira as preacher-politician of empire.",
       "religion": "Catholic kingdom with Inquisition and missionary orders (Jesuits in Brazil and Asia until Pombal’s expulsion, 1759). Pombaline regalism seizes church property and rewrites education as a state project.",
@@ -6924,10 +6930,10 @@
           ]
         }
       },
-      "summary": "Braganza Atlantic kingdom restored from Iberian Union, rebuilt after the 1755 Lisbon earthquake.",
+      "summary": "Braganza Atlantic kingdom restored from Spanish union, rebuilt on Brazilian gold and Pombaline reform after 1755.",
       "story": "The 1640 restoration against Spain becomes Portugal’s second independence epic, preached by Vieira as providential empire. A century later the All Saints’ Day earthquake levels Lisbon; Pombal rebuilds the Baixa on rational streets and breaks Jesuit power—catastrophe as a lever for absolutist modernity.",
       "literature": "Camões still the national epic touchstone; Vieira’s sermons as baroque politics; Ribeiro Sanches and foreign-letter literati; later arcádia neoclassical poetry. Travel and colonial reportage form a parallel literature of factories and captaincies.",
-      "art": "Joanine baroque and the Convent of Mafra as gold-fueled sacral display; azulejos narrating battles and saints; Pombaline neoclassical façades; Brazilian colonial baroque as the empire’s other face. Court portraiture tracks Braganza legitimacy after union.\n\nSebastianist messianism and Vieira’s fifth-empire theology haunt politics; estrangeirados import French and English reform ideas; Pombal’s utilitarian statecraft privileges useful knowledge over scholastic colleges.",
+      "art": "Joanine baroque and the Convent of Mafra as gold-fueled sacral display; azulejos narrating battles and saints; Pombaline neoclassical façades; Brazilian colonial baroque as the empire’s other face. Court portraiture tracks Braganza legitimacy after union.",
       "ideas": "Sebastianist messianism and Vieira’s fifth-empire theology haunt politics; estrangeirados import French and English reform ideas; Pombal’s utilitarian statecraft privileges useful knowledge over scholastic colleges.",
       "artIdeas": "Joanine baroque and the Convent of Mafra as gold-fueled sacral display; azulejos narrating battles and saints; Pombaline neoclassical façades; Brazilian colonial baroque as the empire’s other face. Court portraiture tracks Braganza legitimacy after union.\n\nSebastianist messianism and Vieira’s fifth-empire theology haunt politics; estrangeirados import French and English reform ideas; Pombal’s utilitarian statecraft privileges useful knowledge over scholastic colleges.",
       "science": "Navigational inheritance of the discoveries era; Brazilian natural history and mining expertise; Pombaline reform of the University of Coimbra (1772) introducing modern mathematics and natural philosophy; earthquake seismicity as a European philosophical case study (Voltaire vs Rousseau).",
@@ -7010,7 +7016,8 @@
           "alt": "Palace-Convent of Mafra — Joanine baroque from Brazilian gold",
           "role": "art"
         }
-      ]
+      ],
+      "philosophy": "Vieira’s providential imperial theology; Pombaline utilitarian regalism; Lisbon earthquake as Europe’s theodicy case—Voltaire’s poem and Rousseau’s letter arguing over evil and progress."
     },
     {
       "id": "navarre",
@@ -7018,7 +7025,7 @@
       "type": "kingdom",
       "yearsActive": "French Navarre rump to early Bourbon absorption",
       "color": "#6b4c9a",
-      "description": "Lower Navarre north of the Pyrenees remains the last distinct Navarrese outline tied to Henry IV’s patrimony, shown at the 1600 tick before full administrative merger into France. It is a Basque-Romance border society under the French crown rather than a field-power kingdom—symbolic of how early modern composites absorb medieval dynastic remnants.",
+      "description": "Lower Navarre north of the Pyrenees remains the last distinct Navarrese outline tied to Henry IV’s patrimony, shown at the 1600 tick before full administrative merger into France. It is a Basque-Romance border society under the French crown rather than a field-power kingdom—symbolic of how early modern composites absorb medieval dynastic remnants. The kingdom that gave France a Bourbon king disappears as a map colour—Henry IV’s patrimonial Navarre is the seed of a dynasty that will rule from Paris, not Pau.",
       "conflicts": "No major independent campaigns in this era; security follows French Wars of Religion settlements and later Franco-Spanish Pyrenean diplomacy (Treaty of the Pyrenees, 1659, nearby).",
       "leaders": "Henry IV as King of France and Navarre; Louis XIII during administrative absorption.",
       "religion": "Catholic after the Wars of Religion settlement; memory of Jeanne d’Albret’s Calvinist court still colors local Protestant pockets before broader French confessional pressure.",
@@ -7060,10 +7067,10 @@
           ]
         }
       },
-      "summary": "Tiny French Navarre rump—Henry IV’s patrimonial kingdom fading into Bourbon provinces.",
+      "summary": "Tiny French Navarre rump—Henry IV’s patrimony—mapped at 1600 before full Bourbon absorption.",
       "story": "When Henry of Navarre becomes Henry IV of France, his little Pyrenean realm hitchhikes into Bourbon history—then disappears as a separate outline while the royal title ‘King of France and Navarre’ lingers on coins and proclamations like a fossil.",
       "literature": "Local fueros and customary law texts matter more than court poetry; French royal ordinances gradually overwrite Navarrese distinctiveness in administrative prose.",
-      "art": "Modest court residue at Pau; vernacular church art of the western Pyrenees; no Versailles-scale patronage—this is a border remnant, not a cultural capital.\n\nForal legal particularism—the idea that custom binds the prince—survives as a local political instinct even as Gallican absolutism centralizes from Paris.",
+      "art": "Modest court residue at Pau; vernacular church art of the western Pyrenees; no Versailles-scale patronage—this is a border remnant, not a cultural capital.",
       "ideas": "Foral legal particularism—the idea that custom binds the prince—survives as a local political instinct even as Gallican absolutism centralizes from Paris.",
       "artIdeas": "Modest court residue at Pau; vernacular church art of the western Pyrenees; no Versailles-scale patronage—this is a border remnant, not a cultural capital.\n\nForal legal particularism—the idea that custom binds the prince—survives as a local political instinct even as Gallican absolutism centralizes from Paris.",
       "science": "Practical Pyrenean knowledge: pass routes, pastoral calendars, and border surveying for customs—science as terrain literacy rather than academies.",
@@ -7104,7 +7111,8 @@
           "alt": "Saint-Jean-Pied-de-Port — gateway town of Lower Navarre",
           "role": "culture"
         }
-      ]
+      ],
+      "philosophy": "Fueros as living customary philosophy of privilege; Henry IV’s conversion as pragmatic conscience—‘Paris is worth a Mass’ as political casuistry."
     },
     {
       "id": "dutch-republic",
@@ -7112,7 +7120,7 @@
       "type": "republic",
       "yearsActive": "1581–1795",
       "color": "#e09f3e",
-      "description": "The United Provinces fight Spain to Westphalian recognition (1648), then punch above their weight as a naval, colonial, and financial hub. Stadtholders of Orange alternate with True Freedom republican regimes (de Witt). Anglo-Dutch and Franco-Dutch wars erode primacy, yet the Republic remains independent at 1789 before the Batavian Revolution. Federal towns, not a court capital, drive politics.",
+      "description": "The United Provinces fight Spain to Westphalian recognition (1648), then punch above their weight as a naval, colonial, and financial hub. Stadtholders of Orange alternate with True Freedom republican regimes (de Witt). Anglo-Dutch and Franco-Dutch wars erode primacy, yet the Republic remains independent at 1789 before the Batavian Revolution. Federal towns, not a court capital, drive politics. A revolt against Spain becomes the richest experiment in federal commerce.",
       "conflicts": "Eighty Years’ War; Anglo-Dutch Wars (three in the 17th c., a fourth 1780–84); Franco-Dutch War (1672, the Disaster Year); Nine Years’ War and War of the Spanish Succession as William III’s coalition partner; internal Patriot vs Orangist strife in the 1780s.",
       "leaders": "Maurice and Frederick Henry of Nassau; Johan and Cornelis de Witt; William III (also king of England); later Orange stadtholders. Admirals Tromp and De Ruyter as republican heroes.",
       "religion": "Public Reformed (Calvinist) church with remarkable urban pluralism: Catholics, Lutherans, Jews, and dissenting sects trade and worship under varying tolerances—Arminian controversies (Synod of Dort, 1618–19) cut deep.",
@@ -7594,10 +7602,10 @@
           ]
         }
       },
-      "summary": "Federal Calvinist commercial republic—Europe’s financial and artistic laboratory of the Golden Age.",
+      "summary": "Federal Calvinist commercial republic whose Golden Age finance and art peak before Anglo-French pressure.",
       "story": "1672—the Disaster Year—sees France and England pile on; the orphaned Republic nearly drowns until De Ruyter’s seamanship and William III’s rise stabilize it. A century earlier, the Twelve Years’ Truce and Westphalia had certified that a merchant federation could beat a world monarchy. Spinoza’s lens-grinding exile philosophy is the quiet twin of that political experiment.",
       "literature": "Vondel’s tragedies; Cats’s didactic bestsellers; Huygens’s courtly verse; travel and company reports; a dense pamphlet sphere. Multilingual Amsterdam publishes what other censors refuse.",
-      "art": "Rembrandt’s light theology; Vermeer’s domestic optics; Hals’s civic militia bravura; Ruisdael’s skies; still life as moral inventory. The art market—not a single prince—is the patron, and that shows in genre scale and subject.\n\nGrotius’s natural law and free seas; Arminian vs Gomarist theology as political fault line; Spinoza’s Tractatus and Ethics as radical Enlightenment from inside the Republic; Bayle publishing in Rotterdam. Republican True Freedom ideology vs Orange monarchical leanings.",
+      "art": "Rembrandt’s light theology; Vermeer’s domestic optics; Hals’s civic militia bravura; Ruisdael’s skies; still life as moral inventory. The art market—not a single prince—is the patron, and that shows in genre scale and subject.",
       "ideas": "Grotius’s natural law and free seas; Arminian vs Gomarist theology as political fault line; Spinoza’s Tractatus and Ethics as radical Enlightenment from inside the Republic; Bayle publishing in Rotterdam. Republican True Freedom ideology vs Orange monarchical leanings.",
       "artIdeas": "Rembrandt’s light theology; Vermeer’s domestic optics; Hals’s civic militia bravura; Ruisdael’s skies; still life as moral inventory. The art market—not a single prince—is the patron, and that shows in genre scale and subject.\n\nGrotius’s natural law and free seas; Arminian vs Gomarist theology as political fault line; Spinoza’s Tractatus and Ethics as radical Enlightenment from inside the Republic; Bayle publishing in Rotterdam. Republican True Freedom ideology vs Orange monarchical leanings.",
       "science": "Leeuwenhoek’s microscopes; Huygens’s pendulum clock, rings of Saturn, and probability; Snell’s law; superb cartographers (Blaeu); VOC as a data engine of winds, coasts, and natural history. Leiden University anchors medicine and philology for all Protestant Europe.",
@@ -7686,7 +7694,8 @@
           "alt": "Michiel de Ruyter — admiral of a merchant republic at war",
           "role": "leader"
         }
-      ]
+      ],
+      "philosophy": "Grotius’s natural law and mare liberum; Spinoza’s geometric Ethics and freedom to philosophize; Bayle’s skeptical critical dictionary from the Republic’s exile presses."
     },
     {
       "id": "spanish-netherlands",
@@ -7694,7 +7703,7 @@
       "type": "provinces",
       "yearsActive": "c. 1556–1714 (southern provinces)",
       "color": "#4a6fa5",
-      "description": "After the Dutch Revolt splits the Low Countries, the southern provinces remain under Spanish Habsburg sovereignty: a fortified corridor of towns from Flanders to Luxembourg. Archdukes Albert and Isabella give a courtly Catholic restoration; later governors defend against French advance. At Utrecht/Rastatt (1713–14) the territory passes to the Austrian Habsburgs—ending the Spanish Netherlands layer on this map.",
+      "description": "After the Dutch Revolt splits the Low Countries, the southern provinces remain under Spanish Habsburg sovereignty: a fortified corridor of towns from Flanders to Luxembourg. Archdukes Albert and Isabella give a courtly Catholic restoration; later governors defend against French advance. At Utrecht/Rastatt (1713–14) the territory passes to the Austrian Habsburgs—ending the Spanish Netherlands layer on this map. The south stays Spanish and Catholic when the north peels away.",
       "conflicts": "Closing Eighty Years’ War; Franco-Dutch War; Reunion wars of Louis XIV; Nine Years’ War; War of the Spanish Succession with sieges across Flanders and Brabant. Barrier fortresses become European bargaining chips.",
       "leaders": "Archdukes Albert and Isabella; governors under Philip IV and Charles II (including Don Juan of Austria the Younger); military intendants facing Luxembourg and Vauban’s French frontier system.",
       "religion": "Tridentine Catholicism restored after revolt; Jesuits and Capuchins rebuild urban piety; Protestant remnant emigrates or goes quiet. Marian and Corpus Christi processions reclaim public space.",
@@ -7968,7 +7977,7 @@
       "summary": "Catholic southern Low Countries—Habsburg buffer repeatedly fought over until Utrecht hands them to Austria.",
       "story": "Rubens paints diplomacy as much as altarpieces—court painter, knight, and negotiator between courts. Louis XIV’s advances turn Flanders into a geometry of sieges; by Utrecht the Spanish crown trades these provinces away, ending a century of Catholic Habsburg holding action.",
       "literature": "Counter-Reformation sermon and emblem books; vernacular drama in Antwerp and Brussels; multilingual administrative prose. Print culture remains dense even as political primacy fades.",
-      "art": "Rubens’s muscular baroque altarpieces and Whitehall ceiling diplomacy; Van Dyck emerging from his studio; Jordaens’s abundant Flemish bodies; tapestry workshops still exporting grandeur. Church interiors become theatres of Catholic triumph.\n\nJustus Lipsius’s neo-Stoicism from Leuven influences European statecraft; Counter-Reformation casuistry and Jesuit education shape elites; legal defense of Habsburg sovereignty against French claims.",
+      "art": "Rubens’s muscular baroque altarpieces and Whitehall ceiling diplomacy; Van Dyck emerging from his studio; Jordaens’s abundant Flemish bodies; tapestry workshops still exporting grandeur. Church interiors become theatres of Catholic triumph.",
       "ideas": "Justus Lipsius’s neo-Stoicism from Leuven influences European statecraft; Counter-Reformation casuistry and Jesuit education shape elites; legal defense of Habsburg sovereignty against French claims.",
       "artIdeas": "Rubens’s muscular baroque altarpieces and Whitehall ceiling diplomacy; Van Dyck emerging from his studio; Jordaens’s abundant Flemish bodies; tapestry workshops still exporting grandeur. Church interiors become theatres of Catholic triumph.\n\nJustus Lipsius’s neo-Stoicism from Leuven influences European statecraft; Counter-Reformation casuistry and Jesuit education shape elites; legal defense of Habsburg sovereignty against French claims.",
       "science": "Leuven and Douai as Catholic university nodes; cartography of fortification and water management in a landscape of polders and sieges; medical faculties feeding Spanish imperial networks.",
@@ -8051,7 +8060,8 @@
           "alt": "Grand Place, Brussels — urban heart of the southern provinces",
           "role": "culture"
         }
-      ]
+      ],
+      "philosophy": "Jesuit casuistry and neo-scholastic moral theology under Counter-Reformation Antwerp; estate rights as a philosophy of particularism against princely will."
     },
     {
       "id": "austrian-netherlands",
@@ -8059,7 +8069,7 @@
       "type": "provinces",
       "yearsActive": "1714–1797",
       "color": "#3d5a80",
-      "description": "Awarded to Austria after the War of the Spanish Succession, the southern Low Countries are governed from Brussels with local estates guarding privileges. Maria Theresa’s regime is relatively light; Joseph II’s reforming blizzard—seminaries, language, guilds, liturgy—triggers the Brabant Revolution (1789–90). Mapped 1750–1789 as a Habsburg possession on France’s northern doorstep.",
+      "description": "Awarded to Austria after the War of the Spanish Succession, the southern Low Countries are governed from Brussels with local estates guarding privileges. Maria Theresa’s regime is relatively light; Joseph II’s reforming blizzard—seminaries, language, guilds, liturgy—triggers the Brabant Revolution (1789–90). Mapped 1750–1789 as a Habsburg possession on France’s northern doorstep. Utrecht makes these provinces Austrian.",
       "conflicts": "War of the Austrian Succession (French occupation episodes); diplomatic revolutions of the mid-century; Brabant Revolution (1789–90) against Josephist centralisation.",
       "leaders": "Charles VI; Maria Theresa; Joseph II; governors-general in Brussels (Charles of Lorraine notable). Local estate leaders and Vonckist/Statist factions in 1789.",
       "religion": "Deep Catholic society; Joseph II’s Patent reforms, seminary control, and liturgical interference provoke clerical and popular resistance more fierce than in many German lands.",
@@ -8245,7 +8255,7 @@
       "summary": "Former Spanish Netherlands under Vienna—prosperous, Catholic, and restive under Joseph II.",
       "story": "Joseph II tries to make the Netherlands as uniform as Austria’s other experiments; instead he teaches local elites how to revolt in the name of old constitutions. The Brabant Revolution briefly invents the United Belgian States—an early modern privilege revolt wearing Enlightenment colors—just as France’s own revolution ignites next door.",
       "literature": "Legal remonstrances and estate pamphlets as the era’s vital genre; French-language journalism; devotional and antiquarian writing claiming medieval privileges as living law.",
-      "art": "Rococo church refurbishments; courtly decoration under Charles of Lorraine; civic portraiture of estate leaders; urban festive culture that doubles as political display.\n\nStatist constitutionalism vs Vonckist more open reformism—both claim Enlightenment vocabulary while defending or revising provincial charters. Physiocratic and cameralist imports filter through Brussels administration.",
+      "art": "Rococo church refurbishments; courtly decoration under Charles of Lorraine; civic portraiture of estate leaders; urban festive culture that doubles as political display.",
       "ideas": "Statist constitutionalism vs Vonckist more open reformism—both claim Enlightenment vocabulary while defending or revising provincial charters. Physiocratic and cameralist imports filter through Brussels administration.",
       "artIdeas": "Rococo church refurbishments; courtly decoration under Charles of Lorraine; civic portraiture of estate leaders; urban festive culture that doubles as political display.\n\nStatist constitutionalism vs Vonckist more open reformism—both claim Enlightenment vocabulary while defending or revising provincial charters. Physiocratic and cameralist imports filter through Brussels administration.",
       "science": "Economic societies and agricultural improvement; military engineering of the Barrier; natural history collections in Brussels; practical hydraulics in a waterlogged industrializing landscape.",
@@ -8328,7 +8338,8 @@
           "alt": "Maria Theresa — Habsburg sovereign of the Austrian Netherlands",
           "role": "story"
         }
-      ]
+      ],
+      "philosophy": "Joyous Entry constitutionalism as practical political philosophy; resistance to Josephist utilitarianism in the name of chartered liberties."
     },
     {
       "id": "hre",
@@ -8336,7 +8347,7 @@
       "type": "empire",
       "yearsActive": "800/962–1806",
       "color": "#7a8a99",
-      "description": "The Holy Roman Empire remains a mosaic of electorates, duchies, free cities, prince-bishoprics, and imperial knights. The Thirty Years’ War and Peace of Westphalia (1648) confirm territorial sovereignty (Landeshoheit) for estates and recognize Dutch and Swiss exits. Emperors from the Habsburg line still matter, but great-power politics increasingly runs through Vienna and Berlin. Still the legal frame of Central Europe in 1789.",
+      "description": "The Holy Roman Empire remains a mosaic of electorates, duchies, free cities, prince-bishoprics, and imperial knights. The Thirty Years’ War and Peace of Westphalia (1648) confirm territorial sovereignty (Landeshoheit) for estates and recognize Dutch and Swiss exits. Emperors from the Habsburg line still matter, but great-power politics increasingly runs through Vienna and Berlin. Still the legal frame of Central Europe in 1789. Defenestration (1618) to Westphalia (1648): a generation of war hollows German lands.",
       "conflicts": "Thirty Years’ War as defining catastrophe; Franco-imperial wars under Louis XIV; War of the Austrian Succession; Seven Years’ War as both great-power and quasi-civil war; Bavarian Succession. Perpetual Diet at Regensburg institutionalizes negotiation over annihilation.",
       "leaders": "Rudolf II (edge); Ferdinand II/III; Leopold I; Joseph I; Charles VI; Charles VII (Wittelsbach interlude); Francis I; Joseph II; Leopold II from 1790. Imperial estates and electors as co-sovereigns.",
       "religion": "Augsburg and Westphalia’s cuius regio / normative year rules freeze a map of Catholic, Lutheran, and Reformed territories; imperial courts adjudicate confessional lawsuits. Pietism and later Catholic Enlightenment soften pastoral practice inside the legal shell.",
@@ -10269,10 +10280,10 @@
           "notes": "Overlap-cleaned (container carve / priority yield)."
         }
       },
-      "summary": "Decentralized elective empire—constitutional frame of German Europe after Westphalia.",
+      "summary": "Decentralized imperial legal frame of Central Europe after Westphalia—still real in 1789, driven by Austria and Prussia.",
       "story": "Westphalia ends the fantasy of confessional reconquest and turns the Empire into a legal peace system—messy, multilayered, and surprisingly durable. When Frederick II seizes Silesia, the imperial constitution cannot stop him; it can only process the shock through diets, guarantees, and new alliances. The Reich’s weakness is also its pacifying strength.",
       "literature": "Gruebelnde baroque poetry and Opitz’s reforms; Grimmelshausen’s Simplicissimus as war’s memory; later Klopstock, Lessing’s public criticism, and the early Sturm und Drang. Latin remains a scholarly lingua franca beside emerging Hochdeutsch.",
-      "art": "South German and Austrian baroque churches (Asam, Neumann’s residences); Dresden’s court splendors; Protestant musical architecture of Bach and Handel (Handel exported); porcelain (Meissen) as white gold. Dress codes broadcast estate rank in a society without a single capital.\n\nReichspublizistik—constitutional writing about the Empire itself—becomes a science of mixed government (Pufendorf, later Moser). Natural law from Leipzig and Halle; Wolffian rationalism; Kant at Königsberg on the Empire’s northeastern edge by late century. Cameralism trains officials for tiny states.",
+      "art": "South German and Austrian baroque churches (Asam, Neumann’s residences); Dresden’s court splendors; Protestant musical architecture of Bach and Handel (Handel exported); porcelain (Meissen) as white gold. Dress codes broadcast estate rank in a society without a single capital.",
       "ideas": "Reichspublizistik—constitutional writing about the Empire itself—becomes a science of mixed government (Pufendorf, later Moser). Natural law from Leipzig and Halle; Wolffian rationalism; Kant at Königsberg on the Empire’s northeastern edge by late century. Cameralism trains officials for tiny states.",
       "artIdeas": "South German and Austrian baroque churches (Asam, Neumann’s residences); Dresden’s court splendors; Protestant musical architecture of Bach and Handel (Handel exported); porcelain (Meissen) as white gold. Dress codes broadcast estate rank in a society without a single capital.\n\nReichspublizistik—constitutional writing about the Empire itself—becomes a science of mixed government (Pufendorf, later Moser). Natural law from Leipzig and Halle; Wolffian rationalism; Kant at Königsberg on the Empire’s northeastern edge by late century. Cameralism trains officials for tiny states.",
       "science": "Leibniz’s calculus, binary arithmetic, and academy projects; Fahrenheit and later German instrument makers; mining academies (Freiberg); Göttingen as Hanoverian science hub; Linnaean natural history in princely cabinets. Fragmentation multiplies patrons and laboratories.",
@@ -10385,7 +10396,8 @@
           "alt": "J. S. Bach — Lutheran musical cosmos inside the Empire",
           "role": "literature"
         }
-      ]
+      ],
+      "philosophy": "Leibniz’s monadology, theodicy, and universal characteristic; Wolffian school philosophy; Kant’s critical turn at Königsberg—Critique of Pure Reason (1781) from an imperial university city."
     },
     {
       "id": "austria",
@@ -10393,7 +10405,7 @@
       "type": "composite-monarchy",
       "yearsActive": "Hereditary lands to Austrian Empire (1804)",
       "color": "#c9a227",
-      "description": "The Habsburg Monarchy is a dynastic conglomerate: Alpine hereditary lands, Bohemian crown after White Mountain, reconquest of Hungary from the Ottomans (1683–99), then Austrian Netherlands and Milan after Utrecht, and Galicia from the First Partition of Poland (1772). It is Vienna-centered, multiethnic, and locked in rivalry first with the Porte, then with Prussia. Maria Theresa and Joseph II redefine statehood without becoming a nation-state.",
+      "description": "The Habsburg Monarchy is a dynastic conglomerate: Alpine hereditary lands, Bohemian crown after White Mountain, reconquest of Hungary from the Ottomans (1683–99), then Austrian Netherlands and Milan after Utrecht, and Galicia from the First Partition of Poland (1772). It is Vienna-centered, multiethnic, and locked in rivalry first with the Porte, then with Prussia. Maria Theresa and Joseph II redefine statehood without becoming a nation-state. Sobieski’s relief of Vienna (1683) opens the Habsburg reconquest of Hungary.",
       "conflicts": "Long Turkish War aftermath; Great Turkish War (Vienna 1683 to Karlowitz 1699); War of the Spanish Succession; Austrian Succession (Silesia lost); Seven Years’ War; War of the Bavarian Succession; Ottoman wars under Maria Theresa/Joseph II.",
       "leaders": "Ferdinand II/III; Leopold I; Joseph I; Charles VI; Maria Theresa; Joseph II; co-ministers Kaunitz, Eugene of Savoy as military architect of the reconquest.",
       "religion": "Catholic dynasty driving Contre-Reformation in Bohemia and Hungary; later Josephist toleration patents (1781) for Protestants and Jews reshape confessional law. Uniate and Orthodox populations on the eastern edges complicate uniformity.",
@@ -11936,10 +11948,10 @@
           "notes": "Overlap-cleaned (container carve / priority yield)."
         }
       },
-      "summary": "Danubian Habsburg composite—Austria, Bohemia, reconquered Hungary, and after Utrecht farther European limbs.",
+      "summary": "Danubian Habsburg composite that reconquers Hungary, gains Italian and Netherlandish lands, and partitions Poland.",
       "story": "Sobieski’s relief of Vienna (1683) and Eugene’s victories turn Ottoman tide; Karlowitz (1699) remakes the Hungarian plain as Habsburg. The Pragmatic Sanction’s gamble nearly fails when Frederick II steals Silesia—Maria Theresa’s survival myth becomes the monarchy’s founding modern story. Joseph II then tries to rationalize what dynasty had only accumulated.",
       "literature": "Court Italian opera libretti; German occasional verse; Hungarian and Czech estate petitions; later Sonnenfels’s Enlightenment journalism in Vienna. Administrative German slowly becomes a supraregional prose.",
-      "art": "Fischer von Erlach and Hildebrandt’s baroque Vienna; Belvedere for Eugene; Bohemian and Alpine pilgrimage architecture; court theatrical design. Uniforms and equestrian portraits sell dynastic continuity across languages.\n\nCameralism and police sciences in Vienna; Kaunitz’s diplomatic revolution (alliance with France); Josephinism as utilitarian Christian reform; natural-law justifications for the Pragmatic Sanction and later toleration.",
+      "art": "Fischer von Erlach and Hildebrandt’s baroque Vienna; Belvedere for Eugene; Bohemian and Alpine pilgrimage architecture; court theatrical design. Uniforms and equestrian portraits sell dynastic continuity across languages.",
       "ideas": "Cameralism and police sciences in Vienna; Kaunitz’s diplomatic revolution (alliance with France); Josephinism as utilitarian Christian reform; natural-law justifications for the Pragmatic Sanction and later toleration.",
       "artIdeas": "Fischer von Erlach and Hildebrandt’s baroque Vienna; Belvedere for Eugene; Bohemian and Alpine pilgrimage architecture; court theatrical design. Uniforms and equestrian portraits sell dynastic continuity across languages.\n\nCameralism and police sciences in Vienna; Kaunitz’s diplomatic revolution (alliance with France); Josephinism as utilitarian Christian reform; natural-law justifications for the Pragmatic Sanction and later toleration.",
       "science": "Military engineering and cartography of the Military Frontier; medical faculty reforms in Vienna (van Swieten); botanical and mining surveys in Hungary and Bohemia; observatory culture under Maria Theresa’s state-building.",
@@ -12040,7 +12052,8 @@
           "alt": "Belvedere Palace — baroque trophy of Eugene’s Vienna",
           "role": "art"
         }
-      ]
+      ],
+      "philosophy": "Cameralist reason of state; Josephinism as enlightened legal philosophy; Sonnenfels and university reform; Mozart-era Vienna arguing toleration without abandoning Catholic monarchy."
     },
     {
       "id": "prussia",
@@ -12048,7 +12061,7 @@
       "type": "kingdom",
       "yearsActive": "Brandenburg–Prussia personal union; kingdom from 1701",
       "color": "#212529",
-      "description": "Brandenburg–Prussia unites Rhineland scraps, Berlin’s electorate, and Ducal Prussia; Westphalia adds Eastern Pomerania pieces; the royal title in Prussia (1701) elevates the dynasty. Frederick William I builds the canton army and thrift; Frederick II seizes Silesia (1740s) and survives the Seven Years’ War. First Partition (1772) adds West Prussia, linking cores. By 1789 a bureaucratic-military great power.",
+      "description": "Brandenburg–Prussia unites Rhineland scraps, Berlin’s electorate, and Ducal Prussia; Westphalia adds Eastern Pomerania pieces; the royal title in Prussia (1701) elevates the dynasty. Frederick William I builds the canton army and thrift; Frederick II seizes Silesia (1740s) and survives the Seven Years’ War. First Partition (1772) adds West Prussia, linking cores. By 1789 a bureaucratic-military great power. From battered electorate to drill kingdom: the Great Elector builds an army the state exists to feed.",
       "conflicts": "Thirty Years’ War occupation and aftermath; Swedish-Polish wars; Great Northern War orbit; Silesian Wars / Austrian Succession; Seven Years’ War (survival against coalition); First Partition of Poland (1772) with territorial gains.",
       "leaders": "John Sigismund; Great Elector Frederick William; Frederick I (king in Prussia); Frederick William I; Frederick II (the Great); Frederick William II. Ministers and generals: Hertzberg, Seydlitz, Zieten.",
       "religion": "Calvinist rulers over mostly Lutheran subjects—an unusual Hohenzollern arrangement—with pragmatic toleration for useful immigrants (Huguenots after 1685). Pietism shapes education and officer ethos more than baroque Catholicism does.",
@@ -12636,7 +12649,7 @@
       "summary": "Hohenzollern militarized state—from Brandenburg electorate to great power via Silesia and partition.",
       "story": "Frederick II’s seizure of Silesia (1740) is a crime that founds great-power Prussia—then the Seven Years’ War nearly erases it until Russian exit (1762) saves Berlin’s king. Partition diplomacy later grows the realm without a Frederickean miracle, binding Prussia to the Polish question.",
       "literature": "Frederick’s own French writings; early Berlin Enlightenment journals; Lessing’s ties to Prussian stages; soldier songs and administrative prose as the realm’s true vernacular genres.",
-      "art": "Knobelsdorff’s Sanssouci rococo; Berlin opera; Antoine Pesne portraits; later stricter neoclassical tastes. Uniform blue and the Mitre cap become visual trademarks more famous than painting schools.\n\nCameralist duty-state; Frederick’s enlightened absolutism—philosopher-king rhetoric with censorship still real; religious toleration as raison d’état; anti-Machiavel posing beside Realpolitik.",
+      "art": "Knobelsdorff’s Sanssouci rococo; Berlin opera; Antoine Pesne portraits; later stricter neoclassical tastes. Uniform blue and the Mitre cap become visual trademarks more famous than painting schools.",
       "ideas": "Cameralist duty-state; Frederick’s enlightened absolutism—philosopher-king rhetoric with censorship still real; religious toleration as raison d’état; anti-Machiavel posing beside Realpolitik.",
       "artIdeas": "Knobelsdorff’s Sanssouci rococo; Berlin opera; Antoine Pesne portraits; later stricter neoclassical tastes. Uniform blue and the Mitre cap become visual trademarks more famous than painting schools.\n\nCameralist duty-state; Frederick’s enlightened absolutism—philosopher-king rhetoric with censorship still real; religious toleration as raison d’état; anti-Machiavel posing beside Realpolitik.",
       "science": "Berlin Academy relaunched under Frederick with Maupertuis and later Euler’s orbit; applied military statistics; agricultural improvement on sandy soils; medical and veterinary care for an army-centered demography. Longitude and surveying for newly seized Silesia.",
@@ -12731,7 +12744,8 @@
           "alt": "Leonhard Euler — Berlin Academy mathematics under Frederick",
           "role": "culture"
         }
-      ]
+      ],
+      "philosophy": "Frederick’s Anti-Machiavel self-fashioning; Wolffianism in Halle and beyond; Kant’s critical philosophy and essay on Enlightenment—dare to know under a drill king."
     },
     {
       "id": "poland-lithuania",
@@ -12739,7 +12753,7 @@
       "type": "composite-republic",
       "yearsActive": "1569–1795",
       "color": "#ae2012",
-      "description": "The Polish–Lithuanian Commonwealth is a vast elective monarchy of noble democracy (sejm, liberum veto) spanning Catholic, Orthodox, Uniate, Lutheran, and Jewish communities. Seventeenth-century wars with Sweden, Muscovy, and Cossack revolt (Khmelnytsky) wreck the core; eighteenth-century Russian influence turns reform into crisis. First Partition (1772) truncates the map; by 1789 the Commonwealth still exists, racing reform against further partition.",
+      "description": "The Polish–Lithuanian Commonwealth is a vast elective monarchy of noble democracy (sejm, liberum veto) spanning Catholic, Orthodox, Uniate, Lutheran, and Jewish communities. Seventeenth-century wars with Sweden, Muscovy, and Cossack revolt (Khmelnytsky) wreck the core; eighteenth-century Russian influence turns reform into crisis. First Partition (1772) truncates the map; by 1789 the Commonwealth still exists, racing reform against further partition. Sobieski saves Vienna (1683) at the Commonwealth’s military dusk.",
       "conflicts": "Polish–Swedish wars; Khmelnytsky Uprising; Russo-Polish wars; Swedish Deluge (1655–60); Great Northern War theatres; War of the Polish Succession; Bar Confederation; First Partition (1772). Ottoman wars including Chocim/Khotyn and Vienna relief under Sobieski.",
       "leaders": "Sigismund III Vasa; Władysław IV; John II Casimir; Michael Korybut; John III Sobieski; Augustus II/III (Wettins); Stanisław August Poniatowski. Magnate factions as co-rulers in practice.",
       "religion": "Catholic dominance after earlier Warsaw Confederation tolerance frays; Union of Brest creates Uniate church; Orthodox, Protestant, and large Jewish communities under varying protections. Confessional politics intertwine with Russian and Habsburg intervention.",
@@ -14226,10 +14240,10 @@
           "notes": "Overlap-cleaned (container carve / priority yield)."
         }
       },
-      "summary": "Elective noble commonwealth—golden liberty eroded through wars toward the partitions.",
+      "summary": "Elective noble republic whose Golden Liberty ends in the Partitions after seventeenth-century wars.",
       "story": "Sobieski’s charge at Vienna (1683) is the Commonwealth’s last European heroics abroad while the Deluge’s memory still scars home. A century later Stanisław August’s enlightened court and the Commission of National Education try to reform a veto-bound republic; the First Partition shows neighbors will carve what diets cannot defend.",
       "literature": "Baroque Sarmatian panegyric; Kochowski’s war verse; later Krasicki’s fables and satires under Stanisław August; political writing of the Four-Year Sejm brewing off the late tick. Hebrew and Yiddish letters thrive in parallel urban worlds.",
-      "art": "Wilhelms and later Saxon-Wettin court tastes in Warsaw; sacred baroque of Catholic and Uniate churches; manor portraiture of magnates; kontusz sash and karabela sabre as wearable ideology.\n\nGolden Liberty as anti-absolutist ideology—attractive and self-paralyzing; reform thought of Konarski and later collégial education; physiocratic and constitutional drafts under Poniatowski; debates on cities’ and Jews’ civic status.",
+      "art": "Wilhelms and later Saxon-Wettin court tastes in Warsaw; sacred baroque of Catholic and Uniate churches; manor portraiture of magnates; kontusz sash and karabela sabre as wearable ideology.",
       "ideas": "Golden Liberty as anti-absolutist ideology—attractive and self-paralyzing; reform thought of Konarski and later collégial education; physiocratic and constitutional drafts under Poniatowski; debates on cities’ and Jews’ civic status.",
       "artIdeas": "Wilhelms and later Saxon-Wettin court tastes in Warsaw; sacred baroque of Catholic and Uniate churches; manor portraiture of magnates; kontusz sash and karabela sabre as wearable ideology.\n\nGolden Liberty as anti-absolutist ideology—attractive and self-paralyzing; reform thought of Konarski and later collégial education; physiocratic and constitutional drafts under Poniatowski; debates on cities’ and Jews’ civic status.",
       "science": "Commission of National Education (1773)—Europe’s first ministry-like national education body after Jesuit suppression; astronomical work of Hevelius earlier in Gdańsk; naturalists and cartographers mapping a shrinking commonwealth; medical reform in Warsaw.",
@@ -14318,7 +14332,8 @@
           "alt": "Hevelius’s astronomy — Gdańsk science under the Commonwealth",
           "role": "art"
         }
-      ]
+      ],
+      "philosophy": "Golden Liberty as radical estate republicanism; confraternal and Jesuit neo-scholastic teaching; Kollątaj’s enlightenment reform philosophy before the May Constitution."
     },
     {
       "id": "sweden",
@@ -14326,7 +14341,7 @@
       "type": "kingdom",
       "yearsActive": "Baltic great-power age c. 1611–1721; kingdom continues",
       "color": "#00509d",
-      "description": "Sweden builds a military allotment empire across the Baltic: Finland, Estonia, Livonia, western Pomerania, Bremen-Verden, and briefly Danish Scanian lands. Gustavus Adolphus intervenes in the Thirty Years’ War; Charles X and XI consolidate; Charles XII’s Great Northern War (against Russia, Saxony-Poland, Denmark) ends in imperial overstretch and Nystad (1721) losses. Eighteenth-century Sweden becomes a reduced kingdom with Age of Liberty politics then Gustavian recentralization.",
+      "description": "Sweden builds a military allotment empire across the Baltic: Finland, Estonia, Livonia, western Pomerania, Bremen-Verden, and briefly Danish Scanian lands. Gustavus Adolphus intervenes in the Thirty Years’ War; Charles X and XI consolidate; Charles XII’s Great Northern War (against Russia, Saxony-Poland, Denmark) ends in imperial overstretch and Nystad (1721) losses. Eighteenth-century Sweden becomes a reduced kingdom with Age of Liberty politics then Gustavian recentralization. Gustavus Adolphus lands in Germany (1630) and dies at Lützen—a Protestant lion whose reforms outlive him.",
       "conflicts": "Ingrian and Polish wars; Thirty Years’ War; Northern Wars vs Denmark-Norway; Scanian War; Great Northern War; Hats’ and Caps’ wars with Russia; later Gustavian Russian war (1788–90).",
       "leaders": "Charles IX; Gustavus Adolphus; Christina; Charles X Gustav; Charles XI; Charles XII; Ulrika Eleonora; Frederick I; Adolph Frederick; Gustav III.",
       "religion": "Lutheran confessional state (Uppsala 1593 legacy) with tight clerical control; Pietist currents later; Catholic and Calvinist minorities marginal under uniformity laws.",
@@ -16281,10 +16296,10 @@
           "notes": "Overlap-cleaned (container carve / priority yield)."
         }
       },
-      "summary": "Baltic great power from Gustavus Adolphus to Charles XII—then a reduced Gustavian kingdom.",
+      "summary": "Baltic imperial stormakt that crashes in the Great Northern War and reinvents itself as a lesser scientific kingdom.",
       "story": "Gustavus Adolphus lands in Germany (1630) and dies at Lützen—a Protestant lion whose reforms outlive him. Charles XII rides the empire to Poltava (1709) and breaks it. Nystad (1721) hands the eastern Baltic to Russia; Sweden reinvents itself as a constitutional and scientific kingdom on a smaller map.",
       "literature": "Stiernhielm as ‘father of Swedish poetry’; baroque occasional verse; later Bellman songs in Stockholm; Gustavian drama. War diaries and officers’ letters form a parallel epic of the Baltic empire.",
-      "art": "Tessin’s baroque Stockholm; Karlskrona naval city as planned military art; later Sergel sculpture and Gustavian furniture neoclassicism. Uniforms and captured trophies furnish a visual memory of empire.\n\nCameralist and Lutheran household discipline; Age of Liberty party ideology (Hats/Caps); Gustav III’s enlightened despotism with French cultural imports; early freedom of the press experiments (1766 ordinance) unique in Europe for a time.",
+      "art": "Tessin’s baroque Stockholm; Karlskrona naval city as planned military art; later Sergel sculpture and Gustavian furniture neoclassicism. Uniforms and captured trophies furnish a visual memory of empire.",
       "ideas": "Cameralist and Lutheran household discipline; Age of Liberty party ideology (Hats/Caps); Gustav III’s enlightened despotism with French cultural imports; early freedom of the press experiments (1766 ordinance) unique in Europe for a time.",
       "artIdeas": "Tessin’s baroque Stockholm; Karlskrona naval city as planned military art; later Sergel sculpture and Gustavian furniture neoclassicism. Uniforms and captured trophies furnish a visual memory of empire.\n\nCameralist and Lutheran household discipline; Age of Liberty party ideology (Hats/Caps); Gustav III’s enlightened despotism with French cultural imports; early freedom of the press experiments (1766 ordinance) unique in Europe for a time.",
       "science": "Linnaeus’s system of nature from Uppsala; Celsius temperature scale; Swedenborg’s earlier engineering and later mysticism; mining science at Falun; polar and Baltic natural history. Science becomes a national export after political power shrinks.",
@@ -16373,7 +16388,8 @@
           "alt": "Charles XII — last warrior-king of the Swedish Empire",
           "role": "culture"
         }
-      ]
+      ],
+      "philosophy": "Lutheran orthodoxy’s philosophical pedagogy; Swedenborg’s transition from engineer to visionary metaphysician; Age of Liberty party debate as practical constitutional thought."
     },
     {
       "id": "denmark-norway",
@@ -16381,7 +16397,7 @@
       "type": "composite-monarchy",
       "yearsActive": "1524–1814",
       "color": "#ba181b",
-      "description": "Denmark–Norway holds the Sound and, until Roskilde (1658), Scania and other southern Swedish provinces. Christian IV’s ambitions collide with Sweden’s rise; Frederick III’s 1660 absolutist coup remakes the constitution after battlefield humiliation. Thereafter a secondary Baltic power with Norwegian resources, Atlantic trade, and Schleswig-Holstein dynastic knots—still dual at 1789.",
+      "description": "Denmark–Norway holds the Sound and, until Roskilde (1658), Scania and other southern Swedish provinces. Christian IV’s ambitions collide with Sweden’s rise; Frederick III’s 1660 absolutist coup remakes the constitution after battlefield humiliation. Thereafter a secondary Baltic power with Norwegian resources, Atlantic trade, and Schleswig-Holstein dynastic knots—still dual at 1789. Christian IV’s ambitions smash against Sweden and the Thirty Years’ War.",
       "conflicts": "Kalmar War; Torstenson War; Danish-Swedish wars culminating at Roskilde; Scanian War; Great Northern War; later armed neutrality experiments. Colonial footholds in India, Caribbean, and West Africa as side theatres.",
       "leaders": "Christian IV; Frederick III (absolutism 1660); Christian V; Frederick IV; later Oldenburg kings including Christian VII’s troubled reign and Struensee’s brief reform dictatorship (1770–72).",
       "religion": "Lutheran state church on the German-Scandinavian model; Pietist reform currents; tight control of dissent in a confessional absolute monarchy.",
@@ -18448,10 +18464,10 @@
           "notes": "Kind fixed polygon→multi (island/exclave parts)."
         }
       },
-      "summary": "Oldenburg dual monarchy—Sound Toll power reduced after Swedish ascendancy, absolutist after 1660.",
+      "summary": "Oldenburg dual monarchy that loses Baltic primacy to Sweden and consolidates absolutism after 1660.",
       "story": "Roskilde (1658) amputates the Scanian provinces and ends Danish claims to Baltic hegemony; absolute monarchy is the domestic answer to that trauma. A century later Struensee’s Enlightenment decrees—press freedom, reform—flash and fall, showing how thin absolutist modernization can be without elite buy-in.",
       "literature": "Ludvig Holberg’s comedies and essays as the North’s Enlightenment voice; king’s laws and hymnals; Norwegian topographical writings; later lyric beginnings toward a dual-kingdom public.",
-      "art": "Dutch-influenced Copenhagen painting; absolute monarchy’s castles (Rosenborg earlier, later Fredensborg); naval imagery; Norwegian stave-church survival beside Lutheran whitewashed interiors.\n\nLutheran household patriarchalism; Lex Regia (1665) as one of Europe’s starkest absolutist charters; Struensee’s imported Enlightenment utilitarianism; cameralist management of Norway as resource colony.",
+      "art": "Dutch-influenced Copenhagen painting; absolute monarchy’s castles (Rosenborg earlier, later Fredensborg); naval imagery; Norwegian stave-church survival beside Lutheran whitewashed interiors.",
       "ideas": "Lutheran household patriarchalism; Lex Regia (1665) as one of Europe’s starkest absolutist charters; Struensee’s imported Enlightenment utilitarianism; cameralist management of Norway as resource colony.",
       "artIdeas": "Dutch-influenced Copenhagen painting; absolute monarchy’s castles (Rosenborg earlier, later Fredensborg); naval imagery; Norwegian stave-church survival beside Lutheran whitewashed interiors.\n\nLutheran household patriarchalism; Lex Regia (1665) as one of Europe’s starkest absolutist charters; Struensee’s imported Enlightenment utilitarianism; cameralist management of Norway as resource colony.",
       "science": "Tycho Brahe’s earlier Uraniborg still a national scientific myth; Ole Rømer’s speed of light; Caspar Bartholin medical lineage; Greenland–Iceland natural histories; navigation tied to Sound and Atlantic trade. Botany and economy intertwine in absolutist improvement projects.",
@@ -18522,7 +18538,8 @@
           "alt": "Rosenborg Castle — Copenhagen face of Oldenburg monarchy",
           "role": "art"
         }
-      ]
+      ],
+      "philosophy": "Lutheran absolutist political theology after 1660; Holberg’s enlightened moral satire; Struensee’s radical reform as a failed utilitarian coup."
     },
     {
       "id": "russia",
@@ -18530,7 +18547,7 @@
       "type": "empire",
       "yearsActive": "Tsardom 1547–1721; Empire from 1721",
       "color": "#3d348b",
-      "description": "Recovery after the Time of Troubles brings the Romanovs; Alexis consolidates; Peter I drags the realm toward European military and naval forms, founding St Petersburg (1703) and winning Baltic provinces at Nystad (1721). Elizabeth and Catherine II expand against Ottomans and the Commonwealth; Crimea is annexed (1783); partitions add Lithuanian-Belarusian-Ukrainian lands. By 1789 a Eurasian empire anchors eastern Europe.",
+      "description": "Recovery after the Time of Troubles brings the Romanovs; Alexis consolidates; Peter I drags the realm toward European military and naval forms, founding St Petersburg (1703) and winning Baltic provinces at Nystad (1721). Elizabeth and Catherine II expand against Ottomans and the Commonwealth; Crimea is annexed (1783); partitions add Lithuanian-Belarusian-Ukrainian lands. By 1789 a Eurasian empire anchors eastern Europe. Peter forces a window on the Baltic—Poltava (1709) and Nystad (1721) announce a new great power.",
       "conflicts": "Polish–Muscovite wars; Russo-Swedish wars; Thirteen Years’ War; Great Northern War; Russo-Turkish wars (especially 1768–74, 1787–92); participation in Polish partitions; Pugachev Rebellion as internal war.",
       "leaders": "Boris Godunov (edge); Michael and Alexis Romanov; Sophia’s regency; Peter I; Anna; Elizabeth; Peter III; Catherine II. Favorites and reformers: Menshikov, Potemkin, Panin.",
       "religion": "Russian Orthodox Church as state sacral frame; Nikonian reforms and Old Believer schism (Raskol); Peter’s synodal control subordinating the patriarchate; Catherine’s selective toleration and Muslim policies in annexed lands.",
@@ -20343,10 +20360,10 @@
           "notes": "Kind fixed polygon→multi (island/exclave parts)."
         }
       },
-      "summary": "From Muscovite tsardom after Troubles to Catherinian empire spanning Baltic, Poland, and Black Sea.",
+      "summary": "Romanov empire that opens a Baltic window under Peter and expands under Catherine to Crimea and partitioned Poland.",
       "story": "Peter’s victory at Poltava (1709) relocates Russia into European great-power politics; St Petersburg is the stone metaphor of that turn. Catherine’s Nakaz and Legislative Commission flirt with Enlightenment law while Pugachev’s revolt (1773–75) reminds the empire that serfdom is its furnace—and its fire hazard.",
       "literature": "Sermons and chronographs; Simeon Polotsky’s baroque court verse; later Sumarokov and Lomonosov invent modern Russian literary language; Derzhavin’s odes; Radishchev’s Journey (1790) just off-tick as autocratic Enlightenment’s guilty conscience.",
-      "art": "Icon tradition under pressure from Western portraiture; Petrine engraving and fortress cities; Rastrelli’s baroque palaces; early neoclassicism under Catherine; parade uniforms as wearable art of rank.\n\nThird Rome religious-political residue; Peter’s forced Westernization; Feofan Prokopovich’s absolutist theology; Catherine’s corresponding with Voltaire/Diderot while consolidating autocracy; official nationality still unformed but Orthodoxy–autocracy–empire already practiced.",
+      "art": "Icon tradition under pressure from Western portraiture; Petrine engraving and fortress cities; Rastrelli’s baroque palaces; early neoclassicism under Catherine; parade uniforms as wearable art of rank.",
       "ideas": "Third Rome religious-political residue; Peter’s forced Westernization; Feofan Prokopovich’s absolutist theology; Catherine’s corresponding with Voltaire/Diderot while consolidating autocracy; official nationality still unformed but Orthodoxy–autocracy–empire already practiced.",
       "artIdeas": "Icon tradition under pressure from Western portraiture; Petrine engraving and fortress cities; Rastrelli’s baroque palaces; early neoclassicism under Catherine; parade uniforms as wearable art of rank.\n\nThird Rome religious-political residue; Peter’s forced Westernization; Feofan Prokopovich’s absolutist theology; Catherine’s corresponding with Voltaire/Diderot while consolidating autocracy; official nationality still unformed but Orthodoxy–autocracy–empire already practiced.",
       "science": "Lomonosov and the Academy of Sciences in St Petersburg; Bering’s expeditions; mapping Siberia and the Black Sea steppe; artillery and naval schools; mining in the Urals. Science is an imperial instrument for space more than a burgher public sphere.",
@@ -20435,7 +20452,8 @@
           "alt": "Mikhail Lomonosov — Academy science in Russian idiom",
           "role": "culture"
         }
-      ]
+      ],
+      "philosophy": "Orthodox political theology of the tsar; Petrine westernizing instrumentalism; Catherine’s Nakaz borrowing Montesquieu; early debates on serfdom’s moral economy."
     },
     {
       "id": "ottoman",
@@ -20443,7 +20461,7 @@
       "type": "empire",
       "yearsActive": "European apex 15th–17th c.; retrenchment after 1699",
       "color": "#2b2d42",
-      "description": "At 1600–1648 the Porte still holds the central Hungarian corridor, Balkans, and Greek lands. The Great Turkish War and Treaty of Karlowitz (1699) surrender most of Hungary and Transylvania to the Habsburgs; Passarowitz and later Russo-Turkish wars trim further edges. Provincial ayans rise as Istanbul’s grip loosens, yet Rumelia and the Aegean core remain Ottoman at 1789. Europe meets the empire as threat, trade partner, and orientalist fantasy.",
+      "description": "At 1600–1648 the Porte still holds the central Hungarian corridor, Balkans, and Greek lands. The Great Turkish War and Treaty of Karlowitz (1699) surrender most of Hungary and Transylvania to the Habsburgs; Passarowitz and later Russo-Turkish wars trim further edges. Provincial ayans rise as Istanbul’s grip loosens, yet Rumelia and the Aegean core remain Ottoman at 1789. Europe meets the empire as threat, trade partner, and orientalist fantasy. Kara Mustafa’s failed siege of Vienna (1683) opens a long retreat from the Danube middle.",
       "conflicts": "Long Turkish War aftermath; Cretan War vs Venice; Great Turkish War (1683–99); wars with Habsburgs, Venice, Poland, and Russia; Hotin/Khotyn and Pruth campaigns; late-century wars with Catherine II.",
       "leaders": "Mehmed III; Ahmed I; Murad IV; Mehmed IV; Köprülü viziers; later 18th-c. sultans including Ahmed III (Tulip Era) and Selim III just at the edge of reform. Crimean Giray khans as vassal sword-arm.",
       "religion": "Sunni Islamic empire with ulema and sultan-caliph prestige; millet administration for Orthodox, Armenian, and Jewish communities; Sufi orders in urban life; Muslim elites layered over Balkan Christians.",
@@ -22026,10 +22044,10 @@
           "notes": "Overlap-cleaned (container carve / priority yield)."
         }
       },
-      "summary": "Still a Balkan-Anatolian imperial giant, retreating from Hungary after Karlowitz yet holding Rumelia.",
+      "summary": "Still-European empire of Rumelia that retreats from Hungary after 1683 yet holds the Balkans into 1789.",
       "story": "The failure before Vienna (1683) and Karlowitz’s map rewrite end the age when European diplomacy assumed Ottoman strategic offense in the Danube basin. The Tulip Era (early 1700s) briefly stages consumption and pleasure in Istanbul while military reform debates simmer—an empire learning to live as one great power among others, not the scourge of Christendom alone.",
       "literature": "Divan poetry still prestigious; Evliya Çelebi’s Seyahatname as vast travel prose; chronicles of court and campaign; Greek, Armenian, and Slavic Christian literatures under millet skies; diplomatic translations as a growing genre.",
-      "art": "Classical Ottoman mosque architecture’s afterglow; tile revetments; miniature painting yielding partly to Europeanizing portrait experiments; Tulip Era leisure imagery; Balkan Orthodox church art continuing under Islamic sovereignty.\n\nHanafi legal continuity; advice literature (nasihatname) diagnosing decline; early interest in European military technique; Kâtip Çelebi’s geographic and bibliographic encyclopedism; debates on innovation (bid‘a) vs necessary reform.",
+      "art": "Classical Ottoman mosque architecture’s afterglow; tile revetments; miniature painting yielding partly to Europeanizing portrait experiments; Tulip Era leisure imagery; Balkan Orthodox church art continuing under Islamic sovereignty.",
       "ideas": "Hanafi legal continuity; advice literature (nasihatname) diagnosing decline; early interest in European military technique; Kâtip Çelebi’s geographic and bibliographic encyclopedism; debates on innovation (bid‘a) vs necessary reform.",
       "artIdeas": "Classical Ottoman mosque architecture’s afterglow; tile revetments; miniature painting yielding partly to Europeanizing portrait experiments; Tulip Era leisure imagery; Balkan Orthodox church art continuing under Islamic sovereignty.\n\nHanafi legal continuity; advice literature (nasihatname) diagnosing decline; early interest in European military technique; Kâtip Çelebi’s geographic and bibliographic encyclopedism; debates on innovation (bid‘a) vs necessary reform.",
       "science": "Astronomical and timekeeping traditions; cartography for campaigns and Mediterranean navigation; medical practice mixing Galenic and local knowledge; selective translation of European technical works by the eighteenth century; printing’s cautious expansion after earlier resistance.",
@@ -22124,7 +22142,8 @@
           "alt": "Sultan Ahmed Mosque — classical Ottoman sacred architecture",
           "role": "art"
         }
-      ]
+      ],
+      "philosophy": "Islamic legal pluralism via millets as lived political philosophy; nasihatname advice literature on justice and decline; Kâtip Çelebi’s encyclopedic ordering of knowledge."
     },
     {
       "id": "hungary",
@@ -22132,7 +22151,7 @@
       "type": "kingdom",
       "yearsActive": "Habsburg rump kingdom after Mohács (mapped 1600–1648)",
       "color": "#d62828",
-      "description": "Mapped at 1600–1648 as the Habsburg-controlled strip of the medieval Hungarian crown, pressed between Ottoman Hungary and Transylvania. Magnates, palatines, and frontier captains run a fortress society. After Karlowitz the reconquered plain is administered within the Habsburg Monarchy layer rather than as a separate outline.",
+      "description": "Mapped at 1600–1648 as the Habsburg-controlled strip of the medieval Hungarian crown, pressed between Ottoman Hungary and Transylvania. Magnates, palatines, and frontier captains run a fortress society. After Karlowitz the reconquered plain is administered within the Habsburg Monarchy layer rather than as a separate outline. Royal Hungary is a rump kingdom living in forts—Ender of Ottoman and Transylvanian pressure.",
       "conflicts": "Ottoman frontier wars and castle sieges; Fifteen Years’ War echoes; anti-Habsburg noble conspiracies; Rákóczi War of Independence (1703–11) just after the separate Hungary layer ends.",
       "leaders": "Habsburg kings Ferdinand II/III and successors as apostolic kings; Hungarian palatines and estate diet leaders; frontier captains of the Military Border forming nearby.",
       "religion": "Catholic Habsburg restoration pressure vs strong Protestant (especially Calvinist) noble networks; Orthodox populations in the south; later Uniate projects. Confession follows castle loyalties.",
@@ -22422,7 +22441,7 @@
       "summary": "Royal Hungary—Habsburg northern/western remnant on the Ottoman frontier until reconquest folds it into Vienna’s monarchy.",
       "story": "While Buda still sits under Ottoman rule, Pressburg/Pozsony hosts Habsburg coronations—Hungary as legal fiction and fortress reality at once. Reconquest after 1683 returns the plain but imports Military Frontier colonization and Vienna’s control, setting up Rákóczi’s early-eighteenth-century revolt.",
       "literature": "Latin diet oratory; Hungarian Protestant preaching and psalm culture; epic memory of Mohács; camp letters from the frontier. Print is thinner than in the German lands but politically sharp.",
-      "art": "Castle architecture and palisade forts; Catholic baroque arriving with Jesuits; Protestant plain churches; coronation regalia as portable kingdom. Ottoman-era Buda leaves baths and ruined palaces.\n\nHoly Crown doctrine—the kingdom as a legal person beyond the king; estate resistance rights; Protestant constitutionalism against Vienna’s Contre-Reformation absolutism.",
+      "art": "Castle architecture and palisade forts; Catholic baroque arriving with Jesuits; Protestant plain churches; coronation regalia as portable kingdom. Ottoman-era Buda leaves baths and ruined palaces.",
       "ideas": "Holy Crown doctrine—the kingdom as a legal person beyond the king; estate resistance rights; Protestant constitutionalism against Vienna’s Contre-Reformation absolutism.",
       "artIdeas": "Castle architecture and palisade forts; Catholic baroque arriving with Jesuits; Protestant plain churches; coronation regalia as portable kingdom. Ottoman-era Buda leaves baths and ruined palaces.\n\nHoly Crown doctrine—the kingdom as a legal person beyond the king; estate resistance rights; Protestant constitutionalism against Vienna’s Contre-Reformation absolutism.",
       "science": "Practical fortification and gunfounding; mining knowledge in Upper Hungary (today’s Slovakia) feeding Habsburg silver and copper; medical care on plague-ridden military roads.",
@@ -22499,7 +22518,8 @@
           "alt": "Ferdinand II — Habsburg king driving Catholic restoration",
           "role": "leader"
         }
-      ]
+      ],
+      "philosophy": "Holy Crown doctrine and diet constitutionalism; Protestant noble resistance theory on a Catholic-Habsburg frontier."
     },
     {
       "id": "transylvania",
@@ -22507,7 +22527,7 @@
       "type": "principality",
       "yearsActive": "c. 1570–1711 (Ottoman suzerainty; Habsburg thereafter)",
       "color": "#f4a261",
-      "description": "Transylvania navigates between Vienna and Istanbul as a semi-independent principality with a recognized multi-confessional estate system. Princes like Gábor Bethlen intervene in the Thirty Years’ War against Habsburgs. After the Great Turkish War, Habsburg incorporation ends separate mapping (post-1648 in this pack).",
+      "description": "Transylvania navigates between Vienna and Istanbul as a semi-independent principality with a recognized multi-confessional estate system. Princes like Gábor Bethlen intervene in the Thirty Years’ War against Habsburgs. After the Great Turkish War, Habsburg incorporation ends separate mapping (post-1648 in this pack). Bethlen Gábor plays the Thirty Years’ War like a chessboard, raiding Habsburg Hungary while paying Ottoman tribute.",
       "conflicts": "Anti-Habsburg campaigns of Bocskai, Bethlen, and the Rákóczis; Ottoman–Habsburg wars fought across its diplomacy; internal estate strife among Magyar, Székely, Saxon, and Romanian worlds.",
       "leaders": "Stephen Bocskai; Gábor Bethlen; György Rákóczi I and II; Mihály Apafi. Diet of estates as continuous co-ruler.",
       "religion": "Legal recognition for Catholic, Reformed, Lutheran, and Unitarian estates—rare early modern pluralism; Orthodox Romanians numerous yet politically disadvantaged. A laboratory of negotiated confessions.",
@@ -22645,7 +22665,7 @@
       "summary": "Ottoman-suzerain principality—Protestant power-broker of the Carpathians in the Thirty Years’ War era.",
       "story": "Bethlen’s wars and diplomacy show how a Carpathian principality can tip German confessional conflict while paying tribute to the sultan. The same balancing act becomes impossible once Habsburgs take Hungary’s plain—Transylvania’s autonomy is the first casualty of Ottoman retreat.",
       "literature": "Reformed school drama and catechisms; Saxon municipal chronicles; princely propaganda in Latin and Hungarian; Unitarian theological polemics unique in Europe for their public estate status.",
-      "art": "Fortified Saxon churches; princely palaces at Alba Iulia; plain Reformed interiors vs Catholic restoration attempts; costume of the four (or more) nations as political fashion.\n\nEstate constitutionalism with explicit confessional pluralism; anti-Habsburg ‘liberties’ ideology; Unitarian theology as a lived political option, not merely a heresy hunted.",
+      "art": "Fortified Saxon churches; princely palaces at Alba Iulia; plain Reformed interiors vs Catholic restoration attempts; costume of the four (or more) nations as political fashion.",
       "ideas": "Estate constitutionalism with explicit confessional pluralism; anti-Habsburg ‘liberties’ ideology; Unitarian theology as a lived political option, not merely a heresy hunted.",
       "artIdeas": "Fortified Saxon churches; princely palaces at Alba Iulia; plain Reformed interiors vs Catholic restoration attempts; costume of the four (or more) nations as political fashion.\n\nEstate constitutionalism with explicit confessional pluralism; anti-Habsburg ‘liberties’ ideology; Unitarian theology as a lived political option, not merely a heresy hunted.",
       "science": "College networks (e.g. Nagyenyed/Aiud) teaching Protestant scholasticism and newer natural philosophy; mining in the Apuseni; practical cartography for a tribute-paying border state.",
@@ -22722,7 +22742,8 @@
           "alt": "Biertan fortified church — Saxon Transylvanian sacred architecture",
           "role": "art"
         }
-      ]
+      ],
+      "philosophy": "Four-received-religions settlement as a rare early-modern philosophy of confessional coexistence; Unitarian theology unique among European principalities."
     },
     {
       "id": "bohemia",
@@ -22730,7 +22751,7 @@
       "type": "kingdom",
       "yearsActive": "Under Habsburg rule after 1526 (mapped to 1700)",
       "color": "#dde5b6",
-      "description": "Bohemia, Moravia, and Silesia enter the era as Habsburg-ruled lands with strong Protestant estates. The 1618 Defenestration ignites the Thirty Years’ War; White Mountain (1620) breaks the revolt and triggers confiscations, exile, and forced re-Catholicization. The Bohemian layer on this map runs through 1700; Silesia’s later seizure by Prussia is carried on the Prussia/Austria layers.",
+      "description": "Bohemia, Moravia, and Silesia enter the era as Habsburg-ruled lands with strong Protestant estates. The 1618 Defenestration ignites the Thirty Years’ War; White Mountain (1620) breaks the revolt and triggers confiscations, exile, and forced re-Catholicization. The Bohemian layer on this map runs through 1700; Silesia’s later seizure by Prussia is carried on the Prussia/Austria layers. Two governors fly from a Prague window (1618); Europe catches fire.",
       "conflicts": "Bohemian Revolt (1618–20); Thirty Years’ War campaigns across the crown lands; later Silesian Wars under Maria Theresa that peel Silesia away after this layer ends.",
       "leaders": "Frederick V (Winter King); Ferdinand II; Wallenstein as war entrepreneur in Bohemian lands; later Habsburg sovereigns ruling through gubernia.",
       "religion": "Forced re-Catholicization after 1620; Jesuit colleges; Protestant exile to Saxony and beyond; folk Catholicism fused with baroque pilgrimage. Czech Utraquist memory goes underground.",
@@ -22992,10 +23013,10 @@
           ]
         }
       },
-      "summary": "Lands of the Bohemian Crown under Habsburgs—revolt, White Mountain, then baroque re-Catholicization.",
+      "summary": "Crown lands whose 1618 revolt ignites the Thirty Years’ War and whose defeat brings forced re-Catholicization.",
       "story": "Defenestration (1618) makes Prague the spark of a German-European war; White Mountain two years later ends estate dualism for a century. Comenius carries Bohemian Protestant pedagogy into European exile—the kingdom’s ideas leave when its nobles cannot stay.",
       "literature": "Comenius’s didactic and pansophic Latin works; Czech hymn and exile writing; German baroque sermons in reconverted pulpits; later Czech revival seeds still dormant under official German.",
-      "art": "Prague’s baroque remaking—St Nicholas, Charles Bridge statues; aristocratic palaces on confiscated ground; rural pilgrimage churches. Gothic Charles University’s city becomes a Catholic stage set.\n\nEstate constitutionalism crushed then mourned; Comenius’s pansophia and universal education; Jesuit scholasticism as the new official mind; early German cameralism in provincial administration.",
+      "art": "Prague’s baroque remaking—St Nicholas, Charles Bridge statues; aristocratic palaces on confiscated ground; rural pilgrimage churches. Gothic Charles University’s city becomes a Catholic stage set.",
       "ideas": "Estate constitutionalism crushed then mourned; Comenius’s pansophia and universal education; Jesuit scholasticism as the new official mind; early German cameralism in provincial administration.",
       "artIdeas": "Prague’s baroque remaking—St Nicholas, Charles Bridge statues; aristocratic palaces on confiscated ground; rural pilgrimage churches. Gothic Charles University’s city becomes a Catholic stage set.\n\nEstate constitutionalism crushed then mourned; Comenius’s pansophia and universal education; Jesuit scholasticism as the new official mind; early German cameralism in provincial administration.",
       "science": "Kepler’s earlier Prague years remain a scientific memory; mining in the Ore Mountains; Jesuit mathematical teaching; botanical gardens of noble estates. Exile disperses Protestant scholars.",
@@ -23072,7 +23093,8 @@
           "alt": "Battle of White Mountain — end of the Bohemian estate revolt",
           "role": "culture"
         }
-      ]
+      ],
+      "philosophy": "Comenius’s pansophism and educational metaphysics in exile; post–White Mountain neo-scholastic Catholic restoration as enforced orthodoxy."
     },
     {
       "id": "swiss",
@@ -23080,7 +23102,7 @@
       "type": "confederation",
       "yearsActive": "De facto independence long before; recognized 1648",
       "color": "#d00000",
-      "description": "The Swiss Confederation remains a patchwork of sovereign cantons and associates, Catholic and Reformed. Westphalia (1648) recognizes independence from the Empire. Internal confessional wars (Villmergen) flare, but the diet (Tagsatzung) generally keeps the league out of great-power partitions. Mercenary contracts and alpine transit taxes fund particularism into 1789.",
+      "description": "The Swiss Confederation remains a patchwork of sovereign cantons and associates, Catholic and Reformed. Westphalia (1648) recognizes independence from the Empire. Internal confessional wars (Villmergen) flare, but the diet (Tagsatzung) generally keeps the league out of great-power partitions. Mercenary contracts and alpine transit taxes fund particularism into 1789. The Confederation exits the Empire on paper in 1648, confirming what arms and diplomacy already made real.",
       "conflicts": "First and Second Villmergen Wars; occasional French and imperial pressure; generally avoids direct great-power wars while exporting soldiers to them.",
       "leaders": "Cantonal councils; Tagsatzung diet; urban patriciates of Bern, Zurich, Geneva (allied).",
       "religion": "Catholic and Reformed cantons in armed coexistence—Calvin’s Geneva as Reformed beacon, central Swiss cantons as Catholic rock. Westphalia exteriorises a peace already practised as balance.",
@@ -23507,10 +23529,10 @@
           "notes": "Overlap-cleaned (container carve / priority yield)."
         }
       },
-      "summary": "Loose confederation of cantons—Westphalian independence, mercenary export, armed neutrality.",
+      "summary": "Armed confederation recognized independent at Westphalia, exporting mercenaries and guarding neutrality.",
       "story": "The Confederation exits the Empire on paper in 1648, confirming what arms and diplomacy already made real. Villmergen wars prove confessions can still fight; yet the compact survives into 1789 as Europe’s armed exception to dynastic monarchy—//mercenary and mountain republic.",
       "literature": "Chronicles and reformed sermon culture; Albrecht von Haller’s alpine poetry later; Geneva’s Calvinist literary-theological complex; travel writing selling Swiss landscape to Europe.",
-      "art": "Plain Reformed interiors vs Catholic baroque in inner cantons; mercenary portraiture; alpine votive panels; clockwork as miniature mechanical art from the Jura.\n\nCantonal republicanism and resistance to unitary sovereignty; natural-law teaching at Basel; Rousseau (Geneva-born) exports social-contract thought while quarreling with his hometown; early theories of neutrality as policy.",
+      "art": "Plain Reformed interiors vs Catholic baroque in inner cantons; mercenary portraiture; alpine votive panels; clockwork as miniature mechanical art from the Jura.",
       "ideas": "Cantonal republicanism and resistance to unitary sovereignty; natural-law teaching at Basel; Rousseau (Geneva-born) exports social-contract thought while quarreling with his hometown; early theories of neutrality as policy.",
       "artIdeas": "Plain Reformed interiors vs Catholic baroque in inner cantons; mercenary portraiture; alpine votive panels; clockwork as miniature mechanical art from the Jura.\n\nCantonal republicanism and resistance to unitary sovereignty; natural-law teaching at Basel; Rousseau (Geneva-born) exports social-contract thought while quarreling with his hometown; early theories of neutrality as policy.",
       "science": "Basel’s Bernoulli mathematical dynasty; Haller’s physiology; alpine geology and glacier observation; Geneva’s scientific societies; precision instrument craft feeding European observatories.",
@@ -23593,7 +23615,8 @@
           "alt": "Alpine wall — landscape that underwrote Swiss particularism",
           "role": "art"
         }
-      ]
+      ],
+      "philosophy": "Calvinist discipline and covenant thought; cantonal federalism as anti-monarchical political philosophy; Rousseau’s Genevan birth feeding later Social Contract radicalism."
     },
     {
       "id": "venice",
@@ -23601,7 +23624,7 @@
       "type": "republic",
       "yearsActive": "697–1797",
       "color": "#ff4d6d",
-      "description": "Venice still holds the terraferma, Dalmatian coasts, and (until the Cretan War’s end) Crete. Ottoman pressure and shifting trade routes erode the maritime empire; Morean War gains prove temporary. The oligarchic republic remains a distinct Italian power through 1789, museum-like and elegant, before French revolutionary armies end it in 1797.",
+      "description": "Venice still holds the terraferma, Dalmatian coasts, and (until the Cretan War’s end) Crete. Ottoman pressure and shifting trade routes erode the maritime empire; Morean War gains prove temporary. The oligarchic republic remains a distinct Italian power through 1789, museum-like and elegant, before French revolutionary armies end it in 1797. Candia’s twenty-four-year siege (to 1669) costs Crete; the Morean War briefly revives crusading memory under Francesco Morosini.",
       "conflicts": "Cretan War (1645–69); Morean War (with temporary gains); later Ottoman wars; diplomatic tightrope among Spain, France, and Austria; French Revolutionary invasion ahead.",
       "leaders": "Doges and patrician councils (Great Council, Senate, Council of Ten)—collective oligarchy.",
       "religion": "Catholic with distinctive Venetian church privileges and suspicion of papal interference; Greek Orthodox subjects in overseas holdings; Jews in the Ghetto under supervised tolerance.",
@@ -23961,10 +23984,10 @@
           ]
         }
       },
-      "summary": "Maritime republic in slow contraction—Adriatic terraferma power until Napoleonic extinction ahead.",
+      "summary": "Maritime oligarchy losing eastern empire to the Ottomans while staging opera, vedute, and Adriatic trade.",
       "story": "Candia’s twenty-four-year siege (to 1669) costs Crete; the Morean War briefly revives crusading memory under Francesco Morosini. Canaletto’s views still sell a serene republic while the espionage state manages decline—until Bonaparte ends the Serenissima in 1797.",
       "literature": "Sarpi’s anti-papal historiography earlier still shadows church-state pride; Goldoni’s comedies reform the stage; Casanova’s memoirs (later) mythologize the late republic; libretti for a city that invents public opera’s habits.",
-      "art": "Late Tintoretto/Veronese memory into Tiepolo’s airy ceilings; Canaletto and Guardi invent the veduta for Grand Tour buyers; carnival costume as civic art. Palladian villas inland remain the terraferma’s classical argument.\n\nMyth of Venice—mixed constitution praised by English republicans; Sarpi’s conciliar and anti-Jesuit strands; practical reason of state in Senate deliberations; quiet Quietist and libertine undercurrents in a censoring oligarchy.",
+      "art": "Late Tintoretto/Veronese memory into Tiepolo’s airy ceilings; Canaletto and Guardi invent the veduta for Grand Tour buyers; carnival costume as civic art. Palladian villas inland remain the terraferma’s classical argument.",
       "ideas": "Myth of Venice—mixed constitution praised by English republicans; Sarpi’s conciliar and anti-Jesuit strands; practical reason of state in Senate deliberations; quiet Quietist and libertine undercurrents in a censoring oligarchy.",
       "artIdeas": "Late Tintoretto/Veronese memory into Tiepolo’s airy ceilings; Canaletto and Guardi invent the veduta for Grand Tour buyers; carnival costume as civic art. Palladian villas inland remain the terraferma’s classical argument.\n\nMyth of Venice—mixed constitution praised by English republicans; Sarpi’s conciliar and anti-Jesuit strands; practical reason of state in Senate deliberations; quiet Quietist and libertine undercurrents in a censoring oligarchy.",
       "science": "Padua University under Venetian protection—Harvey studied there earlier; anatomical theatres; arsenals as sites of practical mechanics; lagoon hydraulic engineering; Murano chemistry of glass.",
@@ -24047,7 +24070,8 @@
           "alt": "Padua anatomical theatre — science under the Lion of St Mark",
           "role": "literature"
         }
-      ]
+      ],
+      "philosophy": "Myth of Venice—mixed constitution praised by Harrington and English republicans; reason-of-state archival mentality; Quietist and libertine currents in a tourist Enlightenment city."
     },
     {
       "id": "tuscany",
@@ -24055,7 +24079,7 @@
       "type": "grand-duchy",
       "yearsActive": "1569–1801 (Medici then Lorraine Habsburgs)",
       "color": "#e63946",
-      "description": "The Medici rule a mid-sized Italian grand duchy until Gian Gastone’s death (1737); Francis of Lorraine and then Peter Leopold bring Habsburg-secondary enlightened reform. Stable borders through 1789; Florence remains a capital of academies, galleries, and cautious modernization.",
+      "description": "The Medici rule a mid-sized Italian grand duchy until Gian Gastone’s death (1737); Francis of Lorraine and then Peter Leopold bring Habsburg-secondary enlightened reform. Stable borders through 1789; Florence remains a capital of academies, galleries, and cautious modernization. Galileo’s Medici patronage is the duchy’s scientific origin myth—even as trial and house arrest follow.",
       "conflicts": "War of the Spanish Succession orbit; War of the Polish Succession logistics; generally secondary Italian diplomacy rather than battlefield primacy.",
       "leaders": "Cosimo II; Ferdinando II; Cosimo III; Gian Gastone; Francis Stephen; Peter Leopold (later Leopold II)—the reforming grand duke.",
       "religion": "Catholic duchy; Leopoldine reform of church institutions, confraternities, and capital punishment (Tuscany famously moves against the death penalty in the 1780s).",
@@ -24277,10 +24301,10 @@
           ]
         }
       },
-      "summary": "Medici grand duchy, then Habsburg-Lorraine reform state centered on Florence.",
+      "summary": "Medici then Habsburg-Lorraine grand duchy—Galileo’s patronage memory and Leopoldine reform laboratory.",
       "story": "Galileo’s Medici patronage is the duchy’s scientific origin myth—even as trial and house arrest follow. The Medici line dies with Gian Gastone (1737); Lorraine-Habsburg rulers inherit a museum-state. Peter Leopold abolishes the death penalty (1786)—a Tuscan Enlightenment badge.",
       "literature": "Academic prose and antiquarianism; Arcadian poetry; Beccaria’s On Crimes and Punishments as the era’s Tuscan-global intervention; travel guides selling Florence to the Grand Tour.",
-      "art": "Medici collecting becomes the Uffizi public myth; late baroque and neoclassical court commissions; peasant and villa landscapes of the contado. Dress follows French models more than Florentine pride.\n\nGalilean experimental philosophy; Accademia del Cimento’s programmed experiments; Beccaria’s influence on Leopoldine penal reform; physiocratic and legal Enlightenment.",
+      "art": "Medici collecting becomes the Uffizi public myth; late baroque and neoclassical court commissions; peasant and villa landscapes of the contado. Dress follows French models more than Florentine pride.",
       "ideas": "Galilean experimental philosophy; Accademia del Cimento’s programmed experiments; Beccaria’s influence on Leopoldine penal reform; physiocratic and legal Enlightenment.",
       "artIdeas": "Medici collecting becomes the Uffizi public myth; late baroque and neoclassical court commissions; peasant and villa landscapes of the contado. Dress follows French models more than Florentine pride.\n\nGalilean experimental philosophy; Accademia del Cimento’s programmed experiments; Beccaria’s influence on Leopoldine penal reform; physiocratic and legal Enlightenment.",
       "science": "Accademia del Cimento’s earlier experiments still define Tuscan scientific honor; natural history collections; hydraulic control of the Arno; medical teaching in Florence and Pisa.",
@@ -24357,7 +24381,8 @@
           "alt": "Cesare Beccaria — crimes, punishments, and Tuscan reform fame",
           "role": "literature"
         }
-      ]
+      ],
+      "philosophy": "Galilean experimental natural philosophy under Medici patronage; Leopoldine legal Enlightenment abolishing the death penalty—Beccaria’s influence made statute."
     },
     {
       "id": "milan",
@@ -24365,7 +24390,7 @@
       "type": "duchy",
       "yearsActive": "Spanish then Austrian Habsburg possession in this era",
       "color": "#9b2226",
-      "description": "Milan remains a rich Lombard possession: Spanish through the seventeenth century, Austrian after Utrecht. Governors extract revenue and hold a strategic hinge between Alps and peninsula. Maria Theresa and Joseph II introduce cadastral and legal reforms; the duchy is still Habsburg at 1789.",
+      "description": "Milan remains a rich Lombard possession: Spanish through the seventeenth century, Austrian after Utrecht. Governors extract revenue and hold a strategic hinge between Alps and peninsula. Maria Theresa and Joseph II introduce cadastral and legal reforms; the duchy is still Habsburg at 1789. Once Sforza, now a Spanish garrison jewel; plague of 1630 scars memory (Manzoni will later novelise it).",
       "conflicts": "Franco-Spanish Italian echoes; War of the Spanish Succession; War of the Austrian Succession (French/Spanish occupation episodes); later coalition pressures.",
       "leaders": "Spanish governors under Philip III/IV/Charles II; Austrian administrators under Charles VI, Maria Theresa, Joseph II; local patriciate in the Senate of Milan.",
       "religion": "Catholic heartland with Borromean Counter-Reformation legacy—seminaries, confessionals, and disciplined parish life as Spanish then Austrian policy capitalise on Carlo Borromeo’s model.",
@@ -24547,10 +24572,10 @@
           ]
         }
       },
-      "summary": "Wealthy Lombard duchy—Spanish Habsburg, then Austrian—key to the Po valley chessboard.",
+      "summary": "Wealthy Lombard duchy under Spanish then Austrian Habsburgs; Borromean piety and Beccaria’s legal Enlightenment.",
       "story": "Borromeo’s ghost still disciplines the city while Spanish governors treat it as a treasury. The Theresian cadastre tries to see every field for tax—an Enlightenment eye laid over a Renaissance economic engine—before French armies rewrite Italy again.",
       "literature": "Legal and administrative Spanish/Italian prose; later Milanese Enlightenment journalism (Il Caffè); theatrical life feeding Vienna and Paris tastes.",
-      "art": "Duomo’s long building site; Spanish walls; baroque churches; later neoclassical projects under Austria. Painting schools less globally famous than Venice/Rome yet tied to rich confraternities.\n\nBorromean pastoral reform as applied theology; Cesare Beccaria’s On Crimes and Punishments (1764) from the Milanese Enlightenment; Verri brothers’ Il Caffè journal.",
+      "art": "Duomo’s long building site; Spanish walls; baroque churches; later neoclassical projects under Austria. Painting schools less globally famous than Venice/Rome yet tied to rich confraternities.",
       "ideas": "Borromean pastoral reform as applied theology; Cesare Beccaria’s On Crimes and Punishments (1764) from the Milanese Enlightenment; Verri brothers’ Il Caffè journal.",
       "artIdeas": "Duomo’s long building site; Spanish walls; baroque churches; later neoclassical projects under Austria. Painting schools less globally famous than Venice/Rome yet tied to rich confraternities.\n\nBorromean pastoral reform as applied theology; Cesare Beccaria’s On Crimes and Punishments (1764) from the Milanese Enlightenment; Verri brothers’ Il Caffè journal.",
       "science": "Medical college traditions; cadastral surveying mathematics; Alpine hydraulic and road engineering toward the Tyrol; agricultural academies of the late century.",
@@ -24621,7 +24646,8 @@
           "alt": "Beccaria of Milan — utilitarian justice from Lombardy",
           "role": "story"
         }
-      ]
+      ],
+      "philosophy": "Borromean pastoral theology as applied ethics; Beccaria’s On Crimes and Punishments; Verri’s Il Caffè circle arguing utility, law, and political economy."
     },
     {
       "id": "papal-states",
@@ -24629,7 +24655,7 @@
       "type": "ecclesiastical-state",
       "yearsActive": "medieval origins–1870 (central Italian core)",
       "color": "#6a994e",
-      "description": "The Papal States stretch across Lazio, Umbria, Marche, and Romagna as the pope’s temporal monarchy. Nepotism softens into more bureaucratic congregations; finances wobble; artistic patronage still sets Catholic Europe’s taste. The states survive Italian wars into 1789, soon to face revolutionary and Napoleonic storms.",
+      "description": "The Papal States stretch across Lazio, Umbria, Marche, and Romagna as the pope’s temporal monarchy. Nepotism softens into more bureaucratic congregations; finances wobble; artistic patronage still sets Catholic Europe’s taste. The states survive Italian wars into 1789, soon to face revolutionary and Napoleonic storms. Urban VIII’s Barberini bees mark a peak of nepotism and building; Bernini shapes St Peter’s square into an embrace of stone.",
       "conflicts": "War of Castro memory; alignments in the Spanish Succession; Corsican and Italian diplomatic crises; later French Revolutionary pressure and eventual 1798 republic ahead.",
       "leaders": "Popes from Clement VIII through Urban VIII, Innocent X, and on to Pius VI in this span; cardinal-nephews as power brokers.",
       "religion": "Catholic theocracy and Tridentine reform centre—Index, Inquisition, jubilees, and the curia as Europe’s confessional supreme court, even as philosophes mock and Catholic monarchs practise regalism.",
@@ -24976,10 +25002,10 @@
           "notes": "Overlap-cleaned (container carve / priority yield)."
         }
       },
-      "summary": "Temporal theocracy of the popes—Baroque Rome as capital of Catholic visual culture.",
+      "summary": "Temporal papal monarchy whose Baroque Rome stages Catholic Europe’s art and curial politics.",
       "story": "Urban VIII’s Barberini bees mark a peak of nepotism and building; Bernini shapes St Peter’s square into an embrace of stone. The temporal state lags economically while spiritually staging Catholicism for the world—Pius VI still tours as a baroque sovereign on the eve of revolutionary shock.",
       "literature": "Latin bulls and vernacular devotionals; Barberini and later academy poetry; guidebooks to churches and ruins; Muratori-style antiquarianism influencing Catholic reform thought.",
-      "art": "High baroque apex—Bernini’s colonnade and ecstasies, Borromini’s geometries, Cortona ceilings; then rococo softness and neoclassical reaction in museums. Dress of cardinals as color-coded power.\n\nTridentine theology institutionalised; Bellarmine’s afterlife; Quietism controversies; anti-Jansenist politics; late scholastic resistance to Enlightenment natural religion.",
+      "art": "High baroque apex—Bernini’s colonnade and ecstasies, Borromini’s geometries, Cortona ceilings; then rococo softness and neoclassical reaction in museums. Dress of cardinals as color-coded power.",
       "ideas": "Tridentine theology institutionalised; Bellarmine’s afterlife; Quietism controversies; anti-Jansenist politics; late scholastic resistance to Enlightenment natural religion.",
       "artIdeas": "High baroque apex—Bernini’s colonnade and ecstasies, Borromini’s geometries, Cortona ceilings; then rococo softness and neoclassical reaction in museums. Dress of cardinals as color-coded power.\n\nTridentine theology institutionalised; Bellarmine’s afterlife; Quietism controversies; anti-Jansenist politics; late scholastic resistance to Enlightenment natural religion.",
       "science": "Gregorian calendar’s ongoing authority; Roman College Jesuit mathematics and astronomy (Kircher’s museum world); hydraulic work on the Tiber; cautious engagement with Newtonian ideas by the 1700s.",
@@ -25050,7 +25076,8 @@
           "alt": "Bernini’s Ecstasy of Saint Teresa — baroque faith as theatre",
           "role": "religion"
         }
-      ]
+      ],
+      "philosophy": "Tridentine theology institutionalized; Bellarmine’s afterlife in controversy; anti-Jansenist politics; late scholastic resistance to Enlightenment natural religion."
     },
     {
       "id": "naples",
@@ -25058,7 +25085,7 @@
       "type": "kingdom",
       "yearsActive": "Spanish viceroyalty in mapped 1600–1700",
       "color": "#bc6c25",
-      "description": "The Kingdom of Naples under Spanish viceroys (Sicily often linked) is one of Europe’s most populous Italian realms. Masaniello’s 1647 revolt scars the century; after the Succession War the realm passes briefly to Austria before Bourbon conquest. Mapped to 1700; later ticks use the Two Sicilies layer.",
+      "description": "The Kingdom of Naples under Spanish viceroys (Sicily often linked) is one of Europe’s most populous Italian realms. Masaniello’s 1647 revolt scars the century; after the Succession War the realm passes briefly to Austria before Bourbon conquest. Mapped to 1700; later ticks use the Two Sicilies layer. In 1647 a fisherman, Masaniello, briefly tops a tax revolt that becomes a European news event; Spain reasserts control.",
       "conflicts": "Masaniello revolt (1647) and the Neapolitan Republic moment; Messina unrest; War of the Spanish Succession transfer; Austrian interlude.",
       "leaders": "Spanish viceroys under Philip III/IV/Charles II; local barons; Masaniello as popular tribune.",
       "religion": "Intense baroque Catholicism—saints, processions, San Gennaro’s blood miracle as civic theology; strong clerical and confraternity presence beside popular syncretic habits.",
@@ -25482,7 +25509,7 @@
       "summary": "Spanish Habsburg viceroyalty of southern Italy—vast city, baronial countryside, baroque faith.",
       "story": "In 1647 a fisherman, Masaniello, briefly tops a tax revolt that becomes a European news event; Spain reasserts control. The kingdom remains a Spanish fiscal milch-cow until the Succession war reshuffles Italy—and Bourbon ambition remakes the south afterward.",
       "literature": "Dialect theatre and chronicles of revolt; legal scholarship; Giambattista Basile’s fairy-tale Pentamerone earlier still echoing; sacred oratory.",
-      "art": "Neapolitan Baroque painting (Ribera’s Spanish-Neapolitan school); compact sacred architecture; street presepe culture; musical conservatories feeding European opera.\n\nSpanish scholastic governance; reason-of-state viceregal manuals; popular political theology of saints protecting the city against Vesuvius and taxes.",
+      "art": "Neapolitan Baroque painting (Ribera’s Spanish-Neapolitan school); compact sacred architecture; street presepe culture; musical conservatories feeding European opera.",
       "ideas": "Spanish scholastic governance; reason-of-state viceregal manuals; popular political theology of saints protecting the city against Vesuvius and taxes.",
       "artIdeas": "Neapolitan Baroque painting (Ribera’s Spanish-Neapolitan school); compact sacred architecture; street presepe culture; musical conservatories feeding European opera.\n\nSpanish scholastic governance; reason-of-state viceregal manuals; popular political theology of saints protecting the city against Vesuvius and taxes.",
       "science": "Medical and botanical gardens; observation of Vesuvius; navigational knowledge in a port city; legal-medical faculties of a university older than many northern rivals.",
@@ -25565,7 +25592,8 @@
           "alt": "Vesuvius over Naples — nature as perpetual civic science problem",
           "role": "religion"
         }
-      ]
+      ],
+      "philosophy": "Natural-law jurisprudence in a dense legal city; viceroyal reason of state; popular revolt memory as a vernacular political philosophy."
     },
     {
       "id": "two-sicilies",
@@ -25573,7 +25601,7 @@
       "type": "kingdom",
       "yearsActive": "Bourbon Naples & Sicily from 1734/1816 naming",
       "color": "#9c6644",
-      "description": "Charles of Bourbon takes Naples and Sicily in the 1730s, founding an independent Bourbon monarchy (he later becomes Charles III of Spain). Mapped 1750–1789 as the united southern kingdom—formal ‘Two Sicilies’ naming consolidates later—with Naples as one of Europe’s great capitals and Sicily as a semi-distinct island polity under the same crown.",
+      "description": "Charles of Bourbon takes Naples and Sicily in the 1730s, founding an independent Bourbon monarchy (he later becomes Charles III of Spain). Mapped 1750–1789 as the united southern kingdom—formal ‘Two Sicilies’ naming consolidates later—with Naples as one of Europe’s great capitals and Sicily as a semi-distinct island polity under the same crown. A Spanish Bourbon prince wins a kingdom at Gaeta’s wars and stages enlightened reform—then leaves for Madrid as Charles III.",
       "conflicts": "War of the Polish Succession Italian theatre; War of the Austrian Succession; later French Revolutionary wars. Internal baronial and bread riots recur.",
       "leaders": "Charles of Bourbon; Ferdinand IV/III; ministers Tanucci and later Acton.",
       "religion": "Catholic monarchy negotiating regal control of church courts and Jesuit expulsion-era politics while popular devotion remains exuberant.",
@@ -25896,10 +25924,10 @@
           "notes": "Overlap-cleaned (container carve / priority yield)."
         }
       },
-      "summary": "Bourbon southern Italian kingdom—Naples and Sicily under Charles then Ferdinand.",
+      "summary": "Bourbon Naples and Sicily—Caserta splendour, Genovesi’s political economy, Pompeii antiquarianism.",
       "story": "A Spanish Bourbon prince wins a kingdom at Gaeta’s wars and stages enlightened reform—then leaves for Madrid as Charles III. Ferdinand’s court hunts while Genovesi teaches commerce; Pompeii’s dug streets make the kingdom Europe’s antiquity laboratory.",
       "literature": "Genovesi’s economic and philosophical prose; dialect comedy; antiquarian publications on Pompeii; court libretti at San Carlo.",
-      "art": "Royal Palace and Caserta (Vanvitelli’s Versailles of the south); porcelain of Capodimonte; Pompeian decorative revival spreading across Europe; Sicilian baroque towns rebuilt after earlier quakes.\n\nGenovesi’s Enlightenment economics; Tanucci’s anti-curial regalism; antiquarian classicism as state prestige; cautious reform without challenging feudal jurisdiction deeply enough.",
+      "art": "Royal Palace and Caserta (Vanvitelli’s Versailles of the south); porcelain of Capodimonte; Pompeian decorative revival spreading across Europe; Sicilian baroque towns rebuilt after earlier quakes.",
       "ideas": "Genovesi’s Enlightenment economics; Tanucci’s anti-curial regalism; antiquarian classicism as state prestige; cautious reform without challenging feudal jurisdiction deeply enough.",
       "artIdeas": "Royal Palace and Caserta (Vanvitelli’s Versailles of the south); porcelain of Capodimonte; Pompeian decorative revival spreading across Europe; Sicilian baroque towns rebuilt after earlier quakes.\n\nGenovesi’s Enlightenment economics; Tanucci’s anti-curial regalism; antiquarian classicism as state prestige; cautious reform without challenging feudal jurisdiction deeply enough.",
       "science": "Herculaneum/Pompeii archaeology as empirical antiquity; Vesuvius observatories beginnings; medical schools of Naples; agricultural academies; mapmaking of a seismically restless realm.",
@@ -25982,7 +26010,8 @@
           "alt": "Antonio Genovesi — Naples Enlightenment political economy",
           "role": "literature"
         }
-      ]
+      ],
+      "philosophy": "Genovesi’s teaching of commerce and ethics; Tanucci’s regalism; antiquarian neoclassicism treating Pompeii as a gateway to ancient virtue."
     },
     {
       "id": "genoa",
@@ -25990,7 +26019,7 @@
       "type": "republic",
       "yearsActive": "c. 1000–1797",
       "color": "#adb5bd",
-      "description": "Genoa persists as a Ligurian maritime republic with a banking aristocracy and a restless Corsican possession sold to France in 1768 after Paoli’s revolts. Mediterranean trade and credit sustain a small political footprint through 1789; Napoleonic extinction lies ahead.",
+      "description": "Genoa persists as a Ligurian maritime republic with a banking aristocracy and a restless Corsican possession sold to France in 1768 after Paoli’s revolts. Mediterranean trade and credit sustain a small political footprint through 1789; Napoleonic extinction lies ahead. Bankers who once funded Spain watch their Mediterranean horizon shrink.",
       "conflicts": "Corsican revolts under Pasquale Paoli; French pressure; Austrian and Spanish naval entanglements; later Napoleonic end (1797).",
       "leaders": "Doges of the oligarchic republic; Bank of Saint George elites; Paoli in Corsica.",
       "religion": "Catholic; Jesuit and later reformed educational fights similar to other Italian states.",
@@ -26351,7 +26380,7 @@
       "summary": "Ligurian oligarchic republic—banking memory, Corsican headache, shrinking footprint.",
       "story": "Bankers who once funded Spain watch their Mediterranean horizon shrink. Corsica’s long revolt ends with sale to France (1768)—Paoli’s island republic becomes a European cause célèbre, and Napoleon is born a French subject the next year.",
       "literature": "Corsican political writing and Paoli’s republican fame in European letters (Boswell); Genoese administrative prose; travel accounts of the riviera.",
-      "art": "Rubens/Van Dyck earlier Genoese portrait clients’ palaces still define the Strade Nuove; late baroque churches; maritime votive paintings.\n\nOligarchic republicanism without Dutch-style popular myth; Corsican resistance ideology admired by Rousseauists; credit and asiento memory as economic thought-in-practice.",
+      "art": "Rubens/Van Dyck earlier Genoese portrait clients’ palaces still define the Strade Nuove; late baroque churches; maritime votive paintings.",
       "ideas": "Oligarchic republicanism without Dutch-style popular myth; Corsican resistance ideology admired by Rousseauists; credit and asiento memory as economic thought-in-practice.",
       "artIdeas": "Rubens/Van Dyck earlier Genoese portrait clients’ palaces still define the Strade Nuove; late baroque churches; maritime votive paintings.\n\nOligarchic republicanism without Dutch-style popular myth; Corsican resistance ideology admired by Rousseauists; credit and asiento memory as economic thought-in-practice.",
       "science": "Navigational practice; cartography of Ligurian and Corsican coasts; medical faculties; botanical exchange through a port facing Spain and France.",
@@ -26422,7 +26451,8 @@
           "alt": "Corsican cliffs — possession Genoa sold to France in 1768",
           "role": "story"
         }
-      ]
+      ],
+      "philosophy": "Oligarchic republican reason; Paoli’s Corsican constitutionalism admired by Rousseau and Boswell as a laboratory of small-state liberty."
     },
     {
       "id": "savoy",
@@ -26430,7 +26460,7 @@
       "type": "kingdom",
       "yearsActive": "Duchy of Savoy; Kingdom of Sardinia from 1720",
       "color": "#b5179e",
-      "description": "The House of Savoy plays great-power wars with deft side-switching. Victor Amadeus II gains Sicily then swaps for Sardinia and a royal title (1720). By 1750–1789 the state spans Piedmont, Savoy, Nice, and Sardinia—a compact military-absolutist kingdom centered on Turin, poised for later Risorgimento fame.",
+      "description": "The House of Savoy plays great-power wars with deft side-switching. Victor Amadeus II gains Sicily then swaps for Sardinia and a royal title (1720). By 1750–1789 the state spans Piedmont, Savoy, Nice, and Sardinia—a compact military-absolutist kingdom centered on Turin, poised for later Risorgimento fame. Victor Amadeus II trades sides in the Spanish Succession and walks away with a crown (Sardinia, 1720).",
       "conflicts": "Thirty Years’ War orbit; War of the Spanish Succession (key Alpine theatres); War of the Austrian Succession; later Revolutionary wars. Waldensian valleys as internal confessional wound.",
       "leaders": "Charles Emmanuel I; Victor Amadeus II; Charles Emmanuel III; Victor Amadeus III. Bureaucrats building the Piedmontese file-state.",
       "religion": "Catholic state with Waldensian minority under periodic persecution and later limited toleration—Alpine confessional frontier.",
@@ -26857,10 +26887,10 @@
           "notes": "Overlap-cleaned (container carve / priority yield)."
         }
       },
-      "summary": "Alpine Savoy-Piedmont rising to a royal Italian kingdom (Sardinia title after 1720).",
+      "summary": "Alpine buffer that trades sides in the Succession wars and emerges as the Kingdom of Sardinia.",
       "story": "Victor Amadeus II trades sides in the Spanish Succession and walks away with a crown (Sardinia, 1720). The duchy becomes a kingdom that drills, maps, and waits—later the nucleus of Italian unification, already a disciplined Alpine machine by 1789.",
       "literature": "Court and legal Italian/French; later Alfieri ( Piedmont-born) will rage against tyrants off this tick’s end; administrative memorials as the genre of state-building.",
-      "art": "Juvarra’s and Guarini’s architecture in Turin and Piedmont; baroque hunting palaces; military engineering as aesthetic of power; alpine sacred mounts (Sacri Monti).\n\nAbsolute ducal/royal sovereignty on a small stage; anti-Waldensian confessional politics; reason-of-state manuals for buffer kingdoms between Bourbon and Habsburg.",
+      "art": "Juvarra’s and Guarini’s architecture in Turin and Piedmont; baroque hunting palaces; military engineering as aesthetic of power; alpine sacred mounts (Sacri Monti).",
       "ideas": "Absolute ducal/royal sovereignty on a small stage; anti-Waldensian confessional politics; reason-of-state manuals for buffer kingdoms between Bourbon and Habsburg.",
       "artIdeas": "Juvarra’s and Guarini’s architecture in Turin and Piedmont; baroque hunting palaces; military engineering as aesthetic of power; alpine sacred mounts (Sacri Monti).\n\nAbsolute ducal/royal sovereignty on a small stage; anti-Waldensian confessional politics; reason-of-state manuals for buffer kingdoms between Bourbon and Habsburg.",
       "science": "Military engineering schools; cartography of Alpine passes; early technical university impulses in Turin; agronomy in Piedmontese plains.",
@@ -26943,7 +26973,8 @@
           "alt": "Waldensian valleys — Protestant minority under Savoyard Catholic rule",
           "role": "religion"
         }
-      ]
+      ],
+      "philosophy": "Absolute duke-king craft as buffer-state philosophy; diplomatic opportunism theorized as survival; Waldensian conscience under Catholic uniformity."
     },
     {
       "id": "crimean-khanate",
@@ -26951,7 +26982,7 @@
       "type": "khanate",
       "yearsActive": "1441–1783 (Ottoman vassal)",
       "color": "#6c757d",
-      "description": "The Crimean Khanate controls the peninsula and projects cavalry power across the Black Sea steppe, raiding and trading slaves while serving as Ottoman sword-arm against Poland-Lithuania and Russia. Catherine II annexes Crimea in 1783; the polity is absent at the 1789 tick.",
+      "description": "The Crimean Khanate controls the peninsula and projects cavalry power across the Black Sea steppe, raiding and trading slaves while serving as Ottoman sword-arm against Poland-Lithuania and Russia. Catherine II annexes Crimea in 1783; the polity is absent at the 1789 tick. For centuries the khanate’s cavalry is the Ottoman northern claw.",
       "conflicts": "Russo-Crimean wars; campaigns as Ottoman vassal against Habsburgs and Commonwealth; internal Giray succession strife; final Russian annexation warpath (1783).",
       "leaders": "Giray khans under Ottoman oversight; notable late figures facing Russian pressure before 1783.",
       "religion": "Sunni Islam with steppe customary overlays; mosques and madrasas in Bakhchysarai; Christian and Jewish minorities in coastal trading towns.",
@@ -27133,7 +27164,7 @@
       "summary": "Giray Tatar khanate under Ottoman suzerainty—steppe cavalry power until Russian annexation (1783).",
       "story": "For centuries Moscow paid and prayed against Crimean raids; by Catherine’s reign the balance reverses and the khanate is swallowed—Black Sea access becoming Russian strategic dogma. The fountain of Bakhchysarai later romanticizes what empire erased.",
       "literature": "Turkic chronicles and oral epic; Ottoman chancery correspondence; later European captivity narratives that exoticize the khanate even as it falls.",
-      "art": "Bakhchysarai palace ornament; Islamic calligraphy and metalwork; steppe tent aesthetics beside stone mosques; Crimean port hybridities at Kaffa/Feodosia.\n\nChinggisid Giray legitimacy under Islamic Ottoman suzerainty—a dual political theology; steppe customary law beside sharia courts; pragmatic vassalage as survival strategy.",
+      "art": "Bakhchysarai palace ornament; Islamic calligraphy and metalwork; steppe tent aesthetics beside stone mosques; Crimean port hybridities at Kaffa/Feodosia.",
       "ideas": "Chinggisid Giray legitimacy under Islamic Ottoman suzerainty—a dual political theology; steppe customary law beside sharia courts; pragmatic vassalage as survival strategy.",
       "artIdeas": "Bakhchysarai palace ornament; Islamic calligraphy and metalwork; steppe tent aesthetics beside stone mosques; Crimean port hybridities at Kaffa/Feodosia.\n\nChinggisid Giray legitimacy under Islamic Ottoman suzerainty—a dual political theology; steppe customary law beside sharia courts; pragmatic vassalage as survival strategy.",
       "science": "Steppe environmental knowledge—horses, routes, seasonal pastures; Black Sea navigational lore; Ottoman-facing medical and astronomical scraps in court culture; Russian surveys arriving as conquest tools.",
@@ -27222,7 +27253,8 @@
           "alt": "Crimean Tatar mosque — Islamic court culture of the khanate",
           "role": "religion"
         }
-      ]
+      ],
+      "philosophy": "Turkic-Islamic rulership under Ottoman suzerainty; steppe customary justice; colliding legitimacies as Russia invents ‘recovery’ narratives over Giray sovereignty."
     },
     {
       "id": "wallachia",
@@ -27230,7 +27262,7 @@
       "type": "principality",
       "yearsActive": "14th c.–1859 (Ottoman vassal in this era)",
       "color": "#e9c46a",
-      "description": "Wallachia remains a distinct tributary principality under Ottoman suzerainty, ruled by native dynasts and, from the early eighteenth century, Phanariot hospodars appointed through Istanbul. Caught among Ottoman, Habsburg, and Russian pressures, it keeps a mapped identity through 1789.",
+      "description": "Wallachia remains a distinct tributary principality under Ottoman suzerainty, ruled by native dynasts and, from the early eighteenth century, Phanariot hospodars appointed through Istanbul. Caught among Ottoman, Habsburg, and Russian pressures, it keeps a mapped identity through 1789. Constantin Brâncoveanu’s careful diplomacy ends in Istanbul execution (1714); the Phanariot century follows—Greek-speaking princes farming taxes for the Porte while Orthodox culture persists in monasteries along the Carpathians and Danube.",
       "conflicts": "Ottoman–Habsburg wars on its borders; Russian interventions; episodic anti-Ottoman risings; boyar factional violence. Military traffic more than sovereign campaigning.",
       "leaders": "Native dynasts (e.g. Brâncoveanu at the era’s hinge); Phanariot hospodars from the early eighteenth century appointed via Istanbul.",
       "religion": "Eastern Orthodox principality—monasteries as landholders and culture banks under the Ecumenical Patriarchate’s wider orbit.",
@@ -27497,10 +27529,10 @@
           "notes": "Overlap-cleaned (container carve / priority yield)."
         }
       },
-      "summary": "Ottoman vassal principality on the Danube—native then Phanariot princes between empires.",
+      "summary": "Orthodox Danubian principality under Ottoman suzerainty, later under Phanariot hospodars.",
       "story": "Constantin Brâncoveanu’s martyrdom under Ottoman suspicion (1714) becomes a founding trauma; Phanariot rule afterward turns Bucharest into a bilingual court of Greek letters and Romanian peasantry—autonomy as a negotiated performance before the sultan.",
       "literature": "Chronicles of the princes; religious translations into Romanian; Greek Phanariot learning; boyar memorials. Oral ballad memory of outlaw and frontier figures.",
-      "art": "Brâncovenesc church architecture mixing Ottoman, Byzantine, and local forms; monastery frescoes; princely courts at Bucharest and Târgoviște; boyar costume as rank script.\n\nOrthodox political theology of the prince as church protector under infidel suzerainty; boyar customary law; Phanariot administrative rationalism imported from the Phanar.",
+      "art": "Brâncovenesc church architecture mixing Ottoman, Byzantine, and local forms; monastery frescoes; princely courts at Bucharest and Târgoviște; boyar costume as rank script.",
       "ideas": "Orthodox political theology of the prince as church protector under infidel suzerainty; boyar customary law; Phanariot administrative rationalism imported from the Phanar.",
       "artIdeas": "Brâncovenesc church architecture mixing Ottoman, Byzantine, and local forms; monastery frescoes; princely courts at Bucharest and Târgoviște; boyar costume as rank script.\n\nOrthodox political theology of the prince as church protector under infidel suzerainty; boyar customary law; Phanariot administrative rationalism imported from the Phanar.",
       "science": "Practical Danube flood and agriculture knowledge; monastic manuscript astronomy/medicine; later Enlightenment schooling impulses via Transylvanian and Greek channels.",
@@ -27583,7 +27615,8 @@
           "alt": "Wallachian arms — Orthodox principality under the Porte",
           "role": "story"
         }
-      ]
+      ],
+      "philosophy": "Orthodox ktitor ideology of the prince as church founder; Phanariot Hellenic bureaucratic thought; customary law under tribute sovereignty."
     },
     {
       "id": "moldavia",
@@ -27591,7 +27624,7 @@
       "type": "principality",
       "yearsActive": "14th c.–1859 (Ottoman vassal; Bukovina to Austria 1775)",
       "color": "#2a9d8f",
-      "description": "Moldavia mirrors Wallachia as an Orthodox tributary principality, with stronger Polish and later Russian entanglement. Phanariot hospodars dominate the eighteenth century; Austria annexes Bukovina in 1775 while the core remains Ottoman-vassal at 1789.",
+      "description": "Moldavia mirrors Wallachia as an Orthodox tributary principality, with stronger Polish and later Russian entanglement. Phanariot hospodars dominate the eighteenth century; Austria annexes Bukovina in 1775 while the core remains Ottoman-vassal at 1789. Moldavia is a corridor state: Polish magnates, Ottoman tribute, and Russian ‘protection’ take turns.",
       "conflicts": "Polish, Ottoman, and Russian wars across Moldavian land; Hotin fortress wars; Habsburg annexation of Bukovina; boyar coups around the throne.",
       "leaders": "Native princes including early Movilă lines; Phanariot hospodars in the eighteenth century.",
       "religion": "Eastern Orthodox—with monasteries (including later-famous northern Moldavian painted churches’ heritage) anchoring identity under Ottoman tribute.",
@@ -27833,10 +27866,10 @@
           ]
         }
       },
-      "summary": "Eastern Carpathian Ottoman vassal—Polish, Russian, and Habsburg pressures; Bukovina lost 1775.",
+      "summary": "Eastern Carpathian Orthodox vassal between Poland, Ottomans, and Russia; Bukovina lost to Austria in 1775.",
       "story": "Dimitrie Cantemir’s brief Russian alliance and exile scholarship (Descriptio Moldaviae) show a prince trying to think the land into European knowledge while losing the throne. Bukovina’s 1775 loss to Austria teaches that vassal buffers are partitionable long before 1789.",
       "literature": "Cantemir’s Latin and Romanian works bridging Ottoman and European learning; chronicles; religious translation; Greek court letters under Phanariots.",
-      "art": "Painted monastery tradition of northern Moldavia as living sacred art; princely courts at Iași; liturgical embroidery; wooden vernacular architecture.\n\nCantemir’s humanist-Orthodox encyclopedism; boyar constitutional customs; Phanariot administrative thought; awareness of being a hinge among three empires.",
+      "art": "Painted monastery tradition of northern Moldavia as living sacred art; princely courts at Iași; liturgical embroidery; wooden vernacular architecture.",
       "ideas": "Cantemir’s humanist-Orthodox encyclopedism; boyar constitutional customs; Phanariot administrative thought; awareness of being a hinge among three empires.",
       "artIdeas": "Painted monastery tradition of northern Moldavia as living sacred art; princely courts at Iași; liturgical embroidery; wooden vernacular architecture.\n\nCantemir’s humanist-Orthodox encyclopedism; boyar constitutional customs; Phanariot administrative thought; awareness of being a hinge among three empires.",
       "science": "Cantemir’s geographic and musical scholarship; monastic schools; practical fortress and river knowledge on the Dniester–Prut–Danube approaches; later Enlightenment academies in Iași beginnings.",
@@ -27931,7 +27964,8 @@
           "alt": "Hotin/Khotyn fortress — war hinge of Moldavian lands",
           "role": "story"
         }
-      ]
+      ],
+      "philosophy": "Orthodox political theology of the hospodar; boyar customary law; early balance-of-power awareness as a corridor state’s survival philosophy."
     }
   ]
 }

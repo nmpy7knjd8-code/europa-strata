@@ -60,6 +60,7 @@ const state = {
   sliderPos: 0, // 0..1 continuous
   selectedIso: null,
   selectedPolityId: null,
+  selectedCultureLayer: null,
   selectedRegion: "britain",
   path: null,
   svg: null,
@@ -1404,6 +1405,7 @@ function onCountryClick(event, d) {
   const iso = d.properties.iso;
   state.selectedIso = iso;
   state.selectedPolityId = null;
+  state.selectedCultureLayer = null;
   const rid = isoToRegion(iso);
   if (rid) state.selectedRegion = rid;
 
@@ -1682,6 +1684,7 @@ function updateCulturesRail() {
       if (!iso) return;
       state.selectedIso = iso;
       state.selectedPolityId = null;
+      state.selectedCultureLayer = layer.id || null;
       state.selectedRegion = isoToRegion(iso);
       state.svg
         ?.selectAll("path.country")
@@ -1717,7 +1720,7 @@ function setPolityField(key, value) {
   setPlainText(el, text);
 }
 
-/** Join distinct prose blobs (art + ideas) without dumping under a fake heading. */
+/** Join distinct prose blobs without dumping under a fake heading. */
 function joinPolityProse(...parts) {
   const seen = new Set();
   const out = [];
@@ -1730,12 +1733,40 @@ function joinPolityProse(...parts) {
   return out.join("\n\n");
 }
 
-/** Art & ideas panel — prefer artIdeas, else art + ideas. */
-function polityArtIdeasText(polity) {
+/** Prefer a dedicated field; optionally fall back to a bundled artIdeas blob split. */
+function polityCultureField(polity, key) {
   if (!polity) return "";
-  const bundled = (polity.artIdeas || polity.artAndIdeas || "").trim();
-  if (bundled) return bundled;
-  return joinPolityProse(polity.art, polity.ideas);
+  const direct = (polity[key] || "").trim();
+  if (direct) return direct;
+  if (key === "art" || key === "ideas") {
+    const bundled = (polity.artIdeas || polity.artAndIdeas || "").trim();
+    if (!bundled) return "";
+    const parts = bundled.split(/\n\n+/).map((s) => s.trim()).filter(Boolean);
+    if (key === "art") return parts[0] || "";
+    if (parts.length > 1) return parts.slice(1).join("\n\n");
+  }
+  return "";
+}
+
+function applyCultureFields(polity) {
+  setPolityField("art", polityCultureField(polity, "art"));
+  setPolityField("ideas", polityCultureField(polity, "ideas"));
+  setPolityField("philosophy", polityCultureField(polity, "philosophy"));
+  setPolityField("science", polityCultureField(polity, "science"));
+}
+
+/** Overlay layer-specific culture text when a deep-time culture chip is focused. */
+function mergeDeepTimeCulture(polity, period) {
+  const out = { ...(polity || {}) };
+  const layerId = state.selectedCultureLayer;
+  if (!layerId || !period) return out;
+  const layer = (period.mapLayers || []).find((l) => l.id === layerId);
+  if (!layer) return out;
+  for (const key of ["art", "ideas", "philosophy", "science"]) {
+    const t = (layer[key] || "").trim();
+    if (t) out[key] = t;
+  }
+  return out;
 }
 
 function figureHtml(img) {
@@ -1853,7 +1884,6 @@ function inferImageRole(img) {
       "science",
     ].includes(explicit)
   ) {
-    if (explicit === "ideas") return "art";
     return explicit;
   }
   const t = `${img?.caption || ""} ${img?.alt || ""} ${img?.src || ""}`.toLowerCase();
@@ -1915,6 +1945,7 @@ function renderPolityGalleries(images) {
     story: [],
     literature: [],
     art: [],
+    ideas: [],
     philosophy: [],
     science: [],
   };
@@ -1930,6 +1961,7 @@ function renderPolityGalleries(images) {
   fillInlineGallery($("#polity-story-gallery"), buckets.story);
   fillInlineGallery($("#polity-literature-gallery"), buckets.literature);
   fillInlineGallery($("#polity-art-gallery"), buckets.art);
+  fillInlineGallery($("#polity-ideas-gallery"), buckets.ideas);
   fillInlineGallery($("#polity-philosophy-gallery"), buckets.philosophy);
   fillInlineGallery($("#polity-science-gallery"), buckets.science);
 
@@ -1946,6 +1978,7 @@ function renderPolityGalleries(images) {
   show("#polity-story-block", buckets.story.length > 0);
   show("#polity-literature-block", buckets.literature.length > 0);
   show("#polity-art-block", buckets.art.length > 0);
+  show("#polity-ideas-block", buckets.ideas.length > 0);
   show("#polity-philosophy-block", buckets.philosophy.length > 0);
   show("#polity-science-block", buckets.science.length > 0);
 }
@@ -2004,9 +2037,7 @@ function renderKingdomDetail() {
       setPolityField("culture", polity.culture);
       setPolityField("story", polity.story);
       setPolityField("literature", polity.literature);
-      setPolityField("art", polityArtIdeasText(polity));
-      setPolityField("philosophy", polity.philosophy);
-      setPolityField("science", polity.science);
+      applyCultureFields(polity);
       renderPolityChain(polity);
       renderPolityGalleries(polity.images);
     } else {
@@ -2119,9 +2150,7 @@ function renderDetail() {
       setPolityField("culture", polity.culture);
       setPolityField("story", polity.story);
       setPolityField("literature", polity.literature);
-      setPolityField("art", polityArtIdeasText(polity));
-      setPolityField("philosophy", polity.philosophy);
-      setPolityField("science", polity.science);
+      applyCultureFields(mergeDeepTimeCulture(polity, period));
       renderPolityChain(polity);
       renderPolityGalleries(polity.images);
     } else {
@@ -2398,7 +2427,7 @@ function bindUI() {
 async function loadKingdomPack(id) {
   try {
     // Cache-bust so refined research geometry packs reload after deploy
-    const r = await fetch(`data/kingdom-eras/${id}.json?v=era-ui-34`);
+    const r = await fetch(`data/kingdom-eras/${id}.json?v=era-ui-35`);
     if (!r.ok) return null;
     const raw = await r.json();
     return normalizeKingdomPack(raw);
@@ -2419,7 +2448,7 @@ async function init() {
       loadKingdomPack(id).then((pack) => [id, pack])
     );
     const [timeline, geo, keyEvents, packEntries] = await Promise.all([
-      fetch("data/timeline.json").then((r) => {
+      fetch("data/timeline.json?v=era-ui-35").then((r) => {
         if (!r.ok) throw new Error("timeline");
         return r.json();
       }),

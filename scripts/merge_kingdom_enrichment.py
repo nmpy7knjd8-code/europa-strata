@@ -180,9 +180,12 @@ def merge_polity(base: dict, *alts: dict) -> dict:
     out["science"] = field_from_aliases(sources, "science") or out.get("science", "")
     art = field_from_aliases(sources, "art") or out.get("art", "")
     bundled = field_from_aliases(sources, "artIdeas")
-    # Surface as Art & ideas (never an “interesting things” dump)
-    out["artIdeas"] = bundled or join_prose(art, out.get("ideas", ""))
-    out["art"] = out["artIdeas"] or art
+    # Keep art and ideas as separate panels; artIdeas is optional legacy join only
+    out["art"] = art or (bundled.split("\n\n")[0].strip() if bundled else "")
+    if not out.get("ideas") and bundled:
+        # If only a bundled blob exists, leave ideas empty rather than duplicating art
+        pass
+    out["artIdeas"] = bundled or join_prose(out.get("art", ""), out.get("ideas", ""))
     # Prefer description into summary alias if summary empty
     if not out.get("summary") and out.get("description"):
         out["summary"] = out["description"]
