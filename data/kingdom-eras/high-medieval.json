@@ -1657,9 +1657,27 @@
           "caption": "Durham Cathedral",
           "alt": "Durham Cathedral",
           "role": "religion"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Magna_Carta_%28British_Library_Cotton_MS_Augustus_II.106%29.jpg?width=800",
+          "caption": "Magna Carta — British Library Cotton MS Augustus II.106",
+          "alt": "Magna Carta — British Library Cotton MS Augustus II.106",
+          "role": "religion"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Westminster%20Abbey%20West%20Front%2001.jpg?width=800",
+          "caption": "Westminster Abbey — west front, Plantagenet sacral stage",
+          "alt": "Westminster Abbey — west front, Plantagenet sacral stage",
+          "role": "art"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Canterbury%20Cathedral%20from%20the%20city%20walls.jpg?width=800",
+          "caption": "Canterbury Cathedral — Becket pilgrimage center",
+          "alt": "Canterbury Cathedral — Becket pilgrimage center",
+          "role": "culture"
         }
       ],
-      "philosophy": "Scholastic and legal thought meet in Glanvill and Bracton: custom argued as reasoned law. John of Salisbury's Policraticus sketches tyrannicide theory under Becket's shadow; Magna Carta hardens judgment-of-peers into a political habit."
+      "philosophy": "Henry II's legal reforms treated royal justice as a public good enforceable by writ; Glanvill (c. 1187–89) and later Bracton theorized English custom as reasoned law. Magna Carta's clauses on judgment of peers and scutage crystallized baronial constitutionalism. John of Salisbury's Polycraticus argued that a tyrant who broke the law of the realm might be resisted—ideas forged in Becket's shadow."
     },
     {
       "id": "scotland",
@@ -4675,9 +4693,33 @@
           "caption": "Iona Abbey",
           "alt": "Iona Abbey",
           "role": "religion"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Robert_the_Bruce_statue%2C_Bannockburn.jpg?width=800",
+          "caption": "Robert the Bruce — Bannockburn memorial statue",
+          "alt": "Robert the Bruce — Bannockburn memorial statue",
+          "role": "leader"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Arbroath_Abbey.jpg?width=800",
+          "caption": "Arbroath Abbey — site tied to the 1320 declaration",
+          "alt": "Arbroath Abbey — site tied to the 1320 declaration",
+          "role": "religion"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Edinburgh_Castle_from_the_south_east.jpg?width=800",
+          "caption": "Edinburgh Castle — royal fortress above the burgh",
+          "alt": "Edinburgh Castle — royal fortress above the burgh",
+          "role": "art"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Iona_Abbey_from_the_south_west.jpg?width=800",
+          "caption": "Iona Abbey — Columban sacred geography",
+          "alt": "Iona Abbey — Columban sacred geography",
+          "role": "culture"
         }
       ],
-      "philosophy": "Kingdom ideology braids inauguration stones with Latin charters; early university seeds at St Andrews later host scholastic disputation. Resistance and lordship theories grow from Bruce-era propaganda and canon-law counsel."
+      "philosophy": "The Arbroath letter articulated a community of the realm with the right to defend liberty—even to replace a king who failed that duty—drawing on biblical and canonistic language. Guardianship during royal minorities practiced collective rule. Scottish claims to independence from York and Canterbury in ecclesiastical appeals reinforced political sovereignty."
     },
     {
       "id": "wales",
@@ -5253,9 +5295,33 @@
           "caption": "St Davids Cathedral",
           "alt": "St Davids Cathedral",
           "role": "religion"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Caernarfon_Castle.jpg?width=800",
+          "caption": "Caernarfon Castle — Edward I’s conquest architecture",
+          "alt": "Caernarfon Castle — Edward I’s conquest architecture",
+          "role": "leader"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Harlech_Castle_-_Great_Gatehouse.jpg?width=800",
+          "caption": "Harlech Castle — Edwardian iron-ring fortress",
+          "alt": "Harlech Castle — Edwardian iron-ring fortress",
+          "role": "religion"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Strata_Florida_Abbey.jpg?width=800",
+          "caption": "Strata Florida Abbey — Cistercian princely necropolis",
+          "alt": "Strata Florida Abbey — Cistercian princely necropolis",
+          "role": "art"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Dolwyddelan_Castle.jpg?width=800",
+          "caption": "Dolwyddelan Castle — Gwynedd stronghold in the mountains",
+          "alt": "Dolwyddelan Castle — Gwynedd stronghold in the mountains",
+          "role": "culture"
         }
       ],
-      "philosophy": "Cyfraith Hywel ranks honour and compensation without Romanizing kingship; bardic learning preserves political cosmology of native princes beside Marcher feudal claims."
+      "philosophy": "Welsh jurisprudence valued honour-price and kindred liability over English common-law writs; princely ideology claimed Britain-wide Trojan descent through Geoffrey of Monmouth's material, which Welsh courts eagerly adopted. Llywelyn's 1267 recognition tested whether a native principality could exist inside Plantagenet overlordship—an experiment Edward I terminated."
     },
     {
       "id": "ireland",
@@ -6777,9 +6843,33 @@
           "caption": "Brian Boru tradition",
           "alt": "Brian Boru tradition",
           "role": "leader"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Rock_of_Cashel%2C_Ireland.jpg?width=800",
+          "caption": "Rock of Cashel — Munster royal and ecclesiastical seat",
+          "alt": "Rock of Cashel — Munster royal and ecclesiastical seat",
+          "role": "leader"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Cormacs_Chapel_Cashel.jpg?width=800",
+          "caption": "Cormac’s Chapel — Irish Romanesque at Cashel",
+          "alt": "Cormac’s Chapel — Irish Romanesque at Cashel",
+          "role": "religion"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Trim_Castle%2C_Ireland.jpg?width=800",
+          "caption": "Trim Castle — Anglo-Norman lordship power in stone",
+          "alt": "Trim Castle — Anglo-Norman lordship power in stone",
+          "role": "art"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Book_of_Kells%2C_Folio_292r%2C_Incipit_to_John.jpg?width=800",
+          "caption": "Book of Kells — Insular gospel art (earlier treasure still central to Irish sacred prestige)",
+          "alt": "Book of Kells — Insular gospel art (earlier treasure still central to Irish sacred prestige)",
+          "role": "culture"
         }
       ],
-      "philosophy": "Brehon honour-price and fosterage encode a ranked cosmos; Synodal reformers push Roman order while Gaelic jurists defend custom as reason enough—philosophy as competing legal metaphysics."
+      "philosophy": "Brehon jurisprudence ranked society by honour-price and regulated suretyship, fosterage, and land-use through custom rather than feudal tenure. Synodal reformers sought Roman order without erasing monastic culture. Laudabiliter and Henry's lordship claimed a civilizing mandate—an ideology Gaelic writers never fully accepted."
     },
     {
       "id": "france-capetian",
@@ -7681,9 +7771,33 @@
           "caption": "Philip II Augustus",
           "alt": "Philip II Augustus",
           "role": "story"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Cathedrale_Notre-Dame_de_Chartres_DSC_0226w.jpg?width=800",
+          "caption": "Chartres Cathedral — high Gothic landmark of Capetian France",
+          "alt": "Chartres Cathedral — high Gothic landmark of Capetian France",
+          "role": "leader"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Sainte_Chapelle_Interior_Stained_Glass.jpg?width=800",
+          "caption": "Sainte-Chapelle — Louis IX’s relic chapel of light",
+          "alt": "Sainte-Chapelle — Louis IX’s relic chapel of light",
+          "role": "religion"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Basilique_Saint-Denis_Saint-Denis_RAF_2016_1.jpg?width=800",
+          "caption": "Saint-Denis — Capetian necropolis and early Gothic stage",
+          "alt": "Saint-Denis — Capetian necropolis and early Gothic stage",
+          "role": "art"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Philippe_II_Auguste.jpg?width=800",
+          "caption": "Philip II Augustus — seal/portrait type of the realm-builder",
+          "alt": "Philip II Augustus — seal/portrait type of the realm-builder",
+          "role": "culture"
         }
       ],
-      "philosophy": "Suger sacralizes royal office; Paris masters (including Aquinas's teaching years) make the city Europe's scholastic capital. Legists under Philip IV claim the king is emperor in his own realm against Unam Sanctam."
+      "philosophy": "Suger cast the king as defender of churches and poor against castellans; Louis IX's ordonnances projected moral legislation. Legists under Philip IV argued that the king was emperor in his own realm (rex in regno suo imperator), resisting papal temporal claims after Unam Sanctam. Scholastic theology at the University of Paris (Aquinas taught there) made the city Europe's intellectual capital."
     },
     {
       "id": "normandy",
@@ -7993,9 +8107,33 @@
           "caption": "Jumièges Abbey",
           "alt": "Jumièges Abbey",
           "role": "story"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Bayeux_Tapestry_scene55_William_Hastings_battlefield.jpg?width=800",
+          "caption": "Hastings recognized — Bayeux Tapestry battlefield scene",
+          "alt": "Hastings recognized — Bayeux Tapestry battlefield scene",
+          "role": "leader"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Abbaye_aux_Hommes_Caen.jpg?width=800",
+          "caption": "Abbaye aux Hommes, Caen — Conqueror’s Romanesque foundation",
+          "alt": "Abbaye aux Hommes, Caen — Conqueror’s Romanesque foundation",
+          "role": "religion"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Jumieges_abbey_ruins.jpg?width=800",
+          "caption": "Jumièges Abbey — Norman Romanesque ruin on the Seine",
+          "alt": "Jumièges Abbey — Norman Romanesque ruin on the Seine",
+          "role": "art"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Mont_Saint-Michel_tidal.jpg?width=800",
+          "caption": "Mont-Saint-Michel — tidal sanctuary of the Norman coast",
+          "alt": "Mont-Saint-Michel — tidal sanctuary of the Norman coast",
+          "role": "culture"
         }
       ],
-      "philosophy": "Bec's Anselm forges ontological and atonement arguments that travel with Norman abbots; ducal chancery practice treats territorial sovereignty as thought-in-action before Capetian centralization."
+      "philosophy": "Ducal Normandy practised unusually coherent territorial sovereignty—control of castles and succession—before Capetian kings achieved the same. Anselm at Bec developed ontological and atonement arguments that shaped Latin theology. Cross-channel lordship forced practical thought about divided homage until 1204 made the dilemma moot for Normandy proper."
     },
     {
       "id": "angevin-empire",
@@ -8335,9 +8473,33 @@
           "caption": "Fontevraud Abbey",
           "alt": "Fontevraud Abbey",
           "role": "religion"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Chateau_Gaillard_Les_Andelys.jpg?width=800",
+          "caption": "Château Gaillard — Richard I’s Seine fortress, lost under John",
+          "alt": "Château Gaillard — Richard I’s Seine fortress, lost under John",
+          "role": "leader"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Eleanor_of_Aquitaine_tomb_effigy.jpg?width=800",
+          "caption": "Eleanor of Aquitaine — tomb effigy tradition at Fontevraud",
+          "alt": "Eleanor of Aquitaine — tomb effigy tradition at Fontevraud",
+          "role": "religion"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Fontevraud_Abbey_Nave.jpg?width=800",
+          "caption": "Fontevraud Abbey — Plantagenet dynastic necropolis",
+          "alt": "Fontevraud Abbey — Plantagenet dynastic necropolis",
+          "role": "art"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Chinon_castle.jpg?width=800",
+          "caption": "Chinon Castle — Angevin Loire power seat",
+          "alt": "Chinon Castle — Angevin Loire power seat",
+          "role": "culture"
         }
       ],
-      "philosophy": "Cross-Channel homage forces casuistry about a vassal-king stronger than his suzerain; Becket's quarrel becomes a European brief on clerical liberty versus royal justice."
+      "philosophy": "Itinerant kingship as governance theory-in-practice; the problem of a vassal-king who was stronger than his Capetian suzerain forced legal casuistry about homage. Becket's conflict sharpened debates on clerical liberty versus royal justice that echoed across Latin Europe. Eleanor's political agency modelled female lordship at the highest scale."
     },
     {
       "id": "burgundy-valois",
@@ -8561,9 +8723,33 @@
           "caption": "Charles the Bold",
           "alt": "Charles the Bold",
           "role": "story"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Well_of_Moses_detail_David.jpg?width=800",
+          "caption": "Well of Moses (Sluter), Champmol — Burgundian sculptural power",
+          "alt": "Well of Moses (Sluter), Champmol — Burgundian sculptural power",
+          "role": "leader"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Dijon_Palais_des_Ducs.jpg?width=800",
+          "caption": "Palace of the Dukes, Dijon — Valois Burgundy seat",
+          "alt": "Palace of the Dukes, Dijon — Valois Burgundy seat",
+          "role": "religion"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Bruges_Belfry.jpg?width=800",
+          "caption": "Bruges Belfry — Flemish urban wealth under Burgundian orbit",
+          "alt": "Bruges Belfry — Flemish urban wealth under Burgundian orbit",
+          "role": "art"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/John_the_Fearless.jpg?width=800",
+          "caption": "John the Fearless — duke as French faction chief",
+          "alt": "John the Fearless — duke as French faction chief",
+          "role": "culture"
         }
       ],
-      "philosophy": "Court culture theorizes magnificence as political virtue; Valois Burgundy stages chivalric order (Golden Fleece) as moral theatre for a composite state."
+      "philosophy": "Burgundian statecraft experimented with composite monarchy—estates of Flanders, Brabant, Holland under one prince without erasing local privileges. The Golden Fleece theorized reformed chivalry as princely discipline. Charles's pursuit of a royal title tested whether a middle kingdom between France and the Empire could be legitimized in late medieval terms."
     },
     {
       "id": "hre",
@@ -10995,9 +11181,33 @@
           "caption": "Aachen Cathedral",
           "alt": "Aachen Cathedral",
           "role": "art"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Speyer_Cathedral_from_the_southwest.jpg?width=800",
+          "caption": "Speyer Cathedral — Salian imperial Romanesque",
+          "alt": "Speyer Cathedral — Salian imperial Romanesque",
+          "role": "leader"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Friedrich_I._Barbarossa.jpg?width=800",
+          "caption": "Frederick I Barbarossa — Staufen imperial image",
+          "alt": "Frederick I Barbarossa — Staufen imperial image",
+          "role": "religion"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Karlstein_Castle_01.jpg?width=800",
+          "caption": "Karlštejn Castle — Charles IV’s treasure fortress",
+          "alt": "Karlštejn Castle — Charles IV’s treasure fortress",
+          "role": "art"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Aachen_Cathedral_Octagon.jpg?width=800",
+          "caption": "Aachen Cathedral octagon — Carolingian-imperial ritual heart",
+          "alt": "Aachen Cathedral octagon — Carolingian-imperial ritual heart",
+          "role": "culture"
         }
       ],
-      "philosophy": "Investiture polemics and Landfrieden practice argue who wields the two swords; Staufer publicists claim imperial anointing parallel to papal consecration—denied by Gregorian canonists."
+      "philosophy": "Salian and Staufer publicists argued for imperial anointing as parallel to papal consecration; canonists and the Dictatus Papae denied that symmetry. Landfrieden and later electoral custom developed constitutional practice without a single written constitution. Frederick II's Sicilian legislation modelled centralized royal law alien to German princely custom."
     },
     {
       "id": "bohemia",
@@ -12009,9 +12219,33 @@
           "caption": "St Barbara, Kutná Hora",
           "alt": "St Barbara, Kutná Hora",
           "role": "story"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/St_Vitus_Cathedral_Prague_September_2016-1.jpg?width=800",
+          "caption": "St. Vitus Cathedral, Prague — Luxemburg Gothic project",
+          "alt": "St. Vitus Cathedral, Prague — Luxemburg Gothic project",
+          "role": "leader"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Charles_Bridge%2C_Prague.jpg?width=800",
+          "caption": "Charles Bridge — Prague’s imperial urban spine",
+          "alt": "Charles Bridge — Prague’s imperial urban spine",
+          "role": "religion"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Karlstejn_Castle.jpg?width=800",
+          "caption": "Karlštejn — Bohemian royal treasure castle",
+          "alt": "Karlštejn — Bohemian royal treasure castle",
+          "role": "art"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Kutna_Hora_St_Barbara.jpg?width=800",
+          "caption": "St. Barbara, Kutná Hora — silver-town Gothic",
+          "alt": "St. Barbara, Kutná Hora — silver-town Gothic",
+          "role": "culture"
         }
       ],
-      "philosophy": "Premyslid and Luxemburg courts import Parisian scholasticism; later Charles IV's Prague becomes a constitutional and cultural workshop of elective empire."
+      "philosophy": "The Golden Bull of Sicily and later Charles's Golden Bull constitutionalized Bohemia's royal and electoral status inside the Empire. Charles's concept of Prague as a sacred-imperial centre fused relic politics with urban planning. Mining privileges and town law experimented with economic legislation rare in purely agrarian principalities."
     },
     {
       "id": "poland",
@@ -12955,9 +13189,33 @@
           "caption": "Battle of Legnica",
           "alt": "Battle of Legnica",
           "role": "story"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Wawel_Cathedral_Krakow.jpg?width=800",
+          "caption": "Wawel Cathedral, Kraków — Piast and Jagiellonian sacral core",
+          "alt": "Wawel Cathedral, Kraków — Piast and Jagiellonian sacral core",
+          "role": "leader"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Gniezno_Doors.jpg?width=800",
+          "caption": "Gniezno Doors — Romanesque bronze narrative of St Adalbert",
+          "alt": "Gniezno Doors — Romanesque bronze narrative of St Adalbert",
+          "role": "religion"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Krakow_Rynek_Glowny.jpg?width=800",
+          "caption": "Kraków Main Square — Magdeburg-law urban Poland",
+          "alt": "Kraków Main Square — Magdeburg-law urban Poland",
+          "role": "art"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Malbork_Castle_NATO_2002.jpg?width=800",
+          "caption": "Malbork/Marienburg — Teutonic neighbor Poland fought",
+          "alt": "Malbork/Marienburg — Teutonic neighbor Poland fought",
+          "role": "culture"
         }
       ],
-      "philosophy": "Seniorate theory after 1138 fails as philosophy of ordered partition; Casimir's statutes and Magdeburg-law towns reframe custom under a reunifying crown."
+      "philosophy": "Seniorate theory after 1138 attempted ordered partition and produced its opposite—fuel for later arguments that coronation and a single capital must override fraternal claims. Magdeburg law reception remade urban legal thought. Casimir's statutes aimed at unifying noble and criminal custom under the crown."
     },
     {
       "id": "hungary",
@@ -14051,9 +14309,33 @@
           "caption": "Stephen I",
           "alt": "Stephen I",
           "role": "story"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Matthias_Church_Budapest_01.jpg?width=800",
+          "caption": "Matthias Church, Buda — later Gothic face of royal Hungary",
+          "alt": "Matthias Church, Buda — later Gothic face of royal Hungary",
+          "role": "leader"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Visegrad_Citadel.jpg?width=800",
+          "caption": "Visegrád — Angevin royal residence above the Danube",
+          "alt": "Visegrád — Angevin royal residence above the Danube",
+          "role": "religion"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Esztergom_Basilica.jpg?width=800",
+          "caption": "Esztergom — Hungarian ecclesiastical capital tradition",
+          "alt": "Esztergom — Hungarian ecclesiastical capital tradition",
+          "role": "art"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Stephen_I_of_Hungary_statue.jpg?width=800",
+          "caption": "Stephen I — founder-saint of the Christian kingdom",
+          "alt": "Stephen I — founder-saint of the Christian kingdom",
+          "role": "culture"
         }
       ],
-      "philosophy": "Árpád and Angevin kingship fuse steppe legacy with Latin coronation ideology; Golden Bull (1222) articulates noble liberty as a check on royal will."
+      "philosophy": "The Doctrine of the Holy Crown treated the crown as the realm's legal person beyond the mortal king—an idea with deep medieval roots. The Golden Bull of 1222 scripted resistance rights for nobles. Angevin reformers theorized royal finance through regalian monopolies (mines, coin, customs) that professionalized extraction."
     },
     {
       "id": "croatia",
@@ -14509,9 +14791,33 @@
           "caption": "St Donatus, Zadar",
           "alt": "St Donatus, Zadar",
           "role": "story"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Sibenik_Cathedral.jpg?width=800",
+          "caption": "Šibenik Cathedral — Dalmatian sacred architecture (later face of coastal Croatia)",
+          "alt": "Šibenik Cathedral — Dalmatian sacred architecture (later face of coastal Croatia)",
+          "role": "leader"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Diocletians_Palace.jpg?width=800",
+          "caption": "Diocletian’s Palace, Split — living antique fabric of Dalmatia",
+          "alt": "Diocletian’s Palace, Split — living antique fabric of Dalmatia",
+          "role": "religion"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Zagreb_Cathedral.jpg?width=800",
+          "caption": "Zagreb Cathedral — inland ecclesiastical center",
+          "alt": "Zagreb Cathedral — inland ecclesiastical center",
+          "role": "art"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Trogir_Cathedral_Portal.jpg?width=800",
+          "caption": "Trogir Cathedral portal — Dalmatian Romanesque–Gothic carving",
+          "alt": "Trogir Cathedral portal — Dalmatian Romanesque–Gothic carving",
+          "role": "culture"
         }
       ],
-      "philosophy": "Union with Hungary under a shared crown prompts arguments about personal versus real union—political theology of a realm that keeps its own bans and seals."
+      "philosophy": "Personal union theory—one king, distinct realms—shaped Croatian constitutional memory. Dalmatian communalism imported Italian notions of statutes and assemblies. Glagolitic liturgical privilege implied a theology of language: Slavic could praise God under Roman obedience without full Latinization of rite."
     },
     {
       "id": "denmark",
@@ -16647,9 +16953,33 @@
           "caption": "Absalon",
           "alt": "Absalon",
           "role": "art"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Jelling_stones_Denmark.jpg?width=800",
+          "caption": "Jelling stones — Bluetooth’s Christian realm announcement",
+          "alt": "Jelling stones — Bluetooth’s Christian realm announcement",
+          "role": "leader"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Roskilde_Cathedral_Denmark.jpg?width=800",
+          "caption": "Roskilde Cathedral — Danish royal burial church",
+          "alt": "Roskilde Cathedral — Danish royal burial church",
+          "role": "religion"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Kronborg_Castle_Helsingor.jpg?width=800",
+          "caption": "Kronborg (later form) — Øresund power geography",
+          "alt": "Kronborg (later form) — Øresund power geography",
+          "role": "art"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Cnut_the_Great_-_MS_Royal_14_B_VI.jpg?width=800",
+          "caption": "Cnut the Great — manuscript portrait of the North Sea king",
+          "alt": "Cnut the Great — manuscript portrait of the North Sea king",
+          "role": "culture"
         }
       ],
-      "philosophy": "Archbishop Absalon and Lund's see import reform canon law; royal consecration and provincial laws (Jyske Lov) stage Christian kingship over a maritime realm."
+      "philosophy": "Archbishop Absalon's fusion of pastoral care and state violence theorized a crusader realm. Provincial lawbooks asserted that law lived in the landsting assembly—not solely in the king's mouth. The royal title 'king of the Danes and Slavs' claimed a composite Baltic sovereignty parallel to Norman or Angevin multi-land kingship."
     },
     {
       "id": "norway",
@@ -18441,9 +18771,33 @@
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Urnes_stavkirke_carving.jpg?width=960",
           "caption": "Urnes stave-church carving — Romanesque–Viking hybrid ornament",
           "alt": "Urnes stave-church carving — Romanesque–Viking hybrid ornament"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Nidarosdomen_Trondheim.jpg?width=800",
+          "caption": "Nidaros Cathedral — St Olaf pilgrimage heart",
+          "alt": "Nidaros Cathedral — St Olaf pilgrimage heart",
+          "role": "leader"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Borgund_stavkirke.jpg?width=800",
+          "caption": "Borgund stave church — Norwegian wooden sacred architecture",
+          "alt": "Borgund stave church — Norwegian wooden sacred architecture",
+          "role": "religion"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Bryggen_Bergen.jpg?width=800",
+          "caption": "Bryggen, Bergen — royal and Hanseatic harbor face",
+          "alt": "Bryggen, Bergen — royal and Hanseatic harbor face",
+          "role": "art"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Urnes_stavkirke_carving.jpg?width=800",
+          "caption": "Urnes stave-church carving — Romanesque–Viking hybrid ornament",
+          "alt": "Urnes stave-church carving — Romanesque–Viking hybrid ornament",
+          "role": "culture"
         }
       ],
-      "philosophy": "Hirð and provincial laws meet royal Christianization ideology; kings' sagas later narrate legitimacy as providence and prowess."
+      "philosophy": "Provincial lawthings as participatory legal communities under rising royal legislation; the saint-king as constitutional myth binding periphery to Nidaros; Sverre’s contested claim that royal unction and blood outweighed aristocratic election."
     },
     {
       "id": "sweden",
@@ -19347,9 +19701,33 @@
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Gripsholm_Castle.jpg?width=960",
           "caption": "Gripsholm (later fabric) — Mälaren royal geography",
           "alt": "Gripsholm (later fabric) — Mälaren royal geography"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Uppsala_Cathedral.jpg?width=800",
+          "caption": "Uppsala Cathedral — Swedish ecclesiastical capital",
+          "alt": "Uppsala Cathedral — Swedish ecclesiastical capital",
+          "role": "leader"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Stockholm_Old_Town.jpg?width=800",
+          "caption": "Stockholm’s island core — Birger Jarl–era urban rise",
+          "alt": "Stockholm’s island core — Birger Jarl–era urban rise",
+          "role": "religion"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Visby_city_wall.jpg?width=800",
+          "caption": "Visby walls, Gotland — Baltic trade world Sweden touched",
+          "alt": "Visby walls, Gotland — Baltic trade world Sweden touched",
+          "role": "art"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Gripsholm_Castle.jpg?width=800",
+          "caption": "Gripsholm (later fabric) — Mälaren royal geography",
+          "alt": "Gripsholm (later fabric) — Mälaren royal geography",
+          "role": "culture"
         }
       ],
-      "philosophy": "Folkung politics and early provincial laws negotiate pagan memory with Latin church order; elective elements in kingship keep consensus theory alive."
+      "philosophy": "Law as provincial custom written down before fully royal codes; the Finnish crusade as ideological frame for eastern expansion; council constitutionalism that would later justify resistance to Kalmar monarchs."
     },
     {
       "id": "kalmar-union",
@@ -19420,9 +19798,33 @@
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Ore_Sund_map_idea.jpg?width=960",
           "caption": "Øresund region — Denmark–Sweden hinge of union power",
           "alt": "Øresund region — Denmark–Sweden hinge of union power"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Kalmar_Castle.jpg?width=800",
+          "caption": "Kalmar Castle — namesake geography of the 1397 union",
+          "alt": "Kalmar Castle — namesake geography of the 1397 union",
+          "role": "leader"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Queen_Margaret_I_of_Denmark_effigy.jpg?width=800",
+          "caption": "Margaret I — architect of the Kalmar Union",
+          "alt": "Margaret I — architect of the Kalmar Union",
+          "role": "religion"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Eric_of_Pomerania.jpg?width=800",
+          "caption": "Eric of Pomerania — first union king under Margaret’s design",
+          "alt": "Eric of Pomerania — first union king under Margaret’s design",
+          "role": "art"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Ore_Sund_map_idea.jpg?width=800",
+          "caption": "Øresund region — Denmark–Sweden hinge of union power",
+          "alt": "Øresund region — Denmark–Sweden hinge of union power",
+          "role": "culture"
         }
       ],
-      "philosophy": "Union ideology tries to think three realms under one monarch without erasing provincial law—an unfinished philosophy of composite monarchy."
+      "philosophy": "Personal union without full legal merger; council consent versus regnal absolutism; Scandinavia as a strategic unit against German mercantile leagues—an early experiment in composite monarchy."
     },
     {
       "id": "leon-castile",
@@ -20546,9 +20948,33 @@
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Alfonso_X_of_Castile_in_the_Liber_Santiago.jpg?width=960",
           "caption": "Alfonso X the Wise — learned Castilian king",
           "alt": "Alfonso X the Wise — learned Castilian king"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Catedral_de_Burgos_Exterior.jpg?width=800",
+          "caption": "Burgos Cathedral — Castilian Gothic",
+          "alt": "Burgos Cathedral — Castilian Gothic",
+          "role": "leader"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Toledo_Spain_Panorama.jpg?width=800",
+          "caption": "Toledo — imperial city taken 1085, translation hub",
+          "alt": "Toledo — imperial city taken 1085, translation hub",
+          "role": "religion"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Alcazar_of_Segovia.jpg?width=800",
+          "caption": "Alcázar of Segovia — Castilian royal fortress mythos",
+          "alt": "Alcázar of Segovia — Castilian royal fortress mythos",
+          "role": "art"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Alfonso_X_of_Castile_in_the_Liber_Santiago.jpg?width=800",
+          "caption": "Alfonso X the Wise — learned Castilian king",
+          "alt": "Alfonso X the Wise — learned Castilian king",
+          "role": "culture"
         }
       ],
-      "philosophy": "Reconquest politics produce crusading kingship theory; fueros and Cortes practice argue that counsel and custom bind the prince."
+      "philosophy": "Royal law as vernacular summa (Partidas); Toledo as translation capital mediating Arabic learning into Latin Europe; reconquest ideology fused with municipal liberty charters—expansion justified as both holy war and peopling."
     },
     {
       "id": "aragon",
@@ -21766,9 +22192,33 @@
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Catalan_Atlas_detail.jpg?width=960",
           "caption": "Catalan Atlas (detail) — Majorcan cartographic science",
           "alt": "Catalan Atlas (detail) — Majorcan cartographic science"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Palau_Reial_Major_Barcelona.jpg?width=800",
+          "caption": "Palau Reial Major, Barcelona — count-king seat",
+          "alt": "Palau Reial Major, Barcelona — count-king seat",
+          "role": "leader"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/La_Seu_Valencia.jpg?width=800",
+          "caption": "Valencia Cathedral — conquest capital of James I",
+          "alt": "Valencia Cathedral — conquest capital of James I",
+          "role": "religion"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Aljaferia_Palace_Zaragoza.jpg?width=800",
+          "caption": "Aljafería, Zaragoza — Andalusi palace under Aragonese kings",
+          "alt": "Aljafería, Zaragoza — Andalusi palace under Aragonese kings",
+          "role": "art"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Catalan_Atlas_detail.jpg?width=800",
+          "caption": "Catalan Atlas (detail) — Majorcan cartographic science",
+          "alt": "Catalan Atlas (detail) — Majorcan cartographic science",
+          "role": "culture"
         }
       ],
-      "philosophy": "Pactism and the Privilege of Union make contractual monarchy explicit; Catalan-Aragonese jurists theorize a crown of federated constitutions."
+      "philosophy": "Pactism—kingship bound by Cortes and realm privileges; consular commercial law as portable jurisdiction; Llull’s project of mission through reason and language study toward Islam and Judaism."
     },
     {
       "id": "navarre",
@@ -22460,9 +22910,33 @@
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Sancho_III_of_Pamplona.jpg?width=960",
           "caption": "Sancho III the Great — Pyrenean hegemon of the early 11th c.",
           "alt": "Sancho III the Great — Pyrenean hegemon of the early 11th c."
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Pamplona_Cathedral_Cloister.jpg?width=800",
+          "caption": "Pamplona Cathedral cloister — Navarrese Romanesque–Gothic",
+          "alt": "Pamplona Cathedral cloister — Navarrese Romanesque–Gothic",
+          "role": "leader"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Roncesvalles_Colegiata.jpg?width=800",
+          "caption": "Roncesvalles — pilgrimage gate of Navarre",
+          "alt": "Roncesvalles — pilgrimage gate of Navarre",
+          "role": "religion"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Olite_Castle_Navarre.jpg?width=800",
+          "caption": "Royal Palace of Olite — later medieval Navarrese court",
+          "alt": "Royal Palace of Olite — later medieval Navarrese court",
+          "role": "art"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Sancho_III_of_Pamplona.jpg?width=800",
+          "caption": "Sancho III the Great — Pyrenean hegemon of the early 11th c.",
+          "alt": "Sancho III the Great — Pyrenean hegemon of the early 11th c.",
+          "role": "culture"
         }
       ],
-      "philosophy": "Pyrenean fueros preserve a small-kingdom constitutionalism between Capetian and Iberian giants—custom as shield of identity."
+      "philosophy": "Fuero constitutionalism—monarchs bound by sworn custom; Pyrenean neutrality and marriage diplomacy as strategies of the weak-but-institutional; pilgrimage kingship drawing legitimacy from the road to Compostela."
     },
     {
       "id": "portugal",
@@ -23162,9 +23636,33 @@
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Batalha_Monastery_exterior.jpg?width=960",
           "caption": "Batalha Monastery — thanksgiving Gothic after Aljubarrota",
           "alt": "Batalha Monastery — thanksgiving Gothic after Aljubarrota"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Jer%C3%B3nimos_Monastery_Lisbon.jpg?width=800",
+          "caption": "Jerónimos (later) — Lisbon’s maritime sacred face rooted in Aviz rise",
+          "alt": "Jerónimos (later) — Lisbon’s maritime sacred face rooted in Aviz rise",
+          "role": "leader"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Alcobaca_Monastery.jpg?width=800",
+          "caption": "Alcobaça Monastery — Cistercian Portugal",
+          "alt": "Alcobaça Monastery — Cistercian Portugal",
+          "role": "religion"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Castle_of_S%C3%A3o_Jorge_Lisbon.jpg?width=800",
+          "caption": "São Jorge Castle, Lisbon — taken 1147",
+          "alt": "São Jorge Castle, Lisbon — taken 1147",
+          "role": "art"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Batalha_Monastery_exterior.jpg?width=800",
+          "caption": "Batalha Monastery — thanksgiving Gothic after Aljubarrota",
+          "alt": "Batalha Monastery — thanksgiving Gothic after Aljubarrota",
+          "role": "culture"
         }
       ],
-      "philosophy": "Burgundian foundation myths and Reconquista ideology sacralize a seaborard kingdom; early universities seed scholastic training for a future oceanic state."
+      "philosophy": "Papal-recognized kingship as independence technology; completed Reconquista freeing energy for Atlantic projection; Dinis’s vernacular chancery and education policy as state craft; Aviz legitimism born in Cortes and battle."
     },
     {
       "id": "andalus-taifa",
@@ -23392,9 +23890,33 @@
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Ivory_pyxis_of_al-Mughira.jpg?width=960",
           "caption": "Caliphal ivory pyxis — Andalusi luxury craft continuum",
           "alt": "Caliphal ivory pyxis — Andalusi luxury craft continuum"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Mezquita_de_C%C3%B3rdoba_Agosto_2012.jpg?width=800",
+          "caption": "Great Mosque of Córdoba — caliphal glory taifas inherited",
+          "alt": "Great Mosque of Córdoba — caliphal glory taifas inherited",
+          "role": "leader"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Alhambra_Tower_of_Comares.jpg?width=800",
+          "caption": "Granada’s fortress landscape — Zirid then Nasrid continuity",
+          "alt": "Granada’s fortress landscape — Zirid then Nasrid continuity",
+          "role": "religion"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Aljaferia_Zaragoza_Throne_Hall.jpg?width=800",
+          "caption": "Aljafería throne hall — Hudid taifa palatial art",
+          "alt": "Aljafería throne hall — Hudid taifa palatial art",
+          "role": "art"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Ivory_pyxis_of_al-Mughira.jpg?width=800",
+          "caption": "Caliphal ivory pyxis — Andalusi luxury craft continuum",
+          "alt": "Caliphal ivory pyxis — Andalusi luxury craft continuum",
+          "role": "culture"
         }
       ],
-      "philosophy": "Falsafa and adab courts (Zaragoza, Seville) host Aristotelian commentary and poetic ethics amid political fragmentation—philosophy as court prestige."
+      "philosophy": "Parias as humiliating realpolitik debated by jurists; faḍl al-Andalus cultural pride amid political breakup; philosophical and legal Maliki scholarship still radiating from Córdoba’s memory."
     },
     {
       "id": "almoravid",
@@ -23602,9 +24124,33 @@
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Giralda_Seville_base.jpg?width=960",
           "caption": "Seville minaret fabric — Maghribi imperial stamp on al-Andalus",
           "alt": "Seville minaret fabric — Maghribi imperial stamp on al-Andalus"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Koutoubia_Mosque_Marrakech.jpg?width=800",
+          "caption": "Koutoubia, Marrakesh — Almoravid–Almohad Maghribi sacred power",
+          "alt": "Koutoubia, Marrakesh — Almoravid–Almohad Maghribi sacred power",
+          "role": "leader"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Bab_Agnaou_gate_Marrakech.jpg?width=800",
+          "caption": "Bab Agnaou, Marrakesh — imperial gate aesthetic",
+          "alt": "Bab Agnaou, Marrakesh — imperial gate aesthetic",
+          "role": "religion"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Almoravid_Qubba_Marrakech.jpg?width=800",
+          "caption": "Almoravid Qubba, Marrakesh — rare surviving Almoravid dome",
+          "alt": "Almoravid Qubba, Marrakesh — rare surviving Almoravid dome",
+          "role": "art"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Giralda_Seville_base.jpg?width=800",
+          "caption": "Seville minaret fabric — Maghribi imperial stamp on al-Andalus",
+          "alt": "Seville minaret fabric — Maghribi imperial stamp on al-Andalus",
+          "role": "culture"
         }
       ],
-      "philosophy": "Maliki rigorism critiques taifa luxury; moral reform as statecraft links Maghrib and al-Andalus under a juridical Islam."
+      "philosophy": "Ribat and reform as imperial ideology; Maliki legalism as state glue; the problem of ‘rescuing’ al-Andalus without trusting its kings—an ethics of intervention debated in Maghrebi and Andalusi sources."
     },
     {
       "id": "almohad",
@@ -23790,9 +24336,33 @@
           "caption": "Hagia Sophia",
           "alt": "Hagia Sophia",
           "role": "story"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Giralda_Sevilla_2014.jpg?width=800",
+          "caption": "Giralda, Seville — Almohad minaret become cathedral bell tower",
+          "alt": "Giralda, Seville — Almohad minaret become cathedral bell tower",
+          "role": "leader"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Hassan_Tower_Rabat.jpg?width=800",
+          "caption": "Hassan Tower, Rabat — unfinished Almohad monumentalism",
+          "alt": "Hassan Tower, Rabat — unfinished Almohad monumentalism",
+          "role": "religion"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Tinmel_Mosque.jpg?width=800",
+          "caption": "Tinmel Mosque — Almohad spiritual cradle in the Atlas",
+          "alt": "Tinmel Mosque — Almohad spiritual cradle in the Atlas",
+          "role": "art"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Averroes_color.jpg?width=800",
+          "caption": "Ibn Rushd (Averroes) — Cordoban philosopher-physician of the Almohad age",
+          "alt": "Ibn Rushd (Averroes) — Cordoban philosopher-physician of the Almohad age",
+          "role": "culture"
         }
       ],
-      "philosophy": "Tawḥīd doctrine and Ibn Rushd's (Averroes) Aristotelian program make Maghribi-Andalusi courts a hinge of Latin scholastic reception."
+      "philosophy": "Tawhid as political theology; caliphate revived in the west against Abbasid distance; the Averroist crisis—how far Aristotelian philosophy could live under reformist Islam."
     },
     {
       "id": "granada",
@@ -24070,9 +24640,33 @@
           "caption": "Alhambra",
           "alt": "Alhambra",
           "role": "story"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Alhambra_-_Patio_de_los_Leones.jpg?width=800",
+          "caption": "Court of the Lions, Alhambra — Nasrid palace art",
+          "alt": "Court of the Lions, Alhambra — Nasrid palace art",
+          "role": "leader"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Alhambra_Generalife_gardens.jpg?width=800",
+          "caption": "Generalife — Nasrid garden hydrology",
+          "alt": "Generalife — Nasrid garden hydrology",
+          "role": "religion"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Alhambra_Comares_Hall.jpg?width=800",
+          "caption": "Hall of the Ambassadors, Comares — throne aesthetics of Granada",
+          "alt": "Hall of the Ambassadors, Comares — throne aesthetics of Granada",
+          "role": "art"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Alhambra_from_Mirador_de_San_Nicolas.jpg?width=800",
+          "caption": "Alhambra on the Sabika hill — last Andalusi capital",
+          "alt": "Alhambra on the Sabika hill — last Andalusi capital",
+          "role": "culture"
         }
       ],
-      "philosophy": "Nasrid court culture sustains Sufi and poetic ethics under siege; architecture itself argues a cosmology of paradise gardens against future loss."
+      "philosophy": "Tributary survival as political philosophy; architecture as legitimacy; nostalgia for lost al-Andalus refined into an aesthetic of ephemeral beauty (the famous ‘wa lā ghāliba illā Allāh’ motif)."
     },
     {
       "id": "byzantium",
@@ -25686,9 +26280,33 @@
           "caption": "Alhambra",
           "alt": "Alhambra",
           "role": "religion"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Hagia_Sophia_Mars_2013.jpg?width=800",
+          "caption": "Hagia Sophia — Byzantine imperial church",
+          "alt": "Hagia Sophia — Byzantine imperial church",
+          "role": "leader"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Emperor_Justinian_mosaic_-_Ravenna.jpg?width=800",
+          "caption": "Justinian mosaic, San Vitale — Roman imperial image Byzantium inherited",
+          "alt": "Justinian mosaic, San Vitale — Roman imperial image Byzantium inherited",
+          "role": "religion"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Chora_Church_Constantinople_mosaic.jpg?width=800",
+          "caption": "Chora Church mosaics — late Byzantine flowering",
+          "alt": "Chora Church mosaics — late Byzantine flowering",
+          "role": "art"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Basil_II_in_military_dress.jpg?width=800",
+          "caption": "Basil II — Macedonian apex emperor",
+          "alt": "Basil II — Macedonian apex emperor",
+          "role": "culture"
         }
       ],
-      "philosophy": "Hesychast debates (Palamas) and imperial political theology renew Orthodox metaphysics; Roman law digests still frame justice as sacred order."
+      "philosophy": "Roman political theology of the emperor; Orthodox liturgical philosophy; hesychasm (Gregory Palamas); debates on union with Latins; reception of Aristotle in Greek commentaries."
     },
     {
       "id": "bulgaria-first",
@@ -25902,9 +26520,33 @@
           "caption": "Hagia Sophia",
           "alt": "Hagia Sophia",
           "role": "culture"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Round_Church_Preslav.jpg?width=800",
+          "caption": "Round Church of Preslav — First Empire Christian architecture",
+          "alt": "Round Church of Preslav — First Empire Christian architecture",
+          "role": "leader"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Madara_Rider.jpg?width=800",
+          "caption": "Madara Rider — earlier Bulgar royal rock relief still emblematic",
+          "alt": "Madara Rider — earlier Bulgar royal rock relief still emblematic",
+          "role": "religion"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Ohrid_Samuil_Fortress.jpg?width=800",
+          "caption": "Samuel’s fortress, Ohrid — last First Empire strongholds",
+          "alt": "Samuel’s fortress, Ohrid — last First Empire strongholds",
+          "role": "art"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Simeon_I_of_Bulgaria.jpg?width=800",
+          "caption": "Simeon I — cultural tsar of the First Empire",
+          "alt": "Simeon I — cultural tsar of the First Empire",
+          "role": "culture"
         }
       ],
-      "philosophy": "Slavic liturgy and Byzantine models produce a Christian khaganate ideology; literacy in Slavonic becomes a political-philosophical tool."
+      "philosophy": "Slavic liturgy as political-religious independence from Greek monopoly; tsar title as claim to imperial parity; Ohrid’s church as institutional afterlife of statehood."
     },
     {
       "id": "bulgaria-second",
@@ -26280,9 +26922,33 @@
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Baba_Vida_fortress.jpg?width=960",
           "caption": "Baba Vida, Vidin — Danubian Bulgarian fortress world",
           "alt": "Baba Vida, Vidin — Danubian Bulgarian fortress world"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Tsarevets_fortress_Veliko_Tarnovo.jpg?width=800",
+          "caption": "Tsarevets, Veliko Tarnovo — Second Empire capital ridge",
+          "alt": "Tsarevets, Veliko Tarnovo — Second Empire capital ridge",
+          "role": "leader"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Church_of_the_Holy_Forty_Martyrs_Veliko_Tarnovo.jpg?width=800",
+          "caption": "Holy Forty Martyrs — Asenid victory church",
+          "alt": "Holy Forty Martyrs — Asenid victory church",
+          "role": "religion"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Ivan_Asen_II_fresco.jpg?width=800",
+          "caption": "Ivan Asen II — peak Second Empire tsar",
+          "alt": "Ivan Asen II — peak Second Empire tsar",
+          "role": "art"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Baba_Vida_fortress.jpg?width=800",
+          "caption": "Baba Vida, Vidin — Danubian Bulgarian fortress world",
+          "alt": "Baba Vida, Vidin — Danubian Bulgarian fortress world",
+          "role": "culture"
         }
       ],
-      "philosophy": "Turnovo patriarchate claims autocephalous spiritual sovereignty; apocalyptic and imperial motifs compete after Mongol and Byzantine shocks."
+      "philosophy": "Restoration ideology—Second Empire as heir of Simeon and Samuel; Tarnovo as ‘third Rome’ ambitions in miniature; orthodox tsardom negotiating between papal and Constantinopolitan poles."
     },
     {
       "id": "serbia",
@@ -26888,9 +27554,27 @@
           "caption": "Church of Saint Sava (Belgrade, Serbia) — Serbian lands / empire",
           "alt": "Church of Saint Sava (Belgrade, Serbia) — Serbian lands / empire",
           "role": "art"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Studenica_monastery.jpg?width=800",
+          "caption": "Studenica — Nemanjić mother-monastery",
+          "alt": "Studenica — Nemanjić mother-monastery",
+          "role": "leader"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Visoki_Decani_monastery.jpg?width=800",
+          "caption": "Visoki Dečani — monumental Nemanjić endowment",
+          "alt": "Visoki Dečani — monumental Nemanjić endowment",
+          "role": "art"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Stefan_Dusan_emperor.jpg?width=800",
+          "caption": "Stefan Dušan — Serbian imperial peak",
+          "alt": "Stefan Dušan — Serbian imperial peak",
+          "role": "culture"
         }
       ],
-      "philosophy": "Nemanjić sacred kingship and Hilandar monasticism theorize a Serbian New Constantinople; Dušan's code legislates Orthodox hierarchy."
+      "philosophy": "Symphonia of king and archbishop; translation of Byzantine law into Slavic imperial claim; monastery as archive of legitimacy; Kosovo as theological choice between earthly and heavenly kingdom in later memory."
     },
     {
       "id": "latin-empire",
@@ -27240,9 +27924,33 @@
           "caption": "Carte Thessalonique 1204-ar — Latin Empire & Frankish Greece",
           "alt": "Carte Thessalonique 1204-ar — Latin Empire & Frankish Greece",
           "role": "leader"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Horses_of_Saint_Mark_Venice.jpg?width=800",
+          "caption": "Horses of Saint Mark — Byzantine bronzes taken after 1204",
+          "alt": "Horses of Saint Mark — Byzantine bronzes taken after 1204",
+          "role": "leader"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Mystras_Greece.jpg?width=800",
+          "caption": "Mystras — Byzantine revival above Frankish Morea contests",
+          "alt": "Mystras — Byzantine revival above Frankish Morea contests",
+          "role": "religion"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Acropolis_Frankish_Tower_historic.jpg?width=800",
+          "caption": "Acropolis under Frankish/Florentine lordship memory",
+          "alt": "Acropolis under Frankish/Florentine lordship memory",
+          "role": "art"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Baldwin_I_of_Constantinople.jpg?width=800",
+          "caption": "Baldwin I — first Latin Emperor",
+          "alt": "Baldwin I — first Latin Emperor",
+          "role": "culture"
         }
       ],
-      "philosophy": "Frankish feudalism transplanted onto Roman soil forces crude synthesis of Latin canon law and Byzantine urban custom—short-lived political theology of conquest."
+      "philosophy": "Translatio imperii claimed by a Flemish emperor; canon-law debates over schism and forced obedience; Venetian notion of partitioned Romania as commercial jurisdiction rather than restored Roman universality."
     },
     {
       "id": "ottoman",
@@ -27858,9 +28566,33 @@
           "caption": "C. 1355 Southeastern Europe — Ottoman Sultanate",
           "alt": "C. 1355 Southeastern Europe — Ottoman Sultanate",
           "role": "story"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Ulu_Cami_Bursa_interior.jpg?width=800",
+          "caption": "Ulu Cami, Bursa — early Ottoman congregational mosque",
+          "alt": "Ulu Cami, Bursa — early Ottoman congregational mosque",
+          "role": "leader"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Green_Tomb_Bursa.jpg?width=800",
+          "caption": "Green Tomb, Bursa — early Ottoman dynastic burial art",
+          "alt": "Green Tomb, Bursa — early Ottoman dynastic burial art",
+          "role": "religion"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Edirne_Selimiye_distant.jpg?width=800",
+          "caption": "Edirne landscape — European Ottoman capital after Adrianople",
+          "alt": "Edirne landscape — European Ottoman capital after Adrianople",
+          "role": "art"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Bayezid_I_portrait.jpg?width=800",
+          "caption": "Bayezid I — Thunderbolt sultan of Nicopolis’s age",
+          "alt": "Bayezid I — Thunderbolt sultan of Nicopolis’s age",
+          "role": "culture"
         }
       ],
-      "philosophy": "Ghaza ideology and early Ottoman menakıb cast the sultan as frontier khan and Islamic sovereign; pragmatic incorporation of Christian elites is theory-in-practice."
+      "philosophy": "Ghaza as legitimating ideology; sultan as frontier khan and Islamic sovereign; pragmatic incorporation of Christian soldiers and taxes; waqf urbanism as statecraft."
     },
     {
       "id": "seljuk-rum",
@@ -28108,9 +28840,33 @@
           "caption": "Sultan Kayqubad Kaykubad map Seljuks Rum Anatolia-ar — Sultanate of Rum",
           "alt": "Sultan Kayqubad Kaykubad map Seljuks Rum Anatolia-ar — Sultanate of Rum",
           "role": "story"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Ince_Minareli_Medrese_Konya.jpg?width=800",
+          "caption": "Ince Minareli Madrasa, Konya — Rûm Seljuk learning architecture",
+          "alt": "Ince Minareli Madrasa, Konya — Rûm Seljuk learning architecture",
+          "role": "leader"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Sultan_Han_Aksaray.jpg?width=800",
+          "caption": "Sultan Han — Seljuk caravanserai machine of trade",
+          "alt": "Sultan Han — Seljuk caravanserai machine of trade",
+          "role": "religion"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Mevlana_Museum_Konya.jpg?width=800",
+          "caption": "Mevlana complex, Konya — Rumi’s Sufi legacy",
+          "alt": "Mevlana complex, Konya — Rumi’s Sufi legacy",
+          "role": "art"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Gok_Medrese_Sivas.jpg?width=800",
+          "caption": "Gök Medrese, Sivas — Seljuk portal grandeur",
+          "alt": "Gök Medrese, Sivas — Seljuk portal grandeur",
+          "role": "culture"
         }
       ],
-      "philosophy": "Persianate court ethics and madrasa scholasticism (Konya) fuse with Anatolian frontier Islam; Mevlana's later milieu seeds Sufi metaphysics."
+      "philosophy": "Persianate kingship in a Turcoman land; Sufi ethics of companionship (Rumi); caravan waqf as public infrastructure; accommodation with Mongol world-empire after 1243."
     },
     {
       "id": "papal-states",
@@ -28558,9 +29314,33 @@
           "caption": "Post medieval coin, Quattrino of the Papal States (FindID 786724) — Papal States",
           "alt": "Post medieval coin, Quattrino of the Papal States (FindID 786724) — Papal States",
           "role": "story"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/St_Peters_Basilica_Fair.jpg?width=800",
+          "caption": "St Peter’s — papal Rome’s pilgrimage magnet (later basilica on ancient site)",
+          "alt": "St Peter’s — papal Rome’s pilgrimage magnet (later basilica on ancient site)",
+          "role": "leader"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Pope_Innocent_III.jpg?width=800",
+          "caption": "Innocent III — apex medieval papal monarch",
+          "alt": "Innocent III — apex medieval papal monarch",
+          "role": "religion"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Palais_des_Papes_Avignon.jpg?width=800",
+          "caption": "Palais des Papes, Avignon — exile capital of the curia",
+          "alt": "Palais des Papes, Avignon — exile capital of the curia",
+          "role": "art"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Archbasilica_of_Saint_John_Lateran.jpg?width=800",
+          "caption": "Lateran — cathedral of the Bishop of Rome",
+          "alt": "Lateran — cathedral of the Bishop of Rome",
+          "role": "culture"
         }
       ],
-      "philosophy": "Dictatus Papae to Innocent III: decretals argue universal papal monarchy; Lateran IV sacramental uniformity is philosophy of order as law."
+      "philosophy": "Papal plenitude of power; two-swords theory and its papal readings; canon law as universal appellate system; conciliar stirrings after schism challenge unchecked monarchy."
     },
     {
       "id": "sicily-islamic",
@@ -28828,9 +29608,33 @@
           "caption": "A person walking in the streets of Medieval Palermo during the Emirate — Islamic Sicily",
           "alt": "A person walking in the streets of Medieval Palermo during the Emirate — Islamic Sicily",
           "role": "story"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Cuba_Palace_Palermo.jpg?width=800",
+          "caption": "La Cuba, Palermo — Islamic pleasure-palace type in Sicily",
+          "alt": "La Cuba, Palermo — Islamic pleasure-palace type in Sicily",
+          "role": "leader"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/San_Giovanni_degli_Eremiti_domes.jpg?width=800",
+          "caption": "San Giovanni degli Eremiti — domes remembering Islamic Palermo",
+          "alt": "San Giovanni degli Eremiti — domes remembering Islamic Palermo",
+          "role": "religion"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Zisa_Palermo.jpg?width=800",
+          "caption": "La Zisa — Fatimid–Norman transitional palace hydrology",
+          "alt": "La Zisa — Fatimid–Norman transitional palace hydrology",
+          "role": "art"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Palermo_Arab_Norman_skyline.jpg?width=800",
+          "caption": "Palermo — Arab-Norman layered capital",
+          "alt": "Palermo — Arab-Norman layered capital",
+          "role": "culture"
         }
       ],
-      "philosophy": "Kalbid and earlier Fatimid-linked courts host Arabic science and adab; Sicily as translation hinge before Norman takeover."
+      "philosophy": "Plural confessional hierarchy under Islamic rule; Sicily as hinge between Maghrib and Latin Italy; fiscal sophistication of land tax and harbor dues later reused by Normans."
     },
     {
       "id": "sicily-norman",
@@ -29392,9 +30196,33 @@
           "caption": "The Norman Sicily Project (normansicily.org) — Norman / Hohenstaufen Sicily",
           "alt": "The Norman Sicily Project (normansicily.org) — Norman / Hohenstaufen Sicily",
           "role": "culture"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Cappella_Palatina_ceiling.jpg?width=800",
+          "caption": "Cappella Palatina — Fatimid-style ceiling under Norman kings",
+          "alt": "Cappella Palatina — Fatimid-style ceiling under Norman kings",
+          "role": "leader"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Cathedral_of_Monreale_mosaics.jpg?width=800",
+          "caption": "Monreale mosaics — Norman Sicily’s golden theology",
+          "alt": "Monreale mosaics — Norman Sicily’s golden theology",
+          "role": "religion"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Castel_del_Monte_2011.jpg?width=800",
+          "caption": "Castel del Monte — Frederick II’s geometric fortress",
+          "alt": "Castel del Monte — Frederick II’s geometric fortress",
+          "role": "art"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Roger_II_of_Sicily_invested_by_Christ.jpg?width=800",
+          "caption": "Roger II crowned by Christ — Martorana mosaic ideology",
+          "alt": "Roger II crowned by Christ — Martorana mosaic ideology",
+          "role": "culture"
         }
       ],
-      "philosophy": "Roger II's multi-lingual chancery and later Frederick II's Sicilian legislation model centralized royal law alien to northern feudal custom."
+      "philosophy": "Rex as legislator above custom; sacred kingship comfortable with plural law communities; imperial universalism under Frederick vs papal monarchy; Sicily as model of administrative centralization."
     },
     {
       "id": "naples",
@@ -29737,6 +30565,30 @@
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Naples%20from%20the%20Castello%20Sant%20Elmo%20with%20Abbazia%20San%20Martino%20the%20port%20and%20the%20Vesuv.jpg?width=800",
           "caption": "Naples from the Castello Sant Elmo with Abbazia San Martino the port a — Kingdom of Naples",
           "alt": "Naples from the Castello Sant Elmo with Abbazia San Martino the port a — Kingdom of Naples",
+          "role": "culture"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Castel_Nuovo_Naples.jpg?width=800",
+          "caption": "Castel Nuovo — Angevin royal fortress-harbor of Naples",
+          "alt": "Castel Nuovo — Angevin royal fortress-harbor of Naples",
+          "role": "leader"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Castel_dell_Ovo_Naples.jpg?width=800",
+          "caption": "Castel dell’Ovo — ancient bay fortress of the regno",
+          "alt": "Castel dell’Ovo — ancient bay fortress of the regno",
+          "role": "religion"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Santa_Chiara_Naples.jpg?width=800",
+          "caption": "Santa Chiara — Angevin sacred necropolis",
+          "alt": "Santa Chiara — Angevin sacred necropolis",
+          "role": "art"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Robert_of_Naples_tomb.jpg?width=800",
+          "caption": "Robert the Wise — Angevin learned king memorialized",
+          "alt": "Robert the Wise — Angevin learned king memorialized",
           "role": "culture"
         }
       ],
@@ -31042,9 +31894,33 @@
           "caption": "(Venice) Bocca di Leone in the Doge's Palace — Republic of Venice",
           "alt": "(Venice) Bocca di Leone in the Doge's Palace — Republic of Venice",
           "role": "story"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/St_Marks_Basilica_Venice.jpg?width=800",
+          "caption": "St Mark’s Basilica — Venetian Byzantine hybrid",
+          "alt": "St Mark’s Basilica — Venetian Byzantine hybrid",
+          "role": "leader"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Doges_Palace_Venice.jpg?width=800",
+          "caption": "Doge’s Palace — oligarchic republican theater",
+          "alt": "Doge’s Palace — oligarchic republican theater",
+          "role": "religion"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Venetian_Arsenal.jpg?width=800",
+          "caption": "Venetian Arsenale — mass shipbuilding power",
+          "alt": "Venetian Arsenale — mass shipbuilding power",
+          "role": "art"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Enrico_Dandolo_portrait.jpg?width=800",
+          "caption": "Enrico Dandolo — doge of the Fourth Crusade bargain",
+          "alt": "Enrico Dandolo — doge of the Fourth Crusade bargain",
+          "role": "culture"
         }
       ],
-      "philosophy": "Myth of mixed constitution (Doge, Senate, Great Council) is political philosophy as self-portrait; St Mark's theology sacralizes oligarchic stability."
+      "philosophy": "Mixed constitution myth (doge–senate–people); commercial liberty as civic virtue; colonial law for Greek subjects; secrecy and councils as republican technology."
     },
     {
       "id": "genoa",
@@ -31546,9 +32422,33 @@
           "caption": "Banca Carige Piazza Ferrari Genoa Italy Sep23 A7C 06610 — Republic of Genoa",
           "alt": "Banca Carige Piazza Ferrari Genoa Italy Sep23 A7C 06610 — Republic of Genoa",
           "role": "story"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Cathedral_San_Lorenzo_Genoa.jpg?width=800",
+          "caption": "San Lorenzo, Genoa — civic sacred center",
+          "alt": "San Lorenzo, Genoa — civic sacred center",
+          "role": "leader"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Porto_Antico_Genova.jpg?width=800",
+          "caption": "Genoa’s harbor — thalassocratic heart",
+          "alt": "Genoa’s harbor — thalassocratic heart",
+          "role": "religion"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Lanterna_of_Genoa.jpg?width=800",
+          "caption": "Lanterna — landmark of Genoese maritime identity",
+          "alt": "Lanterna — landmark of Genoese maritime identity",
+          "role": "art"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Andrea_Doria_portrait_Bronzino.jpg?width=800",
+          "caption": "Doria sea-power memory (later portrait of the naval dynasty)",
+          "alt": "Doria sea-power memory (later portrait of the naval dynasty)",
+          "role": "culture"
         }
       ],
-      "philosophy": "Communal statutes and bank of San Giorgio practice argue credit and naval power as civic virtue—republicanism without Florentine eloquence."
+      "philosophy": "Commune as shareholder overseas (maona); public debt as political bond; navigational secrecy vs chart circulation; popular dogate as remedy for aristocratic feud."
     },
     {
       "id": "lombard-communes",
@@ -31878,9 +32778,33 @@
           "caption": "Lombard - img 46628 — Lombard / Padan communes",
           "alt": "Lombard - img 46628 — Lombard / Padan communes",
           "role": "religion"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Legnano_Monument.jpg?width=800",
+          "caption": "Legnano monument — mythos of the Lombard League victory",
+          "alt": "Legnano monument — mythos of the Lombard League victory",
+          "role": "leader"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Bologna_University_Archiginnasio.jpg?width=800",
+          "caption": "Archiginnasio, Bologna — heir of the medieval law studium",
+          "alt": "Archiginnasio, Bologna — heir of the medieval law studium",
+          "role": "religion"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Modena_Cathedral.jpg?width=800",
+          "caption": "Modena Cathedral — Lombard Romanesque civic sacred art",
+          "alt": "Modena Cathedral — Lombard Romanesque civic sacred art",
+          "role": "art"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Carroccio_medieval_depiction.jpg?width=800",
+          "caption": "Carroccio — rolling standard of communal liberty",
+          "alt": "Carroccio — rolling standard of communal liberty",
+          "role": "culture"
         }
       ],
-      "philosophy": "Consular oaths and peace of Constance theorize cities as lawful persons against imperial claims—practical Aristotelian politics avant la lettre."
+      "philosophy": "Consent and oath as bases of government; libertas as urban legal bundle; League federalism against monarchy; the podestà as hired neutral executive—an Italian institutional invention."
     },
     {
       "id": "milan",
@@ -32064,9 +32988,33 @@
           "caption": "Milano, Duomo with Milan Cathedral and Galleria Vittorio Emanuele II,  — Duchy / Lordship of Milan",
           "alt": "Milano, Duomo with Milan Cathedral and Galleria Vittorio Emanuele II,  — Duchy / Lordship of Milan",
           "role": "culture"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Milan_Cathedral_from_Piazza_del_Duomo.jpg?width=800",
+          "caption": "Milan Duomo — Visconti-era Gothic megaproject",
+          "alt": "Milan Duomo — Visconti-era Gothic megaproject",
+          "role": "leader"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Castello_Sforzesco_Milan.jpg?width=800",
+          "caption": "Castello Sforzesco — Visconti/Sforza fortress core",
+          "alt": "Castello Sforzesco — Visconti/Sforza fortress core",
+          "role": "religion"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Gian_Galeazzo_Visconti.jpg?width=800",
+          "caption": "Gian Galeazzo Visconti — nearly king of northern Italy",
+          "alt": "Gian Galeazzo Visconti — nearly king of northern Italy",
+          "role": "art"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/SantAmbrogio_Milan.jpg?width=800",
+          "caption": "Sant’Ambrogio — Ambrosian sacred heart of Milan",
+          "alt": "Sant’Ambrogio — Ambrosian sacred heart of Milan",
+          "role": "culture"
         }
       ],
-      "philosophy": "Communal then Visconti signorial ideology reframes the city as a princely res publica; university law trains administrators of force."
+      "philosophy": "From communal libertas to legitimate signoria; purchased ducal titles as legal varnish; territorial state versus city-state; Ambrosian civic religion under princely rule."
     },
     {
       "id": "florence",
@@ -32324,9 +33272,33 @@
           "caption": "Firenze, corteo storico della Repubblica Fiorentina (161) — Republic of Florence",
           "alt": "Firenze, corteo storico della Repubblica Fiorentina (161) — Republic of Florence",
           "role": "story"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Florence_Cathedral_Santa_Maria_del_Fiore.jpg?width=800",
+          "caption": "Florence Cathedral — communal sacred megastructure",
+          "alt": "Florence Cathedral — communal sacred megastructure",
+          "role": "leader"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Palazzo_Vecchio_Florence.jpg?width=800",
+          "caption": "Palazzo Vecchio — priors’ fortress-palace",
+          "alt": "Palazzo Vecchio — priors’ fortress-palace",
+          "role": "religion"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Giotto_Campanile_Florence.jpg?width=800",
+          "caption": "Giotto’s Campanile — painting mind in architecture",
+          "alt": "Giotto’s Campanile — painting mind in architecture",
+          "role": "art"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Dante_Alighieri_Domenico_di_Michelino.jpg?width=800",
+          "caption": "Dante before Florence — vernacular cosmic politics",
+          "alt": "Dante before Florence — vernacular cosmic politics",
+          "role": "culture"
         }
       ],
-      "philosophy": "Notarial culture and guild statutes precede Renaissance civic humanism; mendicant preaching shapes urban moral philosophy."
+      "philosophy": "Libertas of the popolo against magnates and Milanese tyranny; early civic humanism; money of account and trust; guild corporatism as constitution."
     },
     {
       "id": "kievan-rus",
@@ -32688,9 +33660,33 @@
           "caption": "Kievan-rus-1015-1113-(en) — Kievan Rus’",
           "alt": "Kievan-rus-1015-1113-(en) — Kievan Rus’",
           "role": "culture"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Saint_Sophia_Cathedral_Kiev.jpg?width=800",
+          "caption": "St Sophia, Kyiv — Yaroslav’s Byzantine-facing cathedral",
+          "alt": "St Sophia, Kyiv — Yaroslav’s Byzantine-facing cathedral",
+          "role": "leader"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Vladimir_the_Great.jpg?width=800",
+          "caption": "Vladimir the Great — baptizer of Rus’",
+          "alt": "Vladimir the Great — baptizer of Rus’",
+          "role": "religion"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Kyiv_Pechersk_Lavra.jpg?width=800",
+          "caption": "Kyiv Pechersk Lavra — monastic heart of Rus’ spirituality",
+          "alt": "Kyiv Pechersk Lavra — monastic heart of Rus’ spirituality",
+          "role": "art"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Ostromir_Gospel.jpg?width=800",
+          "caption": "Ostromir Gospel — early East Slavic book art",
+          "alt": "Ostromir Gospel — early East Slavic book art",
+          "role": "culture"
         }
       ],
-      "philosophy": "Primary Chronicle providence and Byzantine imperial models frame Riurikid rule; law codes (Russkaya Pravda) encode Christianizing justice."
+      "philosophy": "Baptism as civilizational alignment; agnatic seniority and izgoi problems in succession theory; monastic chronicle as political theology; steppe diplomacy as permanent statecraft."
     },
     {
       "id": "novgorod",
@@ -33094,9 +34090,33 @@
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Birch_bark_letter_Novgorod.jpg?width=960",
           "caption": "Birchbark letter — everyday literacy of Novgorod",
           "alt": "Birchbark letter — everyday literacy of Novgorod"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Velikiy_Novgorod_St_Sophia.jpg?width=800",
+          "caption": "St Sophia, Novgorod — republican Orthodox core",
+          "alt": "St Sophia, Novgorod — republican Orthodox core",
+          "role": "leader"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Alexander_Nevsky_icon.jpg?width=800",
+          "caption": "Alexander Nevsky — prince of ice-battle memory",
+          "alt": "Alexander Nevsky — prince of ice-battle memory",
+          "role": "religion"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Novgorod_kremlin_wall.jpg?width=800",
+          "caption": "Novgorod Detinets — fortified republican heart",
+          "alt": "Novgorod Detinets — fortified republican heart",
+          "role": "art"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Birch_bark_letter_Novgorod.jpg?width=800",
+          "caption": "Birchbark letter — everyday literacy of Novgorod",
+          "alt": "Birchbark letter — everyday literacy of Novgorod",
+          "role": "culture"
         }
       ],
-      "philosophy": "Veche ideology and archbishopric autonomy sketch a northern republican Christianity against princely claims."
+      "philosophy": "A working theory of mixed constitution: prince as military contractor, boyars as fiscal oligarchy, archbishop as diplomat, veche as noisy ratification. Treaty formulas and ‘liberty’ language anticipate later republican self-descriptions even without Italian communal vocabulary."
     },
     {
       "id": "vladimir-suzdal",
@@ -33256,9 +34276,33 @@
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Andrei_Bogolyubsky.jpg?width=960",
           "caption": "Andrei Bogolyubsky — architect of Vladimir’s primacy",
           "alt": "Andrei Bogolyubsky — architect of Vladimir’s primacy"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Church_of_the_Intercession_on_the_Nerl.jpg?width=800",
+          "caption": "Pokrov on the Nerl — white-stone lyric of Vladimir-Suzdal",
+          "alt": "Pokrov on the Nerl — white-stone lyric of Vladimir-Suzdal",
+          "role": "leader"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Dormition_Cathedral_Vladimir.jpg?width=800",
+          "caption": "Dormition Cathedral, Vladimir — northeastern sacral capital",
+          "alt": "Dormition Cathedral, Vladimir — northeastern sacral capital",
+          "role": "religion"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Suzdal_Kremlin.jpg?width=800",
+          "caption": "Suzdal — princely landscape of the Zalesye",
+          "alt": "Suzdal — princely landscape of the Zalesye",
+          "role": "art"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Andrei_Bogolyubsky.jpg?width=800",
+          "caption": "Andrei Bogolyubsky — architect of Vladimir’s primacy",
+          "alt": "Andrei Bogolyubsky — architect of Vladimir’s primacy",
+          "role": "culture"
         }
       ],
-      "philosophy": "Translatio of Kievan sacral capital northeastward; stone churches argue a new political cosmology after steppe shocks."
+      "philosophy": "Translatio of Rus’ political holiness from Kiev to Vladimir; architecture as proof of sovereignty; dynastic fertility (Vsevolod’s ‘nest’) as both strength and succession trap under steppe overlordship."
     },
     {
       "id": "galicia-volhynia",
@@ -33466,9 +34510,33 @@
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Daniel_of_Galicia.jpg?width=960",
           "caption": "Daniil of Galicia — crowned western Rus’ king",
           "alt": "Daniil of Galicia — crowned western Rus’ king"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Kholm_Che%C5%82m_historic.jpg?width=800",
+          "caption": "Kholm/Chełm region — Daniil’s urban kingship geography",
+          "alt": "Kholm/Chełm region — Daniil’s urban kingship geography",
+          "role": "leader"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Halych_old_capital_site.jpg?width=800",
+          "caption": "Halych — western Rus’ capital memory",
+          "alt": "Halych — western Rus’ capital memory",
+          "role": "religion"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Lubart_Castle_Lutsk.jpg?width=800",
+          "caption": "Lutsk Castle — Volhynian power later under Lithuania",
+          "alt": "Lutsk Castle — Volhynian power later under Lithuania",
+          "role": "art"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Daniel_of_Galicia.jpg?width=800",
+          "caption": "Daniil of Galicia — crowned western Rus’ king",
+          "alt": "Daniil of Galicia — crowned western Rus’ king",
+          "role": "culture"
         }
       ],
-      "philosophy": "Crown-seeking diplomacy between Rome and Orthodoxy makes union theology a survival strategy for a border kingdom."
+      "philosophy": "Royal title as tool of recognition politics; multi-vector diplomacy among papacy, Horde, Hungary, and Poland; western Rus’ as a distinct political theater, not a mere appendix of Kiev or Vladimir."
     },
     {
       "id": "golden-horde",
@@ -33710,9 +34778,33 @@
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Mongol_warriors_Persian_miniature.jpg?width=960",
           "caption": "Mongol warriors — Persian miniature tradition of steppe power",
           "alt": "Mongol warriors — Persian miniature tradition of steppe power"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Golden_Horde_map_illustration.jpg?width=800",
+          "caption": "Golden Horde — steppe imperial geography (historical map art)",
+          "alt": "Golden Horde — steppe imperial geography (historical map art)",
+          "role": "leader"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Batu_Khan.jpg?width=800",
+          "caption": "Batu Khan — founder of the western Mongol ulus",
+          "alt": "Batu Khan — founder of the western Mongol ulus",
+          "role": "religion"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Sarai_Berke_archaeology.jpg?width=800",
+          "caption": "Sarai — Horde urban capital archaeology",
+          "alt": "Sarai — Horde urban capital archaeology",
+          "role": "art"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Mongol_warriors_Persian_miniature.jpg?width=800",
+          "caption": "Mongol warriors — Persian miniature tradition of steppe power",
+          "alt": "Mongol warriors — Persian miniature tradition of steppe power",
+          "role": "culture"
         }
       ],
-      "philosophy": "Steppe imperial practice and Islamicization (Ozbeg) produce a dual register: Chinggisid yasa alongside sharia courts in cities."
+      "philosophy": "Indirect rule through patents; religious pluralism evolving into Islamic state identity; steppe imperial federology that treated Rus’ princes as taxable vassals rather than erased natives."
     },
     {
       "id": "muscovy",
@@ -33908,9 +35000,33 @@
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Kulikovo_Field_memorial.jpg?width=960",
           "caption": "Kulikovo Field — symbolic victory landscape",
           "alt": "Kulikovo Field — symbolic victory landscape"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Moscow_Kremlin_towers.jpg?width=800",
+          "caption": "Moscow Kremlin — emerging Muscovite power core",
+          "alt": "Moscow Kremlin — emerging Muscovite power core",
+          "role": "leader"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Dmitry_Donskoy.jpg?width=800",
+          "caption": "Dmitry Donskoy — Kulikovo’s grand prince",
+          "alt": "Dmitry Donskoy — Kulikovo’s grand prince",
+          "role": "religion"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Trinity_Lavra_of_St_Sergius.jpg?width=800",
+          "caption": "Trinity-St Sergius — monastic ally of Muscovy",
+          "alt": "Trinity-St Sergius — monastic ally of Muscovy",
+          "role": "art"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Kulikovo_Field_memorial.jpg?width=800",
+          "caption": "Kulikovo Field — symbolic victory landscape",
+          "alt": "Kulikovo Field — symbolic victory landscape",
+          "role": "culture"
         }
       ],
-      "philosophy": "Gathering of lands ideology and Third-Rome motifs (later explicit) grow from metropolitan transfer and Mongol-yoke memory."
+      "philosophy": "Gathering of lands as dynastic theology; autocracy incubating inside yarlyk compliance; translatio of Vladimir’s prestige into Moscow’s practical hegemony."
     },
     {
       "id": "lithuania",
@@ -34342,9 +35458,33 @@
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Kernave_mounds.jpg?width=960",
           "caption": "Kernavė mounds — early Lithuanian power landscape",
           "alt": "Kernavė mounds — early Lithuanian power landscape"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Trakai_Island_Castle.jpg?width=800",
+          "caption": "Trakai Island Castle — Gediminid lake fortress mythos",
+          "alt": "Trakai Island Castle — Gediminid lake fortress mythos",
+          "role": "leader"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Gediminas_Tower_Vilnius.jpg?width=800",
+          "caption": "Gediminas Tower, Vilnius — founding duke’s hill",
+          "alt": "Gediminas Tower, Vilnius — founding duke’s hill",
+          "role": "religion"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Vytautas_the_Great.jpg?width=800",
+          "caption": "Vytautas the Great — architect of Lithuanian zenith",
+          "alt": "Vytautas the Great — architect of Lithuanian zenith",
+          "role": "art"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Kernave_mounds.jpg?width=800",
+          "caption": "Kernavė mounds — early Lithuanian power landscape",
+          "alt": "Kernavė mounds — early Lithuanian power landscape",
+          "role": "culture"
         }
       ],
-      "philosophy": "Pagan grand-ducal pluralism then Krewo/Catholic turn force a philosophy of multi-confessional lordship over Ruthenian Orthodox majorities."
+      "philosophy": "Composite monarchy avant la lettre; strategic conversion; religious plurality as imperial adhesive; dynastic union with Poland as anti-Ordensstaat technology."
     },
     {
       "id": "teutonic-order",
@@ -34664,9 +35804,33 @@
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Grunwald_Battle_monument.jpg?width=960",
           "caption": "Grunwald memorial — Poland–Lithuania vs the Order",
           "alt": "Grunwald memorial — Poland–Lithuania vs the Order"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Malbork_Castle_complex.jpg?width=800",
+          "caption": "Marienburg/Malbork — Teutonic capital castle",
+          "alt": "Marienburg/Malbork — Teutonic capital castle",
+          "role": "leader"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Teutonic_Knights_habit.jpg?width=800",
+          "caption": "Teutonic Knights — white mantle, black cross",
+          "alt": "Teutonic Knights — white mantle, black cross",
+          "role": "religion"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Torun_Old_Town.jpg?width=800",
+          "caption": "Toruń — Ordensstaat urban colonization",
+          "alt": "Toruń — Ordensstaat urban colonization",
+          "role": "art"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Grunwald_Battle_monument.jpg?width=800",
+          "caption": "Grunwald memorial — Poland–Lithuania vs the Order",
+          "alt": "Grunwald memorial — Poland–Lithuania vs the Order",
+          "role": "culture"
         }
       ],
-      "philosophy": "Military-monastic rule books sacralize conquest as mission; Prussia becomes a laboratory of crusading state theory."
+      "philosophy": "Perpetual crusade ideology; monastic state theory; legal privileges from Golden Bull of Rimini memory; ethnoreligious hierarchy on the frontier."
     },
     {
       "id": "baltic-tribes",
@@ -35092,6 +36256,30 @@
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Curonian_spit_dunes.jpg?width=960",
           "caption": "Curonian coast — Baltic tribal maritime fringe",
           "alt": "Curonian coast — Baltic tribal maritime fringe"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Baltic_amber.jpg?width=800",
+          "caption": "Baltic amber — ancient trade substance of the coast",
+          "alt": "Baltic amber — ancient trade substance of the coast",
+          "role": "leader"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Prussian_hillfort_earthworks.jpg?width=800",
+          "caption": "Prussian/Baltic hillfort landscape archaeology",
+          "alt": "Prussian/Baltic hillfort landscape archaeology",
+          "role": "religion"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Romuva_sanctuary_artistic.jpg?width=800",
+          "caption": "Baltic sacred-grove tradition (later artistic reconstruction)",
+          "alt": "Baltic sacred-grove tradition (later artistic reconstruction)",
+          "role": "art"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Curonian_spit_dunes.jpg?width=800",
+          "caption": "Curonian coast — Baltic tribal maritime fringe",
+          "alt": "Curonian coast — Baltic tribal maritime fringe",
+          "role": "culture"
         }
       ],
       "philosophy": "Oral sacral kingship and sacred groves (romuva traditions later named) confront mission theology—cosmology recorded mostly by enemies."
@@ -35414,9 +36602,33 @@
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Pontic_steppe_landscape.jpg?width=960",
           "caption": "Pontic steppe — Cuman–Kipchak heartland",
           "alt": "Pontic steppe — Cuman–Kipchak heartland"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Cuman_stone_baba.jpg?width=800",
+          "caption": "Cuman/Kipchak stone baba — steppe memorial sculpture",
+          "alt": "Cuman/Kipchak stone baba — steppe memorial sculpture",
+          "role": "leader"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Kipchak_horse_archer_depiction.jpg?width=800",
+          "caption": "Kipchak horse archer — steppe military art",
+          "alt": "Kipchak horse archer — steppe military art",
+          "role": "religion"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Hungarian_Cuman_memorial.jpg?width=800",
+          "caption": "Kun/Cuman memory in Hungary — refuge diaspora",
+          "alt": "Kun/Cuman memory in Hungary — refuge diaspora",
+          "role": "art"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Pontic_steppe_landscape.jpg?width=800",
+          "caption": "Pontic steppe — Cuman–Kipchak heartland",
+          "alt": "Pontic steppe — Cuman–Kipchak heartland",
+          "role": "culture"
         }
       ],
-      "philosophy": "Steppe shamanic and Tengri-inflected practice meets Christian and Islamic frontiers; political theology is alliance and mobility."
+      "philosophy": "Confederation without capital; military brokerage across Christian frontiers; refugee politics as state transformation (Hungary); steppe memoriality in stone."
     },
     {
       "id": "crusader-states",
@@ -35846,9 +37058,33 @@
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Acre_Old_City_walls.jpg?width=960",
           "caption": "Acre — last mainland capital of the crusader coast",
           "alt": "Acre — last mainland capital of the crusader coast"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Krak_des_Chevaliers_Syria.jpg?width=800",
+          "caption": "Krak des Chevaliers — Hospitaller crusader castle",
+          "alt": "Krak des Chevaliers — Hospitaller crusader castle",
+          "role": "leader"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Church_of_the_Holy_Sepulchre_Jerusalem.jpg?width=800",
+          "caption": "Holy Sepulchre — pilgrimage heart of Outremer",
+          "alt": "Holy Sepulchre — pilgrimage heart of Outremer",
+          "role": "religion"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Melisende_Psalter_ivory.jpg?width=800",
+          "caption": "Melisende Psalter — crusader queenly book art",
+          "alt": "Melisende Psalter — crusader queenly book art",
+          "role": "art"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Acre_Old_City_walls.jpg?width=800",
+          "caption": "Acre — last mainland capital of the crusader coast",
+          "alt": "Acre — last mainland capital of the crusader coast",
+          "role": "culture"
         }
       ],
-      "philosophy": "Latin Outremer jurists adapt feudal custom to Levantine realities; holy-war ideology justifies fragile coastal lordships."
+      "philosophy": "Armed pilgrimage as sovereignty; military-order corporate war; coexistence under hierarchy; the legal imagination of a kingdom in exile after 1187."
     },
     {
       "id": "swiss",
@@ -36264,6 +37500,30 @@
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Swiss_halberd.jpg?width=960",
           "caption": "Swiss halberd — infantry weapon of Confederate fame",
           "alt": "Swiss halberd — infantry weapon of Confederate fame"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Ruetli_meadow.jpg?width=800",
+          "caption": "Rütli meadow — mythical oath landscape of the Confederation",
+          "alt": "Rütli meadow — mythical oath landscape of the Confederation",
+          "role": "leader"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Morgarten_battlefield_region.jpg?width=800",
+          "caption": "Morgarten region — 1315 Habsburg defeat landscape",
+          "alt": "Morgarten region — 1315 Habsburg defeat landscape",
+          "role": "religion"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Sempach_battlefield_chapel.jpg?width=800",
+          "caption": "Sempach — 1386 victory memory",
+          "alt": "Sempach — 1386 victory memory",
+          "role": "art"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Swiss_halberd.jpg?width=800",
+          "caption": "Swiss halberd — infantry weapon of Confederate fame",
+          "alt": "Swiss halberd — infantry weapon of Confederate fame",
+          "role": "culture"
         }
       ],
       "philosophy": "Communal oaths (Eidgenossenschaft) theorize armed peasants as lawful confederates against Habsburg lordship—alpine republican seed."
@@ -36426,9 +37686,33 @@
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Posada_battle_chronicle.jpg?width=960",
           "caption": "Posada (1330) — chronicle image of Basarab’s ambush",
           "alt": "Posada (1330) — chronicle image of Basarab’s ambush"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Curtea_de_Arges_Monastery.jpg?width=800",
+          "caption": "Curtea de Argeș — early Wallachian princely sacred center",
+          "alt": "Curtea de Argeș — early Wallachian princely sacred center",
+          "role": "leader"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Poenari_Castle.jpg?width=800",
+          "caption": "Poenari — Carpathian princely fortress geography",
+          "alt": "Poenari — Carpathian princely fortress geography",
+          "role": "religion"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Mircea_the_Elder.jpg?width=800",
+          "caption": "Mircea the Elder — Wallachia’s late-14th-c. voivode",
+          "alt": "Mircea the Elder — Wallachia’s late-14th-c. voivode",
+          "role": "art"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Posada_battle_chronicle.jpg?width=800",
+          "caption": "Posada (1330) — chronicle image of Basarab’s ambush",
+          "alt": "Posada (1330) — chronicle image of Basarab’s ambush",
+          "role": "culture"
         }
       ],
-      "philosophy": "Orthodox voivodal ideology under Hungarian and Ottoman pressure; law and chronicle cast the prince as shepherd of a border flock."
+      "philosophy": "Voivodal sovereignty under negotiated suzerainty; Orthodoxy as ethnic-political boundary against Latin crowns; frontier realism as statecraft."
     },
     {
       "id": "iceland",
@@ -36956,9 +38240,33 @@
           "caption": "Alhambra",
           "alt": "Alhambra",
           "role": "story"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Thingvellir_Iceland.jpg?width=800",
+          "caption": "Þingvellir — Althing landscape of the commonwealth",
+          "alt": "Þingvellir — Althing landscape of the commonwealth",
+          "role": "leader"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Skolastikk_Snorri_Sturluson.jpg?width=800",
+          "caption": "Snorri Sturluson — chieftain, lawman, saga intellectual",
+          "alt": "Snorri Sturluson — chieftain, lawman, saga intellectual",
+          "role": "religion"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Icelandic_saga_manuscript.jpg?width=800",
+          "caption": "Icelandic saga manuscript — prose art of the north",
+          "alt": "Icelandic saga manuscript — prose art of the north",
+          "role": "art"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Turf_church_Iceland.jpg?width=800",
+          "caption": "Turf church — Christian Iceland’s vernacular sacred building",
+          "alt": "Turf church — Christian Iceland’s vernacular sacred building",
+          "role": "culture"
         }
       ],
-      "philosophy": "Grágás and later Jónsbók preserve a commonwealth legal philosophy without king until Norway's claim; saga ethics debate honor versus law."
+      "philosophy": "Kingless legalism; assembly sovereignty; negotiated conversion; literature as social theory of honor and law; the vulnerability of free constitutions to oligarchic feud."
     }
   ]
 }
