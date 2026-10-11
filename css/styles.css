@@ -1082,6 +1082,19 @@ html[data-theme="dark"] .polity {
   margin-bottom: 0;
 }
 
+/* Deep-time / kingdom: long summaries + overview gallery under the lead prose */
+.polity-panel .polity-summary {
+  white-space: pre-wrap;
+}
+
+#polity-summary-gallery {
+  margin-top: 0.35rem;
+}
+
+.polity-panel[data-scope="region"] .polity-name {
+  font-size: clamp(1.15rem, 2.4vw, 1.55rem);
+}
+
 .polity-block {
   margin-top: 0.35rem;
 }

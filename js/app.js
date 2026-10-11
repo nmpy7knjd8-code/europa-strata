@@ -413,6 +413,24 @@ function setPlainText(el, text) {
   el.textContent = String(text ?? "");
 }
 
+/** Multi-paragraph plain prose (splits on blank lines) for long deep-time / kingdom copy. */
+function setProseText(el, text) {
+  if (!el) return;
+  while (el.firstChild) el.removeChild(el.firstChild);
+  const raw = String(text ?? "").trim();
+  if (!raw) return;
+  const paras = raw.split(/\n\n+/).map((s) => s.trim()).filter(Boolean);
+  if (paras.length <= 1) {
+    el.textContent = raw;
+    return;
+  }
+  paras.forEach((para, i) => {
+    if (i) el.appendChild(document.createElement("br"));
+    el.appendChild(document.createElement("br"));
+    el.appendChild(document.createTextNode(para));
+  });
+}
+
 /** Strip accidental interactive markup if anything else wrote HTML into body fields. */
 function scrubBodyCopyMarkup(root = document) {
   const fields = root.querySelectorAll(
@@ -1925,37 +1943,103 @@ function applyCultureFields(polity) {
   setPolityField("science", polityCultureField(polity, "science"));
 }
 
-/** Region-level culture-fill packs (e.g. neolithic-culture.json) keyed by atlas region. */
+const DEEP_TIME_TEXT_KEYS = [
+  "description",
+  "summary",
+  "narrative",
+  "culture",
+  "art",
+  "ideas",
+  "philosophy",
+  "science",
+  "leaders",
+  "religion",
+  "literature",
+  "conflicts",
+  "story",
+];
+
+/** Region-level culture / full packs keyed by atlas region. */
 function regionCultureSlice(period, regionId) {
   const reg = regionData(period, regionId);
   if (!reg) return null;
   const slice = {};
-  for (const key of ["culture", "art", "ideas", "philosophy", "science"]) {
-    const t = (reg[key] || "").trim();
-    if (t) slice[key] = t;
+  for (const key of DEEP_TIME_TEXT_KEYS) {
+    const v = reg[key];
+    if (typeof v === "string" && v.trim()) slice[key] = v.trim();
+  }
+  if (reg.stories != null) slice.stories = reg.stories;
+  else if (reg.story != null) slice.stories = reg.story;
+  if (Array.isArray(reg.images) && reg.images.length) slice.images = reg.images;
+  if (Array.isArray(reg.vignettes) && reg.vignettes.length) {
+    slice.stories = slice.stories || reg.vignettes;
   }
   return Object.keys(slice).length ? slice : null;
 }
 
-/** Overlay region pack, then layer-specific text when a culture chip is focused. */
+function pickLongestProse(...parts) {
+  let best = "";
+  for (const p of parts) {
+    const t = String(p || "").trim();
+    if (t.length > best.length) best = t;
+  }
+  return best;
+}
+
+/** Overlay region pack + optional focused layer onto a panel source object. */
 function mergeDeepTimeCulture(polity, period) {
   const out = { ...(polity || {}) };
-  const rid = state.selectedRegion || (state.selectedIso ? isoToRegion(state.selectedIso) : null);
+  const rid =
+    state.selectedRegion || (state.selectedIso ? isoToRegion(state.selectedIso) : null);
   const regionSlice = rid ? regionCultureSlice(period, rid) : null;
   if (regionSlice) {
-    for (const key of ["culture", "art", "ideas", "philosophy", "science"]) {
-      if (regionSlice[key]) out[key] = regionSlice[key];
+    for (const key of DEEP_TIME_TEXT_KEYS) {
+      if (regionSlice[key]) {
+        // Prefer longer authored pack prose over shorthand timeline stubs
+        const cur = String(out[key] || "").trim();
+        if (!cur || regionSlice[key].length >= cur.length) out[key] = regionSlice[key];
+      }
+    }
+    if (regionSlice.stories != null) out.stories = regionSlice.stories;
+    if (regionSlice.images) {
+      out.images = mergeImageLists(out.images, regionSlice.images);
     }
   }
   const layerId = state.selectedCultureLayer;
   if (!layerId || !period) return out;
   const layer = (period.mapLayers || []).find((l) => l.id === layerId);
   if (!layer) return out;
-  for (const key of ["art", "ideas", "philosophy", "science"]) {
-    const t = (layer[key] || "").trim();
+  for (const key of ["art", "ideas", "philosophy", "science", "culture", "description"]) {
+    const t = String(layer[key] || "").trim();
     if (t) out[key] = t;
   }
+  if (layer.stories != null) out.stories = layer.stories;
+  if (layer.story != null && out.stories == null) out.stories = layer.story;
+  if (Array.isArray(layer.images) && layer.images.length) {
+    out.images = mergeImageLists(out.images, layer.images);
+  }
   return out;
+}
+
+function mergeImageLists(...lists) {
+  const out = [];
+  const seen = new Set();
+  for (const list of lists) {
+    if (!Array.isArray(list)) continue;
+    for (const img of list) {
+      if (!img || !img.src || seen.has(img.src)) continue;
+      seen.add(img.src);
+      out.push(img);
+    }
+  }
+  return out.length ? out : null;
+}
+
+function deepTimePanelHasContent(source) {
+  if (!source) return false;
+  if (normalizeStoryItems(source.stories || source.story).length) return true;
+  if (Array.isArray(source.images) && source.images.some((i) => i && i.src)) return true;
+  return DEEP_TIME_TEXT_KEYS.some((k) => String(source[k] || "").trim());
 }
 
 function figureHtml(img) {
@@ -2071,9 +2155,12 @@ function inferImageRole(img) {
       "culture",
       "philosophy",
       "science",
+      "overview",
+      "conflict",
+      "summary",
     ].includes(explicit)
   ) {
-    return explicit;
+    return explicit === "summary" ? "overview" : explicit;
   }
   const t = `${img?.caption || ""} ${img?.alt || ""} ${img?.src || ""}`.toLowerCase();
   if (
@@ -2128,6 +2215,7 @@ function fillInlineGallery(el, images) {
 /** Route images into leaders / religion / culture / story / literature / art / philosophy / science */
 function renderPolityGalleries(images) {
   const buckets = {
+    overview: [],
     leader: [],
     religion: [],
     culture: [],
@@ -2137,6 +2225,7 @@ function renderPolityGalleries(images) {
     ideas: [],
     philosophy: [],
     science: [],
+    conflict: [],
   };
   const list = Array.isArray(images) ? images.filter((img) => img && img.src) : [];
   list.forEach((img) => {
@@ -2144,6 +2233,7 @@ function renderPolityGalleries(images) {
     (buckets[role] || buckets.art).push(img);
   });
 
+  fillInlineGallery($("#polity-summary-gallery"), buckets.overview);
   fillInlineGallery($("#polity-leaders-gallery"), buckets.leader);
   fillInlineGallery($("#polity-religion-gallery"), buckets.religion);
   fillInlineGallery($("#polity-culture-gallery"), buckets.culture);
@@ -2153,6 +2243,7 @@ function renderPolityGalleries(images) {
   fillInlineGallery($("#polity-ideas-gallery"), buckets.ideas);
   fillInlineGallery($("#polity-philosophy-gallery"), buckets.philosophy);
   fillInlineGallery($("#polity-science-gallery"), buckets.science);
+  fillInlineGallery($("#polity-conflicts-gallery"), buckets.conflict);
 
   const show = (id, has) => {
     const block = $(id);
@@ -2172,6 +2263,7 @@ function renderPolityGalleries(images) {
   show("#polity-ideas-block", buckets.ideas.length > 0);
   show("#polity-philosophy-block", buckets.philosophy.length > 0);
   show("#polity-science-block", buckets.science.length > 0);
+  show("#polity-conflicts-block", buckets.conflict.length > 0);
 }
 
 function renderKingdomDetail() {
@@ -2220,9 +2312,12 @@ function renderKingdomDetail() {
   if (polityPanel) {
     if (polity) {
       polityPanel.hidden = false;
+      const kicker = $("#polity-panel-kicker");
+      if (kicker) kicker.textContent = "Polity";
+      polityPanel.dataset.scope = "polity";
       setPlainText($("#polity-name"), polity.name || place);
-      setPlainText($("#polity-summary"), polity.summary || "");
-      setPlainText($("#polity-conflicts"), polity.conflicts || "");
+      setProseText($("#polity-summary"), polity.summary || "");
+      setPolityField("conflicts", polity.conflicts);
       setPolityField("leaders", polity.leaders);
       setPolityField("religion", polity.religion);
       setPolityField("culture", polity.culture);
@@ -2324,23 +2419,31 @@ function renderDetail() {
   }
   setPlainText($("#culture-desc"), desc);
 
-  // Polity / region culture panel (Neolithic+ packs may live on atlas regions)
+  // Region panel — same field richness as kingdom tabs once full packs land
   const polityPanel = $("#polity-panel");
   const polity =
     state.selectedIso && period.polities
       ? period.polities[state.selectedIso]
       : null;
-  const regionSlice = regionCultureSlice(period, rid);
   const cultureSource = mergeDeepTimeCulture(polity || {}, period);
-  const hasCulturePanel =
-    !!polity ||
-    !!(
-      regionSlice &&
-      (regionSlice.art || regionSlice.ideas || regionSlice.philosophy || regionSlice.science)
-    );
+  // Always prefer atlas-region culture label when panel is region-scoped
+  if (region?.culture && !String(cultureSource.culture || "").trim()) {
+    cultureSource.culture = region.culture;
+  }
+  const longSummary = pickLongestProse(
+    cultureSource.summary,
+    cultureSource.narrative,
+    cultureSource.description,
+    polity?.summary,
+    region?.description
+  );
+  if (longSummary) cultureSource.summary = longSummary;
+  const hasCulturePanel = deepTimePanelHasContent(cultureSource) || !!polity;
   if (polityPanel) {
     if (hasCulturePanel) {
       polityPanel.hidden = false;
+      const kicker = $("#polity-panel-kicker");
+      if (kicker) kicker.textContent = polity ? "Polity" : "Region";
       const placeName =
         polity?.name ||
         (state.selectedIso
@@ -2350,19 +2453,22 @@ function renderDetail() {
         REGION_LABELS[rid] ||
         "—";
       setPlainText($("#polity-name"), placeName);
-      setPlainText($("#polity-summary"), polity?.summary || region?.description || "");
-      setPlainText($("#polity-conflicts"), polity?.conflicts || "");
-      setPolityField("leaders", polity?.leaders);
-      setPolityField("religion", polity?.religion);
+      setProseText($("#polity-summary"), longSummary || "");
+      setPolityField("conflicts", cultureSource.conflicts || polity?.conflicts);
+      setPolityField("leaders", cultureSource.leaders || polity?.leaders);
+      setPolityField("religion", cultureSource.religion || polity?.religion);
       setPolityField(
         "culture",
-        cultureSource.culture || polity?.culture || regionSlice?.culture
+        cultureSource.culture || polity?.culture || region?.culture
       );
-      setPolityField("story", polity?.stories || polity?.story);
-      setPolityField("literature", polity?.literature);
+      setPolityField(
+        "story",
+        cultureSource.stories || cultureSource.story || polity?.stories || polity?.story
+      );
+      setPolityField("literature", cultureSource.literature || polity?.literature);
       applyCultureFields(cultureSource);
       renderPolityChain(polity);
-      renderPolityGalleries(polity?.images);
+      renderPolityGalleries(cultureSource.images || polity?.images);
     } else {
       polityPanel.hidden = true;
       renderPolityChain(null);
@@ -2702,7 +2808,7 @@ function bindUI() {
 async function loadKingdomPack(id) {
   try {
     // Cache-bust so refined research geometry packs reload after deploy
-    const r = await fetch(`data/kingdom-eras/${id}.json?v=era-ui-45`);
+    const r = await fetch(`data/kingdom-eras/${id}.json?v=era-ui-46`);
     if (!r.ok) return null;
     const raw = await r.json();
     return normalizeKingdomPack(raw);
@@ -2723,7 +2829,7 @@ async function init() {
       loadKingdomPack(id).then((pack) => [id, pack])
     );
     const [timeline, geo, keyEvents, packEntries] = await Promise.all([
-      fetch("data/timeline.json?v=era-ui-45").then((r) => {
+      fetch("data/timeline.json?v=era-ui-46").then((r) => {
         if (!r.ok) throw new Error("timeline");
         return r.json();
       }),
