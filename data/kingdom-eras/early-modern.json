@@ -1629,6 +1629,36 @@
           "caption": "Lavoisier and Marie-Anne — chemistry as courtly modern science",
           "alt": "Lavoisier and Marie-Anne — chemistry as courtly modern science",
           "role": "culture"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Voltaire.jpg?width=640",
+          "caption": "Voltaire — Enlightenment wit",
+          "alt": "Voltaire — Enlightenment wit",
+          "role": "literature"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/1648%20Friedenssaal%20Rathaus%20M%C3%BCnster%20%282%29.jpg?width=640",
+          "caption": "Peace Hall, Münster — Westphalia’s treaty room",
+          "alt": "Peace Hall, Münster — Westphalia’s treaty room",
+          "role": "art"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20of%20Louis%20XIV%20of%20France%20in%20Coronation%20Robes%20%28by%20Hyacinthe%20Rigaud%29%20-%20Louvre%20Museum.jpg?width=640",
+          "caption": "Louis XIV — Rigaud’s state portrait of the Sun King",
+          "alt": "Louis XIV — Rigaud’s state portrait of the Sun King",
+          "role": "leader"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/D%C3%A9tail%20frontispice%20encyclop%C3%A9die%20Diderot%20D%27Alembert.png?width=640",
+          "caption": "Encyclopédie frontispiece — Enlightenment knowledge as public project",
+          "alt": "Encyclopédie frontispiece — Enlightenment knowledge as public project",
+          "role": "literature"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Antoine-Laurent%20Lavoisier%20%281743%E2%80%931794%29%20and%20His%20Wife%20%28Marie-Anne-Pierrette%20Paulze%2C%201758%E2%80%931836%29%20MET%20DT1992.jpg?width=640",
+          "caption": "Lavoisier and Marie-Anne — chemistry as courtly modern science",
+          "alt": "Lavoisier and Marie-Anne — chemistry as courtly modern science",
+          "role": "culture"
         }
       ]
     },
@@ -1941,7 +1971,8 @@
                 54.85
               ]
             ]
-          ]
+          ],
+          "notes": "Kind fixed polygon→multi (island/exclave parts)."
         },
         "1648": {
           "kind": "multi",
@@ -2240,7 +2271,8 @@
                 54.85
               ]
             ]
-          ]
+          ],
+          "notes": "Kind fixed polygon→multi (island/exclave parts)."
         },
         "1700": {
           "kind": "multi",
@@ -2539,7 +2571,8 @@
                 54.85
               ]
             ]
-          ]
+          ],
+          "notes": "Kind fixed polygon→multi (island/exclave parts)."
         }
       },
       "summary": "Stuart kingdom whose civil wars and 1688 settlement invent a limited monarchy with a global commercial reach.",
@@ -2612,6 +2645,42 @@
         },
         {
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Micrographia%20f13%20flea.jpg?width=640",
+          "caption": "Hooke’s flea — Micrographia and the Royal Society’s eye",
+          "alt": "Hooke’s flea — Micrographia and the Royal Society’s eye",
+          "role": "culture"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/William%20III%20of%20England.jpg?width=800",
+          "caption": "William III — stadtholder-king of the Dutch–English alliance",
+          "alt": "William III — stadtholder-king of the Dutch–English alliance",
+          "role": "leader"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Anthonis%20van%20Dyck%20-%20Equestrian%20Portrait%20of%20Charles%20I%20-%20National%20Gallery%2C%20London.jpg?width=640",
+          "caption": "Charles I — Van Dyck’s image of a doomed sacral king",
+          "alt": "Charles I — Van Dyck’s image of a doomed sacral king",
+          "role": "leader"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Isaac%20Newton%20by%20Sir%20Godfrey%20Kneller.jpg?width=640",
+          "caption": "Isaac Newton — Principia-era natural philosophy",
+          "alt": "Isaac Newton — Principia-era natural philosophy",
+          "role": "story"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/London%20-%20St.%20Paul%27s%20Cathedral%20VII.jpg?width=640",
+          "caption": "St Paul’s Cathedral — Wren’s rebuilt London after the Fire",
+          "alt": "St Paul’s Cathedral — Wren’s rebuilt London after the Fire",
+          "role": "art"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Godfrey%20Kneller%20-%20Portrait%20of%20John%20Locke%20%28Hermitage%29.jpg?width=640",
+          "caption": "John Locke — consent and toleration after 1688",
+          "alt": "John Locke — consent and toleration after 1688",
+          "role": "literature"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Flea%20Micrographia%20Hooke.png?width=640",
           "caption": "Hooke’s flea — Micrographia and the Royal Society’s eye",
           "alt": "Hooke’s flea — Micrographia and the Royal Society’s eye",
           "role": "culture"
@@ -2783,7 +2852,8 @@
                 57.672
               ]
             ]
-          ]
+          ],
+          "notes": "Kind fixed polygon→multi (island/exclave parts)."
         },
         "1648": {
           "kind": "multi",
@@ -2938,7 +3008,8 @@
                 57.672
               ]
             ]
-          ]
+          ],
+          "notes": "Kind fixed polygon→multi (island/exclave parts)."
         },
         "1700": {
           "kind": "multi",
@@ -3093,7 +3164,8 @@
                 57.672
               ]
             ]
-          ]
+          ],
+          "notes": "Kind fixed polygon→multi (island/exclave parts)."
         }
       },
       "summary": "Presbyterian kingdom in personal union with England until the 1707 parliamentary merger.",
@@ -3142,6 +3214,48 @@
         },
         {
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/John%20Napier.jpg?width=640",
+          "caption": "John Napier — logarithms from a Scottish mathematical mind",
+          "alt": "John Napier — logarithms from a Scottish mathematical mind",
+          "role": "story"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Edinburgh%20Castle%20dec.23%20%283%29.jpg?width=640",
+          "caption": "Edinburgh Castle — Scottish royal fortress",
+          "alt": "Edinburgh Castle — Scottish royal fortress",
+          "role": "art"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Martin%20Luther%20by%20Cranach-restoration.jpg?width=800",
+          "caption": "Reformation portrait culture — Lutheran/Reformed visual world (Cranach type)",
+          "alt": "Reformation portrait culture — Lutheran/Reformed visual world (Cranach type)",
+          "role": "religion"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/William%20III%20of%20England.jpg?width=800",
+          "caption": "William III — stadtholder-king of the Dutch–English alliance",
+          "alt": "William III — stadtholder-king of the Dutch–English alliance",
+          "role": "leader"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Adam%20de%20Colone%20%28c.1572-1651%29%20-%20James%20VI%20and%20I%20%281566%E2%80%931625%29%2C%20King%20of%20Scotland%20%281567%E2%80%931625%29%2C%20King%20of%20England%20and%20Ireland%20%281603%E2%80%931625%29%20-%20PG%202172%20-%20National%20Galleries%20of%20Scotland.jpg?width=640",
+          "caption": "James VI and I — personal union without political merger",
+          "alt": "James VI and I — personal union without political merger",
+          "role": "leader"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/The%20Signing%20of%20the%20National%20Covenant%20in%20Greyfriars%20Kirkyard%2C%20Edinburgh.jpg?width=640",
+          "caption": "National Covenant (1638) — Presbyterian constitutional revolt",
+          "alt": "National Covenant (1638) — Presbyterian constitutional revolt",
+          "role": "religion"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Edinburgh%20Castle%20dec.23%20%282%29.jpg?width=640",
+          "caption": "Edinburgh Castle — fortress capital of a dual-cultured kingdom",
+          "alt": "Edinburgh Castle — fortress capital of a dual-cultured kingdom",
+          "role": "culture"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Anonymous%20-%20John%20Napier%20of%20Merchiston%2C%201550%20-%201617.%20Discoverer%20of%20logarithms%20-%20PG%202228%20-%20National%20Galleries%20of%20Scotland.jpg?width=640",
           "caption": "John Napier — logarithms from a Scottish mathematical mind",
           "alt": "John Napier — logarithms from a Scottish mathematical mind",
           "role": "story"
@@ -3623,7 +3737,8 @@
                 56.65
               ]
             ]
-          ]
+          ],
+          "notes": "Kind fixed polygon→multi (island/exclave parts)."
         },
         "1789": {
           "kind": "multi",
@@ -4088,7 +4203,8 @@
                 56.65
               ]
             ]
-          ]
+          ],
+          "notes": "Kind fixed polygon→multi (island/exclave parts)."
         }
       },
       "summary": "United Hanoverian kingdom—naval-fiscal superpower of the eighteenth-century Atlantic world.",
@@ -4155,6 +4271,48 @@
         },
         {
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Captainjamescookportrait.jpg?width=640",
+          "caption": "Captain Cook — Pacific voyages as British state science",
+          "alt": "Captain Cook — Pacific voyages as British state science",
+          "role": "literature"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Queen%20Anne.jpg?width=800",
+          "caption": "Queen Anne — last Stuart before Hanoverians",
+          "alt": "Queen Anne — last Stuart before Hanoverians",
+          "role": "leader"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/William%20III%20of%20England.jpg?width=800",
+          "caption": "William III — stadtholder-king of the Dutch–English alliance",
+          "alt": "William III — stadtholder-king of the Dutch–English alliance",
+          "role": "leader"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/After%20Allan%20Ramsay%20%281713-84%29%20-%20George%20III%20%281738-1820%29%20-%20RCIN%20407378%20-%20Royal%20Collection.jpg?width=640",
+          "caption": "George III — Hanoverian monarch of a parliamentary fiscal state",
+          "alt": "George III — Hanoverian monarch of a parliamentary fiscal state",
+          "role": "leader"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Benjamin%20West%2C%20The%20Death%20of%20General%20Wolfe%20%281776%29.jpg?width=640",
+          "caption": "West’s Death of General Wolfe — Seven Years’ War as imperial myth",
+          "alt": "West’s Death of General Wolfe — Seven Years’ War as imperial myth",
+          "role": "art"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Adam%20Smith%2C%201723%20-%201790.%20Political%20economist%20-%20Google%20Art%20Project.jpg?width=640",
+          "caption": "Adam Smith — political economy of commercial Britain",
+          "alt": "Adam Smith — political economy of commercial Britain",
+          "role": "story"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Beechey%20James%20Watt.jpg?width=640",
+          "caption": "James Watt — steam, industry, and Enlightenment engineering",
+          "alt": "James Watt — steam, industry, and Enlightenment engineering",
+          "role": "culture"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Captain-James-Cook.jpg?width=640",
           "caption": "Captain Cook — Pacific voyages as British state science",
           "alt": "Captain Cook — Pacific voyages as British state science",
           "role": "literature"
@@ -4895,6 +5053,42 @@
         },
         {
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Trinity%20College%20Dublin%20Front%20Square.jpg?width=640",
+          "caption": "Trinity College Dublin — Ascendancy learning and science",
+          "alt": "Trinity College Dublin — Ascendancy learning and science",
+          "role": "culture"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Battle%20of%20the%20Boyne.jpg?width=640",
+          "caption": "Battle of the Boyne — Williamite victory",
+          "alt": "Battle of the Boyne — Williamite victory",
+          "role": "art"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/William%20III%20of%20England.jpg?width=800",
+          "caption": "William III — stadtholder-king of the Dutch–English alliance",
+          "alt": "William III — stadtholder-king of the Dutch–English alliance",
+          "role": "leader"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Oliver%20Cromwell%20by%20Samuel%20Cooper.jpg?width=800",
+          "caption": "Oliver Cromwell — Samuel Cooper miniature",
+          "alt": "Oliver Cromwell — Samuel Cooper miniature",
+          "role": "leader"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Dublin%20Custom%20House%20in%202025.jpg?width=640",
+          "caption": "Custom House, Dublin — Georgian capital of a subordinate kingdom",
+          "alt": "Custom House, Dublin — Georgian capital of a subordinate kingdom",
+          "role": "art"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Jervas-JonathanSwift.jpg?width=640",
+          "caption": "Jonathan Swift — colonial satire from Dean of St Patrick’s",
+          "alt": "Jonathan Swift — colonial satire from Dean of St Patrick’s",
+          "role": "literature"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Dublin%20Trinity%20College%20BW%202025-09-09%2011-51-26.jpg?width=640",
           "caption": "Trinity College Dublin — Ascendancy learning and science",
           "alt": "Trinity College Dublin — Ascendancy learning and science",
           "role": "culture"
@@ -6209,6 +6403,36 @@
           "caption": "Charles III — Bourbon reformer of peninsular-Atlantic Spain",
           "alt": "Charles III — Bourbon reformer of peninsular-Atlantic Spain",
           "role": "story"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20of%20Philip%20II%20of%20Spain%20by%20Sofonisba%20Anguissola%20-%20002b.jpg?width=800",
+          "caption": "Philip II of Spain — Sofonisba Anguissola",
+          "alt": "Philip II of Spain — Sofonisba Anguissola",
+          "role": "leader"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Facade%20monastery%20San%20Lorenzo%20de%20El%20Escorial%20Spain.jpg?width=640",
+          "caption": "El Escorial — Habsburg monastic-palace machine",
+          "alt": "El Escorial — Habsburg monastic-palace machine",
+          "role": "religion"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/%28Castre%29%20Philip%20IV%20as%20a%20Hunter%20-%20Velazquez%20-%20Mus%C3%A9e%20Goya.jpg?width=640",
+          "caption": "Philip IV — Velázquez’s weary Habsburg majesty",
+          "alt": "Philip IV — Velázquez’s weary Habsburg majesty",
+          "role": "leader"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Diego%20Vel%C3%A1zquez%20Las%20Meninas%20Die%20Hoffr%C3%A4ulein.jpg?width=640",
+          "caption": "Las Meninas — court looking back at itself",
+          "alt": "Las Meninas — court looking back at itself",
+          "role": "art"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Carlos%20III%20de%20Espa%C3%B1a%2C%20de%20Francisco%20de%20Goya%20%28Banco%20de%20Espa%C3%B1a%29.jpg?width=640",
+          "caption": "Charles III — Bourbon reformer of peninsular-Atlantic Spain",
+          "alt": "Charles III — Bourbon reformer of peninsular-Atlantic Spain",
+          "role": "story"
         }
       ]
     },
@@ -6755,6 +6979,36 @@
           "caption": "Palace-Convent of Mafra — Joanine baroque from Brazilian gold",
           "alt": "Palace-Convent of Mafra — Joanine baroque from Brazilian gold",
           "role": "art"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Convento%20do%20Carmo%20-%20Lisbon%20-%20Portugal%20-%2001.jpg?width=640",
+          "caption": "Carmo Convent ruins — Lisbon after the 1755 earthquake",
+          "alt": "Carmo Convent ruins — Lisbon after the 1755 earthquake",
+          "role": "art"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Henry%20IV%20by%20Pourbus%20%28cropped%29.jpg?width=640",
+          "caption": "Henry IV of France — Pourbus portrait",
+          "alt": "Henry IV of France — Pourbus portrait",
+          "role": "leader"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/D.%20Jo%C3%A3o%20IV%20de%20Portugal%20%28Museu%20de%20%C3%89vora%2C%20ME20%29.png?width=640",
+          "caption": "John IV — Braganza restorer of Portuguese independence",
+          "alt": "John IV — Braganza restorer of Portuguese independence",
+          "role": "leader"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/1755%20Lisbon%20earthquake.jpg?width=640",
+          "caption": "1755 Lisbon earthquake — catastrophe that remade the state",
+          "alt": "1755 Lisbon earthquake — catastrophe that remade the state",
+          "role": "story"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/2025-12-30%20Mafra%20National%20Palace.jpg?width=640",
+          "caption": "Palace-Convent of Mafra — Joanine baroque from Brazilian gold",
+          "alt": "Palace-Convent of Mafra — Joanine baroque from Brazilian gold",
+          "role": "art"
         }
       ]
     },
@@ -6834,6 +7088,18 @@
         },
         {
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Pyr%C3%A9n%C3%A9es%20Atlantiques%20Saint-Jean-Pied-de-Port%2001.jpg?width=640",
+          "caption": "Saint-Jean-Pied-de-Port — gateway town of Lower Navarre",
+          "alt": "Saint-Jean-Pied-de-Port — gateway town of Lower Navarre",
+          "role": "culture"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Henry%20IV%20by%20Pourbus%20%28cropped%29.jpg?width=640",
+          "caption": "Henry IV of France — Pourbus portrait",
+          "alt": "Henry IV of France — Pourbus portrait",
+          "role": "leader"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/00%202786%20Saint%20Jean-Pied-de-Port%2C%20Frankreich%2C.jpg?width=640",
           "caption": "Saint-Jean-Pied-de-Port — gateway town of Lower Navarre",
           "alt": "Saint-Jean-Pied-de-Port — gateway town of Lower Navarre",
           "role": "culture"
@@ -7383,6 +7649,42 @@
           "caption": "Michiel de Ruyter — admiral of a merchant republic at war",
           "alt": "Michiel de Ruyter — admiral of a merchant republic at war",
           "role": "leader"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Caspar%20Netscher%20-%20Johan%20de%20Witt%20%282%29.jpg?width=800",
+          "caption": "Johan de Witt — Grand Pensionary of Holland",
+          "alt": "Johan de Witt — Grand Pensionary of Holland",
+          "role": "leader"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/William%20III%20of%20England.jpg?width=800",
+          "caption": "William III — stadtholder-king of the Dutch–English alliance",
+          "alt": "William III — stadtholder-king of the Dutch–English alliance",
+          "role": "leader"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Baruch%20Spinoza.jpg?width=800",
+          "caption": "Baruch Spinoza — Amsterdam rationalist",
+          "alt": "Baruch Spinoza — Amsterdam rationalist",
+          "role": "art"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Anthonie%20van%20Leeuwenhoek%20%281632-1723%29.%20Natuurkundige%20te%20Delft%20Rijksmuseum%20SK-A-957.jpeg?width=640",
+          "caption": "Antonie van Leeuwenhoek — microscopic worlds from Delft",
+          "alt": "Antonie van Leeuwenhoek — microscopic worlds from Delft",
+          "role": "story"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Anonymous%20-%20Portret%20van%20Baruch%20de%20Spinoza%20-%20MB01920%20-%20Jewish%20Museum.jpg?width=640",
+          "caption": "Baruch Spinoza — radical philosophy from the Republic’s margins",
+          "alt": "Baruch Spinoza — radical philosophy from the Republic’s margins",
+          "role": "literature"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Bol%2C%20Ferdinand%20-%20Portrait%20of%20Michiel%20de%20Ruyter%20-%20Mauritshuis.jpg?width=640",
+          "caption": "Michiel de Ruyter — admiral of a merchant republic at war",
+          "alt": "Michiel de Ruyter — admiral of a merchant republic at war",
+          "role": "leader"
         }
       ]
     },
@@ -7712,6 +8014,42 @@
           "caption": "Grand Place, Brussels — urban heart of the southern provinces",
           "alt": "Grand Place, Brussels — urban heart of the southern provinces",
           "role": "culture"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Peter%20Paul%20Rubens%20-%20Descent%20from%20the%20Cross%20%28Courtauld%29.jpg?width=640",
+          "caption": "Rubens, Descent from the Cross — Antwerp Counter-Reformation",
+          "alt": "Rubens, Descent from the Cross — Antwerp Counter-Reformation",
+          "role": "religion"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20of%20Philip%20II%20of%20Spain%20by%20Sofonisba%20Anguissola%20-%20002b.jpg?width=800",
+          "caption": "Philip II of Spain — Sofonisba Anguissola",
+          "alt": "Philip II of Spain — Sofonisba Anguissola",
+          "role": "leader"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Peter%20Paul%20Rubens%20-%20Self-portrait%20%281623%2C%20NGA%29.jpg?width=640",
+          "caption": "Peter Paul Rubens — painter-diplomat of the Spanish Netherlands",
+          "alt": "Peter Paul Rubens — painter-diplomat of the Spanish Netherlands",
+          "role": "art"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Albert%20de%20Habsbourg.jpg?width=640",
+          "caption": "Archdukes Albert and Isabella — Catholic restoration court",
+          "alt": "Archdukes Albert and Isabella — Catholic restoration court",
+          "role": "leader"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Justus%20Lipsius%20-%20Imagines%20philologorum.jpg?width=640",
+          "caption": "Justus Lipsius — neo-Stoic political thought from Leuven",
+          "alt": "Justus Lipsius — neo-Stoic political thought from Leuven",
+          "role": "story"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Edificios%20en%20la%20Grand-Place%2C%20Bruselas%2C%20B%C3%A9lgica%2C%202021-12-15%2C%20DD%20184-186%20HDR.jpg?width=640",
+          "caption": "Grand Place, Brussels — urban heart of the southern provinces",
+          "alt": "Grand Place, Brussels — urban heart of the southern provinces",
+          "role": "culture"
         }
       ]
     },
@@ -7950,6 +8288,42 @@
         },
         {
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Maria%20Theresia%20as%20widow.jpg?width=640",
+          "caption": "Maria Theresa — Habsburg sovereign of the Austrian Netherlands",
+          "alt": "Maria Theresa — Habsburg sovereign of the Austrian Netherlands",
+          "role": "story"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Emperor%20Joseph%20II%20and%20the%20doctor%20Quarin%20%28engraving%29.jpg?width=800",
+          "caption": "Joseph II — reforming Habsburg emperor",
+          "alt": "Joseph II — reforming Habsburg emperor",
+          "role": "leader"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Peter%20Paul%20Rubens%20-%20Descent%20from%20the%20Cross%20%28Courtauld%29.jpg?width=640",
+          "caption": "Rubens, Descent from the Cross — Antwerp Counter-Reformation",
+          "alt": "Rubens, Descent from the Cross — Antwerp Counter-Reformation",
+          "role": "religion"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Emperor%20Joseph%20II%20and%20the%20doctor%20Quarin%20%28engraving%29.jpg?width=640",
+          "caption": "Joseph II — reforming emperor who provoked Brabant",
+          "alt": "Joseph II — reforming emperor who provoked Brabant",
+          "role": "leader"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Belgique%20-%20Bruxelles%20-%20Statue%20de%20Charles%20de%20Lorraine%20-%2001.JPG?width=640",
+          "caption": "Charles of Lorraine — long-serving governor in Brussels",
+          "alt": "Charles of Lorraine — long-serving governor in Brussels",
+          "role": "culture"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Bruxels%20April%202012-4.jpg?width=640",
+          "caption": "Palace of Brussels — Austrian gubernatorial seat",
+          "alt": "Palace of Brussels — Austrian gubernatorial seat",
+          "role": "art"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Maria%20Theresia%20als%20K%C3%B6nigin%20von%20Ungarn%20zu%20Pferde.jpg?width=640",
           "caption": "Maria Theresa — Habsburg sovereign of the Austrian Netherlands",
           "alt": "Maria Theresa — Habsburg sovereign of the Austrian Netherlands",
           "role": "story"
@@ -9962,6 +10336,54 @@
           "caption": "J. S. Bach — Lutheran musical cosmos inside the Empire",
           "alt": "J. S. Bach — Lutheran musical cosmos inside the Empire",
           "role": "literature"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/1648%20Friedenssaal%20Rathaus%20M%C3%BCnster%20%282%29.jpg?width=640",
+          "caption": "Peace Hall, Münster — Westphalia’s treaty room",
+          "alt": "Peace Hall, Münster — Westphalia’s treaty room",
+          "role": "art"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Christoph%20Bernhard%20Francke%20-%20Bildnis%20des%20Philosophen%20Leibniz%20%28ca.%201695%29.jpg?width=800",
+          "caption": "Gottfried Wilhelm Leibniz — imperial-German polymath",
+          "alt": "Gottfried Wilhelm Leibniz — imperial-German polymath",
+          "role": "art"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Immanuel%20Kant%20-%20Gemaelde%201.jpg?width=800",
+          "caption": "Immanuel Kant — Königsberg philosopher (Prussian orbit)",
+          "alt": "Immanuel Kant — Königsberg philosopher (Prussian orbit)",
+          "role": "art"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Gerard%20ter%20Borch%20Westf%C3%A4lischer%20Friede%20Kopie%20M%C3%BCnster.jpg?width=640",
+          "caption": "Ratification of Münster — Westphalia’s peace theatre",
+          "alt": "Ratification of Münster — Westphalia’s peace theatre",
+          "role": "story"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/02021%200033%20Portrait%20of%20Leopold%20I%2C%20Holy%20Roman%20Emperor%2C%2094%20x%2076.5%2C%2019th%20century%2C%20the%20author%20unknown.jpg?width=640",
+          "caption": "Leopold I — long-reigning baroque emperor",
+          "alt": "Leopold I — long-reigning baroque emperor",
+          "role": "leader"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Vierzehnheiligen%20Basilika-20220304-RM-113739.jpg?width=640",
+          "caption": "Basilica of Vierzehnheiligen — imperial baroque sacred architecture",
+          "alt": "Basilica of Vierzehnheiligen — imperial baroque sacred architecture",
+          "role": "art"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Christoph%20Bernhard%20Francke%20-%20Bildnis%20des%20Philosophen%20Leibniz%20%28ca.%201695%29.jpg?width=640",
+          "caption": "Leibniz — calculus, diplomacy, and imperial science projects",
+          "alt": "Leibniz — calculus, diplomacy, and imperial science projects",
+          "role": "culture"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Bach-1725-Organ.jpg?width=640",
+          "caption": "J. S. Bach — Lutheran musical cosmos inside the Empire",
+          "alt": "J. S. Bach — Lutheran musical cosmos inside the Empire",
+          "role": "literature"
         }
       ]
     },
@@ -11575,6 +11997,48 @@
           "caption": "Belvedere Palace — baroque trophy of Eugene’s Vienna",
           "alt": "Belvedere Palace — baroque trophy of Eugene’s Vienna",
           "role": "art"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Emperor%20Joseph%20II%20and%20the%20doctor%20Quarin%20%28engraving%29.jpg?width=800",
+          "caption": "Joseph II — reforming Habsburg emperor",
+          "alt": "Joseph II — reforming Habsburg emperor",
+          "role": "leader"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Palacio%20de%20Sch%C3%B6nbrunn%2C%20Viena%2C%20Austria%2C%202020-02-02%2C%20DD%2010.jpg?width=640",
+          "caption": "Schönbrunn Palace — Habsburg court splendour",
+          "alt": "Schönbrunn Palace — Habsburg court splendour",
+          "role": "art"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Buda%20Castle.jpg?width=640",
+          "caption": "Buda Castle — Hungarian royal/Habsburg fortress on the Danube",
+          "alt": "Buda Castle — Hungarian royal/Habsburg fortress on the Danube",
+          "role": "art"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Maria%20Theresia%20als%20K%C3%B6nigin%20von%20Ungarn%20zu%20Pferde.jpg?width=640",
+          "caption": "Maria Theresa — monarch who saved and remade the Habsburg core",
+          "alt": "Maria Theresa — monarch who saved and remade the Habsburg core",
+          "role": "leader"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Exterior%20of%20St.%20Stephen%27s%20Cathedral%2C%20Vienna%20%288442125032%29.jpg?width=640",
+          "caption": "St Stephen’s Cathedral, Vienna — sacral skyline of the monarchy",
+          "alt": "St Stephen’s Cathedral, Vienna — sacral skyline of the monarchy",
+          "role": "religion"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Equestrian%20portrait%20of%20Eugene%2C%20Prince%20of%20Savoy%20by%20Jacob%20van%20Schuppen.png?width=640",
+          "caption": "Prince Eugene of Savoy — architect of Ottoman reconquest",
+          "alt": "Prince Eugene of Savoy — architect of Ottoman reconquest",
+          "role": "story"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Belvedere%2C%20Vienna%20September%202016.jpg?width=640",
+          "caption": "Belvedere Palace — baroque trophy of Eugene’s Vienna",
+          "alt": "Belvedere Palace — baroque trophy of Eugene’s Vienna",
+          "role": "art"
         }
       ]
     },
@@ -11661,7 +12125,8 @@
                 55.15
               ]
             ]
-          ]
+          ],
+          "notes": "Kind fixed polygon→multi (island/exclave parts)."
         },
         "1648": {
           "kind": "multi",
@@ -12164,7 +12629,8 @@
                 49.8
               ]
             ]
-          ]
+          ],
+          "notes": "Kind fixed polygon→multi (island/exclave parts)."
         }
       },
       "summary": "Hohenzollern militarized state—from Brandenburg electorate to great power via Silesia and partition.",
@@ -12219,6 +12685,48 @@
         },
         {
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Leonhard%20Euler.jpg?width=640",
+          "caption": "Leonhard Euler — Berlin Academy mathematics under Frederick",
+          "alt": "Leonhard Euler — Berlin Academy mathematics under Frederick",
+          "role": "culture"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Potsdam%20Sanssouci%2007-2017%20img1.jpg?width=640",
+          "caption": "Sanssouci, Potsdam — Prussian Rococo retreat",
+          "alt": "Sanssouci, Potsdam — Prussian Rococo retreat",
+          "role": "art"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Immanuel%20Kant%20-%20Gemaelde%201.jpg?width=800",
+          "caption": "Immanuel Kant — Königsberg philosopher (Prussian orbit)",
+          "alt": "Immanuel Kant — Königsberg philosopher (Prussian orbit)",
+          "role": "art"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Christoph%20Bernhard%20Francke%20-%20Bildnis%20des%20Philosophen%20Leibniz%20%28ca.%201695%29.jpg?width=800",
+          "caption": "Gottfried Wilhelm Leibniz — imperial-German polymath",
+          "alt": "Gottfried Wilhelm Leibniz — imperial-German polymath",
+          "role": "art"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Friedrich%20der%20Gro%C3%9Fe%20%281781%20or%201786%29%20-%20Google%20Art%20Project.jpg?width=640",
+          "caption": "Frederick II — soldier-king of enlightened absolutism",
+          "alt": "Frederick II — soldier-king of enlightened absolutism",
+          "role": "leader"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Schloss%20Sanssouci.jpg?width=640",
+          "caption": "Sanssouci — Frederick’s rococo retreat above a drill state",
+          "alt": "Sanssouci — Frederick’s rococo retreat above a drill state",
+          "role": "art"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Hohenfriedeberg%20-%20Attack%20of%20Prussian%20Infantry%20-%201745.jpg?width=640",
+          "caption": "Prussian infantry — mythos of the drill state at war",
+          "alt": "Prussian infantry — mythos of the drill state at war",
+          "role": "story"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/EulerLeonhard.jpg?width=640",
           "caption": "Leonhard Euler — Berlin Academy mathematics under Frederick",
           "alt": "Leonhard Euler — Berlin Academy mathematics under Frederick",
           "role": "culture"
@@ -13772,6 +14280,42 @@
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Johannes%20Hevelius%20-%20Firmamentum%20Sobiescianum%20sive%20Uranographia%201690.jpg?width=640",
           "caption": "Hevelius’s firmament — Gdańsk astronomy under the Commonwealth",
           "alt": "Hevelius’s firmament — Gdańsk astronomy under the Commonwealth",
+          "role": "art"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Kaiserin%20Maria%20Theresia%20%28HRR%29.jpg?width=800",
+          "caption": "Maria Theresa — Habsburg sovereign",
+          "alt": "Maria Theresa — Habsburg sovereign",
+          "role": "leader"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Buda%20Castle.jpg?width=640",
+          "caption": "Buda Castle — Hungarian royal/Habsburg fortress on the Danube",
+          "alt": "Buda Castle — Hungarian royal/Habsburg fortress on the Danube",
+          "role": "art"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Jan%20Matejko%20-%20Treasury.%20Jan%20III%20Sobieski%2C%20standing%2C%20full-length%20-%20MNK%20MNK%20IX-27019%20-%20National%20Museum%20Krak%C3%B3w.jpg?width=640",
+          "caption": "John III Sobieski — victor of Vienna from a fading commonwealth",
+          "alt": "John III Sobieski — victor of Vienna from a fading commonwealth",
+          "role": "leader"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Anonymous%20Equestrian%20portrait%20of%20John%20III%20Sobieski%20%28detail%29.jpg?width=640",
+          "caption": "Sobieski after Vienna — last great Polish intervention in imperial war",
+          "alt": "Sobieski after Vienna — last great Polish intervention in imperial war",
+          "role": "story"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Krakow%202024%20203%20MNK%20Czartoryski%20Museum%20-%20Stanis%C5%82aw%20II%20Poniatowski%20Portrait.jpg?width=640",
+          "caption": "Stanisław August Poniatowski — enlightened king under partition shadow",
+          "alt": "Stanisław August Poniatowski — enlightened king under partition shadow",
+          "role": "culture"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Johannes%20%26%20Elisabetha%20Hevelius%20Octant%201673.png?width=640",
+          "caption": "Hevelius’s astronomy — Gdańsk science under the Commonwealth",
+          "alt": "Hevelius’s astronomy — Gdańsk science under the Commonwealth",
           "role": "art"
         }
       ]
@@ -15792,6 +16336,42 @@
           "caption": "Stockholm Royal Palace — Tessin’s baroque state face",
           "alt": "Stockholm Royal Palace — Tessin’s baroque state face",
           "role": "art"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Royal%20Castle%20in%20Stockholm%20%28by%20Pudelek%29.jpg?width=640",
+          "caption": "Stockholm Palace — Swedish royal seat",
+          "alt": "Stockholm Palace — Swedish royal seat",
+          "role": "art"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/1648%20Friedenssaal%20Rathaus%20M%C3%BCnster%20%282%29.jpg?width=640",
+          "caption": "Peace Hall, Münster — Westphalia’s treaty room",
+          "alt": "Peace Hall, Münster — Westphalia’s treaty room",
+          "role": "art"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Anton%20Schoonjans%20-%20Pasticcio%20portrait%20of%20Emperor%20Peter%20the%20Great%20of%20Russia.jpg?width=640",
+          "caption": "Peter the Great — imperial portrait type",
+          "alt": "Peter the Great — imperial portrait type",
+          "role": "leader"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Attributed%20to%20Jacob%20Hoefnagel%20-%20Gustavus%20Adolphus%2C%20King%20of%20Sweden%201611-1632%20-%20Google%20Art%20Project.jpg?width=640",
+          "caption": "Gustavus Adolphus — Protestant lion of the Thirty Years’ War",
+          "alt": "Gustavus Adolphus — Protestant lion of the Thirty Years’ War",
+          "role": "leader"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Carolus%20Linnaeus%20%28cleaned%20up%20version%29.jpg?width=640",
+          "caption": "Carl Linnaeus — Swedish science as European language of nature",
+          "alt": "Carl Linnaeus — Swedish science as European language of nature",
+          "role": "story"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Andreas%20M%C3%B6ller%20-%20Portrait%20of%20a%20young%20Charles%20XII%20of%20Sweden%2C%20miniature%2C%201715.jpg?width=640",
+          "caption": "Charles XII — last warrior-king of the Swedish Empire",
+          "alt": "Charles XII — last warrior-king of the Swedish Empire",
+          "role": "culture"
         }
       ]
     },
@@ -16216,7 +16796,8 @@
                 69.908
               ]
             ]
-          ]
+          ],
+          "notes": "Kind fixed polygon→multi (island/exclave parts)."
         },
         "1648": {
           "kind": "multi",
@@ -16627,7 +17208,8 @@
                 69.908
               ]
             ]
-          ]
+          ],
+          "notes": "Kind fixed polygon→multi (island/exclave parts)."
         },
         "1700": {
           "kind": "multi",
@@ -17038,7 +17620,8 @@
                 68.561
               ]
             ]
-          ]
+          ],
+          "notes": "Kind fixed polygon→multi (island/exclave parts)."
         },
         "1750": {
           "kind": "multi",
@@ -17449,7 +18032,8 @@
                 68.561
               ]
             ]
-          ]
+          ],
+          "notes": "Kind fixed polygon→multi (island/exclave parts)."
         },
         "1789": {
           "kind": "multi",
@@ -17860,7 +18444,8 @@
                 68.561
               ]
             ]
-          ]
+          ],
+          "notes": "Kind fixed polygon→multi (island/exclave parts)."
         }
       },
       "summary": "Oldenburg dual monarchy—Sound Toll power reduced after Swedish ascendancy, absolutist after 1660.",
@@ -17909,6 +18494,30 @@
         },
         {
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Rosenborg%20Slot%20Copenhagen.jpg?width=640",
+          "caption": "Rosenborg Castle — Copenhagen face of Oldenburg monarchy",
+          "alt": "Rosenborg Castle — Copenhagen face of Oldenburg monarchy",
+          "role": "art"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Rosenborg%20Castle%20Copenhagen%201.jpg?width=640",
+          "caption": "Rosenborg Castle, Copenhagen — Christian IV’s jewel",
+          "alt": "Rosenborg Castle, Copenhagen — Christian IV’s jewel",
+          "role": "art"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/1644%20Propaganda%20Print%20of%20Christian%20IV%20and%20Lennart%20Torstensson.jpg?width=640",
+          "caption": "Christian IV — ambitious Oldenburg king before Swedish ascendancy",
+          "alt": "Christian IV — ambitious Oldenburg king before Swedish ascendancy",
+          "role": "leader"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Ole-R%C3%B8mer%20DSC03216.jpg?width=640",
+          "caption": "Ole Rømer — measuring the speed of light from Danish astronomy",
+          "alt": "Ole Rømer — measuring the speed of light from Danish astronomy",
+          "role": "story"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Copenhagen%2C%20view%20from%20Rundet%C3%A5rn%20with%20Rosenborg%20Castle%2C%2020220617%201004%206716.jpg?width=640",
           "caption": "Rosenborg Castle — Copenhagen face of Oldenburg monarchy",
           "alt": "Rosenborg Castle — Copenhagen face of Oldenburg monarchy",
           "role": "art"
@@ -19730,7 +20339,8 @@
                 58.451
               ]
             ]
-          ]
+          ],
+          "notes": "Kind fixed polygon→multi (island/exclave parts)."
         }
       },
       "summary": "From Muscovite tsardom after Troubles to Catherinian empire spanning Baltic, Poland, and Black Sea.",
@@ -19785,6 +20395,42 @@
         },
         {
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Lomonosov%20by%20L.Miropolskiy%20after%20G.K.Prenner%20%281787%2C%20RAN%29.jpg?width=640",
+          "caption": "Mikhail Lomonosov — Academy science in Russian idiom",
+          "alt": "Mikhail Lomonosov — Academy science in Russian idiom",
+          "role": "culture"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Anton%20Schoonjans%20-%20Pasticcio%20portrait%20of%20Emperor%20Peter%20the%20Great%20of%20Russia.jpg?width=640",
+          "caption": "Peter the Great — imperial portrait type",
+          "alt": "Peter the Great — imperial portrait type",
+          "role": "leader"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/RUS-2016-Aerial-SPB-Winter%20Palace%20%28crop%29.jpg?width=640",
+          "caption": "Winter Palace — imperial Petersburg",
+          "alt": "Winter Palace — imperial Petersburg",
+          "role": "art"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Andrey%20Rublev%20-%20%D0%A1%D0%B2.%20%D0%A2%D1%80%D0%BE%D0%B8%D1%86%D0%B0%20-%20Google%20Art%20Project.jpg?width=800",
+          "caption": "Rublev Trinity — Orthodox visual theology",
+          "alt": "Rublev Trinity — Orthodox visual theology",
+          "role": "religion"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Voltaire.jpg?width=640",
+          "caption": "Voltaire — Enlightenment wit",
+          "alt": "Voltaire — Enlightenment wit",
+          "role": "literature"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Catherine%20II%20after%20Roslin%2C%20Rokotov%20%281780s%2C%20Kunsthistorisches%20Museum%29.jpg?width=640",
+          "caption": "Catherine II — empire, Enlightenment correspondence, and partitions",
+          "alt": "Catherine II — empire, Enlightenment correspondence, and partitions",
+          "role": "story"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Lomonosov%20Mikhail%20Vasilievich.jpg?width=640",
           "caption": "Mikhail Lomonosov — Academy science in Russian idiom",
           "alt": "Mikhail Lomonosov — Academy science in Russian idiom",
           "role": "culture"
@@ -21441,6 +22087,42 @@
           "caption": "Sultan Ahmed Mosque — classical Ottoman sacred architecture",
           "alt": "Sultan Ahmed Mosque — classical Ottoman sacred architecture",
           "role": "art"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Christ%20Pantocrator%20mosaic%20from%20Hagia%20Sophia%202744%20x%202900%20pixels%203.1%20MB.jpg?width=640",
+          "caption": "Christ Pantocrator, Hagia Sophia — Byzantine inheritance under Ottoman roof",
+          "alt": "Christ Pantocrator, Hagia Sophia — Byzantine inheritance under Ottoman roof",
+          "role": "religion"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Buda%20Castle.jpg?width=640",
+          "caption": "Buda Castle — Hungarian royal/Habsburg fortress on the Danube",
+          "alt": "Buda Castle — Hungarian royal/Habsburg fortress on the Danube",
+          "role": "art"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Kanuni%20Sultan%20Suleiman%20Han%20-%20%D8%A7%D9%84%D8%B3%D9%84%D8%B7%D8%A7%D9%86%20%D8%A7%D9%84%D8%BA%D8%A7%D8%B2%D9%8A%20%D8%B3%D9%84%D9%8A%D9%85%D8%A7%D9%86%20%D8%A7%D9%84%D9%82%D8%A7%D9%86%D9%88%D9%86%D9%8A.jpg?width=640",
+          "caption": "Ottoman imperial portrait tradition — majesty’s long shadow",
+          "alt": "Ottoman imperial portrait tradition — majesty’s long shadow",
+          "role": "leader"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Exterior%20of%20Hagia%20Sophia%20%281%29%20-%20Istanbul%20%282022%29.jpg?width=640",
+          "caption": "Hagia Sophia as mosque — imperial Islam in the old Roman capital",
+          "alt": "Hagia Sophia as mosque — imperial Islam in the old Roman capital",
+          "role": "religion"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Serafimovski%20-%20Evliya%20%C3%87elebi.jpg?width=640",
+          "caption": "Evliya Çelebi — traveler-encyclopedist of the Ottoman world",
+          "alt": "Evliya Çelebi — traveler-encyclopedist of the Ottoman world",
+          "role": "literature"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Abdullah%20fr%C3%A8res%20-%20Sultan%20Ahmet%20camii%2C%20Istanbul.jpg?width=640",
+          "caption": "Sultan Ahmed Mosque — classical Ottoman sacred architecture",
+          "alt": "Sultan Ahmed Mosque — classical Ottoman sacred architecture",
+          "role": "art"
         }
       ]
     },
@@ -21786,6 +22468,36 @@
           "caption": "Ferdinand II — Habsburg king driving Catholic restoration",
           "alt": "Ferdinand II — Habsburg king driving Catholic restoration",
           "role": "leader"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Buda%20Castle.jpg?width=640",
+          "caption": "Buda Castle — Hungarian royal/Habsburg fortress on the Danube",
+          "alt": "Buda Castle — Hungarian royal/Habsburg fortress on the Danube",
+          "role": "art"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Bratislava%20Castle%2C%2020210727%201004%200250.jpg?width=640",
+          "caption": "Pressburg/Bratislava Castle — coronation city of Royal Hungary",
+          "alt": "Pressburg/Bratislava Castle — coronation city of Royal Hungary",
+          "role": "culture"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/A%20Szent%20Korona%20el%C3%B6lr%C5%91l%202.jpg?width=640",
+          "caption": "Holy Crown of Hungary — legal soul of a partitioned kingdom",
+          "alt": "Holy Crown of Hungary — legal soul of a partitioned kingdom",
+          "role": "story"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Castle%20of%20Eger%202008%20%281%29%2002.jpg?width=640",
+          "caption": "Eger Castle — fortress memory of the Ottoman frontier",
+          "alt": "Eger Castle — fortress memory of the Ottoman frontier",
+          "role": "art"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Ferdinand%20II%2C%20Holy%20Roman%20Emperor%20%28Giovanni%20Pietro%20de%20Pomis%2C%201619%29.jpg?width=640",
+          "caption": "Ferdinand II — Habsburg king driving Catholic restoration",
+          "alt": "Ferdinand II — Habsburg king driving Catholic restoration",
+          "role": "leader"
         }
       ]
     },
@@ -21979,6 +22691,36 @@
           "caption": "Diploma Leopoldinum — Habsburg terms ending old autonomy paths",
           "alt": "Diploma Leopoldinum — Habsburg terms ending old autonomy paths",
           "role": "story"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Buda%20Castle.jpg?width=640",
+          "caption": "Buda Castle — Hungarian royal/Habsburg fortress on the Danube",
+          "alt": "Buda Castle — Hungarian royal/Habsburg fortress on the Danube",
+          "role": "art"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/1648%20Friedenssaal%20Rathaus%20M%C3%BCnster%20%282%29.jpg?width=640",
+          "caption": "Peace Hall, Münster — Westphalia’s treaty room",
+          "alt": "Peace Hall, Münster — Westphalia’s treaty room",
+          "role": "art"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/05072-Budapest-1904-Bethlen%20Gabor%20-%20Gabriel%20Bethlen-Br%C3%BCck%20%26%20Sohn%20Kunstverlag.jpg?width=640",
+          "caption": "Gábor Bethlen — Transylvanian prince as Thirty Years’ War broker",
+          "alt": "Gábor Bethlen — Transylvanian prince as Thirty Years’ War broker",
+          "role": "leader"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Alba%20Iulia%20%28Gyulafeh%C3%A9rv%C3%A1r%2C%20Karlsburg%29%20-%20Orthodox%20Cathedral.jpg?width=640",
+          "caption": "Alba Iulia — princely and ecclesiastical capital",
+          "alt": "Alba Iulia — princely and ecclesiastical capital",
+          "role": "religion"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Biertan%20%281964%29.jpg?width=640",
+          "caption": "Biertan fortified church — Saxon Transylvanian sacred architecture",
+          "alt": "Biertan fortified church — Saxon Transylvanian sacred architecture",
+          "role": "art"
         }
       ]
     },
@@ -22293,6 +23035,42 @@
           "caption": "Comenius — Bohemian exile pedagogy for Europe",
           "alt": "Comenius — Bohemian exile pedagogy for Europe",
           "role": "story"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Johann%20Sebastian%20Bach.jpg?width=800",
+          "caption": "J. S. Bach — Lutheran Baroque polyphony",
+          "alt": "J. S. Bach — Lutheran Baroque polyphony",
+          "role": "art"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/1648%20Friedenssaal%20Rathaus%20M%C3%BCnster%20%282%29.jpg?width=640",
+          "caption": "Peace Hall, Münster — Westphalia’s treaty room",
+          "alt": "Peace Hall, Münster — Westphalia’s treaty room",
+          "role": "art"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Charles%20Bridge%20Covid.jpg?width=640",
+          "caption": "Charles Bridge, Prague — baroque saints on a medieval span",
+          "alt": "Charles Bridge, Prague — baroque saints on a medieval span",
+          "role": "art"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Hendrik%20Cornelisz.%20Vroom%20-%20The%20Arrival%20of%20Elector%20Frederick%20V%20of%20the%20Palatinate%20and%20Elizabeth%20Stuart.jpg?width=640",
+          "caption": "Frederick V — Winter King of the Bohemian Revolt",
+          "alt": "Frederick V — Winter King of the Bohemian Revolt",
+          "role": "leader"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Comenius%20by%20George%20Glover.jpg?width=640",
+          "caption": "Comenius — Bohemian exile pedagogy for Europe",
+          "alt": "Comenius — Bohemian exile pedagogy for Europe",
+          "role": "story"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/The%20Battle%20of%20White%20Mountain%20%28by%20Peter%20Snayers%29.jpg?width=640",
+          "caption": "Battle of White Mountain — end of the Bohemian estate revolt",
+          "alt": "Battle of White Mountain — end of the Bohemian estate revolt",
+          "role": "culture"
         }
       ]
     },
@@ -22778,6 +23556,42 @@
           "caption": "Alpine wall — landscape that underwrote Swiss particularism",
           "alt": "Alpine wall — landscape that underwrote Swiss particularism",
           "role": "art"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Martin%20Luther%20by%20Cranach-restoration.jpg?width=800",
+          "caption": "Reformation portrait culture — Lutheran/Reformed visual world (Cranach type)",
+          "alt": "Reformation portrait culture — Lutheran/Reformed visual world (Cranach type)",
+          "role": "religion"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/95Thesen.jpg?width=640",
+          "caption": "Ninety-five Theses print culture — Reformed Europe’s paper war",
+          "alt": "Ninety-five Theses print culture — Reformed Europe’s paper war",
+          "role": "religion"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/1648%20Friedenssaal%20Rathaus%20M%C3%BCnster%20%282%29.jpg?width=640",
+          "caption": "Peace Hall, Münster — Westphalia’s treaty room",
+          "alt": "Peace Hall, Münster — Westphalia’s treaty room",
+          "role": "art"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Heiliggeistkirche%20Bern%2C%20Tagsatzung%201847.jpg?width=640",
+          "caption": "Tagsatzung tradition — diet diplomacy of the Confederation",
+          "alt": "Tagsatzung tradition — diet diplomacy of the Confederation",
+          "role": "story"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Jacob%20II%20Bernoulli.jpeg?width=640",
+          "caption": "Jacob Bernoulli — Basel mathematics in a cantonal republic",
+          "alt": "Jacob Bernoulli — Basel mathematics in a cantonal republic",
+          "role": "culture"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/008%20Milky%20way%20aligned%20with%20the%20Matterhorn%20reflecting%20in%20Stellisee%20Photo%20by%20Giles%20Laurent.jpg?width=640",
+          "caption": "Alpine wall — landscape that underwrote Swiss particularism",
+          "alt": "Alpine wall — landscape that underwrote Swiss particularism",
+          "role": "art"
         }
       ]
     },
@@ -22880,7 +23694,8 @@
                 35.656
               ]
             ]
-          ]
+          ],
+          "notes": "Kind fixed polygon→multi (island/exclave parts)."
         },
         "1648": {
           "kind": "multi",
@@ -22969,7 +23784,8 @@
                 35.656
               ]
             ]
-          ]
+          ],
+          "notes": "Kind fixed polygon→multi (island/exclave parts)."
         },
         "1700": {
           "kind": "polygon",
@@ -23191,6 +24007,42 @@
         },
         {
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Teatro%20Anatomico%20Padova.jpg?width=640",
+          "caption": "Padua anatomical theatre — science under the Lion of St Mark",
+          "alt": "Padua anatomical theatre — science under the Lion of St Mark",
+          "role": "literature"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/%28Venice%29%20Veduta%20del%20Canal%20Grande%20dalla%20Punta%20della%20Dogana%20-%20Bernardo%20Bellotto.jpg?width=640",
+          "caption": "Grand Canal from the Punta della Dogana — Venetian veduta",
+          "alt": "Grand Canal from the Punta della Dogana — Venetian veduta",
+          "role": "art"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/The%20Calling%20of%20Saint%20Matthew-Caravaggo%20%281599-1600%29.jpg?width=640",
+          "caption": "Caravaggio’s sacred drama — Italian Baroque light as theology",
+          "alt": "Caravaggio’s sacred drama — Italian Baroque light as theology",
+          "role": "religion"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Canaletto%2C%20The%20Bucintoro%20at%20the%20Molo%20on%20Ascension%20Day%2C%20c.%201732.jpg?width=640",
+          "caption": "Canaletto’s Venice — ritual and veduta of a maritime republic",
+          "alt": "Canaletto’s Venice — ritual and veduta of a maritime republic",
+          "role": "art"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/%28Venice%29%20Bocca%20di%20Leone%20in%20the%20Doge%27s%20Palace.jpg?width=640",
+          "caption": "Doge’s Palace — oligarchic theatre of the lagoon state",
+          "alt": "Doge’s Palace — oligarchic theatre of the lagoon state",
+          "role": "culture"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Paolo%20Sarpi.%20Maffeis%20sculp.jpg?width=640",
+          "caption": "Paolo Sarpi — Venetian defender of republic against Rome",
+          "alt": "Paolo Sarpi — Venetian defender of republic against Rome",
+          "role": "story"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Anatomical%20theatre%20at%20Padua%2C%20Diorama%20Wellcome%20L0002790.jpg?width=640",
           "caption": "Padua anatomical theatre — science under the Lion of St Mark",
           "alt": "Padua anatomical theatre — science under the Lion of St Mark",
           "role": "literature"
@@ -23474,6 +24326,36 @@
           "caption": "Cesare Beccaria — crimes, punishments, and Tuscan reform fame",
           "alt": "Cesare Beccaria — crimes, punishments, and Tuscan reform fame",
           "role": "literature"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Brunelleschi%27s%20Dome%2C%20Florence%20Cathedral.jpg?width=640",
+          "caption": "Brunelleschi’s dome, Florence — Medici grand-ducal skyline",
+          "alt": "Brunelleschi’s dome, Florence — Medici grand-ducal skyline",
+          "role": "art"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Cosimo%20III.%20de%27%20Medici%2C%20documento%201699.jpg?width=640",
+          "caption": "Cosimo III — late Medici grand duke",
+          "alt": "Cosimo III — late Medici grand duke",
+          "role": "leader"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/1635%20Justus-Suttermans%20Galileo-Galilei.jpg?width=640",
+          "caption": "Galileo — Tuscan scientific memory of the early modern mind",
+          "alt": "Galileo — Tuscan scientific memory of the early modern mind",
+          "role": "story"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Galer%C3%ADa%20Uffizi%2C%20Florencia%2C%20Italia%2C%202022-09-18%2C%20DD%2072.jpg?width=640",
+          "caption": "Uffizi — Medici collecting become public gallery myth",
+          "alt": "Uffizi — Medici collecting become public gallery myth",
+          "role": "art"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Cesare%20Beccaria.%20S.%20Maffeis%20sculp.jpg?width=640",
+          "caption": "Cesare Beccaria — crimes, punishments, and Tuscan reform fame",
+          "alt": "Cesare Beccaria — crimes, punishments, and Tuscan reform fame",
+          "role": "literature"
         }
       ]
     },
@@ -23705,6 +24587,36 @@
         },
         {
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Cesare%20Beccaria.jpg?width=640",
+          "caption": "Beccaria of Milan — utilitarian justice from Lombardy",
+          "alt": "Beccaria of Milan — utilitarian justice from Lombardy",
+          "role": "story"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Ritratto%20del%20Cardinal%20Carlo%20Borromeo.jpg?width=640",
+          "caption": "Saint Charles Borromeo — Milanese Counter-Reformation model",
+          "alt": "Saint Charles Borromeo — Milanese Counter-Reformation model",
+          "role": "religion"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Duomo%20Di%20Milano%2C%20Front%20Facade%2C%20Milan%2C%20Italy.jpg?width=640",
+          "caption": "Milan Cathedral — unfinished Gothic heart of a Habsburg duchy",
+          "alt": "Milan Cathedral — unfinished Gothic heart of a Habsburg duchy",
+          "role": "art"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Carlo%20Borromeo.jpg?width=640",
+          "caption": "Charles Borromeo — Counter-Reformation memory over Milan",
+          "alt": "Charles Borromeo — Counter-Reformation memory over Milan",
+          "role": "religion"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Kaiserin%20Maria%20Theresia%20%28HRR%29.jpg?width=640",
+          "caption": "Maria Theresa — Austrian reformer of Lombard administration",
+          "alt": "Maria Theresa — Austrian reformer of Lombard administration",
+          "role": "leader"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Cesare%20Beccaria.%20S.%20Maffeis%20sculp.jpg?width=640",
           "caption": "Beccaria of Milan — utilitarian justice from Lombardy",
           "alt": "Beccaria of Milan — utilitarian justice from Lombardy",
           "role": "story"
@@ -24113,6 +25025,30 @@
           "caption": "Athanasius Kircher — Jesuit museum science in Baroque Rome",
           "alt": "Athanasius Kircher — Jesuit museum science in Baroque Rome",
           "role": "story"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Basilica%20di%20San%20Pietro%20in%20Vaticano%20September%202015-1a.jpg?width=800",
+          "caption": "St Peter’s Basilica — papal Baroque Rome",
+          "alt": "St Peter’s Basilica — papal Baroque Rome",
+          "role": "religion"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/1-Rome-Vatican-st-peters-square-DSC%200106.jpg?width=640",
+          "caption": "St Peter’s Square — Bernini’s arms of the papal capital",
+          "alt": "St Peter’s Square — Bernini’s arms of the papal capital",
+          "role": "art"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Batoni%20Pope%20Pius%20VI.jpg?width=640",
+          "caption": "Pius VI — late ancien-régime papal monarch",
+          "alt": "Pius VI — late ancien-régime papal monarch",
+          "role": "leader"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Bernini%20Ecstasy%20of%20St%20Teresa%20Terracotta%20Model%20Hermitage.jpg?width=640",
+          "caption": "Bernini’s Ecstasy of Saint Teresa — baroque faith as theatre",
+          "alt": "Bernini’s Ecstasy of Saint Teresa — baroque faith as theatre",
+          "role": "religion"
         }
       ]
     },
@@ -24586,6 +25522,48 @@
           "caption": "Vesuvius over Naples — nature as perpetual civic science problem",
           "alt": "Vesuvius over Naples — nature as perpetual civic science problem",
           "role": "religion"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Onofrio%20Palumbo%20-%20Masaniello.jpg?width=640",
+          "caption": "Masaniello — Naples 1647 revolt leader",
+          "alt": "Masaniello — Naples 1647 revolt leader",
+          "role": "leader"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Joseph%20Wright%20of%20Derby%20-%20Vesuvius%20in%20Eruption%2C%20with%20a%20View%20over%20the%20Islands%20in%20the%20Bay%20of%20Naples%20-%20Google%20Art%20Project.jpg?width=640",
+          "caption": "Vesuvius and the Bay of Naples — Wright of Derby",
+          "alt": "Vesuvius and the Bay of Naples — Wright of Derby",
+          "role": "art"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20of%20Philip%20II%20of%20Spain%20by%20Sofonisba%20Anguissola%20-%20002b.jpg?width=800",
+          "caption": "Philip II of Spain — Sofonisba Anguissola",
+          "alt": "Philip II of Spain — Sofonisba Anguissola",
+          "role": "leader"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/049-Masaniello-PST7.jpg?width=640",
+          "caption": "Masaniello — fisherman leader of the 1647 Naples revolt",
+          "alt": "Masaniello — fisherman leader of the 1647 Naples revolt",
+          "role": "story"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/02004%200013%20Gulf%20of%20Naples.jpg?width=640",
+          "caption": "Naples — mega-city of the Spanish viceroyalty",
+          "alt": "Naples — mega-city of the Spanish viceroyalty",
+          "role": "culture"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/%28Treviso%29%20%27La%20Crocifissione%27%20Luca%20Giordano%20-%20Museo%20civico%20di%20Santa%20Caterina.jpg?width=640",
+          "caption": "Luca Giordano — Neapolitan baroque painterly abundance",
+          "alt": "Luca Giordano — Neapolitan baroque painterly abundance",
+          "role": "art"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Aerial%20image%20of%20Pompeii%20and%20Mount%20Vesuvius%20%28view%20from%20the%20southeast%29.jpg?width=640",
+          "caption": "Vesuvius over Naples — nature as perpetual civic science problem",
+          "alt": "Vesuvius over Naples — nature as perpetual civic science problem",
+          "role": "religion"
         }
       ]
     },
@@ -24967,6 +25945,42 @@
           "caption": "Antonio Genovesi — Naples Enlightenment political economy",
           "alt": "Antonio Genovesi — Naples Enlightenment political economy",
           "role": "literature"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Joseph%20Wright%20of%20Derby%20-%20Vesuvius%20in%20Eruption%2C%20with%20a%20View%20over%20the%20Islands%20in%20the%20Bay%20of%20Naples%20-%20Google%20Art%20Project.jpg?width=640",
+          "caption": "Vesuvius and the Bay of Naples — Wright of Derby",
+          "alt": "Vesuvius and the Bay of Naples — Wright of Derby",
+          "role": "art"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Reggia%20di%20Caserta%202023.jpg?width=640",
+          "caption": "Palace of Caserta — Bourbon answer to Versailles",
+          "alt": "Palace of Caserta — Bourbon answer to Versailles",
+          "role": "art"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Carlos%20III%20de%20Espa%C3%B1a%2C%20de%20Francisco%20de%20Goya%20%28Banco%20de%20Espa%C3%B1a%29.jpg?width=640",
+          "caption": "Charles of Bourbon — founder of the independent Neapolitan Bourbon state",
+          "alt": "Charles of Bourbon — founder of the independent Neapolitan Bourbon state",
+          "role": "leader"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Aerial%20image%20of%20the%20Palace%20of%20Caserta%20%28view%20from%20the%20south%29.jpg?width=640",
+          "caption": "Caserta Palace — Vanvitelli’s Bourbon Versailles of the south",
+          "alt": "Caserta Palace — Vanvitelli’s Bourbon Versailles of the south",
+          "role": "art"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Achille-Etna%20Michallon%20-%20The%20Forum%20at%20Pompeii%20-%202020.15.1%20-%20National%20Gallery%20of%20Art.jpg?width=640",
+          "caption": "Pompeii — Bourbon-era excavations remake European taste",
+          "alt": "Pompeii — Bourbon-era excavations remake European taste",
+          "role": "story"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Antonio%20Genovesi.%20C.%20Piotti%20Pirola%20sculp.jpg?width=640",
+          "caption": "Antonio Genovesi — Naples Enlightenment political economy",
+          "alt": "Antonio Genovesi — Naples Enlightenment political economy",
+          "role": "literature"
         }
       ]
     },
@@ -25057,7 +26071,8 @@
                 41.972
               ]
             ]
-          ]
+          ],
+          "notes": "Kind fixed polygon→multi (island/exclave parts)."
         },
         "1648": {
           "kind": "multi",
@@ -25134,7 +26149,8 @@
                 41.972
               ]
             ]
-          ]
+          ],
+          "notes": "Kind fixed polygon→multi (island/exclave parts)."
         },
         "1700": {
           "kind": "multi",
@@ -25211,7 +26227,8 @@
                 41.972
               ]
             ]
-          ]
+          ],
+          "notes": "Kind fixed polygon→multi (island/exclave parts)."
         },
         "1750": {
           "kind": "multi",
@@ -25288,7 +26305,8 @@
                 41.972
               ]
             ]
-          ]
+          ],
+          "notes": "Kind fixed polygon→multi (island/exclave parts)."
         },
         "1789": {
           "kind": "polygon",
@@ -25370,6 +26388,36 @@
         },
         {
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Bonifacio%20Corsica.jpg?width=640",
+          "caption": "Corsican cliffs — possession Genoa sold to France in 1768",
+          "alt": "Corsican cliffs — possession Genoa sold to France in 1768",
+          "role": "story"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Porto%20Antico%20Genova%20varie%2005.jpg?width=640",
+          "caption": "Porto Antico, Genoa — mercantile republic harbour",
+          "alt": "Porto Antico, Genoa — mercantile republic harbour",
+          "role": "art"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Memorial%20bust%20of%20Pasquale%20Paoli%2C%20Westminster%20Abbey.jpg?width=640",
+          "caption": "Pasquale Paoli — Corsican resistance leader against Genoa",
+          "alt": "Pasquale Paoli — Corsican resistance leader against Genoa",
+          "role": "leader"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Via%20Garibaldi%20%28Genoa%29%20%281%29.jpg?width=640",
+          "caption": "Strade Nuove palaces — banking aristocracy in stone",
+          "alt": "Strade Nuove palaces — banking aristocracy in stone",
+          "role": "art"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Adriaen%20van%20der%20Cabel%20%28c.1631-1705%29%20-%20The%20Port%20of%20Genoa%20-%20BHC0754%20-%20Royal%20Museums%20Greenwich.jpg?width=640",
+          "caption": "Genoa harbor — shrinking republican sea power",
+          "alt": "Genoa harbor — shrinking republican sea power",
+          "role": "culture"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Aerial%20image%20of%20Bonifacio%20%28view%20from%20the%20southwest%29.jpg?width=640",
           "caption": "Corsican cliffs — possession Genoa sold to France in 1768",
           "alt": "Corsican cliffs — possession Genoa sold to France in 1768",
           "role": "story"
@@ -25858,6 +26906,42 @@
           "caption": "Waldensian valleys — Protestant minority under Savoyard Catholic rule",
           "alt": "Waldensian valleys — Protestant minority under Savoyard Catholic rule",
           "role": "religion"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Torino%20-%20Piazza%20San%20Carlo.jpg?width=640",
+          "caption": "Piazza San Carlo, Turin — Savoyard capital geometry",
+          "alt": "Piazza San Carlo, Turin — Savoyard capital geometry",
+          "role": "art"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/1648%20Friedenssaal%20Rathaus%20M%C3%BCnster%20%282%29.jpg?width=640",
+          "caption": "Peace Hall, Münster — Westphalia’s treaty room",
+          "alt": "Peace Hall, Münster — Westphalia’s treaty room",
+          "role": "art"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20of%20Duke%20Victor%20Amadeus%20II%20of%20Savoy%2C%20in%20armour.png?width=640",
+          "caption": "Victor Amadeus II — architect of the royal Savoyard leap",
+          "alt": "Victor Amadeus II — architect of the royal Savoyard leap",
+          "role": "leader"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Ceiling%20in%20Palazzo%20Madama%20%28Turin%29.jpg?width=640",
+          "caption": "Palazzo Madama, Turin — civic-royal face of Piedmont",
+          "alt": "Palazzo Madama, Turin — civic-royal face of Piedmont",
+          "role": "art"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Basilica-Superga-Turin.jpg?width=640",
+          "caption": "Superga Basilica — Juvarra’s thanksgiving crown above Turin",
+          "alt": "Superga Basilica — Juvarra’s thanksgiving crown above Turin",
+          "role": "story"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/2227%20-%20Waldensian%20-%20Other%20Waldensian%20Pastors%20in%20their%20Pulpit.jpg?width=640",
+          "caption": "Waldensian valleys — Protestant minority under Savoyard Catholic rule",
+          "alt": "Waldensian valleys — Protestant minority under Savoyard Catholic rule",
+          "role": "religion"
         }
       ]
     },
@@ -26100,6 +27184,42 @@
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Mosque%20in%20Bakhchysarai.jpg?width=640",
           "caption": "Bakhchysarai mosque — Islamic court culture of the khanate",
           "alt": "Bakhchysarai mosque — Islamic court culture of the khanate",
+          "role": "religion"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Bakhchisaray%20Palace-2009-2.jpg?width=640",
+          "caption": "Bakhchysarai Palace — Crimean Khanate seat",
+          "alt": "Bakhchysarai Palace — Crimean Khanate seat",
+          "role": "art"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Anton%20Schoonjans%20-%20Pasticcio%20portrait%20of%20Emperor%20Peter%20the%20Great%20of%20Russia.jpg?width=640",
+          "caption": "Peter the Great — imperial portrait type",
+          "alt": "Peter the Great — imperial portrait type",
+          "role": "leader"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Bakhchisarai%20Palace2.jpg?width=640",
+          "caption": "Bakhchysarai Palace — seat of the Giray khans",
+          "alt": "Bakhchysarai Palace — seat of the Giray khans",
+          "role": "art"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/AVasnetsov%20Crimea%20landscape.jpg?width=640",
+          "caption": "Crimean landscape — steppe power on the Black Sea rim",
+          "alt": "Crimean landscape — steppe power on the Black Sea rim",
+          "role": "culture"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Catherine%20II%20after%20Roslin%2C%20Rokotov%20%281780s%2C%20Kunsthistorisches%20Museum%29.jpg?width=640",
+          "caption": "Catherine II — annexer of Crimea in 1783",
+          "alt": "Catherine II — annexer of Crimea in 1783",
+          "role": "leader"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Bakhchisaray%2C%20Hansaray%20Museum.jpg?width=640",
+          "caption": "Crimean Tatar mosque — Islamic court culture of the khanate",
+          "alt": "Crimean Tatar mosque — Islamic court culture of the khanate",
           "role": "religion"
         }
       ]
@@ -26426,6 +27546,42 @@
           "caption": "Wallachian arms — Orthodox principality under the Porte",
           "alt": "Wallachian arms — Orthodox principality under the Porte",
           "role": "story"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Curtea%20De%20arges%20IMG%206820.JPG?width=640",
+          "caption": "Curtea de Argeș — Wallachian Orthodox princely church",
+          "alt": "Curtea de Argeș — Wallachian Orthodox princely church",
+          "role": "religion"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Christ%20Pantocrator%20mosaic%20from%20Hagia%20Sophia%202744%20x%202900%20pixels%203.1%20MB.jpg?width=640",
+          "caption": "Christ Pantocrator, Hagia Sophia — Byzantine inheritance under Ottoman roof",
+          "alt": "Christ Pantocrator, Hagia Sophia — Byzantine inheritance under Ottoman roof",
+          "role": "religion"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Constantin%20Br%C3%A2ncoveanu%20%281709%29.jpg?width=640",
+          "caption": "Constantin Brâncoveanu — prince-martyr of Wallachia",
+          "alt": "Constantin Brâncoveanu — prince-martyr of Wallachia",
+          "role": "leader"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Horezu%20Monastery%202.jpg?width=640",
+          "caption": "Horezu Monastery — Brâncovenesc sacred architecture",
+          "alt": "Horezu Monastery — Brâncovenesc sacred architecture",
+          "role": "art"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Biserica%20Curtea%20Veche%20-%20entrance.jpg?width=640",
+          "caption": "Bucharest — Phanariot-era princely capital on the plain",
+          "alt": "Bucharest — Phanariot-era princely capital on the plain",
+          "role": "culture"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Coa%20Romania%20Country%20Wallachia%20History%20%2814th%20century%29.svg?width=640",
+          "caption": "Wallachian arms — Orthodox principality under the Porte",
+          "alt": "Wallachian arms — Orthodox principality under the Porte",
+          "role": "story"
         }
       ]
     },
@@ -26729,6 +27885,48 @@
         },
         {
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Hotin%20Fortress.jpg?width=640",
+          "caption": "Hotin/Khotyn fortress — war hinge of Moldavian lands",
+          "alt": "Hotin/Khotyn fortress — war hinge of Moldavian lands",
+          "role": "story"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/2020%2004%2017%20Ia%C8%99i%20Palatul%20Culturii.jpg?width=640",
+          "caption": "Palace of Culture, Iași — Moldavian princely capital tradition",
+          "alt": "Palace of Culture, Iași — Moldavian princely capital tradition",
+          "role": "art"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Curtea%20De%20arges%20IMG%206820.JPG?width=640",
+          "caption": "Curtea de Argeș — Wallachian Orthodox princely church",
+          "alt": "Curtea de Argeș — Wallachian Orthodox princely church",
+          "role": "religion"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Christ%20Pantocrator%20mosaic%20from%20Hagia%20Sophia%202744%20x%202900%20pixels%203.1%20MB.jpg?width=640",
+          "caption": "Christ Pantocrator, Hagia Sophia — Byzantine inheritance under Ottoman roof",
+          "alt": "Christ Pantocrator, Hagia Sophia — Byzantine inheritance under Ottoman roof",
+          "role": "religion"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Dimitrie%20Cantemir.png?width=640",
+          "caption": "Dimitrie Cantemir — prince-scholar of Moldavia",
+          "alt": "Dimitrie Cantemir — prince-scholar of Moldavia",
+          "role": "leader"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Gura%20M%C4%83n%C4%83stirea%20Voronet.jpg?width=640",
+          "caption": "Voroneț monastery frescoes — Moldavian sacred painting",
+          "alt": "Voroneț monastery frescoes — Moldavian sacred painting",
+          "role": "art"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Iasi%2C%20Administrative%20Palace%20%28Palace%20of%20Culture%29.jpg?width=640",
+          "caption": "Iași — princely capital of Moldavia",
+          "alt": "Iași — princely capital of Moldavia",
+          "role": "culture"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/73-250-0001%20Khotyn%20Fortress%20RB.jpg?width=640",
           "caption": "Hotin/Khotyn fortress — war hinge of Moldavian lands",
           "alt": "Hotin/Khotyn fortress — war hinge of Moldavian lands",
           "role": "story"
