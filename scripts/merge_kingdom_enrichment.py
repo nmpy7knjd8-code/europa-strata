@@ -282,8 +282,9 @@ def merge_era(era: str, *, force_geo: bool = False) -> dict:
         c = idx_clean.get(pid) if use_cleaned else None
         # cleaned may be geometry-only — merge extents via merge_polity sources order
         mp = merge_polity(bp, a or {}, b or {}, c or {})
-        if use_cleaned and c and c.get("extentsByTick"):
-            mp["extentsByTick"] = deepcopy(c["extentsByTick"])
+        if use_cleaned and c is not None:
+            # Empty cleaned extents = intentional elision (e.g. kalmar-union)
+            mp["extentsByTick"] = deepcopy(c.get("extentsByTick") or {})
         if score_text(mp.get("story") or "")[0]:
             stats["enrichedStory"] += 1
         if mp.get("images"):
