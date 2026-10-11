@@ -1942,8 +1942,31 @@ function renderKingdomDetail() {
     }
   }
 
+  // Deep-time–only panels must not linger under kingdom polity copy
+  clearDeepTimeOnlyDetail();
   scrubBodyCopyMarkup();
   highlightCultureChips();
+}
+
+/** Hide ancestry / language / absorb UI that belongs only to Deep-time. */
+function clearDeepTimeOnlyDetail() {
+  const note = $("#ancestry-note");
+  if (note) {
+    note.hidden = true;
+    setPlainText(note, "");
+  }
+  const mid = $("#ancestry-mid-label");
+  if (mid) mid.hidden = true;
+  const cline = $("#ancestry-cline");
+  if (cline) cline.hidden = true;
+  setPlainText($("#absorb-substrate"), "");
+  setPlainText($("#absorb-incoming"), "");
+  setPlainText($("#absorb-fused"), "");
+  setPlainText($("#ling-note"), "");
+  const lingFamily = $("#ling-family");
+  if (lingFamily) lingFamily.textContent = "";
+  const lingLangs = $("#ling-languages");
+  if (lingLangs) lingLangs.textContent = "";
 }
 
 function renderDetail() {
