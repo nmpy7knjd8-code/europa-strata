@@ -681,7 +681,7 @@ function conicGradient(entries) {
 }
 
 function shortPeriodName(p) {
-  // Compact but full words for the secondary tick line
+  // Compact but full words for the secondary tick line (not snapshot titles)
   const map = {
     mesolithic: "Mesolithic",
     "early-neolithic": "Early Neolithic",
@@ -692,12 +692,15 @@ function shortPeriodName(p) {
     "iron-age": "Iron Age",
     classical: "Classical / Roman",
     migration: "Migration Period",
-    frankish: "Frankish / Viking",
+    frankish: "Frankish / Carolingian",
+    vikings: "Viking Age",
     "high-medieval": "High Medieval",
+    "late-medieval": "Late Medieval",
+    reformation: "Reformation",
     "early-modern": "Early Modern",
     modern: "Modern",
   };
-  return map[p.id] || p.label;
+  return map[p.id] || p.periodName || p.label;
 }
 
 /* ——— Map ——— */
@@ -2589,7 +2592,7 @@ function bindUI() {
 async function loadKingdomPack(id) {
   try {
     // Cache-bust so refined research geometry packs reload after deploy
-    const r = await fetch(`data/kingdom-eras/${id}.json?v=era-ui-41`);
+    const r = await fetch(`data/kingdom-eras/${id}.json?v=era-ui-42`);
     if (!r.ok) return null;
     const raw = await r.json();
     return normalizeKingdomPack(raw);
@@ -2610,7 +2613,7 @@ async function init() {
       loadKingdomPack(id).then((pack) => [id, pack])
     );
     const [timeline, geo, keyEvents, packEntries] = await Promise.all([
-      fetch("data/timeline.json?v=era-ui-41").then((r) => {
+      fetch("data/timeline.json?v=era-ui-42").then((r) => {
         if (!r.ok) throw new Error("timeline");
         return r.json();
       }),
