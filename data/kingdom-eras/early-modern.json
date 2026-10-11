@@ -11,37 +11,37 @@
     {
       "year": 1600,
       "label": "1600 AD",
-      "name": "Confessional Europe",
-      "era": "Dutch Revolt, Henri IV, and the road to 1618",
-      "narrative": "In 1600 the Eighty Years’ War still defines the Low Countries, France consolidates after the Wars of Religion, and the Holy Roman Empire’s confessional truce grows brittle. Spain’s global monarchy, English and Dutch maritime challenge, and Polish–Swedish Baltic rivalry set the board. This snapshot is late Renaissance politics tipping into the Thirty Years’ War generation—not a generic ‘early modern’ blur."
+      "name": "Before Westphalia",
+      "era": "Dutch Revolt, confessional powder keg",
+      "narrative": "In 1600 Europe’s great powers are composite monarchies and trading republics: Spanish Habsburgs still claim a global monarchy; the United Provinces prove a rebel republic can win; Bourbon France stabilizes after civil war; England and Scotland remain dynastically separate under one Stuart prospect. The Holy Roman Empire’s confessional truce is fragile; Sweden and Poland eye the Baltic; Muscovy reels in the Time of Troubles. This is the map on which the Thirty Years’ War will detonate."
     },
     {
       "year": 1648,
       "label": "1648 AD",
-      "name": "Westphalia",
-      "era": "Peace of Westphalia and the mid-century settlement",
-      "narrative": "1648 ends the Thirty Years’ War and (with Münster) the Dutch–Spanish conflict: sovereignty language, French and Swedish gains, and a shattered German landscape. England is in civil war and republic; Portugal has broken from Spain; Ukraine’s Khmelnytsky uprising remakes the east. Read this tick as the Westphalian settlement moment—war’s diplomatic aftershock."
+      "name": "Peace of Westphalia",
+      "era": "Sovereignty after thirty years’ war",
+      "narrative": "1648 ends the Thirty Years’ War and the Eighty Years’ War: Westphalia and Münster recognize Dutch and Swiss independence, freeze a confessional patchwork inside the Empire, and elevate France and Sweden as guarantors. Spain is weakened; the Empire’s emperor is more Austrian dynast than universal lord; Brandenburg gains ground toward Prussia. England’s civil wars remake the British Isles offstage. ‘Westphalian’ sovereignty is born as settlement, not ideology slogan."
     },
     {
       "year": 1700,
       "label": "1700 AD",
-      "name": "Succession crises",
-      "era": "Spain’s vacant throne and northern catastrophe",
-      "narrative": "Around 1700 the Spanish succession crisis draws Bourbon and Habsburg coalitions into continent-wide war, while Sweden’s Charles XII and Russia’s Peter collide in the Great Northern War. Louis XIV’s France is still the measuring stick of power; the Dutch and English are fiscal-military innovators. This is dynastic endgame politics, not 1600’s confessional map."
+      "name": "Spanish Succession threshold",
+      "era": "Louis XIV, Northern War, Peter’s Russia",
+      "narrative": "Around 1700 Louis XIV’s France is the continental yardstick as the Spanish Habsburg line dies out, triggering the War of the Spanish Succession. Sweden’s Carolines still fight the Great Northern War against Peter the Great’s rising Russia and its allies; the Dutch Republic peaks then strains; England and Scotland are months from the 1707 Union. Ottomans have lost Hungary to the Habsburgs after 1699 — the eastern question is already imperial competition."
     },
     {
       "year": 1750,
       "label": "1750 AD",
-      "name": "Enlightenment states",
-      "era": "Diplomatic Revolution’s eve and colonial rivalry",
-      "narrative": "By 1750 Prussia under Frederick II and Austria under Maria Theresa redefine German power; Britain and France duel in Atlantic and Indian theatres; Russia is a European great power. Partition talk already shadows Poland; Enlightenment courts patronize science and reform rhetoric. The snapshot is mid-century cabinet war and colonial rivalry before 1756 realigns alliances."
+      "name": "Enlightenment great-power concert",
+      "era": "Prussia, Britain, diplomatic revolution",
+      "narrative": "By 1750 Prussia under Frederick II is a military great power; Britain (after 1707) contests France for colonial primacy; Austria’s Habsburgs regroup after succession wars; Russia is a European player. The Polish–Lithuanian Commonwealth weakens toward partition; the Dutch decline as financiers more than generals; Enlightenment salons and academies redefine elite culture. The Diplomatic Revolution will soon realign Austria with France against Prussia and Britain — Seven Years’ War soon."
     },
     {
       "year": 1789,
       "label": "1789 AD",
-      "name": "Revolutionary threshold",
-      "era": "French Revolution opens; old regimes wobble",
-      "narrative": "1789 cracks the French monarchy and forces every court to answer revolution, debt, and national claim. Poland’s reform moment races partition; Britain consolidates imperial gains after 1763; the Ottoman and Russian frontiers keep shifting. This tick is the hinge out of cabinet-era early modernity into revolutionary and Napoleonic remaking."
+      "name": "Eve of the French Revolution",
+      "era": "Partitions of Poland, ancien régime crisis",
+      "narrative": "In 1789 Bourbon France collapses into revolution while Europe’s map still shows absolute and composite monarchies: Britain’s fiscal-military state, Joseph II’s reforming Austria, Frederick William’s Prussia, Catherine’s Russia, and a thrice-partition-bound Polish–Lithuanian Commonwealth (first cut 1772). The Holy Roman Empire is a hollow constitutional shell; Ottomans retreat in the Balkans. Industrial and Atlantic revolutions are underway — the nation-state map of the next century is not yet drawn."
     }
   ],
   "narrative": "From the Dutch Revolt’s consolidation and the Thirty Years’ War through Westphalia, Bourbon–Habsburg rivalry, Sweden’s Baltic rise and fall, Russia’s empire, Ottoman retreat from Hungary, Prussian ascent, and the First Partition of Poland—Europe’s map on the eve of the French Revolution is a system of composite monarchies and commercial republics, not nation-states.",

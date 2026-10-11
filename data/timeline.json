@@ -290,11 +290,11 @@
   "periods": [
     {
       "id": "mesolithic",
-      "label": "Mesolithic",
-      "era": "Forager Europe",
+      "label": "Forager Europe after the ice",
+      "era": "WHG west, EHG east",
       "yearLabel": "c. 8000 BC",
       "yearApprox": -8000,
-      "narrative": "After the Last Glacial Maximum, Europe is resettled by genetically distinct forager populations. Western Hunter-Gatherers (WHG) dominate west and center; Eastern Hunter-Gatherers (EHG) hold the forest-steppe. Archaeological names (Azilian, Maglemosian, Narva) are tool-and-site traditions, not ethnic states. No farming, no Indo-European, no writing.",
+      "narrative": "Around 8000 BC the ice has pulled back and Europe is a mosaic of forager traditions — Azilian and Tardenoisian in the west, Maglemosian wetlands in the north, Iron Gates along the Danube, Narva–Kunda toward the Baltic. Genetics split Western from Eastern Hunter-Gatherers; archaeological names are tool facies, not kingdoms. Farming, metals, and Indo-European speech all still lie ahead.",
       "culturesNote": "Azilian, Sauveterrian/Tardenoisian, Maglemosian–Kongemose, Epigravettian Italy, Iron Gates, Narva/Kunda — microlithic forager facies over WHG/EHG genetics.",
       "regions": {
         "iberia": {
@@ -1128,15 +1128,16 @@
           "science": "Cold-forest hunting, ice-season fishing, and wide-ranging lithic procurement are survival sciences at continental scale. Early pottery among foragers shows independent or borrowed ceramic chemistry without agriculture. Path knowledge across vast low-density landscapes is the core information technology.",
           "culture": "Eastern Hunter-Gatherers (forest-steppe)"
         }
-      }
+      },
+      "periodName": "Mesolithic"
     },
     {
       "id": "early-neolithic",
-      "label": "Early Neolithic",
-      "era": "First Farmers",
+      "label": "First farmers on two corridors",
+      "era": "Cardial coasts, LBK loess",
       "yearLabel": "c. 5500 BC",
       "yearApprox": -5500,
-      "narrative": "Farming spreads demically along Cardial/Impresso coasts and the LBK Danube corridor. Hunter-gatherer holdouts remain: Ertebølle in southern Scandinavia/south Baltic, Narva–Comb Ware in the east Baltic, and EHG forest-steppe groups east of the farmer line. Early farmer Europe is already clinal — WHG share higher toward Atlantic and northern contact zones than in LBK cores.",
+      "narrative": "By the mid-sixth millennium BC Anatolian-related farmers push into Europe by sea (Cardial/Impresso) and up the Danube (Starčevo–LBK). Early farmer genomes are strongly EEF; local hunter-gatherers persist as Ertebølle holdouts in the north and Narva–Comb Ware farther east. This is demic farming spread, not a pan-European ethnic conversion — and still centuries before steppe ancestry.",
       "culturesNote": "Cardial, Impresso, LBK, Starčevo–Vinča + HG holdouts (Ertebølle, Narva/Comb Ware, EHG persistence).",
       "regions": {
         "iberia": {
@@ -1957,15 +1958,16 @@
           "science": "Forager ecological expertise persists; farmer fringe communities test crops on chernozem and forest-steppe soils. Ceramic temper and firing styles mark technical schools on both sides of the divide. River routes (Dniester, Dnieper, Bug) are the logistics backbone.",
           "culture": "Pontic foragers & western Trypillia fringe"
         }
-      }
+      },
+      "periodName": "Early Neolithic"
     },
     {
       "id": "middle-neolithic",
-      "label": "Middle–Late Neolithic",
-      "era": "Megaliths & farmer Europe",
+      "label": "Megaliths densify farmer Europe",
+      "era": "TRB, Atlantic tombs, Trypillia",
       "yearLabel": "c. 4000–3500 BC",
       "yearApprox": -3800,
-      "narrative": "Farmer Europe densifies: Atlantic megaliths, Chasséen/Michelsberg, Funnelbeaker (TRB), Cucuteni–Trypillia, early Globular Amphora. Hunter-gatherer holdouts persist beside farmers — Pitted Ware on Scandinavian coasts, Narva–Comb Ware in the east Baltic. Within TRB and other farmer packages, WHG% is clinal: higher north and west, lower in southern/central agricultural cores.",
+      "narrative": "Near 3800 BC farmer societies thicken: Atlantic passage graves, Chasséen and Michelsberg inland, Funnelbeaker (TRB) across the north European plain, Cucuteni–Trypillia mega-settlements on the east. WHG ancestry has climbed inside many farmer groups — higher on Atlantic and northern façades — while Pitted Ware and Narva foragers still fringe the coasts. Steppe pastoralists have not yet remade the temperate gene pool.",
       "culturesNote": "TRB, Michelsberg, Chasséen, megalithic Atlantic, GAC, Trypillia + HG holdouts (Pitted Ware, Narva/Comb Ware).",
       "regions": {
         "iberia": {
@@ -2821,15 +2823,16 @@
           "science": "Deep flint mining (e.g. Rijckholt tradition) and specialist axe production show industrial-scale extraction before metal. Crop–livestock systems intensify; enclosures imply organised labour and surplus. Northern TRB contact transfers farming know-how toward Scandinavia.",
           "culture": "TRB, Michelsberg & early Globular Amphora"
         }
-      }
+      },
+      "periodName": "Middle–Late Neolithic"
     },
     {
       "id": "yamnaya",
-      "label": "Copper / Yamnaya",
-      "era": "Steppe pastoralists rise",
+      "label": "Yamnaya on the steppe edge",
+      "era": "Pastoralists rise east",
       "yearLabel": "c. 3000 BC",
       "yearApprox": -3000,
-      "narrative": "Yamnaya pastoralists expand on the Pontic–Caspian steppe while Late Neolithic farmer Europe (TRB, GAC, Iberian Copper Age, British Late Neolithic) continues west of the steppe. Scandinavian/Baltic forager holdouts (Pitted Ware, late Narva–Comb) still mark the map. Steppe ancestry is high on the core steppe and falls off west/north — a gradient, not an instant uniform coat.",
+      "narrative": "At 3000 BC Yamnaya wagon-and-herd societies dominate the Pontic–Caspian steppe while Late Neolithic farmer Europe — TRB, Globular Amphora, Iberian Copper Age, British monument builders — continues west. Steppe-related ancestry is high on the core steppe and falls off as a gradient, not an instant coat. Comparative linguistics places early Indo-European speech in this horizon; western Europe is not yet Corded or Beaker.",
       "culturesNote": "Yamnaya/Yamna, Afanasievo (eastward), late Trypillia, Usatove contacts, Remedello/Gaudo in Italy, late TRB/Pitted Ware in the north.",
       "regions": {
         "iberia": {
@@ -3635,15 +3638,16 @@
           "science": "Wheel and wagon knowledge filters west with steppe contact; GAC and early CW communities manage mixed farming with rising pastoral mobility. Flint and early metal chaînes opératoires intensify. Ceramic temper recipes and cord decoration are reproducible craft science across the plain.",
           "culture": "Globular Amphora → Corded Ware dawn"
         }
-      }
+      },
+      "periodName": "Copper / Yamnaya"
     },
     {
       "id": "beaker-corded",
-      "label": "Corded Ware & Bell Beaker",
-      "era": "Third-millennium transformations",
+      "label": "Corded Ware and Bell Beaker rupture",
+      "era": "Steppe ancestry remaps temperate Europe",
       "yearLabel": "c. 2500 BC",
       "yearApprox": -2500,
-      "narrative": "Corded Ware and Bell Beaker remake temperate Europe with Yamnaya-related steppe ancestry — but not uniformly. Steppe% is typically higher in northern/central Corded Ware and Single Grave Denmark than in Iberian Beaker; British Beaker shows near-total turnover of the prior Neolithic pool. Residual farmer/HG clines persist under the new packages.",
+      "narrative": "Around 2500 BC Corded Ware, Single Grave, and Bell Beaker packages carry Yamnaya-related ancestry deep into temperate Europe — fiercely in Britain and northern Corded zones, more gradually in Iberian Beaker. Prior Neolithic farmer pools collapse or dilute region by region; residual WHG–EEF clines survive under new pottery names. This is the main hypothesized window for Indo-Europeanization of much of temperate Europe.",
       "culturesNote": "Corded Ware, Single Grave, Battle Axe, Bell Beaker (Britain high-turnover; Iberia more gradual) — steppe gradients, not one %.",
       "regions": {
         "iberia": {
@@ -4727,15 +4731,16 @@
           "science": "Bronze recipes spread; pile-dwelling carpentry in wet northern basins is environmental engineering. Caprine–cereal economies adapt to Apennine and Po ecologies. Metal and amber trickle through Alpine passes as measured trade.",
           "culture": "Italian Bell Beaker → Early Bronze"
         }
-      }
+      },
+      "periodName": "Corded Ware & Bell Beaker"
     },
     {
       "id": "nordic-bronze",
-      "label": "Nordic & European Bronze",
-      "era": "Bronze Age worlds",
+      "label": "Bronze Age prestige networks",
+      "era": "Nordic climax, Mycenae, Urnfield",
       "yearLabel": "c. 1400 BC",
       "yearApprox": -1400,
-      "narrative": "The Nordic Bronze Age (c. 1700–500 BCE) is a Scandinavian cultural climax — rock art, prestige bronzes, amber routes — on a gene pool already reset by Single Grave/Battle Axe. Southward: Tumulus then Urnfield, Atlantic Bronze, El Argar, Terramare, Mycenaean Greece (Linear B = early Greek). Deep ancestry is the WHG–EEF–steppe ternary in regional proportions; culture names proliferate faster than genetic turnovers.",
+      "narrative": "By 1400 BC the Nordic Bronze Age is a Scandinavian prestige world of rock art, amber, and imported bronze on a gene pool already reset by Single Grave. Farther south Tumulus then Urnfield rites, El Argar, Terramare, and Mycenaean palaces (Linear B = early Greek) mark regional Bronze Age states. Deep ancestry is the WHG–EEF–steppe ternary in local proportions; culture names now change faster than genetic turnovers.",
       "culturesNote": "Nordic Bronze Age, Wessex, El Argar, Tumulus, Urnfield, Terramare/Apennine, Mycenaean, Srubnaya — BA facies on post-3000 BCE mixes.",
       "regions": {
         "iberia": {
@@ -5551,15 +5556,16 @@
           "science": "Sintashta–Petrovka chariots (spoked wheels, horse teams) and bronze arsenals are peak steppe engineering of the early 2nd millennium BC. Timber-grave communities manage herds, metallurgy, and forest-steppe farming edges. Long-distance horse and metal knowledge feeds both European and Asian Bronze Ages.",
           "culture": "Srubnaya (Timber-grave) & forest-steppe BA"
         }
-      }
+      },
+      "periodName": "Nordic & European Bronze"
     },
     {
       "id": "iron-age",
-      "label": "Iron Age",
-      "era": "Hallstatt, La Tène, Classical dawn",
+      "label": "Iron, oppida, and first texts",
+      "era": "Hallstatt–La Tène, poleis, early Rome",
       "yearLabel": "c. 700–300 BC",
       "yearApprox": -500,
-      "narrative": "Iron metallurgy and oppida/city-states. Hallstatt then La Tène define Celtic material Europe; Jastorf-related groups mark Germanic ethnogenesis; Classical Greece and early Rome/Etruria write history; Scythian Iranian-speakers hold the steppe; Iberia mixes non-IE Iberian with Celtiberian. Genetics mostly continue Bronze Age mixes — “Celtic” and “Germanic” are linguistic-cultural, not new deep ancestry components.",
+      "narrative": "In the mid-first millennium BC iron tools and weapons spread; Hallstatt then La Tène define Celtic material Europe while Jastorf-related groups mark Germanic ethnogenesis. Classical Greek poleis write history; Etruscans and early Rome urbanize Italy; Scythian Iranian-speakers hold the steppe; Iberia mixes Iberian and Celtiberian speech. Genetics mostly continue Bronze Age mixes — ‘Celtic’ and ‘Germanic’ are linguistic-cultural labels, not new deep components.",
       "culturesNote": "Hallstatt, La Tène, Jastorf, Classical Greek poleis, Etruscan/early Rome, Iberian/Celtiberian, Scythian — first dense linguistic attestation.",
       "regions": {
         "iberia": {
@@ -6443,15 +6449,16 @@
           "philosophy": "Feasting ideology and ancestor tumuli carry worldview. No named philosophers in the Hallstatt core—cosmology is grave and banquet. Later Celtic learned classes are better attested farther west in Classical ethnography.",
           "science": "Salt-mining engineering at Hallstatt is flagship European industrial science of the age. Iron adoption, wagon technology, and alpine route logistics complete the toolkit."
         }
-      }
+      },
+      "periodName": "Iron Age"
     },
     {
       "id": "classical",
-      "label": "Classical / Roman Republic–early Empire",
-      "era": "Mediterranean hegemony",
+      "label": "Rome’s Mediterranean hegemony",
+      "era": "Republic into early Principate",
       "yearLabel": "c. 100 BC – 100 AD",
       "yearApprox": 1,
-      "narrative": "Rome conquers the Mediterranean and much of Western Europe (Republic into early Principate). Greek remains the eastern prestige language; Celtic and Germanic societies press the frontiers. Empires redraw politics and urban demography faster than they erase provincial BA ancestry — though Imperial Rome itself shows a clear eastern Mediterranean genetic pulse (Antonio et al. 2019).",
+      "narrative": "Around the turn of the era Rome has conquered the Mediterranean and is pushing into Gaul, Iberia, and toward Britain; Greek remains the eastern prestige tongue. Celtic and Germanic societies press the Rhine–Danube limes while Sarmatians move on the steppe. Imperial politics and eastern Mediterranean urban migration reshape demography faster than they erase provincial Bronze Age ancestry — Antonio et al. document a clear eastern pulse in the city of Rome itself.",
       "culturesNote": "Roman Empire (west/east), residual Gallic tribes, Britannia, Germanic societies beyond the limes, Sarmatians, Greek East.",
       "regions": {
         "iberia": {
@@ -7284,12 +7291,13 @@
           "philosophy": "Funerary and martial cosmology; no philosophical schools on the steppe. Coastal Greek remnants keep literate ethics in pockets. Worldview is confederation oath and horse wealth.",
           "science": "Cavalry equipment evolution, bowels of steppe ecology, and frontier trade metrology. Technical innovation is military-pastoral, not aqueductal."
         }
-      }
+      },
+      "periodName": "Classical / Roman Republic–early Empire"
     },
     {
       "id": "migration",
-      "label": "Migration Period",
-      "era": "Wielbark, Goths, collapse & remaking",
+      "label": "Wielbark, Goths, and Roman fracture",
+      "era": "Migration-era remaking",
       "yearLabel": "c. 300–550 AD",
       "yearApprox": 400,
       "narrative": "Western Roman order fragments. Wielbark culture in Poland is the archaeological horizon standardly linked to early Gothic traditions before south-east movements. Hunnic pressure, Gothic kingdoms, Frankish growth, and Anglo-Saxon settlement in Britain remake politics. Genetics show real mobility (e.g. North Sea influx in eastern England) without Beaker-scale pan-European replacement; elite Germanic layers often sit on Roman provincial majorities.",
@@ -8096,15 +8104,16 @@
           "philosophy": "Pagan sacral landscapes yield piecemeal to Frankish-sponsored Christianisation. Honour, feud, and local cult structure right conduct before cathedral schools exist.",
           "science": "Iron weapon production, upland clearance, and Rhine crossing knowledge are frontier sciences. Roman fort stone becomes quarry and mnemonic for a reused technical landscape."
         }
-      }
+      },
+      "periodName": "Migration Period"
     },
     {
       "id": "frankish",
-      "label": "Frankish & Early Medieval",
-      "era": "Carolingians, Vikings, Slavs",
+      "label": "Carolingian high-water mark",
+      "era": "Charlemagne, Vikings rising, Slavs",
       "yearLabel": "c. 800 AD",
       "yearApprox": 800,
-      "narrative": "Charlemagne’s Frankish/Carolingian Empire (c. 800) politically unites much of Western and Central Europe under Christian Latin literacy, then divides (Verdun 843). Concurrently: Viking diaspora, Al-Andalus, Byzantium, First Bulgarian Empire, early Rus’. Demographically this is elite and institutional change on early medieval ancestries — not a new Paleolithic component.",
+      "narrative": "Around Charlemagne’s imperial coronation (800) a Frankish Christian empire briefly unites much of western and central Europe under Latin literacy — soon to be partitioned at Verdun (843). Concurrently Viking raiding intensifies, Al-Andalus thrives, Byzantium and the First Bulgarian Empire structure the southeast, and early Rus’ forms on eastern river routes. This is elite and institutional remaking on early medieval ancestries, not a new Paleolithic component.",
       "culturesNote": "Carolingian Frankish Empire, Anglo-Saxon/Viking Britain, Al-Andalus, East Francia–Slavic frontier, Byzantium & Bulgaria, Kievan Rus’ beginnings.",
       "regions": {
         "iberia": {
@@ -9161,11 +9170,12 @@
           "philosophy": "Pagan oath and cult practice dominate before full Christianisation; ideology is warrior-merchant reciprocity and multi-faith steppe diplomacy (including Khazar Judaism traditions).",
           "science": "Portages, river fleets, fur/slave/silver accounting, and fortress nodes (including Khazar Sarkel’s wider system) are the technical arts of the corridor."
         }
-      }
+      },
+      "periodName": "Frankish & Early Medieval"
     },
     {
       "id": "vikings",
-      "label": "Viking Age & Millennium Kingdoms",
+      "label": "Millennium kingdoms and conversion",
       "era": "North Sea, Capetians, Ottonians",
       "yearLabel": "c. 1000 AD",
       "yearApprox": 1000,
@@ -10441,15 +10451,16 @@
           "philosophy": "Political theology is conversion, kingship sacralization, and customary law under Macedonian Byzantium—philosophy as who may judge and who is protected. Slavic Orthodoxy with Bulgarian patriarchal memory: liturgy, monasticism, and autocephalous pride after conversion from Bulgar paganism.",
           "science": "Technical culture in First Bulgarian Empire (final phase) for this slice follows Macedonian Byzantium: agrarian calendars, craft guilds or state arsenals, and whatever astral or medical learning the period's elites keep. Dragon-prowed ships, gripping-beast woodcarving, runestones as public text-art, richly dressed chamber graves."
         }
-      }
+      },
+      "periodName": "Viking Age & Millennium Kingdoms"
     },
     {
       "id": "high-medieval",
-      "label": "High Medieval",
-      "era": "Kingdoms & Christendom",
+      "label": "High Medieval Christendom",
+      "era": "Crusades, communes, Reconquista",
       "yearLabel": "c. 1200 AD",
       "yearApprox": 1200,
-      "narrative": "High Medieval Christendom: Capetians, Plantagenets, Holy Roman Empire, Italian communes, Reconquista vs Nasrid Granada, Byzantine twilight and Balkan kingdoms, Rus’ under Golden Horde pressure. Vernacular literatures mature. Genetic geography is largely set; mobility and colonization (Ostsiedlung, crusading, trade) tweak edges.",
+      "narrative": "Around 1200 Capetians, Plantagenets, and the Hohenstaufen Reich structure Latin Europe while Italian communes boom and Iberian crowns push against Almohad then Nasrid power. Fourth Crusade politics will shatter Byzantine prestige (1204); Rus’ principalities face steppe pressure. Vernacular literatures and Gothic building mature; genetic geography is largely set, with Ostsiedlung and crusading tweaking edges.",
       "culturesNote": "HRE, Capetian France, Plantagenet realms, communal Italy, Iberian kingdoms/Granada, Balkan states, Rus’ principalities/Golden Horde.",
       "regions": {
         "iberia": {
@@ -12192,12 +12203,13 @@
           "philosophy": "In this deep-time schematic of Low Countries principalities, ideas of legitimacy, confession, and law track the HRE German lands map layer—read alongside kingdom-era panels for denser named schools. Dense parish Latin Christianity: Mass, guild piety, and early urban mysticism.",
           "science": "Technical culture in Low Countries principalities for this slice follows HRE German lands: agrarian calendars, craft guilds or state arsenals, and whatever astral or medical learning the period's elites keep. Gothic cathedrals, illuminated psalters, heraldry as wearable graphic design, mail evolving toward coats of plates."
         }
-      }
+      },
+      "periodName": "High Medieval"
     },
     {
       "id": "late-medieval",
-      "label": "Late Medieval",
-      "era": "Plague, dynasties, Ottomans",
+      "label": "Plague’s aftermath, dynastic wars",
+      "era": "Hundred Years’ War, Ottomans rising",
       "yearLabel": "c. 1400 AD",
       "yearApprox": 1400,
       "narrative": "The later Middle Ages open under the shadow of the Black Death (from 1347) and close toward gunpowder states and Renaissance courts. England and France bleed through the Hundred Years’ War; the Avignon papacy and Schism fracture Latin Christendom’s prestige; Burgundy flowers as a princely superpower; Iberian crowns push Granada; the Ottomans cross into Europe and crush Serbian and Byzantine power toward 1453; Poland and Lithuania join in personal union against the Teutonic Order and the steppe; Muscovy gathers Russian lands after the Golden Horde’s weakening. Culture: Gothic perpendicular and Flamboyant, vernacular literature (Chaucer, Dante’s afterlife, chivalric orders), and intensified devotional religion. Genetics: plague kills on a vast scale but does not invent new deep components — regional continua persist with mobility along war and trade.",
@@ -13880,12 +13892,13 @@
           "philosophy": "In this deep-time schematic of Ottoman Sultanate in Europe, ideas of legitimacy, confession, and law track the Ottoman advance, Byzantine rump map layer—read alongside kingdom-era panels for denser named schools. Ottoman Sunni Islam as state religion: Friday prayer, sharia courts, and Sufi orders; Christian and Jewish dhimmi communities keep their own rites under restriction.",
           "science": "Technical culture in Ottoman Sultanate in Europe for this slice follows Ottoman advance, Byzantine rump: agrarian calendars, craft guilds or state arsenals, and whatever astral or medical learning the period's elites keep. International Gothic, early Netherlandish oil, plate armour couture, Flamboyant stone lace."
         }
-      }
+      },
+      "periodName": "Late Medieval"
     },
     {
       "id": "reformation",
-      "label": "Reformation & Renaissance",
-      "era": "Confessions, empires, print",
+      "label": "Confessions after Luther and Trent",
+      "era": "Print, Habsburgs, Ottoman peak",
       "yearLabel": "c. 1550 AD",
       "yearApprox": 1550,
       "narrative": "By the mid-16th century Europe is split by confession and stitched by dynastic empire. Luther, Calvin, and the Catholic Council of Trent redraw belief; print multiplies argument; Habsburgs claim Spain’s global monarchy and the imperial title; Valois then early Bourbon France fights Habsburg encirclement and its own Wars of Religion; Tudor England breaks with Rome; the Ottomans under Süleyman dominate the Balkans and menace Vienna; Ivan IV’s Muscovy becomes an autocratic Orthodox empire; the Polish–Lithuanian Commonwealth is a noble republic of many faiths; Dutch revolt against Philip II is beginning. Overseas Iberian empires pull silver and souls into European politics. Genetics still sit on medieval continua — conversion and empire move people, but WHG–EEF–steppe deep structure remains.",
@@ -15466,15 +15479,16 @@
           "philosophy": "In this deep-time schematic of Southern Netherlands (Spanish), ideas of legitimacy, confession, and law track the Spanish Habsburg monarchy, Low Countries (revolt beginning) map layer—read alongside kingdom-era panels for denser named schools. Tridentine Catholic restoration under Spain: Baroque churches, Jesuit schooling, and suppressed Calvinism after revolt violence.",
           "science": "Technical culture in Southern Netherlands (Spanish) for this slice follows Spanish Habsburg monarchy, Low Countries (revolt beginning): agrarian calendars, craft guilds or state arsenals, and whatever astral or medical learning the period's elites keep. Confessional image wars — iconoclasm vs baroque persuasion beginning; parade armour as metal humanism; court portraiture fixing faces into ideology."
         }
-      }
+      },
+      "periodName": "Reformation & Renaissance"
     },
     {
       "id": "early-modern",
-      "label": "Early Modern",
-      "era": "Empires & Reformation",
+      "label": "Composite monarchies at 1600",
+      "era": "Empires, confession, commerce",
       "yearLabel": "c. 1600 AD",
       "yearApprox": 1600,
-      "narrative": "Print, Reformation, and composite monarchies: Spanish/Portuguese global empires, France, England→Britain, Habsburgs, Ottoman Europe, Poland–Lithuania, Sweden’s great-power age, rising Russia. Sovereignty and confession redraw maps; deep autosomal structure still echoes Neolithic and Bronze Age pulses, with Ottoman, imperial, and port-city admixture in specific corridors.",
+      "narrative": "At 1600 Spanish and Portuguese oceans, Bourbon-bound France, England on the cusp of union politics, Habsburg Mitteleuropa, Ottoman Rumelia, the Polish–Lithuanian Commonwealth, Sweden’s Baltic ambition, and rising Muscovy define a Europe of composite monarchies — not nation-states. Sovereignty and confession redraw maps; deep autosomal structure still echoes Neolithic and Bronze Age pulses, with port-city and imperial corridors as local exceptions.",
       "culturesNote": "Spanish & Portuguese empires, France, England/Britain, Habsburg Mitteleuropa, Ottoman Rumelia, PLC, Sweden, Muscovy/Russia.",
       "regions": {
         "iberia": {
@@ -16916,15 +16930,16 @@
           "philosophy": "In this deep-time schematic of Ottoman Greece, ideas of legitimacy, confession, and law track the Ottoman Rumelia map layer—read alongside kingdom-era panels for denser named schools. Greek Orthodoxy under Islamic sovereignty; crypto-Christianity debates in places.",
           "science": "Technical culture in Ottoman Greece for this slice follows Ottoman Rumelia: agrarian calendars, craft guilds or state arsenals, and whatever astral or medical learning the period's elites keep. Baroque light storms, Dutch genre interiors, Versailles optics, Ottoman tile gardens still shaping southeastern eyes."
         }
-      }
+      },
+      "periodName": "Early Modern"
     },
     {
       "id": "modern",
-      "label": "Modern",
-      "era": "Nations to present",
+      "label": "Nation-states to the present",
+      "era": "Industry, wars, EU",
       "yearLabel": "c. 1900 – present",
       "yearApprox": 2000,
-      "narrative": "Nation-states, industrial demography, world wars, EU integration, and global migration. Present-day Europeans still largely occupy the WHG–EEF–steppe ternary forged before 1000 BCE, with medieval overlays and recent cosmopolitan urban ancestry. Political identity and standard languages change faster than deep genetic clusters — yet fine-scale ancestry remains geographically structured.",
+      "narrative": "The modern slider end-state is a Europe of nation-states after industrial demography, two world wars, Cold War blocs, and EU-era integration — plus post-imperial and post-Soviet eastern rearrangements. Present-day populations still largely occupy the WHG–EEF–steppe ternary forged before 1000 BCE, with medieval overlays and recent urban cosmopolitan ancestry. Political identity and standard languages change faster than deep genetic clusters.",
       "culturesNote": "European nation-states, post-imperial/post-Soviet east, EU — political map over deep genetic and older linguistic families.",
       "regions": {
         "iberia": {
@@ -18093,7 +18108,8 @@
           "philosophy": "In this deep-time schematic of Hellenic Republic, ideas of legitimacy, confession, and law track the Greece & Cyprus map layer—read alongside kingdom-era panels for denser named schools. Greek Orthodoxy as cultural establishment: liturgy and feast calendar still mark public time while youth secularization rises.",
           "science": "Technical culture in Hellenic Republic for this slice follows Greece & Cyprus: agrarian calendars, craft guilds or state arsenals, and whatever astral or medical learning the period's elites keep. From industrial sublime to Impressionism to contemporary biennales; folk costume revived as heritage; military uniform as the last total clothing system."
         }
-      }
+      },
+      "periodName": "Modern"
     }
   ]
 }

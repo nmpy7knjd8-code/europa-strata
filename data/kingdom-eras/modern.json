@@ -11,44 +11,44 @@
     {
       "year": 1815,
       "label": "1815 AD",
-      "name": "Vienna settlement",
-      "era": "Congress of Vienna and post-Napoleonic order",
-      "narrative": "1815 restores and redesigns Europe after Napoleon: legitimacy, buffer states, and great-power concert under Metternich’s generation. Prussia and Austria share German leadership; Britain underwrites balance; Russia polices the east. Liberal and national movements are contained, not erased—this snapshot is restoration geopolitics."
+      "name": "Congress of Vienna order",
+      "era": "After Napoleon, restored monarchies",
+      "narrative": "1815 resets Europe after Napoleonic upheaval: the Congress of Vienna restores dynasties, creates the German Confederation and Kingdom of the Netherlands, confirms Swiss neutrality, and leaves Russia, Austria, Prussia, and Britain as the concert’s pillars. France is contained but not erased; Italy and Germany remain fragmented; the Ottoman Empire is the ‘sick man’ of the Eastern Question. Romantic nationalism already stirs under legitimist borders."
     },
     {
       "year": 1871,
       "label": "1871 AD",
-      "name": "Nation-states ascend",
-      "era": "German and Italian unification; new empires",
-      "narrative": "1871 proclaims the German Empire at Versailles and seals Italian unification’s core. France is a humbled republic; Austria-Hungary is Dualist; the Balkans destabilize Ottoman retreat. Industrial and colonial competition accelerate. The tick is the unified-nation map that will march toward 1914."
+      "name": "Unified Germany and Italy",
+      "era": "Bismarck, Risorgimento, Second Empire falls",
+      "narrative": "By 1871 Bismarck’s wars have proclaimed a German Empire at Versailles; Italy is largely unified under the Savoy monarchy; France’s Second Empire has fallen to the Third Republic after Sedan. Britain’s industrial and naval primacy frames a Pax Britannica; Austria-Hungary’s dual monarchy manages a multiethnic empire; Russia reforms then represses; the Ottomans shed Balkan lands. Nation-state ideology has remade the center — colonial scramble intensifies overseas."
     },
     {
       "year": 1914,
       "label": "1914 AD",
-      "name": "July Crisis",
-      "era": "Great War begins; imperial Europe armed",
-      "narrative": "1914 opens with alliance war among German, Austro-Hungarian, Russian, French, and British empires; Ottoman and later American entry globalize the conflict. Railway mobilization and industrial killing define the year. This snapshot is Europe’s imperial order at the moment it chooses general war."
+      "name": "July Crisis alliances",
+      "era": "Armed peace before the Great War",
+      "narrative": "In 1914 Europe’s great powers stand in armed camps: Triple Entente versus Triple Alliance, with Balkan powder after Ottoman retreat and two Balkan Wars. Germany, Austria-Hungary, Russia, France, and Britain are industrial military states; smaller neutrals and constitutional monarchies fill the gaps. The July Crisis after Sarajevo will convert this balance into total war — the last moment the long nineteenth-century map still looks intact."
     },
     {
       "year": 1945,
       "label": "1945 AD",
-      "name": "Zero hour",
-      "era": "Third Reich defeated; bipolar occupation",
-      "narrative": "1945 ends Nazi Germany and fragments the continent into occupation zones, displaced persons, and Soviet advance in the east. Colonial empires begin to unwind; nuclear weapons and UN institutions appear. The tick is ruin and partition—Cold War borders not yet fully frozen."
+      "name": "Zero hour after total war",
+      "era": "Occupation zones, empire’s end beginning",
+      "narrative": "1945 finds Germany defeated and occupied, Italy’s fascist regime gone, and Central/Eastern Europe under advancing Soviet power. The United Kingdom is victorious but financially exhausted; France rebuilds after occupation; neutrals and Iberian dictatorships sit aside the Allied settlement. The Holocaust and ethnic cleansings have remade demography; colonial empires begin to unravel. This tick is ruin and occupation — Cold War blocs are forming, not yet wall and treaty."
     },
     {
       "year": 1990,
       "label": "1990 AD",
-      "name": "After the Wall",
-      "era": "German reunification and Soviet collapse’s eve",
-      "narrative": "1990 reunifies Germany and signals Warsaw Pact dissolution; free elections remake Central Europe while Yugoslavia frays. The Soviet Union still exists but sovereignty cascades in the Baltics and republics. This snapshot is post-1989 transition—markets, NATO/EU aspiration, and unfinished borders."
+      "name": "Cold War’s endgame",
+      "era": "German reunification, Soviet collapse pending",
+      "narrative": "Around 1990 the Berlin Wall’s fall and German reunification end the postwar division of Germany; Eastern European communist regimes have toppled in 1989’s cascade. The Soviet Union still exists but is months from dissolution; Yugoslavia is fracturing toward wars of succession; the EC deepens toward Maastricht. NATO and Warsaw Pact logics unwind — Europe’s map is about to sprout new sovereign states from federal and imperial wreckage."
     },
     {
       "year": 2000,
       "label": "2000 AD",
-      "name": "Millennial Europe",
-      "era": "EU enlargement eve; post-Cold War normal?",
-      "narrative": "Around 2000 the EU prepares eastern enlargement, the euro launches, and NATO’s post-Cold War map looks settled—until later shocks. Russia under Putin consolidates; Balkans remain after the Yugoslav wars; digital and migration politics rise. The tick is millennial European integration confidence before the twenty-first century’s reversals."
+      "name": "EU-era nation-state Europe",
+      "era": "Post-1991 sovereignty, euro dawn",
+      "narrative": "By 2000 Europe is a dense quilt of post-Cold War nation-states: EU enlargement is underway, the euro launches, NATO has pushed east, and the western Balkans carry Dayton and Kosovo settlements. Russia is a post-Soviet federation; Ukraine, the Baltics, and Caucasus states mark the former USSR’s edge. Deep genetic structure still echoes Neolithic–Bronze Age pulses; political identity, migration, and EU law change faster than that substrate."
     }
   ],
   "narrative": "From the Congress of Vienna through German and Italian unification, the Eastern Question and two world wars, Cold War division, and post-1991 nation-state Europe—borders track empires collapsing into nations, then blocs, then EU-era sovereignty.",

@@ -11,37 +11,37 @@
     {
       "year": 1400,
       "label": "1400 AD",
-      "name": "Quattrocento threshold",
-      "era": "Italian powers, Valois–Lancaster, and Ottoman rise",
-      "narrative": "At 1400 Italian republics and signorie already export humanism and mercenary war while Valois and Lancastrians bleed in France. The Ottomans press the Balkans; Iberian crowns prepare the final Nasrid reduction; Burgundy is a princely third force. This tick is late medieval politics with Renaissance culture beginning in Italian courts and communes."
+      "name": "Late Gothic into early Renaissance",
+      "era": "Hundred Years’ War, Italian communes",
+      "narrative": "In 1400 the Hundred Years’ War still structures northwest Europe while Burgundy’s court sets fashion and statecraft. Italian city-republics and signorie — Venice, Florence, Milan — are already laboratories of humanism and mercenary politics. Nasrid Granada survives in Iberia; the Ottomans tighten on the Balkans. This tick is late medieval geopolitics with Renaissance culture beginning in Italian workshops, not yet a ‘Renaissance map’ of nation-states."
     },
     {
       "year": 1450,
       "label": "1450 AD",
-      "name": "Print, guns, and the fall of the City",
-      "era": "1453 Constantinople and mid-century recovery",
-      "narrative": "Mid-century turns on Constantinople’s fall (1453), French recovery under Charles VII, and Burgundy’s glittering composite state. Italian powers balance before the French wars; print and artillery begin to alter information and sieges. The snapshot is post-plague recovery meeting Ottoman and Valois ambition."
+      "name": "Print, guns, and 1453’s shadow",
+      "era": "Fall of Constantinople approaching",
+      "narrative": "Mid-century Europe sits between Joan of Arc’s aftermath and Gutenberg’s press: France recovers from English occupation; Burgundy peaks; Italian powers jockey before the Peace of Lodi. The Ottomans are about to take Constantinople (1453), ending the Byzantine remnant and shocking Latin Christendom. Iberian crowns prepare the final push on Granada; Muscovy gathers strength against the Horde’s heirs. Culture: early Renaissance Florence meets late Gothic north."
     },
     {
       "year": 1500,
       "label": "1500 AD",
-      "name": "Age of discoveries & Italian Wars",
-      "era": "Charles VIII’s trail, Habsburg marriages, Atlantic turn",
-      "narrative": "Around 1500 French armies open the Italian Wars, Spain unites under the Catholic Monarchs’ heirs, and Portuguese routes already pull Asia into European politics. Maximilian’s Habsburg web and Tudor consolidation frame the north. Culture is High Renaissance in Italy while dynastic war makes the peninsula Europe’s battlefield."
+      "name": "Italian Wars and ocean empires",
+      "era": "Habsburg–Valois, Columbus aftermath",
+      "narrative": "Around 1500 the Italian Wars have turned the peninsula into a Valois–Habsburg chessboard; Spain’s dynastic union of Castile and Aragon (Granada fallen 1492) projects Atlantic empire after Columbus. Portugal’s Indian Ocean route remakes commerce; the Holy Roman Empire under Maximilian braids marriage diplomacy; Muscovy under Ivan III has thrown off Mongol suzerainty. Humanism and early print spread north — Reformation fracture is one generation away."
     },
     {
       "year": 1550,
       "label": "1550 AD",
-      "name": "Confessions harden",
-      "era": "Augsburg, Trent, and Habsburg–Valois deadlock",
-      "narrative": "By 1550 Lutheran settlement (Augsburg 1555 approaches), the Council of Trent has begun, and Charles V’s stretched empire faces Valois France and Ottoman pressure. England under Edward/Mary oscillates confessionally; Scandinavia is Lutheran; Muscovy under Ivan IV pushes east. This tick is Reformation politics—faith as border—before the Dutch Revolt ignites."
+      "name": "Confessional Europe after Trent’s opening",
+      "era": "Lutheran north, Habsburg globe, Süleyman",
+      "narrative": "By 1550 Lutheran and Reformed churches have remade northern belief while the Council of Trent gears Catholic reform. Charles V’s sprawling Habsburg inheritance — Spain, Netherlands, Austria, imperial title — faces Valois France and Süleyman’s Ottoman pressure at Vienna’s memory and in the Mediterranean. Tudor England is post-Henrician; Ivan IV crowns himself tsar; the Polish–Lithuanian union consolidates. Art turns High Renaissance then Mannerism; politics turns confessional war."
     },
     {
       "year": 1600,
       "label": "1600 AD",
-      "name": "Century’s turn",
-      "era": "Dutch Revolt, Philip III, and northern wars",
-      "narrative": "c. 1600 the Dutch Republic fights for recognition, Spain under Philip III manages a global but strained monarchy, and France exits Wars of Religion toward Henri IV’s settlement. Sweden and Poland contest the Baltic; England is late Elizabethan/early Stuart. Renaissance culture shades into confessional Baroque politics."
+      "name": "Dutch Revolt and Baroque threshold",
+      "era": "Philip III’s Spain, Bourbon France rising",
+      "narrative": "At 1600 the Dutch Republic has fought free enough to stand as a commercial great power against the Spanish Netherlands; France exits the Wars of Religion toward Bourbon consolidation (Nantes 1598). England under Elizabeth edges into Atlantic rivalry; the Empire remains confessionally brittle before 1618; Ottomans still hold deep Balkan lands; Poland–Lithuania and Sweden contest the Baltic. Renaissance humanism yields to Baroque spectacle and scientific curiosity — the Thirty Years’ War is near."
     }
   ],
   "narrative": "From Hundred Years’ War and Reconquista finales through Italian Wars, Ottoman–Habsburg collision, Reformation fracture, and the Dutch Revolt’s edge—Europe’s map is dynastic and confessional, not national.",
