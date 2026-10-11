@@ -1968,6 +1968,9 @@ function regionCultureSlice(period, regionId) {
     const v = reg[key];
     if (typeof v === "string" && v.trim()) slice[key] = v.trim();
   }
+  if (typeof reg.cultureLabel === "string" && reg.cultureLabel.trim()) {
+    slice.cultureLabel = reg.cultureLabel.trim();
+  }
   if (reg.stories != null) slice.stories = reg.stories;
   else if (reg.story != null) slice.stories = reg.story;
   if (Array.isArray(reg.images) && reg.images.length) slice.images = reg.images;
@@ -2385,11 +2388,20 @@ function renderDetail() {
   $("#detail-kicker").textContent = `${place} · ${formatYearUi(period.yearLabel)}`;
 
   // Overall culture horizon from map layers covering this country
-  let horizon = region.culture;
+  // Prefer short cultureLabel — full packs store long prose in `culture`
+  const shortCulture =
+    (region.cultureLabel || "").trim() ||
+    (region.culture && String(region.culture).length <= 72
+      ? String(region.culture).trim()
+      : "");
+  let horizon = shortCulture || region.culture || "";
   if (state.selectedIso) {
     const cov = countryStyleForPeriod(period, state.selectedIso);
     const names = (cov.labels || []).map((l) => l.label).filter(Boolean);
     if (names.length) horizon = names.join(" · ");
+  }
+  if (horizon && horizon.length > 120) {
+    horizon = horizon.slice(0, 117).trim() + "…";
   }
   setPlainText($("#culture-title"), horizon);
   const horizonEl = $("#culture-horizon");
@@ -2809,7 +2821,7 @@ function bindUI() {
 async function loadKingdomPack(id) {
   try {
     // Cache-bust so refined research geometry packs reload after deploy
-    const r = await fetch(`data/kingdom-eras/${id}.json?v=era-ui-46`);
+    const r = await fetch(`data/kingdom-eras/${id}.json?v=era-ui-47`);
     if (!r.ok) return null;
     const raw = await r.json();
     return normalizeKingdomPack(raw);
@@ -2830,7 +2842,7 @@ async function init() {
       loadKingdomPack(id).then((pack) => [id, pack])
     );
     const [timeline, geo, keyEvents, packEntries] = await Promise.all([
-      fetch("data/timeline.json?v=era-ui-46").then((r) => {
+      fetch("data/timeline.json?v=era-ui-47").then((r) => {
         if (!r.ok) throw new Error("timeline");
         return r.json();
       }),
