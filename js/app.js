@@ -170,6 +170,13 @@ function normalizeKingdomPack(raw) {
       tick.name ||
       tick.periodLabel ||
       (labelBare === yearOnly ? label : tickLabel);
+    const tickEyebrow = (tick.era || tick.eyebrow || tick.theme || "").trim();
+    const tickNarrative = (
+      tick.narrative ||
+      tick.summary ||
+      tick.description ||
+      ""
+    ).trim();
     const mapLayers = [];
     const polities = {};
     const features = [];
@@ -223,11 +230,14 @@ function normalizeKingdomPack(raw) {
       yearLabel: `${year} AD`,
       label: periodName,
       tickYear: `${year} AD`,
-      era: label,
+      // Prefer tick-specific eyebrow; fall back to tab label only if none authored
+      era: tickEyebrow || label,
       narrative:
+        tickNarrative ||
         raw.narrative ||
         raw.notes ||
         `Schematic ${label} polities around ${year} AD — kingdoms, empires, duchies, and confederations (not modern borders).`,
+      culturesNote: tickEyebrow || "",
       mapLayers,
       polities,
       geo: { type: "FeatureCollection", features },
@@ -1586,20 +1596,17 @@ function renderPlaceKeyEvents() {
   section.hidden = false;
 }
 
-/** Display title for the era block (e.g. "Migration Period"). */
+/** Display title for the era block (tick-specific when authored). */
 function periodDisplayTitle(period) {
   if (!period) return "—";
+  // Kingdom + deep-time: prefer the period/tick label (e.g. "Westphalia", "Migration Period")
+  const titled = String(period.label || "").trim();
+  if (titled) return titled;
   if (isKingdomMode()) {
     const pack = activePack();
-    return (
-      pack?.label ||
-      KINGDOM_TAB_LABELS[state.atlasMode] ||
-      period.label ||
-      period.era ||
-      "—"
-    );
+    return pack?.label || KINGDOM_TAB_LABELS[state.atlasMode] || period.era || "—";
   }
-  return period.label || period.era || "—";
+  return period.era || "—";
 }
 
 /** Short thematic eyebrow under the era title; hide if it only repeats the title. */
@@ -1608,14 +1615,16 @@ function periodEyebrowText(period) {
   const title = periodDisplayTitle(period).trim();
   const era = String(period.era || "").trim();
   if (era && era.toLowerCase() !== title.toLowerCase()) return era;
-  if (isKingdomMode()) {
-    const y = formatYearUi(period.tickYear || period.yearLabel);
-    return y ? `Schematic polities · ${y}` : "";
-  }
   const note = String(period.culturesNote || "").trim();
   if (note && note.toLowerCase() !== title.toLowerCase()) {
-    // Keep eyebrow short — first clause of culturesNote
     return note.split(/[.—]/)[0].trim() || note;
+  }
+  if (isKingdomMode()) {
+    const y = formatYearUi(period.tickYear || period.yearLabel);
+    const pack = activePack();
+    const tab = pack?.label || KINGDOM_TAB_LABELS[state.atlasMode] || "";
+    if (tab && y) return `${tab} · ${y}`;
+    return y ? `Schematic polities · ${y}` : "";
   }
   return "";
 }
@@ -2580,7 +2589,7 @@ function bindUI() {
 async function loadKingdomPack(id) {
   try {
     // Cache-bust so refined research geometry packs reload after deploy
-    const r = await fetch(`data/kingdom-eras/${id}.json?v=era-ui-39`);
+    const r = await fetch(`data/kingdom-eras/${id}.json?v=era-ui-40`);
     if (!r.ok) return null;
     const raw = await r.json();
     return normalizeKingdomPack(raw);
@@ -2601,7 +2610,7 @@ async function init() {
       loadKingdomPack(id).then((pack) => [id, pack])
     );
     const [timeline, geo, keyEvents, packEntries] = await Promise.all([
-      fetch("data/timeline.json?v=era-ui-39").then((r) => {
+      fetch("data/timeline.json?v=era-ui-40").then((r) => {
         if (!r.ok) throw new Error("timeline");
         return r.json();
       }),

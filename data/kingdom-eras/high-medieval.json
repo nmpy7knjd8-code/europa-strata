@@ -5,23 +5,38 @@
   "ticks": [
     {
       "year": 1000,
-      "label": "1000 AD"
+      "label": "1000 AD",
+      "name": "Millennium kingdoms",
+      "era": "Capetians, Ottonians, and the year-1000 map",
+      "narrative": "Around 1000, Latin Christendom is a mosaic of consolidating crowns and duchies: Capetian France still thin around Paris, Ottonian–Salian Germany and Italy under imperial claim, England after Æthelred, Christian Iberian north against al-Andalus, and Piast, Árpád, and Scandinavian realms entering the Latin church. Byzantium and Kievan Rus’ still define the east; schematic polities here mark that millennial patchwork, not modern borders."
     },
     {
       "year": 1100,
-      "label": "1100 AD"
+      "label": "1100 AD",
+      "name": "After the First Crusade",
+      "era": "Investiture, Normans, and Outremer",
+      "narrative": "By 1100 the Investiture Contest reshapes empire and papacy, Norman power binds England to the Continent, and crusader states cling to the Levantine coast. Iberian reconquest advances unevenly; Poland and Hungary deepen Latin kingship; the Commune movement stirs in Italy. This snapshot is post-crusade politics—holy war, reform popes, and feudal crowns in motion."
     },
     {
       "year": 1200,
-      "label": "1200 AD"
+      "label": "1200 AD",
+      "name": "High Medieval climax",
+      "era": "Philip Augustus, Innocent III, and Latins in Constantinople",
+      "narrative": "c. 1200 is Capetian ascent after Bouvines’ generation, papal monarchy under Innocent III, and the shock of the Fourth Crusade’s Latin Empire in Constantinople. Plantagenet cross-Channel lordship strains; Iberian crowns push south; Hohenstaufen Italy and the Reich remain contested. Read this tick as the classic ‘high’ Middle Ages of law, crusade, and royal consolidation."
     },
     {
       "year": 1300,
-      "label": "1300 AD"
+      "label": "1300 AD",
+      "name": "Crisis and consolidation",
+      "era": "Philip IV, Avignon’s eve, and eastern unions",
+      "narrative": "Around 1300, Philip IV’s France tests Boniface VIII; the Empire fragments after the Hohenstaufen; England and Scotland lock into wars of sovereignty. Aragon and Castile mature as Mediterranean and Meseta powers; Lithuania and Muscovy rise on the Orthodox–Latin frontier. The tick catches late Capetian/early Avignon pressures before the Black Death remakes demography."
     },
     {
       "year": 1400,
-      "label": "1400 AD"
+      "label": "1400 AD",
+      "name": "Schism, plague aftershocks, and rivals",
+      "era": "Hundred Years’ War, Timur, and Kalmar’s shadow",
+      "narrative": "c. 1400 Europe lives with papal schism, unfinished Hundred Years’ War, and Ottoman advance after Nicopolis. Timur’s blow to Bayezid resets Anatolia; Poland–Lithuania and Muscovy reorganize the east; Scandinavian union politics hover over Denmark–Norway–Sweden. This late medieval snapshot is war, schism, and recovering kingdoms—not a single Christendom."
     }
   ],
   "notes": "Schematic WGS84 extents for Europa Strata time-slider overlays — NOT modern state borders. Polygons are research-informed approximations of high-medieval polities (kingdoms, major duchies, leagues, tribal confederations). Feudal mosaics (France, HRE, Italy) are simplified to dominant or collective extents; overseas colonies are often omitted or noted. Sources: Euratlas century maps, Shepherd/standard atlas tradition, and secondary syntheses of Capetian, Hohenstaufen, Reconquista, Crusade, Mongol, and Baltic crusade geopolitics.",

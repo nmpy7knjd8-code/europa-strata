@@ -10,23 +10,38 @@
   "ticks": [
     {
       "year": 1600,
-      "label": "1600 AD"
+      "label": "1600 AD",
+      "name": "Confessional Europe",
+      "era": "Dutch Revolt, Henri IV, and the road to 1618",
+      "narrative": "In 1600 the Eighty Years’ War still defines the Low Countries, France consolidates after the Wars of Religion, and the Holy Roman Empire’s confessional truce grows brittle. Spain’s global monarchy, English and Dutch maritime challenge, and Polish–Swedish Baltic rivalry set the board. This snapshot is late Renaissance politics tipping into the Thirty Years’ War generation—not a generic ‘early modern’ blur."
     },
     {
       "year": 1648,
-      "label": "1648 AD"
+      "label": "1648 AD",
+      "name": "Westphalia",
+      "era": "Peace of Westphalia and the mid-century settlement",
+      "narrative": "1648 ends the Thirty Years’ War and (with Münster) the Dutch–Spanish conflict: sovereignty language, French and Swedish gains, and a shattered German landscape. England is in civil war and republic; Portugal has broken from Spain; Ukraine’s Khmelnytsky uprising remakes the east. Read this tick as the Westphalian settlement moment—war’s diplomatic aftershock."
     },
     {
       "year": 1700,
-      "label": "1700 AD"
+      "label": "1700 AD",
+      "name": "Succession crises",
+      "era": "Spain’s vacant throne and northern catastrophe",
+      "narrative": "Around 1700 the Spanish succession crisis draws Bourbon and Habsburg coalitions into continent-wide war, while Sweden’s Charles XII and Russia’s Peter collide in the Great Northern War. Louis XIV’s France is still the measuring stick of power; the Dutch and English are fiscal-military innovators. This is dynastic endgame politics, not 1600’s confessional map."
     },
     {
       "year": 1750,
-      "label": "1750 AD"
+      "label": "1750 AD",
+      "name": "Enlightenment states",
+      "era": "Diplomatic Revolution’s eve and colonial rivalry",
+      "narrative": "By 1750 Prussia under Frederick II and Austria under Maria Theresa redefine German power; Britain and France duel in Atlantic and Indian theatres; Russia is a European great power. Partition talk already shadows Poland; Enlightenment courts patronize science and reform rhetoric. The snapshot is mid-century cabinet war and colonial rivalry before 1756 realigns alliances."
     },
     {
       "year": 1789,
-      "label": "1789 AD"
+      "label": "1789 AD",
+      "name": "Revolutionary threshold",
+      "era": "French Revolution opens; old regimes wobble",
+      "narrative": "1789 cracks the French monarchy and forces every court to answer revolution, debt, and national claim. Poland’s reform moment races partition; Britain consolidates imperial gains after 1763; the Ottoman and Russian frontiers keep shifting. This tick is the hinge out of cabinet-era early modernity into revolutionary and Napoleonic remaking."
     }
   ],
   "narrative": "From the Dutch Revolt’s consolidation and the Thirty Years’ War through Westphalia, Bourbon–Habsburg rivalry, Sweden’s Baltic rise and fall, Russia’s empire, Ottoman retreat from Hungary, Prussian ascent, and the First Partition of Poland—Europe’s map on the eve of the French Revolution is a system of composite monarchies and commercial republics, not nation-states.",
