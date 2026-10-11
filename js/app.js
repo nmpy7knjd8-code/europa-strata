@@ -1586,18 +1586,65 @@ function renderPlaceKeyEvents() {
   section.hidden = false;
 }
 
+/** Display title for the era block (e.g. "Migration Period"). */
+function periodDisplayTitle(period) {
+  if (!period) return "—";
+  if (isKingdomMode()) {
+    const pack = activePack();
+    return (
+      pack?.label ||
+      KINGDOM_TAB_LABELS[state.atlasMode] ||
+      period.label ||
+      period.era ||
+      "—"
+    );
+  }
+  return period.label || period.era || "—";
+}
+
+/** Short thematic eyebrow under the era title; hide if it only repeats the title. */
+function periodEyebrowText(period) {
+  if (!period) return "";
+  const title = periodDisplayTitle(period).trim();
+  const era = String(period.era || "").trim();
+  if (era && era.toLowerCase() !== title.toLowerCase()) return era;
+  if (isKingdomMode()) {
+    const y = formatYearUi(period.tickYear || period.yearLabel);
+    return y ? `Schematic polities · ${y}` : "";
+  }
+  const note = String(period.culturesNote || "").trim();
+  if (note && note.toLowerCase() !== title.toLowerCase()) {
+    // Keep eyebrow short — first clause of culturesNote
+    return note.split(/[.—]/)[0].trim() || note;
+  }
+  return "";
+}
+
 function renderPeriodText() {
   const period = currentPeriod();
   const yearEl = $("#period-year");
   const labelEl = $("#period-label");
+  const titleEl = $("#period-title");
+  const eraEl = $("#period-era");
   if (!period) {
     if (yearEl) yearEl.textContent = "—";
     if (labelEl) labelEl.textContent = "—";
+    if (titleEl) titleEl.textContent = "—";
+    if (eraEl) {
+      eraEl.textContent = "";
+      eraEl.hidden = true;
+    }
     return;
   }
   if (yearEl) yearEl.textContent = formatYearUi(period.tickYear || period.yearLabel);
   if (labelEl) labelEl.textContent = period.label;
-  $("#period-era").textContent = period.era || "";
+  const title = periodDisplayTitle(period);
+  if (titleEl) titleEl.textContent = title;
+  const eyebrow = periodEyebrowText(period);
+  if (eraEl) {
+    eraEl.textContent = eyebrow;
+    eraEl.hidden = !eyebrow;
+  }
   $("#period-copy").textContent = period.narrative;
   const ling = $("#period-ling");
   if (period.linguistics) {
@@ -2533,7 +2580,7 @@ function bindUI() {
 async function loadKingdomPack(id) {
   try {
     // Cache-bust so refined research geometry packs reload after deploy
-    const r = await fetch(`data/kingdom-eras/${id}.json?v=era-ui-38`);
+    const r = await fetch(`data/kingdom-eras/${id}.json?v=era-ui-39`);
     if (!r.ok) return null;
     const raw = await r.json();
     return normalizeKingdomPack(raw);
@@ -2554,7 +2601,7 @@ async function init() {
       loadKingdomPack(id).then((pack) => [id, pack])
     );
     const [timeline, geo, keyEvents, packEntries] = await Promise.all([
-      fetch("data/timeline.json?v=era-ui-38").then((r) => {
+      fetch("data/timeline.json?v=era-ui-39").then((r) => {
         if (!r.ok) throw new Error("timeline");
         return r.json();
       }),
