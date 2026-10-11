@@ -2821,7 +2821,7 @@ function bindUI() {
 async function loadKingdomPack(id) {
   try {
     // Cache-bust so refined research geometry packs reload after deploy
-    const r = await fetch(`data/kingdom-eras/${id}.json?v=era-ui-47`);
+    const r = await fetch(`data/kingdom-eras/${id}.json?v=era-ui-48`);
     if (!r.ok) return null;
     const raw = await r.json();
     return normalizeKingdomPack(raw);
@@ -2842,7 +2842,7 @@ async function init() {
       loadKingdomPack(id).then((pack) => [id, pack])
     );
     const [timeline, geo, keyEvents, packEntries] = await Promise.all([
-      fetch("data/timeline.json?v=era-ui-47").then((r) => {
+      fetch("data/timeline.json?v=era-ui-48").then((r) => {
         if (!r.ok) throw new Error("timeline");
         return r.json();
       }),

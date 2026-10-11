@@ -128,7 +128,57 @@ def _looks_like_file_title(s: str) -> bool:
     return low.endswith(IMG_EXT)
 
 
-def _commons_api_search(query: str, limit: int = 5) -> list[str]:
+# Book covers, IA library scans, journal PDFs, wrong-subject print plates
+BOOKISH_FILE_RE = re.compile(
+    r"""
+    \(IA\s|Internet\s*Archive|\.pdf$|\.djvu$|
+    book\s*cover|title\s*page|microform|
+    catalogue\s+of|catalog\s+of|
+    indians\s+of\s+the\s+plains|across\s+russia|
+    north\s+american\s+sylva|age\s+of\s+mammals|
+    poetical\s+works|ballads\s+and\s+songs|
+    essays\s+on\s+scandinavian|yule-?tide|
+    world'?s\s+peoples|rough\s+notes\s+on\s+pottery|
+    guide\s+to\s+the\s+collections|farmer'?s\s+world|
+    engineering\s+and\s+mining\s+journal|
+    early\s+european\s+civilization|italy\s+from\s+the\s+alps|
+    stone\s+ages\s+in\s+north\s+britain|new\s+stone\s+age\s+in\s+northern|
+    political\s+essay\s+on\s+the\s+kingdom|
+    deserts\s+of\s+southern\s+france|prehistoric\s+scotland\s+and\s+its\s+place|
+    palaeolithic\s+period\s+of\s+the\s+scandinavian|
+    history\s+of\s+tazewell|cu319|cihm\s|
+    journal\.pone|organic\s+residue\s+analysis|
+    archaeopedological|biomolecular\s+characterization|
+    identifying\s+archaeological\s+bone|
+    the\s+emergence\s+of\s+monumental|
+    valuable\s+collection\s+of|specimens\s+of\s+singular|
+    gothic\s+ornaments\s+in\s+the\s+cathedral|
+    explorers\s+of\s+dawn|leipsig\s+collection|
+    byzantine\s+ceramic\s+art\.\s*notes
+    """,
+    re.I | re.VERBOSE,
+)
+
+
+def _is_rejected_file_title(title: str) -> bool:
+    """Reject book covers, IA scans, PDFs, and other non-photo matches."""
+    if not title:
+        return True
+    t = title.strip()
+    low = t.lower()
+    if low.endswith(".pdf") or low.endswith(".djvu"):
+        return True
+    if BOOKISH_FILE_RE.search(t):
+        return True
+    # Internet Archive id residue in filenames even for jpg page scans
+    if re.search(r"\(IA\s+[a-z0-9_\-]+\)", t, re.I):
+        return True
+    if "ia " in low and ("archive" in low or low.endswith(".pdf")):
+        return True
+    return False
+
+
+def _commons_api_search(query: str, limit: int = 10) -> list[str]:
     url = "https://commons.wikimedia.org/w/api.php?" + urllib.parse.urlencode(
         {
             "action": "query",
@@ -149,15 +199,68 @@ def _commons_api_search(query: str, limit: int = 5) -> list[str]:
     return [h.get("title") or "" for h in hits if h.get("title")]
 
 
-def _pick_image_title(titles: list[str]) -> str | None:
-    preferred = []
+EUROPE_QUERY_RE = re.compile(
+    r"europe|european|danube|neolithic|mesolithic|iberia|scandinav|"
+    r"balkan|atlantic|lepanski|lepanski|lepenski|iron\s*gates|"
+    r"erteb|trypill|funnelbeaker|cardial|lbk|nordic|morbihan|"
+    r"carnac|stonehenge|vistula|pontic|chernyakhov|wielbark|"
+    r"north\s+european\s+plain|maglemos|azilian",
+    re.I,
+)
+AMERICAS_TITLE_RE = re.compile(
+    r"north\s+american|indians\s+of|united\s+states|canada\s+and\s+nova|"
+    r"\butah\b|\bnara\b|zion\.|pinon|american\s+west|great\s+plains|"
+    r"nova\s+scotia|tazewell|cape\s+breton",
+    re.I,
+)
+
+
+def _query_is_european(query: str) -> bool:
+    return bool(EUROPE_QUERY_RE.search(query or ""))
+
+
+def _title_score(query: str, title: str) -> int:
+    qwords = set(re.findall(r"[a-z0-9à-ÿ]+", query.lower()))
+    stop = {"the", "and", "of", "in", "a", "on", "for", "with", "from"}
+    qwords -= stop
+    twords = set(re.findall(r"[a-z0-9à-ÿ]+", title.lower())) - stop
+    score = len(qwords & twords) * 2
+    if _query_is_european(query):
+        if AMERICAS_TITLE_RE.search(title):
+            score -= 20
+        if re.search(r"europe|european|danube|romania|serbia|france|spain|italy|germany|poland|denmark|sweden|ireland|britain|scotland", title, re.I):
+            score += 3
+    # Prefer photos over plates/engravings from old books even as jpg
+    if re.search(r"\b(1910|1873|1795|plate|fig\.|engraving)\b", title, re.I):
+        score -= 2
+    return score
+
+
+def _pick_image_title(titles: list[str], query: str = "") -> str | None:
+    candidates = []
+    euro = _query_is_european(query)
     for t in titles:
-        low = t.lower()
-        if low.endswith(".pdf") or low.endswith(".djvu"):
+        if _is_rejected_file_title(t):
             continue
-        if any(low.endswith(ext) for ext in IMG_EXT):
-            preferred.append(t)
-    return (preferred or titles or [None])[0]
+        if euro and AMERICAS_TITLE_RE.search(t):
+            continue
+        low = t.lower()
+        if not any(low.endswith(ext) for ext in IMG_EXT):
+            continue
+        # Prefer common web photo formats over huge archival TIFFs
+        candidates.append(t)
+    if not candidates:
+        return None
+    if query:
+        candidates.sort(
+            key=lambda t: (
+                _title_score(query, t),
+                1 if t.lower().endswith((".jpg", ".jpeg", ".png", ".webp")) else 0,
+            ),
+            reverse=True,
+        )
+        return candidates[0]
+    return candidates[0]
 
 
 def resolve_commons_query(query: str) -> str | None:
@@ -166,13 +269,25 @@ def resolve_commons_query(query: str) -> str | None:
     if not q:
         return None
     if q.startswith("http://") or q.startswith("https://"):
+        # Reject already-built FilePath URLs that point at book/IA scans
+        if _is_rejected_file_title(urllib.parse.unquote(q)):
+            return None
         return q
     cache = load_commons_cache()
     with _commons_lock:
-        if q in cache and cache[q]:
-            return cache[q]
+        cached = cache.get(q)
+        if cached:
+            if _is_rejected_file_title(urllib.parse.unquote(cached)):
+                cache[q] = None  # invalidate bookish cache hit
+            else:
+                return cached
         # Cached misses (None) are retried — free-text ideas often need shorter queries
     if _looks_like_file_title(q):
+        # Explicit File: titles still rejected when they are book/IA scans
+        if _is_rejected_file_title(q if q.startswith("File:") else f"File:{q}"):
+            with _commons_lock:
+                cache[q] = None
+            return None
         url = commons_file_url(q)
         with _commons_lock:
             cache[q] = url
@@ -204,6 +319,8 @@ def resolve_commons_query(query: str) -> str | None:
         "map",
         "plan",
         "why",
+        "species",
+        "fishery",
     }
     trimmed = re.split(r"\s+[—–-]\s+", q)[0].strip()
     words = re.findall(r"[A-Za-zÀ-ÿ0-9’']+", trimmed or q)
@@ -211,6 +328,18 @@ def resolve_commons_query(query: str) -> str | None:
     candidates = []
     if trimmed:
         candidates.append(trimmed)
+    # Subject boosts for queries that otherwise drift to books / wrong continents
+    ql = (trimmed or q).lower()
+    if "oak forest" in ql or "mixed oak" in ql:
+        candidates.insert(0, "Ancient Oak and Beech Forest of Europe")
+        candidates.insert(0, "European oak forest")
+    if "sturgeon" in ql:
+        candidates.insert(0, "Danube River Sturgeon")
+        candidates.insert(0, "Acipenser sturgeon")
+    if "iron gates" in ql or "iron gate" in ql:
+        candidates.insert(0, "Iron Gate Danube Serbia Romania")
+    if "north european plain" in ql:
+        candidates.insert(0, "European temperate forest")
     if len(content) >= 4:
         candidates.append(" ".join(content[:4]))
     if len(content) >= 3:
@@ -233,8 +362,12 @@ def resolve_commons_query(query: str) -> str | None:
     file_title = None
     for cand in uniq[:4]:
         time.sleep(0.03)
-        hits = _commons_api_search(cand)
-        file_title = _pick_image_title(hits)
+        # Prefer real bitmaps over PDF/DjVu book dumps
+        for variant in (f"{cand} filetype:bitmap", cand):
+            hits = _commons_api_search(variant, limit=12)
+            file_title = _pick_image_title(hits, query=q)
+            if file_title:
+                break
         if file_title:
             break
 
@@ -336,7 +469,7 @@ def resolve_image_idea(idea) -> dict | None:
                 or ""
             )
             src = resolve_commons_query(str(file_name)) or ""
-        if not src:
+        if not src or _is_rejected_file_title(urllib.parse.unquote(src)):
             return None
         out = {"src": src, "caption": caption, "alt": alt}
         if role:
@@ -348,7 +481,7 @@ def resolve_image_idea(idea) -> dict | None:
     if not s:
         return None
     src = resolve_commons_query(s)
-    if not src:
+    if not src or _is_rejected_file_title(urllib.parse.unquote(src)):
         return None
     cap = re.sub(r"^File:", "", s, flags=re.I).strip()
     return {"src": src, "caption": cap, "alt": cap}
@@ -488,13 +621,54 @@ def apply_slice(target: dict, src: dict, *, overwrite_longer: bool = True) -> di
         target["story"] = stories  # app accepts either
         stats["stories"] = len(stories)
 
-    images = normalize_images(src.get("images") or src.get("photos"), src.get("imageIdeas") or src.get("image_ideas"))
+    images = normalize_images(
+        src.get("images") or src.get("photos"),
+        src.get("imageIdeas") or src.get("image_ideas"),
+    )
     if images:
-        existing = normalize_images(target.get("images"))
-        merged = normalize_images(existing + images)
-        target["images"] = merged
-        stats["images"] = len(merged)
+        # Full packs replace prior images — never keep stale book/IA matches
+        target["images"] = images
+        stats["images"] = len(images)
     return stats
+
+
+def scrub_bookish_images(timeline: dict) -> dict:
+    """Drop any remaining book/IA/PDF images from regions, polities, layers."""
+    removed = 0
+    kept = 0
+
+    def clean_list(images):
+        nonlocal removed, kept
+        out = []
+        for im in images or []:
+            if not isinstance(im, dict):
+                removed += 1
+                continue
+            src = urllib.parse.unquote(str(im.get("src") or ""))
+            if not src or _is_rejected_file_title(src):
+                removed += 1
+                continue
+            out.append(im)
+            kept += 1
+        return out
+
+    for period in timeline.get("periods") or []:
+        for rid, reg in list((period.get("regions") or {}).items()):
+            if isinstance(reg, dict) and reg.get("images"):
+                reg["images"] = clean_list(reg.get("images"))
+                if not reg["images"]:
+                    reg.pop("images", None)
+        for iso, pol in list((period.get("polities") or {}).items()):
+            if isinstance(pol, dict) and pol.get("images"):
+                pol["images"] = clean_list(pol.get("images"))
+                if not pol["images"]:
+                    pol.pop("images", None)
+        for layer in period.get("mapLayers") or []:
+            if isinstance(layer, dict) and layer.get("images"):
+                layer["images"] = clean_list(layer.get("images"))
+                if not layer["images"]:
+                    layer.pop("images", None)
+    return {"removed": removed, "kept": kept}
 
 
 def iso_to_region_map(region_countries: dict) -> dict[str, str]:
@@ -698,16 +872,28 @@ def main():
             timeline = before
 
     if not args.dry_run:
+        report["scrub"] = scrub_bookish_images(timeline)
         with TIMELINE.open("w", encoding="utf-8") as f:
             json.dump(timeline, f, ensure_ascii=False, indent=2)
             f.write("\n")
         report["wrote"] = str(TIMELINE)
         save_commons_cache()
         report["commonsCache"] = str(COMMONS_CACHE)
+        global _commons_cache
         cache = load_commons_cache()
-        resolved = sum(1 for v in cache.values() if v)
-        report["commonsResolved"] = resolved
-        report["commonsFailed"] = sum(1 for v in cache.values() if not v)
+        # Drop bookish URLs from cache permanently
+        cleaned = {}
+        dropped_cache = 0
+        for k, v in cache.items():
+            if v and _is_rejected_file_title(urllib.parse.unquote(v)):
+                dropped_cache += 1
+                continue
+            cleaned[k] = v
+        _commons_cache = cleaned
+        save_commons_cache()
+        report["commonsCacheDroppedBookish"] = dropped_cache
+        report["commonsResolved"] = sum(1 for v in cleaned.values() if v)
+        report["commonsFailed"] = sum(1 for v in cleaned.values() if not v)
 
     print(json.dumps(report, indent=2))
     return 0
