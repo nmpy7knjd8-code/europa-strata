@@ -2119,16 +2119,34 @@ function splitTickYear(yearStr) {
   return { num: m[1], era };
 }
 
+/** Indices of year labels to show under the slider (always first + last).
+ *  Scrubbing still snaps to every period — only the label row is sparse. */
+function sparseTickLabelIndices(n, maxLabels = 7) {
+  if (n <= 0) return [];
+  if (n <= maxLabels) return Array.from({ length: n }, (_, i) => i);
+  const out = new Set([0, n - 1]);
+  const inner = maxLabels - 2;
+  for (let k = 1; k <= inner; k++) {
+    out.add(Math.round((k * (n - 1)) / (inner + 1)));
+  }
+  return [...out].sort((a, b) => a - b);
+}
+
 function buildTicks() {
   const wrap = $("#tick-labels");
   const periods = activePeriods();
+  const labeled = new Set(sparseTickLabelIndices(periods.length));
   wrap.innerHTML = periods
     .map((p, i) => {
       const year = formatYearUi(p.tickYear || p.yearLabel);
       const { num, era } = splitTickYear(year);
       const name = shortPeriodName(p);
       const title = `${formatYearUi(p.yearLabel)} — ${name}`;
-      return `<button type="button" class="tick" data-i="${i}" title="${escapeHtml(title)}"><span class="tick-num">${escapeHtml(num)}</span><span class="tick-era">${escapeHtml(era)}</span></button>`;
+      const showLabel = labeled.has(i);
+      const body = showLabel
+        ? `<span class="tick-num">${escapeHtml(num)}</span><span class="tick-era">${escapeHtml(era)}</span>`
+        : `<span class="tick-mark" aria-hidden="true"></span>`;
+      return `<button type="button" class="tick${showLabel ? "" : " tick--unlabeled"}" data-i="${i}" title="${escapeHtml(title)}" aria-label="${escapeHtml(title)}">${body}</button>`;
     })
     .join("");
   wrap.querySelectorAll(".tick").forEach((el) => {

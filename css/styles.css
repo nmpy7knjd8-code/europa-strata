@@ -765,21 +765,23 @@ html[data-theme="dark"] .polity {
   justify-content: space-between;
   align-items: flex-start;
   margin-top: 0.85rem;
-  gap: 0.45rem;
-  padding: 0.15rem 0.2rem 0.25rem;
+  gap: 0;
+  padding: 0.15rem 0 0.25rem;
   /* Fixed height so selecting a period never shifts years */
   min-height: 2.75rem;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-  scrollbar-width: thin;
+  width: 100%;
+  max-width: 100%;
+  /* Never scroll — sparse labels keep the row in view */
+  overflow-x: hidden;
+  overflow-y: visible;
 }
 
 .tick {
-  flex: 1 0 auto;
-  min-width: 3.1rem;
+  flex: 1 1 0;
+  min-width: 0;
   text-align: center;
   cursor: pointer;
-  padding: 0 0.15rem;
+  padding: 0 0.05rem;
   border: none;
   background: none;
   font-family: inherit;
@@ -795,6 +797,8 @@ html[data-theme="dark"] .polity {
   color: var(--ink-dim);
   line-height: 1.2;
   white-space: nowrap;
+  overflow: hidden;
+  text-overflow: clip;
 }
 
 .tick .tick-era {
@@ -806,12 +810,35 @@ html[data-theme="dark"] .polity {
   margin-top: 0.18rem;
 }
 
+.tick--unlabeled {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 0.35rem;
+}
+
+.tick-mark {
+  display: block;
+  width: 1px;
+  height: 0.55rem;
+  margin: 0 auto;
+  background: var(--line-strong);
+  opacity: 0.7;
+}
+
 .tick.active .tick-num {
   color: var(--ink);
 }
 
 .tick.active .tick-era {
   color: var(--ink);
+}
+
+.tick.active .tick-mark {
+  background: var(--ink);
+  opacity: 1;
+  width: 2px;
+  height: 0.7rem;
 }
 
 /* Full period name — own row, never inside ticks (so years don't jump) */
@@ -1817,15 +1844,16 @@ html {
 
 .ticks {
   min-height: 2.35rem;
-  gap: 0.28rem;
+  gap: 0;
   margin-top: 0.4rem;
   padding: 0.05rem 0 0.15rem;
+  overflow-x: hidden;
 }
 
 .tick {
   height: 2.35rem;
-  min-width: 2.5rem;
-  padding: 0 0.08rem;
+  min-width: 0;
+  padding: 0 0.04rem;
 }
 
 .tick .tick-num {
