@@ -44,7 +44,7 @@
       "color": "#3a5a48",
       "extentsByTick": {
         "1815": {
-          "kind": "polygon",
+          "kind": "multi",
           "rings": [
             [
               [
@@ -434,7 +434,7 @@
           "notes": "UK after Waterloo; Act of Union Ireland 1801; colonial metropole."
         },
         "1871": {
-          "kind": "polygon",
+          "kind": "multi",
           "rings": [
             [
               [
@@ -824,7 +824,7 @@
           "notes": "Victorian UK; Ireland still in Union; industrial & naval primacy."
         },
         "1914": {
-          "kind": "polygon",
+          "kind": "multi",
           "rings": [
             [
               [
@@ -9280,7 +9280,7 @@
           "notes": "Lost Norway 1814; retains Schleswig-Holstein & Iceland/Faroes. Overlap-cleaned (container carve / priority yield)."
         },
         "1871": {
-          "kind": "polygon",
+          "kind": "multi",
           "rings": [
             [
               [
@@ -9522,7 +9522,7 @@
           "notes": "After 1864: Schleswig-Holstein lost to Prussia/Austria then Germany."
         },
         "1914": {
-          "kind": "polygon",
+          "kind": "multi",
           "rings": [
             [
               [
@@ -9764,7 +9764,7 @@
           "notes": "Neutral; N Schleswig returns only after 1920 plebiscites."
         },
         "1945": {
-          "kind": "polygon",
+          "kind": "multi",
           "rings": [
             [
               [
@@ -9860,7 +9860,7 @@
           "notes": "Liberated from German occupation; Iceland independent 1944."
         },
         "1990": {
-          "kind": "polygon",
+          "kind": "multi",
           "rings": [
             [
               [
@@ -9956,7 +9956,7 @@
           "notes": "NATO/EC member; opt-outs politics ahead."
         },
         "2000": {
-          "kind": "polygon",
+          "kind": "multi",
           "rings": [
             [
               [
@@ -12622,7 +12622,7 @@
       "color": "#5b8c5a",
       "extentsByTick": {
         "1914": {
-          "kind": "polygon",
+          "kind": "multi",
           "rings": [
             [
               [
@@ -26230,7 +26230,7 @@
       "color": "#2f5a3a",
       "extentsByTick": {
         "1871": {
-          "kind": "polygon",
+          "kind": "multi",
           "rings": [
             [
               [
@@ -26550,7 +26550,7 @@
           "notes": "Unified; Rome capital 1871; Trentino/Trieste still Austrian."
         },
         "1914": {
-          "kind": "polygon",
+          "kind": "multi",
           "rings": [
             [
               [
@@ -26870,7 +26870,7 @@
           "notes": "Liberal kingdom; enters WWI 1915 vs Austria."
         },
         "1945": {
-          "kind": "polygon",
+          "kind": "multi",
           "rings": [
             [
               [
@@ -27222,7 +27222,7 @@
           "notes": "Fascism fallen; republic via 1946 referendum; borders settling."
         },
         "1990": {
-          "kind": "polygon",
+          "kind": "multi",
           "rings": [
             [
               [
@@ -27574,7 +27574,7 @@
           "notes": "First Republic crisis years; EC/EU founding member."
         },
         "2000": {
-          "kind": "polygon",
+          "kind": "multi",
           "rings": [
             [
               [
@@ -27940,7 +27940,7 @@
       "color": "#3a6a9a",
       "extentsByTick": {
         "1871": {
-          "kind": "polygon",
+          "kind": "multi",
           "rings": [
             [
               [
@@ -35350,7 +35350,7 @@
       "color": "#3a5a7a",
       "extentsByTick": {
         "2000": {
-          "kind": "polygon",
+          "kind": "multi",
           "rings": [
             [
               [

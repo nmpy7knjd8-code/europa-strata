@@ -1487,7 +1487,7 @@
       "color": "#8b1e2d",
       "extentsByTick": {
         "1400": {
-          "kind": "polygon",
+          "kind": "multi",
           "rings": [
             [
               [
@@ -1728,7 +1728,7 @@
           ]
         },
         "1450": {
-          "kind": "polygon",
+          "kind": "multi",
           "rings": [
             [
               [
@@ -1961,7 +1961,7 @@
           ]
         },
         "1500": {
-          "kind": "polygon",
+          "kind": "multi",
           "rings": [
             [
               [
@@ -2164,7 +2164,7 @@
           ]
         },
         "1550": {
-          "kind": "polygon",
+          "kind": "multi",
           "rings": [
             [
               [
@@ -2367,7 +2367,7 @@
           ]
         },
         "1600": {
-          "kind": "polygon",
+          "kind": "multi",
           "rings": [
             [
               [
@@ -2624,7 +2624,7 @@
       "color": "#1a4d6e",
       "extentsByTick": {
         "1400": {
-          "kind": "polygon",
+          "kind": "multi",
           "rings": [
             [
               [
@@ -2779,7 +2779,7 @@
           ]
         },
         "1450": {
-          "kind": "polygon",
+          "kind": "multi",
           "rings": [
             [
               [
@@ -2934,7 +2934,7 @@
           ]
         },
         "1500": {
-          "kind": "polygon",
+          "kind": "multi",
           "rings": [
             [
               [
@@ -3089,7 +3089,7 @@
           ]
         },
         "1550": {
-          "kind": "polygon",
+          "kind": "multi",
           "rings": [
             [
               [
@@ -3244,7 +3244,7 @@
           ]
         },
         "1600": {
-          "kind": "polygon",
+          "kind": "multi",
           "rings": [
             [
               [
@@ -10764,7 +10764,7 @@
       "color": "#ff4d6d",
       "extentsByTick": {
         "1400": {
-          "kind": "polygon",
+          "kind": "multi",
           "rings": [
             [
               [
@@ -10865,7 +10865,7 @@
           ]
         },
         "1450": {
-          "kind": "polygon",
+          "kind": "multi",
           "rings": [
             [
               [
@@ -10966,7 +10966,7 @@
           ]
         },
         "1500": {
-          "kind": "polygon",
+          "kind": "multi",
           "rings": [
             [
               [
@@ -11097,7 +11097,7 @@
           ]
         },
         "1550": {
-          "kind": "polygon",
+          "kind": "multi",
           "rings": [
             [
               [
@@ -11194,7 +11194,7 @@
           ]
         },
         "1600": {
-          "kind": "polygon",
+          "kind": "multi",
           "rings": [
             [
               [
@@ -12963,7 +12963,7 @@
       "color": "#adb5bd",
       "extentsByTick": {
         "1400": {
-          "kind": "polygon",
+          "kind": "multi",
           "rings": [
             [
               [
@@ -13040,7 +13040,7 @@
           ]
         },
         "1450": {
-          "kind": "polygon",
+          "kind": "multi",
           "rings": [
             [
               [
@@ -13117,7 +13117,7 @@
           ]
         },
         "1500": {
-          "kind": "polygon",
+          "kind": "multi",
           "rings": [
             [
               [
@@ -13194,7 +13194,7 @@
           ]
         },
         "1550": {
-          "kind": "polygon",
+          "kind": "multi",
           "rings": [
             [
               [
@@ -13271,7 +13271,7 @@
           ]
         },
         "1600": {
-          "kind": "polygon",
+          "kind": "multi",
           "rings": [
             [
               [
@@ -20493,7 +20493,7 @@
       "color": "#ba181b",
       "extentsByTick": {
         "1400": {
-          "kind": "polygon",
+          "kind": "multi",
           "rings": [
             [
               [
@@ -20924,7 +20924,7 @@
           ]
         },
         "1450": {
-          "kind": "polygon",
+          "kind": "multi",
           "rings": [
             [
               [
@@ -21355,7 +21355,7 @@
           ]
         },
         "1500": {
-          "kind": "polygon",
+          "kind": "multi",
           "rings": [
             [
               [
@@ -21774,7 +21774,7 @@
           ]
         },
         "1550": {
-          "kind": "polygon",
+          "kind": "multi",
           "rings": [
             [
               [
@@ -22193,7 +22193,7 @@
           ]
         },
         "1600": {
-          "kind": "polygon",
+          "kind": "multi",
           "rings": [
             [
               [

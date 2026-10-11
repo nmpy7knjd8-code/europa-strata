@@ -1645,7 +1645,7 @@
       "culture": "Jacobean and Caroline letters give way to Restoration theatre, coffee-house news culture, and a London that becomes Europe’s financial and print capital after 1688. Common law, county militias, and parish governance keep the state surprisingly local even as the navy goes global.",
       "extentsByTick": {
         "1600": {
-          "kind": "polygon",
+          "kind": "multi",
           "rings": [
             [
               [
@@ -1944,7 +1944,7 @@
           ]
         },
         "1648": {
-          "kind": "polygon",
+          "kind": "multi",
           "rings": [
             [
               [
@@ -2243,7 +2243,7 @@
           ]
         },
         "1700": {
-          "kind": "polygon",
+          "kind": "multi",
           "rings": [
             [
               [
@@ -2631,7 +2631,7 @@
       "culture": "Gaelic Highlands and Scots-speaking Lowlands under one crown; universities at St Andrews, Glasgow, Aberdeen, and Edinburgh feed a learned clergy and early Enlightenment. Clan military culture coexists with burgh commerce and North Sea trade.",
       "extentsByTick": {
         "1600": {
-          "kind": "polygon",
+          "kind": "multi",
           "rings": [
             [
               [
@@ -2786,7 +2786,7 @@
           ]
         },
         "1648": {
-          "kind": "polygon",
+          "kind": "multi",
           "rings": [
             [
               [
@@ -2941,7 +2941,7 @@
           ]
         },
         "1700": {
-          "kind": "polygon",
+          "kind": "multi",
           "rings": [
             [
               [
@@ -3161,7 +3161,7 @@
       "culture": "Coffee-house and club politics; newspapers and cartoons; a consumer revolution in tea, sugar, cotton; provincial assembly rooms and London season. Empire’s wealth returns as country houses, aquatints of India, and abolitionist agitation by the 1780s.",
       "extentsByTick": {
         "1750": {
-          "kind": "polygon",
+          "kind": "multi",
           "rings": [
             [
               [
@@ -3626,7 +3626,7 @@
           ]
         },
         "1789": {
-          "kind": "polygon",
+          "kind": "multi",
           "rings": [
             [
               [
@@ -11591,7 +11591,7 @@
       "culture": "Spartan court under the Soldier King; Francophone Sanssouci culture under Frederick II; canton system and beamten bureaucracy as social forms; Pietist Halle influencing schooling and obedience.",
       "extentsByTick": {
         "1600": {
-          "kind": "polygon",
+          "kind": "multi",
           "rings": [
             [
               [
@@ -11984,7 +11984,7 @@
           "notes": "Overlap-cleaned (container carve / priority yield)."
         },
         "1789": {
-          "kind": "polygon",
+          "kind": "multi",
           "rings": [
             [
               [
@@ -15808,7 +15808,7 @@
       "culture": "Copenhagen absolutist court; Norwegian timber, fish, and later shipping periphery; Sound Toll as fiscal worldview; Holberg’s Dano-Norwegian letters binding the dual realm in satire.",
       "extentsByTick": {
         "1600": {
-          "kind": "polygon",
+          "kind": "multi",
           "rings": [
             [
               [
@@ -16219,7 +16219,7 @@
           ]
         },
         "1648": {
-          "kind": "polygon",
+          "kind": "multi",
           "rings": [
             [
               [
@@ -16630,7 +16630,7 @@
           ]
         },
         "1700": {
-          "kind": "polygon",
+          "kind": "multi",
           "rings": [
             [
               [
@@ -17041,7 +17041,7 @@
           ]
         },
         "1750": {
-          "kind": "polygon",
+          "kind": "multi",
           "rings": [
             [
               [
@@ -17452,7 +17452,7 @@
           ]
         },
         "1789": {
-          "kind": "polygon",
+          "kind": "multi",
           "rings": [
             [
               [
@@ -19344,7 +19344,7 @@
           "notes": "Overlap-cleaned (container carve / priority yield)."
         },
         "1789": {
-          "kind": "polygon",
+          "kind": "multi",
           "rings": [
             [
               [
@@ -22794,7 +22794,7 @@
       "culture": "Carnival, opera, and tourism avant la lettre; lagoon print and glass; terraferma villa civilization (Palladian afterglow). Commerce shifts from spice empire to luxury services and regional trade.",
       "extentsByTick": {
         "1600": {
-          "kind": "polygon",
+          "kind": "multi",
           "rings": [
             [
               [
@@ -22883,7 +22883,7 @@
           ]
         },
         "1648": {
-          "kind": "polygon",
+          "kind": "multi",
           "rings": [
             [
               [
@@ -24983,7 +24983,7 @@
       "culture": "Mercantile aristocracy of the Strade Nuove palaces; Corsican clan and republican resistance culture; silk and credit instruments as Genoa’s quieter empire.",
       "extentsByTick": {
         "1600": {
-          "kind": "polygon",
+          "kind": "multi",
           "rings": [
             [
               [
@@ -25060,7 +25060,7 @@
           ]
         },
         "1648": {
-          "kind": "polygon",
+          "kind": "multi",
           "rings": [
             [
               [
@@ -25137,7 +25137,7 @@
           ]
         },
         "1700": {
-          "kind": "polygon",
+          "kind": "multi",
           "rings": [
             [
               [
@@ -25214,7 +25214,7 @@
           ]
         },
         "1750": {
-          "kind": "polygon",
+          "kind": "multi",
           "rings": [
             [
               [
