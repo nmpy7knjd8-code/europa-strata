@@ -199,6 +199,10 @@ function normalizeKingdomPack(raw) {
         story: p.story || "",
         literature: p.literature || "",
         art: p.art || "",
+        ideas: p.ideas || "",
+        artIdeas: p.artIdeas || p.artAndIdeas || "",
+        philosophy: p.philosophy || "",
+        science: p.science || "",
         images: p.images || null,
       };
       features.push({
@@ -411,6 +415,8 @@ function scrubBodyCopyMarkup(root = document) {
       "#polity-story",
       "#polity-literature",
       "#polity-art",
+      "#polity-philosophy",
+      "#polity-science",
       "#period-copy",
       "#period-ling",
       "#ling-note",
@@ -1711,6 +1717,27 @@ function setPolityField(key, value) {
   setPlainText(el, text);
 }
 
+/** Join distinct prose blobs (art + ideas) without dumping under a fake heading. */
+function joinPolityProse(...parts) {
+  const seen = new Set();
+  const out = [];
+  for (const p of parts) {
+    const t = String(p || "").trim();
+    if (!t || seen.has(t)) continue;
+    seen.add(t);
+    out.push(t);
+  }
+  return out.join("\n\n");
+}
+
+/** Art & ideas panel — prefer artIdeas, else art + ideas. */
+function polityArtIdeasText(polity) {
+  if (!polity) return "";
+  const bundled = (polity.artIdeas || polity.artAndIdeas || "").trim();
+  if (bundled) return bundled;
+  return joinPolityProse(polity.art, polity.ideas);
+}
+
 function figureHtml(img) {
   const alt = escapeHtml(img.alt || img.caption || "Historical image");
   const caption = escapeHtml(img.caption || "");
@@ -1811,7 +1838,24 @@ function bindLightboxUi() {
 }
 
 function inferImageRole(img) {
-  if (img?.role) return img.role;
+  const explicit = (img?.role || "").toLowerCase().trim();
+  if (
+    explicit &&
+    [
+      "leader",
+      "religion",
+      "literature",
+      "art",
+      "ideas",
+      "story",
+      "culture",
+      "philosophy",
+      "science",
+    ].includes(explicit)
+  ) {
+    if (explicit === "ideas") return "art";
+    return explicit;
+  }
   const t = `${img?.caption || ""} ${img?.alt || ""} ${img?.src || ""}`.toLowerCase();
   if (
     /augustus|charlemagne|theodoric|sutton hoo|helmet|portrait|statue|bust|emperor|king|queen|caesar|napoleon|elizabeth|luther|cnut|alfred|justinian|constantine|pericles|alexander|vladimir|suleiman|philip ii|charles v|gustav|vasa|prima porta/.test(
@@ -1828,11 +1872,27 @@ function inferImageRole(img) {
     return "religion";
   }
   if (
-    /book|manuscript|folio|thes|print|tapestry|chronicle|poem|poetry|saga|text|letter|codex|quill|dante|shakespeare|cervantes|monet|meninas|venus|fresco|miniature|joan/.test(
+    /book|manuscript|folio|thes|print|tapestry|chronicle|poem|poetry|saga|text|letter|codex|quill|dante|shakespeare|cervantes|miniature/.test(
       t
     )
   ) {
     return "literature";
+  }
+  if (/battle|siege|treaty|turning point|revolt|uprising|war of|armada/.test(t)) {
+    return "story";
+  }
+  if (/costume|dress|market|festival|peasant|court life|society|folk/.test(t)) {
+    return "culture";
+  }
+  if (/philosoph|stoic|scholastic|enlightenment think|plato|aristotle|aquinas|descartes|kant/.test(t)) {
+    return "philosophy";
+  }
+  if (
+    /scient|astronom|mathematic|physic|chemic|medic|anatom|telescope|observatory|galileo|newton|copernicus|vesalius/.test(
+      t
+    )
+  ) {
+    return "science";
   }
   return "art";
 }
@@ -1846,13 +1906,17 @@ function fillInlineGallery(el, images) {
   bindFigureOrientation(el);
 }
 
-/** Route images into leaders / religion / literature / art galleries */
+/** Route images into leaders / religion / culture / story / literature / art / philosophy / science */
 function renderPolityGalleries(images) {
   const buckets = {
     leader: [],
     religion: [],
+    culture: [],
+    story: [],
     literature: [],
     art: [],
+    philosophy: [],
+    science: [],
   };
   const list = Array.isArray(images) ? images.filter((img) => img && img.src) : [];
   list.forEach((img) => {
@@ -1862,8 +1926,12 @@ function renderPolityGalleries(images) {
 
   fillInlineGallery($("#polity-leaders-gallery"), buckets.leader);
   fillInlineGallery($("#polity-religion-gallery"), buckets.religion);
+  fillInlineGallery($("#polity-culture-gallery"), buckets.culture);
+  fillInlineGallery($("#polity-story-gallery"), buckets.story);
   fillInlineGallery($("#polity-literature-gallery"), buckets.literature);
   fillInlineGallery($("#polity-art-gallery"), buckets.art);
+  fillInlineGallery($("#polity-philosophy-gallery"), buckets.philosophy);
+  fillInlineGallery($("#polity-science-gallery"), buckets.science);
 
   const show = (id, has) => {
     const block = $(id);
@@ -1874,8 +1942,12 @@ function renderPolityGalleries(images) {
   };
   show("#polity-leaders-block", buckets.leader.length > 0);
   show("#polity-religion-block", buckets.religion.length > 0);
+  show("#polity-culture-block", buckets.culture.length > 0);
+  show("#polity-story-block", buckets.story.length > 0);
   show("#polity-literature-block", buckets.literature.length > 0);
   show("#polity-art-block", buckets.art.length > 0);
+  show("#polity-philosophy-block", buckets.philosophy.length > 0);
+  show("#polity-science-block", buckets.science.length > 0);
 }
 
 function renderKingdomDetail() {
@@ -1932,7 +2004,9 @@ function renderKingdomDetail() {
       setPolityField("culture", polity.culture);
       setPolityField("story", polity.story);
       setPolityField("literature", polity.literature);
-      setPolityField("art", polity.art);
+      setPolityField("art", polityArtIdeasText(polity));
+      setPolityField("philosophy", polity.philosophy);
+      setPolityField("science", polity.science);
       renderPolityChain(polity);
       renderPolityGalleries(polity.images);
     } else {
@@ -2045,7 +2119,9 @@ function renderDetail() {
       setPolityField("culture", polity.culture);
       setPolityField("story", polity.story);
       setPolityField("literature", polity.literature);
-      setPolityField("art", polity.art);
+      setPolityField("art", polityArtIdeasText(polity));
+      setPolityField("philosophy", polity.philosophy);
+      setPolityField("science", polity.science);
       renderPolityChain(polity);
       renderPolityGalleries(polity.images);
     } else {

@@ -922,6 +922,10 @@ html[data-theme="dark"] .polity {
 .polity-literature button,
 .polity-art a,
 .polity-art button,
+.polity-philosophy a,
+.polity-philosophy button,
+.polity-science a,
+.polity-science button,
 .period-copy a,
 .period-copy button,
 .absorb-strip a,
@@ -995,7 +999,9 @@ html[data-theme="dark"] .polity {
 .polity-panel .polity-culture,
 .polity-panel .polity-story,
 .polity-panel .polity-literature,
-.polity-panel .polity-art {
+.polity-panel .polity-art,
+.polity-panel .polity-philosophy,
+.polity-panel .polity-science {
   margin: 0.2rem 0 0.65rem;
   font-size: 1rem;
   line-height: 1.45;
@@ -2069,6 +2075,8 @@ html {
 .polity-panel .polity-story,
 .polity-panel .polity-literature,
 .polity-panel .polity-art,
+.polity-panel .polity-philosophy,
+.polity-panel .polity-science,
 .polity-summary,
 .polity-conflicts {
   font-size: var(--read-size);
@@ -2659,6 +2667,8 @@ body.page-ancestry {
 .app:not([data-atlas-mode="deep-time"]) .polity-panel .polity-story,
 .app:not([data-atlas-mode="deep-time"]) .polity-panel .polity-literature,
 .app:not([data-atlas-mode="deep-time"]) .polity-panel .polity-art,
+.app:not([data-atlas-mode="deep-time"]) .polity-panel .polity-philosophy,
+.app:not([data-atlas-mode="deep-time"]) .polity-panel .polity-science,
 .app:not([data-atlas-mode="deep-time"]) .polity-summary,
 .app:not([data-atlas-mode="deep-time"]) .polity-conflicts,
 .app:not([data-atlas-mode="deep-time"]) .polity-leaders,
@@ -2666,7 +2676,9 @@ body.page-ancestry {
 .app:not([data-atlas-mode="deep-time"]) .polity-culture,
 .app:not([data-atlas-mode="deep-time"]) .polity-story,
 .app:not([data-atlas-mode="deep-time"]) .polity-literature,
-.app:not([data-atlas-mode="deep-time"]) .polity-art {
+.app:not([data-atlas-mode="deep-time"]) .polity-art,
+.app:not([data-atlas-mode="deep-time"]) .polity-philosophy,
+.app:not([data-atlas-mode="deep-time"]) .polity-science {
   font-size: 15px;
   line-height: 1.5;
 }

@@ -14,7 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Sora:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/styles.css?v=era-ui-21" />
+    <link rel="stylesheet" href="css/styles.css?v=era-ui-22" />
     <script>
       /* Clear legacy layout-override keys from older builds */
       try {
@@ -23,7 +23,7 @@
       } catch (_) {}
     </script>
     <script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js" defer></script>
-    <script src="js/app.js?v=era-ui-21" defer></script>
+    <script src="js/app.js?v=era-ui-22" defer></script>
   </head>
   <body>
     <div class="app" data-atlas-mode="deep-time">
@@ -171,10 +171,12 @@
             <div class="polity-block" id="polity-culture-block" hidden>
               <p class="kicker">Culture &amp; society</p>
               <p class="polity-culture" id="polity-culture"></p>
+              <div class="polity-inline-gallery" id="polity-culture-gallery"></div>
             </div>
             <div class="polity-block" id="polity-story-block" hidden>
               <p class="kicker">Stories &amp; turning points</p>
               <p class="polity-story" id="polity-story"></p>
+              <div class="polity-inline-gallery" id="polity-story-gallery"></div>
             </div>
             <div class="polity-block" id="polity-literature-block" hidden>
               <p class="kicker">Literature &amp; poetry</p>
@@ -182,9 +184,19 @@
               <div class="polity-inline-gallery" id="polity-literature-gallery"></div>
             </div>
             <div class="polity-block" id="polity-art-block" hidden>
-              <p class="kicker">Art, dress &amp; material culture</p>
+              <p class="kicker">Art &amp; ideas</p>
               <p class="polity-art" id="polity-art"></p>
               <div class="polity-inline-gallery" id="polity-art-gallery"></div>
+            </div>
+            <div class="polity-block" id="polity-philosophy-block" hidden>
+              <p class="kicker">Philosophy</p>
+              <p class="polity-philosophy" id="polity-philosophy"></p>
+              <div class="polity-inline-gallery" id="polity-philosophy-gallery"></div>
+            </div>
+            <div class="polity-block" id="polity-science-block" hidden>
+              <p class="kicker">Science</p>
+              <p class="polity-science" id="polity-science"></p>
+              <div class="polity-inline-gallery" id="polity-science-gallery"></div>
             </div>
             <p class="kicker polity-conflict-label">Conflicts &amp; neighbors</p>
             <p class="polity-conflicts" id="polity-conflicts"></p>
