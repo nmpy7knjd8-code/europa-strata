@@ -761,60 +761,37 @@ html[data-theme="dark"] .polity {
 }
 
 .ticks {
+  position: relative;
+  display: block;
+  margin-top: 0.85rem;
+  padding: 0.35rem 0 0.15rem;
+  /* Room for mark rail + two-line year labels */
+  min-height: 3.1rem;
+  width: 100%;
+  max-width: 100%;
+  overflow: visible;
+}
+
+.tick-rail {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin-top: 0.85rem;
-  gap: 0;
-  padding: 0.15rem 0 0.25rem;
-  /* Fixed height so selecting a period never shifts years */
-  min-height: 2.75rem;
   width: 100%;
-  max-width: 100%;
-  /* Never scroll — sparse labels keep the row in view */
-  overflow-x: hidden;
-  overflow-y: visible;
+  height: 0.7rem;
 }
 
-.tick {
+.tick-mark-btn {
   flex: 1 1 0;
   min-width: 0;
-  text-align: center;
-  cursor: pointer;
-  padding: 0 0.05rem;
+  height: 0.7rem;
+  padding: 0;
   border: none;
   background: none;
-  font-family: inherit;
-  color: var(--ink-mute);
-  height: 2.75rem;
-}
-
-.tick .tick-num {
-  display: block;
-  font-size: 0.95rem;
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  color: var(--ink-dim);
-  line-height: 1.2;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: clip;
-}
-
-.tick .tick-era {
-  display: block;
-  font-size: 0.8rem;
-  letter-spacing: 0.08em;
-  color: var(--ink-mute);
-  line-height: 1.2;
-  margin-top: 0.18rem;
-}
-
-.tick--unlabeled {
+  cursor: pointer;
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  padding-top: 0.35rem;
+  font-family: inherit;
 }
 
 .tick-mark {
@@ -826,19 +803,69 @@ html[data-theme="dark"] .polity {
   opacity: 0.7;
 }
 
-.tick.active .tick-num {
-  color: var(--ink);
-}
-
-.tick.active .tick-era {
-  color: var(--ink);
-}
-
-.tick.active .tick-mark {
+.tick-mark-btn.is-active .tick-mark {
   background: var(--ink);
   opacity: 1;
   width: 2px;
   height: 0.7rem;
+}
+
+.tick-label-layer {
+  position: relative;
+  height: 2.35rem;
+  width: 100%;
+  margin-top: 0.15rem;
+}
+
+.tick-label {
+  position: absolute;
+  top: 0;
+  transform: translateX(-50%);
+  text-align: center;
+  border: none;
+  background: none;
+  padding: 0 0.15rem;
+  cursor: pointer;
+  font-family: inherit;
+  color: var(--ink-mute);
+  white-space: nowrap;
+  z-index: 1;
+}
+
+.tick-label.is-first {
+  transform: translateX(0);
+  text-align: left;
+  padding-left: 0;
+}
+
+.tick-label.is-last {
+  transform: translateX(-100%);
+  text-align: right;
+  padding-right: 0;
+}
+
+.tick-label .tick-num {
+  display: block;
+  font-size: 0.88rem;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  color: var(--ink-dim);
+  line-height: 1.15;
+  white-space: nowrap;
+}
+
+.tick-label .tick-era {
+  display: block;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  color: var(--ink-mute);
+  line-height: 1.15;
+  margin-top: 0.12rem;
+}
+
+.tick-label.is-active .tick-num,
+.tick-label.is-active .tick-era {
+  color: var(--ink);
 }
 
 /* Full period name — own row, never inside ticks (so years don't jump) */
@@ -1849,26 +1876,23 @@ html {
 }
 
 .ticks {
-  min-height: 2.35rem;
-  gap: 0;
+  min-height: 2.85rem;
   margin-top: 0.4rem;
-  padding: 0.05rem 0 0.15rem;
-  overflow-x: hidden;
+  padding: 0.2rem 0 0.1rem;
+  overflow: visible;
 }
 
-.tick {
-  height: 2.35rem;
-  min-width: 0;
-  padding: 0 0.04rem;
+.tick-label-layer {
+  height: 2.15rem;
 }
 
-.tick .tick-num {
-  font-size: 0.82rem;
+.tick-label .tick-num {
+  font-size: 0.8rem;
 }
 
-.tick .tick-era {
-  font-size: 0.68rem;
-  margin-top: 0.1rem;
+.tick-label .tick-era {
+  font-size: 0.66rem;
+  margin-top: 0.08rem;
 }
 
 .tick-caption {
@@ -2631,11 +2655,11 @@ body.page-ancestry {
   min-height: 1.4em;
 }
 
-.app:not([data-atlas-mode="deep-time"]) .tick .tick-num {
+.app:not([data-atlas-mode="deep-time"]) .tick-label .tick-num {
   font-size: 0.8rem;
 }
 
-.app:not([data-atlas-mode="deep-time"]) .tick .tick-era {
+.app:not([data-atlas-mode="deep-time"]) .tick-label .tick-era {
   font-size: 0.68rem;
 }
 

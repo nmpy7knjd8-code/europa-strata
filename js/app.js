@@ -1447,8 +1447,11 @@ function setSliderPos(pos, { fromSlider = false } = {}) {
     updateSelectedHorizonLive();
   }
 
-  $$(".ticks .tick").forEach((el, i) => {
-    el.classList.toggle("active", i === state.periodIndex);
+  $$(".ticks .tick-mark-btn").forEach((el) => {
+    el.classList.toggle("is-active", Number(el.dataset.i) === state.periodIndex);
+  });
+  $$(".ticks .tick-label").forEach((el) => {
+    el.classList.toggle("is-active", Number(el.dataset.i) === state.periodIndex);
   });
   updateTickCaption();
 }
@@ -2262,6 +2265,20 @@ function splitTickYear(yearStr) {
   return { num: m[1], era };
 }
 
+/** How many year labels fit without crush on the current slider width. */
+function maxTickLabelsForWidth(widthPx) {
+  const w = widthPx || 400;
+  if (w < 360) return 4;
+  if (w < 480) return 5;
+  if (w < 640) return 6;
+  return 7;
+}
+
+/** Min horizontal gap (px) between label centers on narrow screens. */
+function minTickLabelGapPx(widthPx) {
+  return widthPx < 400 ? 68 : widthPx < 560 ? 72 : 78;
+}
+
 /** Indices of year labels to show under the slider (always first + last).
  *  Scrubbing still snaps to every period — only the label row is sparse. */
 function sparseTickLabelIndices(n, maxLabels = 7) {
@@ -2275,25 +2292,68 @@ function sparseTickLabelIndices(n, maxLabels = 7) {
   return [...out].sort((a, b) => a - b);
 }
 
+/** Drop inner labels that would sit closer than minGapPx (keep first/last). */
+function thinTickLabelsByGap(indices, n, widthPx, minGapPx) {
+  if (n <= 1 || indices.length <= 2) return indices;
+  const pos = (i) => (n <= 1 ? 0 : (i / (n - 1)) * widthPx);
+  const kept = [indices[0]];
+  for (let k = 1; k < indices.length - 1; k++) {
+    const i = indices[k];
+    if (pos(i) - pos(kept[kept.length - 1]) >= minGapPx) kept.push(i);
+  }
+  const last = indices[indices.length - 1];
+  while (kept.length > 1 && pos(last) - pos(kept[kept.length - 1]) < minGapPx) {
+    kept.pop();
+  }
+  kept.push(last);
+  return kept;
+}
+
 function buildTicks() {
   const wrap = $("#tick-labels");
+  if (!wrap) return;
   const periods = activePeriods();
-  const labeled = new Set(sparseTickLabelIndices(periods.length));
-  wrap.innerHTML = periods
+  const n = periods.length;
+  const widthPx = wrap.clientWidth || wrap.parentElement?.clientWidth || window.innerWidth || 400;
+  const maxLabels = maxTickLabelsForWidth(widthPx);
+  let labeledIdx = sparseTickLabelIndices(n, maxLabels);
+  labeledIdx = thinTickLabelsByGap(
+    labeledIdx,
+    n,
+    widthPx,
+    minTickLabelGapPx(widthPx)
+  );
+  const labeled = new Set(labeledIdx);
+
+  const marks = periods
     .map((p, i) => {
+      const name = shortPeriodName(p);
+      const title = `${formatYearUi(p.yearLabel)} — ${name}`;
+      return `<button type="button" class="tick-mark-btn" data-i="${i}" title="${escapeHtml(title)}" aria-label="${escapeHtml(title)}"><span class="tick-mark" aria-hidden="true"></span></button>`;
+    })
+    .join("");
+
+  const labels = labeledIdx
+    .map((i) => {
+      const p = periods[i];
       const year = formatYearUi(p.tickYear || p.yearLabel);
       const { num, era } = splitTickYear(year);
       const name = shortPeriodName(p);
       const title = `${formatYearUi(p.yearLabel)} — ${name}`;
-      const showLabel = labeled.has(i);
-      const body = showLabel
-        ? `<span class="tick-num">${escapeHtml(num)}</span><span class="tick-era">${escapeHtml(era)}</span>`
-        : `<span class="tick-mark" aria-hidden="true"></span>`;
-      return `<button type="button" class="tick${showLabel ? "" : " tick--unlabeled"}" data-i="${i}" title="${escapeHtml(title)}" aria-label="${escapeHtml(title)}">${body}</button>`;
+      const pct = n <= 1 ? 0 : (i / (n - 1)) * 100;
+      const edge = i === 0 ? " is-first" : i === n - 1 ? " is-last" : "";
+      const active = i === state.periodIndex ? " is-active" : "";
+      return `<button type="button" class="tick-label${edge}${active}" data-i="${i}" style="left:${pct}%" title="${escapeHtml(title)}" aria-label="${escapeHtml(title)}"><span class="tick-num">${escapeHtml(num)}</span><span class="tick-era">${escapeHtml(era)}</span></button>`;
     })
     .join("");
-  wrap.querySelectorAll(".tick").forEach((el) => {
+
+  wrap.innerHTML = `<div class="tick-rail" role="presentation">${marks}</div><div class="tick-label-layer">${labels}</div>`;
+  wrap.querySelectorAll(".tick-mark-btn, .tick-label").forEach((el) => {
     el.addEventListener("click", () => snapToPeriod(Number(el.dataset.i)));
+  });
+  // Sync active mark styling
+  wrap.querySelectorAll(".tick-mark-btn").forEach((el) => {
+    el.classList.toggle("is-active", Number(el.dataset.i) === state.periodIndex);
   });
   updateTickCaption();
 }
@@ -2435,9 +2495,17 @@ function bindUI() {
   // at identity zoom. Only remap when the map *width* meaningfully changes;
   // always preserve zoom if a rebuild does run.
   window.addEventListener("resize", () => {
-    if (!state.geo) return;
     clearTimeout(window.__strataResize);
     window.__strataResize = setTimeout(() => {
+      const tickWrap = $("#tick-labels");
+      const tw = tickWrap?.clientWidth || 0;
+      const prevTw = state._tickWrapWidth || 0;
+      if (Math.abs(tw - prevTw) > 12) {
+        state._tickWrapWidth = tw;
+        buildTicks();
+      }
+
+      if (!state.geo) return;
       const el = $("#map");
       if (!el) return;
       const w = el.clientWidth || 0;
@@ -2465,7 +2533,7 @@ function bindUI() {
 async function loadKingdomPack(id) {
   try {
     // Cache-bust so refined research geometry packs reload after deploy
-    const r = await fetch(`data/kingdom-eras/${id}.json?v=era-ui-36`);
+    const r = await fetch(`data/kingdom-eras/${id}.json?v=era-ui-37`);
     if (!r.ok) return null;
     const raw = await r.json();
     return normalizeKingdomPack(raw);
@@ -2486,7 +2554,7 @@ async function init() {
       loadKingdomPack(id).then((pack) => [id, pack])
     );
     const [timeline, geo, keyEvents, packEntries] = await Promise.all([
-      fetch("data/timeline.json?v=era-ui-36").then((r) => {
+      fetch("data/timeline.json?v=era-ui-37").then((r) => {
         if (!r.ok) throw new Error("timeline");
         return r.json();
       }),
