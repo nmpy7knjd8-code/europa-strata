@@ -279,6 +279,10 @@
         "periodId": "high-medieval",
         "iso": "FRA"
       }
+    ],
+    "cultureFillPacks": [
+      "neolithic",
+      "migration-layer"
     ]
   },
   "periods": [
@@ -307,7 +311,11 @@
           "languageFamily": "Unattested forager languages",
           "languages": "Unknown (lost)",
           "linguisticNote": "No writing. Later Iberian (non-IE) and Basque are historically attested millennia later and cannot be projected onto Azilian speech.",
-          "linguisticConfidence": "hypothetical"
+          "linguisticConfidence": "hypothetical",
+          "art": "After the last cave-painting florescence, Iberian foragers favour portable marks—engraved bone, geometric microliths, and ochre on curated human remains—while still revisiting Paleolithic sanctuaries as remembered places. Atlantic and Mediterranean coasts pile shell middens that are as much seasonal calendars as rubbish dumps. Dress and weaponry stay hide, antler, and bow-and-microlith; style is regional, not imperial.",
+          "ideas": "Life is organised around mobile territories of coast, estuary, and upland, not villages or chiefs. Social knowledge travels as seasonal rounds, marriage alliances between small bands, and shared hunting etiquette along the Cantabrian and Levantine façades. Contact with incoming farmers later turns these ideas into a frontier negotiation, not a blank slate.",
+          "philosophy": "Cosmology is unread in words but practised in burial: ochre, flexed bodies, and occasional structured deposits imply care for the dead and for powerful places in the landscape. Rivers, caves, and shell beaches likely structured a world of spirits and seasons rather than named gods we can recover. No temples; the living map itself is the sacred architecture.",
+          "science": "Foragers read tides, shellfish seasons, and deer migrations with high resolution—El Mazo–style middens even register abrupt Holocene cooling in harvest choices. Microlith geometry and composite projectiles are precision engineering in flint and mastic. Coastal navigation and inland pathfinding are the applied sciences of a drowning early Holocene shoreline."
         },
         "britain": {
           "culture": "British & Irish Mesolithic foragers",
@@ -324,7 +332,11 @@
           "languageFamily": "Unattested forager languages",
           "languages": "Unknown (lost)",
           "linguisticNote": "Unknown. Not Celtic — Insular Celtic is an Iron Age/historical stage.",
-          "linguisticConfidence": "hypothetical"
+          "linguisticConfidence": "hypothetical",
+          "art": "Star Carr’s timber platforms and red-deer frontlets show ritualised costume as much as craft—antler headdresses for performance beside the lake. Microliths, barbed points, and rare amber or shale beads form a sparse portable art world after Doggerland’s drowning. Ireland and Britain share watery aesthetics of canoe, fish trap, and hide boat more than carved monuments.",
+          "ideas": "Island life after the North Sea rises forces tighter coastal and riverine schedules; Doggerland’s loss is a slow political geography rewrite, not a myth we can quote. Small bands manage seasonal rounds from upland hunting to estuary fishing. Knowledge of drowning shores and tsunami-scarred coasts (Storegga) enters living memory as caution, not cosmology we can name.",
+          "philosophy": "Deer-skull rites and lakeside platforms suggest transformation, hunting magic, or seasonal ceremony—practice without a recoverable creed. Burials are rare and curated; the sacred seems tied to wetlands and animals rather than stone temples. Worldview is inferred from performance gear and place reuse, not texts.",
+          "science": "Composite microlith weapons, dugouts, and fish weirs are precision wetland engineering. Foragers track post-glacial forest succession and shifting coasts with generation-scale environmental literacy. Star Carr’s woodworking and birch-pitch adhesives show chemical and carpentry skill in a cold early Holocene."
         },
         "france": {
           "culture": "Sauveterrian / Tardenoisian foragers",
@@ -342,7 +354,11 @@
           "languages": "Unknown",
           "linguisticNote": "Unattested; later Gaulish is Celtic IE and unrelated in any recoverable way.",
           "linguisticConfidence": "hypothetical",
-          "ancestryNote": "WHG-dominated; EEF arrives with Cardial/LBK streams later."
+          "ancestryNote": "WHG-dominated; EEF arrives with Cardial/LBK streams later.",
+          "art": "Tiny geometric microliths are the visual signature—almost abstract flint design—alongside bone points and rare personal ornaments. Southern rock shelters keep memory of earlier painted caves as visited places more than active ateliers. Atlantic Brittany and Mediterranean Languedoc develop distinct coastal versus inland craft dialects within one forager world.",
+          "ideas": "Small, flexible bands stitch river valleys and plateaus into seasonal territories without villages. Knowledge of flint sources and hunting grounds is social capital exchanged through marriage and meeting. The idea of ‘frontier’ appears only when Cardial and Danubian farmers later press from south and east.",
+          "philosophy": "Burials with ochre and curated goods imply respect for persons and places; cosmology itself stays silent in the record. Landscape memory—caves, fords, hunting stands—likely carried spirit and story. Ritual is deposition and return, not temple cult.",
+          "science": "Microlith technology maximises cutting edge from scarce good flint—materials science in miniature. Foragers manage post-glacial oak–hazel forests and river fisheries with detailed ecological timing. Path networks across the Massif and Paris Basin are lived geodesy before roads."
         },
         "central": {
           "culture": "Central European Mesolithic foragers",
@@ -360,7 +376,11 @@
           "languages": "Unknown",
           "linguisticNote": "Unknown forager languages; not Germanic or Celtic.",
           "linguisticConfidence": "hypothetical",
-          "ancestryNote": "WHG-dominated core of the North European Plain; EHG affinity rises eastward toward the forest-steppe divide."
+          "ancestryNote": "WHG-dominated core of the North European Plain; EHG affinity rises eastward toward the forest-steppe divide.",
+          "art": "Bone and antler tools, microliths, and occasional amber from Baltic drift form a quiet portable art of forest and river. Rock art is rarer than in Atlantic or Alpine zones; aesthetic energy goes into projectile geometry and personal ornament. Sites such as those near the Elbe and Rhine keep forager craft distinct until LBK pottery arrives.",
+          "ideas": "Loess belts and river corridors are hunting territories first, later the highways farmers will seize. Band mobility and flint exchange link the North European Plain to uplands without central authority. The idea of ‘empty land’ is an illusion—farmers enter a known forager geography.",
+          "philosophy": "Ochre burials and rare structured deposits hint at afterlife care; named deities do not survive. Rivers and forest clearings likely held spirit significance in oral tradition. Worldview is practised at the grave and the kill site.",
+          "science": "Forest hunting, plant gathering, and river fishing require fine phenological calendars. Composite tools and birch-tar adhesives are chemical crafts. Foragers’ mental maps of flint outcrops become the substrate pioneer farmers later quarry."
         },
         "scandinavia": {
           "culture": "Maglemosian / Kongemose / Fosna–Hensbacka (SHG)",
@@ -379,7 +399,11 @@
           "languages": "Unknown",
           "linguisticNote": "Unknown. Pre-Germanic is associated with much later Battle Axe / Nordic BA stages.",
           "linguisticConfidence": "hypothetical",
-          "ancestryNote": "SHG = northern foragers often modeled as WHG + elevated EHG-related affinity; Maglemosian–Kongemose world."
+          "ancestryNote": "SHG = northern foragers often modeled as WHG + elevated EHG-related affinity; Maglemosian–Kongemose world.",
+          "art": "Bone and antler leisters, amber pendants, and later Kongemose blade elegance define a northern wetland aesthetic. Rock art begins to appear on coastal cliffs in some areas; portable amber animals and beads glow as prestige. SHG foragers carve identity from seal, fish, and forest deer rather than painted caves.",
+          "ideas": "A watery cosmos of lakes, archipelagos, and rising Baltic/North Sea shores structures mobility and alliance. Eastern genetic affinity (EHG-related) mixes into WHG baselines—Scandinavia as a contact sea. Territorial knowledge of seal rookeries and salmon runs is political capital.",
+          "philosophy": "Amber and animal deposits, wetland platforms, and careful burials suggest a world where water and animal persons hold power. Cosmology is maritime and forestal—no temples, many thresholds (shore, ice, forest edge). Ritual gear implies transformation and hunting covenant more than pantheon lists.",
+          "science": "Dugout canoes, fish weirs, and leister design are marine engineering. Foragers track post-glacial rebound, changing Baltic salinity, and forest succession—an environmental science of a still-rising land. Composite tools and seal-hunting logistics sustain dense coastal living."
         },
         "italy": {
           "culture": "Epigravettian-descended Italian foragers",
@@ -397,7 +421,11 @@
           "languages": "Unknown",
           "linguisticNote": "Unknown. Historical Etruscan and Italic are not Mesolithic holdovers in any demonstrated sense.",
           "linguisticConfidence": "hypothetical",
-          "ancestryNote": "WHG-related; distinctive southern diversity vs northern WHG."
+          "ancestryNote": "WHG-related; distinctive southern diversity vs northern WHG.",
+          "art": "Italian foragers inherit an Epigravettian portable tradition—engraved stones, bone tools, and personal ornaments—while Alpine and Apennine rock shelters keep older image places alive as memory. Mediterranean shell ornaments and obsidian later in the sequence already hint at maritime aesthetics. Art is small-scale, mobile, and coast-aware.",
+          "ideas": "Peninsula geography encourages north–south and Tyrrhenian–Adriatic contrasts in foraging strategies. Obsidian and shell exchange foreshadow the sea roads Impressa farmers will intensify. Bands remain small; identity is local valley and coast.",
+          "philosophy": "Cave burials and ochre rites continue Paleolithic body care into the Holocene. Sacred geography likely includes caves, high passes, and shoreline shrines without recoverable god names. Continuity of place matters more than new dogma.",
+          "science": "Mountain and coastal foraging demands vertical seasonal scheduling—upland game, lowland plants, marine shellfish. Early obsidian recognition from Lipari and related sources is materials prospecting. Navigation along indented coasts is routine technical knowledge."
         },
         "balkans": {
           "culture": "Iron Gates & Balkan Mesolithic foragers",
@@ -416,7 +444,11 @@
           "languageFamily": "Unattested (forager)",
           "languages": "Unknown (Iron Gates zone)",
           "linguisticNote": "Unknown. Not Greek, Thracian, or Slavic — all far later.",
-          "linguisticConfidence": "hypothetical"
+          "linguisticConfidence": "hypothetical",
+          "art": "Lepenski Vir’s trapezoidal houses and sandstone fish-human sculptures are among Europe’s most striking Mesolithic art—architecture and idol fused beside the Danube. Ornaments of shell and stone, ochre, and carefully posed burials compose a riverside aesthetic of fish and ancestor. Sculpture here is monumental for foragers.",
+          "ideas": "The Iron Gates gorge is a corridor of contact, not a refuge sealed from the world. Rich fisheries support denser, more sedentary forager life than northern forests allow. When Anatolian-related farmers approach, the Danube becomes a negotiation zone of genes, pots, and spouses.",
+          "philosophy": "Fish-human sculptures and house burials imply a cosmology where river persons, ancestors, and the living share space. Trapezoidal houses face the water as if architecture itself prays downstream. Sacred order is riverside and bodily—no scripture, intense place cult.",
+          "science": "Specialised sturgeon and migratory-fish harvesting is ecological engineering with nets, spears, and seasonal timing. Sedentary architecture and hearth management approach village science before farming. Early contact teaches foragers farmer crops and farmers gorge resources—two knowledge systems colliding."
         },
         "eastern": {
           "culture": "Eastern Hunter-Gatherers (forest-steppe)",
@@ -435,7 +467,11 @@
           "languageFamily": "Unattested (forager)",
           "languages": "Unknown (EHG zone)",
           "linguisticNote": "Unknown. Proto-Indo-European is reconstructed for a much later steppe horizon.",
-          "linguisticConfidence": "hypothetical"
+          "linguisticConfidence": "hypothetical",
+          "art": "Amber, animal-tooth pendants, and richly furnished burials at sites such as Yuzhniy Oleniy Ostrov compose a forest-steppe prestige art of the body. Bone and antler tools carry engraved designs; pottery appears in some eastern ‘Neolithic’ forager contexts without farming. Aesthetic power sits in graves and personal adornment.",
+          "ideas": "EHG-related worlds keep a forager political economy east of the early farmer line—the genomic ‘great divide.’ Mobility across forest and steppe edges links Baltic, Volga, and Pontic zones. Identity is hunter-fisher with ceramics optional, ploughs absent.",
+          "philosophy": "Lavish burials imply ranked persons and afterlife provisioning—tools, ornaments, animals as companions beyond death. Waterways and forest clearings structure sacred geography. Cosmology is inferred from grave theatre, not hymns.",
+          "science": "Cold-forest hunting, ice-season fishing, and wide-ranging lithic procurement are survival sciences at continental scale. Early pottery among foragers shows independent or borrowed ceramic chemistry without agriculture. Path knowledge across vast low-density landscapes is the core information technology."
         }
       },
       "linguistics": "Speech is entirely unattested. Later farmer and Indo-European languages are not continuous with recoverable Mesolithic tongues. Treat all language labels here as placeholders for lost diversity.",
@@ -676,7 +712,7 @@
           "summary": "Azilian and related forager groups along Atlantic and Mediterranean Iberia after glacial retreat.",
           "conflicts": "Local territorial foraging ranges; no states. Later replaced demographically by Cardial farmers.",
           "literature": "No written literature — meaning lived in seasonal rounds, place-names now lost, and oral lore we can only infer from ethnography and later myth residues. Think of fire-circle narrative, hunting songs, and cosmologies tied to rivers and herds rather than books. Iberia’s art of contact — Christian, Jewish, Islamic — keeps Europe from pretending it was ever only Latin.",
-          "art": "Portable art and landscape marks: engraved bone, amber, microlith geometries, and the long afterglow of Paleolithic cave painting traditions. Dress is hide, fur, antler toggles; weaponry is bow, microlith-armed projectile, and wood-hafted axe. Iberia’s art of contact — Christian, Jewish, Islamic — keeps Europe from pretending it was ever only Latin.",
+          "art": "After the last cave-painting florescence, Iberian foragers favour portable marks—engraved bone, geometric microliths, and ochre on curated human remains—while still revisiting Paleolithic sanctuaries as remembered places. Atlantic and Mediterranean coasts pile shell middens that are as much seasonal calendars as rubbish dumps. Dress and weaponry stay hide, antler, and bow-and-microlith; style is regional, not imperial.",
           "images": [
             {
               "src": "https://commons.wikimedia.org/wiki/Special:FilePath/La%20Madeleine%20bison%20licking%20its%20flank.jpg?width=640",
@@ -703,16 +739,17 @@
             "name": "Cardial Iberia"
           },
           "religion": "Belief systems unrecoverable in detail. Ritual archaeology: ochre-stained and curated burials, rare structured deposits, and landscape reuse of Paleolithic art places.",
-          "ideas": "In Iberian Mesolithic bands under the Azilian horizon, social ideas show in burial rites, exchange gifts, and household layout more than in texts. Belief systems unrecoverable in detail.",
-          "philosophy": "No named philosophical schools survive for Azilian in Iberian Mesolithic bands; cosmology is inferred from ritual deposits, burial posture, and craft canons—honestly thin as doctrine, thick as practice. Belief systems unrecoverable in detail.",
-          "science": "Forager science in Iberian Mesolithic bands is landscape literacy: microlith geometries, seasonal scheduling, hide and bone toolkits under the Azilian horizon. Portable art and landscape marks: engraved bone, amber, microlith geometries, and the long afterglow of Paleolithic cave painting traditions."
+          "ideas": "Life is organised around mobile territories of coast, estuary, and upland, not villages or chiefs. Social knowledge travels as seasonal rounds, marriage alliances between small bands, and shared hunting etiquette along the Cantabrian and Levantine façades. Contact with incoming farmers later turns these ideas into a frontier negotiation, not a blank slate.",
+          "philosophy": "Cosmology is unread in words but practised in burial: ochre, flexed bodies, and occasional structured deposits imply care for the dead and for powerful places in the landscape. Rivers, caves, and shell beaches likely structured a world of spirits and seasons rather than named gods we can recover. No temples; the living map itself is the sacred architecture.",
+          "science": "Foragers read tides, shellfish seasons, and deer migrations with high resolution—El Mazo–style middens even register abrupt Holocene cooling in harvest choices. Microlith geometry and composite projectiles are precision engineering in flint and mastic. Coastal navigation and inland pathfinding are the applied sciences of a drowning early Holocene shoreline.",
+          "culture": "Azilian / Iberian Mesolithic foragers"
         },
         "GBR": {
           "name": "British Mesolithic foragers",
           "summary": "Sparse island forager communities after Doggerland’s drowning.",
           "conflicts": "Competition for coastal/river resources among small bands; later erased genetically by farmers then Beaker migrants.",
           "literature": "No written literature — meaning lived in seasonal rounds, place-names now lost, and oral lore we can only infer from ethnography and later myth residues. Think of fire-circle narrative, hunting songs, and cosmologies tied to rivers and herds rather than books. Insular voices and North Sea contact give this place a distinctive accent in the wider European chorus.",
-          "art": "Portable art and landscape marks: engraved bone, amber, microlith geometries, and the long afterglow of Paleolithic cave painting traditions. Dress is hide, fur, antler toggles; weaponry is bow, microlith-armed projectile, and wood-hafted axe. Insular voices and North Sea contact give this place a distinctive accent in the wider European chorus.",
+          "art": "Star Carr’s timber platforms and red-deer frontlets show ritualised costume as much as craft—antler headdresses for performance beside the lake. Microliths, barbed points, and rare amber or shale beads form a sparse portable art world after Doggerland’s drowning. Ireland and Britain share watery aesthetics of canoe, fish trap, and hide boat more than carved monuments.",
           "images": [
             {
               "src": "https://commons.wikimedia.org/wiki/Special:FilePath/La%20Madeleine%20bison%20licking%20its%20flank.jpg?width=640",
@@ -739,16 +776,17 @@
             "name": "Earliest Neolithic arrival"
           },
           "religion": "No recoverable pantheon. Shell-midden and cave burials, ochre, and curated human bone suggest ancestor/body rites; cosmology itself stays opaque.",
-          "ideas": "In British Mesolithic foragers under the British Mesolithic horizon, social ideas show in burial rites, exchange gifts, and household layout more than in texts. No recoverable pantheon.",
-          "philosophy": "No named philosophical schools survive for British Mesolithic in British Mesolithic foragers; cosmology is inferred from ritual deposits, burial posture, and craft canons—honestly thin as doctrine, thick as practice. No recoverable pantheon.",
-          "science": "Forager science in British Mesolithic foragers is landscape literacy: microlith geometries, seasonal scheduling, hide and bone toolkits under the British Mesolithic horizon. Portable art and landscape marks: engraved bone, amber, microlith geometries, and the long afterglow of Paleolithic cave painting traditions."
+          "ideas": "Island life after the North Sea rises forces tighter coastal and riverine schedules; Doggerland’s loss is a slow political geography rewrite, not a myth we can quote. Small bands manage seasonal rounds from upland hunting to estuary fishing. Knowledge of drowning shores and tsunami-scarred coasts (Storegga) enters living memory as caution, not cosmology we can name.",
+          "philosophy": "Deer-skull rites and lakeside platforms suggest transformation, hunting magic, or seasonal ceremony—practice without a recoverable creed. Burials are rare and curated; the sacred seems tied to wetlands and animals rather than stone temples. Worldview is inferred from performance gear and place reuse, not texts.",
+          "science": "Composite microlith weapons, dugouts, and fish weirs are precision wetland engineering. Foragers track post-glacial forest succession and shifting coasts with generation-scale environmental literacy. Star Carr’s woodworking and birch-pitch adhesives show chemical and carpentry skill in a cold early Holocene.",
+          "culture": "British & Irish Mesolithic foragers"
         },
         "FRA": {
           "name": "Sauveterrian / Tardenoisian groups",
           "summary": "Microlithic foragers across post-glacial Gaul.",
           "conflicts": "Band-level territoriality only.",
           "literature": "No written literature — meaning lived in seasonal rounds, place-names now lost, and oral lore we can only infer from ethnography and later myth residues. Think of fire-circle narrative, hunting songs, and cosmologies tied to rivers and herds rather than books. French courts and vernaculars repeatedly set continental fashions of word and dress.",
-          "art": "Portable art and landscape marks: engraved bone, amber, microlith geometries, and the long afterglow of Paleolithic cave painting traditions. Dress is hide, fur, antler toggles; weaponry is bow, microlith-armed projectile, and wood-hafted axe. French courts and vernaculars repeatedly set continental fashions of word and dress.",
+          "art": "Tiny geometric microliths are the visual signature—almost abstract flint design—alongside bone points and rare personal ornaments. Southern rock shelters keep memory of earlier painted caves as visited places more than active ateliers. Atlantic Brittany and Mediterranean Languedoc develop distinct coastal versus inland craft dialects within one forager world.",
           "images": [
             {
               "src": "https://commons.wikimedia.org/wiki/Special:FilePath/La%20Madeleine%20bison%20licking%20its%20flank.jpg?width=640",
@@ -779,16 +817,17 @@
             "Tardenoisian groups"
           ],
           "religion": "Forager ritual poorly named. Archaeology shows careful burials, ochre, and occasional animal deposits — practice without readable myths.",
-          "ideas": "In Sauveterrian / Tardenoisian groups under the Sauveterrian / Tardenoisian horizon, social ideas show in burial rites, exchange gifts, and household layout more than in texts. Forager ritual poorly named.",
-          "philosophy": "No named philosophical schools survive for Sauveterrian / Tardenoisian in Sauveterrian / Tardenoisian groups; cosmology is inferred from ritual deposits, burial posture, and craft canons—honestly thin as doctrine, thick as practice. Forager ritual poorly named.",
-          "science": "Forager science in Sauveterrian / Tardenoisian groups is landscape literacy: microlith geometries, seasonal scheduling, hide and bone toolkits under the Sauveterrian / Tardenoisian horizon. Portable art and landscape marks: engraved bone, amber, microlith geometries, and the long afterglow of Paleolithic cave painting traditions."
+          "ideas": "Small, flexible bands stitch river valleys and plateaus into seasonal territories without villages. Knowledge of flint sources and hunting grounds is social capital exchanged through marriage and meeting. The idea of ‘frontier’ appears only when Cardial and Danubian farmers later press from south and east.",
+          "philosophy": "Burials with ochre and curated goods imply respect for persons and places; cosmology itself stays silent in the record. Landscape memory—caves, fords, hunting stands—likely carried spirit and story. Ritual is deposition and return, not temple cult.",
+          "science": "Microlith technology maximises cutting edge from scarce good flint—materials science in miniature. Foragers manage post-glacial oak–hazel forests and river fisheries with detailed ecological timing. Path networks across the Massif and Paris Basin are lived geodesy before roads.",
+          "culture": "Sauveterrian / Tardenoisian foragers"
         },
         "DEU": {
           "name": "Central European Mesolithic",
           "summary": "Forest foragers of the North European Plain.",
           "conflicts": "No polities; later LBK farmers expand into these landscapes.",
           "literature": "No written literature — meaning lived in seasonal rounds, place-names now lost, and oral lore we can only infer from ethnography and later myth residues. Think of fire-circle narrative, hunting songs, and cosmologies tied to rivers and herds rather than books. German lands often host the workshop — print, metal, and later industrial form — for Europe’s ideas.",
-          "art": "Portable art and landscape marks: engraved bone, amber, microlith geometries, and the long afterglow of Paleolithic cave painting traditions. Dress is hide, fur, antler toggles; weaponry is bow, microlith-armed projectile, and wood-hafted axe. German lands often host the workshop — print, metal, and later industrial form — for Europe’s ideas.",
+          "art": "Bone and antler tools, microliths, and occasional amber from Baltic drift form a quiet portable art of forest and river. Rock art is rarer than in Atlantic or Alpine zones; aesthetic energy goes into projectile geometry and personal ornament. Sites such as those near the Elbe and Rhine keep forager craft distinct until LBK pottery arrives.",
           "images": [
             {
               "src": "https://commons.wikimedia.org/wiki/Special:FilePath/La%20Madeleine%20bison%20licking%20its%20flank.jpg?width=640",
@@ -815,16 +854,17 @@
             "name": "LBK pioneer villages"
           },
           "religion": "Mesolithic belief content is lost. Scattered burials and structured faunal deposits hint at rites around death and animals, not temples or texts.",
-          "ideas": "In Central European Mesolithic under the Maglemosian horizon, social ideas show in burial rites, exchange gifts, and household layout more than in texts. Mesolithic belief content is lost.",
-          "philosophy": "No named philosophical schools survive for Maglemosian in Central European Mesolithic; cosmology is inferred from ritual deposits, burial posture, and craft canons—honestly thin as doctrine, thick as practice. Mesolithic belief content is lost.",
-          "science": "Forager science in Central European Mesolithic is landscape literacy: microlith geometries, seasonal scheduling, hide and bone toolkits under the Maglemosian horizon. Portable art and landscape marks: engraved bone, amber, microlith geometries, and the long afterglow of Paleolithic cave painting traditions."
+          "ideas": "Loess belts and river corridors are hunting territories first, later the highways farmers will seize. Band mobility and flint exchange link the North European Plain to uplands without central authority. The idea of ‘empty land’ is an illusion—farmers enter a known forager geography.",
+          "philosophy": "Ochre burials and rare structured deposits hint at afterlife care; named deities do not survive. Rivers and forest clearings likely held spirit significance in oral tradition. Worldview is practised at the grave and the kill site.",
+          "science": "Forest hunting, plant gathering, and river fishing require fine phenological calendars. Composite tools and birch-tar adhesives are chemical crafts. Foragers’ mental maps of flint outcrops become the substrate pioneer farmers later quarry.",
+          "culture": "Central European Mesolithic foragers"
         },
         "DNK": {
           "name": "Maglemosian / Kongemose",
           "summary": "Rich coastal/lacustrine foragers of southern Scandinavia.",
           "conflicts": "Local resource competition; Ertebølle follows.",
           "literature": "No written literature — meaning lived in seasonal rounds, place-names now lost, and oral lore we can only infer from ethnography and later myth residues. Think of fire-circle narrative, hunting songs, and cosmologies tied to rivers and herds rather than books. Danish gatekeeping of the Baltic Sound makes culture a toll-booth as well as a stage.",
-          "art": "Portable art and landscape marks: engraved bone, amber, microlith geometries, and the long afterglow of Paleolithic cave painting traditions. Dress is hide, fur, antler toggles; weaponry is bow, microlith-armed projectile, and wood-hafted axe. Danish gatekeeping of the Baltic Sound makes culture a toll-booth as well as a stage.",
+          "art": "Bone and antler leisters, amber pendants, and later Kongemose blade elegance define a northern wetland aesthetic. Rock art begins to appear on coastal cliffs in some areas; portable amber animals and beads glow as prestige. SHG foragers carve identity from seal, fish, and forest deer rather than painted caves.",
           "images": [
             {
               "src": "https://commons.wikimedia.org/wiki/Special:FilePath/La%20Madeleine%20bison%20licking%20its%20flank.jpg?width=640",
@@ -855,16 +895,17 @@
             "Kongemose"
           ],
           "religion": "Maglemosian–Kongemose ritual known mainly from graves and bog finds. No named gods; body treatment and wetland deposition are the evidence.",
-          "ideas": "In Maglemosian / Kongemose under the Maglemosian, Kongemose / early Ertebølle horizon, social ideas show in burial rites, exchange gifts, and household layout more than in texts. Maglemosian–Kongemose ritual known mainly from graves and bog finds.",
-          "philosophy": "No named philosophical schools survive for Maglemosian, Kongemose / early Ertebølle in Maglemosian / Kongemose; cosmology is inferred from ritual deposits, burial posture, and craft canons—honestly thin as doctrine, thick as practice. Maglemosian–Kongemose ritual known mainly from graves and bog finds.",
-          "science": "Forager science in Maglemosian / Kongemose is landscape literacy: microlith geometries, seasonal scheduling, hide and bone toolkits under the Maglemosian, Kongemose / early Ertebølle horizon. Portable art and landscape marks: engraved bone, amber, microlith geometries, and the long afterglow of Paleolithic cave painting traditions."
+          "ideas": "A watery cosmos of lakes, archipelagos, and rising Baltic/North Sea shores structures mobility and alliance. Eastern genetic affinity (EHG-related) mixes into WHG baselines—Scandinavia as a contact sea. Territorial knowledge of seal rookeries and salmon runs is political capital.",
+          "philosophy": "Amber and animal deposits, wetland platforms, and careful burials suggest a world where water and animal persons hold power. Cosmology is maritime and forestal—no temples, many thresholds (shore, ice, forest edge). Ritual gear implies transformation and hunting covenant more than pantheon lists.",
+          "science": "Dugout canoes, fish weirs, and leister design are marine engineering. Foragers track post-glacial rebound, changing Baltic salinity, and forest succession—an environmental science of a still-rising land. Composite tools and seal-hunting logistics sustain dense coastal living.",
+          "culture": "Maglemosian / Kongemose / Fosna–Hensbacka (SHG)"
         },
         "SWE": {
           "name": "Scandinavian coastal foragers",
           "summary": "SHG communities along coasts and inland waterways.",
           "conflicts": "Overlap with Fosna–Hensbacka further west/north.",
           "literature": "No written literature — meaning lived in seasonal rounds, place-names now lost, and oral lore we can only infer from ethnography and later myth residues. Think of fire-circle narrative, hunting songs, and cosmologies tied to rivers and herds rather than books. Swedish culture often exports northern clarity — from rock art to modern design temperaments.",
-          "art": "Portable art and landscape marks: engraved bone, amber, microlith geometries, and the long afterglow of Paleolithic cave painting traditions. Dress is hide, fur, antler toggles; weaponry is bow, microlith-armed projectile, and wood-hafted axe. Swedish culture often exports northern clarity — from rock art to modern design temperaments.",
+          "art": "Bone and antler leisters, amber pendants, and later Kongemose blade elegance define a northern wetland aesthetic. Rock art begins to appear on coastal cliffs in some areas; portable amber animals and beads glow as prestige. SHG foragers carve identity from seal, fish, and forest deer rather than painted caves.",
           "images": [
             {
               "src": "https://commons.wikimedia.org/wiki/Special:FilePath/La%20Madeleine%20bison%20licking%20its%20flank.jpg?width=640",
@@ -891,16 +932,17 @@
             "name": "TRB & Pitted Ware"
           },
           "religion": "Coastal forager ritual inferred from burials and later northern sacred landscapes. Deities and myths are not recoverable for this horizon.",
-          "ideas": "In Scandinavian coastal foragers under the Maglemosian, Fosna–Hensbacka horizon, social ideas show in burial rites, exchange gifts, and household layout more than in texts. Coastal forager ritual inferred from burials and later northern sacred landscapes.",
-          "philosophy": "No named philosophical schools survive for Maglemosian, Fosna–Hensbacka in Scandinavian coastal foragers; cosmology is inferred from ritual deposits, burial posture, and craft canons—honestly thin as doctrine, thick as practice. Coastal forager ritual inferred from burials and later northern sacred landscapes.",
-          "science": "Forager science in Scandinavian coastal foragers is landscape literacy: microlith geometries, seasonal scheduling, hide and bone toolkits under the Maglemosian, Fosna–Hensbacka horizon. Portable art and landscape marks: engraved bone, amber, microlith geometries, and the long afterglow of Paleolithic cave painting traditions."
+          "ideas": "A watery cosmos of lakes, archipelagos, and rising Baltic/North Sea shores structures mobility and alliance. Eastern genetic affinity (EHG-related) mixes into WHG baselines—Scandinavia as a contact sea. Territorial knowledge of seal rookeries and salmon runs is political capital.",
+          "philosophy": "Amber and animal deposits, wetland platforms, and careful burials suggest a world where water and animal persons hold power. Cosmology is maritime and forestal—no temples, many thresholds (shore, ice, forest edge). Ritual gear implies transformation and hunting covenant more than pantheon lists.",
+          "science": "Dugout canoes, fish weirs, and leister design are marine engineering. Foragers track post-glacial rebound, changing Baltic salinity, and forest succession—an environmental science of a still-rising land. Composite tools and seal-hunting logistics sustain dense coastal living.",
+          "culture": "Maglemosian / Kongemose / Fosna–Hensbacka (SHG)"
         },
         "NOR": {
           "name": "Fosna–Hensbacka / Komsa",
           "summary": "Western and northern Norwegian forager traditions.",
           "conflicts": "Sparse arctic/coastal territories.",
           "literature": "No written literature — meaning lived in seasonal rounds, place-names now lost, and oral lore we can only infer from ethnography and later myth residues. Think of fire-circle narrative, hunting songs, and cosmologies tied to rivers and herds rather than books. Norwegian arts remember ships first — keel as national metaphor from Oseberg to oil platforms.",
-          "art": "Portable art and landscape marks: engraved bone, amber, microlith geometries, and the long afterglow of Paleolithic cave painting traditions. Dress is hide, fur, antler toggles; weaponry is bow, microlith-armed projectile, and wood-hafted axe. Norwegian arts remember ships first — keel as national metaphor from Oseberg to oil platforms.",
+          "art": "Bone and antler leisters, amber pendants, and later Kongemose blade elegance define a northern wetland aesthetic. Rock art begins to appear on coastal cliffs in some areas; portable amber animals and beads glow as prestige. SHG foragers carve identity from seal, fish, and forest deer rather than painted caves.",
           "images": [
             {
               "src": "https://commons.wikimedia.org/wiki/Special:FilePath/La%20Madeleine%20bison%20licking%20its%20flank.jpg?width=640",
@@ -931,16 +973,17 @@
             "Komsa"
           ],
           "religion": "Fosna–Hensbacka / Komsa ritual is thinly attested: coastal camps, rare burials, and later rock-art traditions still far in the future.",
-          "ideas": "In Fosna–Hensbacka / Komsa under the Fosna–Hensbacka, Komsa (far north) horizon, social ideas show in burial rites, exchange gifts, and household layout more than in texts. Fosna–Hensbacka / Komsa ritual is thinly attested: coastal camps, rare burials, and later rock-art traditions still far in the future.",
-          "philosophy": "No named philosophical schools survive for Fosna–Hensbacka, Komsa (far north) in Fosna–Hensbacka / Komsa; cosmology is inferred from ritual deposits, burial posture, and craft canons—honestly thin as doctrine, thick as practice. Fosna–Hensbacka / Komsa ritual is thinly attested: coastal camps, rare burials, and later rock-art traditions still far in the future.",
-          "science": "Forager science in Fosna–Hensbacka / Komsa is landscape literacy: microlith geometries, seasonal scheduling, hide and bone toolkits under the Fosna–Hensbacka, Komsa (far north) horizon. Portable art and landscape marks: engraved bone, amber, microlith geometries, and the long afterglow of Paleolithic cave painting traditions."
+          "ideas": "A watery cosmos of lakes, archipelagos, and rising Baltic/North Sea shores structures mobility and alliance. Eastern genetic affinity (EHG-related) mixes into WHG baselines—Scandinavia as a contact sea. Territorial knowledge of seal rookeries and salmon runs is political capital.",
+          "philosophy": "Amber and animal deposits, wetland platforms, and careful burials suggest a world where water and animal persons hold power. Cosmology is maritime and forestal—no temples, many thresholds (shore, ice, forest edge). Ritual gear implies transformation and hunting covenant more than pantheon lists.",
+          "science": "Dugout canoes, fish weirs, and leister design are marine engineering. Foragers track post-glacial rebound, changing Baltic salinity, and forest succession—an environmental science of a still-rising land. Composite tools and seal-hunting logistics sustain dense coastal living.",
+          "culture": "Maglemosian / Kongemose / Fosna–Hensbacka (SHG)"
         },
         "ITA": {
           "name": "Epigravettian-descended foragers",
           "summary": "Peninsula foragers after Late Glacial.",
           "conflicts": "Southern refugia matter for later WHG diversity.",
           "literature": "No written literature — meaning lived in seasonal rounds, place-names now lost, and oral lore we can only infer from ethnography and later myth residues. Think of fire-circle narrative, hunting songs, and cosmologies tied to rivers and herds rather than books. Italian cities teach prestige: from Roman monumentality to Renaissance brand management of beauty.",
-          "art": "Portable art and landscape marks: engraved bone, amber, microlith geometries, and the long afterglow of Paleolithic cave painting traditions. Dress is hide, fur, antler toggles; weaponry is bow, microlith-armed projectile, and wood-hafted axe. Italian cities teach prestige: from Roman monumentality to Renaissance brand management of beauty.",
+          "art": "Italian foragers inherit an Epigravettian portable tradition—engraved stones, bone tools, and personal ornaments—while Alpine and Apennine rock shelters keep older image places alive as memory. Mediterranean shell ornaments and obsidian later in the sequence already hint at maritime aesthetics. Art is small-scale, mobile, and coast-aware.",
           "images": [
             {
               "src": "https://commons.wikimedia.org/wiki/Special:FilePath/La%20Madeleine%20bison%20licking%20its%20flank.jpg?width=640",
@@ -967,16 +1010,17 @@
             "name": "Impresso Italy"
           },
           "religion": "Epigravettian-descended foragers leave burial and ornament evidence; Mediterranean rock shelters hold ritual deposits without readable theology.",
-          "ideas": "In Epigravettian-descended foragers under the Epigravettian-descended Italy horizon, social ideas show in burial rites, exchange gifts, and household layout more than in texts. Epigravettian-descended foragers leave burial and ornament evidence; Mediterranean rock shelters hold ritual deposits without readable theology.",
-          "philosophy": "No named philosophical schools survive for Epigravettian-descended Italy in Epigravettian-descended foragers; cosmology is inferred from ritual deposits, burial posture, and craft canons—honestly thin as doctrine, thick as practice. Epigravettian-descended foragers leave burial and ornament evidence; Mediterranean rock shelters hold ritual deposits without readable theology.",
-          "science": "Forager science in Epigravettian-descended foragers is landscape literacy: microlith geometries, seasonal scheduling, hide and bone toolkits under the Epigravettian-descended Italy horizon. Portable art and landscape marks: engraved bone, amber, microlith geometries, and the long afterglow of Paleolithic cave painting traditions."
+          "ideas": "Peninsula geography encourages north–south and Tyrrhenian–Adriatic contrasts in foraging strategies. Obsidian and shell exchange foreshadow the sea roads Impressa farmers will intensify. Bands remain small; identity is local valley and coast.",
+          "philosophy": "Cave burials and ochre rites continue Paleolithic body care into the Holocene. Sacred geography likely includes caves, high passes, and shoreline shrines without recoverable god names. Continuity of place matters more than new dogma.",
+          "science": "Mountain and coastal foraging demands vertical seasonal scheduling—upland game, lowland plants, marine shellfish. Early obsidian recognition from Lipari and related sources is materials prospecting. Navigation along indented coasts is routine technical knowledge.",
+          "culture": "Epigravettian-descended Italian foragers"
         },
         "SRB": {
           "name": "Iron Gates foragers",
           "summary": "Dense Danube gorge forager settlements (e.g. Lepenski-related world).",
           "conflicts": "Distinctive local identity before Starčevo farmers; contact and absorption follow.",
           "literature": "No written literature — meaning lived in seasonal rounds, place-names now lost, and oral lore we can only infer from ethnography and later myth residues. Think of fire-circle narrative, hunting songs, and cosmologies tied to rivers and herds rather than books. Serbian epic song turns defeat into repertoire; the gusle outlasts many maps.",
-          "art": "Portable art and landscape marks: engraved bone, amber, microlith geometries, and the long afterglow of Paleolithic cave painting traditions. Dress is hide, fur, antler toggles; weaponry is bow, microlith-armed projectile, and wood-hafted axe. Serbian epic song turns defeat into repertoire; the gusle outlasts many maps.",
+          "art": "Lepenski Vir’s trapezoidal houses and sandstone fish-human sculptures are among Europe’s most striking Mesolithic art—architecture and idol fused beside the Danube. Ornaments of shell and stone, ochre, and carefully posed burials compose a riverside aesthetic of fish and ancestor. Sculpture here is monumental for foragers.",
           "images": [
             {
               "src": "https://commons.wikimedia.org/wiki/Special:FilePath/La%20Madeleine%20bison%20licking%20its%20flank.jpg?width=640",
@@ -1003,16 +1047,17 @@
             "name": "Serbian lands"
           },
           "religion": "Iron Gates cemeteries show elaborate body treatment, sculptures, and house–burial links — unusually rich ritual archaeology for Mesolithic Europe.",
-          "ideas": "In Iron Gates foragers under the Iron Gates HG horizon, social ideas show in burial rites, exchange gifts, and household layout more than in texts. Iron Gates cemeteries show elaborate body treatment, sculptures, and house–burial links — unusually rich ritual archaeology for Mesolithic Europe.",
-          "philosophy": "No named philosophical schools survive for Iron Gates HG in Iron Gates foragers; cosmology is inferred from ritual deposits, burial posture, and craft canons—honestly thin as doctrine, thick as practice. Iron Gates cemeteries show elaborate body treatment, sculptures, and house–burial links — unusually rich ritual archaeology for Mesolithic Europe.",
-          "science": "Forager science in Iron Gates foragers is landscape literacy: microlith geometries, seasonal scheduling, hide and bone toolkits under the Iron Gates HG horizon. Portable art and landscape marks: engraved bone, amber, microlith geometries, and the long afterglow of Paleolithic cave painting traditions."
+          "ideas": "The Iron Gates gorge is a corridor of contact, not a refuge sealed from the world. Rich fisheries support denser, more sedentary forager life than northern forests allow. When Anatolian-related farmers approach, the Danube becomes a negotiation zone of genes, pots, and spouses.",
+          "philosophy": "Fish-human sculptures and house burials imply a cosmology where river persons, ancestors, and the living share space. Trapezoidal houses face the water as if architecture itself prays downstream. Sacred order is riverside and bodily—no scripture, intense place cult.",
+          "science": "Specialised sturgeon and migratory-fish harvesting is ecological engineering with nets, spears, and seasonal timing. Sedentary architecture and hearth management approach village science before farming. Early contact teaches foragers farmer crops and farmers gorge resources—two knowledge systems colliding.",
+          "culture": "Iron Gates & Balkan Mesolithic foragers"
         },
         "UKR": {
           "name": "Ukrainian Mesolithic",
           "summary": "Steppe/forest-steppe foragers.",
           "conflicts": "East of later Neolithic “great divide”; EHG-related.",
           "literature": "No written literature — meaning lived in seasonal rounds, place-names now lost, and oral lore we can only infer from ethnography and later myth residues. Think of fire-circle narrative, hunting songs, and cosmologies tied to rivers and herds rather than books. Borderland creativity — Cossack, Ruthenian, and European currents braided under dangerous skies.",
-          "art": "Portable art and landscape marks: engraved bone, amber, microlith geometries, and the long afterglow of Paleolithic cave painting traditions. Dress is hide, fur, antler toggles; weaponry is bow, microlith-armed projectile, and wood-hafted axe. Borderland creativity — Cossack, Ruthenian, and European currents braided under dangerous skies.",
+          "art": "Amber, animal-tooth pendants, and richly furnished burials at sites such as Yuzhniy Oleniy Ostrov compose a forest-steppe prestige art of the body. Bone and antler tools carry engraved designs; pottery appears in some eastern ‘Neolithic’ forager contexts without farming. Aesthetic power sits in graves and personal adornment.",
           "images": [
             {
               "src": "https://commons.wikimedia.org/wiki/Special:FilePath/La%20Madeleine%20bison%20licking%20its%20flank.jpg?width=640",
@@ -1039,16 +1084,17 @@
             "name": "Bug–Dniester / farmer fringe"
           },
           "religion": "Forest-steppe forager ritual: burials with ochre and grave goods. Named gods and afterlife doctrines are not recoverable.",
-          "ideas": "In Ukrainian Mesolithic under the Ukrainian Mesolithic horizon, social ideas show in burial rites, exchange gifts, and household layout more than in texts. Forest-steppe forager ritual: burials with ochre and grave goods.",
-          "philosophy": "No named philosophical schools survive for Ukrainian Mesolithic in Ukrainian Mesolithic; cosmology is inferred from ritual deposits, burial posture, and craft canons—honestly thin as doctrine, thick as practice. Forest-steppe forager ritual: burials with ochre and grave goods.",
-          "science": "Forager science in Ukrainian Mesolithic is landscape literacy: microlith geometries, seasonal scheduling, hide and bone toolkits under the Ukrainian Mesolithic horizon. Portable art and landscape marks: engraved bone, amber, microlith geometries, and the long afterglow of Paleolithic cave painting traditions."
+          "ideas": "EHG-related worlds keep a forager political economy east of the early farmer line—the genomic ‘great divide.’ Mobility across forest and steppe edges links Baltic, Volga, and Pontic zones. Identity is hunter-fisher with ceramics optional, ploughs absent.",
+          "philosophy": "Lavish burials imply ranked persons and afterlife provisioning—tools, ornaments, animals as companions beyond death. Waterways and forest clearings structure sacred geography. Cosmology is inferred from grave theatre, not hymns.",
+          "science": "Cold-forest hunting, ice-season fishing, and wide-ranging lithic procurement are survival sciences at continental scale. Early pottery among foragers shows independent or borrowed ceramic chemistry without agriculture. Path knowledge across vast low-density landscapes is the core information technology.",
+          "culture": "Eastern Hunter-Gatherers (forest-steppe)"
         },
         "RUS": {
           "name": "Eastern forest HG",
           "summary": "Veretye and related EHG-zone groups.",
           "conflicts": "Localized forager territories; long persistence vs western farmer replacement.",
           "literature": "No written literature — meaning lived in seasonal rounds, place-names now lost, and oral lore we can only infer from ethnography and later myth residues. Think of fire-circle narrative, hunting songs, and cosmologies tied to rivers and herds rather than books. Russian and wider Rus’ cultures translate Byzantine inheritance into forest and empire scales.",
-          "art": "Portable art and landscape marks: engraved bone, amber, microlith geometries, and the long afterglow of Paleolithic cave painting traditions. Dress is hide, fur, antler toggles; weaponry is bow, microlith-armed projectile, and wood-hafted axe. Russian and wider Rus’ cultures translate Byzantine inheritance into forest and empire scales.",
+          "art": "Amber, animal-tooth pendants, and richly furnished burials at sites such as Yuzhniy Oleniy Ostrov compose a forest-steppe prestige art of the body. Bone and antler tools carry engraved designs; pottery appears in some eastern ‘Neolithic’ forager contexts without farming. Aesthetic power sits in graves and personal adornment.",
           "images": [
             {
               "src": "https://commons.wikimedia.org/wiki/Special:FilePath/La%20Madeleine%20bison%20licking%20its%20flank.jpg?width=640",
@@ -1075,9 +1121,10 @@
             "name": "Yamnaya / steppe clans"
           },
           "religion": "Eastern forest HG ritual mainly visible in burials and later forest sacred-place traditions; avoid projecting historic Finno-Ugric pantheons backward wholesale.",
-          "ideas": "In Eastern forest HG under the Veretye / eastern forest HG horizon, social ideas show in burial rites, exchange gifts, and household layout more than in texts. Eastern forest HG ritual mainly visible in burials and later forest sacred-place traditions; avoid projecting historic Finno-Ugric pantheons backward wholesale.",
-          "philosophy": "No named philosophical schools survive for Veretye / eastern forest HG in Eastern forest HG; cosmology is inferred from ritual deposits, burial posture, and craft canons—honestly thin as doctrine, thick as practice. Eastern forest HG ritual mainly visible in burials and later forest sacred-place traditions; avoid projecting historic Finno-Ugric pantheons backward wholesale.",
-          "science": "Forager science in Eastern forest HG is landscape literacy: microlith geometries, seasonal scheduling, hide and bone toolkits under the Veretye / eastern forest HG horizon. Portable art and landscape marks: engraved bone, amber, microlith geometries, and the long afterglow of Paleolithic cave painting traditions."
+          "ideas": "EHG-related worlds keep a forager political economy east of the early farmer line—the genomic ‘great divide.’ Mobility across forest and steppe edges links Baltic, Volga, and Pontic zones. Identity is hunter-fisher with ceramics optional, ploughs absent.",
+          "philosophy": "Lavish burials imply ranked persons and afterlife provisioning—tools, ornaments, animals as companions beyond death. Waterways and forest clearings structure sacred geography. Cosmology is inferred from grave theatre, not hymns.",
+          "science": "Cold-forest hunting, ice-season fishing, and wide-ranging lithic procurement are survival sciences at continental scale. Early pottery among foragers shows independent or borrowed ceramic chemistry without agriculture. Path knowledge across vast low-density landscapes is the core information technology.",
+          "culture": "Eastern Hunter-Gatherers (forest-steppe)"
         }
       }
     },
@@ -1106,7 +1153,11 @@
           "languageFamily": "Unattested early farmer (non-IE?)",
           "languages": "Unknown Cardial-related",
           "linguisticNote": "Unknown non-IE farmer language(s). Not ancestral Basque or Iberian by evidence — those are later attestations.",
-          "linguisticConfidence": "hypothetical"
+          "linguisticConfidence": "hypothetical",
+          "art": "Cardial pottery—rims and bodies stamped with cockle-shell edges—is the signature aesthetic of littoral pioneer farmers from Catalonia to Portugal. Polished stone axes, impressed ware, and simple clay figurines replace forager portable art as the visual language of settled households. Burial still mixes caves and open deposits; ornament stays personal (shell, stone) rather than monumental.",
+          "ideas": "The big idea is the village package: cereals, sheep and goat, clay pots, and fixed houses carried by sea along the Mediterranean and Atlantic fringe. Pioneer colonisation implies planned landings and rapid coastal leaps more than slow village creep. Inland foragers remain neighbours—farming is a littoral claim, not yet a peninsula-wide law.",
+          "philosophy": "Domesticated plants and animals reorder the sacred: hearths, storage pits, and household burials locate fertility and ancestry inside the settlement. Shell-stamped pots may mark group identity as much as kitchen use—a ceramic badge of belonging. Cosmology stays oral; what we see is ritual practice around food, death, and the new domestic animals.",
+          "science": "Seafaring farmers move seed corn, livestock, and pottery recipes across open water—maritime logistics as technology. Early Iberian farmers manage Mediterranean crops on thin coastal soils while learning local rainfall and wild resources. Flint and polished-stone toolkits standardise woodworking and clearing for fields carved from scrub and woodland."
         },
         "britain": {
           "culture": "Earliest Neolithic Britain (EEF arrival)",
@@ -1156,7 +1207,11 @@
                 }
               }
             ]
-          }
+          },
+          "art": "Incoming farmers bring pottery, polished axes, and eventually earthen long barrows—new media after millennia of forager portables. Carinated bowls and early chambered tombs sketch a continental-derived visual package adapted to island stone and timber. Art is still mostly functional and funerary; the great stone theatres come later.",
+          "ideas": "The transformative idea is demic farming: cereals, cattle, and fixed houses arrive with people who largely replace Mesolithic ancestry. Causewayed-enclosure thinking—gathering, feasting, boundary—begins to organise regional identity. Ireland’s secure house-and-cereal horizons slightly lag Britain’s earliest footprints but join the same Atlantic farmer conversation.",
+          "philosophy": "Ancestors move underground into long mounds and early chambers; fertility and lineage attach to monuments and herds rather than only seasonal camps. No pantheon survives in writing—ritual is deposition, animal offering, and communal gathering. The philosophical shift is from mobile forager ethics to landed, heritable place.",
+          "science": "Imported crop packages meet Atlantic soils and rainfall; farmers learn which cereals and animals thrive on island clay and chalk. Forest clearance, timber halls, and early quarrying for axe stone (e.g. Langdale later florescence) are applied landscape science. Seacraft still underwrites the whole colonisation—boats as the enabling technology."
         },
         "france": {
           "culture": "Cardial coast & LBK-influenced interior",
@@ -1174,7 +1229,11 @@
           "languages": "Unknown LBK/Cardial-related",
           "linguisticNote": "Unknown farmer languages; Gaulish Celtic is ~4000+ years later.",
           "linguisticConfidence": "hypothetical",
-          "ancestryNote": "Early farmers ~EEF; WHG admixture increases through Middle Neolithic."
+          "ancestryNote": "Early farmers ~EEF; WHG admixture increases through Middle Neolithic.",
+          "art": "Mediterranean Cardial impressed ware lights the southern and western coasts while LBK-related banded pottery and longhouses enter the northeast. Two ceramic aesthetics—shell-stamp littoral versus Danubian linear—meet in Gaul as rival visual languages of farming. Early figurines and polished axes travel with both streams.",
+          "ideas": "France is the hinge where maritime pioneer farming and the Danube corridor almost touch. West-of-Rhine communities mix more local hunter-gatherer ancestry into farmer lives—an idea of coexistence written in genomes as much as pots. Settlement chooses loess, river terraces, and coastal enclaves rather than a uniform carpet.",
+          "philosophy": "Household and enclosure begin to replace pure seasonal round as sacred centres. Burial rites diverge by tradition—Cardial caves and open deposits versus LBK cemetery rows—encoding different ideas of person and kin. Cosmology remains oral; archaeology catches practice at the grave and the hearth.",
+          "science": "Farmers transplant Near Eastern crops into Atlantic and continental climates, learning frost, rainfall, and soil the hard way. Longhouse carpentry and Cardial kiln-less pottery are parallel technical schools. Early exchange of Alpine axe stone already sketches the routes later megalith builders will intensify."
         },
         "central": {
           "culture": "LBK (Linear Pottery Culture)",
@@ -1224,7 +1283,11 @@
                 }
               }
             ]
-          }
+          },
+          "art": "Banded pottery—incised linear and spiral motifs on fine ware—and vast timber longhouses define the central European look. Clay figurines, shoe-last adzes, and Spondylus shell ornaments from the Mediterranean are prestige art inside an otherwise agrarian aesthetic. Cemeteries stage bodies with gendered tool kits as social portraiture.",
+          "ideas": "The longhouse village invents a new social architecture: patrilocal kinship (aDNA), cattle wealth, and rapid colonisation of loess. Eastern and western LBK diverge in hunter-gatherer ancestry—same pottery brand, different genetic histories. Late LBK massacres (Talheim, Schletz, Kilianstädten) and Herxheim’s ritual deposits show ideas of belonging turning violently exclusive.",
+          "philosophy": "Row-grave cemeteries and household shrines locate ancestors beside the living; fertility attaches to cattle and grain stores. Herxheim’s skull-cap rites imply a dark theology of processing the dead—or the stranger—as ritual theatre. Cosmology is communal and bodily, not textual philosophy.",
+          "science": "LBK agronomy pairs emmer, einkorn, barley, pulses, and cattle on loess with remarkable geographic consistency. Longhouse engineering spans generations of timber joinery. Pottery kilns, flint mines, and Spondylus exchange chains are early logistical science across hundreds of kilometres."
         },
         "scandinavia": {
           "culture": "Ertebølle foragers → earliest TRB contact",
@@ -1277,7 +1340,11 @@
                 }
               }
             ]
-          }
+          },
+          "art": "Ertebølle pointed-base pottery—among Europe’s earliest northern ceramics—joins thick shell middens as a distinctive last-forager style. Bone combs, antler tools, and marine mammal motifs keep an aquatic aesthetic while farmers loom to the south. Art signals continuity of forager identity at the edge of the LBK world.",
+          "ideas": "Pottery without farming: vessels for seal fat and fish, not yet a full Neolithic package. Ertebølle communities negotiate exchange and occasional violence with southern farmers while defending coastal lifeways. The idea of ‘becoming Neolithic’ is delayed, chosen, and uneven—not automatic.",
+          "philosophy": "Shell middens double as ancestral places—refuse that is also memory. Marine animals likely remain central spirit partners even as clay pots enter ritual and daily life. Worldview resists the farmer’s grain-and-cattle sacred order until TRB centuries later.",
+          "science": "Coastal ecology expertise peaks: oysters, seals, fish, and wild plants timed to Baltic seasons. Early ceramics require clay tempering and firing knowledge borrowed or invented at the farmer contact zone. Boat craft still underwrites economy and communication."
         },
         "italy": {
           "culture": "Impresso / Early Neolithic Italy",
@@ -1295,7 +1362,11 @@
           "languages": "Unknown Impresso-related",
           "linguisticNote": "Unknown Impresso-related farmer speech — not Latin, not Etruscan, and not recoverable from later Italic.",
           "linguisticConfidence": "hypothetical",
-          "ancestryNote": "Early Italian Impresso farmers are EEF-dominated in published models; WHG is a minority that rises later."
+          "ancestryNote": "Early Italian Impresso farmers are EEF-dominated in published models; WHG is a minority that rises later.",
+          "art": "Impressed and Cardial-related wares, painted bands in some facies, and clay figurines announce the farmer aesthetic across southern and central coasts. Obsidian blades from island sources become gleaming prestige tools. Village pottery replaces forager portables as the daily visual environment.",
+          "ideas": "Italy is a launch corridor for Mediterranean Neolithisation—Adriatic and Tyrrhenian leapfrogs toward France and Iberia. Farming villages redefine land as fields and pastures; forager edges persist in mountains. Sea links make the peninsula a network node, not a cul-de-sac.",
+          "philosophy": "Domestic shrines, figurines, and burial under or near houses locate the sacred in the household and the soil. Fertility of crops and herds likely structures ritual calendars. No philosophy schools—only practised covenants with land and dead.",
+          "science": "Island obsidian specialised production and distribution is a measurable early industry. Farmers tune Near Eastern crops to Italian climates from Po fringe to Sicily. Boat-building and coastal pilotage are the sciences that make the Impressa expansion possible."
         },
         "balkans": {
           "culture": "Starčevo–Körös–Criș / early Vinča",
@@ -1314,7 +1385,11 @@
           "languages": "Unknown Starčevo/Vinča-related",
           "linguisticNote": "Unknown Starčevo/Vinča-related languages. Ancient Greek is still far in the future and unrelated by attestation.",
           "linguisticConfidence": "hypothetical",
-          "ancestryNote": "EEF majority + elevated local HG vs early LBK extremes."
+          "ancestryNote": "EEF majority + elevated local HG vs early LBK extremes.",
+          "art": "Painted and fine polished pottery, anthropomorphic and zoomorphic figurines, and stamp seals fill early Balkan farmer villages with a crowded visual theology of clay bodies. Starčevo and related wares are earth-toned; Vinča later darkens and sophisticates the surface. Houses on tells accumulate art as stratified memory.",
+          "ideas": "The Balkans are the demic bridge from Anatolia into Europe—farming’s first European idea factory. Village life, storage, and cattle reorganise kinship and labour. From here Cardial and LBK streams will diverge, carrying Balkan-tempered farmer culture west and north.",
+          "philosophy": "Figurines—often female, sometimes ambiguous—point to household cults of fertility, protection, or ancestor presence without proving a single ‘mother goddess’ church. Tell living stacks generations: the past literally underfoot. Ritual pits and house burnings suggest cyclical renewal rites.",
+          "science": "Balkan farmers refine the Neolithic package for European latitudes—crop choices, animal management, and mudbrick/wattle housing. Early copper ornaments appear as metallurgical curiosity beside stone. Pottery kilns and tell drainage are settlement engineering at growing scale."
         },
         "eastern": {
           "culture": "Pontic foragers & western Trypillia fringe",
@@ -1370,7 +1445,11 @@
                 }
               }
             ]
-          }
+          },
+          "art": "While true farming paints pottery farther west, eastern forager ceramics (Comb Ware, related) keep comb-and-pit decoration as a forest aesthetic. On the western fringe, early Trypillia/Precucuteni painted wares begin to appear—farmer colour advancing into the forest-steppe. Two visual systems face each other across the divide.",
+          "ideas": "‘Neolithic’ here often means pots, not crops—an idea that confuses later textbooks. Pontic and forest foragers coexist with approaching Balkan–Carpathian farmers for centuries. Exchange and occasional admixture happen without immediate lifestyle collapse.",
+          "philosophy": "Forager burial richness continues; incoming farmer rites bring figurines and painted ceramics as new sacred media at the contact fringe. Worldviews pluralise along the frontier—no single conversion narrative. Ancestors and animals remain central on the forager side.",
+          "science": "Forager ecological expertise persists; farmer fringe communities test crops on chernozem and forest-steppe soils. Ceramic temper and firing styles mark technical schools on both sides of the divide. River routes (Dniester, Dnieper, Bug) are the logistics backbone."
         }
       },
       "linguistics": "No texts. Farmer languages are unknown and usually modeled as non-Indo-European. Residual forager languages vanish or leave only undetectable substrates. Do not equate “Neolithic” with any historically named family.",
@@ -1599,7 +1678,7 @@
           "summary": "Linearbandkeramik longhouse farming on loess.",
           "conflicts": "Expansion into forager landscapes; limited early conflict archaeologically visible as pioneer frontier.",
           "literature": "Still pre-literate in Europe. Story survives as ritual architecture and ceramic style: foundation deposits, house-burning rites, and the first farming songs we cannot hear — only the pots and longhouses that staged them. German lands often host the workshop — print, metal, and later industrial form — for Europe’s ideas.",
-          "art": "Cardial/Impresso and LBK pottery as mobile art; polished stone axes as prestige tools; woven textiles beginning to replace pure hide economies. Figurines in some Balkan contexts hint at household cults. German lands often host the workshop — print, metal, and later industrial form — for Europe’s ideas.",
+          "art": "Banded pottery—incised linear and spiral motifs on fine ware—and vast timber longhouses define the central European look. Clay figurines, shoe-last adzes, and Spondylus shell ornaments from the Mediterranean are prestige art inside an otherwise agrarian aesthetic. Cemeteries stage bodies with gendered tool kits as social portraiture.",
           "images": [
             {
               "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Cer%C3%A1mica%20cardial-La%20Sarsa%20%28Espa%C3%B1a%29.jpg?width=640",
@@ -1625,16 +1704,17 @@
             "name": "TRB / Michelsberg"
           },
           "religion": "LBK farmers practiced domestic and enclosure ritual: foundation deposits, cattle offerings, and cemetery rows. Ancestor care and fertility rites are inferred; named gods are not.",
-          "ideas": "In LBK pioneer villages under the LBK (Linear Pottery), Ertebølle foragers (HG holdout) horizon, social ideas show in burial rites, exchange gifts, and household layout more than in texts. LBK farmers practiced domestic and enclosure ritual: foundation deposits, cattle offerings, and cemetery rows.",
-          "philosophy": "No named philosophical schools survive for LBK (Linear Pottery), Ertebølle foragers (HG holdout) in LBK pioneer villages; cosmology is inferred from ritual deposits, burial posture, and craft canons—honestly thin as doctrine, thick as practice. LBK farmers practiced domestic and enclosure ritual: foundation deposits, cattle offerings, and cemetery rows.",
-          "science": "Farming knowledge—cereal calendars, animal management, ceramic temper, and monument surveying—defines LBK (Linear Pottery), Ertebølle foragers (HG holdout) technical culture in LBK pioneer villages. Cardial/Impresso and LBK pottery as mobile art; polished stone axes as prestige tools; woven textiles beginning to replace pure hide economies."
+          "ideas": "The longhouse village invents a new social architecture: patrilocal kinship (aDNA), cattle wealth, and rapid colonisation of loess. Eastern and western LBK diverge in hunter-gatherer ancestry—same pottery brand, different genetic histories. Late LBK massacres (Talheim, Schletz, Kilianstädten) and Herxheim’s ritual deposits show ideas of belonging turning violently exclusive.",
+          "philosophy": "Row-grave cemeteries and household shrines locate ancestors beside the living; fertility attaches to cattle and grain stores. Herxheim’s skull-cap rites imply a dark theology of processing the dead—or the stranger—as ritual theatre. Cosmology is communal and bodily, not textual philosophy.",
+          "science": "LBK agronomy pairs emmer, einkorn, barley, pulses, and cattle on loess with remarkable geographic consistency. Longhouse engineering spans generations of timber joinery. Pottery kilns, flint mines, and Spondylus exchange chains are early logistical science across hundreds of kilometres.",
+          "culture": "LBK (Linear Pottery Culture)"
         },
         "HUN": {
           "name": "Starčevo–Körös farmers",
           "summary": "Early farming in the Carpathian Basin.",
           "conflicts": "Contact with residual HG and neighboring Balkan farmers.",
           "literature": "Still pre-literate in Europe. Story survives as ritual architecture and ceramic style: foundation deposits, house-burning rites, and the first farming songs we cannot hear — only the pots and longhouses that staged them. Hungarian culture keeps a steppe-origin memory inside a Latin-Christian and later Habsburg frame.",
-          "art": "Cardial/Impresso and LBK pottery as mobile art; polished stone axes as prestige tools; woven textiles beginning to replace pure hide economies. Figurines in some Balkan contexts hint at household cults. Hungarian culture keeps a steppe-origin memory inside a Latin-Christian and later Habsburg frame.",
+          "art": "Banded pottery—incised linear and spiral motifs on fine ware—and vast timber longhouses define the central European look. Clay figurines, shoe-last adzes, and Spondylus shell ornaments from the Mediterranean are prestige art inside an otherwise agrarian aesthetic. Cemeteries stage bodies with gendered tool kits as social portraiture.",
           "images": [
             {
               "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Cer%C3%A1mica%20cardial-La%20Sarsa%20%28Espa%C3%B1a%29.jpg?width=640",
@@ -1655,16 +1735,17 @@
             "name": "Yamnaya in the Carpathian Basin"
           },
           "religion": "Starčevo–Körös villages show figurines, house rituals, and formal burials. Beliefs center on household and fertility cult practice more than temples.",
-          "ideas": "In Starčevo–Körös farmers under the Starčevo–Körös–Criș, LBK (Linear Pottery) horizon, social ideas show in burial rites, exchange gifts, and household layout more than in texts. Starčevo–Körös villages show figurines, house rituals, and formal burials.",
-          "philosophy": "No named philosophical schools survive for Starčevo–Körös–Criș, LBK (Linear Pottery) in Starčevo–Körös farmers; cosmology is inferred from ritual deposits, burial posture, and craft canons—honestly thin as doctrine, thick as practice. Starčevo–Körös villages show figurines, house rituals, and formal burials.",
-          "science": "Farming knowledge—cereal calendars, animal management, ceramic temper, and monument surveying—defines Starčevo–Körös–Criș, LBK (Linear Pottery) technical culture in Starčevo–Körös farmers. Cardial/Impresso and LBK pottery as mobile art; polished stone axes as prestige tools; woven textiles beginning to replace pure hide economies."
+          "ideas": "The longhouse village invents a new social architecture: patrilocal kinship (aDNA), cattle wealth, and rapid colonisation of loess. Eastern and western LBK diverge in hunter-gatherer ancestry—same pottery brand, different genetic histories. Late LBK massacres (Talheim, Schletz, Kilianstädten) and Herxheim’s ritual deposits show ideas of belonging turning violently exclusive.",
+          "philosophy": "Row-grave cemeteries and household shrines locate ancestors beside the living; fertility attaches to cattle and grain stores. Herxheim’s skull-cap rites imply a dark theology of processing the dead—or the stranger—as ritual theatre. Cosmology is communal and bodily, not textual philosophy.",
+          "science": "LBK agronomy pairs emmer, einkorn, barley, pulses, and cattle on loess with remarkable geographic consistency. Longhouse engineering spans generations of timber joinery. Pottery kilns, flint mines, and Spondylus exchange chains are early logistical science across hundreds of kilometres.",
+          "culture": "LBK (Linear Pottery Culture)"
         },
         "ESP": {
           "name": "Cardial Iberia",
           "summary": "Mediterranean farming colonies and spreads.",
           "conflicts": "Rapid coastal advance; WHG substrate remains minority.",
           "literature": "Still pre-literate in Europe. Story survives as ritual architecture and ceramic style: foundation deposits, house-burning rites, and the first farming songs we cannot hear — only the pots and longhouses that staged them. Iberia’s art of contact — Christian, Jewish, Islamic — keeps Europe from pretending it was ever only Latin.",
-          "art": "Cardial/Impresso and LBK pottery as mobile art; polished stone axes as prestige tools; woven textiles beginning to replace pure hide economies. Figurines in some Balkan contexts hint at household cults. Iberia’s art of contact — Christian, Jewish, Islamic — keeps Europe from pretending it was ever only Latin.",
+          "art": "Cardial pottery—rims and bodies stamped with cockle-shell edges—is the signature aesthetic of littoral pioneer farmers from Catalonia to Portugal. Polished stone axes, impressed ware, and simple clay figurines replace forager portable art as the visual language of settled households. Burial still mixes caves and open deposits; ornament stays personal (shell, stone) rather than monumental.",
           "images": [
             {
               "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Cer%C3%A1mica%20cardial-La%20Sarsa%20%28Espa%C3%B1a%29.jpg?width=640",
@@ -1690,16 +1771,17 @@
             "name": "Los Millares & Copper Age Iberia"
           },
           "religion": "Cardial communities combine cave/open-air ritual with early megalithic experiments. Burial and ceramic deposits mark ancestor and place cults.",
-          "ideas": "In Cardial Iberia under the Cardial Ware horizon, social ideas show in burial rites, exchange gifts, and household layout more than in texts. Cardial communities combine cave/open-air ritual with early megalithic experiments.",
-          "philosophy": "No named philosophical schools survive for Cardial Ware in Cardial Iberia; cosmology is inferred from ritual deposits, burial posture, and craft canons—honestly thin as doctrine, thick as practice. Cardial communities combine cave/open-air ritual with early megalithic experiments.",
-          "science": "Farming knowledge—cereal calendars, animal management, ceramic temper, and monument surveying—defines Cardial Ware technical culture in Cardial Iberia. Cardial/Impresso and LBK pottery as mobile art; polished stone axes as prestige tools; woven textiles beginning to replace pure hide economies."
+          "ideas": "The big idea is the village package: cereals, sheep and goat, clay pots, and fixed houses carried by sea along the Mediterranean and Atlantic fringe. Pioneer colonisation implies planned landings and rapid coastal leaps more than slow village creep. Inland foragers remain neighbours—farming is a littoral claim, not yet a peninsula-wide law.",
+          "philosophy": "Domesticated plants and animals reorder the sacred: hearths, storage pits, and household burials locate fertility and ancestry inside the settlement. Shell-stamped pots may mark group identity as much as kitchen use—a ceramic badge of belonging. Cosmology stays oral; what we see is ritual practice around food, death, and the new domestic animals.",
+          "science": "Seafaring farmers move seed corn, livestock, and pottery recipes across open water—maritime logistics as technology. Early Iberian farmers manage Mediterranean crops on thin coastal soils while learning local rainfall and wild resources. Flint and polished-stone toolkits standardise woodworking and clearing for fields carved from scrub and woodland.",
+          "culture": "Cardial Early Neolithic Iberia"
         },
         "ITA": {
           "name": "Impresso Italy",
           "summary": "Maritime Early Neolithic along coasts.",
           "conflicts": "Coastal farmer expansion vs inland foragers.",
           "literature": "Still pre-literate in Europe. Story survives as ritual architecture and ceramic style: foundation deposits, house-burning rites, and the first farming songs we cannot hear — only the pots and longhouses that staged them. Italian cities teach prestige: from Roman monumentality to Renaissance brand management of beauty.",
-          "art": "Cardial/Impresso and LBK pottery as mobile art; polished stone axes as prestige tools; woven textiles beginning to replace pure hide economies. Figurines in some Balkan contexts hint at household cults. Italian cities teach prestige: from Roman monumentality to Renaissance brand management of beauty.",
+          "art": "Impressed and Cardial-related wares, painted bands in some facies, and clay figurines announce the farmer aesthetic across southern and central coasts. Obsidian blades from island sources become gleaming prestige tools. Village pottery replaces forager portables as the daily visual environment.",
           "images": [
             {
               "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Cer%C3%A1mica%20cardial-La%20Sarsa%20%28Espa%C3%B1a%29.jpg?width=640",
@@ -1725,16 +1807,17 @@
             "name": "Remedello / Gaudo"
           },
           "religion": "Impresso/Cardial Italy: household figurines, cave rites, and emerging formal cemeteries — agrarian ritual without written pantheons.",
-          "ideas": "In Impresso Italy under the Impresso / Impressed Ware horizon, social ideas show in burial rites, exchange gifts, and household layout more than in texts. Impresso/Cardial Italy: household figurines, cave rites, and emerging formal cemeteries — agrarian ritual without written pantheons.",
-          "philosophy": "No named philosophical schools survive for Impresso / Impressed Ware in Impresso Italy; cosmology is inferred from ritual deposits, burial posture, and craft canons—honestly thin as doctrine, thick as practice. Impresso/Cardial Italy: household figurines, cave rites, and emerging formal cemeteries — agrarian ritual without written pantheons.",
-          "science": "Farming knowledge—cereal calendars, animal management, ceramic temper, and monument surveying—defines Impresso / Impressed Ware technical culture in Impresso Italy. Cardial/Impresso and LBK pottery as mobile art; polished stone axes as prestige tools; woven textiles beginning to replace pure hide economies."
+          "ideas": "Italy is a launch corridor for Mediterranean Neolithisation—Adriatic and Tyrrhenian leapfrogs toward France and Iberia. Farming villages redefine land as fields and pastures; forager edges persist in mountains. Sea links make the peninsula a network node, not a cul-de-sac.",
+          "philosophy": "Domestic shrines, figurines, and burial under or near houses locate the sacred in the household and the soil. Fertility of crops and herds likely structures ritual calendars. No philosophy schools—only practised covenants with land and dead.",
+          "science": "Island obsidian specialised production and distribution is a measurable early industry. Farmers tune Near Eastern crops to Italian climates from Po fringe to Sicily. Boat-building and coastal pilotage are the sciences that make the Impressa expansion possible.",
+          "culture": "Impresso / Early Neolithic Italy"
         },
         "GRC": {
           "name": "Early Greek Neolithic",
           "summary": "Farming villages in Thessaly and beyond.",
           "conflicts": "Corridor from Anatolia; local HG admixture varies.",
           "literature": "Still pre-literate in Europe. Story survives as ritual architecture and ceramic style: foundation deposits, house-burning rites, and the first farming songs we cannot hear — only the pots and longhouses that staged them. Greek language and forms remain a reusable antiquity — quarried by every later age for prestige.",
-          "art": "Cardial/Impresso and LBK pottery as mobile art; polished stone axes as prestige tools; woven textiles beginning to replace pure hide economies. Figurines in some Balkan contexts hint at household cults. Greek language and forms remain a reusable antiquity — quarried by every later age for prestige.",
+          "art": "Painted and fine polished pottery, anthropomorphic and zoomorphic figurines, and stamp seals fill early Balkan farmer villages with a crowded visual theology of clay bodies. Starčevo and related wares are earth-toned; Vinča later darkens and sophisticates the surface. Houses on tells accumulate art as stratified memory.",
           "images": [
             {
               "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Cer%C3%A1mica%20cardial-La%20Sarsa%20%28Espa%C3%B1a%29.jpg?width=640",
@@ -1755,16 +1838,17 @@
             "name": "Mycenaean palaces"
           },
           "religion": "Early Greek Neolithic villages use figurines, hearth/house deposits, and cemetery rites. Later Olympian names must not be read back into this phase.",
-          "ideas": "In Early Greek Neolithic under the Karanovo / early Balkan EN, Impresso / Impressed Ware horizon, social ideas show in burial rites, exchange gifts, and household layout more than in texts. Early Greek Neolithic villages use figurines, hearth/house deposits, and cemetery rites.",
-          "philosophy": "No named philosophical schools survive for Karanovo / early Balkan EN, Impresso / Impressed Ware in Early Greek Neolithic; cosmology is inferred from ritual deposits, burial posture, and craft canons—honestly thin as doctrine, thick as practice. Early Greek Neolithic villages use figurines, hearth/house deposits, and cemetery rites.",
-          "science": "Farming knowledge—cereal calendars, animal management, ceramic temper, and monument surveying—defines Karanovo / early Balkan EN, Impresso / Impressed Ware technical culture in Early Greek Neolithic. Cardial/Impresso and LBK pottery as mobile art; polished stone axes as prestige tools; woven textiles beginning to replace pure hide economies."
+          "ideas": "The Balkans are the demic bridge from Anatolia into Europe—farming’s first European idea factory. Village life, storage, and cattle reorganise kinship and labour. From here Cardial and LBK streams will diverge, carrying Balkan-tempered farmer culture west and north.",
+          "philosophy": "Figurines—often female, sometimes ambiguous—point to household cults of fertility, protection, or ancestor presence without proving a single ‘mother goddess’ church. Tell living stacks generations: the past literally underfoot. Ritual pits and house burnings suggest cyclical renewal rites.",
+          "science": "Balkan farmers refine the Neolithic package for European latitudes—crop choices, animal management, and mudbrick/wattle housing. Early copper ornaments appear as metallurgical curiosity beside stone. Pottery kilns and tell drainage are settlement engineering at growing scale.",
+          "culture": "Starčevo–Körös–Criș / early Vinča"
         },
         "DNK": {
           "name": "Ertebølle vs earliest TRB",
           "summary": "Forager Ertebølle meeting first farmers.",
           "conflicts": "Classic contact frontier before farmer dominance.",
           "literature": "Still pre-literate in Europe. Story survives as ritual architecture and ceramic style: foundation deposits, house-burning rites, and the first farming songs we cannot hear — only the pots and longhouses that staged them. Danish gatekeeping of the Baltic Sound makes culture a toll-booth as well as a stage.",
-          "art": "Cardial/Impresso and LBK pottery as mobile art; polished stone axes as prestige tools; woven textiles beginning to replace pure hide economies. Figurines in some Balkan contexts hint at household cults. Danish gatekeeping of the Baltic Sound makes culture a toll-booth as well as a stage.",
+          "art": "Ertebølle pointed-base pottery—among Europe’s earliest northern ceramics—joins thick shell middens as a distinctive last-forager style. Bone combs, antler tools, and marine mammal motifs keep an aquatic aesthetic while farmers loom to the south. Art signals continuity of forager identity at the edge of the LBK world.",
           "images": [
             {
               "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Cer%C3%A1mica%20cardial-La%20Sarsa%20%28Espa%C3%B1a%29.jpg?width=640",
@@ -1790,16 +1874,17 @@
             "name": "TRB Scandinavia"
           },
           "religion": "Ertebølle holdouts keep forager burial/wetland rites beside earliest TRB farmer ceremonies — two ritual regimes in contact, not one creed.",
-          "ideas": "In Ertebølle vs earliest TRB under the Ertebølle foragers (HG holdout), Earliest TRB contact horizon, social ideas show in burial rites, exchange gifts, and household layout more than in texts. Ertebølle holdouts keep forager burial/wetland rites beside earliest TRB farmer ceremonies — two ritual regimes in contact, not one creed.",
-          "philosophy": "No named philosophical schools survive for Ertebølle foragers (HG holdout), Earliest TRB contact in Ertebølle vs earliest TRB; cosmology is inferred from ritual deposits, burial posture, and craft canons—honestly thin as doctrine, thick as practice. Ertebølle holdouts keep forager burial/wetland rites beside earliest TRB farmer ceremonies — two ritual regimes in contact, not one creed.",
-          "science": "Farming knowledge—cereal calendars, animal management, ceramic temper, and monument surveying—defines Ertebølle foragers (HG holdout), Earliest TRB contact technical culture in Ertebølle vs earliest TRB. Cardial/Impresso and LBK pottery as mobile art; polished stone axes as prestige tools; woven textiles beginning to replace pure hide economies."
+          "ideas": "Pottery without farming: vessels for seal fat and fish, not yet a full Neolithic package. Ertebølle communities negotiate exchange and occasional violence with southern farmers while defending coastal lifeways. The idea of ‘becoming Neolithic’ is delayed, chosen, and uneven—not automatic.",
+          "philosophy": "Shell middens double as ancestral places—refuse that is also memory. Marine animals likely remain central spirit partners even as clay pots enter ritual and daily life. Worldview resists the farmer’s grain-and-cattle sacred order until TRB centuries later.",
+          "science": "Coastal ecology expertise peaks: oysters, seals, fish, and wild plants timed to Baltic seasons. Early ceramics require clay tempering and firing knowledge borrowed or invented at the farmer contact zone. Boat craft still underwrites economy and communication.",
+          "culture": "Ertebølle foragers → earliest TRB contact"
         },
         "GBR": {
           "name": "Earliest Neolithic arrival",
           "summary": "Farming enters after continental EN.",
           "conflicts": "First major replacement of Mesolithic WHG.",
           "literature": "Still pre-literate in Europe. Story survives as ritual architecture and ceramic style: foundation deposits, house-burning rites, and the first farming songs we cannot hear — only the pots and longhouses that staged them. Insular voices and North Sea contact give this place a distinctive accent in the wider European chorus.",
-          "art": "Cardial/Impresso and LBK pottery as mobile art; polished stone axes as prestige tools; woven textiles beginning to replace pure hide economies. Figurines in some Balkan contexts hint at household cults. Insular voices and North Sea contact give this place a distinctive accent in the wider European chorus.",
+          "art": "Incoming farmers bring pottery, polished axes, and eventually earthen long barrows—new media after millennia of forager portables. Carinated bowls and early chambered tombs sketch a continental-derived visual package adapted to island stone and timber. Art is still mostly functional and funerary; the great stone theatres come later.",
           "images": [
             {
               "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Cer%C3%A1mica%20cardial-La%20Sarsa%20%28Espa%C3%B1a%29.jpg?width=640",
@@ -1825,16 +1910,17 @@
             "name": "British megalith builders"
           },
           "religion": "Earliest Neolithic Britain imports chambered-tomb and causewayed-enclosure rites: collective burial, feasting debris, and seasonal gathering places.",
-          "ideas": "In Earliest Neolithic arrival under the Pre-/earliest farming Britain horizon, social ideas show in burial rites, exchange gifts, and household layout more than in texts. Earliest Neolithic Britain imports chambered-tomb and causewayed-enclosure rites: collective burial, feasting debris, and seasonal gathering places.",
-          "philosophy": "No named philosophical schools survive for Pre-/earliest farming Britain in Earliest Neolithic arrival; cosmology is inferred from ritual deposits, burial posture, and craft canons—honestly thin as doctrine, thick as practice. Earliest Neolithic Britain imports chambered-tomb and causewayed-enclosure rites: collective burial, feasting debris, and seasonal gathering places.",
-          "science": "Farming knowledge—cereal calendars, animal management, ceramic temper, and monument surveying—defines Pre-/earliest farming Britain technical culture in Earliest Neolithic arrival. Cardial/Impresso and LBK pottery as mobile art; polished stone axes as prestige tools; woven textiles beginning to replace pure hide economies."
+          "ideas": "The transformative idea is demic farming: cereals, cattle, and fixed houses arrive with people who largely replace Mesolithic ancestry. Causewayed-enclosure thinking—gathering, feasting, boundary—begins to organise regional identity. Ireland’s secure house-and-cereal horizons slightly lag Britain’s earliest footprints but join the same Atlantic farmer conversation.",
+          "philosophy": "Ancestors move underground into long mounds and early chambers; fertility and lineage attach to monuments and herds rather than only seasonal camps. No pantheon survives in writing—ritual is deposition, animal offering, and communal gathering. The philosophical shift is from mobile forager ethics to landed, heritable place.",
+          "science": "Imported crop packages meet Atlantic soils and rainfall; farmers learn which cereals and animals thrive on island clay and chalk. Forest clearance, timber halls, and early quarrying for axe stone (e.g. Langdale later florescence) are applied landscape science. Seacraft still underwrites the whole colonisation—boats as the enabling technology.",
+          "culture": "Earliest Neolithic Britain (EEF arrival)"
         },
         "UKR": {
           "name": "Bug–Dniester / farmer fringe",
           "summary": "Western Pontic edge of farming.",
           "conflicts": "Forager persistence eastward; Trypillia later.",
           "literature": "Still pre-literate in Europe. Story survives as ritual architecture and ceramic style: foundation deposits, house-burning rites, and the first farming songs we cannot hear — only the pots and longhouses that staged them. Borderland creativity — Cossack, Ruthenian, and European currents braided under dangerous skies.",
-          "art": "Cardial/Impresso and LBK pottery as mobile art; polished stone axes as prestige tools; woven textiles beginning to replace pure hide economies. Figurines in some Balkan contexts hint at household cults. Borderland creativity — Cossack, Ruthenian, and European currents braided under dangerous skies.",
+          "art": "While true farming paints pottery farther west, eastern forager ceramics (Comb Ware, related) keep comb-and-pit decoration as a forest aesthetic. On the western fringe, early Trypillia/Precucuteni painted wares begin to appear—farmer colour advancing into the forest-steppe. Two visual systems face each other across the divide.",
           "images": [
             {
               "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Cer%C3%A1mica%20cardial-La%20Sarsa%20%28Espa%C3%B1a%29.jpg?width=640",
@@ -1864,9 +1950,10 @@
             "farmer fringe"
           ],
           "religion": "Bug–Dniester / farmer-fringe ritual mixes forager burial habits with incoming agrarian figurines and domestic deposits along the contact zone.",
-          "ideas": "In Bug–Dniester / farmer fringe under the EHG forest-steppe persistence, Bug–Dniester horizon, social ideas show in burial rites, exchange gifts, and household layout more than in texts. Bug–Dniester / farmer-fringe ritual mixes forager burial habits with incoming agrarian figurines and domestic deposits along the contact zone.",
-          "philosophy": "No named philosophical schools survive for EHG forest-steppe persistence, Bug–Dniester in Bug–Dniester / farmer fringe; cosmology is inferred from ritual deposits, burial posture, and craft canons—honestly thin as doctrine, thick as practice. Bug–Dniester / farmer-fringe ritual mixes forager burial habits with incoming agrarian figurines and domestic deposits along the contact zone.",
-          "science": "Farming knowledge—cereal calendars, animal management, ceramic temper, and monument surveying—defines EHG forest-steppe persistence, Bug–Dniester technical culture in Bug–Dniester / farmer fringe. Cardial/Impresso and LBK pottery as mobile art; polished stone axes as prestige tools; woven textiles beginning to replace pure hide economies."
+          "ideas": "‘Neolithic’ here often means pots, not crops—an idea that confuses later textbooks. Pontic and forest foragers coexist with approaching Balkan–Carpathian farmers for centuries. Exchange and occasional admixture happen without immediate lifestyle collapse.",
+          "philosophy": "Forager burial richness continues; incoming farmer rites bring figurines and painted ceramics as new sacred media at the contact fringe. Worldviews pluralise along the frontier—no single conversion narrative. Ancestors and animals remain central on the forager side.",
+          "science": "Forager ecological expertise persists; farmer fringe communities test crops on chernozem and forest-steppe soils. Ceramic temper and firing styles mark technical schools on both sides of the divide. River routes (Dniester, Dnieper, Bug) are the logistics backbone.",
+          "culture": "Pontic foragers & western Trypillia fringe"
         }
       }
     },
@@ -1927,7 +2014,11 @@
                 }
               }
             ]
-          }
+          },
+          "art": "Passage graves, tholoi, and engraved schist plaques turn the Atlantic and southern interiors into a monumental gallery. Geometric plaque ‘idols,’ engraved stones, and collective tomb architecture replace the quiet Cardial household aesthetic with public stone theatre. Amber, variscite, and exotic axes circulate as prestige display inside and beside tombs.",
+          "ideas": "Collective burial and tomb reuse invent a politics of ancestry visible for kilometres—who belongs is written in stone chambers. Exchange networks for jadeitite, Iberian greenstone, and marine shell stitch coasts to hinterlands. WHG ancestry rises again inside farmer bodies even as the culture remains ‘Neolithic’—identity is practice, not purity.",
+          "philosophy": "Megaliths stage a cosmology of the dead as landscape anchors: chambers aligned to horizons, offerings, and successive depositions keep ancestors present. Engraved plaques and eye motifs hint at personified powers without yielding readable pantheons. Ritual time is generational—re-entering the tomb—rather than a priestly scripture.",
+          "science": "Builders master quarrying, levering, and sighting large stones into stable chambers and corridors. Agricultural intensification on Atlantic and southern soils pairs with herding; isotope and archaeobotany show mixed farming tuned to regional rainfall. Long-distance stone sourcing implies surveying of outcrops and remembered exchange routes."
         },
         "britain": {
           "culture": "British Neolithic megalith builders",
@@ -1977,7 +2068,11 @@
                 }
               }
             ]
-          }
+          },
+          "art": "Passage tombs of the Boyne Valley, Orkney’s Maeshowe-type chambers, and stone circles culminating toward Stonehenge turn islands into ritual landscapes of carved kerbs, spiral art, and aligned passages. Grooved Ware pottery and carved stone balls add portable grammar to the monumental outdoor gallery. Skara Brae’s stone furniture shows domestic design as carefully composed as tombs.",
+          "ideas": "Monument clusters imply regional pilgrimage, alliance, and competitive display among farming communities. Irish Sea and northern networks share tomb forms and Grooved Ware—an Atlantic ceremonial commons. Kinship and land claims are argued in stone: who builds, who burials, who feasts at the enclosure.",
+          "philosophy": "Solar and lunar alignments (Newgrange’s midwinter light; circle horizons) embed a sky cosmology in architecture. Collective and successive burials keep the dead as active community members. Philosophy here is practised astronomy-and-ancestry, not named schools—time, death, and season made visible in stone.",
+          "science": "Megalith builders combine surveying, transport engineering, and horizon astronomy with remarkable precision for pre-literate societies. Mixed farming, manuring, and cattle feasting fuel monument labour. Flint mines and axe factories (Grimes Graves, Langdale) show specialised extraction and long-distance distribution."
         },
         "france": {
           "culture": "Chasséen & Atlantic megalithic France",
@@ -2027,7 +2122,11 @@
                 }
               }
             ]
-          }
+          },
+          "art": "Carnac’s alignments, Morbihan tumuli, and Barnenez-type cairns make northwest France Europe’s densest stone theatre; Chasséen pottery and enclosures organise the interior. Jadeitite ceremonial axes from Alpine sources appear broken or deposited as luminous green prestige art. Engraved stones and monumental façades turn geology into sculpture at landscape scale.",
+          "ideas": "Competitive ritual economies—who raises the longest alignment, who buries with Alpine jade—structure Atlantic elites without kings we can name. Chasséen networks standardise pottery and flint across wide tracts, a soft political grammar. Northern France’s mixed Cardial–Danubian heritage becomes the launchpad for megalithic ideas moving toward Britain and the North Sea.",
+          "philosophy": "Menhirs and passage graves stage a cosmology of skyline, ancestor, and processional path. Broken axe deposits suggest sacrifice of wealth to powers of place or death. Sacred time is seasonal and funerary—solstice light, tomb re-entry—not philosophical treatise.",
+          "science": "Moving and erecting multi-tonne menhirs demands levers, ropes, ramps, and organised labour accounting. Horizon astronomy and careful siting bind monuments to solar and terrestrial landmarks. Intensive farming and herding on Armorican and Paris-Basin soils underwrite the calorie surplus behind stone spectacle."
         },
         "central": {
           "culture": "TRB, Michelsberg & early Globular Amphora",
@@ -2077,7 +2176,11 @@
                 }
               }
             ]
-          }
+          },
+          "art": "Michelsberg tulip beakers, Funnelbeaker pottery, megalithic tombs on the northern plain, and later Globular Amphora jars diversify the post-LBK visual field. Flint daggers and enclosure earthworks become status media. Monumentality is patchier than on the Atlantic but still marks ancestors in stone and earth.",
+          "ideas": "After LBK’s crisis, regional cultures multiply—enclosures, new flint economies, and northern TRB links. WHG ancestry resurges inside farmer populations; forager blood returns without restoring forager life. Early Globular Amphora hints at cattle-centred wealth and new burial politics toward the late 4th millennium.",
+          "philosophy": "Causewayed and ditched enclosures gather people for feasts, rites, and boundary-making—temporary sacred cities of earth. Megalithic and flat graves encode competing claims about who the dead remain. Belief stays practice-rich and name-poor.",
+          "science": "Deep flint mining (e.g. Rijckholt tradition) and specialist axe production show industrial-scale extraction before metal. Crop–livestock systems intensify; enclosures imply organised labour and surplus. Northern TRB contact transfers farming know-how toward Scandinavia."
         },
         "scandinavia": {
           "culture": "Funnelbeaker (TRB) Scandinavia",
@@ -2134,7 +2237,11 @@
                 }
               }
             ]
-          }
+          },
+          "art": "Funnel-necked beakers, polished flint axes, and dolmens/passage graves bring farmer monumentality north. Amber and flint daggers circulate as bright prestige; megalithic art is architectural more than figurative. Beside TRB, Pitted Ware groups keep a contrasting seal-hunter ceramic style on the coasts.",
+          "ideas": "Agriculture and megaliths arrive as a northern package, absorbing and displacing Ertebølle unevenly. Dual societies emerge in places: inland TRB farmers versus coastal Pitted Ware foragers with high HG ancestry. Cattle, clearing, and tomb building rewrite land tenure.",
+          "philosophy": "Dolmens gather bones of many—ancestor collectives under stone caps open to the sky. Depositions of axes and pottery in wetlands continue older water rites inside a new farming religion of fertility and lineage. Cosmology fuses megalithic sky/ancestor themes with lingering maritime sacredness.",
+          "science": "Farmers adapt cereals and livestock to short northern growing seasons and thin soils—agricultural R&D at the climatic margin. Megalith transport and flint-mine intensification (e.g. Danish mines) show organised technical labour. Pitted Ware seal hunting preserves parallel marine science beside the plough."
         },
         "italy": {
           "culture": "Italian Middle–Late Neolithic",
@@ -2152,7 +2259,11 @@
           "languages": "Unknown",
           "linguisticNote": "Unknown; pre-Italic / pre-Etruscan deep layers unrecoverable.",
           "linguisticConfidence": "hypothetical",
-          "ancestryNote": "EEF-led; steppe arrives mainly in the Bronze Age."
+          "ancestryNote": "EEF-led; steppe arrives mainly in the Bronze Age.",
+          "art": "Diana, Serra d’Alto, and related fine painted and polished wares push pottery toward display art; some regions raise megaliths and statue-menhir traditions. Obsidian and greenstone axes remain prestige media. Village aesthetics diversify as copper begins to glint at the period’s end in the north.",
+          "ideas": "Regional ceramic ‘dialects’ mark identities across a still-EEF genetic world with rising local HG admixture. Alpine jadeitite and island stone keep Italy wired into wider western exchange. Social differentiation shows in grave goods before true metal-age chiefdoms.",
+          "philosophy": "Figurines, structured deposits, and varied burial (caves, trenches, early megaliths) encode plural local rites. Ancestor and fertility themes dominate what we can infer; named pantheons wait for later ages. Ritual innovation tracks pottery fashion as much as theology.",
+          "science": "Increasingly specialised pottery firing and surface treatment show ceramic chemistry advancing. Mixed farming intensifies; early copper experiments in the Alpine foreland add metallurgical trial-and-error. Obsidian sourcing studies (modern and ancient) confirm sailors’ mental maps of island volcanoes."
         },
         "balkans": {
           "culture": "Vinča & Balkan Late Neolithic / Copper",
@@ -2172,7 +2283,11 @@
           "languages": "Unknown Balkan Neolithic",
           "linguisticNote": "Unknown. Mycenaean Greek is still a millennium+ away.",
           "linguisticConfidence": "hypothetical",
-          "ancestryNote": "EEF+local HG; early steppe signals appear regionally toward the Copper Age."
+          "ancestryNote": "EEF+local HG; early steppe signals appear regionally toward the Copper Age.",
+          "art": "Vinča dark-burnished ware, elaborate figurines, and early copper ornaments (and later tools) create a proto-metal aesthetic. House models and shrine-like rooms appear in some settlements. Visual culture is dense, repetitive, and household-centred—a clay cosmos of faces and gestures.",
+          "ideas": "Tell mega-villages concentrate population and craft specialisation; some signs point toward proto-writing or symbolic inventories (Vinča symbols)—still debated, never deciphered literature. Exchange in Balkan copper and Aegean links foreshadows Eneolithic complexity. Social ranking edges upward without full urban states.",
+          "philosophy": "Figurine multiplicity suggests many small powers or roles rather than one dogma. House-based ritual and possible intentional house burning encode cycles of death and renewal for buildings as well as people. Cosmology stays intimate—courtyard and oven—not temple-state.",
+          "science": "Vinča-region copper mining and smelting experiments are among Europe’s earliest metallurgical sciences. Agricultural surplus on river plains supports craft specialists. Symbolic notations on pots, if communicative, would be information technology—still an open research question, not a decoded script."
         },
         "eastern": {
           "culture": "Cucuteni–Trypillia & Pontic Eneolithic neighbors",
@@ -2228,7 +2343,11 @@
                 }
               }
             ]
-          }
+          },
+          "art": "Cucuteni–Trypillia painted pottery—spirals, meanders, swirling polychrome—is among prehistoric Europe’s great ceramic arts; clay figurines and house models fill settlements. Megasites arrange houses in vast concentric circuits—urban-scale design without palaces. Burned-house horizons create dramatic archaeological colour: red daub, ash, and painted sherds.",
+          "ideas": "Megasites (Nebelivka, Maidanetske, Talianki) experiment with low-hierarchy mega-population living—thousands in planned circuits facing the steppe. Cattle, pulses, and manure management sustain the idea of aggregation; decline looks social as much as climatic. Neighboring steppe Eneolithic groups keep different burial politics just beyond the painted-pottery world.",
+          "philosophy": "Figurines, house models, and possible deliberate house burning suggest renewal rites binding household, woman/ancestor imagery, and settlement cycle. Painted pottery may encode mythic pattern language—beautiful, undeciphered. Cosmology is village-wide and ceramic, not temple-priestly in a Near Eastern sense.",
+          "science": "Isotope food-webs show sophisticated dung-manured pulse–cereal systems and fenced cattle pastures—an integrated agro-science feeding mega-populations. Settlement planning at 100–300+ ha scale requires surveying and labour coordination. Pottery firing and pigment chemistry reach artistic-technical peaks before Corded Ware–steppe transformations remake the east."
         }
       },
       "linguistics": "Still pre-Indo-European across most of Europe. Megalithic and Trypillia labels are not language families. Possible early IE on the steppe edge only as hypothesis.",
@@ -2448,7 +2567,7 @@
           "summary": "Orkney, Wessex, and related Neolithic societies.",
           "conflicts": "Regional monument competition; gene pool later collapses in Beaker age.",
           "literature": "Megalithic Europe speaks in stone alignments and passage-grave orientations — a literature of astronomy and ancestry without alphabet. Later folklore about giants and stone tables is a distant echo, not a primary source. Insular voices and North Sea contact give this place a distinctive accent in the wider European chorus.",
-          "art": "Megalithic art (Breton carved stones, Irish kerbstones), TRB ceramics, jadeitite axe circulation. Dress inferred from textile impressions and ornaments of amber and copper at the edges. Insular voices and North Sea contact give this place a distinctive accent in the wider European chorus.",
+          "art": "Passage tombs of the Boyne Valley, Orkney’s Maeshowe-type chambers, and stone circles culminating toward Stonehenge turn islands into ritual landscapes of carved kerbs, spiral art, and aligned passages. Grooved Ware pottery and carved stone balls add portable grammar to the monumental outdoor gallery. Skara Brae’s stone furniture shows domestic design as carefully composed as tombs.",
           "images": [
             {
               "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Stonehenge%20Heel%20Stone.jpg?width=640",
@@ -2474,16 +2593,17 @@
             "name": "Late Neolithic Britain"
           },
           "religion": "Atlantic megalithic religion: collective tombs, ancestor bone circulation, and solar-aligned monuments (e.g. Stonehenge landscape). Ritual feasting at causewayed enclosures.",
-          "ideas": "In British megalith builders under the Atlantic megalithic horizon, social ideas show in burial rites, exchange gifts, and household layout more than in texts. Atlantic megalithic religion: collective tombs, ancestor bone circulation, and solar-aligned monuments (e.g.",
-          "philosophy": "No named philosophical schools survive for Atlantic megalithic in British megalith builders; cosmology is inferred from ritual deposits, burial posture, and craft canons—honestly thin as doctrine, thick as practice. Atlantic megalithic religion: collective tombs, ancestor bone circulation, and solar-aligned monuments (e.g.",
-          "science": "Farming knowledge—cereal calendars, animal management, ceramic temper, and monument surveying—defines Atlantic megalithic technical culture in British megalith builders. Megalithic art (Breton carved stones, Irish kerbstones), TRB ceramics, jadeitite axe circulation."
+          "ideas": "Monument clusters imply regional pilgrimage, alliance, and competitive display among farming communities. Irish Sea and northern networks share tomb forms and Grooved Ware—an Atlantic ceremonial commons. Kinship and land claims are argued in stone: who builds, who burials, who feasts at the enclosure.",
+          "philosophy": "Solar and lunar alignments (Newgrange’s midwinter light; circle horizons) embed a sky cosmology in architecture. Collective and successive burials keep the dead as active community members. Philosophy here is practised astronomy-and-ancestry, not named schools—time, death, and season made visible in stone.",
+          "science": "Megalith builders combine surveying, transport engineering, and horizon astronomy with remarkable precision for pre-literate societies. Mixed farming, manuring, and cattle feasting fuel monument labour. Flint mines and axe factories (Grimes Graves, Langdale) show specialised extraction and long-distance distribution.",
+          "culture": "British Neolithic megalith builders"
         },
         "FRA": {
           "name": "Chasséen / megalithic France",
           "summary": "Middle Neolithic cultural mosaic.",
           "conflicts": "Regional farmer identities; steppe still absent.",
           "literature": "Megalithic Europe speaks in stone alignments and passage-grave orientations — a literature of astronomy and ancestry without alphabet. Later folklore about giants and stone tables is a distant echo, not a primary source. French courts and vernaculars repeatedly set continental fashions of word and dress.",
-          "art": "Megalithic art (Breton carved stones, Irish kerbstones), TRB ceramics, jadeitite axe circulation. Dress inferred from textile impressions and ornaments of amber and copper at the edges. French courts and vernaculars repeatedly set continental fashions of word and dress.",
+          "art": "Carnac’s alignments, Morbihan tumuli, and Barnenez-type cairns make northwest France Europe’s densest stone theatre; Chasséen pottery and enclosures organise the interior. Jadeitite ceremonial axes from Alpine sources appear broken or deposited as luminous green prestige art. Engraved stones and monumental façades turn geology into sculpture at landscape scale.",
           "images": [
             {
               "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Stonehenge%20Heel%20Stone.jpg?width=640",
@@ -2513,16 +2633,17 @@
             "megalithic France"
           ],
           "religion": "Chasséen / Breton–Atlantic megaliths: passage graves, menhirs, and enclosure ceremonies. Ancestor veneration and landscape sacralization dominate the evidence.",
-          "ideas": "In Chasséen / megalithic France under the Atlantic megalithic, Michelsberg horizon, social ideas show in burial rites, exchange gifts, and household layout more than in texts. Chasséen / Breton–Atlantic megaliths: passage graves, menhirs, and enclosure ceremonies.",
-          "philosophy": "No named philosophical schools survive for Atlantic megalithic, Michelsberg in Chasséen / megalithic France; cosmology is inferred from ritual deposits, burial posture, and craft canons—honestly thin as doctrine, thick as practice. Chasséen / Breton–Atlantic megaliths: passage graves, menhirs, and enclosure ceremonies.",
-          "science": "Farming knowledge—cereal calendars, animal management, ceramic temper, and monument surveying—defines Atlantic megalithic, Michelsberg technical culture in Chasséen / megalithic France. Megalithic art (Breton carved stones, Irish kerbstones), TRB ceramics, jadeitite axe circulation."
+          "ideas": "Competitive ritual economies—who raises the longest alignment, who buries with Alpine jade—structure Atlantic elites without kings we can name. Chasséen networks standardise pottery and flint across wide tracts, a soft political grammar. Northern France’s mixed Cardial–Danubian heritage becomes the launchpad for megalithic ideas moving toward Britain and the North Sea.",
+          "philosophy": "Menhirs and passage graves stage a cosmology of skyline, ancestor, and processional path. Broken axe deposits suggest sacrifice of wealth to powers of place or death. Sacred time is seasonal and funerary—solstice light, tomb re-entry—not philosophical treatise.",
+          "science": "Moving and erecting multi-tonne menhirs demands levers, ropes, ramps, and organised labour accounting. Horizon astronomy and careful siting bind monuments to solar and terrestrial landmarks. Intensive farming and herding on Armorican and Paris-Basin soils underwrite the calorie surplus behind stone spectacle.",
+          "culture": "Chasséen & Atlantic megalithic France"
         },
         "DEU": {
           "name": "TRB / Michelsberg",
           "summary": "Funnelbeaker and Michelsberg farming worlds.",
           "conflicts": "GAC forms toward Late Neolithic; pressure from east later.",
           "literature": "Megalithic Europe speaks in stone alignments and passage-grave orientations — a literature of astronomy and ancestry without alphabet. Later folklore about giants and stone tables is a distant echo, not a primary source. German lands often host the workshop — print, metal, and later industrial form — for Europe’s ideas.",
-          "art": "Megalithic art (Breton carved stones, Irish kerbstones), TRB ceramics, jadeitite axe circulation. Dress inferred from textile impressions and ornaments of amber and copper at the edges. German lands often host the workshop — print, metal, and later industrial form — for Europe’s ideas.",
+          "art": "Michelsberg tulip beakers, Funnelbeaker pottery, megalithic tombs on the northern plain, and later Globular Amphora jars diversify the post-LBK visual field. Flint daggers and enclosure earthworks become status media. Monumentality is patchier than on the Atlantic but still marks ancestors in stone and earth.",
           "images": [
             {
               "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Stonehenge%20Heel%20Stone.jpg?width=640",
@@ -2551,16 +2672,17 @@
             "Michelsberg"
           ],
           "religion": "TRB / Michelsberg: enclosure rituals, cattle offerings, and early megalithic tombs. Community ancestor cult more visible than individual named deities.",
-          "ideas": "In TRB / Michelsberg under the Funnelbeaker (TRB), Michelsberg horizon, social ideas show in burial rites, exchange gifts, and household layout more than in texts. TRB / Michelsberg: enclosure rituals, cattle offerings, and early megalithic tombs.",
-          "philosophy": "No named philosophical schools survive for Funnelbeaker (TRB), Michelsberg in TRB / Michelsberg; cosmology is inferred from ritual deposits, burial posture, and craft canons—honestly thin as doctrine, thick as practice. TRB / Michelsberg: enclosure rituals, cattle offerings, and early megalithic tombs.",
-          "science": "Farming knowledge—cereal calendars, animal management, ceramic temper, and monument surveying—defines Funnelbeaker (TRB), Michelsberg technical culture in TRB / Michelsberg. Megalithic art (Breton carved stones, Irish kerbstones), TRB ceramics, jadeitite axe circulation."
+          "ideas": "After LBK’s crisis, regional cultures multiply—enclosures, new flint economies, and northern TRB links. WHG ancestry resurges inside farmer populations; forager blood returns without restoring forager life. Early Globular Amphora hints at cattle-centred wealth and new burial politics toward the late 4th millennium.",
+          "philosophy": "Causewayed and ditched enclosures gather people for feasts, rites, and boundary-making—temporary sacred cities of earth. Megalithic and flat graves encode competing claims about who the dead remain. Belief stays practice-rich and name-poor.",
+          "science": "Deep flint mining (e.g. Rijckholt tradition) and specialist axe production show industrial-scale extraction before metal. Crop–livestock systems intensify; enclosures imply organised labour and surplus. Northern TRB contact transfers farming know-how toward Scandinavia.",
+          "culture": "TRB, Michelsberg & early Globular Amphora"
         },
         "UKR": {
           "name": "Cucuteni–Trypillia",
           "summary": "Mega-settlements of the forest-steppe.",
           "conflicts": "Contact and conflict/exchange with Pontic Eneolithic steppe groups (Usatove, Serednii Stih).",
           "literature": "Megalithic Europe speaks in stone alignments and passage-grave orientations — a literature of astronomy and ancestry without alphabet. Later folklore about giants and stone tables is a distant echo, not a primary source. Borderland creativity — Cossack, Ruthenian, and European currents braided under dangerous skies.",
-          "art": "Megalithic art (Breton carved stones, Irish kerbstones), TRB ceramics, jadeitite axe circulation. Dress inferred from textile impressions and ornaments of amber and copper at the edges. Borderland creativity — Cossack, Ruthenian, and European currents braided under dangerous skies.",
+          "art": "Cucuteni–Trypillia painted pottery—spirals, meanders, swirling polychrome—is among prehistoric Europe’s great ceramic arts; clay figurines and house models fill settlements. Megasites arrange houses in vast concentric circuits—urban-scale design without palaces. Burned-house horizons create dramatic archaeological colour: red daub, ash, and painted sherds.",
           "images": [
             {
               "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Stonehenge%20Heel%20Stone.jpg?width=640",
@@ -2586,16 +2708,17 @@
             "name": "Yamnaya pastoralists"
           },
           "religion": "Cucuteni–Trypillia: house figurines, intentional house burning, and cemetery rites — domestic and settlement-scale cult practice at huge agrarian sites.",
-          "ideas": "In Cucuteni–Trypillia under the Cucuteni–Trypillia, Globular Amphora horizon, social ideas show in burial rites, exchange gifts, and household layout more than in texts. Cucuteni–Trypillia: house figurines, intentional house burning, and cemetery rites — domestic and settlement-scale cult practice at huge agrarian sites.",
-          "philosophy": "No named philosophical schools survive for Cucuteni–Trypillia, Globular Amphora in Cucuteni–Trypillia; cosmology is inferred from ritual deposits, burial posture, and craft canons—honestly thin as doctrine, thick as practice. Cucuteni–Trypillia: house figurines, intentional house burning, and cemetery rites — domestic and settlement-scale cult practice at huge agrarian sites.",
-          "science": "Farming knowledge—cereal calendars, animal management, ceramic temper, and monument surveying—defines Cucuteni–Trypillia, Globular Amphora technical culture in Cucuteni–Trypillia. Megalithic art (Breton carved stones, Irish kerbstones), TRB ceramics, jadeitite axe circulation."
+          "ideas": "Megasites (Nebelivka, Maidanetske, Talianki) experiment with low-hierarchy mega-population living—thousands in planned circuits facing the steppe. Cattle, pulses, and manure management sustain the idea of aggregation; decline looks social as much as climatic. Neighboring steppe Eneolithic groups keep different burial politics just beyond the painted-pottery world.",
+          "philosophy": "Figurines, house models, and possible deliberate house burning suggest renewal rites binding household, woman/ancestor imagery, and settlement cycle. Painted pottery may encode mythic pattern language—beautiful, undeciphered. Cosmology is village-wide and ceramic, not temple-priestly in a Near Eastern sense.",
+          "science": "Isotope food-webs show sophisticated dung-manured pulse–cereal systems and fenced cattle pastures—an integrated agro-science feeding mega-populations. Settlement planning at 100–300+ ha scale requires surveying and labour coordination. Pottery firing and pigment chemistry reach artistic-technical peaks before Corded Ware–steppe transformations remake the east.",
+          "culture": "Cucuteni–Trypillia & Pontic Eneolithic neighbors"
         },
         "DNK": {
           "name": "TRB Scandinavia",
           "summary": "Funnelbeaker farming established.",
           "conflicts": "Residual forager (Pitted Ware) coexistence on coasts.",
           "literature": "Megalithic Europe speaks in stone alignments and passage-grave orientations — a literature of astronomy and ancestry without alphabet. Later folklore about giants and stone tables is a distant echo, not a primary source. Danish gatekeeping of the Baltic Sound makes culture a toll-booth as well as a stage.",
-          "art": "Megalithic art (Breton carved stones, Irish kerbstones), TRB ceramics, jadeitite axe circulation. Dress inferred from textile impressions and ornaments of amber and copper at the edges. Danish gatekeeping of the Baltic Sound makes culture a toll-booth as well as a stage.",
+          "art": "Funnel-necked beakers, polished flint axes, and dolmens/passage graves bring farmer monumentality north. Amber and flint daggers circulate as bright prestige; megalithic art is architectural more than figurative. Beside TRB, Pitted Ware groups keep a contrasting seal-hunter ceramic style on the coasts.",
           "images": [
             {
               "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Stonehenge%20Heel%20Stone.jpg?width=640",
@@ -2621,16 +2744,17 @@
             "name": "Single Grave Culture"
           },
           "religion": "TRB Scandinavia: megalithic tombs, amber offerings, and wetland deposits. Ancestor burial architecture is the clearest ritual signature.",
-          "ideas": "In TRB Scandinavia under the Funnelbeaker (TRB), Pitted Ware foragers (HG holdout) horizon, social ideas show in burial rites, exchange gifts, and household layout more than in texts. TRB Scandinavia: megalithic tombs, amber offerings, and wetland deposits.",
-          "philosophy": "No named philosophical schools survive for Funnelbeaker (TRB), Pitted Ware foragers (HG holdout) in TRB Scandinavia; cosmology is inferred from ritual deposits, burial posture, and craft canons—honestly thin as doctrine, thick as practice. TRB Scandinavia: megalithic tombs, amber offerings, and wetland deposits.",
-          "science": "Farming knowledge—cereal calendars, animal management, ceramic temper, and monument surveying—defines Funnelbeaker (TRB), Pitted Ware foragers (HG holdout) technical culture in TRB Scandinavia. Megalithic art (Breton carved stones, Irish kerbstones), TRB ceramics, jadeitite axe circulation."
+          "ideas": "Agriculture and megaliths arrive as a northern package, absorbing and displacing Ertebølle unevenly. Dual societies emerge in places: inland TRB farmers versus coastal Pitted Ware foragers with high HG ancestry. Cattle, clearing, and tomb building rewrite land tenure.",
+          "philosophy": "Dolmens gather bones of many—ancestor collectives under stone caps open to the sky. Depositions of axes and pottery in wetlands continue older water rites inside a new farming religion of fertility and lineage. Cosmology fuses megalithic sky/ancestor themes with lingering maritime sacredness.",
+          "science": "Farmers adapt cereals and livestock to short northern growing seasons and thin soils—agricultural R&D at the climatic margin. Megalith transport and flint-mine intensification (e.g. Danish mines) show organised technical labour. Pitted Ware seal hunting preserves parallel marine science beside the plough.",
+          "culture": "Funnelbeaker (TRB) Scandinavia"
         },
         "SWE": {
           "name": "TRB & Pitted Ware",
           "summary": "Farmer inland/south vs coastal Pitted Ware.",
           "conflicts": "Dual economies; steppe pulse still ahead.",
           "literature": "Megalithic Europe speaks in stone alignments and passage-grave orientations — a literature of astronomy and ancestry without alphabet. Later folklore about giants and stone tables is a distant echo, not a primary source. Swedish culture often exports northern clarity — from rock art to modern design temperaments.",
-          "art": "Megalithic art (Breton carved stones, Irish kerbstones), TRB ceramics, jadeitite axe circulation. Dress inferred from textile impressions and ornaments of amber and copper at the edges. Swedish culture often exports northern clarity — from rock art to modern design temperaments.",
+          "art": "Funnel-necked beakers, polished flint axes, and dolmens/passage graves bring farmer monumentality north. Amber and flint daggers circulate as bright prestige; megalithic art is architectural more than figurative. Beside TRB, Pitted Ware groups keep a contrasting seal-hunter ceramic style on the coasts.",
           "images": [
             {
               "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Stonehenge%20Heel%20Stone.jpg?width=640",
@@ -2656,16 +2780,17 @@
             "name": "Battle Axe Culture"
           },
           "religion": "TRB farmers build megalithic tombs while Pitted Ware coasts keep forager ritual. Two sacral geographies — chambered ancestors vs marine/forager deposits.",
-          "ideas": "In TRB & Pitted Ware under the Funnelbeaker (TRB), Pitted Ware foragers (HG holdout) horizon, social ideas show in burial rites, exchange gifts, and household layout more than in texts. TRB farmers build megalithic tombs while Pitted Ware coasts keep forager ritual.",
-          "philosophy": "No named philosophical schools survive for Funnelbeaker (TRB), Pitted Ware foragers (HG holdout) in TRB & Pitted Ware; cosmology is inferred from ritual deposits, burial posture, and craft canons—honestly thin as doctrine, thick as practice. TRB farmers build megalithic tombs while Pitted Ware coasts keep forager ritual.",
-          "science": "Farming knowledge—cereal calendars, animal management, ceramic temper, and monument surveying—defines Funnelbeaker (TRB), Pitted Ware foragers (HG holdout) technical culture in TRB & Pitted Ware. Megalithic art (Breton carved stones, Irish kerbstones), TRB ceramics, jadeitite axe circulation."
+          "ideas": "Agriculture and megaliths arrive as a northern package, absorbing and displacing Ertebølle unevenly. Dual societies emerge in places: inland TRB farmers versus coastal Pitted Ware foragers with high HG ancestry. Cattle, clearing, and tomb building rewrite land tenure.",
+          "philosophy": "Dolmens gather bones of many—ancestor collectives under stone caps open to the sky. Depositions of axes and pottery in wetlands continue older water rites inside a new farming religion of fertility and lineage. Cosmology fuses megalithic sky/ancestor themes with lingering maritime sacredness.",
+          "science": "Farmers adapt cereals and livestock to short northern growing seasons and thin soils—agricultural R&D at the climatic margin. Megalith transport and flint-mine intensification (e.g. Danish mines) show organised technical labour. Pitted Ware seal hunting preserves parallel marine science beside the plough.",
+          "culture": "Funnelbeaker (TRB) Scandinavia"
         },
         "POL": {
           "name": "TRB / early GAC Poland",
           "summary": "Farmer Poland before Corded Ware.",
           "conflicts": "Eastern contacts intensify.",
           "literature": "Megalithic Europe speaks in stone alignments and passage-grave orientations — a literature of astronomy and ancestry without alphabet. Later folklore about giants and stone tables is a distant echo, not a primary source. Polish–Lithuanian and later Polish culture specializes in noble liberty myths and romantic survival art.",
-          "art": "Megalithic art (Breton carved stones, Irish kerbstones), TRB ceramics, jadeitite axe circulation. Dress inferred from textile impressions and ornaments of amber and copper at the edges. Polish–Lithuanian and later Polish culture specializes in noble liberty myths and romantic survival art.",
+          "art": "Michelsberg tulip beakers, Funnelbeaker pottery, megalithic tombs on the northern plain, and later Globular Amphora jars diversify the post-LBK visual field. Flint daggers and enclosure earthworks become status media. Monumentality is patchier than on the Atlantic but still marks ancestors in stone and earth.",
           "images": [
             {
               "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Stonehenge%20Heel%20Stone.jpg?width=640",
@@ -2689,9 +2814,10 @@
             "early GAC Poland"
           ],
           "religion": "TRB / early GAC: megalithic and flat cemeteries, animal offerings, and enclosure rites. GAC cattle-and-amber ritual intensifies toward the steppe contact zone.",
-          "ideas": "In TRB / early GAC Poland under the Funnelbeaker (TRB), Globular Amphora horizon, social ideas show in burial rites, exchange gifts, and household layout more than in texts. TRB / early GAC: megalithic and flat cemeteries, animal offerings, and enclosure rites.",
-          "philosophy": "No named philosophical schools survive for Funnelbeaker (TRB), Globular Amphora in TRB / early GAC Poland; cosmology is inferred from ritual deposits, burial posture, and craft canons—honestly thin as doctrine, thick as practice. TRB / early GAC: megalithic and flat cemeteries, animal offerings, and enclosure rites.",
-          "science": "Farming knowledge—cereal calendars, animal management, ceramic temper, and monument surveying—defines Funnelbeaker (TRB), Globular Amphora technical culture in TRB / early GAC Poland. Megalithic art (Breton carved stones, Irish kerbstones), TRB ceramics, jadeitite axe circulation."
+          "ideas": "After LBK’s crisis, regional cultures multiply—enclosures, new flint economies, and northern TRB links. WHG ancestry resurges inside farmer populations; forager blood returns without restoring forager life. Early Globular Amphora hints at cattle-centred wealth and new burial politics toward the late 4th millennium.",
+          "philosophy": "Causewayed and ditched enclosures gather people for feasts, rites, and boundary-making—temporary sacred cities of earth. Megalithic and flat graves encode competing claims about who the dead remain. Belief stays practice-rich and name-poor.",
+          "science": "Deep flint mining (e.g. Rijckholt tradition) and specialist axe production show industrial-scale extraction before metal. Crop–livestock systems intensify; enclosures imply organised labour and surplus. Northern TRB contact transfers farming know-how toward Scandinavia.",
+          "culture": "TRB, Michelsberg & early Globular Amphora"
         }
       }
     },
@@ -7218,10 +7344,10 @@
           "role": "incoming",
           "opacity": 0.88,
           "note": "",
-          "art": "Material signature of Wielbark: the objects, monuments, and dress styles that archaeologists use to draw this incoming layer on the Migration Period map.",
-          "ideas": "Wielbark marks a political-cultural claim in the Migration Period schematic—law, confession, and court style.",
-          "philosophy": "Political and religious thought attached to Wielbark in this era: legitimacy, confession, and corporate privilege (see kingdom packs for denser named schools).",
-          "science": "Administrative, military, and artisanal knowledge sustaining Wielbark on this map."
+          "art": "Wielbark cemeteries favour bi-ritual burial—cremation and inhumation—typically without weapons, with paired shoulder fibulae and distinctive female dress sets. Amber, Roman imports, and carefully composed grave assemblages mark status more than monumental architecture. The eponymous cemetery near Malbork anchors a Baltic–Vistula visual language later echoed south-east.",
+          "ideas": "Community identity is read archaeologically through costume and burial rule rather than royal chronicles. Southward expansion along the Vistula–Bug during and after the Marcomannic Wars suggests kinship groups negotiating Roman-frontier trade, climate stress, and competition with Przeworsk neighbours—mobility as strategy, not a single royal exodus.",
+          "philosophy": "No native philosophical corpus survives; worldview is inferred from funerary restraint (weaponless graves), gendered dress codes, and selective Roman goods. Prestige seems invested in bodily adornment and cemetery continuity more than in temple architecture—an ethic of portable honour suited to a mobile elite.",
+          "science": "Craft knowledge centres on amber working, iron and non-ferrous metalwork, and ceramic traditions continuous with local Pomeranian roots. Roman imports imply calendrical and market awareness along amber routes; settlement archaeology tracks field systems and riverine logistics rather than written medicine or astronomy."
         },
         {
           "id": "chernyakhov",
@@ -7235,10 +7361,10 @@
           "role": "incoming",
           "opacity": 0.7,
           "note": "",
-          "art": "Material signature of Chernyakhov: the objects, monuments, and dress styles that archaeologists use to draw this incoming layer on the Migration Period map.",
-          "ideas": "Chernyakhov marks a political-cultural claim in the Migration Period schematic—law, confession, and court style.",
-          "philosophy": "Political and religious thought attached to Chernyakhov in this era: legitimacy, confession, and corporate privilege (see kingdom packs for denser named schools).",
-          "science": "Administrative, military, and artisanal knowledge sustaining Chernyakhov on this map."
+          "art": "Chernyakhov (Sântana de Mureș) material culture mixes Wielbark-style fibulae and weapon-poor burials with Sarmatian and local Pontic tastes: wheel-made grey pottery, glass vessels, bone combs, and open village plans. Elite display is portable—dress and drinking sets—across a huge Danube–Don horizon rather than stone capitals.",
+          "ideas": "Literary Goths (Ermanaric, later Danubian kingdoms) sit atop a multiethnic archaeological reality. Political attention focused on Gothic leadership in Roman sources, while archaeology shows farmers, herders, and craftsmen sharing a cultural package—domination as hierarchy within mixture, not ethnic purity.",
+          "philosophy": "Early Gothic Christianity under Wulfila later produces the Gothic Bible—the first major Germanic literary theology—but Chernyakhov itself straddles pagan and converting horizons. Customary law and kinship loyalty, later refracted in Jordanes’ Getica, structure obligation more than school philosophy.",
+          "science": "High-quality wheel-thrown ceramics, iron tools, and glass consumption show specialised craft and Black Sea trade literacy. Agricultural villages imply crop–livestock systems adapted to steppe-edge climates; Roman diplomatic and market contact transmitted weights, coins, and technical goods without a local scientific literature."
         },
         {
           "id": "ostrogoth",
@@ -7250,10 +7376,10 @@
           "role": "incoming",
           "opacity": 0.75,
           "note": "",
-          "art": "Material signature of Ostrogothic Italy: the objects, monuments, and dress styles that archaeologists use to draw this incoming layer on the Migration Period map.",
-          "ideas": "Ostrogothic Italy marks a political-cultural claim in the Migration Period schematic—law, confession, and court style.",
-          "philosophy": "Political and religious thought attached to Ostrogothic Italy in this era: legitimacy, confession, and corporate privilege (see kingdom packs for denser named schools).",
-          "science": "Administrative, military, and artisanal knowledge sustaining Ostrogothic Italy on this map."
+          "art": "Ravenna under Theodoric fuses Gothic patronage with late Roman building: the Arian Baptistery, Sant’Apollinare Nuovo’s processional mosaics, and the mausoleum’s limestone dome. Court dress and mosaic programs stage a Gothic king ruling a still-Roman city of marble, gold tesserae, and imperial memory.",
+          "ideas": "Theodoric’s regime keeps Roman civil administration, Senate prestige, and legal dualism—Goths as army, Romans as civilians—under an Ostrogothic Amal kingship blessed by Constantinople. The Edictum Theodorici and Cassiodorus’ Variae advertise civilitas: barbarian kingship justified as guardian of Roman order.",
+          "philosophy": "Boethius’ Consolation of Philosophy (c. 524), written in Theodoric’s prison, is the era’s philosophical masterpiece: Neoplatonic–Stoic arguments for providence and the goods of the soul amid political ruin. Arian Gothic Christianity and Nicene Roman theology coexist uneasily until Justinian’s wars shatter the experiment.",
+          "science": "Cassiodorus later founds Vivarium’s copying programme; in Italy, late Roman surveying, aqueduct maintenance, and medical handbooks persist under Gothic rule. Ravenna’s brick and mosaic workshops preserve engineering and material science of the late empire more than invent new theory."
         },
         {
           "id": "visigoth",
@@ -7266,10 +7392,10 @@
           "role": "incoming",
           "opacity": 0.8,
           "note": "",
-          "art": "Material signature of Visigothic Hispania: the objects, monuments, and dress styles that archaeologists use to draw this incoming layer on the Migration Period map.",
-          "ideas": "Visigothic Hispania marks a political-cultural claim in the Migration Period schematic—law, confession, and court style.",
-          "philosophy": "Political and religious thought attached to Visigothic Hispania in this era: legitimacy, confession, and corporate privilege (see kingdom packs for denser named schools).",
-          "science": "Administrative, military, and artisanal knowledge sustaining Visigothic Hispania on this map."
+          "art": "Visigothic metalwork peaks in the Treasure of Guarrazar—suspended votive crowns (Recceswinth) with sapphires and pendilia letters offered to church altars. Churches at San Juan de Baños and later Toledo-centred patronage blend Germanic jewellery techniques with Hispano-Roman and Byzantine models.",
+          "ideas": "After Arian beginnings, Reccared’s conversion (Third Council of Toledo, 589) binds Gothic kingship to Nicene orthodoxy and episcopal councils. The Liber Iudiciorum (Recceswinth) aims at a territorial law for Goths and Romans alike—unity through Catholic monarchy and written code.",
+          "philosophy": "Isidore of Seville’s Etymologies and historical works organise Christian encyclopaedic knowledge for a post-Roman West: language, nature, and sacred history as one didactic order. Conciliar theology at Toledo defines orthodoxy and royal duty more than speculative metaphysics.",
+          "science": "Isidore’s compilations transmit classical fragments on cosmology, medicine, and computus to medieval Latin Europe. Iberian agricultural continuity, minting, and church building keep practical Roman techniques alive; scholarly science is clerical compilation rather than new experiment."
         },
         {
           "id": "vandal",
@@ -7281,10 +7407,10 @@
           "role": "fringe",
           "opacity": 0.35,
           "note": "",
-          "art": "Material signature of Vandal corridor (N. Africa off-map): the objects, monuments, and dress styles that archaeologists use to draw this fringe layer on the Migration Period map.",
-          "ideas": "Vandal corridor (N. Africa off-map) marks a political-cultural claim in the Migration Period schematic—law, confession, and court style.",
-          "philosophy": "Political and religious thought attached to Vandal corridor (N. Africa off-map) in this era: legitimacy, confession, and corporate privilege (see kingdom packs for denser named schools).",
-          "science": "Administrative, military, and artisanal knowledge sustaining Vandal corridor (N. Africa off-map) on this map."
+          "art": "In Africa (off this map’s core), Vandal Carthage patronises Arian churches and late antique mosaics; in Iberian transit zones, archaeology is thinner—corridor more than settled kingdom. Portable wealth, shipborne power, and Mediterranean dress mark a seaborne Germanic elite.",
+          "ideas": "Geiseric’s 429 crossing and 455 sack of Rome advertise naval kingdom as theological and political challenge to Catholic Rome. Arian court identity versus Nicene majority becomes the ideological fault line until Byzantine reconquest (533–34).",
+          "philosophy": "Victor of Vita’s persecuted-Catholic narrative frames Vandal rule as heretical tyranny; little Vandal philosophical writing survives. The debate is ecclesiological—who owns orthodoxy—more than abstract ethics.",
+          "science": "Vandal naval logistics, North African grain routes, and late Roman urban infrastructure (still used under their rule) are the practical sciences of the kingdom. Cartographic Europe sees them as a fringe corridor because their centre of gravity was Carthage, not Iberia."
         },
         {
           "id": "frank",
@@ -7300,10 +7426,10 @@
           "role": "incoming",
           "opacity": 0.82,
           "note": "",
-          "art": "Material signature of Early Franks: the objects, monuments, and dress styles that archaeologists use to draw this incoming layer on the Migration Period map.",
-          "ideas": "Early Franks marks a political-cultural claim in the Migration Period schematic—law, confession, and court style.",
-          "philosophy": "Political and religious thought attached to Early Franks in this era: legitimacy, confession, and corporate privilege (see kingdom packs for denser named schools).",
-          "science": "Administrative, military, and artisanal knowledge sustaining Early Franks on this map."
+          "art": "Childeric’s grave at Tournai (bees, weapons, gold) and early Merovingian cloisonné garnet jewellery define Frankish bling. Baptisteries and saint cults after Clovis’s conversion pull Gallo-Roman church art into royal service; weapon burial and belt sets signal warrior status.",
+          "ideas": "Clovis’s victory over Syagrius and Nicene baptism align Frankish kingship with Gallo-Roman bishops against Arian rivals. Salic legal traditions and royal antrustiones build a Christian warrior kingdom claiming Roman Gaul’s mantle without restoring the empire.",
+          "philosophy": "Gregory of Tours later moralises Merovingian history as divine judgment on kings; early Frankish thought is catechetical and legal. Orthodoxy versus Arianism, and the sacral aura of baptismal kingship, dominate intellectual life over school philosophy.",
+          "science": "Late Roman road and estate systems, plus Frankish military organisation, structure knowledge of landscape. Monastic and episcopal centres begin to keep computus and basic medicine; technical innovation is incremental within Gallo-Roman craft survivals."
         },
         {
           "id": "alamanni",
@@ -7317,10 +7443,10 @@
           "role": "incoming",
           "opacity": 0.55,
           "note": "",
-          "art": "Material signature of Alamanni: the objects, monuments, and dress styles that archaeologists use to draw this incoming layer on the Migration Period map.",
-          "ideas": "Alamanni marks a political-cultural claim in the Migration Period schematic—law, confession, and court style.",
-          "philosophy": "Political and religious thought attached to Alamanni in this era: legitimacy, confession, and corporate privilege (see kingdom packs for denser named schools).",
-          "science": "Administrative, military, and artisanal knowledge sustaining Alamanni on this map."
+          "art": "Row-grave cemeteries with weapons, brooches, and belt fittings map Alamannic presence east of the Rhine and into Alsace–Switzerland. Fine metalwork and occasional Roman reuse (spolia, coins) show frontier taste without a court capital’s monumental art.",
+          "ideas": "A confederation name (‘all men’) more than a single dynasty: pressure on Roman Germania superior, then coexistence and conflict with Franks. Identity is military and regional—pagus loyalties—before full Merovingian absorption.",
+          "philosophy": "Pagan cult continuities inferred from burial and place-names gradually yield to Frankish-sponsored Christianisation. Worldview centres on honour, feud, and local sacral landscapes rather than written theology until episcopal networks thicken.",
+          "science": "Iron weapon manufacture, agrarian clearance in upland valleys, and knowledge of Rhine crossings are the applied sciences of a frontier people. Roman fort ruins become quarries and landmarks in a reused technical landscape."
         },
         {
           "id": "anglo-saxon",
@@ -7332,10 +7458,10 @@
           "role": "incoming",
           "opacity": 0.88,
           "note": "",
-          "art": "Material signature of Anglo-Saxon England: the objects, monuments, and dress styles that archaeologists use to draw this incoming layer on the Migration Period map.",
-          "ideas": "Anglo-Saxon England marks a political-cultural claim in the Migration Period schematic—law, confession, and court style.",
-          "philosophy": "Political and religious thought attached to Anglo-Saxon England in this era: legitimacy, confession, and corporate privilege (see kingdom packs for denser named schools).",
-          "science": "Administrative, military, and artisanal knowledge sustaining Anglo-Saxon England on this map."
+          "art": "Sutton Hoo’s ship burial (early 7th c. horizon of the wider migration story) shows gold-and-garnet regalia, patterned helmets, and Byzantine silver—Beowulf’s hall world made material. Earlier furnished inhumations, square-headed brooches, and later manuscript painting grow from this North Sea aesthetic.",
+          "ideas": "Adventus myths (Hengest and Horsa), heptarchy kingship, and conversion via Rome and Iona remake Britain as English-speaking Christian realms. Law codes (Æthelberht onward) and land books turn conquest into governance.",
+          "philosophy": "Heroic ethics of loyalty, gift-giving, and fame in poetry sit beside Augustinian missionary theology after 597. Conscience and kingship are taught through saints’ lives and penitentials more than through treatises—yet the tension between feud honour and Christian humility is pervasive.",
+          "science": "Shipbuilding, textile and garnet cloisonné craft, and open-field beginnings show sophisticated practical knowledge. Monastic schools later add computus and Latin learning; early centuries privilege craft and navigation over natural philosophy."
         },
         {
           "id": "brittonic",
@@ -7348,10 +7474,10 @@
           "role": "substrate",
           "opacity": 0.45,
           "note": "",
-          "art": "Material signature of Brittonic west: the objects, monuments, and dress styles that archaeologists use to draw this substrate layer on the Migration Period map.",
-          "ideas": "Brittonic west marks a political-cultural claim in the Migration Period schematic—law, confession, and court style.",
-          "philosophy": "Political and religious thought attached to Brittonic west in this era: legitimacy, confession, and corporate privilege (see kingdom packs for denser named schools).",
-          "science": "Administrative, military, and artisanal knowledge sustaining Brittonic west on this map."
+          "art": "Ogham and Latin-inscribed stones, imported Mediterranean pottery in western bays, and evolving Celtic Christian sculpture mark post-Roman Brittonic zones. Illuminated gospel traditions (later flowering in Insular art) and monastic metalwork keep a distinct visual Christianity beside Anglo-Saxon east.",
+          "ideas": "Sub-Roman kingdoms (Gwynedd, Dumnonia, and peers) claim Roman and Trojan genealogies while losing the lowland east. Saints’ cults, monastic federations, and bardic memory preserve Brittonic political identity under pressure.",
+          "philosophy": "Pelagian controversies linger in British Christian memory; monastic ascetic ideals (from Martinic and Irish models) shape ethics. Wisdom is pastoral and poetic—triads, praise poetry—more than Aristotelian schoolcraft.",
+          "science": "Atlantic seafaring, tin and livestock economies, and monastic computus (Easter debates) are core knowledges. Medical and legal learning travels in Latin and vernacular clerical milieux along western seaways."
         },
         {
           "id": "hunnic",
@@ -7367,10 +7493,10 @@
           "role": "incoming",
           "opacity": 0.6,
           "note": "",
-          "art": "Material signature of Hunnic horizon: the objects, monuments, and dress styles that archaeologists use to draw this incoming layer on the Migration Period map.",
-          "ideas": "Hunnic horizon marks a political-cultural claim in the Migration Period schematic—law, confession, and court style.",
-          "philosophy": "Political and religious thought attached to Hunnic horizon in this era: legitimacy, confession, and corporate privilege (see kingdom packs for denser named schools).",
-          "science": "Administrative, military, and artisanal knowledge sustaining Hunnic horizon on this map."
+          "art": "Polychrome cloisonné, mirrored ornaments, and steppe-prestige gold signal Hunnic-period elites from the Carpathian Basin outward. Cauldrons, horse gear, and artificially deformed skulls in some cemeteries visualise a multiethnic imperial confederation more than a single ‘Hun’ style.",
+          "ideas": "Attila’s court diplomacy—tribute, marriage alliances, terror—organises Goths, Gepids, and others as vassals. The Catalaunian Plains (451) and Attila’s death (453) show how quickly steppe hegemony can assemble and fracture.",
+          "philosophy": "Roman ethnographers cast Huns as eschatological scourge; within the confederation, ideology is charismatic kingship and plunder redistribution. Little internal philosophical writing survives—power spoke through ceremony and fear.",
+          "science": "Composite bows, horse logistics, and siege borrowing from Roman engineers underwrite Hunnic warfare. Genetic and isotopic studies now track mobility; contemporary ‘science’ was military and pastoral expertise on the move."
         },
         {
           "id": "byzantine",
@@ -7385,10 +7511,10 @@
           "role": "substrate",
           "opacity": 0.55,
           "note": "",
-          "art": "Material signature of Eastern Roman / early Byzantine: the objects, monuments, and dress styles that archaeologists use to draw this substrate layer on the Migration Period map.",
-          "ideas": "Eastern Roman / early Byzantine marks a political-cultural claim in the Migration Period schematic—law, confession, and court style.",
-          "philosophy": "Political and religious thought attached to Eastern Roman / early Byzantine in this era: legitimacy, confession, and corporate privilege (see kingdom packs for denser named schools).",
-          "science": "Administrative, military, and artisanal knowledge sustaining Eastern Roman / early Byzantine on this map."
+          "art": "Constantinople’s churches, ivory diptychs, and the slow birth of icon programmes define early Byzantine visual theology. Ravenna’s Byzantine-facing mosaics and Justinianic rebuilding (Hagia Sophia’s later sixth-century climax just after this slice) radiate imperial Christian aesthetics.",
+          "ideas": "Roman law (Theodosian Code; Justinian’s later Corpus) and imperial orthodoxy claim universal order while losing the Latin West. Diplomacy, subsidy, and foederati management try to domesticate Migration-Period neighbours.",
+          "philosophy": "Neoplatonism (Proclus) and Cappadocian theological synthesis still frame elite education; Christianity debates nature(s) of Christ (Ephesus, Chalcedon) as the central metaphysical quarrel. Philosophy serves theology and imperial ideology.",
+          "science": "Greek medical and mathematical handbooks continue in urban schools; military manuals and fortification engineering defend the Danube and East. Administrative numeracy and grain logistics keep an empire running amid demographic shocks."
         },
         {
           "id": "slavic-early",
@@ -7404,10 +7530,10 @@
           "role": "incoming",
           "opacity": 0.5,
           "note": "",
-          "art": "Material signature of Early Slavic expansion: the objects, monuments, and dress styles that archaeologists use to draw this incoming layer on the Migration Period map.",
-          "ideas": "Early Slavic expansion marks a political-cultural claim in the Migration Period schematic—law, confession, and court style.",
-          "philosophy": "Political and religious thought attached to Early Slavic expansion in this era: legitimacy, confession, and corporate privilege (see kingdom packs for denser named schools).",
-          "science": "Administrative, military, and artisanal knowledge sustaining Early Slavic expansion on this map."
+          "art": "Early Slavic horizons favour simple handmade pottery, sunken-floored buildings, and relatively modest grave assemblages compared with Germanic furnished burials. Wooden cult sites and later hillforts matter more than stone sculpture in the first expansion phases.",
+          "ideas": "Ethnogenesis narratives place Slavs spreading through emptied or mixed landscapes of east-central Europe after Germanic departures. Kin-based farming communities, not literate kingdoms, carry the expansion until later state formations.",
+          "philosophy": "Pre-Christian Slavic cosmology—reconstructed cautiously from later folklore and medieval critiques—centres on household, ancestors, and nature spirits. Written philosophy arrives with Christianisation centuries later.",
+          "science": "Slash-and-burn and mixed farming, riverine settlement siting, and iron smelting in forest zones are the practical sciences of expansion. Linguistic palaeontology and archaeology jointly track mobility better than any native technical treatise."
         },
         {
           "id": "scandinavia-gia",
@@ -7421,10 +7547,10 @@
           "role": "dominant",
           "opacity": 0.7,
           "note": "",
-          "art": "Material signature of Germanic Iron Age Scandinavia: the objects, monuments, and dress styles that archaeologists use to draw this dominant layer on the Migration Period map.",
-          "ideas": "Germanic Iron Age Scandinavia marks a political-cultural claim in the Migration Period schematic—law, confession, and court style.",
-          "philosophy": "Political and religious thought attached to Germanic Iron Age Scandinavia in this era: legitimacy, confession, and corporate privilege (see kingdom packs for denser named schools).",
-          "science": "Administrative, military, and artisanal knowledge sustaining Germanic Iron Age Scandinavia on this map."
+          "art": "Weapon graves, gold bracteates with mythical motifs, and bog deposits (including earlier weapon sacrifices’ long memory) define Scandinavian visual religion. Animal-style ornament on brooches and scabbards sets tastes that later Viking art will transform.",
+          "ideas": "Chieftain halls, petty kingdoms, and mythic genealogies to gods structure power before Viking Age monarchies. Contact with Rome—via gifts, mercenaries, and imports—feeds prestige economies without provincial annexation.",
+          "philosophy": "Eddic myth in later recording preserves older ideas of fate (wyrd/urðr), honour, and reciprocal gift debt. Wisdom is gnomic and poetic; no seminary philosophy, but a coherent ethic of reputation and courage.",
+          "science": "Boatbuilding, iron production (including Danish bog ore traditions), and navigational familiarity with skerry coasts underpin later Viking reach. Runic literacy begins as craft-mark and memorial technology, not full literature."
         }
       ],
       "tickYear": "400 AD",
@@ -8033,10 +8159,10 @@
           "role": "dominant",
           "opacity": 0.85,
           "note": "",
-          "art": "Material signature of Carolingian heartland: the objects, monuments, and dress styles that archaeologists use to draw this dominant layer on the Frankish & Early Medieval map.",
-          "ideas": "Carolingian heartland marks a political-cultural claim in the Frankish & Early Medieval schematic—law, confession, and court style.",
-          "philosophy": "Political and religious thought attached to Carolingian heartland in this era: legitimacy, confession, and corporate privilege (see kingdom packs for denser named schools).",
-          "science": "Administrative, military, and artisanal knowledge sustaining Carolingian heartland on this map."
+          "art": "Aachen’s Palatine Chapel, illuminated Gospel books (Ada, Coronation Gospels), and revived monumental architecture advertise a Roman–Christian imperial aesthetic. Ivory carving, liturgical plate, and monastery plans (St Gall ideal) standardise sacred visual order across the heartland.",
+          "ideas": "Charlemagne’s correctio—reform of liturgy, law, and learning—casts the king as guardian of orthodoxy. Capitularies, missi dominici, and the imperial coronation of 800 articulate a Western empire in dialogue and rivalry with Byzantium.",
+          "philosophy": "Alcuin, Theodulf, and the court school revive the liberal arts; debates on images (Libri Carolini) and the filioque show theological philosophy in Latin. Boethius and Augustine are curricular bedrock for an ethic of Christian rulership.",
+          "science": "Computus reform, Carolingian minuscule as information technology, estate surveys (polyptychs), and bridge/road logistics are the sciences of governance. Medical and astronomical excerpts circulate in monastery libraries without a research university."
         },
         {
           "id": "east-francia",
@@ -8050,10 +8176,10 @@
           "role": "dominant",
           "opacity": 0.8,
           "note": "",
-          "art": "Material signature of East Francia: the objects, monuments, and dress styles that archaeologists use to draw this dominant layer on the Frankish & Early Medieval map.",
-          "ideas": "East Francia marks a political-cultural claim in the Frankish & Early Medieval schematic—law, confession, and court style.",
-          "philosophy": "Political and religious thought attached to East Francia in this era: legitimacy, confession, and corporate privilege (see kingdom packs for denser named schools).",
-          "science": "Administrative, military, and artisanal knowledge sustaining East Francia on this map."
+          "art": "After Verdun (843), East Frankish churches and royal palaces continue Carolingian forms while local schools (Fulda, St Emmeram) illuminate manuscripts. Ottonian splendour is just beyond this horizon; here the art is monastic and royal-chapel Carolingian.",
+          "ideas": "Louis the German’s realm and the Strasbourg Oaths (842) show East Francia as a German-speaking political community inside partitioned empire. Frontier policy toward Slavs and Danes defines kingship as much as Italian dreams.",
+          "philosophy": "Hrabanus Maurus and Fulda exegesis dominate intellectual life: biblical commentary as philosophy of history and morals. Vernacular beginnings (Hildebrandslied, baptismal vows) encode ethic in German tongue.",
+          "science": "Monastic computus, herbals, and agricultural polyptych knowledge persist; mining and forest clearance on eastern marches are applied environmental science. Latin school grammar is the gateway technology for clergy."
         },
         {
           "id": "lombard-italy",
@@ -8065,10 +8191,10 @@
           "role": "dominant",
           "opacity": 0.65,
           "note": "",
-          "art": "Material signature of Carolingian / Lombard Italy: the objects, monuments, and dress styles that archaeologists use to draw this dominant layer on the Frankish & Early Medieval map.",
-          "ideas": "Carolingian / Lombard Italy marks a political-cultural claim in the Frankish & Early Medieval schematic—law, confession, and court style.",
-          "philosophy": "Political and religious thought attached to Carolingian / Lombard Italy in this era: legitimacy, confession, and corporate privilege (see kingdom packs for denser named schools).",
-          "science": "Administrative, military, and artisanal knowledge sustaining Carolingian / Lombard Italy on this map."
+          "art": "Lombard eight-century stone carving (Cividale, Tempietto) and goldsmith work meet Frankish conquest patronage after 774. Italian cities keep late antique churches alive; illuminated law books and charters visualise hybrid rule.",
+          "ideas": "The Lombard kingdom’s defeat folds northern Italy into Carolingian structures while local aristocracies and papal Rome pursue autonomy. Legal pluralism—Roman, Lombard, Frankish—frames property and status.",
+          "philosophy": "Paul the Deacon’s History of the Lombards and grammar teaching at court connect Italian letters to Carolingian reform. Monasteries debate Benedictine observance; speculative philosophy remains patristic.",
+          "science": "Urban artisan continuity (stone, glass, metal), irrigation in Po agriculture, and notarial literacy are Italian strengths. Medical recipes and Roman agronomy survive in manuscript more densely than north of the Alps."
         },
         {
           "id": "asturias",
@@ -8080,10 +8206,10 @@
           "role": "dominant",
           "opacity": 0.55,
           "note": "",
-          "art": "Material signature of Asturias / Christian north: the objects, monuments, and dress styles that archaeologists use to draw this dominant layer on the Frankish & Early Medieval map.",
-          "ideas": "Asturias / Christian north marks a political-cultural claim in the Frankish & Early Medieval schematic—law, confession, and court style.",
-          "philosophy": "Political and religious thought attached to Asturias / Christian north in this era: legitimacy, confession, and corporate privilege (see kingdom packs for denser named schools).",
-          "science": "Administrative, military, and artisanal knowledge sustaining Asturias / Christian north on this map."
+          "art": "Asturian pre-Romanesque churches (San Julián de los Prados, Santa María del Naranco) invent a compact royal sacred architecture in the northern mountains. Cross of the Angels and Victory Cross goldwork proclaim Visigothic heirship after 711.",
+          "ideas": "Pelagius’s resistance myth and Alfonso II’s court cast Asturias as refuge of Christian Spain. Ideology of reconquest and Visigothic legal memory legitimise a small kingdom against al-Andalus.",
+          "philosophy": "Mozarabic liturgy and monastic rules shape northern Christian thought; Beatus of Liébana’s Commentary on the Apocalypse (late 8th c.) offers a vivid theology of history against adoptionist controversy and Muslim power.",
+          "science": "Mountain agrarian systems, fortification of passes, and manuscript computus in tight scriptoria constitute local knowledge. Technical splendour is concentrated in goldsmithing and masonry rather than abstract science."
         },
         {
           "id": "al-andalus",
@@ -8096,10 +8222,10 @@
           "role": "dominant",
           "opacity": 0.75,
           "note": "",
-          "art": "Material signature of Al-Andalus: the objects, monuments, and dress styles that archaeologists use to draw this dominant layer on the Frankish & Early Medieval map.",
-          "ideas": "Al-Andalus marks a political-cultural claim in the Frankish & Early Medieval schematic—law, confession, and court style.",
-          "philosophy": "Political and religious thought attached to Al-Andalus in this era: legitimacy, confession, and corporate privilege (see kingdom packs for denser named schools).",
-          "science": "Administrative, military, and artisanal knowledge sustaining Al-Andalus on this map."
+          "art": "Córdoba’s Great Mosque (hypostyle hall, horseshoe arches, later maqsura splendour) defines Umayyad visual power. Ivory pyxides, silks, and city palaces make Andalusi art a Mediterranean high style unmatched in contemporary Christian north.",
+          "ideas": "Umayyad emirate then caliphate claims Hispanic-Islamic sovereignty distinct from Abbasid Baghdad. Arabic literacy, court ceremonial, and dhimma arrangements structure a plural society of Muslims, Christians, and Jews.",
+          "philosophy": "Andalusi letters later flower with Ibn Masarra and, further on, Ibn Rushd—but already in the emirate–caliphate era, Arabic falsafa, kalām, and legal schools (Mālikī dominance) frame reason and revelation. Jewish and Christian scholars work inside Arabic intellectual space.",
+          "science": "Irrigation engineering (norias, qanats adaptations), agronomy, astronomy, and medicine travel with Arabic libraries. Córdoba’s book culture makes al-Andalus Europe’s densest scientific information network in this era."
         },
         {
           "id": "wessex",
@@ -8111,10 +8237,10 @@
           "role": "dominant",
           "opacity": 0.75,
           "note": "",
-          "art": "Material signature of Wessex / Anglo-Saxon England: the objects, monuments, and dress styles that archaeologists use to draw this dominant layer on the Frankish & Early Medieval map.",
-          "ideas": "Wessex / Anglo-Saxon England marks a political-cultural claim in the Frankish & Early Medieval schematic—law, confession, and court style.",
-          "philosophy": "Political and religious thought attached to Wessex / Anglo-Saxon England in this era: legitimacy, confession, and corporate privilege (see kingdom packs for denser named schools).",
-          "science": "Administrative, military, and artisanal knowledge sustaining Wessex / Anglo-Saxon England on this map."
+          "art": "Alfredian and later West Saxon patronage rebuilds churches after Viking wars; Insular-descended manuscript art and metalwork continue. Burh earthworks and stone towers are the visual politics of defence.",
+          "ideas": "Alfred’s law-book preface and programme of vernacular translation cast the king as teacher-ruler. English identity hardens against the Danelaw while learning is framed as spiritual and political necessity.",
+          "philosophy": "Translations of Gregory, Boethius, and Augustine into Old English make philosophy pastoral and royal. Wisdom literature and penitential discipline teach ordered souls for an ordered realm.",
+          "science": "Alfred’s burh system, shipbuilding, and candle-clock anecdote tradition show practical measurement; monastic schools restore Latin computus and medicine after disruption. Technology is defensive and didactic."
         },
         {
           "id": "danelaw",
@@ -8127,10 +8253,10 @@
           "role": "incoming",
           "opacity": 0.55,
           "note": "",
-          "art": "Material signature of Danelaw / Norse zones: the objects, monuments, and dress styles that archaeologists use to draw this incoming layer on the Frankish & Early Medieval map.",
-          "ideas": "Danelaw / Norse zones marks a political-cultural claim in the Frankish & Early Medieval schematic—law, confession, and court style.",
-          "philosophy": "Political and religious thought attached to Danelaw / Norse zones in this era: legitimacy, confession, and corporate privilege (see kingdom packs for denser named schools).",
-          "science": "Administrative, military, and artisanal knowledge sustaining Danelaw / Norse zones on this map."
+          "art": "Hybrid Anglo-Scandinavian sculpture (hogbacks, cross shafts with Jelling-style beasts) and furnished warrior graves mark Norse presence. Place-name landscapes are an invisible art of settlement memory.",
+          "ideas": "Danelaw treaties and the idea of ‘Danish’ law create a plural legal England. Army settlements become farming communities under kings who bargain with Wessex.",
+          "philosophy": "Norse honour culture and Christian conversion pressures coexist; oath, feud, and lordship ethics meet English penitential norms. Worldviews collide in shared market towns more than in academies.",
+          "science": "Open-boat and knarr know-how, urban crafts at York (Jorvik), and agricultural colonisation of taken land are applied sciences. Weight-based silver economies reintroduce calculation into daily exchange."
         },
         {
           "id": "dublin-norse",
@@ -8142,10 +8268,10 @@
           "role": "fringe",
           "opacity": 0.45,
           "note": "",
-          "art": "Material signature of Norse Ireland: the objects, monuments, and dress styles that archaeologists use to draw this fringe layer on the Frankish & Early Medieval map.",
-          "ideas": "Norse Ireland marks a political-cultural claim in the Frankish & Early Medieval schematic—law, confession, and court style.",
-          "philosophy": "Political and religious thought attached to Norse Ireland in this era: legitimacy, confession, and corporate privilege (see kingdom packs for denser named schools).",
-          "science": "Administrative, military, and artisanal knowledge sustaining Norse Ireland on this map."
+          "art": "Dublin’s urban archaeology—house plans, comb-making, Insular-Norse metalwork—shows a fortified longphort become town. High crosses in the Irish hinterland continue native sacred art beside the port’s hybrid gear.",
+          "ideas": "Norse-Gaelic dynasties broker trade, slaves, and alliances among Irish overkings. Dublin is a node in an Irish Sea world linking York, Isle of Man, and Norway.",
+          "philosophy": "Irish monastic learning and Norse warrior ethics meet in conversion-era elites; filid poetic grades keep a native intellectual order outside the town walls. Moral thought is still more monastic than scholastic.",
+          "science": "Ship maintenance, urban craft specialisation, and silver economies are Dublin’s technical core. Irish computus and Latin learning remain strongest in older monastic centres, not the longphort."
         },
         {
           "id": "denmark",
@@ -8157,10 +8283,10 @@
           "role": "dominant",
           "opacity": 0.85,
           "note": "",
-          "art": "Material signature of Danish kingdom: the objects, monuments, and dress styles that archaeologists use to draw this dominant layer on the Frankish & Early Medieval map.",
-          "ideas": "Danish kingdom marks a political-cultural claim in the Frankish & Early Medieval schematic—law, confession, and court style.",
-          "philosophy": "Political and religious thought attached to Danish kingdom in this era: legitimacy, confession, and corporate privilege (see kingdom packs for denser named schools).",
-          "science": "Administrative, military, and artisanal knowledge sustaining Danish kingdom on this map."
+          "art": "Jelling stones (just after the strict Carolingian century, but in the kingdom’s arc) and earlier elite burials show royal monumental claims. Animal ornament and hall complexes visualise emerging monarchy.",
+          "ideas": "Danish kings negotiate raid, trade, and Frankish border politics (Danevirke). Conversion becomes a royal tool for international recognition as much as faith.",
+          "philosophy": "Pre-Christian mythic kingship yields to missionary Christianity; ethics of ring-giver generosity persist under new baptismal names. Written philosophy arrives with churchmen.",
+          "science": "Danevirke earthwork engineering, harbour sites, and agricultural intensification underpin royal power. Seafaring remains the master technology."
         },
         {
           "id": "norway",
@@ -8172,10 +8298,10 @@
           "role": "dominant",
           "opacity": 0.85,
           "note": "",
-          "art": "Material signature of Norwegian kingdom: the objects, monuments, and dress styles that archaeologists use to draw this dominant layer on the Frankish & Early Medieval map.",
-          "ideas": "Norwegian kingdom marks a political-cultural claim in the Frankish & Early Medieval schematic—law, confession, and court style.",
-          "philosophy": "Political and religious thought attached to Norwegian kingdom in this era: legitimacy, confession, and corporate privilege (see kingdom packs for denser named schools).",
-          "science": "Administrative, military, and artisanal knowledge sustaining Norwegian kingdom on this map."
+          "art": "Ship burials and richly carved objects (Oseberg horizon straddles this era’s end) display textile, wood, and animal-style mastery. Coastal chieftain seats are the galleries of power.",
+          "ideas": "Petty kings and earls compete until Harald Fairhair traditions claim unification; west-over-sea migration to Isles and Iceland exports Norwegian political forms.",
+          "philosophy": "Fate, reputation, and law-assembly (thing) customs structure right conduct. Eddic wisdom in later texts preserves older maxims against reckless pride.",
+          "science": "Clinker ship technology, navigation by coast and stars, and ironworking in fjord farms are Norway’s sciences of survival and expansion."
         },
         {
           "id": "sweden",
@@ -8187,10 +8313,10 @@
           "role": "dominant",
           "opacity": 0.8,
           "note": "",
-          "art": "Material signature of Swedish kingdom: the objects, monuments, and dress styles that archaeologists use to draw this dominant layer on the Frankish & Early Medieval map.",
-          "ideas": "Swedish kingdom marks a political-cultural claim in the Frankish & Early Medieval schematic—law, confession, and court style.",
-          "philosophy": "Political and religious thought attached to Swedish kingdom in this era: legitimacy, confession, and corporate privilege (see kingdom packs for denser named schools).",
-          "science": "Administrative, military, and artisanal knowledge sustaining Swedish kingdom on this map."
+          "art": "Vendel and Valsgärde boat graves, helmets, and shield fittings show Uppland elite art linked to earlier Migration styles. Eastern silver and Islamic coins in hoards become part of the visual economy.",
+          "ideas": "Svear kings and Birka’s trade entangle Sweden with Frankish missions (Ansgar) and eastern routes toward the Rus’. Kingship grows through control of nodes, not continuous territory.",
+          "philosophy": "Cult at Uppsala (as later remembered) and hall religion organise cosmic kingship; Christianity enters as court option and conflict. Moral life is honour before creed.",
+          "science": "River–Baltic transport, fur and slave trade logistics, and specialised smithing at central places constitute applied knowledge. Runes mark ownership and memory."
         },
         {
           "id": "byzantine",
@@ -8204,10 +8330,10 @@
           "role": "dominant",
           "opacity": 0.8,
           "note": "",
-          "art": "Material signature of Byzantine Empire: the objects, monuments, and dress styles that archaeologists use to draw this dominant layer on the Frankish & Early Medieval map.",
-          "ideas": "Byzantine Empire marks a political-cultural claim in the Frankish & Early Medieval schematic—law, confession, and court style.",
-          "philosophy": "Political and religious thought attached to Byzantine Empire in this era: legitimacy, confession, and corporate privilege (see kingdom packs for denser named schools).",
-          "science": "Administrative, military, and artisanal knowledge sustaining Byzantine Empire on this map."
+          "art": "Post-iconoclast Macedonian beginnings restore monumental icons and mosaic splendour; Constantinopolitan court dress and silk define imperial taste. Missionary art later travels to Moravia and the Rus’ with the cross.",
+          "ideas": "Byzantium claims Roman continuity against Carolingian upstarts; Photian controversies and Balkan diplomacy manage Bulgaria and the Slavs. Orthodoxy plus law equal civilisation.",
+          "philosophy": "Photios’ erudition and Aristotelian–patristic school traditions keep Greek philosophy alive. Theology of images after 843 (Triumph of Orthodoxy) is the public metaphysics of the age.",
+          "science": "Greek medical and mathematical texts, military manuals (taktika), and fire-projected naval weapons sustain technical edge. Administrative archives and surveying support tax and theme armies."
         },
         {
           "id": "bulgaria",
@@ -8222,10 +8348,10 @@
           "role": "dominant",
           "opacity": 0.75,
           "note": "",
-          "art": "Material signature of First Bulgarian Empire: the objects, monuments, and dress styles that archaeologists use to draw this dominant layer on the Frankish & Early Medieval map.",
-          "ideas": "First Bulgarian Empire marks a political-cultural claim in the Frankish & Early Medieval schematic—law, confession, and court style.",
-          "philosophy": "Political and religious thought attached to First Bulgarian Empire in this era: legitimacy, confession, and corporate privilege (see kingdom packs for denser named schools).",
-          "science": "Administrative, military, and artisanal knowledge sustaining First Bulgarian Empire on this map."
+          "art": "Pliska and Preslav’s palatial and church architecture, proto-Bulgarian metalwork, and after conversion an explosion of Slavonic manuscript culture define khan-to-tsar visual power. Stone inscriptions proclaim rulership in Greek and later Slavic.",
+          "ideas": "Krum to Boris I: from steppe-tinged khanate to Christian tsardom balancing Byzantium. The decision for Byzantine Christianity (c. 864–70) is geopolitical philosophy in action.",
+          "philosophy": "Conversion imports Byzantine theology; Cyril and Methodius’s disciples bring Slavonic liturgy and a literary language capable of scripture and law. Intellectual life becomes monastic-Slavic almost overnight.",
+          "science": "Fortified capitals, military organisation against Byzantium, and adoption of writing systems (Glagolitic/Cyrillic lineages) are state sciences. Agrarian surplus feeds both army and new Christian institutions."
         },
         {
           "id": "moravia",
@@ -8240,10 +8366,10 @@
           "role": "incoming",
           "opacity": 0.55,
           "note": "",
-          "art": "Material signature of Great Moravia: the objects, monuments, and dress styles that archaeologists use to draw this incoming layer on the Frankish & Early Medieval map.",
-          "ideas": "Great Moravia marks a political-cultural claim in the Frankish & Early Medieval schematic—law, confession, and court style.",
-          "philosophy": "Political and religious thought attached to Great Moravia in this era: legitimacy, confession, and corporate privilege (see kingdom packs for denser named schools).",
-          "science": "Administrative, military, and artisanal knowledge sustaining Great Moravia on this map."
+          "art": "Great Moravian church foundations, Latin and Byzantine-influenced liturgical gear, and stronghold architecture at Mikulčice and related sites show a Slavic polity choosing Christian monumental forms. Metalwork mixes Avar-era echoes with Frankish imports.",
+          "ideas": "Rastislav’s invitation to Byzantine missionaries (863) seeks ecclesiastical independence from East Frankish bishops—language politics as sovereignty. Svatopluk’s expansion makes Moravia a brief central-European power.",
+          "philosophy": "Cyril and Methodius introduce a philosophy of vernacular sacred speech: liturgy in Slavonic as worthy as Latin or Greek. Latin clergy contest that claim; the quarrel is about who mediates truth.",
+          "science": "Fortification engineering, long-distance trade (including Byzantine and Frankish goods), and the technology of writing (Glagolitic) are Moravia’s knowledge revolutions. Statecraft outruns its short political life."
         },
         {
           "id": "kievan-rus",
@@ -8257,10 +8383,10 @@
           "role": "incoming",
           "opacity": 0.75,
           "note": "",
-          "art": "Material signature of Kievan Rus’: the objects, monuments, and dress styles that archaeologists use to draw this incoming layer on the Frankish & Early Medieval map.",
-          "ideas": "Kievan Rus’ marks a political-cultural claim in the Frankish & Early Medieval schematic—law, confession, and court style.",
-          "philosophy": "Political and religious thought attached to Kievan Rus’ in this era: legitimacy, confession, and corporate privilege (see kingdom packs for denser named schools).",
-          "science": "Administrative, military, and artisanal knowledge sustaining Kievan Rus’ on this map."
+          "art": "Early Rus’ elite taste is readable in dirham hoards, Scandinavian-style jewellery, and river-port crafts before full Christian monumentalism. Later eleventh-century churches stand on ninth–tenth-century commercial foundations forming in this era.",
+          "ideas": "Varangian-led polities along the Dnieper organise tribute (poliudie) and trade toward Byzantium. Primary Chronicle traditions (written later) mythologise calling-of-the-Varangians as origin of ordered rule.",
+          "philosophy": "Pagan cult and oath practices precede Vladimir’s later conversion; in the frankish-era slice, ideology is still warrior-merchant reciprocity and steppe diplomacy. Written philosophy waits on baptism and Church Slavonic.",
+          "science": "River navigation, portage logistics, fur/slave/silver trade accounting, and ship types adapted from Scandinavian models are Rus’ sciences. Urbanising Kiev and Novgorod begin as technical nodes on a water road."
         },
         {
           "id": "khazar",
@@ -8273,10 +8399,10 @@
           "role": "fringe",
           "opacity": 0.4,
           "note": "",
-          "art": "Material signature of Khazar steppe: the objects, monuments, and dress styles that archaeologists use to draw this fringe layer on the Frankish & Early Medieval map.",
-          "ideas": "Khazar steppe marks a political-cultural claim in the Frankish & Early Medieval schematic—law, confession, and court style.",
-          "philosophy": "Political and religious thought attached to Khazar steppe in this era: legitimacy, confession, and corporate privilege (see kingdom packs for denser named schools).",
-          "science": "Administrative, military, and artisanal knowledge sustaining Khazar steppe on this map."
+          "art": "Khazar material culture mixes steppe mobile prestige with urban Sarkel-style fortification; religious plurality leaves a thinner iconic programme than Christian or Islamic neighbours. Trade silver and belt sets speak louder than churches.",
+          "ideas": "The Khazar Qaghanate manages Silk Road–Volga trade and buffers Byzantium, Arabs, and steppe rivals. Elite conversion to Judaism (debated in detail, attested in sources) is a striking third-way identity between cross and crescent.",
+          "philosophy": "Correspondence traditions (Khazar Correspondence) dramatise philosophical-religious choice among faiths—whether fully historical or literary, they stage reason-of-state as confession. Plural subject populations practise multiple rites under Turkic overlordship.",
+          "science": "Steppe cavalry logistics, fortress building on the Don, and customs knowledge of caravan tariffs are Khazar technical strengths. Geographic position makes them information brokers between forest and caliphate."
         },
         {
           "id": "croatia",
@@ -8289,10 +8415,10 @@
           "role": "incoming",
           "opacity": 0.55,
           "note": "",
-          "art": "Material signature of Early Croatian polity: the objects, monuments, and dress styles that archaeologists use to draw this incoming layer on the Frankish & Early Medieval map.",
-          "ideas": "Early Croatian polity marks a political-cultural claim in the Frankish & Early Medieval schematic—law, confession, and court style.",
-          "philosophy": "Political and religious thought attached to Early Croatian polity in this era: legitimacy, confession, and corporate privilege (see kingdom packs for denser named schools).",
-          "science": "Administrative, military, and artisanal knowledge sustaining Early Croatian polity on this map."
+          "art": "Early Croatian churches (ninth-century foundations along the Dalmatian hinterland) and Latin epigraphy show a Slavic elite adopting Adriatic Christian architecture. Interlace stone sculpture links local carving to wider Insular–Italian ornamental habits.",
+          "ideas": "Dukes negotiating with Franks, Byzantium, and the papacy build a recognised Christian principality. Baptism and Benedictine monasticism are tools of international legitimacy.",
+          "philosophy": "Latin Christianity supplies moral and political vocabulary; native Slavic social ethics persist in kinship and customary law. Intellectual life is episcopal and monastic, oriented to Rome more than Constantinople.",
+          "science": "Adriatic maritime contact, hillfort-to-church settlement shifts, and literacy in Latin charters are the knowledge base. Agricultural hinterlands feed coastal exchange more than abstract science."
         }
       ],
       "tickYear": "800 AD",

@@ -1755,9 +1755,28 @@ function applyCultureFields(polity) {
   setPolityField("science", polityCultureField(polity, "science"));
 }
 
-/** Overlay layer-specific culture text when a deep-time culture chip is focused. */
+/** Region-level culture-fill packs (e.g. neolithic-culture.json) keyed by atlas region. */
+function regionCultureSlice(period, regionId) {
+  const reg = regionData(period, regionId);
+  if (!reg) return null;
+  const slice = {};
+  for (const key of ["culture", "art", "ideas", "philosophy", "science"]) {
+    const t = (reg[key] || "").trim();
+    if (t) slice[key] = t;
+  }
+  return Object.keys(slice).length ? slice : null;
+}
+
+/** Overlay region pack, then layer-specific text when a culture chip is focused. */
 function mergeDeepTimeCulture(polity, period) {
   const out = { ...(polity || {}) };
+  const rid = state.selectedRegion || (state.selectedIso ? isoToRegion(state.selectedIso) : null);
+  const regionSlice = rid ? regionCultureSlice(period, rid) : null;
+  if (regionSlice) {
+    for (const key of ["culture", "art", "ideas", "philosophy", "science"]) {
+      if (regionSlice[key]) out[key] = regionSlice[key];
+    }
+  }
   const layerId = state.selectedCultureLayer;
   if (!layerId || !period) return out;
   const layer = (period.mapLayers || []).find((l) => l.id === layerId);
@@ -2133,26 +2152,45 @@ function renderDetail() {
   }
   setPlainText($("#culture-desc"), desc);
 
-  // Polity-specific panel
+  // Polity / region culture panel (Neolithic+ packs may live on atlas regions)
   const polityPanel = $("#polity-panel");
   const polity =
     state.selectedIso && period.polities
       ? period.polities[state.selectedIso]
       : null;
+  const regionSlice = regionCultureSlice(period, rid);
+  const cultureSource = mergeDeepTimeCulture(polity || {}, period);
+  const hasCulturePanel =
+    !!polity ||
+    !!(
+      regionSlice &&
+      (regionSlice.art || regionSlice.ideas || regionSlice.philosophy || regionSlice.science)
+    );
   if (polityPanel) {
-    if (polity) {
+    if (hasCulturePanel) {
       polityPanel.hidden = false;
-      setPlainText($("#polity-name"), polity.name || "—");
-      setPlainText($("#polity-summary"), polity.summary || "");
-      setPlainText($("#polity-conflicts"), polity.conflicts || "");
-      setPolityField("leaders", polity.leaders);
-      setPolityField("religion", polity.religion);
-      setPolityField("culture", polity.culture);
-      setPolityField("story", polity.story);
-      setPolityField("literature", polity.literature);
-      applyCultureFields(mergeDeepTimeCulture(polity, period));
+      const placeName =
+        polity?.name ||
+        (state.selectedIso
+          ? state.geo?.features?.find((f) => f.properties.iso === state.selectedIso)
+              ?.properties?.name
+          : null) ||
+        REGION_LABELS[rid] ||
+        "—";
+      setPlainText($("#polity-name"), placeName);
+      setPlainText($("#polity-summary"), polity?.summary || region?.description || "");
+      setPlainText($("#polity-conflicts"), polity?.conflicts || "");
+      setPolityField("leaders", polity?.leaders);
+      setPolityField("religion", polity?.religion);
+      setPolityField(
+        "culture",
+        cultureSource.culture || polity?.culture || regionSlice?.culture
+      );
+      setPolityField("story", polity?.story);
+      setPolityField("literature", polity?.literature);
+      applyCultureFields(cultureSource);
       renderPolityChain(polity);
-      renderPolityGalleries(polity.images);
+      renderPolityGalleries(polity?.images);
     } else {
       polityPanel.hidden = true;
       renderPolityChain(null);
@@ -2427,7 +2465,7 @@ function bindUI() {
 async function loadKingdomPack(id) {
   try {
     // Cache-bust so refined research geometry packs reload after deploy
-    const r = await fetch(`data/kingdom-eras/${id}.json?v=era-ui-35`);
+    const r = await fetch(`data/kingdom-eras/${id}.json?v=era-ui-36`);
     if (!r.ok) return null;
     const raw = await r.json();
     return normalizeKingdomPack(raw);
@@ -2448,7 +2486,7 @@ async function init() {
       loadKingdomPack(id).then((pack) => [id, pack])
     );
     const [timeline, geo, keyEvents, packEntries] = await Promise.all([
-      fetch("data/timeline.json?v=era-ui-35").then((r) => {
+      fetch("data/timeline.json?v=era-ui-36").then((r) => {
         if (!r.ok) throw new Error("timeline");
         return r.json();
       }),
