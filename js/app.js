@@ -204,7 +204,8 @@ function normalizeKingdomPack(raw) {
         leaders: p.leaders || "",
         religion: p.religion || "",
         culture: p.culture || "",
-        story: p.story || "",
+        story: p.stories || p.story || "",
+        stories: p.stories || p.story || null,
         literature: p.literature || "",
         art: p.art || "",
         ideas: p.ideas || "",
@@ -1777,9 +1778,116 @@ function setPolityField(key, value) {
   const block = $(`#polity-${key}-block`);
   const el = $(`#polity-${key}`);
   if (!block || !el) return;
+  if (key === "story") {
+    renderPolityStories(el, value);
+    const has = !!(el.textContent || "").trim();
+    block.hidden = !has;
+    return;
+  }
   const text = (value || "").trim();
   block.hidden = !text;
   setPlainText(el, text);
+}
+
+/** Parse story cards from arrays, plain prose, or stringified JSON/Python lists. */
+function normalizeStoryItems(value) {
+  if (value == null || value === "") return [];
+  if (Array.isArray(value)) {
+    const out = [];
+    const seen = new Set();
+    for (const item of value) {
+      for (const piece of normalizeStoryItems(item)) {
+        const key = `${piece.title}\0${piece.text}`;
+        if (seen.has(key)) continue;
+        seen.add(key);
+        out.push(piece);
+      }
+    }
+    return out;
+  }
+  if (typeof value === "object") {
+    const title = String(value.title || value.name || "").trim();
+    const text = String(
+      value.text || value.body || value.narrative || value.description || ""
+    ).trim();
+    return title || text ? [{ title, text }] : [];
+  }
+  if (typeof value !== "string") return [];
+  const raw = value.trim();
+  if (!raw) return [];
+  if (raw.startsWith("[")) {
+    try {
+      const parsed = JSON.parse(raw);
+      if (Array.isArray(parsed)) return normalizeStoryItems(parsed);
+    } catch (_) {
+      /* try Python-ish literal below */
+    }
+    const pyItems = parsePythonishStoryList(raw);
+    if (pyItems.length) return pyItems;
+  }
+  return [{ title: "", text: raw }];
+}
+
+/** Best-effort parse of Python repr lists like [{'title': '...', 'text': '...'}]. */
+function parsePythonishStoryList(raw) {
+  const items = [];
+  const re =
+    /\{\s*['"]title['"]\s*:\s*(['"])([\s\S]*?)\1\s*,\s*['"]text['"]\s*:\s*(['"])([\s\S]*?)\3\s*\}/g;
+  let m;
+  while ((m = re.exec(raw))) {
+    const title = m[2].replace(/\\'/g, "'").replace(/\\"/g, '"').replace(/\\\\/g, "\\");
+    const text = m[4].replace(/\\'/g, "'").replace(/\\"/g, '"').replace(/\\\\/g, "\\");
+    if (title || text) items.push({ title: title.trim(), text: text.trim() });
+  }
+  if (items.length) return items;
+  // title/text key order swapped
+  const re2 =
+    /\{\s*['"]text['"]\s*:\s*(['"])([\s\S]*?)\1\s*,\s*['"]title['"]\s*:\s*(['"])([\s\S]*?)\3\s*\}/g;
+  while ((m = re2.exec(raw))) {
+    const text = m[2].replace(/\\'/g, "'").replace(/\\"/g, '"').replace(/\\\\/g, "\\");
+    const title = m[4].replace(/\\'/g, "'").replace(/\\"/g, '"').replace(/\\\\/g, "\\");
+    if (title || text) items.push({ title: title.trim(), text: text.trim() });
+  }
+  return items;
+}
+
+/** Render Stories & turning points as title + body cards — never String(array). */
+function renderPolityStories(el, value) {
+  if (!el) return;
+  while (el.firstChild) el.removeChild(el.firstChild);
+  const items = normalizeStoryItems(value);
+  if (!items.length) return;
+
+  // Single untitled prose blob → plain paragraphs (matches literature)
+  if (items.length === 1 && !items[0].title) {
+    items[0].text.split(/\n\n+/).forEach((para) => {
+      const p = document.createElement("p");
+      p.className = "story-item-text";
+      p.textContent = para.trim();
+      if (p.textContent) el.appendChild(p);
+    });
+    return;
+  }
+
+  for (const item of items) {
+    const card = document.createElement("article");
+    card.className = "story-item";
+    if (item.title) {
+      const h = document.createElement("h4");
+      h.className = "story-item-title";
+      h.textContent = item.title;
+      card.appendChild(h);
+    }
+    if (item.text) {
+      item.text.split(/\n\n+/).forEach((para) => {
+        const p = document.createElement("p");
+        p.className = "story-item-text";
+        p.textContent = para.trim();
+        if (p.textContent) card.appendChild(p);
+      });
+    }
+    el.appendChild(card);
+  }
 }
 
 /** Join distinct prose blobs without dumping under a fake heading. */
@@ -2049,7 +2157,9 @@ function renderPolityGalleries(images) {
   const show = (id, has) => {
     const block = $(id);
     if (!block) return;
-    const textEl = block.querySelector("p:not(.kicker)");
+    const textEl =
+      block.querySelector(".polity-story") ||
+      block.querySelector("p:not(.kicker)");
     const hasText = !!(textEl?.textContent || "").trim();
     block.hidden = !(has || hasText);
   };
@@ -2116,7 +2226,7 @@ function renderKingdomDetail() {
       setPolityField("leaders", polity.leaders);
       setPolityField("religion", polity.religion);
       setPolityField("culture", polity.culture);
-      setPolityField("story", polity.story);
+      setPolityField("story", polity.stories || polity.story);
       setPolityField("literature", polity.literature);
       applyCultureFields(polity);
       renderPolityChain(polity);
@@ -2248,7 +2358,7 @@ function renderDetail() {
         "culture",
         cultureSource.culture || polity?.culture || regionSlice?.culture
       );
-      setPolityField("story", polity?.story);
+      setPolityField("story", polity?.stories || polity?.story);
       setPolityField("literature", polity?.literature);
       applyCultureFields(cultureSource);
       renderPolityChain(polity);
@@ -2592,7 +2702,7 @@ function bindUI() {
 async function loadKingdomPack(id) {
   try {
     // Cache-bust so refined research geometry packs reload after deploy
-    const r = await fetch(`data/kingdom-eras/${id}.json?v=era-ui-44`);
+    const r = await fetch(`data/kingdom-eras/${id}.json?v=era-ui-45`);
     if (!r.ok) return null;
     const raw = await r.json();
     return normalizeKingdomPack(raw);
@@ -2613,7 +2723,7 @@ async function init() {
       loadKingdomPack(id).then((pack) => [id, pack])
     );
     const [timeline, geo, keyEvents, packEntries] = await Promise.all([
-      fetch("data/timeline.json?v=era-ui-44").then((r) => {
+      fetch("data/timeline.json?v=era-ui-45").then((r) => {
         if (!r.ok) throw new Error("timeline");
         return r.json();
       }),

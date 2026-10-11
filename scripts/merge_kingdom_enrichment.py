@@ -39,7 +39,7 @@ TEXT_FIELDS = (
     "leaders",
     "religion",
     "culture",
-    "story",
+    # story/stories handled by merge_stories() — never str(list)
     "literature",
     "art",
     "ideas",
@@ -48,6 +48,8 @@ TEXT_FIELDS = (
     "philosophy",
     "science",
 )
+
+STORY_KEYS = ("stories", "story", "vignettes", "turningPoints", "turning_points")
 
 # Map contest aliases → canonical polity fields (never “interesting things”)
 FIELD_ALIASES = {
@@ -75,10 +77,115 @@ def load_json(path: Path):
 def clean_prose(text: str | None) -> str:
     if not text:
         return ""
+    # Never coerce structured story lists via str() — that yields Python repr dumps.
+    if isinstance(text, (list, dict)):
+        return ""
     s = str(text).strip()
     s = HEADING_RE.sub("", s)
     s = re.sub(r"\n{3,}", "\n\n", s)
     return s.strip()
+
+
+def _parse_stringified_story_list(raw: str):
+    """Parse JSON or Python-literal story arrays accidentally stored as strings."""
+    s = raw.strip()
+    if not s.startswith("["):
+        return None
+    try:
+        parsed = json.loads(s)
+        if isinstance(parsed, list):
+            return parsed
+    except json.JSONDecodeError:
+        pass
+    try:
+        import ast
+
+        parsed = ast.literal_eval(s)
+        if isinstance(parsed, list):
+            return parsed
+    except (ValueError, SyntaxError):
+        pass
+    return None
+
+
+def coerce_story_items(value) -> list[dict]:
+    """Normalize stories / vignettes / turning points into [{title, text}, ...]."""
+    if value is None:
+        return []
+    if isinstance(value, str):
+        t = value.strip()
+        if not t:
+            return []
+        parsed = _parse_stringified_story_list(t)
+        if parsed is not None:
+            return coerce_story_items(parsed)
+        # Plain prose blob — one untitled item
+        return [{"title": "", "text": clean_prose(t)}]
+    if isinstance(value, dict):
+        title = clean_prose(value.get("title") or value.get("name") or "")
+        text = clean_prose(
+            value.get("text")
+            or value.get("body")
+            or value.get("narrative")
+            or value.get("description")
+            or ""
+        )
+        return [{"title": title, "text": text}] if (title or text) else []
+    if isinstance(value, list):
+        out = []
+        seen = set()
+        for item in value:
+            for piece in coerce_story_items(item):
+                title = piece.get("title") or ""
+                text = piece.get("text") or ""
+                if not title and not text:
+                    continue
+                key = (title, text)
+                if key in seen:
+                    continue
+                seen.add(key)
+                entry = {"text": text}
+                if title:
+                    entry["title"] = title
+                out.append(entry)
+        return out
+    return []
+
+
+def merge_stories(*candidates) -> list[dict] | str:
+    """Prefer structured story cards; fall back to best plain-prose string."""
+    best_items: list[dict] = []
+    best_score = -1
+    best_prose = ""
+    best_prose_score = (0, 0, 0)
+    for c in candidates:
+        if c is None:
+            continue
+        if isinstance(c, list) or (
+            isinstance(c, str) and c.strip().startswith("[") and _parse_stringified_story_list(c)
+        ):
+            items = coerce_story_items(c)
+            score = sum(len(i.get("text") or "") + len(i.get("title") or "") for i in items)
+            if score > best_score:
+                best_score = score
+                best_items = items
+            continue
+        if isinstance(c, dict):
+            items = coerce_story_items(c)
+            score = sum(len(i.get("text") or "") + len(i.get("title") or "") for i in items)
+            if score > best_score:
+                best_score = score
+                best_items = items
+            continue
+        if isinstance(c, str):
+            t = clean_prose(c)
+            sc = score_text(t)
+            if sc > best_prose_score:
+                best_prose_score = sc
+                best_prose = t
+    if best_items:
+        return best_items
+    return best_prose
 
 
 def score_text(s: str) -> tuple:
@@ -193,12 +300,21 @@ def merge_polity(base: dict, *alts: dict) -> dict:
         *(s.get("images") for s in sources),
         *(s.get("photos") for s in sources),
     )
-    # stories alias → story
-    out["story"] = pick_text(
+    # stories / vignettes / turning points → structured cards (never str(list))
+    story_merged = merge_stories(
+        *(s.get(k) for s in sources for k in STORY_KEYS),
         out.get("story"),
-        *(s.get("stories") for s in sources),
-        *(s.get("story") for s in sources),
+        out.get("stories"),
     )
+    if isinstance(story_merged, list) and story_merged:
+        out["stories"] = story_merged
+        out["story"] = story_merged
+    elif isinstance(story_merged, str) and story_merged:
+        out["story"] = story_merged
+        out.pop("stories", None)
+    else:
+        out.pop("story", None)
+        out.pop("stories", None)
     # Keep structural fields from base; allow name/type/years/color upgrades if base empty
     for field in ("name", "type", "yearsActive", "color"):
         if not out.get(field):
