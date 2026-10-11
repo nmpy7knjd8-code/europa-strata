@@ -21,14 +21,15 @@ def apply_era(era: str) -> dict:
     for p in site.get("polities") or []:
         pid = p.get("id")
         cp = cidx.get(pid)
-        if not cp or not cp.get("extentsByTick"):
-            if pid not in cidx:
-                missing.append(pid)
+        if not cp:
+            missing.append(pid)
             continue
-        before = json.dumps(p.get("extentsByTick"), sort_keys=True)
-        after = json.dumps(cp["extentsByTick"], sort_keys=True)
+        # Empty extentsByTick = intentionally elided (e.g. kalmar-union@1400)
+        new_ext = deepcopy(cp.get("extentsByTick") or {})
+        before = json.dumps(p.get("extentsByTick") or {}, sort_keys=True)
+        after = json.dumps(new_ext, sort_keys=True)
         if before != after:
-            p["extentsByTick"] = deepcopy(cp["extentsByTick"])
+            p["extentsByTick"] = new_ext
             changed += 1
     # drop polities that cleaned elided entirely? keep site polities; only overlay extents
     # if cleaned dropped an extent tick key, overlay full extentsByTick already handles it
