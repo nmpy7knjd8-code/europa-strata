@@ -2444,6 +2444,7 @@ function renderDetail() {
       polityPanel.hidden = false;
       const kicker = $("#polity-panel-kicker");
       if (kicker) kicker.textContent = polity ? "Polity" : "Region";
+      polityPanel.dataset.scope = polity ? "polity" : "region";
       const placeName =
         polity?.name ||
         (state.selectedIso
