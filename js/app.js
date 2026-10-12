@@ -625,6 +625,70 @@ function ancestryMap(source) {
   return out;
 }
 
+/**
+ * Contextual label/definition for the catch-all "other" ancestry slice.
+ * Uses explicit region fields when present; otherwise derives honest residual
+ * hints from ancestryNote without inventing percentages.
+ */
+function resolveOtherMeta(region, baseKey = {}) {
+  const explicitLabel = String(
+    region?.otherLabel || region?.otherName || ""
+  ).trim();
+  const explicitDetail = String(
+    region?.otherDetail || region?.otherNote || ""
+  ).trim();
+  const note = String(region?.ancestryNote || "").trim();
+  const n = note.toLowerCase();
+
+  const hints = [];
+  if (/east eurasian|siber|nganasan/.test(n)) {
+    hints.push("East Eurasian / Siberian-related");
+  }
+  if (/eastern med|east med|imperial|levant/.test(n)) {
+    hints.push("eastern Mediterranean / imperial");
+  }
+  if (/north african|maghreb/.test(n)) hints.push("North African-related");
+  if (/\bchg\b|iran-related|iranian/.test(n)) hints.push("CHG / Iran-related");
+  if (/slavic/.test(n)) hints.push("Slavic-related residual");
+  if (/finnic|saami|\buralic\b/.test(n)) hints.push("Finnic / northern residual");
+  if (/turkic/.test(n)) hints.push("Turkic-related residual");
+  if (/local structure|poorly resolved|uncertain|model-dependent/.test(n)) {
+    hints.push("local / model-dependent residual");
+  }
+
+  const hintText = hints.length ? hints.join("; ") : "";
+  const full =
+    explicitLabel ||
+    hintText ||
+    baseKey.full ||
+    "Residual / unmodeled components";
+  let detail = explicitDetail;
+  if (!detail) {
+    const baseDetail =
+      baseKey.detail ||
+      "Residual ancestry outside the main WHG–EEF–WSH (and named) components — not a single deep Paleolithic cluster.";
+    if (hintText && note) {
+      detail = `Residual / unmodeled slice: ${hintText}. ${note}`;
+    } else if (note) {
+      detail = `Residual / unmodeled ancestry outside the main modeled components. ${note}`;
+    } else {
+      detail = baseDetail;
+    }
+  }
+
+  const shortHint = hints[0] || "residual / unmodeled";
+  return {
+    ...baseKey,
+    id: "other",
+    label: "Other",
+    displayLabel: explicitLabel
+      ? `Other · ${explicitLabel}`
+      : `Other · ${shortHint}`,
+    full,
+    detail,
+  };
+}
+
 function ancestryEntries(region, keys, source) {
   const a = ancestryMap(source || region.ancestry);
   const ranges = region.ancestryRange || {};
@@ -636,11 +700,15 @@ function ancestryEntries(region, keys, source) {
       if (Array.isArray(range) && range.length >= 2) {
         rangeLabel = `${Math.round(range[0])}–${Math.round(range[1])}%`;
       }
+      const meta =
+        k.id === "other" && (value > 0 || rangeLabel)
+          ? resolveOtherMeta(region, k)
+          : k;
       return {
-        ...k,
+        ...meta,
         value,
         rangeLabel,
-        detail: k.detail || k.full,
+        detail: meta.detail || meta.full,
       };
     })
     .filter((k) => k.value > 0 || k.rangeLabel);
@@ -1718,14 +1786,71 @@ function updateLegend() {
   }
 }
 
-function renderGlossary() {
+function glossaryIdForAncestryKey(id) {
+  return id === "steppe" ? "wsh" : id;
+}
+
+/** Genetic Terms — include contextual Other when the active mix has other > 0. */
+function renderGlossary(activeEntries) {
   const grid = $("#glossary-grid");
   if (!grid) return;
-  const items = state.data.meta.glossary || [];
+  const base = state.data.meta.glossary || [];
+  const keys = state.data.meta.ancestryKeys || [];
+  const otherKey = keys.find((k) => k.id === "other");
+  const byId = new Map(base.map((g) => [g.id, { ...g }]));
+
+  const otherEntry = (activeEntries || []).find(
+    (e) => e.id === "other" && (e.value > 0 || e.rangeLabel)
+  );
+  if (otherEntry || otherKey) {
+    byId.set("other", {
+      id: "other",
+      term: "Other",
+      name:
+        otherEntry?.full ||
+        otherKey?.full ||
+        "Residual / unmodeled components",
+      text:
+        otherEntry?.detail ||
+        otherKey?.detail ||
+        "Residual ancestry outside the main WHG–EEF–WSH components — eastern Mediterranean, East Eurasian, North African, CHG/Iran-related, or poorly resolved inputs depending on period and place.",
+    });
+  }
+
+  let items = base.map((g) => byId.get(g.id) || g);
+  if (byId.has("other") && !items.some((g) => g.id === "other")) {
+    items = items.concat([byId.get("other")]);
+  } else if (otherEntry) {
+    items = items.map((g) => (g.id === "other" ? byId.get("other") : g));
+  }
+
+  // When a place mix is active, surface present components first (Other included).
+  if (activeEntries?.length) {
+    const present = [];
+    const seen = new Set();
+    for (const e of activeEntries) {
+      const gid = glossaryIdForAncestryKey(e.id);
+      const g = byId.get(gid) || byId.get(e.id);
+      if (!g || seen.has(g.id)) continue;
+      seen.add(g.id);
+      present.push(g);
+    }
+    for (const g of items) {
+      if (!seen.has(g.id)) present.push(g);
+    }
+    items = present;
+  }
+
   grid.innerHTML = items
     .map(
       (g) =>
-        `<dl class="glossary-item"><dt><a class="glossary-link" href="ancestry.html#${escapeHtml(g.id)}">${escapeHtml(g.term)}</a> <span>· ${escapeHtml(g.name)}</span></dt><dd>${escapeHtml(g.text)}</dd></dl>`
+        `<dl class="glossary-item${
+          otherEntry && g.id === "other" ? " glossary-item--active" : ""
+        }"><dt><a class="glossary-link" href="ancestry.html#${escapeHtml(
+          g.id
+        )}">${escapeHtml(g.term)}</a> <span>· ${escapeHtml(
+          g.name
+        )}</span></dt><dd>${escapeHtml(g.text)}</dd></dl>`
     )
     .join("");
 }
@@ -2306,8 +2431,10 @@ function renderKingdomDetail() {
     modeEl.title = "";
   }
 
+  const cultureDescEl = $("#culture-desc");
+  if (cultureDescEl) cultureDescEl.hidden = false;
   setPlainText(
-    $("#culture-desc"),
+    cultureDescEl,
     polity ? polity.summary || "" : "Select a polity on the map or in the list below."
   );
 
@@ -2406,13 +2533,21 @@ function renderDetail() {
   setPlainText($("#culture-title"), horizon);
   const horizonEl = $("#culture-horizon");
   if (horizonEl) {
-    const first = horizon.split(" · ")[0];
-    horizonEl.textContent =
-      first && first !== region.culture
-        ? `Regional horizon · ${region.culture}`
-        : state.selectedIso && horizon !== region.culture
-          ? "Map layers here"
-          : "Cultural horizon";
+    // Never dump long `culture` prose here — that belongs in the Region panel
+    // below CONTINUITY (was duplicating Tumulus/Urnfield blurbs above the pill).
+    const shortLabel = (region.cultureLabel || "").trim();
+    const cultureIsShort =
+      region.culture && String(region.culture).trim().length <= 72
+        ? String(region.culture).trim()
+        : "";
+    const subtitle = shortLabel || cultureIsShort;
+    if (subtitle && horizon && subtitle !== horizon && !horizon.startsWith(subtitle)) {
+      horizonEl.textContent = `Regional horizon · ${subtitle}`;
+    } else if (state.selectedIso && subtitle && horizon !== subtitle) {
+      horizonEl.textContent = "Map layers here";
+    } else {
+      horizonEl.textContent = "Cultural horizon";
+    }
   }
   updateSelectionTip();
 
@@ -2429,7 +2564,10 @@ function renderDetail() {
       desc = `Map layers here: ${layerBits}. ${region.description}`;
     }
   }
-  setPlainText($("#culture-desc"), desc);
+  // culture-desc is filled after we know whether the Region panel will repeat it
+  const cultureDescEl = $("#culture-desc");
+  setPlainText(cultureDescEl, desc || "");
+  if (cultureDescEl) cultureDescEl.hidden = false;
 
   // Region panel — same field richness as kingdom tabs once full packs land
   const polityPanel = $("#polity-panel");
@@ -2467,6 +2605,22 @@ function renderDetail() {
         "—";
       setPlainText($("#polity-name"), placeName);
       setProseText($("#polity-summary"), longSummary || "");
+      // Drop the pre-CONTINUITY/side blurb when the Region panel already carries it
+      if (cultureDescEl && longSummary) {
+        const d = (desc || "").trim();
+        const s = longSummary.trim();
+        const same =
+          !d ||
+          d === s ||
+          (d.length > 40 && s.includes(d.slice(0, 80))) ||
+          (s.length > 40 && d.includes(s.slice(0, 80))) ||
+          (region?.description &&
+            s.includes(String(region.description).trim().slice(0, 80)));
+        if (same) {
+          setPlainText(cultureDescEl, "");
+          cultureDescEl.hidden = true;
+        }
+      }
       setPolityField("conflicts", cultureSource.conflicts || polity?.conflicts);
       setPolityField("leaders", cultureSource.leaders || polity?.leaders);
       setPolityField("religion", cultureSource.religion || polity?.religion);
@@ -2531,7 +2685,8 @@ function renderDetail() {
   $("#pie-list").innerHTML = entries
     .map((e) => {
       const pct = e.rangeLabel || `~${Math.round(e.value)}%`;
-      return `<li title="${escapeHtml(e.detail)}" style="--swatch:${escapeHtml(e.color)}"><strong>${escapeHtml(e.label)}</strong><span class="pct">${escapeHtml(pct)}</span></li>`;
+      const label = e.displayLabel || e.label;
+      return `<li title="${escapeHtml(e.detail)}" style="--swatch:${escapeHtml(e.color)}"><strong>${escapeHtml(label)}</strong><span class="pct">${escapeHtml(pct)}</span></li>`;
     })
     .join("");
   // Ensure legend stays empty / hidden
@@ -2541,6 +2696,7 @@ function renderDetail() {
   }
 
   renderAncestryCline(region, keys);
+  renderGlossary(entries);
   highlightCultureChips();
 }
 
@@ -2821,7 +2977,7 @@ function bindUI() {
 async function loadKingdomPack(id) {
   try {
     // Cache-bust so refined research geometry packs reload after deploy
-    const r = await fetch(`data/kingdom-eras/${id}.json?v=era-ui-49`);
+    const r = await fetch(`data/kingdom-eras/${id}.json?v=era-ui-50`);
     if (!r.ok) return null;
     const raw = await r.json();
     return normalizeKingdomPack(raw);
@@ -2842,7 +2998,7 @@ async function init() {
       loadKingdomPack(id).then((pack) => [id, pack])
     );
     const [timeline, geo, keyEvents, packEntries] = await Promise.all([
-      fetch("data/timeline.json?v=era-ui-49").then((r) => {
+      fetch("data/timeline.json?v=era-ui-50").then((r) => {
         if (!r.ok) throw new Error("timeline");
         return r.json();
       }),

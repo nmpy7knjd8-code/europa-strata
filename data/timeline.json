@@ -48,9 +48,9 @@
       {
         "id": "other",
         "label": "Other",
-        "full": "Later / regional / eastern Mediterranean / uncertain",
+        "full": "Residual / unmodeled components",
         "color": "#6a6a6a",
-        "detail": "Catch-all for eastern Mediterranean, East Eurasian, North African, or poorly resolved medieval/modern inputs — not a deep Paleolithic cluster."
+        "detail": "Catch-all residual outside the main WHG–EEF–WSH (and named) components — eastern Mediterranean, East Eurasian, North African, CHG/Iran-related, Slavic/Finnic/Turkic, or poorly resolved inputs depending on period and place. Not a single deep Paleolithic cluster."
       }
     ],
     "modeLegend": {
@@ -176,6 +176,12 @@
         "term": "CHG",
         "name": "Caucasus Hunter-Gatherers",
         "text": "c. 13,000–5,000 BCE. Caucasus forager-related ancestry; usually modeled inside the steppe (WSH) cline rather than as a free European component."
+      },
+      {
+        "id": "other",
+        "term": "Other",
+        "name": "Residual / unmodeled components",
+        "text": "Gray “Other” in the ancestry mix is residual ancestry outside the main WHG–EEF–WSH (and named) components — eastern Mediterranean, East Eurasian, North African, CHG/Iran-related, or poorly resolved inputs depending on period and place. Not a single deep Paleolithic cluster; the side note under Ancestry mix names what that residual stands for when known."
       }
     ],
     "linkAliases": [

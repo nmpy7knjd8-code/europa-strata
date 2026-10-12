@@ -1663,6 +1663,14 @@ body.lightbox-open {
   margin: 0;
 }
 
+.glossary-item--active dt {
+  color: var(--ink);
+}
+
+.glossary-item--active dd {
+  color: var(--ink-mute);
+}
+
 .glossary-item dt {
   margin: 0;
   font-size: 0.8rem;
