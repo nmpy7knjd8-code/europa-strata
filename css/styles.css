@@ -44,15 +44,23 @@ html[data-theme="dark"] {
   box-sizing: border-box;
 }
 
-html,
-body {
+/* Document/window scroll (not a nested body scroller) so iOS Safari
+   status-bar tap-to-top works. height:100% + body overflow-y:auto breaks it. */
+html {
   margin: 0;
-  height: 100%;
+  height: auto;
+  min-height: 100%;
   max-width: 100%;
   overflow-x: clip;
+  overflow-y: auto;
+  overscroll-behavior-y: auto;
 }
 
 body {
+  margin: 0;
+  height: auto;
+  min-height: 100%;
+  max-width: 100%;
   color: var(--ink);
   font-family: var(--font-ui);
   font-size: 16px;
@@ -60,7 +68,7 @@ body {
   line-height: 1.5;
   background: var(--bg);
   overflow-x: clip;
-  overflow-y: auto;
+  overflow-y: visible;
   padding-bottom: env(safe-area-inset-bottom, 0);
   -webkit-font-smoothing: antialiased;
 }
@@ -1315,7 +1323,8 @@ body.lightbox-open {
 
 .side-detail {
   padding: 1rem 1.25rem 1.25rem;
-  overflow: auto;
+  /* Participate in document scroll — nested overflow breaks iOS tap-to-top */
+  overflow: visible;
   min-height: 0;
   flex: 1;
 }
@@ -1601,15 +1610,15 @@ body.lightbox-open {
   grid-area: below;
   border-top: 1px solid var(--line);
   background: var(--bg);
-  max-height: 96px;
+  max-height: none;
 }
 
 .glossary {
   grid-area: gloss;
   border-top: 1px solid var(--line);
   background: var(--bg);
-  max-height: 140px;
-  overflow: auto;
+  max-height: none;
+  overflow: visible;
 }
 
 .glossary-inner {
@@ -1705,8 +1714,8 @@ body.lightbox-open {
   flex-wrap: wrap;
   gap: 0.25rem 0.65rem;
   margin-top: 0.2rem;
-  max-height: 56px;
-  overflow: auto;
+  max-height: none;
+  overflow: visible;
 }
 
 .culture-chip {
