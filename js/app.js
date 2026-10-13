@@ -298,7 +298,8 @@ function v2TickFromTopo(topo, obj, raw, colors) {
     mapLayers,
     polities,
     geo: { type: "FeatureCollection", features },
-    borders: topojson.mesh(topo, obj, (a, b) => a !== b),
+    // all arcs: shared borders + coastlines, one line like Deep-time
+    borders: topojson.mesh(topo, obj),
     approxBorders: topojson.mesh(
       topo,
       obj,

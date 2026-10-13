@@ -2997,3 +2997,23 @@ body.page-ancestry {
 .key-events[hidden] {
   display: none !important;
 }
+
+/* ═══ One border standard for every tab: thin solid black, constant across zoom ═══ */
+:root {
+  --border-line: #000;
+  --border-width: 0.5px;
+}
+.app[data-atlas-mode="deep-time"] .country,
+.app[data-atlas-mode="deep-time"] .coastline {
+  stroke: var(--border-line);
+  vector-effect: non-scaling-stroke;
+}
+.app[data-atlas-mode="deep-time"] .country:not(.is-active):not(.is-hover):not(:hover),
+.app[data-atlas-mode="deep-time"] .coastline {
+  stroke-width: var(--border-width);
+  stroke-opacity: 1;
+}
+.polity-border {
+  stroke: var(--border-line) !important;
+  stroke-width: var(--border-width) !important;
+}
