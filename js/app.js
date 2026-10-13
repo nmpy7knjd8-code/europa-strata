@@ -1072,6 +1072,12 @@ function initMap({ preserveZoom = true } = {}) {
     .attr("preserveAspectRatio", "xMidYMid meet");
 
   state.svg = svg;
+  // Tap/click on open sea (not a polity) clears the kingdom selection
+  svg.on("click.clearsel", (event) => {
+    if (event.defaultPrevented) return;
+    if (event.target?.closest?.("path.polity")) return;
+    clearPolitySelection();
+  });
   state.mapPixelSize = { w, h };
 
   const projection = d3.geoAzimuthalEqualArea();
@@ -1454,11 +1460,23 @@ function selectPolity(polityId, { scrollDetail = false } = {}) {
   renderDetail();
   highlightCultureChips();
   updateSelectionTip();
+  renderKeyEvents();
   if (scrollDetail) {
     requestAnimationFrame(() => {
       $("#detail")?.scrollIntoView({ behavior: "smooth", block: "start" });
     });
   }
+}
+
+/** Clear the kingdom-mode place selection (hides Key events again). */
+function clearPolitySelection() {
+  if (!isKingdomMode() || !state.selectedPolityId) return;
+  state.selectedPolityId = null;
+  applyPolitySelectionClass();
+  renderDetail();
+  highlightCultureChips();
+  updateSelectionTip();
+  renderKeyEvents();
 }
 
 function paintMap(animate = true) {
@@ -1483,7 +1501,7 @@ function paintMap(animate = true) {
       const v2 = Boolean(currentPeriod()?.v2);
       const opacity = style.fill
         ? v2
-          ? 0.92
+          ? 1
           : Math.min(0.62, Math.max(0.32, style.opacity * 0.78))
         : 0;
       const visible = Boolean(style.fill);
@@ -1869,9 +1887,8 @@ function currentKeyEvents() {
       : [];
   }
   const region = currentPlaceRegion();
-  const list = region
-    ? pool.filter((e) => (e.regions || []).includes(region) || (e.regions || []).length === 0)
-    : pool.slice();
+  // Place-only: no Europe-wide fallback; nothing without a selected place
+  const list = region ? pool.filter((e) => (e.regions || []).includes(region)) : [];
   const seen = new Set();
   return list
     .filter((e) => {
@@ -1935,11 +1952,19 @@ function renderKeyEvents() {
   if (!section || !listEl || !state.data) return;
   const period = currentPeriod();
   const region = currentPlaceRegion();
+  const placeSelected = isKingdomMode()
+    ? Boolean(state.selectedPolityId)
+    : Boolean(state.selectedIso || state.selectedRegion);
+  if (!placeSelected) {
+    section.hidden = true;
+    listEl.innerHTML = "";
+    return;
+  }
   const events = currentKeyEvents();
   const ctx = $("#key-events-context");
   if (ctx) {
     const when = period ? shortPeriodName(period) : "";
-    const where = region ? REGION_LABELS[region] || region : "All of Europe";
+    const where = region ? REGION_LABELS[region] || region : "";
     ctx.textContent = [when, where].filter(Boolean).join(" · ");
   }
   const empty = $("#key-events-empty");
@@ -2529,6 +2554,10 @@ function bindLightboxUi() {
       caption: btn.getAttribute("data-caption") || "",
       alt: btn.getAttribute("data-alt") || "",
     });
+  });
+  document.addEventListener("keydown", (e) => {
+    const lb = $("#image-lightbox");
+    if (e.key === "Escape" && (!lb || lb.hidden)) clearPolitySelection();
   });
   document.addEventListener("keydown", (e) => {
     const root = $("#image-lightbox");

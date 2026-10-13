@@ -2961,26 +2961,30 @@ body.page-ancestry {
 .polities.is-v2 .polity.is-extra {
   cursor: default;
 }
+/* Selection/hover never add per-polity strokes: one shared mesh is the only line */
+.polities.is-v2 .polity,
+.polities.is-v2 .polity:hover,
+.polities.is-v2 .polity.is-hover,
+.polities.is-v2 .polity.is-active {
+  stroke: none !important;
+}
 .polities.is-v2 .polity:hover,
 .polities.is-v2 .polity.is-hover {
-  stroke: var(--ink);
-  stroke-opacity: 0.55;
-  stroke-width: 0.9;
+  filter: brightness(1.06);
 }
 .polities.is-v2 .polity.is-active {
-  stroke: var(--ink);
-  stroke-opacity: 1;
-  stroke-width: 1.35;
+  filter: brightness(1.12) saturate(1.1);
 }
-.polity-border,
-.polity-border-approx {
-  fill: none;
-  stroke: var(--land-base);
-  stroke-width: 0.8;
-  stroke-opacity: 0.95;
+.polity-border {
+  fill: none !important;
+  stroke: #fff !important;
+  stroke-width: 0.75px !important;
+  stroke-opacity: 1 !important;
+  stroke-dasharray: none !important;
   stroke-linejoin: round;
   stroke-linecap: round;
   vector-effect: non-scaling-stroke;
+  pointer-events: none;
 }
 
 .approx-note {
@@ -2988,4 +2992,8 @@ body.page-ancestry {
   color: var(--muted, #9a958c);
   opacity: 0.7;
   letter-spacing: 0.02em;
+}
+
+.key-events[hidden] {
+  display: none !important;
 }

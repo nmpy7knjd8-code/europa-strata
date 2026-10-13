@@ -79,6 +79,41 @@ def ext_geom(ext):
         return {"type": "Polygon", "coordinates": [rings]}
     return {"type": "Polygon", "coordinates": rings}
 
+def tile(feats, land):
+    """Make features disjoint and cover all land: no background shows through."""
+    order = sorted(range(len(feats)), key=lambda i: (bool(feats[i]["properties"].get("extra")), bool(feats[i]["properties"].get("approx"))))
+    taken, geoms = None, {}
+    for i in order:
+        g = polys_only(shape(feats[i]["geometry"]))
+        if taken is not None:
+            g = polys_only(g.difference(taken))
+        geoms[i] = g
+        if not g.is_empty:
+            taken = g if taken is None else unary_union([taken, g])
+    gaps = polys_only(land.difference(taken)) if taken is not None else land
+    for gp in (getattr(gaps, "geoms", [gaps]) if not gaps.is_empty else []):
+        gb = gp.buffer(0.03)
+        best, bv = None, 0
+        for i, g in geoms.items():
+            if g.is_empty:
+                continue
+            v = gb.intersection(g).area
+            if v > bv:
+                best, bv = i, v
+        if best is not None:
+            geoms[best] = polys_only(unary_union([geoms[best], gp]))
+        elif gp.area > 2e-3:
+            feats.append({"type": "Feature", "properties": {"polityId": "", "name": "", "extra": 1}, "geometry": mapping(gp)})
+            geoms[len(feats) - 1] = gp
+    out = []
+    for i, f in enumerate(feats):
+        g = geoms.get(i)
+        if g is None or g.is_empty:
+            continue
+        f["geometry"] = mapping(g)
+        out.append(f)
+    return out
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--hb", required=True)
@@ -227,12 +262,14 @@ def main():
                 r["source"] = f"historical-basemaps world_{fy}"
                 r["unmatchedDatasetNames"] = sorted(set(n for n in unmatched))
                 r["politiesWithoutDatasetGeometry"] = missing
+            feats = tile(feats, land)
             fp = tmp / f"y{y}.json"
             fp.write_text(json.dumps({"type": "FeatureCollection", "features": feats}))
             layer_files.append(str(fp))
         out = out_dir / f"{era}.topo.json"
         cmd = ["npx", "--yes", "mapshaper", "-i", *layer_files, "combine-files",
-               "-clean", "-simplify", "8%", "keep-shapes", "planar", "-filter-slivers", "min-area=40km2",
+               "-clean", "target=*", "-simplify", "8%", "keep-shapes", "planar",
+               "-clean", "target=*", "gap-fill-area=500km2", "-filter-islands", "target=*", "min-area=40km2",
                "-o", str(out), "format=topojson", "quantization=100000"]
         subprocess.run(cmd, check=True)
         print(era, out.stat().st_size // 1024, "KB")
