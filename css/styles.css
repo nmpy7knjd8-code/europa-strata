@@ -2933,3 +2933,9 @@ body.page-ancestry {
 html[data-theme="dark"] .polity-border-approx {
   stroke: rgba(255, 245, 230, 0.5);
 }
+.approx-note {
+  font-size: 10px;
+  color: var(--muted, #9a958c);
+  opacity: 0.7;
+  letter-spacing: 0.02em;
+}

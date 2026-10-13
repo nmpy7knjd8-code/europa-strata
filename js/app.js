@@ -141,7 +141,7 @@ const ERA_PALETTE = [
 ];
 const ERA_NEUTRAL = "#e4ded3";
 const V2_ATTRIBUTION =
-  "Borders: historical-basemaps © A. Ourednik (GPL-3.0), clipped to Natural Earth coasts. Dashed outlines are approximate hand-drawn extents.";
+  "Borders: historical-basemaps © A. Ourednik (GPL-3.0) · coasts: Natural Earth.";
 
 /** Greedy colouring so neighbouring polities never share a colour (stable per era). */
 function eraPolityColors(topo, polityIds) {
@@ -1982,10 +1982,13 @@ function updateLegend() {
     const base = isKingdomMode()
       ? pack?.mapAttribution || state.data?.meta?.mapAttribution || ""
       : state.data?.meta?.mapAttribution || "";
-    attr.textContent =
-      isKingdomMode() && period?.approxTick
-        ? `${base} ${period.yearApprox}: no dataset map for this year — approximate hand-drawn outlines.`
-        : base;
+    attr.textContent = base;
+    if (isKingdomMode() && period?.approxTick) {
+      const note = document.createElement("span");
+      note.className = "approx-note";
+      note.textContent = " · approx. borders";
+      attr.appendChild(note);
+    }
   }
 }
 
@@ -2623,6 +2626,12 @@ function renderKingdomDetail() {
       horizonEl.textContent = bits.length
         ? bits.join(" · ")
         : "Kingdom / empire";
+      if (packFeat?.properties?.approx) {
+        const note = document.createElement("span");
+        note.className = "approx-note";
+        note.textContent = " · approx. borders";
+        horizonEl.appendChild(note);
+      }
     }
   }
   updateSelectionTip();
