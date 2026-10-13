@@ -1,5 +1,7 @@
 # Archaeogenetic sources — Europa Strata
 
+> The rendered, DOI-checked bibliography is [sources.html](sources.html). This file is a working note.
+
 Short working bibliography for the interactive map. Prefer post-2015 genome-wide studies and recent syntheses. Percentages in the UI are **approximate consensus ranges**; models differ by qpAdm setup, reference panels, and regional sampling. Archaeological culture names are not genetic clusters.
 
 The atlas covers **Mesolithic → present**, including Nordic Bronze Age, Wielbark, Frankish/Carolingian, and later empires. For historical polities after ~500 BCE, genetics usually means **continuity of the WHG–EEF–steppe ternary** plus documented medieval/imperial admixture — not invented empire-specific components.
