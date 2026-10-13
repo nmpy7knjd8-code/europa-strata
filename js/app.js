@@ -1423,6 +1423,10 @@ function syncKingdomPolityLayer({ force = false } = {}) {
       .attr("d", (d) => state.path(d.g));
   }
   state.svg.select("g.polities").classed("is-v2", Boolean(period?.v2));
+  // v2 geometry is pre-clipped to land in the build; the per-country clipPath
+  // would re-open hairline seams between Natural Earth countries, so drop it.
+  state.svg.selectAll("g.polities, g.polity-borders")
+    .attr("clip-path", period?.v2 ? null : "url(#polity-clip)");
   state.svg.select("g.polities")
     .selectAll("path.polity")
     .classed("is-extra", (d) => Boolean(d.properties.extra));

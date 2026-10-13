@@ -14,7 +14,7 @@ Usage: python3 scripts/build_era_maps_v2.py --hb /path/to/historical-basemaps/ge
 """
 import argparse, json, math, re, subprocess, sys, tempfile, unicodedata
 from pathlib import Path
-from shapely.geometry import shape, mapping, box
+from shapely.geometry import Polygon, shape, mapping, box
 from shapely.ops import unary_union
 from shapely.validation import make_valid
 
@@ -122,6 +122,11 @@ def main():
     hb = Path(a.hb)
     land = fix(unary_union([fix(shape(f["geometry"])) for f in
                             json.loads((REPO / "data/europe.geojson").read_text())["features"]])).intersection(BBOX)
+    # close hairline seams between Natural Earth countries and drop small
+    # interior holes, so polities clipped to land never show background
+    land = fix(land.buffer(0.03, join_style=2).buffer(-0.03, join_style=2).union(land))
+    land = unary_union([Polygon(pg.exterior, [r for r in pg.interiors if Polygon(r).area > 0.3])
+                        for pg in getattr(land, "geoms", [land])])
     out_dir = REPO / "data" / "kingdom-eras" / "geo"
     out_dir.mkdir(parents=True, exist_ok=True)
     report = {}
