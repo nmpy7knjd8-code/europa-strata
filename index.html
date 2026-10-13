@@ -9,36 +9,43 @@
       content="Interactive real map of European cultures, empires, archaeogenetics, and languages from the Mesolithic to now."
     />
     <meta name="theme-color" content="#f4f4f4" />
+    <meta name="build" content="combined-1" />
     <meta name="apple-mobile-web-app-title" content="Europa Strata" />
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png?v=icon-zoom-1" />
     <link rel="icon" href="favicon.ico?v=icon-zoom-1" sizes="any" />
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png?v=icon-zoom-1" />
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png?v=icon-zoom-1" />
-    <link rel="manifest" href="site.webmanifest?v=era-ui-52" />
+    <link rel="manifest" href="site.webmanifest?v=combined-1" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Sora:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/styles.css?v=era-maps-v2" />
+    <link rel="stylesheet" href="css/styles.css?v=combined-1" />
     <script>
-      /* Clear legacy layout-override keys from older builds */
+      /* Apply saved theme before first paint; clear legacy layout keys */
       try {
+        var t = localStorage.getItem("europa-strata-theme");
+        if (t === "dark" || t === "light") {
+          document.documentElement.setAttribute("data-theme", t);
+          if (t === "dark") document.querySelector('meta[name="theme-color"]').setAttribute("content", "#111111");
+        }
         localStorage.removeItem("europa-strata-layout-override");
         localStorage.removeItem("europa-strata-layout");
       } catch (_) {}
     </script>
     <script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/topojson-client@3.1.0/dist/topojson-client.min.js" defer></script>
-    <script src="js/app.js?v=era-maps-v2" defer></script>
+    <script src="js/app.js?v=combined-1" defer></script>
   </head>
   <body>
     <div class="app" data-atlas-mode="deep-time">
-      <nav class="atlas-tabs" id="atlas-tabs" aria-label="Atlas era">
+      <nav class="atlas-tabs" id="atlas-tabs" role="tablist" aria-label="Atlas era">
         <button
           type="button"
           class="atlas-tab"
+          role="tab"
           data-mode="high-medieval"
           aria-selected="false"
         >
@@ -47,6 +54,7 @@
         <button
           type="button"
           class="atlas-tab"
+          role="tab"
           data-mode="renaissance"
           aria-selected="false"
         >
@@ -55,6 +63,7 @@
         <button
           type="button"
           class="atlas-tab is-active"
+          role="tab"
           data-mode="deep-time"
           aria-selected="true"
         >
@@ -63,22 +72,18 @@
         <button
           type="button"
           class="atlas-tab"
+          role="tab"
           data-mode="early-modern"
           aria-selected="false"
-          hidden
-          disabled
-          title="Pack loading…"
         >
           Early Modern
         </button>
         <button
           type="button"
           class="atlas-tab"
+          role="tab"
           data-mode="modern"
           aria-selected="false"
-          hidden
-          disabled
-          title="Pack loading…"
         >
           Modern
         </button>
@@ -134,6 +139,11 @@
         <p class="kicker">Map key</p>
         <div class="map-legend" id="map-legend"></div>
         <p class="map-attr" id="map-attr"></p>
+        <section class="key-events key-events--below" id="key-events" aria-labelledby="key-events-heading">
+          <p class="kicker" id="key-events-heading">Key events <span class="key-events-context" id="key-events-context"></span></p>
+          <ul class="key-events-list" id="key-events-list" aria-live="polite"></ul>
+          <p class="key-events-empty" id="key-events-empty" hidden>No recorded events for this time and place.</p>
+        </section>
       </div>
 
       <aside class="side">
@@ -142,10 +152,6 @@
           <p class="kicker period-eyebrow" id="period-era">—</p>
           <p class="period-copy" id="period-copy"></p>
           <p class="period-ling" id="period-ling" hidden></p>
-          <section class="key-events" id="period-key-events" hidden>
-            <p class="kicker">Key events</p>
-            <ul class="key-events-list" id="period-key-events-list"></ul>
-          </section>
         </div>
 
         <div class="side-detail" id="detail">
@@ -157,10 +163,6 @@
             Select a place on the map to see culture, ancestry, and language for this period.
           </p>
 
-          <section class="key-events key-events--place" id="place-key-events" hidden>
-            <p class="kicker">Key events here</p>
-            <ul class="key-events-list" id="place-key-events-list"></ul>
-          </section>
 
           <div class="polity-panel" id="polity-panel" hidden>
             <p class="kicker" id="polity-panel-kicker">Polity</p>
@@ -242,7 +244,6 @@
             <p class="kicker">Ancestry mix</p>
             <p class="ancestry-mid-label" id="ancestry-mid-label" hidden>Regional midpoint</p>
             <div class="stack-bar" id="stack-bar"></div>
-            <div class="legend" id="ancestry-legend" hidden aria-hidden="true"></div>
             <div class="pie-wrap">
               <div class="pie" id="pie" aria-hidden="true"></div>
               <ul class="pie-list" id="pie-list"></ul>

@@ -12,8 +12,30 @@ function escapeHtml(s) {
     .replace(/"/g, "&quot;");
 }
 
+const BUILD =
+  document.querySelector('meta[name="build"]')?.getAttribute("content") || "dev";
+const withV = (url) => `${url}?v=${encodeURIComponent(BUILD)}`;
+
+function storageGet(key) {
+  try {
+    return localStorage.getItem(key);
+  } catch (_) {
+    return null;
+  }
+}
+function storageSet(key, value) {
+  try {
+    localStorage.setItem(key, value);
+  } catch (_) {}
+}
+
+function syncThemeColor() {
+  const dark = document.documentElement.getAttribute("data-theme") === "dark";
+  document.querySelector('meta[name="theme-color"]')?.setAttribute("content", dark ? "#111111" : "#f4f4f4");
+}
+
 function initTheme() {
-  const saved = localStorage.getItem("europa-strata-theme");
+  const saved = storageGet("europa-strata-theme");
   if (saved === "dark" || saved === "light") {
     document.documentElement.setAttribute("data-theme", saved);
   }
@@ -21,7 +43,8 @@ function initTheme() {
     const html = document.documentElement;
     const next = html.getAttribute("data-theme") === "dark" ? "light" : "dark";
     html.setAttribute("data-theme", next);
-    localStorage.setItem("europa-strata-theme", next);
+    storageSet("europa-strata-theme", next);
+    syncThemeColor();
   });
 }
 
@@ -205,14 +228,14 @@ function renderPage(data, geo) {
 
   data.components.forEach((c) => {
     const el = host.querySelector(`[data-map="${c.id}"]`);
-    if (el) paintMiniMap(el, geo, c);
+    if (el) safePaint(el, geo, c);
   });
 
   // Re-fit maps after layout (sticky/column widths settle)
   requestAnimationFrame(() => {
     data.components.forEach((c) => {
       const el = host.querySelector(`[data-map="${c.id}"]`);
-      if (el) paintMiniMap(el, geo, c);
+      if (el) safePaint(el, geo, c);
     });
     honorHash();
   });
@@ -224,6 +247,18 @@ function renderPage(data, geo) {
     },
     { passive: true }
   );
+}
+
+function safePaint(el, geo, c) {
+  if (!geo || typeof d3 === "undefined") {
+    el.textContent = "Map unavailable.";
+    return;
+  }
+  try {
+    paintMiniMap(el, geo, c);
+  } catch (_) {
+    el.textContent = "Map unavailable.";
+  }
 }
 
 function honorHash() {
@@ -248,20 +283,29 @@ async function init() {
 
   try {
     const [data, geo] = await Promise.all([
-      fetch("data/ancestry.json").then((r) => {
+      fetch(withV("data/ancestry.json")).then((r) => {
         if (!r.ok) throw new Error("ancestry");
         return r.json();
       }),
-      fetch("data/europe.geojson").then((r) => {
-        if (!r.ok) throw new Error("geo");
-        return r.json();
-      }),
+      // Text still renders if the basemap fails; mini-maps show a placeholder
+      fetch(withV("data/europe.geojson"))
+        .then((r) => (r.ok ? r.json() : null))
+        .catch(() => null),
     ]);
     renderPage(data, geo);
   } catch (err) {
-    console.error(err);
-    $("#anc-intro").textContent =
-      "Could not load ancestry guides. Serve this folder over HTTP.";
+    const intro = $("#anc-intro");
+    intro.textContent = "Could not load the ancestry guides. Check your connection and ";
+    const a = document.createElement("a");
+    a.href = location.href;
+    a.textContent = "try again";
+    intro.appendChild(a);
+    intro.appendChild(document.createTextNode(", or see the "));
+    const b = document.createElement("a");
+    b.href = "./sources.html";
+    b.textContent = "sources";
+    intro.appendChild(b);
+    intro.appendChild(document.createTextNode("."));
   }
 }
 
