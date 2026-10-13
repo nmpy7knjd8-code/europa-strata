@@ -1,0 +1,15 @@
+Kingdom-era border geometry in data/kingdom-eras/geo/*.topo.json is derived from
+
+  historical-basemaps — Andre Ourednik
+  https://github.com/aourednik/historical-basemaps
+
+which is licensed under the GNU General Public License v3.0 (GPL-3.0).
+The derived files (clipped to Europe, snapped to Natural Earth coastlines,
+re-assigned to Europa Strata polity ids, simplified with mapshaper) are
+distributed under the same GPL-3.0 terms. Full licence text:
+https://www.gnu.org/licenses/gpl-3.0.txt
+
+Coastlines / land: Natural Earth (public domain).
+Years without a dataset map (1450, 1750, 1871, 1990) and polities missing from
+the dataset use Europa Strata's own hand-drawn approximate outlines (dashed).
+Build: scripts/build_era_maps_v2.py (+ scripts/era_maps_v2_overrides.json).

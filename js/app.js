@@ -134,7 +134,140 @@ function extentToGeometry(ext) {
  * - App/scaffold: { periods, geo }
  * - Research: { ticks, polities[].extentsByTick }
  */
-function normalizeKingdomPack(raw) {
+/* Deep-time-inspired earth palette shared by all kingdom-era tabs */
+const ERA_PALETTE = [
+  "#a8705a", "#c49a6c", "#7d8a6a", "#8a6a4f", "#b4a07a", "#6f7f8c",
+  "#9b7b6f", "#c3aa8a", "#8f5a4a", "#a3936b", "#5f6f5f", "#b98f74",
+];
+const ERA_NEUTRAL = "#e4ded3";
+const V2_ATTRIBUTION =
+  "Borders: historical-basemaps © A. Ourednik (GPL-3.0), clipped to Natural Earth coasts. Dashed outlines are approximate hand-drawn extents.";
+
+/** Greedy colouring so neighbouring polities never share a colour (stable per era). */
+function eraPolityColors(topo, polityIds) {
+  const adj = new Map(polityIds.map((id) => [id, new Set()]));
+  for (const obj of Object.values(topo.objects || {})) {
+    const geoms = obj.geometries || [];
+    let nb = [];
+    try {
+      nb = topojson.neighbors(geoms);
+    } catch (_) {
+      nb = [];
+    }
+    geoms.forEach((g, i) => {
+      const a = g.properties?.polityId;
+      if (!a || !adj.has(a)) return;
+      for (const j of nb[i] || []) {
+        const b = geoms[j].properties?.polityId;
+        if (b && b !== a && adj.has(b)) {
+          adj.get(a).add(b);
+          adj.get(b).add(a);
+        }
+      }
+    });
+  }
+  const order = [...polityIds].sort((a, b) => adj.get(b).size - adj.get(a).size);
+  const colors = {};
+  for (const id of order) {
+    const used = new Set([...adj.get(id)].map((n) => colors[n]).filter(Boolean));
+    let h = 0;
+    for (const ch of id) h = (h * 31 + ch.charCodeAt(0)) >>> 0;
+    let pick = null;
+    for (let k = 0; k < ERA_PALETTE.length; k++) {
+      const c = ERA_PALETTE[(h + k) % ERA_PALETTE.length];
+      if (!used.has(c)) {
+        pick = c;
+        break;
+      }
+    }
+    colors[id] = pick || ERA_PALETTE[h % ERA_PALETTE.length];
+  }
+  return colors;
+}
+
+function polityPanel(p) {
+  return {
+    name: p.name,
+    type: p.type,
+    yearsActive: p.yearsActive,
+    summary: p.description || "",
+    description: p.description || "",
+    conflicts: p.conflicts || "",
+    leaders: p.leaders || "",
+    religion: p.religion || "",
+    culture: p.culture || "",
+    story: p.stories || p.story || "",
+    stories: p.stories || p.story || null,
+    literature: p.literature || "",
+    art: p.art || "",
+    ideas: p.ideas || "",
+    artIdeas: p.artIdeas || p.artAndIdeas || "",
+    philosophy: p.philosophy || "",
+    science: p.science || "",
+    images: p.images || null,
+  };
+}
+
+/** Build one tick's layers/panels/geo from the era TopoJSON. */
+function v2TickFromTopo(topo, obj, raw, colors) {
+  const byId = new Map(raw.polities.map((p) => [p.id, p]));
+  const fc = topojson.feature(topo, obj);
+  const mapLayers = [];
+  const polities = {};
+  const features = [];
+  let approxCount = 0;
+  fc.features.forEach((f, i) => {
+    const props = f.properties || {};
+    const p = props.polityId ? byId.get(props.polityId) : null;
+    if (props.approx) approxCount++;
+    if (p) {
+      if (!polities[p.id]) {
+        polities[p.id] = polityPanel(p);
+        mapLayers.push({
+          polityId: p.id,
+          id: p.id,
+          label: p.name,
+          color: colors[p.id] || p.color || "#8a7a6a",
+          role: "dominant",
+        });
+      }
+      features.push({
+        type: "Feature",
+        properties: { polityId: p.id, name: p.name, type: p.type || "", approx: !!props.approx },
+        geometry: f.geometry,
+      });
+    } else {
+      const name = String(props.name || "").trim() || "Unnamed territory";
+      const xid = `x-${i}-${name.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`;
+      polities[xid] = {
+        name,
+        type: "Other polity",
+        summary: `${name} — shown from the historical-basemaps dataset; no Europa Strata profile yet.`,
+        description: "",
+      };
+      mapLayers.push({ polityId: xid, id: xid, label: name, color: ERA_NEUTRAL, role: "dominant", extra: true });
+      features.push({
+        type: "Feature",
+        properties: { polityId: xid, name, type: "", extra: true },
+        geometry: f.geometry,
+      });
+    }
+  });
+  return {
+    mapLayers,
+    polities,
+    geo: { type: "FeatureCollection", features },
+    borders: topojson.mesh(topo, obj, (a, b) => a !== b),
+    approxBorders: topojson.mesh(
+      topo,
+      obj,
+      (a, b) => Boolean(a.properties?.approx || b.properties?.approx)
+    ),
+    approxTick: approxCount > 0 && approxCount === fc.features.length,
+  };
+}
+
+function normalizeKingdomPack(raw, topo = null) {
   if (!raw) return null;
   if (Array.isArray(raw.periods) && (raw.geo || raw.periods.some((p) => p.geo))) {
     return {
@@ -156,6 +289,8 @@ function normalizeKingdomPack(raw) {
   if (!Array.isArray(raw.polities) || !Array.isArray(raw.ticks)) return raw;
 
   const id = raw.tabId || raw.id || "kingdom";
+  const v2 = Boolean(topo && window.topojson);
+  const v2Colors = v2 ? eraPolityColors(topo, raw.polities.map((p) => p.id)) : null;
   const label = raw.tabLabel || raw.label || "Kingdom era";
   const periods = raw.ticks.map((tick) => {
     const year = tick.year ?? tick.yearApprox;
@@ -177,6 +312,27 @@ function normalizeKingdomPack(raw) {
       tick.description ||
       ""
     ).trim();
+    const v2Obj = v2 ? topo.objects?.[`y${year}`] : null;
+    if (v2Obj) {
+      const t = v2TickFromTopo(topo, v2Obj, raw, v2Colors);
+      return {
+        id: `${id}-${year}`,
+        yearApprox: year,
+        yearLabel: `${year} AD`,
+        label: periodName,
+        tickYear: `${year} AD`,
+        era: tickEyebrow || label,
+        narrative: tickNarrative || raw.narrative || raw.notes || "",
+        culturesNote: tickEyebrow || "",
+        mapLayers: t.mapLayers,
+        polities: t.polities,
+        geo: t.geo,
+        v2: true,
+        borders: t.borders,
+        approxBorders: t.approxBorders,
+        approxTick: t.approxTick,
+      };
+    }
     const mapLayers = [];
     const polities = {};
     const features = [];
@@ -253,10 +409,12 @@ function normalizeKingdomPack(raw) {
       raw.ticks[raw.ticks.length - 1]?.year,
     ],
     defaultYear: raw.defaultYear ?? null,
-    mapAttribution:
-      raw.mapAttribution ||
-      raw.notes ||
-      "Schematic kingdom extents — not modern state borders.",
+    mapAttribution: v2
+      ? V2_ATTRIBUTION
+      : raw.mapAttribution ||
+        raw.notes ||
+        "Schematic kingdom extents — not modern state borders.",
+    v2,
     status: raw.status || "ready",
     ticks: raw.ticks,
     periods,
@@ -328,7 +486,8 @@ function kingdomGeoSmoothed(period) {
   if (!state._smoothGeoCache) state._smoothGeoCache = new Map();
   if (state._smoothGeoCache.has(key)) return state._smoothGeoCache.get(key);
   const raw = kingdomGeoForPeriod(period);
-  const smoothed = smoothFeatureCollection(raw);
+  // v2 TopoJSON borders are shared arcs — smoothing would split neighbours apart
+  const smoothed = period?.v2 ? raw : smoothFeatureCollection(raw);
   state._smoothGeoCache.set(key, smoothed);
   return smoothed;
 }
@@ -949,6 +1108,17 @@ function initMap({ preserveZoom = true } = {}) {
     .join("path")
     .attr("d", state.path);
 
+  // Kingdom-era polities clip to ALL Natural Earth land (incl. Russia) so
+  // eastern empires aren't cut off; Deep-time keeps its own rendering.
+  defs
+    .append("clipPath")
+    .attr("id", "polity-clip")
+    .attr("clipPathUnits", "userSpaceOnUse")
+    .selectAll("path")
+    .data(state.geo.features)
+    .join("path")
+    .attr("d", state.path);
+
   const g = zoomLayer.append("g").attr("class", "countries");
 
   g.selectAll("path")
@@ -976,7 +1146,13 @@ function initMap({ preserveZoom = true } = {}) {
   zoomLayer
     .append("g")
     .attr("class", "polities")
-    .attr("clip-path", "url(#land-clip)");
+    .attr("clip-path", "url(#polity-clip)");
+  // v2: shared polity borders drawn once (no double strokes), above fills
+  zoomLayer
+    .append("g")
+    .attr("class", "polity-borders")
+    .attr("clip-path", "url(#polity-clip)")
+    .style("pointer-events", "none");
 
   state._kingdomGeoPeriodId = null;
   if (isKingdomMode()) syncKingdomPolityLayer({ force: true });
@@ -1180,6 +1356,25 @@ function syncKingdomPolityLayer({ force = false } = {}) {
     .datum((d) => d)
     .sort((a, b) => featureArea(b) - featureArea(a));
 
+  const bg = state.svg.select("g.polity-borders");
+  if (!bg.empty()) {
+    const lines = period?.v2
+      ? [
+          { k: "border", g: period.borders },
+          { k: "border-approx", g: period.approxBorders },
+        ].filter((d) => d.g && d.g.coordinates?.length)
+      : [];
+    bg.selectAll("path")
+      .data(lines, (d) => d.k)
+      .join("path")
+      .attr("class", (d) => `polity-${d.k}`)
+      .attr("d", (d) => state.path(d.g));
+  }
+  state.svg.select("g.polities").classed("is-v2", Boolean(period?.v2));
+  state.svg.select("g.polities")
+    .selectAll("path.polity")
+    .classed("is-extra", (d) => Boolean(d.properties.extra));
+
   // Drop selection only when the polity is gone from this tick entirely
   if (state.selectedPolityId) {
     const hasGeom = features.some(
@@ -1239,8 +1434,11 @@ function paintMap(animate = true) {
       const node = d3.select(this);
       const fill = style.fill || "transparent";
       // Keep fills translucent so Natural Earth coasts read through
+      const v2 = Boolean(currentPeriod()?.v2);
       const opacity = style.fill
-        ? Math.min(0.62, Math.max(0.32, style.opacity * 0.78))
+        ? v2
+          ? 0.92
+          : Math.min(0.62, Math.max(0.32, style.opacity * 0.78))
         : 0;
       const visible = Boolean(style.fill);
       // Keep hit targets even while fill tweens between ticks
@@ -1772,6 +1970,7 @@ function updateLegend() {
   // Always visible under the slider — never overlays the map
   box.hidden = false;
   box.innerHTML = layers
+    .filter((l) => !l.extra)
     .map(
       (l) =>
         `<div class="legend-row"><span class="legend-swatch" style="background:${l.color}"></span>${escapeHtml(l.label)}</div>`
@@ -1780,9 +1979,13 @@ function updateLegend() {
   const pack = activePack();
   const attr = $("#map-attr");
   if (attr) {
-    attr.textContent = isKingdomMode()
+    const base = isKingdomMode()
       ? pack?.mapAttribution || state.data?.meta?.mapAttribution || ""
       : state.data?.meta?.mapAttribution || "";
+    attr.textContent =
+      isKingdomMode() && period?.approxTick
+        ? `${base} ${period.yearApprox}: no dataset map for this year — approximate hand-drawn outlines.`
+        : base;
   }
 }
 
@@ -2980,7 +3183,15 @@ async function loadKingdomPack(id) {
     const r = await fetch(`data/kingdom-eras/${id}.json?v=era-ui-52`);
     if (!r.ok) return null;
     const raw = await r.json();
-    return normalizeKingdomPack(raw);
+    // v2 borders: historical-basemaps (GPL-3.0) → TopoJSON with shared arcs
+    let topo = null;
+    try {
+      const t = await fetch(`data/kingdom-eras/geo/${id}.topo.json?v=era-maps-v2`);
+      if (t.ok && window.topojson) topo = await t.json();
+    } catch (_) {
+      topo = null;
+    }
+    return normalizeKingdomPack(raw, topo);
   } catch (_) {
     return null;
   }

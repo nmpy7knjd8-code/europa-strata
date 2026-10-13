@@ -2889,3 +2889,47 @@ body.page-ancestry {
   min-height: 2.6rem;
   margin-bottom: 0.45rem;
 }
+
+/* ═══ Kingdom eras v2 — real historical borders, Deep-time visual language ═══ */
+.app:not([data-atlas-mode="deep-time"]) .country {
+  fill: var(--land-base) !important;
+  stroke: none !important;
+}
+.app:not([data-atlas-mode="deep-time"]) .coasts {
+  display: none;
+}
+.polities.is-v2 .polity {
+  stroke: none;
+}
+.polities.is-v2 .polity.is-extra {
+  cursor: default;
+}
+.polities.is-v2 .polity:hover,
+.polities.is-v2 .polity.is-hover {
+  stroke: var(--ink);
+  stroke-opacity: 0.55;
+  stroke-width: 0.9;
+}
+.polities.is-v2 .polity.is-active {
+  stroke: var(--ink);
+  stroke-opacity: 1;
+  stroke-width: 1.35;
+}
+.polity-border,
+.polity-border-approx {
+  fill: none;
+  stroke: var(--land-base);
+  stroke-width: 0.8;
+  stroke-opacity: 0.95;
+  stroke-linejoin: round;
+  stroke-linecap: round;
+  vector-effect: non-scaling-stroke;
+}
+.polity-border-approx {
+  stroke: rgba(40, 30, 20, 0.55);
+  stroke-width: 0.7;
+  stroke-dasharray: 2.5 2.5;
+}
+html[data-theme="dark"] .polity-border-approx {
+  stroke: rgba(255, 245, 230, 0.5);
+}

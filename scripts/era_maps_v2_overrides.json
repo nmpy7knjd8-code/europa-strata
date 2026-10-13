@@ -1,0 +1,300 @@
+{
+ "high-medieval": {
+  "Magyars": [
+   "hungary"
+  ],
+  "Caliphate of Córdoba": [
+   "andalus-taifa"
+  ],
+  "Kingdom of France": [
+   "france-capetian"
+  ],
+  "France": [
+   "france-capetian"
+  ],
+  "Teutonic Knights": [
+   "teutonic-order"
+  ],
+  "Grand Duchy of Moscow": [
+   "muscovy",
+   "vladimir-suzdal"
+  ],
+  "Kalmar Union": [
+   "denmark"
+  ],
+  "Blue Horde": [
+   "golden-horde"
+  ],
+  "White Horde": [
+   "golden-horde"
+  ],
+  "Khanate of the Golden Horde": [
+   "golden-horde"
+  ],
+  "Almohad Caliphate": [
+   "almohad"
+  ],
+  "Almoravid dynasty": [
+   "almoravid"
+  ],
+  "Angevin Empire": [
+   "angevin-empire"
+  ],
+  "Seljuk Caliphate": [
+   "seljuk-rum"
+  ],
+  "Seljuk Empire": [
+   "seljuk-rum"
+  ],
+  "Cuman-Kipchak confederation": [
+   "cumans"
+  ],
+  "Cuman Khanates": [
+   "cumans"
+  ],
+  "Serbia": [
+   "serbia"
+  ],
+  "Raška": [
+   "serbia"
+  ],
+  "Bulgar Khanate": [
+   "bulgaria-first",
+   "bulgaria-second"
+  ],
+  "Prussians": [
+   "baltic-tribes"
+  ],
+  "English territory": [
+   "england"
+  ],
+  "Sicily": [
+   "sicily-norman",
+   "aragon"
+  ],
+  "Poland": [
+   "poland"
+  ],
+  "Poland-Lithuania": [
+   "lithuania"
+  ],
+  "Sweden": [
+   "sweden"
+  ],
+  "Croatia": [
+   "croatia"
+  ],
+  "Principality of Kyiv": [
+   "kievan-rus"
+  ],
+  "Kievan Rus": [
+   "kievan-rus"
+  ],
+  "Kyivan Rus": [
+   "kievan-rus"
+  ],
+  "Byzantine Empire": [
+   "byzantium"
+  ],
+  "Ottoman Empire": [
+   "ottoman"
+  ],
+  "Denmark-Norway": [
+   "denmark"
+  ]
+ },
+ "renaissance": {
+  "Grand Duchy of Moscow": [
+   "muscovy"
+  ],
+  "Golden Horde": [
+   "golden-horde"
+  ],
+  "Blue Horde": [
+   "golden-horde"
+  ],
+  "White Horde": [
+   "golden-horde"
+  ],
+  "Kalmar Union": [
+   "denmark-norway"
+  ],
+  "Denmark-Norway": [
+   "denmark-norway"
+  ],
+  "Teutonic Knights": [
+   "teutonic-prussia"
+  ],
+  "Byzantine Empire": [
+   "byzantium"
+  ],
+  "Castille": [
+   "castile",
+   "spain"
+  ],
+  "Castile": [
+   "castile",
+   "spain"
+  ],
+  "Aragón": [
+   "aragon",
+   "spain"
+  ],
+  "Sicily": [
+   "aragon",
+   "spain"
+  ],
+  "Imperial Hungary": [
+   "hungary"
+  ],
+  "English territory": [
+   "england"
+  ],
+  "Poland-Lithuania": [
+   "poland-lithuania",
+   "lithuania"
+  ],
+  "Ottoman Empire": [
+   "ottoman"
+  ],
+  "Prussia": [
+   "teutonic-prussia"
+  ],
+  "England and Ireland": [
+   "england"
+  ],
+  "Republic of the Seven Zenden": [
+   "swiss"
+  ],
+  "Sweden": [
+   "sweden"
+  ]
+ },
+ "early-modern": {
+  "Tsardom of Muscovy": [
+   "russia"
+  ],
+  "Russian Empire": [
+   "russia"
+  ],
+  "Netherlands": [
+   "dutch-republic"
+  ],
+  "Dutch Republic": [
+   "dutch-republic"
+  ],
+  "Austrian Empire": [
+   "austria"
+  ],
+  "Prussia": [
+   "prussia"
+  ],
+  "Crimean Khanate": [
+   "crimean-khanate"
+  ],
+  "Lombardy": [
+   "milan"
+  ],
+  "Milano (Austria)": [
+   "milan"
+  ],
+  "United Kingdom": [
+   "britain"
+  ],
+  "Poland": [
+   "poland-lithuania"
+  ],
+  "Kingdom of Sardinia": [
+   "savoy"
+  ],
+  "Sardinia-Piedmont": [
+   "savoy"
+  ],
+  "England and Ireland": [
+   "england"
+  ],
+  "Ottoman Empire": [
+   "ottoman"
+  ],
+  "Sweden": [
+   "sweden"
+  ],
+  "Florence": [
+   "tuscany"
+  ],
+  "Venetia": [
+   "venice"
+  ],
+  "Republic of the Seven Zenden": [
+   "swiss"
+  ]
+ },
+ "modern": {
+  "Russian Empire": [
+   "russian-empire"
+  ],
+  "Austro-Hungarian Empire": [
+   "austria-hungary"
+  ],
+  "Byelarus": [
+   "belarus"
+  ],
+  "Montenegro": [
+   "montenegro",
+   "serbia"
+  ],
+  "Italy": [
+   "italy"
+  ],
+  "Kingdom of Italy": [
+   "italy"
+  ],
+  "Finland": [
+   "finland",
+   "russian-empire"
+  ],
+  "Germany (UK)": [
+   "germany-west"
+  ],
+  "Germany (USA)": [
+   "germany-west"
+  ],
+  "Germany (France)": [
+   "germany-west"
+  ],
+  "Saar Protectorate": [
+   "germany-west"
+  ],
+  "Germany (Soviet)": [
+   "germany-east"
+  ],
+  "USSR": [
+   "ussr"
+  ],
+  "Russia": [
+   "russia"
+  ],
+  "United Kingdom of Great Britain and Ireland": [
+   "united-kingdom"
+  ],
+  "Sweden–Norway": [
+   "sweden-norway"
+  ],
+  "Iran": null,
+  "Syria": null,
+  "Iraq": null,
+  "Persia": null,
+  "Lombardy": [
+   "austrian-empire"
+  ],
+  "Venetia": [
+   "austrian-empire"
+  ],
+  "Schleswig": [
+   "denmark"
+  ],
+  "Holstein": [
+   "denmark"
+  ]
+ }
+}
