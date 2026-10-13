@@ -39,6 +39,6 @@ The High Medieval, Renaissance, Early Modern and Modern tabs draw polity borders
 clipped to Europe, snapped to Natural Earth coastlines, matched to Europa Strata polity ids and
 simplified to TopoJSON with shared borders (`data/kingdom-eras/geo/*.topo.json`).
 Slider years with no dataset map (1450, 1750, 1871, 1990) and polities the dataset lacks keep the
-hand-drawn outlines, shown dashed as approximate. See `data/LICENSE-historical-basemaps`.
+hand-drawn outlines, noted as approximate. See `data/LICENSE-historical-basemaps`.
 Rebuild: `python3 scripts/build_era_maps_v2.py --hb <historical-basemaps>/geojson --report scripts/era_maps_v2_report.json`
 (needs `shapely` and `mapshaper`). Matching overrides: `scripts/era_maps_v2_overrides.json`.

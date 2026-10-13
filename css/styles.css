@@ -2925,14 +2925,7 @@ body.page-ancestry {
   stroke-linecap: round;
   vector-effect: non-scaling-stroke;
 }
-.polity-border-approx {
-  stroke: rgba(40, 30, 20, 0.55);
-  stroke-width: 0.7;
-  stroke-dasharray: 2.5 2.5;
-}
-html[data-theme="dark"] .polity-border-approx {
-  stroke: rgba(255, 245, 230, 0.5);
-}
+
 .approx-note {
   font-size: 10px;
   color: var(--muted, #9a958c);

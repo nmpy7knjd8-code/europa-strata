@@ -11,5 +11,5 @@ https://www.gnu.org/licenses/gpl-3.0.txt
 
 Coastlines / land: Natural Earth (public domain).
 Years without a dataset map (1450, 1750, 1871, 1990) and polities missing from
-the dataset use Europa Strata's own hand-drawn approximate outlines (dashed).
+the dataset use Europa Strata's own hand-drawn approximate outlines (noted "approx. borders").
 Build: scripts/build_era_maps_v2.py (+ scripts/era_maps_v2_overrides.json).
