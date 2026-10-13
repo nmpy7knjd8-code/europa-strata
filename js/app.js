@@ -1361,7 +1361,6 @@ function syncKingdomPolityLayer({ force = false } = {}) {
     const lines = period?.v2
       ? [
           { k: "border", g: period.borders },
-          { k: "border-approx", g: period.approxBorders },
         ].filter((d) => d.g && d.g.coordinates?.length)
       : [];
     bg.selectAll("path")
