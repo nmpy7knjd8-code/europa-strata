@@ -11,16 +11,6 @@ const REGION_IDS = [
   "eastern",
 ];
 
-const REGION_LABELS = {
-  iberia: "Iberia",
-  britain: "Britain & Ireland",
-  france: "France",
-  central: "Central Europe",
-  scandinavia: "Scandinavia",
-  italy: "Italy",
-  balkans: "Balkans",
-  eastern: "Eastern Europe / Steppe",
-};
 
 const SLIDER_MAX = 1000;
 
@@ -35,6 +25,57 @@ const ATLAS_TAB_ORDER = [
   "early-modern",
   "modern",
 ];
+
+/** Single build/version string (also in <meta name="build">; bump with scripts/bump_version.py). */
+const BUILD =
+  document.querySelector('meta[name="build"]')?.getAttribute("content") || "dev";
+const withV = (url) => `${url}${url.includes("?") ? "&" : "?"}v=${encodeURIComponent(BUILD)}`;
+
+function storageGet(key) {
+  try {
+    return localStorage.getItem(key);
+  } catch (_) {
+    return null;
+  }
+}
+function storageSet(key, value) {
+  try {
+    localStorage.setItem(key, value);
+  } catch (_) {}
+}
+
+/** Visible, dismissible data-load notice (replaces silent console-only failures). */
+function showLoadNotice(message, { retry = null } = {}) {
+  let box = document.getElementById("load-notice");
+  if (!box) {
+    box = document.createElement("div");
+    box.id = "load-notice";
+    box.className = "load-notice";
+    box.setAttribute("role", "alert");
+    document.body.appendChild(box);
+  }
+  box.replaceChildren();
+  const msg = document.createElement("span");
+  msg.textContent = message;
+  box.appendChild(msg);
+  if (retry) {
+    const b = document.createElement("button");
+    b.type = "button";
+    b.textContent = "Retry";
+    b.addEventListener("click", () => {
+      box.hidden = true;
+      retry();
+    });
+    box.appendChild(b);
+  }
+  const x = document.createElement("button");
+  x.type = "button";
+  x.setAttribute("aria-label", "Dismiss");
+  x.textContent = "×";
+  x.addEventListener("click", () => (box.hidden = true));
+  box.appendChild(x);
+  box.hidden = false;
+}
 
 const KINGDOM_PACK_IDS = [
   "high-medieval",
@@ -134,7 +175,140 @@ function extentToGeometry(ext) {
  * - App/scaffold: { periods, geo }
  * - Research: { ticks, polities[].extentsByTick }
  */
-function normalizeKingdomPack(raw) {
+/* Deep-time-inspired earth palette shared by all kingdom-era tabs */
+const ERA_PALETTE = [
+  "#a8705a", "#c49a6c", "#7d8a6a", "#8a6a4f", "#b4a07a", "#6f7f8c",
+  "#9b7b6f", "#c3aa8a", "#8f5a4a", "#a3936b", "#5f6f5f", "#b98f74",
+];
+const ERA_NEUTRAL = "#e4ded3";
+const V2_ATTRIBUTION =
+  "Borders: historical-basemaps © A. Ourednik (GPL-3.0) · coasts: Natural Earth.";
+
+/** Greedy colouring so neighbouring polities never share a colour (stable per era). */
+function eraPolityColors(topo, polityIds) {
+  const adj = new Map(polityIds.map((id) => [id, new Set()]));
+  for (const obj of Object.values(topo.objects || {})) {
+    const geoms = obj.geometries || [];
+    let nb = [];
+    try {
+      nb = topojson.neighbors(geoms);
+    } catch (_) {
+      nb = [];
+    }
+    geoms.forEach((g, i) => {
+      const a = g.properties?.polityId;
+      if (!a || !adj.has(a)) return;
+      for (const j of nb[i] || []) {
+        const b = geoms[j].properties?.polityId;
+        if (b && b !== a && adj.has(b)) {
+          adj.get(a).add(b);
+          adj.get(b).add(a);
+        }
+      }
+    });
+  }
+  const order = [...polityIds].sort((a, b) => adj.get(b).size - adj.get(a).size);
+  const colors = {};
+  for (const id of order) {
+    const used = new Set([...adj.get(id)].map((n) => colors[n]).filter(Boolean));
+    let h = 0;
+    for (const ch of id) h = (h * 31 + ch.charCodeAt(0)) >>> 0;
+    let pick = null;
+    for (let k = 0; k < ERA_PALETTE.length; k++) {
+      const c = ERA_PALETTE[(h + k) % ERA_PALETTE.length];
+      if (!used.has(c)) {
+        pick = c;
+        break;
+      }
+    }
+    colors[id] = pick || ERA_PALETTE[h % ERA_PALETTE.length];
+  }
+  return colors;
+}
+
+function polityPanel(p) {
+  return {
+    name: p.name,
+    type: p.type,
+    yearsActive: p.yearsActive,
+    summary: p.description || "",
+    description: p.description || "",
+    conflicts: p.conflicts || "",
+    leaders: p.leaders || "",
+    religion: p.religion || "",
+    culture: p.culture || "",
+    story: p.stories || p.story || "",
+    stories: p.stories || p.story || null,
+    literature: p.literature || "",
+    art: p.art || "",
+    ideas: p.ideas || "",
+    artIdeas: p.artIdeas || p.artAndIdeas || "",
+    philosophy: p.philosophy || "",
+    science: p.science || "",
+    images: p.images || null,
+  };
+}
+
+/** Build one tick's layers/panels/geo from the era TopoJSON. */
+function v2TickFromTopo(topo, obj, raw, colors) {
+  const byId = new Map(raw.polities.map((p) => [p.id, p]));
+  const fc = topojson.feature(topo, obj);
+  const mapLayers = [];
+  const polities = {};
+  const features = [];
+  let approxCount = 0;
+  fc.features.forEach((f, i) => {
+    const props = f.properties || {};
+    const p = props.polityId ? byId.get(props.polityId) : null;
+    if (props.approx) approxCount++;
+    if (p) {
+      if (!polities[p.id]) {
+        polities[p.id] = polityPanel(p);
+        mapLayers.push({
+          polityId: p.id,
+          id: p.id,
+          label: p.name,
+          color: colors[p.id] || p.color || "#8a7a6a",
+          role: "dominant",
+        });
+      }
+      features.push({
+        type: "Feature",
+        properties: { polityId: p.id, name: p.name, type: p.type || "", approx: !!props.approx },
+        geometry: f.geometry,
+      });
+    } else {
+      const name = String(props.name || "").trim() || "Unnamed territory";
+      const xid = `x-${i}-${name.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`;
+      polities[xid] = {
+        name,
+        type: "Other polity",
+        summary: `${name} — shown from the historical-basemaps dataset; no Europa Strata profile yet.`,
+        description: "",
+      };
+      mapLayers.push({ polityId: xid, id: xid, label: name, color: ERA_NEUTRAL, role: "dominant", extra: true });
+      features.push({
+        type: "Feature",
+        properties: { polityId: xid, name, type: "", extra: true },
+        geometry: f.geometry,
+      });
+    }
+  });
+  return {
+    mapLayers,
+    polities,
+    geo: { type: "FeatureCollection", features },
+    borders: topojson.mesh(topo, obj, (a, b) => a !== b),
+    approxBorders: topojson.mesh(
+      topo,
+      obj,
+      (a, b) => Boolean(a.properties?.approx || b.properties?.approx)
+    ),
+    approxTick: approxCount > 0 && approxCount === fc.features.length,
+  };
+}
+
+function normalizeKingdomPack(raw, topo = null) {
   if (!raw) return null;
   if (Array.isArray(raw.periods) && (raw.geo || raw.periods.some((p) => p.geo))) {
     return {
@@ -156,6 +330,8 @@ function normalizeKingdomPack(raw) {
   if (!Array.isArray(raw.polities) || !Array.isArray(raw.ticks)) return raw;
 
   const id = raw.tabId || raw.id || "kingdom";
+  const v2 = Boolean(topo && window.topojson);
+  const v2Colors = v2 ? eraPolityColors(topo, raw.polities.map((p) => p.id)) : null;
   const label = raw.tabLabel || raw.label || "Kingdom era";
   const periods = raw.ticks.map((tick) => {
     const year = tick.year ?? tick.yearApprox;
@@ -177,6 +353,27 @@ function normalizeKingdomPack(raw) {
       tick.description ||
       ""
     ).trim();
+    const v2Obj = v2 ? topo.objects?.[`y${year}`] : null;
+    if (v2Obj) {
+      const t = v2TickFromTopo(topo, v2Obj, raw, v2Colors);
+      return {
+        id: `${id}-${year}`,
+        yearApprox: year,
+        yearLabel: `${year} AD`,
+        label: periodName,
+        tickYear: `${year} AD`,
+        era: tickEyebrow || label,
+        narrative: tickNarrative || raw.narrative || raw.notes || "",
+        culturesNote: tickEyebrow || "",
+        mapLayers: t.mapLayers,
+        polities: t.polities,
+        geo: t.geo,
+        v2: true,
+        borders: t.borders,
+        approxBorders: t.approxBorders,
+        approxTick: t.approxTick,
+      };
+    }
     const mapLayers = [];
     const polities = {};
     const features = [];
@@ -253,10 +450,12 @@ function normalizeKingdomPack(raw) {
       raw.ticks[raw.ticks.length - 1]?.year,
     ],
     defaultYear: raw.defaultYear ?? null,
-    mapAttribution:
-      raw.mapAttribution ||
-      raw.notes ||
-      "Schematic kingdom extents — not modern state borders.",
+    mapAttribution: v2
+      ? V2_ATTRIBUTION
+      : raw.mapAttribution ||
+        raw.notes ||
+        "Schematic kingdom extents — not modern state borders.",
+    v2,
     status: raw.status || "ready",
     ticks: raw.ticks,
     periods,
@@ -328,7 +527,8 @@ function kingdomGeoSmoothed(period) {
   if (!state._smoothGeoCache) state._smoothGeoCache = new Map();
   if (state._smoothGeoCache.has(key)) return state._smoothGeoCache.get(key);
   const raw = kingdomGeoForPeriod(period);
-  const smoothed = smoothFeatureCollection(raw);
+  // v2 TopoJSON borders are shared arcs — smoothing would split neighbours apart
+  const smoothed = period?.v2 ? raw : smoothFeatureCollection(raw);
   state._smoothGeoCache.set(key, smoothed);
   return smoothed;
 }
@@ -339,6 +539,12 @@ function $(sel) {
 
 function $$(sel) {
   return [...document.querySelectorAll(sel)];
+}
+
+/** Only allow plain CSS colors from data into style attributes. */
+function safeColor(c) {
+  const v = String(c || "").trim();
+  return /^(#[0-9a-f]{3,8}|rgba?\([\d\s.,%]+\)|hsla?\([\d\s.,%deg]+\)|[a-z]+)$/i.test(v) ? v : "transparent";
 }
 
 function escapeHtml(s) {
@@ -740,7 +946,7 @@ function renderAncestryCline(region, keys) {
       const segs = entries
         .map((e) => {
           const w = (e.value / total) * 100;
-          return `<div class="stack-seg" style="width:${w}%;background:${e.color}" title="${escapeHtml(e.label)}: ~${Math.round(e.value)}%"></div>`;
+          return `<div class="stack-seg" style="width:${w}%;background:${safeColor(e.color)}" title="${escapeHtml(e.label)}: ~${Math.round(e.value)}%"></div>`;
         })
         .join("");
       const legend = entries
@@ -866,6 +1072,12 @@ function initMap({ preserveZoom = true } = {}) {
     .attr("preserveAspectRatio", "xMidYMid meet");
 
   state.svg = svg;
+  // Tap/click on open sea (not a polity) clears the kingdom selection
+  svg.on("click.clearsel", (event) => {
+    if (event.defaultPrevented) return;
+    if (event.target?.closest?.("path.polity")) return;
+    clearPolitySelection();
+  });
   state.mapPixelSize = { w, h };
 
   const projection = d3.geoAzimuthalEqualArea();
@@ -949,6 +1161,17 @@ function initMap({ preserveZoom = true } = {}) {
     .join("path")
     .attr("d", state.path);
 
+  // Kingdom-era polities clip to ALL Natural Earth land (incl. Russia) so
+  // eastern empires aren't cut off; Deep-time keeps its own rendering.
+  defs
+    .append("clipPath")
+    .attr("id", "polity-clip")
+    .attr("clipPathUnits", "userSpaceOnUse")
+    .selectAll("path")
+    .data(state.geo.features)
+    .join("path")
+    .attr("d", state.path);
+
   const g = zoomLayer.append("g").attr("class", "countries");
 
   g.selectAll("path")
@@ -976,7 +1199,13 @@ function initMap({ preserveZoom = true } = {}) {
   zoomLayer
     .append("g")
     .attr("class", "polities")
-    .attr("clip-path", "url(#land-clip)");
+    .attr("clip-path", "url(#polity-clip)");
+  // v2: shared polity borders drawn once (no double strokes), above fills
+  zoomLayer
+    .append("g")
+    .attr("class", "polity-borders")
+    .attr("clip-path", "url(#polity-clip)")
+    .style("pointer-events", "none");
 
   state._kingdomGeoPeriodId = null;
   if (isKingdomMode()) syncKingdomPolityLayer({ force: true });
@@ -1180,6 +1409,28 @@ function syncKingdomPolityLayer({ force = false } = {}) {
     .datum((d) => d)
     .sort((a, b) => featureArea(b) - featureArea(a));
 
+  const bg = state.svg.select("g.polity-borders");
+  if (!bg.empty()) {
+    const lines = period?.v2
+      ? [
+          { k: "border", g: period.borders },
+        ].filter((d) => d.g && d.g.coordinates?.length)
+      : [];
+    bg.selectAll("path")
+      .data(lines, (d) => d.k)
+      .join("path")
+      .attr("class", (d) => `polity-${d.k}`)
+      .attr("d", (d) => state.path(d.g));
+  }
+  state.svg.select("g.polities").classed("is-v2", Boolean(period?.v2));
+  // v2 geometry is pre-clipped to land in the build; the per-country clipPath
+  // would re-open hairline seams between Natural Earth countries, so drop it.
+  state.svg.selectAll("g.polities, g.polity-borders")
+    .attr("clip-path", period?.v2 ? null : "url(#polity-clip)");
+  state.svg.select("g.polities")
+    .selectAll("path.polity")
+    .classed("is-extra", (d) => Boolean(d.properties.extra));
+
   // Drop selection only when the polity is gone from this tick entirely
   if (state.selectedPolityId) {
     const hasGeom = features.some(
@@ -1213,11 +1464,23 @@ function selectPolity(polityId, { scrollDetail = false } = {}) {
   renderDetail();
   highlightCultureChips();
   updateSelectionTip();
+  renderKeyEvents();
   if (scrollDetail) {
     requestAnimationFrame(() => {
       $("#detail")?.scrollIntoView({ behavior: "smooth", block: "start" });
     });
   }
+}
+
+/** Clear the kingdom-mode place selection (hides Key events again). */
+function clearPolitySelection() {
+  if (!isKingdomMode() || !state.selectedPolityId) return;
+  state.selectedPolityId = null;
+  applyPolitySelectionClass();
+  renderDetail();
+  highlightCultureChips();
+  updateSelectionTip();
+  renderKeyEvents();
 }
 
 function paintMap(animate = true) {
@@ -1239,8 +1502,11 @@ function paintMap(animate = true) {
       const node = d3.select(this);
       const fill = style.fill || "transparent";
       // Keep fills translucent so Natural Earth coasts read through
+      const v2 = Boolean(currentPeriod()?.v2);
       const opacity = style.fill
-        ? Math.min(0.62, Math.max(0.32, style.opacity * 0.78))
+        ? v2
+          ? 1
+          : Math.min(0.62, Math.max(0.32, style.opacity * 0.78))
         : 0;
       const visible = Boolean(style.fill);
       // Keep hit targets even while fill tweens between ticks
@@ -1576,36 +1842,78 @@ function formatYearUi(s) {
     .replace(/\bCE\b/g, "AD");
 }
 
-function periodKeyEventsPack(periodId) {
-  return state.keyEvents?.periods?.[periodId] || null;
+/** Year window [lo, hi] represented by the current slider stop. */
+function currentTimeWindow() {
+  const periods = activePeriods();
+  const i = state.periodIndex;
+  const p = periods[i];
+  if (!p) return null;
+  const y = Number(p.yearApprox);
+  const prev = periods[i - 1] ? Number(periods[i - 1].yearApprox) : null;
+  const next = periods[i + 1] ? Number(periods[i + 1].yearApprox) : null;
+  const lo = prev != null ? (prev + y) / 2 : y - 50;
+  const hi = next != null ? (y + next) / 2 : Math.max(y + 50, new Date().getFullYear());
+  return { lo, hi };
 }
 
-/** All key events for a period, or place-filtered by ISO / atlas region. */
-function eventsForPeriod(periodId, { iso = null, region = null, placeOnly = false } = {}) {
-  const pack = periodKeyEventsPack(periodId);
-  const list = pack?.keyEvents || [];
-  if (!list.length) return [];
-  if (!placeOnly) return list;
-  if (!iso && !region) return [];
-  return list.filter((e) => {
-    if (iso && e.iso && e.iso === iso) return true;
-    const regs = e.regions || (e.region ? [e.region] : []);
-    if (region && regs.includes(region)) return true;
-    return false;
-  });
+/** Atlas region for the current place selection (null = whole map). */
+function currentPlaceRegion() {
+  if (!isKingdomMode()) {
+    if (state.selectedIso) return isoToRegion(state.selectedIso);
+    return state.selectedRegion || null;
+  }
+  if (!state.selectedPolityId) return null;
+  try {
+    const feat = kingdomGeoSmoothed(currentPeriod())?.features?.find(
+      (f) => f.properties.polityId === state.selectedPolityId
+    );
+    if (!feat || !state.geo) return null;
+    const c = d3.geoCentroid(feat);
+    const hit = state.geo.features.find((f) => d3.geoContains(f, c));
+    return hit ? isoToRegion(hit.properties.iso) : null;
+  } catch (_) {
+    return null;
+  }
 }
 
-function keyEventTeaser(ev) {
-  if (ev.teaser) return String(ev.teaser);
-  if (ev.title) return String(ev.title);
-  const raw = String(ev.text || ev.detail || "");
-  const cut = raw.split(/(?<=[.!?])\s+/)[0] || raw;
-  return cut.length > 140 ? cut.slice(0, 137).trimEnd() + "…" : cut;
+/** Key events for the selected time (slider stop) and place (region). */
+function currentKeyEvents() {
+  const periods = state.keyEvents?.periods || {};
+  let pool;
+  if (!isKingdomMode()) {
+    pool = periods[currentPeriod()?.id]?.keyEvents || [];
+  } else {
+    const w = currentTimeWindow();
+    pool = w
+      ? Object.values(periods)
+          .flatMap((p) => p.keyEvents || [])
+          .filter((e) => e.start != null && e.end >= w.lo && e.start < w.hi)
+      : [];
+  }
+  const region = currentPlaceRegion();
+  // Place-only: no Europe-wide fallback; nothing without a selected place
+  const list = region ? pool.filter((e) => (e.regions || []).includes(region)) : [];
+  const seen = new Set();
+  return list
+    .filter((e) => {
+      const k = `${e.date}|${e.title}`;
+      if (seen.has(k)) return false;
+      seen.add(k);
+      return true;
+    })
+    .sort((a, b) => (a.start ?? 0) - (b.start ?? 0) || (a.end ?? 0) - (b.end ?? 0));
 }
 
-function keyEventDetail(ev) {
-  return String(ev.detail || ev.text || "").trim();
-}
+const REGION_LABELS = {
+  iberia: "Iberia",
+  britain: "Britain & Ireland",
+  france: "France",
+  central: "Central Europe",
+  scandinavia: "Scandinavia",
+  italy: "Italy",
+  balkans: "Balkans",
+  eastern: "Eastern Europe",
+};
 
 function renderKeyEventsList(listEl, events) {
   if (!listEl) return;
@@ -1615,7 +1923,6 @@ function renderKeyEventsList(listEl, events) {
     li.className = "key-events-item";
     const details = document.createElement("details");
     details.className = "key-events-disclosure";
-
     const summary = document.createElement("summary");
     summary.className = "key-events-summary";
     if (ev.date) {
@@ -1625,64 +1932,49 @@ function renderKeyEventsList(listEl, events) {
       summary.appendChild(when);
       summary.appendChild(document.createTextNode(" — "));
     }
-    const teaser = document.createElement("span");
-    teaser.className = "key-events-teaser";
-    teaser.textContent = keyEventTeaser(ev);
-    summary.appendChild(teaser);
+    const title = document.createElement("span");
+    title.className = "key-events-teaser";
+    title.textContent = ev.title || "";
+    summary.appendChild(title);
     details.appendChild(summary);
-
-    const detailText = keyEventDetail(ev);
-    if (detailText) {
+    if (ev.detail) {
       const body = document.createElement("div");
       body.className = "key-events-body";
-      // Preserve paragraph breaks from enriched detail
-      for (const para of detailText.split(/\n\n+/)) {
-        const p = document.createElement("p");
-        p.textContent = para.trim();
-        if (p.textContent) body.appendChild(p);
-      }
+      const para = document.createElement("p");
+      para.textContent = ev.detail;
+      body.appendChild(para);
       details.appendChild(body);
     }
-
     li.appendChild(details);
     listEl.appendChild(li);
   }
 }
 
-function renderPeriodKeyEvents() {
+function renderKeyEvents() {
+  const section = $("#key-events");
+  const listEl = $("#key-events-list");
+  if (!section || !listEl || !state.data) return;
   const period = currentPeriod();
-  const section = $("#period-key-events");
-  const listEl = $("#period-key-events-list");
-  if (!section || !listEl) return;
-  const events = eventsForPeriod(period.id, { placeOnly: false });
-  if (!events.length) {
+  const region = currentPlaceRegion();
+  const placeSelected = isKingdomMode()
+    ? Boolean(state.selectedPolityId)
+    : Boolean(state.selectedIso || state.selectedRegion);
+  if (!placeSelected) {
     section.hidden = true;
-    listEl.replaceChildren();
+    listEl.innerHTML = "";
     return;
   }
-  renderKeyEventsList(listEl, events);
-  section.hidden = false;
-}
-
-function renderPlaceKeyEvents() {
-  const period = currentPeriod();
-  const section = $("#place-key-events");
-  const listEl = $("#place-key-events-list");
-  if (!section || !listEl) return;
-  const region =
-    state.selectedRegion ||
-    (state.selectedIso ? isoToRegion(state.selectedIso) : null);
-  const events = eventsForPeriod(period.id, {
-    iso: state.selectedIso,
-    region,
-    placeOnly: true,
-  });
-  if (!events.length) {
-    section.hidden = true;
-    listEl.replaceChildren();
-    return;
+  const events = currentKeyEvents();
+  const ctx = $("#key-events-context");
+  if (ctx) {
+    const when = period ? shortPeriodName(period) : "";
+    const where = region ? REGION_LABELS[region] || region : "";
+    ctx.textContent = [when, where].filter(Boolean).join(" · ");
   }
+  const empty = $("#key-events-empty");
   renderKeyEventsList(listEl, events);
+  listEl.hidden = !events.length;
+  if (empty) empty.hidden = events.length > 0;
   section.hidden = false;
 }
 
@@ -1752,16 +2044,7 @@ function renderPeriodText() {
   } else {
     ling.hidden = true;
   }
-  renderPeriodKeyEvents();
-}
-
-function clearLegacyLayoutStorage() {
-  try {
-    localStorage.removeItem("europa-strata-layout-override");
-    localStorage.removeItem("europa-strata-layout");
-  } catch (_) {
-    /* ignore */
-  }
+  renderKeyEvents();
 }
 
 function updateLegend() {
@@ -1772,17 +2055,25 @@ function updateLegend() {
   // Always visible under the slider — never overlays the map
   box.hidden = false;
   box.innerHTML = layers
+    .filter((l) => !l.extra)
     .map(
       (l) =>
-        `<div class="legend-row"><span class="legend-swatch" style="background:${l.color}"></span>${escapeHtml(l.label)}</div>`
+        `<div class="legend-row"><span class="legend-swatch" style="background:${safeColor(l.color)}"></span>${escapeHtml(l.label)}</div>`
     )
     .join("");
   const pack = activePack();
   const attr = $("#map-attr");
   if (attr) {
-    attr.textContent = isKingdomMode()
+    const base = isKingdomMode()
       ? pack?.mapAttribution || state.data?.meta?.mapAttribution || ""
       : state.data?.meta?.mapAttribution || "";
+    attr.textContent = base;
+    if (isKingdomMode() && period?.approxTick) {
+      const note = document.createElement("span");
+      note.className = "approx-note";
+      note.textContent = " · approx. borders";
+      attr.appendChild(note);
+    }
   }
 }
 
@@ -1857,7 +2148,7 @@ function renderGlossary(activeEntries) {
 
 function updateCulturesRail() {
   const period = currentPeriod();
-  const layers = period?.mapLayers || [];
+  const layers = (period?.mapLayers || []).filter((l) => !l.extra);
   const rail = $("#cultures-rail");
   const blurb = $("#cultures-blurb");
   if (blurb) {
@@ -2238,6 +2529,7 @@ function openLightbox({ src, caption, alt }) {
     cap.textContent = caption || alt || "";
     cap.hidden = !cap.textContent;
   }
+  state._lightboxOpener = document.activeElement;
   root.hidden = false;
   document.body.classList.add("lightbox-open");
   root.querySelector(".image-lightbox-close")?.focus?.();
@@ -2250,6 +2542,9 @@ function closeLightbox() {
   document.body.classList.remove("lightbox-open");
   const img = root.querySelector(".image-lightbox-img");
   if (img) img.removeAttribute("src");
+  const opener = state._lightboxOpener;
+  state._lightboxOpener = null;
+  if (opener && document.contains(opener)) opener.focus?.();
 }
 
 function bindLightboxUi() {
@@ -2265,7 +2560,30 @@ function bindLightboxUi() {
     });
   });
   document.addEventListener("keydown", (e) => {
-    if (e.key === "Escape") closeLightbox();
+    const lb = $("#image-lightbox");
+    if (e.key === "Escape" && (!lb || lb.hidden)) clearPolitySelection();
+  });
+  document.addEventListener("keydown", (e) => {
+    const root = $("#image-lightbox");
+    if (!root || root.hidden) return;
+    if (e.key === "Escape") {
+      closeLightbox();
+      return;
+    }
+    if (e.key === "Tab") {
+      // Trap focus inside the dialog
+      const items = [...root.querySelectorAll("button")].filter((b) => !b.hidden);
+      if (!items.length) return;
+      const first = items[0];
+      const last = items[items.length - 1];
+      if (e.shiftKey && document.activeElement === first) {
+        e.preventDefault();
+        last.focus();
+      } else if (!e.shiftKey && document.activeElement === last) {
+        e.preventDefault();
+        first.focus();
+      }
+    }
   });
 }
 
@@ -2420,6 +2738,12 @@ function renderKingdomDetail() {
       horizonEl.textContent = bits.length
         ? bits.join(" · ")
         : "Kingdom / empire";
+      if (packFeat?.properties?.approx) {
+        const note = document.createElement("span");
+        note.className = "approx-note";
+        note.textContent = " · approx. borders";
+        horizonEl.appendChild(note);
+      }
     }
   }
   updateSelectionTip();
@@ -2490,14 +2814,44 @@ function clearDeepTimeOnlyDetail() {
   if (lingLangs) lingLangs.textContent = "";
 }
 
+const PERIOD_TEXT_LOADS = new Map();
+/** Long region/polity prose lives in data/timeline-text/<period>.json; merge on demand. */
+function ensurePeriodText(period) {
+  if (!period?.id || period._textLoaded || PERIOD_TEXT_LOADS.has(period.id)) return;
+  const job = fetch(withV(`data/timeline-text/${period.id}.json`))
+    .then((r) => {
+      if (!r.ok) throw new Error(String(r.status));
+      return r.json();
+    })
+    .then((txt) => {
+      for (const [rid, extra] of Object.entries(txt.regions || {})) {
+        if (period.regions?.[rid]) Object.assign(period.regions[rid], extra);
+      }
+      for (const [pid, extra] of Object.entries(txt.polities || {})) {
+        if (period.polities?.[pid]) Object.assign(period.polities[pid], extra);
+      }
+      period._textLoaded = true;
+      if (!isKingdomMode() && currentPeriod() === period) renderDetail();
+    })
+    .catch(() => {
+      PERIOD_TEXT_LOADS.delete(period.id);
+      showLoadNotice("Some descriptions for this period could not load.", {
+        retry: () => ensurePeriodText(period) || renderDetail(),
+      });
+    });
+  PERIOD_TEXT_LOADS.set(period.id, job);
+}
+
 function renderDetail() {
   const period = currentPeriod();
   if (!period) return;
 
   if (isKingdomMode()) {
     renderKingdomDetail();
+    renderKeyEvents();
     return;
   }
+  ensurePeriodText(period);
 
   const rid = state.selectedRegion;
   const region = regionData(period, rid);
@@ -2655,8 +3009,7 @@ function renderDetail() {
   setPlainText($("#absorb-incoming"), region.incoming || "—");
   setPlainText($("#absorb-fused"), region.fused || "—");
   scrubBodyCopyMarkup();
-  renderPlaceKeyEvents();
-  renderPeriodKeyEvents();
+  renderKeyEvents();
 
   const confLabels = state.data.meta.confidenceLabels || {};
   const conf = region.linguisticConfidence || "hypothetical";
@@ -2673,27 +3026,18 @@ function renderDetail() {
       const tip = e.rangeLabel
         ? `${e.detail}: ${e.rangeLabel} (mid ~${Math.round(e.value)}%)`
         : `${e.detail}: ~${Math.round(e.value)}%`;
-      return `<div class="stack-seg" style="width:${e.value}%;background:${e.color}" title="${escapeHtml(tip)}"></div>`;
+      return `<div class="stack-seg" style="width:${e.value}%;background:${safeColor(e.color)}" title="${escapeHtml(tip)}"></div>`;
     })
     .join("");
-
-  // Legend omitted — pie-list shows label + % tightly (no triple display)
-  const legendEl = $("#ancestry-legend");
-  if (legendEl) legendEl.innerHTML = "";
 
   $("#pie").style.background = conicGradient(entries);
   $("#pie-list").innerHTML = entries
     .map((e) => {
       const pct = e.rangeLabel || `~${Math.round(e.value)}%`;
       const label = e.displayLabel || e.label;
-      return `<li title="${escapeHtml(e.detail)}" style="--swatch:${escapeHtml(e.color)}"><strong>${escapeHtml(label)}</strong><span class="pct">${escapeHtml(pct)}</span></li>`;
+      return `<li title="${escapeHtml(e.detail)}" style="--swatch:${safeColor(e.color)}"><strong>${escapeHtml(label)}</strong><span class="pct">${escapeHtml(pct)}</span></li>`;
     })
     .join("");
-  // Ensure legend stays empty / hidden
-  if (legendEl) {
-    legendEl.hidden = true;
-    legendEl.setAttribute("aria-hidden", "true");
-  }
 
   renderAncestryCline(region, keys);
   renderGlossary(entries);
@@ -2815,21 +3159,44 @@ function syncAtlasTabs() {
       return;
     }
     if (KINGDOM_PACK_IDS.includes(mode)) {
-      const ready = Boolean(state.kingdomPacks[mode]);
-      btn.hidden = !ready;
-      btn.disabled = !ready;
-      btn.title = ready
-        ? KINGDOM_TAB_LABELS[mode] || mode
-        : "Kingdom pack not loaded yet";
+      const loading = PACK_LOADS.has(mode);
+      btn.hidden = false;
+      btn.disabled = false;
+      btn.setAttribute("aria-busy", loading ? "true" : "false");
+      btn.classList.toggle("is-loading", loading);
+      btn.title = loading ? "Loading map…" : KINGDOM_TAB_LABELS[mode] || mode;
     }
+    btn.setAttribute("tabindex", on ? "0" : "-1");
   });
   document.querySelector(".app")?.setAttribute("data-atlas-mode", state.atlasMode);
+}
+
+const PACK_LOADS = new Map();
+/** Lazy-load a kingdom pack the first time its tab is opened. */
+function requestKingdomPack(mode) {
+  if (state.kingdomPacks[mode]) return Promise.resolve(state.kingdomPacks[mode]);
+  if (PACK_LOADS.has(mode)) return PACK_LOADS.get(mode);
+  const job = loadKingdomPack(mode).then((pack) => {
+    PACK_LOADS.delete(mode);
+    if (pack?.periods?.length) state.kingdomPacks[mode] = pack;
+    syncAtlasTabs();
+    return state.kingdomPacks[mode] || null;
+  });
+  PACK_LOADS.set(mode, job);
+  syncAtlasTabs();
+  return job;
 }
 
 function setAtlasMode(mode) {
   if (!ATLAS_TAB_ORDER.includes(mode) || mode === state.atlasMode) return;
   if (isKingdomMode(mode) && !state.kingdomPacks[mode]) {
-    console.warn("Kingdom pack not loaded:", mode);
+    requestKingdomPack(mode).then((pack) => {
+      if (pack) setAtlasMode(mode);
+      else
+        showLoadNotice(`The ${KINGDOM_TAB_LABELS[mode] || mode} map could not load.`, {
+          retry: () => setAtlasMode(mode),
+        });
+    });
     return;
   }
 
@@ -2879,6 +3246,11 @@ function setAtlasMode(mode) {
   updateSelectionTip();
 }
 
+function syncThemeColor() {
+  const dark = document.documentElement.getAttribute("data-theme") === "dark";
+  document.querySelector('meta[name="theme-color"]')?.setAttribute("content", dark ? "#111111" : "#f4f4f4");
+}
+
 function bindUI() {
   const slider = $("#time-slider");
   slider.max = String(SLIDER_MAX);
@@ -2898,12 +3270,26 @@ function bindUI() {
   );
 
   document.addEventListener("keydown", (e) => {
+    if (e.defaultPrevented || e.altKey || e.metaKey || e.ctrlKey) return;
+    if (e.target?.closest?.("input, textarea, select, [contenteditable], summary, .image-lightbox"))
+      return;
     if (e.key === "ArrowLeft") snapToPeriod(Math.max(0, state.periodIndex - 1));
     if (e.key === "ArrowRight")
       snapToPeriod(Math.min(activePeriods().length - 1, state.periodIndex + 1));
   });
 
   // Event delegation — reliable taps even when tabs reflow/wrap
+  $("#atlas-tabs")?.addEventListener("keydown", (e) => {
+    if (e.key !== "ArrowLeft" && e.key !== "ArrowRight") return;
+    const tabs = [...$$("#atlas-tabs .atlas-tab")].filter((b) => !b.hidden);
+    const i = tabs.indexOf(document.activeElement);
+    if (i < 0) return;
+    e.preventDefault();
+    e.stopPropagation();
+    const next = tabs[(i + (e.key === "ArrowRight" ? 1 : -1) + tabs.length) % tabs.length];
+    next.focus();
+    setAtlasMode(next.dataset.mode);
+  });
   $("#atlas-tabs")?.addEventListener("click", (e) => {
     const btn = e.target?.closest?.(".atlas-tab");
     if (!btn || btn.disabled || btn.hidden) return;
@@ -2915,7 +3301,8 @@ function bindUI() {
     const html = document.documentElement;
     const next = html.getAttribute("data-theme") === "dark" ? "light" : "dark";
     html.setAttribute("data-theme", next);
-    localStorage.setItem("europa-strata-theme", next);
+    storageSet("europa-strata-theme", next);
+    syncThemeColor();
   });
 
   $("#btn-zoom-in")?.addEventListener("click", () => bumpMapZoom(1.35));
@@ -2938,9 +3325,10 @@ function bindUI() {
   // Browser chrome show/hide fires resize and used to rebuild the map
   // at identity zoom. Only remap when the map *width* meaningfully changes;
   // always preserve zoom if a rebuild does run.
+  let resizeTimer = null;
   window.addEventListener("resize", () => {
-    clearTimeout(window.__strataResize);
-    window.__strataResize = setTimeout(() => {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(() => {
       const tickWrap = $("#tick-labels");
       const tw = tickWrap?.clientWidth || 0;
       const prevTw = state._tickWrapWidth || 0;
@@ -2977,39 +3365,46 @@ function bindUI() {
 async function loadKingdomPack(id) {
   try {
     // Cache-bust so refined research geometry packs reload after deploy
-    const r = await fetch(`data/kingdom-eras/${id}.json?v=era-ui-52`);
+    const r = await fetch(withV(`data/kingdom-eras/${id}.json`));
     if (!r.ok) return null;
     const raw = await r.json();
-    return normalizeKingdomPack(raw);
+    // v2 borders: historical-basemaps (GPL-3.0) → TopoJSON with shared arcs
+    let topo = null;
+    try {
+      const t = await fetch(withV(`data/kingdom-eras/geo/${id}.topo.json`));
+      if (t.ok && window.topojson) topo = await t.json();
+    } catch (_) {
+      topo = null;
+    }
+    return normalizeKingdomPack(raw, topo);
   } catch (_) {
     return null;
   }
 }
 
 async function init() {
-  const saved = localStorage.getItem("europa-strata-theme");
-  if (saved === "dark" || saved === "light") {
-    document.documentElement.setAttribute("data-theme", saved);
-  }
-  clearLegacyLayoutStorage();
+  syncThemeColor();
 
+  let keyEventsFailed = false;
   try {
-    const packLoads = KINGDOM_PACK_IDS.map((id) =>
-      loadKingdomPack(id).then((pack) => [id, pack])
-    );
-    const [timeline, geo, keyEvents, packEntries] = await Promise.all([
-      fetch("data/timeline.json?v=era-ui-52").then((r) => {
+    const [timeline, geo, keyEvents] = await Promise.all([
+      fetch(withV("data/timeline.json")).then((r) => {
         if (!r.ok) throw new Error("timeline");
         return r.json();
       }),
-      fetch("data/europe.geojson").then((r) => {
+      fetch(withV("data/europe.geojson")).then((r) => {
         if (!r.ok) throw new Error("geo");
         return r.json();
       }),
-      fetch("data/key-events.json")
-        .then((r) => (r.ok ? r.json() : { version: 1, periods: {} }))
-        .catch(() => ({ version: 1, periods: {} })),
-      Promise.all(packLoads),
+      fetch(withV("data/key-events.json"))
+        .then((r) => {
+          if (!r.ok) throw new Error("key-events");
+          return r.json();
+        })
+        .catch(() => {
+          keyEventsFailed = true;
+          return { version: 1, periods: {} };
+        }),
     ]);
     state.data = timeline;
     state.geo = geo;
@@ -3017,15 +3412,12 @@ async function init() {
       ? keyEvents
       : { version: 1, periods: {} };
     state.kingdomPacks = {};
-    for (const [id, pack] of packEntries) {
-      if (pack?.periods?.length) state.kingdomPacks[id] = pack;
-    }
   } catch (err) {
-    console.error(err);
-    $("#period-copy").textContent =
-      "Could not load map data. Serve this folder over HTTP (python3 -m http.server).";
+    $("#period-copy").textContent = "Could not load the atlas data. Check your connection and reload.";
+    showLoadNotice("Could not load the atlas data.", { retry: () => location.reload() });
     return;
   }
+  if (keyEventsFailed) showLoadNotice("Key events could not load.");
 
   state.atlasMode = "deep-time";
   syncAtlasTabs();
