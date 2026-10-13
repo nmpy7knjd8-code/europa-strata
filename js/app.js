@@ -2119,7 +2119,7 @@ function renderGlossary(activeEntries) {
 
 function updateCulturesRail() {
   const period = currentPeriod();
-  const layers = period?.mapLayers || [];
+  const layers = (period?.mapLayers || []).filter((l) => !l.extra);
   const rail = $("#cultures-rail");
   const blurb = $("#cultures-blurb");
   if (blurb) {

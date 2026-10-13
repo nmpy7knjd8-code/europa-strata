@@ -2946,6 +2946,7 @@ body.page-ancestry {
   padding: 0.15rem 0.5rem;
   min-height: 32px;
   cursor: pointer;
+}
 /* ═══ Kingdom eras v2 — real historical borders, Deep-time visual language ═══ */
 .app:not([data-atlas-mode="deep-time"]) .country {
   fill: var(--land-base) !important;
