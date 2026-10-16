@@ -3199,10 +3199,269 @@ function scheduleDesktopTickPrune(wrap) {
   }
 }
 
+/**
+ * Center of the range thumb. pos is 0..1 along the slider, matching the input.
+ * The thumb's used width does not come back from getComputedStyle (it reports the
+ * input width), so this follows the widths in styles.css: 34px, 30px under 860px.
+ */
+function sliderThumbWidthPx() {
+  try {
+    if (window.matchMedia("(max-width: 860px)").matches) return 30;
+  } catch (_) {
+    /* matchMedia unavailable */
+  }
+  return 34;
+}
+
+function sliderThumbCenterPx(pos, trackWidth, thumbWidth) {
+  const p = Math.max(0, Math.min(1, pos));
+  const travel = Math.max(0, trackWidth - thumbWidth);
+  return thumbWidth / 2 + p * travel;
+}
+
+function periodSliderPos(index, count) {
+  if (count <= 1) return 0;
+  return index / (count - 1);
+}
+
+/** Year → thumb position. Linear inside each period segment, because the slider itself steps by period. */
+function yearToSliderPos(year, periods) {
+  const n = periods.length;
+  if (n <= 1) return 0;
+  const y0 = Number(periods[0].yearApprox);
+  const y1 = Number(periods[n - 1].yearApprox);
+  if (year <= y0) return 0;
+  if (year >= y1) return 1;
+  for (let i = 0; i < n - 1; i++) {
+    const a = Number(periods[i].yearApprox);
+    const b = Number(periods[i + 1].yearApprox);
+    const lo = Math.min(a, b);
+    const hi = Math.max(a, b);
+    if (year < lo || year > hi) continue;
+    const span = b - a;
+    const t = span === 0 ? 0 : (year - a) / span;
+    return periodSliderPos(i, n) + t * (periodSliderPos(i + 1, n) - periodSliderPos(i, n));
+  }
+  return 1;
+}
+
+function scaleYearText(yearApprox) {
+  const y = Math.round(Number(yearApprox));
+  if (y < 0) return `${Math.abs(y)} BC`;
+  return `${y} AD`;
+}
+
+/**
+ * Labels for the desktop Deep-time scale.
+ * Always the first period, the BC/AD step change, and the last period.
+ * Other labels are round years on the period notches, at least two steps apart,
+ * with no unlabeled run longer than three steps.
+ */
+function deepTimeLabelIndices(periods) {
+  const n = periods.length;
+  if (!n) return [];
+  const breakIdx = Math.max(
+    0,
+    periods.findIndex((p) => Number(p.yearApprox) >= 1)
+  );
+  const kept = new Set([0, breakIdx, n - 1]);
+  const score = (i) => {
+    const y = Math.abs(Math.round(Number(periods[i].yearApprox)));
+    if (y % 1000 === 0) return 3;
+    if (y % 500 === 0) return 2;
+    if (y % 100 === 0) return 1;
+    return 0;
+  };
+  const order = [...Array(n).keys()].sort((a, b) => score(b) - score(a) || a - b);
+  for (const i of order) {
+    if (score(i) < 1) continue;
+    if ([...kept].some((k) => Math.abs(k - i) < 2)) continue;
+    kept.add(i);
+  }
+  let guard = 0;
+  while (guard++ < n) {
+    const list = [...kept].sort((a, b) => a - b);
+    let gap = null;
+    for (let k = 0; k < list.length - 1; k++) {
+      const span = list[k + 1] - list[k];
+      if (span >= 4 && (!gap || span > gap.span)) gap = { span, a: list[k], b: list[k + 1] };
+    }
+    if (!gap) break;
+    const mid = (gap.a + gap.b) / 2;
+    let best = -1;
+    let bestKey = Infinity;
+    for (let i = gap.a + 1; i < gap.b; i++) {
+      const key = Math.abs(i - mid) - score(i) * 0.01;
+      if (key < bestKey) {
+        bestKey = key;
+        best = i;
+      }
+    }
+    if (best < 0) break;
+    kept.add(best);
+  }
+  return [...kept].sort((a, b) => a - b);
+}
+
+/** Short notches on a year grid: 1000 years before AD 1, 250 years after. Stops are not repeated. */
+function deepTimeMinorYears(periods) {
+  if (periods.length < 2) return [];
+  const start = Number(periods[0].yearApprox);
+  const end = Number(periods[periods.length - 1].yearApprox);
+  const breakYear = Number(periods.find((p) => Number(p.yearApprox) >= 1)?.yearApprox ?? 1);
+  const stops = new Set(periods.map((p) => Math.round(Number(p.yearApprox))));
+  const years = [];
+  const firstBc = Math.ceil((start + 1) / 1000) * 1000;
+  for (let y = firstBc; y < 0 && y < breakYear; y += 1000) {
+    if (!stops.has(y)) years.push(y);
+  }
+  const firstAd = Math.floor(breakYear / 250) * 250 + 250;
+  for (let y = firstAd; y < end; y += 250) {
+    if (y <= breakYear || stops.has(y)) continue;
+    years.push(y);
+  }
+  return years;
+}
+
+function sliderTrackGeometry(wrap) {
+  const input = $("#time-slider");
+  if (!input || !wrap) return null;
+  const inputBox = input.getBoundingClientRect();
+  const wrapBox = wrap.getBoundingClientRect();
+  if (inputBox.width < 2) return null;
+  const thumb = sliderThumbWidthPx(input);
+  return {
+    origin: inputBox.left - wrapBox.left,
+    track: inputBox.width,
+    thumb,
+  };
+}
+
+function thumbX(geo, pos) {
+  return geo.origin + sliderThumbCenterPx(pos, geo.track, geo.thumb);
+}
+
+function wireTickControls(wrap) {
+  wrap.querySelectorAll(".tick-mark-btn, .tick-label").forEach((el) => {
+    el.addEventListener("click", () => snapToPeriod(Number(el.dataset.i)));
+  });
+  wrap.querySelectorAll(".tick-mark-btn, .tick-label").forEach((el) => {
+    el.classList.toggle("is-active", Number(el.dataset.i) === state.periodIndex);
+  });
+  updateTickCaption();
+}
+
+/** Drop an inner label if the painted boxes still touch. First, last, and the AD 1 hinge stay. */
+function relieveScaleLabelOverlap(wrap) {
+  const minGap = 20;
+  const nodes = () => [...wrap.querySelectorAll(".tick-label")];
+  let guard = 0;
+  while (guard++ < 12) {
+    const list = nodes();
+    if (list.length <= 2) return;
+    const boxes = list.map((el) => ({ el, r: el.getBoundingClientRect() }));
+    if (boxes.some((b) => b.r.width < 1)) return;
+    let drop = null;
+    let tightest = minGap;
+    for (let i = 0; i < boxes.length - 1; i++) {
+      const gap = boxes[i + 1].r.left - boxes[i].r.right;
+      if (gap >= tightest) continue;
+      const a = boxes[i].el;
+      const b = boxes[i + 1].el;
+      const protectedA = a.classList.contains("is-scale-end") || a.classList.contains("is-scale-break");
+      const protectedB = b.classList.contains("is-scale-end") || b.classList.contains("is-scale-break");
+      if (protectedA && protectedB) continue;
+      tightest = gap;
+      drop = protectedA ? b : protectedB ? a : b;
+    }
+    if (!drop || tightest >= minGap) return;
+    drop.remove();
+  }
+}
+
+/**
+ * Desktop Deep-time scale.
+ * The thumb is linear in period index. Tall notches are the selectable periods.
+ * Short notches are a year grid inside each segment (1000y before AD 1, 250y after).
+ */
+function buildDeepTimeYearScale(wrap, periods) {
+  const n = periods.length;
+  const geo = sliderTrackGeometry(wrap);
+  wrap.classList.add("is-year-scale");
+  if (!geo || n < 2) {
+    const tries = Number(wrap.dataset.scaleTries || 0);
+    if (tries > 8) return;
+    wrap.dataset.scaleTries = String(tries + 1);
+    requestAnimationFrame(() => {
+      if (desktopTickLabels() && !isKingdomMode()) buildTicks();
+    });
+    return;
+  }
+  delete wrap.dataset.scaleTries;
+  const breakIdx = Math.max(
+    0,
+    periods.findIndex((p) => Number(p.yearApprox) >= 1)
+  );
+  const labeled = new Set(deepTimeLabelIndices(periods));
+  const xAt = (pos) => thumbX(geo, pos);
+  const stopX = periods.map((_, i) => xAt(periodSliderPos(i, n)));
+
+  const minors = deepTimeMinorYears(periods)
+    .map((year) => ({ year, x: xAt(yearToSliderPos(year, periods)) }))
+    .filter((tick) => stopX.every((sx) => Math.abs(sx - tick.x) >= 5));
+
+  const minorHtml = minors
+    .map(
+      (tick) =>
+        `<span class="tick-notch" style="left:${tick.x}px" title="${escapeHtml(scaleYearText(tick.year))}" aria-hidden="true"></span>`
+    )
+    .join("");
+
+  const stopHtml = periods
+    .map((p, i) => {
+      const name = shortPeriodName(p);
+      const text = scaleYearText(p.yearApprox);
+      const title = `${text}: ${name}`;
+      const breakCls = i === breakIdx ? " is-scale-break" : "";
+      const active = i === state.periodIndex ? " is-active" : "";
+      return `<button type="button" class="tick-mark-btn${breakCls}${active}" data-i="${i}" style="left:${stopX[i]}px" title="${escapeHtml(title)}" aria-label="${escapeHtml(title)}"><span class="tick-mark" aria-hidden="true"></span></button>`;
+    })
+    .join("");
+
+  const labelHtml = [...labeled]
+    .map((i) => {
+      const p = periods[i];
+      const text = scaleYearText(p.yearApprox);
+      const name = shortPeriodName(p);
+      const title = `${text}: ${name}`;
+      const end = i === 0 || i === n - 1 ? " is-scale-end" : "";
+      const hinge = i === breakIdx ? " is-scale-break" : "";
+      const active = i === state.periodIndex ? " is-active" : "";
+      return `<button type="button" class="tick-label${end}${hinge}${active}" data-i="${i}" style="left:${stopX[i]}px" title="${escapeHtml(title)}" aria-label="${escapeHtml(title)}">${escapeHtml(text)}</button>`;
+    })
+    .join("");
+
+  wrap.innerHTML = `<div class="tick-rail" role="presentation">${minorHtml}${stopHtml}</div><div class="tick-label-layer">${labelHtml}</div>`;
+  wireTickControls(wrap);
+  const refreshLabels = () => {
+    if (!wrap.isConnected || !wrap.classList.contains("is-year-scale")) return;
+    relieveScaleLabelOverlap(wrap);
+  };
+  requestAnimationFrame(refreshLabels);
+  if (document.fonts && document.fonts.status !== "loaded" && document.fonts.ready) {
+    document.fonts.ready.then(() => requestAnimationFrame(refreshLabels)).catch(() => {});
+  }
+}
+
 function buildTicks() {
   const wrap = $("#tick-labels");
   if (!wrap) return;
   const periods = activePeriods();
+  if (desktopTickLabels() && !isKingdomMode()) {
+    buildDeepTimeYearScale(wrap, periods);
+    return;
+  }
+  wrap.classList.remove("is-year-scale");
   const n = periods.length;
   const widthPx = wrap.clientWidth || wrap.parentElement?.clientWidth || window.innerWidth || 400;
   const maxLabels = maxTickLabelsForWidth(widthPx);
@@ -3249,14 +3508,7 @@ function buildTicks() {
     pruneOverlappingTickLabels(wrap);
     scheduleDesktopTickPrune(wrap);
   }
-  wrap.querySelectorAll(".tick-mark-btn, .tick-label").forEach((el) => {
-    el.addEventListener("click", () => snapToPeriod(Number(el.dataset.i)));
-  });
-  // Sync active mark styling
-  wrap.querySelectorAll(".tick-mark-btn").forEach((el) => {
-    el.classList.toggle("is-active", Number(el.dataset.i) === state.periodIndex);
-  });
-  updateTickCaption();
+  wireTickControls(wrap);
 }
 
 function syncAtlasTabs() {

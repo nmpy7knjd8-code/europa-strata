@@ -3341,6 +3341,103 @@ body {
   outline-offset: 3px;
 }
 
+/* Desktop Deep-time year scale. Phones keep the sparse two-line ticks. */
+@media (min-width: 900px) {
+  .app[data-atlas-mode="deep-time"] .time-bar {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .ticks.is-year-scale {
+    min-height: 0;
+    margin-top: 0.15rem;
+    padding-top: 0.15rem;
+  }
+
+  .ticks.is-year-scale .tick-rail {
+    position: relative;
+    display: block;
+    height: 0.85rem;
+  }
+
+  .ticks.is-year-scale .tick-notch,
+  .ticks.is-year-scale .tick-mark-btn,
+  .ticks.is-year-scale .tick-label {
+    position: absolute;
+    left: 0;
+    transform: translateX(-50%);
+  }
+
+  .ticks.is-year-scale .tick-notch {
+    top: 0.38rem;
+    width: 1px;
+    height: 0.26rem;
+    background: var(--line-strong);
+    pointer-events: none;
+  }
+
+  .ticks.is-year-scale .tick-mark-btn {
+    top: 0;
+    flex: none;
+    width: 1.15rem;
+    min-width: 0;
+    height: 0.85rem;
+    padding: 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  .ticks.is-year-scale .tick-mark {
+    width: 1px;
+    height: 0.85rem;
+    margin: 0;
+    opacity: 0.9;
+    background: var(--ink);
+  }
+
+  .ticks.is-year-scale .tick-mark-btn.is-scale-break .tick-mark {
+    width: 2px;
+    height: 0.85rem;
+  }
+
+  .ticks.is-year-scale .tick-mark-btn.is-active .tick-mark {
+    width: 2px;
+    height: 0.85rem;
+    opacity: 1;
+  }
+
+  .ticks.is-year-scale .tick-label-layer {
+    position: relative;
+    height: 1.45rem;
+    margin-top: 0.2rem;
+  }
+
+  .ticks.is-year-scale .tick-label {
+    top: 0;
+    padding: 0;
+    font-size: 1rem;
+    font-weight: 500;
+    font-variant-numeric: tabular-nums;
+    font-feature-settings: "tnum" 1;
+    letter-spacing: 0;
+    line-height: 1.2;
+    text-align: center;
+    color: var(--ink-dim);
+    white-space: nowrap;
+  }
+
+  .ticks.is-year-scale .tick-label.is-active {
+    color: var(--ink);
+  }
+
+  .ticks.is-year-scale .tick-mark-btn:focus-visible,
+  .ticks.is-year-scale .tick-label:focus-visible {
+    outline: 2px solid var(--ink);
+    outline-offset: 3px;
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
