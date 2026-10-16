@@ -3061,8 +3061,18 @@ function splitTickYear(yearStr) {
   return { num: m[1], era };
 }
 
+/** Desktop sliders label every stop. Phones and tablets keep the sparse row. */
+function desktopTickLabels() {
+  try {
+    return window.matchMedia("(min-width: 900px)").matches;
+  } catch (_) {
+    return false;
+  }
+}
+
 /** How many year labels fit without crush on the current slider width. */
 function maxTickLabelsForWidth(widthPx) {
+  if (desktopTickLabels()) return Number.POSITIVE_INFINITY;
   const w = widthPx || 400;
   if (w < 360) return 4;
   if (w < 480) return 5;
@@ -3105,6 +3115,90 @@ function thinTickLabelsByGap(indices, n, widthPx, minGapPx) {
   return kept;
 }
 
+/** Conservative label width so the first paint does not overlap before fonts finish. */
+function estimatedTickLabelWidth(yearText) {
+  const len = (splitTickYear(yearText).num || "").length;
+  if (len >= 4) return 50;
+  if (len === 3) return 40;
+  if (len === 2) return 32;
+  return 24;
+}
+
+/** Same drop rule as pruneOverlappingTickLabels, using the slider width we already have. */
+function prethinDesktopTickLabels(indices, periods, n, widthPx) {
+  if (!widthPx || n <= 2 || indices.length <= 2) return indices;
+  const kept = indices.slice();
+  const box = (i) => {
+    const year = formatYearUi(periods[i].tickYear || periods[i].yearLabel);
+    const w = estimatedTickLabelWidth(year);
+    const x = (i / (n - 1)) * widthPx;
+    if (i === 0) return { left: 0, right: w };
+    if (i === n - 1) return { left: widthPx - w, right: widthPx };
+    return { left: x - w / 2, right: x + w / 2 };
+  };
+  let guard = 0;
+  while (guard++ < 48 && kept.length > 2) {
+    let dropAt = -1;
+    for (let k = 0; k < kept.length - 1; k++) {
+      const gap = box(kept[k + 1]).left - box(kept[k]).right;
+      if (gap >= 4) continue;
+      if (k === 0) dropAt = 1;
+      else if (k + 1 === kept.length - 1) dropAt = k;
+      else dropAt = k + 1;
+      break;
+    }
+    if (dropAt < 0) break;
+    kept.splice(dropAt, 1);
+  }
+  return kept;
+}
+
+/** Drop inner desktop labels whose boxes touch. First and last years always stay. */
+function pruneOverlappingTickLabels(wrap) {
+  if (!wrap) return;
+  const minGap = 4;
+  const nodes = () => [...wrap.querySelectorAll(".tick-label")];
+  let guard = 0;
+  while (guard++ < 48) {
+    const list = nodes();
+    if (list.length <= 2) return;
+    const boxes = list.map((el) => ({ el, r: el.getBoundingClientRect() }));
+    // Not laid out yet (or a web font has not painted). Caller retries after layout.
+    if (boxes.some((b) => b.r.width < 1)) return;
+    let drop = null;
+    for (let i = 0; i < boxes.length - 1; i++) {
+      const gap = boxes[i + 1].r.left - boxes[i].r.right;
+      if (gap >= minGap) continue;
+      if (i === 0) drop = boxes[1].el;
+      else if (i + 1 === boxes.length - 1) drop = boxes[i].el;
+      else drop = boxes[i + 1].el;
+      break;
+    }
+    if (!drop) return;
+    drop.remove();
+  }
+}
+
+let tickLabelPruneGen = 0;
+
+/** Measure after layout and after Sora loads. The sync pass often sees zero-width boxes. */
+function scheduleDesktopTickPrune(wrap) {
+  if (!desktopTickLabels() || !wrap) return;
+  const gen = ++tickLabelPruneGen;
+  const run = () => {
+    if (gen !== tickLabelPruneGen || !wrap.isConnected) return;
+    pruneOverlappingTickLabels(wrap);
+  };
+  const afterFrame = () => {
+    requestAnimationFrame(() => requestAnimationFrame(run));
+  };
+  afterFrame();
+  const fonts = document.fonts;
+  if (fonts && fonts.status !== "loaded" && typeof fonts.ready?.then === "function") {
+    fonts.ready.then(afterFrame).catch(() => {});
+  }
+}
+
 function buildTicks() {
   const wrap = $("#tick-labels");
   if (!wrap) return;
@@ -3113,12 +3207,17 @@ function buildTicks() {
   const widthPx = wrap.clientWidth || wrap.parentElement?.clientWidth || window.innerWidth || 400;
   const maxLabels = maxTickLabelsForWidth(widthPx);
   let labeledIdx = sparseTickLabelIndices(n, maxLabels);
-  labeledIdx = thinTickLabelsByGap(
-    labeledIdx,
-    n,
-    widthPx,
-    minTickLabelGapPx(widthPx)
-  );
+  // Below 900px the sparse row is unchanged. Desktop starts from every stop.
+  if (!desktopTickLabels()) {
+    labeledIdx = thinTickLabelsByGap(
+      labeledIdx,
+      n,
+      widthPx,
+      minTickLabelGapPx(widthPx)
+    );
+  } else {
+    labeledIdx = prethinDesktopTickLabels(labeledIdx, periods, n, widthPx);
+  }
   const labeled = new Set(labeledIdx);
 
   const marks = periods
@@ -3144,6 +3243,12 @@ function buildTicks() {
     .join("");
 
   wrap.innerHTML = `<div class="tick-rail" role="presentation">${marks}</div><div class="tick-label-layer">${labels}</div>`;
+  if (desktopTickLabels()) {
+    // Force layout so a resize (fonts already in) can prune in this turn.
+    void wrap.offsetWidth;
+    pruneOverlappingTickLabels(wrap);
+    scheduleDesktopTickPrune(wrap);
+  }
   wrap.querySelectorAll(".tick-mark-btn, .tick-label").forEach((el) => {
     el.addEventListener("click", () => snapToPeriod(Number(el.dataset.i)));
   });
@@ -3334,6 +3439,11 @@ function bindUI() {
   // at identity zoom. Only remap when the map *width* meaningfully changes;
   // always preserve zoom if a rebuild does run.
   let resizeTimer = null;
+  try {
+    window.matchMedia("(min-width: 900px)").addEventListener("change", () => buildTicks());
+  } catch (_) {
+    /* matchMedia unavailable */
+  }
   window.addEventListener("resize", () => {
     clearTimeout(resizeTimer);
     resizeTimer = setTimeout(() => {
