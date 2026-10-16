@@ -91,6 +91,13 @@ const KINGDOM_TAB_LABELS = {
   modern: "Modern",
 };
 
+function motionMs(ms) {
+  try {
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return 0;
+  } catch (_) {}
+  return ms;
+}
+
 const state = {
   data: null,
   geo: null,
@@ -283,7 +290,7 @@ function v2TickFromTopo(topo, obj, raw, colors) {
       polities[xid] = {
         name,
         type: "Other polity",
-        summary: `${name} — shown from the historical-basemaps dataset; no Europa Strata profile yet.`,
+        summary: `${name}, shown from the historical-basemaps dataset. No Europa Strata profile yet.`,
         description: "",
       };
       mapLayers.push({ polityId: xid, id: xid, label: name, color: ERA_NEUTRAL, role: "dominant", extra: true });
@@ -320,7 +327,7 @@ function normalizeKingdomPack(raw, topo = null) {
       mapAttribution:
         raw.mapAttribution ||
         raw.notes ||
-        "Schematic kingdom extents — not modern borders.",
+        "Schematic kingdom extents, not modern borders.",
       status: raw.status || "ready",
       ticks: raw.ticks || [],
       periods: raw.periods,
@@ -435,7 +442,7 @@ function normalizeKingdomPack(raw, topo = null) {
         tickNarrative ||
         raw.narrative ||
         raw.notes ||
-        `Schematic ${label} polities around ${year} AD — kingdoms, empires, duchies, and confederations (not modern borders).`,
+        `Schematic ${label} polities around ${year} AD: kingdoms, empires, duchies, and confederations (not modern borders).`,
       culturesNote: tickEyebrow || "",
       mapLayers,
       polities,
@@ -455,7 +462,7 @@ function normalizeKingdomPack(raw, topo = null) {
       ? V2_ATTRIBUTION
       : raw.mapAttribution ||
         raw.notes ||
-        "Schematic kingdom extents — not modern state borders.",
+        "Schematic kingdom extents, not modern state borders.",
     v2,
     status: raw.status || "ready",
     ticks: raw.ticks,
@@ -873,7 +880,7 @@ function resolveOtherMeta(region, baseKey = {}) {
   if (!detail) {
     const baseDetail =
       baseKey.detail ||
-      "Residual ancestry outside the main WHG–EEF–WSH (and named) components — not a single deep Paleolithic cluster.";
+      "Residual ancestry outside the main WHG–EEF–WSH (and named) components. Not a single deep Paleolithic cluster.";
     if (hintText && note) {
       detail = `Residual / unmodeled slice: ${hintText}. ${note}`;
     } else if (note) {
@@ -1294,7 +1301,7 @@ function resetMapZoom() {
   state.savedZoom = null;
   state.svg
     .transition()
-    .duration(320)
+    .duration(motionMs(320))
     .ease(d3.easeCubicOut)
     .call(state.zoom.transform, d3.zoomIdentity);
 }
@@ -1303,7 +1310,7 @@ function bumpMapZoom(factor) {
   if (!state.svg || !state.zoom) return;
   state.svg
     .transition()
-    .duration(220)
+    .duration(motionMs(220))
     .ease(d3.easeCubicOut)
     .call(state.zoom.scaleBy, factor);
 }
@@ -1515,7 +1522,7 @@ function paintMap(animate = true) {
       if (animate) {
         node
           .transition()
-          .duration(280)
+          .duration(motionMs(280))
           .ease(d3.easeCubicOut)
           .style("fill", fill)
           .style("fill-opacity", opacity)
@@ -1541,7 +1548,7 @@ function paintMap(animate = true) {
     if (animate) {
       node
         .transition()
-        .duration(420)
+        .duration(motionMs(420))
         .ease(d3.easeCubicOut)
         .style("fill", fill)
         .style("fill-opacity", opacity);
@@ -1931,7 +1938,7 @@ function renderKeyEventsList(listEl, events) {
       when.className = "key-events-date";
       when.textContent = formatYearUi(ev.date);
       summary.appendChild(when);
-      summary.appendChild(document.createTextNode(" — "));
+      summary.appendChild(document.createTextNode(": "));
     }
     const title = document.createElement("span");
     title.className = "key-events-teaser";
@@ -2105,7 +2112,7 @@ function renderGlossary(activeEntries) {
       text:
         otherEntry?.detail ||
         otherKey?.detail ||
-        "Residual ancestry outside the main WHG–EEF–WSH components — eastern Mediterranean, East Eurasian, North African, CHG/Iran-related, or poorly resolved inputs depending on period and place.",
+        "Residual ancestry outside the main WHG–EEF–WSH components: eastern Mediterranean, East Eurasian, North African, CHG/Iran-related, or poorly resolved inputs depending on period and place.",
     });
   }
 
@@ -2625,7 +2632,7 @@ function inferImageRole(img) {
     return "religion";
   }
   if (
-    /book|manuscript|folio|thes|print|tapestry|chronicle|poem|poetry|saga|text|letter|codex|quill|dante|shakespeare|cervantes|miniature/.test(
+    /book|manuscript|folio|thes|print|illuminat|chronicle|poem|poetry|saga|text|letter|codex|quill|dante|shakespeare|cervantes|miniature/.test(
       t
     )
   ) {
@@ -3117,7 +3124,7 @@ function buildTicks() {
   const marks = periods
     .map((p, i) => {
       const name = shortPeriodName(p);
-      const title = `${formatYearUi(p.yearLabel)} — ${name}`;
+      const title = `${formatYearUi(p.yearLabel)}: ${name}`;
       return `<button type="button" class="tick-mark-btn" data-i="${i}" title="${escapeHtml(title)}" aria-label="${escapeHtml(title)}"><span class="tick-mark" aria-hidden="true"></span></button>`;
     })
     .join("");
@@ -3128,7 +3135,7 @@ function buildTicks() {
       const year = formatYearUi(p.tickYear || p.yearLabel);
       const { num, era } = splitTickYear(year);
       const name = shortPeriodName(p);
-      const title = `${formatYearUi(p.yearLabel)} — ${name}`;
+      const title = `${formatYearUi(p.yearLabel)}: ${name}`;
       const pct = n <= 1 ? 0 : (i / (n - 1)) * 100;
       const edge = i === 0 ? " is-first" : i === n - 1 ? " is-last" : "";
       const active = i === state.periodIndex ? " is-active" : "";

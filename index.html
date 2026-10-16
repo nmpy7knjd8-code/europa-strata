@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-    <title>Europa Strata — European deep-time atlas</title>
+    <title>Europa Strata: European deep-time atlas</title>
     <meta
       name="description"
       content="Interactive real map of European cultures, empires, archaeogenetics, and languages from the Mesolithic to now."
@@ -22,7 +22,7 @@
       href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Sora:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="css/styles.css?v=borders-black-1" />
+    <link rel="stylesheet" href="css/styles.css?v=reading-17" />
     <script>
       /* Apply saved theme before first paint; clear legacy layout keys */
       try {
@@ -37,7 +37,7 @@
     </script>
     <script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/topojson-client@3.1.0/dist/topojson-client.min.js" defer></script>
-    <script src="js/app.js?v=borders-black-1" defer></script>
+    <script src="js/app.js?v=reading-17" defer></script>
   </head>
   <body>
     <div class="app" data-atlas-mode="deep-time">
@@ -90,8 +90,7 @@
       </nav>
       <main class="map-stage" id="map-stage">
         <div class="map-chrome">
-          <h1 class="brand">Europa <em>Strata</em></h1>
-          <p class="brand-sub">Deep-time atlas</p>
+          <h1 class="brand">Europa Strata</h1>
         </div>
         <div class="map-tools">
           <button type="button" class="map-tool-btn" id="btn-zoom-in" aria-label="Zoom in">+</button>
@@ -131,7 +130,6 @@
             />
           </div>
           <div class="ticks" id="tick-labels"></div>
-          <p class="tick-caption" id="tick-caption" aria-live="polite"></p>
         </div>
       </div>
 
@@ -165,7 +163,7 @@
 
 
           <div class="polity-panel" id="polity-panel" hidden>
-            <p class="kicker" id="polity-panel-kicker">Polity</p>
+            <h3 class="section-heading" id="polity-panel-kicker">Polity</h3>
             <h4 class="polity-name" id="polity-name">—</h4>
             <div class="polity-chain" id="polity-chain" hidden></div>
             <p class="polity-summary" id="polity-summary"></p>
@@ -176,7 +174,7 @@
               <div class="polity-inline-gallery" id="polity-leaders-gallery"></div>
             </div>
             <div class="polity-block" id="polity-religion-block" hidden>
-              <p class="kicker">Religion</p>
+              <h3 class="section-heading">Religion</h3>
               <p class="polity-religion" id="polity-religion"></p>
               <div class="polity-inline-gallery" id="polity-religion-gallery"></div>
             </div>
@@ -225,7 +223,7 @@
           <p class="ancestry-note" id="ancestry-note" hidden></p>
 
           <div class="ling-panel" id="language">
-            <p class="kicker">Languages</p>
+            <h3 class="section-heading">Languages</h3>
             <p class="ling-line"><span id="ling-family">—</span></p>
             <p class="ling-line dim" id="ling-languages">—</p>
             <span class="conf-pill" id="ling-confidence" data-conf="hypothetical">—</span>
@@ -241,7 +239,7 @@
           </div>
 
           <div class="ancestry-panel">
-            <p class="kicker">Ancestry mix</p>
+            <h3 class="section-heading">Ancestry mix</h3>
             <p class="ancestry-mid-label" id="ancestry-mid-label" hidden>Regional midpoint</p>
             <div class="stack-bar" id="stack-bar"></div>
             <div class="pie-wrap">

@@ -50,7 +50,7 @@
         "label": "Other",
         "full": "Residual / unmodeled components",
         "color": "#6a6a6a",
-        "detail": "Catch-all residual outside the main WHG–EEF–WSH (and named) components — eastern Mediterranean, East Eurasian, North African, CHG/Iran-related, Slavic/Finnic/Turkic, or poorly resolved inputs depending on period and place. Not a single deep Paleolithic cluster."
+        "detail": "Catch-all residual outside the main WHG–EEF–WSH (and named) components: eastern Mediterranean, East Eurasian, North African, CHG/Iran-related, Slavic/Finnic/Turkic, or poorly resolved inputs depending on period and place. Not a single deep Paleolithic cluster."
       }
     ],
     "modeLegend": {
@@ -141,7 +141,7 @@
         "CYP"
       ]
     },
-    "mapAttribution": "Base map: Natural Earth (public domain). Culture extents are schematic best-guess consensus overlays on modern borders — not precise archaeological site distributions.",
+    "mapAttribution": "Base map: Natural Earth (public domain). Culture extents are schematic best-guess consensus overlays on modern borders, not precise archaeological site distributions.",
     "glossary": [
       {
         "id": "whg",
@@ -183,7 +183,7 @@
         "id": "other",
         "term": "Other",
         "name": "Residual / unmodeled components",
-        "text": "Gray “Other” in the ancestry mix is residual ancestry outside the main WHG–EEF–WSH (and named) components — eastern Mediterranean, East Eurasian, North African, CHG/Iran-related, or poorly resolved inputs depending on period and place. Not a single deep Paleolithic cluster; the side note under Ancestry mix names what that residual stands for when known."
+        "text": "Gray “Other” in the ancestry mix is residual ancestry outside the main WHG–EEF–WSH (and named) components: eastern Mediterranean, East Eurasian, North African, CHG/Iran-related, or poorly resolved inputs depending on period and place. Not a single deep Paleolithic cluster; the side note under Ancestry mix names what that residual stands for when known."
       }
     ],
     "linkAliases": [
@@ -3739,8 +3739,8 @@
       "era": "Steppe ancestry remaps temperate Europe",
       "yearLabel": "c. 2500 BC",
       "yearApprox": -2500,
-      "narrative": "Around 2500 BC Corded Ware, Single Grave, and Bell Beaker packages carry Yamnaya-related ancestry deep into temperate Europe — fiercely in Britain and northern Corded zones, more gradually in Iberian Beaker. Prior Neolithic farmer pools collapse or dilute region by region; residual WHG–EEF clines survive under new pottery names. This is the main hypothesized window for Indo-Europeanization of much of temperate Europe.",
-      "culturesNote": "Corded Ware, Single Grave, Battle Axe, Bell Beaker (Britain high-turnover; Iberia more gradual) — steppe gradients, not one %.",
+      "narrative": "Around 2500 BC Corded Ware, Single Grave, and Bell Beaker packages carry Yamnaya-related ancestry deep into temperate Europe, fiercely in Britain and northern Corded zones, more gradually in Iberian Beaker. Prior Neolithic farmer pools collapse or dilute region by region; residual WHG–EEF clines survive under new pottery names. This is the main hypothesized window for Indo-Europeanization of much of temperate Europe.",
+      "culturesNote": "Corded Ware, Single Grave, Battle Axe, Bell Beaker (Britain high-turnover; Iberia more gradual): steppe gradients, not one %.",
       "regions": {
         "iberia": {
           "culture": "Beaker Iberian society grafts an archery-and-hospitality package onto Copper Age hierarchies. Single graves and gendered kits personalise death beside older collective chambers still in memory. Coastal and inland groups plug into pan-European Beaker exchange for metal and ornaments while Mediterranean farming continues. Status is portable—pot, dagger, wristguard—more than new megamonuments.",
@@ -3796,7 +3796,7 @@
           "cultureLabel": "Bell Beaker Iberia"
         },
         "britain": {
-          "culture": "Single-grave barrow society personalises death with gendered kits—weapons, beakers, archery gear—while farming continues under new lineages. Continental links bring metal recipes and marriage networks. Social ideals shift from Neolithic ceremonial commons toward armed, provisioned personhood at the grave. Stonehenge’s stones remain; the congregation’s ancestry does not.",
+          "culture": "Single-grave barrow society personalises death with gendered kits (weapons, beakers, archery gear)while farming continues under new lineages. Continental links bring metal recipes and marriage networks. Social ideals shift from Neolithic ceremonial commons toward armed, provisioned personhood at the grave. Stonehenge’s stones remain; the congregation’s ancestry does not.",
           "color": "#9a5a28",
           "mode": "replacement",
           "ancestry": {
@@ -4416,7 +4416,7 @@
         "GBR": {
           "name": "Bell Beaker Britain",
           "summary": "Steppe-rich Beaker migrants.",
-          "conflicts": "~90% Neolithic replacement (Olalde 2018); transforms island ancestry.",
+          "conflicts": "Continental Beaker networks supply metal and marriage ties; late Neolithic ceremonial life does not continue unchanged (Olalde 2018).",
           "precededBy": {
             "periodId": "yamnaya",
             "iso": "GBR",
@@ -4428,7 +4428,7 @@
             "name": "Wessex / British BA"
           },
           "religion": "Bell Beaker Britain: individual graves with beaker, copper/bronze, and archer kits; henge landscapes still used. Beaker rite overlays older monumental religion.",
-          "culture": "Single-grave barrow society personalises death with gendered kits—weapons, beakers, archery gear—while farming continues under new lineages. Continental links bring metal recipes and marriage networks. Social ideals shift from Neolithic ceremonial commons toward armed, provisioned personhood at the grave. Stonehenge’s stones remain; the congregation’s ancestry does not.",
+          "culture": "Single-grave barrow society personalises death with gendered kits (weapons, beakers, archery gear)while farming continues under new lineages. Continental links bring metal recipes and marriage networks. Social ideals shift from Neolithic ceremonial commons toward armed, provisioned personhood at the grave. Stonehenge’s stones remain; the congregation’s ancestry does not.",
           "cultureLabel": "Bell Beaker Britain (genomic transformation)"
         },
         "ESP": {
@@ -4536,11 +4536,11 @@
           "cultureLabel": "Bell Beaker Iberia"
         },
         "IRL": {
-          "culture": "Single-grave barrow society personalises death with gendered kits—weapons, beakers, archery gear—while farming continues under new lineages. Continental links bring metal recipes and marriage networks. Social ideals shift from Neolithic ceremonial commons toward armed, provisioned personhood at the grave. Stonehenge’s stones remain; the congregation’s ancestry does not.",
+          "culture": "Single-grave barrow society personalises death with gendered kits (weapons, beakers, archery gear)while farming continues under new lineages. Continental links bring metal recipes and marriage networks. Social ideals shift from Neolithic ceremonial commons toward armed, provisioned personhood at the grave. Stonehenge’s stones remain; the congregation’s ancestry does not.",
           "cultureLabel": "Bell Beaker Britain (genomic transformation)"
         },
         "IMN": {
-          "culture": "Single-grave barrow society personalises death with gendered kits—weapons, beakers, archery gear—while farming continues under new lineages. Continental links bring metal recipes and marriage networks. Social ideals shift from Neolithic ceremonial commons toward armed, provisioned personhood at the grave. Stonehenge’s stones remain; the congregation’s ancestry does not.",
+          "culture": "Single-grave barrow society personalises death with gendered kits (weapons, beakers, archery gear)while farming continues under new lineages. Continental links bring metal recipes and marriage networks. Social ideals shift from Neolithic ceremonial commons toward armed, provisioned personhood at the grave. Stonehenge’s stones remain; the congregation’s ancestry does not.",
           "cultureLabel": "Bell Beaker Britain (genomic transformation)"
         },
         "MCO": {

@@ -102,7 +102,6 @@ button {
   max-width: 100%;
   min-width: 0;
   height: auto;
-  min-height: 100vh;
   min-height: 100dvh;
   overflow-x: clip;
 }
@@ -317,8 +316,9 @@ button {
   color: var(--ink);
 }
 
-.brand em {
-  font-style: italic;
+.brand em,
+.anc-brand em {
+  font-style: normal;
 }
 
 .brand-sub {
@@ -544,12 +544,13 @@ html[data-theme="dark"] .polity {
 }
 
 .kicker {
-  margin: 0 0 0.15rem;
-  font-size: 0.82rem;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--ink-mute);
+  margin: 0 0 0.35rem;
+  font-size: 0.95rem;
+  letter-spacing: 0;
+  text-transform: none;
+  color: var(--ink-dim);
   font-weight: 400;
+  line-height: 1.4;
 }
 
 .period-eyebrow {
@@ -1742,7 +1743,7 @@ body.lightbox-open {
 }
 
 .tiny {
-  font-size: 0.85rem !important;
+  font-size: 0.95rem !important;
 }
 
 .theme-toggle {
@@ -1797,8 +1798,8 @@ body.lightbox-open {
 /* ——— App layout (stacked: map → slider → content) ——— */
 
 html {
-  /* Normal mobile density — not giant narrative type */
-  --read-size: 15px;
+  /* Reading size for running text */
+  --read-size: 17px;
   --read-leading: 1.5;
   --chrome-size: 13.5px;
 }
@@ -2026,9 +2027,11 @@ html {
 }
 
 .kicker {
-  font-size: 0.72rem;
-  letter-spacing: 0.12em;
-  margin-bottom: 0.3rem;
+  font-size: 0.95rem;
+  letter-spacing: 0;
+  text-transform: none;
+  color: var(--ink-dim);
+  margin-bottom: 0.35rem;
 }
 
 .period-title {
@@ -2451,7 +2454,7 @@ body.page-ancestry {
 .page-ancestry {
   background: var(--bg);
   color: var(--ink);
-  min-height: 100vh;
+  min-height: 100dvh;
 }
 
 .page-ancestry .anc-top {
@@ -2777,10 +2780,10 @@ body.page-ancestry {
   }
 }
 
-/* Kingdom tabs: normal mobile reading size (not Deep-time 22px narrative) */
+/* Kingdom tabs use the same reading size as Deep-time */
 .app:not([data-atlas-mode="deep-time"]) {
-  --read-size: 15px;
-  --read-leading: 1.5;
+  --read-size: 17px;
+  --read-leading: 1.6;
 }
 
 .app:not([data-atlas-mode="deep-time"]) .culture-title {
@@ -2837,7 +2840,7 @@ body.page-ancestry {
   font-size: 0.68rem;
 }
 
-/* Beat stacked var(--read-size) rules — body must stay ~15px on phone */
+/* Beat stacked var(--read-size) rules. Body stays 17px. */
 .app:not([data-atlas-mode="deep-time"]) .period-copy,
 .app:not([data-atlas-mode="deep-time"]) .culture-desc,
 .app:not([data-atlas-mode="deep-time"]) .polity-chain,
@@ -2863,8 +2866,8 @@ body.page-ancestry {
 .app:not([data-atlas-mode="deep-time"]) .polity-art,
 .app:not([data-atlas-mode="deep-time"]) .polity-philosophy,
 .app:not([data-atlas-mode="deep-time"]) .polity-science {
-  font-size: 15px;
-  line-height: 1.5;
+  font-size: 17px;
+  line-height: 1.6;
 }
 
 .app:not([data-atlas-mode="deep-time"]) .polity-story .story-item-title {
@@ -3016,4 +3019,335 @@ body.page-ancestry {
 .polity-border {
   stroke: var(--border-line) !important;
   stroke-width: var(--border-width) !important;
+}
+
+/* ——— Reading column ———
+   Four type steps: display, heading (1.45rem), body (17px), small (0.95rem).
+   Section hairlines are replaced with 48–72px of space.
+   Map, legend chips, chart colors, shadows, and 1px outlined controls stay as they are. */
+
+:root,
+html,
+.app,
+.app:not([data-atlas-mode="deep-time"]) {
+  --read-size: 17px;
+  --read-leading: 1.6;
+  --type-display: clamp(1.85rem, 3.4vw, 2.4rem);
+  --type-heading: 1.45rem;
+  --type-body: 17px;
+  --type-small: 0.95rem;
+}
+
+body {
+  font-size: var(--type-body);
+  line-height: var(--read-leading);
+}
+
+.app,
+.page-ancestry {
+  min-height: 100dvh;
+}
+
+.app .time-bar,
+.app .legend-bar,
+.app .side,
+.app .side-top,
+.app .key-events,
+.app .key-events--below,
+.app .polity-panel,
+.app .polity-chain,
+.app .ling-panel,
+.app .absorb-strip,
+.app .ancestry-panel,
+.app .ancestry-cline,
+.app .below,
+.app .glossary {
+  border-top: 0;
+  border-bottom: 0;
+}
+
+.app .time-bar {
+  padding-top: 3rem;
+  padding-bottom: 1.25rem;
+}
+
+.app .legend-bar {
+  padding-top: 4.5rem;
+  padding-bottom: 1.25rem;
+}
+
+.app .side-top {
+  padding-top: 4.5rem;
+  padding-bottom: 0;
+}
+
+.app .side-detail {
+  padding-top: 3.5rem;
+}
+
+.app .key-events,
+.app .key-events--below {
+  margin-top: 3.5rem;
+  padding-top: 0;
+}
+
+.app .polity-panel {
+  margin-top: 4.5rem;
+  padding-top: 0;
+}
+
+.app .polity-chain {
+  margin-bottom: 3rem;
+  padding-bottom: 0;
+}
+
+.app .polity-block {
+  margin-top: 3rem;
+  padding-top: 0;
+}
+
+.app .ling-panel,
+.app .absorb-strip,
+.app .ancestry-panel,
+.app .ancestry-cline {
+  margin-top: 4.5rem;
+  padding-top: 0;
+}
+
+.app .glossary,
+.app .below {
+  padding-top: 4.5rem;
+}
+
+.app .side-top,
+.app .side-detail,
+.app .glossary-inner,
+.app .key-events {
+  max-width: 68ch;
+}
+
+.app .kicker,
+.app .legend-bar .kicker,
+.app .key-events .kicker,
+.app .glossary .kicker,
+.app .polity-block .kicker,
+.app .polity-chain-label,
+.app .ancestry-mid-label,
+.app .ancestry-panel .kicker,
+.app:not([data-atlas-mode="deep-time"]) .legend-bar .kicker,
+.app:not([data-atlas-mode="deep-time"]) .side .kicker,
+.app:not([data-atlas-mode="deep-time"]) .polity-block .kicker,
+.app:not([data-atlas-mode="deep-time"]) .polity-conflict-label,
+.app:not([data-atlas-mode="deep-time"]) .polity-chain-label,
+.app:not([data-atlas-mode="deep-time"]) #detail-kicker,
+#detail-kicker,
+.page-ancestry .kicker {
+  font-family: var(--font-ui);
+  font-size: var(--type-small);
+  font-weight: 400;
+  letter-spacing: 0;
+  text-transform: none;
+  color: var(--ink-dim);
+  line-height: 1.4;
+}
+
+.app .section-heading {
+  margin: 0 0 0.75rem;
+  font-family: var(--font-display);
+  font-size: var(--type-heading);
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0;
+  text-transform: none;
+  line-height: 1.2;
+  color: var(--ink);
+}
+
+.app .brand,
+.app .brand em,
+.app .period-title,
+.app .culture-title,
+.page-ancestry .anc-brand,
+.page-ancestry .anc-brand em,
+.page-ancestry .anc-title {
+  font-family: var(--font-display);
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0;
+}
+
+.app .brand,
+.app .period-title,
+.app .culture-title,
+.page-ancestry .anc-title {
+  font-size: var(--type-display);
+  color: var(--ink);
+}
+
+.app .polity-name,
+.app .polity-panel .polity-name,
+.app .glossary-title,
+.app .slider-label,
+.app .story-item-title,
+.app:not([data-atlas-mode="deep-time"]) .polity-name,
+.app:not([data-atlas-mode="deep-time"]) .culture-title,
+.app:not([data-atlas-mode="deep-time"]) .polity-story .story-item-title {
+  font-family: var(--font-display);
+  font-size: var(--type-heading);
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0;
+  line-height: 1.2;
+  color: var(--ink);
+}
+
+.app .period-copy,
+.app .culture-desc,
+.app .period-ling,
+.app .polity-summary,
+.app .polity-conflicts,
+.app .polity-leaders,
+.app .polity-religion,
+.app .polity-culture,
+.app .polity-story,
+.app .polity-literature,
+.app .polity-art,
+.app .polity-ideas,
+.app .polity-philosophy,
+.app .polity-science,
+.app .story-item-text,
+.app .ling-line,
+.app .ling-line.dim,
+.app .ling-note,
+.app .ancestry-note,
+.app .absorb-strip p,
+.app .cline-note,
+.app .key-events-list,
+.app .key-events-body,
+.app .key-events-teaser,
+.app .key-events-date,
+.app .key-events-empty,
+.app .glossary-item dt,
+.app .glossary-item dd,
+.app .pie-list li,
+.app .culture-chip,
+.app:not([data-atlas-mode="deep-time"]) .period-copy,
+.app:not([data-atlas-mode="deep-time"]) .culture-desc,
+.app:not([data-atlas-mode="deep-time"]) .polity-summary,
+.app:not([data-atlas-mode="deep-time"]) .polity-conflicts,
+.app:not([data-atlas-mode="deep-time"]) .polity-leaders,
+.app:not([data-atlas-mode="deep-time"]) .polity-religion,
+.app:not([data-atlas-mode="deep-time"]) .polity-culture,
+.app:not([data-atlas-mode="deep-time"]) .polity-story,
+.app:not([data-atlas-mode="deep-time"]) .polity-story .story-item-text,
+.app:not([data-atlas-mode="deep-time"]) .polity-literature,
+.app:not([data-atlas-mode="deep-time"]) .polity-art,
+.app:not([data-atlas-mode="deep-time"]) .polity-philosophy,
+.app:not([data-atlas-mode="deep-time"]) .polity-science,
+.page-ancestry .anc-lead,
+.page-ancestry .anc-summary,
+.page-ancestry .anc-copy p,
+.page-ancestry .anc-phenotype p,
+.page-ancestry .anc-diet p,
+.page-ancestry .anc-meta ul,
+.page-ancestry .anc-meta p,
+.page-ancestry .anc-foot {
+  font-size: var(--type-body);
+  line-height: var(--read-leading);
+  color: var(--ink);
+}
+
+.app .culture-horizon,
+.app .mode-pill,
+.app .conf-pill,
+.app .absorb-strip h4,
+.app .cline-end-label,
+.app .tick-label .tick-num,
+.app .slider-year {
+  font-size: var(--type-small);
+  letter-spacing: 0;
+  text-transform: none;
+  line-height: 1.35;
+}
+
+/* Five era labels share one row. Keep the size that fits “Renaissance” on a phone. */
+
+.app .culture-horizon,
+.app .mode-pill,
+.app .conf-pill,
+.app .absorb-strip h4,
+.app .tick-label .tick-era,
+.app .map-attr,
+.app .tiny,
+.app .below-note p,
+.app .polity-figure figcaption,
+.app .approx-note,
+.app .key-events-context,
+.app .cline-end-legend,
+.app .theme-toggle,
+.page-ancestry .anc-map-fig figcaption {
+  font-family: var(--font-ui);
+  font-size: var(--type-small);
+  font-weight: 400;
+  letter-spacing: 0;
+  text-transform: none;
+  color: var(--ink-mute);
+  line-height: 1.4;
+}
+
+.app .slider-year {
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.app .absorb-strip h4,
+.app .cline-end-label,
+.app .tick-label .tick-num,
+.app .mode-pill,
+.app .conf-pill {
+  color: var(--ink-dim);
+  font-weight: 500;
+}
+
+.app .map-tool-reset {
+  font-size: var(--type-small);
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.app .map-tip,
+.app .map-tip strong {
+  font-family: var(--font-ui);
+  font-style: normal;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+.app .map-tip-cultures {
+  font-family: var(--font-ui);
+  font-size: var(--type-small);
+  font-weight: 400;
+}
+
+.app .tick-caption {
+  display: none;
+}
+
+.atlas-tab:focus-visible,
+.nav-btn:focus-visible,
+.map-tool-btn:focus-visible,
+.time-slider:focus-visible {
+  outline: 2px solid var(--ink);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
