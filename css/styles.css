@@ -2505,7 +2505,7 @@ body.page-ancestry {
   font-size: 0.68rem;
 }
 
-/* Beat stacked var(--read-size) rules. Body stays 17px. */
+/* Beat stacked var(--read-size) rules. Body follows --type-body (17px desktop, 15px on phones). */
 .app:not([data-atlas-mode="deep-time"]) .period-copy,
 .app:not([data-atlas-mode="deep-time"]) .culture-desc,
 .app:not([data-atlas-mode="deep-time"]) .polity-chain,
@@ -2531,8 +2531,8 @@ body.page-ancestry {
 .app:not([data-atlas-mode="deep-time"]) .polity-art,
 .app:not([data-atlas-mode="deep-time"]) .polity-philosophy,
 .app:not([data-atlas-mode="deep-time"]) .polity-science {
-  font-size: 17px;
-  line-height: 1.6;
+  font-size: var(--type-body);
+  line-height: var(--read-leading);
 }
 
 .app:not([data-atlas-mode="deep-time"]) .polity-story .story-item-title {
