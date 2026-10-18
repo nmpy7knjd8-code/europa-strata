@@ -660,7 +660,6 @@ function scrubBodyCopyMarkup(root = document) {
       "#absorb-substrate",
       "#absorb-incoming",
       "#absorb-fused",
-      "#cultures-blurb",
     ].join(",")
   );
   fields.forEach((el) => {
@@ -2210,12 +2209,6 @@ function updateCulturesRail() {
   const period = currentPeriod();
   const layers = (period?.mapLayers || []).filter((l) => !l.extra);
   const rail = $("#cultures-rail");
-  const blurb = $("#cultures-blurb");
-  if (blurb) {
-    // Drop large schematic-disclaimer callouts; keep Sources/.tiny footnotes only
-    blurb.textContent = "";
-    blurb.hidden = true;
-  }
   if (!rail) return;
   rail.innerHTML = layers
     .map((l) => {
@@ -2521,13 +2514,28 @@ function deepTimePanelHasContent(source) {
   return DEEP_TIME_TEXT_KEYS.some((k) => String(source[k] || "").trim());
 }
 
+/* Drop a gallery figure whose image fails to load (renamed/deleted on Commons).
+   Image error events don't bubble, so listen in the capture phase. Replaces the
+   old inline onerror attribute (CSP-friendly). scripts/check_images.py catches
+   missing files before release. */
+document.addEventListener(
+  "error",
+  (event) => {
+    const img = event.target;
+    if (!(img instanceof HTMLImageElement)) return;
+    const fig = img.closest(".polity-figure");
+    if (fig) fig.remove();
+  },
+  true
+);
+
 function figureHtml(img) {
   const alt = escapeHtml(img.alt || img.caption || "Historical image");
   const caption = escapeHtml(img.caption || "");
   const src = escapeHtml(img.src);
   return `<figure class="polity-figure">
     <button type="button" class="polity-figure-open" data-full-src="${src}" data-caption="${caption}" data-alt="${alt}" aria-label="View larger: ${alt}">
-      <img src="${src}" alt="${alt}" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.closest('figure')?.remove()" />
+      <img src="${src}" alt="${alt}" loading="lazy" decoding="async" referrerpolicy="no-referrer" />
     </button>
     <figcaption>${caption}</figcaption>
   </figure>`;
@@ -3442,8 +3450,24 @@ async function loadKingdomPack(id) {
   }
 }
 
+function showFatalLoadError(message) {
+  const label = $("#period-label");
+  if (label) label.textContent = "Atlas unavailable";
+  const copy = $("#period-copy");
+  if (copy) copy.textContent = message;
+  showLoadNotice(message, { retry: () => location.reload() });
+}
+
 async function init() {
   syncThemeColor();
+
+  // D3 comes from a CDN; if it was blocked or failed, nothing below can draw.
+  if (typeof window.d3 === "undefined") {
+    showFatalLoadError(
+      "The map library (D3) could not load. Check your connection or content blocker, then retry."
+    );
+    return;
+  }
 
   let keyEventsFailed = false;
   try {
@@ -3473,12 +3497,20 @@ async function init() {
       : { version: 1, periods: {} };
     state.kingdomPacks = {};
   } catch (err) {
-    $("#period-copy").textContent = "Could not load the atlas data. Check your connection and reload.";
-    showLoadNotice("Could not load the atlas data.", { retry: () => location.reload() });
+    showFatalLoadError("Could not load the atlas data. Check your connection and retry.");
     return;
   }
   if (keyEventsFailed) showLoadNotice("Key events could not load.");
 
+  try {
+    renderInitialAtlas();
+  } catch (err) {
+    console.error("Europa Strata failed to render", err);
+    showFatalLoadError("Something went wrong while drawing the atlas. Reload to try again.");
+  }
+}
+
+function renderInitialAtlas() {
   state.atlasMode = "deep-time";
   syncAtlasTabs();
   $("#map-attr").textContent = state.data.meta.mapAttribution || "";
@@ -3502,4 +3534,7 @@ async function init() {
   updateSelectionTip();
 }
 
-init();
+init().catch((err) => {
+  console.error("Europa Strata failed to start", err);
+  showFatalLoadError("Something went wrong while starting the atlas. Reload to try again.");
+});
