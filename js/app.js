@@ -113,6 +113,7 @@ const state = {
   path: null,
   svg: null,
   tip: null,
+  tipAnchor: null,
   zoom: null,
   zoomLayer: null,
   mapSize: { w: 900, h: 700 },
@@ -1671,6 +1672,48 @@ function tipHtml(name, cultures) {
   return `<strong>${escapeHtml(name)}</strong><span class="map-tip-cultures">${escapeHtml(line)}</span>`;
 }
 
+/* Keep the map label fully inside the map: centre it above the anchor,
+   flip below when there is no room above, and clamp to the edges with a
+   small margin. Measured at left:0 so its natural (wrapped) width is used. */
+const TIP_PAD = 8;
+const TIP_GAP = 10;
+function placeTip(x, y) {
+  if (!state.tip) return;
+  const node = state.tip.node();
+  const host = node?.parentElement;
+  if (!node || !host || !Number.isFinite(x) || !Number.isFinite(y)) return;
+  state.tipAnchor = [x, y];
+  const W = host.clientWidth;
+  const H = host.clientHeight;
+  node.style.left = "0px";
+  node.style.top = "0px";
+  const w = node.offsetWidth;
+  const h = node.offsetHeight;
+  let left = Math.min(x - w / 2, W - w - TIP_PAD);
+  left = Math.max(TIP_PAD, left);
+  let top = y - h - TIP_GAP;
+  if (top < TIP_PAD) top = y + TIP_GAP;
+  top = Math.max(TIP_PAD, Math.min(top, H - h - TIP_PAD));
+  // Don't sit under the title or the zoom buttons drawn over the map.
+  const hostBox = host.getBoundingClientRect();
+  for (const sel of [".map-chrome .brand", ".map-tools"]) {
+    const r = document.querySelector(sel)?.getBoundingClientRect();
+    if (!r || !r.width) continue;
+    const rl = r.left - hostBox.left;
+    const rr = r.right - hostBox.left;
+    const rt = r.top - hostBox.top;
+    const rb = r.bottom - hostBox.top;
+    const hits = left < rr && left + w > rl && top < rb && top + h > rt;
+    if (hits && rb + TIP_PAD + h <= H - TIP_PAD) top = rb + TIP_PAD;
+  }
+  node.style.left = `${Math.round(left)}px`;
+  node.style.top = `${Math.round(top)}px`;
+}
+
+function replaceTip() {
+  if (state.tipAnchor) placeTip(state.tipAnchor[0], state.tipAnchor[1]);
+}
+
 /** Pin tip on selected country/polity; culture line follows the slider. */
 function updateSelectionTip() {
   if (!state.tip || !state.svg) return;
@@ -1698,7 +1741,7 @@ function updateSelectionTip() {
         if (Number.isFinite(c[0]) && Number.isFinite(c[1])) {
           const t = d3.zoomTransform(state.svg.node());
           const [x, y] = t.apply(c);
-          state.tip.style("left", `${x}px`).style("top", `${y}px`);
+          placeTip(x, y);
         }
       } catch (_) {
         /* centroid can fail on empty clips */
@@ -1727,7 +1770,7 @@ function updateSelectionTip() {
       if (Number.isFinite(c[0]) && Number.isFinite(c[1])) {
         const t = d3.zoomTransform(state.svg.node());
         const [x, y] = t.apply(c);
-        state.tip.style("left", `${x}px`).style("top", `${y}px`);
+        placeTip(x, y);
       }
     } catch (_) {
       /* centroid can fail on empty clips */
@@ -1777,6 +1820,7 @@ function onPolityEnter(event, d) {
     .style("opacity", 1)
     .classed("is-pinned", polityId === state.selectedPolityId)
     .html(tipHtml(d.properties.name, cultures));
+  replaceTip();
 }
 
 function onPolityMove(event) {
@@ -1790,9 +1834,7 @@ function onPolityMove(event) {
   const mapEl = $("#map");
   if (!mapEl) return;
   const stage = mapEl.getBoundingClientRect();
-  state.tip
-    .style("left", `${event.clientX - stage.left}px`)
-    .style("top", `${event.clientY - stage.top}px`);
+  placeTip(event.clientX - stage.left, event.clientY - stage.top);
 }
 
 function onPolityLeave() {
@@ -1843,6 +1885,7 @@ function onCountryEnter(event, d) {
     .style("opacity", 1)
     .classed("is-pinned", iso === state.selectedIso)
     .html(tipHtml(d.properties.name, cultures));
+  replaceTip();
 }
 
 function onCountryMove(event) {
@@ -1854,9 +1897,7 @@ function onCountryMove(event) {
   const mapEl = $("#map");
   if (!mapEl) return;
   const stage = mapEl.getBoundingClientRect();
-  state.tip
-    .style("left", `${event.clientX - stage.left}px`)
-    .style("top", `${event.clientY - stage.top}px`);
+  placeTip(event.clientX - stage.left, event.clientY - stage.top);
 }
 
 function onCountryLeave() {
@@ -3987,7 +4028,10 @@ function bindUI() {
       const widthChanged = Math.abs(w - prev.w) > 24;
       const heightChangedALot = Math.abs(h - prev.h) > 80;
       // Ignore small height-only changes (URL bar / scroll UI)
-      if (!widthChanged && !heightChangedALot) return;
+      if (!widthChanged && !heightChangedALot) {
+        replaceTip(); // map box changed a little: keep the label inside it
+        return;
+      }
       state._kingdomGeoPeriodId = null;
       initMap({ preserveZoom: true });
       if (isKingdomMode()) syncKingdomPolityLayer({ force: true });
