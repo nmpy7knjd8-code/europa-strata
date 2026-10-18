@@ -241,6 +241,15 @@ button {
   transition: fill 0.5s var(--ease), fill-opacity 0.45s var(--ease);
 }
 
+/* Map-key highlight also fades/raises the clipped overlays that are showing */
+.map.is-legend-on .country-extent.is-extent-on.is-legend-dim {
+  fill-opacity: 0.16 !important;
+}
+
+.map.is-legend-on .country-extent.is-extent-on.is-legend-hot {
+  fill-opacity: 1 !important;
+}
+
 .map-chrome {
   position: absolute;
   top: 1.25rem;

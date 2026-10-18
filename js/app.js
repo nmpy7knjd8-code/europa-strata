@@ -1571,7 +1571,7 @@ function paintMap(animate = true) {
       .selectAll("path.country")
       .style("fill", null)
       .style("fill-opacity", 1);
-    state.svg.selectAll("path.country-extent").interrupt().style("fill-opacity", 0);
+    state.svg.selectAll("path.country-extent").interrupt().classed("is-extent-on", false).style("fill-opacity", 0);
 
     // Geometry only when tick changes — avoids selection flicker on slider drag
     syncKingdomPolityLayer({ force: false });
@@ -1638,8 +1638,10 @@ function paintMap(animate = true) {
       // culture colour on the clipped overlay.
       state.svg.select(`#extent-clip-${iso} path`).attr("d", clipD);
       setFill(node, "var(--land-base)", 1);
+      overlay.classed("is-extent-on", true);
       setFill(overlay, fill, opacity);
     } else {
+      if (!overlay.empty()) overlay.classed("is-extent-on", false);
       if (!overlay.empty()) setFill(overlay, fill, 0);
       setFill(node, fill, opacity);
     }
@@ -3805,7 +3807,7 @@ function applyLegendFocus() {
   });
   if (!state.svg) return;
   if (!layer) {
-    state.svg.selectAll("path.country, path.polity").classed("is-legend-hot", false).classed("is-legend-dim", false);
+    state.svg.selectAll("path.country, path.polity, path.country-extent").classed("is-legend-hot", false).classed("is-legend-dim", false);
     return;
   }
   const isos = new Set(layer.countries || []);
@@ -3813,6 +3815,11 @@ function applyLegendFocus() {
   const pid = legendLayerId(layer);
   state.svg
     .selectAll("path.country")
+    .classed("is-legend-hot", (d) => useCountries && isos.has(d.properties.iso))
+    .classed("is-legend-dim", (d) => useCountries && !isos.has(d.properties.iso));
+  // Clipped culture-colour overlays (meta.fillExtents) follow their country
+  state.svg
+    .selectAll("path.country-extent")
     .classed("is-legend-hot", (d) => useCountries && isos.has(d.properties.iso))
     .classed("is-legend-dim", (d) => useCountries && !isos.has(d.properties.iso));
   state.svg
