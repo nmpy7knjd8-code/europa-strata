@@ -3383,8 +3383,24 @@ async function loadKingdomPack(id) {
   }
 }
 
+function showFatalLoadError(message) {
+  const label = $("#period-label");
+  if (label) label.textContent = "Atlas unavailable";
+  const copy = $("#period-copy");
+  if (copy) copy.textContent = message;
+  showLoadNotice(message, { retry: () => location.reload() });
+}
+
 async function init() {
   syncThemeColor();
+
+  // D3 comes from a CDN; if it was blocked or failed, nothing below can draw.
+  if (typeof window.d3 === "undefined") {
+    showFatalLoadError(
+      "The map library (D3) could not load. Check your connection or content blocker, then retry."
+    );
+    return;
+  }
 
   let keyEventsFailed = false;
   try {
@@ -3414,12 +3430,20 @@ async function init() {
       : { version: 1, periods: {} };
     state.kingdomPacks = {};
   } catch (err) {
-    $("#period-copy").textContent = "Could not load the atlas data. Check your connection and reload.";
-    showLoadNotice("Could not load the atlas data.", { retry: () => location.reload() });
+    showFatalLoadError("Could not load the atlas data. Check your connection and retry.");
     return;
   }
   if (keyEventsFailed) showLoadNotice("Key events could not load.");
 
+  try {
+    renderInitialAtlas();
+  } catch (err) {
+    console.error("Europa Strata failed to render", err);
+    showFatalLoadError("Something went wrong while drawing the atlas. Reload to try again.");
+  }
+}
+
+function renderInitialAtlas() {
   state.atlasMode = "deep-time";
   syncAtlasTabs();
   $("#map-attr").textContent = state.data.meta.mapAttribution || "";
@@ -3443,4 +3467,7 @@ async function init() {
   updateSelectionTip();
 }
 
-init();
+init().catch((err) => {
+  console.error("Europa Strata failed to start", err);
+  showFatalLoadError("Something went wrong while starting the atlas. Reload to try again.");
+});
