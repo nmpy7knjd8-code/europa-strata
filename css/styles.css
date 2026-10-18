@@ -3195,3 +3195,24 @@ a:focus-visible,
     padding-bottom: 1rem;
   }
 }
+
+/* ---- mobile reading size ----
+   On phones, body and detail-panel text goes back to the 15px / 1.5 used
+   before the reading-column pass (main at f702928, Oct 14). Desktop keeps
+   17px / 1.6. Glossary definitions use the same size; glossary terms,
+   headings and culture chips keep their current size. Scoped to the atlas
+   (.app); ancestry.html and sources.html are unchanged. */
+@media (max-width: 899.98px) {
+  .app,
+  .app:not([data-atlas-mode="deep-time"]) {
+    --read-size: 15px;
+    --read-leading: 1.5;
+    --type-body: 15px;
+  }
+
+  .app .glossary-item dt,
+  .app .culture-chip {
+    font-size: 17px;
+    line-height: 1.6;
+  }
+}
