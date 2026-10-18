@@ -19,12 +19,33 @@ Open http://127.0.0.1:8765/
 
 | Path | Role |
 |------|------|
-| `index.html` | App shell (stacked layout) |
-| `css/styles.css` | Light/dark themes, stacked map-first layout |
-| `js/app.js` | D3 map, slider, detail panel |
+| `index.html` | Atlas app shell (era tabs → map → time slider → detail panel) |
+| `ancestry.html` + `js/ancestry.js` | Ancestry-component guides (WHG, EHG, SHG, EEF, WSH, CHG) with a mini-map each; reads `data/ancestry.json`; supports `#component` deep links |
+| `sources.html` | Styled, DOI-linked bibliography for the ancestry figures (linked from `ancestry.html`) |
+| `archaeogenetic-sources.md` | Bibliography & method notes in Markdown (served as raw text on Pages) |
+| `css/styles.css` | Light/dark themes, stacked map-first layout, ancestry/sources pages |
+| `js/app.js` | D3 map, slider, era tabs, detail panel |
 | `data/europe.geojson` | Natural Earth 50m Europe (public domain) |
-| `data/timeline.json` | Periods → culture layers + region genetics/languages |
-| `archaeogenetic-sources.md` | Bibliography & method notes |
+| `data/timeline.json` | Deep-time spine: 16 periods → map layers, region genetics/languages (loaded at start) |
+| `data/timeline-text/<period>.json` | Long region/polity prose per Deep-time period, fetched when that period is first shown |
+| `data/key-events.json` | Key events listed under the map for the selected time and place |
+| `data/kingdom-eras/<tab>.json` | Polity packs for the four kingdom-era tabs, fetched the first time a tab opens |
+| `data/kingdom-eras/geo/<tab>.topo.json` | Polity borders for those tabs (TopoJSON, see below) |
+| `scripts/` | Data pipelines (enrichment, era-map build) and `bump_version.py` |
+
+### Loading
+
+`timeline.json`, `europe.geojson` and `key-events.json` load at startup. Everything else is lazy: per-period prose
+(`timeline-text/`) when a period is first viewed, and each kingdom-era pack plus its borders when its tab is first
+opened. Every data URL carries `?v=<build>` from `<meta name="build">`.
+
+### Releasing
+
+After changing CSS, JS or data, bump the build so browsers fetch fresh copies:
+
+```bash
+python3 scripts/bump_version.py my-change-1   # updates <meta name="build"> and every ?v= tag
+```
 
 ## Notes
 

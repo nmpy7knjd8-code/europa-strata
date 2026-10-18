@@ -293,7 +293,57 @@
       "bronze",
       "iron-classical",
       "migration"
-    ]
+    ],
+    "fillExtents": {
+      "note": "Where a period's culture fill covers only part of a large modern country, the fill is clipped to this lon/lat outline (WGS84 rings, approximate). Countries/periods not listed are filled whole. Used by paintMap() in js/app.js.",
+      "countries": {
+        "RUS": {
+          "middle-neolithic": [[33, 45.5], [40, 45], [46, 47], [46, 51.5], [38, 52.5], [33, 52], [33, 45.5]],
+          "yamnaya": [[33, 44], [48, 42.5], [55, 45], [55, 52], [46, 53], [36, 52.5], [33, 44]],
+          "beaker-corded": [[33, 43.5], [41, 42.8], [48, 42.5], [48, 48], [44, 51], [36, 51.5], [33, 51], [33, 43.5]],
+          "nordic-bronze": [[33, 44], [48, 42.5], [58, 45], [60, 52], [58, 56.5], [46, 55], [36, 53], [33, 44]],
+          "iron-age": [[33, 44], [48, 42.5], [55, 45], [55, 52], [46, 53], [36, 52.5], [33, 44]],
+          "classical": [[33, 44], [48, 42.5], [55, 45], [55, 52], [46, 53], [36, 52.5], [33, 44]],
+          "frankish": [[27, 56], [32, 61], [42, 61], [42, 56], [46, 51], [48, 46], [47, 42.5], [37, 44.5], [34, 51], [30, 53], [27, 56]],
+          "vikings": [[27, 56], [31, 61.5], [41, 61.5], [44, 56.5], [41, 53], [36, 51], [33, 51.5], [30, 53], [27, 56]],
+          "late-medieval": [[31, 54], [36, 53], [42, 53.5], [47, 55.5], [46, 59], [38, 60], [32, 57.5], [31, 54]]
+        },
+        "UKR": {
+          "nordic-bronze": [[29.5, 44], [41, 44], [41, 52.5], [33, 52.5], [29.5, 50], [29.5, 44]],
+          "iron-age": [[22, 44], [41, 44], [41, 51.3], [30, 51.5], [22, 49.5], [22, 44]],
+          "classical": [[28, 44], [41, 44], [41, 49.8], [33, 50], [28, 48], [28, 44]]
+        },
+        "TUR": {
+          "classical": [[25, 35.5], [40.3, 36.5], [40.3, 42.5], [25, 42.5], [25, 35.5]],
+          "migration": [[25, 35.5], [41.5, 36.5], [41.5, 42.5], [25, 42.5], [25, 35.5]],
+          "frankish": [[25, 35.5], [30, 36.1], [34, 36.2], [36.5, 37.9], [39, 38.6], [41, 40.2], [42.2, 41.6], [42.2, 42.5], [25, 42.5], [25, 35.5]],
+          "high-medieval": [[25, 35.5], [29.6, 36.2], [30.8, 37.6], [30.5, 40.4], [33, 41.4], [36.5, 41.2], [41, 40.8], [42.2, 41.2], [42.2, 42.5], [25, 42.5], [25, 35.5]],
+          "late-medieval": [[25, 35.5], [30, 36.2], [32.5, 37.2], [35, 39.5], [37.5, 40.8], [37, 42.5], [25, 42.5], [25, 35.5]]
+        },
+        "SWE": {
+          "middle-neolithic": [[10, 55], [19.5, 55], [19.5, 61.5], [10, 61.5], [10, 55]],
+          "yamnaya": [[10, 55], [19.5, 55], [19.5, 61.5], [10, 61.5], [10, 55]],
+          "beaker-corded": [[10, 55], [19.5, 55], [19.5, 61.5], [10, 61.5], [10, 55]],
+          "nordic-bronze": [[10, 55], [19.5, 55], [19.5, 62.5], [10, 62.5], [10, 55]],
+          "iron-age": [[10, 55], [19.5, 55], [19.5, 63.5], [10, 63.5], [10, 55]],
+          "classical": [[10, 55], [21, 55], [21, 64], [10, 64], [10, 55]],
+          "migration": [[10, 55], [21, 55], [21, 64], [10, 64], [10, 55]]
+        },
+        "NOR": {
+          "middle-neolithic": [[4, 57.5], [12.5, 57.5], [12.5, 61.5], [4, 61.5], [4, 57.5]],
+          "beaker-corded": [[4, 57.5], [12.5, 57.5], [12.5, 62], [4, 62], [4, 57.5]],
+          "nordic-bronze": [[4, 57.5], [14, 57.5], [14, 64], [4, 64], [4, 57.5]],
+          "iron-age": [[4, 57.5], [15, 57.5], [15, 65], [4, 65], [4, 57.5]],
+          "classical": [[4, 57.5], [15, 57.5], [15, 66], [4, 66], [4, 57.5]],
+          "migration": [[4, 57.5], [16, 57.5], [16, 67], [4, 67], [4, 57.5]]
+        },
+        "FIN": {
+          "beaker-corded": [[20.5, 59.7], [28, 60.2], [27, 62], [24, 62.8], [21, 62.3], [20.5, 59.7]],
+          "iron-age": [[20.5, 59.7], [28, 60.2], [27, 62], [24, 63.2], [21, 62.8], [20.5, 59.7]],
+          "classical": [[20.5, 59.7], [28.5, 60.3], [27.5, 62.5], [24, 63.6], [21, 63.2], [20.5, 59.7]]
+        }
+      }
+    }
   },
   "periods": [
     {
@@ -5675,40 +5725,16 @@
           ],
           "images": [
             {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Vix%20Krater.jpg?width=960",
+              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Vix%20krater.jpg?width=960",
               "caption": "Vix krater — Greek bronze wine vessel from the Mont Lassois elite burial",
               "alt": "Large bronze Greek krater from the Vix burial",
               "role": "story"
-            },
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Heuneburg%20Rekonstruktion.jpg?width=960",
-              "caption": "Heuneburg reconstruction — western Hallstatt princely seat",
-              "alt": "Reconstructed Heuneburg hillfort with mudbrick walls",
-              "role": "culture"
             },
             {
               "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Hochdorf%20Chieftain%27s%20Grave%20reconstruction.jpg?width=960",
               "caption": "Hochdorf chieftain burial reconstruction — wagon-grave elite display",
               "alt": "Museum reconstruction of the Hochdorf princely grave",
               "role": "art"
-            },
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Hallstatt%20culture%20gold%20torc%20from%20Vix.jpg?width=960",
-              "caption": "Gold torc from Vix — western Hallstatt neck-ring prestige",
-              "alt": "Gold neck-ring from the Vix burial",
-              "role": "art"
-            },
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Attic%20pottery%20Massalia%20trade.jpg?width=960",
-              "caption": "Attic and Mediterranean imports — Massalia trade into Hallstatt West",
-              "alt": "Greek pottery associated with Massaliote trade routes",
-              "role": "ideas"
-            },
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Hallstatt%20wagon%20grave%20model.jpg?width=960",
-              "caption": "Four-wheeled funeral wagon model — Hallstatt elite burial kit",
-              "alt": "Model of a Hallstatt four-wheeled funerary wagon",
-              "role": "science"
             }
           ]
         },
@@ -5760,44 +5786,6 @@
             {
               "text": "Chiefs who watched alpine routes taxed amber, metal, and ideas moving between Italy and the Danube. Power here was geography: whoever held the pass held the conversation.",
               "title": "Pass and Toll"
-            }
-          ],
-          "images": [
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Hallstatt%20Salzbergwerk.jpg?width=960",
-              "caption": "Hallstatt salt mine — deep-shaft industrial landscape of the eastern Alps",
-              "alt": "Entrance and workings associated with the Hallstatt salt mines",
-              "role": "science"
-            },
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Situla%20Benvenuti.jpg?width=960",
-              "caption": "Benvenuti situla — embossed bronze narrative art of the Caput Adriae",
-              "alt": "Bronze situla with embossed processional scenes",
-              "role": "art"
-            },
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Hallstatt%20grave%20goods%20Naturhistorisches%20Museum.jpg?width=960",
-              "caption": "Hallstatt cemetery grave goods — eastern elite burial display",
-              "alt": "Bronze and ceramic grave goods from Hallstatt cemeteries",
-              "role": "culture"
-            },
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Hallstatt%20culture%20sword.jpg?width=960",
-              "caption": "Hallstatt-period sword — martial kit of the eastern zone",
-              "alt": "Iron or bronze Hallstatt sword in museum display",
-              "role": "story"
-            },
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/D%C3%BCrrnberg%20flagon.jpg?width=960",
-              "caption": "Dürrnberg flagon — early La Tène overlay on eastern Alpine corridors",
-              "alt": "Ornate bronze flagon from Dürrnberg near Hallein",
-              "role": "art"
-            },
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Kalenderberg%20pottery.jpg?width=960",
-              "caption": "Kalenderberg ceramics — eastern Hallstatt pottery tradition",
-              "alt": "Decorated Kalenderberg-style ceramic vessel",
-              "role": "ideas"
             }
           ]
         },
@@ -5856,50 +5844,6 @@
               "text": "Oppida mints struck chiefs into silver and gold. A portrait small enough for a palm turned tribal authority into a circulating icon before Rome’s denser monetary empire arrived.",
               "title": "Coins with Faces"
             }
-          ],
-          "images": [
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Agris%20helmet.jpg?width=960",
-              "caption": "Agris helmet — gold vinework peak of La Tène Gaulish art",
-              "alt": "Ceremonial Agris helmet with gold vegetal ornament",
-              "role": "art"
-            },
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Gallic%20torc%20Snetisham%20style%20Gaul.jpg?width=960",
-              "caption": "Gaulish gold torc — neck-ring prestige of La Tène elites",
-              "alt": "Gold torc associated with Celtic Gaulish display",
-              "role": "culture"
-            },
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Bibracte%20oppidum.jpg?width=960",
-              "caption": "Bibracte oppidum — Aeduan hilltop town and craft centre",
-              "alt": "View of the Bibracte oppidum landscape",
-              "role": "ideas"
-            },
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Gournay-sur-Aronde%20sanctuary%20reconstruction.jpg?width=960",
-              "caption": "Gournay-type sanctuary — ritual weapon deposits in Gaul",
-              "alt": "Reconstruction or plan of a Gallic sanctuary with weapon offerings",
-              "role": "philosophy"
-            },
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Gaulish%20coin%20portrait.jpg?width=960",
-              "caption": "Gaulish oppidum coin — miniature chief portrait",
-              "alt": "Iron Age Gallic coin with stylised portrait",
-              "role": "story"
-            },
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/La%20T%C3%A8ne%20scabbard%20ornament.jpg?width=960",
-              "caption": "La Tène scabbard — curvilinear vegetal metalwork",
-              "alt": "Decorated La Tène sword scabbard",
-              "role": "art"
-            },
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Rotary%20quern%20Iron%20Age%20Gaul.jpg?width=960",
-              "caption": "Rotary quern — everyday agricultural science of oppida Gaul",
-              "alt": "Iron Age rotary quern stones",
-              "role": "science"
-            }
           ]
         },
         {
@@ -5955,50 +5899,6 @@
             {
               "text": "At Tara and Emain, ceremonial landscapes gathered kings and clients under open sky. Later stories would fill those ridges with myth; the Iron Age left earthworks and deposits for us to argue over.",
               "title": "Assemblies on the Royal Ridge"
-            }
-          ],
-          "images": [
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Snettisham%20Torc.jpg?width=960",
-              "caption": "Snettisham gold torc — peak Insular La Tène prestige metalwork",
-              "alt": "Great torc from the Snettisham hoard",
-              "role": "art"
-            },
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Desborough%20Mirror.jpg?width=960",
-              "caption": "Desborough Mirror — Insular La Tène engraved bronze",
-              "alt": "Iron Age bronze mirror with curvilinear decoration",
-              "role": "art"
-            },
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Maiden%20Castle%20Dorset%20aerial.jpg?width=960",
-              "caption": "Maiden Castle — monumental British hillfort earthworks",
-              "alt": "Aerial view of Maiden Castle hillfort",
-              "role": "culture"
-            },
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Navan%20Fort%20Emain%20Macha.jpg?width=960",
-              "caption": "Navan Fort (Emain Macha) — Irish royal ceremonial landscape",
-              "alt": "Earthworks at Navan Fort, County Armagh",
-              "role": "ideas"
-            },
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Wetwang%20chariot%20burial%20reconstruction.jpg?width=960",
-              "caption": "Chariot burial reconstruction — eastern British funerary theatre",
-              "alt": "Museum reconstruction of an Iron Age chariot burial",
-              "role": "story"
-            },
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Battersea%20Shield.jpg?width=960",
-              "caption": "Battersea Shield — Thames watery deposit of parade metalwork",
-              "alt": "Ornate bronze shield found in the River Thames",
-              "role": "philosophy"
-            },
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Glastonbury%20Lake%20Village%20reconstruction.jpg?width=960",
-              "caption": "Wetland settlement reconstruction — Insular watery living science",
-              "alt": "Reconstruction of an Iron Age lake village",
-              "role": "science"
             }
           ]
         },
@@ -6059,44 +5959,6 @@
               "text": "Warrior bands pressed into the peninsula in living memory of Roman annalists—Brennus at the gates in later legend. Central La Tène mobility made the Alps a door, not a wall.",
               "title": "South Toward Italy"
             }
-          ],
-          "images": [
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Glauberg%20statue.jpg?width=960",
-              "caption": "Glauberg statue — Early Style La Tène stone warrior",
-              "alt": "Sandstone statue of a Celtic warrior from Glauberg",
-              "role": "art"
-            },
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/D%C3%BCrrnberg%20Schnabelkanne.jpg?width=960",
-              "caption": "Dürrnberg beaked flagon — Early La Tène metal masterpiece",
-              "alt": "Bronze beaked flagon from Dürrnberg",
-              "role": "art"
-            },
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Manching%20oppidum%20mural%20crown.jpg?width=960",
-              "caption": "Manching oppidum — Central European proto-urban craft centre",
-              "alt": "Remains or model of the Manching oppidum",
-              "role": "culture"
-            },
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/La%20T%C3%A8ne%20fibula%20typology.jpg?width=960",
-              "caption": "La Tène fibulae — chronological dress archaeology of Central Europe",
-              "alt": "Collection of La Tène brooches showing style change",
-              "role": "ideas"
-            },
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Celtic%20glass%20bracelet%20Manching.jpg?width=960",
-              "caption": "Glass bracelets — oppida craft science",
-              "alt": "Colourful Iron Age glass armrings",
-              "role": "science"
-            },
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Chariot%20burial%20La%20T%C3%A8ne%20Central.jpg?width=960",
-              "caption": "Chariot burial — martial funerary theatre of Early La Tène",
-              "alt": "Excavation or reconstruction of a La Tène chariot grave",
-              "role": "story"
-            }
           ]
         },
         {
@@ -6143,44 +6005,6 @@
             {
               "text": "Roman memory fixed Numantia as the emblem of meseta resistance—siege, hunger, and refusal. Archaeology complicates the myth; the stubbornness was real enough to become a Latin moral example.",
               "title": "Numantia’s Long Shadow"
-            }
-          ],
-          "images": [
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Celtiberian%20warrior%20stele.jpg?width=960",
-              "caption": "Celtiberian warrior stele — armed funerary display of the meseta",
-              "alt": "Stone stele depicting a Celtiberian warrior",
-              "role": "art"
-            },
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Celtiberian%20painted%20pottery.jpg?width=960",
-              "caption": "Celtiberian painted pottery — ceramic hybrid of inland Iberia",
-              "alt": "Decorated Celtiberian ceramic vessel",
-              "role": "culture"
-            },
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Numantia%20ruins.jpg?width=960",
-              "caption": "Numantia — iconic Celtiberian oppidum in Roman war memory",
-              "alt": "Archaeological remains at Numantia",
-              "role": "story"
-            },
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Celtiberian%20denarius.jpg?width=960",
-              "caption": "Celtiberian coin — political badge in silver",
-              "alt": "Silver Celtiberian denarius with horseman",
-              "role": "ideas"
-            },
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Celtiberian%20fibula.jpg?width=960",
-              "caption": "Celtiberian fibula — distinctive dress archaeology",
-              "alt": "Bronze fibula of Celtiberian type",
-              "role": "art"
-            },
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Iberian%20meseta%20castro.jpg?width=960",
-              "caption": "Meseta hillfort — stone castro landscape of inland Iberia",
-              "alt": "Stone hillfort remains on the Spanish meseta",
-              "role": "science"
             }
           ]
         },
@@ -6250,36 +6074,6 @@
               "caption": "Lady of Baza — seated Iberian funerary sculpture",
               "alt": "Painted limestone statue of the Lady of Baza",
               "role": "culture"
-            },
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Iberian%20lead%20plaque%20writing.jpg?width=960",
-              "caption": "Iberian inscribed lead plaque — non-IE script literacy",
-              "alt": "Lead plaque with Iberian script",
-              "role": "science"
-            },
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Empuries%20Greek%20ruins.jpg?width=960",
-              "caption": "Emporion (Empúries) — Greek colonial contact on the Iberian coast",
-              "alt": "Archaeological remains at Empúries",
-              "role": "ideas"
-            },
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Iberian%20warrior%20sculpture.jpg?width=960",
-              "caption": "Iberian warrior sculpture — elite martial image in stone",
-              "alt": "Stone sculpture of an Iberian warrior",
-              "role": "story"
-            },
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Iberian%20geometric%20pottery.jpg?width=960",
-              "caption": "Iberian painted geometric pottery — coastal ceramic art",
-              "alt": "Iberian ceramic with geometric painted decoration",
-              "role": "art"
-            },
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/La%20Alcudia%20Elche%20site.jpg?width=960",
-              "caption": "La Alcudia near Elche — urban Iberian settlement landscape",
-              "alt": "Excavations at La Alcudia archaeological site",
-              "role": "philosophy"
             }
           ]
         },
@@ -6327,44 +6121,6 @@
             {
               "text": "Gold neck-rings caught salt wind on castro heights. Prestige looked west to the ocean lanes as much as east to the meseta’s wars.",
               "title": "Torcs Facing the Atlantic"
-            }
-          ],
-          "images": [
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Castro%20de%20Santa%20Tegra.jpg?width=960",
-              "caption": "Castro de Santa Tegra — circular-house Atlantic hillfort",
-              "alt": "Reconstructed circular houses in a northwestern Iberian castro",
-              "role": "culture"
-            },
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Gallaecian%20warrior%20statue.jpg?width=960",
-              "caption": "Warrior statue — northwestern Iberian stone martial ideal",
-              "alt": "Granite statue of a Castro-culture warrior",
-              "role": "art"
-            },
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Lusitanian%20gold%20torc.jpg?width=960",
-              "caption": "Gold torc — Atlantic elite neck-ring display",
-              "alt": "Gold torc from the Lusitanian or Gallaecian zone",
-              "role": "art"
-            },
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Viriathus%20statue%20Zamora.jpg?width=960",
-              "caption": "Viriathus monument — modern memory of Lusitanian resistance",
-              "alt": "Statue commemorating Viriathus",
-              "role": "story"
-            },
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Lusitanian%20rock%20sanctuary.jpg?width=960",
-              "caption": "Rock sanctuary — indigenous sacred landscape of western Iberia",
-              "alt": "Carved rock sanctuary associated with Lusitanian cult",
-              "role": "philosophy"
-            },
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Citania%20de%20Briteiros.jpg?width=960",
-              "caption": "Citânia de Briteiros — large castro settlement archaeology",
-              "alt": "Stone streets and roundhouses at Citânia de Briteiros",
-              "role": "science"
             }
           ]
         },
@@ -6414,44 +6170,6 @@
               "text": "Northern routes still carried amber toward Celtic and Mediterranean hunger. Quiet Jastorf farms sat on a glitter path that tied the Baltic to distant feasts.",
               "title": "Amber Moving South"
             }
-          ],
-          "images": [
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Jastorf%20urn%20cemetery.jpg?width=960",
-              "caption": "Jastorf urnfield — restrained northern cremation cemetery",
-              "alt": "Cremation urns from a Jastorf-culture cemetery",
-              "role": "culture"
-            },
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Jastorf%20fibula.jpg?width=960",
-              "caption": "Jastorf fibula — dress archaeology of the northern Iron Age",
-              "alt": "Bronze fibula of Jastorf type",
-              "role": "art"
-            },
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Pre-Roman%20Iron%20Age%20pottery%20North%20Germany.jpg?width=960",
-              "caption": "Northern Iron Age pottery — ceramic science of sandy-soil farms",
-              "alt": "Pottery vessels from northern German Iron Age contexts",
-              "role": "science"
-            },
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Amber%20Iron%20Age%20northern%20Europe.jpg?width=960",
-              "caption": "Baltic amber — long-distance exchange from the northern zone",
-              "alt": "Amber beads or raw amber from Iron Age northern Europe",
-              "role": "ideas"
-            },
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Jastorf%20culture%20map%20museum.jpg?width=960",
-              "caption": "Jastorf cultural zone — museum map of the northern Iron Age",
-              "alt": "Museum map illustrating Jastorf culture distribution",
-              "role": "story"
-            },
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Cremation%20pyre%20archaeology%20reconstruction.jpg?width=960",
-              "caption": "Cremation rite reconstruction — fire technology of urnfield practice",
-              "alt": "Reconstruction of an Iron Age cremation pyre",
-              "role": "philosophy"
-            }
           ]
         },
         {
@@ -6500,44 +6218,6 @@
             {
               "text": "Bronze lurs and razor prestige faded from the ritual toolkit. The north’s soundtrack changed from shining bronze to the hiss of the bloomery and the creak of boats.",
               "title": "After the Lurs Fell Silent"
-            }
-          ],
-          "images": [
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Bog%20iron%20ore%20Scandinavia.jpg?width=960",
-              "caption": "Bog iron — raw material of Pre-Roman Iron Age Scandinavia",
-              "alt": "Bog iron ore samples from Scandinavia",
-              "role": "science"
-            },
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Tollund%20Man.jpg?width=960",
-              "caption": "Bog body (Tollund Man) — watery deposit and sacred negotiation",
-              "alt": "Preserved bog body of Tollund Man",
-              "role": "philosophy"
-            },
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Hjortspring%20boat.jpg?width=960",
-              "caption": "Hjortspring boat — early Iron Age Scandinavian boatbuilding",
-              "alt": "Preserved or reconstructed Hjortspring boat",
-              "role": "story"
-            },
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Scandinavian%20weapon%20bog%20deposit.jpg?width=960",
-              "caption": "Weapon bog deposit — sacrificial metal in northern wetlands",
-              "alt": "Iron weapons recovered from a Scandinavian bog",
-              "role": "culture"
-            },
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Pre-Roman%20Iron%20Age%20house%20reconstruction%20Scandinavia.jpg?width=960",
-              "caption": "Longhouse reconstruction — farmstead autonomy of the Nordic IA",
-              "alt": "Reconstructed Iron Age Scandinavian farmhouse",
-              "role": "ideas"
-            },
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Bloomery%20furnace%20reconstruction.jpg?width=960",
-              "caption": "Bloomery furnace — iron-smelting science of the north",
-              "alt": "Reconstruction of a bloomery iron furnace",
-              "role": "art"
             }
           ]
         },
@@ -6593,50 +6273,6 @@
             {
               "text": "Elba’s iron fed forges that armed and built. Tyrrhenian wealth was not only banquet art; it was ore, ship, and surveyed street.",
               "title": "Iron from Elba"
-            }
-          ],
-          "images": [
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Tarquinia%20tomb%20painting%20dancers.jpg?width=960",
-              "caption": "Tarquinia tomb painting — Etruscan banquet and dance in colour",
-              "alt": "Wall painting of dancers from an Etruscan tomb at Tarquinia",
-              "role": "art"
-            },
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Sarcophagus%20of%20the%20Spouses.jpg?width=960",
-              "caption": "Sarcophagus of the Spouses — elite couple in terracotta",
-              "alt": "Terracotta sarcophagus of reclining Etruscan couple",
-              "role": "culture"
-            },
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Etruscan%20bronze%20mirror%20engraved.jpg?width=960",
-              "caption": "Engraved bronze mirror — myth in the hand",
-              "alt": "Etruscan bronze mirror with engraved mythological scene",
-              "role": "ideas"
-            },
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Etruscan%20temple%20terracotta%20antefix.jpg?width=960",
-              "caption": "Temple terracotta — architectural sculpture of Etruscan podia",
-              "alt": "Painted terracotta antefix from an Etruscan temple",
-              "role": "art"
-            },
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Haruspex%20liver%20model%20Piacenza.jpg?width=960",
-              "caption": "Piacenza liver — bronze model for Etruscan sacred science",
-              "alt": "Bronze sheep’s liver model used in Etruscan divination",
-              "role": "philosophy"
-            },
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Etruscan%20gold%20granulation%20jewellery.jpg?width=960",
-              "caption": "Gold granulation — Etruscan jeweller’s science and art",
-              "alt": "Etruscan gold jewellery showing granulation technique",
-              "role": "science"
-            },
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Bucchero%20pottery%20kylix.jpg?width=960",
-              "caption": "Bucchero ware — signature Etruscan black ceramic export",
-              "alt": "Black bucchero ceramic vessel",
-              "role": "story"
             }
           ]
         },
@@ -6696,40 +6332,10 @@
           ],
           "images": [
             {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Capitoline%20Wolf%20Musei%20Capitolini.jpg?width=960",
+              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Capitoline%20Wolf,%20Musei%20Capitolini.jpg?width=960",
               "caption": "Capitoline Wolf — emblem of early Rome’s founding legend",
               "alt": "Bronze Capitoline Wolf sculpture",
               "role": "story"
-            },
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Roman%20Forum%20panorama%20early%20ruins.jpg?width=960",
-              "caption": "Roman Forum — civic heart of early Republican monumentalism",
-              "alt": "View of the Roman Forum archaeological area",
-              "role": "culture"
-            },
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Etruscan%20style%20terracotta%20temple%20Rome.jpg?width=960",
-              "caption": "Terracotta temple sculpture — Etruscan-leaning early Roman art",
-              "alt": "Terracotta architectural sculpture from early Roman temple context",
-              "role": "art"
-            },
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Twelve%20Tables%20reconstruction%20plaque.jpg?width=960",
-              "caption": "Twelve Tables tradition — civic ethics as public statute",
-              "alt": "Modern or historical representation of the Twelve Tables",
-              "role": "ideas"
-            },
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Roman%20augur%20relief.jpg?width=960",
-              "caption": "Augury — priestly science of signs in early Rome",
-              "alt": "Relief depicting a Roman augur with lituus",
-              "role": "philosophy"
-            },
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Roman%20centuriation%20landscape.jpg?width=960",
-              "caption": "Centuriation — surveying science of colonial land division",
-              "alt": "Aerial or diagram view of Roman centuriated fields",
-              "role": "science"
             }
           ]
         },
@@ -6794,42 +6400,6 @@
               "caption": "Parthenon — Doric temple emblem of Classical Athens",
               "alt": "The Parthenon on the Athenian Acropolis",
               "role": "art"
-            },
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Delphi%20theatre%20and%20temple.jpg?width=960",
-              "caption": "Delphi — Panhellenic sanctuary of oracle and treasuries",
-              "alt": "Theatre and temple remains at Delphi",
-              "role": "ideas"
-            },
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Red%20figure%20symposium%20kylix.jpg?width=960",
-              "caption": "Symposium kylix — everyday designed setting of philosophy",
-              "alt": "Red-figure cup showing a symposium scene",
-              "role": "culture"
-            },
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Plato%20Aristotle%20School%20of%20Athens%20detail.jpg?width=960",
-              "caption": "Plato and Aristotle — later image of Classical philosophy’s lineage",
-              "alt": "Raphael detail of Plato and Aristotle (historical reception image)",
-              "role": "philosophy"
-            },
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Hippocrates%20bust.jpg?width=960",
-              "caption": "Hippocrates — founding face of the medical tradition",
-              "alt": "Bust of Hippocrates",
-              "role": "science"
-            },
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Greek%20trireme%20Olympias.jpg?width=960",
-              "caption": "Trireme Olympias — naval science of the Classical polis",
-              "alt": "Modern reconstruction of a Greek trireme",
-              "role": "story"
-            },
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Doryphoros%20replica.jpg?width=960",
-              "caption": "Doryphoros type — Polykleitan canon of proportion",
-              "alt": "Marble replica of Polykleitos’s Doryphoros",
-              "role": "art"
             }
           ]
         },
@@ -6890,46 +6460,10 @@
           ],
           "images": [
             {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Panagyurishte%20treasure%20rhyton.jpg?width=960",
+              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Panagyurishte%20Treasure,%20Rhyton.jpg?width=960",
               "caption": "Panagyurishte treasure — Thracian gold rhyta of royal feast art",
               "alt": "Gold rhyton from the Panagyurishte treasure",
               "role": "art"
-            },
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Kazanlak%20Tomb%20fresco.jpg?width=960",
-              "caption": "Kazanlak Tomb — painted Thracian afterlife banquet",
-              "alt": "Fresco from the Thracian tomb at Kazanlak",
-              "role": "story"
-            },
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Sveshtari%20tomb%20caryatids.jpg?width=960",
-              "caption": "Sveshtari Tomb — architectural sculpture in a royal mound",
-              "alt": "Caryatid figures in the Sveshtari Thracian tomb",
-              "role": "culture"
-            },
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Thracian%20parade%20greave.jpg?width=960",
-              "caption": "Parade greave — warrior luxury metalwork",
-              "alt": "Decorated Thracian greave in gold or silver",
-              "role": "art"
-            },
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Odrysian%20kingdom%20map%20museum.jpg?width=960",
-              "caption": "Odrysian sphere — museum map of Thracian royal power",
-              "alt": "Map illustrating Odrysian Thracian kingdom",
-              "role": "ideas"
-            },
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Thracian%20horseman%20relief.jpg?width=960",
-              "caption": "Thracian horseman — elite equestrian image",
-              "alt": "Relief of the Thracian horseman deity or hero",
-              "role": "philosophy"
-            },
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Rhodope%20mining%20landscape.jpg?width=960",
-              "caption": "Rhodope mining landscape — Balkan metal science",
-              "alt": "Mountain mining landscape in the Rhodope region",
-              "role": "science"
             }
           ]
         },
@@ -6980,44 +6514,6 @@
             {
               "text": "Illyrian dynasts bargained, fought, and married across a shrinking board as Macedon and Rome closed in. The Adriatic became a corridor of other people’s empires.",
               "title": "Between Macedon and Rome"
-            }
-          ],
-          "images": [
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Illyrian%20helmet.jpg?width=960",
-              "caption": "Illyrian helmet — Adriatic warrior prestige gear",
-              "alt": "Bronze Illyrian-type helmet",
-              "role": "art"
-            },
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Iron%20Age%20hillfort%20Dalmatia.jpg?width=960",
-              "caption": "Dalmatian hillfort — Illyrian hinterland settlement",
-              "alt": "Hillfort remains on the eastern Adriatic",
-              "role": "culture"
-            },
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Amber%20beads%20Iron%20Age%20Adriatic.jpg?width=960",
-              "caption": "Amber beads — Adriatic luxury exchange",
-              "alt": "Amber beads from Iron Age Adriatic contexts",
-              "role": "ideas"
-            },
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Greek%20colony%20Apollonia%20Illyria.jpg?width=960",
-              "caption": "Apollonia — Greek colonial neighbour on Illyrian shores",
-              "alt": "Ruins of Apollonia in Illyria",
-              "role": "story"
-            },
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Illyrian%20greaves%20museum.jpg?width=960",
-              "caption": "Greaves — martial metalwork of Illyrian elites",
-              "alt": "Bronze greaves from an Illyrian warrior burial",
-              "role": "art"
-            },
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Karst%20pasture%20Adriatic%20hinterland.jpg?width=960",
-              "caption": "Karst pasture — environmental setting of Illyrian farming science",
-              "alt": "Karst landscape with pastures in the western Balkans",
-              "role": "science"
             }
           ]
         },
@@ -7077,50 +6573,6 @@
               "text": "Pontic grain moved south to Greek cities; wine and stories moved north. The steppe and the polis fed each other while arguing about who was civilised.",
               "title": "Grain for Wine"
             }
-          ],
-          "images": [
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Scythian%20gold%20stag%20Kostromskaya.jpg?width=960",
-              "caption": "Scythian gold stag — animal-style masterpiece from a kurgan",
-              "alt": "Gold stag shield ornament from Kostromskaya",
-              "role": "art"
-            },
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Kul-Oba%20vessel.jpg?width=960",
-              "caption": "Kul-Oba vessel — Greek–Scythian collaborative toreutics",
-              "alt": "Electrum vessel from the Kul-Oba kurgan",
-              "role": "culture"
-            },
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Scythian%20akinakes.jpg?width=960",
-              "caption": "Akinakes — short sword of steppe warrior kit",
-              "alt": "Scythian akinakes short sword",
-              "role": "story"
-            },
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Scythian%20scale%20armour.jpg?width=960",
-              "caption": "Scale armour — wearable sculpture of nomad war",
-              "alt": "Scythian scale armour reconstruction or find",
-              "role": "art"
-            },
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Pazyryk%20carpet%20detail.jpg?width=960",
-              "caption": "Pazyryk textile tradition — steppe felt and pile craft science",
-              "alt": "Detail of an ancient steppe carpet (Pazyryk)",
-              "role": "science"
-            },
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Scythian%20kurgan%20Ukraine.jpg?width=960",
-              "caption": "Pontic kurgan — royal burial mound of mobile sovereignty",
-              "alt": "Burial mound (kurgan) on the Pontic steppe",
-              "role": "ideas"
-            },
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Herodotus%20manuscript%20portrait.jpg?width=960",
-              "caption": "Herodotus — ethnographic filter for Scythian thought",
-              "alt": "Manuscript or bust image associated with Herodotus",
-              "role": "philosophy"
-            }
           ]
         },
         {
@@ -7167,50 +6619,6 @@
             {
               "text": "Beyond Scythian fame, Sauromatian and early Sarmatian groups kept the animal style alive toward the sunrise. The steppe’s political centre of gravity was already shifting under hoofbeats.",
               "title": "East of the Don"
-            }
-          ],
-          "images": [
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Sarmatian%20gold%20deer.jpg?width=960",
-              "caption": "Animal-style gold — Sauromatian/early Sarmatian portable prestige",
-              "alt": "Gold animal-style ornament from early Sarmatian contexts",
-              "role": "art"
-            },
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Sauromatian%20female%20warrior%20burial%20reconstruction.jpg?width=960",
-              "caption": "Equipped female burial — archaeological fuel for Amazon stories",
-              "alt": "Museum reconstruction of a weapon-equipped female steppe burial",
-              "role": "story"
-            },
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Steppe%20bronze%20mirror.jpg?width=960",
-              "caption": "Bronze mirror — portable prestige of mobile elites",
-              "alt": "Iron Age steppe bronze mirror",
-              "role": "culture"
-            },
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Sarmatian%20horse%20harness%20plaques.jpg?width=960",
-              "caption": "Horse harness plaques — wearable art of mounted life",
-              "alt": "Decorated horse harness fittings",
-              "role": "art"
-            },
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Pontic%20steppe%20wagons%20reconstruction.jpg?width=960",
-              "caption": "Wagon logistics — mobile science of the steppe fringe",
-              "alt": "Reconstruction of steppe wagons/tents",
-              "role": "science"
-            },
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Amazon%20Greek%20vase.jpg?width=960",
-              "caption": "Amazon on a Greek vase — external myth projected on the steppe",
-              "alt": "Greek vase painting of an Amazon warrior",
-              "role": "philosophy"
-            },
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Early%20Sarmatian%20kurgan.jpg?width=960",
-              "caption": "Early Sarmatian kurgan — funerary cosmology of the eastern steppe",
-              "alt": "Kurgan burial mound associated with early Sarmatian horizons",
-              "role": "ideas"
             }
           ]
         }
@@ -7642,24 +7050,6 @@
               "role": "leader"
             },
             {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Ara%20Pacis%20relief%20-%20Procession%20of%20the%20family%20of%20Augustus.jpg?width=960",
-              "caption": "Ara Pacis procession relief",
-              "alt": "Relief of imperial family procession on the Ara Pacis",
-              "role": "art"
-            },
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Pompeii%20-%20Casa%20dei%20Vettii%20-%20Ixion%20Room.jpg?width=960",
-              "caption": "Pompeian frescoed interior",
-              "alt": "Frescoed room in the House of the Vettii, Pompeii",
-              "role": "culture"
-            },
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Roman%20Forum%20from%20Capitoline%20Hill.jpg?width=960",
-              "caption": "Roman Forum from the Capitoline",
-              "alt": "View of the Roman Forum ruins from Capitoline Hill",
-              "role": "story"
-            },
-            {
               "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Pantheon%20Dome.jpg?width=960",
               "caption": "Pantheon dome — Roman concrete mastery",
               "alt": "Interior of the Pantheon dome with oculus",
@@ -7723,40 +7113,10 @@
           ],
           "images": [
             {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Theatre%20antique%20d%20Orange%202008.jpg?width=960",
-              "caption": "Roman theatre at Orange (Arausio)",
-              "alt": "Facade of the Roman theatre at Orange, France",
-              "role": "art"
-            },
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Maison%20Carree%20in%20Nimes.jpg?width=960",
-              "caption": "Maison Carrée, Nîmes",
-              "alt": "Classical Roman temple known as the Maison Carrée in Nîmes",
-              "role": "culture"
-            },
-            {
               "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Pont%20du%20Gard%20BLS.jpg?width=960",
               "caption": "Pont du Gard aqueduct",
               "alt": "Three-tiered Roman aqueduct bridge Pont du Gard",
               "role": "science"
-            },
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Lyon%20-%20Lugdunum%20-%20Mus%C3%A9e%20gallo-romain%20-%20Autel%20des%20Trois%20Gaules.jpg?width=960",
-              "caption": "Altar of the Three Gauls tradition at Lugdunum",
-              "alt": "Gallo-Roman altar related to the cult of Rome and Augustus at Lyon",
-              "role": "story"
-            },
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Mosaic%20Dionysus%20Lion%20Louvre%20Ma3457.jpg?width=960",
-              "caption": "Gallo-Roman mosaic tradition",
-              "alt": "Roman mosaic with Dionysus and a lion",
-              "role": "art"
-            },
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Vase%20de%20Bavay.jpg?width=960",
-              "caption": "Provincial ceramic craft",
-              "alt": "Roman-period vase from Bavay in northern Gaul",
-              "role": "culture"
             }
           ]
         },
@@ -7829,28 +7189,10 @@
               "role": "science"
             },
             {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Puente%20Romano%20-%20C%C3%B3rdoba.jpg?width=960",
+              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Puente%20Romano%20Cordoba.jpg?width=960",
               "caption": "Roman bridge at Corduba",
               "alt": "Roman bridge crossing the Guadalquivir at Córdoba",
               "role": "culture"
-            },
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Italica%20-%20Anfiteatro.jpg?width=960",
-              "caption": "Amphitheatre at Italica",
-              "alt": "Roman amphitheatre ruins at Italica near Seville",
-              "role": "story"
-            },
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Busto%20de%20S%C3%A9neca%20%28M.%20Prado%29%2001.jpg?width=960",
-              "caption": "Seneca — Stoic voice with Hispanic roots",
-              "alt": "Bust of Seneca in the Prado Museum",
-              "role": "leader"
-            },
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Torre%C3%B3n%20de%20H%C3%A9rcules%20%28A%20Coru%C3%B1a%29.jpg?width=960",
-              "caption": "Tower of Hercules — Atlantic Roman seamark",
-              "alt": "Roman lighthouse known as Tower of Hercules in A Coruña",
-              "role": "science"
             }
           ]
         },
@@ -7908,28 +7250,10 @@
               "role": "culture"
             },
             {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Fishbourne%20Roman%20Palace%20mosaic.jpg?width=960",
-              "caption": "Fishbourne palace mosaic",
-              "alt": "Geometric mosaic floor at Fishbourne Roman Palace",
-              "role": "art"
-            },
-            {
               "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Hadrians%20Wall%20from%20Housesteads1.jpg?width=960",
               "caption": "Hadrian’s Wall — later fossil of this era’s frontier idea",
               "alt": "Hadrian's Wall stretching across landscape near Housesteads",
               "role": "story"
-            },
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/London%20Mithraeum%20-%20geograph.org.uk%20-%201122286.jpg?width=960",
-              "caption": "Mithraeum tradition in Londinium",
-              "alt": "Remains associated with the London Mithraeum",
-              "role": "culture"
-            },
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Boudica%20statue%20Westminster.jpg?width=960",
-              "caption": "Boudica — memory of revolt",
-              "alt": "Statue of Boudica in a chariot near Westminster",
-              "role": "leader"
             },
             {
               "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Vindolanda%20tablets.jpg?width=960",
@@ -7988,36 +7312,6 @@
             }
           ],
           "images": [
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Limes%20Germanicus.png?width=960",
-              "caption": "Schematic of the Upper German-Raetian limes world",
-              "alt": "Map diagram of the Limes Germanicus",
-              "role": "story"
-            },
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Saalburg%20Hauptgebaeude.jpg?width=960",
-              "caption": "Saalburg fort reconstruction — limes architecture",
-              "alt": "Reconstructed main building of Saalburg Roman fort",
-              "role": "art"
-            },
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Jupitergigantensaeule%20Hausen.jpg?width=960",
-              "caption": "Jupiter column along the German frontier",
-              "alt": "Jupiter giant column monument in Hausen",
-              "role": "culture"
-            },
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Mithras%20tauroctony%20Louvre.jpg?width=960",
-              "caption": "Mithras tauroctony — camp mystery religion",
-              "alt": "Relief of Mithras slaying the bull",
-              "role": "culture"
-            },
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Roman%20bridge%20Trier.jpg?width=960",
-              "caption": "Roman bridge technology on northern rivers",
-              "alt": "Roman bridge at Trier spanning the Moselle",
-              "role": "science"
-            },
             {
               "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Hermannsdenkmal.jpg?width=960",
               "caption": "Arminius memory — Teutoburg legacy",
@@ -8081,40 +7375,22 @@
           ],
           "images": [
             {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Trajan%27s%20Bridge%20across%20the%20Danube%20reconstruction.jpg?width=960",
-              "caption": "Danube bridging ambition (Trajanic horizon)",
-              "alt": "Reconstruction image of Trajan's bridge across the Danube",
-              "role": "science"
-            },
-            {
               "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Thracian%20Horseman.jpg?width=960",
               "caption": "Thracian rider relief tradition",
               "alt": "Relief of the Thracian Horseman deity",
               "role": "culture"
             },
             {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Roman%20military%20diploma.jpg?width=960",
-              "caption": "Military diploma — citizenship after service",
-              "alt": "Bronze Roman military diploma tablets",
-              "role": "story"
-            },
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Amphitheatre%20of%20Durres.jpg?width=960",
+              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Amphitheatre%20of%20D%C3%BCrres.jpg?width=960",
               "caption": "Amphitheatre at Dyrrachium (Durrës)",
               "alt": "Roman amphitheatre remains at Durrës, Albania",
               "role": "art"
             },
             {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Plovdiv%20Roman%20stadium.jpg?width=960",
+              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Plovdiv%20--%20Roman%20stadium.jpg?width=960",
               "caption": "Roman stadium at Philippopolis",
               "alt": "Excavated Roman stadium in Plovdiv",
               "role": "art"
-            },
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Diana%20Fortress%20-%20Zaje%C4%8Dar.jpg?width=960",
-              "caption": "Danubian fort architecture",
-              "alt": "Remains of Diana Fortress on the Danube near Zaječar",
-              "role": "culture"
             }
           ]
         },
@@ -8180,12 +7456,6 @@
               "role": "art"
             },
             {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Odeon%20of%20Herodes%20Atticus%20from%20the%20top.jpg?width=960",
-              "caption": "Roman odeion layered on Athens",
-              "alt": "Odeon of Herodes Atticus on the Acropolis slope",
-              "role": "culture"
-            },
-            {
               "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Plato%20Silanion%20Musei%20Capitolini%20MC1377.jpg?width=960",
               "caption": "Plato — Athenian philosophical brand under Rome",
               "alt": "Marble bust of Plato in the Capitoline Museums",
@@ -8202,12 +7472,6 @@
               "caption": "Delphi sanctuary landscape",
               "alt": "Tholos at the sanctuary of Athena Pronaia in Delphi",
               "role": "culture"
-            },
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Antikythera%20mechanism.jpg?width=960",
-              "caption": "Antikythera mechanism — Greek technical prestige still defining science",
-              "alt": "Fragments of the Antikythera mechanism gear device",
-              "role": "science"
             }
           ]
         },
@@ -8260,46 +7524,10 @@
           ],
           "images": [
             {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Library%20of%20Celsus%20fa%C3%A7ade%20sunset.jpg?width=960",
-              "caption": "Library of Celsus, Ephesus",
-              "alt": "Facade of the Library of Celsus at Ephesus at sunset",
-              "role": "art"
-            },
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Ephesus%20Terrace%20Houses%20mosaic.jpg?width=960",
-              "caption": "Terrace Houses mosaics at Ephesus",
-              "alt": "Mosaic floor in the Terrace Houses of Ephesus",
-              "role": "culture"
-            },
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Aphrodisias%20Sebasteion%20relief.jpg?width=960",
-              "caption": "Sebasteion reliefs, Aphrodisias",
-              "alt": "Imperial cult relief from the Sebasteion at Aphrodisias",
-              "role": "story"
-            },
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Theatre%20of%20Ephesus.jpg?width=960",
-              "caption": "Great Theatre of Ephesus",
-              "alt": "Large Roman-period theatre seating at Ephesus",
-              "role": "art"
-            },
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Pergamon%20Asklepion.jpg?width=960",
-              "caption": "Asklepieion at Pergamon — healing science and cult",
-              "alt": "Ruins of the Asklepieion sanctuary at Pergamon",
-              "role": "science"
-            },
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Temple%20of%20Hadrian%20Ephesus.jpg?width=960",
+              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Temple%20of%20Hadrian%20Ephesus.JPG?width=960",
               "caption": "Temple of Hadrian, Ephesus — imperial cult architecture",
               "alt": "Ornate facade of the Temple of Hadrian at Ephesus",
               "role": "culture"
-            },
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Aphrodite%20of%20Aphrodisias.jpg?width=960",
-              "caption": "Aphrodisias sculpture school prestige",
-              "alt": "Statue of Aphrodite associated with Aphrodisias",
-              "role": "art"
             }
           ]
         },
@@ -8356,44 +7584,6 @@
               "text": "As the first century closes, Decebalus’s kingship gathers the threat Trajan will later answer. This atlas window ends with Dacia still free—and already a Roman obsession.",
               "title": "Decebalus on the Horizon"
             }
-          ],
-          "images": [
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Sarmizegetusa%20Regia%20-%20the%20sacred%20zone.jpg?width=960",
-              "caption": "Sarmizegetusa Regia sacred zone — pre-provincial Dacia",
-              "alt": "Stone remains of the sacred zone at Sarmizegetusa Regia",
-              "role": "culture"
-            },
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Dacian%20gold%20bracelet.jpg?width=960",
-              "caption": "Dacian gold work",
-              "alt": "Ancient Dacian gold bracelet",
-              "role": "art"
-            },
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Dacian%20Draco.jpg?width=960",
-              "caption": "Dacian draco standard",
-              "alt": "Reconstruction or depiction of a Dacian draco military standard",
-              "role": "story"
-            },
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Decebalus%20rock%20sculpture.jpg?width=960",
-              "caption": "Decebalus — kingship facing Rome",
-              "alt": "Rock sculpture of Decebalus on the Danube gorge",
-              "role": "leader"
-            },
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Trajan%27s%20Column%20scene%20Dacians.jpg?width=960",
-              "caption": "Trajan’s Column Dacians — just-after visual conquest",
-              "alt": "Relief scene of Dacians on Trajan's Column",
-              "role": "story"
-            },
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Dacian%20fortress%20walls%20Costesti.jpg?width=960",
-              "caption": "Dacian fortress masonry",
-              "alt": "Stone walls of a Dacian fortress at Costești",
-              "role": "science"
-            }
           ]
         },
         {
@@ -8445,36 +7635,6 @@
             }
           ],
           "images": [
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Hoby%20beakers.jpg?width=960",
-              "caption": "Hoby cups — Roman silver in northern elite graves",
-              "alt": "Roman silver Hoby drinking cups from a northern grave",
-              "role": "art"
-            },
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Nydam%20Boat.jpg?width=960",
-              "caption": "Weapon and boat deposit tradition (wider Germanic votive world)",
-              "alt": "Nydam boat associated with Germanic weapon deposits",
-              "role": "culture"
-            },
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Germanic%20iron%20spearheads.jpg?width=960",
-              "caption": "Germanic iron weapons",
-              "alt": "Iron spearheads of Germanic type",
-              "role": "science"
-            },
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Tacitus%20Germania%20manuscript.jpg?width=960",
-              "caption": "Tacitus’s Germania — ethnographic mirror",
-              "alt": "Manuscript page of Tacitus Germania",
-              "role": "ideas"
-            },
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Kalkriese%20face%20mask.jpg?width=960",
-              "caption": "Kalkriese mask — Teutoburg battlefield archaeology",
-              "alt": "Roman cavalry face mask found at Kalkriese",
-              "role": "story"
-            },
             {
               "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Hermannsdenkmal.jpg?width=960",
               "caption": "Arminius — autonomy against provincialisation",
@@ -8530,44 +7690,6 @@
               "text": "A chieftain’s hall hosts feast and gift where a Mediterranean city would raise a basilica. Power is proximity and generosity, not charter.",
               "title": "Hall Without a Forum"
             }
-          ],
-          "images": [
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Himling%C3%B8je%20grave%20goods.jpg?width=960",
-              "caption": "Rich Roman Iron Age grave goods (Himlingøje sphere)",
-              "alt": "Roman Iron Age grave goods including Roman imports",
-              "role": "art"
-            },
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Roman%20glass%20Scandinavia.jpg?width=960",
-              "caption": "Roman glass in northern graves",
-              "alt": "Roman glass vessels found in Scandinavia",
-              "role": "culture"
-            },
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Illerup%20%C3%85dal%20weapons.jpg?width=960",
-              "caption": "Illerup Ådal weapon deposit tradition",
-              "alt": "Iron weapons from the Illerup Ådal bog deposit",
-              "role": "story"
-            },
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Gotland%20picture%20stone%20detail.jpg?width=960",
-              "caption": "Northern memorial stone tradition (later continuum)",
-              "alt": "Detail of a Gotland picture stone",
-              "role": "culture"
-            },
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Bog%20iron%20bloom.jpg?width=960",
-              "caption": "Bog-iron technology",
-              "alt": "Bog iron bloom illustrating northern iron production",
-              "role": "science"
-            },
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Hjortspring%20boat.jpg?width=960",
-              "caption": "Northern boatbuilding tradition",
-              "alt": "Hjortspring boat reconstruction or remains",
-              "role": "science"
-            }
           ]
         },
         {
@@ -8618,19 +7740,7 @@
           ],
           "images": [
             {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Hill%20of%20Tara%20panorama.jpg?width=960",
-              "caption": "Hill of Tara — royal ceremonial landscape",
-              "alt": "Panoramic view of the Hill of Tara ceremonial landscape",
-              "role": "culture"
-            },
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Irish%20Iron%20Age%20torc.jpg?width=960",
-              "caption": "Iron Age gold torc tradition",
-              "alt": "Irish Iron Age gold torc",
-              "role": "art"
-            },
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Loughnashade%20trumpet.jpg?width=960",
+              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Loughnashade%20Trumpet.jpg?width=960",
               "caption": "Loughnashade trumpet — prestige metalwork",
               "alt": "Iron Age bronze trumpet from Loughnashade",
               "role": "art"
@@ -8640,12 +7750,6 @@
               "caption": "Corleck Head — stone sacral art",
               "alt": "Triple-faced Corleck Head stone carving",
               "role": "culture"
-            },
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Roman%20coins%20Ireland%20find.jpg?width=960",
-              "caption": "Roman finds as trade rarities",
-              "alt": "Roman coins found in Ireland",
-              "role": "story"
             },
             {
               "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Clonycavan%20Man.jpg?width=960",
@@ -8709,44 +7813,6 @@
             {
               "text": "One season brings alliance, the next a raid. Sarmatian politics teach Rome that the Danube’s north is a negotiation without end.",
               "title": "Treaty Weather"
-            }
-          ],
-          "images": [
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Sarmatian%20gold%20diadem.jpg?width=960",
-              "caption": "Sarmatian polychrome gold",
-              "alt": "Sarmatian gold diadem with polychrome inlay",
-              "role": "art"
-            },
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Sarmatian%20cataphract.jpg?width=960",
-              "caption": "Cataphract cavalry tradition",
-              "alt": "Depiction or reconstruction of a Sarmatian cataphract",
-              "role": "science"
-            },
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Kurgan%20burial%20Ukraine.jpg?width=960",
-              "caption": "Kurgan burial landscape",
-              "alt": "Steppe kurgan burial mound in Ukraine",
-              "role": "culture"
-            },
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Sarmatian%20tamga.jpg?width=960",
-              "caption": "Tamga clan signs",
-              "alt": "Cattle or clan tamga signs associated with Sarmatians",
-              "role": "ideas"
-            },
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Tanais%20excavations.jpg?width=960",
-              "caption": "Tanais — Greek city on the pastoral edge",
-              "alt": "Archaeological remains at Tanais on the Don/Black Sea approach",
-              "role": "story"
-            },
-            {
-              "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Sarmatian%20sword.jpg?width=960",
-              "caption": "Long sword prestige gear",
-              "alt": "Sarmatian long sword artifact",
-              "role": "art"
             }
           ]
         }
