@@ -660,7 +660,6 @@ function scrubBodyCopyMarkup(root = document) {
       "#absorb-substrate",
       "#absorb-incoming",
       "#absorb-fused",
-      "#cultures-blurb",
     ].join(",")
   );
   fields.forEach((el) => {
@@ -2151,12 +2150,6 @@ function updateCulturesRail() {
   const period = currentPeriod();
   const layers = (period?.mapLayers || []).filter((l) => !l.extra);
   const rail = $("#cultures-rail");
-  const blurb = $("#cultures-blurb");
-  if (blurb) {
-    // Drop large schematic-disclaimer callouts; keep Sources/.tiny footnotes only
-    blurb.textContent = "";
-    blurb.hidden = true;
-  }
   if (!rail) return;
   rail.innerHTML = layers
     .map((l) => {

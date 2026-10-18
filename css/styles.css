@@ -413,9 +413,7 @@ html[data-theme="dark"] .polity {
 .app:not([data-atlas-mode="deep-time"]) .ancestry-panel,
 .app:not([data-atlas-mode="deep-time"]) .ancestry-note,
 .app:not([data-atlas-mode="deep-time"]) #ancestry-note,
-.app:not([data-atlas-mode="deep-time"]) .glossary,
-.app:not([data-atlas-mode="deep-time"]) #period-key-events,
-.app:not([data-atlas-mode="deep-time"]) #place-key-events {
+.app:not([data-atlas-mode="deep-time"]) .glossary {
   display: none !important;
 }
 
@@ -490,8 +488,7 @@ html[data-theme="dark"] .polity {
   padding: 0;
 }
 
-.legend-row span[style*="opacity:.55"],
-.legend-row .role-tag {
+.legend-row span[style*="opacity:.55"] {
   color: var(--ink-mute);
 }
 
@@ -683,13 +680,6 @@ html[data-theme="dark"] .polity {
   align-items: center;
   justify-content: space-between;
   margin-bottom: 0.55rem;
-}
-
-.slider-hint {
-  font-size: 0.74rem;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--ink-mute);
 }
 
 .nav-btn {
@@ -901,10 +891,6 @@ html[data-theme="dark"] .polity {
   color: var(--ink);
   white-space: normal;
   overflow: visible;
-}
-
-.mode-row {
-  display: none !important;
 }
 
 .culture-horizon {
@@ -1522,14 +1508,6 @@ body.lightbox-open {
   display: none !important;
 }
 
-.legend-item {
-  display: flex;
-  align-items: center;
-  gap: 0.3rem;
-  font-size: 0.8rem;
-  color: var(--ink-dim);
-}
-
 .swatch {
   width: 6px;
   height: 6px;
@@ -2061,11 +2039,6 @@ html {
   padding-left: 0;
 }
 
-.key-events--place {
-  margin-top: 0.85rem;
-  margin-bottom: 0.35rem;
-}
-
 .key-events-body {
   font-size: 0.94em;
   line-height: 1.5;
@@ -2431,10 +2404,6 @@ html {
 
 .tiny {
   font-size: 0.9rem;
-}
-
-#cultures-blurb {
-  display: none !important;
 }
 
 /* ——— Ancestry deep-dive page ——— */
