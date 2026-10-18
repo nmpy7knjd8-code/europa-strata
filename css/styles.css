@@ -3341,6 +3341,18 @@ body {
   outline-offset: 3px;
 }
 
+/* Keyboard focus for every other control (theme toggle, culture chips,
+   glossary links, page nav). Specific rules above keep their own offsets. */
+button:focus-visible,
+a:focus-visible,
+.culture-chip:focus-visible,
+.theme-toggle:focus-visible,
+.glossary-link:focus-visible,
+.glossary-more:focus-visible {
+  outline: 2px solid var(--ink);
+  outline-offset: 2px;
+}
+
 /* Desktop Deep-time year scale. Phones keep the sparse two-line ticks. */
 @media (min-width: 900px) {
   .app[data-atlas-mode="deep-time"] .time-bar {
