@@ -3148,3 +3148,50 @@ a:focus-visible,
   justify-content: center;
   min-height: 2.4em; /* 2 × line-height 1.2 */
 }
+
+/* ---- compact map key ----
+   Tighter rows, gaps and swatch spacing. Rows keep a 24px minimum height so
+   each one is still a comfortable tap target on phones. */
+.app .map-legend {
+  gap: 0;
+}
+
+.app .map-legend .legend-group {
+  gap: 0 0.2rem;
+}
+
+.app .map-legend .legend-family {
+  margin: 0.4rem 0 0.05rem;
+  line-height: 1.2;
+}
+
+.app .map-legend .legend-group:first-child .legend-family {
+  margin-top: 0.1rem;
+}
+
+.app .map-legend .legend-row {
+  gap: 0.35rem;
+  min-height: 24px;
+  padding: 0.1rem 0.3rem;
+  line-height: 1.2;
+}
+
+.app .map-legend .legend-swatch {
+  width: 11px;
+  height: 11px;
+}
+
+.app .legend-bar .kicker {
+  margin-bottom: 0.15rem;
+}
+
+.app .legend-bar .map-attr {
+  margin-top: 0.3rem;
+}
+
+@media (max-width: 860px) {
+  .app .legend-bar {
+    padding-top: 2.5rem;
+    padding-bottom: 1rem;
+  }
+}
