@@ -91,6 +91,13 @@ const KINGDOM_TAB_LABELS = {
   modern: "Modern",
 };
 
+function motionMs(ms) {
+  try {
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return 0;
+  } catch (_) {}
+  return ms;
+}
+
 const state = {
   data: null,
   geo: null,
@@ -283,7 +290,7 @@ function v2TickFromTopo(topo, obj, raw, colors) {
       polities[xid] = {
         name,
         type: "Other polity",
-        summary: `${name} — shown from the historical-basemaps dataset; no Europa Strata profile yet.`,
+        summary: `${name}, shown from the historical-basemaps dataset. No Europa Strata profile yet.`,
         description: "",
       };
       mapLayers.push({ polityId: xid, id: xid, label: name, color: ERA_NEUTRAL, role: "dominant", extra: true });
@@ -320,7 +327,7 @@ function normalizeKingdomPack(raw, topo = null) {
       mapAttribution:
         raw.mapAttribution ||
         raw.notes ||
-        "Schematic kingdom extents — not modern borders.",
+        "Schematic kingdom extents, not modern borders.",
       status: raw.status || "ready",
       ticks: raw.ticks || [],
       periods: raw.periods,
@@ -435,7 +442,7 @@ function normalizeKingdomPack(raw, topo = null) {
         tickNarrative ||
         raw.narrative ||
         raw.notes ||
-        `Schematic ${label} polities around ${year} AD — kingdoms, empires, duchies, and confederations (not modern borders).`,
+        `Schematic ${label} polities around ${year} AD: kingdoms, empires, duchies, and confederations (not modern borders).`,
       culturesNote: tickEyebrow || "",
       mapLayers,
       polities,
@@ -455,7 +462,7 @@ function normalizeKingdomPack(raw, topo = null) {
       ? V2_ATTRIBUTION
       : raw.mapAttribution ||
         raw.notes ||
-        "Schematic kingdom extents — not modern state borders.",
+        "Schematic kingdom extents, not modern state borders.",
     v2,
     status: raw.status || "ready",
     ticks: raw.ticks,
@@ -872,7 +879,7 @@ function resolveOtherMeta(region, baseKey = {}) {
   if (!detail) {
     const baseDetail =
       baseKey.detail ||
-      "Residual ancestry outside the main WHG–EEF–WSH (and named) components — not a single deep Paleolithic cluster.";
+      "Residual ancestry outside the main WHG–EEF–WSH (and named) components. Not a single deep Paleolithic cluster.";
     if (hintText && note) {
       detail = `Residual / unmodeled slice: ${hintText}. ${note}`;
     } else if (note) {
@@ -1319,7 +1326,7 @@ function resetMapZoom() {
   state.savedZoom = null;
   state.svg
     .transition()
-    .duration(320)
+    .duration(motionMs(320))
     .ease(d3.easeCubicOut)
     .call(state.zoom.transform, d3.zoomIdentity);
 }
@@ -1328,7 +1335,7 @@ function bumpMapZoom(factor) {
   if (!state.svg || !state.zoom) return;
   state.svg
     .transition()
-    .duration(220)
+    .duration(motionMs(220))
     .ease(d3.easeCubicOut)
     .call(state.zoom.scaleBy, factor);
 }
@@ -1558,7 +1565,7 @@ function paintMap(animate = true) {
       if (animate) {
         node
           .transition()
-          .duration(280)
+          .duration(motionMs(280))
           .ease(d3.easeCubicOut)
           .style("fill", fill)
           .style("fill-opacity", opacity)
@@ -1580,7 +1587,7 @@ function paintMap(animate = true) {
     if (animate) {
       node
         .transition()
-        .duration(420)
+        .duration(motionMs(420))
         .ease(d3.easeCubicOut)
         .style("fill", fill)
         .style("fill-opacity", opacity);
@@ -1989,7 +1996,7 @@ function renderKeyEventsList(listEl, events) {
       when.className = "key-events-date";
       when.textContent = formatYearUi(ev.date);
       summary.appendChild(when);
-      summary.appendChild(document.createTextNode(" — "));
+      summary.appendChild(document.createTextNode(": "));
     }
     const title = document.createElement("span");
     title.className = "key-events-teaser";
@@ -2163,7 +2170,7 @@ function renderGlossary(activeEntries) {
       text:
         otherEntry?.detail ||
         otherKey?.detail ||
-        "Residual ancestry outside the main WHG–EEF–WSH components — eastern Mediterranean, East Eurasian, North African, CHG/Iran-related, or poorly resolved inputs depending on period and place.",
+        "Residual ancestry outside the main WHG–EEF–WSH components: eastern Mediterranean, East Eurasian, North African, CHG/Iran-related, or poorly resolved inputs depending on period and place.",
     });
   }
 
@@ -2692,7 +2699,7 @@ function inferImageRole(img) {
     return "religion";
   }
   if (
-    /book|manuscript|folio|thes|print|tapestry|chronicle|poem|poetry|saga|text|letter|codex|quill|dante|shakespeare|cervantes|miniature/.test(
+    /book|manuscript|folio|thes|print|illuminat|chronicle|poem|poetry|saga|text|letter|codex|quill|dante|shakespeare|cervantes|miniature/.test(
       t
     )
   ) {
@@ -3121,8 +3128,18 @@ function splitTickYear(yearStr) {
   return { num: m[1], era };
 }
 
+/** Desktop sliders label every stop. Phones and tablets keep the sparse row. */
+function desktopTickLabels() {
+  try {
+    return window.matchMedia("(min-width: 900px)").matches;
+  } catch (_) {
+    return false;
+  }
+}
+
 /** How many year labels fit without crush on the current slider width. */
 function maxTickLabelsForWidth(widthPx) {
+  if (desktopTickLabels()) return Number.POSITIVE_INFINITY;
   const w = widthPx || 400;
   if (w < 360) return 4;
   if (w < 480) return 5;
@@ -3165,26 +3182,374 @@ function thinTickLabelsByGap(indices, n, widthPx, minGapPx) {
   return kept;
 }
 
+/** Conservative label width so the first paint does not overlap before fonts finish. */
+function estimatedTickLabelWidth(yearText) {
+  const len = (splitTickYear(yearText).num || "").length;
+  if (len >= 4) return 50;
+  if (len === 3) return 40;
+  if (len === 2) return 32;
+  return 24;
+}
+
+/** Same drop rule as pruneOverlappingTickLabels, using the slider width we already have. */
+function prethinDesktopTickLabels(indices, periods, n, widthPx) {
+  if (!widthPx || n <= 2 || indices.length <= 2) return indices;
+  const kept = indices.slice();
+  const box = (i) => {
+    const year = formatYearUi(periods[i].tickYear || periods[i].yearLabel);
+    const w = estimatedTickLabelWidth(year);
+    const x = (i / (n - 1)) * widthPx;
+    if (i === 0) return { left: 0, right: w };
+    if (i === n - 1) return { left: widthPx - w, right: widthPx };
+    return { left: x - w / 2, right: x + w / 2 };
+  };
+  let guard = 0;
+  while (guard++ < 48 && kept.length > 2) {
+    let dropAt = -1;
+    for (let k = 0; k < kept.length - 1; k++) {
+      const gap = box(kept[k + 1]).left - box(kept[k]).right;
+      if (gap >= 4) continue;
+      if (k === 0) dropAt = 1;
+      else if (k + 1 === kept.length - 1) dropAt = k;
+      else dropAt = k + 1;
+      break;
+    }
+    if (dropAt < 0) break;
+    kept.splice(dropAt, 1);
+  }
+  return kept;
+}
+
+/** Drop inner desktop labels whose boxes touch. First and last years always stay. */
+function pruneOverlappingTickLabels(wrap) {
+  if (!wrap) return;
+  const minGap = 4;
+  const nodes = () => [...wrap.querySelectorAll(".tick-label")];
+  let guard = 0;
+  while (guard++ < 48) {
+    const list = nodes();
+    if (list.length <= 2) return;
+    const boxes = list.map((el) => ({ el, r: el.getBoundingClientRect() }));
+    // Not laid out yet (or a web font has not painted). Caller retries after layout.
+    if (boxes.some((b) => b.r.width < 1)) return;
+    let drop = null;
+    for (let i = 0; i < boxes.length - 1; i++) {
+      const gap = boxes[i + 1].r.left - boxes[i].r.right;
+      if (gap >= minGap) continue;
+      if (i === 0) drop = boxes[1].el;
+      else if (i + 1 === boxes.length - 1) drop = boxes[i].el;
+      else drop = boxes[i + 1].el;
+      break;
+    }
+    if (!drop) return;
+    drop.remove();
+  }
+}
+
+let tickLabelPruneGen = 0;
+
+/** Measure after layout and after Sora loads. The sync pass often sees zero-width boxes. */
+function scheduleDesktopTickPrune(wrap) {
+  if (!desktopTickLabels() || !wrap) return;
+  const gen = ++tickLabelPruneGen;
+  const run = () => {
+    if (gen !== tickLabelPruneGen || !wrap.isConnected) return;
+    pruneOverlappingTickLabels(wrap);
+  };
+  const afterFrame = () => {
+    requestAnimationFrame(() => requestAnimationFrame(run));
+  };
+  afterFrame();
+  const fonts = document.fonts;
+  if (fonts && fonts.status !== "loaded" && typeof fonts.ready?.then === "function") {
+    fonts.ready.then(afterFrame).catch(() => {});
+  }
+}
+
+/**
+ * Center of the range thumb. pos is 0..1 along the slider, matching the input.
+ * The thumb's used width does not come back from getComputedStyle (it reports the
+ * input width), so this follows the widths in styles.css: 34px, 30px under 860px.
+ */
+function sliderThumbWidthPx() {
+  try {
+    if (window.matchMedia("(max-width: 860px)").matches) return 30;
+  } catch (_) {
+    /* matchMedia unavailable */
+  }
+  return 34;
+}
+
+function sliderThumbCenterPx(pos, trackWidth, thumbWidth) {
+  const p = Math.max(0, Math.min(1, pos));
+  const travel = Math.max(0, trackWidth - thumbWidth);
+  return thumbWidth / 2 + p * travel;
+}
+
+function periodSliderPos(index, count) {
+  if (count <= 1) return 0;
+  return index / (count - 1);
+}
+
+/** Year → thumb position. Linear inside each period segment, because the slider itself steps by period. */
+function yearToSliderPos(year, periods) {
+  const n = periods.length;
+  if (n <= 1) return 0;
+  const y0 = Number(periods[0].yearApprox);
+  const y1 = Number(periods[n - 1].yearApprox);
+  if (year <= y0) return 0;
+  if (year >= y1) return 1;
+  for (let i = 0; i < n - 1; i++) {
+    const a = Number(periods[i].yearApprox);
+    const b = Number(periods[i + 1].yearApprox);
+    const lo = Math.min(a, b);
+    const hi = Math.max(a, b);
+    if (year < lo || year > hi) continue;
+    const span = b - a;
+    const t = span === 0 ? 0 : (year - a) / span;
+    return periodSliderPos(i, n) + t * (periodSliderPos(i + 1, n) - periodSliderPos(i, n));
+  }
+  return 1;
+}
+
+function scaleYearText(yearApprox) {
+  const y = Math.round(Number(yearApprox));
+  if (y < 0) return `${Math.abs(y)} BC`;
+  return `${y} AD`;
+}
+
+/**
+ * Labels for the desktop Deep-time scale.
+ * Always the first period, the BC/AD step change, and the last period.
+ * Other labels are round years on the period notches, at least two steps apart,
+ * with no unlabeled run longer than three steps.
+ */
+function deepTimeLabelIndices(periods) {
+  const n = periods.length;
+  if (!n) return [];
+  const breakIdx = Math.max(
+    0,
+    periods.findIndex((p) => Number(p.yearApprox) >= 1)
+  );
+  const kept = new Set([0, breakIdx, n - 1]);
+  const score = (i) => {
+    const y = Math.abs(Math.round(Number(periods[i].yearApprox)));
+    if (y % 1000 === 0) return 3;
+    if (y % 500 === 0) return 2;
+    if (y % 100 === 0) return 1;
+    return 0;
+  };
+  const order = [...Array(n).keys()].sort((a, b) => score(b) - score(a) || a - b);
+  for (const i of order) {
+    if (score(i) < 1) continue;
+    if ([...kept].some((k) => Math.abs(k - i) < 2)) continue;
+    kept.add(i);
+  }
+  let guard = 0;
+  while (guard++ < n) {
+    const list = [...kept].sort((a, b) => a - b);
+    let gap = null;
+    for (let k = 0; k < list.length - 1; k++) {
+      const span = list[k + 1] - list[k];
+      if (span >= 4 && (!gap || span > gap.span)) gap = { span, a: list[k], b: list[k + 1] };
+    }
+    if (!gap) break;
+    const mid = (gap.a + gap.b) / 2;
+    let best = -1;
+    let bestKey = Infinity;
+    for (let i = gap.a + 1; i < gap.b; i++) {
+      const key = Math.abs(i - mid) - score(i) * 0.01;
+      if (key < bestKey) {
+        bestKey = key;
+        best = i;
+      }
+    }
+    if (best < 0) break;
+    kept.add(best);
+  }
+  return [...kept].sort((a, b) => a - b);
+}
+
+/** Short notches on a year grid: 1000 years before AD 1, 250 years after. Stops are not repeated. */
+function deepTimeMinorYears(periods) {
+  if (periods.length < 2) return [];
+  const start = Number(periods[0].yearApprox);
+  const end = Number(periods[periods.length - 1].yearApprox);
+  const breakYear = Number(periods.find((p) => Number(p.yearApprox) >= 1)?.yearApprox ?? 1);
+  const stops = new Set(periods.map((p) => Math.round(Number(p.yearApprox))));
+  const years = [];
+  const firstBc = Math.ceil((start + 1) / 1000) * 1000;
+  for (let y = firstBc; y < 0 && y < breakYear; y += 1000) {
+    if (!stops.has(y)) years.push(y);
+  }
+  const firstAd = Math.floor(breakYear / 250) * 250 + 250;
+  for (let y = firstAd; y < end; y += 250) {
+    if (y <= breakYear || stops.has(y)) continue;
+    years.push(y);
+  }
+  return years;
+}
+
+function sliderTrackGeometry(wrap) {
+  const input = $("#time-slider");
+  if (!input || !wrap) return null;
+  const inputBox = input.getBoundingClientRect();
+  const wrapBox = wrap.getBoundingClientRect();
+  if (inputBox.width < 2) return null;
+  const thumb = sliderThumbWidthPx(input);
+  return {
+    origin: inputBox.left - wrapBox.left,
+    track: inputBox.width,
+    thumb,
+  };
+}
+
+function thumbX(geo, pos) {
+  return geo.origin + sliderThumbCenterPx(pos, geo.track, geo.thumb);
+}
+
+function wireTickControls(wrap) {
+  wrap.querySelectorAll(".tick-mark-btn, .tick-label").forEach((el) => {
+    el.addEventListener("click", () => snapToPeriod(Number(el.dataset.i)));
+  });
+  wrap.querySelectorAll(".tick-mark-btn, .tick-label").forEach((el) => {
+    el.classList.toggle("is-active", Number(el.dataset.i) === state.periodIndex);
+  });
+  updateTickCaption();
+}
+
+/** Drop an inner label if the painted boxes still touch. First, last, and the AD 1 hinge stay. */
+function relieveScaleLabelOverlap(wrap) {
+  const minGap = 20;
+  const nodes = () => [...wrap.querySelectorAll(".tick-label")];
+  let guard = 0;
+  while (guard++ < 12) {
+    const list = nodes();
+    if (list.length <= 2) return;
+    const boxes = list.map((el) => ({ el, r: el.getBoundingClientRect() }));
+    if (boxes.some((b) => b.r.width < 1)) return;
+    let drop = null;
+    let tightest = minGap;
+    for (let i = 0; i < boxes.length - 1; i++) {
+      const gap = boxes[i + 1].r.left - boxes[i].r.right;
+      if (gap >= tightest) continue;
+      const a = boxes[i].el;
+      const b = boxes[i + 1].el;
+      const protectedA = a.classList.contains("is-scale-end") || a.classList.contains("is-scale-break");
+      const protectedB = b.classList.contains("is-scale-end") || b.classList.contains("is-scale-break");
+      if (protectedA && protectedB) continue;
+      tightest = gap;
+      drop = protectedA ? b : protectedB ? a : b;
+    }
+    if (!drop || tightest >= minGap) return;
+    drop.remove();
+  }
+}
+
+/**
+ * Desktop Deep-time scale.
+ * The thumb is linear in period index. Tall notches are the selectable periods.
+ * Short notches are a year grid inside each segment (1000y before AD 1, 250y after).
+ */
+function buildDeepTimeYearScale(wrap, periods) {
+  const n = periods.length;
+  const geo = sliderTrackGeometry(wrap);
+  wrap.classList.add("is-year-scale");
+  if (!geo || n < 2) {
+    const tries = Number(wrap.dataset.scaleTries || 0);
+    if (tries > 8) return;
+    wrap.dataset.scaleTries = String(tries + 1);
+    requestAnimationFrame(() => {
+      if (desktopTickLabels() && !isKingdomMode()) buildTicks();
+    });
+    return;
+  }
+  delete wrap.dataset.scaleTries;
+  const breakIdx = Math.max(
+    0,
+    periods.findIndex((p) => Number(p.yearApprox) >= 1)
+  );
+  const labeled = new Set(deepTimeLabelIndices(periods));
+  const xAt = (pos) => thumbX(geo, pos);
+  const stopX = periods.map((_, i) => xAt(periodSliderPos(i, n)));
+
+  const minors = deepTimeMinorYears(periods)
+    .map((year) => ({ year, x: xAt(yearToSliderPos(year, periods)) }))
+    .filter((tick) => stopX.every((sx) => Math.abs(sx - tick.x) >= 5));
+
+  const minorHtml = minors
+    .map(
+      (tick) =>
+        `<span class="tick-notch" style="left:${tick.x}px" title="${escapeHtml(scaleYearText(tick.year))}" aria-hidden="true"></span>`
+    )
+    .join("");
+
+  const stopHtml = periods
+    .map((p, i) => {
+      const name = shortPeriodName(p);
+      const text = scaleYearText(p.yearApprox);
+      const title = `${text}: ${name}`;
+      const breakCls = i === breakIdx ? " is-scale-break" : "";
+      const active = i === state.periodIndex ? " is-active" : "";
+      return `<button type="button" class="tick-mark-btn${breakCls}${active}" data-i="${i}" style="left:${stopX[i]}px" title="${escapeHtml(title)}" aria-label="${escapeHtml(title)}"><span class="tick-mark" aria-hidden="true"></span></button>`;
+    })
+    .join("");
+
+  const labelHtml = [...labeled]
+    .map((i) => {
+      const p = periods[i];
+      const text = scaleYearText(p.yearApprox);
+      const name = shortPeriodName(p);
+      const title = `${text}: ${name}`;
+      const end = i === 0 || i === n - 1 ? " is-scale-end" : "";
+      const hinge = i === breakIdx ? " is-scale-break" : "";
+      const active = i === state.periodIndex ? " is-active" : "";
+      return `<button type="button" class="tick-label${end}${hinge}${active}" data-i="${i}" style="left:${stopX[i]}px" title="${escapeHtml(title)}" aria-label="${escapeHtml(title)}">${escapeHtml(text)}</button>`;
+    })
+    .join("");
+
+  wrap.innerHTML = `<div class="tick-rail" role="presentation">${minorHtml}${stopHtml}</div><div class="tick-label-layer">${labelHtml}</div>`;
+  wireTickControls(wrap);
+  const refreshLabels = () => {
+    if (!wrap.isConnected || !wrap.classList.contains("is-year-scale")) return;
+    relieveScaleLabelOverlap(wrap);
+  };
+  requestAnimationFrame(refreshLabels);
+  if (document.fonts && document.fonts.status !== "loaded" && document.fonts.ready) {
+    document.fonts.ready.then(() => requestAnimationFrame(refreshLabels)).catch(() => {});
+  }
+}
+
 function buildTicks() {
   const wrap = $("#tick-labels");
   if (!wrap) return;
   const periods = activePeriods();
+  if (desktopTickLabels() && !isKingdomMode()) {
+    buildDeepTimeYearScale(wrap, periods);
+    return;
+  }
+  wrap.classList.remove("is-year-scale");
   const n = periods.length;
   const widthPx = wrap.clientWidth || wrap.parentElement?.clientWidth || window.innerWidth || 400;
   const maxLabels = maxTickLabelsForWidth(widthPx);
   let labeledIdx = sparseTickLabelIndices(n, maxLabels);
-  labeledIdx = thinTickLabelsByGap(
-    labeledIdx,
-    n,
-    widthPx,
-    minTickLabelGapPx(widthPx)
-  );
+  // Below 900px the sparse row is unchanged. Desktop starts from every stop.
+  if (!desktopTickLabels()) {
+    labeledIdx = thinTickLabelsByGap(
+      labeledIdx,
+      n,
+      widthPx,
+      minTickLabelGapPx(widthPx)
+    );
+  } else {
+    labeledIdx = prethinDesktopTickLabels(labeledIdx, periods, n, widthPx);
+  }
   const labeled = new Set(labeledIdx);
 
   const marks = periods
     .map((p, i) => {
       const name = shortPeriodName(p);
-      const title = `${formatYearUi(p.yearLabel)} — ${name}`;
+      const title = `${formatYearUi(p.yearLabel)}: ${name}`;
       return `<button type="button" class="tick-mark-btn" data-i="${i}" title="${escapeHtml(title)}" aria-label="${escapeHtml(title)}"><span class="tick-mark" aria-hidden="true"></span></button>`;
     })
     .join("");
@@ -3195,7 +3560,7 @@ function buildTicks() {
       const year = formatYearUi(p.tickYear || p.yearLabel);
       const { num, era } = splitTickYear(year);
       const name = shortPeriodName(p);
-      const title = `${formatYearUi(p.yearLabel)} — ${name}`;
+      const title = `${formatYearUi(p.yearLabel)}: ${name}`;
       const pct = n <= 1 ? 0 : (i / (n - 1)) * 100;
       const edge = i === 0 ? " is-first" : i === n - 1 ? " is-last" : "";
       const active = i === state.periodIndex ? " is-active" : "";
@@ -3204,14 +3569,13 @@ function buildTicks() {
     .join("");
 
   wrap.innerHTML = `<div class="tick-rail" role="presentation">${marks}</div><div class="tick-label-layer">${labels}</div>`;
-  wrap.querySelectorAll(".tick-mark-btn, .tick-label").forEach((el) => {
-    el.addEventListener("click", () => snapToPeriod(Number(el.dataset.i)));
-  });
-  // Sync active mark styling
-  wrap.querySelectorAll(".tick-mark-btn").forEach((el) => {
-    el.classList.toggle("is-active", Number(el.dataset.i) === state.periodIndex);
-  });
-  updateTickCaption();
+  if (desktopTickLabels()) {
+    // Force layout so a resize (fonts already in) can prune in this turn.
+    void wrap.offsetWidth;
+    pruneOverlappingTickLabels(wrap);
+    scheduleDesktopTickPrune(wrap);
+  }
+  wireTickControls(wrap);
 }
 
 function syncAtlasTabs() {
@@ -3394,6 +3758,11 @@ function bindUI() {
   // at identity zoom. Only remap when the map *width* meaningfully changes;
   // always preserve zoom if a rebuild does run.
   let resizeTimer = null;
+  try {
+    window.matchMedia("(min-width: 900px)").addEventListener("change", () => buildTicks());
+  } catch (_) {
+    /* matchMedia unavailable */
+  }
   window.addEventListener("resize", () => {
     clearTimeout(resizeTimer);
     resizeTimer = setTimeout(() => {
