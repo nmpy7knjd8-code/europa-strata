@@ -1469,25 +1469,13 @@
           "role": "story"
         },
         {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Fran%C3%A7ois_Clouet_-_Portrait_of_Francis_I%2C_King_of_France_-_Google_Art_Project.jpg?width=960",
-          "caption": "Francis I — Clouet court portrait",
-          "alt": "Francis I — Clouet court portrait",
-          "role": "leader"
-        },
-        {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Chateau_de_Chambord_01.jpg?width=960",
-          "caption": "Chambord — Loire château of the French Renaissance",
-          "alt": "Chambord — Loire château of the French Renaissance",
-          "role": "art"
-        },
-        {
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Michel_de_Montaigne_1.jpg?width=960",
           "caption": "Montaigne — essayist of civil-war skepticism",
           "alt": "Montaigne — essayist of civil-war skepticism",
           "role": "philosophy"
         },
         {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/%C3%89dit_de_Nantes.jpg?width=960",
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Edit%20de%20nantes.jpg?width=960",
           "caption": "Edict of Nantes — confessional truce document culture",
           "alt": "Edict of Nantes — confessional truce document culture",
           "role": "religion"
@@ -2641,7 +2629,7 @@
       "science": "John Dee mixes mathematics, navigation, and imperial mystique; Digges and Recorde spread geometry in English. Magnetic philosophy (Gilbert) and practical seamanship underwrite Atlantic ambition more than university chairs do. Magnetic philosophy and practical seamanship matter more to empire than any single college chair. Navigational mathematics schools pilots for seas the universities barely name.",
       "images": [
         {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Elizabeth_I_Armada_Portrait.jpg?width=960",
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Elizabeth%20I%20(Armada%20Portrait).jpg?width=960",
           "caption": "Elizabeth I — Armada Portrait",
           "alt": "Elizabeth I — Armada Portrait",
           "role": "leader"
@@ -2657,18 +2645,6 @@
           "caption": "Spanish Armada charts — 1588 as Protestant providence myth",
           "alt": "Spanish Armada charts — 1588 as Protestant providence myth",
           "role": "story"
-        },
-        {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/William_Shakespeare_Chandler_portrait.jpg?width=960",
-          "caption": "Shakespeare — vernacular drama’s summit by 1600",
-          "alt": "Shakespeare — vernacular drama’s summit by 1600",
-          "role": "literature"
-        },
-        {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/William_Gilbert_De_Magnete.jpg?width=960",
-          "caption": "Gilbert’s De Magnete — English experimental magnetism",
-          "alt": "Gilbert’s De Magnete — English experimental magnetism",
-          "role": "science"
         },
         {
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Armada%20Portrait%20Elizabeth%20I%20Queens%20House.jpg?width=640",
@@ -3511,30 +3487,6 @@
       "science": "University medicine and law remain modest; practical military engineering and cartography of the Borders matter more than courts of science. Border surveying and artillery practicalities outrun speculative science.",
       "images": [
         {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Mary%2C_Queen_of_Scots_in_captivity.jpg?width=960",
-          "caption": "Mary Queen of Scots — captive dynastic crisis",
-          "alt": "Mary Queen of Scots — captive dynastic crisis",
-          "role": "leader"
-        },
-        {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/John_Knox_statue%2C_Edinburgh.jpg?width=960",
-          "caption": "John Knox — Reformation pulpit politics",
-          "alt": "John Knox — Reformation pulpit politics",
-          "role": "religion"
-        },
-        {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Stirling_Castle_02.jpg?width=960",
-          "caption": "Stirling Castle — Stewart royal stage",
-          "alt": "Stirling Castle — Stewart royal stage",
-          "role": "culture"
-        },
-        {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Flodden_Field_monument.jpg?width=960",
-          "caption": "Flodden Field — 1513 national disaster memory",
-          "alt": "Flodden Field — 1513 national disaster memory",
-          "role": "story"
-        },
-        {
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Mary%2C%20Queen%20of%20Scots%2C%20by%20an%20unknown%20artist%20after%20a%20portrait%20by%20Nicholas%20Hilliard.jpg?width=640",
           "caption": "Mary, Queen of Scots",
           "alt": "Mary, Queen of Scots",
@@ -3947,22 +3899,10 @@
           "role": "leader"
         },
         {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/La_Rendici%C3%B3n_de_Granada.jpg?width=960",
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/La%20rendici%C3%B3n%20de%20Granada.jpg?width=960",
           "caption": "Surrender of Granada — 1492 painted memory",
           "alt": "Surrender of Granada — 1492 painted memory",
           "role": "story"
-        },
-        {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Capilla_Real_Granada_exterior.jpg?width=960",
-          "caption": "Royal Chapel of Granada — Catholic Monarchs’ necropolis",
-          "alt": "Royal Chapel of Granada — Catholic Monarchs’ necropolis",
-          "role": "religion"
-        },
-        {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Alc%C3%A1zar_de_Segovia%2C_Spain_-_Aug_2010.jpg?width=960",
-          "caption": "Alcázar of Segovia — Castilian fortress-palace",
-          "alt": "Alcázar of Segovia — Castilian fortress-palace",
-          "role": "art"
         },
         {
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Ferdinand%20of%20Aragon%2C%20Isabella%20of%20Castile.jpg?width=640",
@@ -4331,28 +4271,10 @@
       "science": "Portolan literacy, cartography, and commercial arithmetic of Catalan-Valencian merchants; naval architecture for Mediterranean galleys. Portolan and commercial arithmetic are Aragonese sciences of distance.",
       "images": [
         {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Ferdinand_II_of_Aragon.jpg?width=960",
-          "caption": "Ferdinand II of Aragon — Catholic Monarch",
-          "alt": "Ferdinand II of Aragon — Catholic Monarch",
-          "role": "leader"
-        },
-        {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Tirant_lo_Blanch.jpg?width=960",
-          "caption": "Tirant lo Blanc — Catalan chivalric prose masterpiece",
-          "alt": "Tirant lo Blanc — Catalan chivalric prose masterpiece",
-          "role": "literature"
-        },
-        {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Lonja_de_la_Seda_Valencia_02.jpg?width=960",
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Lonja%20de%20la%20seda%20-%20Valencia%2002.JPG?width=960",
           "caption": "Valencia Silk Exchange — mercantile Gothic",
           "alt": "Valencia Silk Exchange — mercantile Gothic",
           "role": "culture"
-        },
-        {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Castel_Nuovo_Naples.jpg?width=960",
-          "caption": "Castel Nuovo, Naples — Aragonese Italian capital",
-          "alt": "Castel Nuovo, Naples — Aragonese Italian capital",
-          "role": "art"
         },
         {
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Deputation%20of%20Jews%20before%20Ferdinand%20and%20Isabella%20LCCN2016646396.jpg?width=640",
@@ -4488,30 +4410,6 @@
       "philosophy": "Andalusi scholarly lineages in law and mysticism persist even as political horizons shrink to the Sierra. Andalusi scholarly lineages outlast the emirate in exile and Morisco memory.",
       "science": "Irrigation hydraulics, astronomy inherited from Andalusi tradition, and fortress engineering against gunpowder sieges. Hydraulics of palace and orchard are Nasrid engineering at its calmest under siege.",
       "images": [
-        {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Patio_de_los_Leones_%28Alhambra%2C_Granada%29_08.jpg?width=960",
-          "caption": "Court of the Lions — Alhambra, Nasrid art",
-          "alt": "Court of the Lions — Alhambra, Nasrid art",
-          "role": "art"
-        },
-        {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Alhambra_Evening.jpg?width=960",
-          "caption": "Alhambra at evening — last Islamic capital in Iberia",
-          "alt": "Alhambra at evening — last Islamic capital in Iberia",
-          "role": "culture"
-        },
-        {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Boabdil_face.jpg?width=960",
-          "caption": "Boabdil — last Nasrid emir (later portrait tradition)",
-          "alt": "Boabdil — last Nasrid emir (later portrait tradition)",
-          "role": "leader"
-        },
-        {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Generalife_Granada.jpg?width=960",
-          "caption": "Generalife — Nasrid garden engineering",
-          "alt": "Generalife — Nasrid garden engineering",
-          "role": "science"
-        },
         {
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Court%20of%20the%20Lions%2C%20Alhambra%20by%20Juan%20Laurent.jpg?width=640",
           "caption": "Court of the Lions — Nasrid paradise court",
@@ -5437,19 +5335,13 @@
           "role": "leader"
         },
         {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/El_Escorial_Vista_Aerea.jpg?width=960",
-          "caption": "El Escorial — Philip II’s monastery-palace",
-          "alt": "El Escorial — Philip II’s monastery-palace",
-          "role": "art"
-        },
-        {
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Battle_of_Lepanto_1571.jpg?width=960",
           "caption": "Lepanto 1571 — Holy League naval triumph",
           "alt": "Lepanto 1571 — Holy League naval triumph",
           "role": "story"
         },
         {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/El_Greco_-_The_Burial_of_the_Count_of_Orgaz.jpg?width=960",
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/El%20Greco%20-%20The%20Burial%20of%20the%20Count%20of%20Orgaz.JPG?width=960",
           "caption": "El Greco — Burial of the Count of Orgaz",
           "alt": "El Greco — Burial of the Count of Orgaz",
           "role": "art"
@@ -5996,24 +5888,6 @@
       "science": "Navigation (astral, rutters), cartography (Cantino planisphere), ship design (naus/caravels), and pharmacological intake from Indian Ocean exchange. Rutters, astrolabes, and naus are Portugal’s philosophical instruments.",
       "images": [
         {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Tower_of_Bel%C3%A9m_Lisbon.jpg?width=960",
-          "caption": "Belém Tower — Manueline maritime emblem",
-          "alt": "Belém Tower — Manueline maritime emblem",
-          "role": "art"
-        },
-        {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Vasco_da_Gama_-_from_Google_Gallery.jpg?width=960",
-          "caption": "Vasco da Gama — India route pioneer",
-          "alt": "Vasco da Gama — India route pioneer",
-          "role": "leader"
-        },
-        {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Cam%C3%B5es_por_Fern%C3%A3o_Gomes_c1577.jpg?width=960",
-          "caption": "Luís de Camões — epic poet of empire",
-          "alt": "Luís de Camões — epic poet of empire",
-          "role": "literature"
-        },
-        {
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Cantino_planisphere_%281502%29.jpg?width=960",
           "caption": "Cantino planisphere — Portuguese world cartography",
           "alt": "Cantino planisphere — Portuguese world cartography",
@@ -6284,18 +6158,6 @@
       "philosophy": "Practical confessional politics more than school philosophy—Navarre as laboratory of coexistence and conversion. Conversion pragmatism becomes political philosophy in action under Henry.",
       "science": "Mountain military logistics and fortress towns; no major scientific court, but Béarn’s Reformed schools spread literacy. Pass logistics and fortress towns are the sciences that matter here.",
       "images": [
-        {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Enrique_IV_de_Francia.jpg?width=960",
-          "caption": "Henry of Navarre / Henry IV — from micro-kingdom to France",
-          "alt": "Henry of Navarre / Henry IV — from micro-kingdom to France",
-          "role": "leader"
-        },
-        {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Pamplona_-_Catedral_de_Santa_Mar%C3%ADa_la_Real.jpg?width=960",
-          "caption": "Pamplona Cathedral — Upper Navarre’s sacred core",
-          "alt": "Pamplona Cathedral — Upper Navarre’s sacred core",
-          "role": "religion"
-        },
         {
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Ch%C3%A2teau_de_Pau.jpg?width=960",
           "caption": "Château de Pau — Albret/Bourbon northern court",
@@ -6631,28 +6493,10 @@
       "science": "Textile chemistry, hydraulic engineering in Low Countries, and artillery workshops feeding Charles’s campaigns. Textile chemistry and hydraulic towns are Low Countries science under ducal branding.",
       "images": [
         {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Jan_van_Eyck_-_KnightsofChrist.jpg?width=960",
-          "caption": "Van Eyck Ghent detail — Burgundian-era Netherlandish art",
-          "alt": "Van Eyck Ghent detail — Burgundian-era Netherlandish art",
-          "role": "art"
-        },
-        {
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Charles_the_Bold_1460.jpg?width=960",
           "caption": "Charles the Bold — last Valois Burgundian duke",
           "alt": "Charles the Bold — last Valois Burgundian duke",
           "role": "leader"
-        },
-        {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Collar_of_the_Order_of_the_Golden_Fleece.jpg?width=960",
-          "caption": "Order of the Golden Fleece — Burgundian chivalric brand",
-          "alt": "Order of the Golden Fleece — Burgundian chivalric brand",
-          "role": "culture"
-        },
-        {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Nancy_Charles_le_Temeraire.jpg?width=960",
-          "caption": "Nancy 1477 — death of Charles the Bold (later painting)",
-          "alt": "Nancy 1477 — death of Charles the Bold (later painting)",
-          "role": "story"
         },
         {
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Charles%20the%20Bold%201460.jpg?width=640",
@@ -9335,24 +9179,6 @@
           "role": "religion"
         },
         {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Albrecht_D%C3%BCrer_-_Self-Portrait_%281500%29.jpg?width=960",
-          "caption": "Dürer self-portrait 1500 — German Renaissance brand",
-          "alt": "Dürer self-portrait 1500 — German Renaissance brand",
-          "role": "art"
-        },
-        {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Charles_V_at_M%C3%BChlberg.jpg?width=960",
-          "caption": "Charles V at Mühlberg — Titian’s Schmalkaldic victor",
-          "alt": "Charles V at Mühlberg — Titian’s Schmalkaldic victor",
-          "role": "leader"
-        },
-        {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Augsburger_Religionsfrieden.jpg?width=960",
-          "caption": "Peace of Augsburg — confessional freeze",
-          "alt": "Peace of Augsburg — confessional freeze",
-          "role": "ideas"
-        },
-        {
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Charles%20V%2C%20Holy%20Roman%20Emperor%20-%20Titian.jpg?width=640",
           "caption": "Charles V — elective emperor",
           "alt": "Charles V — elective emperor",
@@ -10545,22 +10371,10 @@
           "role": "leader"
         },
         {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Wien_Tuerkensiegesdenkmal.jpg?width=960",
-          "caption": "Vienna Ottoman wars memory — frontier capital",
-          "alt": "Vienna Ottoman wars memory — frontier capital",
-          "role": "story"
-        },
-        {
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Giuseppe_Arcimboldo_-_Rudolf_II_of_Habsburg_as_Vertumnus_-_Google_Art_Project.jpg?width=960",
           "caption": "Rudolf II as Vertumnus — Arcimboldo",
           "alt": "Rudolf II as Vertumnus — Arcimboldo",
           "role": "art"
-        },
-        {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Johannes_Kepler_1610.jpg?width=960",
-          "caption": "Kepler — Rudolphine astronomy’s heir",
-          "alt": "Kepler — Rudolphine astronomy’s heir",
-          "role": "science"
         },
         {
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Anonym%20Kaiser%20Ferdinand%20I.jpg?width=640",
@@ -10865,18 +10679,6 @@
           "role": "art"
         },
         {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/William_of_Orange.jpg?width=960",
-          "caption": "William of Orange — revolt’s stadtholder symbol",
-          "alt": "William of Orange — revolt’s stadtholder symbol",
-          "role": "leader"
-        },
-        {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Abraham_Ortelius_by_Philip_Galle.jpg?width=960",
-          "caption": "Ortelius — atlas maker of the Netherlands",
-          "alt": "Ortelius — atlas maker of the Netherlands",
-          "role": "science"
-        },
-        {
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Beeldenstorm.jpg?width=960",
           "caption": "Beeldenstorm 1566 — iconoclasm as revolt spark",
           "alt": "Beeldenstorm 1566 — iconoclasm as revolt spark",
@@ -11006,28 +10808,10 @@
       "science": "Simon Stevin’s engineering and decimals; Leiden university; navigational and cartographic excellence. Applied arts of war, navigation, mining, or calendar reform count as the century’s hard knowledge.",
       "images": [
         {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/MauritsvanOranje.jpg?width=960",
-          "caption": "Maurice of Nassau — military reformer of the Republic",
-          "alt": "Maurice of Nassau — military reformer of the Republic",
-          "role": "leader"
-        },
-        {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Act_of_Abjuration.jpg?width=960",
-          "caption": "Act of Abjuration — renouncing Philip II",
-          "alt": "Act of Abjuration — renouncing Philip II",
-          "role": "ideas"
-        },
-        {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Simon_Stevin.jpg?width=960",
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Simon-stevin.jpeg?width=960",
           "caption": "Simon Stevin — engineer-mathematician of the Republic",
           "alt": "Simon Stevin — engineer-mathematician of the Republic",
           "role": "science"
-        },
-        {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Relief_of_Leiden.jpg?width=960",
-          "caption": "Relief of Leiden — founding revolt myth",
-          "alt": "Relief of Leiden — founding revolt myth",
-          "role": "story"
         },
         {
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Michiel%20Jansz.%20van%20Mierevelt%20-%20Portrait%20of%20William%20of%20Orange%20-%20186157%20-%20National%20Museum%20in%20Warsaw.jpg?width=640",
@@ -11163,24 +10947,6 @@
       "philosophy": "Scholastic revival via Jesuit colleges in Douai/Leuven orbit. Schools and courts import humanism unevenly; practical ethics often outrun metaphysics.",
       "science": "Military engineering of siege warfare; less commercial-scientific ferment than the north after 1585. Applied arts of war, navigation, mining, or calendar reform count as the century’s hard knowledge.",
       "images": [
-        {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Alexander_Farnese%2C_Duke_of_Parma.jpg?width=960",
-          "caption": "Alexander Farnese — reconqueror of the south",
-          "alt": "Alexander Farnese — reconqueror of the south",
-          "role": "leader"
-        },
-        {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Fall_of_Antwerp.jpg?width=960",
-          "caption": "Fall of Antwerp 1585 — economic partition of the Low Countries",
-          "alt": "Fall of Antwerp 1585 — economic partition of the Low Countries",
-          "role": "story"
-        },
-        {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Brussels_Grand_Place_DSC_0074.jpg?width=960",
-          "caption": "Brussels Grand Place — southern court-city core",
-          "alt": "Brussels Grand Place — southern court-city core",
-          "role": "culture"
-        },
         {
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20of%20Fernando%20%C3%81lvarez%20de%20Toledo%2C%203rd%20Duke%20of%20Alba%20%281508-1582%29%20-%20by%20Antonis%20Mor.jpg?width=640",
           "caption": "Duke of Alba — iron regime",
@@ -11754,25 +11520,7 @@
       "science": "Aldine scholarly editing; cartography and pilot books; glass chemistry at Murano; military engineering of fortresses on terraferma. Applied arts of war, navigation, mining, or calendar reform count as the century’s hard knowledge.",
       "images": [
         {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Titian_-_Portrait_of_Doge_Andrea_Gritti_-_Google_Art_Project.jpg?width=960",
-          "caption": "Doge Andrea Gritti — Titian’s Venetian power face",
-          "alt": "Doge Andrea Gritti — Titian’s Venetian power face",
-          "role": "leader"
-        },
-        {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Canaletto_-_Return_of_the_Bucentoro_to_the_Molo_on_Ascension_Day_-_Google_Art_Project.jpg?width=960",
-          "caption": "Bucintoro Ascension Day — Marriage of the Sea ritual",
-          "alt": "Bucintoro Ascension Day — Marriage of the Sea ritual",
-          "role": "culture"
-        },
-        {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Tintoretto_-_The_Crucifixion_-_WGA22464.jpg?width=960",
-          "caption": "Tintoretto Crucifixion — Venetian sacred drama",
-          "alt": "Tintoretto Crucifixion — Venetian sacred drama",
-          "role": "art"
-        },
-        {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Venetian_Arsenal.jpg?width=960",
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Venetian%20Arsenal.JPG?width=960",
           "caption": "Venetian Arsenal — proto-industrial naval factory",
           "alt": "Venetian Arsenal — proto-industrial naval factory",
           "role": "science"
@@ -12059,18 +11807,6 @@
           "role": "philosophy"
         },
         {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Cosimo_I_de_Medici_in_armour.jpg?width=960",
-          "caption": "Cosimo I — first Medici duke",
-          "alt": "Cosimo I — first Medici duke",
-          "role": "leader"
-        },
-        {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Brunelleschi_dome_Florence.jpg?width=960",
-          "caption": "Brunelleschi’s dome — engineering as civic glory",
-          "alt": "Brunelleschi’s dome — engineering as civic glory",
-          "role": "science"
-        },
-        {
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Bottega%20di%20Agnolo%20di%20Cosimo%2C%20detto%20il%20Bronzino%20%28Firenze%201503-1572%29%20-%20Ritratto%20di%20Lorenzo%20il%20Magnifico%20-%20865%20-%20Uffizi%20Gallery.jpg?width=640",
           "caption": "Lorenzo de’ Medici — Magnifico myth",
           "alt": "Lorenzo de’ Medici — Magnifico myth",
@@ -12306,28 +12042,10 @@
       "science": "Leonardo’s engineering; Lombard canal hydraulics; armament metallurgy; military architecture of the Spanish road. Applied arts of war, navigation, mining, or calendar reform count as the century’s hard knowledge.",
       "images": [
         {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Leonardo_da_Vinci_-_Ultima_cena_-_ca_1495-1498.jpg?width=960",
-          "caption": "Leonardo’s Last Supper — Sforza Milan",
-          "alt": "Leonardo’s Last Supper — Sforza Milan",
-          "role": "art"
-        },
-        {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Ludovico_Sforza.jpg?width=960",
-          "caption": "Ludovico il Moro — Sforza patron-prince",
-          "alt": "Ludovico il Moro — Sforza patron-prince",
-          "role": "leader"
-        },
-        {
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Battle_of_Pavia.jpg?width=960",
           "caption": "Battle of Pavia 1525 — French king captured",
           "alt": "Battle of Pavia 1525 — French king captured",
           "role": "story"
-        },
-        {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Leonardo_da_Vinci_Studies_of_the_Arm_showing_the_Movements.jpg?width=960",
-          "caption": "Leonardo arm studies — Milanese workshop science",
-          "alt": "Leonardo arm studies — Milanese workshop science",
-          "role": "science"
         },
         {
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Leonardo%20da%20Vinci%20-%20presumed%20self-portrait%20-%20WGA12798.jpg?width=640",
@@ -12730,13 +12448,13 @@
           "role": "leader"
         },
         {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Sack_of_Rome_1527.jpg?width=960",
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Sack%20of%20Rome%201527.jpeg?width=960",
           "caption": "Sack of Rome 1527 — Renaissance papacy shattered",
           "alt": "Sack of Rome 1527 — Renaissance papacy shattered",
           "role": "story"
         },
         {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/GregorianCalendar.jpg?width=960",
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Gregorian%20Calendar.jpg?width=960",
           "caption": "Gregorian calendar — 1582 papal applied astronomy",
           "alt": "Gregorian calendar — 1582 papal applied astronomy",
           "role": "science"
@@ -13512,12 +13230,6 @@
           "role": "leader"
         },
         {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Castel_Nuovo_Naples.jpg?width=960",
-          "caption": "Castel Nuovo — Angevin/Aragonese royal fortress",
-          "alt": "Castel Nuovo — Angevin/Aragonese royal fortress",
-          "role": "art"
-        },
-        {
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Jacopo_Sannazaro.jpg?width=960",
           "caption": "Sannazaro — Arcadia and Neapolitan humanism",
           "alt": "Sannazaro — Arcadia and Neapolitan humanism",
@@ -13968,22 +13680,10 @@
       "science": "Portolan chartmaking; naval architecture; double-entry and financial mathematics. Applied arts of war, navigation, mining, or calendar reform count as the century’s hard knowledge.",
       "images": [
         {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Andrea_Doria_by_Sebastiano_del_Piombo.jpg?width=960",
-          "caption": "Andrea Doria — admiral who remade the republic",
-          "alt": "Andrea Doria — admiral who remade the republic",
-          "role": "leader"
-        },
-        {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Via_Garibaldi_Genova.jpg?width=960",
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Via%20Garibaldi%20Genova.JPG?width=960",
           "caption": "Strada Nuova palaces — banker republic display",
           "alt": "Strada Nuova palaces — banker republic display",
           "role": "art"
-        },
-        {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Republic_of_Genoa_map.jpg?width=960",
-          "caption": "Genoese Mediterranean footprint — small land, long reach",
-          "alt": "Genoese Mediterranean footprint — small land, long reach",
-          "role": "culture"
         },
         {
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Sebastiano%20del%20piombo%2C%20ritratto%20di%20andrea%20doria%2C%201526%2C%2001.JPG?width=640",
@@ -14255,12 +13955,6 @@
           "role": "leader"
         },
         {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Turin_panorama.jpg?width=960",
-          "caption": "Turin — new Savoyard capital orientation",
-          "alt": "Turin — new Savoyard capital orientation",
-          "role": "culture"
-        },
-        {
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Sacra_di_San_Michele.jpg?width=960",
           "caption": "Sacra di San Michele — Alpine sacred fortress",
           "alt": "Sacra di San Michele — Alpine sacred fortress",
@@ -14400,24 +14094,6 @@
           "caption": "Constantine XI — last Byzantine emperor",
           "alt": "Constantine XI — last Byzantine emperor",
           "role": "leader"
-        },
-        {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Chora_Church_mosaic.jpg?width=960",
-          "caption": "Chora Church — late Palaiologan sacred art",
-          "alt": "Chora Church — late Palaiologan sacred art",
-          "role": "art"
-        },
-        {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Mehmed_the_Conqueror_enters_Constantinople.jpg?width=960",
-          "caption": "Fall of Constantinople — 1453 painted memory",
-          "alt": "Fall of Constantinople — 1453 painted memory",
-          "role": "story"
-        },
-        {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Gemistus_Pletho.jpg?width=960",
-          "caption": "Gemistos Plethon — Morean Platonist",
-          "alt": "Gemistos Plethon — Morean Platonist",
-          "role": "philosophy"
         },
         {
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Bellini%2C%20Gentile%20-%20Sultan%20Mehmet%20II.jpg?width=640",
@@ -16249,28 +15925,10 @@
       "science": "Taqī al-Dīn’s Istanbul observatory (later destroyed); military engineering; cartography; medical and botanical exchange across three continents. Observatory politics show that astronomy can be patronage—and heresy—inside a gunpowder empire. Applied arts of war, navigation, mining, or calendar reform count as the century’s hard knowledge.",
       "images": [
         {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Suleiman_the_Magnificent.jpg?width=960",
-          "caption": "Suleiman the Magnificent — Ottoman apex sultan",
-          "alt": "Suleiman the Magnificent — Ottoman apex sultan",
-          "role": "leader"
-        },
-        {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Suleymaniye_Mosque_Istanbul.jpg?width=960",
-          "caption": "Süleymaniye Mosque — Sinan’s imperial architecture",
-          "alt": "Süleymaniye Mosque — Sinan’s imperial architecture",
-          "role": "art"
-        },
-        {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Battle_of_Mohacs_1526.jpg?width=960",
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Battle%20of%20Mohacs%201526.png?width=960",
           "caption": "Mohács 1526 — Hungary broken",
           "alt": "Mohács 1526 — Hungary broken",
           "role": "story"
-        },
-        {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Taqi_al-Din_observatory.jpg?width=960",
-          "caption": "Taqi ad-Din’s observatory — Ottoman astronomy",
-          "alt": "Taqi ad-Din’s observatory — Ottoman astronomy",
-          "role": "science"
         },
         {
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20Suleiman%20Magnificent.jpg?width=640",
@@ -17315,24 +16973,6 @@
           "role": "leader"
         },
         {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Battle_of_Moh%C3%A1cs_by_Bertalan_Sz%C3%A9kely.jpg?width=960",
-          "caption": "Mohács — kingdom’s catastrophic hinge",
-          "alt": "Mohács — kingdom’s catastrophic hinge",
-          "role": "story"
-        },
-        {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Bibliotheca_Corviniana.jpg?width=960",
-          "caption": "Bibliotheca Corviniana — royal Renaissance library",
-          "alt": "Bibliotheca Corviniana — royal Renaissance library",
-          "role": "literature"
-        },
-        {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Eger_Castle.jpg?width=960",
-          "caption": "Eger Castle — végvár frontier fortress culture",
-          "alt": "Eger Castle — végvár frontier fortress culture",
-          "role": "culture"
-        },
-        {
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Andrea%20Mantegna%20-%20King%20Matthias%20Corvinus%20of%20Hungary.jpg?width=640",
           "caption": "Matthias Corvinus",
           "alt": "Matthias Corvinus",
@@ -17523,28 +17163,10 @@
       "science": "Mining in the Carpathians; practical fortification; limited court science vs rich confessional schooling. Applied arts of war, navigation, mining, or calendar reform count as the century’s hard knowledge.",
       "images": [
         {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Stephen_B%C3%A1thory.jpg?width=960",
-          "caption": "Stephen Báthory — Transylvanian prince, Polish king",
-          "alt": "Stephen Báthory — Transylvanian prince, Polish king",
-          "role": "leader"
-        },
-        {
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Biertan_Fortified_Church.jpg?width=960",
           "caption": "Biertan fortified church — Saxon Transylvania",
           "alt": "Biertan fortified church — Saxon Transylvania",
           "role": "art"
-        },
-        {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Alba_Iulia_Catholic_Cathedral.jpg?width=960",
-          "caption": "Alba Iulia — princely capital sacred fabric",
-          "alt": "Alba Iulia — princely capital sacred fabric",
-          "role": "culture"
-        },
-        {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Diet_of_Torda.jpg?width=960",
-          "caption": "Diet of Torda — religious plurality edict memory",
-          "alt": "Diet of Torda — religious plurality edict memory",
-          "role": "ideas"
         },
         {
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Armor%20of%20Steponas%20Batoras%20in%20Vienna%2C%201855-1858.jpg?width=640",
@@ -18075,19 +17697,13 @@
       "science": "Tycho Brahe’s instruments; Kepler’s arrival; alchemy and natural magic as court science; mining in Bohemian lands. Rudolphine Prague briefly concentrates instruments, adepts, and imperial pay into one castle-town sky lab. Applied arts of war, navigation, mining, or calendar reform count as the century’s hard knowledge.",
       "images": [
         {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Rudolf_II_by_Hans_von_Aachen.jpg?width=960",
-          "caption": "Rudolf II — Prague’s magical-scientific emperor",
-          "alt": "Rudolf II — Prague’s magical-scientific emperor",
-          "role": "leader"
-        },
-        {
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Tycho_Brahe.jpg?width=960",
           "caption": "Tycho Brahe — imperial astronomer in Prague",
           "alt": "Tycho Brahe — imperial astronomer in Prague",
           "role": "science"
         },
         {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Arcimboldo_Water.jpg?width=960",
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Arcimboldowater.jpg?width=960",
           "caption": "Arcimboldo — Rudolphine court Mannerism",
           "alt": "Arcimboldo — Rudolphine court Mannerism",
           "role": "art"
@@ -19729,22 +19345,10 @@
       "science": "Military logistics across forests and steppe edges; fortress towns; limited university science until Vilnius Jesuit academy (1579). Applied arts of war, navigation, mining, or calendar reform count as the century’s hard knowledge.",
       "images": [
         {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Vytautas_the_Great.jpg?width=960",
-          "caption": "Vytautas the Great — grand-ducal memory",
-          "alt": "Vytautas the Great — grand-ducal memory",
-          "role": "leader"
-        },
-        {
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Battle_of_Orsha.jpg?width=960",
           "caption": "Battle of Orsha 1514 — Lithuania–Poland vs Muscovy",
           "alt": "Battle of Orsha 1514 — Lithuania–Poland vs Muscovy",
           "role": "story"
-        },
-        {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Vilnius_University.jpg?width=960",
-          "caption": "Vilnius — later university seat of Lithuanian learning",
-          "alt": "Vilnius — later university seat of Lithuanian learning",
-          "role": "ideas"
         },
         {
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Trakai_Island_Castle.jpg?width=960",
@@ -20105,28 +19709,10 @@
       "science": "Military reform under Báthory; cartography of a giant realm; Copernican inheritance debated. Applied arts of war, navigation, mining, or calendar reform count as the century’s hard knowledge.",
       "images": [
         {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Union_of_Lublin_1569.jpg?width=960",
-          "caption": "Union of Lublin 1569 — Commonwealth born",
-          "alt": "Union of Lublin 1569 — Commonwealth born",
-          "role": "story"
-        },
-        {
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Sigismund_III_Vasa.jpg?width=960",
           "caption": "Sigismund III Vasa — elective Vasa king",
           "alt": "Sigismund III Vasa — elective Vasa king",
           "role": "leader"
-        },
-        {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Zamosc_-_Rynek_Wielki.jpg?width=960",
-          "caption": "Zamość — ideal Renaissance city of the Commonwealth",
-          "alt": "Zamość — ideal Renaissance city of the Commonwealth",
-          "role": "art"
-        },
-        {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Warsaw_Confederation.jpg?width=960",
-          "caption": "Warsaw Confederation — noble confessional peace",
-          "alt": "Warsaw Confederation — noble confessional peace",
-          "role": "ideas"
         },
         {
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Armor%20of%20Steponas%20Batoras%20in%20Vienna%2C%201855-1858.jpg?width=640",
@@ -20948,18 +20534,6 @@
           "role": "leader"
         },
         {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Saint_Basil%27s_Cathedral_DSC0903.jpg?width=960",
-          "caption": "St Basil’s — Kazan conquest church on Red Square",
-          "alt": "St Basil’s — Kazan conquest church on Red Square",
-          "role": "art"
-        },
-        {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Great_Stand_on_the_Ugra_river.jpg?width=960",
-          "caption": "Great Stand on the Ugra 1480 — Horde yoke broken",
-          "alt": "Great Stand on the Ugra 1480 — Horde yoke broken",
-          "role": "story"
-        },
-        {
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Moscow_Kremlin_towers.jpg?width=960",
           "caption": "Moscow Kremlin — rebuilt autocratic core",
           "alt": "Moscow Kremlin — rebuilt autocratic core",
@@ -21120,28 +20694,10 @@
       "science": "Navigational knowledge of northern rivers/seas; salt and fur extraction techniques; church engineering. Applied arts of war, navigation, mining, or calendar reform count as the century’s hard knowledge.",
       "images": [
         {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Novgorod_veche_bell.jpg?width=960",
-          "caption": "Novgorod veche bell — republican symbol removed by Moscow",
-          "alt": "Novgorod veche bell — republican symbol removed by Moscow",
-          "role": "story"
-        },
-        {
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Saint_Sophia_Cathedral_in_Novgorod.jpg?width=960",
           "caption": "St Sophia, Novgorod — civic-Orthodox heart",
           "alt": "St Sophia, Novgorod — civic-Orthodox heart",
           "role": "religion"
-        },
-        {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Novgorod_icon_Saint_George.jpg?width=960",
-          "caption": "Novgorodian icon — distinctive sacred art school",
-          "alt": "Novgorodian icon — distinctive sacred art school",
-          "role": "art"
-        },
-        {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Birch_bark_document.jpg?width=960",
-          "caption": "Birch-bark letter — northern literacy culture",
-          "alt": "Birch-bark letter — northern literacy culture",
-          "role": "literature"
         },
         {
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Saint%20Sophia%20Cathedral%20in%20Novgorod%2C%202006%20%2801%29.jpg?width=640",
@@ -21395,22 +20951,10 @@
       "science": "Fortress engineering; Baltic navigation; early Protestant university arts and sciences at Königsberg. Applied arts of war, navigation, mining, or calendar reform count as the century’s hard knowledge.",
       "images": [
         {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Malbork_Castle_pano.jpg?width=960",
-          "caption": "Malbork/Marienburg — Teutonic brick Gothic capital",
-          "alt": "Malbork/Marienburg — Teutonic brick Gothic capital",
-          "role": "art"
-        },
-        {
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Prussian_Homage.jpg?width=960",
           "caption": "Prussian Homage 1525 — Albert kneels to Polish king",
           "alt": "Prussian Homage 1525 — Albert kneels to Polish king",
           "role": "story"
-        },
-        {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Albert%2C_Duke_of_Prussia.jpg?width=960",
-          "caption": "Albert of Prussia — monastic state secularizer",
-          "alt": "Albert of Prussia — monastic state secularizer",
-          "role": "leader"
         },
         {
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/K%C3%B6nigsberg_Cathedral.jpg?width=960",
@@ -23591,12 +23135,6 @@
       "science": "Tycho Brahe’s observatory on Hven; navigation and cartography of northern seas; military engineering of Sound forts. Applied arts of war, navigation, mining, or calendar reform count as the century’s hard knowledge.",
       "images": [
         {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Tycho_Brahe_Uraniborg.jpg?width=960",
-          "caption": "Uraniborg — Tycho’s Danish observatory on Hven",
-          "alt": "Uraniborg — Tycho’s Danish observatory on Hven",
-          "role": "science"
-        },
-        {
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Kronborg_Castle_01.jpg?width=960",
           "caption": "Kronborg — Sound-toll fortress of Denmark",
           "alt": "Kronborg — Sound-toll fortress of Denmark",
@@ -24233,24 +23771,6 @@
           "role": "leader"
         },
         {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Gripsholm_Castle_2016.jpg?width=960",
-          "caption": "Gripsholm Castle — Vasa royal architecture",
-          "alt": "Gripsholm Castle — Vasa royal architecture",
-          "role": "art"
-        },
-        {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Gustav_Vasa_Bible.jpg?width=960",
-          "caption": "Gustav Vasa Bible — vernacular Reformation",
-          "alt": "Gustav Vasa Bible — vernacular Reformation",
-          "role": "religion"
-        },
-        {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Falun_Copper_Mine.jpg?width=960",
-          "caption": "Falun copper mine — fiscal-military bedrock",
-          "alt": "Falun copper mine — fiscal-military bedrock",
-          "role": "science"
-        },
-        {
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Gustav%20Vasa.jpg?width=640",
           "caption": "Gustav Vasa",
           "alt": "Gustav Vasa",
@@ -24798,12 +24318,6 @@
       "philosophy": "Bullinger’s and Calvin’s systematic theologies; humanist schools in Reformed cities. Schools and courts import humanism unevenly; practical ethics often outrun metaphysics.",
       "science": "Practical alpine engineering; printing in Basel; medical humanism; cartography of passes. Applied arts of war, navigation, mining, or calendar reform count as the century’s hard knowledge.",
       "images": [
-        {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Battle_of_Murten.jpg?width=960",
-          "caption": "Battle of Murten — Swiss victory over Burgundy",
-          "alt": "Battle of Murten — Swiss victory over Burgundy",
-          "role": "story"
-        },
         {
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Huldrych_Zwingli.jpg?width=960",
           "caption": "Zwingli — Zürich Reformer",
@@ -25552,22 +25066,10 @@
       "science": "Military surveying and fortification of plantations; practical geography of reconquest more than academies. Applied arts of war, navigation, mining, or calendar reform count as the century’s hard knowledge.",
       "images": [
         {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Hugh_O%27Neill%2C_2nd_Earl_of_Tyrone.jpg?width=960",
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Hugh%20%C3%93%20Neill,%202nd%20Earl%20of%20Tyrone.jpg?width=960",
           "caption": "Hugh O’Neill — Nine Years’ War leader",
           "alt": "Hugh O’Neill — Nine Years’ War leader",
           "role": "leader"
-        },
-        {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Rock_of_Cashel%2C_Ireland.jpg?width=960",
-          "caption": "Rock of Cashel — Munster sacred-royal seat",
-          "alt": "Rock of Cashel — Munster sacred-royal seat",
-          "role": "religion"
-        },
-        {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Battle_of_Kinsale_map.jpg?width=960",
-          "caption": "Kinsale 1601 — Spanish-Gaelic defeat",
-          "alt": "Kinsale 1601 — Spanish-Gaelic defeat",
-          "role": "story"
         },
         {
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Irish_tower_house.jpg?width=960",
@@ -25802,28 +25304,10 @@
       "science": "Cavalry logistics; Black Sea navigation; military intelligence of the steppe corridor. Applied arts of war, navigation, mining, or calendar reform count as the century’s hard knowledge.",
       "images": [
         {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Bakhchisaray_Palace.jpg?width=960",
-          "caption": "Bakhchysarai Palace — Giray khanate court",
-          "alt": "Bakhchysarai Palace — Giray khanate court",
-          "role": "art"
-        },
-        {
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Devlet_I_Giray.jpg?width=960",
           "caption": "Devlet I Giray — khan who burned Moscow’s suburbs",
           "alt": "Devlet I Giray — khan who burned Moscow’s suburbs",
           "role": "leader"
-        },
-        {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Crimean_Tatar_warrior.jpg?width=960",
-          "caption": "Crimean Tatar cavalry — raid-state military culture",
-          "alt": "Crimean Tatar cavalry — raid-state military culture",
-          "role": "culture"
-        },
-        {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Caffa_Quarantine.jpg?width=960",
-          "caption": "Caffa/Feodosia — Black Sea slave-trade port memory",
-          "alt": "Caffa/Feodosia — Black Sea slave-trade port memory",
-          "role": "story"
         },
         {
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Bakhchisarai%20Palace2.jpg?width=640",
@@ -26140,7 +25624,7 @@
           "role": "leader"
         },
         {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Curtea_de_Arges_Monastery.jpg?width=960",
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Curtea%20de%20Arges%20monastery.JPG?width=960",
           "caption": "Curtea de Argeș — princely monastic art",
           "alt": "Curtea de Argeș — princely monastic art",
           "role": "art"
@@ -26150,12 +25634,6 @@
           "caption": "Michael the Brave — brief unifier of three principalities",
           "alt": "Michael the Brave — brief unifier of three principalities",
           "role": "story"
-        },
-        {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Snagov_Monastery.jpg?width=960",
-          "caption": "Snagov Monastery — Orthodox fortified piety",
-          "alt": "Snagov Monastery — Orthodox fortified piety",
-          "role": "religion"
         },
         {
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Vlad%20Tepes%20002.jpg?width=640",
@@ -26441,28 +25919,10 @@
       "science": "Fortification; agricultural base; artistic technology of fresco on exterior walls in harsh climate. Applied arts of war, navigation, mining, or calendar reform count as the century’s hard knowledge.",
       "images": [
         {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Stephen_the_Great.jpg?width=960",
-          "caption": "Stephen the Great — Moldavia’s warrior-voivode",
-          "alt": "Stephen the Great — Moldavia’s warrior-voivode",
-          "role": "leader"
-        },
-        {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Voronet_Monastery.jpg?width=960",
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Voronet%20Monastery.JPG?width=960",
           "caption": "Voroneț Monastery — painted exterior theology",
           "alt": "Voroneț Monastery — painted exterior theology",
           "role": "art"
-        },
-        {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Putna_Monastery.jpg?width=960",
-          "caption": "Putna Monastery — Stephen’s necropolis",
-          "alt": "Putna Monastery — Stephen’s necropolis",
-          "role": "religion"
-        },
-        {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Moldavian_fortress.jpg?width=960",
-          "caption": "Moldavian fortress — Carpathian buffer defense",
-          "alt": "Moldavian fortress — Carpathian buffer defense",
-          "role": "culture"
         },
         {
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Chisinau%20Stefan%20cel%20Mare%20monument.jpg?width=640",
@@ -26616,28 +26076,10 @@
       "science": "Cavalry logistics; census-tribute techniques; urban decline limiting scholarly institutions by the late phase. Applied arts of war, navigation, mining, or calendar reform count as the century’s hard knowledge.",
       "images": [
         {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Golden_Horde_map.jpg?width=960",
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Golden%20Horde%20Map.png?width=960",
           "caption": "Golden Horde successor map — fragmenting Jochid space",
           "alt": "Golden Horde successor map — fragmenting Jochid space",
           "role": "culture"
-        },
-        {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Great_Stand_on_the_Ugra_river.jpg?width=960",
-          "caption": "Ugra 1480 — Muscovy ends Horde suzerainty mythically",
-          "alt": "Ugra 1480 — Muscovy ends Horde suzerainty mythically",
-          "role": "story"
-        },
-        {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Tatar_cavalry.jpg?width=960",
-          "caption": "Tatar cavalry — steppe military science",
-          "alt": "Tatar cavalry — steppe military science",
-          "role": "science"
-        },
-        {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Sarai_Batu.jpg?width=960",
-          "caption": "Sarai — fading Horde urban memory",
-          "alt": "Sarai — fading Horde urban memory",
-          "role": "art"
         },
         {
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Dang%2C%20Golden%20Horde%2C%201351-1356%2C%20Khan%20Janibek%2C%20%28Gulistan%29.jpg?width=640",

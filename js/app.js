@@ -2462,13 +2462,28 @@ function deepTimePanelHasContent(source) {
   return DEEP_TIME_TEXT_KEYS.some((k) => String(source[k] || "").trim());
 }
 
+/* Drop a gallery figure whose image fails to load (renamed/deleted on Commons).
+   Image error events don't bubble, so listen in the capture phase. Replaces the
+   old inline onerror attribute (CSP-friendly). scripts/check_images.py catches
+   missing files before release. */
+document.addEventListener(
+  "error",
+  (event) => {
+    const img = event.target;
+    if (!(img instanceof HTMLImageElement)) return;
+    const fig = img.closest(".polity-figure");
+    if (fig) fig.remove();
+  },
+  true
+);
+
 function figureHtml(img) {
   const alt = escapeHtml(img.alt || img.caption || "Historical image");
   const caption = escapeHtml(img.caption || "");
   const src = escapeHtml(img.src);
   return `<figure class="polity-figure">
     <button type="button" class="polity-figure-open" data-full-src="${src}" data-caption="${caption}" data-alt="${alt}" aria-label="View larger: ${alt}">
-      <img src="${src}" alt="${alt}" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.closest('figure')?.remove()" />
+      <img src="${src}" alt="${alt}" loading="lazy" decoding="async" referrerpolicy="no-referrer" />
     </button>
     <figcaption>${caption}</figcaption>
   </figure>`;
