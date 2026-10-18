@@ -2260,18 +2260,6 @@
           "role": "leader"
         },
         {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Winston_Churchill_1941_Liberation_of_France_cropped.jpg?width=800",
-          "caption": "Winston Churchill during the Second World War",
-          "alt": "Winston Churchill during the Second World War",
-          "role": "leader"
-        },
-        {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/JMW_Turner_-_The_Fighting_Temeraire.jpg?width=800",
-          "caption": "Turner’s Fighting Temeraire, emblem of naval-industrial Britain",
-          "alt": "Turner’s Fighting Temeraire, emblem of naval-industrial Britain",
-          "role": "art"
-        },
-        {
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Charles_Dickens_3.jpg?width=800",
           "caption": "Charles Dickens, voice of industrial society",
           "alt": "Charles Dickens, voice of industrial society",
@@ -2282,12 +2270,6 @@
           "caption": "Palace of Westminster, parliamentary heart of the UK",
           "alt": "Palace of Westminster, parliamentary heart of the UK",
           "role": "story"
-        },
-        {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Westminster_Abbey_West.jpg?width=800",
-          "caption": "Westminster Abbey, established Church and national ritual",
-          "alt": "Westminster Abbey, established Church and national ritual",
-          "role": "religion"
         }
       ],
       "philosophy": "Mill's liberty, utilitarianism, and parliamentary reform debates; idealists (Green, Bradley) and later analytic philosophy (Russell, Moore) make Britain a hinge of modern argument."
@@ -2776,22 +2758,10 @@
           "role": "literature"
         },
         {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Jack_Butler_Yeats_photo.jpg?width=800",
-          "caption": "Jack B. Yeats, leading Irish modernist painter",
-          "alt": "Jack B. Yeats, leading Irish modernist painter",
-          "role": "art"
-        },
-        {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/General_Post_Office_-_Dublin.jpg?width=800",
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/General%20Post%20Office%20-%20Dublin.JPG?width=800",
           "caption": "Dublin GPO, emblem of the Easter Rising and independence story",
           "alt": "Dublin GPO, emblem of the Easter Rising and independence story",
           "role": "story"
-        },
-        {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/St_Patricks_Cathedral_Dublin_Ireland.jpg?width=800",
-          "caption": "St Patrick’s Cathedral, Dublin—religious landscape of the capital",
-          "alt": "St Patrick’s Cathedral, Dublin—religious landscape of the capital",
-          "role": "religion"
         }
       ],
       "philosophy": "Union and Home Rule ethics, Catholic social thought, and Yeats-era cultural nationalism; after independence, neutrality and partition keep political philosophy existential."
@@ -4930,19 +4900,13 @@
           "role": "leader"
         },
         {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Napoleon_III_Portrait_d%27apres_Winterhalter.jpg?width=800",
-          "caption": "Napoleon III, emperor of the Second Empire",
-          "alt": "Napoleon III, emperor of the Second Empire",
-          "role": "leader"
-        },
-        {
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Charles_de_Gaulle-1963.jpg?width=800",
           "caption": "Charles de Gaulle, founder of the Fifth Republic",
           "alt": "Charles de Gaulle, founder of the Fifth Republic",
           "role": "leader"
         },
         {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Claude_Monet_-_Impression%2C_soleil_levant.jpg?width=800",
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Claude%20Monet,%20Impression,%20soleil%20levant.jpg?width=800",
           "caption": "Monet’s Impression, Sunrise—birth of Impressionism",
           "alt": "Monet’s Impression, Sunrise—birth of Impressionism",
           "role": "art"
@@ -5172,30 +5136,6 @@
           "caption": "The Rijksmuseum — national museum projecting Dutch cultural continuity across the union break.",
           "alt": "Rijksmuseum, Amsterdam",
           "role": "literature"
-        },
-        {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Willem_I_der_Nederlanden.jpg?width=800",
-          "caption": "William I of Orange-Nassau, king of the United Netherlands",
-          "alt": "William I of Orange-Nassau, king of the United Netherlands",
-          "role": "leader"
-        },
-        {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Belgische_revolutie.jpg?width=800",
-          "caption": "Fighting in Brussels during the Belgian Revolution of 1830",
-          "alt": "Fighting in Brussels during the Belgian Revolution of 1830",
-          "role": "story"
-        },
-        {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Attack_on_the_Park_of_Brussels_1830.jpg?width=800",
-          "caption": "Combat in the Brussels park, September 1830",
-          "alt": "Combat in the Brussels park, September 1830",
-          "role": "story"
-        },
-        {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Antoine_Wiertz_-_La_Belgique_%C3%A9clairant_le_monde.jpg?width=800",
-          "caption": "Wiertz allegory of Belgium—southern artistic break",
-          "alt": "Wiertz allegory of Belgium—southern artistic break",
-          "role": "art"
         },
         {
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Amsterdam_Canal.jpg?width=800",
@@ -5864,12 +5804,6 @@
           "role": "story"
         },
         {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Afsluitdijk_bij_Kornwerderzand.jpg?width=800",
-          "caption": "Afsluitdijk—water engineering as national culture",
-          "alt": "Afsluitdijk—water engineering as national culture",
-          "role": "culture"
-        },
-        {
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Westerkerk_Amsterdam.jpg?width=800",
           "caption": "Westerkerk, Amsterdam—Protestant landmark in a pillarized society",
           "alt": "Westerkerk, Amsterdam—Protestant landmark in a pillarized society",
@@ -6350,31 +6284,7 @@
           "role": "leader"
         },
         {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/King_Albert_I_of_Belgium.jpg?width=800",
-          "caption": "Albert I, ‘Soldier King’ of the First World War",
-          "alt": "Albert I, ‘Soldier King’ of the First World War",
-          "role": "leader"
-        },
-        {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Victor_Horta_Hotel_Tassel_stairway.jpg?width=800",
-          "caption": "Horta’s Hôtel Tassel stair—Art Nouveau Brussels",
-          "alt": "Horta’s Hôtel Tassel stair—Art Nouveau Brussels",
-          "role": "art"
-        },
-        {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Magritte_pipe.jpg?width=800",
-          "caption": "Magritte’s pipe motif—Belgian Surrealism’s global face",
-          "alt": "Magritte’s pipe motif—Belgian Surrealism’s global face",
-          "role": "art"
-        },
-        {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Ypres_cloth_hall.jpg?width=800",
-          "caption": "Ypres Cloth Hall, rebuilt after First World War devastation",
-          "alt": "Ypres Cloth Hall, rebuilt after First World War devastation",
-          "role": "story"
-        },
-        {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Cathedral_of_St._Michael_and_St._Gudula.jpg?width=800",
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Cathedral%20of%20St.%20Michael%20and%20St.%20Gudula.JPG?width=800",
           "caption": "St. Michael and St. Gudula Cathedral, Brussels",
           "alt": "St. Michael and St. Gudula Cathedral, Brussels",
           "role": "religion"
@@ -6620,34 +6530,10 @@
           "role": "art"
         },
         {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Grand_Duchess_Charlotte.jpg?width=800",
-          "caption": "Grand Duchess Charlotte, wartime exile and return",
-          "alt": "Grand Duchess Charlotte, wartime exile and return",
-          "role": "leader"
-        },
-        {
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Adolphe_Bridge.jpg?width=800",
           "caption": "Adolphe Bridge spanning Luxembourg City’s old fortress valley",
           "alt": "Adolphe Bridge spanning Luxembourg City’s old fortress valley",
           "role": "story"
-        },
-        {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Luxembourg_City_Grund.jpg?width=800",
-          "caption": "Grund quarter—urban face of the grand duchy",
-          "alt": "Grund quarter—urban face of the grand duchy",
-          "role": "culture"
-        },
-        {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Cathedral_Our_Lady_Luxembourg.jpg?width=800",
-          "caption": "Notre-Dame Cathedral, Catholic heart of Luxembourg City",
-          "alt": "Notre-Dame Cathedral, Catholic heart of Luxembourg City",
-          "role": "religion"
-        },
-        {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Arbed_-_hauts_fourneaux_A_et_B.jpg?width=800",
-          "caption": "ARBED blast furnaces—steel era that funded modernity",
-          "alt": "ARBED blast furnaces—steel era that funded modernity",
-          "role": "art"
         }
       ],
       "philosophy": "Small-state constitutionalism and EU-seat pragmatism; philosophy of sovereignty scaled to a fortress that chose law over force."
@@ -7326,34 +7212,10 @@
           "role": "art"
         },
         {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Bundesrat_Schweiz_1987.jpg?width=800",
-          "caption": "Swiss Federal Council—collegial executive tradition",
-          "alt": "Swiss Federal Council—collegial executive tradition",
-          "role": "leader"
-        },
-        {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Ferdinand_Hodler_1904.jpg?width=800",
-          "caption": "Ferdinand Hodler, painter of alpine national vision",
-          "alt": "Ferdinand Hodler, painter of alpine national vision",
-          "role": "art"
-        },
-        {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Alberto_Giacometti.jpg?width=800",
-          "caption": "Alberto Giacometti, Swiss modernist sculpture",
-          "alt": "Alberto Giacometti, Swiss modernist sculpture",
-          "role": "art"
-        },
-        {
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Matterhorn_from_Domh%C3%BCtte_-_2.jpg?width=800",
           "caption": "Matterhorn—alpine emblem of Swiss identity",
           "alt": "Matterhorn—alpine emblem of Swiss identity",
           "role": "culture"
-        },
-        {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Palais_des_Nations_Geneva.jpg?width=800",
-          "caption": "Palace of Nations, Geneva—diplomacy and neutrality stage",
-          "alt": "Palace of Nations, Geneva—diplomacy and neutrality stage",
-          "role": "story"
         },
         {
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Grossm%C3%BCnster_in_Z%C3%BCrich.jpg?width=800",
@@ -8886,18 +8748,6 @@
           "role": "art"
         },
         {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Francisco_Franco_1975.jpg?width=800",
-          "caption": "Francisco Franco near the end of the dictatorship",
-          "alt": "Francisco Franco near the end of the dictatorship",
-          "role": "leader"
-        },
-        {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/King_Juan_Carlos_I_of_Spain_%282009%29.jpg?width=800",
-          "caption": "Juan Carlos I, monarch of the democratic transition",
-          "alt": "Juan Carlos I, monarch of the democratic transition",
-          "role": "leader"
-        },
-        {
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Pablo_picasso_1.jpg?width=800",
           "caption": "Pablo Picasso, Spanish giant of modern art",
           "alt": "Pablo Picasso, Spanish giant of modern art",
@@ -8908,12 +8758,6 @@
           "caption": "Federico García Lorca, poet murdered in the Civil War",
           "alt": "Federico García Lorca, poet murdered in the Civil War",
           "role": "literature"
-        },
-        {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Guernica_mural.jpg?width=800",
-          "caption": "Guernica remembered—Civil War’s global image",
-          "alt": "Guernica remembered—Civil War’s global image",
-          "role": "story"
         },
         {
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Sagrada_Familia_01.jpg?width=800",
@@ -9642,40 +9486,16 @@
           "role": "literature"
         },
         {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Antonio_Oliveira_Salazar.jpg?width=800",
-          "caption": "António de Oliveira Salazar, architect of the Estado Novo",
-          "alt": "António de Oliveira Salazar, architect of the Estado Novo",
-          "role": "leader"
-        },
-        {
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Fernando_Pessoa.jpg?width=800",
           "caption": "Fernando Pessoa, modernist poet of Lisbon",
           "alt": "Fernando Pessoa, modernist poet of Lisbon",
           "role": "literature"
         },
         {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/25_Abril_-_Lisboa_-_Portugal_%2827184631813%29.jpg?width=800",
-          "caption": "Carnation Revolution commemorations in Lisbon",
-          "alt": "Carnation Revolution commemorations in Lisbon",
-          "role": "story"
-        },
-        {
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Am%C3%A1lia_Rodrigues.jpg?width=800",
           "caption": "Amália Rodrigues, queen of fado",
           "alt": "Amália Rodrigues, queen of fado",
           "role": "culture"
-        },
-        {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Bas%C3%ADlica_de_Nossa_Senhora_do_Ros%C3%A1rio_de_F%C3%A1tima.jpg?width=800",
-          "caption": "Sanctuary of Fátima—modern Catholic pilgrimage",
-          "alt": "Sanctuary of Fátima—modern Catholic pilgrimage",
-          "role": "religion"
-        },
-        {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Paula_Rego.jpg?width=800",
-          "caption": "Paula Rego, major Portuguese figurative artist",
-          "alt": "Paula Rego, major Portuguese figurative artist",
-          "role": "art"
         }
       ],
       "philosophy": "Sebastianist myth and republican positivism; Salazar's corporatist Catholic state versus later April Revolution democratic theory."
@@ -10800,36 +10620,6 @@
           "caption": "Christian X, king during the German occupation",
           "alt": "Christian X, king during the German occupation",
           "role": "leader"
-        },
-        {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/S%C3%B8ren_Kierkegaard_%28cropped%29.jpg?width=800",
-          "caption": "Søren Kierkegaard, Danish existential thinker",
-          "alt": "Søren Kierkegaard, Danish existential thinker",
-          "role": "literature"
-        },
-        {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Portrait_of_Hans_Christian_Andersen_by_Thora_Hallager_1869.jpg?width=800",
-          "caption": "Hans Christian Andersen, global Danish storyteller",
-          "alt": "Hans Christian Andersen, global Danish storyteller",
-          "role": "literature"
-        },
-        {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Peder_Severin_Kr%C3%B8yer_-_Summer_Evening_on_Skagen%27s_Southern_Beach_with_Anna_Ancher_and_Marie_Kr%C3%B8yer.jpg?width=800",
-          "caption": "Skagen painters’ summer light—Danish modern art colony",
-          "alt": "Skagen painters’ summer light—Danish modern art colony",
-          "role": "art"
-        },
-        {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Grundtvigskirche_Kopenhagen_2005.jpg?width=800",
-          "caption": "Grundtvig’s Church, Copenhagen—folk-church modern monument",
-          "alt": "Grundtvig’s Church, Copenhagen—folk-church modern monument",
-          "role": "religion"
-        },
-        {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Little_Mermaid_statue_Copenhagen.jpg?width=800",
-          "caption": "The Little Mermaid statue—Andersen’s culture as city emblem",
-          "alt": "The Little Mermaid statue—Andersen’s culture as city emblem",
-          "role": "culture"
         }
       ],
       "philosophy": "Kierkegaard's existential authorship; Grundtvigian folk high-school enlightenment; later welfare-state ethics of equality."
@@ -11990,34 +11780,10 @@
           "role": "leader"
         },
         {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Karl_XIV_Johan%2C_king_of_Sweden_and_Norway.jpg?width=800",
-          "caption": "Charles XIV John (Bernadotte), first union king",
-          "alt": "Charles XIV John (Bernadotte), first union king",
-          "role": "leader"
-        },
-        {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Henrik_Ibsen_by_Gustav_Borgen_NFB00381.jpg?width=800",
-          "caption": "Henrik Ibsen, Norwegian dramatist of the union era",
-          "alt": "Henrik Ibsen, Norwegian dramatist of the union era",
-          "role": "literature"
-        },
-        {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Carl_Larsson_-_Midvinterblot_-_Google_Art_Project.jpg?width=800",
-          "caption": "Carl Larsson’s Midvinterblot—Swedish National Romantic art",
-          "alt": "Carl Larsson’s Midvinterblot—Swedish National Romantic art",
-          "role": "art"
-        },
-        {
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Stortinget%2C_Oslo.jpg?width=800",
           "caption": "Storting building, Christiania/Oslo—Norwegian self-rule under the union",
           "alt": "Storting building, Christiania/Oslo—Norwegian self-rule under the union",
           "role": "story"
-        },
-        {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Nidarosdomen_Trondheim.jpg?width=800",
-          "caption": "Nidaros Cathedral—Lutheran national shrine in Norway",
-          "alt": "Nidaros Cathedral—Lutheran national shrine in Norway",
-          "role": "religion"
         }
       ],
       "philosophy": "Union debates over dual monarchy and national self-determination culminate in 1905 peaceful separation as political philosophy in action."
@@ -13492,34 +13258,10 @@
           "role": "literature"
         },
         {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Olof_Palme_0701.jpg?width=800",
-          "caption": "Olof Palme, Social Democratic leader of Cold War Sweden",
-          "alt": "Olof Palme, Social Democratic leader of Cold War Sweden",
-          "role": "leader"
-        },
-        {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Gustaf_V_of_Sweden_c_1908.jpg?width=800",
-          "caption": "Gustaf V, king through the early independent century",
-          "alt": "Gustaf V, king through the early independent century",
-          "role": "leader"
-        },
-        {
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/August_Strindberg.jpg?width=800",
           "caption": "August Strindberg, foundational modern Swedish writer",
           "alt": "August Strindberg, foundational modern Swedish writer",
           "role": "literature"
-        },
-        {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Carl_Larsson_Self-portrait_1906.jpg?width=800",
-          "caption": "Carl Larsson self-portrait—Swedish domestic modern art",
-          "alt": "Carl Larsson self-portrait—Swedish domestic modern art",
-          "role": "art"
-        },
-        {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Stockholm_City_Hall_pano.jpeg?width=800",
-          "caption": "Stockholm City Hall—civic stage of the folkhemmet era",
-          "alt": "Stockholm City Hall—civic stage of the folkhemmet era",
-          "role": "story"
         },
         {
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Uppsala_Cathedral.jpg?width=800",
@@ -15774,34 +15516,10 @@
           "role": "leader"
         },
         {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Edvard_Munch_-_1892_-_Self_Portrait_After_the_Spanish_Flu.jpg?width=800",
-          "caption": "Edvard Munch self-portrait—Norway’s modern art giant",
-          "alt": "Edvard Munch self-portrait—Norway’s modern art giant",
-          "role": "art"
-        },
-        {
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/The_Scream.jpg?width=800",
           "caption": "Munch’s The Scream, global icon of Expressionism",
           "alt": "Munch’s The Scream, global icon of Expressionism",
           "role": "art"
-        },
-        {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Henrik_Ibsen_by_Gustav_Borgen_NFB00381.jpg?width=800",
-          "caption": "Henrik Ibsen, dramatist of Norwegian modernity",
-          "alt": "Henrik Ibsen, dramatist of Norwegian modernity",
-          "role": "literature"
-        },
-        {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Norwegian_resistance_museum.jpg?width=800",
-          "caption": "Resistance memory institutionalized in Oslo",
-          "alt": "Resistance memory institutionalized in Oslo",
-          "role": "story"
-        },
-        {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Nidaros_Cathedral_Trondheim_Norway.jpg?width=800",
-          "caption": "Nidaros Cathedral—Lutheran national church landmark",
-          "alt": "Nidaros Cathedral—Lutheran national church landmark",
-          "role": "religion"
         }
       ],
       "philosophy": "Ibsen's ethical individualism as public thought; social-democratic nation-building after independence frames equality as ethos."
@@ -40586,30 +40304,6 @@
           "caption": "Halldór Laxness, Nobel laureate of Icelandic letters",
           "alt": "Halldór Laxness, Nobel laureate of Icelandic letters",
           "role": "literature"
-        },
-        {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/%C3%9Eingvellir_2009-07.jpg?width=800",
-          "caption": "Þingvellir, site of the 1944 republic declaration",
-          "alt": "Þingvellir, site of the 1944 republic declaration",
-          "role": "story"
-        },
-        {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Hallgr%C3%ADmskirkja_2009-08.jpg?width=800",
-          "caption": "Hallgrímskirkja, Reykjavík’s modern Lutheran landmark",
-          "alt": "Hallgrímskirkja, Reykjavík’s modern Lutheran landmark",
-          "role": "religion"
-        },
-        {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/J%C3%B3n_Stef%C3%A1nsson_%281875-1962%29_Fumaroles_at_N%C3%A1makar%C3%B0.jpg?width=800",
-          "caption": "Icelandic landscape painting of geothermal terrain",
-          "alt": "Icelandic landscape painting of geothermal terrain",
-          "role": "art"
-        },
-        {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Reykjavik_Harbor.jpg?width=800",
-          "caption": "Reykjavík harbor—fisheries modernity and capital life",
-          "alt": "Reykjavík harbor—fisheries modernity and capital life",
-          "role": "culture"
         }
       ],
       "philosophy": "Saga ethics revisited in independence nationalism; Nordic social-democratic philosophy in a fishing republic."
