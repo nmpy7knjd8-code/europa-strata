@@ -216,6 +216,13 @@ button {
   stroke-width: 1.25;
 }
 
+/* Culture fill clipped to part of a large modern country (meta.fillExtents) */
+.country-extent {
+  pointer-events: none;
+  stroke: none;
+  transition: fill 0.5s var(--ease), fill-opacity 0.45s var(--ease);
+}
+
 .map-chrome {
   position: absolute;
   top: 1.25rem;

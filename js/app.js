@@ -1186,6 +1186,32 @@ function initMap({ preserveZoom = true } = {}) {
     .on("mouseleave", onCountryLeave)
     .on("click", onCountryClick);
 
+  // Partial-country culture fills (data/timeline.json meta.fillExtents): an overlay
+  // per listed country, clipped to that period's lon/lat outline. The country path
+  // underneath keeps hover/click and shows plain land outside the outline.
+  const extentIsos = new Set(Object.keys(state.data?.meta?.fillExtents?.countries || {}));
+  const extentFeatures = state.geo.features.filter((f) => extentIsos.has(f.properties.iso));
+  defs
+    .selectAll("clipPath.extent-clip")
+    .data(extentFeatures)
+    .join("clipPath")
+    .attr("class", "extent-clip")
+    .attr("id", (d) => `extent-clip-${d.properties.iso}`)
+    .attr("clipPathUnits", "userSpaceOnUse")
+    .append("path");
+  zoomLayer
+    .append("g")
+    .attr("class", "country-extents")
+    .attr("aria-hidden", "true")
+    .selectAll("path")
+    .data(extentFeatures)
+    .join("path")
+    .attr("class", "country-extent")
+    .attr("data-iso", (d) => d.properties.iso)
+    .attr("d", state.path)
+    .attr("clip-path", (d) => `url(#extent-clip-${d.properties.iso})`)
+    .style("fill-opacity", 0);
+
   // Coastlines under polities so fills stay clickable
   const coasts = zoomLayer.append("g").attr("class", "coasts");
   coasts
@@ -1483,6 +1509,23 @@ function clearPolitySelection() {
   renderKeyEvents();
 }
 
+/** Deep-time period nearest the slider (same switch point as the culture labels). */
+function nearestDeepPeriod(pos = state.sliderPos) {
+  const periods = state.data?.periods || [];
+  if (!periods.length) return null;
+  return periods[Math.min(periods.length - 1, Math.max(0, Math.round(pos * (periods.length - 1))))];
+}
+
+/** Projected SVG path for the partial-fill outline of iso in period, or null if filled whole. */
+function fillExtentPath(iso, period) {
+  const ring = state.data?.meta?.fillExtents?.countries?.[iso]?.[period?.id];
+  if (!Array.isArray(ring) || ring.length < 4 || !state.path) return null;
+  let poly = { type: "Polygon", coordinates: [ring] };
+  // d3-geo treats rings by winding; flip if this one came out as "the rest of the globe"
+  if (d3.geoArea(poly) > 2 * Math.PI) poly = { type: "Polygon", coordinates: [ring.slice().reverse()] };
+  return state.path(poly);
+}
+
 function paintMap(animate = true) {
   if (!state.svg) return;
 
@@ -1492,6 +1535,7 @@ function paintMap(animate = true) {
       .selectAll("path.country")
       .style("fill", null)
       .style("fill-opacity", 1);
+    state.svg.selectAll("path.country-extent").interrupt().style("fill-opacity", 0);
 
     // Geometry only when tick changes — avoids selection flicker on slider drag
     syncKingdomPolityLayer({ force: false });
@@ -1531,12 +1575,8 @@ function paintMap(animate = true) {
   }
 
   const paths = state.svg.selectAll("path.country");
-  paths.each(function (d) {
-    const iso = d.properties.iso;
-    const style = interpolatedCountryStyle(iso, state.sliderPos);
-    const node = d3.select(this);
-    const fill = style.fill || "var(--land-base)";
-    const opacity = style.fill ? Math.max(0.35, style.opacity) : 1;
+  const period = nearestDeepPeriod();
+  const setFill = (node, fill, opacity) => {
     if (animate) {
       node
         .transition()
@@ -1545,7 +1585,26 @@ function paintMap(animate = true) {
         .style("fill", fill)
         .style("fill-opacity", opacity);
     } else {
-      node.style("fill", fill).style("fill-opacity", opacity);
+      node.interrupt().style("fill", fill).style("fill-opacity", opacity);
+    }
+  };
+  paths.each(function (d) {
+    const iso = d.properties.iso;
+    const style = interpolatedCountryStyle(iso, state.sliderPos);
+    const node = d3.select(this);
+    const fill = style.fill || "var(--land-base)";
+    const opacity = style.fill ? Math.max(0.35, style.opacity) : 1;
+    const overlay = state.svg.select(`path.country-extent[data-iso="${iso}"]`);
+    const clipD = style.fill ? fillExtentPath(iso, period) : null;
+    if (clipD && !overlay.empty()) {
+      // Culture covers only part of this modern country: plain land underneath,
+      // culture colour on the clipped overlay.
+      state.svg.select(`#extent-clip-${iso} path`).attr("d", clipD);
+      setFill(node, "var(--land-base)", 1);
+      setFill(overlay, fill, opacity);
+    } else {
+      if (!overlay.empty()) setFill(overlay, fill, 0);
+      setFill(node, fill, opacity);
     }
   });
 }
