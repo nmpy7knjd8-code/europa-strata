@@ -7,42 +7,42 @@
         "id": "whg",
         "label": "WHG",
         "full": "Western Hunter-Gatherer",
-        "color": "#3d7a8c",
+        "color": "#7d8a6a",
         "detail": "Mesolithic western/central European foragers; a substrate after farming, not a living “people” label later."
       },
       {
         "id": "shg",
         "label": "SHG",
         "full": "Scandinavian Hunter-Gatherer",
-        "color": "#2a6a7a",
+        "color": "#5f6f5f",
         "detail": "Northern foragers of Scandinavia, often modeled as WHG with extra EHG-related affinity; important Mesolithic–Neolithic north baseline before TRB and Single Grave turnovers."
       },
       {
         "id": "ehg",
         "label": "EHG",
         "full": "Eastern Hunter-Gatherer",
-        "color": "#5a7a9a",
+        "color": "#8a6a4f",
         "detail": "Forest-steppe/eastern foragers with Ancient North Eurasian affinity; key ingredient of Yamnaya with CHG-related ancestry."
       },
       {
         "id": "eef",
         "label": "EEF",
         "full": "Early European Farmer (Anatolian Neolithic-related)",
-        "color": "#c4a035",
+        "color": "#c49a6c",
         "detail": "Anatolian Neolithic–related farmers who spread demically into Europe from ~6500 BC; dominant in Early Neolithic west."
       },
       {
         "id": "steppe",
         "label": "WSH",
         "full": "Western Steppe Herder (Yamnaya-related)",
-        "color": "#a05030",
+        "color": "#8f5a4a",
         "detail": "Yamnaya-related Western Steppe Herder ancestry that spreads widely after ~3000 BC via Corded Ware and kin. Often shortened WSH or “steppe.”"
       },
       {
         "id": "chg",
         "label": "CHG",
         "full": "Caucasus Hunter-Gatherer (often within steppe cline)",
-        "color": "#8a6060",
+        "color": "#a8705a",
         "detail": "Caucasus hunter-gatherer–related ancestry; often modeled inside the steppe cline rather than as a free European component."
       },
       {

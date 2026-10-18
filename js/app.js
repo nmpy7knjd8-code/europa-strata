@@ -116,6 +116,8 @@ const state = {
   zoom: null,
   zoomLayer: null,
   mapSize: { w: 900, h: 700 },
+  legendHoverId: null,
+  legendPinId: null,
 };
 
 function isKingdomMode(mode = state.atlasMode) {
@@ -968,16 +970,43 @@ function renderAncestryCline(region, keys) {
     .join("");
 }
 
-function conicGradient(entries) {
-  if (!entries.length) return "var(--land-base)";
-  let acc = 0;
-  const parts = entries.map((e) => {
-    const start = acc;
-    acc += e.value;
-    return `${e.color} ${start}% ${acc}%`;
-  });
-  if (acc < 100) parts.push(`var(--land-base) ${acc}% 100%`);
-  return `conic-gradient(${parts.join(", ")})`;
+/** Flat pie wedges. Remainder (when parts sum under 100) is a solid land fill. */
+function pieMarkup(entries) {
+  const usable = (entries || []).filter((e) => (Number(e.value) || 0) > 0);
+  const sum = usable.reduce((s, e) => s + (Number(e.value) || 0), 0);
+  if (!usable.length || sum <= 0) {
+    return `<svg class="pie-svg" viewBox="0 0 100 100" aria-hidden="true"><circle class="pie-rest" cx="50" cy="50" r="50" /></svg>`;
+  }
+  const total = Math.max(sum, 100);
+  let angle = -Math.PI / 2;
+  const cx = 50;
+  const cy = 50;
+  const r = 50;
+  const parts = [];
+  const wedge = (sweep, fill, rest) => {
+    if (sweep >= Math.PI * 2 - 0.0001) {
+      return rest
+        ? `<circle class="pie-rest" cx="50" cy="50" r="50" />`
+        : `<circle cx="50" cy="50" r="50" fill="${fill}" />`;
+    }
+    const a0 = angle;
+    const a1 = angle + sweep;
+    angle = a1;
+    const x0 = cx + r * Math.cos(a0);
+    const y0 = cy + r * Math.sin(a0);
+    const x1 = cx + r * Math.cos(a1);
+    const y1 = cy + r * Math.sin(a1);
+    const large = sweep > Math.PI ? 1 : 0;
+    const d = `M ${cx} ${cy} L ${x0.toFixed(3)} ${y0.toFixed(3)} A ${r} ${r} 0 ${large} 1 ${x1.toFixed(3)} ${y1.toFixed(3)} Z`;
+    return rest
+      ? `<path class="pie-rest" d="${d}" />`
+      : `<path d="${d}" fill="${fill}" />`;
+  };
+  for (const e of usable) {
+    parts.push(wedge(((Number(e.value) || 0) / total) * Math.PI * 2, safeColor(e.color), false));
+  }
+  if (sum < 99.5) parts.push(wedge(((total - sum) / total) * Math.PI * 2, "", true));
+  return `<svg class="pie-svg" viewBox="0 0 100 100" aria-hidden="true">${parts.join("")}</svg>`;
 }
 
 function shortPeriodName(p) {
@@ -1542,7 +1571,7 @@ function paintMap(animate = true) {
       .selectAll("path.country")
       .style("fill", null)
       .style("fill-opacity", 1);
-    state.svg.selectAll("path.country-extent").interrupt().style("fill-opacity", 0);
+    state.svg.selectAll("path.country-extent").interrupt().classed("is-extent-on", false).style("fill-opacity", 0);
 
     // Geometry only when tick changes — avoids selection flicker on slider drag
     syncKingdomPolityLayer({ force: false });
@@ -1578,6 +1607,7 @@ function paintMap(animate = true) {
       }
     });
     applyPolitySelectionClass();
+    applyLegendFocus();
     return;
   }
 
@@ -1608,12 +1638,15 @@ function paintMap(animate = true) {
       // culture colour on the clipped overlay.
       state.svg.select(`#extent-clip-${iso} path`).attr("d", clipD);
       setFill(node, "var(--land-base)", 1);
+      overlay.classed("is-extent-on", true);
       setFill(overlay, fill, opacity);
     } else {
+      if (!overlay.empty()) overlay.classed("is-extent-on", false);
       if (!overlay.empty()) setFill(overlay, fill, 0);
       setFill(node, fill, opacity);
     }
   });
+  applyLegendFocus();
 }
 
 function culturesForIso(iso) {
@@ -1859,7 +1892,9 @@ function setSliderPos(pos, { fromSlider = false } = {}) {
 
   const slider = $("#time-slider");
   if (!fromSlider) slider.value = String(Math.round(state.sliderPos * SLIDER_MAX));
-  slider.style.setProperty("--slider-pct", `${state.sliderPos * 100}%`);
+  const pct = `${state.sliderPos * 100}%`;
+  slider.style.setProperty("--slider-pct", pct);
+  slider.parentElement?.style.setProperty("--slider-pct", pct);
 
   paintMap(true);
   if (periodChanged) {
@@ -2113,20 +2148,88 @@ function renderPeriodText() {
   renderKeyEvents();
 }
 
+/** Culture-family headings for the map key. First match wins. */
+const CULTURE_FAMILY_RULES = [
+  ["Bell Beaker", /\bbell beaker\b|\bbeaker\b/i],
+  ["Corded Ware", /corded ware|single grave|battle axe/i],
+  ["Steppe", /yamnaya|catacomb|srubnaya|andronovo|usatove|serednii|scythian|sauromatian|sarmatian|khazar|golden horde|hunnic/i],
+  ["Northern foragers", /maglemos|kongemose|erteb|fosna|hensbacka|komsa|pitted ware/i],
+  ["Western foragers", /azilian|tardenois|sauveter|british mesolithic/i],
+  ["Mediterranean foragers", /epigravett|iron gates|balkan mesolithic/i],
+  ["Eastern foragers", /kunda|\bnarva\b|veretye|ukrainian meso|comb ware|\behg\b|forest-steppe/i],
+  ["Foragers", /mesolithic|forager|hunter-gather/i],
+  ["Balkans", /balkan|vu[cč]edol|vin[cč]a|star[cč]evo|k[oö]r[oö]s|cri[sș]|karanovo|trypillia|cucuteni|thracian|illyrian|otomani|f[uü]zesabony|mycenaean|serbia|bulgaria|romania/i],
+  ["Neolithic farmers", /cardial|impresso|impressed|\blbk\b|linear pottery|funnelbeaker|\btrb\b|michelsberg|chass[eé]en|megalith|globular amphora|neolithic|bug[–-]dniester|tiszapolg/i],
+  ["Bronze Age", /bronze|\bnba\b|tumulus|el argar|terramare|apennine|wessex \/ british/i],
+  ["Celtic", /hallstatt|la t[eè]ne|\bceltic\b|celtiberian/i],
+  ["Iberia", /iberian|lusitanian|hispania|castile|aragon|\bportugal\b|portuguese|nasrid|andalus|asturias|granada|\bspain\b|spanish|los millares/i],
+  ["Italy", /etruscan|\bitalia\b|\bitaly\b|latin \/|early rome|venice|papal|savoy|sicil|lombard|remedello|gaudo|communal italy/i],
+  ["Aegean", /greek|greece|achaea|byzantine|ottoman|asia minor|turkey/i],
+  ["Germanic", /frank|alamann|anglo-saxon|wielbark|chernyakhov|ostrogoth|visigoth|vandal|germanic|jastorf|danelaw|wessex|norman|carolingian|francia|burgund/i],
+  ["Slavic & Baltic", /slavic|kievan|\brus\b|moravia|piast|poland|muscov|novgorod|vladimir|galicia|volhynia|lithuania|bohemia|teutonic|baltic|ukraine|belarus/i],
+  ["Nordic", /nordic|scandinav|denmark|norway|sweden|danish|norwegian|swedish|kalmar|iceland|finland/i],
+  ["Britain & Ireland", /british|britain|britannia|england|scotland|wales|welsh|ireland|irish|gaelic|hibernia|plantagenet|tudor|lancastrian|united kingdom/i],
+  ["Western Europe", /\bfrance\b|\bgaul\b|gallia|benelux|dutch|low countries|swiss|\bgerman\b|germany|\bhabsburg\b|austria|holy roman|\bhre\b/i],
+];
+
+function cultureFamily(layer) {
+  const text = `${layer?.id || ""} ${layer?.label || ""}`;
+  for (const [name, re] of CULTURE_FAMILY_RULES) {
+    if (re.test(text)) return name;
+  }
+  return "";
+}
+
+function groupLegendLayers(layers) {
+  const buckets = new Map();
+  const order = [];
+  for (const layer of layers) {
+    const family = cultureFamily(layer);
+    const key = family || "__other";
+    if (!buckets.has(key)) {
+      buckets.set(key, []);
+      order.push(key);
+    }
+    buckets.get(key).push(layer);
+  }
+  const named = order.filter((key) => key !== "__other");
+  if (!named.length) return [{ family: "", layers }];
+  const groups = named.map((key) => ({ family: key, layers: buckets.get(key) }));
+  const loose = buckets.get("__other") || [];
+  if (loose.length) groups.push({ family: loose.length > 1 ? "Other" : "", layers: loose });
+  return groups;
+}
+
+function legendLayerId(layer) {
+  return layerPolityId(layer) || layer?.id || "";
+}
+
+function legendLayers() {
+  return (currentPeriod()?.mapLayers || []).filter((l) => !l.extra);
+}
+
+function legendRowHtml(layer) {
+  const id = legendLayerId(layer);
+  return `<button type="button" class="legend-row" data-layer="${escapeHtml(id)}" aria-pressed="false"><span class="legend-swatch" style="background:${safeColor(layer.color)}"></span><span class="legend-label">${escapeHtml(layer.label)}</span></button>`;
+}
+
 function updateLegend() {
-  const period = currentPeriod();
-  const layers = period?.mapLayers || [];
+  const layers = legendLayers();
   const box = $("#map-legend");
   if (!box) return;
   // Always visible under the slider — never overlays the map
   box.hidden = false;
-  box.innerHTML = layers
-    .filter((l) => !l.extra)
-    .map(
-      (l) =>
-        `<div class="legend-row"><span class="legend-swatch" style="background:${safeColor(l.color)}"></span>${escapeHtml(l.label)}</div>`
-    )
+  const ids = new Set(layers.map((l) => legendLayerId(l)));
+  if (state.legendPinId && !ids.has(state.legendPinId)) state.legendPinId = null;
+  state.legendHoverId = null;
+  box.innerHTML = groupLegendLayers(layers)
+    .map((group) => {
+      const rows = group.layers.map(legendRowHtml).join("");
+      if (!group.family) return `<div class="legend-group">${rows}</div>`;
+      return `<div class="legend-group" role="group" aria-label="${escapeHtml(group.family)}"><p class="legend-family">${escapeHtml(group.family)}</p>${rows}</div>`;
+    })
     .join("");
+  applyLegendFocus();
   const pack = activePack();
   const attr = $("#map-attr");
   if (attr) {
@@ -2134,7 +2237,7 @@ function updateLegend() {
       ? pack?.mapAttribution || state.data?.meta?.mapAttribution || ""
       : state.data?.meta?.mapAttribution || "";
     attr.textContent = base;
-    if (isKingdomMode() && period?.approxTick) {
+    if (isKingdomMode() && currentPeriod()?.approxTick) {
       const note = document.createElement("span");
       note.className = "approx-note";
       note.textContent = " · approx. borders";
@@ -3105,7 +3208,11 @@ function renderDetail() {
     })
     .join("");
 
-  $("#pie").style.background = conicGradient(entries);
+  const pie = $("#pie");
+  if (pie) {
+    pie.style.background = "transparent";
+    pie.innerHTML = pieMarkup(entries);
+  }
   $("#pie-list").innerHTML = entries
     .map((e) => {
       const pct = e.rangeLabel || `~${Math.round(e.value)}%`;
@@ -3683,6 +3790,102 @@ function syncThemeColor() {
   document.querySelector('meta[name="theme-color"]')?.setAttribute("content", dark ? "#111111" : "#f4f4f4");
 }
 
+function activeLegendLayer() {
+  const id = state.legendHoverId || state.legendPinId;
+  if (!id) return null;
+  return legendLayers().find((l) => legendLayerId(l) === id) || null;
+}
+
+function applyLegendFocus() {
+  const layer = activeLegendLayer();
+  const activeId = layer ? legendLayerId(layer) : null;
+  $("#map")?.classList.toggle("is-legend-on", Boolean(layer));
+  $$("#map-legend .legend-row").forEach((row) => {
+    const on = row.dataset.layer === activeId;
+    row.classList.toggle("is-on", on);
+    row.setAttribute("aria-pressed", row.dataset.layer === state.legendPinId ? "true" : "false");
+  });
+  if (!state.svg) return;
+  if (!layer) {
+    state.svg.selectAll("path.country, path.polity, path.country-extent").classed("is-legend-hot", false).classed("is-legend-dim", false);
+    return;
+  }
+  const isos = new Set(layer.countries || []);
+  const useCountries = !isKingdomMode() && isos.size > 0;
+  const pid = legendLayerId(layer);
+  state.svg
+    .selectAll("path.country")
+    .classed("is-legend-hot", (d) => useCountries && isos.has(d.properties.iso))
+    .classed("is-legend-dim", (d) => useCountries && !isos.has(d.properties.iso));
+  // Clipped culture-colour overlays (meta.fillExtents) follow their country
+  state.svg
+    .selectAll("path.country-extent")
+    .classed("is-legend-hot", (d) => useCountries && isos.has(d.properties.iso))
+    .classed("is-legend-dim", (d) => useCountries && !isos.has(d.properties.iso));
+  state.svg
+    .selectAll("path.polity")
+    .classed("is-legend-hot", (d) => isKingdomMode() && d.properties.polityId === pid)
+    .classed("is-legend-dim", (d) => isKingdomMode() && d.properties.polityId !== pid);
+}
+
+function bindLegendInteractions() {
+  const box = $("#map-legend");
+  if (!box || box.dataset.bound) return;
+  box.dataset.bound = "1";
+  const rowFrom = (target) => target?.closest?.(".legend-row") || null;
+  box.addEventListener("pointerover", (e) => {
+    if (e.pointerType === "touch") return;
+    const row = rowFrom(e.target);
+    if (!row) return;
+    state.legendHoverId = row.dataset.layer;
+    applyLegendFocus();
+  });
+  box.addEventListener("pointerout", (e) => {
+    if (e.pointerType === "touch") return;
+    const row = rowFrom(e.target);
+    if (!row) return;
+    const next = e.relatedTarget?.closest?.(".legend-row");
+    if (next === row) return;
+    if (state.legendHoverId === row.dataset.layer) state.legendHoverId = null;
+    applyLegendFocus();
+  });
+  box.addEventListener("focusin", (e) => {
+    const row = rowFrom(e.target);
+    if (!row) return;
+    state.legendHoverId = row.dataset.layer;
+    applyLegendFocus();
+  });
+  box.addEventListener("focusout", (e) => {
+    const row = rowFrom(e.target);
+    if (!row) return;
+    const next = e.relatedTarget?.closest?.(".legend-row");
+    if (next) return;
+    if (state.legendHoverId === row.dataset.layer) state.legendHoverId = null;
+    applyLegendFocus();
+  });
+  box.addEventListener("click", (e) => {
+    const row = rowFrom(e.target);
+    if (!row) return;
+    const id = row.dataset.layer;
+    state.legendPinId = state.legendPinId === id ? null : id;
+    // Mouse/pen stay hovered after a click. Touch and keyboard must be able
+    // to clear the highlight on the second tap without waiting for a leave.
+    const fromMouse = e.pointerType === "mouse" || e.pointerType === "pen";
+    if (!fromMouse) state.legendHoverId = null;
+    else if (!state.legendPinId) state.legendHoverId = id;
+    applyLegendFocus();
+  });
+  document.addEventListener("keydown", (e) => {
+    if (e.key !== "Escape" || !state.legendPinId) return;
+    state.legendPinId = null;
+    const focused = document.activeElement?.closest?.(".legend-row");
+    state.legendHoverId = focused?.dataset.layer || null;
+    applyLegendFocus();
+    e.preventDefault();
+    e.stopImmediatePropagation();
+  });
+}
+
 function bindUI() {
   const slider = $("#time-slider");
   slider.max = String(SLIDER_MAX);
@@ -3741,6 +3944,7 @@ function bindUI() {
   $("#btn-zoom-out")?.addEventListener("click", () => bumpMapZoom(1 / 1.35));
   $("#btn-zoom-reset")?.addEventListener("click", () => resetMapZoom());
 
+  bindLegendInteractions();
   bindLightboxUi();
 
   // Preceded by / Succeeded by chain jumps only (no inline body auto-links)
