@@ -1028,6 +1028,8 @@ function shortPeriodName(p) {
     "late-medieval": "Late Medieval",
     reformation: "Reformation",
     "early-modern": "Early Modern",
+    enlightenment: "Enlightenment",
+    "eve-of-war": "Eve of War",
     modern: "Modern",
   };
   return map[p.id] || p.periodName || p.label;

@@ -357,6 +357,259 @@
     }
    ]
   },
+  "enlightenment": {
+   "periodId": "enlightenment",
+   "keyEvents": [
+    {
+     "date": "1739",
+     "title": "Treaty of Belgrade",
+     "detail": "The Habsburgs hand Belgrade and northern Serbia back to the Ottomans; the Danube–Sava line becomes the Habsburg–Ottoman border for the next half-century.",
+     "regions": [
+      "balkans",
+      "central"
+     ],
+     "iso": "SRB",
+     "start": 1739,
+     "end": 1739
+    },
+    {
+     "date": "1740",
+     "title": "Frederick II invades Silesia",
+     "detail": "Weeks after Maria Theresa’s accession, Prussia occupies Silesia, opening the War of the Austrian Succession and an Austro-Prussian rivalry that lasts to 1866.",
+     "regions": [
+      "central"
+     ],
+     "iso": "DEU",
+     "start": 1740,
+     "end": 1742
+    },
+    {
+     "date": "1746",
+     "title": "Culloden",
+     "detail": "Government forces defeat the Jacobite army near Inverness, ending the last Stuart attempt on the British throne.",
+     "regions": [
+      "britain"
+     ],
+     "iso": "GBR",
+     "start": 1746,
+     "end": 1746
+    },
+    {
+     "date": "1748",
+     "title": "Peace of Aix-la-Chapelle",
+     "detail": "The War of the Austrian Succession ends; Prussia keeps Silesia, France returns the Austrian Netherlands, Britain and France restore colonial conquests.",
+     "regions": [
+      "france",
+      "central",
+      "britain",
+      "italy"
+     ],
+     "iso": "FRA",
+     "start": 1748,
+     "end": 1748
+    },
+    {
+     "date": "1748",
+     "title": "The Spirit of the Laws",
+     "detail": "Montesquieu’s comparative study of governments, with its separation of powers, appears in Geneva.",
+     "regions": [
+      "france"
+     ],
+     "iso": "FRA",
+     "start": 1748,
+     "end": 1748
+    },
+    {
+     "date": "1749",
+     "title": "Haugwitz reforms",
+     "detail": "Maria Theresa merges the Austrian and Bohemian chancelleries and taxes the estates to pay a standing army.",
+     "regions": [
+      "central"
+     ],
+     "iso": "AUT",
+     "start": 1749,
+     "end": 1749
+    },
+    {
+     "date": "1750",
+     "title": "Treaty of Madrid",
+     "detail": "Spain and Portugal redraw their South American border on the basis of actual occupation, replacing the Tordesillas line.",
+     "regions": [
+      "iberia"
+     ],
+     "iso": "ESP",
+     "start": 1750,
+     "end": 1750
+    },
+    {
+     "date": "1750",
+     "title": "Hetmanate restored",
+     "detail": "Kyrylo Rozumovsky is elected hetman of left-bank Ukraine under Russian suzerainty.",
+     "regions": [
+      "eastern"
+     ],
+     "iso": "UKR",
+     "start": 1750,
+     "end": 1750
+    },
+    {
+     "date": "1751",
+     "title": "First volume of the Encyclopédie",
+     "detail": "Diderot and d’Alembert begin publishing the Encyclopédie in Paris.",
+     "regions": [
+      "france"
+     ],
+     "iso": "FRA",
+     "start": 1751,
+     "end": 1751
+    },
+    {
+     "date": "1755",
+     "title": "Lisbon earthquake",
+     "detail": "An earthquake, fires and tsunami destroy much of Lisbon on 1 November.",
+     "regions": [
+      "iberia"
+     ],
+     "iso": "PRT",
+     "start": 1755,
+     "end": 1755
+    },
+    {
+     "date": "1756",
+     "title": "Diplomatic Revolution and Seven Years’ War",
+     "detail": "Austria allies with France and Britain with Prussia; Frederick invades Saxony and a world war begins.",
+     "regions": [
+      "central",
+      "france",
+      "britain",
+      "eastern"
+     ],
+     "iso": "DEU",
+     "start": 1756,
+     "end": 1763
+    }
+   ]
+  },
+  "eve-of-war": {
+   "periodId": "eve-of-war",
+   "keyEvents": [
+    {
+     "date": "1905",
+     "title": "Norwegian independence",
+     "detail": "Norway dissolves its union with Sweden.",
+     "regions": [
+      "scandinavia"
+     ],
+     "iso": "NOR",
+     "start": 1905,
+     "end": 1905
+    },
+    {
+     "date": "1908",
+     "title": "Bosnian annexation",
+     "detail": "Austria-Hungary annexes Bosnia and Herzegovina.",
+     "regions": [
+      "balkans",
+      "central"
+     ],
+     "iso": "BIH",
+     "start": 1908,
+     "end": 1908
+    },
+    {
+     "date": "1912",
+     "title": "First Balkan War",
+     "detail": "The Balkan League takes most of Ottoman Europe; Albania declares independence.",
+     "regions": [
+      "balkans"
+     ],
+     "iso": "SRB",
+     "start": 1912,
+     "end": 1913
+    },
+    {
+     "date": "1913",
+     "title": "Treaty of Bucharest",
+     "detail": "Ends the Second Balkan War.",
+     "regions": [
+      "balkans"
+     ],
+     "iso": "GRC",
+     "start": 1913,
+     "end": 1913
+    },
+    {
+     "date": "1914",
+     "title": "Sarajevo assassination",
+     "detail": "Franz Ferdinand is killed in Sarajevo on 28 June.",
+     "regions": [
+      "balkans",
+      "central"
+     ],
+     "iso": "BIH",
+     "start": 1914,
+     "end": 1914
+    },
+    {
+     "date": "1914",
+     "title": "Austria-Hungary declares war on Serbia",
+     "detail": "Declared on 28 July after the 23 July ultimatum.",
+     "regions": [
+      "central",
+      "balkans"
+     ],
+     "iso": "AUT",
+     "start": 1914,
+     "end": 1914
+    },
+    {
+     "date": "1914",
+     "title": "Germany declares war on Russia and France",
+     "detail": "Declarations of 1 and 3 August.",
+     "regions": [
+      "central",
+      "eastern",
+      "france"
+     ],
+     "iso": "DEU",
+     "start": 1914,
+     "end": 1914
+    },
+    {
+     "date": "1914",
+     "title": "Britain enters the war",
+     "detail": "Britain declares war on Germany on 4 August.",
+     "regions": [
+      "britain"
+     ],
+     "iso": "GBR",
+     "start": 1914,
+     "end": 1914
+    },
+    {
+     "date": "1914",
+     "title": "First Battle of the Marne",
+     "detail": "The German advance is halted in September.",
+     "regions": [
+      "france"
+     ],
+     "iso": "FRA",
+     "start": 1914,
+     "end": 1914
+    },
+    {
+     "date": "1914",
+     "title": "Ottoman entry",
+     "detail": "The Ottoman fleet raids Russian ports on 29 October.",
+     "regions": [
+      "eastern"
+     ],
+     "iso": "TUR",
+     "start": 1914,
+     "end": 1914
+    }
+   ]
+  },
   "modern": {
    "periodId": "modern",
    "keyEvents": [

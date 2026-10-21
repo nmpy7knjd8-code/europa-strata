@@ -286,6 +286,41 @@
         "alias": "Capetian",
         "periodId": "high-medieval",
         "iso": "FRA"
+      },
+      {
+        "alias": "Kingdom of Prussia",
+        "periodId": "enlightenment",
+        "iso": "DEU"
+      },
+      {
+        "alias": "Habsburg Monarchy",
+        "periodId": "enlightenment",
+        "iso": "AUT"
+      },
+      {
+        "alias": "Polish–Lithuanian Commonwealth",
+        "periodId": "enlightenment",
+        "iso": "POL"
+      },
+      {
+        "alias": "Cossack Hetmanate",
+        "periodId": "enlightenment",
+        "iso": "UKR"
+      },
+      {
+        "alias": "German Empire",
+        "periodId": "eve-of-war",
+        "iso": "DEU"
+      },
+      {
+        "alias": "Austria-Hungary",
+        "periodId": "eve-of-war",
+        "iso": "AUT"
+      },
+      {
+        "alias": "Russian Empire",
+        "periodId": "eve-of-war",
+        "iso": "RUS"
       }
     ],
     "cultureFillPacks": [
@@ -297,6 +332,15 @@
     "fillExtents": {
       "note": "Where a period's culture fill covers only part of a large modern country, the fill is clipped to this lon/lat outline (WGS84 rings, approximate). Countries/periods not listed are filled whole. Used by paintMap() in js/app.js.",
       "countries": {
+        "POL": {
+          "enlightenment": [[21.77, 49.59], [21.77, 49.74], [21.32, 49.86], [20.98, 49.74], [20.8, 49.83], [20.89, 49.74], [20.68, 49.65], [20.53, 49.8], [20.02, 49.8], [19.89, 49.47], [19.56, 49.53], [19.56, 49.71], [19.38, 49.8], [19.11, 49.59], [18.8, 49.71], [18.65, 50.64], [17.64, 51.44], [17.55, 51.65], [17.29, 51.79], [17.2, 51.61], [16.85, 51.65], [16.85, 51.92], [16.51, 52.18], [16.51, 52.0], [15.76, 52.27], [15.76, 52.57], [16.05, 52.72], [16.2, 53.34], [16.42, 53.52], [16.2, 53.71], [16.66, 53.86], [16.81, 53.46], [16.69, 54.04], [17.75, 54.43], [17.66, 54.69], [18.28, 54.72], [18.76, 54.54], [18.36, 54.67], [18.51, 54.32], [18.96, 54.23], [18.99, 53.86], [18.81, 53.74], [18.93, 53.49], [19.8, 53.52], [20.01, 53.04], [20.1, 53.18], [21.12, 53.27], [22.81, 53.81], [22.72, 54.68], [23.63, 54.39], [24.18, 53.07], [24.16, 52.55], [23.78, 52.34], [23.95, 52.08], [23.87, 51.67], [24.39, 50.94], [24.37, 50.42], [23.01, 49.4], [21.77, 49.59]]
+        },
+        "ROU": {
+          "eve-of-war": [[29.5, 45.52], [29.71, 45.26], [29.46, 44.92], [29.09, 44.88], [28.69, 44.49], [28.51, 43.74], [26.68, 44.25], [25.38, 43.78], [24.76, 43.94], [24.16, 43.81], [23.64, 43.99], [22.94, 43.9], [23.03, 44.12], [22.51, 44.35], [22.44, 44.5], [22.74, 44.58], [22.41, 44.75], [22.34, 44.99], [22.48, 45.73], [23.25, 46.07], [23.56, 45.9], [24.06, 46.1], [24.4, 45.9], [24.94, 45.96], [25.52, 45.8], [25.45, 46.3], [26.02, 46.83], [25.65, 47.14], [25.23, 47.25], [26.53, 47.53], [26.04, 48.22], [26.25, 48.3], [26.18, 48.47], [26.68, 48.56], [27.1, 48.43], [28.33, 47.13], [28.52, 46.54], [28.45, 45.65], [29.58, 45.67], [29.5, 45.52]]
+        },
+        "SRB": {
+          "eve-of-war": [[20.0, 42.74], [20.36, 42.86], [19.22, 43.46], [19.51, 43.58], [19.52, 43.72], [19.24, 44.0], [19.62, 44.03], [19.12, 44.33], [19.36, 44.86], [19.02, 44.9], [19.17, 45.2], [20.2, 45.18], [20.33, 44.92], [20.77, 44.66], [21.36, 44.82], [22.13, 44.51], [22.41, 44.75], [22.74, 44.58], [22.44, 44.5], [22.69, 44.26], [22.29, 43.8], [22.92, 43.18], [22.34, 42.67], [22.33, 42.29], [22.6, 42.1], [21.48, 41.96], [21.23, 42.24], [21.31, 42.54], [20.94, 42.8], [20.36, 42.53], [20.0, 42.74]]
+        },
         "RUS": {
           "middle-neolithic": [[33, 45.5], [40, 45], [46, 47], [46, 51.5], [38, 52.5], [33, 52], [33, 45.5]],
           "yamnaya": [[33, 44], [48, 42.5], [55, 45], [55, 52], [46, 53], [36, 52.5], [33, 44]],
@@ -15126,9 +15170,9 @@
             "name": "Spanish Habsburg world monarchy"
           },
           "succeededBy": {
-            "periodId": "modern",
+            "periodId": "enlightenment",
             "iso": "ESP",
-            "name": "Kingdom of Spain"
+            "name": "Bourbon Spain"
           }
         },
         "PRT": {
@@ -15144,9 +15188,9 @@
             "name": "Portuguese Empire (& Iberian Union ahead)"
           },
           "succeededBy": {
-            "periodId": "modern",
+            "periodId": "enlightenment",
             "iso": "PRT",
-            "name": "Portuguese Republic"
+            "name": "Kingdom of Portugal"
           }
         },
         "FRA": {
@@ -15162,9 +15206,9 @@
             "name": "Valois France in the Wars of Religion"
           },
           "succeededBy": {
-            "periodId": "modern",
+            "periodId": "enlightenment",
             "iso": "FRA",
-            "name": "French Republic"
+            "name": "Kingdom of France"
           }
         },
         "GBR": {
@@ -15180,9 +15224,9 @@
             "name": "Tudor England (& Reformation Scotland)"
           },
           "succeededBy": {
-            "periodId": "modern",
+            "periodId": "enlightenment",
             "iso": "GBR",
-            "name": "United Kingdom"
+            "name": "Kingdom of Great Britain"
           }
         },
         "NLD": {
@@ -15196,6 +15240,11 @@
             "periodId": "reformation",
             "iso": "NLD",
             "name": "Habsburg Netherlands → Dutch Revolt"
+          },
+          "succeededBy": {
+            "periodId": "enlightenment",
+            "iso": "NLD",
+            "name": "Dutch Republic"
           }
         },
         "DEU": {
@@ -15211,9 +15260,9 @@
             "name": "Confessional Holy Roman Empire"
           },
           "succeededBy": {
-            "periodId": "modern",
+            "periodId": "enlightenment",
             "iso": "DEU",
-            "name": "Germany"
+            "name": "Kingdom of Prussia and the German states"
           },
           "aliases": [
             "German states",
@@ -15231,6 +15280,11 @@
             "periodId": "reformation",
             "iso": "AUT",
             "name": "Austrian Habsburg core"
+          },
+          "succeededBy": {
+            "periodId": "enlightenment",
+            "iso": "AUT",
+            "name": "Habsburg Monarchy (Austria)"
           }
         },
         "SWE": {
@@ -15246,7 +15300,7 @@
             "name": "Vasa Sweden"
           },
           "succeededBy": {
-            "periodId": "modern",
+            "periodId": "enlightenment",
             "iso": "SWE",
             "name": "Kingdom of Sweden"
           }
@@ -15264,9 +15318,9 @@
             "name": "Denmark–Norway (Lutheran)"
           },
           "succeededBy": {
-            "periodId": "modern",
+            "periodId": "enlightenment",
             "iso": "DNK",
-            "name": "Kingdom of Denmark"
+            "name": "Denmark–Norway"
           }
         },
         "POL": {
@@ -15282,9 +15336,9 @@
             "name": "Polish–Lithuanian Commonwealth"
           },
           "succeededBy": {
-            "periodId": "modern",
+            "periodId": "enlightenment",
             "iso": "POL",
-            "name": "Republic of Poland"
+            "name": "Polish–Lithuanian Commonwealth (Crown of Poland)"
           },
           "aliases": [
             "Poland–Lithuania"
@@ -15303,9 +15357,9 @@
             "name": "Tsardom of Russia (Ivan IV)"
           },
           "succeededBy": {
-            "periodId": "modern",
+            "periodId": "enlightenment",
             "iso": "RUS",
-            "name": "Russian Federation"
+            "name": "Russian Empire"
           }
         },
         "TUR": {
@@ -15321,9 +15375,9 @@
             "name": "Ottoman imperial center"
           },
           "succeededBy": {
-            "periodId": "modern",
+            "periodId": "enlightenment",
             "iso": "TUR",
-            "name": "Republic of Turkey"
+            "name": "Ottoman Empire"
           }
         },
         "ITA": {
@@ -15339,9 +15393,9 @@
             "name": "Italian states under Habsburg hegemony"
           },
           "succeededBy": {
-            "periodId": "modern",
+            "periodId": "enlightenment",
             "iso": "ITA",
-            "name": "Italian Republic"
+            "name": "Italian states"
           },
           "aliases": [
             "Spanish",
@@ -15361,9 +15415,9 @@
             "name": "Tudor Ireland"
           },
           "succeededBy": {
-            "periodId": "modern",
+            "periodId": "enlightenment",
             "iso": "IRL",
-            "name": "Republic of Ireland"
+            "name": "Kingdom of Ireland"
           }
         },
         "NOR": {
@@ -15379,9 +15433,9 @@
             "name": "Norway under Denmark"
           },
           "succeededBy": {
-            "periodId": "modern",
+            "periodId": "enlightenment",
             "iso": "NOR",
-            "name": "Kingdom of Norway"
+            "name": "Norway (in Denmark–Norway)"
           }
         },
         "BEL": {
@@ -15398,7 +15452,12 @@
           },
           "aliases": [
             "Southern Netherlands"
-          ]
+          ],
+          "succeededBy": {
+            "periodId": "enlightenment",
+            "iso": "BEL",
+            "name": "Austrian Netherlands"
+          }
         },
         "CHE": {
           "name": "Swiss Confederation (Reformation)",
@@ -15414,7 +15473,12 @@
           },
           "aliases": [
             "Swiss Confederation"
-          ]
+          ],
+          "succeededBy": {
+            "periodId": "enlightenment",
+            "iso": "CHE",
+            "name": "Old Swiss Confederacy"
+          }
         },
         "HUN": {
           "name": "Hungary divided (Ottoman / Habsburg / Transylvania)",
@@ -15433,7 +15497,12 @@
             "Habsburg",
             "Transylvania)",
             "Hungary divided"
-          ]
+          ],
+          "succeededBy": {
+            "periodId": "enlightenment",
+            "iso": "HUN",
+            "name": "Kingdom of Hungary"
+          }
         },
         "GRC": {
           "name": "Ottoman Greece",
@@ -15448,13 +15517,1896 @@
             "name": "Ottoman Greece"
           },
           "succeededBy": {
-            "periodId": "modern",
+            "periodId": "enlightenment",
             "iso": "GRC",
-            "name": "Hellenic Republic"
+            "name": "Greek lands under Ottoman rule"
           }
         }
       },
       "periodName": "Early Modern"
+    },
+    {
+      "id": "enlightenment",
+      "label": "Enlightenment absolutism at 1750",
+      "era": "Great powers, reform, and the Seven Years’ War on the horizon",
+      "yearLabel": "c. 1750 AD",
+      "yearApprox": 1750,
+      "narrative": "A century after Westphalia, Europe is run by a handful of great powers balancing one another. Frederick II’s Prussia has seized Silesia from Maria Theresa; Elizabeth’s Russia is now a permanent European player; the Habsburgs have pushed the Ottoman frontier down the Danube, though the 1739 Peace of Belgrade handed Belgrade back. Poland–Lithuania is still vast but its Sejm is paralysed by the liberum veto, a generation before the partitions. Britain and France, briefly at peace after Aix-la-Chapelle (1748), are rivals across India, North America and the Caribbean. Salons, academies and the Encyclopédie argue for reason and reform, while ‘enlightened’ rulers use the same ideas to strengthen the state. Deep ancestry barely moves: continuity of the early-modern profile, with frontier resettlement on the Danube and in the steppe.",
+      "culturesNote": "Bourbon France & Spain, Hanoverian Britain, Habsburg Monarchy, Hohenzollern Prussia, Romanov Russia, Polish–Lithuanian Commonwealth, Ottoman Rumelia, Denmark–Norway, Sweden (Age of Liberty), Dutch Republic, Italian states.",
+      "regions": {
+        "iberia": {
+          "culture": "Bourbon Spain & Braganza Portugal",
+          "color": "#5a1a1a",
+          "mode": "continuity",
+          "ancestry": {
+            "eef": 44,
+            "steppe": 26,
+            "whg": 17,
+            "other": 13
+          },
+          "substrate": "Habsburg/early-modern Iberia",
+          "incoming": "Bourbon administrative reform",
+          "fused": "Reformist Catholic monarchies with Atlantic empires",
+          "languageFamily": "Romance (+ Basque)",
+          "languages": "Castilian; Catalan; Galician; Portuguese; Basque",
+          "linguisticNote": "Nueva Planta decrees (1707–16) make Castilian the language of government in the Crown of Aragon.",
+          "linguisticConfidence": "attested",
+          "ancestryNote": "Continuity of the early-modern Iberian profile; American empires drain emigrants rather than reshape the home gene pool."
+        },
+        "britain": {
+          "culture": "Hanoverian Great Britain & Protestant-Ascendancy Ireland",
+          "color": "#1a2a3a",
+          "mode": "continuity",
+          "ancestry": {
+            "steppe": 42,
+            "eef": 36,
+            "whg": 16,
+            "other": 6
+          },
+          "substrate": "Stuart three kingdoms",
+          "incoming": "Union of 1707; Hanoverian succession 1714",
+          "fused": "Fiscal-military Great Britain",
+          "languageFamily": "Germanic + Celtic",
+          "languages": "English; Scots; Scottish Gaelic; Irish; Welsh",
+          "linguisticNote": "Gaelic retreats after Culloden; Johnson’s Dictionary (1755) codifies English.",
+          "linguisticConfidence": "attested",
+          "ancestryNote": "Continuity of the early-modern British and Irish profile."
+        },
+        "france": {
+          "culture": "Bourbon France of Louis XV",
+          "color": "#1a1a28",
+          "mode": "continuity",
+          "ancestry": {
+            "eef": 38,
+            "steppe": 38,
+            "whg": 16,
+            "other": 8
+          },
+          "substrate": "Absolutist France of Louis XIV",
+          "incoming": "Enlightenment salons and the Encyclopédie",
+          "fused": "Absolute monarchy under critique",
+          "languageFamily": "Romance (+ Breton, Basque, Alsatian, Occitan)",
+          "languages": "French; Occitan; Breton; Alsatian German; Basque; Flemish",
+          "linguisticNote": "French is the prestige language of Europe’s courts, yet most of France’s peasants still speak something else at home.",
+          "linguisticConfidence": "attested",
+          "ancestryNote": "Continuity of the early-modern French profile."
+        },
+        "central": {
+          "culture": "Habsburg Monarchy, Prussia & the Holy Roman Empire",
+          "color": "#2a2a38",
+          "mode": "continuity",
+          "ancestry": {
+            "steppe": 40,
+            "eef": 37,
+            "whg": 14,
+            "other": 9
+          },
+          "substrate": "Post-Westphalian Empire",
+          "incoming": "Prussian militarised state; Habsburg reform",
+          "fused": "Austro-Prussian dualism",
+          "languageFamily": "German + Slavic + Hungarian",
+          "languages": "German; Czech; Polish; Slovak; Hungarian; Dutch; Yiddish; Latin (Hungary)",
+          "linguisticNote": "German grows as the language of Habsburg administration after the 1749 reforms; Latin remains official in Hungary.",
+          "linguisticConfidence": "attested",
+          "ancestryNote": "Continuity, with Habsburg resettlement (Danube Swabians) in the reconquered Pannonian plain."
+        },
+        "scandinavia": {
+          "culture": "Denmark–Norway & Sweden–Finland",
+          "color": "#1a3a4a",
+          "mode": "continuity",
+          "ancestry": {
+            "steppe": 44,
+            "eef": 28,
+            "whg": 22,
+            "other": 6
+          },
+          "substrate": "Northern Wars kingdoms",
+          "incoming": "Swedish parliamentary ‘Age of Liberty’; Danish absolutism",
+          "fused": "Two Nordic composite monarchies after great-power days",
+          "languageFamily": "North Germanic + Finnic + Sámi",
+          "languages": "Danish; Norwegian dialects; Swedish; Finnish; Sámi; Icelandic",
+          "linguisticNote": "Danish is the written norm of Norway; Swedish dominates Finnish administration.",
+          "linguisticConfidence": "attested",
+          "ancestryNote": "Continuity of the early-modern Nordic profile."
+        },
+        "italy": {
+          "culture": "Italian dynastic states",
+          "color": "#4a1a28",
+          "mode": "continuity",
+          "ancestry": {
+            "eef": 40,
+            "steppe": 25,
+            "whg": 12,
+            "other": 23
+          },
+          "substrate": "Spanish-dominated Italy",
+          "incoming": "Bourbon and Habsburg-Lorraine secundogenitures",
+          "fused": "Balanced, foreign-ruled Italian state system",
+          "languageFamily": "Romance",
+          "languages": "Tuscan-based Italian; Neapolitan; Sicilian; Venetian; Lombard; Piedmontese; Sardinian",
+          "linguisticNote": "Literary Italian is Tuscan; daily speech is regional.",
+          "linguisticConfidence": "attested",
+          "ancestryNote": "Continuity of the early-modern Italian cline."
+        },
+        "balkans": {
+          "culture": "Ottoman Rumelia & Habsburg Military Frontier",
+          "color": "#1a3a30",
+          "mode": "continuity",
+          "ancestry": {
+            "eef": 36,
+            "steppe": 22,
+            "whg": 10,
+            "other": 32
+          },
+          "substrate": "Ottoman Balkans",
+          "incoming": "Phanariot rule in the Principalities; Habsburg frontier settlement",
+          "fused": "Ottoman–Habsburg borderland",
+          "languageFamily": "Slavic + Greek + Romance + Albanian + Turkic",
+          "languages": "Ottoman Turkish; Greek; Serbian; Bulgarian; Romanian; Albanian; Ladino",
+          "linguisticNote": "Greek is the language of Orthodox learning and Phanariot administration north of the Danube.",
+          "linguisticConfidence": "attested",
+          "ancestryNote": "Continuity of the early-modern Balkan profile; Serb migrations into Habsburg lands."
+        },
+        "eastern": {
+          "culture": "Polish–Lithuanian Commonwealth, Russian Empire & Ottoman Anatolia",
+          "color": "#2a2820",
+          "mode": "continuity",
+          "ancestry": {
+            "steppe": 34,
+            "eef": 30,
+            "whg": 14,
+            "other": 22
+          },
+          "substrate": "Muscovite Russia and the Commonwealth",
+          "incoming": "Petrine Russian Empire",
+          "fused": "Russia rising, the Commonwealth stalled",
+          "languageFamily": "Slavic + Baltic + Finnic + Turkic",
+          "languages": "Russian; Polish; Ukrainian; Belarusian; Lithuanian; Latvian; Estonian; Yiddish; Crimean Tatar; Turkish",
+          "linguisticNote": "Russian literary language is being standardised by Lomonosov; Polish and Latin dominate in the Commonwealth.",
+          "linguisticConfidence": "attested",
+          "ancestryNote": "Continuity, with Russian colonisation of the southern steppe beginning."
+        }
+      },
+      "linguistics": "French becomes the shared language of courts and the learned world; German, Russian and Swedish gain academies and grammars; Latin persists in Hungary, Poland and the universities; Ottoman Turkish, Greek and Church Slavonic serve the Balkans.",
+      "mapLayers": [
+        {
+          "id": "britain-1750",
+          "label": "Hanoverian Great Britain",
+          "color": "#5c242e",
+          "countries": [
+            "GBR"
+          ],
+          "role": "dominant",
+          "opacity": 0.8,
+          "note": "Great Britain since the 1707 Union; Hanoverian kings since 1714.",
+          "art": "Palladian country houses, Hogarth’s satires, Handel’s oratorios.",
+          "ideas": "Parliamentary sovereignty, public credit, and a ‘blue-water’ empire.",
+          "philosophy": "Hume’s empiricism and the moral-sense school of the Scottish Enlightenment.",
+          "science": "Royal Society science and navigation: Harrison’s marine chronometers, Bradley’s astronomy."
+        },
+        {
+          "id": "ireland-1750",
+          "label": "Kingdom of Ireland (Protestant Ascendancy)",
+          "color": "#663437",
+          "countries": [
+            "IRL"
+          ],
+          "role": "dominant",
+          "opacity": 0.75,
+          "note": "A separate kingdom under the British crown; Catholic majority excluded by the Penal Laws.",
+          "art": "Georgian Dublin; Irish harp music after Carolan.",
+          "ideas": "Ascendancy patriotism versus the Penal Laws.",
+          "philosophy": "Berkeley’s immaterialism; Swift’s satire.",
+          "science": "Dublin Society (1731) promoting agriculture and manufactures."
+        },
+        {
+          "id": "france-1750",
+          "label": "Bourbon France",
+          "color": "#2a376c",
+          "countries": [
+            "FRA",
+            "MCO"
+          ],
+          "role": "dominant",
+          "opacity": 0.8,
+          "note": "Louis XV’s kingdom; Lorraine passes to France in 1766.",
+          "art": "Rococo interiors, Boucher and Chardin, La Tour pastels.",
+          "ideas": "Absolutism challenged by parlements, Jansenists and philosophes.",
+          "philosophy": "Montesquieu, Voltaire, Rousseau, Diderot and the Encyclopédie.",
+          "science": "Buffon’s Histoire naturelle (from 1749); the Académie des sciences."
+        },
+        {
+          "id": "spain-1750",
+          "label": "Bourbon Spain",
+          "color": "#692a2d",
+          "countries": [
+            "ESP",
+            "AND"
+          ],
+          "role": "dominant",
+          "opacity": 0.8,
+          "note": "Ferdinand VI (1746–59).",
+          "art": "The new Royal Palace of Madrid; Bourbon academies.",
+          "ideas": "Bourbon centralism after the Nueva Planta decrees.",
+          "philosophy": "Feijoo’s critical essays.",
+          "science": "Naval arsenals at Ferrol and Cartagena; Jorge Juan’s science."
+        },
+        {
+          "id": "portugal-1750",
+          "label": "Kingdom of Portugal",
+          "color": "#5c4827",
+          "countries": [
+            "PRT"
+          ],
+          "role": "dominant",
+          "opacity": 0.85,
+          "note": "John V dies 1750; Joseph I and Pombal take over.",
+          "art": "Mafra’s palace-convent; Brazilian gold in gilded churches.",
+          "ideas": "Royal absolutism funded by Brazil.",
+          "philosophy": "Verney’s educational reform tract (1746).",
+          "science": "Rebuilding Lisbon after 1755 with anti-seismic gaiola frames."
+        },
+        {
+          "id": "dutch-1750",
+          "label": "Dutch Republic",
+          "color": "#915c27",
+          "countries": [
+            "NLD"
+          ],
+          "role": "dominant",
+          "opacity": 0.8,
+          "note": "United Provinces; Orangist stadtholderate restored 1747.",
+          "art": "Delftware, town halls and the end of the Golden-Age painters.",
+          "ideas": "Republican federalism, commerce and toleration.",
+          "philosophy": "A haven for printing banned books.",
+          "science": "Leiden science: Boerhaave’s medicine, Musschenbroek’s Leyden jar."
+        },
+        {
+          "id": "austrian-nl",
+          "label": "Austrian Netherlands",
+          "color": "#8c7541",
+          "countries": [
+            "BEL",
+            "LUX"
+          ],
+          "role": "fringe",
+          "opacity": 0.7,
+          "note": "Habsburg since 1714; French-occupied 1745–48.",
+          "art": "Brussels under Charles of Lorraine.",
+          "ideas": "Provincial privileges under Habsburg rule.",
+          "philosophy": "Catholic Reformation Leuven.",
+          "science": "Leuven university."
+        },
+        {
+          "id": "prussia-1750",
+          "label": "Kingdom of Prussia",
+          "color": "#2d2d31",
+          "countries": [
+            "DEU"
+          ],
+          "role": "incoming",
+          "opacity": 0.8,
+          "note": "Frederick II’s Prussia, with Silesia since 1742; shares Germany with Saxony, Bavaria, Hanover and hundreds of smaller states.",
+          "art": "Sanssouci; flute concerts; Potsdam rococo.",
+          "ideas": "Enlightened absolutism and a militarised state.",
+          "philosophy": "Wolff’s rationalism; Frederick’s Anti-Machiavel.",
+          "science": "Euler at the Berlin Academy."
+        },
+        {
+          "id": "hre-1750",
+          "label": "Holy Roman Empire (German states)",
+          "color": "#524837",
+          "countries": [
+            "DEU",
+            "AUT",
+            "CZE",
+            "BEL",
+            "LUX",
+            "SVN"
+          ],
+          "role": "substrate",
+          "opacity": 0.55,
+          "note": "The Empire as legal frame: Emperor Francis I (from 1745), Reichstag at Regensburg.",
+          "art": "Würzburg Residenz; Bach’s Leipzig; south German baroque churches.",
+          "ideas": "Imperial law protecting small states.",
+          "philosophy": "Leibniz–Wolff school.",
+          "science": "University of Göttingen (1737)."
+        },
+        {
+          "id": "habsburg-1750",
+          "label": "Habsburg Monarchy",
+          "color": "#82702d",
+          "countries": [
+            "AUT",
+            "CZE",
+            "HUN",
+            "SVK",
+            "HRV",
+            "SVN"
+          ],
+          "role": "dominant",
+          "opacity": 0.8,
+          "note": "Maria Theresa’s lands: Austria, Bohemia, Hungary, Croatia, Transylvania, Milan, the Netherlands.",
+          "art": "Schönbrunn; Vienna baroque; Gluck’s early operas.",
+          "ideas": "Pragmatic Sanction and Theresian reform.",
+          "philosophy": "Cameralism; Catholic reform.",
+          "science": "Van Swieten’s medical reforms."
+        },
+        {
+          "id": "swiss-1750",
+          "label": "Old Swiss Confederacy",
+          "color": "#7d2e31",
+          "countries": [
+            "CHE",
+            "LIE"
+          ],
+          "role": "dominant",
+          "opacity": 0.8,
+          "note": "Thirteen cantons with allies such as Geneva.",
+          "art": "Alpine landscape writing; Geneva watchmaking.",
+          "ideas": "Republican patriciates and communes.",
+          "philosophy": "Rousseau of Geneva; Burlamaqui’s natural law.",
+          "science": "Bernoulli and Euler families of Basel; Haller in Bern."
+        },
+        {
+          "id": "italy-1750",
+          "label": "Italian states",
+          "color": "#345c41",
+          "countries": [
+            "ITA",
+            "SMR",
+            "VAT",
+            "MLT"
+          ],
+          "role": "dominant",
+          "opacity": 0.75,
+          "note": "Savoy-Sardinia, Austrian Milan, Venice, Genoa, Tuscany, the Papal States, Bourbon Naples–Sicily.",
+          "art": "Tiepolo, Canaletto, Piranesi.",
+          "ideas": "Reform in Milan, Tuscany and Naples.",
+          "philosophy": "Vico’s New Science; Muratori.",
+          "science": "Herculaneum and Pompeii excavations; Bologna’s Laura Bassi."
+        },
+        {
+          "id": "plc-1750",
+          "label": "Polish–Lithuanian Commonwealth",
+          "color": "#783455",
+          "countries": [
+            "POL",
+            "LTU",
+            "BLR",
+            "LVA"
+          ],
+          "role": "dominant",
+          "opacity": 0.75,
+          "note": "Augustus III of Saxony; the liberum veto blocks the Sejm.",
+          "art": "Sarmatian portraits; Vilnius baroque.",
+          "ideas": "Golden Liberty of the nobility.",
+          "philosophy": "Konarski’s Collegium Nobilium (1740).",
+          "science": "Załuski Library opens in Warsaw (1747)."
+        },
+        {
+          "id": "russia-1750",
+          "label": "Russian Empire",
+          "color": "#3e522d",
+          "countries": [
+            "RUS",
+            "EST",
+            "LVA",
+            "UKR",
+            "FIN"
+          ],
+          "role": "incoming",
+          "opacity": 0.8,
+          "note": "Empress Elizabeth; Baltic provinces since 1721; south-east Finland since 1743.",
+          "art": "Rastrelli’s Elizabethan baroque.",
+          "ideas": "Petrine state and noble service.",
+          "philosophy": "Lomonosov.",
+          "science": "St Petersburg Academy of Sciences; Moscow University (1755)."
+        },
+        {
+          "id": "hetmanate",
+          "label": "Cossack Hetmanate",
+          "color": "#486637",
+          "countries": [
+            "UKR"
+          ],
+          "role": "fringe",
+          "opacity": 0.7,
+          "note": "Left-bank Ukraine under Russian suzerainty; Hetman Rozumovsky from 1750.",
+          "art": "Cossack baroque churches.",
+          "ideas": "Cossack autonomy within Russia.",
+          "philosophy": "Skovoroda.",
+          "science": "Kyiv-Mohyla Academy."
+        },
+        {
+          "id": "sweden-1750",
+          "label": "Sweden",
+          "color": "#2a5269",
+          "countries": [
+            "SWE",
+            "FIN"
+          ],
+          "role": "dominant",
+          "opacity": 0.8,
+          "note": "Age of Liberty; Finland is part of the kingdom.",
+          "art": "Gustavian style is still to come; rococo Drottningholm.",
+          "ideas": "Riksdag sovereignty: Hats and Caps.",
+          "philosophy": "Swedenborg; Dalin.",
+          "science": "Linnaeus, Celsius."
+        },
+        {
+          "id": "denmark-norway-1750",
+          "label": "Denmark–Norway",
+          "color": "#70342d",
+          "countries": [
+            "DNK",
+            "NOR",
+            "ISL",
+            "FRO"
+          ],
+          "role": "dominant",
+          "opacity": 0.8,
+          "note": "Frederick V’s absolute monarchy.",
+          "art": "Amalienborg and Frederiksstaden.",
+          "ideas": "Enlightened absolutism under Bernstorff and Moltke.",
+          "philosophy": "Holberg.",
+          "science": "Royal Danish Academy of Sciences (1742)."
+        },
+        {
+          "id": "ottoman-1750",
+          "label": "Ottoman Empire",
+          "color": "#2a5c5f",
+          "countries": [
+            "TUR",
+            "GRC",
+            "BGR",
+            "MKD",
+            "ALB",
+            "SRB",
+            "BIH",
+            "MNE",
+            "KOS",
+            "CYP"
+          ],
+          "role": "dominant",
+          "opacity": 0.8,
+          "note": "Mahmud I; the frontier stabilised at Belgrade (1739).",
+          "art": "Ottoman baroque: the Nuruosmaniye Mosque.",
+          "ideas": "Imperial order through ayan notables.",
+          "philosophy": "Ottoman scholarship and Sufi orders.",
+          "science": "Müteferrika’s printing press (1727)."
+        },
+        {
+          "id": "principalities",
+          "label": "Wallachia & Moldavia",
+          "color": "#5c6637",
+          "countries": [
+            "ROU",
+            "MDA"
+          ],
+          "role": "fringe",
+          "opacity": 0.7,
+          "note": "Ottoman vassal principalities under Phanariot princes; Transylvania is Habsburg.",
+          "art": "Brâncovenesc style continuing.",
+          "ideas": "Phanariot reformism.",
+          "philosophy": "Greek princely academies at Bucharest and Iași.",
+          "science": "Princely academies."
+        },
+        {
+          "id": "crimea",
+          "label": "Crimean Khanate",
+          "color": "#3e5c55",
+          "countries": [
+            "UKR"
+          ],
+          "role": "substrate",
+          "opacity": 0.6,
+          "note": "Ottoman vassal until 1783, holding the Black Sea steppe.",
+          "art": "Bakhchisaray Palace.",
+          "ideas": "Chinggisid legitimacy.",
+          "philosophy": "Islamic learning.",
+          "science": "Steppe horse economy."
+        }
+      ],
+      "tickYear": "1750 AD",
+      "polities": {
+        "GBR": {
+          "name": "Kingdom of Great Britain",
+          "summary": "A parliamentary monarchy whose public debt pays for the strongest navy in Europe; the Jacobite challenge ended at Culloden in 1746.",
+          "conflicts": "War of the Austrian Succession (1740–48); Jacobite rising (1745–46); colonial rivalry with France leading to the Seven Years’ War (1756–63).",
+          "leaders": "George II (r. 1727–60); Henry Pelham (First Lord of the Treasury 1743–54); the Duke of Newcastle; William Pitt the Elder.",
+          "religion": "Established Church of England and Church of Scotland; Protestant dissenters tolerated; Methodist revival led by John and Charles Wesley.",
+          "culture": "Palladian houses, Hogarth, Handel’s oratorios, the Scottish Enlightenment.",
+          "precededBy": {
+            "periodId": "early-modern",
+            "iso": "GBR",
+            "name": "England → Britain"
+          },
+          "succeededBy": {
+            "periodId": "eve-of-war",
+            "iso": "GBR",
+            "name": "United Kingdom of Great Britain and Ireland"
+          }
+        },
+        "IRL": {
+          "name": "Kingdom of Ireland",
+          "summary": "A separate kingdom under the British crown, governed by a Protestant Ascendancy while the Catholic majority lives under the Penal Laws.",
+          "conflicts": "No Jacobite rising in Ireland in 1745; agrarian unrest grows later (Whiteboys from 1761).",
+          "leaders": "George II as king; Lords Lieutenant appointed from London; Speaker Henry Boyle in the Irish Parliament.",
+          "religion": "Established Church of Ireland; Catholic majority restricted by the Penal Laws; Presbyterians strong in Ulster.",
+          "culture": "Georgian Dublin, the Irish Parliament House, Gaelic poetry in the countryside.",
+          "precededBy": {
+            "periodId": "early-modern",
+            "iso": "IRL",
+            "name": "Tudor Ireland"
+          },
+          "succeededBy": {
+            "periodId": "eve-of-war",
+            "iso": "IRL",
+            "name": "Ireland (United Kingdom)"
+          }
+        },
+        "FRA": {
+          "name": "Kingdom of France",
+          "summary": "Louis XV’s kingdom, the most populous in western Europe and the centre of the Enlightenment, at peace after Aix-la-Chapelle but losing the struggle for overseas empire.",
+          "conflicts": "War of the Austrian Succession (Fontenoy 1745); Seven Years’ War (1756–63) with the loss of Canada and most of India.",
+          "leaders": "Louis XV (r. 1715–74); Madame de Pompadour; ministers Machault d’Arnouville and the comte d’Argenson.",
+          "religion": "Catholic monarchy; the Unigenitus quarrel with Jansenists; Protestants still without legal status.",
+          "culture": "Rococo, salons, the Encyclopédie.",
+          "precededBy": {
+            "periodId": "early-modern",
+            "iso": "FRA",
+            "name": "Kingdom of France"
+          },
+          "succeededBy": {
+            "periodId": "eve-of-war",
+            "iso": "FRA",
+            "name": "French Third Republic"
+          }
+        },
+        "ESP": {
+          "name": "Bourbon Spain",
+          "summary": "A centralised Bourbon monarchy at peace under Ferdinand VI, rebuilding its fleets and finances to defend its American empire.",
+          "conflicts": "War of the Austrian Succession in Italy (to 1748); then neutrality until 1761; Treaty of Madrid (1750) with Portugal over South American borders.",
+          "leaders": "Ferdinand VI (r. 1746–59); the Marqués de la Ensenada; José de Carvajal.",
+          "religion": "Catholic monarchy; the Inquisition still active; the 1753 Concordat extends royal control of church appointments.",
+          "culture": "Bourbon court baroque; Italian opera at court (Farinelli).",
+          "precededBy": {
+            "periodId": "early-modern",
+            "iso": "ESP",
+            "name": "Spanish Habsburg monarchy"
+          },
+          "succeededBy": {
+            "periodId": "eve-of-war",
+            "iso": "ESP",
+            "name": "Kingdom of Spain"
+          }
+        },
+        "PRT": {
+          "name": "Kingdom of Portugal",
+          "summary": "A monarchy enriched by Brazilian gold and diamonds; in 1750 Joseph I succeeds John V and the future Marquis of Pombal enters government.",
+          "conflicts": "Treaty of Madrid (1750) with Spain; the Guaraní War (1754–56) over the border missions.",
+          "leaders": "John V (r. 1706–50); Joseph I (r. 1750–77); Sebastião José de Carvalho e Melo (later Marquis of Pombal).",
+          "religion": "Catholic; the Inquisition and the Jesuits remain powerful until Pombal turns on them (Jesuits expelled 1759).",
+          "culture": "Gilded talha churches; Mafra palace-convent.",
+          "precededBy": {
+            "periodId": "early-modern",
+            "iso": "PRT",
+            "name": "Portuguese Empire"
+          },
+          "succeededBy": {
+            "periodId": "eve-of-war",
+            "iso": "PRT",
+            "name": "Portuguese Republic"
+          }
+        },
+        "NLD": {
+          "name": "Dutch Republic",
+          "summary": "A rich but no longer great federal republic; the French invasion of 1747 brings an Orangist revolution and a hereditary stadtholder.",
+          "conflicts": "War of the Austrian Succession (French invasion 1747); neutrality in the Seven Years’ War.",
+          "leaders": "William IV of Orange (stadtholder 1747–51); then regency for William V under Anne of Hanover.",
+          "religion": "Dutch Reformed public church; Catholics, Mennonites and Jews tolerated.",
+          "culture": "Commerce, finance and an international book trade.",
+          "precededBy": {
+            "periodId": "early-modern",
+            "iso": "NLD",
+            "name": "Dutch Republic"
+          },
+          "succeededBy": {
+            "periodId": "eve-of-war",
+            "iso": "NLD",
+            "name": "Kingdom of the Netherlands"
+          }
+        },
+        "BEL": {
+          "name": "Austrian Netherlands",
+          "summary": "The southern Low Countries under Habsburg rule, occupied by France in 1745–48 and returned at Aix-la-Chapelle.",
+          "conflicts": "Battle of Fontenoy (1745) and French occupation; the Barrier fortresses.",
+          "leaders": "Maria Theresa; governor Charles Alexander of Lorraine (1741–80).",
+          "religion": "Catholic Reformation society; Leuven’s theology faculty.",
+          "culture": "Brussels court of Charles of Lorraine; lace and textiles.",
+          "precededBy": {
+            "periodId": "early-modern",
+            "iso": "BEL",
+            "name": "Southern Netherlands (Spanish)"
+          },
+          "succeededBy": {
+            "periodId": "eve-of-war",
+            "iso": "BEL",
+            "name": "Kingdom of Belgium"
+          }
+        },
+        "DEU": {
+          "name": "Kingdom of Prussia and the German states",
+          "summary": "Inside the Holy Roman Empire, Frederick II’s Prussia has become a great power by taking Silesia, while Saxony, Bavaria, Hanover and hundreds of smaller states keep their own courts.",
+          "conflicts": "First and Second Silesian Wars (1740–45); Seven Years’ War (1756–63).",
+          "leaders": "Frederick II of Prussia (r. 1740–86); Emperor Francis I (1745–65); Augustus III, Elector of Saxony and King of Poland.",
+          "religion": "Lutheran and Reformed Prussia tolerating Catholics; Catholic south and Rhineland; Pietism at Halle.",
+          "culture": "Sanssouci, Bach’s Leipzig, Würzburg’s Tiepolo frescoes.",
+          "aliases": [
+            "Kingdom of Prussia"
+          ],
+          "precededBy": {
+            "periodId": "early-modern",
+            "iso": "DEU",
+            "name": "German states / Thirty Years’ War arena"
+          },
+          "succeededBy": {
+            "periodId": "eve-of-war",
+            "iso": "DEU",
+            "name": "German Empire"
+          }
+        },
+        "AUT": {
+          "name": "Habsburg Monarchy (Austria)",
+          "summary": "Maria Theresa’s composite monarchy survives the War of the Austrian Succession without Silesia and rebuilds itself through tax, army and administrative reform.",
+          "conflicts": "War of the Austrian Succession (1740–48); Seven Years’ War (1756–63) to recover Silesia.",
+          "leaders": "Maria Theresa (r. 1740–80); co-regent Emperor Francis I; Count Haugwitz; Wenzel Anton Kaunitz (state chancellor from 1753).",
+          "religion": "Catholic monarchy; Protestants in Austria still expelled to Transylvania in the 1750s.",
+          "culture": "Viennese baroque, Schönbrunn, court opera.",
+          "aliases": [
+            "Habsburg Monarchy"
+          ],
+          "precededBy": {
+            "periodId": "early-modern",
+            "iso": "AUT",
+            "name": "Habsburg Austria"
+          },
+          "succeededBy": {
+            "periodId": "eve-of-war",
+            "iso": "AUT",
+            "name": "Austria-Hungary (Austrian half)"
+          }
+        },
+        "CZE": {
+          "name": "Lands of the Bohemian Crown",
+          "summary": "Bohemia and Moravia under Habsburg rule; most of Silesia lost to Prussia in 1742, Prague briefly taken by French and Bavarian troops in 1741.",
+          "conflicts": "War of the Austrian Succession (Prague occupied 1741–42 and 1744); Seven Years’ War battles at Kolín and Prague (1757).",
+          "leaders": "Maria Theresa, crowned Queen of Bohemia in 1743; Charles Albert of Bavaria briefly crowned in Prague in 1741.",
+          "religion": "Catholic after the Counter-Reformation; secret Protestants in the countryside.",
+          "culture": "Bohemian baroque; Czech-speaking peasantry, German-speaking towns and nobility.",
+          "succeededBy": {
+            "periodId": "eve-of-war",
+            "iso": "CZE",
+            "name": "Bohemia and Moravia (Austria-Hungary)"
+          }
+        },
+        "HUN": {
+          "name": "Kingdom of Hungary",
+          "summary": "A Habsburg kingdom with its own Diet and Latin administration; Transylvania is a separate Habsburg principality and the reconquered plain is being resettled.",
+          "conflicts": "War of the Austrian Succession; Hungarian troops defend Maria Theresa; earlier Rákóczi revolt ended 1711.",
+          "leaders": "Maria Theresa as King of Hungary; Palatine János Pálffy.",
+          "religion": "Catholic restoration alongside large Calvinist and Lutheran communities; Orthodox Serbs and Romanians.",
+          "culture": "Latin as official language; noble county life; baroque Eger and Esterházy palaces.",
+          "precededBy": {
+            "periodId": "early-modern",
+            "iso": "HUN",
+            "name": "Hungary divided (Ottoman / Habsburg / Transylvania)"
+          },
+          "succeededBy": {
+            "periodId": "eve-of-war",
+            "iso": "HUN",
+            "name": "Kingdom of Hungary (Austria-Hungary)"
+          }
+        },
+        "CHE": {
+          "name": "Old Swiss Confederacy",
+          "summary": "Thirteen sovereign cantons and their allies, neutral and prosperous, exporting soldiers, watches and ideas.",
+          "conflicts": "Mercenary regiments fight in French, Dutch and Sardinian service; Henzi conspiracy in Bern (1749).",
+          "leaders": "No monarch: patrician councils in Bern, Zurich, Basel; the Federal Diet (Tagsatzung).",
+          "religion": "Reformed and Catholic cantons; Calvinist Geneva as an allied republic.",
+          "culture": "Republican austerity and Alpine pride.",
+          "precededBy": {
+            "periodId": "early-modern",
+            "iso": "CHE",
+            "name": "Swiss Confederation (Reformation)"
+          },
+          "succeededBy": {
+            "periodId": "eve-of-war",
+            "iso": "CHE",
+            "name": "Swiss Confederation"
+          }
+        },
+        "ITA": {
+          "name": "Italian states",
+          "summary": "A peninsula of dynastic and republican states fixed by the 1748 peace: Savoy-Sardinia, Austrian Milan, Habsburg-Lorraine Tuscany, the Papal States, Venice, Genoa, Bourbon Naples–Sicily and Parma.",
+          "conflicts": "War of the Austrian Succession in Lombardy and Piedmont (to 1748); then a long peace.",
+          "leaders": "Charles Emmanuel III of Sardinia; Charles of Bourbon in Naples (r. 1734–59); Pope Benedict XIV (1740–58); Emperor Francis I as Grand Duke of Tuscany.",
+          "religion": "Catholic; Benedict XIV moderates Rome’s relations with Catholic monarchs.",
+          "culture": "Grand Tour destination: Venice, Rome, Naples.",
+          "precededBy": {
+            "periodId": "early-modern",
+            "iso": "ITA",
+            "name": "Spanish/Austrian Italy & states"
+          },
+          "succeededBy": {
+            "periodId": "eve-of-war",
+            "iso": "ITA",
+            "name": "Kingdom of Italy"
+          }
+        },
+        "POL": {
+          "name": "Polish–Lithuanian Commonwealth (Crown of Poland)",
+          "summary": "A huge elective noble republic under Saxon kings, its Sejm blocked by the liberum veto and its neighbours already deciding its fate—a generation before the first partition (1772).",
+          "conflicts": "War of the Polish Succession (1733–35); Russian armies cross Commonwealth territory at will; Haidamak risings in Right-bank Ukraine.",
+          "leaders": "Augustus III (r. 1733–63), also Elector of Saxony; the Czartoryski ‘Familia’ and the Potocki faction.",
+          "religion": "Catholic majority; Orthodox and Uniate in the east; Europe’s largest Jewish population; the Baal Shem Tov’s Hasidism emerging.",
+          "culture": "Sarmatian noble culture; Saxon-era baroque in Warsaw.",
+          "aliases": [
+            "Polish–Lithuanian Commonwealth"
+          ],
+          "precededBy": {
+            "periodId": "early-modern",
+            "iso": "POL",
+            "name": "Poland–Lithuania (PLC)"
+          },
+          "succeededBy": {
+            "periodId": "eve-of-war",
+            "iso": "POL",
+            "name": "Partitioned Poland"
+          }
+        },
+        "LTU": {
+          "name": "Grand Duchy of Lithuania",
+          "summary": "The eastern half of the Commonwealth, dominated by magnate families such as the Radziwiłłs and Sapiehas.",
+          "conflicts": "Magnate feuds; Russian troops in transit.",
+          "leaders": "Augustus III as Grand Duke; Radziwiłł magnates (Michał Kazimierz ‘Rybeńko’).",
+          "religion": "Catholic, Uniate and Orthodox; Vilnius as a centre of Jewish learning (the Vilna Gaon).",
+          "culture": "Vilnius baroque; Polonised nobility over Lithuanian- and Ruthenian-speaking peasants."
+        },
+        "UKR": {
+          "name": "Cossack Hetmanate and divided Ukraine",
+          "summary": "Left-bank Ukraine is a Cossack Hetmanate under Russian suzerainty, revived in 1750 under Kyrylo Rozumovsky; the right bank belongs to Poland–Lithuania and the south to the Crimean Khanate.",
+          "conflicts": "Haidamak risings against Polish lords (1734, 1750, 1768); Russian–Ottoman frontier wars.",
+          "leaders": "Hetman Kyrylo Rozumovsky (1750–64); Empress Elizabeth as suzerain.",
+          "religion": "Orthodox; Uniate in the right bank; Crimean Muslims in the south.",
+          "culture": "Cossack baroque churches and the Kyiv-Mohyla Academy.",
+          "succeededBy": {
+            "periodId": "eve-of-war",
+            "iso": "UKR",
+            "name": "Ukrainian lands (Russia and Austria-Hungary)"
+          }
+        },
+        "RUS": {
+          "name": "Russian Empire",
+          "summary": "Under Empress Elizabeth, Peter the Great’s empire is a fixed member of the European great powers, with Baltic ports, a growing Academy and its first university.",
+          "conflicts": "Russo-Swedish War (1741–43); Seven Years’ War (from 1757) against Prussia.",
+          "leaders": "Elizabeth (r. 1741–62); Chancellor Aleksey Bestuzhev-Ryumin; Ivan Shuvalov.",
+          "religion": "Orthodox under the Holy Synod.",
+          "culture": "Elizabethan baroque; French and Italian court culture.",
+          "precededBy": {
+            "periodId": "early-modern",
+            "iso": "RUS",
+            "name": "Tsardom of Russia"
+          },
+          "succeededBy": {
+            "periodId": "eve-of-war",
+            "iso": "RUS",
+            "name": "Russian Empire"
+          }
+        },
+        "SWE": {
+          "name": "Kingdom of Sweden",
+          "summary": "After losing its Baltic empire in 1721, Sweden is run by its Riksdag in the ‘Age of Liberty’, with weak kings and rival Hats and Caps parties.",
+          "conflicts": "Hats’ war with Russia (1741–43), ended by the Treaty of Åbo; Pomeranian War (1757–62).",
+          "leaders": "Frederick I (r. 1720–51); Adolf Frederick (r. 1751–71); Count Carl Gustaf Tessin.",
+          "religion": "Lutheran state church.",
+          "culture": "Rococo Drottningholm; academies and science.",
+          "precededBy": {
+            "periodId": "early-modern",
+            "iso": "SWE",
+            "name": "Swedish Empire"
+          },
+          "succeededBy": {
+            "periodId": "eve-of-war",
+            "iso": "SWE",
+            "name": "Kingdom of Sweden"
+          }
+        },
+        "FIN": {
+          "name": "Finland (Swedish realm)",
+          "summary": "The eastern half of the Swedish kingdom, occupied by Russia in 1742–43 and shorn of its south-east at Åbo.",
+          "conflicts": "Russo-Swedish War (1741–43), the ‘Lesser Wrath’ occupation.",
+          "leaders": "Swedish kings and Riksdag; Augustin Ehrensvärd, builder of Sveaborg.",
+          "religion": "Lutheran; Turku cathedral and diocese.",
+          "culture": "Swedish-speaking towns and officials; Finnish-speaking peasants.",
+          "succeededBy": {
+            "periodId": "eve-of-war",
+            "iso": "FIN",
+            "name": "Grand Duchy of Finland"
+          }
+        },
+        "DNK": {
+          "name": "Denmark–Norway",
+          "summary": "An absolute monarchy at peace, ruling Denmark, Norway, Iceland and the Faroes from Copenhagen.",
+          "conflicts": "Neutral through the mid-century wars.",
+          "leaders": "Frederick V (r. 1746–66); A. G. Moltke; J. H. E. Bernstorff.",
+          "religion": "Lutheran state church; Pietism at court.",
+          "culture": "Frederiksstaden and Amalienborg in Copenhagen.",
+          "precededBy": {
+            "periodId": "early-modern",
+            "iso": "DNK",
+            "name": "Denmark–Norway"
+          },
+          "succeededBy": {
+            "periodId": "eve-of-war",
+            "iso": "DNK",
+            "name": "Kingdom of Denmark"
+          }
+        },
+        "NOR": {
+          "name": "Norway (in Denmark–Norway)",
+          "summary": "A kingdom in union with Denmark, governed from Copenhagen, exporting timber, fish and copper.",
+          "conflicts": "None major; border with Sweden fixed in 1751.",
+          "leaders": "Frederick V; stattholder in Christiania.",
+          "religion": "Lutheran.",
+          "culture": "Bergen’s merchant city; rural farm culture.",
+          "precededBy": {
+            "periodId": "early-modern",
+            "iso": "NOR",
+            "name": "Norway under Denmark"
+          },
+          "succeededBy": {
+            "periodId": "eve-of-war",
+            "iso": "NOR",
+            "name": "Kingdom of Norway"
+          }
+        },
+        "TUR": {
+          "name": "Ottoman Empire",
+          "summary": "Under Mahmud I the Ottomans regain Belgrade (1739) and enjoy a long peace in Europe, governed through provincial notables (ayan).",
+          "conflicts": "Austro-Russian–Ottoman War (1735–39), ended by the Treaty of Belgrade; war with Persia (1743–46).",
+          "leaders": "Mahmud I (r. 1730–54); Osman III (r. 1754–57).",
+          "religion": "Sunni Islam; Orthodox, Armenian and Jewish millets.",
+          "culture": "Ottoman baroque in Istanbul.",
+          "precededBy": {
+            "periodId": "early-modern",
+            "iso": "TUR",
+            "name": "Ottoman Empire"
+          },
+          "succeededBy": {
+            "periodId": "eve-of-war",
+            "iso": "TUR",
+            "name": "Ottoman Empire"
+          }
+        },
+        "GRC": {
+          "name": "Greek lands under Ottoman rule",
+          "summary": "Ottoman provinces and Venetian Ionian islands, where Greek merchants, clergy and Phanariot officials dominate Orthodox life.",
+          "conflicts": "Venice lost the Morea to the Ottomans in 1715.",
+          "leaders": "Ottoman pashas; Patriarch of Constantinople; Phanariot families.",
+          "religion": "Orthodox Church as civil and religious authority.",
+          "culture": "Greek merchant diaspora; monasteries of Mount Athos.",
+          "precededBy": {
+            "periodId": "early-modern",
+            "iso": "GRC",
+            "name": "Ottoman Greece"
+          },
+          "succeededBy": {
+            "periodId": "eve-of-war",
+            "iso": "GRC",
+            "name": "Kingdom of Greece"
+          }
+        },
+        "ROU": {
+          "name": "Wallachia, Moldavia and Transylvania",
+          "summary": "Wallachia and Moldavia are Ottoman vassals ruled by Phanariot Greek princes; Transylvania is a Habsburg principality.",
+          "conflicts": "Russo-Ottoman war (1735–39) passes through Moldavia.",
+          "leaders": "Constantine Mavrocordatos (prince several times 1730–69); Habsburg governors in Transylvania.",
+          "religion": "Orthodox; Greek Catholic church in Transylvania; Calvinist and Catholic Hungarian nobles.",
+          "culture": "Greek-language princely courts.",
+          "succeededBy": {
+            "periodId": "eve-of-war",
+            "iso": "ROU",
+            "name": "Kingdom of Romania"
+          }
+        },
+        "SRB": {
+          "name": "Serbia under Ottoman rule",
+          "summary": "Ottoman again after the 1739 Treaty of Belgrade; many Serbs have migrated north into the Habsburg Military Frontier.",
+          "conflicts": "Austro-Ottoman war (1737–39) and the Second Great Migration of Serbs.",
+          "leaders": "Ottoman pashas of Belgrade; Serbian patriarchs of Peć (abolished 1766); Metropolitan of Karlovci in Habsburg lands.",
+          "religion": "Serbian Orthodox Church.",
+          "culture": "Serbian church baroque in Habsburg Sremski Karlovci.",
+          "succeededBy": {
+            "periodId": "eve-of-war",
+            "iso": "SRB",
+            "name": "Kingdom of Serbia"
+          }
+        }
+      },
+      "periodName": "Enlightenment"
+    },
+    {
+      "id": "eve-of-war",
+      "label": "Empires on the eve of war, 1914",
+      "era": "Industry, nationalism and the July Crisis",
+      "yearLabel": "c. 1914 AD",
+      "yearApprox": 1914,
+      "narrative": "In the summer of 1914 Europe is at the peak of its industrial power and its global reach, and is still largely ruled by four continental empires—German, Austro-Hungarian, Russian and Ottoman—each holding nations that want states of their own. The Balkan Wars of 1912–13 have pushed the Ottomans almost out of Europe and left Serbia larger and Austria-Hungary alarmed. Two alliance blocs face each other: Germany and Austria-Hungary (with an uncertain Italy) against France and Russia, with Britain loosely attached by the Entente. On 28 June a Bosnian Serb student kills Archduke Franz Ferdinand in Sarajevo; within five weeks the great powers are at war. Railways, mass schooling and newspapers have made nations out of peasants; deep ancestry still follows the old regional clines, now overlaid by urban migration, emigration to the Americas and the Jewish communities of the Pale and Galicia.",
+      "culturesNote": "German Empire, Austria-Hungary, Russian Empire, Ottoman Empire; British, French and Italian nation-states with overseas empires; new Balkan kingdoms; neutral Scandinavia, Switzerland, the Netherlands and Spain.",
+      "regions": {
+        "iberia": {
+          "culture": "Restoration Spain & Republican Portugal",
+          "color": "#5a1a1a",
+          "mode": "continuity",
+          "ancestry": {
+            "eef": 44,
+            "steppe": 26,
+            "whg": 17,
+            "other": 13
+          },
+          "substrate": "Bourbon and Braganza monarchies",
+          "incoming": "Liberal parliaments, labour movements, the 1910 Portuguese Republic",
+          "fused": "Neutral Iberian states on Europe’s edge",
+          "languageFamily": "Romance (+ Basque)",
+          "languages": "Spanish; Catalan; Galician; Portuguese; Basque",
+          "linguisticNote": "Catalan and Basque revival movements (Renaixença; Sabino Arana).",
+          "linguisticConfidence": "attested",
+          "ancestryNote": "Continuity; heavy emigration to Latin America."
+        },
+        "britain": {
+          "culture": "United Kingdom of Great Britain and Ireland",
+          "color": "#1a2a3a",
+          "mode": "continuity",
+          "ancestry": {
+            "steppe": 42,
+            "eef": 36,
+            "whg": 16,
+            "other": 6
+          },
+          "substrate": "Victorian imperial Britain",
+          "incoming": "Democratic and labour politics; Irish Home Rule crisis",
+          "fused": "Imperial liberal state",
+          "languageFamily": "Germanic + Celtic",
+          "languages": "English; Welsh; Scottish Gaelic; Irish; Scots",
+          "linguisticNote": "The Gaelic League (1893) campaigns to revive Irish.",
+          "linguisticConfidence": "attested",
+          "ancestryNote": "Continuity with industrial urbanisation and Irish emigration."
+        },
+        "france": {
+          "culture": "Third Republic France",
+          "color": "#1a1a28",
+          "mode": "continuity",
+          "ancestry": {
+            "eef": 38,
+            "steppe": 38,
+            "whg": 16,
+            "other": 8
+          },
+          "substrate": "Bourbon, revolutionary and Napoleonic France",
+          "incoming": "Republican secular state (1905 separation of church and state)",
+          "fused": "Republican nation-state with colonial empire",
+          "languageFamily": "Romance (+ Breton, Basque, Occitan)",
+          "languages": "French; Occitan; Breton; Basque; Corsican; Flemish",
+          "linguisticNote": "Free compulsory schools (1880s) spread standard French; Alsace-Lorraine has been German since 1871.",
+          "linguisticConfidence": "attested",
+          "ancestryNote": "Continuity of the French profile."
+        },
+        "central": {
+          "culture": "German Empire & Austria-Hungary",
+          "color": "#2a2a38",
+          "mode": "continuity",
+          "ancestry": {
+            "steppe": 40,
+            "eef": 37,
+            "whg": 14,
+            "other": 9
+          },
+          "substrate": "Holy Roman Empire, German Confederation",
+          "incoming": "Unified Germany (1871); Dual Monarchy (1867)",
+          "fused": "Central Powers",
+          "languageFamily": "German + Slavic + Hungarian + Romance",
+          "languages": "German; Hungarian; Czech; Polish; Slovak; Slovene; Croatian; Ukrainian; Romanian; Italian; Yiddish",
+          "linguisticNote": "Language laws are political battlegrounds (the Badeni ordinances of 1897; Magyarisation in Hungary).",
+          "linguisticConfidence": "attested",
+          "ancestryNote": "Continuity; rapid urbanisation and Jewish migration westward."
+        },
+        "scandinavia": {
+          "culture": "Neutral Nordic monarchies & Grand Duchy of Finland",
+          "color": "#1a3a4a",
+          "mode": "continuity",
+          "ancestry": {
+            "steppe": 44,
+            "eef": 28,
+            "whg": 22,
+            "other": 6
+          },
+          "substrate": "Danish and Swedish composite monarchies",
+          "incoming": "Norwegian independence (1905); parliamentary democracy",
+          "fused": "Nordic nation-states",
+          "languageFamily": "North Germanic + Finnic + Sámi",
+          "languages": "Danish; Swedish; Norwegian (Riksmål and Landsmål); Finnish; Sámi; Icelandic",
+          "linguisticNote": "Finnish wins parity with Swedish (1863 language decree onwards).",
+          "linguisticConfidence": "attested",
+          "ancestryNote": "Continuity; emigration to North America."
+        },
+        "italy": {
+          "culture": "Kingdom of Italy",
+          "color": "#4a1a28",
+          "mode": "continuity",
+          "ancestry": {
+            "eef": 40,
+            "steppe": 25,
+            "whg": 12,
+            "other": 23
+          },
+          "substrate": "Italian states",
+          "incoming": "Risorgimento unification (1861–70)",
+          "fused": "Liberal Italian nation-state",
+          "languageFamily": "Romance",
+          "languages": "Italian; Neapolitan; Sicilian; Venetian; Lombard; Sardinian; Friulian",
+          "linguisticNote": "Most Italians still speak dialect at home.",
+          "linguisticConfidence": "attested",
+          "ancestryNote": "Continuity; mass emigration to the Americas."
+        },
+        "balkans": {
+          "culture": "Balkan nation-states after the Balkan Wars",
+          "color": "#1a3a30",
+          "mode": "continuity",
+          "ancestry": {
+            "eef": 36,
+            "steppe": 22,
+            "whg": 10,
+            "other": 32
+          },
+          "substrate": "Ottoman Rumelia",
+          "incoming": "National kingdoms: Greece, Serbia, Romania, Bulgaria, Montenegro, Albania",
+          "fused": "Rival Balkan nations",
+          "languageFamily": "Slavic + Greek + Romance + Albanian + Turkic",
+          "languages": "Serbo-Croatian; Bulgarian; Greek; Romanian; Albanian; Turkish; Ladino",
+          "linguisticNote": "Language and church define nations and contest Macedonia.",
+          "linguisticConfidence": "attested",
+          "ancestryNote": "Continuity with population exchanges and refugee flows after 1912–13."
+        },
+        "eastern": {
+          "culture": "Russian Empire & Ottoman Anatolia",
+          "color": "#2a2820",
+          "mode": "continuity",
+          "ancestry": {
+            "steppe": 34,
+            "eef": 30,
+            "whg": 14,
+            "other": 22
+          },
+          "substrate": "Romanov Russia, the partitioned Commonwealth",
+          "incoming": "Industrialisation, revolution of 1905, national movements",
+          "fused": "Autocracy with a Duma",
+          "languageFamily": "Slavic + Baltic + Finnic + Turkic",
+          "languages": "Russian; Ukrainian; Belarusian; Polish; Lithuanian; Latvian; Estonian; Yiddish; Turkish; Armenian",
+          "linguisticNote": "The 1905 revolution relaxes bans on Ukrainian and Lithuanian print.",
+          "linguisticConfidence": "attested",
+          "ancestryNote": "Continuity; Jewish emigration from the Pale of Settlement."
+        }
+      },
+      "linguistics": "National standard languages are taught in mass schools; in the empires, language is politics—German and Magyar against Czech, Slovak and Romanian; Russification in Finland, Poland and Ukraine; Ottoman Turkish versus Arabic, Albanian and Armenian.",
+      "mapLayers": [
+        {
+          "id": "finland-1914",
+          "label": "Grand Duchy of Finland",
+          "color": "#48667d",
+          "countries": [
+            "FIN"
+          ],
+          "role": "fringe",
+          "opacity": 0.75,
+          "note": "Autonomous grand duchy of the Russian Empire.",
+          "art": "National Romanticism: Gallen-Kallela, Saarinen.",
+          "ideas": "Constitutional autonomy versus Russification.",
+          "philosophy": "Snellman’s legacy.",
+          "science": "Helsinki University; Finnish engineering and forestry science."
+        },
+        {
+          "id": "uk-1914",
+          "label": "United Kingdom",
+          "color": "#5c242e",
+          "countries": [
+            "GBR",
+            "IRL",
+            "IMN"
+          ],
+          "role": "dominant",
+          "opacity": 0.8,
+          "note": "United Kingdom of Great Britain and Ireland, with a world empire.",
+          "art": "Edwardian architecture; the Bloomsbury group.",
+          "ideas": "Liberal reform, Home Rule, free trade and naval supremacy.",
+          "philosophy": "Russell, Moore, Whitehead.",
+          "science": "Rutherford’s nuclear atom (1911); Dreadnought battleships."
+        },
+        {
+          "id": "france-1914",
+          "label": "French Third Republic",
+          "color": "#2a376c",
+          "countries": [
+            "FRA",
+            "MCO"
+          ],
+          "role": "dominant",
+          "opacity": 0.8,
+          "note": "Republic since 1870; Alsace-Lorraine German since 1871.",
+          "art": "Cubism, Fauvism, Art Nouveau Paris.",
+          "ideas": "Secular republicanism and revanche.",
+          "philosophy": "Bergson; Durkheim.",
+          "science": "Curie and radioactivity; Blériot’s Channel flight (1909)."
+        },
+        {
+          "id": "spain-1914",
+          "label": "Kingdom of Spain",
+          "color": "#692a2d",
+          "countries": [
+            "ESP",
+            "AND"
+          ],
+          "role": "dominant",
+          "opacity": 0.75,
+          "note": "Restoration monarchy of Alfonso XIII; neutral.",
+          "art": "Gaudí’s Barcelona.",
+          "ideas": "Turno politics; Catalan regionalism; anarchism.",
+          "philosophy": "Unamuno; Ortega y Gasset.",
+          "science": "Ramón y Cajal’s neuron doctrine."
+        },
+        {
+          "id": "portugal-1914",
+          "label": "Portuguese Republic",
+          "color": "#5c4827",
+          "countries": [
+            "PRT"
+          ],
+          "role": "dominant",
+          "opacity": 0.8,
+          "note": "Republic since 1910.",
+          "art": "Lisbon modernism (Orpheu, 1915).",
+          "ideas": "Anticlerical republicanism.",
+          "philosophy": "Pessoa’s circle.",
+          "science": "Lisbon’s medical school; colonial survey missions in Angola and Mozambique."
+        },
+        {
+          "id": "low-countries-1914",
+          "label": "Netherlands, Belgium & Luxembourg",
+          "color": "#915c27",
+          "countries": [
+            "NLD",
+            "BEL",
+            "LUX"
+          ],
+          "role": "dominant",
+          "opacity": 0.8,
+          "note": "Neutral states; Belgium invaded 4 August 1914; Luxembourg occupied 2 August.",
+          "art": "Horta’s Art Nouveau; Mondrian.",
+          "ideas": "Neutrality; colonial empires.",
+          "philosophy": "Peace Palace international law.",
+          "science": "Lorentz; Kamerlingh Onnes (superconductivity, 1911)."
+        },
+        {
+          "id": "german-empire",
+          "label": "German Empire",
+          "color": "#2d2d31",
+          "countries": [
+            "DEU"
+          ],
+          "role": "dominant",
+          "opacity": 0.85,
+          "note": "Wilhelm II’s federal empire, including Alsace-Lorraine; its Polish provinces are shown as a separate layer.",
+          "art": "Expressionism: Die Brücke and Der Blaue Reiter.",
+          "ideas": "Weltpolitik and naval rivalry; mass socialist party.",
+          "philosophy": "Weber, Husserl, Nietzsche’s legacy.",
+          "science": "Planck, Einstein, the chemical industry."
+        },
+        {
+          "id": "austria-hungary",
+          "label": "Austria-Hungary",
+          "color": "#82702d",
+          "countries": [
+            "AUT",
+            "HUN",
+            "CZE",
+            "SVK",
+            "SVN",
+            "HRV",
+            "BIH"
+          ],
+          "role": "dominant",
+          "opacity": 0.8,
+          "note": "Dual Monarchy of Franz Joseph, including Galicia, Bukovina and Transylvania.",
+          "art": "Vienna Secession; Klimt, Schiele.",
+          "ideas": "Dualism and the nationalities question.",
+          "philosophy": "Freud, Wittgenstein, the Vienna circle’s forerunners.",
+          "science": "Mach and Boltzmann."
+        },
+        {
+          "id": "swiss-1914",
+          "label": "Swiss Confederation",
+          "color": "#7d2e31",
+          "countries": [
+            "CHE",
+            "LIE"
+          ],
+          "role": "dominant",
+          "opacity": 0.85,
+          "note": "Federal state since 1848; neutral.",
+          "art": "Hodler.",
+          "ideas": "Direct democracy and armed neutrality.",
+          "philosophy": "Saussure; Jung.",
+          "science": "Einstein’s Bern patent-office years (1905)."
+        },
+        {
+          "id": "italy-1914",
+          "label": "Kingdom of Italy",
+          "color": "#345c41",
+          "countries": [
+            "ITA",
+            "SMR",
+            "VAT",
+            "MLT"
+          ],
+          "role": "dominant",
+          "opacity": 0.8,
+          "note": "Kingdom; neutral in 1914; Malta British.",
+          "art": "Futurism.",
+          "ideas": "Liberal monarchy; irredentism.",
+          "philosophy": "Croce; Gentile.",
+          "science": "Marconi’s radio."
+        },
+        {
+          "id": "russia-1914",
+          "label": "Russian Empire",
+          "color": "#3e522d",
+          "countries": [
+            "RUS",
+            "UKR",
+            "BLR",
+            "LTU",
+            "LVA",
+            "EST",
+            "POL",
+            "MDA",
+            "FIN"
+          ],
+          "role": "dominant",
+          "opacity": 0.8,
+          "note": "Nicholas II’s empire including Congress Poland, the Baltic provinces and Finland.",
+          "art": "Silver Age; Ballets Russes; Kandinsky, Malevich.",
+          "ideas": "Autocracy, the Duma and revolutionary parties.",
+          "philosophy": "Solovyov; Berdyaev.",
+          "science": "Pavlov; Mendeleev’s legacy."
+        },
+        {
+          "id": "scandinavia-1914",
+          "label": "Sweden, Norway & Denmark",
+          "color": "#2a5269",
+          "countries": [
+            "SWE",
+            "NOR",
+            "DNK",
+            "ISL",
+            "FRO"
+          ],
+          "role": "dominant",
+          "opacity": 0.8,
+          "note": "Three neutral kingdoms (Norway independent since 1905).",
+          "art": "Munch; Nordic modern design.",
+          "ideas": "Parliamentary democracy and neutrality.",
+          "philosophy": "Kierkegaard’s legacy; Strindberg.",
+          "science": "Bohr’s atomic model (1913)."
+        },
+        {
+          "id": "serbia-1914",
+          "label": "Kingdom of Serbia",
+          "color": "#483469",
+          "countries": [
+            "SRB",
+            "KOS",
+            "MKD"
+          ],
+          "role": "dominant",
+          "opacity": 0.8,
+          "note": "Enlarged by the Balkan Wars to include Kosovo and Vardar Macedonia.",
+          "art": "Serbo-Byzantine revival.",
+          "ideas": "Yugoslav and Greater Serbian nationalism.",
+          "philosophy": "Liberal-radical constitutionalism after 1903.",
+          "science": "Belgrade University (1905)."
+        },
+        {
+          "id": "montenegro-1914",
+          "label": "Kingdom of Montenegro",
+          "color": "#523e73",
+          "countries": [
+            "MNE"
+          ],
+          "role": "fringe",
+          "opacity": 0.75,
+          "note": "Kingdom since 1910.",
+          "art": "Cetinje.",
+          "ideas": "Petrović-Njegoš dynasty.",
+          "philosophy": "Njegoš.",
+          "science": "Cetinje gymnasium and press."
+        },
+        {
+          "id": "greece-1914",
+          "label": "Kingdom of Greece",
+          "color": "#2a527d",
+          "countries": [
+            "GRC"
+          ],
+          "role": "dominant",
+          "opacity": 0.85,
+          "note": "Enlarged by Crete, Epirus and southern Macedonia (1913).",
+          "art": "Neoclassical Athens.",
+          "ideas": "Megali Idea.",
+          "philosophy": "The demotic-versus-katharevousa language question.",
+          "science": "University of Athens."
+        },
+        {
+          "id": "bulgaria-1914",
+          "label": "Tsardom of Bulgaria",
+          "color": "#34664b",
+          "countries": [
+            "BGR"
+          ],
+          "role": "dominant",
+          "opacity": 0.85,
+          "note": "Independent since 1908; defeated in 1913.",
+          "art": "Alexander Nevsky Cathedral (1912).",
+          "ideas": "Bulgarian claim to Macedonia.",
+          "philosophy": "Agrarian and liberal politics.",
+          "science": "Sofia University (1888)."
+        },
+        {
+          "id": "romania-1914",
+          "label": "Kingdom of Romania",
+          "color": "#665c2d",
+          "countries": [
+            "ROU"
+          ],
+          "role": "dominant",
+          "opacity": 0.8,
+          "note": "Old Kingdom (Wallachia, Moldavia, Dobruja); Transylvania and Bukovina Austro-Hungarian.",
+          "art": "Romanian Athenaeum; Brâncuși in Paris.",
+          "ideas": "Latin-origin national idea.",
+          "philosophy": "Junimea circle (Titu Maiorescu).",
+          "science": "Victor Babeș’s bacteriology."
+        },
+        {
+          "id": "albania-1914",
+          "label": "Principality of Albania",
+          "color": "#7a3437",
+          "countries": [
+            "ALB"
+          ],
+          "role": "fringe",
+          "opacity": 0.75,
+          "note": "Independent from 1912; Prince Wilhelm of Wied, March–September 1914.",
+          "art": "Marubi photography studio, Shkodër.",
+          "ideas": "Albanian national awakening (Rilindja).",
+          "philosophy": "Sami Frashëri’s programme for an Albanian state.",
+          "science": "First Albanian schools; the 1908 alphabet."
+        },
+        {
+          "id": "ottoman-1914",
+          "label": "Ottoman Empire",
+          "color": "#2a5c5f",
+          "countries": [
+            "TUR",
+            "CYP"
+          ],
+          "role": "dominant",
+          "opacity": 0.8,
+          "note": "Reduced in Europe to Eastern Thrace and Istanbul; Cyprus under British administration.",
+          "art": "Ottoman revival architecture.",
+          "ideas": "Unionist Turkism and Ottomanism.",
+          "philosophy": "Ziya Gökalp.",
+          "science": "German-built railways."
+        },
+        {
+          "id": "ah-provinces-1914",
+          "label": "Austro-Hungarian Galicia, Bukovina & Transylvania",
+          "color": "#8c7a41",
+          "countries": [
+            "POL",
+            "UKR",
+            "ROU"
+          ],
+          "role": "fringe",
+          "opacity": 0.65,
+          "note": "Habsburg provinces now in Poland, Ukraine and Romania.",
+          "art": "Kraków and Lviv secession style.",
+          "ideas": "Galician autonomy; Romanian claims on Transylvania.",
+          "philosophy": "Polish and Ukrainian national schools in Galicia.",
+          "science": "Jagiellonian and Lviv universities."
+        },
+        {
+          "id": "prussian-poland-1914",
+          "label": "Prussian Poland",
+          "color": "#3e3e41",
+          "countries": [
+            "POL"
+          ],
+          "role": "fringe",
+          "opacity": 0.65,
+          "note": "Posen and West Prussia, part of the German Empire.",
+          "art": "See the Prussian Poland entry in the matching kingdom-era tab.",
+          "ideas": "Germanisation policy.",
+          "philosophy": "See the Prussian Poland entry in the matching kingdom-era tab.",
+          "science": "See the Prussian Poland entry in the matching kingdom-era tab."
+        }
+      ],
+      "tickYear": "1914 AD",
+      "polities": {
+        "GBR": {
+          "name": "United Kingdom of Great Britain and Ireland",
+          "summary": "The world’s largest empire and its leading naval power, a parliamentary monarchy whose Liberal government brings it into the war on 4 August 1914 over the invasion of Belgium.",
+          "conflicts": "Anglo-German naval race; Irish Home Rule crisis; First World War from 4 August 1914 (Mons, the Marne, First Ypres).",
+          "leaders": "George V (r. 1910–36); H. H. Asquith (Prime Minister 1908–16); Sir Edward Grey (Foreign Secretary); Winston Churchill (First Lord of the Admiralty).",
+          "religion": "Established Church of England; Nonconformists strong in Wales and the north; Catholic Irish.",
+          "culture": "Edwardian society; suffragettes; music hall and football.",
+          "precededBy": {
+            "periodId": "enlightenment",
+            "iso": "GBR",
+            "name": "Kingdom of Great Britain"
+          },
+          "succeededBy": {
+            "periodId": "modern",
+            "iso": "GBR",
+            "name": "United Kingdom"
+          }
+        },
+        "IRL": {
+          "name": "Ireland (United Kingdom)",
+          "summary": "Part of the United Kingdom since 1801, on the edge of Home Rule: the Act passes in September 1914 but is suspended for the war.",
+          "conflicts": "Ulster Covenant (1912) and Ulster Volunteers; Irish Volunteers (1913); Dublin Lockout (1913); Howth gun-running (July 1914).",
+          "leaders": "John Redmond (Irish Parliamentary Party); Edward Carson (Ulster Unionists); James Larkin; Patrick Pearse.",
+          "religion": "Catholic majority; Protestant Ulster.",
+          "culture": "Gaelic revival: the Gaelic League, the GAA, the Abbey Theatre.",
+          "precededBy": {
+            "periodId": "enlightenment",
+            "iso": "IRL",
+            "name": "Kingdom of Ireland"
+          },
+          "succeededBy": {
+            "periodId": "modern",
+            "iso": "IRL",
+            "name": "Republic of Ireland"
+          }
+        },
+        "FRA": {
+          "name": "French Third Republic",
+          "summary": "A secular republic allied to Russia since 1894 and drawn to Britain by the 1904 Entente; Germany declares war on it on 3 August 1914.",
+          "conflicts": "Moroccan crises (1905, 1911); Battle of the Frontiers and the Marne (September 1914).",
+          "leaders": "President Raymond Poincaré (1913–20); Prime Minister René Viviani; General Joseph Joffre; Jean Jaurès (assassinated 31 July 1914).",
+          "religion": "Catholic majority; church and state separated by law in 1905.",
+          "culture": "Belle Époque Paris: cubism, the Ballets Russes, cinema.",
+          "precededBy": {
+            "periodId": "enlightenment",
+            "iso": "FRA",
+            "name": "Kingdom of France"
+          },
+          "succeededBy": {
+            "periodId": "modern",
+            "iso": "FRA",
+            "name": "French Republic"
+          }
+        },
+        "ESP": {
+          "name": "Kingdom of Spain",
+          "summary": "A constitutional monarchy, stripped of Cuba and the Philippines in 1898, fighting in Morocco and neutral in 1914.",
+          "conflicts": "Rif war in Morocco; Tragic Week in Barcelona (1909).",
+          "leaders": "Alfonso XIII (r. 1886–1931); Eduardo Dato (Prime Minister 1913–15).",
+          "religion": "Catholic; anticlerical and anarchist currents.",
+          "culture": "Generation of ’98; Catalan Modernisme.",
+          "precededBy": {
+            "periodId": "enlightenment",
+            "iso": "ESP",
+            "name": "Bourbon Spain"
+          },
+          "succeededBy": {
+            "periodId": "modern",
+            "iso": "ESP",
+            "name": "Kingdom of Spain"
+          }
+        },
+        "PRT": {
+          "name": "Portuguese Republic",
+          "summary": "A republic since the revolution of 5 October 1910, unstable and anticlerical, with an African empire; it enters the war in 1916.",
+          "conflicts": "Monarchist incursions (1911–12); clashes with Germany in Angola and Mozambique (1914).",
+          "leaders": "President Manuel de Arriaga (1911–15); Afonso Costa.",
+          "religion": "Catholic; church and state separated in 1911.",
+          "culture": "Republican Lisbon; the beginnings of Portuguese modernism.",
+          "precededBy": {
+            "periodId": "enlightenment",
+            "iso": "PRT",
+            "name": "Kingdom of Portugal"
+          },
+          "succeededBy": {
+            "periodId": "modern",
+            "iso": "PRT",
+            "name": "Portuguese Republic"
+          }
+        },
+        "NLD": {
+          "name": "Kingdom of the Netherlands",
+          "summary": "A neutral constitutional monarchy with a large colonial empire in the East Indies; it stays out of the war.",
+          "conflicts": "Neutral; mobilises in 1914; Belgian refugees flood in.",
+          "leaders": "Queen Wilhelmina (r. 1890–1948); Prime Minister Cort van der Linden.",
+          "religion": "Protestant and Catholic ‘pillars’ organising social life.",
+          "culture": "Amsterdam School architecture; De Stijl forming.",
+          "precededBy": {
+            "periodId": "enlightenment",
+            "iso": "NLD",
+            "name": "Dutch Republic"
+          }
+        },
+        "BEL": {
+          "name": "Kingdom of Belgium",
+          "summary": "A neutral industrial kingdom with the Congo as a colony since 1908; Germany invades it on 4 August 1914.",
+          "conflicts": "Siege of Liège; burning of Leuven (August 1914); Yser front.",
+          "leaders": "Albert I (r. 1909–34); Prime Minister Charles de Broqueville.",
+          "religion": "Catholic; liberal and socialist secular movements.",
+          "culture": "Art Nouveau Brussels; Flemish movement.",
+          "precededBy": {
+            "periodId": "enlightenment",
+            "iso": "BEL",
+            "name": "Austrian Netherlands"
+          }
+        },
+        "DEU": {
+          "name": "German Empire",
+          "summary": "Europe’s leading industrial and scientific power, a federal empire dominated by Prussia, with Weltpolitik ambitions and the largest socialist party in the world.",
+          "conflicts": "Naval race with Britain; the Schlieffen plan through Belgium; Tannenberg and the Marne (August–September 1914).",
+          "leaders": "Wilhelm II (r. 1888–1918); Chancellor Theobald von Bethmann Hollweg; Helmuth von Moltke the Younger; Alfred von Tirpitz.",
+          "religion": "Protestant majority; Catholic Centre Party; Jewish emancipation.",
+          "culture": "Expressionism, Jugendstil, mass newspapers.",
+          "aliases": [
+            "German Empire"
+          ],
+          "precededBy": {
+            "periodId": "enlightenment",
+            "iso": "DEU",
+            "name": "Kingdom of Prussia and the German states"
+          },
+          "succeededBy": {
+            "periodId": "modern",
+            "iso": "DEU",
+            "name": "Germany"
+          }
+        },
+        "AUT": {
+          "name": "Austria-Hungary (Austrian half)",
+          "summary": "The Dual Monarchy of Franz Joseph, holding a dozen nationalities together; its ultimatum to Serbia after Sarajevo starts the war.",
+          "conflicts": "Bosnian annexation crisis (1908); July Crisis; war on Serbia (28 July 1914); Galician front against Russia.",
+          "leaders": "Franz Joseph (r. 1848–1916); Archduke Franz Ferdinand (killed 28 June 1914); Count Berchtold; Conrad von Hötzendorf.",
+          "religion": "Catholic dynasty; Protestant, Orthodox, Greek Catholic, Jewish and Muslim subjects.",
+          "culture": "Viennese modernism.",
+          "aliases": [
+            "Austria-Hungary"
+          ],
+          "precededBy": {
+            "periodId": "enlightenment",
+            "iso": "AUT",
+            "name": "Habsburg Monarchy (Austria)"
+          }
+        },
+        "HUN": {
+          "name": "Kingdom of Hungary (Austria-Hungary)",
+          "summary": "The Hungarian half of the Dual Monarchy, self-governing since 1867 and ruled by a Magyar gentry over Slovak, Romanian, Serb and Croatian minorities.",
+          "conflicts": "Nationalities conflicts; suffrage struggle; war from July 1914.",
+          "leaders": "Franz Joseph as King; István Tisza (Prime Minister 1913–17).",
+          "religion": "Catholic, Calvinist, Lutheran, Orthodox, Jewish.",
+          "culture": "Budapest’s millennium boom; Nyugat literary circle.",
+          "precededBy": {
+            "periodId": "enlightenment",
+            "iso": "HUN",
+            "name": "Kingdom of Hungary"
+          }
+        },
+        "CZE": {
+          "name": "Bohemia and Moravia (Austria-Hungary)",
+          "summary": "The industrial heart of the Habsburg monarchy, with a Czech national movement pressing for equality against German-speaking dominance.",
+          "conflicts": "Language disputes; Czech soldiers’ doubtful loyalty in 1914.",
+          "leaders": "Tomáš Garrigue Masaryk (Realist Party deputy); Karel Kramář.",
+          "religion": "Catholic; Hussite memory; Jewish Prague.",
+          "culture": "Prague Art Nouveau and cubist architecture; Sokol.",
+          "precededBy": {
+            "periodId": "enlightenment",
+            "iso": "CZE",
+            "name": "Lands of the Bohemian Crown"
+          }
+        },
+        "BIH": {
+          "name": "Bosnia and Herzegovina (Austria-Hungary)",
+          "summary": "Occupied by Austria-Hungary in 1878 and annexed in 1908; the assassination of Franz Ferdinand in Sarajevo on 28 June 1914 starts the July Crisis.",
+          "conflicts": "Annexation crisis (1908); Young Bosnia’s plots.",
+          "leaders": "Governor Oskar Potiorek; Gavrilo Princip (Young Bosnia).",
+          "religion": "Muslim, Serbian Orthodox and Catholic communities; Sephardic Jews.",
+          "culture": "Ottoman and Habsburg layers in Sarajevo."
+        },
+        "POL": {
+          "name": "Partitioned Poland",
+          "summary": "Divided since 1795 among Russia, Germany and Austria-Hungary; Galicia under Austria enjoys autonomy, while Russian and Prussian Poland face Russification and Germanisation.",
+          "conflicts": "1905 revolution in Russian Poland; Piłsudski’s Legions march from Kraków in August 1914.",
+          "leaders": "Józef Piłsudski; Roman Dmowski.",
+          "religion": "Catholic; large Jewish communities.",
+          "culture": "Young Poland; Kraków as cultural capital.",
+          "precededBy": {
+            "periodId": "enlightenment",
+            "iso": "POL",
+            "name": "Polish–Lithuanian Commonwealth (Crown of Poland)"
+          },
+          "succeededBy": {
+            "periodId": "modern",
+            "iso": "POL",
+            "name": "Republic of Poland"
+          }
+        },
+        "RUS": {
+          "name": "Russian Empire",
+          "summary": "An industrialising autocracy with a weak Duma after 1905, allied to France; its mobilisation in support of Serbia leads Germany to declare war on 1 August 1914.",
+          "conflicts": "Russo-Japanese War (1904–05); 1905 revolution; Tannenberg (August 1914).",
+          "leaders": "Nicholas II (r. 1894–1917); Ivan Goremykin; Sergey Sazonov.",
+          "religion": "Orthodox; Old Believers; Catholic, Lutheran, Jewish, Muslim subjects.",
+          "culture": "Silver Age; Ballets Russes; Moscow Art Theatre.",
+          "aliases": [
+            "Russian Empire"
+          ],
+          "precededBy": {
+            "periodId": "enlightenment",
+            "iso": "RUS",
+            "name": "Russian Empire"
+          },
+          "succeededBy": {
+            "periodId": "modern",
+            "iso": "RUS",
+            "name": "Russian Federation"
+          }
+        },
+        "FIN": {
+          "name": "Grand Duchy of Finland",
+          "summary": "An autonomous grand duchy of the Russian Empire with its own parliament, chosen by universal suffrage, including women, since 1906.",
+          "conflicts": "Russification campaigns.",
+          "leaders": "Nicholas II as grand duke; Governor-General Franz Albert Seyn.",
+          "religion": "Lutheran.",
+          "culture": "National Romanticism.",
+          "precededBy": {
+            "periodId": "enlightenment",
+            "iso": "FIN",
+            "name": "Finland (Swedish realm)"
+          },
+          "succeededBy": {
+            "periodId": "modern",
+            "iso": "FIN",
+            "name": "Republic of Finland"
+          }
+        },
+        "UKR": {
+          "name": "Ukrainian lands (Russia and Austria-Hungary)",
+          "summary": "Divided between the Russian Empire and Austrian Galicia and Bukovina.",
+          "conflicts": "Russian occupation of Galicia (1914).",
+          "leaders": "Mykhailo Hrushevsky; Ivan Franko.",
+          "religion": "Orthodox; Greek Catholic in Galicia; Jewish communities.",
+          "culture": "Ukrainian national revival; Lviv as centre.",
+          "precededBy": {
+            "periodId": "enlightenment",
+            "iso": "UKR",
+            "name": "Cossack Hetmanate and divided Ukraine"
+          },
+          "succeededBy": {
+            "periodId": "modern",
+            "iso": "UKR",
+            "name": "Ukraine"
+          }
+        },
+        "SWE": {
+          "name": "Kingdom of Sweden",
+          "summary": "A neutral constitutional monarchy, industrialising and divided between king and Liberals.",
+          "conflicts": "Defence-spending crisis (1914); neutral throughout 1914–18.",
+          "leaders": "Gustaf V (r. 1907–50); Hjalmar Hammarskjöld (PM from 1914).",
+          "religion": "Lutheran.",
+          "culture": "Industrial towns, folk high schools and a strong labour movement; Strindberg (d. 1912) and Lagerlöf.",
+          "precededBy": {
+            "periodId": "enlightenment",
+            "iso": "SWE",
+            "name": "Kingdom of Sweden"
+          },
+          "succeededBy": {
+            "periodId": "modern",
+            "iso": "SWE",
+            "name": "Kingdom of Sweden"
+          }
+        },
+        "NOR": {
+          "name": "Kingdom of Norway",
+          "summary": "Independent since the peaceful dissolution of the union with Sweden in 1905, a constitutional monarchy under Haakon VII and neutral in 1914.",
+          "conflicts": "Neutral 1914–18, though its merchant fleet suffers heavy losses.",
+          "leaders": "Haakon VII (r. 1905–57); Prime Minister Gunnar Knudsen.",
+          "religion": "Lutheran.",
+          "culture": "Nation-building after 1905; Nynorsk (Landsmål) against Riksmål.",
+          "precededBy": {
+            "periodId": "enlightenment",
+            "iso": "NOR",
+            "name": "Norway (in Denmark–Norway)"
+          },
+          "succeededBy": {
+            "periodId": "modern",
+            "iso": "NOR",
+            "name": "Kingdom of Norway"
+          }
+        },
+        "DNK": {
+          "name": "Kingdom of Denmark",
+          "summary": "A neutral constitutional monarchy of farmers’ cooperatives; North Schleswig has been German since the war of 1864.",
+          "conflicts": "Neutral 1914–18; the lost North Schleswig question.",
+          "leaders": "Christian X (r. 1912–47); Carl Theodor Zahle.",
+          "religion": "Lutheran national church.",
+          "culture": "Cooperative dairies, folk high schools after Grundtvig.",
+          "precededBy": {
+            "periodId": "enlightenment",
+            "iso": "DNK",
+            "name": "Denmark–Norway"
+          },
+          "succeededBy": {
+            "periodId": "modern",
+            "iso": "DNK",
+            "name": "Kingdom of Denmark"
+          }
+        },
+        "CHE": {
+          "name": "Swiss Confederation",
+          "summary": "A federal state since 1848 with four language communities, neutral and mobilising its army on 1 August 1914.",
+          "conflicts": "Armed neutrality; tension between German- and French-speaking Swiss over the war.",
+          "leaders": "Federal Council; General Ulrich Wille (from August 1914).",
+          "religion": "Protestant and Catholic cantons.",
+          "culture": "Multilingual federal culture; exiles and pacifists gather in Zurich and Geneva.",
+          "precededBy": {
+            "periodId": "enlightenment",
+            "iso": "CHE",
+            "name": "Old Swiss Confederacy"
+          }
+        },
+        "ITA": {
+          "name": "Kingdom of Italy",
+          "summary": "A liberal monarchy united in 1861–70, a member of the Triple Alliance with Germany and Austria-Hungary, which declares neutrality on 3 August 1914 and joins the Entente in May 1915.",
+          "conflicts": "Italo-Turkish War (1911–12); Red Week (June 1914).",
+          "leaders": "Victor Emmanuel III (r. 1900–46); Antonio Salandra; Giovanni Giolitti.",
+          "religion": "Catholic; the Roman Question unresolved.",
+          "culture": "Futurism, mass emigration, the industrial north and the agrarian south.",
+          "precededBy": {
+            "periodId": "enlightenment",
+            "iso": "ITA",
+            "name": "Italian states"
+          },
+          "succeededBy": {
+            "periodId": "modern",
+            "iso": "ITA",
+            "name": "Italian Republic"
+          }
+        },
+        "SRB": {
+          "name": "Kingdom of Serbia",
+          "summary": "A kingdom doubled in size by the Balkan Wars, the champion of South Slav unity; it accepts most of Austria-Hungary’s ultimatum but not all, and is invaded.",
+          "conflicts": "Balkan Wars (1912–13); Battle of Cer (August 1914).",
+          "leaders": "Peter I (r. 1903–21); regent Alexander; Nikola Pašić.",
+          "religion": "Serbian Orthodox Church.",
+          "culture": "Orthodox national culture; Belgrade as a magnet for South Slav students.",
+          "precededBy": {
+            "periodId": "enlightenment",
+            "iso": "SRB",
+            "name": "Serbia under Ottoman rule"
+          }
+        },
+        "GRC": {
+          "name": "Kingdom of Greece",
+          "summary": "A constitutional monarchy enlarged by the Balkan Wars with Crete, Epirus, Thessaloniki and much of Macedonia; neutral in 1914 while King and Prime Minister disagree over joining the Entente.",
+          "conflicts": "Balkan Wars (1912–13); the National Schism over entering the war.",
+          "leaders": "Constantine I (r. 1913–17); Eleftherios Venizelos.",
+          "religion": "Greek Orthodox.",
+          "culture": "Athens as a neoclassical capital; Greek communities from Smyrna to Alexandria.",
+          "precededBy": {
+            "periodId": "enlightenment",
+            "iso": "GRC",
+            "name": "Greek lands under Ottoman rule"
+          },
+          "succeededBy": {
+            "periodId": "modern",
+            "iso": "GRC",
+            "name": "Hellenic Republic"
+          }
+        },
+        "BGR": {
+          "name": "Tsardom of Bulgaria",
+          "summary": "An independent tsardom since 1908, victorious in the First Balkan War but defeated by its former allies in the Second (1913); neutral in 1914, it joins the Central Powers in 1915.",
+          "conflicts": "Second Balkan War (1913).",
+          "leaders": "Tsar Ferdinand; Vasil Radoslavov.",
+          "religion": "Bulgarian Orthodox.",
+          "culture": "Sofia as a new capital; national schools and the Bulgarian Exarchate."
+        },
+        "ROU": {
+          "name": "Kingdom of Romania",
+          "summary": "A kingdom secretly allied to the Triple Alliance since 1883 that declares neutrality in August 1914; Transylvania and Bukovina, with Romanian majorities, belong to Austria-Hungary.",
+          "conflicts": "Second Balkan War (1913).",
+          "leaders": "Carol I (d. 10 October 1914); Ferdinand I; Ion I. C. Brătianu.",
+          "religion": "Romanian Orthodox.",
+          "culture": "Francophile Bucharest; a peasant countryside after the great revolt of 1907.",
+          "precededBy": {
+            "periodId": "enlightenment",
+            "iso": "ROU",
+            "name": "Wallachia, Moldavia and Transylvania"
+          }
+        },
+        "ALB": {
+          "name": "Principality of Albania",
+          "summary": "Independent since 28 November 1912 and recognised by the great powers in 1913 as a principality; its German prince, Wilhelm of Wied, rules for six months in 1914.",
+          "conflicts": "Peasant revolt against Wied (1914); Greek and Serbian claims.",
+          "leaders": "Ismail Qemali; Prince Wilhelm of Wied.",
+          "religion": "Muslim, Orthodox, Catholic.",
+          "culture": "Albanian national awakening (Rilindja) across Muslim, Orthodox and Catholic communities."
+        },
+        "TUR": {
+          "name": "Ottoman Empire",
+          "summary": "The empire, ruled since the 1913 coup by the Committee of Union and Progress, has lost almost all of Europe in the Balkan Wars except Eastern Thrace; it signs a secret alliance with Germany on 2 August 1914 and enters the war that autumn.",
+          "conflicts": "Italo-Turkish War; Balkan Wars; Black Sea raid (29 October 1914).",
+          "leaders": "Mehmed V (r. 1909–18); Enver, Talat and Djemal Pasha.",
+          "religion": "Sunni Islam; Christian and Jewish minorities.",
+          "culture": "Istanbul newspapers and theatres; Ottoman Turkish moving towards vernacular.",
+          "precededBy": {
+            "periodId": "enlightenment",
+            "iso": "TUR",
+            "name": "Ottoman Empire"
+          },
+          "succeededBy": {
+            "periodId": "modern",
+            "iso": "TUR",
+            "name": "Republic of Turkey"
+          }
+        },
+        "MNE": {
+          "name": "Kingdom of Montenegro",
+          "summary": "A small mountain kingdom since 1910, enlarged in the Balkan Wars; it declares war on Austria-Hungary on 7 August 1914.",
+          "conflicts": "Siege of Scutari (1913).",
+          "leaders": "Nicholas I (prince from 1860, king 1910–18).",
+          "religion": "Serbian Orthodox.",
+          "culture": "Cetinje, the capital of legations and court life."
+        }
+      },
+      "periodName": "Eve of War"
     },
     {
       "id": "modern",
@@ -16001,9 +17953,9 @@
           "religion": "Lutheran majority church with strong secularization: baptism and church tax persist while belief privatizes; new minorities grow.",
           "culture": "Sisu myth; design; bilingual Finnish/Swedish legacy.",
           "precededBy": {
-            "periodId": "high-medieval",
+            "periodId": "eve-of-war",
             "iso": "FIN",
-            "name": "Swedish realm in Finland"
+            "name": "Grand Duchy of Finland"
           }
         },
         "SWE": {
@@ -16014,9 +17966,9 @@
           "religion": "Lutheran heritage under deep secularization; church rites as culture more than compulsion, plus rising religious diversity.",
           "culture": "Welfare model; design; non-alignment tradition under pressure.",
           "precededBy": {
-            "periodId": "early-modern",
+            "periodId": "eve-of-war",
             "iso": "SWE",
-            "name": "Swedish Empire"
+            "name": "Kingdom of Sweden"
           }
         },
         "DNK": {
@@ -16027,9 +17979,9 @@
           "religion": "Lutheran folk church under secularization: life-cycle rituals (baptism, confirmation, funeral) outlast weekly practice for many.",
           "culture": "Flexicurity welfare; design; agricultural modernity.",
           "precededBy": {
-            "periodId": "early-modern",
+            "periodId": "eve-of-war",
             "iso": "DNK",
-            "name": "Denmark–Norway"
+            "name": "Kingdom of Denmark"
           }
         },
         "NOR": {
@@ -16040,9 +17992,9 @@
           "religion": "Lutheran heritage with rapid secularization; state–church untying and plural immigration reshape the ritual field.",
           "culture": "Oil fund ethics; outdoor life; oil-to-climate tension.",
           "precededBy": {
-            "periodId": "early-modern",
+            "periodId": "eve-of-war",
             "iso": "NOR",
-            "name": "Norway under Denmark"
+            "name": "Kingdom of Norway"
           }
         },
         "GBR": {
@@ -16053,9 +18005,9 @@
           "religion": "Plural: Anglican establishment legacy, free churches, Catholic and non-Christian communities, widespread secularization.",
           "culture": "Industrial then post-industrial society; global English; welfare state and its critics.",
           "precededBy": {
-            "periodId": "early-modern",
+            "periodId": "eve-of-war",
             "iso": "GBR",
-            "name": "England → Britain"
+            "name": "United Kingdom of Great Britain and Ireland"
           }
         },
         "IRL": {
@@ -16066,9 +18018,9 @@
           "religion": "Catholic society secularizing rapidly after scandals; pluralism rising.",
           "culture": "Literary revival legacy; tech multinationals; diaspora.",
           "precededBy": {
-            "periodId": "early-modern",
+            "periodId": "eve-of-war",
             "iso": "IRL",
-            "name": "Tudor Ireland"
+            "name": "Ireland (United Kingdom)"
           }
         },
         "FRA": {
@@ -16079,9 +18031,9 @@
           "religion": "Laïcité as state doctrine over Catholic heritage; growing religious pluralism.",
           "culture": "Republican school; universalist claims; global art/philosophy prestige.",
           "precededBy": {
-            "periodId": "early-modern",
+            "periodId": "eve-of-war",
             "iso": "FRA",
-            "name": "Kingdom of France"
+            "name": "French Third Republic"
           }
         },
         "DEU": {
@@ -16092,9 +18044,9 @@
           "religion": "Catholic/Protestant inheritances; large secular and immigrant communities.",
           "culture": "Social market economy; Vergangenheitsbewältigung; European integration engine.",
           "precededBy": {
-            "periodId": "early-modern",
+            "periodId": "eve-of-war",
             "iso": "DEU",
-            "name": "German states / Thirty Years’ War arena"
+            "name": "German Empire"
           }
         },
         "ESP": {
@@ -16105,9 +18057,9 @@
           "religion": "Catholic culture under rapid secularization after Franco-era confessionalism; regional identities and new pluralism reframe practice.",
           "culture": "Transition culture; autonomous communities; EU membership remaking economy.",
           "precededBy": {
-            "periodId": "early-modern",
+            "periodId": "eve-of-war",
             "iso": "ESP",
-            "name": "Spanish Habsburg monarchy"
+            "name": "Kingdom of Spain"
           }
         },
         "PRT": {
@@ -16118,9 +18070,9 @@
           "religion": "Catholic culture under secularization: feast days and parish memory endure beside declining weekly Mass.",
           "culture": "Fado; Atlantic orientation; Lusophone world ties.",
           "precededBy": {
-            "periodId": "early-modern",
+            "periodId": "eve-of-war",
             "iso": "PRT",
-            "name": "Portuguese Empire"
+            "name": "Portuguese Republic"
           }
         },
         "ITA": {
@@ -16131,9 +18083,9 @@
           "religion": "Catholic society beside the Vatican: parish and papal ritual still public, while secularization and immigration diversify belief.",
           "culture": "Design, film, regional cuisines as soft power; industrial north / agrarian south historic split.",
           "precededBy": {
-            "periodId": "early-modern",
+            "periodId": "eve-of-war",
             "iso": "ITA",
-            "name": "Spanish/Austrian Italy & states"
+            "name": "Kingdom of Italy"
           }
         },
         "POL": {
@@ -16144,9 +18096,9 @@
           "religion": "Catholicism as resistance identity under communism, contested in pluralism since.",
           "culture": "Romantic independence tradition; EU mobility; war memory (WW2).",
           "precededBy": {
-            "periodId": "early-modern",
+            "periodId": "eve-of-war",
             "iso": "POL",
-            "name": "Poland–Lithuania (PLC)"
+            "name": "Partitioned Poland"
           }
         },
         "RUS": {
@@ -16157,9 +18109,9 @@
           "religion": "Orthodox revival after Soviet atheism: rebuilt churches, public liturgy, and state-adjacent piety alongside Muslim, Buddhist, and secular populations.",
           "culture": "High literary canon; petro-state geopolitics; Soviet memory wars.",
           "precededBy": {
-            "periodId": "early-modern",
+            "periodId": "eve-of-war",
             "iso": "RUS",
-            "name": "Tsardom of Russia"
+            "name": "Russian Empire"
           }
         },
         "UKR": {
@@ -16170,9 +18122,9 @@
           "religion": "Orthodox jurisdictions in flux plus Greek Catholic west: liturgy as identity under war and politics; pluralism and secular strata coexist.",
           "culture": "Language politics; Cossack memory; European aspiration.",
           "precededBy": {
-            "periodId": "reformation",
+            "periodId": "eve-of-war",
             "iso": "UKR",
-            "name": "Ukrainian lands: Commonwealth borderland"
+            "name": "Ukrainian lands (Russia and Austria-Hungary)"
           }
         },
         "TUR": {
@@ -16183,7 +18135,7 @@
           "religion": "Secular republic over a Muslim-majority society: contested laicism, mosque life, and political Islam debates redefine public ritual.",
           "culture": "Between Europe and Middle East; Ottoman nostalgia vs republican modernity.",
           "precededBy": {
-            "periodId": "early-modern",
+            "periodId": "eve-of-war",
             "iso": "TUR",
             "name": "Ottoman Empire"
           }
@@ -16196,9 +18148,9 @@
           "religion": "Greek Orthodoxy as cultural establishment: liturgy and feast calendar still mark public time while youth secularization rises.",
           "culture": "Classical heritage tourism; shipping; crisis cinema and politics.",
           "precededBy": {
-            "periodId": "early-modern",
+            "periodId": "eve-of-war",
             "iso": "GRC",
-            "name": "Ottoman Greece"
+            "name": "Kingdom of Greece"
           }
         }
       },
