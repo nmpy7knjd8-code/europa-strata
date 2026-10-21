@@ -2483,24 +2483,29 @@ body.page-ancestry {
   font-size: 0.8rem;
 }
 
-.app:not([data-atlas-mode="deep-time"]) .slider-year {
+/* time bar: shared by every tab */
+.app .slider-year {
   font-size: 1.05rem;
 }
 
-.app:not([data-atlas-mode="deep-time"]) .slider-label {
+/* time bar: shared by every tab */
+.app .slider-label {
   font-size: 0.95rem;
 }
 
-.app:not([data-atlas-mode="deep-time"]) .tick-caption {
+/* time bar: shared by every tab */
+.app .tick-caption {
   font-size: 0.9rem;
   min-height: 1.4em;
 }
 
-.app:not([data-atlas-mode="deep-time"]) .tick-label .tick-num {
+/* time bar: shared by every tab */
+.app .tick-label .tick-num {
   font-size: 0.8rem;
 }
 
-.app:not([data-atlas-mode="deep-time"]) .tick-label .tick-era {
+/* time bar: shared by every tab */
+.app .tick-label .tick-era {
   font-size: 0.68rem;
 }
 
@@ -2560,7 +2565,8 @@ body.page-ancestry {
   line-height: 1.35;
 }
 
-.app:not([data-atlas-mode="deep-time"]) .nav-btn {
+/* time bar: shared by every tab */
+.app .nav-btn {
   width: 2.5rem;
   height: 2.5rem;
   min-width: 2.5rem;
@@ -2568,7 +2574,8 @@ body.page-ancestry {
   font-size: 1.35rem;
 }
 
-.app:not([data-atlas-mode="deep-time"]) .slider-head {
+/* time bar: shared by every tab */
+.app .slider-head {
   min-height: 2.6rem;
   margin-bottom: 0.45rem;
 }
@@ -3253,4 +3260,40 @@ a:focus-visible,
   color: inherit;
   text-decoration: underline;
   text-underline-offset: 2px;
+}
+
+/* ---- one time bar for every tab ----
+   Deep-time and the kingdom tabs share the same year, subtitle, nav buttons,
+   slider and tick-row metrics, so switching tabs moves nothing. The subtitle
+   keeps its reserved two-line slot (no jump while sweeping). */
+.app .time-bar .slider-head {
+  min-height: 2.6rem;
+  margin-bottom: 0.45rem;
+}
+.app .time-bar .slider-year {
+  font-family: var(--font-ui);
+  font-size: 1.05rem;
+  font-weight: 600;
+  line-height: 1.35;
+}
+.app .time-bar .slider-label {
+  font-family: var(--font-display, "Instrument Serif"), serif;
+  font-size: 0.95rem;
+  line-height: 1.2;
+}
+.app .time-bar .nav-btn {
+  width: 2.5rem;
+  height: 2.5rem;
+  min-width: 2.5rem;
+  min-height: 2.5rem;
+  font-size: 1.35rem;
+}
+.app .time-bar .tick-label .tick-num {
+  font-size: 1.0625rem;
+  font-weight: 400;
+  line-height: 1.6;
+}
+.app .time-bar .tick-label .tick-era {
+  font-size: 0.68rem;
+  line-height: 1.4;
 }
