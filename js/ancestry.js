@@ -190,7 +190,7 @@ function renderPage(data, geo) {
       <article class="anc-section" id="${escapeHtml(c.id)}">
         <div class="anc-section-grid">
           <div class="anc-copy">
-            <p class="kicker" style="color:${escapeHtml(c.color)}">${escapeHtml(c.term)}</p>
+            <p class="kicker kicker--swatch" style="--swatch:${escapeHtml(c.color)}">${escapeHtml(c.term)}</p>
             <h2 class="anc-h2">${escapeHtml(c.name)}</h2>
             <p class="anc-years">${escapeHtml(c.years || "")}</p>
             <p class="anc-horizon">${escapeHtml(c.horizon)}</p>
