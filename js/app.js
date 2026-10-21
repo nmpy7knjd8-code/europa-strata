@@ -1028,6 +1028,8 @@ function shortPeriodName(p) {
     "late-medieval": "Late Medieval",
     reformation: "Reformation",
     "early-modern": "Early Modern",
+    enlightenment: "Enlightenment",
+    "eve-of-war": "Eve of War",
     modern: "Modern",
   };
   return map[p.id] || p.periodName || p.label;
@@ -1247,6 +1249,35 @@ function initMap({ preserveZoom = true } = {}) {
     .attr("data-iso", (d) => d.properties.iso)
     .attr("d", state.path)
     .attr("clip-path", (d) => `url(#extent-clip-${d.properties.iso})`)
+    .style("fill-opacity", 0);
+
+  // Second-polity overlays inside one modern country (e.g. Crimean Khanate in 1750
+  // Ukraine, Galicia in 1914 Poland): country geometry clipped to a historical outline,
+  // drawn above the base fill and faded in only around their own period stop.
+  const geoByIso = new Map(state.geo.features.map((f) => [f.properties.iso, f]));
+  const overlays = extentOverlayList().filter((o) => geoByIso.has(o.iso));
+  defs
+    .selectAll("clipPath.overlay-clip")
+    .data(overlays)
+    .join("clipPath")
+    .attr("class", "overlay-clip")
+    .attr("id", (o) => `overlay-clip-${o.key}`)
+    .attr("clipPathUnits", "userSpaceOnUse")
+    .append("path")
+    .attr("d", (o) => extentRingsPath(o.rings));
+  zoomLayer
+    .append("g")
+    .attr("class", "country-overlays")
+    .attr("aria-hidden", "true")
+    .selectAll("path")
+    .data(overlays)
+    .join("path")
+    .attr("class", "country-overlay")
+    .attr("data-iso", (o) => o.iso)
+    .attr("data-period", (o) => o.periodId)
+    .attr("data-layer", (o) => o.layer)
+    .attr("d", (o) => state.path(geoByIso.get(o.iso)))
+    .attr("clip-path", (o) => `url(#overlay-clip-${o.key})`)
     .style("fill-opacity", 0);
 
   // Coastlines under polities so fills stay clickable
@@ -1555,12 +1586,42 @@ function nearestDeepPeriod(pos = state.sliderPos) {
 
 /** Projected SVG path for the partial-fill outline of iso in period, or null if filled whole. */
 function fillExtentPath(iso, period) {
-  const ring = state.data?.meta?.fillExtents?.countries?.[iso]?.[period?.id];
-  if (!Array.isArray(ring) || ring.length < 4 || !state.path) return null;
-  let poly = { type: "Polygon", coordinates: [ring] };
-  // d3-geo treats rings by winding; flip if this one came out as "the rest of the globe"
-  if (d3.geoArea(poly) > 2 * Math.PI) poly = { type: "Polygon", coordinates: [ring.slice().reverse()] };
-  return state.path(poly);
+  return extentRingsPath(state.data?.meta?.fillExtents?.countries?.[iso]?.[period?.id]);
+}
+
+/** Projected path for one lon/lat ring or a list of rings (separate parts). */
+function extentRingsPath(rings) {
+  if (!Array.isArray(rings) || !rings.length || !state.path) return null;
+  const list = Array.isArray(rings[0]?.[0]) ? rings : [rings];
+  const parts = list
+    .filter((ring) => Array.isArray(ring) && ring.length >= 4)
+    .map((ring) => {
+      // d3-geo treats rings by winding; flip if this one came out as "the rest of the globe"
+      const poly = { type: "Polygon", coordinates: [ring] };
+      return d3.geoArea(poly) > 2 * Math.PI ? [ring.slice().reverse()] : [ring];
+    });
+  if (!parts.length) return null;
+  return state.path({ type: "MultiPolygon", coordinates: parts });
+}
+
+/** Sub-country overlays (meta.fillExtents.overlays): [{periodId, index, iso, layer, rings}]. */
+function extentOverlayList() {
+  const src = state.data?.meta?.fillExtents?.overlays || {};
+  const out = [];
+  Object.entries(src).forEach(([periodId, list]) => {
+    (list || []).forEach((o, index) => out.push({ ...o, periodId, index, key: `${periodId}-${index}` }));
+  });
+  return out;
+}
+
+/** 1 at the overlay's own period, fading to 0 at the neighbouring stops. */
+function overlayWeight(periodId) {
+  const periods = state.data?.periods || [];
+  const n = periods.length;
+  const i = periods.findIndex((p) => p.id === periodId);
+  if (i < 0 || n < 2) return 0;
+  const w = 1 - Math.abs(state.sliderPos - periodSliderPos(i, n)) * (n - 1);
+  return Math.max(0, Math.min(1, w));
 }
 
 function paintMap(animate = true) {
@@ -1573,6 +1634,7 @@ function paintMap(animate = true) {
       .style("fill", null)
       .style("fill-opacity", 1);
     state.svg.selectAll("path.country-extent").interrupt().classed("is-extent-on", false).style("fill-opacity", 0);
+    state.svg.selectAll("path.country-overlay").interrupt().classed("is-extent-on", false).style("fill-opacity", 0);
 
     // Geometry only when tick changes — avoids selection flicker on slider drag
     syncKingdomPolityLayer({ force: false });
@@ -1646,6 +1708,14 @@ function paintMap(animate = true) {
       if (!overlay.empty()) setFill(overlay, fill, 0);
       setFill(node, fill, opacity);
     }
+  });
+  state.svg.selectAll("path.country-overlay").each(function (o) {
+    const node = d3.select(this);
+    const p = state.data.periods.find((q) => q.id === o.periodId);
+    const layer = (p?.mapLayers || []).find((l) => l.id === o.layer);
+    const w = layer ? overlayWeight(o.periodId) : 0;
+    node.classed("is-extent-on", w > 0.01);
+    setFill(node, layer?.color || "var(--land-base)", w * Math.max(0.35, layer?.opacity ?? 0.7));
   });
   applyLegendFocus();
 }
@@ -2153,6 +2223,66 @@ function periodEyebrowText(period) {
   return "";
 }
 
+/** Two-way links between the Deep-time 1750/1914 stops and the matching kingdom-era ticks. */
+const PERIOD_CROSS_LINKS = [
+  // `name` mirrors the tick name in data/kingdom-eras/<mode>.json (used before the pack loads)
+  { deep: "enlightenment", mode: "early-modern", year: 1750, name: "Enlightenment great-power concert" },
+  { deep: "eve-of-war", mode: "modern", year: 1914, name: "July Crisis alliances" },
+];
+
+function crossLinkForCurrent(period) {
+  if (!period) return null;
+  if (isKingdomMode()) {
+    const link = PERIOD_CROSS_LINKS.find((l) => l.mode === state.atlasMode && Number(period.yearApprox) === l.year);
+    if (!link) return null;
+    const deep = state.data.periods.find((p) => p.id === link.deep);
+    if (!deep) return null;
+    const year = formatYearUi(deep.tickYear || deep.yearLabel);
+    return {
+      mode: "deep-time",
+      target: link.deep,
+      text: `See the ${year} ancestry and culture view in Deep-time: “${deep.label}”`,
+    };
+  }
+  const link = PERIOD_CROSS_LINKS.find((l) => l.deep === period.id);
+  if (!link) return null;
+  const tab = KINGDOM_TAB_LABELS[link.mode] || link.mode;
+  const pack = state.kingdomPacks?.[link.mode];
+  const tick = pack?.periods?.find?.((p) => Number(p.yearApprox) === link.year);
+  const label = tick?.label || link.name;
+  const name = label ? `: “${label}”` : "";
+  return { mode: link.mode, target: String(link.year), text: `See the detailed ${link.year} polity map in ${tab}${name}` };
+}
+
+function renderCrossLink(period) {
+  const el = $("#period-crosslink");
+  if (!el) return;
+  const x = crossLinkForCurrent(period);
+  if (!x) {
+    el.hidden = true;
+    el.textContent = "";
+    return;
+  }
+  el.hidden = false;
+  el.innerHTML = `<a href="#" class="period-xlink" data-xmode="${escapeHtml(x.mode)}" data-xtarget="${escapeHtml(x.target)}">${escapeHtml(x.text)} →</a>`;
+}
+
+function goToCrossLink(mode, target) {
+  if (isKingdomMode(mode) && !state.kingdomPacks[mode]) {
+    requestKingdomPack(mode).then((pack) => {
+      if (pack) goToCrossLink(mode, target);
+    });
+    return;
+  }
+  if (mode !== state.atlasMode) setAtlasMode(mode);
+  const periods = activePeriods();
+  const i =
+    mode === "deep-time"
+      ? periods.findIndex((p) => p.id === target)
+      : periods.findIndex((p) => Number(p.yearApprox) === Number(target));
+  if (i >= 0) snapToPeriod(i);
+}
+
 function renderPeriodText() {
   const period = currentPeriod();
   const yearEl = $("#period-year");
@@ -2179,6 +2309,7 @@ function renderPeriodText() {
     eraEl.hidden = !eyebrow;
   }
   $("#period-copy").textContent = period.narrative;
+  renderCrossLink(period);
   const ling = $("#period-ling");
   if (period.linguistics) {
     ling.hidden = false;
@@ -3848,7 +3979,7 @@ function applyLegendFocus() {
   });
   if (!state.svg) return;
   if (!layer) {
-    state.svg.selectAll("path.country, path.polity, path.country-extent").classed("is-legend-hot", false).classed("is-legend-dim", false);
+    state.svg.selectAll("path.country, path.polity, path.country-extent, path.country-overlay").classed("is-legend-hot", false).classed("is-legend-dim", false);
     return;
   }
   const isos = new Set(layer.countries || []);
@@ -3859,10 +3990,18 @@ function applyLegendFocus() {
     .classed("is-legend-hot", (d) => useCountries && isos.has(d.properties.iso))
     .classed("is-legend-dim", (d) => useCountries && !isos.has(d.properties.iso));
   // Clipped culture-colour overlays (meta.fillExtents) follow their country
+  // A country's base extent is "hot" unless the focused layer is one of its sub-overlays
+  const period = nearestDeepPeriod();
+  const ovLayersFor = (iso) =>
+    new Set(((state.data?.meta?.fillExtents?.overlays || {})[period?.id] || []).filter((o) => o.iso === iso).map((o) => o.layer));
   state.svg
     .selectAll("path.country-extent")
-    .classed("is-legend-hot", (d) => useCountries && isos.has(d.properties.iso))
-    .classed("is-legend-dim", (d) => useCountries && !isos.has(d.properties.iso));
+    .classed("is-legend-hot", (d) => useCountries && isos.has(d.properties.iso) && !ovLayersFor(d.properties.iso).has(pid))
+    .classed("is-legend-dim", (d) => useCountries && (!isos.has(d.properties.iso) || ovLayersFor(d.properties.iso).has(pid)));
+  state.svg
+    .selectAll("path.country-overlay")
+    .classed("is-legend-hot", (o) => useCountries && o.layer === pid)
+    .classed("is-legend-dim", (o) => useCountries && o.layer !== pid);
   state.svg
     .selectAll("path.polity")
     .classed("is-legend-hot", (d) => isKingdomMode() && d.properties.polityId === pid)
@@ -3987,6 +4126,13 @@ function bindUI() {
 
   bindLegendInteractions();
   bindLightboxUi();
+
+  document.addEventListener("click", (e) => {
+    const x = e.target?.closest?.(".period-xlink");
+    if (!x) return;
+    e.preventDefault();
+    goToCrossLink(x.getAttribute("data-xmode"), x.getAttribute("data-xtarget"));
+  });
 
   // Preceded by / Succeeded by chain jumps only (no inline body auto-links)
   document.addEventListener("click", (e) => {
