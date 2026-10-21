@@ -211,6 +211,21 @@ button {
   fill-opacity: 1 !important;
 }
 
+/* Second polity drawn over part of a country (meta.fillExtents.overlays) */
+.country-overlay {
+  pointer-events: none;
+  stroke: none;
+  transition: fill 0.5s var(--ease), fill-opacity 0.45s var(--ease);
+}
+
+.map.is-legend-on .country-overlay.is-extent-on.is-legend-dim {
+  fill-opacity: 0.16 !important;
+}
+
+.map.is-legend-on .country-overlay.is-extent-on.is-legend-hot {
+  fill-opacity: 1 !important;
+}
+
 .atlas-tab[hidden] {
   display: none !important;
 }
@@ -3225,4 +3240,17 @@ a:focus-visible,
   transform: none;
   max-width: min(220px, calc(100% - 16px));
   overflow-wrap: anywhere;
+}
+
+/* Deep-time ↔ kingdom-era cross-link under the period narrative */
+.period-crosslink {
+  margin: 0.5rem 0 0;
+  font-size: 0.875rem;
+  line-height: 1.4;
+}
+
+.period-crosslink .period-xlink {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 2px;
 }
