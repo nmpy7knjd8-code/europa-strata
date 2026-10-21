@@ -3302,8 +3302,8 @@ a:focus-visible,
    Header wordmark + tagline, small upper-case kickers, tight bar/key gaps,
    24.8px polity names, 15px body everywhere, 6.4px under detail headings,
    18.4px medium slider year, 17.6px period subtitle — identical on every tab. */
-:root { --ink-label: #6b6b6b; }
-html[data-theme="dark"] { --ink-label: #9a9a9a; }
+:root { --ink-label: #888888; } /* Oct 11 grey (Garrett prefers the look; 3.5:1) */
+html[data-theme="dark"] { --ink-label: #777777; }
 .app .brand,
 .app .map-head .brand {
   font-family: var(--font-display);
