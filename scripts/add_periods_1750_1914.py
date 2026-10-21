@@ -14,6 +14,7 @@ ROOT = pathlib.Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(ROOT / "scripts"))
 import periods_1750_data as P1750
 import periods_1914_data as P1914
+import periods_depth as DEPTH
 
 ROLE_FIELDS = ("art", "ideas", "philosophy", "science")
 LAYER_FILL = {  # fill gaps left as "—" in the layer tables
@@ -39,16 +40,122 @@ POLITY_FILL = {
 }
 # Layer adjustments so that the fill rank picks the right polity (first layer wins ties).
 EXTRA_LAYERS = {
+ "enlightenment": [
+  ("plc-ukraine-1750","Right-bank Ukraine (Polish–Lithuanian Commonwealth)","#a83a6a",["UKR"],"fringe",0.7,
+   "Kyiv, Podolia and Volhynia palatinates west of the Dnieper, ruled by Polish magnates such as the Potockis.",
+   "Uniate and Orthodox wooden churches; magnate residences at Tulchyn and Berdychiv.",
+   "Polish lordship over a Ukrainian Orthodox and Uniate peasantry; Haidamak revolts (1734, 1750, 1768).",
+   "Hasidism begins here: the Baal Shem Tov teaches in Medzhybizh (d. 1760).",
+   "Jesuit and Basilian colleges."),
+  ("transcarpathia-1750","Kingdom of Hungary (Transcarpathia)","#b89a2a",["UKR"],"fringe",0.7,
+   "Mukachevo and Uzhhorod, part of the Habsburg Kingdom of Hungary.",
+   "Wooden churches of the Carpathian Rusyns.",
+   "Habsburg lordship; the Union of Uzhhorod (1646) ties the Rusyn church to Rome.",
+   "Greek Catholic clergy at Mukachevo.",
+   "Salt mines and estates of the Schönborn family."),
+  ("prussian-silesia-1750","Prussian Silesia and Pomerania","#2f2f2f",["POL"],"fringe",0.75,
+   "Silesia, taken from Austria in 1740–42, and Prussian Pomerania; today in Poland.",
+   "Breslau (Wrocław) baroque: the Leopoldina university hall.",
+   "Frederick II’s cameralist administration, a war treasury and Protestant toleration of Catholics.",
+   "Silesian Pietism and the Breslau Jesuits.",
+   "Silesian linen and mining under Prussian rule."),
+  ("wallachia-1750","Principality of Wallachia","#7a8a3a",["ROU"],"fringe",0.7,
+   "Ottoman vassal principality ruled from Bucharest by Phanariot princes; Oltenia returned by Austria in 1739.",
+   "Brâncovenesc monasteries; post-Byzantine church painting.",
+   "Phanariot reform: Mavrocordatos abolishes serfdom in 1746.",
+   "Princely Academy of Saint Sava, Bucharest.",
+   "Greek-language academy teaching."),
+  ("moldavia-1750","Principality of Moldavia","#8a7a2a",["ROU","MDA"],"fringe",0.7,
+   "Ottoman vassal principality ruled from Iași, between the Carpathians and the Dniester; the boundary with Wallachia is drawn approximately along the Milcov and Siret.",
+   "Painted monasteries of Bukovina (sixteenth century); Iași’s Golia and Trei Ierarhi churches.",
+   "Mavrocordatos abolishes serfdom in 1749.",
+   "Princely Academy of Iași.",
+   "Dimitrie Cantemir’s Descriptio Moldaviae (1714–16)."),
+  ("transylvania-1750","Principality of Transylvania (Habsburg)","#b89a2a",["ROU"],"fringe",0.7,
+   "Habsburg principality since 1699 with its own Diet of three ‘nations’—Hungarian nobles, Székelys and Saxons—and four received religions; Romanians, the largest group, are not among them.",
+   "Saxon fortified churches; Baroque Alba Iulia.",
+   "Micu-Klein’s campaign for Romanian rights.",
+   "Greek Catholic schools at Blaj (from 1754).",
+   "Mining in the Apuseni mountains."),
+  ("dobruja-1750","Ottoman Dobruja and the Danube fortresses","#2a7a7a",["ROU"],"fringe",0.7,
+   "Directly ruled Ottoman land between the lower Danube and the Black Sea; the boundary is approximate.",
+   "Ottoman mosques in Babadag and Constanța (Köstence).",
+   "Nogai Tatars and Turkish settlers alongside Romanian and Bulgarian villages.",
+   "Islamic schools.",
+   "Danube river trade."),
+ ],
  "eve-of-war": [
-  ("ah-provinces-1914","Austro-Hungarian Galicia, Bukovina & Transylvania","#c8aa4a",["POL","UKR","ROU"],"fringe",0.65,"Habsburg provinces now in Poland, Ukraine and Romania.","Kraków and Lviv secession style.","Galician autonomy; Romanian claims on Transylvania.","Polish and Ukrainian national schools in Galicia.","Jagiellonian and Lviv universities."),
-  ("prussian-poland-1914","Prussian Poland","#4a4a4a",["POL"],"fringe",0.65,"Posen and West Prussia, part of the German Empire.","—","Germanisation policy.","—","—"),
- ]
+  ("ah-provinces-1914","Austro-Hungarian Galicia, Bukovina & Transylvania","#c8aa4a",["POL","UKR","ROU"],"fringe",0.65,
+   "Galicia (Kraków, Lwów) and Bukovina (Czernowitz) in the Austrian half of the monarchy; Transylvania, the Banat and Crișana in the Hungarian half. Today they lie in Poland, Ukraine and Romania.",
+   "Kraków is the capital of Young Poland: Wyspiański’s stained glass and Malczewski’s symbolism. Lwów’s opera house (1900) and Czernowitz’s Residence of the Bukovinian metropolitans mix Viennese and local styles.",
+   "Galicia has run its own affairs in Polish since 1867, with a Polish governor and Polish schools; Ukrainians press for their own university in Lwów. In Transylvania, Hungarian-only school laws (the Apponyi laws, 1907) and a narrow franchise keep Romanians, the majority, almost out of parliament.",
+   "Kazimierz Twardowski founds the Lwów school of logic and philosophy; Romanian Transylvanians follow the Romanian National Party’s programme of autonomy.",
+   "The Jagiellonian University in Kraków and the University of Lwów teach in Polish; the Czernowitz university (1875) teaches in German. Galicia’s Borysław oil fields are among the largest in Europe."),
+  ("prussian-poland-1914","Prussian Poland","#4a4a4a",["POL"],"fringe",0.65,
+   "The Prussian provinces of Posen and West Prussia, with Upper Silesia, Pomerania and southern East Prussia, part of the German Empire since 1871 and of Prussia since the partitions.",
+   "Poznań’s Imperial Castle (1910), built for Wilhelm II as a symbol of German rule, faces Polish banks, cooperatives and the Raczyński Library.",
+   "Germanisation: the Settlement Commission (1886) buys land for German farmers, the expropriation law of 1908 allows forced purchase, and religious lessons in German spark the school strike of 1901–07. Poles answer with cooperatives, savings banks and ‘organic work’.",
+   "The Polish Catholic clergy lead the defence of the language; Wojciech Korfanty speaks for Upper Silesian Poles in the Reichstag.",
+   "Upper Silesia’s coal and steel make it the second industrial region of Germany; Danzig shipyards build for the Imperial Navy."),
+  ("vojvodina-1914","Hungarian Bačka, Banat & Srem (Austria-Hungary)","#b89a2a",["SRB"],"fringe",0.7,
+   "Southern Hungary and Croatian Srem, part of Austria-Hungary in 1914; today the Serbian province of Vojvodina.",
+   "Novi Sad’s Matica srpska and Serbian theatre.",
+   "Serbian, Hungarian, German, Slovak and Romanian villages side by side.",
+   "Serbian cultural life centred on Novi Sad and Sremski Karlovci.",
+   "Grain farming on the Pannonian plain."),
+ ],
 }
-EXTENTS = [  # (iso, periodId, basemap file, feature NAME)
- ("POL", "enlightenment", "world_1715", "Polish–Lithuanian Commonwealth"),
- ("ROU", "eve-of-war", "world_1914", "Romania"),
- ("SRB", "eve-of-war", "world_1914", "Serbia"),
-]
+# Layer edits so that the right polity gets the base fill (first layer wins ties).
+def edit_layers(pid, rows):
+    out = []
+    for r in rows:
+        r = list(r)
+        if pid == "enlightenment":
+            if r[0] == "russia-1750":
+                r[3] = [c for c in r[3] if c != "UKR"]
+            if r[0] == "hetmanate":
+                r[1] = "Cossack Hetmanate & Sloboda Ukraine (Russian)"
+                r[4] = "dominant"
+                r[6] = "Left-bank Ukraine under its own hetman and Sloboda Ukraine, both under Russian rule."
+            if r[0] == "crimea":
+                r[3] = ["UKR", "RUS"]  # the atlas basemap draws the Crimean peninsula inside RUS
+                r[1] = "Crimean Khanate & Ottoman Black Sea coast"
+                r[4] = "fringe"
+                r[6] = ("Crimean Khanate, an Ottoman vassal, with its Nogai steppes, and Ottoman fortresses such as Ochakiv. "
+                        "Outline from the 1715 basemap, which still includes Zaporozhian steppe that returned to Russian protection in 1734.")
+            if r[0] == "principalities":
+                continue  # split into wallachia-1750 / moldavia-1750 / transylvania-1750
+        out.append(tuple(r))
+    return out
+OVERLAY_SPECS = {  # (iso, periodId) -> base layer + overlays from historical-basemaps features
+ ("UKR", "enlightenment"): {"base": ("world_1715", ["Tsardom of Muscovy"]),
+    "overlays": [("plc-ukraine-1750", "world_1715", ["Polish–Lithuanian Commonwealth"]),
+                 ("crimea", "world_1715", ["Ottoman Empire"]),
+                 ("transcarpathia-1750", "world_1715", ["Austrian Empire"])]},
+ ("RUS", "enlightenment"): {"base": None,  # Crimea and the Kuban/Azov steppe; the rest stays Russian
+    "overlays": [("crimea", "world_1715", ["Ottoman Empire"])]},
+ ("POL", "enlightenment"): {"base": ("world_1715", ["Polish–Lithuanian Commonwealth"]),
+    "overlays": [("prussian-silesia-1750", "world_1783", ["Prussia"])]},
+ ("ROU", "enlightenment"): {"base": ("world_1715", ["Ottoman Empire"]),
+    "overlays": [("moldavia-1750", "world_1715", ["Ottoman Empire"], "MOLDAVIA"),
+                 ("dobruja-1750", "world_1715", ["Ottoman Empire"], "DOBRUJA"),
+                 ("transylvania-1750", "world_1715", ["Austrian Empire"])]},
+ ("POL", "eve-of-war"): {"base": ("world_1914", ["Russian Empire"]),
+    "overlays": [("prussian-poland-1914", "world_1914", ["German Empire"]),
+                 ("ah-provinces-1914", "world_1914", ["Austro-Hungarian Empire"])]},
+ ("UKR", "eve-of-war"): {"base": None,  # remainder of the country (Russian); the basemap misplaces Bessarabia
+    "overlays": [("ah-provinces-1914", "world_1914", ["Austro-Hungarian Empire"])]},
+ ("ROU", "eve-of-war"): {"base": ("world_1914", ["Romania"]),
+    "overlays": [("ah-provinces-1914", "world_1914", ["Austro-Hungarian Empire"])]},
+ ("SRB", "eve-of-war"): {"base": ("world_1914", ["Serbia"]),
+    "overlays": [("vojvodina-1914", "world_1914", ["Austro-Hungarian Empire"])]},
+}
+# Approximate cuts where historical-basemaps has no internal boundary (lon, lat; drawn
+# through Focșani/Milcov–Siret and along the lower Danube via Silistra, Hârșova, Brăila, Galați, Isaccea, Tulcea).
+CUTS = {
+ "MOLDAVIA": [(24.5, 46.6), (26.3, 45.95), (26.8, 45.8), (27.18, 45.7), (27.45, 45.55), (28.0, 45.42), (28.25, 45.45), (30.5, 45.45), (30.5, 48.6), (24.5, 48.6)],
+ "DOBRUJA": [(27.27, 43.6), (27.27, 44.12), (28.03, 44.34), (27.95, 44.68), (27.97, 45.27), (28.1, 45.38), (28.46, 45.27), (28.8, 45.18), (29.9, 45.2), (29.9, 43.6)],
+}
 ALIASES = [
  ("Kingdom of Prussia", "enlightenment", "DEU"),
  ("Habsburg Monarchy", "enlightenment", "AUT"),
@@ -76,7 +183,7 @@ def build(mod, early_regions):
                         "linguisticNote": r["linguisticNote"], "linguisticConfidence": r["linguisticConfidence"],
                         "ancestryNote": r["ancestryNote"]}
     layers = []
-    rows = list(mod.LAYERS)
+    rows = edit_layers(pid, list(mod.LAYERS))
     if pid == "eve-of-war":  # finland before russia so the grand duchy keeps its own colour
         rows.sort(key=lambda l: 0 if l[0] == "finland-1914" else 1)
     rows += EXTRA_LAYERS.get(pid, [])
@@ -92,6 +199,16 @@ def build(mod, early_regions):
     polities, ptext = {}, {}
     for iso, q in mod.POL.items():
         q = dict(q)
+        for f, t in DEPTH.SET[pid].get(iso, {}).items():
+            q[f] = t
+        for f, t in DEPTH.ADD[pid].get(iso, {}).items():
+            if q.get(f) == "—":
+                q[f] = t
+            elif t not in q[f]:
+                q[f] = q[f].rstrip() + " " + t
+        if iso in DEPTH.IMAGES[pid]:
+            q["images"] = [(f, c, r, 640) for (f, c, r) in DEPTH.IMAGES[pid][iso]]
+        q["images"] = list(q["images"]) + [(f, c, r, 640) for (f, c, r) in DEPTH.EXTRA[pid].get(iso, [])]
         for f in list(q):
             if q[f] == "—":
                 q[f] = POLITY_FILL[(pid, iso, f)]
@@ -143,15 +260,31 @@ def splice(text, data, e, w, early, modern):
     close = text.index("\n    ]", la)
     new_al = [a for a in data["meta"]["linkAliases"] if a["periodId"] in ("enlightenment", "eve-of-war")]
     text = text[:close] + "".join(",\n      " + ind(a, 6) for a in new_al) + text[close:]
-    # fill extents (new countries only)
-    c = text.index('"countries": {', text.index('"fillExtents"')) + len('"countries": {')
+    # fill extents: new countries get a new block, existing ones get extra period keys
+    fe = text.index('"fillExtents"')
+    c0 = text.index('"countries": {', fe)
+    c = c0 + len('"countries": {')
+    cend = text.index("\n      }", c)
     add = ""
+    inserts = []
     for iso, per in data["meta"]["fillExtents"]["countries"].items():
-        for pid in ("enlightenment", "eve-of-war"):
-            if pid in per:
-                ring = ", ".join(f"[{x}, {y}]" for x, y in per[pid])
-                add += f'\n        "{iso}": {{\n          "{pid}": [{ring}]\n        }},'
-    return text[:c] + add + text[c:]
+        items = [(pid, per[pid]) for pid in ("enlightenment", "eve-of-war") if pid in per]
+        if not items:
+            continue
+        body = ",\n".join(f'          "{pid}": ' + json.dumps(v, separators=(", ", ": ")) for pid, v in items)
+        key = f'\n        "{iso}": {{'
+        k = text.find(key, c, cend)
+        if k >= 0:
+            inserts.append((k + len(key), "\n" + body + ","))
+        else:
+            add += key + "\n" + body + "\n        },"
+    for pos, chunk in sorted(inserts, reverse=True):
+        text = text[:pos] + chunk + text[pos:]
+    text = text[:c] + add + text[c:]
+    ov = data["meta"]["fillExtents"].get("overlays")
+    if ov:
+        text = text[:c0] + '"overlays": ' + json.dumps(ov, ensure_ascii=False, separators=(", ", ": ")) + ",\n      " + text[c0:]
+    return text
 
 def mute(hexc, k=0.62, base=(0x2b, 0x2b, 0x33)):
     """Pull the drafting palette toward the atlas's muted early-modern/modern tones."""
@@ -160,6 +293,52 @@ def mute(hexc, k=0.62, base=(0x2b, 0x2b, 0x33)):
 
 def link(pid, iso, name):
     return {"periodId": pid, "iso": iso, "name": name}
+
+def _parts(g, min_area=0.02):
+    g = g.buffer(0)
+    parts = [p for p in getattr(g, "geoms", [g]) if p.geom_type == "Polygon" and p.area >= min_area]
+    out = []
+    for p in sorted(parts, key=lambda x: -x.area):
+        p = p.simplify(0.05)
+        if p.is_empty or p.geom_type != "Polygon":
+            continue
+        out.append([[round(x, 2), round(y, 2)] for x, y in p.exterior.coords])
+    return out
+
+def build_extents(data, basemaps):
+    from shapely.geometry import shape, Polygon
+    from shapely.ops import unary_union
+    eu = {f["properties"]["iso"]: shape(f["geometry"]).buffer(0)
+          for f in json.loads((ROOT / "data/europe.geojson").read_text())["features"]}
+    cache = {}
+    def hist(fn, names):
+        if fn not in cache:
+            cache[fn] = json.loads(pathlib.Path(basemaps, fn + ".geojson").read_text())["features"]
+        return unary_union([shape(f["geometry"]).buffer(0) for f in cache[fn] if f["properties"].get("NAME") in names]).buffer(0)
+    ext = data["meta"]["fillExtents"]["countries"]
+    ovs = data["meta"]["fillExtents"]["overlays"]
+    for (iso, pid), spec in OVERLAY_SPECS.items():
+        country = eu[iso].buffer(0.3)
+        core = hist(*spec["base"]).intersection(country) if spec["base"] else Polygon()
+        for o in spec["overlays"]:
+            if len(o) > 3:
+                core = core.difference(Polygon(CUTS[o[3]]))
+        taken, ov_geoms = core, []
+        for o in spec["overlays"]:
+            g = hist(o[1], o[2]).intersection(country)
+            if len(o) > 3:
+                g = g.intersection(Polygon(CUTS[o[3]]))
+            g = g.difference(taken)
+            taken = taken.union(g)
+            ov_geoms.append((o[0], g))
+        base = core if spec["base"] else country.difference(taken)
+        rings = _parts(base)
+        ext.setdefault(iso, {})[pid] = rings[0] if len(rings) == 1 else rings
+        for lid, g in ov_geoms:
+            r = _parts(g)
+            if r:
+                ovs.setdefault(pid, []).append({"iso": iso, "layer": lid, "rings": r})
+
 
 def main():
     ap = argparse.ArgumentParser()
@@ -192,18 +371,9 @@ def main():
     for iso, pol in modern["polities"].items():
         if iso in w["polities"]:
             pol["precededBy"] = link("eve-of-war", iso, w["polities"][iso]["name"])
-    # extents
-    from shapely.geometry import shape
-    from shapely.ops import unary_union
-    eu = {f["properties"]["iso"]: shape(f["geometry"]).buffer(0)
-          for f in json.loads((ROOT / "data/europe.geojson").read_text())["features"]}
-    ext = data["meta"]["fillExtents"]["countries"]
-    for iso, pid, fn, name in EXTENTS:
-        feats = json.loads(pathlib.Path(a.basemaps, fn + ".geojson").read_text())["features"]
-        hist = unary_union([shape(f["geometry"]) for f in feats if f["properties"].get("NAME") == name]).buffer(0)
-        g = hist.intersection(eu[iso].buffer(0.3))
-        big = max(getattr(g, "geoms", [g]), key=lambda x: x.area).simplify(0.1)
-        ext.setdefault(iso, {})[pid] = [[round(x, 2), round(y, 2)] for x, y in big.exterior.coords]
+    # extents and sub-country overlays
+    data["meta"]["fillExtents"].setdefault("overlays", {})
+    build_extents(data, a.basemaps)
     for al, pid, iso in ALIASES:
         data["meta"]["linkAliases"].append({"alias": al, "periodId": pid, "iso": iso})
     # insert periods after early-modern
