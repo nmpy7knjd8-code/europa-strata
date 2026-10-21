@@ -342,7 +342,13 @@ function normalizeKingdomPack(raw, topo = null) {
 
   const id = raw.tabId || raw.id || "kingdom";
   const v2 = Boolean(topo && window.topojson);
-  const v2Colors = v2 ? eraPolityColors(topo, raw.polities.map((p) => p.id)) : null;
+  // Oct 11 look: each polity keeps its own pack colour (earth palette only as a fallback).
+  const v2Colors = v2
+    ? (() => {
+        const fallback = eraPolityColors(topo, raw.polities.map((p) => p.id));
+        return Object.fromEntries(raw.polities.map((p) => [p.id, p.color || fallback[p.id]]));
+      })()
+    : null;
   const label = raw.tabLabel || raw.label || "Kingdom era";
   const periods = raw.ticks.map((tick) => {
     const year = tick.year ?? tick.yearApprox;
