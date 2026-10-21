@@ -3297,3 +3297,87 @@ a:focus-visible,
   font-size: 0.68rem;
   line-height: 1.4;
 }
+
+/* ---- Oct 11 type restorations (approved) ----
+   Header wordmark + tagline, small upper-case kickers, tight bar/key gaps,
+   24.8px polity names, 15px body everywhere, 6.4px under detail headings,
+   18.4px medium slider year, 17.6px period subtitle — identical on every tab. */
+:root { --ink-label: #6b6b6b; }
+html[data-theme="dark"] { --ink-label: #9a9a9a; }
+.app .brand,
+.app .map-head .brand {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: 1.45rem;
+  line-height: 1;
+  letter-spacing: -0.03em;
+}
+.app .brand em { font-style: italic; }
+.app .brand-sub {
+  margin: 0.28rem 0 0;
+  font-family: var(--font-ui);
+  font-size: 0.62rem;
+  line-height: 1.5;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: var(--ink-label);
+}
+.app .kicker,
+.app .legend-bar .kicker,
+.app .key-events .kicker,
+.app .glossary .kicker,
+.app .side .kicker,
+.app .polity-block .kicker,
+.app #detail-kicker,
+.app .polity-conflict-label,
+.app .polity-chain-label,
+body .kicker,
+.page-ancestry .kicker,
+.page-ancestry .anc-hero .kicker,
+.page-ancestry .anc-phenotype .kicker,
+.page-ancestry .anc-diet .kicker {
+  font-family: var(--font-ui);
+  font-size: 0.68rem;
+  line-height: 1.5;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: var(--ink-label);
+  margin-bottom: 0.2rem;
+}
+.app .time-bar { padding-top: 10px; }
+.app .legend-bar { padding-top: 6px; }
+.app .polity-name,
+.app .polity-panel .polity-name,
+.app:not([data-atlas-mode="deep-time"]) .polity-name,
+.app:not([data-atlas-mode="deep-time"]) .polity-panel .polity-name,
+.app .culture-title,
+.app:not([data-atlas-mode="deep-time"]) .culture-title {
+  font-size: 1.55rem;
+  line-height: 1.15;
+}
+.app,
+.app:not([data-atlas-mode="deep-time"]) {
+  --read-size: 15px;
+  --type-body: 15px;
+  --read-leading: 1.5;
+}
+.app .section-heading,
+.app .polity-panel .section-heading { margin-bottom: 0.4rem; }
+.app .time-bar .slider-year {
+  font-size: 1.15rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+.app .time-bar .slider-label {
+  font-size: 1.1rem;
+  line-height: 1.2;
+}
+/* Component-coloured labels on the ancestry page: grey text (passes 4.5:1),
+   the component colour moves to a swatch bar beside it. */
+.page-ancestry .kicker.kicker--swatch {
+  color: var(--ink-label);
+  border-left: 0.55rem solid var(--swatch, currentColor);
+  padding-left: 0.4rem;
+}
