@@ -3803,10 +3803,7 @@ function buildTicks() {
   const wrap = $("#tick-labels");
   if (!wrap) return;
   const periods = activePeriods();
-  if (desktopTickLabels() && !isKingdomMode()) {
-    buildDeepTimeYearScale(wrap, periods);
-    return;
-  }
+  // Every tab (Deep-time included) uses the same tick row so the bar never shifts.
   wrap.classList.remove("is-year-scale");
   const n = periods.length;
   const widthPx = wrap.clientWidth || wrap.parentElement?.clientWidth || window.innerWidth || 400;
