@@ -4149,3 +4149,71 @@ html[data-theme="dark"] .app[data-atlas-mode="deep-time"] #map path.country,
 html[data-theme="dark"] .app[data-atlas-mode="deep-time"] #map path.coastline { stroke: #d0d0d0; }
 /* Oct 11 map-key swatch: 8px round dot (reverts PR #5's larger squares). */
 html .app #map-legend .legend-swatch { width: 8px; height: 8px; min-width: 8px; border-radius: 50%; border: none; }
+
+/* ==== UI critique fixes (Oct 26) ==== */
+/* 1. Reserve the tick row's final height so the key does not jump on load. */
+html .app #tick-labels#tick-labels { min-height: 52.75px; }
+/* The key is never shorter than ~370px once drawn, so reserving 360px stops
+   the reading column jumping down when the key fills in. No final change. */
+html .app #legend-bar { min-height: 360px; }
+
+/* 2. Narrow screens: tabs take the width their names need (no clipping),
+      two-word names wrap at the space; type size unchanged. */
+html .app #atlas-tabs > button.atlas-tab { flex: 1 1 auto; padding-left: 2px !important; padding-right: 2px !important; }
+@media (min-width: 360px) {
+  html .app #atlas-tabs > button.atlas-tab { white-space: nowrap; letter-spacing: 0 !important; }
+}
+@media (max-width: 359px) {
+  html .app #atlas-tabs > button.atlas-tab { letter-spacing: -0.01em !important; min-width: min-content; }
+}
+.atlas-tab .tab-nw { white-space: nowrap; }
+
+/* 3. Taller invisible tap zone under each slider tick (extends down only,
+      so the slider thumb above keeps its drag area). No visual change. */
+html .app #tick-labels#tick-labels .tick-rail { position: relative; z-index: 2; overflow: visible; }
+html .app #tick-labels#tick-labels button.tick-mark-btn { position: relative; overflow: visible; }
+html .app #tick-labels#tick-labels button.tick-mark-btn::after {
+  content: ""; position: absolute; left: 0; right: 0; top: -2px; height: 26px;
+}
+
+/* 4. Ancestry & Sources reading text at 15px like the atlas. */
+html .page-ancestry .anc-lead,
+html .page-ancestry .anc-summary,
+html .page-ancestry .anc-years,
+html .page-ancestry .anc-horizon,
+html .page-ancestry .kicker.kicker--swatch,
+html .page-ancestry .anc-copy p,
+html .page-ancestry .anc-phenotype p,
+html .page-ancestry .anc-diet p,
+html .page-ancestry .anc-meta ul,
+html .page-ancestry .anc-main p:not(.kicker),
+html .page-ancestry .anc-main li { font-size: 15px !important; }
+
+/* 5. Same wordmark on every page: italic Strata + small grey tagline. */
+html .page-ancestry .anc-brand { display: inline-block; white-space: nowrap; font-size: 23.2px !important; line-height: 23.2px; letter-spacing: -0.696px !important; }
+html .page-ancestry .anc-brand em { font-style: italic !important; }
+html .page-ancestry .anc-tagline {
+  display: block; margin-top: 4.48px; font-family: Sora, "Helvetica Neue", sans-serif; font-style: normal;
+  font-size: 9.92px; line-height: 14.88px; letter-spacing: 1.5872px; text-transform: uppercase; color: #888;
+}
+html[data-theme="dark"] .page-ancestry .anc-tagline { color: #777; }
+
+/* 6. Atlas Theme button sits with the map tools (same small text style). */
+html .app .map-tools .theme-toggle { display: block; margin: 0 0 6px auto; }
+
+/* 7. Deep-time lower sections: Oct 11 spacing instead of 72px gaps. */
+html .app .ling-panel,
+html .app .absorb-strip,
+html .app .ancestry-panel,
+html .app .ancestry-cline { margin-top: 1.5rem !important; }
+
+/* 8. "Key events" kicker matches the other kickers. */
+html .app #key-events-heading#key-events-heading#key-events-heading#key-events-heading#key-events-heading { font-size: 10.88px !important; }
+
+/* 10. Dark theme: unassigned land in the era maps stays dark. */
+html[data-theme="dark"] .app:not([data-atlas-mode="deep-time"]) #map path.polity.is-neutral { fill: #4a463f !important; }
+@media (max-width: 359px) {
+  html .page-ancestry .anc-nav { gap: 0.45rem; letter-spacing: 0 !important; }
+  html .page-ancestry .anc-top-inner { gap: 0.5rem; padding-left: 16px; padding-right: 16px; }
+  html .page-ancestry .anc-nav, html .page-ancestry .anc-nav a, html .page-ancestry .anc-nav .theme-toggle { font-size: 0.8rem !important; }
+}

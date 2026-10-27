@@ -1660,6 +1660,8 @@ function paintMap(animate = true) {
       const visible = Boolean(style.fill);
       // Keep hit targets even while fill tweens between ticks
       node.style("pointer-events", "all");
+      // Unnamed / "other" land uses the neutral fill; dark theme re-tints it in CSS.
+      node.classed("is-neutral", Boolean(style.fill) && d3.color(style.fill)?.formatHex() === ERA_NEUTRAL);
       if (animate) {
         node
           .transition()
@@ -3442,6 +3444,13 @@ function minTickLabelGapPx(widthPx) {
 function sparseTickLabelIndices(n, maxLabels = 7) {
   if (n <= 0) return [];
   if (n <= maxLabels) return Array.from({ length: n }, (_, i) => i);
+  // Prefer an even stride (every 2nd, 3rd... stop) so labels are evenly spaced.
+  for (let stride = 2; stride < n - 1; stride++) {
+    if ((n - 1) % stride !== 0) continue;
+    const count = (n - 1) / stride + 1;
+    if (count < 3) break;
+    if (count <= maxLabels) return Array.from({ length: count }, (_, k) => k * stride);
+  }
   const out = new Set([0, n - 1]);
   const inner = maxLabels - 2;
   for (let k = 1; k <= inner; k++) {
@@ -4115,13 +4124,27 @@ function bindUI() {
     setAtlasMode(btn.dataset.mode);
   });
 
-  $("#theme-toggle").addEventListener("click", () => {
+  $$(".theme-toggle").forEach((btn) => btn.addEventListener("click", () => {
     const html = document.documentElement;
     const next = html.getAttribute("data-theme") === "dark" ? "light" : "dark";
     html.setAttribute("data-theme", next);
     storageSet("europa-strata-theme", next);
     syncThemeColor();
+  }));
+
+  // Tapping open sea or scrolling the page away closes the map label.
+  $("#map")?.addEventListener("click", (e) => {
+    if (e.target?.closest?.("path.country, path.polity, path.country-overlay")) return;
+    state.tip?.style("opacity", 0);
   });
+  window.addEventListener(
+    "scroll",
+    () => {
+      const r = $("#map")?.getBoundingClientRect();
+      if (r && r.bottom < r.height * 0.5) state.tip?.style("opacity", 0);
+    },
+    { passive: true }
+  );
 
   $("#btn-zoom-in")?.addEventListener("click", () => bumpMapZoom(1.35));
   $("#btn-zoom-out")?.addEventListener("click", () => bumpMapZoom(1 / 1.35));
