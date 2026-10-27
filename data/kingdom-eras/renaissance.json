@@ -6187,6 +6187,12 @@
           "caption": "Henry IV of France Pourbus",
           "alt": "Henry IV of France Pourbus",
           "role": "leader"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Palacio%20de%20Olite.JPG?width=640",
+          "caption": "Royal palace of Olite — court of Charles III the Noble",
+          "alt": "Royal palace of Olite — court of Charles III the Noble",
+          "role": "art"
         }
       ]
     },
@@ -10970,6 +10976,12 @@
           "caption": "Spanish Fury — Antwerp 1576",
           "alt": "Spanish Fury — Antwerp 1576",
           "role": "story"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Museum%20Plantin-Moretus%20Printing%20Press.jpg?width=640",
+          "caption": "Plantin’s Antwerp printing house (now Museum Plantin-Moretus)",
+          "alt": "Plantin’s Antwerp printing house (now Museum Plantin-Moretus)",
+          "role": "science"
         }
       ]
     },
