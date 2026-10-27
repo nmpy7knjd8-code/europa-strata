@@ -21,10 +21,10 @@
     <meta name="twitter:image" content="https://nmpy7knjd8-code.github.io/europa-strata/og-image.png" />
     <meta name="twitter:image:alt" content="Map of Europe coloured by Bell Beaker and Corded Ware cultures, with the title Europa Strata" />
     <meta name="theme-color" content="#f4f4f4" />
-    <meta name="build" content="basemap-profiles-1" />
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png?v=basemap-profiles-1" />
-    <link rel="icon" href="favicon.ico?v=basemap-profiles-1" sizes="any" />
-    <link rel="stylesheet" href="css/styles.css?v=basemap-profiles-1" />
+    <meta name="build" content="ui-critique-1" />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png?v=ui-critique-1" />
+    <link rel="icon" href="favicon.ico?v=ui-critique-1" sizes="any" />
+    <link rel="stylesheet" href="css/styles.css?v=ui-critique-1" />
     <script>
       try {
         var t = localStorage.getItem("europa-strata-theme");
@@ -42,10 +42,11 @@
   <body class="page-ancestry">
     <header class="anc-top">
       <div class="anc-top-inner">
-        <a class="anc-brand" href="./index.html">Europa Strata</a>
+        <a class="anc-brand" href="./index.html">Europa <em>Strata</em><span class="anc-tagline">Deep-time atlas</span></a>
         <nav class="anc-nav">
           <a href="./index.html">Atlas</a>
           <a href="./ancestry.html">Ancestry</a>
+          <button type="button" class="theme-toggle" id="theme-toggle" title="Toggle color theme">Theme</button>
         </nav>
       </div>
     </header>
@@ -130,5 +131,22 @@
       </section>
       <footer class="anc-foot"><p><a href="./index.html">Back to the atlas</a></p></footer>
     </main>
+    <script>
+      (function () {
+        var html = document.documentElement, key = "europa-strata-theme";
+        function sync() {
+          var m = document.querySelector('meta[name="theme-color"]');
+          if (m) m.setAttribute("content", html.getAttribute("data-theme") === "dark" ? "#111111" : "#f4f4f4");
+        }
+        try { var t = localStorage.getItem(key); if (t === "dark" || t === "light") html.setAttribute("data-theme", t); } catch (e) {}
+        sync();
+        document.getElementById("theme-toggle").addEventListener("click", function () {
+          var next = html.getAttribute("data-theme") === "dark" ? "light" : "dark";
+          html.setAttribute("data-theme", next);
+          try { localStorage.setItem(key, next); } catch (e) {}
+          sync();
+        });
+      })();
+    </script>
   </body>
 </html>
