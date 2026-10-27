@@ -4246,3 +4246,14 @@ html[data-theme] .app.app.app #polity-story#polity-story#polity-story#polity-sto
 html[data-theme] .app #cultures-rail#cultures-rail#cultures-rail#cultures-rail > button.culture-chip.is-focus {
   color: var(--ink);
 }
+
+/* Ideas lead and deep-time leaders: same body grey and 15px as the sections below them (Oct 11 look). */
+html[data-theme] .app #polity-ideas#polity-ideas#polity-ideas#polity-ideas,
+html[data-theme] .app[data-atlas-mode="deep-time"] #polity-leaders#polity-leaders#polity-leaders#polity-leaders {
+  color: var(--ink-dim);
+}
+html .app.app #polity-ideas#polity-ideas#polity-ideas#polity-ideas {
+  font-size: var(--type-body, 15px);
+  line-height: var(--read-leading);
+  margin: 2.4px 0 0;
+}
