@@ -31,7 +31,7 @@ BASEMAP = {
   stories=[st("Ain Jalut", "In 1260 Qutuz and Baybars defeated a Mongol army in Galilee, the Mongols’ first major defeat in the region."),
            st("Sultan Hasan’s mosque", "The vast Mosque-Madrasa of Sultan Hasan in Cairo was built in 1356–1363, soon after the Black Death."),
            st("Qaitbay’s fort", "Qaitbay built a fortress at Alexandria in 1477 on the site of the ruined Pharos lighthouse.")],
-  images=[img("Mosque-Madrassa of Sultan Hassan.jpg", "Mosque-Madrasa of Sultan Hasan, Cairo (1356–1363)", "religion"),
+  images=[img("Kairo Sultan Hassan Moschee BW 1.jpg", "Mosque-Madrasa of Sultan Hasan, Cairo (1356–1363)", "religion"),
           img("Citadel of Qaitbay 014.JPG", "Citadel of Qaitbay, Alexandria (1477)", "art")]),
  "trebizond": dict(
   stories=[st("Last of the Greek empires", "Trebizond outlasted Constantinople by eight years and surrendered to Mehmed II in 1461."),
