@@ -236,9 +236,14 @@ function eraPolityColors(topo, polityIds) {
   return colors;
 }
 
-function polityPanel(p) {
+// Optional per-tick display name, e.g. nameByTick: { "1400": "Jagiellonian Poland" }
+function polityNameAt(p, year) {
+  return (year != null && p.nameByTick?.[String(year)]) || p.name;
+}
+
+function polityPanel(p, year = null) {
   return {
-    name: p.name,
+    name: polityNameAt(p, year),
     type: p.type,
     yearsActive: p.yearsActive,
     summary: p.description || "",
@@ -282,18 +287,18 @@ function v2TickFromTopo(topo, obj, raw, colors, year = null) {
     if (props.approx) approxCount++;
     if (p) {
       if (!polities[p.id]) {
-        polities[p.id] = polityPanel(p);
+        polities[p.id] = polityPanel(p, year);
         mapLayers.push({
           polityId: p.id,
           id: p.id,
-          label: p.name,
+          label: polityNameAt(p, year),
           color: colors[p.id] || p.color || "#8a7a6a",
           role: "dominant",
         });
       }
       features.push({
         type: "Feature",
-        properties: { polityId: p.id, name: p.name, type: p.type || "", approx: !!props.approx },
+        properties: { polityId: p.id, name: polityNameAt(p, year), type: p.type || "", approx: !!props.approx },
         geometry: f.geometry,
       });
     } else {

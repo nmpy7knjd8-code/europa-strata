@@ -12033,6 +12033,9 @@
     {
       "id": "poland",
       "name": "Piast / reunited Poland",
+      "nameByTick": {
+        "1400": "Jagiellonian Poland (crown union with Lithuania, 1386)"
+      },
       "type": "kingdom",
       "yearsActive": "c. 960–",
       "color": "#6a4a2a",
