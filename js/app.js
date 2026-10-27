@@ -236,9 +236,14 @@ function eraPolityColors(topo, polityIds) {
   return colors;
 }
 
-function polityPanel(p) {
+// Optional per-tick display name, e.g. nameByTick: { "1400": "Jagiellonian Poland" }
+function polityNameAt(p, year) {
+  return (year != null && p.nameByTick?.[String(year)]) || p.name;
+}
+
+function polityPanel(p, year = null) {
   return {
-    name: p.name,
+    name: polityNameAt(p, year),
     type: p.type,
     yearsActive: p.yearsActive,
     summary: p.description || "",
@@ -282,18 +287,18 @@ function v2TickFromTopo(topo, obj, raw, colors, year = null) {
     if (props.approx) approxCount++;
     if (p) {
       if (!polities[p.id]) {
-        polities[p.id] = polityPanel(p);
+        polities[p.id] = polityPanel(p, year);
         mapLayers.push({
           polityId: p.id,
           id: p.id,
-          label: p.name,
+          label: polityNameAt(p, year),
           color: colors[p.id] || p.color || "#8a7a6a",
           role: "dominant",
         });
       }
       features.push({
         type: "Feature",
-        properties: { polityId: p.id, name: p.name, type: p.type || "", approx: !!props.approx },
+        properties: { polityId: p.id, name: polityNameAt(p, year), type: p.type || "", approx: !!props.approx },
         geometry: f.geometry,
       });
     } else {
@@ -1764,6 +1769,17 @@ function culturesForPolity(polityId) {
   return style.label ? [style.label] : [];
 }
 
+/** Period-appropriate name for a basemap country on Deep-time stops
+ *  (period.countryNames, e.g. { GBR: "Kingdoms of England and Scotland" }). */
+function tipName(props) {
+  const name = props?.name;
+  if (isKingdomMode() || !props?.iso) return name;
+  const periods = state.data?.periods || [];
+  if (!periods.length) return name;
+  const i = Math.round((state.sliderPos || 0) * (periods.length - 1));
+  return periods[Math.max(0, Math.min(periods.length - 1, i))]?.countryNames?.[props.iso] || name;
+}
+
 function tipHtml(name, cultures) {
   const filtered = (cultures || []).filter(
     (c) => c && c.toLowerCase() !== String(name || "").toLowerCase()
@@ -1865,7 +1881,7 @@ function updateSelectionTip() {
   state.tip
     .style("opacity", 1)
     .classed("is-pinned", true)
-    .html(tipHtml(feat.properties.name, cultures));
+    .html(tipHtml(tipName(feat.properties), cultures));
 
   if (state.path) {
     try {
@@ -1987,7 +2003,7 @@ function onCountryEnter(event, d) {
   state.tip
     .style("opacity", 1)
     .classed("is-pinned", iso === state.selectedIso)
-    .html(tipHtml(d.properties.name, cultures));
+    .html(tipHtml(tipName(d.properties), cultures));
   replaceTip();
 }
 
@@ -2363,18 +2379,21 @@ const CULTURE_FAMILY_RULES = [
   ["Mediterranean foragers", /epigravett|iron gates|balkan mesolithic/i],
   ["Eastern foragers", /kunda|\bnarva\b|veretye|ukrainian meso|comb ware|\behg\b|forest-steppe/i],
   ["Foragers", /mesolithic|forager|hunter-gather/i],
-  ["Balkans", /balkan|vu[cč]edol|vin[cč]a|star[cč]evo|k[oö]r[oö]s|cri[sș]|karanovo|trypillia|cucuteni|thracian|illyrian|otomani|f[uü]zesabony|mycenaean|serbia|bulgaria|romania/i],
+  ["Balkans", /balkan|vu[cč]edol|croatia|dacia|transylvan|wallach|moldav|^moldova|montenegr|albania|yugoslav|sloven|bosnia|north macedonia|vin[cč]a|star[cč]evo|k[oö]r[oö]s|cri[sș]|karanovo|trypillia|cucuteni|thracian|illyrian|otomani|f[uü]zesabony|mycenaean|serbia|bulgaria|romania/i],
   ["Neolithic farmers", /cardial|impresso|impressed|\blbk\b|linear pottery|funnelbeaker|\btrb\b|michelsberg|chass[eé]en|megalith|globular amphora|neolithic|bug[–-]dniester|tiszapolg/i],
   ["Bronze Age", /bronze|\bnba\b|tumulus|el argar|terramare|apennine|wessex \/ british/i],
   ["Celtic", /hallstatt|la t[eè]ne|\bceltic\b|celtiberian/i],
-  ["Iberia", /iberian|lusitanian|hispania|castile|aragon|\bportugal\b|portuguese|nasrid|andalus|asturias|granada|\bspain\b|spanish|los millares/i],
-  ["Italy", /etruscan|\bitalia\b|\bitaly\b|latin \/|early rome|venice|papal|savoy|sicil|lombard|remedello|gaudo|communal italy/i],
-  ["Aegean", /greek|greece|achaea|byzantine|ottoman|asia minor|turkey/i],
-  ["Germanic", /frank|alamann|anglo-saxon|wielbark|chernyakhov|ostrogoth|visigoth|vandal|germanic|jastorf|danelaw|wessex|norman|carolingian|francia|burgund/i],
-  ["Slavic & Baltic", /slavic|kievan|\brus\b|moravia|piast|poland|muscov|novgorod|vladimir|galicia|volhynia|lithuania|bohemia|teutonic|baltic|ukraine|belarus/i],
+  ["Western Europe", /netherlands|belgium|luxembourg|flanders|occitan/i],
+  ["Central Europe", /^(?!austria).*(?:hungary|hungarian|[aá]rp[aá]d|czech|slovak|transcarpath)/i],
+  ["Steppe", /cuman|kipchak|crimea/i],
+  ["Iberia", /\biberia\b|navarre|iberian|lusitanian|hispania|castile|aragon|\bportugal\b|portuguese|nasrid|andalus|asturias|granada|\bspain\b|spanish|los millares/i],
+  ["Italy", /etruscan|\bitalia\b|\bitaly\b|latin \/|early rome|venice|papal|savoy|sicil|lombard|milan|florence|tuscany|genoa|naples|sardinia|piedmont|remedello|gaudo|communal italy/i],
+  ["Aegean", /greek|greece|achaea|byzant|seljuk|sultanate of rum|ottoman|asia minor|turkey/i],
+  ["Germanic", /frank|alamann|anglo-saxon|wielbark|chernyakhov|ostrogoth|visigoth|vandal|germanic|germania|ottonian|jastorf|danelaw|wessex|norman|carolingian|francia|burgund/i],
+  ["Slavic & Baltic", /slavic|kievan|\brus\b|moravia|piast|poland|muscov|novgorod|vladimir|galicia|volhynia|lithuania|bohemia|teutonic|baltic|ukraine|belarus|\brussia|soviet|ussr|latvia|eston/i],
   ["Nordic", /nordic|scandinav|denmark|norway|sweden|danish|norwegian|swedish|kalmar|iceland|finland/i],
-  ["Britain & Ireland", /british|britain|britannia|england|scotland|wales|welsh|ireland|irish|gaelic|hibernia|plantagenet|tudor|lancastrian|united kingdom/i],
-  ["Western Europe", /\bfrance\b|\bgaul\b|gallia|benelux|dutch|low countries|swiss|\bgerman\b|germany|\bhabsburg\b|austria|holy roman|\bhre\b/i],
+  ["Britain & Ireland", /british|britain|brittonic|britannia|england|scotland|wales|welsh|ireland|irish|gaelic|hibernia|plantagenet|tudor|lancastrian|united kingdom/i],
+  ["Western Europe", /\bfrance\b|\bgaul\b|gallia|benelux|dutch|low countries|swiss|\bgerman\b|germany|\bhabsburg\b|austria|holy roman|\bhre\b|prussia|bavaria|saxony|w[uü]rttemberg|baden|hanover/i],
 ];
 
 function cultureFamily(layer) {
@@ -2401,7 +2420,8 @@ function groupLegendLayers(layers) {
   if (!named.length) return [{ family: "", layers }];
   const groups = named.map((key) => ({ family: key, layers: buckets.get(key) }));
   const loose = buckets.get("__other") || [];
-  if (loose.length) groups.push({ family: loose.length > 1 ? "Other" : "", layers: loose });
+  // Always head leftovers, or a lone layer reads as part of the group above it.
+  if (loose.length) groups.push({ family: "Other", layers: loose });
   return groups;
 }
 

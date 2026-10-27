@@ -1,0 +1,124 @@
+{
+ "_doc": "Commons files allowed on 3+ polities, and the polity ids where each is relevant. scripts/audit_reused_images.py fails on any reuse outside these lists.",
+ "Hagia Sophia Mars 2013.jpg": [
+  "byzantium",
+  "ottoman",
+  "ottoman-empire",
+  "turkey",
+  "latin-empire"
+ ],
+ "1648 Friedenssaal Rathaus Münster (2).jpg": [
+  "hre",
+  "sweden",
+  "france",
+  "swiss"
+ ],
+ "Kaiserin Maria Theresia (HRR).jpg": [
+  "austria",
+  "austrian-netherlands",
+  "hre",
+  "hungary",
+  "bohemia",
+  "milan"
+ ],
+ "Alhambra Granada Spain.jpg": [
+  "granada"
+ ],
+ "William III of England.jpg": [
+  "england",
+  "scotland",
+  "britain",
+  "ireland",
+  "dutch-republic"
+ ],
+ "King William III of England, (1650-1702).jpg": [
+  "england",
+  "scotland",
+  "britain",
+  "ireland",
+  "dutch-republic"
+ ],
+ "Siege of Buda, 1686.jpg": [
+  "austria",
+  "ottoman",
+  "hungary"
+ ],
+ "Buda Castle.jpg": [
+  "austria",
+  "ottoman",
+  "hungary"
+ ],
+ "Thingvellir 001.jpg": [
+  "iceland"
+ ],
+ "Chateau Versailles Galerie des Glaces.jpg": [
+  "france",
+  "navarre"
+ ],
+ "La ronda de noche, por Rembrandt van Rijn.jpg": [
+  "dutch-republic"
+ ],
+ "Basilica di San Pietro in Vaticano September 2015-1a.jpg": [
+  "papal-states",
+  "italy"
+ ],
+ "Saint Peter's Basilica facade, Rome, Italy.jpg": [
+  "papal-states",
+  "italy"
+ ],
+ "Curtea de Arges monastery.JPG": [
+  "wallachia",
+  "romania"
+ ],
+ "VictorEmmanuel2.jpg": [
+  "sardinia-piedmont",
+  "italy"
+ ],
+ "Alexander Nevsky Cathedral, Sofia.jpg": [
+  "bulgaria"
+ ],
+ "Las Meninas, by Diego Velázquez, from Prado in Google Earth.jpg": [
+  "spain"
+ ],
+ "Portrait of Philip II of Spain by Sofonisba Anguissola - 002b.jpg": [
+  "spain",
+  "spanish-netherlands",
+  "naples",
+  "portugal"
+ ],
+ "Jan III Sobieski.PNG": [
+  "poland-lithuania"
+ ],
+ "Anton Schoonjans - Pasticcio portrait of Emperor Peter the Great of Russia.jpg": [
+  "russia",
+  "sweden"
+ ],
+ "EmperorSuleiman.jpg": [
+  "ottoman"
+ ],
+ "Iznik tiles, Istanbul Archaeological Museums.jpg": [
+  "ottoman"
+ ],
+ "Christ Pantocrator mosaic from Hagia Sophia 2744 x 2900 pixels 3.1 MB.jpg": [
+  "ottoman",
+  "byzantium"
+ ],
+ "Uppsala Cathedral two towers.jpg": [
+  "sweden",
+  "sweden-norway"
+ ],
+ "Vilnius Cathedral 16.jpg": [
+  "lithuania",
+  "poland-lithuania",
+  "baltic-tribes"
+ ],
+ "Wien - Stephansdom (1).JPG": [
+  "austrian-empire",
+  "austria-hungary",
+  "austria",
+  "habsburg-austria"
+ ],
+ "Unique Forms of Continuity in Space MET DT6411.jpg": [
+  "italy"
+ ]
+}

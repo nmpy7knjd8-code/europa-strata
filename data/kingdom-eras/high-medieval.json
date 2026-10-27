@@ -6758,24 +6758,6 @@
           "role": "religion"
         },
         {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Hagia%20Sophia%20Mars%202013.jpg?width=800",
-          "caption": "Hagia Sophia",
-          "alt": "Hagia Sophia",
-          "role": "art"
-        },
-        {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Alhambra%20Granada%20Spain.jpg?width=800",
-          "caption": "Alhambra",
-          "alt": "Alhambra",
-          "role": "culture"
-        },
-        {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Thingvellir%20001.jpg?width=800",
-          "caption": "Þingvellir",
-          "alt": "Þingvellir",
-          "role": "story"
-        },
-        {
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Clonmacnoise%20Round%20Tower.jpg?width=800",
           "caption": "Clonmacnoise",
           "alt": "Clonmacnoise",
@@ -8327,12 +8309,6 @@
           "role": "culture"
         },
         {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Hagia%20Sophia%20Mars%202013.jpg?width=800",
-          "caption": "Hagia Sophia",
-          "alt": "Hagia Sophia",
-          "role": "story"
-        },
-        {
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Chateau_Gaillard_Les_Andelys.jpg?width=800",
           "caption": "Château Gaillard — Richard I’s Seine fortress, lost under John",
           "alt": "Château Gaillard — Richard I’s Seine fortress, lost under John",
@@ -8361,6 +8337,12 @@
           "caption": "Pupil's notebook and study outline in English history (1912) (14577709 — Angevin / Plantagenet continental lands",
           "alt": "Pupil's notebook and study outline in English history (1912) (14577709 — Angevin / Plantagenet continental lands",
           "role": "culture"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Church%20of%20Fontevraud%20Abbey%20Eleanor%20of%20Aquitaine%20and%20Henry%20II%20effigies.jpg?width=800",
+          "caption": "Effigies of Henry II and Eleanor of Aquitaine, Fontevraud Abbey",
+          "alt": "Effigies of Henry II and Eleanor of Aquitaine",
+          "role": "story"
         }
       ],
       "philosophy": "Itinerant kingship as governance theory-in-practice; the problem of a vassal-king who was stronger than his Capetian suzerain forced legal casuistry about homage. Becket's conflict sharpened debates on clerical liberty versus royal justice that echoed across Latin Europe. Eleanor's political agency modelled female lordship at the highest scale.",
@@ -10976,12 +10958,6 @@
           "role": "culture"
         },
         {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Hagia%20Sophia%20Mars%202013.jpg?width=800",
-          "caption": "Hagia Sophia",
-          "alt": "Hagia Sophia",
-          "role": "story"
-        },
-        {
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Canossa.jpg?width=800",
           "caption": "Canossa",
           "alt": "Canossa",
@@ -11996,12 +11972,6 @@
           "role": "culture"
         },
         {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Hagia%20Sophia%20Mars%202013.jpg?width=800",
-          "caption": "Hagia Sophia",
-          "alt": "Hagia Sophia",
-          "role": "story"
-        },
-        {
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Charles%20Bridge%20%28Prague%29.jpg?width=800",
           "caption": "Charles Bridge",
           "alt": "Charles Bridge",
@@ -12063,6 +12033,9 @@
     {
       "id": "poland",
       "name": "Piast / reunited Poland",
+      "nameByTick": {
+        "1400": "Jagiellonian Poland (crown union with Lithuania, 1386)"
+      },
       "type": "kingdom",
       "yearsActive": "c. 960–",
       "color": "#6a4a2a",
@@ -12941,12 +12914,6 @@
           "caption": "Krakow - Kosciol Mariacki — Piast / reunited Poland",
           "alt": "Krakow - Kosciol Mariacki — Piast / reunited Poland",
           "role": "culture"
-        },
-        {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Hagia%20Sophia%20Mars%202013.jpg?width=800",
-          "caption": "Hagia Sophia",
-          "alt": "Hagia Sophia",
-          "role": "story"
         },
         {
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Wawel%20Cathedral.jpg?width=800",
@@ -14048,18 +14015,6 @@
           "caption": "Experimental reconstruction of the Holy Crown of Hungary (replica) — Kingdom of Hungary",
           "alt": "Experimental reconstruction of the Holy Crown of Hungary (replica) — Kingdom of Hungary",
           "role": "leader"
-        },
-        {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Thingvellir%20001.jpg?width=800",
-          "caption": "Þingvellir",
-          "alt": "Þingvellir",
-          "role": "religion"
-        },
-        {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Hagia%20Sophia%20Mars%202013.jpg?width=800",
-          "caption": "Hagia Sophia",
-          "alt": "Hagia Sophia",
-          "role": "art"
         },
         {
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Matthiaskirche%20Budapest.JPG?width=800",
@@ -19541,12 +19496,6 @@
           "role": "art"
         },
         {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Vilnius%20Cathedral%2016.jpg?width=800",
-          "caption": "Vilnius Cathedral 16 — Kingdom of Sweden",
-          "alt": "Vilnius Cathedral 16 — Kingdom of Sweden",
-          "role": "culture"
-        },
-        {
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Stockholm%20Palace%20north%20facade%20March%202007.jpg?width=800",
           "caption": "Stockholm Palace north facade March 2007 — Kingdom of Sweden",
           "alt": "Stockholm Palace north facade March 2007 — Kingdom of Sweden",
@@ -24309,12 +24258,6 @@
           "alt": "Ibn Rushd (Averroes) — Cordoban philosopher-physician of the Almohad age"
         },
         {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Hagia%20Sophia%20Mars%202013.jpg?width=800",
-          "caption": "Hagia Sophia",
-          "alt": "Hagia Sophia",
-          "role": "story"
-        },
-        {
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Hassan_Tower_Rabat.jpg?width=800",
           "caption": "Hassan Tower, Rabat — unfinished Almohad monumentalism",
           "alt": "Hassan Tower, Rabat — unfinished Almohad monumentalism",
@@ -26296,12 +26239,6 @@
           "alt": "Hagia Sophia — Byzantine imperial church"
         },
         {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Alhambra%20Granada%20Spain.jpg?width=800",
-          "caption": "Alhambra",
-          "alt": "Alhambra",
-          "role": "religion"
-        },
-        {
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Hagia_Sophia_Mars_2013.jpg?width=800",
           "caption": "Hagia Sophia — Byzantine imperial church",
           "alt": "Hagia Sophia — Byzantine imperial church",
@@ -26545,24 +26482,6 @@
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Madara_Rider.jpg?width=960",
           "caption": "Madara Rider — earlier Bulgar royal rock relief still emblematic",
           "alt": "Madara Rider — earlier Bulgar royal rock relief still emblematic"
-        },
-        {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Alhambra%20Granada%20Spain.jpg?width=800",
-          "caption": "Alhambra",
-          "alt": "Alhambra",
-          "role": "religion"
-        },
-        {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Thingvellir%20001.jpg?width=800",
-          "caption": "Þingvellir",
-          "alt": "Þingvellir",
-          "role": "art"
-        },
-        {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Hagia%20Sophia%20Mars%202013.jpg?width=800",
-          "caption": "Hagia Sophia",
-          "alt": "Hagia Sophia",
-          "role": "culture"
         },
         {
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Round%20Church,%20Preslav.jpg?width=800",
@@ -32331,12 +32250,6 @@
           "role": "culture"
         },
         {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Hagia%20Sophia%20Mars%202013.jpg?width=800",
-          "caption": "Hagia Sophia",
-          "alt": "Hagia Sophia",
-          "role": "story"
-        },
-        {
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Fo%C3%A7a%20Castle%206413.jpg?width=800",
           "caption": "Foça Castle 6413 — Republic of Genoa",
           "alt": "Foça Castle 6413 — Republic of Genoa",
@@ -32664,12 +32577,6 @@
           "role": "culture"
         },
         {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Alhambra%20Granada%20Spain.jpg?width=800",
-          "caption": "Alhambra",
-          "alt": "Alhambra",
-          "role": "story"
-        },
-        {
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Lombard%20-%20img%2046628.jpg?width=800",
           "caption": "Lombard - img 46628 — Lombard / Padan communes",
           "alt": "Lombard - img 46628 — Lombard / Padan communes",
@@ -32680,6 +32587,12 @@
           "caption": "Carroccio — communal war wagon emblem",
           "alt": "Carroccio — communal war wagon emblem",
           "role": "art"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/The%20battle%20of%20Legnano%20%281870%29%2C%20by%20Amos%20Cassioli.jpg?width=800",
+          "caption": "Battle of Legnano (1176): the Lombard League defeats Frederick Barbarossa (Cassioli, 1870)",
+          "alt": "Battle of Legnano (1176)",
+          "role": "story"
         }
       ],
       "philosophy": "Consent and oath as bases of government; libertas as urban legal bundle; League federalism against monarchy; the podestà as hired neutral executive—an Italian institutional invention.",
@@ -32831,18 +32744,6 @@
           "role": "art"
         },
         {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Hagia%20Sophia%20Mars%202013.jpg?width=800",
-          "caption": "Hagia Sophia",
-          "alt": "Hagia Sophia",
-          "role": "culture"
-        },
-        {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Thingvellir%20001.jpg?width=800",
-          "caption": "Þingvellir",
-          "alt": "Þingvellir",
-          "role": "story"
-        },
-        {
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Flag%20of%20the%20Lordship%20of%20Milan.png?width=800",
           "caption": "Flag of the Lordship of Milan — Duchy / Lordship of Milan",
           "alt": "Flag of the Lordship of Milan — Duchy / Lordship of Milan",
@@ -32883,6 +32784,12 @@
           "caption": "Milan medieval Porta Ticinese 24-11-2021 — Duchy / Lordship of Milan",
           "alt": "Milan medieval Porta Ticinese 24-11-2021 — Duchy / Lordship of Milan",
           "role": "culture"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Duomo%20di%20Milano.jpg?width=800",
+          "caption": "Milan Cathedral, begun 1386 under Gian Galeazzo Visconti",
+          "alt": "Milan Cathedral",
+          "role": "story"
         }
       ],
       "philosophy": "From communal libertas to legitimate signoria; purchased ducal titles as legal varnish; territorial state versus city-state; Ambrosian civic religion under princely rule.",
@@ -33128,18 +33035,6 @@
           "role": "art"
         },
         {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Hagia%20Sophia%20Mars%202013.jpg?width=800",
-          "caption": "Hagia Sophia",
-          "alt": "Hagia Sophia",
-          "role": "leader"
-        },
-        {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Thingvellir%20001.jpg?width=800",
-          "caption": "Þingvellir",
-          "alt": "Þingvellir",
-          "role": "religion"
-        },
-        {
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Firenze%2C%20corteo%20storico%20della%20Repubblica%20Fiorentina%20%28161%29.jpg?width=800",
           "caption": "Firenze, corteo storico della Repubblica Fiorentina (161) — Republic of Florence",
           "alt": "Firenze, corteo storico della Repubblica Fiorentina (161) — Republic of Florence",
@@ -33168,6 +33063,12 @@
           "caption": "Medieval coin, florin of the Republic of Florence. (FindID 979201) — Republic of Florence",
           "alt": "Medieval coin, florin of the Republic of Florence. (FindID 979201) — Republic of Florence",
           "role": "story"
+        },
+        {
+          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Coluccio%20Salutati%20-%20Allori.jpg?width=800",
+          "caption": "Coluccio Salutati, chancellor of Florence (1375–1406)",
+          "alt": "Coluccio Salutati",
+          "role": "leader"
         }
       ],
       "philosophy": "Libertas of the popolo against magnates and Milanese tyranny; early civic humanism; money of account and trust; guild corporatism as constitution.",
@@ -38348,18 +38249,6 @@
           "caption": "Flosagjá canyon at Þingvellir",
           "alt": "Flosagjá canyon at Þingvellir",
           "role": "religion"
-        },
-        {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Hagia%20Sophia%20Mars%202013.jpg?width=800",
-          "caption": "Hagia Sophia",
-          "alt": "Hagia Sophia",
-          "role": "culture"
-        },
-        {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Alhambra%20Granada%20Spain.jpg?width=800",
-          "caption": "Alhambra",
-          "alt": "Alhambra",
-          "role": "story"
         },
         {
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Pictorial%20guide%20to%20Boston%20and%20the%20country%20around%20%281902%29%20%2814595542440%29.jpg?width=800",
