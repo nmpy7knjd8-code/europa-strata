@@ -13864,6 +13864,9 @@
       "era": "Print, Habsburgs, Ottoman peak",
       "yearLabel": "c. 1550 AD",
       "yearApprox": 1550,
+      "countryNames": {
+        "GBR": "Kingdoms of England and Scotland"
+      },
       "narrative": "By the mid-16th century Europe is split by confession and stitched by dynastic empire. Luther, Calvin, and the Catholic Council of Trent redraw belief; print multiplies argument; Habsburgs claim Spain’s global monarchy and the imperial title; Valois then early Bourbon France fights Habsburg encirclement and its own Wars of Religion; Tudor England breaks with Rome; the Ottomans under Süleyman dominate the Balkans and menace Vienna; Ivan IV’s Muscovy becomes an autocratic Orthodox empire; the Polish–Lithuanian Commonwealth is a noble republic of many faiths; Dutch revolt against Philip II is beginning. Overseas Iberian empires pull silver and souls into European politics. Genetics still sit on medieval continua — conversion and empire move people, but WHG–EEF–steppe deep structure remains.",
       "culturesNote": "Habsburg Spain & Austria; Valois France; Tudor England; Lutheran North; Ottoman Rumelia; Muscovy; PLC; Italian Mannerism; Portuguese & Spanish oceans.",
       "regions": {

@@ -1769,6 +1769,17 @@ function culturesForPolity(polityId) {
   return style.label ? [style.label] : [];
 }
 
+/** Period-appropriate name for a basemap country on Deep-time stops
+ *  (period.countryNames, e.g. { GBR: "Kingdoms of England and Scotland" }). */
+function tipName(props) {
+  const name = props?.name;
+  if (isKingdomMode() || !props?.iso) return name;
+  const periods = state.data?.periods || [];
+  if (!periods.length) return name;
+  const i = Math.round((state.sliderPos || 0) * (periods.length - 1));
+  return periods[Math.max(0, Math.min(periods.length - 1, i))]?.countryNames?.[props.iso] || name;
+}
+
 function tipHtml(name, cultures) {
   const filtered = (cultures || []).filter(
     (c) => c && c.toLowerCase() !== String(name || "").toLowerCase()
@@ -1870,7 +1881,7 @@ function updateSelectionTip() {
   state.tip
     .style("opacity", 1)
     .classed("is-pinned", true)
-    .html(tipHtml(feat.properties.name, cultures));
+    .html(tipHtml(tipName(feat.properties), cultures));
 
   if (state.path) {
     try {
@@ -1992,7 +2003,7 @@ function onCountryEnter(event, d) {
   state.tip
     .style("opacity", 1)
     .classed("is-pinned", iso === state.selectedIso)
-    .html(tipHtml(d.properties.name, cultures));
+    .html(tipHtml(tipName(d.properties), cultures));
   replaceTip();
 }
 
