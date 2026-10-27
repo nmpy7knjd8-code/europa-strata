@@ -1786,19 +1786,28 @@
    "name": "Grand Duchy of Hesse",
    "type": "grand duchy",
    "yearsActive": "1806–1918",
-   "summary": "Hesse-Darmstadt became a grand duchy in 1806. It added Rhenish Hesse, around Mainz, in 1816 and lasted until 1918.",
-   "description": "Hesse-Darmstadt became a grand duchy in 1806. It added Rhenish Hesse, around Mainz, in 1816 and lasted until 1918.",
+   "summary": "The Grand Duchy of Hesse, a grand duchy since 1806, gained Rhenish Hesse with Mainz in 1816 and received a constitution in 1820. It joined the German Empire in 1871.",
+   "description": "The Grand Duchy of Hesse, a grand duchy since 1806, gained Rhenish Hesse with Mainz in 1816 and received a constitution in 1820. It joined the German Empire in 1871.",
    "conflicts": "Napoleonic wars; joined the German Confederation in 1815.",
    "leaders": "Louis I, its first grand duke.",
    "religion": "Lutheran and Reformed Protestant.",
    "culture": "A small German court culture.",
-   "story": "Its princesses married into the Russian and British royal families.",
+   "story": "Under Grand Duke Ernst Ludwig, Darmstadt’s Mathildenhöhe artists’ colony (founded 1899) became a centre of Jugendstil.",
    "sources": [
     "Encyclopaedia Britannica",
-    "T. Nipperdey, Germany from Napoleon to Bismarck (1996)"
+    "T. Nipperdey, Germany from Napoleon to Bismarck (1996)",
+    "Encyclopaedia Britannica, “Hesse”"
    ],
    "when": [
     "modern:1815"
+   ],
+   "images": [
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Darmstadt-Schloss%20Marktplatz.jpg?width=640",
+     "caption": "Residenzschloss, Darmstadt",
+     "alt": "Residenzschloss, Darmstadt",
+     "role": "culture"
+    }
    ]
   },
   {
@@ -1809,19 +1818,28 @@
    "name": "Duchy of Nassau",
    "type": "duchy",
    "yearsActive": "1806–1866",
-   "summary": "A duchy on the Rhine and Lahn rivers. Prussia annexed it in 1866.",
-   "description": "A duchy on the Rhine and Lahn rivers. Prussia annexed it in 1866.",
+   "summary": "The Duchy of Nassau (1806–1866), ruled from Wiesbaden and the riverside palace of Biebrich. It backed Austria in 1866 and was annexed by Prussia.",
+   "description": "The Duchy of Nassau (1806–1866), ruled from Wiesbaden and the riverside palace of Biebrich. It backed Austria in 1866 and was annexed by Prussia.",
    "conflicts": "Napoleonic wars; joined the German Confederation in 1815.",
    "leaders": "Dukes of Nassau.",
    "religion": "Lutheran and Reformed Protestant.",
    "culture": "A small German court culture.",
-   "story": "Its last duke, Adolphe, later became Grand Duke of Luxembourg.",
+   "story": "Its last duke, Adolphe, became Grand Duke of Luxembourg in 1890, which is why Luxembourg’s ruling house is still Nassau.",
    "sources": [
     "Encyclopaedia Britannica",
-    "T. Nipperdey, Germany from Napoleon to Bismarck (1996)"
+    "T. Nipperdey, Germany from Napoleon to Bismarck (1996)",
+    "Encyclopaedia Britannica, “Nassau”"
    ],
    "when": [
     "modern:1815"
+   ],
+   "images": [
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Schloss%20Biebrich%2C%20Wiesbaden-Biebrich%2C%20150905%2C%20ako.jpg?width=640",
+     "caption": "Biebrich Palace, seat of the dukes of Nassau",
+     "alt": "Biebrich Palace, seat of the dukes of Nassau",
+     "role": "culture"
+    }
    ]
   },
   {
@@ -1855,8 +1873,8 @@
    "name": "Principality of Waldeck",
    "type": "principality",
    "yearsActive": "to 1918",
-   "summary": "A small Hessian principality, also called Waldeck-Pyrmont.",
-   "description": "A small Hessian principality, also called Waldeck-Pyrmont.",
+   "summary": "The Principality of Waldeck, ruled from Arolsen, was a tiny member of the German Confederation. From 1868 Prussia ran its administration by treaty while its princes kept the throne.",
+   "description": "The Principality of Waldeck, ruled from Arolsen, was a tiny member of the German Confederation. From 1868 Prussia ran its administration by treaty while its princes kept the throne.",
    "conflicts": "Napoleonic wars; joined the German Confederation in 1815.",
    "leaders": "Princes of Waldeck.",
    "religion": "Lutheran and Reformed Protestant.",
@@ -1864,10 +1882,19 @@
    "story": "Its princes served as commanders in many European armies.",
    "sources": [
     "Encyclopaedia Britannica",
-    "T. Nipperdey, Germany from Napoleon to Bismarck (1996)"
+    "T. Nipperdey, Germany from Napoleon to Bismarck (1996)",
+    "Encyclopaedia Britannica, “Waldeck”"
    ],
    "when": [
     "modern:1815"
+   ],
+   "images": [
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Schloss%20Arolsen%2020100622.jpg?width=640",
+     "caption": "Arolsen palace, seat of the princes of Waldeck",
+     "alt": "Arolsen palace, seat of the princes of Waldeck",
+     "role": "culture"
+    }
    ]
   },
   {
@@ -1878,19 +1905,28 @@
    "name": "Principality of Lippe",
    "type": "principality",
    "yearsActive": "to 1918",
-   "summary": "A principality in Westphalia, ruled from Detmold.",
-   "description": "A principality in Westphalia, ruled from Detmold.",
+   "summary": "The Principality of Lippe, ruled from Detmold in the Teutoburg Forest, survived as a sovereign member of the German Confederation and the German Empire until 1918.",
+   "description": "The Principality of Lippe, ruled from Detmold in the Teutoburg Forest, survived as a sovereign member of the German Confederation and the German Empire until 1918.",
    "conflicts": "Napoleonic wars; joined the German Confederation in 1815.",
    "leaders": "Princes of Lippe.",
    "religion": "Lutheran and Reformed Protestant.",
    "culture": "A small German court culture.",
-   "story": "The Hermann Monument near Detmold was finished in 1875.",
+   "story": "The Hermannsdenkmal near Detmold, finished in 1875, honours Arminius’s victory over Rome in AD 9.",
    "sources": [
     "Encyclopaedia Britannica",
-    "T. Nipperdey, Germany from Napoleon to Bismarck (1996)"
+    "T. Nipperdey, Germany from Napoleon to Bismarck (1996)",
+    "Encyclopaedia Britannica, “Lippe”"
    ],
    "when": [
     "modern:1815"
+   ],
+   "images": [
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Detmold%20-%20Residenzschloss%20640.jpg?width=640",
+     "caption": "Residenzschloss, Detmold",
+     "alt": "Residenzschloss, Detmold",
+     "role": "culture"
+    }
    ]
   },
   {
@@ -1901,19 +1937,35 @@
    "name": "Duchy of Brunswick",
    "type": "duchy",
    "yearsActive": "1814–1918",
-   "summary": "A Guelph duchy in Lower Saxony.",
-   "description": "A Guelph duchy in Lower Saxony.",
+   "summary": "A Guelph duchy in Lower Saxony, restored in 1813 after six years inside Napoleon’s Kingdom of Westphalia. Its ‘Black Duke’ fell at Quatre Bras in 1815; a revolt in 1830 drove out his son Charles II and burned the Braunschweig palace. Brunswick joined the North German Confederation in 1867 and the German Empire in 1871.",
+   "description": "A Guelph duchy in Lower Saxony, restored in 1813 after six years inside Napoleon’s Kingdom of Westphalia. Its ‘Black Duke’ fell at Quatre Bras in 1815; a revolt in 1830 drove out his son Charles II and burned the Braunschweig palace. Brunswick joined the North German Confederation in 1867 and the German Empire in 1871.",
    "conflicts": "Napoleonic wars; joined the German Confederation in 1815.",
    "leaders": "Frederick William, the ‘Black Duke’, killed at Quatre Bras (1815).",
    "religion": "Lutheran and Reformed Protestant.",
    "culture": "A small German court culture.",
-   "story": "The Black Duke’s ‘Black Brunswickers’ fought Napoleon.",
+   "story": "In 1809 Duke Frederick William led his black-uniformed ‘Black Brunswickers’ on a fighting march across Germany to the North Sea and escaped to England; they returned to fight in Spain and at Waterloo. Millais painted the legend in The Black Brunswicker (1860).",
    "sources": [
     "Encyclopaedia Britannica",
-    "T. Nipperdey, Germany from Napoleon to Bismarck (1996)"
+    "T. Nipperdey, Germany from Napoleon to Bismarck (1996)",
+    "Encyclopaedia Britannica, “Brunswick”",
+    "Encyclopaedia Britannica, “Frederick William, duke of Brunswick”"
    ],
    "when": [
     "modern:1815"
+   ],
+   "images": [
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/William%20Corden%20the%20Younger%20%281819-1900%29%20-%20Frederick%20William%2C%20Duke%20of%20Brunswick%20and%20Wolfenb%C3%BCttel%20%281771-1815%29%20-%20RCIN%20404134%20-%20Royal%20Collection.jpg?width=640",
+     "caption": "Frederick William, the ‘Black Duke’ of Brunswick",
+     "alt": "Frederick William, the ‘Black Duke’ of Brunswick",
+     "role": "leader"
+    },
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/John%20Everett%20Millais%20The%20Black%20Brunswicker.jpg?width=640",
+     "caption": "Millais, The Black Brunswicker (1860)",
+     "alt": "Millais, The Black Brunswicker (1860)",
+     "role": "art"
+    }
    ]
   },
   {
@@ -1947,19 +1999,28 @@
    "name": "Grand Duchy of Mecklenburg-Schwerin",
    "type": "grand duchy",
    "yearsActive": "1815–1918",
-   "summary": "A Baltic grand duchy, one of the most feudal and conservative states in Germany.",
-   "description": "A Baltic grand duchy, one of the most feudal and conservative states in Germany.",
+   "summary": "A Baltic grand duchy from 1815. It kept its old Estates constitution of 1755 and had no modern written constitution until 1918.",
+   "description": "A Baltic grand duchy from 1815. It kept its old Estates constitution of 1755 and had no modern written constitution until 1918.",
    "conflicts": "Napoleonic wars; joined the German Confederation in 1815.",
    "leaders": "Frederick Francis I.",
    "religion": "Lutheran and Reformed Protestant.",
    "culture": "A small German court culture.",
-   "story": "Landowning estates dominated the duchy until 1918.",
+   "story": "Schwerin Castle, rebuilt in 1845–57 on its island in the lake, became the showpiece of the grand dukes.",
    "sources": [
     "Encyclopaedia Britannica",
-    "T. Nipperdey, Germany from Napoleon to Bismarck (1996)"
+    "T. Nipperdey, Germany from Napoleon to Bismarck (1996)",
+    "Encyclopaedia Britannica, “Mecklenburg”"
    ],
    "when": [
     "modern:1815"
+   ],
+   "images": [
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Schwerin%20Castle%20%281%29.jpg?width=640",
+     "caption": "Schwerin Castle",
+     "alt": "Schwerin Castle",
+     "role": "art"
+    }
    ]
   },
   {
@@ -1993,18 +2054,26 @@
    "name": "Free City of Lübeck",
    "type": "free city",
    "yearsActive": "to 1937",
-   "summary": "Lübeck was a free Hanseatic city and became a sovereign member of the German Confederation in 1815.",
-   "description": "Lübeck was a free Hanseatic city and became a sovereign member of the German Confederation in 1815.",
+   "summary": "The former ‘Queen of the Hanse’, Lübeck was occupied by the French after the battle of Lübeck in 1806 and annexed to France in 1811. Restored as a free city in 1815, it kept its independence until Prussia absorbed it in 1937.",
+   "description": "The former ‘Queen of the Hanse’, Lübeck was occupied by the French after the battle of Lübeck in 1806 and annexed to France in 1811. Restored as a free city in 1815, it kept its independence until Prussia absorbed it in 1937.",
    "conflicts": "French annexation (1810–1813).",
    "leaders": "An elected senate and burgomasters.",
    "religion": "Lutheran.",
    "culture": "Merchant republic culture.",
-   "story": "Lübeck was once the leading city of the Hanseatic League.",
+   "story": "Thomas Mann, born in Lübeck in 1875, drew on its merchant families for Buddenbrooks (1901). The Holstentor gate of 1478 still guards the old town.",
    "sources": [
     "Encyclopaedia Britannica, “Lübeck”"
    ],
    "when": [
     "modern:1815"
+   ],
+   "images": [
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Holstentor%20in%20L%C3%BCbeck%202015.jpg?width=640",
+     "caption": "Holstentor, Lübeck (1478)",
+     "alt": "Holstentor, Lübeck (1478)",
+     "role": "culture"
+    }
    ]
   },
   {
@@ -2015,18 +2084,33 @@
    "name": "Free City of Bremen",
    "type": "free city",
    "yearsActive": "to present (as a state)",
-   "summary": "Bremen was a free Hanseatic city and became a sovereign member of the German Confederation in 1815.",
-   "description": "Bremen was a free Hanseatic city and became a sovereign member of the German Confederation in 1815.",
+   "summary": "A free Hanseatic city on the Weser that kept its sovereignty in the German Confederation in 1815. Because the river was silting up, Bremen bought land at the Weser mouth and founded Bremerhaven in 1827, which became one of Europe’s main emigrant ports to America.",
+   "description": "A free Hanseatic city on the Weser that kept its sovereignty in the German Confederation in 1815. Because the river was silting up, Bremen bought land at the Weser mouth and founded Bremerhaven in 1827, which became one of Europe’s main emigrant ports to America.",
    "conflicts": "French annexation (1810–1813).",
    "leaders": "An elected senate and burgomasters.",
    "religion": "Lutheran.",
    "culture": "Merchant republic culture.",
-   "story": "Bremen is still a city-state of Germany today.",
+   "story": "The stone Roland of 1404 in front of the town hall stood for the city’s liberties; the Rathaus and Roland are a UNESCO World Heritage Site (2004).",
    "sources": [
-    "Encyclopaedia Britannica, “Bremen”"
+    "Encyclopaedia Britannica, “Bremen”",
+    "UNESCO World Heritage List, “Town Hall and Roland on the Marketplace of Bremen”"
    ],
    "when": [
     "modern:1815"
+   ],
+   "images": [
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Bremen%2C%20Roland%20--%202021%20--%206347.jpg?width=640",
+     "caption": "Bremen’s Roland statue (1404)",
+     "alt": "Bremen’s Roland statue (1404)",
+     "role": "culture"
+    },
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Bremen%2C%20Rathaus%20--%202021%20--%206357.jpg?width=640",
+     "caption": "Bremen town hall",
+     "alt": "Bremen town hall",
+     "role": "art"
+    }
    ]
   },
   {
@@ -2037,18 +2121,32 @@
    "name": "Free City of Hamburg",
    "type": "free city",
    "yearsActive": "to present (as a state)",
-   "summary": "Hamburg was a free Hanseatic city and became a sovereign member of the German Confederation in 1815.",
-   "description": "Hamburg was a free Hanseatic city and became a sovereign member of the German Confederation in 1815.",
+   "summary": "Hamburg was a free Hanseatic city and became a sovereign member of the German Confederation in 1815. Annexed by France in 1810 and besieged under Marshal Davout in 1813–14, it rebuilt as Germany’s largest port. A great fire destroyed much of the old town in 1842, and the city joined the German customs union only in 1888.",
+   "description": "Hamburg was a free Hanseatic city and became a sovereign member of the German Confederation in 1815. Annexed by France in 1810 and besieged under Marshal Davout in 1813–14, it rebuilt as Germany’s largest port. A great fire destroyed much of the old town in 1842, and the city joined the German customs union only in 1888.",
    "conflicts": "French annexation (1810–1813).",
    "leaders": "An elected senate and burgomasters.",
    "religion": "Lutheran.",
    "culture": "Merchant republic culture.",
-   "story": "Hamburg is still a city-state of Germany today.",
+   "story": "Hamburg is still a city-state of Germany today. Its neo-Renaissance Rathaus, finished in 1897, was built for a senate that still governs the city.",
    "sources": [
     "Encyclopaedia Britannica, “Hamburg”"
    ],
    "when": [
     "modern:1815"
+   ],
+   "images": [
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Hamburg%2C%20Rathaus%20--%202016%20--%204175.jpg?width=640",
+     "caption": "Hamburg Rathaus, seat of the senate",
+     "alt": "Hamburg Rathaus, seat of the senate",
+     "role": "culture"
+    },
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Alsterblick%20Hamburg.jpg?width=640",
+     "caption": "Hamburg across the Alster",
+     "alt": "Hamburg across the Alster",
+     "role": "story"
+    }
    ]
   },
   {
@@ -2059,8 +2157,8 @@
    "name": "Grand Duchy of Oldenburg",
    "type": "grand duchy",
    "yearsActive": "1815–1918",
-   "summary": "Oldenburg was raised to a grand duchy at Vienna in 1815, though its rulers only adopted the title in 1829.",
-   "description": "Oldenburg was raised to a grand duchy at Vienna in 1815, though its rulers only adopted the title in 1829.",
+   "summary": "A North Sea duchy annexed by France in 1811 and restored in 1813; it was raised to a grand duchy in 1815. It joined the German Empire in 1871 and kept its grand dukes until 1918.",
+   "description": "A North Sea duchy annexed by France in 1811 and restored in 1813; it was raised to a grand duchy in 1815. It joined the German Empire in 1871 and kept its grand dukes until 1918.",
    "conflicts": "Napoleonic wars; joined the German Confederation in 1815.",
    "leaders": "Peter I.",
    "religion": "Lutheran and Reformed Protestant.",
@@ -2068,10 +2166,19 @@
    "story": "The ruling house was related to the Russian imperial family.",
    "sources": [
     "Encyclopaedia Britannica",
-    "T. Nipperdey, Germany from Napoleon to Bismarck (1996)"
+    "T. Nipperdey, Germany from Napoleon to Bismarck (1996)",
+    "Encyclopaedia Britannica, “Oldenburg”"
    ],
    "when": [
     "modern:1815"
+   ],
+   "images": [
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Schloss%20Oldenburg%20um%201840.jpg?width=640",
+     "caption": "Oldenburg palace, c. 1840",
+     "alt": "Oldenburg palace, c. 1840",
+     "role": "culture"
+    }
    ]
   },
   {
@@ -2082,19 +2189,28 @@
    "name": "Electorate of Hesse (Hesse-Kassel)",
    "type": "electorate",
    "yearsActive": "1803–1866",
-   "summary": "Its ruler kept the title of Elector even after the Holy Roman Empire ended. Prussia annexed it in 1866.",
-   "description": "Its ruler kept the title of Elector even after the Holy Roman Empire ended. Prussia annexed it in 1866.",
+   "summary": "The Electorate of Hesse (Kurhessen), restored in 1813 under Elector William I. Its rulers kept the title of elector even after the Holy Roman Empire had gone. It sided with Austria in 1866 and was annexed by Prussia.",
+   "description": "The Electorate of Hesse (Kurhessen), restored in 1813 under Elector William I. Its rulers kept the title of elector even after the Holy Roman Empire had gone. It sided with Austria in 1866 and was annexed by Prussia.",
    "conflicts": "Napoleonic wars; joined the German Confederation in 1815.",
    "leaders": "William I.",
    "religion": "Lutheran and Reformed Protestant.",
    "culture": "A small German court culture.",
-   "story": "The Brothers Grimm worked in Kassel.",
+   "story": "The Brothers Grimm worked in Kassel while collecting their fairy tales. Wilhelmshöhe palace later held the captured Napoleon III in 1870–71.",
    "sources": [
     "Encyclopaedia Britannica",
-    "T. Nipperdey, Germany from Napoleon to Bismarck (1996)"
+    "T. Nipperdey, Germany from Napoleon to Bismarck (1996)",
+    "Encyclopaedia Britannica, “Hesse-Kassel”"
    ],
    "when": [
     "modern:1815"
+   ],
+   "images": [
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/11-10-15-kassel-by-RalfR-19.jpg?width=640",
+     "caption": "Wilhelmshöhe, Kassel",
+     "alt": "Wilhelmshöhe, Kassel",
+     "role": "art"
+    }
    ]
   },
   {
@@ -2128,18 +2244,32 @@
    "name": "Duchy of Lucca",
    "type": "duchy",
    "yearsActive": "1815–1847",
-   "summary": "A duchy created at the Congress of Vienna for the Bourbon-Parma family. It was merged into Tuscany in 1847.",
-   "description": "A duchy created at the Congress of Vienna for the Bourbon-Parma family. It was merged into Tuscany in 1847.",
+   "summary": "A duchy created at the Congress of Vienna for Maria Luisa of Bourbon, the former queen of Etruria, as compensation until Parma passed to her line. Her son Charles Louis ruled from 1824; in 1847 he ceded Lucca to Tuscany and took Parma.",
+   "description": "A duchy created at the Congress of Vienna for Maria Luisa of Bourbon, the former queen of Etruria, as compensation until Parma passed to her line. Her son Charles Louis ruled from 1824; in 1847 he ceded Lucca to Tuscany and took Parma.",
    "conflicts": "Upheavals of 1847.",
    "leaders": "Maria Luisa of Bourbon; Charles Louis.",
    "religion": "Catholic.",
    "culture": "A walled Tuscan city.",
-   "story": "Lucca’s Renaissance walls survive intact.",
+   "story": "Lucca’s Renaissance walls survive intact and were turned into a tree-lined public promenade in the nineteenth century.",
    "sources": [
     "Encyclopaedia Britannica, “Lucca”"
    ],
    "when": [
     "modern:1815"
+   ],
+   "images": [
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Queen%20of%20Etruria%20Maria%20Luisa%20with%20her%20son%20Charles%20Louis.jpg?width=640",
+     "caption": "Maria Luisa of Bourbon with her son Charles Louis",
+     "alt": "Maria Luisa of Bourbon with her son Charles Louis",
+     "role": "leader"
+    },
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Lucca.city%20walls01.jpg?width=640",
+     "caption": "The walls of Lucca",
+     "alt": "The walls of Lucca",
+     "role": "culture"
+    }
    ]
   },
   {
@@ -2172,18 +2302,33 @@
    "name": "Free City of Kraków",
    "type": "free city",
    "yearsActive": "1815–1846",
-   "summary": "A free city under the joint protection of Austria, Prussia and Russia, created in 1815. Austria annexed it after the uprising of 1846.",
-   "description": "A free city under the joint protection of Austria, Prussia and Russia, created in 1815. Austria annexed it after the uprising of 1846.",
+   "summary": "A free city under the joint protection of Austria, Prussia and Russia, created at the Congress of Vienna in 1815. With the Jagiellonian University and a small rural territory, it was the last independent fragment of Poland. Austria annexed it as the Grand Duchy of Kraków after the uprising of 1846.",
+   "description": "A free city under the joint protection of Austria, Prussia and Russia, created at the Congress of Vienna in 1815. With the Jagiellonian University and a small rural territory, it was the last independent fragment of Poland. Austria annexed it as the Grand Duchy of Kraków after the uprising of 1846.",
    "conflicts": "Kraków Uprising (1846).",
    "leaders": "An elected senate.",
    "religion": "Catholic.",
    "culture": "Polish university life.",
-   "story": "It was the last independent Polish territory before 1918.",
+   "story": "It was the last independent Polish territory before 1918. In the February 1846 uprising the radical Edward Dembowski was killed leading a procession against Austrian troops.",
    "sources": [
-    "Encyclopaedia Britannica, “Kraków”"
+    "Encyclopaedia Britannica, “Kraków”",
+    "N. Davies, God’s Playground: A History of Poland, vol. 2 (1981)"
    ],
    "when": [
     "modern:1815"
+   ],
+   "images": [
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Edward%20Dembowski%20during%20Krak%C3%B3w%20Uprising%201846.PNG?width=640",
+     "caption": "Edward Dembowski in the Kraków Uprising, 1846",
+     "alt": "Edward Dembowski in the Kraków Uprising, 1846",
+     "role": "story"
+    },
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Coat%20of%20arms%20of%20the%20Krak%C3%B3w%20Uprising.svg?width=640",
+     "caption": "Emblem of the 1846 Kraków Uprising",
+     "alt": "Emblem of the 1846 Kraków Uprising",
+     "role": "culture"
+    }
    ]
   },
   {
@@ -2279,18 +2424,33 @@
    "name": "Iceland",
    "type": "Danish dependency",
    "yearsActive": "home rule 1904; sovereign 1918; republic 1944",
-   "summary": "In 1914 Iceland had home rule under Denmark. It became a sovereign kingdom in personal union with Denmark in 1918 and a republic in 1944.",
-   "description": "In 1914 Iceland had home rule under Denmark. It became a sovereign kingdom in personal union with Denmark in 1918 and a republic in 1944.",
+   "summary": "Iceland in 1914 was under the Danish crown with home rule. The Althing was restored as an advisory body in 1845 and given legislative powers in 1874; home rule came in 1904 with Hannes Hafstein as minister. Iceland became a sovereign kingdom in personal union with Denmark in 1918 and a republic in 1944.",
+   "description": "Iceland in 1914 was under the Danish crown with home rule. The Althing was restored as an advisory body in 1845 and given legislative powers in 1874; home rule came in 1904 with Hannes Hafstein as minister. Iceland became a sovereign kingdom in personal union with Denmark in 1918 and a republic in 1944.",
    "conflicts": "None.",
    "leaders": "Hannes Hafstein, the first minister.",
    "religion": "Lutheran.",
    "culture": "Saga heritage.",
-   "story": "The Althing is one of the oldest parliaments in the world.",
+   "story": "Jón Sigurðsson (1811–1879) led the campaign for self-government; his birthday, 17 June, is Iceland’s national day.",
    "sources": [
-    "Encyclopaedia Britannica, “Iceland”"
+    "Encyclopaedia Britannica, “Iceland”",
+    "Encyclopaedia Britannica, “Iceland: History”"
    ],
    "when": [
     "modern:1914"
+   ],
+   "images": [
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Portrait%20of%20J%C3%B3n%20Sigurdsson.jpg?width=640",
+     "caption": "Jón Sigurðsson, leader of the independence movement",
+     "alt": "Jón Sigurðsson, leader of the independence movement",
+     "role": "leader"
+    },
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Al%C3%BEingish%C3%BAsi%C3%B0.jpg?width=640",
+     "caption": "Althing house, Reykjavík (1881)",
+     "alt": "Althing house, Reykjavík (1881)",
+     "role": "culture"
+    }
    ]
   },
   {
