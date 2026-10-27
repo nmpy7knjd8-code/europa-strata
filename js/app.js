@@ -260,7 +260,16 @@ function polityPanel(p) {
 }
 
 /** Build one tick's layers/panels/geo from the era TopoJSON. */
-function v2TickFromTopo(topo, obj, raw, colors) {
+/** Europa Strata profiles for smaller historical-basemaps polities (data/kingdom-eras/basemap-profiles.json). */
+function basemapProfileFor(name, tabId, year) {
+  const list = state.basemapProfiles || [];
+  const key = `${tabId}:${year}`;
+  return (
+    list.find((e) => (e.names || []).includes(name) && (!e.when || e.when.includes(key))) || null
+  );
+}
+
+function v2TickFromTopo(topo, obj, raw, colors, year = null) {
   const byId = new Map(raw.polities.map((p) => [p.id, p]));
   const fc = topojson.feature(topo, obj);
   const mapLayers = [];
@@ -288,18 +297,35 @@ function v2TickFromTopo(topo, obj, raw, colors) {
         geometry: f.geometry,
       });
     } else {
-      const name = String(props.name || "").trim() || "Unnamed territory";
-      const xid = `x-${i}-${name.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`;
-      polities[xid] = {
-        name,
-        type: "Other polity",
-        summary: `${name}, shown from the historical-basemaps dataset. No Europa Strata profile yet.`,
-        description: "",
-      };
-      mapLayers.push({ polityId: xid, id: xid, label: name, color: ERA_NEUTRAL, role: "dominant", extra: true });
+      const name = String(props.name || "").trim();
+      // Unnamed basemap slivers (mostly small islands with no attribution) are
+      // drawn for the coastline but are not clickable polities.
+      if (!name) {
+        features.push({
+          type: "Feature",
+          properties: { polityId: `u-${i}`, name: "", type: "", extra: true, unnamed: true },
+          geometry: f.geometry,
+        });
+        return;
+      }
+      const prof = basemapProfileFor(name, raw.tabId || raw.id, year);
+      const xid = prof
+        ? `b-${prof.id}`
+        : `x-${i}-${name.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`;
+      if (!polities[xid]) {
+        polities[xid] = prof
+          ? { ...polityPanel(prof), summary: prof.summary || prof.description || "" }
+          : {
+              name,
+              type: "Other polity",
+              summary: `${name}, shown from the historical-basemaps dataset. No Europa Strata profile yet.`,
+              description: "",
+            };
+        mapLayers.push({ polityId: xid, id: xid, label: polities[xid].name, color: ERA_NEUTRAL, role: "dominant", extra: true });
+      }
       features.push({
         type: "Feature",
-        properties: { polityId: xid, name, type: "", extra: true },
+        properties: { polityId: xid, name: polities[xid].name, type: "", extra: true },
         geometry: f.geometry,
       });
     }
@@ -372,7 +398,7 @@ function normalizeKingdomPack(raw, topo = null) {
     ).trim();
     const v2Obj = v2 ? topo.objects?.[`y${year}`] : null;
     if (v2Obj) {
-      const t = v2TickFromTopo(topo, v2Obj, raw, v2Colors);
+      const t = v2TickFromTopo(topo, v2Obj, raw, v2Colors, year);
       return {
         id: `${id}-${year}`,
         yearApprox: year,
@@ -1441,6 +1467,7 @@ function pickPolityAtEvent(event, fallbackId = null) {
   const period = currentPeriod();
   const features = kingdomGeoSmoothed(period)?.features || [];
   const hits = features.filter((f) => {
+    if (f.properties?.unnamed) return false;
     try {
       return d3.geoContains(f, lonlat);
     } catch (_) {
@@ -1488,7 +1515,7 @@ function syncKingdomPolityLayer({ force = false } = {}) {
           .attr("d", state.path)
           .attr("data-polity", (d) => d.properties.polityId)
           .attr("data-name", (d) => d.properties.name)
-          .style("pointer-events", "all")
+          .style("pointer-events", (d) => (d.properties.unnamed ? "none" : "all"))
           .on("pointerenter", onPolityEnter)
           .on("pointermove", onPolityMove)
           .on("pointerleave", onPolityLeave)
@@ -1500,7 +1527,7 @@ function syncKingdomPolityLayer({ force = false } = {}) {
           .attr("d", state.path)
           .attr("data-polity", (d) => d.properties.polityId)
           .attr("data-name", (d) => d.properties.name)
-          .style("pointer-events", "all"),
+          .style("pointer-events", (d) => (d.properties.unnamed ? "none" : "all")),
       (exit) => exit.remove()
     );
 
@@ -3127,6 +3154,11 @@ function renderKingdomDetail() {
       polityPanel.dataset.scope = "polity";
       setPlainText($("#polity-name"), polity.name || place);
       setProseText($("#polity-summary"), polity.summary || "");
+      // Same summary is already in the panel: don't print it twice (matches Deep-time).
+      if (cultureDescEl && (polity.summary || "").trim()) {
+        setPlainText(cultureDescEl, "");
+        cultureDescEl.hidden = true;
+      }
       setPolityField("conflicts", polity.conflicts);
       setPolityField("leaders", polity.leaders);
       setPolityField("religion", polity.religion);
@@ -4217,8 +4249,24 @@ function bindUI() {
   });
 }
 
+let BASEMAP_PROFILES_JOB = null;
+function loadBasemapProfiles() {
+  if (!BASEMAP_PROFILES_JOB) {
+    BASEMAP_PROFILES_JOB = fetch(withV("data/kingdom-eras/basemap-profiles.json"))
+      .then((r) => (r.ok ? r.json() : null))
+      .then((j) => {
+        state.basemapProfiles = Array.isArray(j?.profiles) ? j.profiles : [];
+      })
+      .catch(() => {
+        state.basemapProfiles = [];
+      });
+  }
+  return BASEMAP_PROFILES_JOB;
+}
+
 async function loadKingdomPack(id) {
   try {
+    await loadBasemapProfiles();
     // Cache-bust so refined research geometry packs reload after deploy
     const r = await fetch(withV(`data/kingdom-eras/${id}.json`));
     if (!r.ok) return null;
