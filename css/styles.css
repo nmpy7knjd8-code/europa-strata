@@ -4218,3 +4218,31 @@ html .app #key-events-heading#key-events-heading#key-events-heading#key-events-h
 html .page-ancestry .anc-main p.kicker.kicker,
 html .page-ancestry .kicker.kicker--swatch,
 html .page-ancestry .anc-main .anc-horizon.anc-horizon:not(.kicker) { font-size: 10.88px !important; }
+
+/* Body text greys: restore Oct 11 (7df32f9) colours that the shared reading rule forced to --ink. */
+.page-ancestry .anc-lead,
+.page-ancestry .anc-copy p,
+.page-ancestry .anc-phenotype p,
+.page-ancestry .anc-diet p,
+.page-ancestry .anc-meta ul,
+.page-ancestry .anc-meta p,
+.page-ancestry .anc-foot,
+.page-ancestry .anc-years,
+.page-ancestry .anc-horizon,
+.page-ancestry .tiny,
+.app .key-events-list,
+.app .key-events-body,
+.app .story-item-text {
+  color: var(--ink-dim);
+}
+.page-ancestry .anc-summary,
+.page-ancestry .anc-copy p.anc-summary,
+.app .culture-chip.is-focus {
+  color: var(--ink);
+}
+html[data-theme] .app.app.app #polity-story#polity-story#polity-story#polity-story p.story-item-text {
+  color: var(--ink-dim);
+}
+html[data-theme] .app #cultures-rail#cultures-rail#cultures-rail#cultures-rail > button.culture-chip.is-focus {
+  color: var(--ink);
+}
