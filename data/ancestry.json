@@ -57,6 +57,7 @@
       "years": "c. 10,000–3,500 BC",
       "horizon": "Mesolithic–Eneolithic forest-steppe; key Yamnaya source",
       "summary": "Forest-steppe foragers east of the Black Sea–Baltic zone, rich in Ancient North Eurasian (ANE) affinity.",
+      "phenotype": "Mixed: blue/light eyes (derived HERC2) occur, the derived SLC24A5 light-skin allele is present, and some Samara and Karelia genomes carry light-hair–associated alleles; skin overall intermediate between WHG and later farmers (Mathieson et al. 2015, Nature, doi:10.1038/nature16152).",
       "diet": "Forest-steppe hunting and fishing along the Volga–Don–Pontic rivers; mobile forager bands before and beside early Eneolithic herding.",
       "body": [
         "Eastern Hunter-Gatherers occupy the Volga–Don–Pontic forest-steppe world in contrast to western WHG. They carry substantial Ancient North Eurasian-related ancestry—the deep Siberian-linked strand that also appears (diluted) in later Europeans via the steppe.",
@@ -117,7 +118,7 @@
       "years": "c. 6,500–3,000 BC",
       "horizon": "Anatolian Neolithic–related; Neolithic demographic core of the west",
       "summary": "Anatolian Neolithic–related farming populations who brought domesticates, ceramics, and a new gene pool into Europe.",
-      "phenotype": "Brown eyes. Dark hair.",
+      "phenotype": "Brown eyes. Dark hair. Light skin: the derived SLC24A5 and SLC45A2 skin-lightening alleles were already common in Anatolian and early European farmers, lighter than western hunter-gatherers (Mathieson et al. 2015, Nature 528:499, doi:10.1038/nature16152).",
       "diet": "Mixed farming—cereals and livestock (cattle, sheep/goat, pig)—in settled villages along Balkan, Mediterranean, and Danubian corridors.",
       "body": [
         "Early European Farmers (EEF) are the European expression of Anatolian Neolithic–related ancestry. They enter via the Balkans and Mediterranean coasts and expand as Cardial/Impresso along the west Mediterranean and as Linearbandkeramik (LBK) across the Danubian corridor into central Europe.",
@@ -243,6 +244,28 @@
         "UKR",
         "TUR"
       ]
+    },
+    {
+      "id": "other",
+      "term": "Other",
+      "name": "Residual / unmodeled components",
+      "color": "#6a6a6a",
+      "years": "varies by period and place",
+      "horizon": "Not a population: the remainder a three-way WHG–EEF–WSH model leaves unexplained",
+      "summary": "The share of a mix the main components do not cover.",
+      "body": [
+        "\"Other\" is a bucket, not an ancestral people. In Europe's deep ternary model (WHG, EEF and steppe/WSH), it holds whatever ancestry those three sources do not capture well.",
+        "Depending on period and place it can be eastern Mediterranean or Levantine (common in Imperial Roman Italy, Antonio et al. 2019, Science, doi:10.1126/science.aay6826), North African (southern Iberia, Olalde et al. 2019, Science, doi:10.1126/science.aav1444), CHG/Iran-related ancestry beyond what steppe carries (Aegean Bronze Age, Lazaridis et al. 2017, Nature, doi:10.1038/nature23310), or East Eurasian ancestry brought by steppe groups such as Huns, Avars and Magyars.",
+        "Small values usually mean modelling noise or a poorly fitting source rather than a real migration."
+      ],
+      "proxies": [
+        "Imperial Rome eastern-Mediterranean cluster",
+        "Medieval Iberian North African-related ancestry",
+        "Avar/Hungarian Conquest-period East Eurasian ancestry"
+      ],
+      "role": "Shows where the three-component model stops working.",
+      "mapNote": "No single homeland, so no map footprint.",
+      "isos": []
     }
   ]
 }
