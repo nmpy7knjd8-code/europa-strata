@@ -27,6 +27,30 @@
     "high-medieval:1300",
     "high-medieval:1400",
     "renaissance:1400"
+   ],
+   "stories": [
+    {
+     "title": "Last Latin kingdom",
+     "text": "Lusignan Cyprus outlived the fall of Acre in 1291 and became the last Latin kingdom of the crusader East."
+    },
+    {
+     "title": "Bellapais",
+     "text": "The Gothic abbey of Bellapais was built mainly in the 1200s and 1300s under Lusignan patronage."
+    }
+   ],
+   "images": [
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Bellapais%20Abbey%20Cyprus.jpg?width=640",
+     "caption": "Bellapais Abbey — Lusignan Gothic",
+     "alt": "Bellapais Abbey — Lusignan Gothic",
+     "role": "religion"
+    },
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Kolossi%20Castle%2001.JPG?width=640",
+     "caption": "Kolossi Castle, Hospitaller keep rebuilt in 1454",
+     "alt": "Kolossi Castle, Hospitaller keep rebuilt in 1454",
+     "role": "culture"
+    }
    ]
   },
   {
@@ -107,6 +131,30 @@
     "high-medieval:1400",
     "renaissance:1400",
     "renaissance:1500"
+   ],
+   "stories": [
+    {
+     "title": "The Knight in the Panther’s Skin",
+     "text": "Shota Rustaveli’s epic dates from Tamar’s reign."
+    },
+    {
+     "title": "Gelati",
+     "text": "David the Builder founded Gelati monastery in 1106 as a centre of learning; he is buried at its gate."
+    }
+   ],
+   "images": [
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Tamar%27s%20fresco%20at%20Vardzia.jpg?width=640",
+     "caption": "Queen Tamar in the Vardzia cave-monastery fresco",
+     "alt": "Queen Tamar in the Vardzia cave-monastery fresco",
+     "role": "leader"
+    },
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Gelati%20Monastery%201.jpg?width=640",
+     "caption": "Gelati monastery, founded by David the Builder (1106)",
+     "alt": "Gelati monastery, founded by David the Builder (1106)",
+     "role": "religion"
+    }
    ]
   },
   {
@@ -223,6 +271,24 @@
     "high-medieval:1000",
     "high-medieval:1100",
     "renaissance:1400"
+   ],
+   "stories": [
+    {
+     "title": "Two French crowns",
+     "text": "Anne of Brittany married Charles VIII and then Louis XII of France."
+    },
+    {
+     "title": "Nantes castle",
+     "text": "Duke Francis II rebuilt the castle at Nantes from 1466, and Anne continued the work."
+    }
+   ],
+   "images": [
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/NantesChateau%2008.jpg?width=640",
+     "caption": "Château des ducs de Bretagne, Nantes",
+     "alt": "Château des ducs de Bretagne, Nantes",
+     "role": "culture"
+    }
    ]
   },
   {
@@ -400,6 +466,24 @@
     "high-medieval:1000",
     "high-medieval:1100",
     "high-medieval:1200"
+   ],
+   "stories": [
+    {
+     "title": "Ibn Fadlan",
+     "text": "Ibn Fadlan’s report on his journey also describes the Rus traders he met."
+    },
+    {
+     "title": "Bolghar after the Mongols",
+     "text": "Bolghar was rebuilt under the Golden Horde; most of its standing ruins date from that later period."
+    }
+   ],
+   "images": [
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Small%20minaret%2C%20Bolgar.JPG?width=640",
+     "caption": "Ruins at Bolghar (Golden Horde period, 1300s)",
+     "alt": "Ruins at Bolghar (Golden Horde period, 1300s)",
+     "role": "culture"
+    }
    ]
   },
   {
@@ -560,6 +644,20 @@
    ],
    "when": [
     "high-medieval:1100"
+   ],
+   "stories": [
+    {
+     "title": "Baška tablet",
+     "text": "The Baška tablet (c. 1100) is one of the oldest Croatian inscriptions, written in Glagolitic and naming King Zvonimir."
+    }
+   ],
+   "images": [
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Bascanska%20ploca.jpg?width=640",
+     "caption": "Baška tablet (c. 1100), Glagolitic inscription",
+     "alt": "Baška tablet (c. 1100), Glagolitic inscription",
+     "role": "literature"
+    }
    ]
   },
   {
@@ -584,6 +682,30 @@
     "high-medieval:1100",
     "high-medieval:1400",
     "renaissance:1400"
+   ],
+   "stories": [
+    {
+     "title": "Tarnovo",
+     "text": "Ivan Asen II’s Tarnovo was a centre of Slavic Orthodox learning."
+    },
+    {
+     "title": "Boyana",
+     "text": "The frescoes of Boyana Church near Sofia, dated 1259, are a landmark of medieval Bulgarian painting."
+    }
+   ],
+   "images": [
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Tsarevets%20Veliko%20Tarnovo.jpg?width=640",
+     "caption": "Tsarevets hill, Tarnovo — fortress of the Second Bulgarian Empire",
+     "alt": "Tsarevets hill, Tarnovo — fortress of the Second Bulgarian Empire",
+     "role": "culture"
+    },
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Boyana%20Church%20Mural%20Paintings.jpg?width=640",
+     "caption": "Boyana Church murals (1259)",
+     "alt": "Boyana Church murals (1259)",
+     "role": "art"
+    }
    ]
   },
   {
@@ -904,6 +1026,34 @@
    ],
    "when": [
     "high-medieval:1200"
+   ],
+   "stories": [
+    {
+     "title": "Muret",
+     "text": "In 1213 Simon de Montfort defeated Peter II of Aragon and Raymond VI at Muret; Peter was killed."
+    },
+    {
+     "title": "The stone that killed Montfort",
+     "text": "Simon de Montfort was killed besieging Toulouse in 1218, reportedly by a stone from a siege engine."
+    },
+    {
+     "title": "Carcassonne",
+     "text": "The crusaders took Carcassonne in 1209, early in the Albigensian Crusade."
+    }
+   ],
+   "images": [
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Seal%20of%20Raymond%20VII%2C%20comte%20de%20Toulouse.png?width=640",
+     "caption": "Seal of Raymond VII, count of Toulouse",
+     "alt": "Seal of Raymond VII, count of Toulouse",
+     "role": "leader"
+    },
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Carcassonne%20Cite.jpg?width=640",
+     "caption": "Carcassonne, taken by the crusaders in 1209 (walls much restored)",
+     "alt": "Carcassonne, taken by the crusaders in 1209 (walls much restored)",
+     "role": "story"
+    }
    ]
   },
   {
@@ -951,6 +1101,34 @@
     "high-medieval:1400",
     "renaissance:1400",
     "renaissance:1500"
+   ],
+   "stories": [
+    {
+     "title": "Ain Jalut",
+     "text": "In 1260 Qutuz and Baybars defeated a Mongol army in Galilee, the Mongols’ first major defeat in the region."
+    },
+    {
+     "title": "Sultan Hasan’s mosque",
+     "text": "The vast Mosque-Madrasa of Sultan Hasan in Cairo was built in 1356–1363, soon after the Black Death."
+    },
+    {
+     "title": "Qaitbay’s fort",
+     "text": "Qaitbay built a fortress at Alexandria in 1477 on the site of the ruined Pharos lighthouse."
+    }
+   ],
+   "images": [
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Kairo%20Sultan%20Hassan%20Moschee%20BW%201.jpg?width=640",
+     "caption": "Mosque-Madrasa of Sultan Hasan, Cairo (1356–1363)",
+     "alt": "Mosque-Madrasa of Sultan Hasan, Cairo (1356–1363)",
+     "role": "religion"
+    },
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Citadel%20of%20Qaitbay%20014.JPG?width=640",
+     "caption": "Citadel of Qaitbay, Alexandria (1477)",
+     "alt": "Citadel of Qaitbay, Alexandria (1477)",
+     "role": "art"
+    }
    ]
   },
   {
@@ -975,6 +1153,30 @@
     "high-medieval:1300",
     "high-medieval:1400",
     "renaissance:1400"
+   ],
+   "stories": [
+    {
+     "title": "Last of the Greek empires",
+     "text": "Trebizond outlasted Constantinople by eight years and surrendered to Mehmed II in 1461."
+    },
+    {
+     "title": "Marriage diplomacy",
+     "text": "Trebizond’s princesses married Turkmen rulers; Theodora Komnene became the wife of Uzun Hasan of the Aq Qoyunlu."
+    }
+   ],
+   "images": [
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Fresco%20of%20Comneni%20at%20Agia%20Theotokos%2C%20near%20Trebizond%20-%20Texier%20Charles%20-%201864.jpg?width=640",
+     "caption": "Komnenian rulers in a church fresco near Trebizond (drawn 1864)",
+     "alt": "Komnenian rulers in a church fresco near Trebizond (drawn 1864)",
+     "role": "leader"
+    },
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Fresco%20in%20apse%20of%20St.%20Sophia%27s%2C%20Trebizond.jpg?width=640",
+     "caption": "Apse fresco of Hagia Sophia, Trebizond (drawn 1864)",
+     "alt": "Apse fresco of Hagia Sophia, Trebizond (drawn 1864)",
+     "role": "religion"
+    }
    ]
   },
   {
@@ -1021,6 +1223,24 @@
    ],
    "when": [
     "high-medieval:1300"
+   ],
+   "stories": [
+    {
+     "title": "A world history",
+     "text": "Rashid al-Din’s world history was written for the Ilkhans."
+    },
+    {
+     "title": "Soltaniyeh",
+     "text": "Öljeitü built a new capital at Soltaniyeh; his domed mausoleum there was completed around 1312."
+    }
+   ],
+   "images": [
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Dome%20of%20Soltaniyeh%2C%202010.jpg?width=640",
+     "caption": "Mausoleum of Öljeitü, Soltaniyeh (c. 1312)",
+     "alt": "Mausoleum of Öljeitü, Soltaniyeh (c. 1312)",
+     "role": "art"
+    }
    ]
   },
   {
@@ -1089,6 +1309,30 @@
    "when": [
     "high-medieval:1400",
     "renaissance:1400"
+   ],
+   "stories": [
+    {
+     "title": "Ankara",
+     "text": "In 1402 Timur defeated and captured the Ottoman sultan Bayezid I, nearly breaking the young Ottoman state."
+    },
+    {
+     "title": "The astronomer-prince",
+     "text": "Ulugh Beg’s observatory at Samarkand was built in the 1420s; its star catalogue was among the most accurate before the telescope."
+    }
+   ],
+   "images": [
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Gur-e%20Amir%2001.jpg?width=640",
+     "caption": "Gur-e Amir, Timur’s mausoleum in Samarkand",
+     "alt": "Gur-e Amir, Timur’s mausoleum in Samarkand",
+     "role": "art"
+    },
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Ulugh%20Beg%20Observatory%2001.jpg?width=640",
+     "caption": "Remains of Ulugh Beg’s observatory, Samarkand",
+     "alt": "Remains of Ulugh Beg’s observatory, Samarkand",
+     "role": "science"
+    }
    ]
   },
   {
@@ -1099,18 +1343,46 @@
    "name": "Kingdom of Bosnia",
    "type": "kingdom",
    "yearsActive": "1377–1463",
-   "summary": "Tvrtko I made Bosnia a kingdom in 1377. Its silver mines made it rich. The Ottomans conquered it in 1463.",
-   "description": "Tvrtko I made Bosnia a kingdom in 1377. Its silver mines made it rich. The Ottomans conquered it in 1463.",
+   "summary": "Ban Tvrtko I had himself crowned king in 1377 and for a time also ruled much of the Dalmatian coast. Silver and lead mines such as Srebrenica made Bosnia rich, and Ragusan merchants carried its ore to the Adriatic. After Tvrtko died in 1391 great nobles held the real power. The Ottomans conquered the kingdom in 1463 and executed its last king.",
+   "description": "Ban Tvrtko I had himself crowned king in 1377 and for a time also ruled much of the Dalmatian coast. Silver and lead mines such as Srebrenica made Bosnia rich, and Ragusan merchants carried its ore to the Adriatic. After Tvrtko died in 1391 great nobles held the real power. The Ottomans conquered the kingdom in 1463 and executed its last king.",
    "conflicts": "Hungarian intervention; Ottoman conquest (1463).",
    "leaders": "Tvrtko I; Stephen Tomašević, the last king.",
    "religion": "Catholic, Orthodox and the independent Bosnian Church.",
-   "culture": "Carved stećci tombstones.",
+   "culture": "Carved stećci tombstones; Bosnian Cyrillic (bosančica) charters; mining towns worked by Saxon miners and Ragusan traders.",
    "story": "Thousands of stećci still stand across Bosnia.",
    "sources": [
     "Encyclopaedia Britannica, “Bosnia and Herzegovina: History”"
    ],
    "when": [
     "renaissance:1400"
+   ],
+   "stories": [
+    {
+     "title": "Stećci",
+     "text": "Thousands of stećci still stand across Bosnia. Radimlja near Stolac is among the best-known cemeteries."
+    },
+    {
+     "title": "The silver town",
+     "text": "Srebrenica takes its name from silver (srebro); its mines fed Ragusan and Venetian trade."
+    },
+    {
+     "title": "The last king",
+     "text": "Stephen Tomašević surrendered at Ključ in 1463 and was executed on Mehmed II’s orders."
+    }
+   ],
+   "images": [
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Radimlja%20necropolis%20near%20Stolac.JPG?width=640",
+     "caption": "Radimlja necropolis — stećci tombstones near Stolac",
+     "alt": "Radimlja necropolis — stećci tombstones near Stolac",
+     "role": "culture"
+    },
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Zlatnik%20-%20Tvrtko%20I%20Kotromani%C4%87.jpg?width=640",
+     "caption": "Gold coin of Tvrtko I — Bosnia’s first king",
+     "alt": "Gold coin of Tvrtko I — Bosnia’s first king",
+     "role": "leader"
+    }
    ]
   },
   {
@@ -1209,8 +1481,8 @@
    "name": "Khanate of Kazan",
    "type": "khanate",
    "yearsActive": "1438–1552",
-   "summary": "Kazan was a Tatar khanate on the middle Volga, a successor of the Golden Horde. Ivan IV stormed Kazan in 1552.",
-   "description": "Kazan was a Tatar khanate on the middle Volga, a successor of the Golden Horde. Ivan IV stormed Kazan in 1552.",
+   "summary": "Kazan was a Tatar khanate on the middle Volga, founded around 1438 by Ulugh Muhammad, a deposed khan of the Golden Horde. It controlled Volga trade and raided Muscovite lands, while Moscow repeatedly tried to place its own candidates on the throne. Ivan IV stormed Kazan in 1552 and annexed the khanate.",
+   "description": "Kazan was a Tatar khanate on the middle Volga, founded around 1438 by Ulugh Muhammad, a deposed khan of the Golden Horde. It controlled Volga trade and raided Muscovite lands, while Moscow repeatedly tried to place its own candidates on the throne. Ivan IV stormed Kazan in 1552 and annexed the khanate.",
    "conflicts": "Repeated wars with Muscovy; siege of Kazan (1552).",
    "leaders": "Ulugh Muhammad, the founder.",
    "religion": "Sunni Islam.",
@@ -1221,6 +1493,30 @@
    ],
    "when": [
     "renaissance:1550"
+   ],
+   "stories": [
+    {
+     "title": "St Basil’s",
+     "text": "St Basil’s Cathedral on Red Square was built in 1555–1561 to celebrate Ivan IV’s capture of Kazan."
+    },
+    {
+     "title": "Kingmakers in Moscow",
+     "text": "From the 1480s Moscow repeatedly installed and removed khans in Kazan before choosing conquest."
+    }
+   ],
+   "images": [
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Facial%20Chronicle%20-%20b.21%2C%20p.%20264%20-%20Kazan.jpg?width=640",
+     "caption": "Kazan in the Illustrated Chronicle of Ivan IV",
+     "alt": "Kazan in the Illustrated Chronicle of Ivan IV",
+     "role": "story"
+    },
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/S%C3%B6yembik%C3%A4%20Tower%20in%202018.jpg?width=640",
+     "caption": "Kazan Kremlin and the Söyembikä Tower",
+     "alt": "Kazan Kremlin and the Söyembikä Tower",
+     "role": "culture"
+    }
    ]
   },
   {
