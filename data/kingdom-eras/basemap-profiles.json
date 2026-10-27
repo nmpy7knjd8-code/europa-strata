@@ -1,0 +1,2247 @@
+{
+ "note": "Europa Strata profiles for smaller polities and peoples that the historical-basemaps borders name but the main era packs don't profile. Matched by basemap name; `when` limits an entry to tab:year stops. Sources per entry; general reference: Encyclopaedia Britannica.",
+ "profiles": [
+  {
+   "id": "cyprus-medieval",
+   "names": [
+    "Cyprus"
+   ],
+   "name": "Cyprus",
+   "type": "island realm",
+   "yearsActive": "Byzantine to 1191; Lusignan kingdom 1192–1489",
+   "summary": "A Byzantine province until the rebel Isaac Komnenos seized it in 1184. Richard I of England took the island in 1191 on his way to the Third Crusade and sold it; from 1192 the French Lusignan dynasty ruled a crusader Kingdom of Cyprus until Venice took over in 1489.",
+   "description": "A Byzantine province until the rebel Isaac Komnenos seized it in 1184. Richard I of England took the island in 1191 on his way to the Third Crusade and sold it; from 1192 the French Lusignan dynasty ruled a crusader Kingdom of Cyprus until Venice took over in 1489.",
+   "conflicts": "Arab raids in earlier centuries; Richard I’s conquest (1191); Genoese seizure of Famagusta (1373); Mamluk invasion and the king’s capture (1426).",
+   "leaders": "Isaac Komnenos; Guy of Lusignan and Amalric, the first Lusignan rulers; Peter I, who led the sack of Alexandria in 1365.",
+   "religion": "Greek Orthodox majority under a Latin Catholic church hierarchy imposed by the Lusignan kings.",
+   "culture": "A Greek-speaking island ruled by a French-speaking court, with Italian merchant colonies in Famagusta.",
+   "story": "Lusignan Cyprus outlived the fall of Acre in 1291 and became the last Latin kingdom of the crusader East.",
+   "sources": [
+    "Encyclopaedia Britannica, “Cyprus: History”",
+    "P. W. Edbury, The Kingdom of Cyprus and the Crusades, 1191–1374 (1991)"
+   ],
+   "when": [
+    "high-medieval:1000",
+    "high-medieval:1100",
+    "high-medieval:1200",
+    "high-medieval:1300",
+    "high-medieval:1400",
+    "renaissance:1400"
+   ]
+  },
+  {
+   "id": "sardinia-judicates",
+   "names": [
+    "Sardinia"
+   ],
+   "name": "Sardinia (the Judicates)",
+   "type": "island judicates",
+   "yearsActive": "c. 900s–1420",
+   "summary": "After Byzantine control faded, Sardinia split into four self-governing realms called judicates (Cagliari, Arborea, Torres, Gallura), each ruled by a iudex. Pisa and Genoa competed for influence. Aragon claimed the island from 1297 and Arborea, the last judicate, gave in by 1420.",
+   "description": "After Byzantine control faded, Sardinia split into four self-governing realms called judicates (Cagliari, Arborea, Torres, Gallura), each ruled by a iudex. Pisa and Genoa competed for influence. Aragon claimed the island from 1297 and Arborea, the last judicate, gave in by 1420.",
+   "conflicts": "Pisan–Genoese rivalry over the island; Aragon’s conquest from 1323; long Arborean resistance.",
+   "leaders": "Judges of Arborea, especially Eleanor of Arborea (d. c. 1404).",
+   "religion": "Latin Christian, with Benedictine and other monasteries brought in from the mainland.",
+   "culture": "Sardinian-language charters (condaghes) and the Carta de Logu law code of Arborea.",
+   "story": "Eleanor of Arborea’s Carta de Logu stayed in force on the island until 1827.",
+   "sources": [
+    "Encyclopaedia Britannica, “Sardinia: History”"
+   ],
+   "when": [
+    "high-medieval:1000",
+    "high-medieval:1100",
+    "high-medieval:1200"
+   ]
+  },
+  {
+   "id": "corsica-medieval",
+   "names": [
+    "Corsica"
+   ],
+   "name": "Corsica",
+   "type": "island lordship",
+   "yearsActive": "Pisan to 1284; Genoese 1284–1768",
+   "summary": "Corsica was split among local lords under Pisan church overlordship until Genoa defeated Pisa at Meloria in 1284. Genoa then ruled the island, sometimes through the Bank of Saint George, until it was sold to France in 1768.",
+   "description": "Corsica was split among local lords under Pisan church overlordship until Genoa defeated Pisa at Meloria in 1284. Genoa then ruled the island, sometimes through the Bank of Saint George, until it was sold to France in 1768.",
+   "conflicts": "Pisa–Genoa wars; Aragonese claims; revolts by local lords against Genoa.",
+   "leaders": "Archbishops of Pisa held church authority; later Genoese governors and the Bank of Saint George.",
+   "religion": "Latin Christian, with Pisan Romanesque churches across the island.",
+   "culture": "Mountain clan society with a Tuscan-influenced Corsican language.",
+   "story": "The Pisan Romanesque churches built across the island in the 1100s still stand.",
+   "sources": [
+    "Encyclopaedia Britannica, “Corsica: History”"
+   ],
+   "when": [
+    "high-medieval:1000",
+    "high-medieval:1100",
+    "high-medieval:1200",
+    "high-medieval:1300",
+    "high-medieval:1400"
+   ]
+  },
+  {
+   "id": "georgia-medieval",
+   "names": [
+    "Georgia",
+    "Kingdom of Georgia"
+   ],
+   "name": "Kingdom of Georgia",
+   "type": "kingdom",
+   "yearsActive": "1008–1490s (unified kingdom)",
+   "summary": "Bagrat III united the Georgian lands as one kingdom in 1008. David IV the Builder drove out the Seljuks, winning at Didgori in 1121 and taking Tbilisi in 1122, and the kingdom reached its height under Queen Tamar (1184–1213). Mongol rule from the 1230s and Timur’s invasions wore it down, and by the 1490s it had split into rival kingdoms and principalities.",
+   "description": "Bagrat III united the Georgian lands as one kingdom in 1008. David IV the Builder drove out the Seljuks, winning at Didgori in 1121 and taking Tbilisi in 1122, and the kingdom reached its height under Queen Tamar (1184–1213). Mongol rule from the 1230s and Timur’s invasions wore it down, and by the 1490s it had split into rival kingdoms and principalities.",
+   "conflicts": "Seljuk wars; Didgori (1121); Khwarezmian and Mongol invasions (1220s–1240s); Timur’s campaigns (1386–1403).",
+   "leaders": "Bagrat III; David IV the Builder; Queen Tamar; George V the Brilliant, who restored the kingdom after the Mongols.",
+   "religion": "Georgian Orthodox Christianity, with monasteries such as Gelati at the centre of learning.",
+   "culture": "A golden age of Georgian literature and church building.",
+   "story": "Shota Rustaveli’s epic The Knight in the Panther’s Skin dates from Tamar’s reign.",
+   "sources": [
+    "Encyclopaedia Britannica, “Georgia: History”",
+    "R. G. Suny, The Making of the Georgian Nation (1994)"
+   ],
+   "when": [
+    "high-medieval:1000",
+    "high-medieval:1100",
+    "high-medieval:1200",
+    "high-medieval:1300",
+    "high-medieval:1400",
+    "renaissance:1400",
+    "renaissance:1500"
+   ]
+  },
+  {
+   "id": "armenia-medieval",
+   "names": [
+    "Armenia"
+   ],
+   "name": "Armenia",
+   "type": "kingdom, then lordships",
+   "yearsActive": "Bagratid kingdom 885–1045; then Byzantine, Seljuk and Georgian overlords",
+   "summary": "Around 1000 the Bagratid kings ruled from Ani, a city of churches on the Silk Road. Byzantium annexed Ani in 1045 and the Seljuks sacked it in 1064. In the 1100s and 1200s Armenian lords such as the Zakarids governed much of the region under Georgian protection.",
+   "description": "Around 1000 the Bagratid kings ruled from Ani, a city of churches on the Silk Road. Byzantium annexed Ani in 1045 and the Seljuks sacked it in 1064. In the 1100s and 1200s Armenian lords such as the Zakarids governed much of the region under Georgian protection.",
+   "conflicts": "Byzantine annexation (1045); Seljuk conquest after Manzikert (1071); Mongol invasions from the 1230s.",
+   "leaders": "Gagik I of Ani; the Zakarid brothers Zakare and Ivane.",
+   "religion": "Armenian Apostolic Church, with monastic centres such as Haghpat and Sanahin.",
+   "culture": "Armenian stone churches, carved khachkar cross-stones and manuscript illumination.",
+   "story": "Ani became known as the ‘city of 1001 churches’.",
+   "sources": [
+    "Encyclopaedia Britannica, “Armenia: History”",
+    "R. G. Hovannisian (ed.), The Armenian People from Ancient to Modern Times, vol. 1 (1997)"
+   ],
+   "when": [
+    "high-medieval:1000",
+    "high-medieval:1100",
+    "high-medieval:1200"
+   ]
+  },
+  {
+   "id": "buyids",
+   "names": [
+    "Buwayhid Emirates"
+   ],
+   "name": "Buyid (Buwayhid) emirates",
+   "type": "dynastic emirates",
+   "yearsActive": "934–1062",
+   "summary": "The Buyids were a Shi‘i dynasty from Daylam that took Baghdad in 945 and ruled Iraq and western Iran in the caliph’s name. The Seljuk Turks ended their rule between 1055 and 1062. The basemap uses the label loosely for the upper Mesopotamian borderlands, where Kurdish and Arab dynasties also ruled.",
+   "description": "The Buyids were a Shi‘i dynasty from Daylam that took Baghdad in 945 and ruled Iraq and western Iran in the caliph’s name. The Seljuk Turks ended their rule between 1055 and 1062. The basemap uses the label loosely for the upper Mesopotamian borderlands, where Kurdish and Arab dynasties also ruled.",
+   "conflicts": "Rivalry with the Hamdanids, Byzantium and the Ghaznavids; Seljuk conquest of Baghdad (1055).",
+   "leaders": "Adud al-Dawla (d. 983), the strongest Buyid ruler.",
+   "religion": "Twelver Shi‘i rulers who governed under the Sunni Abbasid caliph.",
+   "culture": "Persian court culture in Arabic and Persian; patronage of scholars and hospitals in Baghdad.",
+   "story": "Adud al-Dawla’s hospital in Baghdad was founded in the 980s.",
+   "sources": [
+    "Encyclopaedia Britannica, “Buyid dynasty”"
+   ],
+   "when": [
+    "high-medieval:1000",
+    "high-medieval:1200"
+   ]
+  },
+  {
+   "id": "benevento",
+   "names": [
+    "Duchy of Benevento"
+   ],
+   "name": "Principality of Benevento",
+   "type": "Lombard principality",
+   "yearsActive": "571–1077 (principality from 774)",
+   "summary": "Benevento was the longest-lived Lombard state in southern Italy. It survived Charlemagne’s conquest of the Lombard kingdom in 774 as an independent principality. By 1000 it had lost Salerno and Capua as separate states. In the 1000s the city passed to the papacy and the Normans took over its lands.",
+   "description": "Benevento was the longest-lived Lombard state in southern Italy. It survived Charlemagne’s conquest of the Lombard kingdom in 774 as an independent principality. By 1000 it had lost Salerno and Capua as separate states. In the 1000s the city passed to the papacy and the Normans took over its lands.",
+   "conflicts": "Wars with Byzantium, Arab raiders and Carolingian kings; Norman expansion in the 1000s.",
+   "leaders": "Arechis II, who took the title of prince in 774.",
+   "religion": "Latin Christian, with the abbeys of Monte Cassino and San Vincenzo al Volturno nearby.",
+   "culture": "Lombard law and Beneventan script, a distinctive southern Italian handwriting.",
+   "story": "The Beneventan script used by its monks gives the region its name in manuscript studies.",
+   "sources": [
+    "Encyclopaedia Britannica, “Benevento”"
+   ],
+   "when": [
+    "high-medieval:1000"
+   ]
+  },
+  {
+   "id": "aragon-1000",
+   "names": [
+    "Aragón"
+   ],
+   "name": "County of Aragon",
+   "type": "county",
+   "yearsActive": "c. 800s–1035 (then kingdom)",
+   "summary": "Aragon began as a small Pyrenean county around Jaca. In 1000 it was tied to the Kingdom of Pamplona (Navarre). After Sancho III of Navarre died in 1035, his son Ramiro I ruled Aragon on his own, and it later grew into the Crown of Aragon.",
+   "description": "Aragon began as a small Pyrenean county around Jaca. In 1000 it was tied to the Kingdom of Pamplona (Navarre). After Sancho III of Navarre died in 1035, his son Ramiro I ruled Aragon on his own, and it later grew into the Crown of Aragon.",
+   "conflicts": "Frontier warfare with the Muslim taifas of the Ebro valley.",
+   "leaders": "Sancho III of Navarre; Ramiro I, the first king of Aragon (from 1035).",
+   "religion": "Latin Christian, with mountain monasteries such as San Juan de la Peña.",
+   "culture": "A Pyrenean frontier society that spoke an early form of Aragonese.",
+   "story": "From this small county came the Crown of Aragon, later a Mediterranean power.",
+   "sources": [
+    "Encyclopaedia Britannica, “Aragon”"
+   ],
+   "when": [
+    "high-medieval:1000"
+   ]
+  },
+  {
+   "id": "brittany",
+   "names": [
+    "Britany"
+   ],
+   "name": "Duchy of Brittany",
+   "type": "duchy",
+   "yearsActive": "939–1532 (union with France)",
+   "summary": "Brittany was a Breton-speaking duchy in the far west of France. It recognised the French king as overlord but governed itself. In the 1300s the War of the Breton Succession ended with the Montfort dukes in power. Anne of Brittany’s marriages to two French kings led to Brittany’s union with France in 1532.",
+   "description": "Brittany was a Breton-speaking duchy in the far west of France. It recognised the French king as overlord but governed itself. In the 1300s the War of the Breton Succession ended with the Montfort dukes in power. Anne of Brittany’s marriages to two French kings led to Brittany’s union with France in 1532.",
+   "conflicts": "Norman and Angevin pressure; War of the Breton Succession (1341–1364); French invasion (1487–1491).",
+   "leaders": "Alan IV; John IV and John V of Montfort; Duchess Anne (1488–1514).",
+   "religion": "Latin Christian, with strong cults of local saints.",
+   "culture": "Breton language in the west and Gallo in the east, with a ducal court at Nantes.",
+   "story": "Anne of Brittany married Charles VIII and then Louis XII of France.",
+   "sources": [
+    "Encyclopaedia Britannica, “Brittany”"
+   ],
+   "when": [
+    "high-medieval:1000",
+    "high-medieval:1100",
+    "renaissance:1400"
+   ]
+  },
+  {
+   "id": "sami",
+   "names": [
+    "Samis",
+    "Sámi"
+   ],
+   "name": "Sámi lands (Sápmi)",
+   "type": "indigenous homeland",
+   "yearsActive": "prehistoric–present",
+   "summary": "The Sámi are the indigenous people of northern Scandinavia, Finland and the Kola Peninsula. They had no state of their own and lived in local communities called siida, based on hunting, fishing and, later, reindeer herding. Norwegian, Swedish and Russian rulers competed to tax them from the Middle Ages on.",
+   "description": "The Sámi are the indigenous people of northern Scandinavia, Finland and the Kola Peninsula. They had no state of their own and lived in local communities called siida, based on hunting, fishing and, later, reindeer herding. Norwegian, Swedish and Russian rulers competed to tax them from the Middle Ages on.",
+   "conflicts": "Overlapping tax claims by Norway, Sweden and Novgorod (later Russia).",
+   "leaders": "No kings; leadership came from siida elders and noaidi (shamans).",
+   "religion": "Traditional Sámi religion, with Christian missions growing from the 1600s.",
+   "culture": "Sámi languages, joik song and a herding and fishing economy.",
+   "story": "Norse and Russian sources describe the Sámi as fur traders and skiers.",
+   "sources": [
+    "Encyclopaedia Britannica, “Sami”",
+    "N. Kent, The Sámi Peoples of the North (2014)"
+   ]
+  },
+  {
+   "id": "finnic-forest",
+   "names": [
+    "Finno-Ugric taiga hunter-gatherers",
+    "Paleo-Siberian hunter-gatherers",
+    "Siberians"
+   ],
+   "name": "Northern forest peoples",
+   "type": "peoples, not states",
+   "yearsActive": "—",
+   "summary": "The basemap uses this label for the forest and tundra peoples of the far northeast. They include Finno-Ugric and Samoyedic groups who lived by hunting, fishing and the fur trade. They had no state. Novgorod traders, and later Moscow, gradually brought them into a tribute system.",
+   "description": "The basemap uses this label for the forest and tundra peoples of the far northeast. They include Finno-Ugric and Samoyedic groups who lived by hunting, fishing and the fur trade. They had no state. Novgorod traders, and later Moscow, gradually brought them into a tribute system.",
+   "conflicts": "Tribute collection by Novgorod and later Moscow, especially for furs.",
+   "leaders": "No state rulers; kin and clan leaders.",
+   "religion": "Animist and shamanic religion.",
+   "culture": "Hunting, reindeer herding and the fur trade.",
+   "story": "Novgorod’s ‘Yugra’ fur expeditions reached the Urals in the 1000s and 1100s.",
+   "sources": [
+    "Encyclopaedia Britannica, “Finno-Ugric peoples”",
+    "Encyclopaedia Britannica, “Samoyed”"
+   ]
+  },
+  {
+   "id": "karelians",
+   "names": [
+    "Karelians"
+   ],
+   "name": "Karelians",
+   "type": "Finnic people",
+   "yearsActive": "—",
+   "summary": "The Karelians are a Finnic people of the lands between the Gulf of Finland, Lake Ladoga and the White Sea. Around 1000 they traded furs with Novgorod. Sweden and Novgorod later fought over Karelia and divided it in the Treaty of Nöteborg (1323).",
+   "description": "The Karelians are a Finnic people of the lands between the Gulf of Finland, Lake Ladoga and the White Sea. Around 1000 they traded furs with Novgorod. Sweden and Novgorod later fought over Karelia and divided it in the Treaty of Nöteborg (1323).",
+   "conflicts": "Swedish–Novgorodian wars over Karelia.",
+   "leaders": "No kings; local chiefs.",
+   "religion": "Pagan religion, gradually replaced by Orthodox Christianity under Novgorod’s influence.",
+   "culture": "Karelian oral poetry, later collected in the Kalevala.",
+   "story": "Birch-bark letters found in Novgorod include a short text in a Finnic language.",
+   "sources": [
+    "Encyclopaedia Britannica, “Karelia”"
+   ],
+   "when": [
+    "high-medieval:1000"
+   ]
+  },
+  {
+   "id": "suomi",
+   "names": [
+    "Suomi"
+   ],
+   "name": "Finns (Suomi)",
+   "type": "Finnic people",
+   "yearsActive": "—",
+   "summary": "This label covers the Finns of southwest Finland around 1000. They lived in farming and trading communities with no central state. Swedish crusades and Catholic missions brought the region under Sweden from the 1100s and 1200s.",
+   "description": "This label covers the Finns of southwest Finland around 1000. They lived in farming and trading communities with no central state. Swedish crusades and Catholic missions brought the region under Sweden from the 1100s and 1200s.",
+   "conflicts": "Swedish crusades into Finland; Novgorodian raids.",
+   "leaders": "No kings; local communities.",
+   "religion": "Pagan religion, followed by Catholic conversion under Sweden.",
+   "culture": "Iron Age farming and hill forts.",
+   "story": "‘Suomi’ is still the Finnish name for Finland.",
+   "sources": [
+    "Encyclopaedia Britannica, “Finland: History”"
+   ],
+   "when": [
+    "high-medieval:1000"
+   ]
+  },
+  {
+   "id": "chuds",
+   "names": [
+    "Chuds"
+   ],
+   "name": "Chuds",
+   "type": "Finnic peoples",
+   "yearsActive": "—",
+   "summary": "‘Chud’ is the old Russian name for the Finnic peoples east of the Baltic, especially the ancestors of the Estonians and Votes. The Russian Primary Chronicle lists them among the peoples who invited the Varangians to rule.",
+   "description": "‘Chud’ is the old Russian name for the Finnic peoples east of the Baltic, especially the ancestors of the Estonians and Votes. The Russian Primary Chronicle lists them among the peoples who invited the Varangians to rule.",
+   "conflicts": "Raids and campaigns by Kiev and Novgorod; later the Livonian crusade.",
+   "leaders": "No kings; local elders.",
+   "religion": "Pagan religion.",
+   "culture": "Hill forts and farming villages.",
+   "story": "The battle on the ice of Lake Peipus (1242) was fought on Lake Chud, as Russians call it.",
+   "sources": [
+    "Encyclopaedia Britannica, “Chud”"
+   ],
+   "when": [
+    "high-medieval:1000"
+   ]
+  },
+  {
+   "id": "curonians",
+   "names": [
+    "Kurs"
+   ],
+   "name": "Curonians (Kurs)",
+   "type": "Baltic people",
+   "yearsActive": "—",
+   "summary": "The Curonians were a Baltic people of the coast of modern Latvia and Lithuania, known as seafarers and raiders. German crusaders conquered them in the 1200s, and Courland is named after them.",
+   "description": "The Curonians were a Baltic people of the coast of modern Latvia and Lithuania, known as seafarers and raiders. German crusaders conquered them in the 1200s, and Courland is named after them.",
+   "conflicts": "Raids on Scandinavia; the Livonian crusade.",
+   "leaders": "No kings; local chiefs.",
+   "religion": "Baltic pagan religion.",
+   "culture": "Seafaring, hill forts and amber trade.",
+   "story": "Danish and Swedish chronicles describe Curonian raids across the Baltic.",
+   "sources": [
+    "Encyclopaedia Britannica, “Courland”"
+   ],
+   "when": [
+    "high-medieval:1000"
+   ]
+  },
+  {
+   "id": "kimek-kipchak",
+   "names": [
+    "Kimek-Kipchak khaganate"
+   ],
+   "name": "Kimek–Kipchak confederation",
+   "type": "nomad confederation",
+   "yearsActive": "c. 800s–1000s",
+   "summary": "The Kimek–Kipchak confederation was a union of Turkic tribes on the Irtysh and the steppe east of the Volga. By the early 1000s the Kipchak tribes had pushed west and taken over the Pontic steppe, where Rus called them Polovtsy and Byzantines called them Cumans.",
+   "description": "The Kimek–Kipchak confederation was a union of Turkic tribes on the Irtysh and the steppe east of the Volga. By the early 1000s the Kipchak tribes had pushed west and taken over the Pontic steppe, where Rus called them Polovtsy and Byzantines called them Cumans.",
+   "conflicts": "Wars with the Oghuz and Pechenegs; later raids on Rus.",
+   "leaders": "Tribal khans.",
+   "religion": "Tengrist religion, with some Islamic and Manichaean influence.",
+   "culture": "Horse-herding nomads on the steppe.",
+   "story": "The Kipchak language became the basis of the later Golden Horde’s Turkic.",
+   "sources": [
+    "Encyclopaedia Britannica, “Kipchak”"
+   ],
+   "when": [
+    "high-medieval:1000"
+   ]
+  },
+  {
+   "id": "volga-bulgaria",
+   "names": [
+    "Volga Bulgars"
+   ],
+   "name": "Volga Bulgaria",
+   "type": "khanate",
+   "yearsActive": "c. 900s–1236",
+   "summary": "Volga Bulgaria was a Turkic state at the meeting point of the Volga and Kama. It adopted Islam in 922, when ibn Fadlan arrived as the caliph’s envoy. It grew rich on the fur trade from its capital Bolghar, until the Mongols destroyed it in 1236.",
+   "description": "Volga Bulgaria was a Turkic state at the meeting point of the Volga and Kama. It adopted Islam in 922, when ibn Fadlan arrived as the caliph’s envoy. It grew rich on the fur trade from its capital Bolghar, until the Mongols destroyed it in 1236.",
+   "conflicts": "Wars with the Rus principalities; Mongol conquest (1236).",
+   "leaders": "Almış, the ruler who received the caliph’s mission.",
+   "religion": "Sunni Islam since 922.",
+   "culture": "Trade in furs, slaves and silver between the northern forests and the Islamic world.",
+   "story": "Ibn Fadlan’s report on his journey also describes the Rus traders he met.",
+   "sources": [
+    "Encyclopaedia Britannica, “Bulgar (people)”"
+   ],
+   "when": [
+    "high-medieval:1000",
+    "high-medieval:1100",
+    "high-medieval:1200"
+   ]
+  },
+  {
+   "id": "arran",
+   "names": [
+    "Arran"
+   ],
+   "name": "Arran",
+   "type": "region and emirates",
+   "yearsActive": "—",
+   "summary": "Arran is the medieval name for the land between the Kura and Araxes rivers, now in Azerbaijan. Around 1000–1100 the Kurdish Shaddadid dynasty ruled much of it from Ganja, until the Seljuks took control.",
+   "description": "Arran is the medieval name for the land between the Kura and Araxes rivers, now in Azerbaijan. Around 1000–1100 the Kurdish Shaddadid dynasty ruled much of it from Ganja, until the Seljuks took control.",
+   "conflicts": "Wars with Georgia, Shirvan and the Seljuks.",
+   "leaders": "Shaddadid emirs of Ganja.",
+   "religion": "Islam, with Christian Albanian and Armenian communities.",
+   "culture": "Persian-speaking town culture.",
+   "story": "The poet Nizami Ganjavi (d. c. 1209) was born in Ganja.",
+   "sources": [
+    "Encyclopaedia Britannica, “Ganja”",
+    "V. Minorsky, Studies in Caucasian History (1953)"
+   ],
+   "when": [
+    "high-medieval:1000",
+    "high-medieval:1100"
+   ]
+  },
+  {
+   "id": "shirvan",
+   "names": [
+    "Shirvan"
+   ],
+   "name": "Shirvan (the Shirvanshahs)",
+   "type": "Muslim principality",
+   "yearsActive": "c. 861–1538",
+   "summary": "Shirvan was a principality on the Caspian coast of modern Azerbaijan, ruled by the Shirvanshahs from Shamakhi and later Baku. It survived for centuries as a client of larger powers until the Safavids annexed it in 1538.",
+   "description": "Shirvan was a principality on the Caspian coast of modern Azerbaijan, ruled by the Shirvanshahs from Shamakhi and later Baku. It survived for centuries as a client of larger powers until the Safavids annexed it in 1538.",
+   "conflicts": "Raids from the steppe; Georgian, Seljuk and Mongol overlordship; Safavid conquest (1538).",
+   "leaders": "Shirvanshahs of the Yazidid and Kasranid dynasties.",
+   "religion": "Islam.",
+   "culture": "Persian court culture and poetry.",
+   "story": "The Palace of the Shirvanshahs in Baku dates from the 1400s.",
+   "sources": [
+    "Encyclopaedia Britannica, “Shirvan”"
+   ],
+   "when": [
+    "high-medieval:1000",
+    "high-medieval:1100"
+   ]
+  },
+  {
+   "id": "alania",
+   "names": [
+    "Alans"
+   ],
+   "name": "Alania",
+   "type": "kingdom",
+   "yearsActive": "c. 900s–1239",
+   "summary": "Alania was a Christian kingdom of the Alans, an Iranian-speaking people of the North Caucasus. It was allied with Byzantium and Georgia, and the Mongols destroyed it in 1238–1239. The Ossetians are their descendants.",
+   "description": "Alania was a Christian kingdom of the Alans, an Iranian-speaking people of the North Caucasus. It was allied with Byzantium and Georgia, and the Mongols destroyed it in 1238–1239. The Ossetians are their descendants.",
+   "conflicts": "Wars with the Khazars; Mongol invasion (1238–1239).",
+   "leaders": "Alan kings who married into the Georgian royal family.",
+   "religion": "Orthodox Christianity, adopted under Byzantine missions in the 900s.",
+   "culture": "Iranian-speaking mountain and steppe culture.",
+   "story": "Church ruins in the upper Kuban valley mark the old Alan capital.",
+   "sources": [
+    "Encyclopaedia Britannica, “Alani”"
+   ],
+   "when": [
+    "high-medieval:1000",
+    "high-medieval:1100"
+   ]
+  },
+  {
+   "id": "khazars",
+   "names": [
+    "Khazars"
+   ],
+   "name": "Khazar Khaganate (remnant)",
+   "type": "khaganate",
+   "yearsActive": "c. 650–969",
+   "summary": "The Khazars were a Turkic khaganate between the Volga, Don and Caucasus. They controlled steppe trade for three centuries, and their elite adopted Judaism. Sviatoslav of Kiev broke their power in 965–969, and by 1000 only a weak remnant was left.",
+   "description": "The Khazars were a Turkic khaganate between the Volga, Don and Caucasus. They controlled steppe trade for three centuries, and their elite adopted Judaism. Sviatoslav of Kiev broke their power in 965–969, and by 1000 only a weak remnant was left.",
+   "conflicts": "Arab–Khazar wars; Sviatoslav’s campaigns (965–969).",
+   "leaders": "The khagan and the bek, who held the real power.",
+   "religion": "A Jewish ruling elite, with Muslim, Christian and pagan subjects.",
+   "culture": "A trading state that charged tolls on the Volga trade.",
+   "story": "Their capital Atil, on the Volga delta, has never been firmly located.",
+   "sources": [
+    "Encyclopaedia Britannica, “Khazar”",
+    "P. B. Golden et al. (eds.), The World of the Khazars (2007)"
+   ],
+   "when": [
+    "high-medieval:1000"
+   ]
+  },
+  {
+   "id": "serbia-medieval",
+   "names": [
+    "Serbia"
+   ],
+   "name": "Serbian principalities",
+   "type": "principalities",
+   "yearsActive": "c. 800s–1100s",
+   "summary": "Around 1000–1100 the Serbs were split between Raška in the interior and Duklja on the coast, mostly under Byzantine overlordship. Stefan Nemanja (r. 1166–1196) later united them and founded the Nemanjić state.",
+   "description": "Around 1000–1100 the Serbs were split between Raška in the interior and Duklja on the coast, mostly under Byzantine overlordship. Stefan Nemanja (r. 1166–1196) later united them and founded the Nemanjić state.",
+   "conflicts": "Revolts against Byzantium; wars with Hungary.",
+   "leaders": "Vukan of Raška; Constantine Bodin of Duklja.",
+   "religion": "Christianity, between Rome and Constantinople until the Serbian Orthodox Church became self-governing in 1219.",
+   "culture": "Slavic hill-country society.",
+   "story": "Duklja’s rulers received a royal crown from the pope in 1077.",
+   "sources": [
+    "Encyclopaedia Britannica, “Serbia: History”"
+   ],
+   "when": [
+    "high-medieval:1000",
+    "high-medieval:1100"
+   ]
+  },
+  {
+   "id": "pechenegs",
+   "names": [
+    "Peshemegs"
+   ],
+   "name": "Pechenegs",
+   "type": "nomad confederation",
+   "yearsActive": "c. 800s–1091",
+   "summary": "The Pechenegs were Turkic nomads who held the Pontic steppe from the 800s. Byzantium paid them to fight its enemies, and they also fought Kiev. Byzantium and the Cumans crushed them at Levounion in 1091.",
+   "description": "The Pechenegs were Turkic nomads who held the Pontic steppe from the 800s. Byzantium paid them to fight its enemies, and they also fought Kiev. Byzantium and the Cumans crushed them at Levounion in 1091.",
+   "conflicts": "Siege of Kiev (968); raids into Byzantium; Levounion (1091).",
+   "leaders": "Tribal khans.",
+   "religion": "Tengrist religion, with some conversions to Islam and Christianity.",
+   "culture": "Mounted nomads.",
+   "story": "The Byzantine emperor Constantine VII described their eight tribes in the 900s.",
+   "sources": [
+    "Encyclopaedia Britannica, “Pecheneg”"
+   ],
+   "when": [
+    "high-medieval:1000"
+   ]
+  },
+  {
+   "id": "croatia-1100",
+   "names": [
+    "Croatia"
+   ],
+   "name": "Kingdom of Croatia",
+   "type": "kingdom",
+   "yearsActive": "925–1102 (then in union with Hungary)",
+   "summary": "Medieval Croatia became a kingdom under Tomislav around 925. After its native dynasty died out, the Croatian nobles accepted Coloman of Hungary as king in 1102. Croatia kept its own institutions inside the union.",
+   "description": "Medieval Croatia became a kingdom under Tomislav around 925. After its native dynasty died out, the Croatian nobles accepted Coloman of Hungary as king in 1102. Croatia kept its own institutions inside the union.",
+   "conflicts": "The succession war after 1091; Venetian rivalry on the Dalmatian coast.",
+   "leaders": "Tomislav; Peter Krešimir IV; Demetrius Zvonimir; Coloman of Hungary.",
+   "religion": "Catholic Christianity, with Glagolitic liturgy on the coast.",
+   "culture": "A Dalmatian town and Slavic hinterland.",
+   "story": "The Baška tablet (c. 1100) is one of the oldest Croatian inscriptions.",
+   "sources": [
+    "Encyclopaedia Britannica, “Croatia: History”"
+   ],
+   "when": [
+    "high-medieval:1100"
+   ]
+  },
+  {
+   "id": "bulgaria-medieval",
+   "names": [
+    "Bulgar Khanate"
+   ],
+   "name": "Bulgaria",
+   "type": "Byzantine province, then empire",
+   "yearsActive": "First Empire to 1018; Byzantine 1018–1185; Second Empire 1185–1396",
+   "summary": "In the Balkans the basemap uses this label for the Bulgarian lands. Byzantium conquered the First Bulgarian Empire in 1018. The Asen brothers founded the Second Bulgarian Empire in 1185, ruling from Tarnovo. The Ottomans conquered it between 1393 and 1396, so by 1400 the label is out of date.",
+   "description": "In the Balkans the basemap uses this label for the Bulgarian lands. Byzantium conquered the First Bulgarian Empire in 1018. The Asen brothers founded the Second Bulgarian Empire in 1185, ruling from Tarnovo. The Ottomans conquered it between 1393 and 1396, so by 1400 the label is out of date.",
+   "conflicts": "Basil II’s war (1014–1018); the Asen revolt (1185); Ottoman conquest (1393–1396).",
+   "leaders": "Peter and Ivan Asen; Kaloyan; Ivan Asen II; Ivan Shishman.",
+   "religion": "Bulgarian Orthodox Church.",
+   "culture": "Old Church Slavonic literature and the Tarnovo school of writers.",
+   "story": "Ivan Asen II’s Tarnovo was a centre of Slavic Orthodox learning.",
+   "sources": [
+    "Encyclopaedia Britannica, “Bulgaria: History”"
+   ],
+   "when": [
+    "high-medieval:1100",
+    "high-medieval:1400",
+    "renaissance:1400"
+   ]
+  },
+  {
+   "id": "karakalpaks-1100",
+   "names": [
+    "Karakalpaks"
+   ],
+   "name": "Black Hats (Karakalpaks)",
+   "type": "nomad groups",
+   "yearsActive": "—",
+   "summary": "‘Karakalpak’ means ‘black hat’ in Turkic. Rus chronicles call the Turkic nomads who settled as border guards for Kiev the Chorni Klobuky, or ‘black hoods’. The basemap places the label schematically.",
+   "description": "‘Karakalpak’ means ‘black hat’ in Turkic. Rus chronicles call the Turkic nomads who settled as border guards for Kiev the Chorni Klobuky, or ‘black hoods’. The basemap places the label schematically.",
+   "conflicts": "Border service for Kiev against the Cumans.",
+   "leaders": "Tribal chiefs.",
+   "religion": "Mostly Tengrist religion.",
+   "culture": "Mounted nomad auxiliaries.",
+   "story": "They are distinct from the modern Karakalpaks of Uzbekistan, who share the name.",
+   "sources": [
+    "Encyclopaedia Britannica, “Chorni Klobuky”"
+   ],
+   "when": [
+    "high-medieval:1100"
+   ]
+  },
+  {
+   "id": "maskut",
+   "names": [
+    "Maskat"
+   ],
+   "name": "Maskut",
+   "type": "small principality",
+   "yearsActive": "c. 900s–1100s",
+   "summary": "A small principality on the Caspian coast north of Derbent, known from Arab and Armenian sources. It was one of many small states in the Caucasus between Byzantium, Georgia and the Seljuks.",
+   "description": "A small principality on the Caspian coast north of Derbent, known from Arab and Armenian sources. It was one of many small states in the Caucasus between Byzantium, Georgia and the Seljuks.",
+   "conflicts": "Wars among neighbouring Caucasian states; Seljuk invasions from the 1060s.",
+   "leaders": "Local princely and emiral dynasties.",
+   "religion": "Christian or Muslim, depending on the ruling house.",
+   "culture": "Mountain and valley communities speaking Caucasian languages, Armenian, Georgian, Arabic or Persian.",
+   "story": "These small states show how fragmented the Caucasus was before David IV’s Georgia and the Mongols.",
+   "sources": [
+    "Encyclopaedia Britannica, “Caucasus: History”",
+    "V. Minorsky, A History of Sharvan and Darband (1958)"
+   ],
+   "when": [
+    "high-medieval:1100"
+   ]
+  },
+  {
+   "id": "derbent",
+   "names": [
+    "Derbent"
+   ],
+   "name": "Emirate of Derbent",
+   "type": "emirate",
+   "yearsActive": "c. 900s–1100s",
+   "summary": "An Arab-led emirate based at the fortress city of Derbent, the Caspian ‘gate’ between the steppe and the Middle East. The Hashimid dynasty ruled it until the Seljuk era. It was one of many small states in the Caucasus between Byzantium, Georgia and the Seljuks.",
+   "description": "An Arab-led emirate based at the fortress city of Derbent, the Caspian ‘gate’ between the steppe and the Middle East. The Hashimid dynasty ruled it until the Seljuk era. It was one of many small states in the Caucasus between Byzantium, Georgia and the Seljuks.",
+   "conflicts": "Wars among neighbouring Caucasian states; Seljuk invasions from the 1060s.",
+   "leaders": "Local princely and emiral dynasties.",
+   "religion": "Christian or Muslim, depending on the ruling house.",
+   "culture": "Mountain and valley communities speaking Caucasian languages, Armenian, Georgian, Arabic or Persian.",
+   "story": "These small states show how fragmented the Caucasus was before David IV’s Georgia and the Mongols.",
+   "sources": [
+    "Encyclopaedia Britannica, “Caucasus: History”",
+    "V. Minorsky, A History of Sharvan and Darband (1958)"
+   ],
+   "when": [
+    "high-medieval:1100"
+   ]
+  },
+  {
+   "id": "sarir",
+   "names": [
+    "Khundzi"
+   ],
+   "name": "Sarir (Khunzakh)",
+   "type": "mountain kingdom",
+   "yearsActive": "c. 900s–1100s",
+   "summary": "The Christian Avar kingdom of Sarir in highland Dagestan, centred on Khunzakh. It later converted to Islam. It was one of many small states in the Caucasus between Byzantium, Georgia and the Seljuks.",
+   "description": "The Christian Avar kingdom of Sarir in highland Dagestan, centred on Khunzakh. It later converted to Islam. It was one of many small states in the Caucasus between Byzantium, Georgia and the Seljuks.",
+   "conflicts": "Wars among neighbouring Caucasian states; Seljuk invasions from the 1060s.",
+   "leaders": "Local princely and emiral dynasties.",
+   "religion": "Christian or Muslim, depending on the ruling house.",
+   "culture": "Mountain and valley communities speaking Caucasian languages, Armenian, Georgian, Arabic or Persian.",
+   "story": "These small states show how fragmented the Caucasus was before David IV’s Georgia and the Mongols.",
+   "sources": [
+    "Encyclopaedia Britannica, “Caucasus: History”",
+    "V. Minorsky, A History of Sharvan and Darband (1958)"
+   ],
+   "when": [
+    "high-medieval:1100"
+   ]
+  },
+  {
+   "id": "tashir",
+   "names": [
+    "Tashir"
+   ],
+   "name": "Kingdom of Tashir-Dzoraget",
+   "type": "Armenian kingdom",
+   "yearsActive": "c. 900s–1100s",
+   "summary": "A Bagratid Armenian kingdom in the Lori region, founded in the 980s. In the 1100s it became a vassal of Georgia. It was one of many small states in the Caucasus between Byzantium, Georgia and the Seljuks.",
+   "description": "A Bagratid Armenian kingdom in the Lori region, founded in the 980s. In the 1100s it became a vassal of Georgia. It was one of many small states in the Caucasus between Byzantium, Georgia and the Seljuks.",
+   "conflicts": "Wars among neighbouring Caucasian states; Seljuk invasions from the 1060s.",
+   "leaders": "Local princely and emiral dynasties.",
+   "religion": "Christian or Muslim, depending on the ruling house.",
+   "culture": "Mountain and valley communities speaking Caucasian languages, Armenian, Georgian, Arabic or Persian.",
+   "story": "These small states show how fragmented the Caucasus was before David IV’s Georgia and the Mongols.",
+   "sources": [
+    "Encyclopaedia Britannica, “Caucasus: History”",
+    "V. Minorsky, A History of Sharvan and Darband (1958)"
+   ],
+   "when": [
+    "high-medieval:1100"
+   ]
+  },
+  {
+   "id": "khachen",
+   "names": [
+    "Artsakh"
+   ],
+   "name": "Principality of Khachen (Artsakh)",
+   "type": "Armenian principality",
+   "yearsActive": "c. 900s–1100s",
+   "summary": "An Armenian princely state in the mountains of Artsakh (Karabakh). Local princes kept it going under Seljuk, Georgian and Mongol overlords. It was one of many small states in the Caucasus between Byzantium, Georgia and the Seljuks.",
+   "description": "An Armenian princely state in the mountains of Artsakh (Karabakh). Local princes kept it going under Seljuk, Georgian and Mongol overlords. It was one of many small states in the Caucasus between Byzantium, Georgia and the Seljuks.",
+   "conflicts": "Wars among neighbouring Caucasian states; Seljuk invasions from the 1060s.",
+   "leaders": "Local princely and emiral dynasties.",
+   "religion": "Christian or Muslim, depending on the ruling house.",
+   "culture": "Mountain and valley communities speaking Caucasian languages, Armenian, Georgian, Arabic or Persian.",
+   "story": "These small states show how fragmented the Caucasus was before David IV’s Georgia and the Mongols.",
+   "sources": [
+    "Encyclopaedia Britannica, “Caucasus: History”",
+    "V. Minorsky, A History of Sharvan and Darband (1958)"
+   ],
+   "when": [
+    "high-medieval:1100"
+   ]
+  },
+  {
+   "id": "durdzuks",
+   "names": [
+    "Durdzuks"
+   ],
+   "name": "Durdzuks",
+   "type": "highland people",
+   "yearsActive": "c. 900s–1100s",
+   "summary": "The Georgian name for the Vainakh highlanders, ancestors of the Chechens and Ingush. They lived in clan communities with no state. It was one of many small states in the Caucasus between Byzantium, Georgia and the Seljuks.",
+   "description": "The Georgian name for the Vainakh highlanders, ancestors of the Chechens and Ingush. They lived in clan communities with no state. It was one of many small states in the Caucasus between Byzantium, Georgia and the Seljuks.",
+   "conflicts": "Wars among neighbouring Caucasian states; Seljuk invasions from the 1060s.",
+   "leaders": "Local princely and emiral dynasties.",
+   "religion": "Christian or Muslim, depending on the ruling house.",
+   "culture": "Mountain and valley communities speaking Caucasian languages, Armenian, Georgian, Arabic or Persian.",
+   "story": "These small states show how fragmented the Caucasus was before David IV’s Georgia and the Mongols.",
+   "sources": [
+    "Encyclopaedia Britannica, “Caucasus: History”",
+    "V. Minorsky, A History of Sharvan and Darband (1958)"
+   ],
+   "when": [
+    "high-medieval:1100"
+   ]
+  },
+  {
+   "id": "lakz",
+   "names": [
+    "Leks"
+   ],
+   "name": "Lakz",
+   "type": "highland principality",
+   "yearsActive": "c. 900s–1100s",
+   "summary": "A highland principality in southern Dagestan, linked to the Lezgins, mentioned by Arab geographers. It was one of many small states in the Caucasus between Byzantium, Georgia and the Seljuks.",
+   "description": "A highland principality in southern Dagestan, linked to the Lezgins, mentioned by Arab geographers. It was one of many small states in the Caucasus between Byzantium, Georgia and the Seljuks.",
+   "conflicts": "Wars among neighbouring Caucasian states; Seljuk invasions from the 1060s.",
+   "leaders": "Local princely and emiral dynasties.",
+   "religion": "Christian or Muslim, depending on the ruling house.",
+   "culture": "Mountain and valley communities speaking Caucasian languages, Armenian, Georgian, Arabic or Persian.",
+   "story": "These small states show how fragmented the Caucasus was before David IV’s Georgia and the Mongols.",
+   "sources": [
+    "Encyclopaedia Britannica, “Caucasus: History”",
+    "V. Minorsky, A History of Sharvan and Darband (1958)"
+   ],
+   "when": [
+    "high-medieval:1100"
+   ]
+  },
+  {
+   "id": "kakheti-hereti",
+   "names": [
+    "Kakheti-Hereti"
+   ],
+   "name": "Kingdom of Kakheti-Hereti",
+   "type": "kingdom",
+   "yearsActive": "c. 900s–1100s",
+   "summary": "An eastern Georgian kingdom that David IV the Builder annexed into united Georgia in 1104. It was one of many small states in the Caucasus between Byzantium, Georgia and the Seljuks.",
+   "description": "An eastern Georgian kingdom that David IV the Builder annexed into united Georgia in 1104. It was one of many small states in the Caucasus between Byzantium, Georgia and the Seljuks.",
+   "conflicts": "Wars among neighbouring Caucasian states; Seljuk invasions from the 1060s.",
+   "leaders": "Local princely and emiral dynasties.",
+   "religion": "Christian or Muslim, depending on the ruling house.",
+   "culture": "Mountain and valley communities speaking Caucasian languages, Armenian, Georgian, Arabic or Persian.",
+   "story": "These small states show how fragmented the Caucasus was before David IV’s Georgia and the Mongols.",
+   "sources": [
+    "Encyclopaedia Britannica, “Caucasus: History”",
+    "V. Minorsky, A History of Sharvan and Darband (1958)"
+   ],
+   "when": [
+    "high-medieval:1100"
+   ]
+  },
+  {
+   "id": "tiflis-emirate",
+   "names": [
+    "Emirate of Tiflis"
+   ],
+   "name": "Emirate of Tiflis",
+   "type": "emirate",
+   "yearsActive": "c. 900s–1100s",
+   "summary": "An Arab-ruled city-state at Tbilisi that lasted from the 700s until David IV took the city in 1122 and made it Georgia’s capital. It was one of many small states in the Caucasus between Byzantium, Georgia and the Seljuks.",
+   "description": "An Arab-ruled city-state at Tbilisi that lasted from the 700s until David IV took the city in 1122 and made it Georgia’s capital. It was one of many small states in the Caucasus between Byzantium, Georgia and the Seljuks.",
+   "conflicts": "Wars among neighbouring Caucasian states; Seljuk invasions from the 1060s.",
+   "leaders": "Local princely and emiral dynasties.",
+   "religion": "Christian or Muslim, depending on the ruling house.",
+   "culture": "Mountain and valley communities speaking Caucasian languages, Armenian, Georgian, Arabic or Persian.",
+   "story": "These small states show how fragmented the Caucasus was before David IV’s Georgia and the Mongols.",
+   "sources": [
+    "Encyclopaedia Britannica, “Caucasus: History”",
+    "V. Minorsky, A History of Sharvan and Darband (1958)"
+   ],
+   "when": [
+    "high-medieval:1100"
+   ]
+  },
+  {
+   "id": "goghtn",
+   "names": [
+    "Goghtn"
+   ],
+   "name": "Goghtn",
+   "type": "Armenian district",
+   "yearsActive": "c. 900s–1100s",
+   "summary": "A district on the Araxes near Nakhchivan, historically an Armenian province, under Seljuk and local rulers in this period. It was one of many small states in the Caucasus between Byzantium, Georgia and the Seljuks.",
+   "description": "A district on the Araxes near Nakhchivan, historically an Armenian province, under Seljuk and local rulers in this period. It was one of many small states in the Caucasus between Byzantium, Georgia and the Seljuks.",
+   "conflicts": "Wars among neighbouring Caucasian states; Seljuk invasions from the 1060s.",
+   "leaders": "Local princely and emiral dynasties.",
+   "religion": "Christian or Muslim, depending on the ruling house.",
+   "culture": "Mountain and valley communities speaking Caucasian languages, Armenian, Georgian, Arabic or Persian.",
+   "story": "These small states show how fragmented the Caucasus was before David IV’s Georgia and the Mongols.",
+   "sources": [
+    "Encyclopaedia Britannica, “Caucasus: History”",
+    "V. Minorsky, A History of Sharvan and Darband (1958)"
+   ],
+   "when": [
+    "high-medieval:1100"
+   ]
+  },
+  {
+   "id": "syunik",
+   "names": [
+    "Syunik"
+   ],
+   "name": "Kingdom of Syunik",
+   "type": "Armenian kingdom",
+   "yearsActive": "c. 900s–1100s",
+   "summary": "An Armenian kingdom in the southern highlands (also called Baghk). The Seljuks took its last fortresses in 1170. It was one of many small states in the Caucasus between Byzantium, Georgia and the Seljuks.",
+   "description": "An Armenian kingdom in the southern highlands (also called Baghk). The Seljuks took its last fortresses in 1170. It was one of many small states in the Caucasus between Byzantium, Georgia and the Seljuks.",
+   "conflicts": "Wars among neighbouring Caucasian states; Seljuk invasions from the 1060s.",
+   "leaders": "Local princely and emiral dynasties.",
+   "religion": "Christian or Muslim, depending on the ruling house.",
+   "culture": "Mountain and valley communities speaking Caucasian languages, Armenian, Georgian, Arabic or Persian.",
+   "story": "These small states show how fragmented the Caucasus was before David IV’s Georgia and the Mongols.",
+   "sources": [
+    "Encyclopaedia Britannica, “Caucasus: History”",
+    "V. Minorsky, A History of Sharvan and Darband (1958)"
+   ],
+   "when": [
+    "high-medieval:1100"
+   ]
+  },
+  {
+   "id": "rus-principalities",
+   "names": [
+    "Other Rus Principalities"
+   ],
+   "name": "Other Rus principalities",
+   "type": "principalities",
+   "yearsActive": "c. 1130s–1240s",
+   "summary": "After 1132 Kievan Rus split into separate principalities ruled by branches of the Rurikid dynasty, including Chernigov, Smolensk, Polotsk and Turov-Pinsk. They shared the Orthodox faith and the Rurikid dynasty. Most fell under Mongol overlordship from 1237–1240.",
+   "description": "After 1132 Kievan Rus split into separate principalities ruled by branches of the Rurikid dynasty, including Chernigov, Smolensk, Polotsk and Turov-Pinsk. They shared the Orthodox faith and the Rurikid dynasty. Most fell under Mongol overlordship from 1237–1240.",
+   "conflicts": "Princely feuds over Kiev; Cuman raids; Mongol invasion (1237–1240).",
+   "leaders": "Rurikid princes of each principality.",
+   "religion": "Orthodox Christianity under the metropolitan of Kiev.",
+   "culture": "Old East Slavic chronicles and church building.",
+   "story": "The Tale of Igor’s Campaign describes a Novgorod-Seversky prince’s raid of 1185.",
+   "sources": [
+    "Encyclopaedia Britannica, “Kievan Rus”"
+   ],
+   "when": [
+    "high-medieval:1200"
+   ]
+  },
+  {
+   "id": "toulouse",
+   "names": [
+    "Comté de Toulouse"
+   ],
+   "name": "County of Toulouse",
+   "type": "county",
+   "yearsActive": "c. 778–1271",
+   "summary": "Toulouse was a large southern French county and a centre of Occitan court culture. Around 1200 the Cathar heresy spread under Count Raymond VI. The Albigensian Crusade from 1209 broke the county, and it passed to the French crown in 1271.",
+   "description": "Toulouse was a large southern French county and a centre of Occitan court culture. Around 1200 the Cathar heresy spread under Count Raymond VI. The Albigensian Crusade from 1209 broke the county, and it passed to the French crown in 1271.",
+   "conflicts": "Albigensian Crusade (1209–1229); Muret (1213); Treaty of Paris (1229).",
+   "leaders": "Raymond VI and Raymond VII.",
+   "religion": "Catholic, with widespread Catharism.",
+   "culture": "Occitan troubadour poetry.",
+   "story": "Simon de Montfort was killed besieging Toulouse in 1218.",
+   "sources": [
+    "Encyclopaedia Britannica, “Albigenses”",
+    "Encyclopaedia Britannica, “Toulouse”"
+   ],
+   "when": [
+    "high-medieval:1200"
+   ]
+  },
+  {
+   "id": "ryazan",
+   "names": [
+    "Ryazan"
+   ],
+   "name": "Grand Principality of Ryazan",
+   "type": "principality",
+   "yearsActive": "1129–1521",
+   "summary": "Ryazan was a Rus principality on the Oka. The Mongols sacked it first, in December 1237. It survived as a buffer between Moscow and the steppe until Moscow annexed it in 1521.",
+   "description": "Ryazan was a Rus principality on the Oka. The Mongols sacked it first, in December 1237. It survived as a buffer between Moscow and the steppe until Moscow annexed it in 1521.",
+   "conflicts": "Mongol sack (1237); rivalry with Moscow.",
+   "leaders": "Oleg Ivanovich (r. 1350–1402), who manoeuvred between Moscow and the Horde.",
+   "religion": "Orthodox Christianity.",
+   "culture": "A frontier principality on the forest-steppe edge.",
+   "story": "The tale of Evpaty Kolovrat tells of Ryazan’s resistance to Batu.",
+   "sources": [
+    "Encyclopaedia Britannica, “Ryazan”"
+   ],
+   "when": [
+    "high-medieval:1300"
+   ]
+  },
+  {
+   "id": "mamluks",
+   "names": [
+    "Mamluke Sultanate"
+   ],
+   "name": "Mamluk Sultanate",
+   "type": "sultanate",
+   "yearsActive": "1250–1517",
+   "summary": "The Mamluk Sultanate ruled Egypt and Syria from Cairo. Its rulers were slave-soldiers who seized power in 1250. They stopped the Mongols at Ain Jalut in 1260 and took the last crusader cities by 1291. The Ottomans conquered it in 1516–1517.",
+   "description": "The Mamluk Sultanate ruled Egypt and Syria from Cairo. Its rulers were slave-soldiers who seized power in 1250. They stopped the Mongols at Ain Jalut in 1260 and took the last crusader cities by 1291. The Ottomans conquered it in 1516–1517.",
+   "conflicts": "Ain Jalut (1260); fall of Acre (1291); Timur’s invasion of Syria (1400–1401); Ottoman conquest (1516–1517).",
+   "leaders": "Baybars; Qalawun; al-Nasir Muhammad; Qaitbay.",
+   "religion": "Sunni Islam; the sultans hosted a shadow Abbasid caliphate in Cairo.",
+   "culture": "Cairo’s madrasas, mosques and scholarship.",
+   "story": "Historians such as Ibn Khaldun and al-Maqrizi worked in Mamluk Cairo.",
+   "sources": [
+    "Encyclopaedia Britannica, “Mamluk”"
+   ],
+   "when": [
+    "high-medieval:1300",
+    "high-medieval:1400",
+    "renaissance:1400",
+    "renaissance:1500"
+   ]
+  },
+  {
+   "id": "trebizond",
+   "names": [
+    "Trebizond"
+   ],
+   "name": "Empire of Trebizond",
+   "type": "Byzantine successor state",
+   "yearsActive": "1204–1461",
+   "summary": "The Empire of Trebizond was a Greek state on the Black Sea coast of Anatolia, founded by Komnenos princes as the Fourth Crusade took Constantinople. It lived on trade and diplomatic marriages until Mehmed II took it in 1461.",
+   "description": "The Empire of Trebizond was a Greek state on the Black Sea coast of Anatolia, founded by Komnenos princes as the Fourth Crusade took Constantinople. It lived on trade and diplomatic marriages until Mehmed II took it in 1461.",
+   "conflicts": "Seljuk and Turkmen pressure; Ottoman conquest (1461).",
+   "leaders": "Alexios I; Alexios III; David, the last emperor.",
+   "religion": "Greek Orthodox Christianity.",
+   "culture": "Byzantine court culture on a Silk Road port.",
+   "story": "Trebizond outlasted Constantinople by eight years.",
+   "sources": [
+    "Encyclopaedia Britannica, “Trebizond, Empire of”"
+   ],
+   "when": [
+    "high-medieval:1300",
+    "high-medieval:1400",
+    "renaissance:1400"
+   ]
+  },
+  {
+   "id": "rum-seljuks",
+   "names": [
+    "Seljuk Caliphate"
+   ],
+   "name": "Seljuk Sultanate of Rum and successor beyliks",
+   "type": "sultanate, then beyliks",
+   "yearsActive": "1077–1308",
+   "summary": "The Seljuks of Rum ruled central Anatolia from Konya. After their defeat at Köse Dağ in 1243 they were vassals of the Mongol Ilkhanate, and the sultanate ended around 1308. On the 1400 map the label stands for the Turkish beyliks that followed, such as Karaman.",
+   "description": "The Seljuks of Rum ruled central Anatolia from Konya. After their defeat at Köse Dağ in 1243 they were vassals of the Mongol Ilkhanate, and the sultanate ended around 1308. On the 1400 map the label stands for the Turkish beyliks that followed, such as Karaman.",
+   "conflicts": "Manzikert (1071); Myriokephalon (1176); Köse Dağ (1243).",
+   "leaders": "Kilij Arslan II; Kayqubad I.",
+   "religion": "Sunni Islam, with Sufi orders and Christian subjects.",
+   "culture": "Persian court culture, caravanserais and Konya’s mosques.",
+   "story": "Rumi, the Sufi poet, lived and taught in Seljuk Konya.",
+   "sources": [
+    "Encyclopaedia Britannica, “Rum, Sultanate of”"
+   ],
+   "when": [
+    "high-medieval:1300",
+    "high-medieval:1400",
+    "renaissance:1400"
+   ]
+  },
+  {
+   "id": "ilkhanate",
+   "names": [
+    "Ilkhanate"
+   ],
+   "name": "Ilkhanate",
+   "type": "Mongol khanate",
+   "yearsActive": "1256–1335",
+   "summary": "The Ilkhanate was a Mongol state founded by Hülegü, who sacked Baghdad in 1258. It ruled Iran, Iraq and eastern Anatolia from Tabriz. Ghazan converted to Islam in 1295. The state broke up after Abu Sa‘id died in 1335.",
+   "description": "The Ilkhanate was a Mongol state founded by Hülegü, who sacked Baghdad in 1258. It ruled Iran, Iraq and eastern Anatolia from Tabriz. Ghazan converted to Islam in 1295. The state broke up after Abu Sa‘id died in 1335.",
+   "conflicts": "Sack of Baghdad (1258); wars with the Mamluks and the Golden Horde.",
+   "leaders": "Hülegü; Ghazan; Öljeitü.",
+   "religion": "Shamanist and Buddhist rulers at first, then Islam from 1295.",
+   "culture": "Persian historiography and miniature painting.",
+   "story": "Rashid al-Din’s world history was written for the Ilkhans.",
+   "sources": [
+    "Encyclopaedia Britannica, “Il-Khanid dynasty”"
+   ],
+   "when": [
+    "high-medieval:1300"
+   ]
+  },
+  {
+   "id": "aydin",
+   "names": [
+    "Beylik of Aydin"
+   ],
+   "name": "Beylik of Aydın",
+   "type": "Turkish beylik",
+   "yearsActive": "c. 1308–1426",
+   "summary": "Aydın was a Turkish emirate on the Aegean coast around Smyrna and Ephesus (Ayasoluk), known for its fleets. The Ottomans annexed it, finally in 1426.",
+   "description": "Aydın was a Turkish emirate on the Aegean coast around Smyrna and Ephesus (Ayasoluk), known for its fleets. The Ottomans annexed it, finally in 1426.",
+   "conflicts": "Naval raids in the Aegean; the crusade that took Smyrna (1344).",
+   "leaders": "Umur Bey.",
+   "religion": "Sunni Islam.",
+   "culture": "Coastal Turkish frontier culture.",
+   "story": "The İsa Bey Mosque at Selçuk was built in 1375.",
+   "sources": [
+    "Encyclopaedia Britannica, “Aydın”"
+   ],
+   "when": [
+    "high-medieval:1400",
+    "renaissance:1400"
+   ]
+  },
+  {
+   "id": "moldavia-1400",
+   "names": [
+    "Moldova"
+   ],
+   "name": "Principality of Moldavia",
+   "type": "principality",
+   "yearsActive": "c. 1359–1859",
+   "summary": "Moldavia was founded around 1359 east of the Carpathians when Bogdan I broke away from Hungary. Under Alexander the Good (1400–1432) it controlled trade between the Black Sea and Poland.",
+   "description": "Moldavia was founded around 1359 east of the Carpathians when Bogdan I broke away from Hungary. Under Alexander the Good (1400–1432) it controlled trade between the Black Sea and Poland.",
+   "conflicts": "Pressure from Hungary and Poland; later Ottoman wars.",
+   "leaders": "Bogdan I; Alexander the Good; later Stephen the Great.",
+   "religion": "Orthodox Christianity.",
+   "culture": "Romanian-speaking boyar society, with Church Slavonic as the written language.",
+   "story": "Alexander the Good strengthened the port of Cetatea Albă (Akkerman).",
+   "sources": [
+    "Encyclopaedia Britannica, “Moldavia”"
+   ],
+   "when": [
+    "high-medieval:1400"
+   ]
+  },
+  {
+   "id": "timurids",
+   "names": [
+    "Timurid Empire"
+   ],
+   "name": "Timurid Empire",
+   "type": "empire",
+   "yearsActive": "1370–1507",
+   "summary": "Timur conquered an empire from Central Asia to Anatolia and ruled from Samarkand. He defeated the Ottomans at Ankara in 1402. His successors ruled a smaller state from Herat and Samarkand until about 1507.",
+   "description": "Timur conquered an empire from Central Asia to Anatolia and ruled from Samarkand. He defeated the Ottomans at Ankara in 1402. His successors ruled a smaller state from Herat and Samarkand until about 1507.",
+   "conflicts": "Ankara (1402); sacks of Delhi, Baghdad and Damascus.",
+   "leaders": "Timur; Shah Rukh; Ulugh Beg.",
+   "religion": "Sunni Islam.",
+   "culture": "Persianate court art and architecture.",
+   "story": "Ulugh Beg’s observatory at Samarkand was built in the 1420s.",
+   "sources": [
+    "Encyclopaedia Britannica, “Timurid dynasty”"
+   ],
+   "when": [
+    "high-medieval:1400",
+    "renaissance:1400"
+   ]
+  },
+  {
+   "id": "bosnia-1400",
+   "names": [
+    "Bosnia"
+   ],
+   "name": "Kingdom of Bosnia",
+   "type": "kingdom",
+   "yearsActive": "1377–1463",
+   "summary": "Tvrtko I made Bosnia a kingdom in 1377. Its silver mines made it rich. The Ottomans conquered it in 1463.",
+   "description": "Tvrtko I made Bosnia a kingdom in 1377. Its silver mines made it rich. The Ottomans conquered it in 1463.",
+   "conflicts": "Hungarian intervention; Ottoman conquest (1463).",
+   "leaders": "Tvrtko I; Stephen Tomašević, the last king.",
+   "religion": "Catholic, Orthodox and the independent Bosnian Church.",
+   "culture": "Carved stećci tombstones.",
+   "story": "Thousands of stećci still stand across Bosnia.",
+   "sources": [
+    "Encyclopaedia Britannica, “Bosnia and Herzegovina: History”"
+   ],
+   "when": [
+    "renaissance:1400"
+   ]
+  },
+  {
+   "id": "aq-qoyunlu",
+   "names": [
+    "Emirate of the White Sheep Turks"
+   ],
+   "name": "Aq Qoyunlu (White Sheep Turkmen)",
+   "type": "Turkmen confederation",
+   "yearsActive": "1378–1503",
+   "summary": "The Aq Qoyunlu was a Turkmen confederation that ruled eastern Anatolia, Iraq and Iran from Diyarbakır and later Tabriz. Ismail I’s Safavids replaced it in the early 1500s.",
+   "description": "The Aq Qoyunlu was a Turkmen confederation that ruled eastern Anatolia, Iraq and Iran from Diyarbakır and later Tabriz. Ismail I’s Safavids replaced it in the early 1500s.",
+   "conflicts": "Wars with the Kara Koyunlu, the Ottomans (Otlukbeli, 1473) and the Safavids.",
+   "leaders": "Uzun Hasan.",
+   "religion": "Sunni Islam.",
+   "culture": "Persianate court culture at Tabriz.",
+   "story": "Uzun Hasan exchanged envoys with Venice against the Ottomans.",
+   "sources": [
+    "Encyclopaedia Britannica, “Ak Koyunlu”"
+   ],
+   "when": [
+    "renaissance:1500"
+   ]
+  },
+  {
+   "id": "golden-horde",
+   "names": [
+    "Golden Horde"
+   ],
+   "name": "Golden Horde",
+   "type": "Mongol khanate",
+   "yearsActive": "1240s–1502",
+   "summary": "The Golden Horde, or Ulus of Jochi, was the Mongol khanate of the western steppe, ruled from Sarai on the Volga. It took tribute from the Rus principalities. It split into separate khanates in the 1400s and its last remnant fell to the Crimean Khanate in 1502.",
+   "description": "The Golden Horde, or Ulus of Jochi, was the Mongol khanate of the western steppe, ruled from Sarai on the Volga. It took tribute from the Rus principalities. It split into separate khanates in the 1400s and its last remnant fell to the Crimean Khanate in 1502.",
+   "conflicts": "Kulikovo (1380); Timur’s campaigns (1390s); the Great Stand on the Ugra (1480).",
+   "leaders": "Batu; Özbeg; Tokhtamysh.",
+   "religion": "Islam from Özbeg’s reign (1313–1341).",
+   "culture": "Kipchak Turkic steppe culture.",
+   "story": "Moscow stopped paying it tribute after 1480.",
+   "sources": [
+    "Encyclopaedia Britannica, “Golden Horde”"
+   ],
+   "when": [
+    "renaissance:1500"
+   ]
+  },
+  {
+   "id": "white-horde",
+   "names": [
+    "White Horde"
+   ],
+   "name": "White Horde",
+   "type": "Mongol khanate",
+   "yearsActive": "c. 1220s–1400s",
+   "summary": "‘White Horde’ is the name for the eastern wing of Jochi’s ulus, on the steppe of modern Kazakhstan. Historians use the term inconsistently. Its lands later became the base of the Uzbek and Kazakh khanates.",
+   "description": "‘White Horde’ is the name for the eastern wing of Jochi’s ulus, on the steppe of modern Kazakhstan. Historians use the term inconsistently. Its lands later became the base of the Uzbek and Kazakh khanates.",
+   "conflicts": "Wars over the succession to the Golden Horde.",
+   "leaders": "Descendants of Jochi.",
+   "religion": "Tengrism, gradually replaced by Islam.",
+   "culture": "Steppe nomads.",
+   "story": "Tokhtamysh came from this wing before he took Sarai.",
+   "sources": [
+    "Encyclopaedia Britannica, “Golden Horde”"
+   ],
+   "when": [
+    "renaissance:1500"
+   ]
+  },
+  {
+   "id": "astrakhan",
+   "names": [
+    "Astrakhan Khanate"
+   ],
+   "name": "Khanate of Astrakhan",
+   "type": "khanate",
+   "yearsActive": "c. 1466–1556",
+   "summary": "Astrakhan was a Tatar successor of the Golden Horde on the lower Volga. Ivan IV annexed it in 1556, which gave Muscovy the whole Volga.",
+   "description": "Astrakhan was a Tatar successor of the Golden Horde on the lower Volga. Ivan IV annexed it in 1556, which gave Muscovy the whole Volga.",
+   "conflicts": "Wars with Crimea and the Nogais; Russian conquest (1556).",
+   "leaders": "Its own line of Jochid khans.",
+   "religion": "Sunni Islam.",
+   "culture": "A river-mouth trading town.",
+   "story": "Its fall opened the Caspian trade to Russia.",
+   "sources": [
+    "Encyclopaedia Britannica, “Astrakhan”"
+   ],
+   "when": [
+    "renaissance:1550"
+   ]
+  },
+  {
+   "id": "kazan",
+   "names": [
+    "Kazan Khanate"
+   ],
+   "name": "Khanate of Kazan",
+   "type": "khanate",
+   "yearsActive": "1438–1552",
+   "summary": "Kazan was a Tatar khanate on the middle Volga, a successor of the Golden Horde. Ivan IV stormed Kazan in 1552.",
+   "description": "Kazan was a Tatar khanate on the middle Volga, a successor of the Golden Horde. Ivan IV stormed Kazan in 1552.",
+   "conflicts": "Repeated wars with Muscovy; siege of Kazan (1552).",
+   "leaders": "Ulugh Muhammad, the founder.",
+   "religion": "Sunni Islam.",
+   "culture": "Volga Tatar towns and trade.",
+   "story": "St Basil’s Cathedral in Moscow celebrates Ivan IV’s capture of Kazan.",
+   "sources": [
+    "Encyclopaedia Britannica, “Kazan, khanate of”"
+   ],
+   "when": [
+    "renaissance:1550"
+   ]
+  },
+  {
+   "id": "nogai",
+   "names": [
+    "Nogai Horde"
+   ],
+   "name": "Nogai Horde",
+   "type": "nomad horde",
+   "yearsActive": "late 1300s–1630s",
+   "summary": "The Nogai Horde was a confederation of Turkic nomads between the Volga and the Ural River, named after the Golden Horde general Nogai. Around 1600 it broke up under pressure from Russia and the Kalmyks.",
+   "description": "The Nogai Horde was a confederation of Turkic nomads between the Volga and the Ural River, named after the Golden Horde general Nogai. Around 1600 it broke up under pressure from Russia and the Kalmyks.",
+   "conflicts": "Raids on Muscovy; Kalmyk invasion (1630s).",
+   "leaders": "Beys descended from Edigu.",
+   "religion": "Sunni Islam.",
+   "culture": "Nomadic horse breeders who supplied horses to Moscow.",
+   "story": "Nogai horse herds were driven to Moscow to sell by the tens of thousands.",
+   "sources": [
+    "Encyclopaedia Britannica, “Nogay”"
+   ]
+  },
+  {
+   "id": "kazakh-khanate",
+   "names": [
+    "Quazaq Khanate"
+   ],
+   "name": "Kazakh Khanate",
+   "type": "khanate",
+   "yearsActive": "1465–1847",
+   "summary": "The Kazakh Khanate was founded around 1465 by Janibek and Kerei. It ruled the steppe east of the Ural River and later split into three hordes, or juz. From the 1700s they gradually came under Russian rule.",
+   "description": "The Kazakh Khanate was founded around 1465 by Janibek and Kerei. It ruled the steppe east of the Ural River and later split into three hordes, or juz. From the 1700s they gradually came under Russian rule.",
+   "conflicts": "Wars with the Uzbeks and the Dzungars.",
+   "leaders": "Janibek; Kerei; Kasym Khan.",
+   "religion": "Sunni Islam alongside steppe customs.",
+   "culture": "Nomadic pastoralism and oral epic.",
+   "story": "Kazakh historians date their statehood from 1465.",
+   "sources": [
+    "Encyclopaedia Britannica, “Kazakhstan: History”"
+   ]
+  },
+  {
+   "id": "finnmark",
+   "names": [
+    "Finnmark"
+   ],
+   "name": "Finnmark",
+   "type": "Danish–Norwegian county",
+   "yearsActive": "—",
+   "summary": "Finnmark was Norway’s Arctic frontier, ruled for Denmark–Norway from the fortress of Vardøhus. Norwegian fishermen and Sámi lived there, and Sweden and Russia also claimed to tax the area.",
+   "description": "Finnmark was Norway’s Arctic frontier, ruled for Denmark–Norway from the fortress of Vardøhus. Norwegian fishermen and Sámi lived there, and Sweden and Russia also claimed to tax the area.",
+   "conflicts": "Kalmar War (1611–1613) over northern claims.",
+   "leaders": "Governors of Vardøhus.",
+   "religion": "Lutheran Christianity; Sámi religion persisted.",
+   "culture": "Cod fishing and reindeer herding.",
+   "story": "Vardø was the scene of witch trials in the 1600s.",
+   "sources": [
+    "Encyclopaedia Britannica, “Finnmark”"
+   ]
+  },
+  {
+   "id": "pontremoli",
+   "names": [
+    "Pontremoli"
+   ],
+   "name": "Pontremoli",
+   "type": "Tuscan territory",
+   "yearsActive": "Tuscan from 1650",
+   "summary": "Pontremoli is a town in the Lunigiana valley. Spanish Milan sold it to Genoa in 1647, and the Grand Duchy of Tuscany bought it in 1650. It stayed a Tuscan exclave until the 1840s.",
+   "description": "Pontremoli is a town in the Lunigiana valley. Spanish Milan sold it to Genoa in 1647, and the Grand Duchy of Tuscany bought it in 1650. It stayed a Tuscan exclave until the 1840s.",
+   "conflicts": "Its value as an Apennine pass was contested.",
+   "leaders": "Medici and Lorraine grand dukes of Tuscany.",
+   "religion": "Catholic.",
+   "culture": "A small market town on the Via Francigena.",
+   "story": "Its castle, the Piagnaro, guards the pass.",
+   "sources": [
+    "Encyclopaedia Britannica, “Pontremoli”"
+   ]
+  },
+  {
+   "id": "fivizzano",
+   "names": [
+    "Fivizzano"
+   ],
+   "name": "Fivizzano",
+   "type": "Tuscan territory",
+   "yearsActive": "Florentine from 1477",
+   "summary": "Fivizzano was a Florentine, and later Tuscan, enclave in Lunigiana. It passed to Modena in the 1840s.",
+   "description": "Fivizzano was a Florentine, and later Tuscan, enclave in Lunigiana. It passed to Modena in the 1840s.",
+   "conflicts": "Border disputes among Tuscany, Modena and Genoa.",
+   "leaders": "Grand dukes of Tuscany.",
+   "religion": "Catholic.",
+   "culture": "A hill town.",
+   "story": "Jacopo da Fivizzano’s early printing press worked here in the 1470s.",
+   "sources": [
+    "Encyclopaedia Britannica, “Lunigiana”"
+   ]
+  },
+  {
+   "id": "modena",
+   "names": [
+    "Modena"
+   ],
+   "name": "Duchy of Modena and Reggio",
+   "type": "duchy",
+   "yearsActive": "1452–1859",
+   "summary": "The Este family ruled Modena and Reggio. After losing Ferrara to the pope in 1598 they made Modena their capital. From 1814 a Habsburg-Este line ruled until 1859, when the duchy joined united Italy.",
+   "description": "The Este family ruled Modena and Reggio. After losing Ferrara to the pope in 1598 they made Modena their capital. From 1814 a Habsburg-Este line ruled until 1859, when the duchy joined united Italy.",
+   "conflicts": "Wars of the Spanish and Austrian Successions; the 1831 uprising; 1859.",
+   "leaders": "Cesare d’Este; Francis IV.",
+   "religion": "Catholic.",
+   "culture": "The Este court library and art collection.",
+   "story": "The Biblioteca Estense keeps the Este Bible.",
+   "sources": [
+    "Encyclopaedia Britannica, “Modena”"
+   ]
+  },
+  {
+   "id": "parma",
+   "names": [
+    "Parma"
+   ],
+   "name": "Duchy of Parma and Piacenza",
+   "type": "duchy",
+   "yearsActive": "1545–1859",
+   "summary": "Parma and Piacenza were created as a duchy for the Farnese family in 1545. Spanish Bourbons followed in 1748. Napoleon’s widow Marie Louise ruled from 1814 to 1847. The duchy joined Italy in 1860.",
+   "description": "Parma and Piacenza were created as a duchy for the Farnese family in 1545. Spanish Bourbons followed in 1748. Napoleon’s widow Marie Louise ruled from 1814 to 1847. The duchy joined Italy in 1860.",
+   "conflicts": "Successions after the Farnese line ended in 1731.",
+   "leaders": "Alessandro Farnese; Marie Louise.",
+   "religion": "Catholic.",
+   "culture": "The Teatro Farnese and Correggio’s frescoes.",
+   "story": "Marie Louise was a popular ruler in Parma.",
+   "sources": [
+    "Encyclopaedia Britannica, “Parma”"
+   ]
+  },
+  {
+   "id": "ritzebuttel",
+   "names": [
+    "Cuxhaven"
+   ],
+   "name": "Ritzebüttel (Cuxhaven)",
+   "type": "Hamburg exclave",
+   "yearsActive": "1394–1937",
+   "summary": "Ritzebüttel was Hamburg’s exclave at the mouth of the Elbe, including Cuxhaven. Hamburg held it from 1394 until 1937.",
+   "description": "Ritzebüttel was Hamburg’s exclave at the mouth of the Elbe, including Cuxhaven. Hamburg held it from 1394 until 1937.",
+   "conflicts": "Napoleonic occupation.",
+   "leaders": "Hamburg’s appointed governors (Amtmänner).",
+   "religion": "Lutheran.",
+   "culture": "A harbour and pilot station.",
+   "story": "Cuxhaven was Hamburg’s outport.",
+   "sources": [
+    "Encyclopaedia Britannica, “Cuxhaven”"
+   ]
+  },
+  {
+   "id": "persia-qajar",
+   "names": [
+    "Persia"
+   ],
+   "name": "Persia (Zand and Qajar)",
+   "type": "monarchy",
+   "yearsActive": "Zand 1751–1794; Qajar 1789/96–1925",
+   "summary": "In 1789 Persia was moving from the Zand dynasty to the Qajars, who ruled until 1925. Russia took Persia’s Caucasus lands in the treaties of Gulistan (1813) and Turkmenchay (1828). The Constitutional Revolution of 1906 created a parliament.",
+   "description": "In 1789 Persia was moving from the Zand dynasty to the Qajars, who ruled until 1925. Russia took Persia’s Caucasus lands in the treaties of Gulistan (1813) and Turkmenchay (1828). The Constitutional Revolution of 1906 created a parliament.",
+   "conflicts": "Russo-Persian wars; the Anglo-Russian convention of 1907.",
+   "leaders": "Agha Mohammad Khan; Fath-Ali Shah; Naser al-Din Shah.",
+   "religion": "Twelver Shi‘i Islam.",
+   "culture": "Persian court culture.",
+   "story": "Russia and Britain divided Persia into spheres of influence in 1907.",
+   "sources": [
+    "Encyclopaedia Britannica, “Qajar dynasty”"
+   ]
+  },
+  {
+   "id": "central-asian-khanates",
+   "names": [
+    "central Asian khanates"
+   ],
+   "name": "Khanates beyond Russia’s frontier",
+   "type": "khanates",
+   "yearsActive": "—",
+   "summary": "The basemap uses this generic label in 1789 for the Muslim khanates on Russia’s southern frontier: the Kazakh hordes on the steppe and small khanates of the Caucasus and Central Asia (Bukhara, Khiva and Kokand). Russia conquered most of them in the 1800s.",
+   "description": "The basemap uses this generic label in 1789 for the Muslim khanates on Russia’s southern frontier: the Kazakh hordes on the steppe and small khanates of the Caucasus and Central Asia (Bukhara, Khiva and Kokand). Russia conquered most of them in the 1800s.",
+   "conflicts": "Russian expansion.",
+   "leaders": "Khans of each state.",
+   "religion": "Sunni Islam.",
+   "culture": "Nomadic and oasis cultures.",
+   "story": "Russia annexed the Caucasus khanates first and the Central Asian ones later.",
+   "sources": [
+    "Encyclopaedia Britannica, “Bukhara, khanate of”"
+   ]
+  },
+  {
+   "id": "palatinate",
+   "names": [
+    "Palatinate"
+   ],
+   "name": "Bavarian Palatinate",
+   "type": "Bavarian province",
+   "yearsActive": "1816–1945",
+   "summary": "The Palatinate on the left bank of the Rhine. Austria and Bavaria jointly administered it in 1815, and it went to Bavaria in 1816.",
+   "description": "The Palatinate on the left bank of the Rhine. Austria and Bavaria jointly administered it in 1815, and it went to Bavaria in 1816.",
+   "conflicts": "Napoleonic wars; joined the German Confederation in 1815.",
+   "leaders": "Kings of Bavaria.",
+   "religion": "Catholic and Protestant.",
+   "culture": "A small German court culture.",
+   "story": "The Hambach Festival of 1832 was a democratic rally held here.",
+   "sources": [
+    "Encyclopaedia Britannica",
+    "T. Nipperdey, Germany from Napoleon to Bismarck (1996)"
+   ],
+   "when": [
+    "modern:1815"
+   ]
+  },
+  {
+   "id": "hohenzollern",
+   "names": [
+    "Hohenzollern"
+   ],
+   "name": "Hohenzollern principalities",
+   "type": "principalities",
+   "yearsActive": "to 1850",
+   "summary": "The Swabian principalities of Hohenzollern-Hechingen and Hohenzollern-Sigmaringen. They passed to Prussia in 1850.",
+   "description": "The Swabian principalities of Hohenzollern-Hechingen and Hohenzollern-Sigmaringen. They passed to Prussia in 1850.",
+   "conflicts": "Napoleonic wars; joined the German Confederation in 1815.",
+   "leaders": "The Catholic Swabian branch of the Hohenzollerns.",
+   "religion": "Catholic.",
+   "culture": "A small German court culture.",
+   "story": "Romania’s Carol I came from the Sigmaringen line.",
+   "sources": [
+    "Encyclopaedia Britannica",
+    "T. Nipperdey, Germany from Napoleon to Bismarck (1996)"
+   ],
+   "when": [
+    "modern:1815"
+   ]
+  },
+  {
+   "id": "meck-strelitz",
+   "names": [
+    "Mecklenburg-Strelitz"
+   ],
+   "name": "Grand Duchy of Mecklenburg-Strelitz",
+   "type": "grand duchy",
+   "yearsActive": "1815–1918",
+   "summary": "A small north German state that became a grand duchy in 1815.",
+   "description": "A small north German state that became a grand duchy in 1815.",
+   "conflicts": "Napoleonic wars; joined the German Confederation in 1815.",
+   "leaders": "Grand dukes of Mecklenburg-Strelitz.",
+   "religion": "Lutheran and Reformed Protestant.",
+   "culture": "A small German court culture.",
+   "story": "Queen Louise of Prussia was born a princess of this house.",
+   "sources": [
+    "Encyclopaedia Britannica",
+    "T. Nipperdey, Germany from Napoleon to Bismarck (1996)"
+   ],
+   "when": [
+    "modern:1815"
+   ]
+  },
+  {
+   "id": "hesse-darmstadt",
+   "names": [
+    "Grand Duchy of Hesse"
+   ],
+   "name": "Grand Duchy of Hesse",
+   "type": "grand duchy",
+   "yearsActive": "1806–1918",
+   "summary": "Hesse-Darmstadt became a grand duchy in 1806. It added Rhenish Hesse, around Mainz, in 1816 and lasted until 1918.",
+   "description": "Hesse-Darmstadt became a grand duchy in 1806. It added Rhenish Hesse, around Mainz, in 1816 and lasted until 1918.",
+   "conflicts": "Napoleonic wars; joined the German Confederation in 1815.",
+   "leaders": "Louis I, its first grand duke.",
+   "religion": "Lutheran and Reformed Protestant.",
+   "culture": "A small German court culture.",
+   "story": "Its princesses married into the Russian and British royal families.",
+   "sources": [
+    "Encyclopaedia Britannica",
+    "T. Nipperdey, Germany from Napoleon to Bismarck (1996)"
+   ],
+   "when": [
+    "modern:1815"
+   ]
+  },
+  {
+   "id": "nassau",
+   "names": [
+    "Nassau"
+   ],
+   "name": "Duchy of Nassau",
+   "type": "duchy",
+   "yearsActive": "1806–1866",
+   "summary": "A duchy on the Rhine and Lahn rivers. Prussia annexed it in 1866.",
+   "description": "A duchy on the Rhine and Lahn rivers. Prussia annexed it in 1866.",
+   "conflicts": "Napoleonic wars; joined the German Confederation in 1815.",
+   "leaders": "Dukes of Nassau.",
+   "religion": "Lutheran and Reformed Protestant.",
+   "culture": "A small German court culture.",
+   "story": "Its last duke, Adolphe, later became Grand Duke of Luxembourg.",
+   "sources": [
+    "Encyclopaedia Britannica",
+    "T. Nipperdey, Germany from Napoleon to Bismarck (1996)"
+   ],
+   "when": [
+    "modern:1815"
+   ]
+  },
+  {
+   "id": "wetzlar",
+   "names": [
+    "Wetzlar"
+   ],
+   "name": "Wetzlar",
+   "type": "Prussian exclave",
+   "yearsActive": "Prussian from 1815",
+   "summary": "Wetzlar was a former imperial city and the seat of the Imperial Chamber Court from 1689 to 1806. It became a Prussian exclave in 1815.",
+   "description": "Wetzlar was a former imperial city and the seat of the Imperial Chamber Court from 1689 to 1806. It became a Prussian exclave in 1815.",
+   "conflicts": "Napoleonic wars; joined the German Confederation in 1815.",
+   "leaders": "Prussian officials.",
+   "religion": "Lutheran and Reformed Protestant.",
+   "culture": "A small German court culture.",
+   "story": "Goethe worked at the court here in 1772, which inspired The Sorrows of Young Werther.",
+   "sources": [
+    "Encyclopaedia Britannica",
+    "T. Nipperdey, Germany from Napoleon to Bismarck (1996)"
+   ],
+   "when": [
+    "modern:1815"
+   ]
+  },
+  {
+   "id": "waldeck",
+   "names": [
+    "Waldeck"
+   ],
+   "name": "Principality of Waldeck",
+   "type": "principality",
+   "yearsActive": "to 1918",
+   "summary": "A small Hessian principality, also called Waldeck-Pyrmont.",
+   "description": "A small Hessian principality, also called Waldeck-Pyrmont.",
+   "conflicts": "Napoleonic wars; joined the German Confederation in 1815.",
+   "leaders": "Princes of Waldeck.",
+   "religion": "Lutheran and Reformed Protestant.",
+   "culture": "A small German court culture.",
+   "story": "Its princes served as commanders in many European armies.",
+   "sources": [
+    "Encyclopaedia Britannica",
+    "T. Nipperdey, Germany from Napoleon to Bismarck (1996)"
+   ],
+   "when": [
+    "modern:1815"
+   ]
+  },
+  {
+   "id": "lippe",
+   "names": [
+    "Lippe-Detmold"
+   ],
+   "name": "Principality of Lippe",
+   "type": "principality",
+   "yearsActive": "to 1918",
+   "summary": "A principality in Westphalia, ruled from Detmold.",
+   "description": "A principality in Westphalia, ruled from Detmold.",
+   "conflicts": "Napoleonic wars; joined the German Confederation in 1815.",
+   "leaders": "Princes of Lippe.",
+   "religion": "Lutheran and Reformed Protestant.",
+   "culture": "A small German court culture.",
+   "story": "The Hermann Monument near Detmold was finished in 1875.",
+   "sources": [
+    "Encyclopaedia Britannica",
+    "T. Nipperdey, Germany from Napoleon to Bismarck (1996)"
+   ],
+   "when": [
+    "modern:1815"
+   ]
+  },
+  {
+   "id": "brunswick",
+   "names": [
+    "Brunswick"
+   ],
+   "name": "Duchy of Brunswick",
+   "type": "duchy",
+   "yearsActive": "1814–1918",
+   "summary": "A Guelph duchy in Lower Saxony.",
+   "description": "A Guelph duchy in Lower Saxony.",
+   "conflicts": "Napoleonic wars; joined the German Confederation in 1815.",
+   "leaders": "Frederick William, the ‘Black Duke’, killed at Quatre Bras (1815).",
+   "religion": "Lutheran and Reformed Protestant.",
+   "culture": "A small German court culture.",
+   "story": "The Black Duke’s ‘Black Brunswickers’ fought Napoleon.",
+   "sources": [
+    "Encyclopaedia Britannica",
+    "T. Nipperdey, Germany from Napoleon to Bismarck (1996)"
+   ],
+   "when": [
+    "modern:1815"
+   ]
+  },
+  {
+   "id": "anhalt",
+   "names": [
+    "Anhalt"
+   ],
+   "name": "Anhalt duchies",
+   "type": "duchies",
+   "yearsActive": "to 1863 (then united)",
+   "summary": "The duchies of Anhalt-Dessau, Köthen and Bernburg. They were united as one duchy in 1863.",
+   "description": "The duchies of Anhalt-Dessau, Köthen and Bernburg. They were united as one duchy in 1863.",
+   "conflicts": "Napoleonic wars; joined the German Confederation in 1815.",
+   "leaders": "Leopold IV of Anhalt-Dessau.",
+   "religion": "Lutheran and Reformed Protestant.",
+   "culture": "A small German court culture.",
+   "story": "The Dessau-Wörlitz Garden Realm is a World Heritage Site.",
+   "sources": [
+    "Encyclopaedia Britannica",
+    "T. Nipperdey, Germany from Napoleon to Bismarck (1996)"
+   ],
+   "when": [
+    "modern:1815"
+   ]
+  },
+  {
+   "id": "meck-schwerin",
+   "names": [
+    "Mecklenburg-Schwerin"
+   ],
+   "name": "Grand Duchy of Mecklenburg-Schwerin",
+   "type": "grand duchy",
+   "yearsActive": "1815–1918",
+   "summary": "A Baltic grand duchy, one of the most feudal and conservative states in Germany.",
+   "description": "A Baltic grand duchy, one of the most feudal and conservative states in Germany.",
+   "conflicts": "Napoleonic wars; joined the German Confederation in 1815.",
+   "leaders": "Frederick Francis I.",
+   "religion": "Lutheran and Reformed Protestant.",
+   "culture": "A small German court culture.",
+   "story": "Landowning estates dominated the duchy until 1918.",
+   "sources": [
+    "Encyclopaedia Britannica",
+    "T. Nipperdey, Germany from Napoleon to Bismarck (1996)"
+   ],
+   "when": [
+    "modern:1815"
+   ]
+  },
+  {
+   "id": "thuringia",
+   "names": [
+    "Thuringia"
+   ],
+   "name": "Thuringian states",
+   "type": "duchies and principalities",
+   "yearsActive": "to 1920",
+   "summary": "The basemap groups the small Thuringian states under one label. They included Saxe-Weimar-Eisenach, which became a grand duchy in 1815, the Saxon duchies, Schwarzburg and Reuss. They were merged into the state of Thuringia in 1920.",
+   "description": "The basemap groups the small Thuringian states under one label. They included Saxe-Weimar-Eisenach, which became a grand duchy in 1815, the Saxon duchies, Schwarzburg and Reuss. They were merged into the state of Thuringia in 1920.",
+   "conflicts": "Napoleonic wars; joined the German Confederation in 1815.",
+   "leaders": "Charles Augustus of Saxe-Weimar.",
+   "religion": "Lutheran and Reformed Protestant.",
+   "culture": "A small German court culture.",
+   "story": "Goethe and Schiller made Weimar Germany’s literary capital.",
+   "sources": [
+    "Encyclopaedia Britannica",
+    "T. Nipperdey, Germany from Napoleon to Bismarck (1996)"
+   ],
+   "when": [
+    "modern:1815"
+   ]
+  },
+  {
+   "id": "lubeck",
+   "names": [
+    "Lübeck"
+   ],
+   "name": "Free City of Lübeck",
+   "type": "free city",
+   "yearsActive": "to 1937",
+   "summary": "Lübeck was a free Hanseatic city and became a sovereign member of the German Confederation in 1815.",
+   "description": "Lübeck was a free Hanseatic city and became a sovereign member of the German Confederation in 1815.",
+   "conflicts": "French annexation (1810–1813).",
+   "leaders": "An elected senate and burgomasters.",
+   "religion": "Lutheran.",
+   "culture": "Merchant republic culture.",
+   "story": "Lübeck was once the leading city of the Hanseatic League.",
+   "sources": [
+    "Encyclopaedia Britannica, “Lübeck”"
+   ],
+   "when": [
+    "modern:1815"
+   ]
+  },
+  {
+   "id": "bremen",
+   "names": [
+    "Bremen"
+   ],
+   "name": "Free City of Bremen",
+   "type": "free city",
+   "yearsActive": "to present (as a state)",
+   "summary": "Bremen was a free Hanseatic city and became a sovereign member of the German Confederation in 1815.",
+   "description": "Bremen was a free Hanseatic city and became a sovereign member of the German Confederation in 1815.",
+   "conflicts": "French annexation (1810–1813).",
+   "leaders": "An elected senate and burgomasters.",
+   "religion": "Lutheran.",
+   "culture": "Merchant republic culture.",
+   "story": "Bremen is still a city-state of Germany today.",
+   "sources": [
+    "Encyclopaedia Britannica, “Bremen”"
+   ],
+   "when": [
+    "modern:1815"
+   ]
+  },
+  {
+   "id": "hamburg",
+   "names": [
+    "Hamburg"
+   ],
+   "name": "Free City of Hamburg",
+   "type": "free city",
+   "yearsActive": "to present (as a state)",
+   "summary": "Hamburg was a free Hanseatic city and became a sovereign member of the German Confederation in 1815.",
+   "description": "Hamburg was a free Hanseatic city and became a sovereign member of the German Confederation in 1815.",
+   "conflicts": "French annexation (1810–1813).",
+   "leaders": "An elected senate and burgomasters.",
+   "religion": "Lutheran.",
+   "culture": "Merchant republic culture.",
+   "story": "Hamburg is still a city-state of Germany today.",
+   "sources": [
+    "Encyclopaedia Britannica, “Hamburg”"
+   ],
+   "when": [
+    "modern:1815"
+   ]
+  },
+  {
+   "id": "oldenburg",
+   "names": [
+    "Oldenburg"
+   ],
+   "name": "Grand Duchy of Oldenburg",
+   "type": "grand duchy",
+   "yearsActive": "1815–1918",
+   "summary": "Oldenburg was raised to a grand duchy at Vienna in 1815, though its rulers only adopted the title in 1829.",
+   "description": "Oldenburg was raised to a grand duchy at Vienna in 1815, though its rulers only adopted the title in 1829.",
+   "conflicts": "Napoleonic wars; joined the German Confederation in 1815.",
+   "leaders": "Peter I.",
+   "religion": "Lutheran and Reformed Protestant.",
+   "culture": "A small German court culture.",
+   "story": "The ruling house was related to the Russian imperial family.",
+   "sources": [
+    "Encyclopaedia Britannica",
+    "T. Nipperdey, Germany from Napoleon to Bismarck (1996)"
+   ],
+   "when": [
+    "modern:1815"
+   ]
+  },
+  {
+   "id": "hesse-kassel",
+   "names": [
+    "Electoral Hesse"
+   ],
+   "name": "Electorate of Hesse (Hesse-Kassel)",
+   "type": "electorate",
+   "yearsActive": "1803–1866",
+   "summary": "Its ruler kept the title of Elector even after the Holy Roman Empire ended. Prussia annexed it in 1866.",
+   "description": "Its ruler kept the title of Elector even after the Holy Roman Empire ended. Prussia annexed it in 1866.",
+   "conflicts": "Napoleonic wars; joined the German Confederation in 1815.",
+   "leaders": "William I.",
+   "religion": "Lutheran and Reformed Protestant.",
+   "culture": "A small German court culture.",
+   "story": "The Brothers Grimm worked in Kassel.",
+   "sources": [
+    "Encyclopaedia Britannica",
+    "T. Nipperdey, Germany from Napoleon to Bismarck (1996)"
+   ],
+   "when": [
+    "modern:1815"
+   ]
+  },
+  {
+   "id": "schaumburg-lippe",
+   "names": [
+    "Schaumburg-Lippe"
+   ],
+   "name": "Principality of Schaumburg-Lippe",
+   "type": "principality",
+   "yearsActive": "to 1918",
+   "summary": "One of the smallest German states, ruled from Bückeburg.",
+   "description": "One of the smallest German states, ruled from Bückeburg.",
+   "conflicts": "Napoleonic wars; joined the German Confederation in 1815.",
+   "leaders": "Prince George William.",
+   "religion": "Lutheran and Reformed Protestant.",
+   "culture": "A small German court culture.",
+   "story": "Its tiny army was famous in the 1700s.",
+   "sources": [
+    "Encyclopaedia Britannica",
+    "T. Nipperdey, Germany from Napoleon to Bismarck (1996)"
+   ],
+   "when": [
+    "modern:1815"
+   ]
+  },
+  {
+   "id": "lucca",
+   "names": [
+    "Lucca"
+   ],
+   "name": "Duchy of Lucca",
+   "type": "duchy",
+   "yearsActive": "1815–1847",
+   "summary": "A duchy created at the Congress of Vienna for the Bourbon-Parma family. It was merged into Tuscany in 1847.",
+   "description": "A duchy created at the Congress of Vienna for the Bourbon-Parma family. It was merged into Tuscany in 1847.",
+   "conflicts": "Upheavals of 1847.",
+   "leaders": "Maria Luisa of Bourbon; Charles Louis.",
+   "religion": "Catholic.",
+   "culture": "A walled Tuscan city.",
+   "story": "Lucca’s Renaissance walls survive intact.",
+   "sources": [
+    "Encyclopaedia Britannica, “Lucca”"
+   ],
+   "when": [
+    "modern:1815"
+   ]
+  },
+  {
+   "id": "massa",
+   "names": [
+    "Massa"
+   ],
+   "name": "Duchy of Massa and Carrara",
+   "type": "duchy",
+   "yearsActive": "to 1829 (then Modena)",
+   "summary": "A small duchy on the Tuscan coast, famous for its Carrara marble. It went to Modena in 1829.",
+   "description": "A small duchy on the Tuscan coast, famous for its Carrara marble. It went to Modena in 1829.",
+   "conflicts": "Napoleonic era.",
+   "leaders": "Maria Beatrice d’Este.",
+   "religion": "Catholic.",
+   "culture": "Marble quarrying.",
+   "story": "Michelangelo chose marble at Carrara.",
+   "sources": [
+    "Encyclopaedia Britannica, “Massa”"
+   ],
+   "when": [
+    "modern:1815"
+   ]
+  },
+  {
+   "id": "krakow",
+   "names": [
+    "Republic of Kraków"
+   ],
+   "name": "Free City of Kraków",
+   "type": "free city",
+   "yearsActive": "1815–1846",
+   "summary": "A free city under the joint protection of Austria, Prussia and Russia, created in 1815. Austria annexed it after the uprising of 1846.",
+   "description": "A free city under the joint protection of Austria, Prussia and Russia, created in 1815. Austria annexed it after the uprising of 1846.",
+   "conflicts": "Kraków Uprising (1846).",
+   "leaders": "An elected senate.",
+   "religion": "Catholic.",
+   "culture": "Polish university life.",
+   "story": "It was the last independent Polish territory before 1918.",
+   "sources": [
+    "Encyclopaedia Britannica, “Kraków”"
+   ],
+   "when": [
+    "modern:1815"
+   ]
+  },
+  {
+   "id": "san-marino",
+   "names": [
+    "San Marino"
+   ],
+   "name": "Republic of San Marino",
+   "type": "republic",
+   "yearsActive": "c. 301 (traditional)–present",
+   "summary": "A tiny mountain republic. The Congress of Vienna confirmed its independence.",
+   "description": "A tiny mountain republic. The Congress of Vienna confirmed its independence.",
+   "conflicts": "It sheltered Garibaldi in 1849.",
+   "leaders": "Captains Regent.",
+   "religion": "Catholic.",
+   "culture": "Mount Titano.",
+   "story": "It claims to be the world’s oldest republic.",
+   "sources": [
+    "Encyclopaedia Britannica, “San Marino”"
+   ]
+  },
+  {
+   "id": "georgia-1914",
+   "names": [
+    "Georgia"
+   ],
+   "name": "Georgia (Russian Empire)",
+   "type": "imperial governorates",
+   "yearsActive": "Russian 1801–1917",
+   "summary": "In 1914 Georgia was ruled by the Russian Empire as the Tiflis and Kutaisi governorates. Russia had annexed Kartli-Kakheti in 1801.",
+   "description": "In 1914 Georgia was ruled by the Russian Empire as the Tiflis and Kutaisi governorates. Russia had annexed Kartli-Kakheti in 1801.",
+   "conflicts": "World War I on the Caucasus front.",
+   "leaders": "Russian viceroys.",
+   "religion": "Georgian Orthodox Church.",
+   "culture": "Tiflis was the region’s cultural capital.",
+   "story": "Georgia declared independence in 1918.",
+   "sources": [
+    "Encyclopaedia Britannica, “Georgia: History”"
+   ],
+   "when": [
+    "modern:1914"
+   ]
+  },
+  {
+   "id": "armenia-1914",
+   "names": [
+    "Armenia"
+   ],
+   "name": "Russian Armenia",
+   "type": "imperial governorate",
+   "yearsActive": "Russian 1828–1917",
+   "summary": "In 1914 the Erivan governorate was the Armenian part of the Russian Empire.",
+   "description": "In 1914 the Erivan governorate was the Armenian part of the Russian Empire.",
+   "conflicts": "The Ottoman genocide of Armenians (1915).",
+   "leaders": "Russian governors.",
+   "religion": "Armenian Apostolic Church.",
+   "culture": "The Armenian church centre of Etchmiadzin.",
+   "story": "Armenia declared independence in 1918.",
+   "sources": [
+    "Encyclopaedia Britannica, “Armenia: History”"
+   ],
+   "when": [
+    "modern:1914"
+   ]
+  },
+  {
+   "id": "azerbaijan-1914",
+   "names": [
+    "Azerbaijan"
+   ],
+   "name": "Azerbaijan (Russian Empire)",
+   "type": "imperial governorates",
+   "yearsActive": "Russian 1813/28–1917",
+   "summary": "In 1914 the Baku and Elisabethpol governorates were part of the Russian Empire. Baku’s oilfields were among the largest in the world.",
+   "description": "In 1914 the Baku and Elisabethpol governorates were part of the Russian Empire. Baku’s oilfields were among the largest in the world.",
+   "conflicts": "Revolution of 1905.",
+   "leaders": "Russian governors.",
+   "religion": "Shi‘i Islam.",
+   "culture": "Baku oil wealth.",
+   "story": "Azerbaijan declared independence in 1918.",
+   "sources": [
+    "Encyclopaedia Britannica, “Azerbaijan: History”"
+   ],
+   "when": [
+    "modern:1914"
+   ]
+  },
+  {
+   "id": "iceland-1914",
+   "names": [
+    "Iceland"
+   ],
+   "name": "Iceland",
+   "type": "Danish dependency",
+   "yearsActive": "home rule 1904; sovereign 1918; republic 1944",
+   "summary": "In 1914 Iceland had home rule under Denmark. It became a sovereign kingdom in personal union with Denmark in 1918 and a republic in 1944.",
+   "description": "In 1914 Iceland had home rule under Denmark. It became a sovereign kingdom in personal union with Denmark in 1918 and a republic in 1944.",
+   "conflicts": "None.",
+   "leaders": "Hannes Hafstein, the first minister.",
+   "religion": "Lutheran.",
+   "culture": "Saga heritage.",
+   "story": "The Althing is one of the oldest parliaments in the world.",
+   "sources": [
+    "Encyclopaedia Britannica, “Iceland”"
+   ],
+   "when": [
+    "modern:1914"
+   ]
+  },
+  {
+   "id": "malta",
+   "names": [
+    "Malta"
+   ],
+   "name": "Malta",
+   "type": "British colony, then republic",
+   "yearsActive": "British 1800–1964; republic 1974",
+   "summary": "Malta was a British naval base from 1800 and became independent in 1964. It joined the EU in 2004.",
+   "description": "Malta was a British naval base from 1800 and became independent in 1964. It joined the EU in 2004.",
+   "conflicts": "Siege of Malta (1940–1942).",
+   "leaders": "Dom Mintoff.",
+   "religion": "Catholic.",
+   "culture": "Maltese language.",
+   "story": "The whole island received the George Cross in 1942.",
+   "sources": [
+    "Encyclopaedia Britannica, “Malta”"
+   ]
+  },
+  {
+   "id": "iran-20c",
+   "names": [
+    "Iran"
+   ],
+   "name": "Iran",
+   "type": "monarchy, then Islamic republic",
+   "yearsActive": "Pahlavi 1925–1979; Islamic Republic 1979–",
+   "summary": "In 1945 Iran was ruled by the Pahlavi shahs, after the Allied occupation of 1941. The 1979 revolution created the Islamic Republic.",
+   "description": "In 1945 Iran was ruled by the Pahlavi shahs, after the Allied occupation of 1941. The 1979 revolution created the Islamic Republic.",
+   "conflicts": "Iran–Iraq War (1980–1988).",
+   "leaders": "Mohammad Reza Shah; Khomeini.",
+   "religion": "Shi‘i Islam.",
+   "culture": "Persian culture.",
+   "story": "The Tehran Conference was held there in 1943.",
+   "sources": [
+    "Encyclopaedia Britannica, “Iran”"
+   ]
+  },
+  {
+   "id": "iraq-20c",
+   "names": [
+    "Iraq"
+   ],
+   "name": "Iraq",
+   "type": "kingdom, then republic",
+   "yearsActive": "kingdom 1932–1958; republic 1958–",
+   "summary": "Iraq was a monarchy until the revolution of 1958. From 1968 the Ba‘ath party ruled it, under Saddam Hussein from 1979.",
+   "description": "Iraq was a monarchy until the revolution of 1958. From 1968 the Ba‘ath party ruled it, under Saddam Hussein from 1979.",
+   "conflicts": "Iran–Iraq War; Gulf War (1991).",
+   "leaders": "Faisal I; Saddam Hussein.",
+   "religion": "Islam.",
+   "culture": "Mesopotamian heritage.",
+   "story": "Iraq became independent in 1932.",
+   "sources": [
+    "Encyclopaedia Britannica, “Iraq”"
+   ]
+  },
+  {
+   "id": "syria-20c",
+   "names": [
+    "Syria"
+   ],
+   "name": "Syria",
+   "type": "mandate, then republic",
+   "yearsActive": "French mandate to 1946; republic 1946–",
+   "summary": "Syria came out of the French mandate in 1946. The Ba‘ath party took power in 1963, and Hafez al-Assad ruled from 1970.",
+   "description": "Syria came out of the French mandate in 1946. The Ba‘ath party took power in 1963, and Hafez al-Assad ruled from 1970.",
+   "conflicts": "Arab–Israeli wars.",
+   "leaders": "Hafez al-Assad.",
+   "religion": "Sunni Islam with minorities.",
+   "culture": "Damascus and Aleppo.",
+   "story": "Syria joined Egypt in the United Arab Republic (1958–1961).",
+   "sources": [
+    "Encyclopaedia Britannica, “Syria”"
+   ]
+  },
+  {
+   "id": "andorra",
+   "names": [
+    "Andorra"
+   ],
+   "name": "Andorra",
+   "type": "co-principality",
+   "yearsActive": "1278–present",
+   "summary": "A Pyrenean co-principality ruled jointly by the Bishop of Urgell and the French head of state. It adopted a constitution in 1993.",
+   "description": "A Pyrenean co-principality ruled jointly by the Bishop of Urgell and the French head of state. It adopted a constitution in 1993.",
+   "conflicts": "None.",
+   "leaders": "Co-princes.",
+   "religion": "Catholic.",
+   "culture": "Catalan language.",
+   "story": "The 1278 pareatges agreement still underpins the arrangement.",
+   "sources": [
+    "Encyclopaedia Britannica, “Andorra”"
+   ]
+  },
+  {
+   "id": "liechtenstein",
+   "names": [
+    "Liechtenstein"
+   ],
+   "name": "Liechtenstein",
+   "type": "principality",
+   "yearsActive": "1719–present",
+   "summary": "A small Alpine principality, in a customs union with Switzerland since 1923.",
+   "description": "A small Alpine principality, in a customs union with Switzerland since 1923.",
+   "conflicts": "None.",
+   "leaders": "Princes of Liechtenstein.",
+   "religion": "Catholic.",
+   "culture": "Banking.",
+   "story": "It has had no army since 1868.",
+   "sources": [
+    "Encyclopaedia Britannica, “Liechtenstein”"
+   ]
+  },
+  {
+   "id": "kazakhstan",
+   "names": [
+    "Kazakhstan"
+   ],
+   "name": "Kazakhstan",
+   "type": "republic",
+   "yearsActive": "1991–present",
+   "summary": "Kazakhstan became independent from the USSR in 1991. It is the largest landlocked country in the world.",
+   "description": "Kazakhstan became independent from the USSR in 1991. It is the largest landlocked country in the world.",
+   "conflicts": "None.",
+   "leaders": "Nursultan Nazarbayev.",
+   "religion": "Islam and Orthodox Christianity.",
+   "culture": "Kazakh and Russian languages.",
+   "story": "The Baikonur Cosmodrome is in Kazakhstan.",
+   "sources": [
+    "Encyclopaedia Britannica, “Kazakhstan”"
+   ],
+   "when": [
+    "modern:2000"
+   ]
+  },
+  {
+   "id": "georgia-2000",
+   "names": [
+    "Georgia"
+   ],
+   "name": "Georgia",
+   "type": "republic",
+   "yearsActive": "1991–present",
+   "summary": "Georgia became independent in 1991. Wars over Abkhazia and South Ossetia followed.",
+   "description": "Georgia became independent in 1991. Wars over Abkhazia and South Ossetia followed.",
+   "conflicts": "Abkhazia war (1992–1993).",
+   "leaders": "Eduard Shevardnadze.",
+   "religion": "Georgian Orthodox Church.",
+   "culture": "Georgian script.",
+   "story": "The Rose Revolution came in 2003.",
+   "sources": [
+    "Encyclopaedia Britannica, “Georgia”"
+   ],
+   "when": [
+    "modern:2000"
+   ]
+  },
+  {
+   "id": "armenia-2000",
+   "names": [
+    "Armenia"
+   ],
+   "name": "Armenia",
+   "type": "republic",
+   "yearsActive": "1991–present",
+   "summary": "Armenia became independent in 1991 and fought Azerbaijan over Karabakh.",
+   "description": "Armenia became independent in 1991 and fought Azerbaijan over Karabakh.",
+   "conflicts": "Karabakh war (1988–1994).",
+   "leaders": "Levon Ter-Petrosyan.",
+   "religion": "Armenian Apostolic Church.",
+   "culture": "Armenian language.",
+   "story": "Armenia adopted Christianity as its state religion in 301.",
+   "sources": [
+    "Encyclopaedia Britannica, “Armenia”"
+   ],
+   "when": [
+    "modern:2000"
+   ]
+  },
+  {
+   "id": "azerbaijan-2000",
+   "names": [
+    "Azerbaijan"
+   ],
+   "name": "Azerbaijan",
+   "type": "republic",
+   "yearsActive": "1991–present",
+   "summary": "Azerbaijan became independent in 1991 and has an oil-based economy.",
+   "description": "Azerbaijan became independent in 1991 and has an oil-based economy.",
+   "conflicts": "Karabakh war.",
+   "leaders": "Heydar Aliyev.",
+   "religion": "Shi‘i Islam.",
+   "culture": "Azerbaijani language.",
+   "story": "Baku is on the Caspian Sea.",
+   "sources": [
+    "Encyclopaedia Britannica, “Azerbaijan”"
+   ],
+   "when": [
+    "modern:2000"
+   ]
+  },
+  {
+   "id": "cyprus-2000",
+   "names": [
+    "Cyprus"
+   ],
+   "name": "Republic of Cyprus",
+   "type": "republic",
+   "yearsActive": "1960–present",
+   "summary": "Cyprus became independent from Britain in 1960. It has been divided since Turkey’s invasion in 1974.",
+   "description": "Cyprus became independent from Britain in 1960. It has been divided since Turkey’s invasion in 1974.",
+   "conflicts": "1974 invasion.",
+   "leaders": "Makarios III.",
+   "religion": "Greek Orthodox.",
+   "culture": "Greek and Turkish communities.",
+   "story": "Cyprus joined the EU in 2004.",
+   "sources": [
+    "Encyclopaedia Britannica, “Cyprus”"
+   ],
+   "when": [
+    "modern:2000"
+   ]
+  },
+  {
+   "id": "north-cyprus",
+   "names": [
+    "Turkish Cypriot-administered area"
+   ],
+   "name": "Turkish Cypriot-administered area",
+   "type": "de facto state",
+   "yearsActive": "1974/1983–present",
+   "summary": "The north of Cyprus, under Turkish Cypriot administration since 1974. Only Turkey recognises it.",
+   "description": "The north of Cyprus, under Turkish Cypriot administration since 1974. Only Turkey recognises it.",
+   "conflicts": "1974 invasion.",
+   "leaders": "Rauf Denktaş.",
+   "religion": "Sunni Islam.",
+   "culture": "Turkish Cypriot community.",
+   "story": "A UN buffer zone runs through Nicosia.",
+   "sources": [
+    "Encyclopaedia Britannica, “Cyprus”"
+   ],
+   "when": [
+    "modern:2000"
+   ]
+  }
+ ]
+}
