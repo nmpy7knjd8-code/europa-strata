@@ -1660,8 +1660,6 @@ function paintMap(animate = true) {
       const visible = Boolean(style.fill);
       // Keep hit targets even while fill tweens between ticks
       node.style("pointer-events", "all");
-      // Unnamed / "other" land uses the neutral fill; dark theme re-tints it in CSS.
-      node.classed("is-neutral", Boolean(style.fill) && d3.color(style.fill)?.formatHex() === ERA_NEUTRAL);
       if (animate) {
         node
           .transition()

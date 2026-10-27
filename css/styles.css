@@ -4208,8 +4208,6 @@ html .app .ancestry-cline { margin-top: 1.5rem !important; }
 /* 8. "Key events" kicker matches the other kickers. */
 html .app #key-events-heading#key-events-heading#key-events-heading#key-events-heading#key-events-heading { font-size: 10.88px !important; }
 
-/* 10. Dark theme: unassigned land in the era maps stays dark. */
-html[data-theme="dark"] .app:not([data-atlas-mode="deep-time"]) #map path.polity.is-neutral { fill: #4a463f !important; }
 @media (max-width: 359px) {
   html .page-ancestry .anc-nav { gap: 0.45rem; letter-spacing: 0 !important; }
   html .page-ancestry .anc-top-inner { gap: 0.5rem; padding-left: 16px; padding-right: 16px; }
