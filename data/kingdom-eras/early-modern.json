@@ -6846,12 +6846,6 @@
           "role": "art"
         },
         {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Las%20Meninas%2C%20by%20Diego%20Vel%C3%A1zquez%2C%20from%20Prado%20in%20Google%20Earth.jpg?width=640",
-          "caption": "Velázquez’s Las Meninas — the court looking back",
-          "alt": "Velázquez’s Las Meninas — the court looking back",
-          "role": "art"
-        },
-        {
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Marques%20de%20Pombal.jpg?width=640",
           "caption": "Marquis of Pombal — enlightened absolutist rebuilder",
           "alt": "Marquis of Pombal — enlightened absolutist rebuilder",
@@ -7829,12 +7823,6 @@
       "artIdeas": "Rubens’s muscular baroque altarpieces and Whitehall ceiling diplomacy; Van Dyck emerging from his studio; Jordaens’s abundant Flemish bodies; tapestry workshops still exporting grandeur. Church interiors become theatres of Catholic triumph.\n\nJustus Lipsius’s neo-Stoicism from Leuven influences European statecraft; Counter-Reformation casuistry and Jesuit education shape elites; legal defense of Habsburg sovereignty against French claims.",
       "science": "Leuven and Douai as Catholic university nodes; cartography of fortification and water management in a landscape of polders and sieges; medical faculties feeding Spanish imperial networks.",
       "images": [
-        {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/La%20ronda%20de%20noche%2C%20por%20Rembrandt%20van%20Rijn.jpg?width=640",
-          "caption": "Rembrandt’s Night Watch — civic militia as light storm",
-          "alt": "Rembrandt’s Night Watch — civic militia as light storm",
-          "role": "art"
-        },
         {
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Justus%20Lipsius.jpg?width=640",
           "caption": "Justus Lipsius — neo-Stoic political thought from Leuven",
@@ -13964,34 +13952,10 @@
           "role": "leader"
         },
         {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/La%20ronda%20de%20noche%2C%20por%20Rembrandt%20van%20Rijn.jpg?width=640",
-          "caption": "Rembrandt’s Night Watch — civic militia as light storm",
-          "alt": "Rembrandt’s Night Watch — civic militia as light storm",
-          "role": "art"
-        },
-        {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Siege%20of%20Buda,%201686.jpg?width=640",
-          "caption": "Siege of Buda 1686 — Habsburg reconquest of Hungary",
-          "alt": "Siege of Buda 1686 — Habsburg reconquest of Hungary",
-          "role": "art"
-        },
-        {
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Stanis%C5%82aw%20II%20August%20Poniatowski%20in%20coronation%20clothes.PNG?width=640",
           "caption": "Stanisław August Poniatowski — enlightened king under partition shadow",
           "alt": "Stanisław August Poniatowski — enlightened king under partition shadow",
           "role": "culture"
-        },
-        {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Kaiserin%20Maria%20Theresia%20%28HRR%29.jpg?width=800",
-          "caption": "Maria Theresa — Habsburg sovereign",
-          "alt": "Maria Theresa — Habsburg sovereign",
-          "role": "leader"
-        },
-        {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Buda%20Castle.jpg?width=640",
-          "caption": "Buda Castle — Hungarian royal/Habsburg fortress on the Danube",
-          "alt": "Buda Castle — Hungarian royal/Habsburg fortress on the Danube",
-          "role": "art"
         },
         {
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Jan%20Matejko%20-%20Treasury.%20Jan%20III%20Sobieski%2C%20standing%2C%20full-length%20-%20MNK%20MNK%20IX-27019%20-%20National%20Museum%20Krak%C3%B3w.jpg?width=640",
@@ -22054,12 +22018,6 @@
           "role": "leader"
         },
         {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Jan%20III%20Sobieski.PNG?width=800",
-          "caption": "John III Sobieski — victor of Vienna 1683",
-          "alt": "John III Sobieski — victor of Vienna 1683",
-          "role": "leader"
-        },
-        {
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Holy%20Crown%20of%20Hungary.jpg?width=640",
           "caption": "Holy Crown of Hungary — legal soul of a partitioned kingdom",
           "alt": "Holy Crown of Hungary — legal soul of a partitioned kingdom",
@@ -22254,28 +22212,10 @@
           "role": "leader"
         },
         {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Siege%20of%20Buda,%201686.jpg?width=640",
-          "caption": "Siege of Buda 1686 — Habsburg reconquest of Hungary",
-          "alt": "Siege of Buda 1686 — Habsburg reconquest of Hungary",
-          "role": "art"
-        },
-        {
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Diploma%20Leopoldinum.jpg?width=640",
           "caption": "Diploma Leopoldinum — Habsburg terms ending old autonomy paths",
           "alt": "Diploma Leopoldinum — Habsburg terms ending old autonomy paths",
           "role": "story"
-        },
-        {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Buda%20Castle.jpg?width=640",
-          "caption": "Buda Castle — Hungarian royal/Habsburg fortress on the Danube",
-          "alt": "Buda Castle — Hungarian royal/Habsburg fortress on the Danube",
-          "role": "art"
-        },
-        {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/1648%20Friedenssaal%20Rathaus%20M%C3%BCnster%20%282%29.jpg?width=640",
-          "caption": "Peace Hall, Münster — Westphalia’s treaty room",
-          "alt": "Peace Hall, Münster — Westphalia’s treaty room",
-          "role": "art"
         },
         {
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/05072-Budapest-1904-Bethlen%20Gabor%20-%20Gabriel%20Bethlen-Br%C3%BCck%20%26%20Sohn%20Kunstverlag.jpg?width=640",
@@ -22590,12 +22530,6 @@
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Johann%20Sebastian%20Bach.jpg?width=800",
           "caption": "J. S. Bach — Lutheran Baroque polyphony",
           "alt": "J. S. Bach — Lutheran Baroque polyphony",
-          "role": "art"
-        },
-        {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/1648%20Friedenssaal%20Rathaus%20M%C3%BCnster%20%282%29.jpg?width=640",
-          "caption": "Peace Hall, Münster — Westphalia’s treaty room",
-          "alt": "Peace Hall, Münster — Westphalia’s treaty room",
           "role": "art"
         },
         {
@@ -23504,12 +23438,6 @@
       "science": "Padua University under Venetian protection—Harvey studied there earlier; anatomical theatres; arsenals as sites of practical mechanics; lagoon hydraulic engineering; Murano chemistry of glass.",
       "images": [
         {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Iznik%20tiles%2C%20Istanbul%20Archaeological%20Museums.jpg?width=640",
-          "caption": "Iznik tiles — Ottoman ceramic splendour",
-          "alt": "Iznik tiles — Ottoman ceramic splendour",
-          "role": "art"
-        },
-        {
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Paolo%20Sarpi.jpg?width=640",
           "caption": "Paolo Sarpi — Venetian defender of republic against Rome",
           "alt": "Paolo Sarpi — Venetian defender of republic against Rome",
@@ -23795,12 +23723,6 @@
           "caption": "Galileo Galilei — Sustermans portrait",
           "alt": "Galileo Galilei — Sustermans portrait",
           "role": "leader"
-        },
-        {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Las%20Meninas%2C%20by%20Diego%20Vel%C3%A1zquez%2C%20from%20Prado%20in%20Google%20Earth.jpg?width=640",
-          "caption": "Velázquez’s Las Meninas — the court looking back",
-          "alt": "Velázquez’s Las Meninas — the court looking back",
-          "role": "art"
         },
         {
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Galileo.arp.300pix.jpg?width=640",
@@ -25342,12 +25264,6 @@
           "role": "leader"
         },
         {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Chateau%20Versailles%20Galerie%20des%20Glaces.jpg?width=640",
-          "caption": "Hall of Mirrors, Versailles — absolutism as glass and gold",
-          "alt": "Hall of Mirrors, Versailles — absolutism as glass and gold",
-          "role": "art"
-        },
-        {
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Charles%20III%20of%20Spain.jpg?width=640",
           "caption": "Charles of Bourbon — founder of the independent Neapolitan Bourbon state",
           "alt": "Charles of Bourbon — founder of the independent Neapolitan Bourbon state",
@@ -25781,12 +25697,6 @@
           "caption": "Pasquale Paoli — Corsican republican leader",
           "alt": "Pasquale Paoli — Corsican republican leader",
           "role": "leader"
-        },
-        {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/La%20ronda%20de%20noche%2C%20por%20Rembrandt%20van%20Rijn.jpg?width=640",
-          "caption": "Rembrandt’s Night Watch — civic militia as light storm",
-          "alt": "Rembrandt’s Night Watch — civic militia as light storm",
-          "role": "art"
         },
         {
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Bonifacio%20Corsica.jpg?width=640",
@@ -26269,12 +26179,6 @@
       "science": "Military engineering schools; cartography of Alpine passes; early technical university impulses in Turin; agronomy in Piedmontese plains.",
       "images": [
         {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Chateau%20Versailles%20Galerie%20des%20Glaces.jpg?width=640",
-          "caption": "Hall of Mirrors, Versailles — absolutism as glass and gold",
-          "alt": "Hall of Mirrors, Versailles — absolutism as glass and gold",
-          "role": "art"
-        },
-        {
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Victor%20Amadeus%20II%20of%20Sardinia.jpg?width=640",
           "caption": "Victor Amadeus II — architect of the royal Savoyard leap",
           "alt": "Victor Amadeus II — architect of the royal Savoyard leap",
@@ -26296,12 +26200,6 @@
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Torino%20-%20Piazza%20San%20Carlo.jpg?width=640",
           "caption": "Piazza San Carlo, Turin — Savoyard capital geometry",
           "alt": "Piazza San Carlo, Turin — Savoyard capital geometry",
-          "role": "art"
-        },
-        {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/1648%20Friedenssaal%20Rathaus%20M%C3%BCnster%20%282%29.jpg?width=640",
-          "caption": "Peace Hall, Münster — Westphalia’s treaty room",
-          "alt": "Peace Hall, Münster — Westphalia’s treaty room",
           "role": "art"
         },
         {
@@ -26525,28 +26423,10 @@
       "science": "Steppe environmental knowledge—horses, routes, seasonal pastures; Black Sea navigational lore; Ottoman-facing medical and astronomical scraps in court culture; Russian surveys arriving as conquest tools.",
       "images": [
         {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Iznik%20tiles%2C%20Istanbul%20Archaeological%20Museums.jpg?width=640",
-          "caption": "Iznik tiles — Ottoman ceramic splendour",
-          "alt": "Iznik tiles — Ottoman ceramic splendour",
-          "role": "art"
-        },
-        {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/EmperorSuleiman.jpg?width=800",
-          "caption": "Suleiman the Magnificent — Ottoman imperial portrait",
-          "alt": "Suleiman the Magnificent — Ottoman imperial portrait",
-          "role": "leader"
-        },
-        {
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Bakhchisaray%20Palace-2009-2.jpg?width=640",
           "caption": "Bakhchysarai Palace — Crimean Khanate seat",
           "alt": "Bakhchysarai Palace — Crimean Khanate seat",
           "role": "art"
-        },
-        {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Anton%20Schoonjans%20-%20Pasticcio%20portrait%20of%20Emperor%20Peter%20the%20Great%20of%20Russia.jpg?width=640",
-          "caption": "Peter the Great — imperial portrait type",
-          "alt": "Peter the Great — imperial portrait type",
-          "role": "leader"
         },
         {
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Bakhchisarai%20Palace2.jpg?width=640",
@@ -26863,12 +26743,6 @@
           "role": "religion"
         },
         {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/EmperorSuleiman.jpg?width=800",
-          "caption": "Suleiman the Magnificent — Ottoman imperial portrait",
-          "alt": "Suleiman the Magnificent — Ottoman imperial portrait",
-          "role": "leader"
-        },
-        {
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Constantin%20Brancoveanu.jpg?width=640",
           "caption": "Constantin Brâncoveanu — prince-martyr of Wallachia",
           "alt": "Constantin Brâncoveanu — prince-martyr of Wallachia",
@@ -26884,12 +26758,6 @@
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Curtea%20De%20arges%20IMG%206820.JPG?width=640",
           "caption": "Curtea de Argeș — Wallachian Orthodox princely church",
           "alt": "Curtea de Argeș — Wallachian Orthodox princely church",
-          "role": "religion"
-        },
-        {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Christ%20Pantocrator%20mosaic%20from%20Hagia%20Sophia%202744%20x%202900%20pixels%203.1%20MB.jpg?width=640",
-          "caption": "Christ Pantocrator, Hagia Sophia — Byzantine inheritance under Ottoman roof",
-          "alt": "Christ Pantocrator, Hagia Sophia — Byzantine inheritance under Ottoman roof",
           "role": "religion"
         },
         {
@@ -27182,18 +27050,6 @@
           "role": "art"
         },
         {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Curtea%20de%20Arges%20monastery.JPG?width=640",
-          "caption": "Curtea de Argeș — Wallachian Orthodox princely church",
-          "alt": "Curtea de Argeș — Wallachian Orthodox princely church",
-          "role": "religion"
-        },
-        {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Jan%20III%20Sobieski.PNG?width=800",
-          "caption": "John III Sobieski — victor of Vienna 1683",
-          "alt": "John III Sobieski — victor of Vienna 1683",
-          "role": "leader"
-        },
-        {
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Dimitrie%20Cantemir.jpg?width=640",
           "caption": "Dimitrie Cantemir — prince-scholar of Moldavia",
           "alt": "Dimitrie Cantemir — prince-scholar of Moldavia",
@@ -27209,12 +27065,6 @@
           "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Curtea%20De%20arges%20IMG%206820.JPG?width=640",
           "caption": "Curtea de Argeș — Wallachian Orthodox princely church",
           "alt": "Curtea de Argeș — Wallachian Orthodox princely church",
-          "role": "religion"
-        },
-        {
-          "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Christ%20Pantocrator%20mosaic%20from%20Hagia%20Sophia%202744%20x%202900%20pixels%203.1%20MB.jpg?width=640",
-          "caption": "Christ Pantocrator, Hagia Sophia — Byzantine inheritance under Ottoman roof",
-          "alt": "Christ Pantocrator, Hagia Sophia — Byzantine inheritance under Ottoman roof",
           "role": "religion"
         },
         {
