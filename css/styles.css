@@ -4153,9 +4153,9 @@ html .app #map-legend .legend-swatch { width: 8px; height: 8px; min-width: 8px; 
 /* ==== UI critique fixes (Oct 26) ==== */
 /* 1. Reserve the tick row's final height so the key does not jump on load. */
 html .app #tick-labels#tick-labels { min-height: 52.75px; }
-/* The key is never shorter than ~370px once drawn, so reserving 360px stops
+/* The key is never shorter than ~320px once drawn (any tab/stop), so reserving 300px stops
    the reading column jumping down when the key fills in. No final change. */
-html .app #legend-bar { min-height: 360px; }
+html .app #legend-bar { min-height: 300px; }
 
 /* 2. Narrow screens: tabs take the width their names need (no clipping),
       two-word names wrap at the space; type size unchanged. */
@@ -4180,8 +4180,6 @@ html .app #tick-labels#tick-labels button.tick-mark-btn::after {
 html .page-ancestry .anc-lead,
 html .page-ancestry .anc-summary,
 html .page-ancestry .anc-years,
-html .page-ancestry .anc-horizon,
-html .page-ancestry .kicker.kicker--swatch,
 html .page-ancestry .anc-copy p,
 html .page-ancestry .anc-phenotype p,
 html .page-ancestry .anc-diet p,
@@ -4217,3 +4215,8 @@ html[data-theme="dark"] .app:not([data-atlas-mode="deep-time"]) #map path.polity
   html .page-ancestry .anc-top-inner { gap: 0.5rem; padding-left: 16px; padding-right: 16px; }
   html .page-ancestry .anc-nav, html .page-ancestry .anc-nav a, html .page-ancestry .anc-nav .theme-toggle { font-size: 0.8rem !important; }
 }
+
+/* Swatch labels and horizon lines are kickers, not body text. */
+html .page-ancestry .anc-main p.kicker.kicker,
+html .page-ancestry .kicker.kicker--swatch,
+html .page-ancestry .anc-main .anc-horizon.anc-horizon:not(.kicker) { font-size: 10.88px !important; }
