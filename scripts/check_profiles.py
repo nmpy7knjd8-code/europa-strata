@@ -5,10 +5,12 @@ prof=json.load(open('data/kingdom-eras/basemap-profiles.json'))['profiles']
 def find(n,t,y):
   for e in prof:
     if n in e['names'] and (not e.get('when') or f"{t}:{y}" in e['when']): return e
-used=set();fb=[];per=collections.Counter();unn=collections.Counter()
+TABS=["antiquity","early-medieval","high-medieval","renaissance","early-modern","modern"]
+used=set();fb=[];per=collections.Counter();own=collections.Counter();unn=collections.Counter()
 for t in ["antiquity","early-medieval","high-medieval","renaissance","early-modern","modern"]:
   topo=json.load(open(f'data/kingdom-eras/geo/{t}.topo.json'))
   ids={p['id'] for p in json.load(open(f'data/kingdom-eras/{t}.json'))['polities']}
+  own[t]=len(ids)
   for k,o in topo['objects'].items():
     seen=set()
     for g in o['geometries']:
@@ -22,7 +24,8 @@ for t in ["antiquity","early-medieval","high-medieval","renaissance","early-mode
         used.add(e['id'])
         if e['id'] not in seen: seen.add(e['id']); per[t]+=1
 print('FALLBACKS',len(fb),fb)
-print('profile-stops per tab',dict(per))
+print('era profiles per tab',{t:own[t] for t in TABS})
+print('basemap profile-stops per tab',{t:per[t] for t in TABS})
 print('unused',[e['id'] for e in prof if e['id'] not in used])
 print('unnamed features total',sum(unn.values()))
 sys.exit(1 if fb else 0)

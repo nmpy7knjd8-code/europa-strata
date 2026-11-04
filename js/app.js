@@ -2064,6 +2064,7 @@ function setSliderPos(pos, { fromSlider = false } = {}) {
   const idx = periodIndexFromSlider(state.sliderPos);
   const periodChanged = idx !== state.periodIndex;
   state.periodIndex = idx;
+  syncNavButtons();
 
   const slider = $("#time-slider");
   if (!fromSlider) slider.value = String(Math.round(state.sliderPos * SLIDER_MAX));
@@ -2103,6 +2104,15 @@ function updateTickCaption() {
   if (!el) return;
   const period = currentPeriod();
   el.textContent = period ? shortPeriodName(period) : "";
+}
+
+/** Disable prev at the first stop and next at the last (same size, so nothing shifts). */
+function syncNavButtons() {
+  const n = activePeriods().length;
+  const i = state.periodIndex || 0;
+  const prev = $("#btn-prev"), next = $("#btn-next");
+  if (prev) prev.disabled = i <= 0;
+  if (next) next.disabled = i >= n - 1;
 }
 
 function snapToPeriod(index) {
