@@ -27,6 +27,8 @@ const ATLAS_TAB_ORDER = [
   "early-modern",
   "modern",
 ];
+/** Era tabs shown in the bar (an era can have data before its tab is shown). */
+const VISIBLE_ERA_TABS = ["high-medieval", "renaissance", "early-modern", "modern"];
 /** Eras in time order; Deep-time is spliced into the middle of whichever are shown. */
 const ERA_CHRONO = ["antiquity", "early-medieval", "high-medieval", "renaissance", "early-modern", "modern"];
 
@@ -82,6 +84,7 @@ function showLoadNotice(message, { retry = null } = {}) {
 }
 
 const KINGDOM_PACK_IDS = [
+  "early-medieval", // data loaded; tab stays hidden until added to VISIBLE_ERA_TABS
   "high-medieval",
   "renaissance",
   "early-modern",
@@ -89,6 +92,7 @@ const KINGDOM_PACK_IDS = [
 ];
 
 const KINGDOM_TAB_LABELS = {
+  "early-medieval": "Early Medieval",
   "high-medieval": "High Medieval",
   renaissance: "Renaissance",
   "early-modern": "Early Modern",
@@ -2403,6 +2407,16 @@ const CULTURE_FAMILY_RULES = [
   ["Nordic", /nordic|scandinav|denmark|norway|sweden|danish|norwegian|swedish|kalmar|iceland|finland/i],
   ["Britain & Ireland", /british|britain|brittonic|britannia|england|scotland|wales|welsh|ireland|irish|gaelic|hibernia|plantagenet|tudor|lancastrian|united kingdom/i],
   ["Western Europe", /\bfrance\b|\bgaul\b|gallia|benelux|dutch|low countries|swiss|\bgerman\b|germany|\bhabsburg\b|austria|holy roman|\bhre\b|prussia|bavaria|saxony|w[uü]rttemberg|baden|hanover/i],
+  // Early Medieval peoples (last, so they never change an earlier assignment)
+  ["Italy", /western roman/i],
+  ["Germanic", /\bsaxons\b|thuringian/i],
+  ["Western Europe", /frisian|vasconia|basque/i],
+  ["Britain & Ireland", /\bpicts?\b|d[aá]l riata/i],
+  ["Nordic", /\bswedes\b|\bgeats\b|\bdanes\b|s[aá]mi\b|finno-ugric/i],
+  ["Steppe", /\bavars?\b|\balans\b|turkic|magyar|pecheneg|oghuz|volga/i],
+  ["Caucasus", /caucasian kingdoms/i],
+  ["Islamic world", /umayyad|abbasid|c[oó]rdoba|aghlabid/i],
+  ["Persia", /sasanian|persia/i],
 ];
 
 function cultureFamily(layer) {
@@ -3941,7 +3955,7 @@ function syncAtlasTabs() {
       btn.disabled = false;
       return;
     }
-    if (!KINGDOM_PACK_IDS.includes(mode)) {
+    if (!KINGDOM_PACK_IDS.includes(mode) || !VISIBLE_ERA_TABS.includes(mode)) {
       // Era tabs whose data has not landed yet stay hidden.
       btn.hidden = true;
       return;
@@ -3954,7 +3968,7 @@ function syncAtlasTabs() {
     btn.title = loading ? "Loading map…" : KINGDOM_TAB_LABELS[mode] || mode;
   });
   // Visual order: shown eras in time order with Deep-time in the middle.
-  const shown = ERA_CHRONO.filter((m) => KINGDOM_PACK_IDS.includes(m));
+  const shown = ERA_CHRONO.filter((m) => KINGDOM_PACK_IDS.includes(m) && VISIBLE_ERA_TABS.includes(m));
   const order = shown.slice();
   order.splice(Math.floor(shown.length / 2), 0, "deep-time");
   btns.forEach((btn) => {
