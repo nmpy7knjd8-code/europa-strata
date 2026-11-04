@@ -84,6 +84,7 @@ function showLoadNotice(message, { retry = null } = {}) {
 }
 
 const KINGDOM_PACK_IDS = [
+  "antiquity", // data loaded; tab stays hidden until added to VISIBLE_ERA_TABS
   "early-medieval", // data loaded; tab stays hidden until added to VISIBLE_ERA_TABS
   "high-medieval",
   "renaissance",
@@ -93,6 +94,7 @@ const KINGDOM_PACK_IDS = [
 
 const KINGDOM_TAB_LABELS = {
   "early-medieval": "Early Medieval",
+  antiquity: "Antiquity",
   "high-medieval": "High Medieval",
   renaissance: "Renaissance",
   "early-modern": "Early Modern",
@@ -397,7 +399,7 @@ function normalizeKingdomPack(raw, topo = null) {
   const periods = raw.ticks.map((tick) => {
     const year = tick.year ?? tick.yearApprox;
     const yearKey = String(year);
-    const tickLabel = tick.label || `${year} AD`;
+    const tickLabel = tick.label || scaleYearText(year);
     // Avoid stacking identical "1200 AD" in slider year + period label
     const yearOnly = String(year);
     const labelBare = String(tickLabel)
@@ -420,9 +422,9 @@ function normalizeKingdomPack(raw, topo = null) {
       return {
         id: `${id}-${year}`,
         yearApprox: year,
-        yearLabel: `${year} AD`,
+        yearLabel: scaleYearText(year),
         label: periodName,
-        tickYear: `${year} AD`,
+        tickYear: scaleYearText(year),
         era: tickEyebrow || label,
         narrative: tickNarrative || raw.narrative || raw.notes || "",
         culturesNote: tickEyebrow || "",
@@ -486,16 +488,16 @@ function normalizeKingdomPack(raw, topo = null) {
     return {
       id: `${id}-${year}`,
       yearApprox: year,
-      yearLabel: `${year} AD`,
+      yearLabel: scaleYearText(year),
       label: periodName,
-      tickYear: `${year} AD`,
+      tickYear: scaleYearText(year),
       // Prefer tick-specific eyebrow; fall back to tab label only if none authored
       era: tickEyebrow || label,
       narrative:
         tickNarrative ||
         raw.narrative ||
         raw.notes ||
-        `Schematic ${label} polities around ${year} AD: kingdoms, empires, duchies, and confederations (not modern borders).`,
+        `Schematic ${label} polities around ${scaleYearText(year)}: kingdoms, empires, duchies, and confederations (not modern borders).`,
       culturesNote: tickEyebrow || "",
       mapLayers,
       polities,
@@ -2422,6 +2424,17 @@ const CULTURE_FAMILY_RULES = [
   ["Slavic & Baltic", /ukrainian ssr|byelorussian/i],
   ["Caucasus", /armenia-republic|georgia-dr|azerbaijan-dr/i],
   ["Aegean", /republic of cyprus/i],
+  // Antiquity tab (appended last so earlier assignments are unchanged)
+  ["Persia", /achaemenid|parthian empire|sasanian|atropatene/i],
+  ["Caucasus", /kingdom of armenia|colchis/i],
+  ["Aegean", /alexander-empire|antigonid|seleucid|ptolemaic|pergamon|anatolian-kingdoms|bosporan/i],
+  ["Italy", /roman-republic|roman-empire|italic-peoples/i],
+  ["Punic", /carthaginian/i],
+  ["Britain & Ireland", /ancient britons|caledonians/i],
+  ["Germanic", /marcomanni|\bgoths\b/i],
+  ["Central Europe", /pomeranian-culture/i],
+  ["Slavic & Baltic", /dnieper[–-]dvina|milograd/i],
+  ["Nordic", /finno-ugric peoples|^saami\b/i],
 ];
 
 function cultureFamily(layer) {
