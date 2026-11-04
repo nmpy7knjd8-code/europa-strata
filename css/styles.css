@@ -2686,6 +2686,11 @@ body.page-ancestry {
 html[data-theme="dark"] {
   --border-line: #d0d0d0;
 }
+/* Dark era tabs: light polity edges and border mesh. The Oct 11 rgba(0,0,0,.22) was
+   measured in light theme only and vanishes on dark fills (audit item 1). */
+html[data-theme="dark"] .app:not([data-atlas-mode="deep-time"]) {
+  --era-border-line: rgba(255, 255, 255, 0.28);
+}
 .app[data-atlas-mode="deep-time"] .country,
 .app[data-atlas-mode="deep-time"] .coastline {
   stroke: var(--border-line);
@@ -4149,6 +4154,8 @@ html .app:not([data-atlas-mode="deep-time"]) #map path.polity-border { stroke: v
 /* Dark Deep-time lines: --border-line is #d0d0d0 under html[data-theme="dark"] (tokens above). */
 /* Oct 11 map-key swatch: 8px round dot (reverts PR #5's larger squares). */
 html .app #map-legend .legend-swatch { width: 8px; height: 8px; min-width: 8px; border-radius: 50%; border: none; }
+/* Era tabs: key dots use the same opacity as the polity fills they stand for (audit item 5). */
+html .app:not([data-atlas-mode="deep-time"]) #map-legend .legend-swatch { opacity: var(--era-fill-opacity); }
 
 /* ==== UI critique fixes (Oct 26) ==== */
 /* 1. Reserve the tick row's final height so the key does not jump on load. */

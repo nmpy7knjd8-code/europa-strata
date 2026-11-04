@@ -1,0 +1,2289 @@
+{
+ "tabId": "early-medieval",
+ "tabLabel": "Early Medieval",
+ "defaultYear": 600,
+ "ticks": [
+  {
+   "year": 400,
+   "label": "400 AD",
+   "name": "Late Roman twilight",
+   "era": "Two Roman empires, Huns on the Danube",
+   "narrative": "In 400 the Roman Empire is split between Honorius in the West and Arcadius in the East. The Huns rule the steppe and Hungarian plain, pushing Goths and others toward the Roman frontier. Within a decade the Rhine will be crossed and Rome sacked; for now Persia remains Rome's equal in the east."
+  },
+  {
+   "year": 500,
+   "label": "500 AD",
+   "name": "Successor kingdoms",
+   "era": "Ostrogoths, Visigoths, Franks, Vandals",
+   "narrative": "By 500 the Western Empire is gone. Theodoric's Ostrogoths rule Italy, the Visigoths Spain and southern Gaul, Clovis's Franks northern Gaul, the Vandals Africa, while Anglo-Saxons settle Britain. Constantinople still claims to rule them all."
+  },
+  {
+   "year": 600,
+   "label": "600 AD",
+   "name": "Justinian's aftermath",
+   "era": "Lombards, Avars, Slavs, Merovingians",
+   "narrative": "Justinian's reconquests have exhausted Byzantium. Lombards hold much of Italy, the Avars rule the Carpathian Basin and Slavs are settling the Balkans. Merovingian kings rule Gaul and Gregory the Great's mission has reached Kent."
+  },
+  {
+   "year": 700,
+   "label": "700 AD",
+   "name": "The Arab century",
+   "era": "Umayyads, Khazars, Bulgars",
+   "narrative": "Arab armies have taken Persia, Syria, Egypt and most of North Africa; in eleven years they will cross into Spain. Bulgars have settled south of the Danube, the Khazars rule the steppe, and Slavic tribes fill eastern Europe."
+  },
+  {
+   "year": 800,
+   "label": "800 AD",
+   "name": "Charlemagne's empire",
+   "era": "Carolingians, Abbasids, Vikings",
+   "narrative": "On Christmas Day 800 Charlemagne is crowned emperor in Rome, ruling from the Pyrenees to the Elbe. The Abbasids rule from Baghdad, an Umayyad emir rules Córdoba, and Viking ships have begun raiding Britain and Ireland."
+  },
+  {
+   "year": 900,
+   "label": "900 AD",
+   "name": "Fragmented Francia",
+   "era": "Vikings, Magyars, Rus, Bulgarian Empire",
+   "narrative": "The Carolingian empire has split into West, East and Middle Francia. Magyars have taken the Carpathian Basin, Rus princes rule Kyiv and Novgorod, Alfred's heirs are reconquering England, and Simeon's Bulgaria rivals Byzantium."
+  }
+ ],
+ "notes": "Early Medieval polities, 400–900 AD. Borders from historical-basemaps (A. Ourednik, GPL-3.0), clipped to Natural Earth land; large unnamed dataset areas are assigned only where the people are well attested, the rest is left unassigned. Peoples and tribal confederations had fluid, not linear, borders. Sources: Encyclopaedia Britannica; P. Heather, The Fall of the Roman Empire; C. Wickham, The Inheritance of Rome (2009); per-polity sources in each profile's 'sources' field.",
+ "polities": [
+  {
+   "id": "western-roman",
+   "name": "Western Roman Empire",
+   "type": "empire",
+   "yearsActive": "395–476",
+   "summary": "The Latin half of the Roman Empire after 395, ruled from Milan and then Ravenna, which lost its provinces to federate Germanic kingdoms until the last emperor in Italy was deposed in 476.",
+   "description": "When Theodosius I died in 395 the empire was split between his sons, and the West went to the boy Honorius under the general Stilicho. Imperial government moved to Ravenna in 402, behind its marshes. Over the next eighty years Britain was abandoned (c. 410), Gaul and Spain were settled by Visigoths, Burgundians, Franks and Sueves, and Africa fell to the Vandals in 439, taking the grain and tax base with it. Real power passed to generals such as Aetius and Ricimer, and in 476 Odoacer deposed Romulus Augustulus and sent the regalia to Constantinople.",
+   "conflicts": "Alaric's Visigoths sacked Rome in 410; the Rhine frontier collapsed after the crossing of 406. Aetius, with Visigothic and Frankish allies, halted Attila at the Catalaunian Plains in 451. The Vandals sacked Rome in 455, and two great expeditions against Vandal Africa (461 and 468) failed.",
+   "leaders": "Honorius (395–423) ruled through Stilicho until Stilicho's execution in 408. Valentinian III (425–455) and his general Flavius Aetius held Gaul together for a generation. Ricimer made and unmade emperors (456–472); Romulus Augustulus (475–476) was the last emperor in Italy.",
+   "religion": "Nicene Christianity was the state religion after Theodosius's edicts of 380–392. The bishops of Rome, notably Leo I (440–461), gained authority as civil government weakened, while most Germanic federates were Arian Christians.",
+   "culture": "Latin was the language of law, church and administration. A senatorial aristocracy kept vast estates and villas, while towns shrank and coinage thinned. The Notitia Dignitatum lists the offices and army units of this late imperial state.",
+   "literature": "Augustine of Hippo wrote the City of God (413–426) in answer to the sack of Rome. Claudian praised Stilicho in Latin verse, and Rutilius Namatianus described a journey through ravaged Italy in 417.",
+   "art": "Ravenna's Mausoleum of Galla Placidia (c. 425–450) keeps some of the finest early Christian mosaics. Consular ivory diptychs and gold-glass medallions show the late Roman court style.",
+   "ideas": "Augustine separated the earthly city from the city of God, arguing that Christian hope did not depend on Rome's survival. His writings on grace and the just war shaped Latin thought for a thousand years.",
+   "science": "Late Roman encyclopedists such as Martianus Capella (On the Marriage of Philology and Mercury) arranged the liberal arts that medieval schools would teach. Vegetius summarized Roman military practice in his Epitome of Military Science.",
+   "story": [
+    {
+     "title": "The Regalia Go East",
+     "text": "In 476 Odoacer did not crown himself emperor. He sent the purple robes and diadem to Constantinople with a message that one emperor was enough, and ruled Italy as a king under the emperor Zeno's distant authority."
+    }
+   ],
+   "sources": "Encyclopaedia Britannica, 'Ancient Rome: The fall of the Western Empire'; P. Heather, The Fall of the Roman Empire (2005).",
+   "images": [
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Mausoleum%20of%20Galla%20Placidia%20ceiling%20mosaics.jpg?width=800",
+     "caption": "Starry-sky mosaic, Mausoleum of Galla Placidia, Ravenna (c. 425–450)",
+     "alt": "Starry-sky mosaic, Mausoleum of Galla Placidia, Ravenna (c. 425–450)",
+     "role": "art"
+    },
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Romulus%20Augustulus%2C%20RIC%20X%203419.jpg?width=800",
+     "caption": "Gold tremissis of Romulus Augustulus, the last western emperor in Italy",
+     "alt": "Gold tremissis of Romulus Augustulus, the last western emperor in Italy",
+     "role": "culture"
+    }
+   ],
+   "extentsByTick": {},
+   "stories": [
+    {
+     "title": "The Regalia Go East",
+     "text": "In 476 Odoacer did not crown himself emperor. He sent the purple robes and diadem to Constantinople with a message that one emperor was enough, and ruled Italy as a king under the emperor Zeno's distant authority."
+    }
+   ],
+   "philosophy": "Augustine separated the earthly city from the city of God, arguing that Christian hope did not depend on Rome's survival. His writings on grace and the just war shaped Latin thought for a thousand years.",
+   "artIdeas": "Ravenna's Mausoleum of Galla Placidia (c. 425–450) keeps some of the finest early Christian mosaics. Consular ivory diptychs and gold-glass medallions show the late Roman court style.\n\nAugustine separated the earthly city from the city of God, arguing that Christian hope did not depend on Rome's survival. His writings on grace and the just war shaped Latin thought for a thousand years."
+  },
+  {
+   "id": "byzantium",
+   "name": "Eastern Roman (Byzantine) Empire",
+   "type": "empire",
+   "yearsActive": "395–1453",
+   "nameByTick": {
+    "400": "Eastern Roman Empire",
+    "500": "Eastern Roman Empire",
+    "600": "Eastern Roman Empire"
+   },
+   "summary": "The Roman Empire in the east, ruled from Constantinople, which reconquered Italy and Africa under Justinian, then lost Syria, Egypt and North Africa to the Arabs and became the Greek-speaking Byzantine state.",
+   "description": "Constantinople's walls, fleet and tax system let the eastern empire survive the fifth-century invasions that broke the West. Justinian I (527–565) codified Roman law, built Hagia Sophia and retook Africa from the Vandals and Italy from the Ostrogoths. Plague, a long Persian war and the Arab conquests of the 630s–640s cut the empire back to Anatolia, the Balkan coasts, Sicily and parts of Italy. Under Heraclius and his successors Greek replaced Latin in government, and the themes system put soldiers on the land. By 900 the Macedonian dynasty was beginning a revival.",
+   "conflicts": "Wars with Sasanian Persia ended in Heraclius's victory at Nineveh (627). Arab fleets besieged Constantinople in 674–678 and 717–718 and were beaten back, partly with Greek fire. Bulgar khan Krum killed Emperor Nikephoros I in battle in 811.",
+   "leaders": "Theodosius II (408–450) built the land walls and issued the Theodosian Code. Justinian I (527–565) and Theodora led the reconquests. Heraclius (610–641) defeated Persia but lost the east to the Arabs. Leo III (717–741) broke the second Arab siege; Basil I (867–886) founded the Macedonian dynasty.",
+   "religion": "Orthodox Christianity under the patriarch of Constantinople. Councils at Ephesus (431) and Chalcedon (451) defined Christ's nature and split off the Miaphysite churches of Egypt and Syria. Iconoclasm (726–787 and 814–843) divided the church until icons were restored in 843.",
+   "culture": "Greek became the language of state by the seventh century, though citizens still called themselves Romans. Constantinople was the largest city in Christian Europe, with its Hippodrome factions, silk workshops and guilds regulated in the Book of the Eparch.",
+   "literature": "Procopius wrote the official Wars and the scandalous Secret History of Justinian's reign. Romanos the Melodist composed sung sermons (kontakia). Patriarch Photios (9th century) summarized hundreds of ancient books in his Bibliotheca.",
+   "art": "Hagia Sophia (532–537) set the model of the domed church. The San Vitale mosaics in Ravenna show Justinian and Theodora with their courts. After Iconoclasm, icon painting and church mosaics returned in a stricter, more formal style.",
+   "ideas": "Justinian's Corpus Juris Civilis (529–534) preserved Roman law and later became the basis of Western civil law. Theologians such as John of Damascus defended icons as windows on the holy, not idols.",
+   "science": "Anthemius of Tralles and Isidore of Miletus, the architects of Hagia Sophia, were also mathematicians. Leo the Mathematician taught at the Magnaura school in the ninth century, and Greek fire, a petroleum weapon, was developed around 672.",
+   "story": [
+    {
+     "title": "Nika!",
+     "text": "In January 532 the Blue and Green chariot factions joined forces and burned half of Constantinople, shouting 'Nika!' (conquer). Justinian was ready to flee, but Theodora reportedly said that royalty makes a fine burial shroud. Belisarius trapped the rioters in the Hippodrome, and the rebuilt Hagia Sophia rose from the ruins."
+    }
+   ],
+   "sources": "Encyclopaedia Britannica, 'Byzantine Empire'; J. Herrin, Byzantium (2007).",
+   "images": [
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Hagia%20Sophia%20Mars%202013.jpg?width=800",
+     "caption": "Hagia Sophia, Constantinople, built 532–537",
+     "alt": "Hagia Sophia, Constantinople, built 532–537",
+     "role": "art"
+    },
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Meister%20von%20San%20Vitale%20in%20Ravenna%20003.jpg?width=800",
+     "caption": "Justinian I and his court, mosaic in San Vitale, Ravenna (c. 547)",
+     "alt": "Justinian I and his court, mosaic in San Vitale, Ravenna (c. 547)",
+     "role": "culture"
+    }
+   ],
+   "extentsByTick": {},
+   "stories": [
+    {
+     "title": "Nika!",
+     "text": "In January 532 the Blue and Green chariot factions joined forces and burned half of Constantinople, shouting 'Nika!' (conquer). Justinian was ready to flee, but Theodora reportedly said that royalty makes a fine burial shroud. Belisarius trapped the rioters in the Hippodrome, and the rebuilt Hagia Sophia rose from the ruins."
+    }
+   ],
+   "philosophy": "Justinian's Corpus Juris Civilis (529–534) preserved Roman law and later became the basis of Western civil law. Theologians such as John of Damascus defended icons as windows on the holy, not idols.",
+   "artIdeas": "Hagia Sophia (532–537) set the model of the domed church. The San Vitale mosaics in Ravenna show Justinian and Theodora with their courts. After Iconoclasm, icon painting and church mosaics returned in a stricter, more formal style.\n\nJustinian's Corpus Juris Civilis (529–534) preserved Roman law and later became the basis of Western civil law. Theologians such as John of Damascus defended icons as windows on the holy, not idols."
+  },
+  {
+   "id": "visigoths",
+   "name": "Visigothic Kingdom",
+   "type": "kingdom",
+   "yearsActive": "418–721",
+   "summary": "A Gothic people who sacked Rome in 410, settled in Aquitaine as Roman federates and then ruled Hispania from Toledo until the Arab-Berber conquest of 711.",
+   "description": "After defeating Rome at Adrianople (378) and sacking Rome under Alaric (410), the Visigoths were settled around Toulouse in 418. Clovis's Franks drove them out of most of Gaul at Vouillé (507), and the kingdom moved its centre to Toledo. Leovigild (568–586) conquered the Suevic kingdom in Galicia, and his son Reccared converted to Catholicism in 587. Church councils at Toledo and a single law code bound Goths and Hispano-Romans together, but disputed successions left the kingdom open to the invasion of 711.",
+   "conflicts": "Vouillé (507) cost them Toulouse. Byzantine troops held the south-east coast from 552 until c. 625. Tariq ibn Ziyad defeated King Roderic at the Guadalete in 711.",
+   "leaders": "Alaric I (395–410) sacked Rome; Euric (466–484) issued the first Gothic law code. Leovigild (568–586) united the peninsula; Reccared I (586–601) converted to Catholicism. Recceswinth (649–672) issued the Liber Iudiciorum; Roderic (710–711) was the last king.",
+   "religion": "Arian Christianity, inherited from the missionary Ulfilas, until Reccared accepted the Nicene faith at the Third Council of Toledo (589). Later councils passed harsh laws against Jews.",
+   "culture": "A Gothic elite ruled a much larger Hispano-Roman population. Gothic gave way to Latin, and intermarriage was legalized under Leovigild. Kings were elected by nobles and bishops and anointed at Toledo.",
+   "literature": "Isidore of Seville wrote the Etymologies, an encyclopedia used across medieval Europe, and a History of the Goths. The Liber Iudiciorum (654) was a written law code for all subjects.",
+   "art": "The votive crowns of the Treasure of Guarrazar, with gold, sapphires and pearls, hung in churches near Toledo. Small horseshoe-arched churches such as San Juan de Baños (661) survive.",
+   "ideas": "Isidore described the king as bound by law and warned that a ruler who acts unjustly is no king. The Toledo councils made the church partner in choosing and anointing kings.",
+   "science": "Isidore's Etymologies and On the Nature of Things passed on Roman knowledge of astronomy, medicine and geography, including the T-O world map.",
+   "story": [
+    {
+     "title": "Recceswinth's Crown",
+     "text": "In 1858 a farmer near Toledo found gold crowns in a field at Guarrazar. One spells out in hanging gold letters RECCESVINTHUS REX OFFERET: 'King Recceswinth offers this'. It had been hidden, probably as Arab armies approached in 711."
+    }
+   ],
+   "sources": "Encyclopaedia Britannica, 'Visigoth'; R. Collins, Visigothic Spain 409–711 (2004).",
+   "images": [
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Tesoro%20de%20Guarrazar%20%28M.A.N.%20Madrid%29%2001.jpg?width=800",
+     "caption": "Votive crown of King Recceswinth, Treasure of Guarrazar (7th century)",
+     "alt": "Votive crown of King Recceswinth, Treasure of Guarrazar (7th century)",
+     "role": "art"
+    },
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/San%20Juan%20de%20Ba%C3%B1os.jpg?width=800",
+     "caption": "San Juan de Baños, a Visigothic church dedicated in 661",
+     "alt": "San Juan de Baños, a Visigothic church dedicated in 661",
+     "role": "culture"
+    }
+   ],
+   "extentsByTick": {},
+   "stories": [
+    {
+     "title": "Recceswinth's Crown",
+     "text": "In 1858 a farmer near Toledo found gold crowns in a field at Guarrazar. One spells out in hanging gold letters RECCESVINTHUS REX OFFERET: 'King Recceswinth offers this'. It had been hidden, probably as Arab armies approached in 711."
+    }
+   ],
+   "philosophy": "Isidore described the king as bound by law and warned that a ruler who acts unjustly is no king. The Toledo councils made the church partner in choosing and anointing kings.",
+   "artIdeas": "The votive crowns of the Treasure of Guarrazar, with gold, sapphires and pearls, hung in churches near Toledo. Small horseshoe-arched churches such as San Juan de Baños (661) survive.\n\nIsidore described the king as bound by law and warned that a ruler who acts unjustly is no king. The Toledo councils made the church partner in choosing and anointing kings."
+  },
+  {
+   "id": "ostrogoths",
+   "name": "Ostrogothic Kingdom",
+   "type": "kingdom",
+   "yearsActive": "493–553",
+   "nameByTick": {
+    "700": "Crimean Goths"
+   },
+   "summary": "The Gothic kingdom of Theodoric the Great in Italy, which kept Roman government running at Ravenna before Justinian destroyed it in a twenty-year war. A Gothic remnant survived in Crimea.",
+   "description": "The Ostrogoths had been subjects of the Huns before Theodoric led them to Italy with the emperor Zeno's blessing, killing Odoacer in 493. From Ravenna he ruled Goths under Gothic law and Romans under Roman officials, with the senator Cassiodorus as his secretary. After his death in 526, Justinian's generals Belisarius and Narses invaded in 535, and the war wrecked Italy until the last Gothic king Teia fell in 552. Gothic-speaking communities in Crimea lasted into early modern times.",
+   "conflicts": "Theodoric's war against Odoacer (489–493). The Gothic War (535–554), with sieges of Rome and Naples, ended at Taginae (552) and Mons Lactarius (552–553).",
+   "leaders": "Theodoric the Great (471–526); his daughter Amalasuntha, regent for her son (526–534), who was murdered; Witigis (536–540); Totila (541–552), who briefly retook most of Italy.",
+   "religion": "Arian Christians alongside a Catholic Roman majority. Ravenna had separate Arian and Catholic cathedrals and baptisteries.",
+   "culture": "Goths formed the army and Romans staffed the civil service. The Roman Senate continued to meet, and Theodoric repaired aqueducts and walls.",
+   "literature": "Boethius wrote The Consolation of Philosophy (c. 524) in prison before Theodoric had him executed. Cassiodorus's Variae preserve the kingdom's official letters, and the Gothic Silver Bible (Codex Argenteus) was probably copied in Ravenna.",
+   "art": "Sant'Apollinare Nuovo and the Arian Baptistery in Ravenna were Theodoric's foundations. His mausoleum is roofed with a single limestone block about 10 metres across.",
+   "ideas": "Boethius translated and commented on Aristotle's logic and argued that true happiness lies in God, not fortune. Cassiodorus founded the Vivarium monastery to copy secular and sacred books.",
+   "science": "Boethius's textbooks on arithmetic and music (De institutione arithmetica, De institutione musica) were standard in medieval schools.",
+   "story": [
+    {
+     "title": "The Silver Bible",
+     "text": "Bishop Ulfilas invented a Gothic alphabet in the fourth century to translate the Bible. A sixth-century copy written in silver and gold ink on purple parchment, the Codex Argenteus, travelled from Italy to Prague and is now in Uppsala."
+    }
+   ],
+   "sources": "Encyclopaedia Britannica, 'Ostrogoth' and 'Theodoric'; P. Heather, The Goths (1996).",
+   "images": [
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Mausoleum%20of%20Theodoric%20%28Ravenna%29.jpg?width=800",
+     "caption": "Mausoleum of Theodoric, Ravenna (c. 520)",
+     "alt": "Mausoleum of Theodoric, Ravenna (c. 520)",
+     "role": "art"
+    },
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Codex%20Argenteus.jpg?width=800",
+     "caption": "Codex Argenteus, the Gothic Silver Bible (6th century)",
+     "alt": "Codex Argenteus, the Gothic Silver Bible (6th century)",
+     "role": "culture"
+    }
+   ],
+   "extentsByTick": {},
+   "stories": [
+    {
+     "title": "The Silver Bible",
+     "text": "Bishop Ulfilas invented a Gothic alphabet in the fourth century to translate the Bible. A sixth-century copy written in silver and gold ink on purple parchment, the Codex Argenteus, travelled from Italy to Prague and is now in Uppsala."
+    }
+   ],
+   "philosophy": "Boethius translated and commented on Aristotle's logic and argued that true happiness lies in God, not fortune. Cassiodorus founded the Vivarium monastery to copy secular and sacred books.",
+   "artIdeas": "Sant'Apollinare Nuovo and the Arian Baptistery in Ravenna were Theodoric's foundations. His mausoleum is roofed with a single limestone block about 10 metres across.\n\nBoethius translated and commented on Aristotle's logic and argued that true happiness lies in God, not fortune. Cassiodorus founded the Vivarium monastery to copy secular and sacred books."
+  },
+  {
+   "id": "franks",
+   "name": "Frankish Kingdom",
+   "type": "kingdom",
+   "yearsActive": "481–843 (Middle Francia to 855)",
+   "nameByTick": {
+    "800": "Carolingian Empire",
+    "900": "Middle Francia (Lotharingia, Burgundy, Italy)"
+   },
+   "summary": "The kingdom founded by the Merovingian Clovis, which became the Carolingian Empire under Charlemagne and was divided among his grandsons in 843.",
+   "description": "Clovis I (481–511) united the Frankish groups, defeated the last Roman ruler in Gaul, the Alamanni and the Visigoths, and was baptized a Catholic. Merovingian kings divided the realm into Neustria, Austrasia and Burgundy, while palace mayors gained real power. Charles Martel beat an Umayyad army near Poitiers (732), and his son Pippin became king in 751 with papal approval. Charlemagne conquered the Lombards, Saxons and Avars and was crowned emperor in Rome on Christmas Day 800. The Treaty of Verdun (843) split the empire into West, Middle and East Francia.",
+   "conflicts": "Clovis's wars against Syagrius (486), the Alamanni and the Visigoths (507). Poitiers (732). Charlemagne's Saxon wars (772–804), including the massacre at Verden (782), and the destruction of the Avar khaganate (791–796). Vikings sacked Paris in 845.",
+   "leaders": "Clovis I (481–511); Dagobert I (629–639); Charles Martel, mayor of the palace (718–741); Pippin the Short (751–768); Charlemagne (768–814); Louis the Pious (814–840); Lothar I, emperor and king of Middle Francia (840–855).",
+   "religion": "Catholic since Clovis's baptism at Reims (c. 496–508). Irish and Anglo-Saxon missionaries such as Columbanus and Boniface founded monasteries. Charlemagne required tithes, preaching and baptism of conquered Saxons.",
+   "culture": "Salic law set wergild payments for crimes. Counts administered districts, and missi dominici checked on them. Charlemagne's coin reform made the silver penny (denarius) the standard coin of western Europe.",
+   "literature": "Gregory of Tours wrote the Ten Books of Histories (6th century). Einhard's Life of Charlemagne and the Royal Frankish Annals record the court. Carolingian minuscule, a clear new script, was used to copy most surviving classical Latin texts.",
+   "art": "The Palatine Chapel at Aachen (consecrated 805) copied Byzantine models. Illuminated books such as the Godescalc Evangelistary and the Lorsch Gospels came from the court school.",
+   "ideas": "Alcuin of York led the palace school and the Carolingian revival of learning. The Admonitio generalis (789) ordered schools at monasteries and cathedrals. The 800 coronation revived the idea of a western Roman emperor.",
+   "science": "Monasteries kept computus, the calculation of Easter dates, and studied Bede's works on time. The Plan of St Gall (c. 820) shows an idealized monastery with infirmary, herb garden and workshops.",
+   "story": [
+    {
+     "title": "The Vase of Soissons",
+     "text": "Gregory of Tours tells how a soldier smashed a church vase that Clovis wanted to return to a bishop, saying the king had no right to more than his share of loot. A year later, at an inspection, Clovis split the man's head with an axe, saying: 'Thus you did to the vase at Soissons.'"
+    }
+   ],
+   "sources": "Encyclopaedia Britannica, 'Frank', 'Merovingian dynasty', 'Charlemagne'; R. McKitterick, Charlemagne (2008).",
+   "images": [
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Aachener%20Dom%20Oktogon.jpg?width=800",
+     "caption": "Octagon of Charlemagne's Palatine Chapel, Aachen (consecrated 805)",
+     "alt": "Octagon of Charlemagne's Palatine Chapel, Aachen (consecrated 805)",
+     "role": "art"
+    },
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/KarolingischeMinuskel.jpg?width=800",
+     "caption": "Carolingian minuscule script",
+     "alt": "Carolingian minuscule script",
+     "role": "culture"
+    }
+   ],
+   "extentsByTick": {},
+   "stories": [
+    {
+     "title": "The Vase of Soissons",
+     "text": "Gregory of Tours tells how a soldier smashed a church vase that Clovis wanted to return to a bishop, saying the king had no right to more than his share of loot. A year later, at an inspection, Clovis split the man's head with an axe, saying: 'Thus you did to the vase at Soissons.'"
+    }
+   ],
+   "philosophy": "Alcuin of York led the palace school and the Carolingian revival of learning. The Admonitio generalis (789) ordered schools at monasteries and cathedrals. The 800 coronation revived the idea of a western Roman emperor.",
+   "artIdeas": "The Palatine Chapel at Aachen (consecrated 805) copied Byzantine models. Illuminated books such as the Godescalc Evangelistary and the Lorsch Gospels came from the court school.\n\nAlcuin of York led the palace school and the Carolingian revival of learning. The Admonitio generalis (789) ordered schools at monasteries and cathedrals. The 800 coronation revived the idea of a western Roman emperor."
+  },
+  {
+   "id": "burgundians",
+   "name": "Kingdom of the Burgundians",
+   "type": "kingdom",
+   "yearsActive": "411–534",
+   "summary": "An East Germanic people who settled first on the Rhine at Worms and then in the Rhône valley around Geneva and Lyon, where they ruled until the Franks conquered them in 534.",
+   "description": "The Burgundians crossed the Rhine in 406 and set up a kingdom around Worms. In 436–437 Aetius used Hunnic troops to crush them, a disaster remembered in the Nibelungenlied. Aetius then resettled the survivors in Sapaudia (Savoy), from where they expanded through the Rhône and Saône valleys. King Gundobad issued law codes for Burgundians and Romans. Clovis's sons conquered the kingdom in 534, but the name Burgundy endured.",
+   "conflicts": "Destruction of the Worms kingdom by Hunnic auxiliaries (436–437). Wars with the Franks from 523; the kingdom fell in 534 after defeat at Autun (532).",
+   "leaders": "Gundahar (Gunther), killed in 436; Gundobad (c. 473–516), who issued the Lex Gundobada; Sigismund (516–524), who founded the monastery of Saint-Maurice; Godomar (524–534).",
+   "religion": "Mostly Arian, though some royals were Catholic. Sigismund converted to Catholicism and founded the abbey of Agaune (Saint-Maurice, 515), with perpetual chanting by relays of monks.",
+   "culture": "Burgundians lived among Gallo-Roman landowners, receiving shares of estates. Separate laws applied to Burgundians and Romans until they merged. Bishop Avitus of Vienne advised the kings.",
+   "literature": "The Lex Gundobada and the Lex Romana Burgundionum are the main written sources. The later Nibelungenlied and Norse Völsunga saga preserve legends of Gunther's fall.",
+   "art": "Burgundian belt plaques of bronze and bone show Daniel among the lions and other Christian motifs mixed with Germanic interlace.",
+   "ideas": "Gundobad's law tried to treat Burgundians and Romans equally in compensation for injuries, an early attempt at shared justice under one king.",
+   "science": "Bishops and Roman landowners kept Roman land surveying and estate management in the Rhône valley.",
+   "story": [
+    {
+     "title": "Gunther's Hoard",
+     "text": "The real King Gundahar died with his people in 437. In later legend he became Gunther of Worms, who sank the Nibelung treasure in the Rhine and died rather than tell where it lay."
+    }
+   ],
+   "sources": "Encyclopaedia Britannica, 'Burgundians'; I. Wood, The Merovingian Kingdoms 450–751 (1994).",
+   "images": [
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Abbaye%20de%20Saint-Maurice.jpg?width=800",
+     "caption": "Abbey of Saint-Maurice d'Agaune, founded by King Sigismund in 515",
+     "alt": "Abbey of Saint-Maurice d'Agaune, founded by King Sigismund in 515",
+     "role": "culture"
+    },
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Nibelungenlied%20manuscript-k.jpg?width=800",
+     "caption": "Nibelungenlied manuscript, the epic that remembers the Burgundian fall",
+     "alt": "Nibelungenlied manuscript, the epic that remembers the Burgundian fall",
+     "role": "art"
+    }
+   ],
+   "extentsByTick": {},
+   "stories": [
+    {
+     "title": "Gunther's Hoard",
+     "text": "The real King Gundahar died with his people in 437. In later legend he became Gunther of Worms, who sank the Nibelung treasure in the Rhine and died rather than tell where it lay."
+    }
+   ],
+   "philosophy": "Gundobad's law tried to treat Burgundians and Romans equally in compensation for injuries, an early attempt at shared justice under one king.",
+   "artIdeas": "Burgundian belt plaques of bronze and bone show Daniel among the lions and other Christian motifs mixed with Germanic interlace.\n\nGundobad's law tried to treat Burgundians and Romans equally in compensation for injuries, an early attempt at shared justice under one king."
+  },
+  {
+   "id": "alamanni",
+   "name": "Alamanni",
+   "type": "tribal confederation",
+   "yearsActive": "c. 213–496 (independent)",
+   "summary": "A confederation of Germanic tribes on the upper Rhine and Danube, whose name means 'all men'. They settled Alsace and the Swiss plateau and were conquered by Clovis around 496–506.",
+   "description": "The Alamanni appear in Roman sources in 213 as raiders across the Roman frontier. In the fifth century they spread into Alsace, the Palatinate and northern Switzerland. Clovis defeated them, traditionally at Tolbiac around 496, and the rest came under Frankish rule, governed by dukes. Their dialect is the ancestor of Swiss German and Swabian, and the French and Spanish words for Germany (Allemagne, Alemania) come from their name.",
+   "conflicts": "Roman campaigns against them included Julian's victory at Strasbourg (357). Defeat by Clovis (c. 496) and later absorption into the Frankish kingdom; a final revolt was crushed at Cannstatt (746).",
+   "leaders": "Chnodomar led them at Strasbourg (357). Later rulers were Frankish-appointed dukes such as Gotfrid (d. 709).",
+   "religion": "Pagan into the sixth century; converted gradually under Frankish rule and Irish missionaries such as Columbanus and Gallus, whose hermitage became the abbey of St Gall.",
+   "culture": "Farming villages and hill-forts with chieftains. Row-grave cemeteries show warrior burials with swords and gold-foil crosses. The Pactus and Lex Alamannorum record their law.",
+   "literature": "The Lex Alamannorum (early 8th century) records their customary law in Latin.",
+   "art": "Gold-foil crosses sewn onto shrouds and inlaid brooches from row-grave cemeteries.",
+   "ideas": "Their law codes show a society of free farmers, nobles and dependants under ducal and royal authority.",
+   "science": "The St Gall abbey later grew from Gallus's cell into one of the great libraries of Europe.",
+   "story": [
+    {
+     "title": "Clovis's Prayer",
+     "text": "Gregory of Tours says that when the battle against the Alamanni went badly, the pagan Clovis prayed to his wife Clotilde's Christian God, promising to be baptized if he won. The Alamanni broke, and Clovis kept his word."
+    }
+   ],
+   "sources": "Encyclopaedia Britannica, 'Alemanni'; J. F. Drinkwater, The Alamanni and Rome 213–496 (2007).",
+   "images": [
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Barocksaal%20der%20Stiftsbibliothek%20St.%20Gallen.jpg?width=800",
+     "caption": "Abbey library of St Gall, grown from the cell of the missionary Gallus",
+     "alt": "Abbey library of St Gall, grown from the cell of the missionary Gallus",
+     "role": "culture"
+    },
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/ALMB%20-%20Lauchheim%20Grab%2038%20Goldblattkreuz.jpg?width=800",
+     "caption": "Alamannic gold-foil cross from Lauchheim",
+     "alt": "Alamannic gold-foil cross from Lauchheim",
+     "role": "art"
+    }
+   ],
+   "extentsByTick": {},
+   "stories": [
+    {
+     "title": "Clovis's Prayer",
+     "text": "Gregory of Tours says that when the battle against the Alamanni went badly, the pagan Clovis prayed to his wife Clotilde's Christian God, promising to be baptized if he won. The Alamanni broke, and Clovis kept his word."
+    }
+   ],
+   "philosophy": "Their law codes show a society of free farmers, nobles and dependants under ducal and royal authority.",
+   "artIdeas": "Gold-foil crosses sewn onto shrouds and inlaid brooches from row-grave cemeteries.\n\nTheir law codes show a society of free farmers, nobles and dependants under ducal and royal authority."
+  },
+  {
+   "id": "vandals",
+   "name": "Vandal Kingdom",
+   "type": "kingdom",
+   "yearsActive": "429–534",
+   "summary": "An East Germanic people who crossed the Rhine in 406, moved through Gaul and Spain, and in 439 took Carthage, ruling North Africa until Justinian's general Belisarius destroyed the kingdom in 533–534.",
+   "description": "Led by Gaiseric, about 80,000 Vandals and Alans crossed from Spain to Africa in 429. They took Hippo in 431 and Carthage in 439, cutting Rome off from its richest grain province. With a fleet they seized Sardinia, Corsica and the Balearics and sacked Rome in 455. Gaiseric's successors kept the kingdom until Belisarius won at Ad Decimum and Tricamarum (533) and King Gelimer surrendered.",
+   "conflicts": "Sack of Rome (455), carrying off the empress and treasures. Destruction of Roman fleets in 461 and 468. Wars with Moorish kingdoms in the interior. Fall to Belisarius in 533–534.",
+   "leaders": "Gaiseric (428–477); Huneric (477–484), who persecuted Catholics; Thrasamund (496–523); Gelimer (530–534), the last king.",
+   "religion": "Arian Christians who exiled and persecuted many Catholic bishops in Africa. Augustine died at Hippo (430) during their siege.",
+   "culture": "A small Vandal elite enjoyed Roman villas, baths and mosaics in Carthage. Latin poetry flourished at court. Their reputation for destruction gave us the word 'vandalism' only in 1794.",
+   "literature": "Victor of Vita's History of the Vandal Persecution is the main hostile source. Poets such as Luxorius and Dracontius wrote Latin verse at Carthage.",
+   "art": "Floor mosaics from Carthage show Vandal-era horsemen in Roman villa settings.",
+   "ideas": "The kingdom's sea power showed that a Germanic kingdom could control the western Mediterranean, cutting the old empire in two.",
+   "science": "Roman agriculture, irrigation and olive production continued in Africa under Vandal rule.",
+   "story": [
+    {
+     "title": "Gelimer's Lyre",
+     "text": "Besieged on a mountain in 533, the defeated king Gelimer is said to have asked Belisarius's envoy for a loaf of bread, a sponge and a lyre: bread because he had not eaten any in months, a sponge for his tears, and a lyre to sing of his misfortune."
+    }
+   ],
+   "sources": "Encyclopaedia Britannica, 'Vandal'; A. Merrills and R. Miles, The Vandals (2010).",
+   "images": [
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Vandal%20cavalryman%2C%20c.%20AD%20500%2C%20from%20a%20mosaic%20pavement%20at%20Bordj%20Djedid%20near%20Carthage.jpg?width=800",
+     "caption": "Mosaic of a Vandal horseman from Carthage (c. 500)",
+     "alt": "Mosaic of a Vandal horseman from Carthage (c. 500)",
+     "role": "art"
+    },
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/AR%2050%20Denarii%20-%20Vandals%20-%20Gelimer%20-%20Carthage.jpg?width=800",
+     "caption": "Coin of Gelimer, last Vandal king",
+     "alt": "Coin of Gelimer, last Vandal king",
+     "role": "culture"
+    }
+   ],
+   "extentsByTick": {},
+   "stories": [
+    {
+     "title": "Gelimer's Lyre",
+     "text": "Besieged on a mountain in 533, the defeated king Gelimer is said to have asked Belisarius's envoy for a loaf of bread, a sponge and a lyre: bread because he had not eaten any in months, a sponge for his tears, and a lyre to sing of his misfortune."
+    }
+   ],
+   "philosophy": "The kingdom's sea power showed that a Germanic kingdom could control the western Mediterranean, cutting the old empire in two.",
+   "artIdeas": "Floor mosaics from Carthage show Vandal-era horsemen in Roman villa settings.\n\nThe kingdom's sea power showed that a Germanic kingdom could control the western Mediterranean, cutting the old empire in two."
+  },
+  {
+   "id": "suebi",
+   "name": "Suebic Kingdom of Galicia",
+   "type": "kingdom",
+   "yearsActive": "409–585",
+   "summary": "A Germanic people who crossed the Rhine in 406 and founded a kingdom in Roman Gallaecia (north-west Iberia), with its capital at Braga, until the Visigoth Leovigild annexed it in 585.",
+   "description": "The Suebi, with Vandals and Alans, entered Spain in 409 and took the north-west. Under Rechiar they raided far across the peninsula until the Visigoths defeated them in 456. The kingdom recovered and converted to Catholicism under Martin of Braga's guidance in the 560s, then fell to Leovigild in 585.",
+   "conflicts": "Defeat by the Visigoth Theodoric II at the river Órbigo (456); conquest by Leovigild (585).",
+   "leaders": "Hermeric (409–438); Rechiar (448–456), the first Catholic Germanic king; Chararic and Theodemar (mid-6th century); Andeca (584–585).",
+   "religion": "Briefly Catholic under Rechiar, then Arian, then Catholic again in the 560s through Martin of Braga, who held church councils at Braga (561, 572).",
+   "culture": "A small Suebic warrior elite ruled Hispano-Roman Gallaecians from Braga and Lugo. They struck their own coins in the Roman style.",
+   "literature": "Bishop Hydatius of Aquae Flaviae chronicled their raids. Martin of Braga's On the Correction of Rustics attacked lingering pagan customs.",
+   "art": "Little survives beyond coins and church foundations at Braga and Dumio.",
+   "ideas": "Martin of Braga's Formula vitae honestae adapted Seneca's Stoic ethics for Christian rulers.",
+   "science": "Martin's sermon records peasant calendars and day-names, part of the reason Portuguese numbers its weekdays instead of naming them after gods.",
+   "story": [
+    {
+     "title": "Monday is 'Second Day'",
+     "text": "Martin of Braga scolded peasants for naming days after Mars, Mercury and Jupiter. Portuguese alone among Romance languages took his advice: Monday is segunda-feira, 'second day', and so on through the week."
+    }
+   ],
+   "sources": "Encyclopaedia Britannica, 'Suebi'; R. Collins, Early Medieval Spain (1995).",
+   "images": [
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Exterior%20of%20S%C3%A9%20de%20Braga%2009.jpg?width=800",
+     "caption": "Braga Cathedral, in the old Suebic capital",
+     "alt": "Braga Cathedral, in the old Suebic capital",
+     "role": "culture"
+    }
+   ],
+   "extentsByTick": {},
+   "stories": [
+    {
+     "title": "Monday is 'Second Day'",
+     "text": "Martin of Braga scolded peasants for naming days after Mars, Mercury and Jupiter. Portuguese alone among Romance languages took his advice: Monday is segunda-feira, 'second day', and so on through the week."
+    }
+   ],
+   "philosophy": "Martin of Braga's Formula vitae honestae adapted Seneca's Stoic ethics for Christian rulers.",
+   "artIdeas": "Little survives beyond coins and church foundations at Braga and Dumio.\n\nMartin of Braga's Formula vitae honestae adapted Seneca's Stoic ethics for Christian rulers."
+  },
+  {
+   "id": "saxons",
+   "name": "Old Saxons",
+   "type": "tribal confederation",
+   "yearsActive": "c. 400–804",
+   "summary": "Germanic tribes between the Rhine and the Elbe, some of whom sailed to Britain, while those at home resisted the Franks until Charlemagne's wars of 772–804.",
+   "description": "Saxons raided Roman coasts from the third century and joined Angles and Jutes in settling Britain in the fifth. The continental Saxons stayed pagan and without kings, ruled by regional leaders and an assembly at Marklo. Charlemagne's thirty-year war, led on the Saxon side by Widukind, ended with forced baptism and integration into the Frankish realm; a century later the Saxon Ottonians would rule Germany.",
+   "conflicts": "Charlemagne destroyed the sacred Irminsul pillar (772); Widukind's revolts led to the executions at Verden (782). Widukind was baptized in 785; resistance ended in 804.",
+   "leaders": "Widukind (fl. 777–785), war leader and later a convert.",
+   "religion": "Pagan, worshipping at the Irminsul and sacred groves, until forced conversion. Charlemagne's Capitulary for Saxony made refusing baptism punishable by death.",
+   "culture": "Free farmers, nobles and half-free laeti met in a general assembly. Their language, Old Saxon, is the ancestor of Low German.",
+   "literature": "The Heliand (c. 830) retold the Gospels as an Old Saxon epic with Christ as a lord and his disciples as retainers.",
+   "art": "Brooches and cemetery finds from the Elbe-Weser area; after conversion, monasteries such as Corvey (founded 822).",
+   "ideas": "The Heliand shows a missionary method: presenting Christian ideas in the familiar language of loyalty to a lord.",
+   "science": "Monastic schools at Corvey and Fulda brought Latin learning to Saxony after conversion.",
+   "story": [
+    {
+     "title": "Christ the Chieftain",
+     "text": "In the Heliand the Sermon on the Mount is delivered to warriors gathered round their lord, and Peter cuts off the servant's ear with the fury of a thane defending his chief."
+    }
+   ],
+   "sources": "Encyclopaedia Britannica, 'Saxon'; I. Wood, The Missionary Life (2001).",
+   "images": [
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Ha%C6%80di%20in%20Heliand%20%28Manuscript%20M%29%2C%205r14.png?width=800",
+     "caption": "Heliand manuscript, the Old Saxon Gospel epic",
+     "alt": "Heliand manuscript, the Old Saxon Gospel epic",
+     "role": "culture"
+    },
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Corvey%20Westwerk%20Biforien%20Tetraforien.jpg?width=800",
+     "caption": "Westwork of Corvey Abbey (873–885)",
+     "alt": "Westwork of Corvey Abbey (873–885)",
+     "role": "art"
+    }
+   ],
+   "extentsByTick": {},
+   "stories": [
+    {
+     "title": "Christ the Chieftain",
+     "text": "In the Heliand the Sermon on the Mount is delivered to warriors gathered round their lord, and Peter cuts off the servant's ear with the fury of a thane defending his chief."
+    }
+   ],
+   "philosophy": "The Heliand shows a missionary method: presenting Christian ideas in the familiar language of loyalty to a lord.",
+   "artIdeas": "Brooches and cemetery finds from the Elbe-Weser area; after conversion, monasteries such as Corvey (founded 822).\n\nThe Heliand shows a missionary method: presenting Christian ideas in the familiar language of loyalty to a lord."
+  },
+  {
+   "id": "thuringians",
+   "name": "Kingdom of the Thuringians",
+   "type": "kingdom",
+   "yearsActive": "c. 450–531",
+   "summary": "A Germanic kingdom in central Germany between the Harz and the Danube, destroyed by the Franks and Saxons in 531.",
+   "description": "The Thuringian kingdom grew in the late fifth century and allied with Theodoric's Ostrogoths by marriage. In 531 Frankish kings Theuderic I and Chlothar I defeated King Herminafrid on the Unstrut, and Thuringia became a Frankish duchy. Princess Radegund, carried off as a captive, became Chlothar's queen and later a saint.",
+   "conflicts": "Frankish conquest after the battle on the Unstrut (531).",
+   "leaders": "Bisinus (late 5th century); Herminafrid (d. c. 534), married to Theodoric's niece Amalaberga.",
+   "religion": "Largely pagan; converted under Frankish rule and by Boniface's mission in the eighth century.",
+   "culture": "Their burials show horses and fine metalwork; the Thuringian name survives in the modern German state.",
+   "literature": "Venantius Fortunatus wrote 'The Fall of Thuringia' as a lament in Radegund's voice.",
+   "art": "Bow brooches of the Thuringian style.",
+   "ideas": "Radegund's convent at Poitiers, the Holy Cross, became a centre of learning and relic devotion.",
+   "science": "Thuringian smiths made fine silver and garnet brooches; little written science survives.",
+   "story": [
+    {
+     "title": "Radegund's Lament",
+     "text": "Taken captive as a child after the Unstrut, Radegund was married to her family's conqueror. She later left him, founded a convent at Poitiers and had the poet Fortunatus write her grief for her lost homeland."
+    }
+   ],
+   "sources": "Encyclopaedia Britannica, 'Thuringia'; I. Wood, The Merovingian Kingdoms (1994).",
+   "images": [
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Page%20from%20Life%20of%20St.%20Radegund%2C%20illuminated%20by%20the%20Master%20of%20St.%20Radegund%2C.jpg?width=800",
+     "caption": "Saint Radegund, Thuringian princess, in an 11th-century manuscript",
+     "alt": "Saint Radegund, Thuringian princess, in an 11th-century manuscript",
+     "role": "culture"
+    },
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Poitiers%20-%20Mus%C3%A9e%20Sainte-Croix%20-%2005.jpg?width=800",
+     "caption": "Holy Cross abbey, Poitiers, founded by Radegund",
+     "alt": "Holy Cross abbey, Poitiers, founded by Radegund",
+     "role": "art"
+    }
+   ],
+   "extentsByTick": {},
+   "stories": [
+    {
+     "title": "Radegund's Lament",
+     "text": "Taken captive as a child after the Unstrut, Radegund was married to her family's conqueror. She later left him, founded a convent at Poitiers and had the poet Fortunatus write her grief for her lost homeland."
+    }
+   ],
+   "philosophy": "Radegund's convent at Poitiers, the Holy Cross, became a centre of learning and relic devotion.",
+   "artIdeas": "Bow brooches of the Thuringian style.\n\nRadegund's convent at Poitiers, the Holy Cross, became a centre of learning and relic devotion."
+  },
+  {
+   "id": "frisians",
+   "name": "Frisian Kingdom",
+   "type": "kingdom",
+   "yearsActive": "c. 600–734",
+   "summary": "Seafaring Germanic people of the North Sea coast whose kings controlled the trade of the Rhine delta until the Franks conquered them in 734.",
+   "description": "Frisians lived on terps, artificial mounds in the tidal marshes, and traded cloth, slaves and wine along the North Sea. King Redbad resisted Frankish expansion and Christian missions around 700. Charles Martel's victory at the Boarn (734) ended independence, and the trading town of Dorestad became one of the busiest ports of Carolingian Europe.",
+   "conflicts": "Pippin of Herstal defeated Redbad at Dorestad (c. 689); Charles Martel conquered Frisia at the Boarn (734). Frisians killed the missionary Boniface at Dokkum (754).",
+   "leaders": "Aldgisl (fl. 678); Redbad (d. 719).",
+   "religion": "Pagan, worshipping Fosite on Heligoland; missions by Willibrord, first bishop of Utrecht (695), and Boniface.",
+   "culture": "Terp villages, cattle and sea trade. Frisian sceattas (silver coins) circulated across the North Sea. Old Frisian is the closest relative of English.",
+   "literature": "Lex Frisionum (c. 790) recorded their law under Charlemagne.",
+   "art": "Silver sceattas with Wodan heads and monster motifs.",
+   "ideas": "Their trading network linked England, Scandinavia and the Rhineland into one North Sea economy.",
+   "science": "Terp-building and dike work were early forms of the land reclamation the Low Countries would master.",
+   "story": [
+    {
+     "title": "Redbad at the Font",
+     "text": "Legend says Redbad was about to be baptized when he asked whether his ancestors were in heaven. Told they were in hell, he stepped back, saying he would rather be with his forefathers than with a few paupers in heaven."
+    }
+   ],
+   "sources": "Encyclopaedia Britannica, 'Frisian'; S. Lebecq, Marchands et navigateurs frisons (1983).",
+   "images": [
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Terp%20fan%20de%20Takomst%20bij%20Blije.%2021-08-2023.%20%28actm.%29%2028.jpg?width=800",
+     "caption": "A terp mound in Friesland",
+     "alt": "A terp mound in Friesland",
+     "role": "culture"
+    },
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Early%20Medieval%20Coin%2C%20Frisian%20Sceat%20%28FindID%20561077%29.jpg?width=800",
+     "caption": "Frisian silver sceat coin",
+     "alt": "Frisian silver sceat coin",
+     "role": "art"
+    }
+   ],
+   "extentsByTick": {},
+   "stories": [
+    {
+     "title": "Redbad at the Font",
+     "text": "Legend says Redbad was about to be baptized when he asked whether his ancestors were in heaven. Told they were in hell, he stepped back, saying he would rather be with his forefathers than with a few paupers in heaven."
+    }
+   ],
+   "philosophy": "Their trading network linked England, Scandinavia and the Rhineland into one North Sea economy.",
+   "artIdeas": "Silver sceattas with Wodan heads and monster motifs.\n\nTheir trading network linked England, Scandinavia and the Rhineland into one North Sea economy."
+  },
+  {
+   "id": "anglo-saxons",
+   "name": "Anglo-Saxon kingdoms",
+   "type": "kingdoms",
+   "yearsActive": "c. 450–927 (until a single English kingdom)",
+   "nameByTick": {
+    "800": "Anglo-Saxon kingdoms (Mercia, Wessex, Northumbria, Kent)",
+    "900": "Anglo-Saxon kingdoms (Wessex, English Mercia)"
+   },
+   "summary": "The Germanic kingdoms of lowland Britain—Kent, Northumbria, Mercia, Wessex and others—from the fifth-century settlements until Wessex united England in 927.",
+   "description": "After Roman rule ended around 410, Angles, Saxons and Jutes settled eastern Britain and formed kingdoms. Kent received Augustine's mission in 597, Northumbria produced Bede and the Lindisfarne Gospels, and Mercia under Offa (757–796) dominated the south and built Offa's Dyke. Viking armies destroyed Northumbria, East Anglia and half of Mercia in the 860s–870s. Alfred of Wessex held out, and his children and grandson Æthelstan reconquered the Danelaw, creating the kingdom of England.",
+   "conflicts": "Battle of Mount Badon against the Britons (c. 500); Northumbrian victory at Catraeth (c. 600); Mercian wars under Penda (d. 655). The Great Heathen Army (865) and Alfred's victory at Edington (878).",
+   "leaders": "Æthelberht of Kent (d. 616); Edwin and Oswald of Northumbria; Penda and Offa of Mercia; Alfred the Great of Wessex (871–899); Edward the Elder (899–924).",
+   "religion": "Pagan until the Roman mission to Kent (597) and the Irish mission from Iona to Northumbria (635). The Synod of Whitby (664) chose Roman over Irish customs.",
+   "culture": "Hall society of lords, thegns and ceorls, with wergild and law codes from Æthelberht onward. Burhs, Alfred's fortified towns, organized defence.",
+   "literature": "Bede's Ecclesiastical History of the English People (731); Beowulf; Cædmon's Hymn, the oldest English poem; Alfred's translations of Latin works and the Anglo-Saxon Chronicle.",
+   "art": "The Sutton Hoo ship burial (early 7th century); the Lindisfarne Gospels (c. 715); the Ruthwell Cross; the Staffordshire Hoard.",
+   "ideas": "Bede popularized dating years Anno Domini. Alfred's preface to Pastoral Care argued that learning should be translated into English so free men could read.",
+   "science": "Bede's The Reckoning of Time explained tides and the computus of Easter.",
+   "story": [
+    {
+     "title": "The Sparrow in the Hall",
+     "text": "At King Edwin's council in 627, a counsellor compared human life to a sparrow that flies in from winter through a warm, lit hall and out again into the dark. If the new religion could tell them more, he said, they should follow it."
+    }
+   ],
+   "sources": "Encyclopaedia Britannica, 'Anglo-Saxon'; F. Stenton, Anglo-Saxon England (1943); J. Campbell (ed.), The Anglo-Saxons (1982).",
+   "images": [
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Sutton%20Hoo%20helmet%202016.png?width=800",
+     "caption": "Sutton Hoo helmet (early 7th century)",
+     "alt": "Sutton Hoo helmet (early 7th century)",
+     "role": "art"
+    },
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Lindisfarne%20Gospels%20folio%20209v.jpg?width=800",
+     "caption": "Lindisfarne Gospels (c. 715)",
+     "alt": "Lindisfarne Gospels (c. 715)",
+     "role": "culture"
+    },
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Offa%27s%20Dyke%20at%20Treflach%20%281453747%29.jpg?width=800",
+     "caption": "Offa's Dyke, the earthwork boundary of Mercia",
+     "alt": "Offa's Dyke, the earthwork boundary of Mercia",
+     "role": "culture"
+    }
+   ],
+   "extentsByTick": {},
+   "stories": [
+    {
+     "title": "The Sparrow in the Hall",
+     "text": "At King Edwin's council in 627, a counsellor compared human life to a sparrow that flies in from winter through a warm, lit hall and out again into the dark. If the new religion could tell them more, he said, they should follow it."
+    }
+   ],
+   "philosophy": "Bede popularized dating years Anno Domini. Alfred's preface to Pastoral Care argued that learning should be translated into English so free men could read.",
+   "artIdeas": "The Sutton Hoo ship burial (early 7th century); the Lindisfarne Gospels (c. 715); the Ruthwell Cross; the Staffordshire Hoard.\n\nBede popularized dating years Anno Domini. Alfred's preface to Pastoral Care argued that learning should be translated into English so free men could read."
+  },
+  {
+   "id": "britons",
+   "name": "Brittonic kingdoms (Wales, Dumnonia, Brittany)",
+   "type": "kingdoms",
+   "yearsActive": "c. 410–10th century",
+   "summary": "The Celtic-speaking British kingdoms of western Britain—Gwynedd, Powys, Dumnonia and the north—and their offshoot across the Channel in Brittany.",
+   "description": "When Roman authority ended, Britons formed kingdoms in Wales, Cornwall and Devon (Dumnonia), Cumbria and Strathclyde. Some migrated to Armorica, which became Brittany. Over the sixth to ninth centuries the Anglo-Saxons pushed them west. Brittany under Nominoë and Erispoë defeated Charles the Bald at Jengland (851) and became a kingdom.",
+   "conflicts": "Mount Badon (c. 500); defeat at Catraeth (c. 600) and Chester (c. 615); Breton victory at Jengland (851).",
+   "leaders": "Maelgwn Gwynedd (d. c. 547); Cadwallon ap Cadfan (d. 634); Rhodri the Great of Gwynedd (844–878); Nominoë of Brittany (d. 851).",
+   "religion": "Christian since Roman times, with a strong monastic tradition (St David, St Samson of Dol).",
+   "culture": "Brittonic speech developed into Welsh, Cornish, Cumbric and Breton. Kin-based society with praise poets at court.",
+   "literature": "Gildas's On the Ruin of Britain (6th century); Y Gododdin by Aneirin; the Historia Brittonum (c. 829), first to name Arthur as a war leader.",
+   "art": "Inscribed stones and early Christian crosses in Wales and Cornwall.",
+   "ideas": "The Historia Brittonum created the Arthur legend that would sweep medieval Europe.",
+   "science": "Monastic schools such as Llanilltud Fawr kept Latin learning.",
+   "story": [
+    {
+     "title": "Three Hundred Went to Catraeth",
+     "text": "Y Gododdin mourns warriors from around Edinburgh who feasted for a year, then rode against the Angles at Catraeth. Of three hundred, the poem says, only one came back."
+    }
+   ],
+   "sources": "Encyclopaedia Britannica, 'Wales: history', 'Brittany'; T. Charles-Edwards, Wales and the Britons 350–1064 (2013).",
+   "images": [
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Llyfr%20Aneirin%20t.%201.jpg?width=800",
+     "caption": "Book of Aneirin, containing Y Gododdin",
+     "alt": "Book of Aneirin, containing Y Gododdin",
+     "role": "culture"
+    },
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/View%20from%20Tintagel%20Castle%20-%20Cornwall%20-%20England.jpg?width=800",
+     "caption": "Tintagel, a high-status site of Dumnonia",
+     "alt": "Tintagel, a high-status site of Dumnonia",
+     "role": "art"
+    }
+   ],
+   "extentsByTick": {},
+   "stories": [
+    {
+     "title": "Three Hundred Went to Catraeth",
+     "text": "Y Gododdin mourns warriors from around Edinburgh who feasted for a year, then rode against the Angles at Catraeth. Of three hundred, the poem says, only one came back."
+    }
+   ],
+   "philosophy": "The Historia Brittonum created the Arthur legend that would sweep medieval Europe.",
+   "artIdeas": "Inscribed stones and early Christian crosses in Wales and Cornwall.\n\nThe Historia Brittonum created the Arthur legend that would sweep medieval Europe."
+  },
+  {
+   "id": "picts-scots",
+   "name": "Picts and Scots of Dál Riata",
+   "type": "kingdoms",
+   "yearsActive": "c. 300–900 (Alba from c. 900)",
+   "summary": "The Picts of eastern and northern Scotland and the Gaelic kingdom of Dál Riata in Argyll, which merged into the kingdom of Alba around 900.",
+   "description": "The Picts, descendants of Iron Age Caledonians, defeated Northumbria at Nechtansmere (685). Dál Riata, settled from Ulster, held Argyll and the island monastery of Iona, founded by Columba in 563. Viking attacks weakened both, and Cináed mac Ailpín (Kenneth MacAlpin) became king of the Picts around 843; by 900 the Gaelic kingdom of Alba had absorbed Pictland.",
+   "conflicts": "Nechtansmere (685); Viking defeat of the Picts (839).",
+   "leaders": "Bridei son of Beli (fl. 685); Óengus son of Fergus (729–761); Cináed mac Ailpín (d. 858).",
+   "religion": "Christianized from Iona and Northumbria; Columba's monastery was the mother house for missions across northern Britain.",
+   "culture": "Pictish symbol stones; matrilineal royal succession is debated. Gaelic language gradually replaced Pictish.",
+   "literature": "Adomnán's Life of Columba (c. 700); the Book of Kells may have been begun on Iona.",
+   "art": "Pictish symbol stones with crescents, V-rods and beasts (Aberlemno); silver hoards such as St Ninian's Isle.",
+   "ideas": "Adomnán's Law of the Innocents (697) protected women, children and clerics in war.",
+   "science": "Iona's scribes kept annals that are among the earliest records in the British Isles.",
+   "story": [
+    {
+     "title": "The Beast in the River Ness",
+     "text": "Adomnán tells how Columba, crossing the River Ness, ordered a water beast that had killed a man to go back. It fled, which is the first written mention of a monster near Loch Ness."
+    }
+   ],
+   "sources": "Encyclopaedia Britannica, 'Pict', 'Dál Riata'; A. Woolf, From Pictland to Alba (2007).",
+   "images": [
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Aberlemno%20Pictish%20Stone%20-%20geograph.org.uk%20-%20976778.jpg?width=800",
+     "caption": "Aberlemno Pictish cross-slab",
+     "alt": "Aberlemno Pictish cross-slab",
+     "role": "art"
+    },
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Iona%20Abbey%20-%20July%202011.jpeg?width=800",
+     "caption": "Iona Abbey, on the site of Columba's monastery",
+     "alt": "Iona Abbey, on the site of Columba's monastery",
+     "role": "culture"
+    }
+   ],
+   "extentsByTick": {},
+   "stories": [
+    {
+     "title": "The Beast in the River Ness",
+     "text": "Adomnán tells how Columba, crossing the River Ness, ordered a water beast that had killed a man to go back. It fled, which is the first written mention of a monster near Loch Ness."
+    }
+   ],
+   "philosophy": "Adomnán's Law of the Innocents (697) protected women, children and clerics in war.",
+   "artIdeas": "Pictish symbol stones with crescents, V-rods and beasts (Aberlemno); silver hoards such as St Ninian's Isle.\n\nAdomnán's Law of the Innocents (697) protected women, children and clerics in war."
+  },
+  {
+   "id": "irish",
+   "name": "Irish kingdoms",
+   "type": "kingdoms",
+   "yearsActive": "c. 400–1169",
+   "summary": "Ireland's many small kingdoms under provincial over-kings, which became a centre of monastic learning and sent missionaries across Europe.",
+   "description": "Early medieval Ireland was divided into perhaps 150 túatha under kings of Ulster, Connacht, Leinster and Munster, with the Uí Néill claiming the high-kingship at Tara. Patrick's fifth-century mission began a monastic culture at Armagh, Clonmacnoise and Kildare. Irish monks such as Columbanus founded houses at Luxeuil and Bobbio. Vikings raided from 795 and founded Dublin (841).",
+   "conflicts": "Dynastic wars among the Uí Néill, Eóganachta and others; Viking raids from 795.",
+   "leaders": "Niall of the Nine Hostages (legendary, 5th century); Máel Sechnaill I (846–862), high king who fought the Vikings.",
+   "religion": "Christian from Patrick's mission (5th century); abbots of great monasteries were powerful lords.",
+   "culture": "Brehon law, with fosterage, honour-price and professional poets (filid). Ogham inscriptions on stones.",
+   "literature": "Táin Bó Cúailnge; Patrick's Confessio; monastic annals; early Irish lyric poetry.",
+   "art": "Book of Kells (c. 800); Ardagh Chalice; Tara Brooch; high crosses at Monasterboice.",
+   "ideas": "Irish penitentials introduced private confession. John Scotus Eriugena was the leading philosopher of ninth-century Europe.",
+   "science": "Irish computists and the geographer Dicuil (825) recorded voyages to Iceland.",
+   "story": [
+    {
+     "title": "Pangur Bán",
+     "text": "In the margin of a ninth-century manuscript an Irish monk wrote a poem about his white cat: the cat hunts mice and he hunts meanings, each content in his own work."
+    }
+   ],
+   "sources": "Encyclopaedia Britannica, 'Ireland: early history'; D. Ó Cróinín, Early Medieval Ireland 400–1200 (1995).",
+   "images": [
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Book%20of%20Kells%20ChiRho%20Folio%2034R.png?width=800",
+     "caption": "Chi-Rho page, Book of Kells (c. 800)",
+     "alt": "Chi-Rho page, Book of Kells (c. 800)",
+     "role": "art"
+    },
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Ardagh%20Chalice%20in%20the%20National%20Museum%20of%20Ireland.jpg?width=800",
+     "caption": "Ardagh Chalice (8th century)",
+     "alt": "Ardagh Chalice (8th century)",
+     "role": "culture"
+    }
+   ],
+   "extentsByTick": {},
+   "stories": [
+    {
+     "title": "Pangur Bán",
+     "text": "In the margin of a ninth-century manuscript an Irish monk wrote a poem about his white cat: the cat hunts mice and he hunts meanings, each content in his own work."
+    }
+   ],
+   "philosophy": "Irish penitentials introduced private confession. John Scotus Eriugena was the leading philosopher of ninth-century Europe.",
+   "artIdeas": "Book of Kells (c. 800); Ardagh Chalice; Tara Brooch; high crosses at Monasterboice.\n\nIrish penitentials introduced private confession. John Scotus Eriugena was the leading philosopher of ninth-century Europe."
+  },
+  {
+   "id": "basques",
+   "name": "Duchy of Vasconia",
+   "type": "duchy",
+   "yearsActive": "602–c. 819 (Pamplona kingdom from 824)",
+   "summary": "The Basque-speaking lands on both sides of the western Pyrenees, a duchy under nominal Frankish rule whose people ambushed Charlemagne's rearguard at Roncevaux (778).",
+   "description": "Basques resisted Visigoths, Franks and Arabs alike. The Franks created a duchy of Vasconia in 602, which often acted independently. In 778 Basques destroyed Charlemagne's rearguard at Roncevaux, and in 824 Íñigo Arista founded the kingdom of Pamplona, later Navarre.",
+   "conflicts": "Visigothic campaigns; Roncevaux (778); second Roncevaux (824).",
+   "leaders": "Duke Lupus II (late 8th century); Íñigo Arista of Pamplona (824–851).",
+   "religion": "Christianized slowly; pagan practices persisted in the mountains.",
+   "culture": "Basque, a pre-Indo-European language, survived here. Shepherd and farming communities in the valleys.",
+   "literature": "The Song of Roland (c. 1100) remembers Roncevaux but changes the Basques into Saracens.",
+   "art": "Little survives from this period.",
+   "ideas": "Their persistent self-rule laid the base for the fueros (local liberties) of later Basque provinces.",
+   "science": "Not recorded.",
+   "story": [
+    {
+     "title": "Roland's Horn",
+     "text": "Einhard records that in 778 Basques ambushed the Frankish baggage train in the Pyrenees, killing Roland, prefect of the Breton March. Three centuries later the Song of Roland made it a stand against a Saracen host, with Roland blowing his horn too late."
+    }
+   ],
+   "sources": "Encyclopaedia Britannica, 'Basque', 'Battle of Roncesvalles'; R. Collins, The Basques (1986).",
+   "images": [
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Orreaga%20-%20centre.jpg?width=800",
+     "caption": "Roncevaux Pass in the Pyrenees",
+     "alt": "Roncevaux Pass in the Pyrenees",
+     "role": "culture"
+    },
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Mort%20de%20Roland.jpg?width=800",
+     "caption": "Roland at Roncevaux, from a manuscript",
+     "alt": "Roland at Roncevaux, from a manuscript",
+     "role": "art"
+    }
+   ],
+   "extentsByTick": {},
+   "stories": [
+    {
+     "title": "Roland's Horn",
+     "text": "Einhard records that in 778 Basques ambushed the Frankish baggage train in the Pyrenees, killing Roland, prefect of the Breton March. Three centuries later the Song of Roland made it a stand against a Saracen host, with Roland blowing his horn too late."
+    }
+   ],
+   "philosophy": "Their persistent self-rule laid the base for the fueros (local liberties) of later Basque provinces.",
+   "artIdeas": "Little survives from this period.\n\nTheir persistent self-rule laid the base for the fueros (local liberties) of later Basque provinces."
+  },
+  {
+   "id": "swedes",
+   "name": "Swedes and Geats",
+   "type": "peoples and petty kingdoms",
+   "yearsActive": "c. 400–c. 1000",
+   "summary": "The Svear of the Mälaren region around Uppsala and the Geats to their south, ruled by petty kings whose mound burials and trade routes led east into Russia.",
+   "description": "Around Uppsala the Svear built royal mounds in the sixth century, and boat graves at Vendel and Valsgärde held rich weapons. Helgö and then Birka (from c. 750) were trading towns, and Swedish Vikings, the Rus, travelled by river to the Caspian and Constantinople. Gotland's farmers grew rich from this trade.",
+   "conflicts": "Wars between Svear and Geats are echoed in Beowulf; eastern raids and trading expeditions.",
+   "leaders": "Semi-legendary Ynglings such as Ottar and Adils; Björn at Birka, who received Ansgar (c. 829).",
+   "religion": "Norse paganism with the temple at Uppsala; Ansgar's mission to Birka (c. 829) had little lasting effect.",
+   "culture": "Farms, assemblies (things), runestones; silver hoards on Gotland include many Arab dirhams.",
+   "literature": "Beowulf's hero is a Geat; the Rök runestone (c. 800) carries the longest runic inscription.",
+   "art": "Vendel-style helmets and Gotland picture stones.",
+   "ideas": "The thing assembly made law by consensus of free men.",
+   "science": "Expert boat-building and navigation on the Baltic and Russian rivers.",
+   "story": [
+    {
+     "title": "The Rök Stone",
+     "text": "Around 800 a father named Varin carved more than 700 runes on a stone in Östergötland for his dead son Vämod. Scholars still argue whether it tells of heroic battles or of cosmic fears about a coming cold winter."
+    }
+   ],
+   "sources": "Encyclopaedia Britannica, 'Sweden: history'; P. Sawyer, The Making of Sweden (1988).",
+   "images": [
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/R%C3%B6k%20runestone%20%28R%C3%B6k%2C%20%C3%96desh%C3%B6g%20Municipality%2C%20%C3%96sterg%C3%B6tland%2C%20Sweden%29.jpg?width=800",
+     "caption": "Rök runestone (c. 800)",
+     "alt": "Rök runestone (c. 800)",
+     "role": "culture"
+    },
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Royal%20Mounds%20of%20Gamla%20Uppsala%20%28by%20Pudelek%29.JPG?width=800",
+     "caption": "Royal mounds at Gamla Uppsala (6th century)",
+     "alt": "Royal mounds at Gamla Uppsala (6th century)",
+     "role": "art"
+    }
+   ],
+   "extentsByTick": {},
+   "stories": [
+    {
+     "title": "The Rök Stone",
+     "text": "Around 800 a father named Varin carved more than 700 runes on a stone in Östergötland for his dead son Vämod. Scholars still argue whether it tells of heroic battles or of cosmic fears about a coming cold winter."
+    }
+   ],
+   "philosophy": "The thing assembly made law by consensus of free men.",
+   "artIdeas": "Vendel-style helmets and Gotland picture stones.\n\nThe thing assembly made law by consensus of free men."
+  },
+  {
+   "id": "danes",
+   "name": "Danes",
+   "type": "kingdom",
+   "yearsActive": "c. 500–present (as Denmark)",
+   "summary": "The people of Jutland and the Danish islands, whose kings built the Danevirke against the Franks and whose Viking armies conquered much of England in the ninth century.",
+   "description": "By 700 a Danish kingdom controlled the trading town of Ribe; King Godfred fortified the Danevirke and founded Hedeby around 808 to rival the Franks. Danish fleets raided Frisia and England, and the Great Heathen Army of 865 conquered the Danelaw.",
+   "conflicts": "Godfred's war with Charlemagne (804–810); raids on Frisia and England; the Great Heathen Army (865–878).",
+   "leaders": "Ongendus (fl. 710); Godfred (d. 810); Horik I (d. 854).",
+   "religion": "Norse paganism; Ansgar built churches at Hedeby and Ribe in the 850s.",
+   "culture": "Trading towns at Ribe and Hedeby; farms in longhouses; the earthwork Danevirke across Jutland.",
+   "literature": "Runic inscriptions; Frankish annals record Danish kings.",
+   "art": "Ship burials; Borre and Jelling-style animal ornament.",
+   "ideas": "Royal power over trade and coinage began at Hedeby.",
+   "science": "Clinker-built longships with keels and sails.",
+   "story": [
+    {
+     "title": "Godfred's Wall",
+     "text": "In 808 Godfred ordered a rampart across the base of Jutland from sea to sea, with a single gate for wagons. Charlemagne's annalists noted it nervously; parts of the Danevirke still stand."
+    }
+   ],
+   "sources": "Encyclopaedia Britannica, 'Denmark: history'; E. Roesdahl, The Vikings (1987).",
+   "images": [
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Danevirke%2C%20Rampart%20XIV.jpg?width=800",
+     "caption": "Danevirke rampart",
+     "alt": "Danevirke rampart",
+     "role": "culture"
+    },
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Interior%20of%20a%20reconstructed%20Viking%20house%20in%20Hedeby%20%28Haithabu%29%2002.jpg?width=800",
+     "caption": "Reconstructed houses at Hedeby",
+     "alt": "Reconstructed houses at Hedeby",
+     "role": "art"
+    }
+   ],
+   "extentsByTick": {},
+   "stories": [
+    {
+     "title": "Godfred's Wall",
+     "text": "In 808 Godfred ordered a rampart across the base of Jutland from sea to sea, with a single gate for wagons. Charlemagne's annalists noted it nervously; parts of the Danevirke still stand."
+    }
+   ],
+   "philosophy": "Royal power over trade and coinage began at Hedeby.",
+   "artIdeas": "Ship burials; Borre and Jelling-style animal ornament.\n\nRoyal power over trade and coinage began at Hedeby."
+  },
+  {
+   "id": "norway",
+   "name": "Norse kingdoms (Norway)",
+   "type": "petty kingdoms",
+   "yearsActive": "c. 500–872; Kingdom of Norway c. 872 onward",
+   "nameByTick": {
+    "800": "Northmen (Norse petty kingdoms)",
+    "900": "Kingdom of Norway"
+   },
+   "summary": "The petty kingdoms along Norway's coast, home of many Vikings, which Harald Fairhair united around 872 after the battle of Hafrsfjord.",
+   "description": "Norway's 'north way' coast was divided among chieftains and petty kings. From 793 Norwegian Vikings raided Lindisfarne, Scotland and Ireland and settled the Northern Isles, the Faroes and, from about 870, Iceland. Harald Fairhair's victory at Hafrsfjord made him king over most of the west coast, and some opponents left for Iceland.",
+   "conflicts": "Raid on Lindisfarne (793); settlement of Dublin (841); Hafrsfjord (c. 872).",
+   "leaders": "Harald Fairhair (c. 872–930).",
+   "religion": "Norse paganism; the Oseberg ship burial (834) shows elite rituals.",
+   "culture": "Farms on the coast and fjords; regional things; slaves and trade in furs and walrus ivory with the Sámi.",
+   "literature": "Ottar of Hålogaland described Norway to King Alfred (c. 890); later sagas tell of Harald.",
+   "art": "The Oseberg and Gokstad ship burials, with carved wagons and sleds.",
+   "ideas": "Settlers carried the thing to Iceland, founding the Althing in 930.",
+   "science": "Ocean-going longships and knarrs that reached Iceland and the Faroes.",
+   "story": [
+    {
+     "title": "The Vow of the Hair",
+     "text": "Saga tradition says the princess Gyda refused Harald until he ruled all of Norway, so he vowed not to cut his hair until he did. Ten years later, after Hafrsfjord, he had it cut and became Harald Fairhair."
+    }
+   ],
+   "sources": "Encyclopaedia Britannica, 'Norway: history', 'Harald I'; P. Sawyer (ed.), Oxford Illustrated History of the Vikings (1997).",
+   "images": [
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Osebergskipet%202016.jpg?width=800",
+     "caption": "Oseberg ship (buried 834), Viking Ship Museum, Oslo",
+     "alt": "Oseberg ship (buried 834), Viking Ship Museum, Oslo",
+     "role": "art"
+    },
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Sverd%20i%20fjell%20-%20panoramio%20%281%29.jpg?width=800",
+     "caption": "Sverd i fjell monument at Hafrsfjord",
+     "alt": "Sverd i fjell monument at Hafrsfjord",
+     "role": "culture"
+    }
+   ],
+   "extentsByTick": {},
+   "stories": [
+    {
+     "title": "The Vow of the Hair",
+     "text": "Saga tradition says the princess Gyda refused Harald until he ruled all of Norway, so he vowed not to cut his hair until he did. Ten years later, after Hafrsfjord, he had it cut and became Harald Fairhair."
+    }
+   ],
+   "philosophy": "Settlers carried the thing to Iceland, founding the Althing in 930.",
+   "artIdeas": "The Oseberg and Gokstad ship burials, with carved wagons and sleds.\n\nSettlers carried the thing to Iceland, founding the Althing in 930."
+  },
+  {
+   "id": "saami",
+   "name": "Sámi",
+   "type": "people",
+   "yearsActive": "ancient–present",
+   "summary": "The indigenous people of northern Fennoscandia, hunters, fishers and traders whose way of life stretched across the far north of Norway, Sweden, Finland and Russia.",
+   "description": "In the early Middle Ages the Sámi lived across a much wider area than today, hunting wild reindeer, fishing and trapping. Norse chieftains such as Ottar took tribute from them in furs, feathers and walrus hide. Large-scale reindeer herding came later.",
+   "conflicts": "Tribute taking by Norse chieftains and later by Karelians.",
+   "leaders": "Organized in siida communities rather than kingdoms.",
+   "religion": "Shamanism with the noaidi (shaman) and drum, and sacred stones (sieidi).",
+   "culture": "Siida groups moved seasonally between hunting and fishing grounds; Sámi languages are Uralic.",
+   "literature": "Ottar's account to Alfred (c. 890) and Procopius's 'Skrithiphinoi' (skiing Finns) are early mentions.",
+   "art": "Decorated drums and bone tools; joik song.",
+   "ideas": "Land was held by the siida as a group.",
+   "science": "Skis and sledges for travel; deep knowledge of reindeer and Arctic conditions.",
+   "story": [
+    {
+     "title": "Ottar's Tribute",
+     "text": "Ottar told King Alfred that each Sámi paid him by rank: marten skins, reindeer hides, bird feathers, whale bone and ship ropes made from walrus and seal hide."
+    }
+   ],
+   "sources": "Encyclopaedia Britannica, 'Sami'; N. Kent, The Sámi Peoples of the North (2014).",
+   "images": [
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Sami%20shamanic%20drum.JPG?width=800",
+     "caption": "Sámi drum",
+     "alt": "Sámi drum",
+     "role": "culture"
+    },
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Saami%20Family%201900.jpg?width=800",
+     "caption": "Sámi family in northern Scandinavia",
+     "alt": "Sámi family in northern Scandinavia",
+     "role": "art"
+    }
+   ],
+   "extentsByTick": {},
+   "stories": [
+    {
+     "title": "Ottar's Tribute",
+     "text": "Ottar told King Alfred that each Sámi paid him by rank: marten skins, reindeer hides, bird feathers, whale bone and ship ropes made from walrus and seal hide."
+    }
+   ],
+   "philosophy": "Land was held by the siida as a group.",
+   "artIdeas": "Decorated drums and bone tools; joik song.\n\nLand was held by the siida as a group."
+  },
+  {
+   "id": "finno-ugric",
+   "name": "Finno-Ugric peoples",
+   "type": "peoples",
+   "yearsActive": "ancient–present",
+   "summary": "Uralic-speaking peoples of the northern forests—Finns, Karelians, Ests, Veps, Mari, Mordvins, Permians and others—who traded furs with Vikings, Bulgars and Arabs.",
+   "description": "Across the taiga from the Baltic to the Urals lived farming and hunting peoples speaking Uralic languages. Finns and Ests had hill-forts and traded with Scandinavia; Veps and Chuds met the Rus on the routes to Novgorod; Mari, Mordvins and Permians supplied furs to Volga Bulgar markets.",
+   "conflicts": "Raids and tribute exchanges with Vikings and Rus; Chuds took part in calling the Rus to Novgorod (862) according to the Primary Chronicle.",
+   "leaders": "Tribal elders and chieftains; no states in this period.",
+   "religion": "Animist and shamanic beliefs with sacred groves; the Mari kept theirs into modern times.",
+   "culture": "Slash-and-burn farming, hunting and fishing; hill-forts in Finland and Estonia.",
+   "literature": "Oral epic traditions later collected as the Kalevala.",
+   "art": "Permian animal-style bronzes; Finnish and Estonian jewellery.",
+   "ideas": "Their languages, Finnish, Estonian, Hungarian among them, form the Uralic family.",
+   "science": "Bog iron smelting and expert forest crafts.",
+   "story": [
+    {
+     "title": "The Calling of the Rus",
+     "text": "The Primary Chronicle claims that Slavs and Chuds, tired of quarrels, invited Rurik's Varangians: 'Our land is great and rich, but there is no order in it; come and rule over us.'"
+    }
+   ],
+   "sources": "Encyclopaedia Britannica, 'Finno-Ugric peoples'; Russian Primary Chronicle.",
+   "images": [
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Permian%20Animal%20Style%20-%20Horsemen.jpg?width=800",
+     "caption": "Permian animal-style bronze",
+     "alt": "Permian animal-style bronze",
+     "role": "art"
+    },
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Akseli%20Gallen-Kallela%20Suur-Kalevala%20ote%20Runon%20I%20kuvitusluonnoksesta%201920.jpg?width=800",
+     "caption": "Akseli Gallen-Kallela's painting of Kalevala, the Finnish epic",
+     "alt": "Akseli Gallen-Kallela's painting of Kalevala, the Finnish epic",
+     "role": "culture"
+    }
+   ],
+   "extentsByTick": {},
+   "stories": [
+    {
+     "title": "The Calling of the Rus",
+     "text": "The Primary Chronicle claims that Slavs and Chuds, tired of quarrels, invited Rurik's Varangians: 'Our land is great and rich, but there is no order in it; come and rule over us.'"
+    }
+   ],
+   "philosophy": "Their languages, Finnish, Estonian, Hungarian among them, form the Uralic family.",
+   "artIdeas": "Permian animal-style bronzes; Finnish and Estonian jewellery.\n\nTheir languages, Finnish, Estonian, Hungarian among them, form the Uralic family."
+  },
+  {
+   "id": "avars",
+   "name": "Avar Khaganate",
+   "type": "khaganate",
+   "yearsActive": "567–c. 822",
+   "summary": "A nomadic khaganate from the Eurasian steppe that ruled the Carpathian Basin for two and a half centuries, besieged Constantinople in 626 and fell to Charlemagne in the 790s.",
+   "description": "The Avars arrived on the Danube in the 560s and with the Lombards destroyed the Gepids in 567, then took the Carpathian Basin. They extorted tribute from Byzantium, led Slavs into the Balkans and besieged Constantinople with the Persians in 626. Charlemagne's armies and the Bulgars broke them in 791–803, carrying off their treasure, the Ring.",
+   "conflicts": "Destruction of the Gepids (567); siege of Constantinople (626); Charlemagne's Avar wars (791–796).",
+   "leaders": "Bayan I (562–c. 602).",
+   "religion": "Steppe Tengrism; some converted to Christianity after Frankish conquest.",
+   "culture": "A horse-riding elite ruled Slavs and others; they brought the stirrup to Europe.",
+   "literature": "Byzantine and Frankish sources only.",
+   "art": "Gilded bronze belt fittings with griffins and tendrils.",
+   "ideas": "Their rule over Slavic subjects helped spread Slavs through central Europe and the Balkans.",
+   "science": "The iron stirrup, which they introduced to Europe.",
+   "story": [
+    {
+     "title": "The Treasure of the Ring",
+     "text": "In 796 Frankish troops broke into the Avars' circular fortified camp, the Ring, and found so much gold that Einhard wrote the Franks, once poor, became rich from it overnight."
+    }
+   ],
+   "sources": "Encyclopaedia Britannica, 'Avar'; W. Pohl, The Avars (2018).",
+   "images": [
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/020210529%20125733%20Avar%20belt%20fitting%20with%20representation%20of%20griffin%20of%20the%208th-century%2C%20Chorula.jpg?width=800",
+     "caption": "Avar belt fittings",
+     "alt": "Avar belt fittings",
+     "role": "art"
+    },
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Avars%20hungary%207-8th%20cAD%20iron%20stirrups%20IMG%201186.JPG?width=800",
+     "caption": "Avar stirrups",
+     "alt": "Avar stirrups",
+     "role": "culture"
+    }
+   ],
+   "extentsByTick": {},
+   "stories": [
+    {
+     "title": "The Treasure of the Ring",
+     "text": "In 796 Frankish troops broke into the Avars' circular fortified camp, the Ring, and found so much gold that Einhard wrote the Franks, once poor, became rich from it overnight."
+    }
+   ],
+   "philosophy": "Their rule over Slavic subjects helped spread Slavs through central Europe and the Balkans.",
+   "artIdeas": "Gilded bronze belt fittings with griffins and tendrils.\n\nTheir rule over Slavic subjects helped spread Slavs through central Europe and the Balkans."
+  },
+  {
+   "id": "khazars",
+   "name": "Khazar Khaganate",
+   "type": "khaganate",
+   "yearsActive": "c. 650–969",
+   "summary": "A Turkic khaganate on the lower Volga and North Caucasus that blocked Arab expansion north, controlled steppe trade, and whose ruling elite adopted Judaism.",
+   "description": "Emerging from the Western Turkic Khaganate, the Khazars ruled from Itil on the Volga delta over Bulgars, Alans, Magyars and Slavs. They fought the Arabs in two long wars in the Caucasus and allied with Byzantium. Around 800 the khagan and nobles adopted Judaism. Sviatoslav of Kyiv destroyed the state in 965–969.",
+   "conflicts": "Arab-Khazar wars (642–652, 722–737); Rus attacks culminating in 965–969.",
+   "leaders": "Khagan Bulan, who converted (c. 740–800 by different accounts); Joseph (mid-10th century).",
+   "religion": "Judaism among the elite, with Christians, Muslims and pagans as subjects, judged by their own courts.",
+   "culture": "Dual kingship of a sacred khagan and a military bek; capital Itil with markets and customs posts.",
+   "literature": "The Khazar Correspondence (10th century) between Hasdai ibn Shaprut of Córdoba and King Joseph.",
+   "art": "Saltovo-Mayaki culture fortresses and ceramics.",
+   "ideas": "Religious tolerance under a multi-faith legal system.",
+   "science": "Brick fortress at Sarkel built by Byzantine engineers (c. 840).",
+   "story": [
+    {
+     "title": "A Letter from Córdoba",
+     "text": "A Jewish minister of the caliph of Córdoba heard of a Jewish kingdom in the east and wrote to its king. Joseph's reply described his realm and its conversion, a letter preserved for a thousand years."
+    }
+   ],
+   "sources": "Encyclopaedia Britannica, 'Khazar'; P. Golden et al. (eds.), The World of the Khazars (2007).",
+   "images": [
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Sarkel.jpg?width=800",
+     "caption": "Sarkel fortress plan / excavation",
+     "alt": "Sarkel fortress plan / excavation",
+     "role": "culture"
+    },
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Khazars%20820.png?width=800",
+     "caption": "Map of the Khazar Khaganate around 820",
+     "alt": "Map of the Khazar Khaganate around 820",
+     "role": "culture"
+    }
+   ],
+   "extentsByTick": {},
+   "stories": [
+    {
+     "title": "A Letter from Córdoba",
+     "text": "A Jewish minister of the caliph of Córdoba heard of a Jewish kingdom in the east and wrote to its king. Joseph's reply described his realm and its conversion, a letter preserved for a thousand years."
+    }
+   ],
+   "philosophy": "Religious tolerance under a multi-faith legal system.",
+   "artIdeas": "Saltovo-Mayaki culture fortresses and ceramics.\n\nReligious tolerance under a multi-faith legal system."
+  },
+  {
+   "id": "bulgaria",
+   "name": "Bulgar Khanate (First Bulgarian Empire)",
+   "type": "khanate",
+   "yearsActive": "681–1018",
+   "summary": "The state founded by Asparukh's Bulgars south of the Danube in 681, which became a Slavic-speaking Christian empire rivalling Byzantium.",
+   "description": "Fleeing the Khazars, Bulgar Khan Asparukh crossed the Danube and defeated Byzantium in 680–681. From Pliska the khans ruled Slavs and Bulgars. Krum killed Emperor Nikephoros I (811), Boris I converted (864), and Simeon I (893–927) made the Slavonic alphabet and Preslav school the heart of Orthodox Slavic culture.",
+   "conflicts": "Battle of Ongal (680); Krum's victory at Pliska (811); Simeon's wars with Byzantium.",
+   "leaders": "Asparukh (681–700); Tervel (700–721), who helped break the Arab siege of Constantinople; Krum (803–814); Boris I (852–889); Simeon I (893–927).",
+   "religion": "Tengrism, then Orthodox Christianity from 864.",
+   "culture": "A Turkic Bulgar elite merged with the Slavic majority; Old Church Slavonic became the literary language.",
+   "literature": "The Preslav and Ohrid schools developed the Cyrillic script; Clement and Naum translated scripture.",
+   "art": "The Madara Rider rock relief (8th century); the Golden Church at Preslav.",
+   "ideas": "Christianity in a Slavic tongue rather than Greek or Latin.",
+   "science": "Preslav ceramics workshops.",
+   "story": [
+    {
+     "title": "Krum's Cup",
+     "text": "After killing Emperor Nikephoros in 811, Krum had the emperor's skull lined with silver and used it as a drinking cup for his nobles."
+    }
+   ],
+   "sources": "Encyclopaedia Britannica, 'Bulgaria: history'; J. V. A. Fine, The Early Medieval Balkans (1983).",
+   "images": [
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Madara-rider-Svik.jpg?width=800",
+     "caption": "Madara Rider relief (8th century)",
+     "alt": "Madara Rider relief (8th century)",
+     "role": "art"
+    },
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Old%20Basilica%20in%20Pliska%202.JPG?width=800",
+     "caption": "Ruins of Pliska, the first Bulgarian capital",
+     "alt": "Ruins of Pliska, the first Bulgarian capital",
+     "role": "culture"
+    }
+   ],
+   "extentsByTick": {},
+   "stories": [
+    {
+     "title": "Krum's Cup",
+     "text": "After killing Emperor Nikephoros in 811, Krum had the emperor's skull lined with silver and used it as a drinking cup for his nobles."
+    }
+   ],
+   "philosophy": "Christianity in a Slavic tongue rather than Greek or Latin.",
+   "artIdeas": "The Madara Rider rock relief (8th century); the Golden Church at Preslav.\n\nChristianity in a Slavic tongue rather than Greek or Latin."
+  },
+  {
+   "id": "volga-bulgars",
+   "name": "Volga Bulgars",
+   "type": "khanate",
+   "yearsActive": "c. 750–1240",
+   "summary": "A Bulgar state at the junction of the Volga and Kama rivers that controlled the fur trade between the northern forests and the Islamic world, and converted to Islam in 922.",
+   "description": "Bulgars who moved north after the break-up of Old Great Bulgaria settled on the middle Volga under Khazar overlordship. Their towns Bolghar and Suvar became markets where Rus and Finnic hunters sold furs, slaves and honey for Arab silver.",
+   "conflicts": "Subjection to the Khazars until the 10th century.",
+   "leaders": "Almış (fl. 922), who asked the caliph for Islamic teachers.",
+   "religion": "Tengrism until the conversion to Islam in 922.",
+   "culture": "Trading towns and farming; Bulgar language survives as modern Chuvash.",
+   "literature": "Ibn Fadlan's account of his embassy (921–922).",
+   "art": "Metalwork; later mosques at Bolghar.",
+   "ideas": "The northernmost Muslim state of its time.",
+   "science": "Ibn Fadlan describes the aurora and the short summer nights.",
+   "story": [
+    {
+     "title": "Ibn Fadlan on the Volga",
+     "text": "Ibn Fadlan, sent by the Abbasid caliph in 921, watched a Rus chieftain's ship burial on the Volga and wrote down every detail, one of the few eyewitness accounts of Viking funerals."
+    }
+   ],
+   "sources": "Encyclopaedia Britannica, 'Bulgar'; Ibn Fadlan, Mission to the Volga.",
+   "images": [
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/20220624%20Bolghar%2069.jpg?width=800",
+     "caption": "Ruins of Bolghar on the Volga",
+     "alt": "Ruins of Bolghar on the Volga",
+     "role": "culture"
+    },
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Ibn%20fadlan%20Travel%2C%20Bagdad%20to%20Boukhara.jpg?width=800",
+     "caption": "Ibn Fadlan's journey",
+     "alt": "Ibn Fadlan's journey",
+     "role": "art"
+    }
+   ],
+   "extentsByTick": {},
+   "stories": [
+    {
+     "title": "Ibn Fadlan on the Volga",
+     "text": "Ibn Fadlan, sent by the Abbasid caliph in 921, watched a Rus chieftain's ship burial on the Volga and wrote down every detail, one of the few eyewitness accounts of Viking funerals."
+    }
+   ],
+   "philosophy": "The northernmost Muslim state of its time.",
+   "artIdeas": "Metalwork; later mosques at Bolghar.\n\nThe northernmost Muslim state of its time."
+  },
+  {
+   "id": "lombards",
+   "name": "Lombard Kingdom and duchies",
+   "type": "kingdom",
+   "yearsActive": "568–774 (southern duchies to 1077)",
+   "summary": "A Germanic people who invaded Italy in 568, ruling from Pavia until Charlemagne conquered the kingdom in 774, while the duchy of Benevento stayed independent in the south.",
+   "description": "Led by Alboin, the Lombards crossed the Alps in 568 and took most of Italy from the exhausted Byzantines. Their kingdom centred on Pavia, with semi-independent duchies at Spoleto and Benevento. King Rothari issued a law code (643), and Liutprand expanded at Byzantine and papal expense. Pope Stephen II called the Franks, and Charlemagne took the Iron Crown in 774.",
+   "conflicts": "Invasion of 568; wars with Byzantium and the papacy; Frankish conquest (774).",
+   "leaders": "Alboin (560–572); Agilulf and Queen Theodelinda (c. 590–616); Rothari (636–652); Liutprand (712–744); Desiderius (756–774); Arechis II of Benevento (758–787).",
+   "religion": "Arian and pagan at first, Catholic by the late 7th century through Theodelinda's influence.",
+   "culture": "Their name survives in Lombardy; Lombard law mixed Germanic custom and Roman practice.",
+   "literature": "Paul the Deacon's History of the Lombards (c. 790); Edictum Rothari (643).",
+   "art": "The Tempietto Longobardo at Cividale; the Iron Crown of Lombardy at Monza.",
+   "ideas": "The Lombard notaries of Pavia kept written law alive, leading later to the law school of Bologna.",
+   "science": "Paul the Deacon passed on classical learning at Charlemagne's court.",
+   "story": [
+    {
+     "title": "Rosamund's Revenge",
+     "text": "Paul the Deacon says Alboin made his wife Rosamund drink from a cup made of her father's skull. She had him murdered in his bed in 572."
+    }
+   ],
+   "sources": "Encyclopaedia Britannica, 'Lombard'; C. Wickham, Early Medieval Italy (1981).",
+   "images": [
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Cividale%200904%20Tempietto%20Longobardo%20interior%202.jpg?width=800",
+     "caption": "Tempietto Longobardo, Cividale del Friuli (8th century)",
+     "alt": "Tempietto Longobardo, Cividale del Friuli (8th century)",
+     "role": "art"
+    },
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Corona%20ferrea%2C%20Monza%2C%20Tesoro%20del%20Duomo.jpg?width=800",
+     "caption": "Iron Crown of Lombardy, Monza",
+     "alt": "Iron Crown of Lombardy, Monza",
+     "role": "culture"
+    }
+   ],
+   "extentsByTick": {},
+   "stories": [
+    {
+     "title": "Rosamund's Revenge",
+     "text": "Paul the Deacon says Alboin made his wife Rosamund drink from a cup made of her father's skull. She had him murdered in his bed in 572."
+    }
+   ],
+   "philosophy": "The Lombard notaries of Pavia kept written law alive, leading later to the law school of Bologna.",
+   "artIdeas": "The Tempietto Longobardo at Cividale; the Iron Crown of Lombardy at Monza.\n\nThe Lombard notaries of Pavia kept written law alive, leading later to the law school of Bologna."
+  },
+  {
+   "id": "slavs",
+   "name": "Slavic tribes",
+   "type": "tribal peoples",
+   "yearsActive": "c. 500–present",
+   "nameByTick": {
+    "700": "Slavic tribes (Polanes, Krivichs, Severians)"
+   },
+   "summary": "The Slavic peoples who spread from eastern Europe across the Balkans, central Europe and the Russian forests in the sixth and seventh centuries, living in tribes that later formed Poland, Bohemia, Rus and Balkan states.",
+   "description": "Byzantine writers first describe Sclaveni and Antes on the lower Danube in the sixth century. Under Avar rule and on their own, Slavs settled the Balkans, Bohemia, the Elbe region and the forests north to Lake Ilmen. Tribes such as the Polanes on the Vistula, the Krivichs and the Severians lived in fortified settlements (grods) with farming and trade.",
+   "conflicts": "Raids on Byzantium; Samo's union defeated the Franks at Wogastisburg (631).",
+   "leaders": "Samo, Frankish merchant who led a Slavic union (c. 623–658).",
+   "religion": "Slavic paganism with Perun, the thunder god; Christianized from the ninth century on.",
+   "culture": "Farming villages, timber forts, pit houses; Proto-Slavic was still a common language.",
+   "literature": "Procopius and Pseudo-Maurice's Strategikon describe early Slavs.",
+   "art": "Prague-type pottery; temple rings worn by women.",
+   "ideas": "Village assemblies (veche) took decisions among free men.",
+   "science": "Ard ploughs and crop rotation in forest clearings.",
+   "story": [
+    {
+     "title": "Samo's Answer",
+     "text": "When a Frankish envoy told Samo that Christians owed King Dagobert service as dogs owe their masters, Samo replied that if the Franks were God's servants, the Slavs were his dogs, and would bite."
+    }
+   ],
+   "sources": "Encyclopaedia Britannica, 'Slav'; F. Curta, The Making of the Slavs (2001).",
+   "images": [
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Arkona%20artistic%20reconstruction.jpg?width=800",
+     "caption": "Reconstructed Slavic fortified settlement (gord)",
+     "alt": "Reconstructed Slavic fortified settlement (gord)",
+     "role": "culture"
+    },
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/O98%20Idol%20von%20Sbrutsch%20mit%20Darstellung%20von%20Unterwelt%2C%20Erde%20und%20des%20Himmels%2C%20zirka%2010.%20Jh.%20n.%20Chr..JPG?width=800",
+     "caption": "Zbruch idol, a carved Slavic pagan pillar",
+     "alt": "Zbruch idol, a carved Slavic pagan pillar",
+     "role": "art"
+    }
+   ],
+   "extentsByTick": {},
+   "stories": [
+    {
+     "title": "Samo's Answer",
+     "text": "When a Frankish envoy told Samo that Christians owed King Dagobert service as dogs owe their masters, Samo replied that if the Franks were God's servants, the Slavs were his dogs, and would bite."
+    }
+   ],
+   "philosophy": "Village assemblies (veche) took decisions among free men.",
+   "artIdeas": "Prague-type pottery; temple rings worn by women.\n\nVillage assemblies (veche) took decisions among free men."
+  },
+  {
+   "id": "great-moravia",
+   "name": "Great Moravia",
+   "type": "principality",
+   "yearsActive": "833–c. 906",
+   "summary": "The first major West Slavic state, centred on the Morava river, where Cyril and Methodius created a Slavonic liturgy before Magyar invasions destroyed it around 906.",
+   "description": "Mojmír I united Moravian tribes around 833, and Rastislav asked Byzantium for Slavic-speaking missionaries. Cyril and Methodius arrived in 863 with the new Glagolitic alphabet. Svatopluk I (870–894) expanded the state into Bohemia, Pannonia and southern Poland. After his death the realm broke up under Magyar attack.",
+   "conflicts": "Wars with East Francia; Magyar invasions (c. 902–907).",
+   "leaders": "Mojmír I (833–846); Rastislav (846–870); Svatopluk I (870–894).",
+   "religion": "Christianity, with competing Frankish Latin and Byzantine Slavonic missions.",
+   "culture": "Fortified centres at Mikulčice and Staré Město with stone churches.",
+   "literature": "The Glagolitic alphabet; Slavonic translations of scripture and liturgy.",
+   "art": "Gold and silver jewellery (gombíky buttons) from Mikulčice graves.",
+   "ideas": "Liturgy in the people's language, approved by Pope Adrian II (868).",
+   "science": "Advanced ironworking and fortified towns.",
+   "story": [
+    {
+     "title": "Svatopluk's Rods",
+     "text": "Byzantine emperor Constantine VII told how the dying Svatopluk gave his three sons three rods, showing that bound together they could not be broken. They quarrelled anyway, and the Magyars took the realm."
+    }
+   ],
+   "sources": "Encyclopaedia Britannica, 'Great Moravia'; F. Curta, Eastern Europe in the Middle Ages (2019).",
+   "images": [
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Glagolitic%20alphabet%20-%20Bulgaria.png?width=800",
+     "caption": "Glagolitic alphabet created for the Moravian mission",
+     "alt": "Glagolitic alphabet created for the Moravian mission",
+     "role": "culture"
+    },
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Mikul%C4%8Dice-Valy%206.JPG?width=800",
+     "caption": "Excavated Great Moravian stronghold at Mikulčice",
+     "alt": "Excavated Great Moravian stronghold at Mikulčice",
+     "role": "art"
+    }
+   ],
+   "extentsByTick": {},
+   "stories": [
+    {
+     "title": "Svatopluk's Rods",
+     "text": "Byzantine emperor Constantine VII told how the dying Svatopluk gave his three sons three rods, showing that bound together they could not be broken. They quarrelled anyway, and the Magyars took the realm."
+    }
+   ],
+   "philosophy": "Liturgy in the people's language, approved by Pope Adrian II (868).",
+   "artIdeas": "Gold and silver jewellery (gombíky buttons) from Mikulčice graves.\n\nLiturgy in the people's language, approved by Pope Adrian II (868)."
+  },
+  {
+   "id": "balts",
+   "name": "Baltic tribes",
+   "type": "tribal peoples",
+   "yearsActive": "ancient–13th century",
+   "summary": "The Baltic-speaking Prussians, Curonians, Lithuanians and others on the south-east Baltic coast, who traded amber and stayed pagan longer than any other Europeans.",
+   "description": "Baltic tribes lived between the Vistula and the Daugava in hill-forts and farming villages. They traded amber and furs with Vikings, who founded trading posts like Truso and Grobiņa among them. The Prussians killed the missionary Adalbert of Prague in 997.",
+   "conflicts": "Viking raids on Curonia (9th century); later wars with Poles and crusaders.",
+   "leaders": "Tribal chieftains and priests.",
+   "religion": "Baltic paganism with sacred groves and thunder god Perkūnas.",
+   "culture": "Hill-forts, amber workshops; languages ancestral to Lithuanian, Latvian and Old Prussian.",
+   "literature": "Wulfstan's voyage to Truso (c. 890) describes Prussian funerals.",
+   "art": "Bronze ornaments and amber beads.",
+   "ideas": "Their languages preserve many ancient Indo-European features.",
+   "science": "Fermented mead and horse-racing funerals described by Wulfstan.",
+   "story": [
+    {
+     "title": "The Race for the Dead Man's Goods",
+     "text": "Wulfstan told King Alfred that when a rich Prussian died, his goods were laid out in heaps along a course, and horsemen raced for them, the fastest winning the largest heap."
+    }
+   ],
+   "sources": "Encyclopaedia Britannica, 'Balt'; M. Gimbutas, The Balts (1963).",
+   "images": [
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Amber2.jpg?width=800",
+     "caption": "Baltic amber",
+     "alt": "Baltic amber",
+     "role": "culture"
+    },
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Apuol%C4%97s%20piliakalnis%202016.JPG?width=800",
+     "caption": "Apuolė hill-fort in Lithuania",
+     "alt": "Apuolė hill-fort in Lithuania",
+     "role": "art"
+    }
+   ],
+   "extentsByTick": {},
+   "stories": [
+    {
+     "title": "The Race for the Dead Man's Goods",
+     "text": "Wulfstan told King Alfred that when a rich Prussian died, his goods were laid out in heaps along a course, and horsemen raced for them, the fastest winning the largest heap."
+    }
+   ],
+   "philosophy": "Their languages preserve many ancient Indo-European features.",
+   "artIdeas": "Bronze ornaments and amber beads.\n\nTheir languages preserve many ancient Indo-European features."
+  },
+  {
+   "id": "hunnic-empire",
+   "name": "Hunnic Empire",
+   "type": "empire",
+   "yearsActive": "c. 370–469",
+   "summary": "The steppe empire of the Huns, which pushed the Goths into the Roman world and under Attila raided both halves of the empire before collapsing after his death in 453.",
+   "description": "The Huns crossed the Volga around 370, broke the Alans and Goths and set off the migrations into the Roman Empire. From the Hungarian plain they ruled Goths, Gepids, Sciri and others. Attila (434–453) extorted gold from Constantinople, invaded Gaul (451) and Italy (452). After his death the subject peoples rebelled and defeated his sons at the Nedao (454).",
+   "conflicts": "Catalaunian Plains (451); invasion of Italy and sack of Aquileia (452); Nedao (454).",
+   "leaders": "Uldin (c. 400); Rua (d. 434); Attila and Bleda (434–445); Attila alone (445–453).",
+   "religion": "Steppe shamanism.",
+   "culture": "Horse archers with composite bows; elite cranial deformation; a court described by the envoy Priscus.",
+   "literature": "Priscus of Panium's account of his embassy to Attila (449).",
+   "art": "Gold diadems and cauldrons.",
+   "ideas": "A tribute empire living on Roman gold rather than on taxes.",
+   "science": "The composite reflex bow.",
+   "story": [
+    {
+     "title": "Dinner with Attila",
+     "text": "Priscus saw Attila's guests eat from silver plates while the king ate meat from a wooden one and drank from a wooden cup, dressed plainly, his sword without ornament."
+    }
+   ],
+   "sources": "Encyclopaedia Britannica, 'Hun', 'Attila'; P. Heather, The Fall of the Roman Empire (2005).",
+   "images": [
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Hunnic%20cauldron%20%282023-03-07%29%2002.jpg?width=800",
+     "caption": "Hunnic bronze cauldron",
+     "alt": "Hunnic bronze cauldron",
+     "role": "art"
+    },
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Raphael%20-%20The%20Meeting%20of%20Leo%20the%20Great%20and%20Attila.jpg?width=800",
+     "caption": "Raphael's Meeting of Leo the Great and Attila (1514)",
+     "alt": "Raphael's Meeting of Leo the Great and Attila (1514)",
+     "role": "culture"
+    }
+   ],
+   "extentsByTick": {},
+   "stories": [
+    {
+     "title": "Dinner with Attila",
+     "text": "Priscus saw Attila's guests eat from silver plates while the king ate meat from a wooden one and drank from a wooden cup, dressed plainly, his sword without ornament."
+    }
+   ],
+   "philosophy": "A tribute empire living on Roman gold rather than on taxes.",
+   "artIdeas": "Gold diadems and cauldrons.\n\nA tribute empire living on Roman gold rather than on taxes."
+  },
+  {
+   "id": "alans",
+   "name": "Alans",
+   "type": "people",
+   "yearsActive": "1st century–13th century",
+   "summary": "Iranian-speaking nomads of the North Caucasus steppe; some joined the Vandals in Africa, while others formed the Christian kingdom of Alania, ancestors of the Ossetians.",
+   "description": "Broken by the Huns around 370, part of the Alans moved west with the Vandals into Spain and Africa. Those who stayed in the North Caucasus came under Khazar rule, converted to Christianity in the tenth century and formed the kingdom of Alania.",
+   "conflicts": "Defeat by the Huns (c. 370); service with the Vandals; wars and alliance with Khazars and Byzantium.",
+   "leaders": "Goar and Respendial (early 5th century).",
+   "religion": "Iranian paganism, then Byzantine Christianity.",
+   "culture": "Horsemen; their language is the ancestor of Ossetian.",
+   "literature": "The Nart sagas of the Ossetians preserve their epic tradition.",
+   "art": "Gold and garnet jewellery in polychrome style.",
+   "ideas": "Alan cavalry traditions influenced Roman and Germanic armies.",
+   "science": "Heavy cavalry with lances.",
+   "story": [
+    {
+     "title": "Vandals and Alans",
+     "text": "The Vandal kings in Carthage called themselves 'King of the Vandals and Alans' to the end, a reminder of the Caucasus nomads who rode with them to Africa."
+    }
+   ],
+   "sources": "Encyclopaedia Britannica, 'Alani'; B. Bachrach, A History of the Alans in the West (1973).",
+   "images": [
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/%D0%A5%D1%80%D0%B0%D0%BC%20%D0%90%D1%80%D1%85%D1%8B%D0%B7%202.jpg?width=800",
+     "caption": "Northern Zelenchuk church at Arkhyz (10th century), kingdom of Alania",
+     "alt": "Northern Zelenchuk church at Arkhyz (10th century), kingdom of Alania",
+     "role": "culture"
+    },
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/%D0%94%D1%80%D0%B5%D0%B2%D0%BD%D0%B8%D0%B9%20%D0%A1%D0%B5%D0%BD%D1%82%D0%B8%D0%BD%D1%81%D0%BA%D0%B8%D0%B9%20%D1%85%D1%80%D0%B0%D0%BC.JPG?width=800",
+     "caption": "Senty church (965), kingdom of Alania",
+     "alt": "Senty church (965), kingdom of Alania",
+     "role": "art"
+    }
+   ],
+   "extentsByTick": {},
+   "stories": [
+    {
+     "title": "Vandals and Alans",
+     "text": "The Vandal kings in Carthage called themselves 'King of the Vandals and Alans' to the end, a reminder of the Caucasus nomads who rode with them to Africa."
+    }
+   ],
+   "philosophy": "Alan cavalry traditions influenced Roman and Germanic armies.",
+   "artIdeas": "Gold and garnet jewellery in polychrome style.\n\nAlan cavalry traditions influenced Roman and Germanic armies."
+  },
+  {
+   "id": "sasanian",
+   "name": "Sasanian Persia",
+   "type": "empire",
+   "yearsActive": "224–651",
+   "nameByTick": {
+    "400": "Sasanian Persia"
+   },
+   "summary": "The last pre-Islamic Persian empire, Rome's great rival in the east, which fought Byzantium to exhaustion before falling to the Arabs.",
+   "description": "From Ctesiphon the Sasanian shahs ruled from Mesopotamia to Central Asia. Khosrow I (531–579) reformed taxes and welcomed philosophers exiled from Athens. Khosrow II conquered Syria, Egypt and Jerusalem (602–619) but was defeated by Heraclius. Weakened, the empire fell to the Arabs at al-Qadisiyya (636) and Nahavand (642).",
+   "conflicts": "Roman-Persian wars (502–628); al-Qadisiyya (636); Nahavand (642).",
+   "leaders": "Yazdegerd I (399–420); Khosrow I Anushirvan (531–579); Khosrow II (590–628); Yazdegerd III (632–651).",
+   "religion": "Zoroastrianism as state religion, with large Christian, Jewish and Manichaean communities.",
+   "culture": "Middle Persian court culture, polo and chess; the Academy of Gondishapur.",
+   "literature": "Translation of the Panchatantra; Middle Persian wisdom literature.",
+   "art": "Taq Kasra at Ctesiphon; rock reliefs at Taq-e Bostan; silver plates of royal hunts.",
+   "ideas": "Theory of the 'circle of justice' linking king, army, taxes and farmers.",
+   "science": "Gondishapur's medicine and astronomy passed to the Abbasids.",
+   "story": [
+    {
+     "title": "Chess Comes to Persia",
+     "text": "The Shahnameh says an Indian king sent Khosrow I a chess set as a challenge. His vizier worked out the rules and replied with a new game, backgammon."
+    }
+   ],
+   "sources": "Encyclopaedia Britannica, 'Sasanian dynasty'; T. Daryaee, Sasanian Persia (2009).",
+   "images": [
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/001125-TaqKasra-Iraq-IMG%207914-2.jpg?width=800",
+     "caption": "Taq Kasra, the arch of Ctesiphon",
+     "alt": "Taq Kasra, the arch of Ctesiphon",
+     "role": "art"
+    },
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Taq-e%20Bostan%20-%20main%20view.jpg?width=800",
+     "caption": "Rock reliefs at Taq-e Bostan",
+     "alt": "Rock reliefs at Taq-e Bostan",
+     "role": "culture"
+    }
+   ],
+   "extentsByTick": {},
+   "stories": [
+    {
+     "title": "Chess Comes to Persia",
+     "text": "The Shahnameh says an Indian king sent Khosrow I a chess set as a challenge. His vizier worked out the rules and replied with a new game, backgammon."
+    }
+   ],
+   "philosophy": "Theory of the 'circle of justice' linking king, army, taxes and farmers.",
+   "artIdeas": "Taq Kasra at Ctesiphon; rock reliefs at Taq-e Bostan; silver plates of royal hunts.\n\nTheory of the 'circle of justice' linking king, army, taxes and farmers."
+  },
+  {
+   "id": "umayyad",
+   "name": "Umayyad Caliphate",
+   "type": "caliphate",
+   "yearsActive": "661–750",
+   "summary": "The first hereditary Islamic dynasty, ruling from Damascus an empire from Spain to Central Asia until the Abbasid revolution of 750.",
+   "description": "Muawiya founded the dynasty in 661 after the first civil war. Umayyad armies took North Africa, crossed into Spain in 711 and reached the Indus. Abd al-Malik made Arabic the language of government and built the Dome of the Rock (691). Defeats at Constantinople (718) and Poitiers (732), Berber revolts and civil wars led to their fall in 750.",
+   "conflicts": "Siege of Constantinople (717–718); conquest of Hispania (711); Berber revolt (740); Abbasid revolution (747–750).",
+   "leaders": "Muawiya I (661–680); Abd al-Malik (685–705); al-Walid I (705–715); Hisham (724–743).",
+   "religion": "Sunni Islam, with Christians and Jews as protected peoples (dhimmis) paying the jizya.",
+   "culture": "Arab military elite in garrison cities; Arabic coinage; desert palaces.",
+   "literature": "Arabic poetry and early hadith collection.",
+   "art": "Dome of the Rock (691); Great Mosque of Damascus (715).",
+   "ideas": "The caliph as successor of the Prophet, leading the community of believers.",
+   "science": "Translation movement begins; Arabic replaces Greek in administration.",
+   "story": [
+    {
+     "title": "Coins Without Images",
+     "text": "Around 697 Abd al-Malik replaced coins showing emperors and rulers with coins bearing only Arabic text from the Quran—a statement of the new empire's faith."
+    }
+   ],
+   "sources": "Encyclopaedia Britannica, 'Umayyad dynasty'; H. Kennedy, The Prophet and the Age of the Caliphates (2004).",
+   "images": [
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Jerusalem-2013-Temple%20Mount-Dome%20of%20the%20Rock%20%26%20Chain%2002.jpg?width=800",
+     "caption": "Dome of the Rock, Jerusalem (691)",
+     "alt": "Dome of the Rock, Jerusalem (691)",
+     "role": "art"
+    },
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Umayyad%20Mosque%2C%20Damascus.jpg?width=800",
+     "caption": "Great Mosque of Damascus (715)",
+     "alt": "Great Mosque of Damascus (715)",
+     "role": "culture"
+    }
+   ],
+   "extentsByTick": {},
+   "stories": [
+    {
+     "title": "Coins Without Images",
+     "text": "Around 697 Abd al-Malik replaced coins showing emperors and rulers with coins bearing only Arabic text from the Quran—a statement of the new empire's faith."
+    }
+   ],
+   "philosophy": "The caliph as successor of the Prophet, leading the community of believers.",
+   "artIdeas": "Dome of the Rock (691); Great Mosque of Damascus (715).\n\nThe caliph as successor of the Prophet, leading the community of believers."
+  },
+  {
+   "id": "abbasid",
+   "name": "Abbasid Caliphate",
+   "type": "caliphate",
+   "yearsActive": "750–1258",
+   "summary": "The caliphate that overthrew the Umayyads in 750 and ruled from Baghdad, presiding over a golden age of learning even as its eastern provinces broke away to dynasties such as the Samanids and Saffarids.",
+   "description": "The Abbasids founded Baghdad in 762 and ruled with Persian bureaucrats. Harun al-Rashid exchanged embassies with Charlemagne. Al-Mamun's House of Wisdom translated Greek science into Arabic. By 900 Iran and Khurasan were held by Saffarid and Samanid rulers who accepted the caliph only in name.",
+   "conflicts": "Wars with Byzantium; civil war of al-Amin and al-Mamun (811–813); rise of autonomous dynasties.",
+   "leaders": "al-Mansur (754–775); Harun al-Rashid (786–809); al-Mamun (813–833).",
+   "religion": "Sunni Islam; the Mihna (833–848) tried to impose the doctrine of the created Quran.",
+   "culture": "Baghdad as a world city; paper making learned from China.",
+   "literature": "Thousand and One Nights set at Harun's court; al-Jahiz's essays.",
+   "art": "Samarra's spiral minaret (848–852).",
+   "ideas": "Mutazilite rational theology; al-Kindi's philosophy.",
+   "science": "Al-Khwarizmi's algebra (c. 820); Hindu-Arabic numerals.",
+   "story": [
+    {
+     "title": "An Elephant for Charlemagne",
+     "text": "Harun al-Rashid sent Charlemagne an elephant named Abul-Abbas, which reached Aachen in 802 and lived until 810."
+    }
+   ],
+   "sources": "Encyclopaedia Britannica, 'Abbasid caliphate'; H. Kennedy, When Baghdad Ruled the Muslim World (2004).",
+   "images": [
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Samarra-spiral-Minaret-of-the-great-mosque-80f-1971.jpg?width=800",
+     "caption": "Spiral minaret of the Great Mosque of Samarra",
+     "alt": "Spiral minaret of the Great Mosque of Samarra",
+     "role": "art"
+    },
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Bodleian%20MS.%20Huntington%20214%20roll332%20frame36.jpg?width=800",
+     "caption": "Page of al-Khwarizmi's algebra",
+     "alt": "Page of al-Khwarizmi's algebra",
+     "role": "culture"
+    }
+   ],
+   "extentsByTick": {},
+   "stories": [
+    {
+     "title": "An Elephant for Charlemagne",
+     "text": "Harun al-Rashid sent Charlemagne an elephant named Abul-Abbas, which reached Aachen in 802 and lived until 810."
+    }
+   ],
+   "philosophy": "Mutazilite rational theology; al-Kindi's philosophy.",
+   "artIdeas": "Samarra's spiral minaret (848–852).\n\nMutazilite rational theology; al-Kindi's philosophy."
+  },
+  {
+   "id": "cordoba",
+   "name": "Emirate of Córdoba",
+   "type": "emirate",
+   "yearsActive": "756–929",
+   "summary": "The independent Umayyad emirate of al-Andalus, founded by the refugee prince Abd al-Rahman I, which made Córdoba one of the greatest cities in Europe.",
+   "description": "Abd al-Rahman I escaped the Abbasid massacre of his family and seized Córdoba in 756. His successors ruled most of Iberia, building the Great Mosque and an Arabic-speaking culture that drew in Christians (Mozarabs) and Jews. Revolts by converts (muwalladun) such as Umar ibn Hafsun tested the emirate until Abd al-Rahman III declared a caliphate (929).",
+   "conflicts": "Frankish attack on Zaragoza (778); revolts of Toledo and Ibn Hafsun; Viking raid on Seville (844).",
+   "leaders": "Abd al-Rahman I (756–788); Abd al-Rahman II (822–852); Abd Allah (888–912).",
+   "religion": "Maliki Sunni Islam with Christian and Jewish communities; the Córdoba martyrs (850s).",
+   "culture": "Irrigation, new crops, Arabic poetry; the musician Ziryab brought Baghdad fashions.",
+   "literature": "Arabic poetry; Eulogius's Christian martyr accounts.",
+   "art": "Great Mosque of Córdoba (begun 785) with double arches.",
+   "ideas": "Andalusian convivencia of faiths, with tensions.",
+   "science": "Abbas ibn Firnas tried a glider flight (c. 875).",
+   "story": [
+    {
+     "title": "The Flying Poet",
+     "text": "Abbas ibn Firnas, a Córdoban scholar, is said to have strapped on wings of feathers and jumped from a hill. He glided some distance but crashed and hurt his back, saying he had forgotten to make a tail."
+    }
+   ],
+   "sources": "Encyclopaedia Britannica, 'Umayyad dynasty: Spain'; H. Kennedy, Muslim Spain and Portugal (1996).",
+   "images": [
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Arches%20-%20C%C3%B3rdoba%20Spain%20-%20Mezquita%20de%20C%C3%B3rdoba%20-%20Cathedral%20of%20Our%20Lady%20of%20the%20Assumption%20%2818281666751%29.jpg?width=800",
+     "caption": "Prayer hall of the Great Mosque of Córdoba",
+     "alt": "Prayer hall of the Great Mosque of Córdoba",
+     "role": "art"
+    },
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Abd%20ar-Rahman%20I.jpg?width=800",
+     "caption": "Statue of Abd al-Rahman I, Almuñécar",
+     "alt": "Statue of Abd al-Rahman I, Almuñécar",
+     "role": "culture"
+    }
+   ],
+   "extentsByTick": {},
+   "stories": [
+    {
+     "title": "The Flying Poet",
+     "text": "Abbas ibn Firnas, a Córdoban scholar, is said to have strapped on wings of feathers and jumped from a hill. He glided some distance but crashed and hurt his back, saying he had forgotten to make a tail."
+    }
+   ],
+   "philosophy": "Andalusian convivencia of faiths, with tensions.",
+   "artIdeas": "Great Mosque of Córdoba (begun 785) with double arches.\n\nAndalusian convivencia of faiths, with tensions."
+  },
+  {
+   "id": "aghlabids",
+   "name": "Aghlabid Emirate",
+   "type": "emirate",
+   "yearsActive": "800–909",
+   "summary": "A dynasty ruling Ifriqiya (Tunisia) for the Abbasids from Kairouan, which conquered Sicily from Byzantium from 827.",
+   "description": "Harun al-Rashid made Ibrahim ibn al-Aghlab hereditary governor in 800. The Aghlabids built mosques and reservoirs, and their fleets invaded Sicily (827), took Palermo (831) and raided Italy, sacking St Peter's in Rome (846). The Fatimids overthrew them in 909.",
+   "conflicts": "Conquest of Sicily (827–902); raids on Italy.",
+   "leaders": "Ibrahim I (800–812); Ziyadat Allah I (817–838); Ibrahim II (875–902).",
+   "religion": "Sunni Islam; Kairouan as a centre of Maliki law.",
+   "culture": "Arab elite over Berbers and Latin Christians.",
+   "literature": "Sahnun's Mudawwana of Maliki law.",
+   "art": "Great Mosque of Kairouan (836); Aghlabid basins.",
+   "ideas": "Spread of Maliki legal thought across the Maghreb and Sicily.",
+   "science": "Hydraulic works such as the Aghlabid basins of Kairouan.",
+   "story": [
+    {
+     "title": "St Peter's Plundered",
+     "text": "In 846 an Arab fleet sailed up the Tiber and stripped St Peter's basilica, then outside Rome's walls. Pope Leo IV built the Leonine Wall to enclose it."
+    }
+   ],
+   "sources": "Encyclopaedia Britannica, 'Aghlabid dynasty'; M. Talbi, L'émirat aghlabide (1966).",
+   "images": [
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Great%20Mosque%20of%20Kairouan%20mihrab%20view.jpg?width=800",
+     "caption": "Great Mosque of Kairouan (836)",
+     "alt": "Great Mosque of Kairouan (836)",
+     "role": "art"
+    },
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Aghlabid%20cistern.jpg?width=800",
+     "caption": "Aghlabid reservoirs at Kairouan",
+     "alt": "Aghlabid reservoirs at Kairouan",
+     "role": "culture"
+    }
+   ],
+   "extentsByTick": {},
+   "stories": [
+    {
+     "title": "St Peter's Plundered",
+     "text": "In 846 an Arab fleet sailed up the Tiber and stripped St Peter's basilica, then outside Rome's walls. Pope Leo IV built the Leonine Wall to enclose it."
+    }
+   ],
+   "philosophy": "Spread of Maliki legal thought across the Maghreb and Sicily.",
+   "artIdeas": "Great Mosque of Kairouan (836); Aghlabid basins.\n\nSpread of Maliki legal thought across the Maghreb and Sicily."
+  },
+  {
+   "id": "gokturks",
+   "name": "Western Turkic Khaganate",
+   "type": "khaganate",
+   "yearsActive": "c. 581–742",
+   "summary": "The western wing of the Göktürk empire, ruling the steppes from the Altai to the Caspian, allied with Byzantium against Persia.",
+   "description": "The Göktürks overthrew the Rouran in 552 and built a steppe empire that split in two. The Western khaganate controlled the Silk Road and sent embassies to Constantinople. Tang China defeated it in the 650s; the Khazars rose from its western remnants.",
+   "conflicts": "Alliance with Heraclius against Persia (627); Tang conquest (657).",
+   "leaders": "Istämi (552–576); Tong Yabghu (618–628).",
+   "religion": "Tengrism; Buddhist and Manichaean influence.",
+   "culture": "Steppe confederation of tribes under the Ashina clan.",
+   "literature": "The Orkhon inscriptions of the Eastern khaganate are the oldest Turkic texts.",
+   "art": "Stone balbal grave statues.",
+   "ideas": "Heavenly mandate of the khagan.",
+   "science": "Iron working; the Old Turkic runic script.",
+   "story": [
+    {
+     "title": "Silk Diplomacy",
+     "text": "In 568 a Sogdian envoy of the Turks reached Constantinople offering silk without Persian middlemen. Justin II sent an embassy back to the khagan in the Altai."
+    }
+   ],
+   "sources": "Encyclopaedia Britannica, 'Turkic peoples'; P. Golden, An Introduction to the History of the Turkic Peoples (1992).",
+   "images": [
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/BalBal%20monuments%20to%20a%20Turkic%20warrior%2001.jpg?width=800",
+     "caption": "Turkic stone balbal",
+     "alt": "Turkic stone balbal",
+     "role": "art"
+    },
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Kyzyl%20orkhon%20inscription.jpg?width=800",
+     "caption": "Orkhon inscriptions",
+     "alt": "Orkhon inscriptions",
+     "role": "culture"
+    }
+   ],
+   "extentsByTick": {},
+   "stories": [
+    {
+     "title": "Silk Diplomacy",
+     "text": "In 568 a Sogdian envoy of the Turks reached Constantinople offering silk without Persian middlemen. Justin II sent an embassy back to the khagan in the Altai."
+    }
+   ],
+   "philosophy": "Heavenly mandate of the khagan.",
+   "artIdeas": "Stone balbal grave statues.\n\nHeavenly mandate of the khagan."
+  },
+  {
+   "id": "caucasus",
+   "name": "Caucasian kingdoms (Georgia, Armenia, Arran)",
+   "type": "kingdoms",
+   "yearsActive": "ancient–9th century",
+   "summary": "The Christian kingdoms and principalities of Iberia (Georgia), Armenia and Caucasian Albania, caught between Rome, Persia, the Arabs and the Khazars.",
+   "description": "Armenia and Iberia had adopted Christianity in the fourth century. In the early Middle Ages they were divided between Byzantium and Persia, then ruled by Arab governors. By the late ninth century the Bagratids restored kingdoms in Armenia (885) and Georgia.",
+   "conflicts": "Battle of Avarayr (451) against Persia; Arab conquests (640s); Khazar raids.",
+   "leaders": "Vardan Mamikonian (d. 451); Vakhtang Gorgasali of Iberia (5th century); Ashot I of Armenia (885–890).",
+   "religion": "Armenian Apostolic, Georgian Orthodox and Albanian churches.",
+   "culture": "Armenian and Georgian scripts; nakharar noble houses.",
+   "literature": "Movses Khorenatsi's History of Armenia; Georgian hagiography.",
+   "art": "Jvari monastery (c. 600); Zvartnots cathedral (643–652).",
+   "ideas": "National churches bound language and faith.",
+   "science": "Anania Shirakatsi's mathematics and cosmography (7th century).",
+   "story": [
+    {
+     "title": "Avarayr",
+     "text": "In 451 Vardan Mamikonian led Armenians against a Persian army sent to impose Zoroastrianism. He died and the battle was lost, but Persia later allowed Armenians to keep their faith."
+    }
+   ],
+   "sources": "Encyclopaedia Britannica, 'Armenia: history', 'Georgia: history'.",
+   "images": [
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Georgia%20Jvari%20monastery%20IMG%209345%202070.jpg?width=800",
+     "caption": "Jvari monastery, Georgia (c. 600)",
+     "alt": "Jvari monastery, Georgia (c. 600)",
+     "role": "art"
+    },
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Zvartnots%20Cathedral%202018-09-28.jpg?width=800",
+     "caption": "Ruins of Zvartnots cathedral, Armenia",
+     "alt": "Ruins of Zvartnots cathedral, Armenia",
+     "role": "culture"
+    }
+   ],
+   "extentsByTick": {},
+   "stories": [
+    {
+     "title": "Avarayr",
+     "text": "In 451 Vardan Mamikonian led Armenians against a Persian army sent to impose Zoroastrianism. He died and the battle was lost, but Persia later allowed Armenians to keep their faith."
+    }
+   ],
+   "philosophy": "National churches bound language and faith.",
+   "artIdeas": "Jvari monastery (c. 600); Zvartnots cathedral (643–652).\n\nNational churches bound language and faith."
+  },
+  {
+   "id": "magyars",
+   "name": "Magyars",
+   "type": "tribal confederation",
+   "yearsActive": "c. 830–1000 (Kingdom of Hungary from 1000)",
+   "summary": "A confederation of seven Hungarian tribes from the steppe who conquered the Carpathian Basin around 895 and raided Europe until defeated at Lechfeld in 955.",
+   "description": "Uralic-speaking Magyars lived in Levedia and Etelköz under Khazar influence. Attacked by Pechenegs, they crossed the Carpathians under Árpád around 895, destroyed Great Moravia and raided Italy, Germany and France.",
+   "conflicts": "Conquest of the Carpathian Basin (c. 895); victory at Pressburg (907); defeat at Lechfeld (955).",
+   "leaders": "Álmos and Árpád (late 9th century).",
+   "religion": "Tengrism and shamanism until Christianization around 1000.",
+   "culture": "Horse archers; seven tribes with sacral and military leaders.",
+   "literature": "Gesta Hungarorum (c. 1200) tells of the conquest.",
+   "art": "Sabretache plates with palmettes.",
+   "ideas": "Blood oath uniting the tribes.",
+   "science": "Mounted archery.",
+   "story": [
+    {
+     "title": "The Blood Oath",
+     "text": "The Gesta Hungarorum says the seven chieftains mixed their blood in a cup and swore that Álmos's descendants would rule them forever."
+    }
+   ],
+   "sources": "Encyclopaedia Britannica, 'Hungary: history'; P. Engel, The Realm of St Stephen (2001).",
+   "images": [
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Arpad%20on%20Feszty%20Panorama.jpg?width=800",
+     "caption": "Feszty Panorama of the Hungarian conquest",
+     "alt": "Feszty Panorama of the Hungarian conquest",
+     "role": "art"
+    },
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Magyar%20honfoglal%C3%A1skori%20tarsolylemezek.jpg?width=800",
+     "caption": "Conquest-period sabretache plate",
+     "alt": "Conquest-period sabretache plate",
+     "role": "culture"
+    }
+   ],
+   "extentsByTick": {},
+   "stories": [
+    {
+     "title": "The Blood Oath",
+     "text": "The Gesta Hungarorum says the seven chieftains mixed their blood in a cup and swore that Álmos's descendants would rule them forever."
+    }
+   ],
+   "philosophy": "Blood oath uniting the tribes.",
+   "artIdeas": "Sabretache plates with palmettes.\n\nBlood oath uniting the tribes."
+  },
+  {
+   "id": "pechenegs",
+   "name": "Pechenegs and Oghuz",
+   "type": "nomadic confederations",
+   "yearsActive": "9th–11th century",
+   "summary": "Turkic nomads of the Pontic and Caspian steppes; the Pechenegs drove the Magyars west in the 890s and the Oghuz pressed on them from the east.",
+   "description": "The Pechenegs moved west from the Volga in the late ninth century after Oghuz and Khazar attacks and took the Black Sea steppe. They blocked Rus trade at the Dnieper rapids and served Byzantium as allies.",
+   "conflicts": "Expulsion of the Magyars (c. 895); attacks on Kyiv.",
+   "leaders": "Eight tribes each under a khan.",
+   "religion": "Tengrism.",
+   "culture": "Pastoral nomads with horse and sheep herds.",
+   "literature": "Constantine VII's De Administrando Imperio describes them.",
+   "art": "Gold vessels such as the Nagyszentmiklós treasure are sometimes linked to them.",
+   "ideas": "Byzantium's policy of paying steppe peoples against each other.",
+   "science": "Steppe horsemanship.",
+   "story": [
+    {
+     "title": "The Skull Cup of Sviatoslav",
+     "text": "In 972 Pechenegs ambushed Prince Sviatoslav of Kyiv at the Dnieper rapids and made his skull into a drinking cup."
+    }
+   ],
+   "sources": "Encyclopaedia Britannica, 'Pecheneg', 'Oğuz'.",
+   "images": [
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Treasure%20of%20Nagyszentmiklos%2C%20bow%20N%208%20inscription.png?width=800",
+     "caption": "Nagyszentmiklós treasure",
+     "alt": "Nagyszentmiklós treasure",
+     "role": "art"
+    },
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/%D0%9D%D0%B5%D0%BD%D0%B0%D1%81%D0%B8%D1%82%D0%B5%D1%86%D1%8C%20%D1%80%D0%B5%D0%B2%D1%83%D1%87%D0%B8%D0%B9%20%D0%B4%D1%96%D0%B4.jpg?width=800",
+     "caption": "Dnieper rapids",
+     "alt": "Dnieper rapids",
+     "role": "culture"
+    }
+   ],
+   "extentsByTick": {},
+   "stories": [
+    {
+     "title": "The Skull Cup of Sviatoslav",
+     "text": "In 972 Pechenegs ambushed Prince Sviatoslav of Kyiv at the Dnieper rapids and made his skull into a drinking cup."
+    }
+   ],
+   "philosophy": "Byzantium's policy of paying steppe peoples against each other.",
+   "artIdeas": "Gold vessels such as the Nagyszentmiklós treasure are sometimes linked to them.\n\nByzantium's policy of paying steppe peoples against each other."
+  },
+  {
+   "id": "rus",
+   "name": "Rus' (Kyivan Rus)",
+   "type": "principality",
+   "yearsActive": "c. 860–1240",
+   "nameByTick": {
+    "800": "Rus' Khaganate"
+   },
+   "summary": "The state of Scandinavian Rus and East Slavs along the Dnieper-Volkhov route, centred on Novgorod and then Kyiv.",
+   "description": "Scandinavian traders called Rus ruled river trading posts in the ninth century, sending an embassy to Constantinople (839). Rurik took Novgorod (862) and Oleg moved to Kyiv (882). Rus fleets attacked Constantinople (860, 907) and won trade treaties.",
+   "conflicts": "Attack on Constantinople (860); Oleg's campaign (907).",
+   "leaders": "Rurik (d. 879); Oleg (882–912).",
+   "religion": "Norse and Slavic paganism until Vladimir's baptism (988).",
+   "culture": "Scandinavian elite merging with Slavs; fur and slave trade.",
+   "literature": "The Primary Chronicle (c. 1113).",
+   "art": "Scandinavian-style jewellery from Gnezdovo.",
+   "ideas": "Trade treaties with Byzantium.",
+   "science": "River portage of boats.",
+   "story": [
+    {
+     "title": "Oleg's Shield",
+     "text": "The Primary Chronicle says Oleg hung his shield on the gates of Constantinople in 907 as a sign of victory."
+    }
+   ],
+   "sources": "Encyclopaedia Britannica, 'Kyivan Rus'; S. Franklin and J. Shepard, The Emergence of Rus (1996).",
+   "images": [
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Nicholas%20Roerich%2C%20Guests%20from%20Overseas.jpg?width=800",
+     "caption": "Nicholas Roerich, Guests from Overseas",
+     "alt": "Nicholas Roerich, Guests from Overseas",
+     "role": "art"
+    },
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/The%20Fortress%20Of%20Staraya%20Ladoga.%20Fortress%20wall.jpg?width=800",
+     "caption": "Staraya Ladoga",
+     "alt": "Staraya Ladoga",
+     "role": "culture"
+    }
+   ],
+   "extentsByTick": {},
+   "stories": [
+    {
+     "title": "Oleg's Shield",
+     "text": "The Primary Chronicle says Oleg hung his shield on the gates of Constantinople in 907 as a sign of victory."
+    }
+   ],
+   "philosophy": "Trade treaties with Byzantium.",
+   "artIdeas": "Scandinavian-style jewellery from Gnezdovo.\n\nTrade treaties with Byzantium."
+  },
+  {
+   "id": "papal-states",
+   "name": "Papal States",
+   "type": "papal state",
+   "yearsActive": "756–1870",
+   "summary": "The lands in central Italy ruled by the popes after Pippin's Donation of 756.",
+   "description": "As Byzantine control of central Italy weakened in the eighth century, the popes became Rome's real rulers, feeding the city and paying its defenders. Threatened by the Lombard king Aistulf, Pope Stephen II crossed the Alps in 754 and anointed Pippin, who in 756 handed the pope the former Byzantine exarchate of Ravenna and the Pentapolis—the 'Donation of Pippin'. Charlemagne confirmed it after conquering the Lombards in 774. Leo III's coronation of Charlemagne in 800 tied the papacy to the new western empire, while in the ninth century Arab raids and Roman aristocratic factions left popes both powerful in theory and vulnerable in practice.",
+   "conflicts": "Lombard sieges of Rome (756); the Arab sack of St Peter's (846), followed by Leo IV's victory at Ostia (849); the 'Cadaver Synod' (897), when Pope Stephen VI put his predecessor's corpse on trial.",
+   "leaders": "Gregory the Great (590–604), who organized Rome's defence and food supply before there was a papal state; Stephen II (752–757); Hadrian I (772–795); Leo III (795–816); Leo IV (847–855), builder of the Leonine Wall; Nicholas I (858–867), who asserted papal authority over kings and bishops.",
+   "religion": "The papacy.",
+   "culture": "Rome's population had shrunk to tens of thousands, living among ancient ruins, but pilgrims, especially English and Frankish, crowded the shrines of Peter and Paul. Scholae (hostels) for Saxons, Franks and Frisians stood near St Peter's.",
+   "literature": "The Liber Pontificalis records each pope's life and building works. Papal letters and decretals were collected in canon law.",
+   "art": "Paschal I (817–824) built Santa Prassede, with the gold mosaics of the Chapel of St Zeno, and Santa Maria in Domnica, reviving Early Christian mosaic art in Rome.",
+   "ideas": "The forged Donation of Constantine, probably made in the eighth century, claimed Constantine had given the pope rule over the West; it was exposed by Lorenzo Valla in 1440.",
+   "science": "The papal chancery kept Roman document forms and dating by indiction years.",
+   "story": [
+    {
+     "title": "Christmas Day 800",
+     "text": "Leo III placed a crown on Charlemagne's head in St Peter's, and the crowd hailed him as emperor."
+    }
+   ],
+   "sources": "Encyclopaedia Britannica, 'Papal States'; T. Noble, The Republic of St Peter (1984).",
+   "images": [
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Mosaic%20in%20Santa%20Prassede%20%28Roma%29.jpg?width=800",
+     "caption": "Mosaics of Santa Prassede, Rome",
+     "alt": "Mosaics of Santa Prassede, Rome",
+     "role": "art"
+    },
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Detail%20coronation%20Charles%20the%20Great%20%28Francis%201st%20of%20France%29%20by%20Pope%20Leo%20III%20%28Leo%20X%29%20Vatican%2011.jpg?width=800",
+     "caption": "Coronation of Charlemagne",
+     "alt": "Coronation of Charlemagne",
+     "role": "culture"
+    }
+   ],
+   "extentsByTick": {},
+   "stories": [
+    {
+     "title": "Christmas Day 800",
+     "text": "Leo III placed a crown on Charlemagne's head in St Peter's, and the crowd hailed him as emperor."
+    }
+   ],
+   "philosophy": "The forged Donation of Constantine, probably made in the eighth century, claimed Constantine had given the pope rule over the West; it was exposed by Lorenzo Valla in 1440.",
+   "artIdeas": "Paschal I (817–824) built Santa Prassede, with the gold mosaics of the Chapel of St Zeno, and Santa Maria in Domnica, reviving Early Christian mosaic art in Rome.\n\nThe forged Donation of Constantine, probably made in the eighth century, claimed Constantine had given the pope rule over the West; it was exposed by Lorenzo Valla in 1440."
+  },
+  {
+   "id": "asturias",
+   "name": "Kingdom of Asturias",
+   "type": "kingdom",
+   "yearsActive": "718–924",
+   "summary": "The Christian kingdom founded in the Cantabrian mountains after the Muslim conquest, which began the Reconquista.",
+   "description": "After the Umayyad conquest of 711, Visigothic nobles and Asturian mountaineers chose Pelagius as leader. His victory over a small Muslim force at Covadonga (traditionally 722) became the founding legend of the Reconquista. Alfonso I (739–757) took advantage of the Berber revolt to raid the Duero valley and settle its people in the north. Alfonso II (791–842) made Oviedo a royal city in the Visigothic manner, allied with Charlemagne and supported the newly discovered tomb of St James at Compostela. Alfonso III (866–910) pushed the frontier to the Duero; after him the capital moved to León (910).",
+   "conflicts": "Covadonga (c. 722); Alfonso II's victory at Lutos (794) after an emirate raid sacked Oviedo; Alfonso III's campaigns to the Duero.",
+   "leaders": "Pelagius (718–737); Alfonso I (739–757); Alfonso II the Chaste (791–842); Ramiro I (842–850); Alfonso III the Great (866–910).",
+   "religion": "Catholic, defending Nicene orthodoxy against the Adoptionist views of Archbishop Elipandus of Toledo (late 8th century). The cult of St James at Compostela grew from about 820.",
+   "culture": "A small kingdom of mountain valleys that saw itself as heir of the Visigothic kingdom of Toledo, using Visigothic law and court titles.",
+   "literature": "Beatus of Liébana wrote his Commentary on the Apocalypse (776), later copied in famous illustrated manuscripts. The Chronicles of Alfonso III (c. 883) told the kingdom's history.",
+   "art": "Asturian pre-Romanesque buildings—Santa María del Naranco (842), San Miguel de Lillo and San Julián de los Prados—and the jewelled Cross of the Angels (808) and Cross of Victory (908).",
+   "ideas": "'Neo-Gothicism': the idea that Asturian kings were restoring the lost Visigothic kingdom, which justified the long Reconquista.",
+   "science": "Santa María del Naranco, built as a royal hall, used barrel vaults with transverse arches, an engineering step toward Romanesque.",
+   "story": [
+    {
+     "title": "The Tomb of St James",
+     "text": "A hermit is said to have seen lights over a field in Galicia around 820, where the tomb of James was found."
+    }
+   ],
+   "sources": "Encyclopaedia Britannica, 'Asturias'; R. Collins, Early Medieval Spain (1995).",
+   "images": [
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Santa%20Mar%C3%ADa%20del%20Naranco%202021.jpg?width=800",
+     "caption": "Santa María del Naranco",
+     "alt": "Santa María del Naranco",
+     "role": "art"
+    },
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Cruz%20de%20la%20Victoria%2C%20Catedral%20de%20Oviedo.jpg?width=800",
+     "caption": "Cross of Victory (908), Oviedo, linked by legend to Pelagius at Covadonga",
+     "alt": "Cross of Victory (908), Oviedo, linked by legend to Pelagius at Covadonga",
+     "role": "culture"
+    }
+   ],
+   "extentsByTick": {},
+   "stories": [
+    {
+     "title": "The Tomb of St James",
+     "text": "A hermit is said to have seen lights over a field in Galicia around 820, where the tomb of James was found."
+    }
+   ],
+   "philosophy": "'Neo-Gothicism': the idea that Asturian kings were restoring the lost Visigothic kingdom, which justified the long Reconquista.",
+   "artIdeas": "Asturian pre-Romanesque buildings—Santa María del Naranco (842), San Miguel de Lillo and San Julián de los Prados—and the jewelled Cross of the Angels (808) and Cross of Victory (908).\n\n'Neo-Gothicism': the idea that Asturian kings were restoring the lost Visigothic kingdom, which justified the long Reconquista."
+  },
+  {
+   "id": "east-francia",
+   "name": "East Francia",
+   "type": "kingdom",
+   "yearsActive": "843–962",
+   "summary": "The eastern part of the Carolingian empire after 843, the ancestor of the German kingdom.",
+   "description": "At Verdun in 843 Louis the German received the lands east of the Rhine, roughly the later German kingdom: Bavaria, Swabia (Alemannia), Franconia, Thuringia and Saxony. He and his sons fought the Moravians, Bohemians and Vikings and quarrelled over Lotharingia, which was divided with West Francia at Meerssen (870). Charles the Fat briefly reunited the whole empire (884–887) before being deposed. Arnulf of Carinthia beat the Vikings on the Dyle (891) and was crowned emperor (896), but after 900 Magyar raids and the child-king Louis left the regional dukes in charge; in 911 they elected the Franconian Conrad I.",
+   "conflicts": "Wars with Great Moravia (846–874, 892–899); Viking defeat on the Dyle (891); the Magyar victory at Pressburg (907), where the Bavarian army was destroyed.",
+   "leaders": "Louis the German (843–876); Arnulf of Carinthia (887–899); Louis the Child (900–911).",
+   "religion": "Catholic.",
+   "culture": "Most people spoke Old High German or Old Saxon dialects; the word 'theodisk' (German, 'of the people') appears for their speech. Great abbeys—Fulda, Reichenau, St Gall, Lorsch—were landowners and schools.",
+   "literature": "Otfrid of Weissenburg's Evangelienbuch (c. 870), the first long rhymed poem in German; the Old High German Muspilli and Ludwigslied; the Strasbourg Oaths (842), recorded by Nithard.",
+   "art": "The gatehouse (Torhalle) of Lorsch Abbey, with patterned stone facing; Reichenau and St Gall book painting.",
+   "ideas": "The great stem duchies—Saxony, Bavaria, Swabia, Franconia—emerged as the real powers, setting the federal pattern of German history.",
+   "science": "Rabanus Maurus, abbot of Fulda, wrote the encyclopedia De rerum naturis and was called 'teacher of Germany'.",
+   "story": [
+    {
+     "title": "The Strasbourg Oaths",
+     "text": "In 842 Louis the German swore an oath in Romance so his brother's army could understand, and Charles answered in German."
+    }
+   ],
+   "sources": "Encyclopaedia Britannica, 'Germany: history'; E. Goldberg, Struggle for Empire (2006).",
+   "images": [
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Torhalle%20in%20Lorsch%20%285%29.jpg?width=800",
+     "caption": "Lorsch Abbey gatehouse",
+     "alt": "Lorsch Abbey gatehouse",
+     "role": "art"
+    },
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Sacramenta%20Argentariae%20%28pars%20longa%29.png?width=800",
+     "caption": "Strasbourg Oaths manuscript",
+     "alt": "Strasbourg Oaths manuscript",
+     "role": "culture"
+    }
+   ],
+   "extentsByTick": {},
+   "stories": [
+    {
+     "title": "The Strasbourg Oaths",
+     "text": "In 842 Louis the German swore an oath in Romance so his brother's army could understand, and Charles answered in German."
+    }
+   ],
+   "philosophy": "The great stem duchies—Saxony, Bavaria, Swabia, Franconia—emerged as the real powers, setting the federal pattern of German history.",
+   "artIdeas": "The gatehouse (Torhalle) of Lorsch Abbey, with patterned stone facing; Reichenau and St Gall book painting.\n\nThe great stem duchies—Saxony, Bavaria, Swabia, Franconia—emerged as the real powers, setting the federal pattern of German history."
+  },
+  {
+   "id": "west-francia",
+   "name": "West Francia",
+   "type": "kingdom",
+   "yearsActive": "843–987",
+   "summary": "The western part of the Carolingian empire after 843, the ancestor of France.",
+   "description": "Charles the Bald received the western lands at Verdun (843), roughly the future France. His reign was dominated by Viking fleets on the Seine, Loire and Garonne, Breton independence and rebellious magnates. The Edict of Pîtres (864) ordered fortified bridges against raiders. After the Carolingian line faltered, Count Odo of Paris, hero of the siege of 885–886, was elected king (888), the first of the Robertian family that would become the Capetians. Charles the Simple, restored in 898, would grant Normandy to the Viking Rollo in 911.",
+   "conflicts": "Vikings sacked Paris (845) and besieged it (885–886); defeat by the Bretons at Jengland (851); civil wars between Carolingians and Robertians.",
+   "leaders": "Charles the Bald (843–877); Odo (888–898); Charles the Simple (898–922).",
+   "religion": "Catholic.",
+   "culture": "Gallo-Romance speech was becoming Old French, while Latin remained the language of writing. Counts turned their offices into hereditary lordships, the start of the feudal principalities.",
+   "literature": "The Sequence of Saint Eulalia (c. 880), the oldest surviving poem in French; Hincmar's Annals of Saint-Bertin; Abbo of Saint-Germain's verse account of the siege of Paris.",
+   "art": "The court school of Charles the Bald produced the Vivian Bible (845) and the Codex Aureus of St Emmeram (870).",
+   "ideas": "Hincmar of Reims wrote on the duties of kings and the church's role in anointing them. John Scotus Eriugena, at Charles's court, translated Pseudo-Dionysius and wrote the Periphyseon.",
+   "science": "Eriugena's work transmitted Greek Neoplatonic cosmology to the Latin West.",
+   "story": [
+    {
+     "title": "Odo at the Walls",
+     "text": "In 885 Count Odo defended Paris for a year against a Viking army."
+    }
+   ],
+   "sources": "Encyclopaedia Britannica, 'France: history'; J. Nelson, Charles the Bald (1992).",
+   "images": [
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Bible%20de%20Vivien%2C%20BnF%20Ms.%20Lat.%201%2C%20fol.%20239v.jpg?width=800",
+     "caption": "Vivian Bible",
+     "alt": "Vivian Bible",
+     "role": "art"
+    },
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Friedrich%20Hottenroth%20-%20Charles%20the%20Fat%20and%20Count%20Rollo%20during%20the%20siege%20of%20Paris%2C%20c.%20885.jpg?width=800",
+     "caption": "Siege of Paris",
+     "alt": "Siege of Paris",
+     "role": "culture"
+    }
+   ],
+   "extentsByTick": {},
+   "stories": [
+    {
+     "title": "Odo at the Walls",
+     "text": "In 885 Count Odo defended Paris for a year against a Viking army."
+    }
+   ],
+   "philosophy": "Hincmar of Reims wrote on the duties of kings and the church's role in anointing them. John Scotus Eriugena, at Charles's court, translated Pseudo-Dionysius and wrote the Periphyseon.",
+   "artIdeas": "The court school of Charles the Bald produced the Vivian Bible (845) and the Codex Aureus of St Emmeram (870).\n\nHincmar of Reims wrote on the duties of kings and the church's role in anointing them. John Scotus Eriugena, at Charles's court, translated Pseudo-Dionysius and wrote the Periphyseon."
+  },
+  {
+   "id": "croatia",
+   "name": "Duchy of Croatia",
+   "type": "duchy",
+   "yearsActive": "c. 800–925",
+   "summary": "The Croatian duchy in Dalmatia, which became a kingdom under Tomislav (925).",
+   "description": "Croats settled Roman Dalmatia and Pannonia in the seventh century, probably under Avar or Byzantine pressure. After the Avars fell, coastal Croatia came under Frankish overlordship, and Duke Borna fought the Pannonian Croat rebel Ljudevit (819–822). Trpimir I (c. 845–864) founded the native dynasty and the Benedictine monastery at Rižinice. Duke Branimir broke with both Franks and Byzantium and was recognized by Pope John VIII in 879. In 925 Tomislav united Dalmatian and Pannonian Croatia and is remembered as the first king.",
+   "conflicts": "Ljudevit Posavski's revolt against the Franks (819–823); Trpimir's war with Bulgaria; naval clashes with Venice over the Adriatic.",
+   "leaders": "Borna (c. 810–821); Trpimir I (c. 845–864); Domagoj (864–876); Branimir (879–892); Muncimir (892–910); Tomislav (c. 910–928).",
+   "religion": "Latin Christianity, with dioceses at Nin and Split; the Slavonic liturgy in Glagolitic script was also used.",
+   "culture": "Slavic communities mixed with Roman Dalmatian towns such as Zadar, Split and Trogir, which stayed under Byzantium.",
+   "literature": "Latin charters and inscriptions; the Glagolitic tradition later produced the Baška tablet (c. 1100).",
+   "art": "The tiny Church of the Holy Cross at Nin (9th century); interlace-carved stone screens and the Branimir inscription.",
+   "ideas": "Papal recognition (879) brought Croatia into Latin Christendom as an independent principality.",
+   "science": "Not much is recorded; Dalmatian towns kept Roman building skills.",
+   "story": [
+    {
+     "title": "Trpimir's Charter",
+     "text": "In 852 Duke Trpimir's charter is the first to use the Croats' name in a native document."
+    }
+   ],
+   "sources": "Encyclopaedia Britannica, 'Croatia: history'.",
+   "images": [
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Church%20of%20the%20Holy%20Cross%2C%20Nin.jpg?width=800",
+     "caption": "Church of the Holy Cross, Nin",
+     "alt": "Church of the Holy Cross, Nin",
+     "role": "art"
+    },
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Greda%20i%20zabat%20s%20natpisom%20kneza%20Branimira%20879.jpg?width=800",
+     "caption": "Branimir inscription",
+     "alt": "Branimir inscription",
+     "role": "culture"
+    }
+   ],
+   "extentsByTick": {},
+   "stories": [
+    {
+     "title": "Trpimir's Charter",
+     "text": "In 852 Duke Trpimir's charter is the first to use the Croats' name in a native document."
+    }
+   ],
+   "philosophy": "Papal recognition (879) brought Croatia into Latin Christendom as an independent principality.",
+   "artIdeas": "The tiny Church of the Holy Cross at Nin (9th century); interlace-carved stone screens and the Branimir inscription.\n\nPapal recognition (879) brought Croatia into Latin Christendom as an independent principality."
+  },
+  {
+   "id": "serbia",
+   "name": "Principality of Serbia",
+   "type": "principality",
+   "yearsActive": "c. 780–960",
+   "summary": "The early Serbian principality under the Vlastimirović dynasty.",
+   "description": "Serbs settled the western Balkans in the seventh century, according to Constantine VII with Byzantine consent. Vlastimir (c. 830–850) united several tribes into a principality around Raška and defeated a Bulgarian invasion. Under Mutimir the Serbs were baptized with Byzantine missionaries around 870. Succession quarrels drew in Bulgaria and Byzantium, and in 924 Simeon of Bulgaria briefly annexed the land.",
+   "conflicts": "Three-year war with Khan Presian of Bulgaria (c. 839–842); defeat of Boris I's son Vladimir (c. 853); civil wars among the Vlastimirović princes.",
+   "leaders": "Vlastimir (c. 830–850); Mutimir (c. 850–891); Petar Gojniković (892–917); Časlav (c. 933–960).",
+   "religion": "Christianized from Byzantium around 870; Slavonic liturgy brought from Bulgaria by the disciples of Cyril and Methodius.",
+   "culture": "Tribal districts (župe) under župans; fortified centres such as Ras.",
+   "literature": "The main source is Constantine VII's De Administrando Imperio (c. 950).",
+   "art": "The Church of St Peter near Ras (Novi Pazar), a round domed church, is the oldest surviving church in Serbia.",
+   "ideas": "Rule by a single princely family over župans, the base of the later Serbian state.",
+   "science": "Not much is recorded.",
+   "story": [
+    {
+     "title": "Victory over Bulgaria",
+     "text": "Around 839 Vlastimir defeated a Bulgarian invasion."
+    }
+   ],
+   "sources": "Encyclopaedia Britannica, 'Serbia: history'.",
+   "images": [
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Iglesia%20de%20San%20Pedro%2C%20Novi%20Pazar%2C%20Serbia%2C%202014-04-15%2C%20DD%2007.JPG?width=800",
+     "caption": "Church of St Peter near Ras (Novi Pazar), 9th–10th century",
+     "alt": "Church of St Peter near Ras (Novi Pazar), 9th–10th century",
+     "role": "art"
+    },
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Stari%20Ras.jpg?width=800",
+     "caption": "Stari Ras",
+     "alt": "Stari Ras",
+     "role": "culture"
+    }
+   ],
+   "extentsByTick": {},
+   "stories": [
+    {
+     "title": "Victory over Bulgaria",
+     "text": "Around 839 Vlastimir defeated a Bulgarian invasion."
+    }
+   ],
+   "philosophy": "Rule by a single princely family over župans, the base of the later Serbian state.",
+   "artIdeas": "The Church of St Peter near Ras (Novi Pazar), a round domed church, is the oldest surviving church in Serbia.\n\nRule by a single princely family over župans, the base of the later Serbian state."
+  }
+ ]
+}
