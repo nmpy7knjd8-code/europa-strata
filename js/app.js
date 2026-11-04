@@ -189,12 +189,17 @@ function extentToGeometry(ext) {
  * - App/scaffold: { periods, geo }
  * - Research: { ticks, polities[].extentsByTick }
  */
-/* Deep-time-inspired earth palette shared by all kingdom-era tabs */
+/* Fallback earth palette for kingdom-era polities that have no pack colour.
+   Since the Oct 11 restore (9d218dd) each polity uses its own pack colour first. */
 const ERA_PALETTE = [
   "#a8705a", "#c49a6c", "#7d8a6a", "#8a6a4f", "#b4a07a", "#6f7f8c",
   "#9b7b6f", "#c3aa8a", "#8f5a4a", "#a3936b", "#5f6f5f", "#b98f74",
 ];
-const ERA_NEUTRAL = "#e4ded3";
+/** Neutral fill for unassigned era polities: the --map-neutral CSS token (pale in both themes). */
+function eraNeutral() {
+  const v = getComputedStyle(document.documentElement).getPropertyValue("--map-neutral").trim();
+  return v || "#e4ded3";
+}
 const V2_ATTRIBUTION =
   "Borders: historical-basemaps © A. Ourednik (GPL-3.0) · coasts: Natural Earth.";
 
@@ -330,7 +335,7 @@ function v2TickFromTopo(topo, obj, raw, colors, year = null) {
               summary: `${name}, shown from the historical-basemaps dataset. No Europa Strata profile yet.`,
               description: "",
             };
-        mapLayers.push({ polityId: xid, id: xid, label: polities[xid].name, color: ERA_NEUTRAL, role: "dominant", extra: true });
+        mapLayers.push({ polityId: xid, id: xid, label: polities[xid].name, color: eraNeutral(), role: "dominant", extra: true });
       }
       features.push({
         type: "Feature",
