@@ -4262,3 +4262,27 @@ html .app.app #polity-ideas#polity-ideas#polity-ideas#polity-ideas {
   line-height: var(--read-leading);
   margin: 2.4px 0 0;
 }
+
+/* Tab bar for up to 7 eras: one line, fixed equal cells, short labels on
+   phones, grey year range on desktop only. Nothing changes size on switch. */
+html .app .atlas-tabs .atlas-tab { white-space: nowrap; text-overflow: clip; display: flex; flex-direction: column; align-items: center; justify-content: center; flex: 1 1 0; min-width: 0; }
+html .app .atlas-tabs .tab-name { display: block; line-height: 1.2; }
+html .app .atlas-tabs .tab-short { display: none; }
+html .app .atlas-tabs .tab-years { display: none; }
+@media (max-width: 520px) {
+  html .app .atlas-tabs .tab-full { display: none; }
+  html .app .atlas-tabs .tab-short { display: inline; }
+}
+@media (min-width: 900px) {
+  html .app .atlas-tabs .tab-years { display: block; margin-top: 1px; font-size: 9.92px; line-height: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: #888; font-weight: 400; }
+  html[data-theme="dark"] .app .atlas-tabs .tab-years { color: #777; }
+}
+/* Bold active label must not widen anything: reserve bold width. */
+html .app .atlas-tabs .tab-full::after, html .app .atlas-tabs .tab-short::after { content: none; }
+html .app .atlas-tabs .atlas-tab.is-loading { opacity: 0.45; }
+/* Theme link no longer touches the zoom buttons at phone widths. */
+html .app .map-tools .theme-toggle { margin: 0 0 8px auto; line-height: 1.3; padding: 0 1px; }
+/* Equal fixed cells: a grid ignores label width, so bold/active never resizes a tab. */
+html .app nav.atlas-tabs#atlas-tabs { display: grid; grid-auto-flow: column; grid-auto-columns: minmax(0, 1fr); }
+html .app nav.atlas-tabs#atlas-tabs .atlas-tab { width: auto; min-width: 0; padding-left: 2px; padding-right: 2px; box-sizing: border-box; }
+@media (max-width: 360px) { html .app nav.atlas-tabs#atlas-tabs .atlas-tab { padding-left: 0; padding-right: 0; letter-spacing: 0; } }
