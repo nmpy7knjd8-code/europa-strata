@@ -2402,7 +2402,11 @@ const CULTURE_FAMILY_RULES = [
   ["Slavic & Baltic", /slavic|kievan|\brus\b|moravia|piast|poland|muscov|novgorod|vladimir|galicia|volhynia|lithuania|bohemia|teutonic|baltic|ukraine|belarus|\brussia|soviet|ussr|latvia|eston/i],
   ["Nordic", /nordic|scandinav|denmark|norway|sweden|danish|norwegian|swedish|kalmar|iceland|finland/i],
   ["Britain & Ireland", /british|britain|brittonic|britannia|england|scotland|wales|welsh|ireland|irish|gaelic|hibernia|plantagenet|tudor|lancastrian|united kingdom/i],
-  ["Western Europe", /\bfrance\b|\bgaul\b|gallia|benelux|dutch|low countries|swiss|\bgerman\b|germany|\bhabsburg\b|austria|holy roman|\bhre\b|prussia|bavaria|saxony|w[uü]rttemberg|baden|hanover/i],
+  ["Western Europe", /\bfrance\b|\bgaul\b|gallia|benelux|dutch|low countries|swiss|\bgerman\b|germany|\bhabsburg\b|austria|holy roman|\bhre\b|prussia|bavaria|saxony|w[uü]rttemberg|baden|hanover/i],  // Modern 1920 / 1938 / 1960 additions (last, so they never change an earlier assignment)
+  ["Western Europe", /weimar/i],
+  ["Slavic & Baltic", /ukrainian ssr|byelorussian/i],
+  ["Caucasus", /armenia-republic|georgia-dr|azerbaijan-dr/i],
+  ["Aegean", /republic of cyprus/i],
 ];
 
 function cultureFamily(layer) {
