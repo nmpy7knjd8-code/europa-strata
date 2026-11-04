@@ -4154,6 +4154,8 @@ html .app:not([data-atlas-mode="deep-time"]) #map path.polity-border { stroke: v
 /* Dark Deep-time lines: --border-line is #d0d0d0 under html[data-theme="dark"] (tokens above). */
 /* Oct 11 map-key swatch: 8px round dot (reverts PR #5's larger squares). */
 html .app #map-legend .legend-swatch { width: 8px; height: 8px; min-width: 8px; border-radius: 50%; border: none; }
+/* Era tabs: key dots use the same opacity as the polity fills they stand for (audit item 5). */
+html .app:not([data-atlas-mode="deep-time"]) #map-legend .legend-swatch { opacity: var(--era-fill-opacity); }
 
 /* ==== UI critique fixes (Oct 26) ==== */
 /* 1. Reserve the tick row's final height so the key does not jump on load. */
