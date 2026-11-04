@@ -27,6 +27,8 @@ const ATLAS_TAB_ORDER = [
   "early-modern",
   "modern",
 ];
+/** Era tabs shown in the bar (an era can have data before its tab is shown). */
+const VISIBLE_ERA_TABS = ["high-medieval", "renaissance", "early-modern", "modern"];
 /** Eras in time order; Deep-time is spliced into the middle of whichever are shown. */
 const ERA_CHRONO = ["antiquity", "early-medieval", "high-medieval", "renaissance", "early-modern", "modern"];
 
@@ -82,7 +84,7 @@ function showLoadNotice(message, { retry = null } = {}) {
 }
 
 const KINGDOM_PACK_IDS = [
-  "early-medieval", // data only; its tab button is added with the 7-tab bar
+  "early-medieval", // data loaded; tab stays hidden until added to VISIBLE_ERA_TABS
   "high-medieval",
   "renaissance",
   "early-modern",
@@ -3953,7 +3955,7 @@ function syncAtlasTabs() {
       btn.disabled = false;
       return;
     }
-    if (!KINGDOM_PACK_IDS.includes(mode)) {
+    if (!KINGDOM_PACK_IDS.includes(mode) || !VISIBLE_ERA_TABS.includes(mode)) {
       // Era tabs whose data has not landed yet stay hidden.
       btn.hidden = true;
       return;
@@ -3966,7 +3968,7 @@ function syncAtlasTabs() {
     btn.title = loading ? "Loading map…" : KINGDOM_TAB_LABELS[mode] || mode;
   });
   // Visual order: shown eras in time order with Deep-time in the middle.
-  const shown = ERA_CHRONO.filter((m) => KINGDOM_PACK_IDS.includes(m));
+  const shown = ERA_CHRONO.filter((m) => KINGDOM_PACK_IDS.includes(m) && VISIBLE_ERA_TABS.includes(m));
   const order = shown.slice();
   order.splice(Math.floor(shown.length / 2), 0, "deep-time");
   btns.forEach((btn) => {
