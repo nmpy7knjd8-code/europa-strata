@@ -186,7 +186,7 @@ button {
 }
 
 .map.is-legend-on .country.is-legend-dim {
-  fill-opacity: 0.16 !important;
+  fill-opacity: var(--legend-dim) !important;
 }
 
 .map.is-legend-on .country.is-legend-hot {
@@ -204,7 +204,7 @@ button {
 
 /* Map-key highlight also fades/raises the clipped overlays that are showing */
 .map.is-legend-on .country-extent.is-extent-on.is-legend-dim {
-  fill-opacity: 0.16 !important;
+  fill-opacity: var(--legend-dim) !important;
 }
 
 .map.is-legend-on .country-extent.is-extent-on.is-legend-hot {
@@ -219,7 +219,7 @@ button {
 }
 
 .map.is-legend-on .country-overlay.is-extent-on.is-legend-dim {
-  fill-opacity: 0.16 !important;
+  fill-opacity: var(--legend-dim) !important;
 }
 
 .map.is-legend-on .country-overlay.is-extent-on.is-legend-hot {
@@ -281,20 +281,12 @@ html[data-theme="dark"] .polity {
   stroke: rgba(255, 255, 255, 0.28);
 }
 
-.polity:hover,
-.polity.is-hover {
-  stroke-opacity: 0.95;
-  stroke-width: 0.85;
-}
-
-.polity.is-active {
-  stroke: var(--ink);
-  stroke-opacity: 1;
-  stroke-width: 1.35;
-}
+/* Removed (dead since era maps v2, 7b9838b/74647e7): per-polity hover/active strokes.
+   .polities.is-v2 .polity:hover/.is-hover/.is-active force stroke:none !important,
+   and hover/selection is shown with filter: brightness() instead. */
 
 .map.is-legend-on .polity.is-legend-dim {
-  fill-opacity: 0.14 !important;
+  fill-opacity: var(--legend-dim) !important;
 }
 
 .map.is-legend-on .polity.is-legend-hot {
@@ -324,11 +316,8 @@ html[data-theme="dark"] .polity {
   display: none;
 }
 
-.app:not([data-atlas-mode="deep-time"]) .country.is-active,
-.app:not([data-atlas-mode="deep-time"]) .country.is-hover {
-  stroke-width: 0.45;
-  stroke-opacity: 0.7;
-}
+/* Removed (dead): era-tab .country.is-active/.is-hover strokes. Era-tab countries are
+   pointer-events:none and get their stroke from the Oct 11 #map rule further down. */
 
 .app:not([data-atlas-mode="deep-time"]) .mode-pill,
 .app:not([data-atlas-mode="deep-time"]) .ling-panel,
@@ -2681,9 +2670,26 @@ body.page-ancestry {
 }
 
 /* ═══ One border standard for every tab: thin solid black, constant across zoom ═══ */
+/* Map style tokens. Values are the Oct 11 look (PR #23) that the #map rules near the end
+   of this file used to hard-code; those rules now read these tokens.
+   A new tab should set colours through these tokens, never per-tab hex values. */
 :root {
-  --border-line: #000;
-  --border-width: 0.5px;
+  --border-line: #222222;          /* Deep-time country lines + coastline */
+  --border-width: 0.35px;          /* Deep-time country lines */
+  --coast-width: 0.55px;           /* Deep-time coastline */
+  --era-border-line: rgba(0, 0, 0, 0.22); /* era tabs: polity edges + shared border mesh */
+  --era-border-width: 0.4px;
+  --era-fill-opacity: 0.61;        /* era-tab polity fills */
+  --map-neutral: #e4ded3;          /* unassigned/neutral era polities; stays pale in dark (d87a683) */
+  --legend-dim: 0.16;              /* map-key hover: non-matching shapes, every tab */
+}
+html[data-theme="dark"] {
+  --border-line: #d0d0d0;
+}
+/* Dark era tabs: light polity edges and border mesh. The Oct 11 rgba(0,0,0,.22) was
+   measured in light theme only and vanishes on dark fills (audit item 1). */
+html[data-theme="dark"] .app:not([data-atlas-mode="deep-time"]) {
+  --era-border-line: rgba(255, 255, 255, 0.28);
 }
 .app[data-atlas-mode="deep-time"] .country,
 .app[data-atlas-mode="deep-time"] .coastline {
@@ -4139,16 +4145,17 @@ body .kicker,
    Deep-time: dark-grey 0.35px country lines and 0.55px coasts.
    Era tabs: warm land, pack-coloured polities at ~0.6 opacity with soft edges,
    no black border mesh (reverts the Oct 13 era-maps-v2 / black-border look). */
-html .app[data-atlas-mode="deep-time"] #map path.country { stroke: #222222; stroke-width: 0.35px; }
-html .app[data-atlas-mode="deep-time"] #map path.coastline { stroke: #222222; stroke-width: 0.55px; }
+html .app[data-atlas-mode="deep-time"] #map path.country { stroke: var(--border-line); stroke-width: var(--border-width); }
+html .app[data-atlas-mode="deep-time"] #map path.coastline { stroke: var(--border-line); stroke-width: var(--coast-width); }
 html .app:not([data-atlas-mode="deep-time"]) #map path.country { fill: var(--kingdom-land, #e8e4dc) !important; stroke: var(--kingdom-coast, #2c2c2c) !important; stroke-width: 0.45px !important; }
-html .app:not([data-atlas-mode="deep-time"]) #map path.polity:not(.is-legend-dim):not(.is-legend-hot) { fill-opacity: 0.61 !important; }
-html .app:not([data-atlas-mode="deep-time"]) #map path.polity:not(.is-active):not(.is-hover) { stroke: rgba(0, 0, 0, 0.22) !important; stroke-width: 0.4px !important; }
-html .app:not([data-atlas-mode="deep-time"]) #map path.polity-border { stroke: rgba(0, 0, 0, 0.22) !important; stroke-width: 0.4px !important; }
-html[data-theme="dark"] .app[data-atlas-mode="deep-time"] #map path.country,
-html[data-theme="dark"] .app[data-atlas-mode="deep-time"] #map path.coastline { stroke: #d0d0d0; }
+html .app:not([data-atlas-mode="deep-time"]) #map path.polity:not(.is-legend-dim):not(.is-legend-hot) { fill-opacity: var(--era-fill-opacity) !important; }
+html .app:not([data-atlas-mode="deep-time"]) #map path.polity:not(.is-active):not(.is-hover) { stroke: var(--era-border-line) !important; stroke-width: var(--era-border-width) !important; }
+html .app:not([data-atlas-mode="deep-time"]) #map path.polity-border { stroke: var(--era-border-line) !important; stroke-width: var(--era-border-width) !important; }
+/* Dark Deep-time lines: --border-line is #d0d0d0 under html[data-theme="dark"] (tokens above). */
 /* Oct 11 map-key swatch: 8px round dot (reverts PR #5's larger squares). */
 html .app #map-legend .legend-swatch { width: 8px; height: 8px; min-width: 8px; border-radius: 50%; border: none; }
+/* Era tabs: key dots use the same opacity as the polity fills they stand for (audit item 5). */
+html .app:not([data-atlas-mode="deep-time"]) #map-legend .legend-swatch { opacity: var(--era-fill-opacity); }
 
 /* ==== UI critique fixes (Oct 26) ==== */
 /* 1. Reserve the tick row's final height so the key does not jump on load. */
@@ -4257,3 +4264,27 @@ html .app.app #polity-ideas#polity-ideas#polity-ideas#polity-ideas {
   line-height: var(--read-leading);
   margin: 2.4px 0 0;
 }
+
+/* Tab bar for up to 7 eras: one line, fixed equal cells, short labels on
+   phones, grey year range on desktop only. Nothing changes size on switch. */
+html .app .atlas-tabs .atlas-tab { white-space: nowrap; text-overflow: clip; display: flex; flex-direction: column; align-items: center; justify-content: center; flex: 1 1 0; min-width: 0; }
+html .app .atlas-tabs .tab-name { display: block; line-height: 1.2; }
+html .app .atlas-tabs .tab-short { display: none; }
+html .app .atlas-tabs .tab-years { display: none; }
+@media (max-width: 520px) {
+  html .app .atlas-tabs .tab-full { display: none; }
+  html .app .atlas-tabs .tab-short { display: inline; }
+}
+@media (min-width: 900px) {
+  html .app .atlas-tabs .tab-years { display: block; margin-top: 1px; font-size: 9.92px; line-height: 12px; letter-spacing: 0.08em; text-transform: uppercase; color: #888; font-weight: 400; }
+  html[data-theme="dark"] .app .atlas-tabs .tab-years { color: #777; }
+}
+/* Bold active label must not widen anything: reserve bold width. */
+html .app .atlas-tabs .tab-full::after, html .app .atlas-tabs .tab-short::after { content: none; }
+html .app .atlas-tabs .atlas-tab.is-loading { opacity: 0.45; }
+/* Theme link no longer touches the zoom buttons at phone widths. */
+html .app .map-tools .theme-toggle { margin: 0 0 8px auto; line-height: 1.3; padding: 0 1px; }
+/* Equal fixed cells: a grid ignores label width, so bold/active never resizes a tab. */
+html .app nav.atlas-tabs#atlas-tabs { display: grid; grid-auto-flow: column; grid-auto-columns: minmax(0, 1fr); }
+html .app nav.atlas-tabs#atlas-tabs .atlas-tab { width: auto; min-width: 0; padding-left: 2px; padding-right: 2px; box-sizing: border-box; }
+@media (max-width: 360px) { html .app nav.atlas-tabs#atlas-tabs .atlas-tab { padding-left: 0; padding-right: 0; letter-spacing: 0; } }

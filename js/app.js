@@ -19,12 +19,16 @@ const SLIDER_MAX = 1000;
  * Older eras left; newer (Early Modern, Modern) right.
  */
 const ATLAS_TAB_ORDER = [
+  "antiquity",
+  "early-medieval",
   "high-medieval",
-  "renaissance",
   "deep-time",
+  "renaissance",
   "early-modern",
   "modern",
 ];
+/** Eras in time order; Deep-time is spliced into the middle of whichever are shown. */
+const ERA_CHRONO = ["antiquity", "early-medieval", "high-medieval", "renaissance", "early-modern", "modern"];
 
 /** Single build/version string (also in <meta name="build">; bump with scripts/bump_version.py). */
 const BUILD =
@@ -187,12 +191,17 @@ function extentToGeometry(ext) {
  * - App/scaffold: { periods, geo }
  * - Research: { ticks, polities[].extentsByTick }
  */
-/* Deep-time-inspired earth palette shared by all kingdom-era tabs */
+/* Fallback earth palette for kingdom-era polities that have no pack colour.
+   Since the Oct 11 restore (9d218dd) each polity uses its own pack colour first. */
 const ERA_PALETTE = [
   "#a8705a", "#c49a6c", "#7d8a6a", "#8a6a4f", "#b4a07a", "#6f7f8c",
   "#9b7b6f", "#c3aa8a", "#8f5a4a", "#a3936b", "#5f6f5f", "#b98f74",
 ];
-const ERA_NEUTRAL = "#e4ded3";
+/** Neutral fill for unassigned era polities: the --map-neutral CSS token (pale in both themes). */
+function eraNeutral() {
+  const v = getComputedStyle(document.documentElement).getPropertyValue("--map-neutral").trim();
+  return v || "#e4ded3";
+}
 const V2_ATTRIBUTION =
   "Borders: historical-basemaps © A. Ourednik (GPL-3.0) · coasts: Natural Earth.";
 
@@ -328,7 +337,7 @@ function v2TickFromTopo(topo, obj, raw, colors, year = null) {
               summary: `${name}, shown from the historical-basemaps dataset. No Europa Strata profile yet.`,
               description: "",
             };
-        mapLayers.push({ polityId: xid, id: xid, label: polities[xid].name, color: ERA_NEUTRAL, role: "dominant", extra: true });
+        mapLayers.push({ polityId: xid, id: xid, label: polities[xid].name, color: eraNeutral(), role: "dominant", extra: true });
       }
       features.push({
         type: "Feature",
@@ -3932,32 +3941,50 @@ function buildTicks() {
 }
 
 function syncAtlasTabs() {
-  $$("#atlas-tabs .atlas-tab").forEach((btn) => {
+  const btns = $$("#atlas-tabs .atlas-tab");
+  btns.forEach((btn) => {
     const mode = btn.dataset.mode;
     const on = mode === state.atlasMode;
     btn.classList.toggle("is-active", on);
     btn.setAttribute("aria-selected", on ? "true" : "false");
-
+    btn.setAttribute("tabindex", on ? "0" : "-1");
     if (mode === "deep-time") {
       btn.hidden = false;
       btn.disabled = false;
       return;
     }
-    if (KINGDOM_PACK_IDS.includes(mode)) {
-      const loading = PACK_LOADS.has(mode);
-      btn.hidden = false;
-      btn.disabled = false;
-      btn.setAttribute("aria-busy", loading ? "true" : "false");
-      btn.classList.toggle("is-loading", loading);
-      btn.title = loading ? "Loading map…" : KINGDOM_TAB_LABELS[mode] || mode;
+    if (!KINGDOM_PACK_IDS.includes(mode)) {
+      // Era tabs whose data has not landed yet stay hidden.
+      btn.hidden = true;
+      return;
     }
-    btn.setAttribute("tabindex", on ? "0" : "-1");
+    const loading = !state.kingdomPacks[mode];
+    btn.hidden = false;
+    btn.disabled = false;
+    btn.setAttribute("aria-busy", loading ? "true" : "false");
+    btn.classList.toggle("is-loading", loading);
+    btn.title = loading ? "Loading map…" : KINGDOM_TAB_LABELS[mode] || mode;
+  });
+  // Visual order: shown eras in time order with Deep-time in the middle.
+  const shown = ERA_CHRONO.filter((m) => KINGDOM_PACK_IDS.includes(m));
+  const order = shown.slice();
+  order.splice(Math.floor(shown.length / 2), 0, "deep-time");
+  btns.forEach((btn) => {
+    const i = order.indexOf(btn.dataset.mode);
+    btn.style.order = String(i < 0 ? 99 : i);
   });
   document.querySelector(".app")?.setAttribute("data-atlas-mode", state.atlasMode);
 }
 
+/** Visible tabs in on-screen order (CSS order), for keyboard navigation. */
+function visibleTabsInOrder() {
+  return [...$$("#atlas-tabs .atlas-tab")]
+    .filter((b) => !b.hidden)
+    .sort((a, b) => Number(a.style.order || 0) - Number(b.style.order || 0));
+}
+
 const PACK_LOADS = new Map();
-/** Lazy-load a kingdom pack the first time its tab is opened. */
+/** Load a kingdom pack (all packs are requested together at start-up). */
 function requestKingdomPack(mode) {
   if (state.kingdomPacks[mode]) return Promise.resolve(state.kingdomPacks[mode]);
   if (PACK_LOADS.has(mode)) return PACK_LOADS.get(mode);
@@ -4169,13 +4196,16 @@ function bindUI() {
 
   // Event delegation — reliable taps even when tabs reflow/wrap
   $("#atlas-tabs")?.addEventListener("keydown", (e) => {
-    if (e.key !== "ArrowLeft" && e.key !== "ArrowRight") return;
-    const tabs = [...$$("#atlas-tabs .atlas-tab")].filter((b) => !b.hidden);
+    if (!["ArrowLeft", "ArrowRight", "Home", "End"].includes(e.key)) return;
+    const tabs = visibleTabsInOrder();
     const i = tabs.indexOf(document.activeElement);
     if (i < 0) return;
     e.preventDefault();
     e.stopPropagation();
-    const next = tabs[(i + (e.key === "ArrowRight" ? 1 : -1) + tabs.length) % tabs.length];
+    const n = tabs.length;
+    const j = e.key === "Home" ? 0 : e.key === "End" ? n - 1
+      : (i + (e.key === "ArrowRight" ? 1 : -1) + n) % n;
+    const next = tabs[j];
     next.focus();
     setAtlasMode(next.dataset.mode);
   });
@@ -4380,6 +4410,8 @@ async function init() {
 function renderInitialAtlas() {
   state.atlasMode = "deep-time";
   syncAtlasTabs();
+  // Load every era map at once; tabs stay dimmed (same size) until each is ready.
+  KINGDOM_PACK_IDS.forEach((m) => requestKingdomPack(m));
   $("#map-attr").textContent = state.data.meta.mapAttribution || "";
   renderGlossary();
 
