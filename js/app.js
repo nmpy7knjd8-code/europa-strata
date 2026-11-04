@@ -2417,6 +2417,11 @@ const CULTURE_FAMILY_RULES = [
   ["Caucasus", /caucasian kingdoms/i],
   ["Islamic world", /umayyad|abbasid|c[oó]rdoba|aghlabid/i],
   ["Persia", /sasanian|persia/i],
+  // Modern 1920 / 1938 / 1960 additions (last, so they never change an earlier assignment)
+  ["Western Europe", /weimar/i],
+  ["Slavic & Baltic", /ukrainian ssr|byelorussian/i],
+  ["Caucasus", /armenia-republic|georgia-dr|azerbaijan-dr/i],
+  ["Aegean", /republic of cyprus/i],
 ];
 
 function cultureFamily(layer) {
