@@ -28,7 +28,7 @@ const ATLAS_TAB_ORDER = [
   "modern",
 ];
 /** Era tabs shown in the bar (an era can have data before its tab is shown). */
-const VISIBLE_ERA_TABS = ["high-medieval", "renaissance", "early-modern", "modern"];
+const VISIBLE_ERA_TABS = ["antiquity", "early-medieval", "high-medieval", "renaissance", "early-modern", "modern"];
 /** Eras in time order; Deep-time is spliced into the middle of whichever are shown. */
 const ERA_CHRONO = ["antiquity", "early-medieval", "high-medieval", "renaissance", "early-modern", "modern"];
 
