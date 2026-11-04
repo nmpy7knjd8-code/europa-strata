@@ -2686,6 +2686,11 @@ body.page-ancestry {
 html[data-theme="dark"] {
   --border-line: #d0d0d0;
 }
+/* Dark era tabs: light polity edges and border mesh. The Oct 11 rgba(0,0,0,.22) was
+   measured in light theme only and vanishes on dark fills (audit item 1). */
+html[data-theme="dark"] .app:not([data-atlas-mode="deep-time"]) {
+  --era-border-line: rgba(255, 255, 255, 0.28);
+}
 .app[data-atlas-mode="deep-time"] .country,
 .app[data-atlas-mode="deep-time"] .coastline {
   stroke: var(--border-line);
