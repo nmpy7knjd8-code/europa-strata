@@ -51,7 +51,7 @@ const tl = JSON.parse(read("data/timeline.json"));
 for (const p of tl.periods)
   for (const l of p.mapLayers || [])
     rows.push({ key: `${p.id}/${l.id}`, label: l.label, fam: family(l.id, l.label) });
-for (const tab of ["high-medieval", "renaissance", "early-modern", "modern"]) {
+for (const tab of ["antiquity", "high-medieval", "renaissance", "early-modern", "modern"]) {
   const d = JSON.parse(read(`data/kingdom-eras/${tab}.json`));
   for (const p of d.polities) {
     rows.push({ key: `${tab}:${p.id}`, label: p.name, fam: family(p.id, p.name) });

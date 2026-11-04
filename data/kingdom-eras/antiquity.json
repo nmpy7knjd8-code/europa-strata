@@ -1,0 +1,1788 @@
+{
+ "tabId": "antiquity",
+ "tabLabel": "Antiquity",
+ "defaultYear": -323,
+ "ticks": [
+  {
+   "year": -500,
+   "label": "500 BC",
+   "name": "Persia and the poleis",
+   "era": "Achaemenids, Greek cities, Carthage, Etruscans",
+   "narrative": "In 500 BC Darius I rules the largest empire yet seen, reaching into Europe in Thrace. Athens has just become a democracy, Carthage controls the western sea lanes, the Etruscans dominate central Italy and Rome is a young republic. Celtic, Germanic and Scythian peoples fill the lands to the north."
+  },
+  {
+   "year": -323,
+   "label": "323 BC",
+   "name": "Death of Alexander",
+   "era": "Alexander's empire, Celts, Rome rising",
+   "narrative": "Alexander dies in Babylon in June 323 BC, master of an empire from Greece to the Indus. His generals will soon carve it up. In the west Carthage holds Spain's coast and Sardinia, Rome is fighting the Samnites for central Italy, and Celts have settled from Britain to the Danube."
+  },
+  {
+   "year": -200,
+   "label": "200 BC",
+   "name": "Rome after Hannibal",
+   "era": "Rome, Hellenistic kingdoms, Scythians",
+   "narrative": "Rome has just defeated Hannibal (202 BC) and taken Carthage's Spanish lands. In the east the Antigonids, Seleucids, Ptolemies and Attalids of Pergamon contest the Hellenistic world, and Rome is about to intervene. Scythians hold the steppe, Norse farmers Scandinavia."
+  },
+  {
+   "year": -1,
+   "label": "1 BC",
+   "name": "Augustan peace",
+   "era": "Roman Empire, Parthia, Germania",
+   "narrative": "Augustus rules the Mediterranean world as first emperor and is pushing toward the Elbe. Parthia holds Iran and Mesopotamia, Armenia is contested between them, and the Odrysian kings of Thrace and the Bosporan kings are Roman clients. Germanic, Dacian and Sarmatian peoples lie beyond the frontier."
+  },
+  {
+   "year": 100,
+   "label": "100 AD",
+   "name": "The Pax Romana",
+   "era": "Trajan, Dacia, Parthia",
+   "narrative": "Trajan has just become emperor and will soon conquer Dacia. The Roman frontier runs along the Rhine and Danube, with Britain held up to the Caledonian north. Goths live on the Vistula, Sarmatians and Alans on the steppe, Parthia remains Rome's eastern rival."
+  },
+  {
+   "year": 300,
+   "label": "300 AD",
+   "name": "The Tetrarchy",
+   "era": "Diocletian's four rulers, Sasanian Persia",
+   "narrative": "Diocletian has divided imperial rule among four emperors after the crisis of the third century. Dacia has been abandoned to the Goths, who now hold the Black Sea steppe. The Sasanian Persians have replaced the Parthians, and Armenia has just become the first Christian kingdom."
+  }
+ ],
+ "notes": "Antiquity polities, 500 BC–AD 300. Borders from historical-basemaps (A. Ourednik, GPL-3.0), clipped to Natural Earth land; large unnamed dataset areas are assigned only where the people are well attested, the rest is left unassigned. Tribal peoples and archaeological cultures had fluid, not linear, borders. Sources: Encyclopaedia Britannica; The Cambridge Ancient History; M. Beard, SPQR (2015); B. Cunliffe, Europe Between the Oceans (2008); per-polity sources in each profile's 'sources' field.",
+ "polities": [
+  {
+   "id": "achaemenid",
+   "name": "Achaemenid Persia",
+   "type": "empire",
+   "yearsActive": "c. 550–330 BC",
+   "summary": "The first Persian empire, founded by Cyrus the Great, which ruled from the Aegean to the Indus and reached into Europe in Thrace before Alexander destroyed it.",
+   "description": "Cyrus II united the Medes and Persians around 550 BC, took Lydia (546) and Babylon (539), and his successors added Egypt and the Indus valley. Darius I (522–486) organised the empire into satrapies linked by the Royal Road and a standard gold coinage, the daric. In Europe the Persians held Thrace and received the submission of Macedon around 512–492 BC. The Ionian Revolt (499–493) drew them into war with Athens and Sparta, and defeats at Marathon (490), Salamis (480) and Plataea (479) ended their advance into Greece.",
+   "conflicts": "Darius's Scythian campaign crossed the Danube around 513 BC. The Ionian Revolt led to the Persian Wars: Marathon (490), Thermopylae and Salamis (480), Plataea and Mycale (479). Alexander destroyed the empire at the Granicus (334), Issus (333) and Gaugamela (331).",
+   "leaders": "Cyrus the Great (c. 559–530), Darius I (522–486) and Xerxes I (486–465) built the empire; Darius III (336–330) was the last king, murdered by his own satrap Bessus.",
+   "religion": "The kings honoured Ahura Mazda, the wise lord of Zoroastrian tradition, while tolerating local cults; Cyrus allowed the Jews to return from Babylon and rebuild the Temple.",
+   "culture": "Persepolis, begun by Darius, was the ceremonial capital. Aramaic served as the imperial administrative language, and Persian nobles were raised to 'ride, shoot the bow and speak the truth' (Herodotus).",
+   "literature": "Darius's Behistun inscription, in Old Persian, Elamite and Babylonian, tells how he took the throne; the Greek view of Persia comes from Herodotus and Aeschylus's The Persians (472 BC).",
+   "art": "The Apadana reliefs at Persepolis show delegations from twenty-three nations bringing tribute, in a court style that mixes Assyrian, Egyptian and Greek elements.",
+   "ideas": "The Cyrus Cylinder presents the king as restorer of local gods and peoples; Persian rule set the model of a multi-ethnic empire held together by roads, tribute and tolerance.",
+   "science": "Persian engineers built qanats (underground irrigation channels), a canal from the Nile to the Red Sea and the Royal Road with relay stations from Sardis to Susa.",
+   "story": [
+    {
+     "title": "Xerxes whips the sea",
+     "text": "When a storm destroyed his first bridge of boats across the Hellespont in 480 BC, Xerxes, says Herodotus, had the sea given three hundred lashes and a pair of fetters thrown into it. A second bridge held, and his army crossed into Europe."
+    }
+   ],
+   "sources": "Encyclopaedia Britannica, 'Achaemenian dynasty'; P. Briant, From Cyrus to Alexander (2002); Herodotus, Histories.",
+   "images": [
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Pers%C3%A9polis%2C%20Ir%C3%A1n%2C%202016-09-24%2C%20DD%2053.jpg?width=800",
+     "caption": "Tribute bearers on the Apadana stairway at Persepolis",
+     "alt": "Tribute bearers on the Apadana stairway at Persepolis",
+     "role": "art"
+    },
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Achaemenid%20coin%20daric%20420BC%20front.jpg?width=800",
+     "caption": "Gold daric showing the Persian king as an archer",
+     "alt": "Gold daric showing the Persian king as an archer",
+     "role": "culture"
+    }
+   ],
+   "extentsByTick": {},
+   "stories": [
+    {
+     "title": "Xerxes whips the sea",
+     "text": "When a storm destroyed his first bridge of boats across the Hellespont in 480 BC, Xerxes, says Herodotus, had the sea given three hundred lashes and a pair of fetters thrown into it. A second bridge held, and his army crossed into Europe."
+    }
+   ],
+   "philosophy": "The Cyrus Cylinder presents the king as restorer of local gods and peoples; Persian rule set the model of a multi-ethnic empire held together by roads, tribute and tolerance.",
+   "artIdeas": "The Apadana reliefs at Persepolis show delegations from twenty-three nations bringing tribute, in a court style that mixes Assyrian, Egyptian and Greek elements.\n\nThe Cyrus Cylinder presents the king as restorer of local gods and peoples; Persian rule set the model of a multi-ethnic empire held together by roads, tribute and tolerance."
+  },
+  {
+   "id": "greek-poleis",
+   "name": "Greek city-states",
+   "type": "city-states",
+   "yearsActive": "c. 800–146 BC (independent poleis)",
+   "summary": "The hundreds of self-governing Greek cities of the Aegean, southern Italy, Sicily and the western Mediterranean, including Athens, Sparta, Corinth, Syracuse and Massalia.",
+   "description": "The polis, a city with its farmland governed by its citizens, was the basic unit of Greek life from the eighth century BC. Colonies spread Greek cities from Marseille (Massalia) and Emporion in the west to the Black Sea. In 500 BC Athens had just become a democracy under Cleisthenes, Sparta led the Peloponnesian League, and Syracuse dominated Sicily. After defeating Persia, Athens built an Aegean empire, and its rivalry with Sparta led to the Peloponnesian War (431–404). Philip II of Macedon defeated Athens and Thebes at Chaeronea in 338 BC, ending the cities' independence in practice.",
+   "conflicts": "The Persian Wars (490–479), the Peloponnesian War (431–404) and the Corinthian War (395–387) were the great Greek wars; in the west Syracuse fought Carthage and Athens' disastrous Sicilian Expedition (415–413) failed before its walls.",
+   "leaders": "Cleisthenes founded Athenian democracy (508/7 BC); Themistocles built the fleet that won at Salamis; Pericles led Athens at its height (c. 461–429); Gelon and Dionysius I ruled Syracuse as tyrants.",
+   "religion": "Each city honoured the Olympian gods with its own patron, such as Athena at Athens; Panhellenic sanctuaries at Olympia and Delphi, the Olympic Games and the Delphic oracle bound the Greeks together.",
+   "culture": "Citizens met in the agora and assembly, trained in the gymnasium and fought as hoplites in the phalanx; Athenian drama festivals and the Panathenaia were civic religious events.",
+   "literature": "Aeschylus, Sophocles and Euripides wrote tragedy and Aristophanes comedy; Herodotus and Thucydides invented history; Pindar wrote victory odes for athletes.",
+   "art": "The Parthenon (447–432 BC), with sculpture directed by Phidias, defined the classical style; red-figure vase painting and bronze statues such as the Riace warriors show the period's skill.",
+   "ideas": "Socrates, Plato and Aristotle founded Western philosophy in Athens; the Ionian thinkers Thales and Heraclitus had already sought natural explanations of the world.",
+   "science": "Hippocrates of Kos separated medicine from religion; Pythagoras, Euclid and later Archimedes of Syracuse laid the foundations of mathematics and mechanics.",
+   "story": [
+    {
+     "title": "Ostracism",
+     "text": "Once a year Athenians could vote to exile a too-powerful citizen for ten years by scratching his name on a pottery sherd, an ostrakon. Thousands of these sherds have been found, some with the same name in the same handwriting, ballots prepared in advance."
+    }
+   ],
+   "sources": "Encyclopaedia Britannica, 'ancient Greek civilization'; M. H. Hansen, Polis (2006); Thucydides, History of the Peloponnesian War.",
+   "images": [
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/The%20Parthenon%20in%20Athens.jpg?width=800",
+     "caption": "The Parthenon on the Athenian Acropolis (447–432 BC)",
+     "alt": "The Parthenon on the Athenian Acropolis (447–432 BC)",
+     "role": "art"
+    },
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/The%20owl%2C%20Athenian%20tetradrachm%20%28reverse%29.png?width=800",
+     "caption": "Athenian silver tetradrachm with the owl of Athena",
+     "alt": "Athenian silver tetradrachm with the owl of Athena",
+     "role": "culture"
+    }
+   ],
+   "extentsByTick": {},
+   "stories": [
+    {
+     "title": "Ostracism",
+     "text": "Once a year Athenians could vote to exile a too-powerful citizen for ten years by scratching his name on a pottery sherd, an ostrakon. Thousands of these sherds have been found, some with the same name in the same handwriting, ballots prepared in advance."
+    }
+   ],
+   "philosophy": "Socrates, Plato and Aristotle founded Western philosophy in Athens; the Ionian thinkers Thales and Heraclitus had already sought natural explanations of the world.",
+   "artIdeas": "The Parthenon (447–432 BC), with sculpture directed by Phidias, defined the classical style; red-figure vase painting and bronze statues such as the Riace warriors show the period's skill.\n\nSocrates, Plato and Aristotle founded Western philosophy in Athens; the Ionian thinkers Thales and Heraclitus had already sought natural explanations of the world."
+  },
+  {
+   "id": "alexander-empire",
+   "name": "Empire of Alexander the Great",
+   "type": "empire",
+   "yearsActive": "336–323 BC (divided by 301 BC)",
+   "summary": "The empire won by Alexander III of Macedon, who conquered the Persian Empire from Egypt to the Indus between 334 and 325 BC and died in Babylon in 323 BC.",
+   "description": "Philip II made Macedon the leading power in Greece and planned a war on Persia; after his murder in 336 BC his son Alexander carried it out. Alexander crossed into Asia in 334, won at the Granicus, Issus and Gaugamela, founded Alexandria in Egypt and burned Persepolis. He pushed on through Bactria to the Indus before his army refused to go further. When he died in Babylon in June 323 BC, aged 32, his generals divided the empire, and the wars of the Successors (Diadochi) produced the Hellenistic kingdoms.",
+   "conflicts": "Granicus (334), Issus (333), the siege of Tyre (332), Gaugamela (331) and the Hydaspes against King Porus in India (326) were Alexander's major battles; Antipater crushed a Spartan revolt at Megalopolis (331).",
+   "leaders": "Alexander III (336–323) ruled with Antipater as regent in Macedon; Perdiccas, Ptolemy, Seleucus, Antigonus and Lysimachus became the Successors.",
+   "religion": "Alexander sacrificed to Greek gods and local ones alike; at the oracle of Ammon at Siwa he was greeted as son of the god, and he later asked the Greek cities to honour him as divine.",
+   "culture": "Alexander adopted Persian court dress and proskynesis (prostration), married the Bactrian Roxane and held mass Greek-Persian weddings at Susa in 324 BC.",
+   "literature": "Accounts by his companions Ptolemy and Aristobulus are lost; we read Alexander through Arrian, Plutarch and Curtius Rufus, writing centuries later. The Alexander Romance turned him into a legend from Iceland to Ethiopia.",
+   "art": "Lysippos was his official sculptor and Apelles his painter; the Alexander Mosaic from Pompeii copies a painting of his battle with Darius.",
+   "ideas": "Aristotle had been Alexander's tutor; the conquests spread Greek language and cities across the Near East and opened the Hellenistic age.",
+   "science": "Surveyors (bematists) paced out his routes, and his expedition brought back knowledge of the plants, animals and geography of Asia.",
+   "story": [
+    {
+     "title": "The Gordian knot",
+     "text": "At Gordion in 333 BC Alexander was shown an ox-cart tied with a knot that, legend said, only the future ruler of Asia could undo. Unable to find the ends, he cut through it with his sword (or, in another version, pulled out the pin of the yoke)."
+    }
+   ],
+   "sources": "Encyclopaedia Britannica, 'Alexander the Great'; A. B. Bosworth, Conquest and Empire (1988); Arrian, Anabasis of Alexander.",
+   "images": [
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Alexander%20the%20Great%20mosaic.jpg?width=800",
+     "caption": "Alexander at the battle of Issus, detail of the Alexander Mosaic from Pompeii",
+     "alt": "Alexander at the battle of Issus, detail of the Alexander Mosaic from Pompeii",
+     "role": "leader"
+    },
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Tetradrachm%20Alexander%20Herakles%20CdM.jpg?width=800",
+     "caption": "Silver tetradrachm of Alexander with Herakles in a lion-skin",
+     "alt": "Silver tetradrachm of Alexander with Herakles in a lion-skin",
+     "role": "culture"
+    }
+   ],
+   "extentsByTick": {},
+   "stories": [
+    {
+     "title": "The Gordian knot",
+     "text": "At Gordion in 333 BC Alexander was shown an ox-cart tied with a knot that, legend said, only the future ruler of Asia could undo. Unable to find the ends, he cut through it with his sword (or, in another version, pulled out the pin of the yoke)."
+    }
+   ],
+   "philosophy": "Aristotle had been Alexander's tutor; the conquests spread Greek language and cities across the Near East and opened the Hellenistic age.",
+   "artIdeas": "Lysippos was his official sculptor and Apelles his painter; the Alexander Mosaic from Pompeii copies a painting of his battle with Darius.\n\nAristotle had been Alexander's tutor; the conquests spread Greek language and cities across the Near East and opened the Hellenistic age."
+  },
+  {
+   "id": "antigonid-macedon",
+   "name": "Antigonid Macedon and the Hellenic League",
+   "type": "kingdom",
+   "yearsActive": "c. 277–168 BC",
+   "summary": "The Hellenistic kingdom of Macedon under the Antigonid dynasty, which dominated mainland Greece through the Hellenic League until Rome defeated it at Pydna in 168 BC.",
+   "description": "After decades of wars among Alexander's successors, Antigonus II Gonatas secured the Macedonian throne in 277 BC by defeating invading Gauls. His successors controlled Greece through garrisons at Corinth, Chalcis and Demetrias, the 'fetters of Greece'. Philip V revived the Hellenic League in 224 BC and allied with Hannibal in 215, which brought Rome east. Rome defeated Philip at Cynoscephalae (197), and his son Perseus at Pydna (168), after which Macedon was split into four republics and became a Roman province in 146 BC.",
+   "conflicts": "The Chremonidean War (267–261) against Athens and Sparta; the Social War against the Aetolian League (220–217); the four Macedonian Wars with Rome (214–148), lost at Cynoscephalae and Pydna.",
+   "leaders": "Antigonus II Gonatas (277–239), Antigonus III Doson (229–221), Philip V (221–179) and Perseus (179–168), the last king, who died a prisoner in Italy.",
+   "religion": "The kings honoured Zeus and Herakles, ancestor of the Macedonian royal house; Delos and Delphi received royal dedications.",
+   "culture": "Pella was the royal capital, with pebble and later tessellated mosaics in its palaces and houses; Macedonian nobles served as Companions of the king.",
+   "literature": "Polybius, who saw Macedon's fall, is our main source; the Stoic philosopher Persaeus served at Antigonus Gonatas's court.",
+   "art": "The royal tombs at Vergina (Aigai), with wall paintings and gold larnakes, show Macedonian court art; the Winged Victory of Samothrace was probably a naval dedication of this era.",
+   "ideas": "Antigonus Gonatas, a pupil of Zeno, described kingship as 'glorious servitude'; the Achaean and Aetolian Leagues experimented with federal government.",
+   "science": "Hellenistic siege engineering and warships, such as the giant 'sixteens' of Demetrius, were developed in these wars.",
+   "story": [
+    {
+     "title": "The line in the sand",
+     "text": "After Pydna, Rome's power was such that in 168 BC the envoy Popillius Laenas met the Seleucid king Antiochus IV outside Alexandria, drew a circle around him in the sand and told him to decide before stepping out of it whether he would leave Egypt. Antiochus left."
+    }
+   ],
+   "sources": "Encyclopaedia Britannica, 'Macedonia: Hellenistic period'; Polybius, Histories; F. W. Walbank, The Hellenistic World (1981).",
+   "images": [
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Tetradrachm%20of%20Philip%20V%20of%20Macedon.jpg?width=800",
+     "caption": "Silver tetradrachm of Philip V of Macedon",
+     "alt": "Silver tetradrachm of Philip V of Macedon",
+     "role": "leader"
+    },
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/%2B%201977%20wurden%20die%20K%C3%B6nigsgr%C3%A4ber%20in%20Vergina%20entdeckt.%2027.jpg?width=800",
+     "caption": "The royal tombs of Aigai at Vergina",
+     "alt": "The royal tombs of Aigai at Vergina",
+     "role": "art"
+    }
+   ],
+   "extentsByTick": {},
+   "stories": [
+    {
+     "title": "The line in the sand",
+     "text": "After Pydna, Rome's power was such that in 168 BC the envoy Popillius Laenas met the Seleucid king Antiochus IV outside Alexandria, drew a circle around him in the sand and told him to decide before stepping out of it whether he would leave Egypt. Antiochus left."
+    }
+   ],
+   "philosophy": "Antigonus Gonatas, a pupil of Zeno, described kingship as 'glorious servitude'; the Achaean and Aetolian Leagues experimented with federal government.",
+   "artIdeas": "The royal tombs at Vergina (Aigai), with wall paintings and gold larnakes, show Macedonian court art; the Winged Victory of Samothrace was probably a naval dedication of this era.\n\nAntigonus Gonatas, a pupil of Zeno, described kingship as 'glorious servitude'; the Achaean and Aetolian Leagues experimented with federal government."
+  },
+  {
+   "id": "seleucid",
+   "name": "Seleucid Empire",
+   "type": "kingdom",
+   "yearsActive": "312–63 BC",
+   "summary": "The largest of the Hellenistic kingdoms, founded by Alexander's general Seleucus I, which ruled from Anatolia and Syria to Iran and was steadily reduced by Rome and Parthia.",
+   "description": "Seleucus I took Babylon in 312 BC and won most of Alexander's Asian empire at Ipsus (301). His dynasty founded Greek cities such as Antioch, Seleucia on the Tigris and Laodicea, which spread Greek culture across the Near East. Antiochus III restored the empire in a great eastern expedition but was defeated by Rome at Magnesia (190 BC) and lost Asia Minor west of the Taurus by the Peace of Apamea. Parthia took Iran and Mesopotamia in the 140s, and Pompey turned the remnant in Syria into a Roman province in 63 BC.",
+   "conflicts": "Six Syrian Wars with Ptolemaic Egypt over Coele-Syria; the Roman–Seleucid War (192–188) ending at Magnesia; the Maccabean revolt in Judea (167–160); wars with Parthia.",
+   "leaders": "Seleucus I Nicator (305–281), Antiochus I (281–261), Antiochus III the Great (222–187) and Antiochus IV Epiphanes (175–164).",
+   "religion": "Kings were worshipped in a ruler cult and patronised Apollo, their claimed ancestor, as well as Babylonian temples; Antiochus IV's attempt to impose Greek cult in Jerusalem provoked the Maccabean revolt.",
+   "culture": "Greek settlers lived in new cities with gymnasia and theatres alongside Babylonian, Aramaic and Iranian populations.",
+   "literature": "The Babylonian priest Berossus wrote a history of Babylon in Greek for Antiochus I; the Books of Maccabees record the Jewish view of Seleucid rule.",
+   "art": "Seleucid coin portraits are among the finest of Hellenistic art; Antioch's mosaics and the Tyche of Antioch statue were widely copied.",
+   "ideas": "The Seleucid era, counted from 312 BC, was the first continuous dating system and was used in the Near East for over a thousand years.",
+   "science": "Babylonian astronomers under the Seleucids kept systematic records and produced mathematical predictions of planetary positions.",
+   "story": [
+    {
+     "title": "War elephants",
+     "text": "Seleucus I traded the eastern provinces to the Indian king Chandragupta Maurya for 500 war elephants. They helped win the battle of Ipsus in 301 BC, and an elephant became a Seleucid emblem on coins."
+    }
+   ],
+   "sources": "Encyclopaedia Britannica, 'Seleucid kingdom'; S. Sherwin-White and A. Kuhrt, From Samarkhand to Sardis (1993).",
+   "images": [
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Antiochus%20III%20%28transparent%29.png?width=800",
+     "caption": "Portrait of Antiochus III the Great",
+     "alt": "Portrait of Antiochus III the Great",
+     "role": "leader"
+    },
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/201209071746a%20Berlin%20Pergamonmuseum%2C%20Tetradrachme%20Seleukos%27%20I%2C%20Silber%2C%20Pergamon%2C%20281-280%20v.u.Z.jpg?width=800",
+     "caption": "Silver tetradrachm of Seleucus I",
+     "alt": "Silver tetradrachm of Seleucus I",
+     "role": "culture"
+    }
+   ],
+   "extentsByTick": {},
+   "stories": [
+    {
+     "title": "War elephants",
+     "text": "Seleucus I traded the eastern provinces to the Indian king Chandragupta Maurya for 500 war elephants. They helped win the battle of Ipsus in 301 BC, and an elephant became a Seleucid emblem on coins."
+    }
+   ],
+   "philosophy": "The Seleucid era, counted from 312 BC, was the first continuous dating system and was used in the Near East for over a thousand years.",
+   "artIdeas": "Seleucid coin portraits are among the finest of Hellenistic art; Antioch's mosaics and the Tyche of Antioch statue were widely copied.\n\nThe Seleucid era, counted from 312 BC, was the first continuous dating system and was used in the Near East for over a thousand years."
+  },
+  {
+   "id": "ptolemaic",
+   "name": "Ptolemaic Kingdom",
+   "type": "kingdom",
+   "yearsActive": "305–30 BC",
+   "summary": "The Macedonian dynasty that ruled Egypt from Alexandria for three centuries, also holding Cyprus and, at times, Aegean islands and Cyrenaica, until Cleopatra VII's defeat by Octavian.",
+   "description": "Ptolemy I, one of Alexander's generals, took Egypt after 323 BC and declared himself king in 305. His dynasty ruled as pharaohs to Egyptians and as Hellenistic kings to Greeks, with a capital at Alexandria. Its navy controlled Cyprus and Aegean bases in the third century BC. Dynastic feuds and Roman pressure weakened the kingdom, and after Antony and Cleopatra lost at Actium in 31 BC, Egypt became a Roman province in 30 BC.",
+   "conflicts": "The Syrian Wars against the Seleucids; the battle of Raphia (217 BC), won with native Egyptian troops; Actium (31 BC).",
+   "leaders": "Ptolemy I Soter (305–282), Ptolemy II Philadelphus (282–246) and Cleopatra VII (51–30), the last ruler.",
+   "religion": "The god Serapis combined Greek and Egyptian features; the kings built Egyptian temples at Edfu and Dendera and were worshipped as gods.",
+   "culture": "Alexandria, with its lighthouse (the Pharos) and royal quarter, was the largest Greek city of its age.",
+   "literature": "The Library of Alexandria gathered Greek literature; Callimachus, Theocritus and Apollonius of Rhodes wrote there, and the Hebrew Bible was translated into Greek as the Septuagint.",
+   "art": "Royal portraits combined Greek realism with Egyptian conventions; the Rosetta Stone (196 BC) records a decree in three scripts.",
+   "ideas": "The Museum of Alexandria, a state-funded research institute, was a model for later academies.",
+   "science": "Euclid wrote the Elements, Eratosthenes measured the Earth's circumference and Herophilus dissected human bodies in Alexandria.",
+   "story": [
+    {
+     "title": "Measuring the Earth",
+     "text": "Eratosthenes heard that at noon on the summer solstice the sun shone straight down a well at Syene, while at Alexandria it cast a shadow of about 7 degrees. From this angle and the distance between the cities he worked out the Earth's circumference with remarkable accuracy."
+    }
+   ],
+   "sources": "Encyclopaedia Britannica, 'Ptolemaic dynasty'; G. Hölbl, A History of the Ptolemaic Empire (2001).",
+   "images": [
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Rosetta%20Stone.JPG?width=800",
+     "caption": "The Rosetta Stone, a Ptolemaic decree of 196 BC in hieroglyphic, Demotic and Greek",
+     "alt": "The Rosetta Stone, a Ptolemaic decree of 196 BC in hieroglyphic, Demotic and Greek",
+     "role": "culture"
+    },
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Gold%20coin%20of%20Ptolemy%20I%20Soter%20%28cropped%29.jpg?width=800",
+     "caption": "Coin portrait of Ptolemy I Soter",
+     "alt": "Coin portrait of Ptolemy I Soter",
+     "role": "leader"
+    }
+   ],
+   "extentsByTick": {},
+   "stories": [
+    {
+     "title": "Measuring the Earth",
+     "text": "Eratosthenes heard that at noon on the summer solstice the sun shone straight down a well at Syene, while at Alexandria it cast a shadow of about 7 degrees. From this angle and the distance between the cities he worked out the Earth's circumference with remarkable accuracy."
+    }
+   ],
+   "philosophy": "The Museum of Alexandria, a state-funded research institute, was a model for later academies.",
+   "artIdeas": "Royal portraits combined Greek realism with Egyptian conventions; the Rosetta Stone (196 BC) records a decree in three scripts.\n\nThe Museum of Alexandria, a state-funded research institute, was a model for later academies."
+  },
+  {
+   "id": "pergamon",
+   "name": "Kingdom of Pergamon",
+   "type": "kingdom",
+   "yearsActive": "282–133 BC",
+   "summary": "The Attalid kingdom of north-western Anatolia, a Roman ally whose capital Pergamon rivalled Alexandria in culture, bequeathed to Rome in 133 BC.",
+   "description": "Philetaerus, guardian of Lysimachus's treasure at Pergamon, made himself independent in 282 BC. Attalus I took the title of king after defeating the Galatians, and the Attalids sided with Rome against Macedon and the Seleucids. After Magnesia (190 BC) Rome gave them most of western Asia Minor. Attalus III left the kingdom to Rome in his will, and it became the province of Asia.",
+   "conflicts": "Wars against the Galatians (Celts who had crossed into Anatolia in 278 BC); alliance with Rome in the Macedonian Wars and against Antiochus III; the revolt of Aristonicus after 133 BC.",
+   "leaders": "Philetaerus (282–263), Attalus I (241–197), Eumenes II (197–159) and Attalus III (138–133).",
+   "religion": "Athena Nikephoros was the city's patron; the Great Altar honoured Zeus and Athena, and the Asclepieion was a famous healing sanctuary.",
+   "culture": "Pergamon was built in terraces up its acropolis, with a theatre cut into the steep hillside.",
+   "literature": "Its library was second only to Alexandria's; Crates of Mallos led its grammarians.",
+   "art": "The Great Altar's frieze of gods fighting giants and the Dying Gaul statue are masterpieces of the Pergamene 'baroque' style.",
+   "ideas": "Pergamon's scholars favoured allegorical reading of Homer, against the Alexandrians' textual criticism.",
+   "science": "According to Pliny, parchment (pergamenum) was developed there when Egypt stopped exporting papyrus; the physician Galen was born at Pergamon in AD 129.",
+   "story": [
+    {
+     "title": "The Dying Gaul",
+     "text": "To celebrate victory over the Galatians, Attalus I set up bronze statues of defeated Celts. A Roman marble copy, the Dying Gaul, shows a wounded warrior with a torc around his neck sinking to the ground."
+    }
+   ],
+   "sources": "Encyclopaedia Britannica, 'Pergamum'; E. V. Hansen, The Attalids of Pergamon (2nd ed. 1971).",
+   "images": [
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Berlin%20-%20Pergamonmuseum%20-%20Altar%2002.jpg?width=800",
+     "caption": "The Great Altar of Pergamon, now in Berlin",
+     "alt": "The Great Altar of Pergamon, now in Berlin",
+     "role": "art"
+    },
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Dying%20Gaul%20Musei%20Capitolini%20MC747.jpg?width=800",
+     "caption": "The Dying Gaul, Roman copy of a Pergamene bronze",
+     "alt": "The Dying Gaul, Roman copy of a Pergamene bronze",
+     "role": "art"
+    }
+   ],
+   "extentsByTick": {},
+   "stories": [
+    {
+     "title": "The Dying Gaul",
+     "text": "To celebrate victory over the Galatians, Attalus I set up bronze statues of defeated Celts. A Roman marble copy, the Dying Gaul, shows a wounded warrior with a torc around his neck sinking to the ground."
+    }
+   ],
+   "philosophy": "Pergamon's scholars favoured allegorical reading of Homer, against the Alexandrians' textual criticism.",
+   "artIdeas": "The Great Altar's frieze of gods fighting giants and the Dying Gaul statue are masterpieces of the Pergamene 'baroque' style.\n\nPergamon's scholars favoured allegorical reading of Homer, against the Alexandrians' textual criticism."
+  },
+  {
+   "id": "anatolian-kingdoms",
+   "name": "Hellenistic Anatolian kingdoms",
+   "type": "kingdoms",
+   "yearsActive": "c. 330–17 AD (Cappadocia annexed AD 17)",
+   "nameByTick": {
+    "-323": "Cappadocia"
+   },
+   "summary": "The native and Hellenised kingdoms of Anatolia, including Cappadocia, Pontus, Bithynia and Galatia, which emerged from the Persian satrapies after Alexander and were absorbed by Rome.",
+   "description": "Alexander bypassed northern and eastern Anatolia, where Persian-descended dynasts kept power. Cappadocia under Ariarathes resisted the Successors, and Pontus, Bithynia and the Celtic Galatians established kingdoms in the third century BC. Mithridates VI of Pontus (120–63 BC) built a Black Sea empire and fought Rome in three wars before Pompey defeated him. Rome turned the kingdoms into client states and then provinces: Bithynia in 74 BC, Galatia in 25 BC and Cappadocia in AD 17.",
+   "conflicts": "Wars among the kingdoms and with the Seleucids; the Mithridatic Wars (89–63 BC), including the massacre of Romans in Asia in 88 BC.",
+   "leaders": "Ariarathes I of Cappadocia; Nicomedes I of Bithynia, who invited the Galatians across the Bosporus; Mithridates VI Eupator of Pontus.",
+   "religion": "Iranian fire cults and the great temple-states of Comana coexisted with Greek gods; the Galatians kept Celtic gods and a council at the sacred oak grove of Drunemeton.",
+   "culture": "Persian, Greek, Anatolian and Celtic traditions mixed; Greek became the language of the courts.",
+   "literature": "Strabo, born at Amaseia in Pontus around 64 BC, described the region in his Geography.",
+   "art": "Royal coin portraits, especially those of Mithridates VI in the style of Alexander, are the best-known art of these kingdoms.",
+   "ideas": "Mithridates presented himself as defender of the Greeks against Rome.",
+   "science": "Mithridates was said to have taken small doses of poison daily to make himself immune, and his name gave us 'mithridatism'.",
+   "story": [
+    {
+     "title": "The poison king",
+     "text": "Defeated by Pompey and betrayed by his son, Mithridates VI tried to poison himself in 63 BC, but after years of taking antidotes the poison failed. He had a bodyguard kill him with a sword."
+    }
+   ],
+   "sources": "Encyclopaedia Britannica, 'Cappadocia', 'Pontus', 'Mithradates VI Eupator'; A. Mayor, The Poison King (2010).",
+   "images": [
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Tetradrachm%20of%20Mithridates%20VI%20CM%20SNG%20BM%201038.jpg?width=800",
+     "caption": "Coin portrait of Mithridates VI Eupator of Pontus",
+     "alt": "Coin portrait of Mithridates VI Eupator of Pontus",
+     "role": "leader"
+    }
+   ],
+   "extentsByTick": {},
+   "stories": [
+    {
+     "title": "The poison king",
+     "text": "Defeated by Pompey and betrayed by his son, Mithridates VI tried to poison himself in 63 BC, but after years of taking antidotes the poison failed. He had a bodyguard kill him with a sword."
+    }
+   ],
+   "philosophy": "Mithridates presented himself as defender of the Greeks against Rome.",
+   "artIdeas": "Royal coin portraits, especially those of Mithridates VI in the style of Alexander, are the best-known art of these kingdoms.\n\nMithridates presented himself as defender of the Greeks against Rome."
+  },
+  {
+   "id": "bosporan",
+   "name": "Bosporan Kingdom",
+   "type": "kingdom",
+   "yearsActive": "c. 438 BC–AD 4th century",
+   "summary": "The Greek kingdom on both sides of the Kerch Strait in Crimea and the Taman peninsula, which exported Scythian grain to Athens and later became a Roman client state.",
+   "description": "Greek colonies such as Panticapaeum (Kerch) and Phanagoria united under the Spartocid dynasty around 438 BC. They traded grain, fish and slaves from the steppe to Athens in return for wine, oil and fine goods, and ruled over Scythian and Maeotian neighbours. In 108 BC the last Spartocid handed the kingdom to Mithridates VI of Pontus. Under Rome it was a client kingdom, often ruled by Sarmatian-descended kings, until the Goths and Huns overran it in the third and fourth centuries AD.",
+   "conflicts": "Wars with the Scythians and Sarmatians; the civil war of 310–309 BC among the sons of Paerisades I; Pharnaces II's defeat by Caesar at Zela in 47 BC.",
+   "leaders": "Spartocus I founded the dynasty; Leucon I (389–349) and Paerisades I made it a great grain exporter; Asander and Queen Dynamis ruled under Augustus.",
+   "religion": "Greek gods were worshipped alongside Scythian and Sarmatian cults; Jewish communities and later Christians are attested in Panticapaeum.",
+   "culture": "Greek city life on the edge of the steppe, with nomad aristocrats buried in rich kurgans nearby.",
+   "literature": "Demosthenes praised Leucon for supplying grain to Athens; inscriptions record its kings and manumissions.",
+   "art": "Gold work from kurgans such as Kul-Oba, made by Greek craftsmen in Scythian taste, is now in the Hermitage.",
+   "ideas": "It was an early example of a Greek-barbarian state in which Greek kings ruled native peoples.",
+   "science": "Its grain exports were essential to Athens' food supply in the fourth century BC.",
+   "story": [
+    {
+     "title": "Grain for Athens",
+     "text": "In the 350s BC Athens imported about 400,000 medimnoi of grain a year from the Bosporus, roughly half its needs. The Athenians gave Leucon and his sons citizenship and exempted their ships from harbour dues."
+    }
+   ],
+   "sources": "Encyclopaedia Britannica, 'Bosporus, Kingdom of the'; D. Braund (ed.), Scythians and Greeks (2005).",
+   "images": [
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Scythian%20Kul%20Oba%20Crimea.jpg?width=800",
+     "caption": "Gold work from the Kul-Oba kurgan near Kerch",
+     "alt": "Gold work from the Kul-Oba kurgan near Kerch",
+     "role": "art"
+    }
+   ],
+   "extentsByTick": {},
+   "stories": [
+    {
+     "title": "Grain for Athens",
+     "text": "In the 350s BC Athens imported about 400,000 medimnoi of grain a year from the Bosporus, roughly half its needs. The Athenians gave Leucon and his sons citizenship and exempted their ships from harbour dues."
+    }
+   ],
+   "philosophy": "It was an early example of a Greek-barbarian state in which Greek kings ruled native peoples.",
+   "artIdeas": "Gold work from kurgans such as Kul-Oba, made by Greek craftsmen in Scythian taste, is now in the Hermitage.\n\nIt was an early example of a Greek-barbarian state in which Greek kings ruled native peoples."
+  },
+  {
+   "id": "roman-republic",
+   "name": "Roman Republic",
+   "type": "republic",
+   "yearsActive": "509–27 BC",
+   "summary": "The republic that grew from a city on the Tiber into the ruler of Italy and the Mediterranean, governed by elected magistrates and the Senate until civil wars brought Augustus to power.",
+   "description": "Tradition says the Romans expelled their last king in 509 BC and replaced him with two annually elected consuls. By 264 BC Rome controlled peninsular Italy through a network of colonies and allies. The Punic Wars with Carthage (264–146) brought Sicily, Sardinia, Spain and Africa, and wars in the east brought Macedon, Greece and Asia. Conquest enriched the elite and strained the system, leading to the Gracchi reforms, Marius and Sulla's civil war and finally Caesar's dictatorship and murder in 44 BC. Octavian's victory at Actium (31 BC) ended the republic in all but name.",
+   "conflicts": "The Samnite Wars (343–290), the war with Pyrrhus (280–275), the three Punic Wars, including Hannibal's invasion of Italy and Cannae (216), the Macedonian Wars, Caesar's Gallic War (58–50) and the civil wars of 49–31 BC.",
+   "leaders": "Camillus, Scipio Africanus, Cato the Elder, the Gracchi brothers, Marius, Sulla, Pompey, Julius Caesar and Cicero.",
+   "religion": "State priests such as the pontiffs and augurs read the will of the gods for public decisions; Jupiter Optimus Maximus on the Capitol was the chief god, and foreign cults such as Cybele were brought in during crises.",
+   "culture": "Patrician and plebeian families competed for office through the cursus honorum; the client–patron bond and the army of citizen farmers were the backbone of society.",
+   "literature": "Plautus and Terence adapted Greek comedy; Cicero's speeches and letters, Caesar's Commentaries, Lucretius and Catullus made Latin a literary language.",
+   "art": "Realistic portrait busts of old men (veristic portraits) and Greek art taken as booty shaped Roman taste; the Temple of Hercules Victor in Rome dates from the second century BC.",
+   "ideas": "Polybius explained Rome's success by its 'mixed constitution'; Cicero's On the Republic and On Duties adapted Greek Stoic political thought.",
+   "science": "Roman engineers built the Via Appia (312 BC), aqueducts beginning with the Aqua Appia, and concrete that made large vaults possible.",
+   "story": [
+    {
+     "title": "Crossing the Rubicon",
+     "text": "In January 49 BC Caesar led a legion across the Rubicon, the small river marking the border of his province, which was illegal for a general with his army. 'The die is cast,' he is supposed to have said, and the civil war began."
+    }
+   ],
+   "sources": "Encyclopaedia Britannica, 'ancient Rome: The Roman Republic'; M. Beard, SPQR (2015); Polybius, Histories, book 6.",
+   "images": [
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Bust%20of%20Cicero%20%281st-cent.%20BC%29%20-%20Palazzo%20Nuovo%20-%20Musei%20Capitolini%20-%20Rome%202016.jpg?width=800",
+     "caption": "Marble bust of Cicero, Capitoline Museums",
+     "alt": "Marble bust of Cicero, Capitoline Museums",
+     "role": "leader"
+    },
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Side%20of%20the%20denarius%20of%20L.%20Caesi%20from%20the%20Roman%20Republic.jpg?width=800",
+     "caption": "Silver denarius of the Roman Republic",
+     "alt": "Silver denarius of the Roman Republic",
+     "role": "culture"
+    }
+   ],
+   "extentsByTick": {},
+   "stories": [
+    {
+     "title": "Crossing the Rubicon",
+     "text": "In January 49 BC Caesar led a legion across the Rubicon, the small river marking the border of his province, which was illegal for a general with his army. 'The die is cast,' he is supposed to have said, and the civil war began."
+    }
+   ],
+   "philosophy": "Polybius explained Rome's success by its 'mixed constitution'; Cicero's On the Republic and On Duties adapted Greek Stoic political thought.",
+   "artIdeas": "Realistic portrait busts of old men (veristic portraits) and Greek art taken as booty shaped Roman taste; the Temple of Hercules Victor in Rome dates from the second century BC.\n\nPolybius explained Rome's success by its 'mixed constitution'; Cicero's On the Republic and On Duties adapted Greek Stoic political thought."
+  },
+  {
+   "id": "roman-empire",
+   "name": "Roman Empire",
+   "type": "empire",
+   "yearsActive": "27 BC–AD 395 (undivided)",
+   "nameByTick": {
+    "300": "Roman Empire (Tetrarchy)"
+   },
+   "summary": "The empire of the Caesars, founded by Augustus, which ruled the whole Mediterranean and Europe to the Rhine, Danube and Hadrian's Wall, reorganised around AD 300 by Diocletian's Tetrarchy.",
+   "description": "Augustus kept the forms of the republic while holding supreme power as princeps from 27 BC. Under him and his successors the empire reached its greatest extent under Trajan (AD 117), with about 60 million people. The Pax Romana of the first two centuries brought roads, cities and Roman citizenship, extended to all free men in 212. The third century brought civil war, invasions and inflation, until Diocletian (284–305) divided rule among two senior emperors (Augusti) and two juniors (Caesars). The map for 300 shows the regions of Diocletian, Maximian, Galerius and Constantius.",
+   "conflicts": "Varus lost three legions in the Teutoburg Forest (AD 9); Claudius invaded Britain (43); Titus destroyed Jerusalem (70); Trajan conquered Dacia (101–106); the Marcomannic Wars (166–180) and the crisis of the third century followed.",
+   "leaders": "Augustus (27 BC–AD 14), Claudius, Trajan, Hadrian, Marcus Aurelius, Septimius Severus, Diocletian (284–305) and Constantine I (306–337).",
+   "religion": "The imperial cult joined traditional gods; Mithras and Isis had followers across the empire. Christians were persecuted at times, most severely under Diocletian from 303, before Constantine's Edict of Milan (313) tolerated them.",
+   "culture": "Latin in the west and Greek in the east were the languages of the cities; baths, amphitheatres and the games spread a common way of life from Britain to Syria.",
+   "literature": "Virgil's Aeneid, Horace, Ovid, Livy, Tacitus, Seneca and Juvenal wrote in Latin; Plutarch and Lucian in Greek.",
+   "art": "The Ara Pacis, Trajan's Column, the Pantheon and the Porphyry Tetrarchs in Venice show the arc from Augustan classicism to late antique abstraction.",
+   "ideas": "Roman law, gathered by jurists such as Ulpian and Gaius, became the basis of European civil law; Marcus Aurelius wrote his Stoic Meditations on campaign.",
+   "science": "Ptolemy's Almagest and Geography and Galen's medicine dominated science for 1,300 years; Roman engineers built aqueducts such as the Pont du Gard.",
+   "story": [
+    {
+     "title": "Four rulers in porphyry",
+     "text": "A red porphyry sculpture now set into a corner of St Mark's in Venice shows the four tetrarchs embracing in pairs, identical and hand on sword. It was taken from Constantinople in 1204; one missing foot was later found in Istanbul."
+    }
+   ],
+   "sources": "Encyclopaedia Britannica, 'ancient Rome: The Roman Empire'; P. Garnsey and R. Saller, The Roman Empire (2nd ed. 2014); S. Corcoran, The Empire of the Tetrarchs (1996).",
+   "images": [
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Statue-Augustus.jpg?width=800",
+     "caption": "The Augustus of Prima Porta",
+     "alt": "The Augustus of Prima Porta",
+     "role": "leader"
+    },
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Venice%20%E2%80%93%20The%20Tetrarchs%2003.jpg?width=800",
+     "caption": "The Porphyry Tetrarchs, St Mark's, Venice",
+     "alt": "The Porphyry Tetrarchs, St Mark's, Venice",
+     "role": "art"
+    },
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Pont%20du%20Gard%20BLS.jpg?width=800",
+     "caption": "The Pont du Gard aqueduct bridge in southern France",
+     "alt": "The Pont du Gard aqueduct bridge in southern France",
+     "role": "culture"
+    }
+   ],
+   "extentsByTick": {},
+   "stories": [
+    {
+     "title": "Four rulers in porphyry",
+     "text": "A red porphyry sculpture now set into a corner of St Mark's in Venice shows the four tetrarchs embracing in pairs, identical and hand on sword. It was taken from Constantinople in 1204; one missing foot was later found in Istanbul."
+    }
+   ],
+   "philosophy": "Roman law, gathered by jurists such as Ulpian and Gaius, became the basis of European civil law; Marcus Aurelius wrote his Stoic Meditations on campaign.",
+   "artIdeas": "The Ara Pacis, Trajan's Column, the Pantheon and the Porphyry Tetrarchs in Venice show the arc from Augustan classicism to late antique abstraction.\n\nRoman law, gathered by jurists such as Ulpian and Gaius, became the basis of European civil law; Marcus Aurelius wrote his Stoic Meditations on campaign."
+  },
+  {
+   "id": "etruscans",
+   "name": "Etruscans",
+   "type": "league of city-states",
+   "yearsActive": "c. 900–c. 280 BC (independent)",
+   "summary": "The civilisation of Etruria, between the Arno and the Tiber, a league of rich city-states that dominated central Italy before Rome absorbed them.",
+   "description": "The Etruscans spoke a non-Indo-European language and lived in cities such as Veii, Tarquinia, Caere and Vulci, loosely joined in a league of twelve. They grew rich on iron from Elba and trade with Greeks and Phoenicians, and their kings ruled early Rome. By 500 BC they were losing ground: Greeks defeated their fleet at Cumae in 474 BC, Gauls took the Po valley, and Rome destroyed Veii in 396 BC. By the early third century BC all Etruscan cities were Roman allies.",
+   "conflicts": "The battle of Alalia (c. 540 BC), with Carthage against Greek Phocaeans; defeat at Cumae (474 BC) by Syracuse; wars with Rome from the siege of Veii to Sentinum (295 BC).",
+   "leaders": "The Tarquin kings of Rome were of Etruscan origin; Lars Porsenna of Clusium besieged Rome around 508 BC.",
+   "religion": "Etruscan priests read the will of the gods from livers and lightning (the 'Etruscan discipline'), a lore Rome continued to consult for centuries.",
+   "culture": "Women dined with men and are named in inscriptions, which shocked Greek observers; banquets and funeral games were central to aristocratic life.",
+   "literature": "Etruscan writing survives in about 13,000 inscriptions and the linen book of the Zagreb mummy, readable but only partly understood.",
+   "art": "Painted tombs at Tarquinia, the terracotta Apollo of Veii and the Sarcophagus of the Spouses from Caere are its best-known works.",
+   "ideas": "Rome took from the Etruscans the fasces, the curule chair, gladiatorial combat and the toga.",
+   "science": "Etruscan engineers drained marshes with tunnels (cuniculi) and laid out cities on a grid oriented to the heavens.",
+   "story": [
+    {
+     "title": "The bronze liver",
+     "text": "A bronze model of a sheep's liver found near Piacenza is divided into sections labelled with the names of gods. A priest would compare a sacrificed animal's liver with it to see which god was sending a sign."
+    }
+   ],
+   "sources": "Encyclopaedia Britannica, 'Etruscan'; G. Barker and T. Rasmussen, The Etruscans (1998).",
+   "images": [
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Sarcofago%20degli%20sposi.jpg?width=800",
+     "caption": "The Sarcophagus of the Spouses from Caere (c. 520 BC)",
+     "alt": "The Sarcophagus of the Spouses from Caere (c. 520 BC)",
+     "role": "art"
+    },
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Tarquinia%20Tomb%20of%20the%20Leopards.jpg?width=800",
+     "caption": "Banquet scene from a painted tomb at Tarquinia",
+     "alt": "Banquet scene from a painted tomb at Tarquinia",
+     "role": "culture"
+    }
+   ],
+   "extentsByTick": {},
+   "stories": [
+    {
+     "title": "The bronze liver",
+     "text": "A bronze model of a sheep's liver found near Piacenza is divided into sections labelled with the names of gods. A priest would compare a sacrificed animal's liver with it to see which god was sending a sign."
+    }
+   ],
+   "philosophy": "Rome took from the Etruscans the fasces, the curule chair, gladiatorial combat and the toga.",
+   "artIdeas": "Painted tombs at Tarquinia, the terracotta Apollo of Veii and the Sarcophagus of the Spouses from Caere are its best-known works.\n\nRome took from the Etruscans the fasces, the curule chair, gladiatorial combat and the toga."
+  },
+  {
+   "id": "italic-peoples",
+   "name": "Italic peoples (Samnites, Sabines and others)",
+   "type": "tribal peoples",
+   "yearsActive": "c. 1000–89 BC (Roman citizenship after the Social War)",
+   "summary": "The Oscan- and Umbrian-speaking peoples of the Apennines, above all the Samnites and Sabines, who were Rome's neighbours and fiercest rivals for control of Italy.",
+   "description": "Central and southern Italy was home to many Italic peoples, related in language to the Latins: Sabines, Umbrians, Volsci, Aequi and the Samnite confederation of the southern Apennines. The Sabines were absorbed by Rome by 290 BC. The Samnites fought Rome in three wars between 343 and 290 BC, and joined Pyrrhus and Hannibal against it. After the Social War (91–88 BC), all Italians received Roman citizenship, and Sulla ravaged Samnium for supporting his enemies.",
+   "conflicts": "The Samnite Wars (343–341, 326–304, 298–290 BC), including the Roman humiliation at the Caudine Forks (321 BC) and Sentinum (295 BC); the Social War (91–88 BC).",
+   "leaders": "Gavius Pontius led the Samnites at the Caudine Forks; Gaius Papius Mutilus was a leader of the Italian allies in the Social War.",
+   "religion": "Each people had sacred groves and sanctuaries, such as the Samnite temple and theatre at Pietrabbondante; the Iguvine Tablets record Umbrian rituals.",
+   "culture": "Hill-forts and scattered villages rather than cities; the Samnite 'sacred spring' sent young people to found new settlements.",
+   "literature": "The Iguvine Tablets, in Umbrian, are the longest text in an Italic language other than Latin.",
+   "art": "Samnite armour, with triple-disc breastplates, and painted tombs at Paestum by the Lucanians show their warrior culture.",
+   "ideas": "Rome borrowed the Samnite maniple, a flexible infantry unit, according to ancient writers.",
+   "science": "Agriculture and pastoral transhumance along the drove roads (tratturi) of the Apennines.",
+   "story": [
+    {
+     "title": "The Caudine Forks",
+     "text": "In 321 BC the Samnites trapped a Roman army in a narrow pass and forced every soldier, including the consuls, to walk under a yoke of spears, the worst humiliation a Roman army could suffer."
+    }
+   ],
+   "sources": "Encyclopaedia Britannica, 'Samnite', 'Sabini'; E. T. Salmon, Samnium and the Samnites (1967).",
+   "images": [
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Teatro%20sannitico%20a%20Pietrabbondante%2C%20Italia%20-%202006.jpg?width=800",
+     "caption": "The Samnite theatre at Pietrabbondante",
+     "alt": "The Samnite theatre at Pietrabbondante",
+     "role": "art"
+    }
+   ],
+   "extentsByTick": {},
+   "stories": [
+    {
+     "title": "The Caudine Forks",
+     "text": "In 321 BC the Samnites trapped a Roman army in a narrow pass and forced every soldier, including the consuls, to walk under a yoke of spears, the worst humiliation a Roman army could suffer."
+    }
+   ],
+   "philosophy": "Rome borrowed the Samnite maniple, a flexible infantry unit, according to ancient writers.",
+   "artIdeas": "Samnite armour, with triple-disc breastplates, and painted tombs at Paestum by the Lucanians show their warrior culture.\n\nRome borrowed the Samnite maniple, a flexible infantry unit, according to ancient writers."
+  },
+  {
+   "id": "carthage",
+   "name": "Carthaginian Empire",
+   "type": "mercantile republic",
+   "yearsActive": "c. 814–146 BC",
+   "summary": "The Phoenician city of Carthage in North Africa and its western Mediterranean empire, which held Sardinia, western Sicily and southern Spain until Rome destroyed it in 146 BC.",
+   "description": "Founded by Phoenicians from Tyre, traditionally in 814 BC, Carthage became the leading power of the western Mediterranean, controlling trade routes to Spain's silver mines and the Atlantic. It fought the Greeks of Sicily for centuries. Defeat by Rome in the First Punic War (264–241) cost it Sicily, and Hamilcar Barca then built a new empire in Spain. His son Hannibal invaded Italy in 218 BC and won great victories, but Scipio defeated him at Zama in 202. In the Third Punic War Rome razed the city (146 BC).",
+   "conflicts": "Wars with Syracuse and the Sicilian Greeks, including defeat at Himera (480 BC); the Mercenary War (241–237); the three Punic Wars, with Hannibal's victories at Trebia, Trasimene and Cannae.",
+   "leaders": "Hamilcar Barca, Hasdrubal and Hannibal Barca, who led an army with elephants over the Alps.",
+   "religion": "Baal Hammon and Tanit were the chief gods; the tophet burial grounds, with urns of children's ashes, are still debated as evidence of child sacrifice.",
+   "culture": "Carthage was governed by two elected suffetes and a council; its circular military harbour could hold over 200 warships.",
+   "literature": "Almost all Punic literature was lost; Mago's treatise on agriculture was translated into Latin on the Senate's orders.",
+   "art": "Punic stelae, glass masks and jewellery show Phoenician, Egyptian and Greek influences.",
+   "ideas": "Aristotle praised the Carthaginian constitution as one of the best of his time.",
+   "science": "Carthaginian navigators such as Hanno sailed down the West African coast, and Himilco north to the Atlantic coasts of Europe.",
+   "story": [
+    {
+     "title": "Carthage must be destroyed",
+     "text": "Cato the Elder, alarmed by Carthage's recovery, ended every speech in the Senate, whatever the subject, with the words that Carthage must be destroyed. In 146 BC it was, after a three-year siege."
+    }
+   ],
+   "sources": "Encyclopaedia Britannica, 'Carthage'; R. Miles, Carthage Must Be Destroyed (2010).",
+   "images": [
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Hannibal%20Barca%20bust%20from%20Capua%20photo.jpg?width=800",
+     "caption": "Marble bust traditionally identified as Hannibal",
+     "alt": "Marble bust traditionally identified as Hannibal",
+     "role": "leader"
+    },
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Punic%20Ports%20%28Ports%20Puniques%29%20of%20Carthage%2C%20Tunisia%20January%202024%20-%202.jpg?width=800",
+     "caption": "The Punic harbours of Carthage",
+     "alt": "The Punic harbours of Carthage",
+     "role": "culture"
+    }
+   ],
+   "extentsByTick": {},
+   "stories": [
+    {
+     "title": "Carthage must be destroyed",
+     "text": "Cato the Elder, alarmed by Carthage's recovery, ended every speech in the Senate, whatever the subject, with the words that Carthage must be destroyed. In 146 BC it was, after a three-year siege."
+    }
+   ],
+   "philosophy": "Aristotle praised the Carthaginian constitution as one of the best of his time.",
+   "artIdeas": "Punic stelae, glass masks and jewellery show Phoenician, Egyptian and Greek influences.\n\nAristotle praised the Carthaginian constitution as one of the best of his time."
+  },
+  {
+   "id": "celts",
+   "name": "Celtic peoples (Gauls, Boii and others)",
+   "type": "tribal peoples",
+   "yearsActive": "c. 800 BC–1st century BC (continental independence)",
+   "summary": "The Celtic-speaking peoples of the Hallstatt and La Tène cultures, who spread from central Europe across Gaul, Britain, Ireland, northern Italy and as far as Anatolia.",
+   "description": "Iron Age Celtic culture is named after Hallstatt in Austria (c. 800–450 BC) and La Tène in Switzerland (from c. 450 BC). Princes buried with Greek wine vessels at sites such as Vix show trade with the Mediterranean. In the fourth century BC Celts settled the Po valley and sacked Rome (c. 390 BC); others raided Delphi (279 BC) and settled Galatia. Large fortified towns (oppida) developed in the second century BC, before Caesar conquered Gaul in 58–50 BC.",
+   "conflicts": "The sack of Rome under Brennus (c. 390 BC); the invasion of Greece (279 BC); Roman wars in northern Italy ending at Telamon (225 BC); Caesar's Gallic War and the siege of Alesia (52 BC).",
+   "leaders": "Brennus, leader of the Senones; Vercingetorix of the Arverni, who led the Gallic revolt of 52 BC.",
+   "religion": "Druids served as priests, judges and teachers; gods such as Lugus, Taranis and Cernunnos were worshipped in sacred groves and springs.",
+   "culture": "Warrior aristocracies feasted in hill-forts and oppida; the Boii gave their name to Bohemia.",
+   "literature": "The Celts were largely oral; Gaulish inscriptions and the Coligny calendar survive.",
+   "art": "La Tène art is known for its curving abstract designs on metalwork, such as the Battersea Shield and the Gundestrup cauldron.",
+   "ideas": "Caesar reports that druids taught the immortality of the soul and the movements of the stars.",
+   "science": "Celtic smiths made excellent iron swords and chain mail, and wheelwrights made iron-tyred wheels.",
+   "story": [
+    {
+     "title": "Woe to the vanquished",
+     "text": "After the Gauls took Rome around 390 BC, the Romans agreed to pay a thousand pounds of gold. When they complained that the Gauls' weights were rigged, Brennus threw his sword onto the scales and said: 'Vae victis' (woe to the vanquished)."
+    }
+   ],
+   "sources": "Encyclopaedia Britannica, 'Celt'; B. Cunliffe, The Ancient Celts (2nd ed. 2018).",
+   "images": [
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Gundestrup%20antlered%20figure.jpg?width=800",
+     "caption": "The antlered figure on the Gundestrup cauldron",
+     "alt": "The antlered figure on the Gundestrup cauldron",
+     "role": "culture"
+    },
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/British%20Museum%20Battersea%20Shield.jpg?width=800",
+     "caption": "The Battersea Shield, La Tène bronze work from the Thames",
+     "alt": "The Battersea Shield, La Tène bronze work from the Thames",
+     "role": "art"
+    }
+   ],
+   "extentsByTick": {},
+   "stories": [
+    {
+     "title": "Woe to the vanquished",
+     "text": "After the Gauls took Rome around 390 BC, the Romans agreed to pay a thousand pounds of gold. When they complained that the Gauls' weights were rigged, Brennus threw his sword onto the scales and said: 'Vae victis' (woe to the vanquished)."
+    }
+   ],
+   "philosophy": "Caesar reports that druids taught the immortality of the soul and the movements of the stars.",
+   "artIdeas": "La Tène art is known for its curving abstract designs on metalwork, such as the Battersea Shield and the Gundestrup cauldron.\n\nCaesar reports that druids taught the immortality of the soul and the movements of the stars."
+  },
+  {
+   "id": "iberians",
+   "name": "Iberian peoples",
+   "type": "tribal peoples",
+   "yearsActive": "c. 6th century BC–19 BC (Roman conquest complete)",
+   "summary": "The Iberians of eastern and southern Spain, Celtiberians of the central plateau, Lusitanians of the west and other pre-Roman peoples of the peninsula.",
+   "description": "Iberian culture developed along the Mediterranean coast from the sixth century BC, influenced by Phoenician and Greek traders, with towns, writing and rich sanctuaries. In the interior Celtiberians and Celtic-speaking peoples lived in fortified towns such as Numantia, and the Lusitanians dominated the west. Carthage conquered the south and east in the third century BC, and Rome then fought for two centuries to subdue the peninsula, completing the conquest under Augustus in 19 BC.",
+   "conflicts": "The Celtiberian Wars and the siege of Numantia (133 BC); the Lusitanian War led by Viriathus (155–139 BC); the Cantabrian Wars (29–19 BC).",
+   "leaders": "Viriathus, the Lusitanian shepherd-general; Indibilis and Mandonius of the Ilergetes, who fought Carthage and then Rome.",
+   "religion": "Sanctuaries with votive bronzes and stone figures, such as Cerro de los Santos, show local gods and devotees.",
+   "culture": "Iberians wrote their own scripts, adapted from Phoenician and Greek, and Iberian mercenaries served Carthage and the Greeks.",
+   "literature": "Iberian inscriptions can be read but the language is not understood; Celtiberian bronze tablets such as Botorrita are the longest texts.",
+   "art": "The Lady of Elche, a painted limestone bust of the fourth century BC, is the most famous Iberian sculpture.",
+   "ideas": "Iberian 'devotio' bound warriors to die with their leader, a custom Roman writers noted.",
+   "science": "The falcata, a curved Iberian sword, was so effective that the Romans adopted the Iberian gladius.",
+   "story": [
+    {
+     "title": "Numantia",
+     "text": "In 134–133 BC Scipio Aemilianus surrounded the Celtiberian town of Numantia with a nine-kilometre wall and starved it out. Most of the survivors chose death rather than surrender, and the city became a Spanish symbol of resistance."
+    }
+   ],
+   "sources": "Encyclopaedia Britannica, 'Iberian', 'Celtiberia'; L. A. Curchin, Roman Spain (1991).",
+   "images": [
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Dama%20de%20Elche.jpg?width=800",
+     "caption": "The Lady of Elche, Iberian bust of the 4th century BC",
+     "alt": "The Lady of Elche, Iberian bust of the 4th century BC",
+     "role": "art"
+    }
+   ],
+   "extentsByTick": {},
+   "stories": [
+    {
+     "title": "Numantia",
+     "text": "In 134–133 BC Scipio Aemilianus surrounded the Celtiberian town of Numantia with a nine-kilometre wall and starved it out. Most of the survivors chose death rather than surrender, and the city became a Spanish symbol of resistance."
+    }
+   ],
+   "philosophy": "Iberian 'devotio' bound warriors to die with their leader, a custom Roman writers noted.",
+   "artIdeas": "The Lady of Elche, a painted limestone bust of the fourth century BC, is the most famous Iberian sculpture.\n\nIberian 'devotio' bound warriors to die with their leader, a custom Roman writers noted."
+  },
+  {
+   "id": "britons",
+   "name": "Ancient Britons",
+   "type": "tribal peoples",
+   "yearsActive": "Iron Age–AD 5th century",
+   "summary": "The Celtic-speaking peoples of Britain, ruled by tribal kings until the Roman conquest from AD 43, with the Dumnonii of the south-west remaining a self-governing civitas.",
+   "description": "Iron Age Britain was divided among tribes such as the Catuvellauni, Trinovantes, Iceni and Dumnonii, who lived in hill-forts and roundhouses and minted their own coins. Caesar raided the island in 55 and 54 BC, and southern kings became Roman clients. Claudius invaded in AD 43, and Boudica's revolt (60–61) failed. The Dumnonii of Devon and Cornwall were lightly Romanised and kept a tribal capital at Exeter (Isca Dumnoniorum).",
+   "conflicts": "Resistance to Caesar under Cassivellaunus; Caratacus's war against Claudius; Boudica's revolt, which burned Colchester, London and St Albans.",
+   "leaders": "Cassivellaunus, Cunobelinus ('Cymbeline'), Caratacus and Boudica of the Iceni.",
+   "religion": "Druids, whose centre on Anglesey was destroyed by the Romans in AD 60; offerings were thrown into rivers and bogs.",
+   "culture": "Hill-forts such as Maiden Castle, roundhouses and chariot warfare, which surprised Caesar.",
+   "literature": "Oral tradition; coins of Cunobelinus carry Latin legends.",
+   "art": "Insular La Tène metalwork such as the Snettisham torc and the Battersea Shield.",
+   "ideas": "Tacitus put a famous critique of Rome in the mouth of the Caledonian leader Calgacus: 'they make a desert and call it peace.'",
+   "science": "Cornish tin was traded to the Mediterranean from the Bronze Age, as the Greek explorer Pytheas reported.",
+   "story": [
+    {
+     "title": "Boudica",
+     "text": "When the Romans flogged Boudica, queen of the Iceni, and raped her daughters, she led a revolt in AD 60 that destroyed three Roman towns. The governor Suetonius Paulinus defeated her army, and she is said to have taken poison."
+    }
+   ],
+   "sources": "Encyclopaedia Britannica, 'Britain: Iron Age', 'Dumnonii'; B. Cunliffe, Iron Age Communities in Britain (4th ed. 2005).",
+   "images": [
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/The%20Great%20Torc%20-%20Snettisham%20Hoard%20-%20geograph.org.uk%20-%202395380.jpg?width=800",
+     "caption": "The Great Torc from Snettisham, Norfolk",
+     "alt": "The Great Torc from Snettisham, Norfolk",
+     "role": "art"
+    },
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Maiden%20Castle%20from%20the%20air%2C%201934.jpg?width=800",
+     "caption": "Maiden Castle hill-fort, Dorset",
+     "alt": "Maiden Castle hill-fort, Dorset",
+     "role": "culture"
+    }
+   ],
+   "extentsByTick": {},
+   "stories": [
+    {
+     "title": "Boudica",
+     "text": "When the Romans flogged Boudica, queen of the Iceni, and raped her daughters, she led a revolt in AD 60 that destroyed three Roman towns. The governor Suetonius Paulinus defeated her army, and she is said to have taken poison."
+    }
+   ],
+   "philosophy": "Tacitus put a famous critique of Rome in the mouth of the Caledonian leader Calgacus: 'they make a desert and call it peace.'",
+   "artIdeas": "Insular La Tène metalwork such as the Snettisham torc and the Battersea Shield.\n\nTacitus put a famous critique of Rome in the mouth of the Caledonian leader Calgacus: 'they make a desert and call it peace.'"
+  },
+  {
+   "id": "caledonians",
+   "name": "Caledonians and Picts",
+   "type": "tribal peoples",
+   "yearsActive": "1st century AD–9th century",
+   "summary": "The peoples of northern Scotland beyond Roman rule, called Caledonians by Tacitus and Picts by the late third century.",
+   "description": "Agricola's legions marched into Scotland and defeated the Caledonians at Mons Graupius in AD 83 or 84, but Rome never held the Highlands. Hadrian's Wall (from 122) and the Antonine Wall (from 142) marked the frontier. Septimius Severus campaigned north in 208–211 without lasting success. By 297 a Roman writer calls the northern peoples Picti, 'painted ones', and they raided Roman Britain in the fourth century.",
+   "conflicts": "Mons Graupius (AD 83/84); Severus's campaigns (208–211); the 'barbarian conspiracy' of 367, when Picts, Scots and Saxons attacked Britain together.",
+   "leaders": "Calgacus, leader at Mons Graupius in Tacitus's account; Argentocoxos, whose wife traded insults with the empress Julia Domna.",
+   "religion": "Pre-Christian Celtic religion; Pictish symbol stones of later centuries may record older beliefs.",
+   "culture": "Brochs, crannogs and hill-forts; a society of warrior kindreds.",
+   "literature": "No writings survive; Tacitus's Agricola gives the Roman view.",
+   "art": "Later Pictish symbol stones with animals and abstract symbols.",
+   "ideas": "Roman writers saw them as free barbarians at the edge of the world.",
+   "science": "Drystone brochs, round towers up to 13 m tall, were built without mortar.",
+   "story": [
+    {
+     "title": "They make a desert",
+     "text": "Before Mons Graupius, Tacitus has Calgacus tell his men that the Romans are 'robbers of the world' who 'make a desert and call it peace'. The speech is Tacitus's invention, but it is one of the most quoted lines in Latin."
+    }
+   ],
+   "sources": "Encyclopaedia Britannica, 'Pict', 'Caledonia'; D. J. Breeze, Roman Scotland (1996); Tacitus, Agricola.",
+   "images": [
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Hadrian%27s%20Wall%20west%20of%20Housesteads%203.jpg?width=800",
+     "caption": "Hadrian's Wall near Housesteads, the frontier with the Caledonians",
+     "alt": "Hadrian's Wall near Housesteads, the frontier with the Caledonians",
+     "role": "culture"
+    }
+   ],
+   "extentsByTick": {},
+   "stories": [
+    {
+     "title": "They make a desert",
+     "text": "Before Mons Graupius, Tacitus has Calgacus tell his men that the Romans are 'robbers of the world' who 'make a desert and call it peace'. The speech is Tacitus's invention, but it is one of the most quoted lines in Latin."
+    }
+   ],
+   "philosophy": "Roman writers saw them as free barbarians at the edge of the world.",
+   "artIdeas": "Later Pictish symbol stones with animals and abstract symbols.\n\nRoman writers saw them as free barbarians at the edge of the world."
+  },
+  {
+   "id": "irish",
+   "name": "Iron Age Ireland (Hibernia)",
+   "type": "tribal kingdoms",
+   "yearsActive": "Iron Age–5th century AD",
+   "summary": "Ireland beyond the Roman Empire, divided among many small kingdoms around royal sites such as Tara and Emain Macha.",
+   "description": "Ireland was never conquered by Rome, though Agricola considered it. Its Iron Age society was organised in small kingdoms (túatha) under over-kings, with ceremonial centres at Tara, Emain Macha (Navan Fort) and Dún Ailinne. Roman goods reached Ireland through trade, and by the fourth century Irish raiders and settlers attacked western Britain.",
+   "conflicts": "Cattle raids and wars between kingdoms, remembered in the later Ulster Cycle; raids on Roman Britain in the fourth century.",
+   "leaders": "Legendary kings such as Conn of the Hundred Battles and Cormac mac Airt are placed in this period by later tradition.",
+   "religion": "Druids and filid (poets) kept law and lore; bog bodies such as Old Croghan Man may be sacrificed kings.",
+   "culture": "Cattle were the measure of wealth; ringforts and crannogs were the main settlements.",
+   "literature": "Ogham inscriptions on stone begin in the fourth century; the epics of the Ulster Cycle, written down later, describe an Iron Age world.",
+   "art": "The Broighter gold boat and torc and the Turoe stone show insular La Tène art.",
+   "ideas": "Brehon law, written down later, preserves Iron Age legal ideas of honour price and kinship.",
+   "science": "Long timber trackways crossed bogs, such as the Corlea trackway of 148 BC.",
+   "story": [
+    {
+     "title": "The Broighter boat",
+     "text": "In 1896 two farmworkers ploughing near Lough Foyle found a gold hoard including a tiny gold boat with oars and a mast. It may have been an offering to the sea god Manannán mac Lir."
+    }
+   ],
+   "sources": "Encyclopaedia Britannica, 'Ireland: Early Ireland'; B. Raftery, Pagan Celtic Ireland (1994).",
+   "images": [
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Boat%20Bits%20-%20Broighter%20Gold.jpg?width=800",
+     "caption": "The Broighter gold boat (1st century BC)",
+     "alt": "The Broighter gold boat (1st century BC)",
+     "role": "art"
+    }
+   ],
+   "extentsByTick": {},
+   "stories": [
+    {
+     "title": "The Broighter boat",
+     "text": "In 1896 two farmworkers ploughing near Lough Foyle found a gold hoard including a tiny gold boat with oars and a mast. It may have been an offering to the sea god Manannán mac Lir."
+    }
+   ],
+   "philosophy": "Brehon law, written down later, preserves Iron Age legal ideas of honour price and kinship.",
+   "artIdeas": "The Broighter gold boat and torc and the Turoe stone show insular La Tène art.\n\nBrehon law, written down later, preserves Iron Age legal ideas of honour price and kinship."
+  },
+  {
+   "id": "illyrians",
+   "name": "Illyrians",
+   "type": "tribal kingdoms",
+   "yearsActive": "c. 1000–168 BC (independent)",
+   "summary": "The Indo-European peoples of the western Balkans, from the Adriatic coast to the Morava valley, whose kingdoms fought Macedon and Rome until Rome conquered them in 168 BC.",
+   "description": "Illyrian tribes such as the Taulantii, Ardiaei, Dalmatae and Dardani lived along the eastern Adriatic and inland. Bardylis built a kingdom that defeated Macedon before Philip II crushed it in 358 BC. In the third century BC the Ardiaean kingdom under Agron and Queen Teuta raided Adriatic shipping, which led to the Illyrian Wars with Rome. Rome captured King Gentius in 168 BC and crushed the Great Illyrian Revolt of AD 6–9.",
+   "conflicts": "Wars with Macedon under Bardylis and Philip II; the First and Second Illyrian Wars with Rome (229–228, 220–219 BC); the Third (168 BC); the Batonian War (AD 6–9).",
+   "leaders": "Bardylis, Glaucias (who sheltered the infant Pyrrhus), Agron, Queen Teuta and Gentius.",
+   "religion": "Sun and serpent symbols appear on their metalwork, and the serpent was linked to the founding myth of Cadmus in Illyria.",
+   "culture": "Hill-forts and coastal towns; Illyrian light ships, the lemboi, were copied by the Romans as the liburna.",
+   "literature": "No writings survive; the Illyrian language is known only from names.",
+   "art": "Silver belt buckles and jewellery from sites such as Gostilj and Selca e Poshtme.",
+   "ideas": "Roman writers saw them as pirates; Illyricum later gave Rome many soldier-emperors, including Diocletian.",
+   "science": "Their light, fast ships influenced Roman naval design.",
+   "story": [
+    {
+     "title": "Queen Teuta",
+     "text": "When Roman envoys came to complain about Illyrian piracy in 230 BC, Queen Teuta replied that it was not the custom of Illyrian kings to stop their subjects taking booty at sea. One envoy was murdered on the way home, and Rome declared war."
+    }
+   ],
+   "sources": "Encyclopaedia Britannica, 'Illyria'; J. Wilkes, The Illyrians (1992).",
+   "images": [
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Byllis%20Wall.jpg?width=800",
+     "caption": "Ruins of Byllis in southern Albania",
+     "alt": "Ruins of Byllis in southern Albania",
+     "role": "culture"
+    }
+   ],
+   "extentsByTick": {},
+   "stories": [
+    {
+     "title": "Queen Teuta",
+     "text": "When Roman envoys came to complain about Illyrian piracy in 230 BC, Queen Teuta replied that it was not the custom of Illyrian kings to stop their subjects taking booty at sea. One envoy was murdered on the way home, and Rome declared war."
+    }
+   ],
+   "philosophy": "Roman writers saw them as pirates; Illyricum later gave Rome many soldier-emperors, including Diocletian.",
+   "artIdeas": "Silver belt buckles and jewellery from sites such as Gostilj and Selca e Poshtme.\n\nRoman writers saw them as pirates; Illyricum later gave Rome many soldier-emperors, including Diocletian."
+  },
+  {
+   "id": "thracians",
+   "name": "Thracians",
+   "type": "tribal kingdoms",
+   "yearsActive": "c. 1000 BC–AD 46",
+   "nameByTick": {
+    "-1": "Odrysian Kingdom"
+   },
+   "summary": "The many Thracian tribes of the eastern Balkans, between the Danube and the Aegean, united at times by the Odrysian kings until Rome annexed Thrace in AD 46.",
+   "description": "Herodotus called the Thracians the most numerous people after the Indians. They were divided among tribes such as the Odrysae, Getae, Triballi and Bessi. The Odrysian kingdom, founded by Teres around 480 BC after the Persian retreat, became the largest state in the eastern Balkans. Philip II and Alexander conquered much of Thrace, but Odrysian kings survived and later ruled as Roman clients until Claudius made Thrace a province in AD 46.",
+   "conflicts": "Wars with Macedon under Philip II; Lysimachus's kingdom in Thrace (from 323 BC); the Celtic kingdom of Tylis (third century BC); Roman wars against the Bessi.",
+   "leaders": "Teres I and Sitalces of the Odrysae; Seuthes III, whose capital Seuthopolis has been excavated; Rhoemetalces I, a Roman client.",
+   "religion": "The cult of Zalmoxis among the Getae, the Thracian Rider hero and Orphic mysteries said to come from Thrace.",
+   "culture": "Aristocrats were buried in tumuli with gold treasures; Thracian peltasts (light infantry) served in Greek armies.",
+   "literature": "Orpheus was said to be a Thracian; the Thracian language survives only in a few inscriptions.",
+   "art": "The Kazanlak and Sveshtari tombs are UNESCO World Heritage sites, and the Panagyurishte gold treasure is world-famous.",
+   "ideas": "The Getae's belief in immortality impressed Herodotus.",
+   "science": "Thracian gold and silver work was among the finest of the ancient world.",
+   "story": [
+    {
+     "title": "Spartacus",
+     "text": "Spartacus, the gladiator who led the great slave revolt of 73–71 BC, was a Thracian. His army of tens of thousands of escaped slaves defeated several Roman armies before Crassus crushed it."
+    }
+   ],
+   "sources": "Encyclopaedia Britannica, 'Thrace', 'Odrysian kingdom'; Z. Archibald, The Odrysian Kingdom of Thrace (1998).",
+   "images": [
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Kazanlak-tomb-fresco-1.jpg?width=800",
+     "caption": "Fresco in the Thracian tomb at Kazanlak (4th century BC)",
+     "alt": "Fresco in the Thracian tomb at Kazanlak (4th century BC)",
+     "role": "art"
+    },
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Sofia%20-%20Panagyurishte%20Thracian%20Gold%20Treasure.jpg?width=800",
+     "caption": "The Panagyurishte gold treasure",
+     "alt": "The Panagyurishte gold treasure",
+     "role": "culture"
+    }
+   ],
+   "extentsByTick": {},
+   "stories": [
+    {
+     "title": "Spartacus",
+     "text": "Spartacus, the gladiator who led the great slave revolt of 73–71 BC, was a Thracian. His army of tens of thousands of escaped slaves defeated several Roman armies before Crassus crushed it."
+    }
+   ],
+   "philosophy": "The Getae's belief in immortality impressed Herodotus.",
+   "artIdeas": "The Kazanlak and Sveshtari tombs are UNESCO World Heritage sites, and the Panagyurishte gold treasure is world-famous.\n\nThe Getae's belief in immortality impressed Herodotus."
+  },
+  {
+   "id": "dacians",
+   "name": "Dacia",
+   "type": "kingdom",
+   "yearsActive": "c. 82 BC–AD 106",
+   "summary": "The kingdom of the Dacians and Getae north of the lower Danube, united by Burebista and later by Decebalus, conquered by Trajan in AD 106.",
+   "description": "The Dacians and Getae were Thracian-speaking peoples in what is now Romania. Around 82 BC Burebista united them into a powerful kingdom that stretched from the Black Sea to Slovakia. It split after his death in 44 BC but was reunited under Decebalus, who defeated a Roman army in AD 86. Trajan conquered Dacia in two wars (101–102 and 105–106), and its gold made the province rich until Rome abandoned it around 271.",
+   "conflicts": "Burebista's wars against the Celtic Boii and the Greek cities of the Black Sea; Domitian's Dacian war (85–89); Trajan's two Dacian Wars.",
+   "leaders": "Burebista (c. 82–44 BC), the high priest Deceneus and Decebalus (87–106).",
+   "religion": "The god Zalmoxis promised immortality; sanctuaries at Sarmizegetusa include a circular stone sanctuary often interpreted as a calendar.",
+   "culture": "Fortified citadels in the Orăștie mountains, with Sarmizegetusa Regia as the royal and religious capital.",
+   "literature": "Dacian was unwritten; Trajan's lost Commentaries on the war are known only from a fragment.",
+   "art": "Trajan's Column in Rome shows the wars in a spiral relief; Dacian silver jewellery and the dragon standard (draco) survive.",
+   "ideas": "Dacian priests combined religious and political authority, as Deceneus did under Burebista.",
+   "science": "Dacian builders used a distinctive cut-stone wall technique (murus dacicus).",
+   "story": [
+    {
+     "title": "The last of Decebalus",
+     "text": "As Roman cavalry closed in on him in AD 106, Decebalus cut his own throat rather than be paraded in Trajan's triumph. A Roman officer, Tiberius Claudius Maximus, brought his head to Trajan, and his tombstone records the deed."
+    }
+   ],
+   "sources": "Encyclopaedia Britannica, 'Dacia'; Cassius Dio, Roman History book 68.",
+   "images": [
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Sarmizegetusa%20temples.jpg?width=800",
+     "caption": "The sanctuary terrace at Sarmizegetusa Regia",
+     "alt": "The sanctuary terrace at Sarmizegetusa Regia",
+     "role": "culture"
+    },
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Traj%20col%20suicide.jpg?width=800",
+     "caption": "Trajan's Column relief of the death of Decebalus",
+     "alt": "Trajan's Column relief of the death of Decebalus",
+     "role": "art"
+    }
+   ],
+   "extentsByTick": {},
+   "stories": [
+    {
+     "title": "The last of Decebalus",
+     "text": "As Roman cavalry closed in on him in AD 106, Decebalus cut his own throat rather than be paraded in Trajan's triumph. A Roman officer, Tiberius Claudius Maximus, brought his head to Trajan, and his tombstone records the deed."
+    }
+   ],
+   "philosophy": "Dacian priests combined religious and political authority, as Deceneus did under Burebista.",
+   "artIdeas": "Trajan's Column in Rome shows the wars in a spiral relief; Dacian silver jewellery and the dragon standard (draco) survive.\n\nDacian priests combined religious and political authority, as Deceneus did under Burebista."
+  },
+  {
+   "id": "scythians",
+   "name": "Scythians",
+   "type": "nomadic kingdom",
+   "yearsActive": "c. 7th century BC–AD 3rd century",
+   "summary": "The Iranian-speaking nomads of the Pontic steppe, famous as mounted archers and for their gold-filled kurgans, whose last kingdom survived in Crimea into the Roman era.",
+   "description": "Scythians dominated the steppe north of the Black Sea from the seventh century BC. Herodotus describes Royal Scythians ruling over farming and nomad tribes, and their defeat of Darius I by retreating into the steppe. In the fourth century BC King Ateas ruled from the Danube to the Don before dying in battle against Philip II. Pressed by the Sarmatians, Scythians retreated to Crimea and the Dobruja, where a Late Scythian kingdom with its capital at Neapolis survived until the Goths arrived.",
+   "conflicts": "Raids into the Near East in the seventh century BC; Darius I's failed invasion (c. 513 BC); war with Philip II (339 BC); conflicts with the Bosporan Kingdom and Chersonesus.",
+   "leaders": "Idanthyrsus, who defied Darius; Ateas (died 339 BC); Skilurus, king in Crimea in the second century BC.",
+   "religion": "Herodotus reports worship of the hearth goddess Tabiti and a war god whose shrine was a sword set on a pile of brushwood.",
+   "culture": "Nomads living in wagons and following their herds; nobles were buried with horses, servants and gold.",
+   "literature": "No Scythian writing; Herodotus's fourth book is the main ancient account.",
+   "art": "The 'animal style' gold work, such as the Solokha comb and the Tovsta Mohyla pectoral.",
+   "ideas": "Greek writers saw the Scythians both as savages and as wise 'noble barbarians', like the sage Anacharsis.",
+   "science": "The Scythians were masters of horse archery with the composite bow; Herodotus describes them inhaling hemp smoke in tents.",
+   "story": [
+    {
+     "title": "A strange gift",
+     "text": "When Darius invaded, the Scythians sent him a bird, a mouse, a frog and five arrows. One Persian adviser explained: unless you fly like birds, hide like mice or leap into lakes like frogs, you will die by our arrows."
+    }
+   ],
+   "sources": "Encyclopaedia Britannica, 'Scythian'; R. Rolle, The World of the Scythians (1989); Herodotus, Histories book 4.",
+   "images": [
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Scythian%20gold%20pectoral%20Tovsta%20Mohyla%20%28detail%204%29.jpg?width=800",
+     "caption": "Gold pectoral from the Tovsta Mohyla kurgan (4th century BC)",
+     "alt": "Gold pectoral from the Tovsta Mohyla kurgan (4th century BC)",
+     "role": "art"
+    },
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Solokha%20barrow.%20V%20c.%20BC%28%20Golden%20comb%29%20-%20panoramio.jpg?width=800",
+     "caption": "Gold comb from the Solokha kurgan showing Scythian warriors",
+     "alt": "Gold comb from the Solokha kurgan showing Scythian warriors",
+     "role": "culture"
+    }
+   ],
+   "extentsByTick": {},
+   "stories": [
+    {
+     "title": "A strange gift",
+     "text": "When Darius invaded, the Scythians sent him a bird, a mouse, a frog and five arrows. One Persian adviser explained: unless you fly like birds, hide like mice or leap into lakes like frogs, you will die by our arrows."
+    }
+   ],
+   "philosophy": "Greek writers saw the Scythians both as savages and as wise 'noble barbarians', like the sage Anacharsis.",
+   "artIdeas": "The 'animal style' gold work, such as the Solokha comb and the Tovsta Mohyla pectoral.\n\nGreek writers saw the Scythians both as savages and as wise 'noble barbarians', like the sage Anacharsis."
+  },
+  {
+   "id": "sarmatians",
+   "name": "Sarmatians",
+   "type": "nomadic confederation",
+   "yearsActive": "c. 4th century BC–AD 4th century",
+   "nameByTick": {
+    "100": "Sarmatians and Alans",
+    "300": "Sarmatians and Alans"
+   },
+   "summary": "The Iranian-speaking nomads who replaced the Scythians on the Pontic steppe, including the Roxolani, Iazyges and Alans, heavily armoured horsemen who fought and served Rome.",
+   "description": "The Sarmatians moved west from the Volga and Ural steppe from the fourth century BC and dominated the region between the Don and the Danube by the first century BC. The Iazyges settled the Hungarian plain between Roman Pannonia and Dacia, and the Roxolani raided across the lower Danube. Marcus Aurelius defeated the Iazyges and sent 5,500 of their horsemen to serve in Britain in 175. In the first century AD the Alans became dominant in the east; the Huns broke them around 370, and some Alans went west with the Vandals.",
+   "conflicts": "Raids on Roman Moesia; the Marcomannic Wars (166–180), with the Iazyges allied to the Germans; wars with the Goths in the third century.",
+   "leaders": "Zanticus of the Iazyges, who made peace with Marcus Aurelius; Rasparaganus, a Roxolanian king who took Roman citizenship.",
+   "religion": "Ammianus says the Alans worshipped a naked sword stuck in the ground as their war god.",
+   "culture": "Some women were buried with weapons; cataphracts (armoured horsemen) with long lances were their elite.",
+   "literature": "Unwritten; the modern Ossetian language descends from Alanic.",
+   "art": "Polychrome gold jewellery with garnets and turquoise, as in the Khokhlach kurgan treasure.",
+   "ideas": "Herodotus linked them to the Amazons, and the legend may echo Sarmatian women fighters.",
+   "science": "Scale armour for horse and rider and the long lance (kontos) influenced Roman cavalry.",
+   "story": [
+    {
+     "title": "Sarmatians in Britain",
+     "text": "After 175, thousands of Iazyges horsemen were stationed in northern Britain, some at Ribchester in Lancashire. Some historians have suggested that their dragon banners and sword cult influenced the Arthurian legends."
+    }
+   ],
+   "sources": "Encyclopaedia Britannica, 'Sarmatian', 'Alani'; T. Sulimirski, The Sarmatians (1970).",
+   "images": [
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Sarmatian%20cataphracts%20in%20Trajan%27s%20column%2C%202nd%20century%20CE.jpg?width=800",
+     "caption": "Sarmatian armoured cavalry on Trajan's Column",
+     "alt": "Sarmatian armoured cavalry on Trajan's Column",
+     "role": "culture"
+    }
+   ],
+   "extentsByTick": {},
+   "stories": [
+    {
+     "title": "Sarmatians in Britain",
+     "text": "After 175, thousands of Iazyges horsemen were stationed in northern Britain, some at Ribchester in Lancashire. Some historians have suggested that their dragon banners and sword cult influenced the Arthurian legends."
+    }
+   ],
+   "philosophy": "Herodotus linked them to the Amazons, and the legend may echo Sarmatian women fighters.",
+   "artIdeas": "Polychrome gold jewellery with garnets and turquoise, as in the Khokhlach kurgan treasure.\n\nHerodotus linked them to the Amazons, and the legend may echo Sarmatian women fighters."
+  },
+  {
+   "id": "armenia",
+   "name": "Kingdom of Armenia",
+   "type": "kingdom",
+   "yearsActive": "c. 331 BC–AD 428",
+   "summary": "The kingdom of the Armenian highlands, ruled by the Orontid, Artaxiad and Arsacid dynasties, a buffer between Rome and Iran and the first state to adopt Christianity, around 301.",
+   "description": "After Alexander's conquest Armenia was ruled by the Orontid dynasty as a semi-independent satrapy. Artaxias I founded a new dynasty in 189 BC, and Tigranes the Great (95–55 BC) built a short-lived empire from the Caspian to Syria before submitting to Pompey. From AD 66 a branch of the Parthian Arsacids ruled Armenia under Roman crowning. Around 301 King Tiridates III was converted by Gregory the Illuminator and made Christianity the state religion.",
+   "conflicts": "Tigranes's wars with Parthia and Rome, including Lucullus's victory at Tigranocerta (69 BC); the Roman–Parthian war over Armenia ended by the settlement of Rhandeia (AD 63).",
+   "leaders": "Orontes, Artaxias I, Tigranes the Great, Tiridates I (crowned by Nero in Rome in 66) and Tiridates III.",
+   "religion": "Worship of Aramazd and Anahit, influenced by Zoroastrianism, until the conversion; the Armenian Apostolic Church traces itself to Gregory the Illuminator.",
+   "culture": "Artashat and Tigranocerta were royal capitals; the Garni temple is the only standing Greco-Roman colonnaded temple in the former Soviet Union.",
+   "literature": "Greek was used at the court of Tigranes, whose son Artavasdes II wrote Greek tragedies; the Armenian alphabet was invented by Mesrop Mashtots around 405.",
+   "art": "The Ionic temple of Garni (1st century AD) and royal coins of Tigranes in the Armenian tiara.",
+   "ideas": "Armenia's position between Rome and Iran made it the classic contested buffer state.",
+   "science": "Armenian highland agriculture and metallurgy were long established.",
+   "story": [
+    {
+     "title": "A crown in Rome",
+     "text": "In AD 66 the Parthian prince Tiridates travelled to Rome to receive the Armenian crown from Nero. The emperor closed the doors of the temple of Janus to mark peace, and the visit was celebrated with lavish games."
+    }
+   ],
+   "sources": "Encyclopaedia Britannica, 'Armenia: History'; R. G. Hovannisian (ed.), The Armenian People from Ancient to Modern Times vol. 1 (1997).",
+   "images": [
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Templo%20de%20Garni%2C%20Armenia%2C%202016-10-02%2C%20DD%2003.jpg?width=800",
+     "caption": "The temple of Garni (1st century AD)",
+     "alt": "The temple of Garni (1st century AD)",
+     "role": "art"
+    },
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Tigranes%20the%20Great%20coins%20from%20Artaxata.jpg?width=800",
+     "caption": "Coin portrait of Tigranes the Great in the Armenian tiara",
+     "alt": "Coin portrait of Tigranes the Great in the Armenian tiara",
+     "role": "leader"
+    }
+   ],
+   "extentsByTick": {},
+   "stories": [
+    {
+     "title": "A crown in Rome",
+     "text": "In AD 66 the Parthian prince Tiridates travelled to Rome to receive the Armenian crown from Nero. The emperor closed the doors of the temple of Janus to mark peace, and the visit was celebrated with lavish games."
+    }
+   ],
+   "philosophy": "Armenia's position between Rome and Iran made it the classic contested buffer state.",
+   "artIdeas": "The Ionic temple of Garni (1st century AD) and royal coins of Tigranes in the Armenian tiara.\n\nArmenia's position between Rome and Iran made it the classic contested buffer state."
+  },
+  {
+   "id": "atropatene",
+   "name": "Atropatene",
+   "type": "kingdom",
+   "yearsActive": "c. 323 BC–3rd century AD",
+   "summary": "The kingdom of Media Atropatene in what is now Iranian Azerbaijan, founded by the Persian satrap Atropates after Alexander's death.",
+   "description": "Atropates, Persian satrap of Media, kept his northern province as an independent kingdom after Alexander's death in 323 BC, and his dynasty ruled it for generations. It later became a vassal of the Parthians and was absorbed by the Sasanians in the third century AD. The region's name survives in 'Azerbaijan'.",
+   "conflicts": "Wars with the Seleucids; Mark Antony's failed siege of its capital Phraaspa in 36 BC.",
+   "leaders": "Atropates, the founder; Artavasdes I, who later allied with Mark Antony.",
+   "religion": "It was a centre of Zoroastrianism; the fire temple of Adur Gushnasp at Takht-e Soleyman was later one of the three great fires of Iran.",
+   "culture": "Persian and Median aristocratic traditions continued here after the fall of the Achaemenids.",
+   "literature": "Known mainly from Greek and Roman writers such as Strabo and Plutarch.",
+   "art": "The later Sasanian site of Takht-e Soleyman stands beside the region's sacred lake.",
+   "ideas": "Iranian kingship and religion survived here outside Greek rule.",
+   "science": "Highland agriculture and horse breeding.",
+   "story": [
+    {
+     "title": "Antony's retreat",
+     "text": "In 36 BC Mark Antony besieged Phraaspa, the capital of Atropatene, but the Parthians destroyed his siege train. His retreat through the mountains in winter cost him a large part of his army."
+    }
+   ],
+   "sources": "Encyclopaedia Britannica, 'Atropatene'; Encyclopaedia Iranica, 'Atropates'; Plutarch, Life of Antony.",
+   "images": [
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Takhte%20Soleyman%20%285%29.jpg?width=800",
+     "caption": "Takht-e Soleyman, the sacred fire site of Atropatene",
+     "alt": "Takht-e Soleyman, the sacred fire site of Atropatene",
+     "role": "culture"
+    }
+   ],
+   "extentsByTick": {},
+   "stories": [
+    {
+     "title": "Antony's retreat",
+     "text": "In 36 BC Mark Antony besieged Phraaspa, the capital of Atropatene, but the Parthians destroyed his siege train. His retreat through the mountains in winter cost him a large part of his army."
+    }
+   ],
+   "philosophy": "Iranian kingship and religion survived here outside Greek rule.",
+   "artIdeas": "The later Sasanian site of Takht-e Soleyman stands beside the region's sacred lake.\n\nIranian kingship and religion survived here outside Greek rule."
+  },
+  {
+   "id": "colchis",
+   "name": "Colchis",
+   "type": "kingdom",
+   "yearsActive": "c. 6th–1st century BC",
+   "summary": "The kingdom on the eastern shore of the Black Sea, in western Georgia, which the Greeks knew as the land of the Golden Fleece.",
+   "description": "Colchis was home to Kartvelian-speaking peoples who traded with Greek colonies such as Phasis and Dioscurias. It was famous for gold, linen and timber. It came under Mithridates VI of Pontus in the late second century BC and then under Roman influence after Pompey's campaign of 65 BC.",
+   "conflicts": "Its rulers fought neighbouring tribes and later came under Pontus and then Rome.",
+   "leaders": "Kings such as Saulaces and Akes are known from coins and Greek writers.",
+   "religion": "Local gods alongside Greek cults in the colonies.",
+   "culture": "Greek colonists and local peoples mixed in its coastal towns.",
+   "literature": "The Greek myth of Jason, Medea and the Golden Fleece, told by Apollonius of Rhodes.",
+   "art": "Gold jewellery from Vani, a city sanctuary in Colchis, shows fine local craftsmanship.",
+   "ideas": "The myth of the Golden Fleece may reflect the practice of collecting gold dust from rivers with sheepskins.",
+   "science": "Colchian gold-washing and linen weaving were famous in antiquity.",
+   "story": [
+    {
+     "title": "The Golden Fleece",
+     "text": "Greek myth said Jason and the Argonauts sailed to Colchis to take the golden fleece of a magic ram, helped by the king's daughter Medea. Strabo explains that locals caught gold dust from streams in sheepskins."
+    }
+   ],
+   "sources": "Encyclopaedia Britannica, 'Colchis'; D. Braund, Georgia in Antiquity (1994).",
+   "images": [
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Georgia%20-%20Colchis%20Gold%20%2814995631736%29.jpg?width=800",
+     "caption": "Colchian gold jewellery from Vani",
+     "alt": "Colchian gold jewellery from Vani",
+     "role": "art"
+    }
+   ],
+   "extentsByTick": {},
+   "stories": [
+    {
+     "title": "The Golden Fleece",
+     "text": "Greek myth said Jason and the Argonauts sailed to Colchis to take the golden fleece of a magic ram, helped by the king's daughter Medea. Strabo explains that locals caught gold dust from streams in sheepskins."
+    }
+   ],
+   "philosophy": "The myth of the Golden Fleece may reflect the practice of collecting gold dust from rivers with sheepskins.",
+   "artIdeas": "Gold jewellery from Vani, a city sanctuary in Colchis, shows fine local craftsmanship.\n\nThe myth of the Golden Fleece may reflect the practice of collecting gold dust from rivers with sheepskins."
+  },
+  {
+   "id": "parthia",
+   "name": "Parthian Empire",
+   "type": "empire",
+   "yearsActive": "c. 247 BC–AD 224",
+   "summary": "The Iranian empire of the Arsacid dynasty, which took Iran and Mesopotamia from the Seleucids and was Rome's great rival in the east for nearly three centuries.",
+   "description": "The Parni nomads under Arsaces I took the Seleucid province of Parthia around 247 BC. Mithridates I (c. 171–132 BC) conquered Media and Mesopotamia, and Ctesiphon on the Tigris became a capital. Parthia destroyed Crassus's army at Carrhae in 53 BC and fought Rome for control of Armenia and Mesopotamia. Weakened by Roman invasions and civil wars, it was overthrown by the Persian Ardashir I in 224.",
+   "conflicts": "Carrhae (53 BC); Mark Antony's failed invasion (36 BC); Trajan's conquest of Mesopotamia (115–117); the Roman sacks of Ctesiphon under Lucius Verus and Septimius Severus.",
+   "leaders": "Arsaces I, Mithridates I, Mithridates II and Artabanus IV, the last king.",
+   "religion": "Zoroastrianism alongside Greek, Babylonian and Jewish communities; the Parthians were tolerant overlords.",
+   "culture": "A decentralised empire of great noble houses; Greek cities kept their institutions under Parthian rule.",
+   "literature": "Parthian minstrels (gosans) carried oral epics; Greek remained in use on coins.",
+   "art": "The bronze statue of a Parthian nobleman from Shami and the frontal style of Palmyra and Hatra.",
+   "ideas": "The kings called themselves 'philhellenes' on their coins while reviving Iranian traditions.",
+   "science": "The 'Parthian shot', firing backwards from a galloping horse, became proverbial.",
+   "story": [
+    {
+     "title": "Crassus's head",
+     "text": "After Carrhae, the head of Crassus, richest man in Rome, was sent to the Parthian king. Plutarch says it arrived during a performance of Euripides' Bacchae and was used as a prop in the final scene."
+    }
+   ],
+   "sources": "Encyclopaedia Britannica, 'Parthia'; Plutarch, Life of Crassus; M. Brosius, The Persians (2006).",
+   "images": [
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Parthian%20prince%2C%20from%20Sham-Izeh%2C%20Malamir%2C%20Iran%2C%20c.50%20BC-AD%20150%20%28cast%20bronze%29%2C%20Parthian%20School%20%28250%20BC-226%20AD%29%20National%20Museum%20of%20Iran%2C%20Tehran%2C%20Iran.jpg?width=800",
+     "caption": "Bronze statue of a Parthian nobleman from Shami",
+     "alt": "Bronze statue of a Parthian nobleman from Shami",
+     "role": "art"
+    },
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Mithridates%20II%20silver%20drachm%20%28Debevoise%29.png?width=800",
+     "caption": "Silver drachm of Mithridates II of Parthia",
+     "alt": "Silver drachm of Mithridates II of Parthia",
+     "role": "leader"
+    }
+   ],
+   "extentsByTick": {},
+   "stories": [
+    {
+     "title": "Crassus's head",
+     "text": "After Carrhae, the head of Crassus, richest man in Rome, was sent to the Parthian king. Plutarch says it arrived during a performance of Euripides' Bacchae and was used as a prop in the final scene."
+    }
+   ],
+   "philosophy": "The kings called themselves 'philhellenes' on their coins while reviving Iranian traditions.",
+   "artIdeas": "The bronze statue of a Parthian nobleman from Shami and the frontal style of Palmyra and Hatra.\n\nThe kings called themselves 'philhellenes' on their coins while reviving Iranian traditions."
+  },
+  {
+   "id": "sasanian",
+   "name": "Sasanian Persia",
+   "type": "empire",
+   "yearsActive": "224–651",
+   "summary": "The second Persian empire, founded by Ardashir I, which overthrew Parthia in 224 and fought Rome for four centuries.",
+   "description": "Ardashir I, a Persian prince from Fars, defeated the last Parthian king in 224 and founded a more centralised empire with Zoroastrianism as its state religion. His son Shapur I captured the Roman emperor Valerian near Edessa in 260. Around 300 the Sasanians had just lost a war with Galerius and ceded territory on the upper Tigris by the Peace of Nisibis (299).",
+   "conflicts": "Shapur I's victories over Gordian III, Philip the Arab and Valerian; Galerius's victory in 298 and the Peace of Nisibis.",
+   "leaders": "Ardashir I (224–242), Shapur I (240–270) and Narseh (293–302).",
+   "religion": "Zoroastrianism, organised under the high priest Kartir; the prophet Mani founded Manichaeism under Shapur I and was executed around 276.",
+   "culture": "The king of kings ruled from Ctesiphon over noble families and a priestly hierarchy.",
+   "literature": "Middle Persian royal inscriptions such as Shapur's at Naqsh-e Rostam.",
+   "art": "Rock reliefs of royal victories, such as Valerian kneeling before Shapur at Naqsh-e Rostam, and silver plates with hunting scenes.",
+   "ideas": "The ideal of the just king and the alliance of throne and fire temple.",
+   "science": "Gondishapur became a centre of medicine and learning.",
+   "story": [
+    {
+     "title": "An emperor captured",
+     "text": "In 260 Shapur I captured the emperor Valerian. Roman Christian writers later claimed that Shapur used him as a footstool to mount his horse; Shapur's own reliefs show a Roman emperor kneeling before him."
+    }
+   ],
+   "sources": "Encyclopaedia Britannica, 'Sasanian dynasty'; T. Daryaee, Sasanian Persia (2009).",
+   "images": [
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Naghsh-e%20rostam%2C%20Ir%C3%A1n%2C%202016-09-24%2C%20DD%2012.jpg?width=800",
+     "caption": "Relief of Shapur I's triumph over Roman emperors at Naqsh-e Rostam",
+     "alt": "Relief of Shapur I's triumph over Roman emperors at Naqsh-e Rostam",
+     "role": "art"
+    }
+   ],
+   "extentsByTick": {},
+   "stories": [
+    {
+     "title": "An emperor captured",
+     "text": "In 260 Shapur I captured the emperor Valerian. Roman Christian writers later claimed that Shapur used him as a footstool to mount his horse; Shapur's own reliefs show a Roman emperor kneeling before him."
+    }
+   ],
+   "philosophy": "The ideal of the just king and the alliance of throne and fire temple.",
+   "artIdeas": "Rock reliefs of royal victories, such as Valerian kneeling before Shapur at Naqsh-e Rostam, and silver plates with hunting scenes.\n\nThe ideal of the just king and the alliance of throne and fire temple."
+  },
+  {
+   "id": "germanic-peoples",
+   "name": "Germanic peoples",
+   "type": "tribal peoples",
+   "yearsActive": "c. 500 BC–AD 5th century",
+   "summary": "The Germanic-speaking tribes of the Jastorf culture and its successors between the Rhine, the Vistula and southern Scandinavia, who defeated Rome in the Teutoburg Forest and remained free beyond the frontier.",
+   "description": "Germanic languages and the Jastorf culture took shape in northern Germany and Denmark around 500 BC. The Cimbri and Teutones migrated south and were destroyed by Marius in 102–101 BC. Caesar fought Ariovistus in 58 BC and bridged the Rhine. Augustus tried to conquer Germania up to the Elbe, but Arminius destroyed Varus's three legions in AD 9, and the Rhine–Danube frontier was fixed. Tacitus's Germania (AD 98) lists dozens of tribes, among them the Cherusci, Chatti, Suebi, Angles, Frisians and Saxons, which in the third century formed new confederations such as the Franks and Alamanni.",
+   "conflicts": "The Cimbrian War (113–101 BC); Caesar against Ariovistus (58 BC); the Teutoburg Forest (AD 9); Germanicus's campaigns (14–16); raids across the Rhine and the fall of the Limes in the 260s.",
+   "leaders": "Ariovistus of the Suebi; Arminius of the Cherusci; Civilis of the Batavi, who rebelled in 69.",
+   "religion": "Gods such as Wodan, Donar and Tiwaz; Tacitus describes the goddess Nerthus and sacred groves; offerings were put in bogs.",
+   "culture": "Farming villages of longhouses; assemblies (things) of free warriors; chieftains with retinues (comitatus).",
+   "literature": "Oral; the earliest runic inscriptions appear in the second century AD.",
+   "art": "Bog finds such as the Gundestrup cauldron (in Denmark) and the Thorsberg and Nydam deposits.",
+   "ideas": "Tacitus held up the Germans as a mirror to Roman decadence.",
+   "science": "Iron from bog ore; boats such as the Hjortspring boat (c. 350 BC).",
+   "story": [
+    {
+     "title": "Give me back my legions",
+     "text": "When news of the Teutoburg disaster reached Rome, Suetonius says Augustus beat his head against a door crying, 'Quinctilius Varus, give me back my legions!' The numbers of the lost legions were never used again."
+    }
+   ],
+   "sources": "Encyclopaedia Britannica, 'Germanic peoples'; M. Todd, The Early Germans (2nd ed. 2004); Tacitus, Germania.",
+   "images": [
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Hjortspringsboat.jpg?width=800",
+     "caption": "Replica of the Hjortspring boat (c. 350 BC)",
+     "alt": "Replica of the Hjortspring boat (c. 350 BC)",
+     "role": "culture"
+    },
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Kalkriese%20mask.jpg?width=800",
+     "caption": "Roman cavalry mask from the Kalkriese battlefield",
+     "alt": "Roman cavalry mask from the Kalkriese battlefield",
+     "role": "art"
+    }
+   ],
+   "extentsByTick": {},
+   "stories": [
+    {
+     "title": "Give me back my legions",
+     "text": "When news of the Teutoburg disaster reached Rome, Suetonius says Augustus beat his head against a door crying, 'Quinctilius Varus, give me back my legions!' The numbers of the lost legions were never used again."
+    }
+   ],
+   "philosophy": "Tacitus held up the Germans as a mirror to Roman decadence.",
+   "artIdeas": "Bog finds such as the Gundestrup cauldron (in Denmark) and the Thorsberg and Nydam deposits.\n\nTacitus held up the Germans as a mirror to Roman decadence."
+  },
+  {
+   "id": "marcomanni",
+   "name": "Marcomanni",
+   "type": "tribal kingdom",
+   "yearsActive": "c. 9 BC–AD 4th century",
+   "summary": "The Suebian people who moved into Bohemia under King Maroboduus around 9 BC and later led the Marcomannic Wars against Marcus Aurelius.",
+   "description": "Maroboduus led the Marcomanni from the Main region into Bohemia (Boiohaemum, the former land of the Boii) and built the first large Germanic kingdom, with a standing army. Rome planned to invade it in AD 6 but was stopped by the Illyrian revolt. Maroboduus was defeated by Arminius and fled to Roman exile in 19. In 166 the Marcomanni and Quadi broke across the Danube and reached Aquileia, starting fourteen years of war.",
+   "conflicts": "Wars with Arminius (17); the Marcomannic Wars (166–180).",
+   "leaders": "Maroboduus (c. 9 BC–AD 19); Ballomar, who led the invasion of 166/167.",
+   "religion": "Suebian Germanic religion; Tacitus describes the Semnones' sacred grove as the cult centre of the Suebi.",
+   "culture": "Roman goods reached Bohemian chieftains through trade and subsidies.",
+   "literature": "Known from Velleius Paterculus, Tacitus and the Historia Augusta.",
+   "art": "Marcus Aurelius' column in Rome shows the war against them.",
+   "ideas": "Maroboduus's kingdom showed Rome that Germanic peoples could build states.",
+   "science": "Roman-style buildings appear in the Marcomannic area near the Danube.",
+   "story": [
+    {
+     "title": "The rain miracle",
+     "text": "During the war with the Quadi, a Roman army trapped without water was saved by a sudden storm. The Column of Marcus Aurelius shows the rain god pouring down water; Christians later claimed the miracle for their prayers."
+    }
+   ],
+   "sources": "Encyclopaedia Britannica, 'Marcomanni'; Tacitus, Annals 2.",
+   "images": [
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Column%20of%20Marcus%20Aurelius%20%2848424039326%29.jpg?width=800",
+     "caption": "The Column of Marcus Aurelius in Rome, which records the Marcomannic Wars",
+     "alt": "The Column of Marcus Aurelius in Rome, which records the Marcomannic Wars",
+     "role": "art"
+    }
+   ],
+   "extentsByTick": {},
+   "stories": [
+    {
+     "title": "The rain miracle",
+     "text": "During the war with the Quadi, a Roman army trapped without water was saved by a sudden storm. The Column of Marcus Aurelius shows the rain god pouring down water; Christians later claimed the miracle for their prayers."
+    }
+   ],
+   "philosophy": "Maroboduus's kingdom showed Rome that Germanic peoples could build states.",
+   "artIdeas": "Marcus Aurelius' column in Rome shows the war against them.\n\nMaroboduus's kingdom showed Rome that Germanic peoples could build states."
+  },
+  {
+   "id": "goths",
+   "name": "Goths",
+   "type": "tribal confederation",
+   "yearsActive": "1st–5th century AD (as a people north of the frontier)",
+   "nameByTick": {
+    "100": "Goths (Wielbark culture)"
+   },
+   "summary": "The Germanic people of the Wielbark culture on the lower Vistula, who moved south-east to the Black Sea in the third century and created the Chernyakhov culture.",
+   "description": "Roman writers place the Gutones near the Vistula in the first century AD, matching the Wielbark culture. In the late second and third centuries they moved south-east to the Black Sea steppe. They defeated and killed the emperor Decius at Abritus in 251, and raided the Aegean by sea. By 300 the Tervingi and Greuthungi controlled a mixed Chernyakhov culture from the Danube to the Don.",
+   "conflicts": "Abritus (251); the sea raids of the 250s–260s; Claudius II's victory at Naissus (268/269).",
+   "leaders": "Cniva, victor at Abritus; later kings such as Ermanaric.",
+   "religion": "Germanic paganism until Ulfilas converted many to Arian Christianity in the fourth century.",
+   "culture": "Wielbark burials, often without weapons, and stone circles in Pomerania such as Odry and Węsiory.",
+   "literature": "Ulfilas's Gothic Bible (fourth century) is the oldest long text in a Germanic language.",
+   "art": "Brooches and Roman imports in Wielbark and Chernyakhov graves.",
+   "ideas": "Jordanes's Getica (551) told a migration legend from Scandinavia.",
+   "science": "Chernyakhov villages used the potter's wheel and Roman-style farming.",
+   "story": [
+    {
+     "title": "The death of Decius",
+     "text": "In 251 the emperor Decius pursued Goths returning from a raid and was trapped in a marsh at Abritus in Bulgaria. He and his son died, the first Roman emperor to be killed by a foreign enemy."
+    }
+   ],
+   "sources": "Encyclopaedia Britannica, 'Goth'; P. Heather, The Goths (1996).",
+   "images": [
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/W%C4%99siory%2C%20stone%20circle.JPG?width=800",
+     "caption": "Gothic stone circles at Węsiory, Pomerania",
+     "alt": "Gothic stone circles at Węsiory, Pomerania",
+     "role": "culture"
+    }
+   ],
+   "extentsByTick": {},
+   "stories": [
+    {
+     "title": "The death of Decius",
+     "text": "In 251 the emperor Decius pursued Goths returning from a raid and was trapped in a marsh at Abritus in Bulgaria. He and his son died, the first Roman emperor to be killed by a foreign enemy."
+    }
+   ],
+   "philosophy": "Jordanes's Getica (551) told a migration legend from Scandinavia.",
+   "artIdeas": "Brooches and Roman imports in Wielbark and Chernyakhov graves.\n\nJordanes's Getica (551) told a migration legend from Scandinavia."
+  },
+  {
+   "id": "przeworsk",
+   "name": "Przeworsk culture (Vandals and Lugii)",
+   "type": "archaeological culture",
+   "yearsActive": "c. 200 BC–AD 5th century",
+   "summary": "The Iron Age culture of southern and central Poland, usually linked with the Lugii and the Vandals, whose warriors were buried with weapons.",
+   "description": "The Przeworsk culture developed around 200 BC from earlier local cultures with strong Celtic influence. Classical writers place the Lugii federation and the Vandals in this area. Its people farmed, smelted iron on a huge scale in the Holy Cross Mountains and traded on the Amber Road. In the third century Vandal groups moved south toward the Danube.",
+   "conflicts": "Vandals and Lugii took part in the Marcomannic Wars.",
+   "leaders": "Tribal leaders are rarely named; the Hasdingi Vandals had kings Raus and Raptus around 171.",
+   "religion": "Cremation burial, often with deliberately bent weapons.",
+   "culture": "Villages of farmers and smiths; Roman coins and bronze vessels reached elites.",
+   "literature": "Known from Tacitus, Ptolemy and Cassius Dio.",
+   "art": "Decorated spurs, swords and brooches.",
+   "ideas": "Archaeologists link it with the Vandals, but the link is debated.",
+   "science": "The Holy Cross Mountains iron district held thousands of bloomery furnaces.",
+   "story": [
+    {
+     "title": "Bent swords",
+     "text": "Przeworsk warriors were often cremated with their swords bent or broken, perhaps to 'kill' the weapon so it followed its owner or could not be used again."
+    }
+   ],
+   "sources": "Encyclopaedia Britannica, 'Vandal'; P. Heather, Empires and Barbarians (2009).",
+   "images": [
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/001350%20przeworsk%20culture%202nd%20c.%20AD.JPG?width=800",
+     "caption": "Finds of the Przeworsk culture",
+     "alt": "Finds of the Przeworsk culture",
+     "role": "culture"
+    }
+   ],
+   "extentsByTick": {},
+   "stories": [
+    {
+     "title": "Bent swords",
+     "text": "Przeworsk warriors were often cremated with their swords bent or broken, perhaps to 'kill' the weapon so it followed its owner or could not be used again."
+    }
+   ],
+   "philosophy": "Archaeologists link it with the Vandals, but the link is debated.",
+   "artIdeas": "Decorated spurs, swords and brooches.\n\nArchaeologists link it with the Vandals, but the link is debated."
+  },
+  {
+   "id": "pomeranian-culture",
+   "name": "Pomeranian culture",
+   "type": "archaeological culture",
+   "yearsActive": "c. 650–150 BC",
+   "summary": "The Early Iron Age culture of northern Poland, known for its face urns and stone-cist graves, which spread south across Poland before the Przeworsk and Jastorf cultures replaced it.",
+   "description": "The Pomeranian culture emerged in Gdańsk Pomerania around 650 BC and spread south over much of Poland. Its people buried the ashes of the dead in urns with human faces, placed in stone cists (box graves), which gives its alternative name 'bell-grave' or cist-grave culture. It faded in the second century BC.",
+   "conflicts": "Little is known of its conflicts; Scythian arrowheads in the Lusatian area show raids around 500 BC.",
+   "leaders": "No individuals are known.",
+   "religion": "Face urns may have represented the dead person or an ancestor.",
+   "culture": "Farming villages; amber trade along the Vistula.",
+   "literature": "None.",
+   "art": "Face urns with ears, sometimes with earrings and incised jewellery.",
+   "ideas": "Its ethnic identity is unknown.",
+   "science": "Bronze and early iron working.",
+   "story": [
+    {
+     "title": "Faces of the dead",
+     "text": "Some face urns wear real bronze earrings in pierced clay ears, as if dressed for the grave."
+    }
+   ],
+   "sources": "Encyclopaedia Britannica, 'Pomeranian culture'; P. Urbańczyk (ed.), archaeological surveys of Iron Age Poland.",
+   "images": [
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/02023%200908%20Pomeranian%20face%20cinerary%20urn%20with%20amber%20beads%2C%20Gda%C5%84sk.jpg?width=800",
+     "caption": "A face urn of the Pomeranian culture",
+     "alt": "A face urn of the Pomeranian culture",
+     "role": "art"
+    }
+   ],
+   "extentsByTick": {},
+   "stories": [
+    {
+     "title": "Faces of the dead",
+     "text": "Some face urns wear real bronze earrings in pierced clay ears, as if dressed for the grave."
+    }
+   ],
+   "philosophy": "Its ethnic identity is unknown.",
+   "artIdeas": "Face urns with ears, sometimes with earrings and incised jewellery.\n\nIts ethnic identity is unknown."
+  },
+  {
+   "id": "scandinavians",
+   "name": "Iron Age Scandinavia",
+   "type": "tribal peoples",
+   "yearsActive": "c. 500 BC–AD 400",
+   "summary": "The farming chiefdoms of Denmark, Sweden and Norway in the pre-Roman and Roman Iron Ages, ancestors of the Norse, including the Heruli and Suiones.",
+   "description": "After the Bronze Age, Scandinavia entered the pre-Roman Iron Age around 500 BC. In the Roman Iron Age (from c. AD 1) chieftains acquired Roman weapons, glass and silver, and Tacitus mentions the Suiones with their fleets. Great deposits of weapons in Danish bogs, such as Illerup Ådal (c. 205), record battles with invaders. The Heruli appear in the third century raiding the Black Sea alongside the Goths.",
+   "conflicts": "Battles recorded by bog weapon deposits at Illerup, Nydam and Ejsbøl.",
+   "leaders": "Unknown by name.",
+   "religion": "Bog offerings, including human sacrifices such as Tollund Man (c. 400 BC).",
+   "culture": "Longhouse farms; chieftain centres such as Gudme on Funen.",
+   "literature": "The runic script appears around AD 150.",
+   "art": "The Gundestrup cauldron and Roman-era gold neck rings.",
+   "ideas": "Later Norse myths may preserve older beliefs.",
+   "science": "Iron from bog ore; boats such as the Nydam boat.",
+   "story": [
+    {
+     "title": "Tollund Man",
+     "text": "In 1950 peat cutters in Denmark found a man so well preserved they thought he was a recent murder victim. He had been hanged around 400 BC and laid in the bog, perhaps as a sacrifice."
+    }
+   ],
+   "sources": "Encyclopaedia Britannica, 'Scandinavia: Iron Age'; L. Hedeager, Iron-Age Societies (1992).",
+   "images": [
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Tollundmannen.jpg?width=800",
+     "caption": "Tollund Man (c. 400 BC), Silkeborg Museum",
+     "alt": "Tollund Man (c. 400 BC), Silkeborg Museum",
+     "role": "culture"
+    }
+   ],
+   "extentsByTick": {},
+   "stories": [
+    {
+     "title": "Tollund Man",
+     "text": "In 1950 peat cutters in Denmark found a man so well preserved they thought he was a recent murder victim. He had been hanged around 400 BC and laid in the bog, perhaps as a sacrifice."
+    }
+   ],
+   "philosophy": "Later Norse myths may preserve older beliefs.",
+   "artIdeas": "The Gundestrup cauldron and Roman-era gold neck rings.\n\nLater Norse myths may preserve older beliefs."
+  },
+  {
+   "id": "balts",
+   "name": "Baltic peoples",
+   "type": "tribal peoples",
+   "yearsActive": "c. 1000 BC–AD 13th century",
+   "summary": "The ancestors of the Prussians, Lithuanians, Latvians and Curonians on the south-east Baltic coast, known to the Romans as the Aesti and as sources of amber.",
+   "description": "Baltic-speaking peoples lived from the Vistula to the Daugava and inland. Archaeologists divide them into regional cultures, such as the Brushed Pottery culture of Lithuania and Belarus and the West Baltic Barrow culture of Masuria and Sambia. Tacitus describes the Aesti gathering amber on the shore. The Amber Road carried Baltic amber to Aquileia, and Roman coins and brooches flowed back.",
+   "conflicts": "Little recorded.",
+   "leaders": "Unknown by name.",
+   "religion": "Nature gods and sacred groves.",
+   "culture": "Hill-forts and fortified settlements; amber gathering.",
+   "literature": "Baltic languages are among the most archaic Indo-European languages.",
+   "art": "Enamelled bronze ornaments of the Roman Iron Age.",
+   "ideas": "Tacitus says the Aesti were surprised at the price Romans paid for amber.",
+   "science": "Amber collection and trade.",
+   "story": [
+    {
+     "title": "Amber for Nero",
+     "text": "Pliny tells of a Roman knight sent by Nero to the Baltic coast who brought back so much amber that the nets protecting the arena and the gladiators' weapons were decorated with it."
+    }
+   ],
+   "sources": "Encyclopaedia Britannica, 'Balt'; M. Gimbutas, The Balts (1963).",
+   "images": [
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Amber2.jpg?width=800",
+     "caption": "Baltic amber",
+     "alt": "Baltic amber",
+     "role": "culture"
+    }
+   ],
+   "extentsByTick": {},
+   "stories": [
+    {
+     "title": "Amber for Nero",
+     "text": "Pliny tells of a Roman knight sent by Nero to the Baltic coast who brought back so much amber that the nets protecting the arena and the gladiators' weapons were decorated with it."
+    }
+   ],
+   "philosophy": "Tacitus says the Aesti were surprised at the price Romans paid for amber.",
+   "artIdeas": "Enamelled bronze ornaments of the Roman Iron Age.\n\nTacitus says the Aesti were surprised at the price Romans paid for amber."
+  },
+  {
+   "id": "dnieper-dvina",
+   "name": "Dnieper–Dvina culture",
+   "type": "archaeological culture",
+   "yearsActive": "c. 8th century BC–AD 4th century",
+   "summary": "The Iron Age culture of hill-forts on the upper Dnieper and Western Dvina, in Belarus and western Russia, usually linked with eastern Baltic speakers.",
+   "description": "The Dnieper–Dvina culture is known for small hill-forts on river bluffs and for plain hand-made pottery. Its people kept livestock and farmed clearings in the forest. Many scholars link it with Baltic-speaking peoples who lived far east of today's Baltic states.",
+   "conflicts": "Unknown.",
+   "leaders": "Unknown.",
+   "religion": "Unknown.",
+   "culture": "Fortified hill-forts with wooden walls.",
+   "literature": "None.",
+   "art": "Simple bronze and iron ornaments.",
+   "ideas": "River names of Baltic origin in the region support the link with Baltic speakers.",
+   "science": "Bog iron smelting.",
+   "story": [
+    {
+     "title": "Baltic rivers in Russia",
+     "text": "Linguists found river names of Baltic origin across a wide area of Belarus and western Russia, showing that Baltic speakers once lived far to the east."
+    }
+   ],
+   "sources": "M. Gimbutas, The Balts (1963); J. P. Mallory and D. Q. Adams (eds.), Encyclopedia of Indo-European Culture (1997).",
+   "images": [
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/View%20along%20Western%20Dvina%20River%20-%20Vitebsk%20-%20Belarus%20-%2001%20%2827055191774%29.jpg?width=800",
+     "caption": "The Western Dvina at Vitebsk, in the heartland of the culture",
+     "alt": "The Western Dvina at Vitebsk, in the heartland of the culture",
+     "role": "culture"
+    }
+   ],
+   "extentsByTick": {},
+   "stories": [
+    {
+     "title": "Baltic rivers in Russia",
+     "text": "Linguists found river names of Baltic origin across a wide area of Belarus and western Russia, showing that Baltic speakers once lived far to the east."
+    }
+   ],
+   "philosophy": "River names of Baltic origin in the region support the link with Baltic speakers.",
+   "artIdeas": "Simple bronze and iron ornaments.\n\nRiver names of Baltic origin in the region support the link with Baltic speakers."
+  },
+  {
+   "id": "milograd",
+   "name": "Milograd culture",
+   "type": "archaeological culture",
+   "yearsActive": "c. 7th–1st century BC",
+   "summary": "The Iron Age culture of southern Belarus and northern Ukraine, sometimes identified with Herodotus's Neuri.",
+   "description": "The Milograd culture lived in fortified settlements in the Pripet and upper Dnieper region. Archaeologists have linked it with the Neuri, a people Herodotus places north of the Scythians, about whom he tells the story that they became wolves for a few days each year.",
+   "conflicts": "Unknown.",
+   "leaders": "Unknown.",
+   "religion": "Herodotus's werewolf tale may reflect a ritual.",
+   "culture": "Fortified settlements and farming.",
+   "literature": "Herodotus, book 4.",
+   "art": "Pottery with rounded bases.",
+   "ideas": "Its ethnic identity (Baltic or early Slavic) is debated.",
+   "science": "Iron working.",
+   "story": [
+    {
+     "title": "The Neuri",
+     "text": "Herodotus heard from Greeks and Scythians that each Neurian turned into a wolf for a few days every year. He says he did not believe it."
+    }
+   ],
+   "sources": "Herodotus, Histories 4.105; Encyclopaedia Britannica, 'Neuri'.",
+   "images": [
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Herodotus%20world%20map-hr.PNG?width=800",
+     "caption": "Reconstruction of the world as Herodotus described it, with the Neuri north of Scythia",
+     "alt": "Reconstruction of the world as Herodotus described it, with the Neuri north of Scythia",
+     "role": "culture"
+    }
+   ],
+   "extentsByTick": {},
+   "stories": [
+    {
+     "title": "The Neuri",
+     "text": "Herodotus heard from Greeks and Scythians that each Neurian turned into a wolf for a few days every year. He says he did not believe it."
+    }
+   ],
+   "philosophy": "Its ethnic identity (Baltic or early Slavic) is debated.",
+   "artIdeas": "Pottery with rounded bases.\n\nIts ethnic identity (Baltic or early Slavic) is debated."
+  },
+  {
+   "id": "finno-ugric",
+   "name": "Finno-Ugric peoples",
+   "type": "tribal peoples",
+   "yearsActive": "prehistory–present",
+   "summary": "The hunters, fishers and farmers of the northern forest zone, ancestors of the Finns, Estonians, Mari and other Uralic-speaking peoples.",
+   "description": "Uralic-speaking peoples lived across the taiga from the Baltic to the Urals. Tacitus mentions the Fenni, who lived by hunting and had no horses or houses. Farming spread slowly northwards, and Estonian coastal peoples built stone-cist graves.",
+   "conflicts": "Unknown.",
+   "leaders": "Unknown.",
+   "religion": "Animism and shamanism.",
+   "culture": "Hunting, fishing and some farming; trade in furs.",
+   "literature": "Tacitus, Germania 46.",
+   "art": "Animal carvings and comb-decorated pottery.",
+   "ideas": "Tacitus admired the Fenni as people who had no need of anything.",
+   "science": "Skis and sledges.",
+   "story": [
+    {
+     "title": "The Fenni",
+     "text": "Tacitus says the Fenni lived in amazing poverty, using arrows tipped with bone and sleeping on the ground, yet thought themselves happier than farmers."
+    }
+   ],
+   "sources": "Tacitus, Germania 46; Encyclopaedia Britannica, 'Finno-Ugric peoples'.",
+   "images": [
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Comb%20ceramic%20pottery%20from%20Taipalsaari%2C%20Finland.jpg?width=800",
+     "caption": "Comb Ceramic pottery of the northern forest zone",
+     "alt": "Comb Ceramic pottery of the northern forest zone",
+     "role": "art"
+    }
+   ],
+   "extentsByTick": {},
+   "stories": [
+    {
+     "title": "The Fenni",
+     "text": "Tacitus says the Fenni lived in amazing poverty, using arrows tipped with bone and sleeping on the ground, yet thought themselves happier than farmers."
+    }
+   ],
+   "philosophy": "Tacitus admired the Fenni as people who had no need of anything.",
+   "artIdeas": "Animal carvings and comb-decorated pottery.\n\nTacitus admired the Fenni as people who had no need of anything."
+  },
+  {
+   "id": "saami",
+   "name": "Saami",
+   "type": "tribal peoples",
+   "yearsActive": "prehistory–present",
+   "summary": "The reindeer-hunting peoples of northern Scandinavia and the Kola Peninsula.",
+   "description": "The Saami lived by hunting wild reindeer, fishing and trapping in the far north. Classical writers may mention them as 'Skrithiphinoi' (ski-running Finns) by the sixth century.",
+   "conflicts": "Unknown.",
+   "leaders": "Unknown.",
+   "religion": "Shamanism with the noaidi and sacred stones (sieidi).",
+   "culture": "Seasonal movement between hunting and fishing grounds.",
+   "literature": "Oral joik song tradition.",
+   "art": "Rock carvings at Alta are older.",
+   "ideas": "Their lands were outside the Roman world.",
+   "science": "Skis and reindeer hunting systems.",
+   "story": [
+    {
+     "title": "Ski-runners",
+     "text": "Procopius in the sixth century described the 'Scrithiphini' of Thule, who lived by hunting and did not farm, probably the Saami."
+    }
+   ],
+   "sources": "Encyclopaedia Britannica, 'Sami'; Procopius, Wars 6.15.",
+   "images": [
+    {
+     "src": "https://commons.wikimedia.org/wiki/Special:FilePath/Alta-Carvings-2012-07-17-12-15-018.jpg?width=800",
+     "caption": "Rock carvings at Alta in northern Norway",
+     "alt": "Rock carvings at Alta in northern Norway",
+     "role": "art"
+    }
+   ],
+   "extentsByTick": {},
+   "stories": [
+    {
+     "title": "Ski-runners",
+     "text": "Procopius in the sixth century described the 'Scrithiphini' of Thule, who lived by hunting and did not farm, probably the Saami."
+    }
+   ],
+   "philosophy": "Their lands were outside the Roman world.",
+   "artIdeas": "Rock carvings at Alta are older.\n\nTheir lands were outside the Roman world."
+  }
+ ]
+}
