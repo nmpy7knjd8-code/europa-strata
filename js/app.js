@@ -78,6 +78,7 @@ function showLoadNotice(message, { retry = null } = {}) {
 }
 
 const KINGDOM_PACK_IDS = [
+  "early-medieval", // data only; its tab button is added with the 7-tab bar
   "high-medieval",
   "renaissance",
   "early-modern",
@@ -85,6 +86,7 @@ const KINGDOM_PACK_IDS = [
 ];
 
 const KINGDOM_TAB_LABELS = {
+  "early-medieval": "Early Medieval",
   "high-medieval": "High Medieval",
   renaissance: "Renaissance",
   "early-modern": "Early Modern",
@@ -2394,6 +2396,16 @@ const CULTURE_FAMILY_RULES = [
   ["Nordic", /nordic|scandinav|denmark|norway|sweden|danish|norwegian|swedish|kalmar|iceland|finland/i],
   ["Britain & Ireland", /british|britain|brittonic|britannia|england|scotland|wales|welsh|ireland|irish|gaelic|hibernia|plantagenet|tudor|lancastrian|united kingdom/i],
   ["Western Europe", /\bfrance\b|\bgaul\b|gallia|benelux|dutch|low countries|swiss|\bgerman\b|germany|\bhabsburg\b|austria|holy roman|\bhre\b|prussia|bavaria|saxony|w[uü]rttemberg|baden|hanover/i],
+  // Early Medieval peoples (last, so they never change an earlier assignment)
+  ["Italy", /western roman/i],
+  ["Germanic", /\bsaxons\b|thuringian/i],
+  ["Western Europe", /frisian|vasconia|basque/i],
+  ["Britain & Ireland", /\bpicts?\b|d[aá]l riata/i],
+  ["Nordic", /\bswedes\b|\bgeats\b|\bdanes\b|s[aá]mi\b|finno-ugric/i],
+  ["Steppe", /\bavars?\b|\balans\b|turkic|magyar|pecheneg|oghuz|volga/i],
+  ["Caucasus", /caucasian kingdoms/i],
+  ["Islamic world", /umayyad|abbasid|c[oó]rdoba|aghlabid/i],
+  ["Persia", /sasanian|persia/i],
 ];
 
 function cultureFamily(layer) {
