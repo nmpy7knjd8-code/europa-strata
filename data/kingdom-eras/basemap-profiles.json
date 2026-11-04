@@ -2698,6 +2698,54 @@
    "when": [
     "modern:2000"
    ]
+  },
+  {
+   "id": "syria-mandate",
+   "names": [
+    "Syria (France)"
+   ],
+   "name": "French Mandate for Syria and Lebanon",
+   "type": "League of Nations mandate",
+   "yearsActive": "1920–1946",
+   "summary": "After the Ottoman defeat the League of Nations gave France a mandate over Syria and Lebanon. French troops ended Faisal's Arab Kingdom of Syria at Maysalun in July 1920, and France ruled through separate states until Syria and Lebanon became independent in 1943–46.",
+   "description": "After the Ottoman defeat the League of Nations gave France a mandate over Syria and Lebanon. French troops ended Faisal's Arab Kingdom of Syria at Maysalun in July 1920, and France ruled through separate states until Syria and Lebanon became independent in 1943–46.",
+   "conflicts": "Battle of Maysalun (1920); the Great Syrian Revolt (1925–27); the Hatay was ceded to Turkey in 1939.",
+   "leaders": "High commissioners Henri Gouraud and Maurice Sarrail; nationalist leaders Sultan al-Atrash and Shukri al-Quwatli.",
+   "religion": "Sunni Muslim majority with Alawite, Druze and Christian communities.",
+   "culture": "Damascus, Aleppo and Beirut.",
+   "story": "The 1925 revolt began in the Druze mountains under Sultan al-Atrash; French artillery shelled Damascus to suppress it.",
+   "sources": [
+    "Encyclopaedia Britannica, “Syria: The French mandate”",
+    "P. S. Khoury, Syria and the French Mandate (1987)"
+   ],
+   "when": [
+    "modern:1920",
+    "modern:1938"
+   ]
+  },
+  {
+   "id": "iraq-mandate",
+   "names": [
+    "Mesopotamia (GB)"
+   ],
+   "name": "British Mandate of Mesopotamia (Iraq)",
+   "type": "League of Nations mandate",
+   "yearsActive": "1920–1932",
+   "summary": "Britain took the Ottoman provinces of Baghdad, Basra and Mosul in the First World War and governed them under a League mandate. After the 1920 revolt it made Faisal I king of Iraq in 1921; the kingdom became independent in 1932 but kept close treaty ties with Britain.",
+   "description": "Britain took the Ottoman provinces of Baghdad, Basra and Mosul in the First World War and governed them under a League mandate. After the 1920 revolt it made Faisal I king of Iraq in 1921; the kingdom became independent in 1932 but kept close treaty ties with Britain.",
+   "conflicts": "The Iraqi revolt of 1920; the Mosul question with Turkey, settled by the League in 1926.",
+   "leaders": "Faisal I (king 1921–1933); Gertrude Bell and Percy Cox shaped the British administration.",
+   "religion": "Shia and Sunni Muslims, with Kurdish, Christian, Jewish and Yazidi communities.",
+   "culture": "Baghdad, Basra and Mosul.",
+   "story": "Oil was struck at Baba Gurgur near Kirkuk in October 1927, and the gusher burned for over a week.",
+   "sources": [
+    "Encyclopaedia Britannica, “Iraq: The British mandate”",
+    "C. Tripp, A History of Iraq (3rd ed. 2007)"
+   ],
+   "when": [
+    "modern:1920",
+    "modern:1938"
+   ]
   }
  ]
 }

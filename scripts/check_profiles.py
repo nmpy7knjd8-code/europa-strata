@@ -6,7 +6,7 @@ def find(n,t,y):
   for e in prof:
     if n in e['names'] and (not e.get('when') or f"{t}:{y}" in e['when']): return e
 used=set();fb=[];per=collections.Counter();unn=collections.Counter()
-for t in ['antiquity','high-medieval','renaissance','early-modern','modern']:
+for t in ["antiquity","early-medieval","high-medieval","renaissance","early-modern","modern"]:
   topo=json.load(open(f'data/kingdom-eras/geo/{t}.topo.json'))
   ids={p['id'] for p in json.load(open(f'data/kingdom-eras/{t}.json'))['polities']}
   for k,o in topo['objects'].items():
